@@ -163,6 +163,52 @@ def _rewrite_note_topics(note_path: str, topics: list[str]) -> None:
     p.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def _sanitize_vault_links(cfg: dict, verbose: bool = False) -> dict:
+    """Repair / de-link unresolved [[wikilinks]] in paper and structure notes.
+
+    LLM-written "Connections" sometimes link bibtex keys absent from the vault
+    (year-typos or invented citations). This pass resolves every wikilink
+    against the actual note filenames on disk — no LLM, idempotent.
+    """
+    from . import note_builder
+
+    vault = Path(_abs(cfg["vault"]["path"]))
+    papers_dir = vault / cfg["vault"]["papers_dir"]
+    structures_dir = vault / cfg["vault"]["structures_dir"]
+    topics_dir = vault / cfg["vault"]["topics_dir"]
+
+    known = {f.stem for f in papers_dir.glob("*.md")}
+    known |= {f.stem for f in topics_dir.glob("*.md")}
+
+    notes_changed = 0
+    repaired: dict[str, str] = {}
+    delinked: set[str] = set()
+    for note_dir in (papers_dir, structures_dir):
+        for note in sorted(note_dir.glob("*.md")):
+            original = note.read_text(encoding="utf-8")
+            fixed, changes = note_builder.sanitize_links(original, known)
+            if not changes:
+                continue
+            note.write_text(fixed, encoding="utf-8")
+            notes_changed += 1
+            for change in changes:
+                if change[0] == "repaired":
+                    repaired[change[1]] = change[2]
+                else:
+                    delinked.add(change[1])
+            if verbose:
+                detail = ", ".join(
+                    f"{c[1]}->{c[2]}" if c[0] == "repaired" else f"-{c[1]}"
+                    for c in changes
+                )
+                print(f"  {note.name}: {detail}")
+    return {
+        "notes_changed": notes_changed,
+        "repaired": repaired,
+        "delinked": sorted(delinked),
+    }
+
+
 # --- commands -------------------------------------------------------------
 # Each command is a thin orchestrator over src/* modules.
 
@@ -330,6 +376,12 @@ def cmd_bootstrap(cfg: dict, args) -> int:
     papers_by_key = {p.bibtex_key: p for p in papers}
     _generate_structure_notes(cfg, register, state, papers_by_key, summaries, claude)
 
+    sanitised = _sanitize_vault_links(cfg)
+    print(
+        f"  link sanitiser: {len(sanitised['repaired'])} repaired, "
+        f"{len(sanitised['delinked'])} de-linked"
+    )
+
     state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
     print("bootstrap: done")
     return 0
@@ -440,6 +492,11 @@ def cmd_update(cfg: dict, args) -> int:
     if do_recluster:
         _recluster(cfg, claude, drive)
 
+    sanitised = _sanitize_vault_links(cfg)
+    print(
+        f"  link sanitiser: {len(sanitised['repaired'])} repaired, "
+        f"{len(sanitised['delinked'])} de-linked"
+    )
     print("update: done")
     return 0
 
@@ -520,6 +577,21 @@ def cmd_recluster(cfg: dict, args) -> int:
     return cmd_update(cfg, args)
 
 
+def cmd_fix_links(cfg: dict, args) -> int:
+    """Repair / de-link unresolved [[wikilinks]] across the vault."""
+    result = _sanitize_vault_links(cfg, verbose=True)
+    print(
+        f"fix-links: {result['notes_changed']} note(s) updated — "
+        f"{len(result['repaired'])} target(s) repaired, "
+        f"{len(result['delinked'])} de-linked"
+    )
+    for old, new in sorted(result["repaired"].items()):
+        print(f"  repaired:  {old} -> {new}")
+    for target in result["delinked"]:
+        print(f"  de-linked: {target}")
+    return 0
+
+
 # --- CLI ------------------------------------------------------------------
 
 
@@ -540,6 +612,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     sub.add_parser("refresh-topics", help="rebuild the topic register from github.io")
     sub.add_parser("recluster", help="force a full re-cluster")
+    sub.add_parser("fix-links", help="repair/de-link unresolved [[wikilinks]] in the vault")
     return parser
 
 
@@ -552,6 +625,7 @@ def main(argv=None) -> int:
         "update": cmd_update,
         "refresh-topics": cmd_refresh_topics,
         "recluster": cmd_recluster,
+        "fix-links": cmd_fix_links,
     }
     return commands[args.command](cfg, args) or 0
 

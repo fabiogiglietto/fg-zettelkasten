@@ -42,6 +42,46 @@ def render_frontmatter(fields: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+_WIKILINK_RE = re.compile(r"\[\[([^\[\]|#]+)((?:#[^\[\]|]+)?)(?:\|([^\[\]]+))?\]\]")
+
+
+def _normalize_key(target: str) -> str:
+    """A bibtex key with its first 4-digit year blanked, for near-miss matching."""
+    return re.sub(r"(?:19|20)\d{2}", "YYYY", target.strip(), count=1)
+
+
+def sanitize_links(text: str, known_targets: set[str]) -> tuple[str, list[tuple]]:
+    """Repair or de-link every [[wikilink]] whose target is not a real note.
+
+    A target that — ignoring its 4-digit year — matches exactly one known
+    target is repaired to it (recovers LLM year-typos). Any other unknown
+    target is de-linked to plain text. `known_targets` is the set of resolvable
+    note names (paper bibtex keys + topic slugs). Returns (sanitized_text,
+    changes), where each change is ("repaired", old, new) or ("delinked", old).
+    """
+    norm_index: dict[str, list[str]] = {}
+    for known in known_targets:
+        norm_index.setdefault(_normalize_key(known), []).append(known)
+
+    changes: list[tuple] = []
+
+    def _replace(match: "re.Match[str]") -> str:
+        target = match.group(1).strip()
+        section = match.group(2) or ""
+        alias = match.group(3)
+        if target in known_targets:
+            return match.group(0)
+        candidates = norm_index.get(_normalize_key(target), [])
+        if len(candidates) == 1:
+            new = candidates[0]
+            changes.append(("repaired", target, new))
+            return f"[[{new}{section}|{alias}]]" if alias else f"[[{new}{section}]]"
+        changes.append(("delinked", target))
+        return alias if alias else target
+
+    return _WIKILINK_RE.sub(_replace, text), changes
+
+
 def build_topic_note(topic: dict, member_keys: list[str]) -> str:
     """Deterministically render a Topics/<slug>.md register entry note.
 
@@ -93,6 +133,11 @@ is already set in frontmatter — do not repeat it). Include these sections:
                     topic(s); link the genuinely related ones inline as
                     [[bibtex-key]] wikilinks. Link only real intellectual
                     connections — if none are related, say so plainly.
+
+Only ever write a [[...]] wikilink whose target is one of the bibtex keys \
+explicitly provided to you, copied exactly. Never invent or guess a key, and \
+never link an author name or a citation — refer to any paper not in that list \
+as plain text.
 
 Do not add frontmatter, a title heading, or a Podcast section — those are \
 added by the caller. Output only the Markdown body."""
@@ -172,9 +217,10 @@ abstracts.
 
 Write GitHub-flavoured Markdown, starting at a level-2 heading (the topic title \
 is already set in frontmatter — do not repeat it). Reference papers inline as \
-[[bibtex-key]] wikilinks, using the keys given to you. Aim for several tight \
-paragraphs under a few thematic headings. Output only the Markdown body — no \
-frontmatter, no title heading."""
+[[bibtex-key]] wikilinks, using only the exact bibtex keys given to you, copied \
+verbatim — never invent or guess a key; mention anything else as plain text. \
+Aim for several tight paragraphs under a few thematic headings. Output only the \
+Markdown body — no frontmatter, no title heading."""
 
 
 def build_structure_note(topic: dict, papers: list, summaries: dict, claude, model: str) -> str:
