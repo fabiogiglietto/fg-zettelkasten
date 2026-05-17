@@ -8,7 +8,33 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from typing import Optional
+
+
+def _extract_json(text: str):
+    """Parse a JSON value out of a model response.
+
+    Tolerates a ```json fenced block or leading/trailing prose around the
+    JSON payload — Claude is asked for bare JSON but this keeps parsing robust.
+    """
+    fenced = re.search(r"```(?:json)?\s*(.+?)\s*```", text, re.DOTALL)
+    candidate = fenced.group(1) if fenced else text
+    candidate = candidate.strip()
+    try:
+        return json.loads(candidate)
+    except json.JSONDecodeError:
+        pass
+    # Fall back to the first balanced object/array in the response.
+    start = min(
+        (i for i in (candidate.find("{"), candidate.find("[")) if i != -1),
+        default=-1,
+    )
+    if start != -1:
+        end = max(candidate.rfind("}"), candidate.rfind("]"))
+        if end > start:
+            return json.loads(candidate[start : end + 1])
+    raise ValueError(f"no JSON found in response: {text[:200]!r}")
 
 
 class ClaudeClient:
@@ -42,10 +68,22 @@ class ClaudeClient:
         prompt-cache breakpoint, so a stable instruction prefix reused across
         many papers is billed at the cache-read rate.
         """
-        # TODO: build the system block (with cache_control when cache_system),
-        #       call self._client.messages.create(...), return text content.
-        raise NotImplementedError("claude_client.complete: implement SDK call")
+        system_block = {"type": "text", "text": system}
+        if cache_system:
+            # Mark the (stable) instruction prefix as a prompt-cache breakpoint;
+            # reused verbatim across many papers it bills at the cache-read rate.
+            system_block["cache_control"] = {"type": "ephemeral"}
 
-    def complete_json(self, **kwargs) -> dict:
-        """`complete` followed by a strict JSON parse of the response."""
-        return json.loads(self.complete(**kwargs))
+        response = self._client.messages.create(
+            model=model,
+            max_tokens=max_tokens,
+            system=[system_block],
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return "".join(
+            block.text for block in response.content if block.type == "text"
+        )
+
+    def complete_json(self, **kwargs):
+        """`complete` followed by a tolerant JSON parse of the response."""
+        return _extract_json(self.complete(**kwargs))

@@ -30,6 +30,28 @@ def fetch_signals(
     return signals
 
 
+_SYNTHESIS_SYSTEM = """\
+You are a research librarian curating a Zettelkasten topic register — the \
+Schlagwortregister of a Niklas-Luhmann-style archive. From a researcher's \
+published agenda you distil a small, stable taxonomy of working topics that a \
+stream of academic papers will be filed under.
+
+Rules:
+- Produce a curated taxonomy, not an exhaustive index. Each topic must be a \
+genuine working theme, broad enough to gather many papers yet specific enough \
+to be meaningful.
+- Weight strongly toward the *current* agenda: projects with `status: Active`, \
+recent news, and recent publications outweigh the full historical record.
+- Topic slugs are lowercase, hyphenated, stable identifiers (e.g. \
+`information-disorder`). Names are short Title Case phrases. Descriptions are \
+one or two sentences explaining what the topic covers and why it matters to \
+this researcher.
+- `source_signals` lists the signal filenames that motivated the topic.
+- Output ONLY a JSON array, no prose or markdown fences. Each element:
+  {"slug": ..., "name": ..., "description": ..., "source_signals": [...]}
+"""
+
+
 def synthesize_register(
     signals: dict[str, str], claude, topics_cfg: dict
 ) -> list[dict]:
@@ -42,9 +64,37 @@ def synthesize_register(
     Returns a list of dicts:
         {slug, name, description, source_signals, is_emergent: false}
     """
-    # TODO: build the synthesis prompt from `signals`; call
-    #       claude.complete_json(model=claude.reasoning_model, ...).
-    raise NotImplementedError("topics_client.synthesize_register")
+    min_topics = topics_cfg.get("min_topics", 6)
+    max_topics = topics_cfg.get("max_topics", 12)
+
+    parts = [
+        f"Produce between {min_topics} and {max_topics} working topics.",
+        "",
+        "Research-agenda signals follow, each delimited by its filename:",
+    ]
+    for path, text in signals.items():
+        parts.append(f"\n===== {path} =====\n{text.strip()}")
+    prompt = "\n".join(parts)
+
+    topics = claude.complete_json(
+        model=claude.reasoning_model,
+        system=_SYNTHESIS_SYSTEM,
+        prompt=prompt,
+        max_tokens=8192,
+    )
+
+    register: list[dict] = []
+    for topic in topics:
+        register.append(
+            {
+                "slug": topic["slug"],
+                "name": topic["name"],
+                "description": topic.get("description", ""),
+                "source_signals": topic.get("source_signals", []),
+                "is_emergent": False,
+            }
+        )
+    return register
 
 
 def load_topics(path: str) -> list[dict]:
