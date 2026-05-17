@@ -1,0 +1,7 @@
+anthropic>=0.40
+requests>=2.31
+PyYAML>=6.0
+pypdf>=4.0
+google-api-python-client>=2.100
+google-auth>=2.20
+python-dotenv>=1.0

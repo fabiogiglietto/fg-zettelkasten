@@ -1,0 +1,50 @@
+# fg-zettelkasten configuration
+# CLI arguments override these values.
+
+inputs:
+  # toread enriched JSON Feed (published)
+  feed_url: "https://raw.githubusercontent.com/fabiogiglietto/toread/main/output/feed.json"
+  # research-radio podcast episodes (published)
+  episodes_url: "https://raw.githubusercontent.com/fabiogiglietto/research-radio/main/docs/episodes.json"
+  # fabiogiglietto.github.io research-agenda signals — fetched live from the published repo
+  github_io_base: "https://raw.githubusercontent.com/fabiogiglietto/fabiogiglietto.github.io/main"
+  github_io_signals:
+    - "_data/projects.yml"
+    - "_data/publications.yml"
+    - "_data/teaching.yml"
+    - "_data/news.yml"
+    - "scripts/config.js"
+    - "scripts/data/bio-seed.md"
+
+claude:
+  # Per-paper full-PDF summary pass — the bulk of the cost.
+  # Switch to a Sonnet model id to cut this ~5x.
+  summary_model: "claude-opus-4-7"
+  # Topic-register synthesis, clustering, and hub-note narratives.
+  reasoning_model: "claude-opus-4-7"
+  # PDF text is capped before being sent to Claude.
+  max_pdf_chars: 80000
+
+topics:
+  min_topics: 6
+  max_topics: 12
+  # An emergent topic is created only when at least this many mutually
+  # cohesive unassigned papers exist — prevents one-paper topics.
+  emergent_min_papers: 3
+
+processing:
+  # A full recluster is triggered when papers added since the last cluster
+  # exceeds this threshold (or when --recluster is passed).
+  recluster_threshold: 25
+
+vault:
+  path: "vault"
+  papers_dir: "Papers"
+  topics_dir: "Topics"
+  structures_dir: "Structures"
+
+paths:
+  topics_file: "data/topics.json"
+  state_file: "data/state.json"
+  summaries_dir: "data/summaries"
+  cache_dir: "data/.cache"

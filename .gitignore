@@ -1,0 +1,25 @@
+# Environment
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Google Cloud service-account credentials — keep the path in .env, never commit the file
+credentials.json
+*-credentials.json
+service-account*.json
+
+# Transient extracted PDF text — never committed (copyright: Paperpile PDFs)
+data/.cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
