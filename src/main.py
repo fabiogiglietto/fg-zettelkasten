@@ -92,6 +92,9 @@ def _pdf_text(cfg: dict, drive, paper):
         paper, max_chars=cfg["claude"].get("max_pdf_chars", 80000)
     )
     if text:
+        # Some malformed PDFs yield lone surrogate code points that cannot be
+        # UTF-8 encoded — neither for the cache file nor the Claude API request.
+        text = text.encode("utf-8", "ignore").decode("utf-8")
         cache_dir.mkdir(parents=True, exist_ok=True)
         cache_file.write_text(text, encoding="utf-8")
     return text
@@ -229,13 +232,20 @@ def cmd_bootstrap(cfg: dict, args) -> int:
     summaries: dict[str, dict] = {}
 
     # 1. summarize every paper (full PDF when available, else abstract).
+    #    Reuse an existing summary when present so an interrupted run can be
+    #    resumed without re-billing the per-paper Claude pass.
     for i, paper in enumerate(papers, 1):
-        print(f"  [{i}/{len(papers)}] summarize {paper.bibtex_key}")
-        text = _pdf_text(cfg, drive, paper)
-        summary = summarizer.summarize_paper(
-            paper, text, claude, claude.summary_model
-        )
-        summarizer.save_summary(summary, summaries_dir, paper.bibtex_key)
+        cached = summarizer.load_summary(summaries_dir, paper.bibtex_key)
+        if cached is not None:
+            print(f"  [{i}/{len(papers)}] cached   {paper.bibtex_key}")
+            summary = cached
+        else:
+            print(f"  [{i}/{len(papers)}] summarize {paper.bibtex_key}")
+            text = _pdf_text(cfg, drive, paper)
+            summary = summarizer.summarize_paper(
+                paper, text, claude, claude.summary_model
+            )
+            summarizer.save_summary(summary, summaries_dir, paper.bibtex_key)
         summaries[paper.bibtex_key] = summary
         podcast = paper.id in episodes
         state["papers"][paper.id] = {

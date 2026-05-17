@@ -25,15 +25,19 @@ def _extract_json(text: str):
         return json.loads(candidate)
     except json.JSONDecodeError:
         pass
-    # Fall back to the first balanced object/array in the response.
+    # Fall back to the first complete JSON value in the response, ignoring any
+    # trailing prose the model appended after it (raw_decode stops at the end
+    # of the first value rather than guessing a closing brace by rfind).
     start = min(
         (i for i in (candidate.find("{"), candidate.find("[")) if i != -1),
         default=-1,
     )
     if start != -1:
-        end = max(candidate.rfind("}"), candidate.rfind("]"))
-        if end > start:
-            return json.loads(candidate[start : end + 1])
+        try:
+            value, _ = json.JSONDecoder().raw_decode(candidate, start)
+            return value
+        except json.JSONDecodeError:
+            pass
     raise ValueError(f"no JSON found in response: {text[:200]!r}")
 
 
