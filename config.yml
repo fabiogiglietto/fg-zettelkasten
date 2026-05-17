@@ -43,6 +43,13 @@ vault:
   topics_dir: "Topics"
   structures_dir: "Structures"
 
+slack:
+  # Post a curated digest of each newly-added paper to Slack #toread.
+  # The incoming-webhook URL is read from the SLACK_WEBHOOK_URL env var (secret);
+  # posting is skipped entirely when that var is unset.
+  enabled: true
+  channel: "#toread"   # informational only; the webhook is bound to its channel
+
 paths:
   topics_file: "data/topics.json"
   state_file: "data/state.json"

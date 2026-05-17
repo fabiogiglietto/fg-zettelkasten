@@ -5,6 +5,7 @@ Usage:
     python -m src.main bootstrap [--limit N]
     python -m src.main update [--recluster]
     python -m src.main recluster
+    python -m src.main slack-test <bibtex-key>
 
 See README.md and the implementation plan for architecture detail.
 """
@@ -13,6 +14,7 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -396,11 +398,19 @@ def cmd_update(cfg: dict, args) -> int:
         summarizer,
         themes,
         note_builder,
+        slack_client,
         state as state_mod,
     )
 
     claude = _claude(cfg)
     drive = _drive_client(cfg)
+
+    # Post a digest of each newly-added paper to Slack only when the feature is
+    # enabled in config *and* a webhook secret is present (so local runs and
+    # contributors without the secret are unaffected).
+    post_to_slack = bool(cfg.get("slack", {}).get("enabled")) and bool(
+        os.environ.get("SLACK_WEBHOOK_URL")
+    )
 
     topics_file = _abs(cfg["paths"]["topics_file"])
     register = topics_client.load_topics(topics_file)
@@ -447,6 +457,7 @@ def cmd_update(cfg: dict, args) -> int:
             "pdf_source": summary["pdf_source"],
             "content_hash": state_mod.content_hash(paper.abstract, podcast),
             "podcast_linked": podcast,
+            "slack_posted": False,
             "last_processed": _now(),
         }
 
@@ -474,6 +485,27 @@ def cmd_update(cfg: dict, args) -> int:
             episodes.get(paper.id), claude, claude.reasoning_model,
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
+
+        # Post a Slack digest for genuinely-new papers only, once each. The
+        # `slack_posted` flag makes this idempotent across cron retries / a
+        # crash before save_state; a Slack failure is logged, never fatal.
+        if post_to_slack and paper in new_papers and not entry.get("slack_posted"):
+            try:
+                posted = slack_client.post_paper(
+                    os.environ["SLACK_WEBHOOK_URL"], paper, summary,
+                    entry["topics"], episodes.get(paper.id),
+                )
+            except Exception as exc:  # noqa: BLE001 - Slack must never break the build
+                posted = False
+                print(f"  slack: unexpected error for {paper.bibtex_key} ({exc})")
+            if posted:
+                entry["slack_posted"] = True
+                # Persist immediately: if a later paper in this loop crashes the
+                # run before the save_state at the end, this paper must not be
+                # re-posted on the next cron retry.
+                state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
+                print(f"  slack: posted {paper.bibtex_key} to #toread")
+            time.sleep(0.5)  # incoming-webhook rate limit is ~1/s
 
     state["papers_since_cluster"] = (
         state.get("papers_since_cluster", 0) + len(new_papers)
@@ -592,6 +624,41 @@ def cmd_fix_links(cfg: dict, args) -> int:
     return 0
 
 
+def cmd_slack_test(cfg: dict, args) -> int:
+    """Post one paper's digest to Slack — verify Block Kit rendering / re-post."""
+    from . import (
+        feed_client, episodes_client, summarizer, slack_client,
+        state as state_mod,
+    )
+
+    webhook = os.environ.get("SLACK_WEBHOOK_URL")
+    if not webhook:
+        print("slack-test: SLACK_WEBHOOK_URL is not set")
+        return 1
+
+    key = args.bibtex_key
+    papers = feed_client.fetch_feed(cfg["inputs"]["feed_url"])
+    paper = next((p for p in papers if p.bibtex_key == key), None)
+    if paper is None:
+        print(f"slack-test: no paper with bibtex key {key!r} in the feed")
+        return 1
+
+    summary = summarizer.load_summary(_abs(cfg["paths"]["summaries_dir"]), key)
+    if summary is None:
+        print(f"slack-test: no cached summary for {key} — run `update` first")
+        return 1
+
+    state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
+    topics = state["papers"].get(paper.id, {}).get("topics", [])
+    episodes = episodes_client.fetch_episode_audio(cfg["inputs"]["episodes_url"])
+
+    ok = slack_client.post_paper(
+        webhook, paper, summary, topics, episodes.get(paper.id)
+    )
+    print(f"slack-test: {'posted' if ok else 'FAILED'} {key} to the webhook")
+    return 0 if ok else 1
+
+
 # --- CLI ------------------------------------------------------------------
 
 
@@ -613,6 +680,11 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("refresh-topics", help="rebuild the topic register from github.io")
     sub.add_parser("recluster", help="force a full re-cluster")
     sub.add_parser("fix-links", help="repair/de-link unresolved [[wikilinks]] in the vault")
+
+    p_slack = sub.add_parser(
+        "slack-test", help="post one paper's digest to the Slack webhook"
+    )
+    p_slack.add_argument("bibtex_key", help="bibtex key of a paper already processed")
     return parser
 
 
@@ -626,6 +698,7 @@ def main(argv=None) -> int:
         "refresh-topics": cmd_refresh_topics,
         "recluster": cmd_recluster,
         "fix-links": cmd_fix_links,
+        "slack-test": cmd_slack_test,
     }
     return commands[args.command](cfg, args) or 0
 
