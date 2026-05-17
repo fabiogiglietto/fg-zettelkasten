@@ -1,8 +1,11 @@
 name: Update vault
 
 on:
+  # End of the pipeline chain — triggered by github.io (see PIPELINE.md)
+  repository_dispatch:
+    types: [pipeline-tick]
   schedule:
-    - cron: "0 5 * * *"      # daily 05:00 UTC — incremental update
+    - cron: "0 5 * * *"      # daily fallback in case a dispatch is missed
     - cron: "0 4 * * 1"      # weekly Mon 04:00 UTC — refresh topics + recluster
   workflow_dispatch:
     inputs:
@@ -13,6 +16,11 @@ on:
 
 permissions:
   contents: write
+
+# Avoid overlapping runs (dispatch + cron)
+concurrency:
+  group: update-vault
+  cancel-in-progress: false
 
 jobs:
   update:
