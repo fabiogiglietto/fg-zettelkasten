@@ -1929,10 +1929,126 @@
         "online-radicalization-far-right"
       ],
       "pdf_source": "drive",
-      "content_hash": "efb992503cdebd5fec830349a6413b51961c05bb909e3ed430fb6cee38c06555",
-      "podcast_linked": false,
+      "content_hash": "7ff227b308b7b6f91cceb7ea513d63604444633406a257b9f513e0a71a841291",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-05-18T08:43:50.677215+00:00"
+      "last_processed": "2026-05-18T09:12:28.164289+00:00"
+    },
+    "bibtex:Giglietto2026-855a54cb": {
+      "note_path": "Papers/Giglietto2026-855a54cb.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "computational-social-science-methods"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "946cdaf1a586f653b55b2920324849e62e5ea2fcf52dac5ee41fdeb430edc583",
+      "podcast_linked": true,
+      "last_processed": "2026-05-18T09:13:21.254005+00:00"
+    },
+    "bibtex:Giglietto2026-9b6a992d": {
+      "note_path": "Papers/Giglietto2026-9b6a992d.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "generative-ai-and-llms"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "3e1fc597d891c59df345b4a61c2f8d1ec90c4229caf9a15793cea82b345538ad",
+      "podcast_linked": true,
+      "last_processed": "2026-05-18T09:13:37.939357+00:00"
+    },
+    "bibtex:Giglietto2025-1765bb4f": {
+      "note_path": "Papers/Giglietto2025-1765bb4f.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T09:13:49.672676+00:00"
+    },
+    "bibtex:Unknown2025-ed60bc90": {
+      "note_path": "Papers/Unknown2025-ed60bc90.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "computational-social-science-methods"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T09:13:57.959265+00:00"
+    },
+    "bibtex:Unknown2025-4737f561": {
+      "note_path": "Papers/Unknown2025-4737f561.md",
+      "topics": [
+        "information-disorder"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T09:14:07.866767+00:00"
+    },
+    "bibtex:Unknown2025-606bd121": {
+      "note_path": "Papers/Unknown2025-606bd121.md",
+      "topics": [],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T09:14:13.698611+00:00"
+    },
+    "bibtex:Giglietto2025-1e9a0917": {
+      "note_path": "Papers/Giglietto2025-1e9a0917.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T09:14:26.439735+00:00"
+    },
+    "bibtex:Choucair2025-a1f866d6": {
+      "note_path": "Papers/Choucair2025-a1f866d6.md",
+      "topics": [
+        "generative-ai-and-llms",
+        "computational-social-science-methods"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T09:14:37.360475+00:00"
+    },
+    "bibtex:Marino2024-2fbc690f": {
+      "note_path": "Papers/Marino2024-2fbc690f.md",
+      "topics": [
+        "generative-ai-and-llms",
+        "computational-social-science-methods"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T09:14:49.637062+00:00"
+    },
+    "bibtex:Giglietto2024-cbeb3f70": {
+      "note_path": "Papers/Giglietto2024-cbeb3f70.md",
+      "topics": [
+        "generative-ai-and-llms",
+        "computational-social-science-methods"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T09:15:01.511129+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",

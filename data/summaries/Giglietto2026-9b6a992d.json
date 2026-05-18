@@ -1,0 +1,30 @@
+{
+  "abstract": "This study analyzes visual persuasion strategies in coordinated online gambling promotion on Facebook, examining over 2,300 images from 223 gambling-focused groups. Using language models, embeddings, and clustering, the authors identify recurring persuasive patterns and track how generative AI has reshaped this promotional ecosystem since the launch of ChatGPT in November 2022. They document an exponential rise in posting volume and argue that generative AI intensifies established persuasion tactics, raising concerns about user vulnerability and platform governance.",
+  "key_claims": [
+    "Coordinated gambling promotion on Facebook deploys a coherent system of persuasive drivers designed to normalize gambling behaviors.",
+    "Generative AI has transformed gambling promotion by enabling greater scale, visual immersion, and narrative complexity.",
+    "Posting volume in these networks increased exponentially following the public release of ChatGPT, suggesting (though not proving) a causal role for generative AI tools.",
+    "Current platform governance and regulatory frameworks are inadequate for managing risks posed by AI-amplified promotional content."
+  ],
+  "methods": [
+    "Collection and analysis of 2,300+ images from 223 gambling-focused Facebook groups identified as coordinated networks.",
+    "Use of large language models and embedding-based representations to characterize image content.",
+    "Clustering techniques to identify recurring visual and thematic patterns.",
+    "Statistical analysis of posting volume over time, comparing periods before and after ChatGPT's November 2022 release.",
+    "Qualitative interpretive analysis of representative content."
+  ],
+  "findings": [
+    "Seven recurring persuasive drivers were identified: aspirational wealth imagery, manufactured trust signals, urgency conditioning, cultural localisation, gamification, celebrity endorsements, and exploitation of social relations.",
+    "Monthly posting volume rose from 2,121 to 280,952 posts after ChatGPT's introduction.",
+    "Qualitative evidence indicates generative AI intensifies existing persuasion tactics rather than introducing entirely new ones.",
+    "Synthetic media enables more immersive visuals and richer narrative framing in promotional content."
+  ],
+  "contributions": [
+    "Provides an empirical taxonomy of visual persuasion strategies used in coordinated online gambling promotion.",
+    "Documents a quantitative shift in promotional activity coinciding with the rise of generative AI tools.",
+    "Demonstrates a methodological approach combining LLMs, embeddings, and clustering for interpretive analysis at scale.",
+    "Contributes to debates on synthetic media, manipulative content, and the limitations of platform and regulatory governance."
+  ],
+  "framing": "The paper sits at the intersection of research on coordinated inauthentic behavior, platform governance, and the societal impacts of generative AI. It engages debates on synthetic media and manipulation in digital spaces, framing gambling promotion as a case study for understanding AI-amplified persuasion and regulatory gaps.",
+  "pdf_source": "abstract_only"
+}

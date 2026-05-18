@@ -16,6 +16,7 @@ Detection, evolution, and mitigation of coordinated link sharing and inauthentic
 - [[FitzGerald2025-nv]]
 - [[Gaw2025-ru]]
 - [[Gerard2025-br]]
+- [[Giglietto2026-9b6a992d]]
 - [[Goel2025-iq]]
 - [[Graham2025-gp]]
 - [[Graham2026-fb]]

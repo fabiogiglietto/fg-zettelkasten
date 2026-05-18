@@ -1,0 +1,21 @@
+{
+  "abstract": "This paper by Fabio Giglietto (2024) presents a comparative evaluation of two text embedding models — OpenAI's Text-Embedding-3-Large and the Italian-language model UmBERTo — for the task of clustering Italian political news articles. The study assesses how well each model captures semantic relationships in Italian political discourse to support downstream clustering. No abstract or full text was available; details beyond the title are not summarised here.",
+  "key_claims": [
+    "Embedding model choice materially affects clustering quality for Italian political news",
+    "A comparison between a large multilingual proprietary model (Text-Embedding-3-Large) and a dedicated Italian model (UmBERTo) is informative for selecting tools for Italian-language NLP tasks"
+  ],
+  "methods": [
+    "Comparative evaluation of two embedding models: OpenAI's Text-Embedding-3-Large and UmBERTo",
+    "Application of the embeddings to a clustering task on Italian political news articles",
+    "Specific datasets, clustering algorithms, and evaluation metrics are not available from the provided information"
+  ],
+  "findings": [
+    "Specific findings are not available as no abstract or full text was provided"
+  ],
+  "contributions": [
+    "Provides a comparative benchmark of general-purpose multilingual embeddings versus an Italian-specific model for political news clustering",
+    "Offers practical guidance for researchers working on Italian-language text analysis and political communication studies"
+  ],
+  "framing": "The paper sits at the intersection of natural language processing and computational political communication research, contributing to ongoing debates about the relative merits of large multilingual embedding models versus language-specific pretrained models for non-English NLP tasks.",
+  "pdf_source": "abstract_only"
+}

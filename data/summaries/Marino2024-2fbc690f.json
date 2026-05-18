@@ -1,0 +1,20 @@
+{
+  "abstract": "This paper by Marino and Giglietto (2024) addresses the methodological challenges of integrating Large Language Models (LLMs) into research pipelines for studying political discourse on social media. It focuses on validation issues that arise when LLMs are embedded as components within multi-step analytical workflows (an 'LLMs-in-the-loop' approach). The work appears to offer reflections and possibly empirical demonstrations on how to ensure reliability and validity when using LLMs for discourse analysis tasks.",
+  "key_claims": [
+    "LLMs can be productively integrated into pipelines for analyzing political discourse on social media, but their use raises distinctive validation challenges.",
+    "An 'LLMs-in-the-loop' approach—where LLMs serve as components within a broader analytical workflow—requires dedicated methodological scrutiny beyond standard NLP validation practices."
+  ],
+  "methods": [
+    "Methodological discussion of integrating LLMs into social media political discourse analysis pipelines.",
+    "Focus on validation procedures for LLM-assisted classification or annotation tasks (specific methods not available from metadata alone)."
+  ],
+  "findings": [
+    "Specific findings are not available without access to the paper's full text or abstract."
+  ],
+  "contributions": [
+    "Articulates the concept of an 'LLMs-in-the-loop' pipeline for political communication research.",
+    "Highlights and addresses validation challenges specific to using LLMs in computational social science workflows on social media data."
+  ],
+  "framing": "The paper sits at the intersection of computational social science, political communication, and computational methods for discourse analysis. It engages with ongoing debates about the reliability, validity, and appropriate methodological safeguards required when adopting generative AI tools in empirical social research.",
+  "pdf_source": "abstract_only"
+}

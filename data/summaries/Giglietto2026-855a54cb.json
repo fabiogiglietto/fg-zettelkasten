@@ -1,0 +1,30 @@
+{
+  "abstract": "This article traces the evolution of researcher access to social media data, using Twitter/X as a case study to illustrate broader structural shifts across the platform economy. Giglietto and Puschmann identify three phases—an open 'Wild West' (2006–2020), a brief 'Golden Age' of the Academic Research API (2020–2023), and a post-2023 era of restricted, paywalled access following Musk's acquisition—and situate parallel retrenchments at Meta, Reddit, and TikTok as a systemic pattern. They then assess the EU's Digital Services Act, particularly Article 40, as a paradigm shift toward data access as a legal right, while cataloging its implementation challenges and calling for sustained public investment in independent research infrastructure.",
+  "key_claims": [
+    "Researcher access to social media data has moved through three distinct phases on Twitter/X, culminating in a sharp post-2023 contraction.",
+    "The dismantling of academic data access is not isolated to Twitter/X but reflects a systemic pattern across major platforms (Meta/CrowdTangle, Reddit, TikTok).",
+    "The EU Digital Services Act, especially Article 40, represents a paradigm shift by reframing data access as a legal right tied to studying systemic risks rather than a discretionary platform favor.",
+    "DSA implementation faces serious obstacles, including uneven platform compliance, knowledge asymmetries, geographic limits, and a 'data abyss' that disproportionately harms early-career researchers, civil society, and Global South scholars.",
+    "Progress toward data transparency is non-linear and fragile, requiring institutional rather than platform-dependent solutions.",
+    "Independent research into platform effects should be treated as a public good warranting sustained public support."
+  ],
+  "methods": [
+    "Historical and conceptual case study of Twitter/X's data access regimes from 2006 to the present.",
+    "Comparative contextualization with parallel access changes at Meta (CrowdTangle), Reddit, and TikTok.",
+    "Policy analysis of the EU Digital Services Act, with particular focus on Article 40 and its implementation challenges."
+  ],
+  "findings": [
+    "Twitter/X's trajectory can be periodized into a 'Wild West' phase (2006–2020), a 'Golden Age' under the Academic Research API (2020–2023), and a post-2023 commercial paywall era.",
+    "Similar retrenchments across Meta, Reddit, and TikTok indicate an industry-wide pattern of closing researcher access.",
+    "The DSA introduces a legal entitlement to data access but suffers from inconsistent platform compliance and structural asymmetries between platforms and researchers.",
+    "Geographic scope of the DSA disadvantages non-EU scholars, and barriers fall hardest on early-career researchers, civil society organizations, and Global South researchers."
+  ],
+  "contributions": [
+    "Offers a periodization framework for understanding the evolution of academic social media data access.",
+    "Frames platform data restrictions as a systemic, cross-platform phenomenon rather than isolated corporate decisions.",
+    "Provides a critical assessment of the DSA's Article 40 as both a regulatory breakthrough and a partial, geographically limited remedy.",
+    "Articulates a policy and infrastructural agenda—academic consortia, public investment, multi-method approaches (APIs, data donations, browser-based tools), and international regulatory extension—for sustaining independent platform research."
+  ],
+  "framing": "The article positions itself within ongoing debates in platform studies, internet research ethics, and digital methods about the politics of API access and the governance of platform power. It bridges empirical scholarship on data infrastructures with regulatory and normative arguments, treating independent platform research as a public good and engaging with emerging EU digital regulation as a focal site of contestation.",
+  "pdf_source": "abstract_only"
+}
