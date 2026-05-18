@@ -2,10 +2,12 @@
 # CLI arguments override these values.
 
 inputs:
-  # toread enriched JSON Feed (published)
-  feed_url: "https://raw.githubusercontent.com/fabiogiglietto/toread/main/output/feed.json"
-  # research-radio podcast episodes (published)
-  episodes_url: "https://raw.githubusercontent.com/fabiogiglietto/research-radio/main/docs/episodes.json"
+  # toread enriched JSON Feed — GitHub Contents API, served fresh. The raw
+  # CDN caches ~5 min and fg-zk:summarize runs seconds after toread commits,
+  # so a cached read would miss brand-new papers.
+  feed_url: "https://api.github.com/repos/fabiogiglietto/toread/contents/output/feed.json"
+  # research-radio podcast episodes — GitHub Contents API (same reason).
+  episodes_url: "https://api.github.com/repos/fabiogiglietto/research-radio/contents/docs/episodes.json"
   # fabiogiglietto.github.io research-agenda signals — fetched live from the published repo
   github_io_base: "https://raw.githubusercontent.com/fabiogiglietto/fabiogiglietto.github.io/main"
   github_io_signals:

@@ -6,6 +6,7 @@ research-radio): that code needs `.id`, `.title`, `.authors` (list[str]) and
 """
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -49,9 +50,26 @@ def _item_to_paper(item: dict) -> Paper:
     )
 
 
+def github_raw_headers() -> dict:
+    """Headers for a GitHub Contents API request: ask for the raw file body,
+    and authenticate when GITHUB_TOKEN is set (lifts the rate limit to 5000/h).
+
+    The Contents API is served fresh, unlike raw.githubusercontent.com which
+    is CDN-cached ~5 min — and `fetch_feed` runs seconds after toread commits
+    the feed, so a cached read would miss brand-new papers.
+    """
+    headers = {"Accept": "application/vnd.github.raw+json"}
+    token = os.getenv("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    return headers
+
+
 def fetch_feed(url: str, timeout: int = 30) -> list[Paper]:
-    """Fetch the published JSON Feed and return its items as `Paper` objects."""
-    resp = requests.get(url, timeout=timeout)
+    """Fetch the published JSON Feed and return its items as `Paper` objects.
+
+    `url` is a GitHub Contents API URL (see `config.yml`)."""
+    resp = requests.get(url, headers=github_raw_headers(), timeout=timeout)
     resp.raise_for_status()
     data = resp.json()
     return [_item_to_paper(it) for it in data.get("items", [])]

@@ -7,10 +7,15 @@ from __future__ import annotations
 
 import requests
 
+from .feed_client import github_raw_headers
+
 
 def fetch_episode_audio(url: str, timeout: int = 30) -> dict[str, str]:
-    """Return a mapping of paper id ("bibtex:...") -> podcast audio URL."""
-    resp = requests.get(url, timeout=timeout)
+    """Return a mapping of paper id ("bibtex:...") -> podcast audio URL.
+
+    `url` is a GitHub Contents API URL — see `feed_client.github_raw_headers`
+    for why the API is used instead of raw.githubusercontent.com."""
+    resp = requests.get(url, headers=github_raw_headers(), timeout=timeout)
     resp.raise_for_status()
     data = resp.json()
     episodes = data if isinstance(data, list) else data.get("episodes", [])
