@@ -3,6 +3,7 @@
 Usage:
     python -m src.main refresh-topics
     python -m src.main bootstrap [--limit N]
+    python -m src.main summarize
     python -m src.main update [--recluster]
     python -m src.main recluster
     python -m src.main slack-test <bibtex-key>
@@ -389,6 +390,38 @@ def cmd_bootstrap(cfg: dict, args) -> int:
     return 0
 
 
+def cmd_summarize(cfg: dict, args) -> int:
+    """Pipeline stage 1: ensure every feed paper has a structured summary.
+
+    Produces data/summaries/<key>.json and stops — no themes, notes or Slack.
+    research-radio consumes these summaries as a podcast-script scaffold, so
+    they must exist *before* the podcast is generated; hence this runs ahead
+    of research-radio in the chain. `update` (which runs after the podcast)
+    reuses these summaries and stays self-sufficient: run on its own, the
+    daily fallback cron still summarizes anything this stage missed."""
+    from . import feed_client, summarizer
+
+    claude = _claude(cfg)
+    drive = _drive_client(cfg)
+    summaries_dir = _abs(cfg["paths"]["summaries_dir"])
+
+    papers = feed_client.fetch_feed(cfg["inputs"]["feed_url"])
+    pending = [
+        p for p in papers
+        if summarizer.load_summary(summaries_dir, p.bibtex_key) is None
+    ]
+    print(f"summarize: {len(pending)} of {len(papers)} paper(s) need a summary")
+    for i, paper in enumerate(pending, 1):
+        print(f"  [{i}/{len(pending)}] summarize {paper.bibtex_key}")
+        text = _pdf_text(cfg, drive, paper)
+        summary = summarizer.summarize_paper(
+            paper, text, claude, claude.summary_model
+        )
+        summarizer.save_summary(summary, summaries_dir, paper.bibtex_key)
+    print("summarize: done")
+    return 0
+
+
 def cmd_update(cfg: dict, args) -> int:
     """Daily incremental run: new/changed papers only."""
     from . import (
@@ -439,13 +472,18 @@ def cmd_update(cfg: dict, args) -> int:
 
     summaries: dict[str, dict] = {}
 
-    # New papers: summarize + assign to existing register topics.
+    # New papers: summarize + assign to existing register topics. Reuse the
+    # summary produced by the `summarize` stage when present, so the pipeline
+    # never bills the per-paper Claude summary twice; fall back to summarizing
+    # here so the daily `update` cron remains self-sufficient.
     for paper in new_papers:
-        text = _pdf_text(cfg, drive, paper)
-        summary = summarizer.summarize_paper(
-            paper, text, claude, claude.summary_model
-        )
-        summarizer.save_summary(summary, summaries_dir, paper.bibtex_key)
+        summary = summarizer.load_summary(summaries_dir, paper.bibtex_key)
+        if summary is None:
+            text = _pdf_text(cfg, drive, paper)
+            summary = summarizer.summarize_paper(
+                paper, text, claude, claude.summary_model
+            )
+            summarizer.save_summary(summary, summaries_dir, paper.bibtex_key)
         summaries[paper.bibtex_key] = summary
         slugs = themes.assign_paper(
             paper, summary, register, claude, claude.reasoning_model
@@ -672,6 +710,10 @@ def build_parser() -> argparse.ArgumentParser:
         "--limit", type=int, default=None, help="process only the first N papers"
     )
 
+    sub.add_parser(
+        "summarize", help="pipeline stage 1: summarize new papers, then stop"
+    )
+
     p_update = sub.add_parser("update", help="incremental daily run")
     p_update.add_argument(
         "--recluster", action="store_true", help="also run a full re-cluster"
@@ -694,6 +736,7 @@ def main(argv=None) -> int:
 
     commands = {
         "bootstrap": cmd_bootstrap,
+        "summarize": cmd_summarize,
         "update": cmd_update,
         "refresh-topics": cmd_refresh_topics,
         "recluster": cmd_recluster,

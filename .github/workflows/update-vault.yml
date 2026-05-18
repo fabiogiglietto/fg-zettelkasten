@@ -1,9 +1,11 @@
 name: Update vault
 
 on:
-  # End of the pipeline chain — triggered by github.io (see PIPELINE.md)
+  # Pipeline chain (see PIPELINE.md). fg-zettelkasten runs twice:
+  #   pipeline-summarize (from toread)    -> `summarize`, then kick research-radio
+  #   pipeline-finalize  (from github.io) -> `update` (themes, notes, Slack)
   repository_dispatch:
-    types: [pipeline-tick]
+    types: [pipeline-summarize, pipeline-finalize]
   schedule:
     - cron: "0 5 * * *"      # daily fallback in case a dispatch is missed
     - cron: "0 4 * * 1"      # weekly Mon 04:00 UTC — refresh topics + recluster
@@ -45,7 +47,9 @@ jobs:
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          if [ "${{ github.event.schedule }}" = "0 4 * * 1" ] || [ "${{ inputs.recluster }}" = "true" ]; then
+          if [ "${{ github.event.action }}" = "pipeline-summarize" ]; then
+            python -m src.main summarize
+          elif [ "${{ github.event.schedule }}" = "0 4 * * 1" ] || [ "${{ inputs.recluster }}" = "true" ]; then
             python -m src.main refresh-topics
             python -m src.main update --recluster
           else
@@ -59,3 +63,13 @@ jobs:
           git add vault/ data/
           git diff --staged --quiet || git commit -m "🤖 Update vault $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
+
+      # Summarize leg only: kick research-radio so it builds the podcast from
+      # the summary just committed. The update leg ends the chain — no dispatch.
+      - name: Trigger research-radio
+        if: github.event.action == 'pipeline-summarize'
+        uses: peter-evans/repository-dispatch@v4
+        with:
+          token: ${{ secrets.PIPELINE_DISPATCH_TOKEN }}
+          repository: fabiogiglietto/research-radio
+          event-type: pipeline-tick
