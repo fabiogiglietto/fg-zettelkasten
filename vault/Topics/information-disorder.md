@@ -49,6 +49,7 @@ Conceptualisation and empirical study of mis/disinformation, fake news, problema
 - [[Renault2025-uh]]
 - [[Rodarte2026-dk]]
 - [[Rohrbach2026-rc]]
+- [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
 - [[Sadler2025-vu]]
 - [[Shi2026-ko]]

@@ -1,0 +1,34 @@
+{
+  "abstract": "This article presents a workflow for detecting, monitoring, and continuously updating lists of coordinated social media accounts that disseminate problematic information, addressing the limitation that static lists quickly become outdated. The approach starts with a known list of coordinated accounts, monitors their best-performing posts every few hours via APIs, and uses near-duplicate detection to surface new accounts engaged in coordinated link, image-text, or message sharing behavior. The workflow was applied to the 2022 Italian snap election campaign (July 28-September 25, 2022), beginning with 435 previously identified coordinated accounts and surfacing 1,022 overperforming political posts, 272 coordinated links, and 620 newly detected coordinated accounts. Three case studies illustrate the workflow's outputs: a politically motivated Five Star Movement (M5S) hyperpartisan network, a click-economy operation using religious pages to bait users with misleading political clickbait, and a religious proselytism operation by the Church of Almighty God using Facebook Messenger bots.",
+  "key_claims": [
+    "List-based approaches to detecting problematic information actors become outdated quickly because malicious actors adapt, get suspended, or change assets, leading to underestimation of the phenomenon.",
+    "Content-based detection faces structural limits due to the complexity, speed, and scale of problematic information, justifying actor- and behavior-focused approaches.",
+    "Coordinated behavior of known actors can be leveraged to iteratively detect new coordinated accounts, keeping monitoring lists current in near-real-time.",
+    "The workflow is content- and actor-agnostic, targeting behaviors rather than predetermined individuals or content, and can surface ideologically, economically, and religiously motivated operations.",
+    "Underestimating the assets involved in an information operation results in inaccurate estimates of its reach and exposure; continuous monitoring yields more accurate prevalence measures."
+  ],
+  "methods": [
+    "Designed a circular workflow combining scheduled API monitoring, overperformance scoring (CrowdTangle's overperforming score and a combined metric incorporating comment/share ratio), and coordination detection.",
+    "Compiled an initial seed list of 435 coordinated accounts (238 Facebook Pages, 196 public groups, 1 Instagram account) by running CooRnet on 73,842 links from 398,385 political posts published by accounts previously identified during the 2018, 2019, and COVID-era Italian coordinated link sharing studies.",
+    "Used an R script scheduled via cronR to query CrowdTangle posts/search API every 6 hours (3am, 9am, 3pm, 9pm) from July 28 to September 25, 2022, retrieving top 100 political and unfiltered overperforming posts plus posts from the top 10% of newly detected accounts.",
+    "Applied CooRnet (with 30-second coordination interval and 26+ share repetition threshold at the 0.995 percentile) to detect Coordinated Link Sharing Behavior (CLSB), plus extensions for Coordinated Image Text Sharing Behavior (CITSB) and Coordinated Message Sharing Behavior (CMSB, cosine similarity > .7).",
+    "Filtered political posts using a keyword list of party names, leaders, and political institutions, with capitalization checks to reduce false positives.",
+    "Analyzed three surfaced case studies using François's A-B-C (Actors-Behavior-Content) framework, classifying URL sources as Facebook-internal vs. external (with subcategories) and using NewsGuard ratings for reliability assessment."
+  ],
+  "findings": [
+    "The workflow surfaced 1,022 overly shared or commented political posts, 272 coordinated links, 66 new coordinated political accounts (20 Pages, 46 groups), and 554 generic coordinated accounts (406 Pages, 148 groups) beyond the initial seed list.",
+    "Case 1 (M5S network): identified 90 entities (89 groups, 1 Page) with potential reach of 1,547,159 users, publishing 534,353 posts in the two pre-election months (averaging 6.2 posts/min on election day, peaking above 50/min); 80% of posts had no links and most linked content was Facebook-internal, indicating an echo-chamber environment with circulation of fabricated polls favoring M5S.",
+    "Case 2 (clickbait network): traced 46 Facebook Pages publishing 58,035 posts; two religious Pages ('La Preghiera di Oggi' and 'Santa Rita da Cascia') with combined reach of ~768,000 followers posted two-thirds non-religious clickbait political content with misleading headlines, exposing religiously motivated audiences to politically charged content incidentally.",
+    "Case 3 (religious proselytism): detected 1,390 public groups in seven language clusters tied to the Church of Almighty God (Eastern Lightning); the Italian subset comprised 61 groups (1,724,907 members) and 13 Pages (294,625 subscribers), with Pages featuring unusually high numbers of administrators (avg 72.6) and linked groups, using Messenger bots to funnel users into catechism chats without disclosing affiliation.",
+    "Only 2% of external links in the M5S network came from NewsGuard-rated unreliable sources, but 76% were unrated, with most reliable links coming from outlets ideologically aligned with M5S."
+  ],
+  "contributions": [
+    "Introduces a novel, iterative workflow that updates lists of coordinated social media accounts in near-real-time rather than relying on static, manually compiled lists.",
+    "Extends prior CLSB detection (via CooRnet) by integrating CITSB and CMSB to capture coordination via images and near-duplicate text, addressing adaptation strategies like placing links in comments.",
+    "Provides an empirical application to the 2022 Italian snap election, yielding three documented case studies of ideologically, economically, and religiously motivated coordinated operations.",
+    "Offers a behaviorally agnostic alert system to help fact-checkers, journalists, and researchers prioritize investigations, while emphasizing that flagged content/actors should not be automatically deemed harmful.",
+    "Discusses portability of the approach to other platforms via emerging researcher APIs (Meta, TikTok, Twitter, YouTube) in light of the EU Digital Services Act Article 40 data access provisions."
+  ],
+  "framing": "The paper situates itself within research on coordinated inauthentic behavior, information operations, and problematic information (drawing on Jack's taxonomy and François's A-B-C framework), and within debates over the limits of content-based, list-based, and computational bot-detection approaches. It positions the workflow as a methodological response to the speed, scale, and complexity challenges identified by Benkler, Gleicher, Starbird, and others, extending the authors' prior work on Coordinated Link Sharing Behavior in Italian elections.",
+  "pdf_source": "drive"
+}

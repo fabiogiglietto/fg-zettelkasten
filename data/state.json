@@ -2049,6 +2049,42 @@
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-18T09:15:01.511129+00:00"
+    },
+    "bibtex:Giglietto2023-fa71a001": {
+      "note_path": "Papers/Giglietto2023-fa71a001.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "f2c5c99ba774c8e3dd39f84f62e95eab7c0629c58f4cb504d78c5f77f05e48b7",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T10:03:41.365345+00:00"
+    },
+    "bibtex:Rossi2023-847d5a9f": {
+      "note_path": "Papers/Rossi2023-847d5a9f.md",
+      "topics": [
+        "information-disorder",
+        "platform-governance-and-data-access"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "56cf2a6e45f2bd1c33c79d6977a82fff91f6af5b1caae5e7bf7f9dd8da5adf9b",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T10:04:13.411935+00:00"
+    },
+    "bibtex:Unknown2023-9137f448": {
+      "note_path": "Papers/Unknown2023-9137f448.md",
+      "topics": [
+        "problematic-health-information",
+        "coordinated-inauthentic-behavior"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "7fe0a3fc99f8cebc6b18df207c4c78ab25786851770b644bfbd99e7546ab5fa9",
+      "podcast_linked": false,
+      "last_processed": "2026-05-18T10:04:46.932079+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",
