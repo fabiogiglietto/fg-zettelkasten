@@ -92,16 +92,27 @@ def _drive_client(cfg: dict):
 
 
 def _pdf_text(cfg: dict, drive, paper):
-    """Extracted full PDF text for `paper`, cached transiently in data/.cache/."""
+    """Extracted full PDF text for `paper`, cached transiently in data/.cache/.
+
+    Own publications carry an `open_access_pdf_url` (the green-OA PDF resolved
+    from ORA) and are fetched directly; toread papers use the Paperpile Drive
+    PDF. Returns None when no PDF is available.
+    """
     cache_dir = Path(_abs(cfg["paths"]["cache_dir"]))
     cache_file = cache_dir / f"{paper.bibtex_key}.txt"
     if cache_file.exists():
         return cache_file.read_text(encoding="utf-8")
-    if drive is None:
-        return None
-    text = drive.get_pdf_text(
-        paper, max_chars=cfg["claude"].get("max_pdf_chars", 80000)
-    )
+    max_chars = cfg["claude"].get("max_pdf_chars", 80000)
+
+    text = None
+    oa_pdf_url = (paper.academic or {}).get("open_access_pdf_url")
+    if oa_pdf_url:
+        from .pdf_fetcher import pdf_text_from_url
+
+        text = pdf_text_from_url(oa_pdf_url, max_chars=max_chars)
+    if text is None and drive is not None:
+        text = drive.get_pdf_text(paper, max_chars=max_chars)
+
     if text:
         # Some malformed PDFs yield lone surrogate code points that cannot be
         # UTF-8 encoded — neither for the cache file nor the Claude API request.

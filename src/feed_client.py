@@ -95,13 +95,18 @@ def fetch_own_publications(url: str, timeout: int = 30) -> list[Paper]:
 
 
 def is_note_eligible(paper: Paper, min_year: int, min_citations: int) -> bool:
-    """Whether an own paper earns a vault note: recent OR well-cited.
+    """Whether an own paper earns a vault note. Two gates, both required:
 
-    Cost control — old, low-citation own papers are skipped. The check is
-    re-evaluated every run, so a paper joins automatically once its citation
-    count crosses `min_citations`.
+      1. a full-text PDF is available (`open_access_pdf_url`) — without it
+         there is nothing substantial to summarise, so the paper is skipped;
+      2. the paper is recent OR well-cited.
+
+    Both checks are re-evaluated every run, so a paper joins automatically once
+    its green-OA PDF is deposited or its citation count crosses the threshold.
     """
     academic = paper.academic or {}
+    if not academic.get("open_access_pdf_url"):
+        return False
     year = academic.get("year")
     citations = academic.get("citation_count") or 0
     if isinstance(year, int) and year >= min_year:

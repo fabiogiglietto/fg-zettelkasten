@@ -13,8 +13,9 @@ podcast episode when one exists.
 
 A second source feeds the vault: the maintainer's **own publications**, taken
 from `fabiogiglietto.github.io`'s `own-publications.json`. These get notes
-tagged `kind: own` (recent or well-cited papers only) but are never posted to
-the `#toread` Slack digest — they are not a reading list.
+tagged `kind: own` — built from the paper's green open-access PDF, for recent
+or well-cited papers only — but are never posted to the `#toread` Slack digest:
+they are not a reading list.
 
 ## Pipeline
 

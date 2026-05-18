@@ -47,8 +47,10 @@ python -m src.main update [--recluster]
   LLM-written and regenerate only on bootstrap/recluster.
 - Own publications (Fabio's own papers, from github.io's `own-publications.json`)
   are a second source in `update`: notes tagged `kind: own`, never posted to the
-  `#toread` Slack digest, and gated by the `own_publications` config block
-  (a note is built only for recent or well-cited papers; backfill is capped).
+  `#toread` Slack digest, gated by the `own_publications` config block. A note
+  is built only for a paper that has a green-OA PDF (`open_access_pdf_url`,
+  resolved from ORA) *and* is recent or well-cited; the PDF is its summary
+  source (`pdf_fetcher.py`). Backfill is capped per run.
 - Derived notes (Topics/, Structures/) are regenerated, never appended to.
 - Inputs are fetched live from published URLs, never local sibling working copies.
 - Run as a module: `python -m src.main`. `src/` modules use relative imports.
