@@ -1913,8 +1913,17 @@
       "content_hash": "65bbd56d9ddcf882a336fb187f17756a5eb8d8a3e26888b322fc22e1502b8056",
       "podcast_linked": false,
       "last_processed": "2026-05-17T17:49:53.160079+00:00"
+    },
+    "bibtex:Ng2026-og": {
+      "note_path": "Papers/Ng2026-og.md",
+      "topics": [],
+      "pdf_source": "drive",
+      "content_hash": "e2a52f45e007236d59b4fe673f121f9a7a6d175876e772890e5e28fbd08f5917",
+      "podcast_linked": false,
+      "slack_posted": true,
+      "last_processed": "2026-05-18T06:09:26.434784+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",
-  "papers_since_cluster": 1
+  "papers_since_cluster": 2
 }

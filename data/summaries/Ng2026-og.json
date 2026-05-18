@@ -1,0 +1,34 @@
+{
+  "abstract": "This position paper argues that agentic AI systems operating in social environments must be designed with social theory as a structural prior, rather than being modeled as isolated task-completing agents. The authors propose a Multi-Agent Social Systems (MASS) framework formalized as a triple (f, g, G) — an information exchange function, an influence dynamics function, and an interaction network — and identify four structural priors drawn from social theory: strategic heterogeneity, network-constrained dependence, co-evolution, and distributional instability. Each prior is supported by formal propositions, illustrated empirically with data from the MoltBook AI social network (2.1M posts, 39,700 agents), and used to articulate a research agenda for modeling, evaluating, and governing agentic AI.",
+  "key_claims": [
+    "Agentic AI behavior in social environments emerges from multi-agent interactions, not individual capabilities, and current single-task framings are structurally incomplete.",
+    "Social theory provides the appropriate structural priors for modeling agentic AI systems deployed in social environments.",
+    "Multi-Agent Social Systems can be formalized as a dynamical triple (f, g, G) capturing information generation, local influence, and interaction structure.",
+    "Four structural priors — strategic heterogeneity, network-constrained dependence, co-evolution, and distributional instability — form a generative hierarchy where each violates a standard single-task AI assumption.",
+    "Alignment research (e.g., RLHF, DPO) addresses dyadic user-operator problems and is distinct from, not a substitute for, the population-level governance problems MASS addresses.",
+    "Adjacent framings (MARL, social simulation, theory of mind, social cybersecurity, LLM agent frameworks) are partial instantiations of MASS rather than competing alternatives."
+  ],
+  "methods": [
+    "Conceptual/theoretical framework development drawing on sociology (role theory, structuration theory, weak ties, homophily, agenda-setting, social construction of reality) and mathematical sociology (Friedkin–Johnsen, DeGroot models).",
+    "Formalization of MASS as a dynamical system with four formal propositions and accompanying proof sketches (provided in the appendix).",
+    "Empirical case study on MoltBook, an AI-agent-only social network, using ~2.1M posts and replies from 39,700 LLM agents (Jan 31–Feb 8, 2026).",
+    "Four targeted experiments mapping to each structural prior: degree-based agent partitioning (hub/mid/periphery), Kruskal–Wallis and Mann–Whitney U tests for heterogeneity; variance analysis with Levene and Fligner–Killeen tests; OLS regression of karma change on neighbor karma for co-evolution; Wasserstein-1 distance between consecutive daily karma distributions for distributional instability.",
+    "Network construction from reply interactions and Louvain clustering for visualization."
+  ],
+  "findings": [
+    "P1 (Strategic heterogeneity): Hub, mid, and periphery agent partitions show significantly diverging mean karma trajectories (Kruskal–Wallis p < 0.001 at all time bins; large negative effect sizes for hub vs. periphery comparisons).",
+    "P2 (Network-constrained dependence): Karma variance differs significantly across degree partitions, with hub agents exhibiting substantially higher variance, indicating that topology amplifies engagement spread.",
+    "P3 (Co-evolution): OLS slopes regressing karma change on lagged neighbor karma are non-zero and time-varying (mean |β| = 0.057; Wilcoxon p = 0.0039), with bidirectional signs indicating mutual agent–network coupling rather than unidirectional influence.",
+    "P4 (Distributional instability): Wasserstein-1 distances between consecutive daily karma distributions are consistently non-zero (mean W1 = 0.253; KS test bin 0 vs. bin 9, D = 0.046, p = 0.0025), confirming endogenous distributional drift.",
+    "All four structural priors are empirically observable in a real AI agent ecosystem and are not artifacts of simulation design."
+  ],
+  "contributions": [
+    "Introduction of the Multi-Agent Social Systems (MASS) formalism as a tripartite (f, g, G) dynamical system grounded in social theory.",
+    "Identification and formalization of four structural priors with corresponding propositions linking them to violations of standard single-task AI assumptions.",
+    "Empirical demonstration of the priors in a real LLM-agent social platform (MoltBook), bridging theory and observation.",
+    "A research agenda spanning modeling, evaluation, and governance for each structural prior, including critique of current static benchmarks and proposals for longitudinal, network-aware metrics.",
+    "Conceptual mapping showing how MARL, theory of mind, social simulation, and social cybersecurity fit as special cases of MASS, clarifying the relationship between alignment and population-level governance."
+  ],
+  "framing": "The paper positions itself at the intersection of agentic AI research and mathematical/computational sociology, arguing that the multi-agent AI community has inherited a single-task, individualistic paradigm that ignores decades of social-theoretic insight on collective behavior. It engages directly with recent critiques (e.g., La Malfa et al.'s 'LLMs Miss the Multi-Agent Mark') and frames itself as a position/framework paper aimed at reorienting how the field designs, evaluates, and governs interacting populations of human and machine agents.",
+  "pdf_source": "drive"
+}
