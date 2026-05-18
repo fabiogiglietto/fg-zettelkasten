@@ -11,11 +11,16 @@ register** synthesized from the maintainer's live research agenda
 the matching [research-radio](https://github.com/fabiogiglietto/research-radio)
 podcast episode when one exists.
 
+A second source feeds the vault: the maintainer's **own publications**, taken
+from `fabiogiglietto.github.io`'s `own-publications.json`. These get notes
+tagged `kind: own` (recent or well-cited papers only) but are never posted to
+the `#toread` Slack digest — they are not a reading list.
+
 ## Pipeline
 
 ```
 Paperpile -> toread (metadata enrichment) -> feed.json
-fabiogiglietto.github.io (research agenda)
+fabiogiglietto.github.io -> research agenda + own-publications.json
         |
         v
 fg-zettelkasten (Claude: topic register + full-PDF summaries + notes)
@@ -23,7 +28,7 @@ fg-zettelkasten (Claude: topic register + full-PDF summaries + notes)
    '- data/summaries/  shared structured summaries (consumed later by research-radio)
 ```
 
-All three projects join papers on the `bibtex:AuthorYear-xx` id.
+All projects join papers on the `bibtex:AuthorYear-xx` id.
 
 ## Setup
 

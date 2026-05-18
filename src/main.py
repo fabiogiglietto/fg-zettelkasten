@@ -52,6 +52,14 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def _note_url(cfg: dict, bibtex_key: str) -> str | None:
+    """GitHub URL of a paper's vault note, for the Slack digest's Full-note link.
+
+    Returns None when `slack.note_base_url` is unset so the link is omitted."""
+    base = cfg.get("slack", {}).get("note_base_url")
+    return f"{base.rstrip('/')}/{bibtex_key}.md" if base else None
+
+
 def _claude(cfg: dict):
     """Build the Claude SDK wrapper from config (lazy import keeps --help cheap)."""
     from .claude_client import ClaudeClient
@@ -532,6 +540,7 @@ def cmd_update(cfg: dict, args) -> int:
                 posted = slack_client.post_paper(
                     os.environ["SLACK_WEBHOOK_URL"], paper, summary,
                     entry["topics"], episodes.get(paper.id),
+                    _note_url(cfg, paper.bibtex_key),
                 )
             except Exception as exc:  # noqa: BLE001 - Slack must never break the build
                 posted = False
@@ -545,17 +554,111 @@ def cmd_update(cfg: dict, args) -> int:
                 print(f"  slack: posted {paper.bibtex_key} to #toread")
             time.sleep(0.5)  # incoming-webhook rate limit is ~1/s
 
+    # --- Own publications -------------------------------------------------
+    # Fabio's own papers (from fabiogiglietto.github.io), processed as a
+    # second source: vault notes only, never a Slack digest (they are not a
+    # reading list). Eligible papers are recent or well-cited; a per-run cap
+    # keeps the first backfill from being a cost spike.
+    own_cfg = cfg.get("own_publications", {})
+    own_new, own_changed = [], []
+    if own_cfg.get("enabled", True):
+        try:
+            own_papers = feed_client.fetch_own_publications(
+                cfg["inputs"]["own_publications_url"]
+            )
+        except Exception as exc:  # noqa: BLE001 - a second source must never break the run
+            own_papers = []
+            print(f"update: could not fetch own-publications feed ({exc})")
+
+        min_year = own_cfg.get("min_year", 2020)
+        min_citations = own_cfg.get("min_citations", 5)
+        for paper in own_papers:
+            if not feed_client.is_note_eligible(paper, min_year, min_citations):
+                continue
+            podcast = paper.id in episodes
+            new_hash = state_mod.content_hash(paper.abstract, podcast)
+            entry = state["papers"].get(paper.id)
+            if entry is None:
+                own_new.append(paper)
+            elif entry.get("content_hash") != new_hash:
+                own_changed.append(paper)
+
+        # Cap only new papers (each costs a Claude summary); changed papers are
+        # cheap re-renders and are always processed. The feed is newest-first,
+        # so deferred new papers are the older ones — picked up on later runs.
+        max_per_run = own_cfg.get("max_per_run", 10)
+        if len(own_new) > max_per_run:
+            deferred = len(own_new) - max_per_run
+            own_new = own_new[:max_per_run]
+            print(f"update: own-papers backfill capped at {max_per_run} "
+                  f"({deferred} deferred to later runs)")
+    print(f"update: {len(own_new)} new, {len(own_changed)} changed own paper(s)")
+
+    # New own papers: summarize (abstract-only unless a Drive PDF matches),
+    # assign topics, create state. No Slack post — see comment above.
+    for paper in own_new:
+        summary = summarizer.load_summary(summaries_dir, paper.bibtex_key)
+        if summary is None:
+            text = _pdf_text(cfg, drive, paper)
+            summary = summarizer.summarize_paper(
+                paper, text, claude, claude.summary_model
+            )
+            summarizer.save_summary(summary, summaries_dir, paper.bibtex_key)
+        summaries[paper.bibtex_key] = summary
+        slugs = themes.assign_paper(
+            paper, summary, register, claude, claude.reasoning_model
+        )
+        podcast = paper.id in episodes
+        state["papers"][paper.id] = {
+            "note_path": f"{papers_dir}/{paper.bibtex_key}.md",
+            "topics": slugs,
+            "kind": "own",
+            "pdf_source": summary["pdf_source"],
+            "content_hash": state_mod.content_hash(paper.abstract, podcast),
+            "podcast_linked": podcast,
+            "last_processed": _now(),
+        }
+
+    # Changed own papers: refresh the state hash (e.g. a podcast episode appeared).
+    for paper in own_changed:
+        podcast = paper.id in episodes
+        entry = state["papers"][paper.id]
+        entry["podcast_linked"] = podcast
+        entry["content_hash"] = state_mod.content_hash(paper.abstract, podcast)
+        entry["last_processed"] = _now()
+
+    # Re-render the note for every new or changed own paper (frontmatter kind: own).
+    own_touched = own_new + own_changed
+    for paper in own_touched:
+        entry = state["papers"][paper.id]
+        summary = summaries.get(paper.bibtex_key) or summarizer.load_summary(
+            summaries_dir, paper.bibtex_key
+        )
+        if summary is None:
+            print(f"  WARN: no summary for {paper.bibtex_key}, skipping note")
+            continue
+        related = _related_keys(state, paper.id, entry["topics"])
+        note = note_builder.build_paper_note(
+            paper, summary, entry["topics"], related,
+            episodes.get(paper.id), claude, claude.reasoning_model, kind="own",
+        )
+        note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
+
+    # Own papers are deliberately *not* counted toward papers_since_cluster:
+    # the capped backfill would otherwise trigger reclusters mid-drain. They
+    # still get an initial topic assignment above and are folded into the
+    # structure on the weekly Monday recluster.
     state["papers_since_cluster"] = (
         state.get("papers_since_cluster", 0) + len(new_papers)
     )
-    if touched:
+    if touched or own_touched:
         _regenerate_topic_notes(cfg, register, state)
 
     threshold = cfg["processing"]["recluster_threshold"]
     do_recluster = args.recluster or state["papers_since_cluster"] >= threshold
     state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
 
-    if not touched and not do_recluster:
+    if not touched and not own_touched and not do_recluster:
         print("update: nothing to do")
         return 0
 
@@ -586,6 +689,17 @@ def _recluster(cfg: dict, claude, drive) -> None:
         p for p in feed_client.fetch_feed(cfg["inputs"]["feed_url"])
         if p.id in state["papers"]
     ]
+    # Own publications already in state are reclustered alongside toread papers,
+    # so the weekly recluster folds them into the topic structure too.
+    own_cfg = cfg.get("own_publications", {})
+    if own_cfg.get("enabled", True):
+        try:
+            own = feed_client.fetch_own_publications(
+                cfg["inputs"]["own_publications_url"]
+            )
+            papers += [p for p in own if p.id in state["papers"]]
+        except Exception as exc:  # noqa: BLE001 - never break recluster on a fetch error
+            print(f"recluster: could not fetch own-publications feed ({exc})")
     summaries: dict[str, dict] = {}
     for paper in papers:
         s = summarizer.load_summary(summaries_dir, paper.bibtex_key)
@@ -691,7 +805,8 @@ def cmd_slack_test(cfg: dict, args) -> int:
     episodes = episodes_client.fetch_episode_audio(cfg["inputs"]["episodes_url"])
 
     ok = slack_client.post_paper(
-        webhook, paper, summary, topics, episodes.get(paper.id)
+        webhook, paper, summary, topics, episodes.get(paper.id),
+        _note_url(cfg, key),
     )
     print(f"slack-test: {'posted' if ok else 'FAILED'} {key} to the webhook")
     return 0 if ok else 1

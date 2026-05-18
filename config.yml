@@ -8,6 +8,9 @@ inputs:
   feed_url: "https://api.github.com/repos/fabiogiglietto/toread/contents/output/feed.json"
   # research-radio podcast episodes — GitHub Contents API (same reason).
   episodes_url: "https://api.github.com/repos/fabiogiglietto/research-radio/contents/docs/episodes.json"
+  # Fabio Giglietto's own publications — a second paper source (see the
+  # `own_publications` section). raw CDN is fine: own papers change rarely.
+  own_publications_url: "https://raw.githubusercontent.com/fabiogiglietto/fabiogiglietto.github.io/main/public/data/own-publications.json"
   # fabiogiglietto.github.io research-agenda signals — fetched live from the published repo
   github_io_base: "https://raw.githubusercontent.com/fabiogiglietto/fabiogiglietto.github.io/main"
   github_io_signals:
@@ -49,8 +52,26 @@ slack:
   # Post a curated digest of each newly-added paper to Slack #toread.
   # The incoming-webhook URL is read from the SLACK_WEBHOOK_URL env var (secret);
   # posting is skipped entirely when that var is unset.
+  # Own publications are never posted — they are not a reading list.
   enabled: true
   channel: "#toread"   # informational only; the webhook is bound to its channel
+  # Each digest links to the paper's full note in this repo on GitHub — the
+  # Slack post is only a digest; the note also carries methods, framing and
+  # related papers. The "<bibtex-key>.md" filename is appended; unset to omit.
+  note_base_url: "https://github.com/fabiogiglietto/fg-zettelkasten/blob/main/vault/Papers"
+
+own_publications:
+  # Fabio's own papers, processed by `update` as a second source alongside the
+  # toread feed. They get vault notes (kind: own) but no Slack digest.
+  enabled: true
+  # A note is built only when the paper is recent OR well-cited — old,
+  # low-citation papers are skipped (re-checked every run, so a paper joins
+  # automatically once it crosses the citation threshold).
+  min_year: 2020
+  min_citations: 5
+  # Cap the per-run backfill so the first run is not a ~84-paper cost spike;
+  # the daily cron drains the remaining queue over subsequent runs.
+  max_per_run: 10
 
 paths:
   topics_file: "data/topics.json"

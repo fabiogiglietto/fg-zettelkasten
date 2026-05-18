@@ -151,6 +151,7 @@ def build_paper_note(
     podcast_url: Optional[str],
     claude,
     model: str,
+    kind: Optional[str] = None,
 ) -> str:
     """Render a Papers/<bibtex-key>.md note (LLM-assisted).
 
@@ -158,16 +159,23 @@ def build_paper_note(
     "Connections" section with inline [[bibtex-key]] links to `related_keys`,
     and a "Podcast" section when `podcast_url` is set. Filename is the bibtex
     key; the readable title goes in frontmatter `aliases`.
+
+    `kind` adds a frontmatter `kind:` field when set — used to mark the
+    author's own publications (`kind: own`); toread papers leave it unset.
     """
     academic = paper.academic or {}
-    fm = render_frontmatter(
+    fields: dict[str, Any] = {
+        "title": _yaml_quote(paper.title),
+        "aliases": [_yaml_quote(paper.title)],
+        "authors": [_yaml_quote(a) for a in paper.authors],
+        "year": _year_of(paper),
+        "doi": paper.doi or "",
+        "bibtex_key": paper.bibtex_key,
+    }
+    if kind:
+        fields["kind"] = kind
+    fields.update(
         {
-            "title": _yaml_quote(paper.title),
-            "aliases": [_yaml_quote(paper.title)],
-            "authors": [_yaml_quote(a) for a in paper.authors],
-            "year": _year_of(paper),
-            "doi": paper.doi or "",
-            "bibtex_key": paper.bibtex_key,
             "topics": topics,
             "citation_count": academic.get("citation_count", 0),
             "open_access": bool(academic.get("open_access", False)),
@@ -177,6 +185,7 @@ def build_paper_note(
             "discovery_date": paper.discovery_date or "",
         }
     )
+    fm = render_frontmatter(fields)
 
     summary_json = "\n".join(
         f"{k}: {v}" for k, v in summary.items() if k != "pdf_source"

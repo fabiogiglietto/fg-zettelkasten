@@ -27,6 +27,7 @@ class Paper:
     doi: Optional[str] = None
     tags: list[str] = field(default_factory=list)
     academic: dict = field(default_factory=dict)   # the feed's `_academic` block
+    is_own: bool = False                           # True for own-publications papers
 
     @property
     def bibtex_key(self) -> str:
@@ -73,3 +74,36 @@ def fetch_feed(url: str, timeout: int = 30) -> list[Paper]:
     resp.raise_for_status()
     data = resp.json()
     return [_item_to_paper(it) for it in data.get("items", [])]
+
+
+def fetch_own_publications(url: str, timeout: int = 30) -> list[Paper]:
+    """Fetch the own-publications JSON Feed -> `Paper` objects (is_own=True).
+
+    Same JSON Feed 1.1 shape as the toread feed (so `_item_to_paper` is reused),
+    published by fabiogiglietto.github.io. `url` is a raw.githubusercontent.com
+    URL — the ~5-min CDN cache is harmless here, own papers change rarely.
+    """
+    resp = requests.get(url, timeout=timeout)
+    resp.raise_for_status()
+    data = resp.json()
+    papers = []
+    for item in data.get("items", []):
+        paper = _item_to_paper(item)
+        paper.is_own = True
+        papers.append(paper)
+    return papers
+
+
+def is_note_eligible(paper: Paper, min_year: int, min_citations: int) -> bool:
+    """Whether an own paper earns a vault note: recent OR well-cited.
+
+    Cost control — old, low-citation own papers are skipped. The check is
+    re-evaluated every run, so a paper joins automatically once its citation
+    count crosses `min_citations`.
+    """
+    academic = paper.academic or {}
+    year = academic.get("year")
+    citations = academic.get("citation_count") or 0
+    if isinstance(year, int) and year >= min_year:
+        return True
+    return citations >= min_citations
