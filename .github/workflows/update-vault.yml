@@ -21,6 +21,13 @@ permissions:
   pages: write          # deploy the Quartz site to GitHub Pages
   id-token: write       # required by actions/deploy-pages
 
+# Run JS actions on Node 24. Node 20 is deprecated on GitHub runners (forced
+# off 2026-06-02); some actions here (deploy-pages, upload-pages-artifact)
+# have no Node-24 release yet, so opt in explicitly. No-op once Node 24 is
+# the runner default — safe to drop then.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 # Avoid overlapping runs (dispatch + cron)
 concurrency:
   group: update-vault
