@@ -19,8 +19,8 @@ from .note_builder import _year_of
 # Slack Block Kit limits.
 _HEADER_MAX = 150       # plain_text header block
 _SECTION_MAX = 3000     # mrkdwn section block text
-_BUTTON_MAX = 75        # plain_text button label
-_MAX_BULLETS = 8        # keep contribution/finding lists tidy
+_TEXT_MAX = 200         # top-level notification fallback text
+_MAX_BULLETS = 20       # sanity bound only; _SECTION_MAX is the real backstop
 
 
 def _truncate(text: str, limit: int) -> str:
@@ -56,6 +56,7 @@ def build_blocks(
     summary: dict,
     topics: list[str],
     podcast_url: Optional[str],
+    note_url: Optional[str] = None,
 ) -> list[dict]:
     """Assemble the Block Kit digest for one paper. Deterministic — no LLM."""
     blocks: list[dict] = [
@@ -106,34 +107,25 @@ def build_blocks(
                 }
             )
 
-    # Link buttons: paper source + podcast episode.
-    buttons = []
+    # Source links: paper + podcast episode. Rendered as plain mrkdwn links,
+    # not Block Kit `button` elements: a URL button still emits a block_actions
+    # interaction payload, and an incoming webhook has no Interactivity Request
+    # URL to answer it — Slack then warns the user the app isn't configured for
+    # interactive responses. Plain links carry no interaction and never warn.
+    links = []
     if paper.url:
-        buttons.append(
-            {
-                "type": "button",
-                "text": {
-                    "type": "plain_text",
-                    "text": _truncate("📄 Read paper", _BUTTON_MAX),
-                    "emoji": True,
-                },
-                "url": paper.url,
-            }
-        )
+        links.append(f"📄 <{paper.url}|*Read paper*>")
+    if note_url:
+        links.append(f"📖 <{note_url}|*Full note*>")
     if podcast_url:
-        buttons.append(
+        links.append(f"🎧 <{podcast_url}|*Listen to the episode*>")
+    if links:
+        blocks.append(
             {
-                "type": "button",
-                "text": {
-                    "type": "plain_text",
-                    "text": _truncate("🎧 Listen", _BUTTON_MAX),
-                    "emoji": True,
-                },
-                "url": podcast_url,
+                "type": "section",
+                "text": {"type": "mrkdwn", "text": "   ·   ".join(links)},
             }
         )
-    if buttons:
-        blocks.append({"type": "actions", "elements": buttons})
 
     blocks.append(
         {
@@ -150,6 +142,7 @@ def post_paper(
     summary: dict,
     topics: list[str],
     podcast_url: Optional[str],
+    note_url: Optional[str] = None,
 ) -> bool:
     """Post one paper's digest to the Slack incoming webhook.
 
@@ -157,7 +150,12 @@ def post_paper(
     break the vault build, so transport errors are logged and reported as
     False, leaving the paper's `slack_posted` state flag unset for a retry.
     """
-    payload = {"blocks": build_blocks(paper, summary, topics, podcast_url)}
+    payload = {
+        # Top-level `text` is the notification / accessibility fallback Slack
+        # shows when blocks can't render (push notifications, screen readers).
+        "text": _truncate(paper.title, _TEXT_MAX),
+        "blocks": build_blocks(paper, summary, topics, podcast_url, note_url),
+    }
     try:
         resp = requests.post(webhook_url, json=payload, timeout=15)
     except requests.RequestException as exc:  # noqa: BLE001 - logged, non-fatal
