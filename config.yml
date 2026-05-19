@@ -59,6 +59,9 @@ slack:
   # Slack post is only a digest; the note also carries methods, framing and
   # related papers. The "<bibtex-key>.md" filename is appended; unset to omit.
   note_base_url: "https://github.com/fabiogiglietto/fg-zettelkasten/blob/main/vault/Papers"
+  # A new paper's digest waits for its research-radio episode so the post can
+  # carry the 🎧 Listen link; after this many days it is posted regardless.
+  episode_wait_days: 2
 
 own_publications:
   # Fabio's own papers, processed by `update` as a second source alongside the

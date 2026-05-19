@@ -61,6 +61,19 @@ def _note_url(cfg: dict, bibtex_key: str) -> str | None:
     return f"{base.rstrip('/')}/{bibtex_key}.md" if base else None
 
 
+def _slack_wait_expired(entry: dict, max_days: float) -> bool:
+    """True once a paper has waited longer than `max_days` for its episode.
+
+    The fallback that lets a paper whose podcast episode never appears still
+    be announced. Measured from `last_processed` — when the paper was first
+    seen — so the wait does not restart on unrelated re-processing."""
+    ts = entry.get("last_processed")
+    if not ts:
+        return True
+    age = datetime.now(timezone.utc) - datetime.fromisoformat(ts)
+    return age.total_seconds() >= max_days * 86400
+
+
 def _claude(cfg: dict):
     """Build the Claude SDK wrapper from config (lazy import keeps --help cheap)."""
     from .claude_client import ClaudeClient
@@ -516,6 +529,10 @@ def cmd_update(cfg: dict, args) -> int:
             "content_hash": state_mod.content_hash(paper.abstract, podcast),
             "podcast_linked": podcast,
             "slack_posted": False,
+            # Queued for a #toread digest; the post itself is deferred until
+            # the paper's research-radio episode lands (see the Slack section
+            # below). Papers predating the Slack feature lack this flag.
+            "slack_pending": True,
             "last_processed": _now(),
         }
 
@@ -544,10 +561,42 @@ def cmd_update(cfg: dict, args) -> int:
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
 
-        # Post a Slack digest for genuinely-new papers only, once each. The
-        # `slack_posted` flag makes this idempotent across cron retries / a
-        # crash before save_state; a Slack failure is logged, never fatal.
-        if post_to_slack and paper in new_papers and not entry.get("slack_posted"):
+    # --- Slack digests ----------------------------------------------------
+    # Post each new paper's digest to #toread exactly once. The post is held
+    # until the paper's research-radio episode appears, so the digest can
+    # carry the 🎧 Listen link — research-radio publishes episodes a few hours
+    # after a paper is added, later than this `update` run. `episode_wait_days`
+    # caps the wait so a paper that never gets an episode is still announced.
+    # `slack_pending` marks a paper as awaiting its digest (set when first
+    # seen, cleared once posted); `slack_posted` keeps the post idempotent
+    # across retries.
+    #
+    # Papers predating this flag are classified by their `slack_posted` key:
+    # an entry that carries `slack_posted` was created by the Slack-era
+    # `update` path, so a never-posted one (Weinbrand-style: digest failed,
+    # `slack_posted: False`) is still owed a post and counts as pending; an
+    # entry with no `slack_posted` key at all is pre-Slack bootstrap backlog
+    # and must stay excluded so deploying this feature does not flood #toread.
+    if post_to_slack:
+        wait_days = cfg.get("slack", {}).get("episode_wait_days", 2)
+        for paper in papers:
+            entry = state["papers"].get(paper.id)
+            if entry is None or entry.get("slack_posted"):
+                continue
+            pending = entry.get("slack_pending")
+            if pending is None:
+                pending = "slack_posted" in entry  # Slack-era, never posted
+            if not pending:
+                continue
+            if (paper.id not in episodes
+                    and not _slack_wait_expired(entry, wait_days)):
+                continue  # hold for the episode (or the fallback deadline)
+            summary = summaries.get(paper.bibtex_key) or summarizer.load_summary(
+                summaries_dir, paper.bibtex_key
+            )
+            if summary is None:
+                print(f"  slack: no summary for {paper.bibtex_key}, skipping")
+                continue
             try:
                 posted = slack_client.post_paper(
                     os.environ["SLACK_WEBHOOK_URL"], paper, summary,
@@ -559,12 +608,13 @@ def cmd_update(cfg: dict, args) -> int:
                 print(f"  slack: unexpected error for {paper.bibtex_key} ({exc})")
             if posted:
                 entry["slack_posted"] = True
-                # Persist immediately: if a later paper in this loop crashes the
-                # run before the save_state at the end, this paper must not be
-                # re-posted on the next cron retry.
+                entry.pop("slack_pending", None)
+                # Persist immediately: if a later paper crashes the run before
+                # the save_state at the end, this one must not be re-posted on
+                # the next cron retry.
                 state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
                 print(f"  slack: posted {paper.bibtex_key} to #toread")
-            time.sleep(0.5)  # incoming-webhook rate limit is ~1/s
+                time.sleep(0.5)  # incoming-webhook rate limit is ~1/s
 
     # --- Own publications -------------------------------------------------
     # Fabio's own papers (from fabiogiglietto.github.io), processed as a
