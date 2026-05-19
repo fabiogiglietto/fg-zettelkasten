@@ -1994,18 +1994,6 @@
       "podcast_linked": true,
       "last_processed": "2026-05-19T06:44:40.451458+00:00"
     },
-    "bibtex:Choucair2025-a1f866d6": {
-      "note_path": "Papers/Choucair2025-a1f866d6.md",
-      "topics": [
-        "generative-ai-and-llms",
-        "computational-social-science-methods"
-      ],
-      "kind": "own",
-      "pdf_source": "abstract_only",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
-      "podcast_linked": false,
-      "last_processed": "2026-05-19T06:44:57.355234+00:00"
-    },
     "bibtex:Giglietto2024-cbeb3f70": {
       "note_path": "Papers/Giglietto2024-cbeb3f70.md",
       "topics": [
@@ -2030,18 +2018,6 @@
       "podcast_linked": false,
       "last_processed": "2026-05-19T06:46:02.012310+00:00"
     },
-    "bibtex:Marino2024-a678b03f": {
-      "note_path": "Papers/Marino2024-a678b03f.md",
-      "topics": [
-        "coordinated-inauthentic-behavior",
-        "information-disorder"
-      ],
-      "kind": "own",
-      "pdf_source": "abstract_only",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
-      "podcast_linked": false,
-      "last_processed": "2026-05-19T06:46:17.958549+00:00"
-    },
     "bibtex:Ghezzi2023-8bebc91f": {
       "note_path": "Papers/Ghezzi2023-8bebc91f.md",
       "topics": [
@@ -2053,28 +2029,6 @@
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-19T06:46:48.770777+00:00"
-    },
-    "bibtex:Bruns2023-039725ce": {
-      "note_path": "Papers/Bruns2023-039725ce.md",
-      "topics": [
-        "polarization-partisanship-hyperpartisan-media"
-      ],
-      "kind": "own",
-      "pdf_source": "abstract_only",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
-      "podcast_linked": false,
-      "last_processed": "2026-05-19T06:47:06.513566+00:00"
-    },
-    "bibtex:Bruns2023-41593a3f": {
-      "note_path": "Papers/Bruns2023-41593a3f.md",
-      "topics": [
-        "italian-elections-political-communication"
-      ],
-      "kind": "own",
-      "pdf_source": "abstract_only",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
-      "podcast_linked": false,
-      "last_processed": "2026-05-19T06:47:24.803782+00:00"
     },
     "bibtex:Giglietto2022-b30e8b4e": {
       "note_path": "Papers/Giglietto2022-b30e8b4e.md",
@@ -2099,18 +2053,6 @@
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-19T06:48:41.723271+00:00"
-    },
-    "bibtex:Giglietto2021-ff088d6a": {
-      "note_path": "Papers/Giglietto2021-ff088d6a.md",
-      "topics": [
-        "coordinated-inauthentic-behavior",
-        "problematic-health-information"
-      ],
-      "kind": "own",
-      "pdf_source": "drive",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
-      "podcast_linked": false,
-      "last_processed": "2026-05-19T08:13:45.836220+00:00"
     },
     "bibtex:Giglietto2017-4375de2f": {
       "note_path": "Papers/Giglietto2017-4375de2f.md",
