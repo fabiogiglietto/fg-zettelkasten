@@ -2050,8 +2050,20 @@
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-19T08:14:10.722375+00:00"
+    },
+    "bibtex:Weinbrand2026-sf": {
+      "note_path": "Papers/Weinbrand2026-sf.md",
+      "topics": [
+        "ai-hype-imaginaries-discourse",
+        "generative-ai-and-llms"
+      ],
+      "pdf_source": "drive",
+      "content_hash": "a8c315bf25659c324d894cfbe21f0220467a4709b53e2f83f34372563c667364",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-05-19T10:56:06.192606+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",
-  "papers_since_cluster": 4
+  "papers_since_cluster": 5
 }

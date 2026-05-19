@@ -41,7 +41,6 @@ Conceptualisation and empirical study of mis/disinformation, fake news, problema
 - [[Lieu2025-nl]]
 - [[Luhring2025-od]]
 - [[Mahl2026-hc]]
-- [[Marino2024-a678b03f]]
 - [[Marwick2025-ov]]
 - [[Mosleh2024-op]]
 - [[Nenno2025-xa]]

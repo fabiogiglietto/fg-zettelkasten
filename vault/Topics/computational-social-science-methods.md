@@ -20,7 +20,6 @@ Methodological reflections and toolbuilding for digital trace data, social netwo
 - [[Bastos2025-ya]]
 - [[Bouchaud2026-lr]]
 - [[Bruns2025-fz]]
-- [[Choucair2025-a1f866d6]]
 - [[Di-Marco2025-aa]]
 - [[DiGiuseppe2025-es]]
 - [[Fan2025-ut]]

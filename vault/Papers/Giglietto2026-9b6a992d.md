@@ -44,7 +44,7 @@ The authors identified 223 coordinated Facebook groups via the Vera AI workflow 
 
 ## Connections
 
-This work extends the Vera AI / CooRnet lineage of coordinated link-sharing detection — see [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]], [[Giglietto2024-cbeb3f70]], and [[Marino2024-a678b03f]] — by applying its alert pipeline to a non-political harm domain. On the generative-AI side, it complements studies of AI-generated images and synthetic media in influence and coordinated operations such as [[DiGiuseppe2026-pu]], [[DiGiuseppe2025-es]], [[Kansaon2025-id]], and [[Achmann-Denkler2026-lx]], and shares concerns with broader work on AI-enabled coordinated campaigns like [[Luceri2025-tr]] and [[Yang2025-iv]]. Its emphasis on algorithmic amplification over moderation resonates with platform-governance critiques in [[Hurcombe2025-cs]] and [[Graham2025-gp]].
+This work extends the Vera AI / CooRnet lineage of coordinated link-sharing detection — see [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]], [[Giglietto2024-cbeb3f70]], and Marino2024-a678b03f — by applying its alert pipeline to a non-political harm domain. On the generative-AI side, it complements studies of AI-generated images and synthetic media in influence and coordinated operations such as [[DiGiuseppe2026-pu]], [[DiGiuseppe2025-es]], [[Kansaon2025-id]], and [[Achmann-Denkler2026-lx]], and shares concerns with broader work on AI-enabled coordinated campaigns like [[Luceri2025-tr]] and [[Yang2025-iv]]. Its emphasis on algorithmic amplification over moderation resonates with platform-governance critiques in [[Hurcombe2025-cs]] and [[Graham2025-gp]].
 
 ## Podcast
 

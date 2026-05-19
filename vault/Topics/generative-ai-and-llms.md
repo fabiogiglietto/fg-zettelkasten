@@ -14,7 +14,6 @@ Use and validation of LLMs as research instruments for text classification, anno
 - [[Arminio2025-tw]]
 - [[Balluff2026-if]]
 - [[Brown2025-jk]]
-- [[Choucair2025-a1f866d6]]
 - [[DeVerna2025-dl]]
 - [[DiGiuseppe2025-es]]
 - [[DiGiuseppe2026-pu]]

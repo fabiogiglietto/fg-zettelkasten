@@ -13,7 +13,6 @@ Measurement of partisan attention, insularity, cross-partisan exposure and hyper
 - [[Anwar2024-34dba628]]
 - [[Bakshy2015-rn]]
 - [[Bennett2025-xs]]
-- [[Bruns2023-039725ce]]
 - [[Copland2025-em]]
 - [[Dehghan2026-sy]]
 - [[Efstratiou2025-gs]]
