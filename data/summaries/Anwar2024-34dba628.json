@@ -1,0 +1,37 @@
+{
+  "abstract": "This systematic literature review synthesizes 64 peer-reviewed articles published between 2016 and 2023 that examine user engagement with Facebook's 'Reactions' feature (Love, Haha, Wow, Sad, Angry), introduced in February 2016 as an expansion of the 'Like' button. The authors organize the literature into three major thematic clusters—introduction of Facebook reactions, politics and far-right groups, and other social issues (psychological/emotional, healthcare, business, miscellaneous)—and conduct a meta-analysis of patterns across topics. The review finds that lifestyle and entertainment content predominantly elicits positive reactions, while sociopolitical content draws a broader and more negative emotional spectrum, with emotionally charged posts attracting higher overall engagement regardless of valence.",
+  "key_claims": [
+    "Facebook Reactions function as paralinguistic digital affordances (PDA) that convey nuanced emotional meaning beyond what the 'Like' button allows, while retaining low cognitive effort.",
+    "Negative emotional content—particularly 'anger' reactions—is a consistent driver of higher user engagement in political communication, especially for populist and far-right actors.",
+    "Reaction distributions vary systematically by content type: lifestyle/entertainment content skews positive, while political and controversial content elicits broader, more negative emotional profiles.",
+    "'Love' and 'Haha' are generally positive indicators, while 'Sad' and 'Angry' are reliably negative, though 'Haha' and 'Wow' can carry ambiguous or negative meaning in political contexts (e.g., 'Wow' as disbelief).",
+    "Reactions can serve as a proxy for measuring controversy, sentiment polarity, and audience emotional response to news, junk news, and political messaging.",
+    "Despite extensive research, methodological fragmentation, inconsistent data sources, and cultural variability limit the comparability of findings across studies."
+  ],
+  "methods": [
+    "Five-step systematic review process following Briner and Denyer (2012): formulating research questions, finding studies, selecting and evaluating studies, analyzing findings, and reporting results.",
+    "Database searches in Scopus, Google Scholar, and other search engines conducted monthly from July to September 2023, using keywords 'Facebook' and 'Reaction' combined with various phrases and Boolean operators.",
+    "Inclusion criteria restricted to peer-reviewed journal articles and conference proceedings published between 2016 and 2023, yielding 64 articles.",
+    "Comparative naturalistic method (Armstrong, 2010) applied to read, summarize, and thematically code each article by research question, results, and conclusions.",
+    "Articles grouped into three major categories—(A) Introduction of Facebook Reactions, (B) Politics and Far-right Groups, (C) Other Social Issues—with finer sub-topics including political news, populism, healthcare, business, and emotion detection."
+  ],
+  "findings": [
+    "Of 64 articles, 6 addressed the introduction of Facebook Reactions, 19 covered politics and far-right groups, and 39 examined other social issues.",
+    "In political campaigns (e.g., Mexico, Brexit, EU Parliament elections), negative emotional appeals—especially anger—generated significantly more engagement and sharing than positive content.",
+    "Populist and far-right party leaders elicit disproportionately more 'angry' and 'haha' reactions than mainstream politicians, and anger-triggering communication boosts post-sharing.",
+    "Hyperpartisan and junk news content produces a bivalent emotional logic: 'love' and 'anger' rarely co-occur, while 'anger' tends to co-occur with 'sad' and 'wow'.",
+    "Reactions have been used successfully in computational studies to predict emotion classes, controversy (via entropy of reaction distributions), and sentiment, though mappings between reactions and emotion categories can be ambiguous.",
+    "Cross-linguistic studies (Sinhala, Bangla) demonstrate Reactions' utility as labels for sentiment analysis in low-resource languages.",
+    "Lifestyle and entertainment posts predominantly attract positive reactions, whereas sociopolitical posts attract a wider, more negative emotional spectrum.",
+    "Cultural context shapes reaction patterns, as shown in studies comparing China-critical, China-supporting, and neutral media audiences in Hong Kong."
+  ],
+  "contributions": [
+    "Provides the first comprehensive systematic synthesis of Facebook Reactions research spanning 2016–2023 across politics, social issues, health, and business domains.",
+    "Establishes a thematic taxonomy organizing a fragmented, interdisciplinary literature into coherent categories for future researchers.",
+    "Identifies cross-study regularities—particularly the role of negative emotion in driving engagement with political and populist content—across heterogeneous studies and contexts.",
+    "Highlights methodological gaps including the absence of unified data sources, limited cross-cultural comparative work, and the underexploration of event-based or tabloid topics.",
+    "Suggests directions for future research, including the use of large language models for categorizing reaction patterns and interdisciplinary applications in misinformation, fact-checking, and digital activism studies."
+  ],
+  "framing": "The review positions itself within social media studies, political communication, and digital sociology, drawing on concepts such as paralinguistic digital affordances (Hayes et al., 2016), platformisation/infrastructuralisation (Helmond et al., 2019), and social capital theory (Coleman, 1988). It engages with debates on emotional contagion, populist communication, and platform-mediated engagement, framing Facebook Reactions as a window into how lightweight affective cues shape online discourse and political mobilization.",
+  "pdf_source": "drive"
+}

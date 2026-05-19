@@ -1,0 +1,32 @@
+{
+  "abstract": "This study examines whether UK newspapers with different political orientations differ in how often they mention scientists holding more or less precautionary views on COVID-19 non-pharmacological interventions (NPIs). Using the MediaCloud database, the authors counted mentions of signatories of the Great Barrington Declaration (GBD, less precautionary) and the John Snow Memorandum (JSM, more precautionary) in ten UK newspapers, and supplemented this with co-authorship network analysis and Twitter sharing analysis. They find that right-leaning newspapers disproportionately cite GBD scientists while left-leaning newspapers disproportionately cite JSM scientists, and that the two scientific groups also segregate in academic co-authorship and social media sharing patterns.",
+  "key_claims": [
+    "UK newspaper coverage of COVID-19 scientists is politically polarized along the precautionary/less-precautionary divide.",
+    "Right-leaning UK newspapers preferentially mention GBD (less precautionary) signatories, while left-leaning newspapers preferentially mention JSM (more precautionary) signatories.",
+    "The two scientific groups form distinct bubbles not only in media coverage but also in academic co-authorship and Twitter-shared publications.",
+    "Unlike in the US, the UK 'less precautionary' scientists studied are mainstream researchers rather than fringe figures promoting unproven treatments or anti-vaccine views.",
+    "The phenomenon reflects political 'use' of science by media outlets more than evidence of scientists' own political bias."
+  ],
+  "methods": [
+    "Boolean searches in the MediaCloud UK National database (1/1/2020–20/10/2021) for the 46 GBD original signatories and the 15 authors of the JSM-associated Lancet letter, combined with COVID-related terms and institutional identifiers to filter homonyms.",
+    "Comparison of mention counts across ten UK newspapers classified by Brexit stance, 2019 election endorsement, and overall political leaning; statistical testing via two-tailed Fisher's exact tests with Benjamini–Hochberg correction.",
+    "Co-authorship network analysis of 2020–2021 Web of Science publications by the 61 signatories, visualized with VOSviewer.",
+    "Twitter analysis via the academic API of tweets (1/1/2020–16/11/2021) from 9 'more precautionary' and 8 'less precautionary' UK-based scientists, extracting and de-duplicating links to scientific publications shared at least three times."
+  ],
+  "findings": [
+    "MediaCloud searches returned 910 articles mentioning GBD names and 2553 mentioning JSM names across UK national news.",
+    "The GBD/JSM mention ratio was 1.343 in the Telegraph and 0.868 in the Express (right-leaning) vs. 0.195 in the Guardian and 0.248 in the Mirror (left-leaning); deviations from expected ratios were statistically significant for several outlets (e.g., Guardian, Independent, Telegraph, Mail; p<0.01 after correction).",
+    "Co-authorship analysis revealed a single cluster, formed exclusively by JSM-group authors; GBD authors did not form a connected co-authorship cluster among themselves with the JSM group.",
+    "On Twitter, the less-precautionary sample shared 78 unique publications and the more-precautionary sample 133, with only one publication shared by both groups (Martin, Hanna, and Dingwall 2020).",
+    "Most-tweeted papers were typically authored by members of the sharing group, suggesting Twitter was used for self-promotion of research rather than cross-group discussion.",
+    "None of the most-shared publications had 'red flags' and only one shared paper (a vaccine safety study) had been retracted, indicating both groups consist of mainstream rather than fringe scientists."
+  ],
+  "contributions": [
+    "Provides empirical evidence of political polarization in UK media coverage of COVID-19 scientific debate, extending findings beyond the predominantly US-focused literature.",
+    "Distinguishes the UK case—where polarization involves mainstream scientists with differing precautionary views—from the US case, where polarization often involves fringe or misinformation-adjacent actors.",
+    "Demonstrates a triangulated methodology combining media database mention counts, bibliometric co-authorship mapping, and Twitter link-sharing analysis to study science–media polarization.",
+    "Reframes the phenomenon as the political 'use' of science by media (after Floridi) rather than political bias of scientists themselves."
+  ],
+  "framing": "The paper situates itself within science communication and media studies literatures on the politicization of science, expert sourcing in journalism, and partisan media coverage of COVID-19. It engages with debates on scientific advocacy, public trust in science, and the distinction between misinformation and legitimate scientific disagreement, drawing on Albæk and Allgaier on journalist–expert relations and Floridi's distinction between the production and consumption purposes of information.",
+  "pdf_source": "drive"
+}

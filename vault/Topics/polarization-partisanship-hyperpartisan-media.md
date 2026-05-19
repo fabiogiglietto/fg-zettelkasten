@@ -10,14 +10,17 @@ Measurement of partisan attention, insularity, cross-partisan exposure and hyper
 
 ## Papers
 
+- [[Anwar2024-34dba628]]
 - [[Bakshy2015-rn]]
 - [[Bennett2025-xs]]
+- [[Bruns2023-039725ce]]
 - [[Copland2025-em]]
 - [[Dehghan2026-sy]]
 - [[Efstratiou2025-gs]]
 - [[Elfes2026-jb]]
 - [[Esau2025-tf]]
 - [[Gaisbauer2025-by]]
+- [[Ghezzi2023-8bebc91f]]
 - [[Green2025-ap]]
 - [[Hartmann2025-px]]
 - [[Kalsnes2025-zb]]

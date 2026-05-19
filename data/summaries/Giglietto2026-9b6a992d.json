@@ -1,0 +1,36 @@
+{
+  "abstract": "This study analyzes visual persuasion in coordinated online gambling promotion on Facebook, examining over 2,300 images from 223 coordinated public groups identified through the Vera AI project. Using a hybrid pipeline of large language models, embeddings, and clustering, the authors construct a typology of persuasive visual drivers and assess how generative AI has transformed gambling promotion. They document an exponential post-volume increase following ChatGPT's November 2022 launch and argue that generative AI intensifies established persuasion strategies while enabling industrial-scale dissemination that exploits regulatory gaps between paid and organic content on Meta platforms.",
+  "key_claims": [
+    "Coordinated Facebook gambling networks deploy a sophisticated, multi-layered system of visual persuasion drivers—aspirational wealth, manufactured trust, FOMO/urgency, cultural localization, gamification, celebrity endorsements, and social-relations exploitation—that work synergistically rather than in isolation.",
+    "Meta's asymmetric governance, which regulates paid gambling ads strictly but permits organic gambling content under permissive visibility rules, creates a regulatory grey zone exploited by coordinated networks to disseminate persuasive content at scale.",
+    "The launch of ChatGPT (November 2022) coincides with a statistically significant, exponential expansion of posting volume in these gambling networks, with a structural break detected in July 2023.",
+    "Generative AI does not replace existing persuasion drivers but intensifies and recombines them through immersive, surreal, hyper-real visual aesthetics and AI-generated characters that can circumvent influencer/celebrity accountability mechanisms.",
+    "Algorithmic amplification—not just content moderation—is the central mechanism enabling harmful gambling promotion to proliferate, requiring regulatory focus on amplification infrastructures rather than only post-hoc moderation."
+  ],
+  "methods": [
+    "Identification of a network of 223 coordinated Facebook public groups via the Vera AI alerts workflow, which detects coordinated link-sharing behavior (14-second time window, 0.995 edge weight) seeded from accounts that spread Meta third-party fact-checker-flagged content.",
+    "Collection of posts and embedded images via the Meta Content Library (MCL) and a custom client-side image-downloader tool, yielding 10,671 posts and 2,323 distinct images (2017–2024).",
+    "Use of OpenAI's gpt-4o-2024-08-06 to generate both denotative (literal) and connotative (cultural/affective) descriptions of each image using a structured prompt.",
+    "Conversion of descriptions into vector embeddings via OpenAI's text-embedding-3-small, followed by dimensionality reduction (UMAP) and density-based clustering (HDBSCAN) in R, performed separately for denotative (101 clusters) and connotative (51 clusters) descriptions.",
+    "Construction of a co-occurrence matrix across 366 cluster combinations, with qualitative content analysis by four coders of 85 combinations (≥6 images) until thematic saturation, producing a typology of persuasive drivers.",
+    "Quantitative analysis of monthly post volumes (Jan 2017–Sep 2024) using two-sample tests (t-test, Wilcoxon), interaction-term regression, and structural break detection, with ChatGPT's launch as the intervention point.",
+    "Qualitative pre/post-ChatGPT comparison of visual content to identify stylistic markers of AI-generated imagery (e.g., hyper-real lighting, symmetry, improbable symbolic compositions)."
+  ],
+  "findings": [
+    "Aspirational wealth and hyper-masculine status motifs appear in ~55% of analyzed cluster combinations; transactional 'trust proof' visuals (payment receipts, cash-out screenshots) in ~37%.",
+    "Identified drivers include aspirational wealth/hyper-masculine fantasy, manufactured trust via transactional proofs, FOMO/urgency conditioning, gamification with low entry barriers, celebrity endorsements (e.g., Manny Pacquiao), exploitation of social relations, and cultural/linguistic localization (Filipino, Urdu).",
+    "The Urdu-language cluster employs emotionally charged depictions of women in distress, family conflict, and traditional moral narratives to embed gambling within conservative cultural framings—an ideologically inflected promotional strategy.",
+    "Mean monthly posts rose from 2,121 (pre-ChatGPT) to 280,952 (post-ChatGPT), a 13,242% increase; median rose from 30 to 800,000. Regression confirmed both an immediate level shift and a steep slope change (p<0.0001), with a structural break in July 2023.",
+    "Post-2022 visuals display consistent markers of AI generation (hyper-real lighting, smoothed surfaces, dreamlike saturation, improbable symbolic juxtapositions such as sharks with slot machines) and combine multiple persuasion drivers within single images.",
+    "Two emblematic AI-generated posts achieved millions of views (4.3M and 3.3M) and thousands of shares across coordinated groups."
+  ],
+  "contributions": [
+    "Provides an empirically grounded typology of visual persuasion drivers used in coordinated organic gambling promotion on Facebook.",
+    "Demonstrates how generative AI functions as an accelerant and intensifier of existing persuasion architectures rather than introducing wholly new strategies.",
+    "Develops and documents a reproducible mixed-methods pipeline combining VLM-based image description, dual denotative/connotative embeddings, density-based clustering, and human qualitative coding for large-scale visual analysis.",
+    "Highlights the regulatory asymmetry in Meta's policies between paid and organic gambling content and identifies algorithmic amplification as a key governance blind spot.",
+    "Contributes a reflexive critique of using LLMs both as analytical instruments and as the very technologies enabling the manipulative content under study."
+  ],
+  "framing": "The paper positions itself within debates on platform capitalism, the attention economy, and algorithmic amplification (Tufekci, Gillespie, Zuboff), and within emerging research on coordinated inauthentic behavior, synthetic media, and AI-enabled influence operations (DiResta & Goldstein, Ferrara). It extends gambling-marketing scholarship by linking digital persuasion to generative AI aesthetics and to public-health and regulatory concerns about vulnerable users.",
+  "pdf_source": "drive"
+}

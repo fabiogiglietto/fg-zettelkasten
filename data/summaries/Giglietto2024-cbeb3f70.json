@@ -1,0 +1,37 @@
+{
+  "abstract": "This study compares the performance of OpenAI's text-embedding-3-large model against the Italian-specific BERT-based UmBERTo model for unsupervised clustering of Italian political news content shared on Facebook before the 2018 and 2022 Italian elections. Using K-means and HDBSCAN clustering algorithms (with and without UMAP dimensionality reduction), the author evaluates semantic coherence via an adapted Grimmer & King (2011) cluster quality metric, with thematic coherence ratings produced by a fine-tuned GPT-4o-mini model. Results consistently show that text-embedding-3-large outperforms UmBERTo in producing semantically coherent clusters across both datasets and clustering methods.",
+  "key_claims": [
+    "OpenAI's text-embedding-3-large produces more semantically coherent clusters than UmBERTo for Italian political news content.",
+    "The superiority of text-embedding-3-large holds consistently across both the 2018 and 2022 election datasets and across clustering algorithms.",
+    "The choice of clustering algorithm significantly affects performance: K-means generally outperforms HDBSCAN on this task.",
+    "Previous findings about LLM-based embeddings outperforming BERT-based models on English data extend to Italian political text.",
+    "A high HDBSCAN quality score can be associated with classifying large portions of the data as noise, raising concerns about the representativeness of such solutions."
+  ],
+  "methods": [
+    "Collected 84,874 URL entries (titles and descriptions) from the Meta URL Shares Dataset covering the periods before the 2018 and 2022 Italian elections, filtered via a custom binary political-content classifier to 27,487 (2018) and 8,308 (2022) political URLs.",
+    "Generated embeddings using OpenAI text-embedding-3-large (3,072 features) and umberto-commoncrawl-cased-v1 (768 features) on concatenated, cleaned title+description text.",
+    "Performed clustering using K-means (25–200 clusters) and HDBSCAN (min cluster sizes 10–200), with and without UMAP dimensionality reduction (5 or 10 components; 5, 15, or 30 neighbors), totaling 336 configurations × 5 repetitions = 1,680 solutions (1,650 valid).",
+    "Adapted Grimmer & King's (2011) clustering quality measure, comparing intra- vs. inter-cluster thematic similarity on a balanced sample of document pairs.",
+    "Built a sample of 4,167 document pairs (split intra-cluster, inter-cluster, noise) derived from 252 preliminary HDBSCAN solutions and consistency scoring.",
+    "Fine-tuned GPT-4o-mini on 2,506 human-coded pairs to rate thematic coherence on a 4-level scale (0–3), achieving 76.7% accuracy and 0.765 macro-F1.",
+    "Conducted ANOVA, multiple linear regression, and t-tests to assess effects of model, method, and UMAP on clustering quality."
+  ],
+  "findings": [
+    "In 2018, K-means with text-embedding-3-large (no UMAP) achieved the highest average quality score (1.862); HDBSCAN with UmBERTo (no UMAP) scored lowest (0.694).",
+    "In 2022, HDBSCAN with text-embedding-3-large (no UMAP) led with 1.681; HDBSCAN with UmBERTo (no UMAP) scored lowest (0.538).",
+    "Regression analyses showed the embedding model and clustering method had highly significant effects (p<2e-16), while UMAP had no significant effect; models explained 51.6% (2018) and 42.6% (2022) of variance.",
+    "K-means significantly outperformed HDBSCAN in both years (2018: 1.745 vs. 1.278; 2022: 1.347 vs. 0.959).",
+    "Clustering quality scores declined from 2018 to 2022 across all configurations.",
+    "A strong positive correlation (Pearson r = 0.775, p<0.001) was found between HDBSCAN quality scores and the proportion of points labeled as noise, sometimes exceeding 90%.",
+    "Fine-tuning GPT-4o-mini and running all inferences cost under $3 total, demonstrating affordability."
+  ],
+  "contributions": [
+    "Provides one of the first systematic comparisons of LLM-based vs. BERT-based embeddings for unsupervised clustering of Italian political text.",
+    "Extends prior English-language findings on LLM embedding superiority to the Italian language and political news domain.",
+    "Adapts the Grimmer & King (2011) cluster validity framework using a fine-tuned LLM as a scalable substitute for human coders.",
+    "Releases code and data publicly for replication and benchmarking of additional embedding models.",
+    "Highlights methodological caveats about HDBSCAN noise inflation when evaluating cluster quality."
+  ],
+  "framing": "The paper situates itself within computational social science and NLP-for-political-communication research, addressing the gap in fully unsupervised text analysis applied to Italian-language political content. It engages with debates about the comparative value of large language model embeddings versus established transformer models (BERT/RoBERTa variants) and builds on validation traditions from Grimmer & King's interpretive cluster evaluation methodology.",
+  "pdf_source": "drive"
+}

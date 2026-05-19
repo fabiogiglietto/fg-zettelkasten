@@ -12,6 +12,8 @@ Coordinated circulation of low-quality and hyperpartisan health content on socia
 
 - [[Bollenbacher2026-vz]]
 - [[Efstratiou2026-ij]]
+- [[Ghezzi2023-8bebc91f]]
+- [[Giglietto2022-0e951ac5]]
 - [[Lyons2026-ca]]
 - [[Rothut2026-or]]
 - [[Scalco2026-bd]]

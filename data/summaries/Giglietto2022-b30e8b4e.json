@@ -1,0 +1,32 @@
+{
+  "abstract": "This paper examines an unintended consequence of the 100-public-shares threshold used by Meta (Facebook) to anonymize its URL Shares Dataset, released in partnership with Social Science One. Analyzing monthly trends of URLs, shares, and comments across 46 countries between 2017 and 2021, the authors find a striking similarity in trajectories despite very different national contexts and events. They argue this reflects a platform-wide force—most plausibly changes in Feed ranking and 'Meaningful Social Interactions' (MSI) optimization—that altered the likelihood of URLs crossing the 100-share threshold. The paper warns researchers using the dataset for cross-country or longitudinal comparisons to account for this artifact.",
+  "key_claims": [
+    "The 100 public shares censoring threshold in Meta's URL Shares Dataset introduces a systematic distortion that goes beyond previously identified representativeness biases.",
+    "Monthly trends in URL counts, shares, and comments are remarkably similar across 46 very different countries, indicating a latent platform-wide driver rather than local events.",
+    "The apparent COVID-19 peak in shares/comments in early 2020 actually reflects a growth trend that began in the second half of 2019, predating the pandemic.",
+    "Changes in Feed optimization strategies (particularly MSI-related tweaks) are the most plausible source of this platform-wide force, because they affect a URL's probability of passing the 100-share threshold.",
+    "Cross-country comparative and diachronic studies using the URL Shares Dataset must control for this algorithmic effect, which can overwhelm the social signal researchers intend to study."
+  ],
+  "methods": [
+    "Descriptive analysis of monthly volumes of shares and comments across 46 countries in Meta's URL Shares Dataset (2017–2021), with 95% confidence intervals derived from the dataset's differential privacy noise.",
+    "Restricted analyses to URLs whose 'top_country' matched the user's country, focusing on interactions within two months of URL publication.",
+    "Development of a standardized shares-comments delta score (z-score scaled) to compare interaction patterns while accounting for differential-privacy-induced noise (detailed in Appendix A).",
+    "Hierarchical clustering of countries using Euclidean distances computed on scaled monthly comments, shares, standardized delta, and URL counts.",
+    "Interpretation supported by leaked internal Facebook documents and press reporting on Feed/MSI algorithm changes."
+  ],
+  "findings": [
+    "Global volumes of shares and comments declined through 2017, reversed in 2018, and peaked in February–March 2020 around the WHO COVID-19 pandemic declaration.",
+    "The ten top countries by share volume display nearly identical monthly trajectories of shares and comments, with India (and to a lesser extent Argentina) as the main exception due to a gap in the first half of 2019.",
+    "Even after restricting to local URLs and using the standardized delta score, cross-country similarity persists rather than diverges.",
+    "Hierarchical clustering yields four country clusters; differences are largely driven by two dataset artifacts—late inclusion of some countries and the 2019 India gap—rather than genuine local variation.",
+    "From mid-2019 onward, URL count trends converge across nearly all countries (except four African ones), suggesting an algorithmic acceleration preceding the COVID-19 peak."
+  ],
+  "contributions": [
+    "Documents a previously unrecognized cross-country, platform-wide artifact in Meta's URL Shares Dataset stemming from the 100-share threshold interacting with Feed ranking changes.",
+    "Provides a methodological caution and concrete evidence for researchers conducting comparative or longitudinal analyses on this widely used dataset.",
+    "Introduces a standardized shares-comments delta score that incorporates the dataset's differential-privacy noise structure (Appendix A).",
+    "Connects observable dataset trends to documented (and leaked) MSI Feed optimization changes, offering a plausible mechanism linking algorithmic governance to research data artifacts."
+  ],
+  "framing": "The paper situates itself within ongoing critical scholarship on the Social Science One / Meta URL Shares Dataset and on the methodological limits of platform-provided data for studying misinformation, exposure, and political communication. It contributes to debates about how privacy-preserving data engineering choices and algorithmic curation become entangled with the social signals researchers seek to measure.",
+  "pdf_source": "drive"
+}

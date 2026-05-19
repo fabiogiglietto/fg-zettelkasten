@@ -13,6 +13,7 @@ Studies examining how generative AI is narrated, imagined, and discursively fram
 - [[Dodds2026-df]]
 - [[Stanusch2026-ec]]
 - [[Wang2025-zy]]
+- [[Weinbrand2026-sf]]
 
 ## All papers (Dataview)
 

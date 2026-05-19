@@ -1,0 +1,39 @@
+{
+  "abstract": "This report documents the MINE-FACTS project, which developed and tested a content-agnostic prototype tool to help Italian fact-checkers identify problematic COVID-19 information circulating on Facebook. Building on prior work on Coordinated Link Sharing Behavior (CLSB) and the open-source CooRnet R package, the authors map Italian 'nefarious' social media actors at macro, meso, and micro levels, document the rise of an Italian covid-skeptic coordinated network, and analyze the strategies these actors use to evade platform mitigations. A one-month testing phase with Facta.news showed that the tool surfaces a significantly higher share of problematic content than the baseline rate seen in routine third-party fact-checking.",
+  "key_claims": [
+    "Coordinated Link Sharing Behavior (CLSB) is a reliable, content-agnostic signal for surfacing problematic information faster than fact-checkers can identify it manually.",
+    "An Italian covid-skeptic coordinated network emerged on Facebook as an offshoot of pre-existing political coordinated clusters (notably tied to League and Five Star Movement unofficial accounts) during the first wave of the pandemic.",
+    "Coordinated networks systematically adapt their tactics — e.g. placing links in first comments, 'link laundering' via reputable sources, cross-posting to image-macros, and exploiting religious or community groups — to circumvent platform enforcement.",
+    "Unprincipled 'celebrities' (e.g., Montagnier, Viganò, Kennedy) and covid-skeptic communities form a symbiotic amplification relationship, and false claims attributed to such figures often escape being labeled as false because the statement was genuinely made.",
+    "Problematic information tends to display a distinctive comments-to-shares ratio, with shares vastly outnumbering comments for non-problematic content, providing a useful ranking signal."
+  ],
+  "methods": [
+    "Use of Meta's URL Shares dataset (Facebook Open Research Initiative) to identify widely viewed, clicked, shared, and commented Italian links during February–June 2020.",
+    "Application of the CooRnet R package to detect Coordinated Link Sharing Behavior across Facebook Pages, public groups, and verified profiles, including iterative CooRnet runs that seed new detection cycles from links posted by previously identified coordinated accounts.",
+    "Seeding from the IFCN CoronaVirusFacts Alliance Database (212 Italian false claims from Pagella Politica, Facta.news, and Open) and CrowdTangle searches to build URL datasets.",
+    "Social network analysis with Force Atlas 2 layout to map macro-level clusters of coordinated accounts.",
+    "Qualitative meso-level case studies of four coordinated networks (Blogspot conspiracy blogs, Catholic-themed groups, GEDI/Repubblica link-laundering Pages, Mag24 network) using Camille François's Actors-Behavior-Content (ABC) framework.",
+    "Open-source intelligence techniques including WHOIS lookups, reverse WHOIS, Google AdSense/Analytics ID matching, and Wayback Machine snapshots to attribute domains and actors.",
+    "Micro-level content analysis of three problematic posts/links identified by the prototype and rated by Facta.news.",
+    "One-month operational test (November 2021) of the prototype dashboard with Facta.news, using a typology of veracity categories."
+  ],
+  "findings": [
+    "During February–June 2020, top-circulating Italian Facebook links included a Tgcom24 article reporting an 'American expert' claim that the virus was a bioweapon (15M+ views), Oltre TV pieces, and removed YouTube videos linking 5G to COVID; partisan, oversimplified explanations outperformed balanced ones.",
+    "Starting from 212 IFCN-listed false claims and 1,258 URLs, CooRnet identified 30 Pages (2.1M followers) and 308 public groups (2.73M members) engaged in CLSB; many grew dramatically in Feb–April 2020, and interactions on conspiracy groups roughly tripled during lockdown versus a smaller rise for non-conspiracy groups.",
+    "A second CooRnet iteration on October 2020 links produced 344 coordinated accounts forming a giant political component with 5 conspiracy sub-clusters; the largest covid-skeptic cluster overlaps with League- and Five Star Movement-affiliated accounts.",
+    "The final tracked network (2021 iteration on 403,071 links) contained 2,151 accounts (242 Pages, 1,900 groups) in 89 components, with bridging groups such as 'La Cruna dell'Ago' and 'MOVIMENTO DEI DISOCCUPATI E DEI PRECARI' connecting covid-skeptic, political, and religious clusters.",
+    "Case studies revealed: (1) a Blogspot conspiracy-blog network monetized via shared Google AdSense IDs and amplified through ordered cross-posting with links hidden in first comments; (2) a 62-group Catholic network occasionally injected with covid-skeptic/political content; (3) a 31-Page network performing 'link laundering' by driving traffic to reputable GEDI-group outlets (Repubblica, tvzap, caffeinamagazine); (4) the long-running Mag24 network, linked via WHOIS/AdSense traces to Francesco Soro, using image-macros with links placed in first comments.",
+    "During the November 2021 test, the prototype surfaced 70 links and 360 posts; about 40% were rated problematic, versus ~28% problematic in routine third-party fact-checking (72% rated true) — a significantly higher hit rate.",
+    "The ratio of comments to shares differs significantly between problematic and non-problematic content, with non-problematic content dominated by shares."
+  ],
+  "contributions": [
+    "A publicly documented, operational prototype tool integrating CooRnet, CrowdTangle, and IFCN data to support real-time fact-checking workflows in Italy.",
+    "An up-to-date map of Italian coordinated social media networks spreading COVID-19 misinformation across macro, meso, and micro scales.",
+    "Documentation of novel evasion tactics used by coordinated networks (first-comment link placement, image-macro link laundering, cross-platform monetization via shared AdSense IDs, shape-shifting Page rebranding).",
+    "Empirical evidence that content-agnostic, behavior-based detection can outperform content-based triage in surfacing problematic information for fact-checkers.",
+    "Methodological demonstration of iterative CooRnet seeding as a strategy for dynamically expanding coordinated-account inventories.",
+    "Detailed open-source-intelligence reconstructions linking specific domains, advertising IDs, and individuals behind several disinformation operations."
+  ],
+  "framing": "The work is positioned within studies of platform manipulation, coordinated inauthentic behavior, and the WHO-described COVID-19 'infodemic,' drawing on Allport and Postman's classical law of rumor and on the Camille François ABC framework for analyzing information operations. It extends the authors' Mapping Italian News research program and the CooRnet methodology by arguing for content-agnostic, behavioral approaches as a complement to traditional fact-checking and bot-detection literatures.",
+  "pdf_source": "drive"
+}
