@@ -51,6 +51,7 @@ python -m src.main bootstrap            # process the whole archive (run once)
 python -m src.main bootstrap --limit 5  # smoke test on the first 5 papers
 python -m src.main update               # daily incremental run
 python -m src.main update --recluster   # incremental + full re-cluster
+python -m src.main export-site          # export the vault to quartz/content/
 ```
 
 ## Vault layout
@@ -61,6 +62,23 @@ python -m src.main update --recluster   # incremental + full re-cluster
 
 Open `vault/` as an Obsidian vault. `data/` (state, topics, summaries) and
 `vault/` are committed; extracted PDF text is transient and never committed.
+
+## Website
+
+The vault is also published as a public website with [Quartz](https://quartz.jzhao.xyz/)
+— interactive graph, backlinks, search, and topic/structure landing pages — at
+**https://fabiogiglietto.github.io/fg-zettelkasten/**. The `update-vault` GitHub
+Action rebuilds and deploys it on every run.
+
+```bash
+python -m src.main export-site                 # vault/ -> quartz/content/
+cd quartz && npm ci && npx quartz build --serve # preview at localhost:8080
+```
+
+`export-site` is deterministic (no LLM): it copies the vault notes into
+`quartz/content/`, strips Obsidian-only `dataview` blocks, and generates the
+homepage. The vault itself is never modified. Quartz needs Node 22+; the
+generated `quartz/content/` and `quartz/public/` are not committed.
 
 ## Status
 

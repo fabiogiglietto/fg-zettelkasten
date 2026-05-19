@@ -6,6 +6,7 @@ Usage:
     python -m src.main summarize
     python -m src.main update [--recluster]
     python -m src.main recluster
+    python -m src.main export-site
     python -m src.main slack-test <bibtex-key>
 
 See README.md and the implementation plan for architecture detail.
@@ -787,6 +788,27 @@ def cmd_fix_links(cfg: dict, args) -> int:
     return 0
 
 
+def cmd_export_site(cfg: dict, args) -> int:
+    """Export the vault to quartz/content/ for the public Quartz website."""
+    from . import site_export, topics_client, state as state_mod
+
+    vault = cfg["vault"]
+    vault_dir = Path(_abs(vault["path"]))
+    subdirs = [vault["papers_dir"], vault["topics_dir"], vault["structures_dir"]]
+    content_dir = ROOT / "quartz" / "content"
+
+    topics = topics_client.load_topics(_abs(cfg["paths"]["topics_file"]))
+    state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
+
+    stats = site_export.export_site(vault_dir, content_dir, subdirs, topics, state)
+    print(
+        f"export-site: {stats['notes']} note(s) -> "
+        f"{content_dir.relative_to(ROOT)} "
+        f"({stats['stripped']} with dataview blocks stripped)"
+    )
+    return 0
+
+
 def cmd_slack_test(cfg: dict, args) -> int:
     """Post one paper's digest to Slack — verify Block Kit rendering / re-post."""
     from . import (
@@ -848,6 +870,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("refresh-topics", help="rebuild the topic register from github.io")
     sub.add_parser("recluster", help="force a full re-cluster")
     sub.add_parser("fix-links", help="repair/de-link unresolved [[wikilinks]] in the vault")
+    sub.add_parser("export-site", help="export the vault to quartz/content/ for the website")
 
     p_slack = sub.add_parser(
         "slack-test", help="post one paper's digest to the Slack webhook"
@@ -867,6 +890,7 @@ def main(argv=None) -> int:
         "refresh-topics": cmd_refresh_topics,
         "recluster": cmd_recluster,
         "fix-links": cmd_fix_links,
+        "export-site": cmd_export_site,
         "slack-test": cmd_slack_test,
     }
     return commands[args.command](cfg, args) or 0

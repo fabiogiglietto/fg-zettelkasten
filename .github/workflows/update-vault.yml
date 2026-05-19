@@ -18,6 +18,8 @@ on:
 
 permissions:
   contents: write
+  pages: write          # deploy the Quartz site to GitHub Pages
+  id-token: write       # required by actions/deploy-pages
 
 # Avoid overlapping runs (dispatch + cron)
 concurrency:
@@ -27,6 +29,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - uses: actions/checkout@v4
 
@@ -73,3 +76,28 @@ jobs:
           token: ${{ secrets.PIPELINE_DISPATCH_TOKEN }}
           repository: fabiogiglietto/research-radio
           event-type: pipeline-tick
+
+      # Publish the vault as a public website (Quartz -> GitHub Pages).
+      # Built fresh from the working tree just committed above; the generated
+      # HTML is never committed.
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Export vault to Quartz content
+        run: python -m src.main export-site
+
+      - name: Build Quartz site
+        working-directory: quartz
+        run: |
+          npm ci
+          npx quartz build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

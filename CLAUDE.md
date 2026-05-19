@@ -21,6 +21,7 @@ pip install -r requirements.txt
 python -m src.main refresh-topics      # rebuild the topic register from github.io
 python -m src.main bootstrap [--limit N]
 python -m src.main update [--recluster]
+python -m src.main export-site         # export vault/ -> quartz/content/ for the website
 ```
 
 ## Architecture
@@ -34,6 +35,7 @@ python -m src.main update [--recluster]
 - `src/summarizer.py`      — full PDF -> structured summary (shared artifact)
 - `src/themes.py`          — topic-anchored assignment + emergent sub-themes
 - `src/note_builder.py`    — render Papers/, Topics/, Structures/ markdown
+- `src/site_export.py`     — export the vault to `quartz/content/` for the website
 - `src/state.py`           — data/state.json persistence
 
 ## Conventions
@@ -54,6 +56,12 @@ python -m src.main update [--recluster]
 - Derived notes (Topics/, Structures/) are regenerated, never appended to.
 - Inputs are fetched live from published URLs, never local sibling working copies.
 - Run as a module: `python -m src.main`. `src/` modules use relative imports.
+- Website: `quartz/` vendors Quartz v4 (Node 22+) to publish the vault to GitHub
+  Pages. `export-site` regenerates `quartz/content/` from `vault/` — deterministic,
+  no LLM, never modifies the vault. Generated dirs (`quartz/content/`,
+  `quartz/public/`) are gitignored; the build + deploy run in `update-vault.yml`.
+  `quartz/util/glob.ts` carries one vendored edit (`gitignore: false`) — re-apply
+  it on Quartz upgrades.
 
 ## Style
 

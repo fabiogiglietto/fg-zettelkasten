@@ -26,3 +26,11 @@ Thumbs.db
 
 # Obsidian editor / session state — the vault content is committed, the UI state is not
 vault/.obsidian/
+
+# Quartz — content is exported from vault/ and the site is built fresh in CI;
+# none of it is committed. (quartz/util/glob.ts has a vendored edit so the
+# build still finds quartz/content/ despite this rule — see that file.)
+quartz/content/
+quartz/public/
+quartz/node_modules/
+quartz/.quartz-cache/
