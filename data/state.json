@@ -2062,8 +2062,17 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-19T10:56:06.192606+00:00"
+    },
+    "bibtex:UnknownUnknown-db": {
+      "note_path": "Papers/UnknownUnknown-db.md",
+      "topics": [],
+      "pdf_source": "drive",
+      "content_hash": "cdd122b20c58deb3ec4b85797dd79293f1a57d1b7f46403fe29a5b1caa6ab7af",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-05-20T18:50:58.353821+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",
-  "papers_since_cluster": 5
+  "papers_since_cluster": 6
 }
