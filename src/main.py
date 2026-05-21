@@ -54,11 +54,13 @@ def _now() -> str:
 
 
 def _note_url(cfg: dict, bibtex_key: str) -> str | None:
-    """GitHub URL of a paper's vault note, for the Slack digest's Full-note link.
+    """Live website URL of a paper's note, for the Slack digest's Full-note link.
 
+    The bibtex key is also the Quartz page slug, so the published URL is just
+    `note_base_url/<bibtex_key>` (extensionless — Quartz serves no `.md`).
     Returns None when `slack.note_base_url` is unset so the link is omitted."""
     base = cfg.get("slack", {}).get("note_base_url")
-    return f"{base.rstrip('/')}/{bibtex_key}.md" if base else None
+    return f"{base.rstrip('/')}/{bibtex_key}" if base else None
 
 
 def _slack_wait_expired(entry: dict, max_days: float) -> bool:
