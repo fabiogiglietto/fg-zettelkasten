@@ -55,10 +55,13 @@ slack:
   # Own publications are never posted — they are not a reading list.
   enabled: true
   channel: "#toread"   # informational only; the webhook is bound to its channel
-  # Each digest links to the paper's full note in this repo on GitHub — the
+  # Each digest links to the paper's full note on the live Quartz website — the
   # Slack post is only a digest; the note also carries methods, framing and
-  # related papers. The "<bibtex-key>.md" filename is appended; unset to omit.
-  note_base_url: "https://github.com/fabiogiglietto/fg-zettelkasten/blob/main/vault/Papers"
+  # related papers. The "<bibtex-key>" slug is appended; unset to omit.
+  # Note: the digest is posted earlier in the update-vault run than the Quartz
+  # deploy, so a brand-new note's link 404s for the ~2-5 min until Pages goes
+  # live — an accepted, self-healing window, not a bug.
+  note_base_url: "https://fabiogiglietto.github.io/fg-zettelkasten/Papers"
   # A new paper's digest waits for its research-radio episode so the post can
   # carry the 🎧 Listen link; after this many days it is posted regardless.
   episode_wait_days: 2
