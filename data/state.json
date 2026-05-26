@@ -2104,8 +2104,20 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-26T17:31:41.341628+00:00"
+    },
+    "bibtex:Hepp2026-oi": {
+      "note_path": "Papers/Hepp2026-oi.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "computational-social-science-methods"
+      ],
+      "pdf_source": "drive",
+      "content_hash": "b1e3b6194e8cbab60c8ce2915e70311e7ba480d42b4aaa94f61470efc86263a2",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-05-26T19:42:35.750848+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",
-  "papers_since_cluster": 9
+  "papers_since_cluster": 10
 }

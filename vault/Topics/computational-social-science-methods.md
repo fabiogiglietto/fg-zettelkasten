@@ -30,6 +30,7 @@ Methodological reflections and toolbuilding for digital trace data, social netwo
 - [[Giglietto2024-cbeb3f70]]
 - [[Green2025-ap]]
 - [[Heiss2026-qv]]
+- [[Hepp2026-oi]]
 - [[Iannucci2025-eg]]
 - [[Inacio-da-Silva2026-zf]]
 - [[Lai2024-to]]

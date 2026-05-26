@@ -27,6 +27,7 @@ Critical analysis of platform policies (Meta's political content reduction, Crow
 - [[Giglietto2022-b30e8b4e]]
 - [[Heiss2026-qv]]
 - [[Helmond2026-ll]]
+- [[Hepp2026-oi]]
 - [[Hurcombe2025-cs]]
 - [[Inacio-da-Silva2026-zf]]
 - [[Jurg2025-ur]]
