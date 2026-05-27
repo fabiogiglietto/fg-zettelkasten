@@ -400,9 +400,9 @@
         "generative-ai-and-llms"
       ],
       "pdf_source": "drive",
-      "content_hash": "dc93a234cead4d4a008e359a04084106255cc26da6f06f240b20f4b6564d2a95",
+      "content_hash": "879449da3f1b2d3b5122e0b143f9405b90b9b5b62e3ceb47a07eec124fd1c94f",
       "podcast_linked": true,
-      "last_processed": "2026-05-17T10:31:30.241042+00:00"
+      "last_processed": "2026-05-27T20:15:12.554243+00:00"
     },
     "bibtex:Rossini2026-jn": {
       "note_path": "Papers/Rossini2026-jn.md",
@@ -2128,8 +2128,19 @@
       "content_hash": "6f4eb4ac163f1b9e3b9d0d3227aef04d6887c04366a77a62f0b50235c643e011",
       "podcast_linked": false,
       "last_processed": "2026-05-27T10:58:35.012481+00:00"
+    },
+    "bibtex:Vertesi2026-lv": {
+      "note_path": "Papers/Vertesi2026-lv.md",
+      "topics": [
+        "ai-hype-imaginaries-discourse"
+      ],
+      "pdf_source": "drive",
+      "content_hash": "b58bcb74f7f3c9922f7569bb048147011a7dda30b6b66cc599a3e8efa8a14305",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-05-27T20:15:12.554222+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",
-  "papers_since_cluster": 10
+  "papers_since_cluster": 11
 }
