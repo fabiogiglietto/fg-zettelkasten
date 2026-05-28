@@ -1,0 +1,36 @@
+{
+  "abstract": "This essay describes the design and validation of an LLMs-in-the-loop research pipeline for analyzing political content shared on Facebook during the 2018 and 2022 Italian general elections. The authors integrate OpenAI models at three stages — fine-tuning a binary political classifier, generating embeddings for clustering links, and producing descriptive cluster labels — and articulate a three-phase validation protocol involving expert human coders. They reflect on the methodological challenges of validating fully LLM-integrated pipelines, including the general-purpose nature of LLMs, the variable granularity of LLM-generated narratives, and the difficulty of finding human evaluators capable of assessing model outputs.",
+  "key_claims": [
+    "Fully LLM-integrated NLP pipelines require novel, tailored validation protocols that differ from those used for fully fine-tuned transformer models.",
+    "LLMs produce clusters/narratives with varying granularity (from broad topics to specific journalistic stories), which complicates the theoretical definition of 'narrative' and demands multi-level, adaptable validation guidelines.",
+    "Because LLMs often outperform low-skilled crowd workers, crowdsourced validation (e.g., MTurk, Fiverr) is inadequate; expert annotators with domain, cultural, and linguistic knowledge are necessary.",
+    "Each LLM application within a pipeline (classification, clustering, labeling) needs its own task-specific validation step rather than a single overarching evaluation.",
+    "Early, competent adoption of LLMs by political communication researchers can help counter their potential misuse for manipulation and disinformation."
+  ],
+  "methods": [
+    "Construction of a five-step LLMs-in-the-loop pipeline: data gathering, political classification, embedding, clustering, and cluster labeling.",
+    "Dataset of 84,874 URLs from the Meta URL Shares Dataset for Italian-viewed Facebook links around the 2018 and 2022 Italian elections, using only titles and descriptions.",
+    "Fine-tuning of GPT-3 Curie as a binary political/non-political classifier using 3,800 manually coded URLs annotated by 7 Italian political communication scholars (Krippendorff's alpha = 0.812).",
+    "Comparison of embedding models (text-embedding-ada-002, e5-mistral-7b-instruct, text-embedding-3-large) and clustering algorithms (k-means, DBSCAN, HDBSCAN, GenieClust, Kwikbucks), ultimately using k-means with Lloyd's algorithm on 3,072-dimensional embeddings.",
+    "Bayesian optimization of cluster count (2–200) using Silhouette score and Hplus metric, yielding 199 clusters for 2018 and 198 for 2022.",
+    "Cluster labeling via GPT-4-turbo API with engineered prompts and density-based sampling of cluster items (8,000-token cap, ~84% coverage per cluster).",
+    "Three-phase human validation: (1) standard precision/recall/F1 for the classifier; (2) pairwise cluster coherence evaluation by six expert coders using a 0–4 scale plus an 'uncertain' category; (3) cluster-label accuracy evaluation using a three-level scale (misfit, partial fit, good fit) across four criteria (thematic alignment, implications, content coverage, contextual alignment)."
+  ],
+  "findings": [
+    "The fine-tuned binary classifier achieved F1 = 0.897, precision = 0.911, recall = 0.883 on the held-out validation set.",
+    "The classifier identified 54% of 2018 posts (27,487 URLs) and 53% of 2022 posts (8,308 URLs) as political.",
+    "text-embedding-3-large outperformed alternative embedding models on internal clustering metrics for Italian political news.",
+    "Cluster granularity varied substantially — from broad policy areas to single journalistic stories — requiring a multi-level coherence rubric.",
+    "Crowdsourced annotators (initially considered via Fiverr) were judged inadequate because LLMs surpass them in nuanced political-context tasks; expert PhD-level coders were used instead.",
+    "Total API cost for labeling 397 clusters across both elections was approximately $30."
+  ],
+  "contributions": [
+    "Presents a concrete, end-to-end LLMs-in-the-loop pipeline for political discourse analysis on social media in a non-English (Italian) context.",
+    "Proposes a three-phase, task-specific validation protocol tailored to LLM-integrated workflows, with publicly shared codebooks (cluster coherence and label accuracy rubrics).",
+    "Articulates three core validation challenges — LLM general-purposeness, narrative granularity, and limits of human assessment — and offers practical responses to each.",
+    "Provides reusable annotation guidelines and prompt templates (in appendices) for researchers adopting similar pipelines.",
+    "Contributes methodological reflection to the emerging literature on repurposing generative AI for social science research."
+  ],
+  "framing": "The paper situates itself within the growing methodological debate on integrating generative AI and LLMs into computational social science and political communication research. It engages with literatures on automated content analysis, topic modeling, narrative theory (Genette, Piper et al., Bradshaw et al.), and human evaluation in NLP, positioning LLMs-in-the-loop pipelines as both an opportunity and a validation challenge for studying political discourse on social media.",
+  "pdf_source": "drive"
+}

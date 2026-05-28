@@ -10,7 +10,7 @@ Theoretical backbone drawing on Luhmann and sociocybernetics to frame networked 
 
 ## Papers
 
-_No papers yet._
+- [[Giglietto2019-e9be81c1]]
 
 ## All papers (Dataview)
 

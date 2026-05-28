@@ -1,0 +1,37 @@
+{
+  "abstract": "This paper investigates 'coordinated link sharing behavior' on Facebook during the run-up to the 2018 Italian general election and the 2019 European election, arguing that disinformation research should shift from content/actor detection to detecting coordinated collective action. Using CrowdTangle data combined with two datasets of Italian political news stories, the authors develop an algorithm to identify networks of pages, groups, and verified profiles that share the same URLs near-simultaneously and repeatedly. They find that such coordinated networks are significantly more likely to share problematic domains and to include entities previously flagged as disinformation sources, and that networks composed partly of deceptive 'non-political' entities show distinct sharing strategies compared to openly political networks.",
+  "key_claims": [
+    "Disinformation research should adopt an ecological, action-based focus on coordinated collective behavior rather than relying solely on content-veracity or bad-actor detection.",
+    "The concept of 'coordinated inauthentic behavior' (as used by Facebook) can be grounded in existing scholarship on online coordination and authenticity, and operationalized empirically.",
+    "Coordinated link sharing behavior is empirically associated with the spread of problematic information during Italian elections.",
+    "The proportion of openly political versus deceptively non-political entities in a coordinated network correlates with different content-sharing strategies and likely different motivations (ideological vs. commercial).",
+    "Coordinated networks tend to assume one of two structural configurations—highly centralized or highly clustered—though this dichotomy is not explained by politicalness or sharing concentration."
+  ],
+  "methods": [
+    "Compiled two datasets of Italian political news stories from Google News, GDELT, and the Twitter Streaming API for the six months before the 2018 general election (N=84,815) and 2019 European election (N=164,760).",
+    "Collected public Facebook/Instagram shares of those URLs within 7 days of publication via the CrowdTangle API link endpoint (107,842 shares by 6,215 entities in 2018; 222,877 shares by 8,148 entities in 2019).",
+    "Developed a two-step algorithm (R code released on GitHub) that (1) estimates a 'near-simultaneous sharing' time threshold based on the median time for the fastest 10% of URLs to reach 50% of their shares, and (2) extracts entities that repeatedly co-share above the 90th percentile of frequency.",
+    "Cross-referenced shared domains against blacklists from Italian fact-checking organizations (butac.it, bufale.net, bufalopedia.it, pagellapolitica.it) totaling 376 problematic domains, and entities against an Avaaz-derived list of 87 problematic Facebook pages.",
+    "Used Risk Ratios to compare proportions of problematic content between coordinated and non-coordinated entities.",
+    "Qualitatively coded each coordinated entity's self-presentation (description, cover photo, profile picture) as political, non-political, or mixed; computed a politicalness score per network.",
+    "Measured domain-sharing concentration via the Gini coefficient and tested its association with politicalness using Spearman rank correlations.",
+    "Computed degree centralization and clustering coefficient on networks with more than two nodes to characterize structural properties."
+  ],
+  "findings": [
+    "Identified 24 strongly coordinated networks (82 entities) in 2018 and 92 networks (606 entities) in 2019.",
+    "Problematic domains were shared 1.79 times more often by coordinated than non-coordinated entities in 2018 (95% CI [1.08, 2.96]) and 2.22 times more often in 2019 (95% CI [1.35, 3.67]).",
+    "Coordinated entities were 19.24 times (2018) and 23.19 times (2019) more likely to appear on the Avaaz list of problematic Facebook pages than non-coordinated entities.",
+    "In 2018, 44% of coordinated networks were composed entirely of political entities, 27% non-political, and 29% mixed; in 2019 the mixed category dominated (64%).",
+    "A strong negative Spearman correlation was found between a network's politicalness and the concentration of domains it shared (r_s = -0.76 in 2018; r_s = -0.63 in 2019), indicating that more openly political networks shared a wider variety of sources while non-political networks tended to amplify a narrow set of (often problematic) domains.",
+    "Network structures clustered into two ideal types—highly centralized (star-like) or highly clustered—but neither politicalness nor Gini coefficient explained which configuration a network adopted."
+  ],
+  "contributions": [
+    "Frames Facebook's operational term 'coordinated inauthentic behavior' within scholarly literature on online coordination, participatory culture, and authenticity/cloaked identities.",
+    "Introduces a reproducible algorithm and open-source R implementation for detecting 'coordinated link sharing behavior' from CrowdTangle data.",
+    "Provides empirical evidence linking coordinated sharing patterns to problematic information during two Italian elections, supporting an action-based approach to disinformation detection.",
+    "Distinguishes ideological versus commercial motivations of coordinated networks via the relationship between self-presentation (political vs. deceptive non-political) and domain-sharing breadth.",
+    "Surfaces structural patterns (centralization vs. clustering) in coordinated networks that pose new questions for future research."
+  ],
+  "framing": "The paper positions itself within media manipulation and disinformation studies, engaging debates over the limits of content-based and actor-based detection approaches (Lazer et al., Wardle & Derakhshan, Marwick & Lewis, Jack). It draws on participatory culture and connective action scholarship (Jenkins, Bennett & Segerberg) and on work on cloaked websites and computational propaganda (Daniels, Farkas, Woolley & Howard) to argue for an ecological, behavior-centered reframing of disinformation research.",
+  "pdf_source": "drive"
+}

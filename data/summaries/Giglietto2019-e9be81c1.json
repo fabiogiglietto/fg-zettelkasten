@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper critiques the dominant scholarly focus on the intent of content creators when defining and studying 'fake news,' arguing that such a creator-centric view is inadequate for the contemporary hybrid news system. Drawing on second-order cybernetics (von Foerster, Bateson) and Chadwick's hybrid media system framework, the authors propose shifting analytical attention to propagators and the dynamics of propagation. They develop a three-level analytical model—micro (individual judgments of truthfulness), meso (a four-cell matrix of injector/propagator judgment combinations), and macro (emergent global cascades)—and illustrate it with three real-world cases of misleading content circulation.",
+  "key_claims": [
+    "Existing typologies of 'fake news' over-rely on the creator's intent and cannot adequately account for how False information actually circulates in hybrid news systems.",
+    "Analytical attention should shift from creators/injectors to propagators and the chain of judgments and decisions that drive circulation.",
+    "Information is observer-dependent ('a difference that makes a difference'); each propagator's judgment about truth and the choice to share reshapes the cycle.",
+    "False information cycles cannot be reduced to a single typology (e.g., disinformation vs. misinformation): they are composite cascades combining multiple propagation types.",
+    "The label 'fake news' is itself inherently divisive and rhetorically positions its user as a truth-claimer, making it analytically and politically problematic.",
+    "Societal consensus about the truthfulness of a piece of information is unlikely; coexisting opposing beliefs is the normal state of the hybrid news system."
+  ],
+  "methods": [
+    "Conceptual and theoretical paper rather than empirical study.",
+    "Literature review of classic and contemporary work on disinformation, misinformation, rumor, propaganda, conspiracy theories, satire, parody, and 'bullshit'.",
+    "Synthesis with second-order cybernetics (von Foerster), Bateson's information theory, Chadwick's hybrid media system, and Luhmann's systems theory.",
+    "Construction of a three-level analytical framework (micro/meso/macro) and a 2x2 matrix typology of propagation based on injector and propagator judgments.",
+    "Illustrative case analysis of three episodes: the Veerender Jubbal photoshopped image after the 2015 Paris attacks; Chris Lamb's satirical Huffington Post piece on Trump and the Statue of Liberty; and the 2016 misidentified KKK 'march' photo in Mebane, NC."
+  ],
+  "findings": [
+    "Most existing definitions treat the 'generative act' of creating false content as decisive, neglecting subsequent propagation dynamics.",
+    "Four propagation typologies emerge from the matrix: pure disinformation, misinformation propagated through disinformation, disinformation propagated through misinformation, and pure misinformation.",
+    "At the micro level, actors judge truthfulness based on source (authority, proximity), content (confirmation bias, congruence, relevance), and context (information overload, limited attention, 'tweet first, verify later').",
+    "Authority and proximity increasingly overlap in social media, weakening expertise-based source evaluation.",
+    "The illustrative cases show that the original intent behind False content does not determine its downstream cycle: satirical, mistaken, and deceptive items can all be propagated as true by mainstream actors.",
+    "Global cascades are emergent phenomena that can be observed as autonomous, even though composed of heterogeneous individual propagations."
+  ],
+  "contributions": [
+    "Reframes 'fake news' research by foregrounding propagators rather than creators as central analytical objects.",
+    "Introduces a second-order cybernetic perspective into sociological and communication studies of misinformation.",
+    "Proposes a 2x2 typology of propagation acts based on injector and propagator truth judgments, capable of accommodating satire, bullshit, and other hard-to-classify cases.",
+    "Articulates a multi-level (micro/meso/macro) analytical model linking individual judgment, dyadic propagation, and emergent cascades.",
+    "Distinguishes lowercase 'true/false' (actor judgments) from capitalized 'True/False' (researcher's external assessment), clarifying the constructivist-but-not-relativist stance.",
+    "Provides a theoretical critique of the term 'fake news' itself as rhetorically loaded."
+  ],
+  "framing": "The paper positions itself at the intersection of sociology of communication, journalism studies, and philosophy of information, engaging the post-2016 'fake news' debate. It draws explicitly on second-order cybernetics (von Foerster, Bateson, Shannon), Chadwick's hybrid media system, and Luhmann's systems theory, while responding to Turner's call for multi-level sociological theorizing.",
+  "pdf_source": "drive"
+}

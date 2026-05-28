@@ -1,0 +1,34 @@
+{
+  "abstract": "This paper develops and evaluates a Facebook ad-based procedure for recruiting survey respondents in niche, hard-to-reach populations, using supporters of conspiracy theories in Italy as a test case. The authors implemented recent Facebook marketing features—including Facebook Pixel conversion tracking, URL parameter passing, and Pixel-based custom audience exclusion—to better measure response rates and control sample quality. Across a 53-day campaign targeting 12 demographic-by-interest micro-segments of Italian users interested in vaccine controversies and chemtrails conspiracies, they recruited 1,069 valid respondents at €0.46 each, with a 3.28% conversion rate. While the procedure demonstrated efficiency, its effectiveness in reaching ideologically distinctive respondents (compared to a 2016 ITANES CAWI benchmark) was inconclusive.",
+  "key_claims": [
+    "Facebook's advertising platform offers a viable, controllable, and affordable alternative to panel-based CAWI, snowball sampling, and app-based methods for recruiting survey respondents tied to their digital traces.",
+    "Recent Facebook marketing tools (Pixel, conversion optimization, custom audience exclusion, URL parameters) enable a more precise 'conversion rate' metric for response rates than the click-through rates (CTRs) used in prior studies.",
+    "The procedure efficiently reached niche populations at low monetary and time cost, supporting its use as a blueprint for future Facebook ad-based surveys.",
+    "Evidence that Facebook 'interest' targeting effectively identifies users holding controversial, stigmatized opinions (specifically conspiracy beliefs) is inconclusive: the Facebook-recruited sample did not show significantly higher conspiracy endorsement than a general-population CAWI benchmark."
+  ],
+  "methods": [
+    "Online non-probability quota survey of Italian adults (age/gender quotas from National Institute for Statistics) targeted via Facebook ads to users tagged with the interests 'vaccines controversy' and 'chemtrails conspiracy' (the more generic 'moon landing' interest was excluded).",
+    "12 demographic micro-target audiences (6 age cohorts × 2 genders), each receiving 4 ad creatives sharing a fixed template (48 ads initially, plus 36 added later) built around stock images and short engaging copy emphasizing brevity and anonymity.",
+    "Survey hosted on TypeForm PRO via a dedicated domain (socialmediaitalia.news), launched from a purpose-built Facebook page; campaign optimized for conversions rather than clicks.",
+    "Facebook Pixel installed on the survey thank-you page to track completions, auto-exclude completers from further ads, and build a custom audience; URL parameters carrying age/gender were used to detect and exclude respondents arriving via social sharing.",
+    "Cleaning of responses by removing duplicate IPs (45) and parameter-less responses from sharing (26), then post-stratification weighting to match national age/gender distributions.",
+    "Comparison of agreement (0–10 Likert) with three conspiracy statements (vaccines, chemtrails, moon landing) against the ITANES 2016 CAWI panel survey (n=3,027) using non-parametric Kruskal–Wallis tests and effect size measures (Tomczak & Tomczak, 2014); analysis in R 3.5.1."
+  ],
+  "findings": [
+    "Campaign ran 53 days (Dec 2017–Jan 2018), generating 82,233 impressions, reaching 32,613 unique users, and producing 1,140 conversions, of which 1,069 were valid after cleaning.",
+    "Conversion rate of 3.28% (valid conversions / reach) outperformed nearly all CTRs reported in prior Facebook ad-based survey literature (which ranged 0.04–4.07).",
+    "Total cost was €488, averaging €0.46 per valid respondent—substantially cheaper than typical online panel recruitment.",
+    "Kruskal–Wallis tests indicated the Facebook sample's distribution of conspiracy belief did not significantly differ from the ITANES general-population sample, and effect sizes were negligible (moon landing 0.004, vaccines 0.002, chemtrails <0.000).",
+    "Some evidence of greater polarization in the Facebook sample: a larger share endorsed no conspiracy theories (68% vs. 53% in ITANES), but the data transformation needed for comparability complicates interpretation.",
+    "Pixel + URL parameter implementation successfully detected and excluded 45 duplicate-IP completions and 26 socially-shared completions, enabling cleaner sample boundaries."
+  ],
+  "contributions": [
+    "Introduces a replicable, technically detailed protocol for Facebook ad-based survey recruitment leveraging Pixel conversion tracking, URL parameter passing, and custom audience exclusion.",
+    "Proposes the 'conversion rate' (valid completions / reach) as a more precise response-rate metric than CTR for Facebook ad surveys, and adds it to the methodological toolkit.",
+    "Provides empirical efficiency benchmarks (cost per respondent, conversion rate, time cost) against which future Facebook ad-based surveys can be compared.",
+    "Extends the literature on Facebook ad-based survey recruitment from health and political-affiliation targets to the domain of controversial belief/opinion (conspiracy theories), and explicitly identifies design limitations and next steps (e.g., using a within-Facebook control group of users not interested in conspiracy theories).",
+    "Offers practical guidance on ad design, image rotation, comment management, and incentive substitution (brevity) for Facebook-based survey campaigns."
+  ],
+  "framing": "The paper situates itself within computational social science and the emerging methodological literature on integrating social media digital traces with survey research, positioning Facebook's ad platform as an alternative to API-based apps, panel-installed trackers, and snowball sampling—particularly amid tightening API access after Cambridge Analytica. It engages with prior Facebook ad-recruitment work in medical, health, and political-behavior research, and with debates about the validity of platform-elaborated user attributes (likes, interests) as proxies for offline characteristics and opinions.",
+  "pdf_source": "drive"
+}

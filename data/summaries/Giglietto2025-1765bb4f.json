@@ -1,0 +1,37 @@
+{
+  "abstract": "This working paper empirically examines the effects of Meta's 2021–2025 political content reduction policy on the Facebook reach of Italian parliamentarians, prominent politicians, and extremist accounts. Using over 2.5 million posts collected via the Meta Content Library API and a discovery-validation design with structural breakpoint detection, the study identifies that policy effects in Italy emerged roughly ten months before Meta's announced global rollout and produced a 72% reduction in average per-post reach for re-elected MPs. While Meta's January 2025 reversal generated a partial rebound, reach recovered to only 65% of pre-policy levels, and a robustness check shows that extremist accounts offset per-post declines by sharply increasing posting volume. The author frames these findings as evidence of transparency deficits in Meta's policy communication while also affirming the research value of DSA-enabled infrastructure like the Meta Content Library.",
+  "key_claims": [
+    "Meta's political content reduction policy materially suppressed the Facebook visibility of Italian elected officials, with average reach for re-elected MPs falling approximately 72% from baseline to trough.",
+    "The policy's effects in Italy began around September 2021, roughly ten months before Meta's announced July 2022 global implementation, indicating a discrepancy between Meta's public timeline and actual rollout.",
+    "Meta's January 2025 policy reversal produced a statistically significant but incomplete recovery, with reach stabilizing at only about 65% of pre-policy levels.",
+    "The policy had asymmetric effects: mainstream political actors lost substantial visibility, while extremist accounts compensated for per-post declines through dramatically increased posting frequency, ultimately gaining total weekly reach.",
+    "Meta failed to disclose this consequential policy in its DSA compliance reports and other transparency documentation, exposing a significant transparency deficit.",
+    "Despite limitations, the DSA-enabled Meta Content Library represents meaningful transparency progress and supports a collaborative rather than purely adversarial model of platform governance research."
+  ],
+  "methods": [
+    "Collection of 2,529,933 Facebook posts from 901 accounts (Jan 2021–Nov 2025) via the Meta Content Library API within Meta's Secure Research Environment, using R.",
+    "Construction of four mutually exclusive actor groups: re-elected MPs (discovery sample), newly elected MPs, prominent non-parliamentary politicians, and extremist/alternative-media accounts (validation samples).",
+    "Use of 'views' as the primary outcome, with group-specific power-law imputation for posts censored at the 100-view threshold (random seed 42) and sensitivity analyses of imputation choices.",
+    "Discovery-validation design combining Bai–Perron and PELT structural breakpoint detection on weekly aggregated views, reactions, shares, and comments, with 30-day consensus clustering across algorithms.",
+    "Segmentation of the time series into four policy phases bounded by validated breakpoints, followed by Kruskal–Wallis tests and Dunn's post-hoc pairwise comparisons with Bonferroni correction.",
+    "Robustness check comparing per-post average reach against total weekly reach to account for differences in posting frequency across groups."
+  ],
+  "findings": [
+    "Three cross-validated breakpoints were identified: T1 (Sept 19, 2021, implementation), T2 (Jan 1, 2023, post-election adjustment), and T3 (March 9, 2025, reversal).",
+    "Re-elected MPs' mean weekly views per post fell from 53,368 (pre-policy) to 26,079 (–51%) at T1, then to 14,869 (–43%) at T2, before partially recovering to 34,918 after T3.",
+    "Peak-to-trough declines were 72.1% for re-elected MPs, 51.2% for new MPs, 57.3% for prominent politicians, and only 24.3% for extremists.",
+    "The expected DOWN→DOWN→UP pattern validated across three mainstream groups but extremists showed DOWN→DOWN→DOWN in per-post reach, with no significant recovery after the reversal.",
+    "When measured as total weekly reach, extremists exhibited continuous growth (+13.7% from Phase 0 to Phase 2) and surpassed mainstream politicians in aggregate visibility during the policy period, driven by a 61.5–140.5% increase in posting frequency.",
+    "The detected implementation breakpoint preceded Meta's announced global rollout by ~303 days, while the reversal breakpoint followed Meta's January 2025 announcement by ~61 days, consistent with a gradual rollout."
+  ],
+  "contributions": [
+    "Provides the first independent empirical quantification of Meta's political content reduction policy on elected officials in a European democracy.",
+    "Demonstrates a discovery-validation breakpoint-detection methodology suited to platform policy changes with ambiguous implementation timelines.",
+    "Documents asymmetric policy effects across mainstream and extremist actors, including a volume-compensation mechanism that may undermine the policy's intended goals.",
+    "Exposes specific gaps between Meta's DSA transparency reporting and the empirically observable impact of its ranking changes on democratic communication.",
+    "Releases a fully documented, reproducible R analytical pipeline and public producer lists to support cross-country and cross-platform replication via the Meta Content Library.",
+    "Articulates a normative framework for collaborative platform governance research grounded in the structural realities of platform-mediated data access."
+  ],
+  "framing": "The paper situates itself at the intersection of platform governance, algorithmic content moderation, and political communication research, engaging directly with debates about transparency under the EU Digital Services Act and the legacy of US-centric platform research (e.g., the 2020 US Election study). It frames algorithmic visibility as democratic infrastructure and advocates a collaborative rather than adversarial orientation between researchers, regulators, and platforms, while drawing on frameworks such as the Knight-Georgetown Institute's 'Better Access' for data governance.",
+  "pdf_source": "drive"
+}

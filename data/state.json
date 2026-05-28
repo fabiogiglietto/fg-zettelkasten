@@ -2125,9 +2125,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "6f4eb4ac163f1b9e3b9d0d3227aef04d6887c04366a77a62f0b50235c643e011",
-      "podcast_linked": false,
-      "last_processed": "2026-05-27T10:58:35.012481+00:00"
+      "content_hash": "dc2819c4a9dfeed337eeca518b6a89dfbc37cd3cf6e13a740cb24172adb78ab1",
+      "podcast_linked": true,
+      "last_processed": "2026-05-28T06:24:33.543632+00:00"
     },
     "bibtex:Vertesi2026-lv": {
       "note_path": "Papers/Vertesi2026-lv.md",
@@ -2139,6 +2139,122 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-27T20:15:12.554222+00:00"
+    },
+    "bibtex:Giglietto2025-1765bb4f": {
+      "note_path": "Papers/Giglietto2025-1765bb4f.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:19:46.188688+00:00"
+    },
+    "bibtex:Unknown2025-ed60bc90": {
+      "note_path": "Papers/Unknown2025-ed60bc90.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "computational-social-science-methods"
+      ],
+      "kind": "own",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:20:00.416774+00:00"
+    },
+    "bibtex:Giglietto2025-1e9a0917": {
+      "note_path": "Papers/Giglietto2025-1e9a0917.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:20:35.786237+00:00"
+    },
+    "bibtex:Marino2024-2fbc690f": {
+      "note_path": "Papers/Marino2024-2fbc690f.md",
+      "topics": [
+        "generative-ai-and-llms",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:21:08.452631+00:00"
+    },
+    "bibtex:Giglietto2020-9d8acdd7": {
+      "note_path": "Papers/Giglietto2020-9d8acdd7.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:21:44.761613+00:00"
+    },
+    "bibtex:F2020-6278a4aa": {
+      "note_path": "Papers/F2020-6278a4aa.md",
+      "topics": [
+        "computational-social-science-methods",
+        "information-disorder"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:22:13.425360+00:00"
+    },
+    "bibtex:Giglietto2019-882f1900": {
+      "note_path": "Papers/Giglietto2019-882f1900.md",
+      "topics": [
+        "polarization-partisanship-hyperpartisan-media",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:22:52.097629+00:00"
+    },
+    "bibtex:Giglietto2019-e9be81c1": {
+      "note_path": "Papers/Giglietto2019-e9be81c1.md",
+      "topics": [
+        "information-disorder",
+        "social-systems-theory-sociocybernetics"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:23:21.435242+00:00"
+    },
+    "bibtex:Iannelli2018-ebd918b7": {
+      "note_path": "Papers/Iannelli2018-ebd918b7.md",
+      "topics": [
+        "computational-social-science-methods"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:23:56.745287+00:00"
+    },
+    "bibtex:Farci2017-2a88c00e": {
+      "note_path": "Papers/Farci2017-2a88c00e.md",
+      "topics": [],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T06:24:33.543605+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",

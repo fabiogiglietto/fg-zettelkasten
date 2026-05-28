@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper presents a qualitative study of 120 Italian Facebook users examining how the platform enables a 'networked intimacy' — a public, collaborative negotiation of intimate relationships through self-disclosure that depends on the cooperation of one's friendship network. Through semi-structured interviews, the authors identify five practices users deploy to manage public intimacy: Showing rather than telling, Sharing implicit content, Tagging, Expectation of mutual understanding, and Liking. They argue these strategies constitute a form of collaborative disclosure that blurs the public/private boundary while reinforcing the community-like qualities of friendship. The paper proposes 'networked intimacy' as a framework that systematizes and extends prior research on Facebook intimacy.",
+  "key_claims": [
+    "Intimacy on Facebook is not reducible to private self-disclosure but is achieved through public, collaborative practices involving the friendship network.",
+    "Users engage in collaborative disclosure strategies that rely on others' cooperation to manage the boundary between private and public.",
+    "Five interconnected practices — Showing rather than telling, Sharing implicit content, Tagging, Expectation of mutual understanding, and Liking — constitute the repertoire of networked intimacy.",
+    "Networked intimacy challenges narcissistic interpretations of social media intimacy (e.g., Turkle, Lasch, Bauman), reframing it as a resource for friendship maintenance and social inclusion.",
+    "The concept of friendship, as deployed on SNSs, transcends the traditional public/private dichotomy by linking intimate disclosure to community-like, networked relationships."
+  ],
+  "methods": [
+    "Qualitative study based on 118 semi-structured individual interviews with Italian Facebook users conducted in 2013 (plus 2 pilot interviews excluded from the dataset).",
+    "Part of a national multi-year PRIN-funded project (2013–2015) directed by Giovanni Boccia Artieri, involving four research units across northern, central, and southern Italy.",
+    "Guided snowball sampling, with subsequent interviewees recruited from a previous participant's list of Facebook contacts; sample stratified by age (13–54) and gender quotas aligned with Italian Facebook penetration data.",
+    "Interviews averaged 45 minutes, were conducted in participants' homes in front of their computer while browsing Facebook profiles, audio-recorded and transcribed.",
+    "Analysis followed Strauss and Corbin's Grounded Theory using three-stage open, axial, and selective coding via Dedoose software, moving from roughly 400 initial codes to broader conceptual categories."
+  ],
+  "findings": [
+    "Participants' main concern was managing visibility and self-presentation while avoiding undesired disclosure consequences.",
+    "'Showing rather than telling' — users prefer images and visual cues that carry layered meanings legible only to intended audiences.",
+    "'Sharing implicit content' — use of quotes, lyrics, and cryptic posts to encode messages for select friends (linked to but distinct from social steganography).",
+    "'Tagging' is used to publicly mark exclusive relational events and direct content to specific individuals while maintaining the post's public visibility.",
+    "'Expectation of mutual understanding' — users assume close friends will recognize targeted content without explicit cues, a tacit relational competence.",
+    "'Liking' functions as a low-cost signal of relational proximity, mutual recognition, and 'thinking of you,' reinforcing intimacy with minimal effort.",
+    "These practices create ephemeral, semi-public symbolic spaces where intimate audiences are continually reconstituted.",
+    "Participants did not spontaneously associate the word 'intimacy' with Facebook but described practices fitting the concept once prompted."
+  ],
+  "contributions": [
+    "Proposes 'networked intimacy' as a theoretical framework synthesizing and extending prior work on Facebook self-disclosure and intimacy.",
+    "Identifies and operationalizes five collaborative disclosure strategies, adding Tagging and Liking to previously discussed categories (Showing rather than telling, Sharing implicit content, mutual understanding).",
+    "Provides empirical evidence from the Italian context, broadening the geographic scope of SNS intimacy research beyond predominantly Anglo-American samples.",
+    "Reframes public intimacy on Facebook as relational and community-oriented rather than narcissistic, offering a counterpoint to critiques by Turkle, Lasch, Bauman, and others.",
+    "Connects sociological theories of pure relationships and friendship (Giddens, Jamieson, Pahl) with contemporary platform studies and affordance theory."
+  ],
+  "framing": "The paper sits at the intersection of sociology of intimacy and friendship (Giddens's pure relationship, Jamieson, Chambers) and social network site research on self-disclosure, privacy, and networked publics (boyd, Marwick, Bazarova, Lambert). It positions itself against accounts that read social media intimacy as narcissistic self-promotion, instead arguing that Facebook practices revive community-like dimensions of friendship while reconfiguring the public/private divide.",
+  "pdf_source": "drive"
+}

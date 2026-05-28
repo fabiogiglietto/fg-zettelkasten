@@ -1,0 +1,35 @@
+{
+  "abstract": "This working paper empirically examines the impact of Meta's 2021-2025 political content reduction policy on Italian parliamentarians' Facebook visibility, using over 2.5 million posts collected via the Meta Content Library API. Employing a discovery-validation design with structural breakpoint detection, the study finds that policy effects emerged in Italy around September 2021—roughly ten months before Meta's announced July 2022 global rollout—and produced a 72% peak-to-trough decline in average per-post reach for re-elected MPs. Although Meta's January 2025 reversal generated a significant rebound, reach recovered to only 65% of pre-policy levels, and extremist accounts asymmetrically compensated for per-post declines through increased posting volume. The paper argues these findings expose transparency deficits in Meta's policy communication while also demonstrating the research value of the DSA-enabled Meta Content Library infrastructure.",
+  "key_claims": [
+    "Meta's political content reduction policy produced detectable, large-magnitude reductions in Italian parliamentarians' Facebook reach that were not disclosed in the company's official transparency documentation, including DSA compliance reports.",
+    "The policy was effectively implemented in Italy approximately ten months earlier than Meta's publicly announced 'global' implementation date of July 2022.",
+    "The policy's effects unfolded in two distinct stages (an initial drop at implementation and a further decline in January 2023) and were only partially reversed after Meta's January 2025 policy rollback.",
+    "Policy effects were asymmetric: mainstream political actors lost substantial visibility, but extremist accounts increased posting frequency enough to maintain or grow total weekly reach, undermining the policy's apparent goals.",
+    "Despite genuine transparency deficits, infrastructure such as the Meta Content Library (enabled by DSA Article 40.12) represents meaningful progress, and platform governance research is better served by a collaborative than purely adversarial orientation."
+  ],
+  "methods": [
+    "Collection of 2,529,933 Facebook posts from 901 accounts spanning 256 weeks (January 2021–November 2025) via the Meta Content Library API within Meta's Secure Research Environment, using R.",
+    "Construction of four mutually exclusive political actor groups: re-elected MPs (discovery sample), newly elected MPs, prominent non-parliamentary politicians, and extremist/alternative-media accounts (validation samples).",
+    "Discovery-validation design: structural breakpoints first identified in the re-elected MPs series, then tested for directional consistency across the three validation groups.",
+    "Application of two complementary breakpoint detection algorithms (Bai–Perron and PELT) to four weekly engagement metrics (views, reactions, shares, comments), with 30-day consensus clustering to retain only cross-algorithm validated breakpoints.",
+    "Handling of censored view counts (posts ≤100 views returned as NA) through group-specific power-law-based ratio-weighted imputation with sensitivity analysis.",
+    "Phase-based descriptive analysis, Kruskal–Wallis tests, and Dunn's post-hoc pairwise comparisons with Bonferroni correction; robustness check comparing per-post reach against total weekly reach incorporating posting frequency."
+  ],
+  "findings": [
+    "Three cross-validated breakpoints were identified: T1 (September 19, 2021, implementation), T2 (January 1, 2023, adjustment), and T3 (March 9, 2025, reversal).",
+    "Re-elected MPs experienced a 72.1% peak-to-trough decline in mean per-post views, from 53,368 (pre-policy) to 14,869 (adjusted-policy trough), unfolding as a 51% initial drop at T1 followed by an additional 43% reduction at T2.",
+    "Following the January 2025 reversal, average reach rebounded 134.8% from the trough to 34,918 views, but recovery reached only 65.4% of the pre-policy baseline.",
+    "The expected DOWN→DOWN→UP pattern validated for re-elected MPs, new MPs, and prominent politicians (all p < 2×10⁻¹⁶), but extremist accounts showed an anomalous DOWN→DOWN→DOWN per-post pattern with smaller declines (−24.3%).",
+    "When measured as total weekly reach, extremist accounts increased visibility by 13.7% from Phase 0 to Phase 2 and overtook prominent politicians and MPs in total weekly reach by the adjusted-policy phase, driven by posting frequency increases of +61.5% (Phase 2) and +140.5% (Phase 3).",
+    "Mainstream political actors reduced posting frequency during the policy period (e.g., prominent politicians −41.4% in Phase 2), compounding their per-post reach losses in total visibility terms."
+  ],
+  "contributions": [
+    "Provides the first independent, large-scale empirical quantification of Meta's political content reduction policy effects on elected officials, focused on the Italian case.",
+    "Documents a substantial timing discrepancy between Meta's announced rollout dates and the actual onset of policy effects in a non-US European democracy.",
+    "Introduces a replicable discovery-validation analytical pipeline combining Bai–Perron and PELT breakpoint detection with cross-group validation for studying platform policy interventions.",
+    "Surfaces an asymmetric, potentially counterproductive policy effect whereby extremist accounts gained relative visibility through volume compensation despite per-post reach reductions.",
+    "Demonstrates the practical research value of DSA Article 40.12-enabled infrastructure (Meta Content Library) and provides open-source replication materials, producer lists, and a cross-country replication guide via a public GitHub repository."
+  ],
+  "framing": "The paper situates itself within debates on platform governance, algorithmic content moderation, and democratic communication, engaging directly with the EU Digital Services Act's transparency regime and the broader literature on platform–researcher relations. It frames algorithmic visibility reductions as consequential acts of platform power that demand independent scrutiny, while arguing for a collaborative rather than adversarial model of platform transparency research.",
+  "pdf_source": "drive"
+}

@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper examines how social media shape partisan engagement with political news during the 2018 Italian general election campaign. Combining Twitter data (to measure the partisan attention and 'insularity' of news sources) with Facebook engagement data (comments, shares, reactions) on 84,815 political news stories, the authors analyze how different partisan communities interact with news. They find that news sources favored by supporters of populist parties (the Five Star Movement and the League) are more insular, that highly insular sources receive more shares per comment on Facebook, and that the Five Star Movement uniquely benefits from a sharing/commenting pattern that amplifies positive coverage and contests negative coverage.",
+  "key_claims": [
+    "News sources predominantly shared by supporters of Italian populist parties (M5S and the League) exhibit higher insularity on Twitter than those shared by non-populist party supporters, with M5S sources being the most insular.",
+    "There is a negative correlation between a source's insularity and its Facebook comments-to-shares ratio: more insular sources generate proportionally more shares (amplification), while cross-partisan sources generate proportionally more comments (contestation/reframing).",
+    "The Five Star Movement is uniquely effective at strategically influencing social media attention economies: positive stories about M5S receive more shares per comment, negative stories receive more comments per share, with the opposite pattern holding for PD, Forza Italia, and the League.",
+    "Populist success is intertwined with fragmented hybrid media ecologies that allow hyper-partisan outlets to thrive, but populist supporters do not fully self-segregate—they also actively intervene on adversarial content.",
+    "A party's capacity to mobilize supporters to shape social media attention depends on a combination of populist ideology and long-term investment in digital infrastructure (as exemplified by M5S as an 'anti-elitist cyber party')."
+  ],
+  "methods": [
+    "Adapted Faris et al.'s Media Partisanship Attention Score (MPAS) into a Multi-Party MPAS (MP-MPAS) suited to Italy's multiparty system, using Twitter retweet behavior of party/leader accounts to classify users and then sources.",
+    "Collected ~216,765 retweets of official party/leader Twitter accounts (January 2018) to estimate user partisanship; followed top 5,000 partisan contributors via DMI-TCAT, gathering 4,385,877 tweets (Feb 1–Mar 4, 2018) and ~130 million resolved URLs.",
+    "Constructed an original 'insularity' index for each news source combining its maximum MP-MPAS score and the Gini coefficient of its score distribution, classifying 634 sources into four insularity tiers (high, moderate, low, none/cross-partisan).",
+    "Built a Facebook engagement dataset of 84,815 Italian political news stories from 4,113 domains (Sep 2017–Mar 2018) using Huginn to harvest stories from Google News, GDELT, and Twitter, then querying Facebook Graph API every two hours for one week per story.",
+    "Performed manual sentiment content analysis (positive/negative/neutral toward M5S, PD, League, Forza Italia) on the top 10th percentile (3,731) of highly engaged stories, with three coders and Krippendorff's alpha reliability checks (0.72–0.84).",
+    "Statistical tests including Kruskal-Wallis, Dunn's post-hoc with Bonferroni correction, and Spearman correlation to test the three research questions."
+  ],
+  "findings": [
+    "Median insularity scores: M5S sources = 0.73, League = 0.67, LeU = 0.63, PD = 0.63 (system mean = 0.65); Kruskal-Wallis confirmed significant differences (p < .001), with M5S significantly higher than all others.",
+    "Of 634 adjudicated sources, 33.9% were attributed to the League, 27.9% to M5S, 19.1% cross-partisan, 9.5% to PD, 7.7% to LeU; non-populist coalition members (Forza Italia, FdI) received almost no adjudicated sources.",
+    "Insularity correlates negatively with the comments/shares ratio (Spearman rho = -.31, p < .001): higher insularity → more shares per comment; lower insularity → more comments per share.",
+    "For M5S, positive stories received significantly more shares per comment and negative stories more comments per share (p < .001).",
+    "For PD, Forza Italia, and the League, the opposite pattern held: negative stories generated more shares per comment, positive stories more comments per share.",
+    "Cross-partisan, lower-insularity sources became arenas for comment-based contestation rather than echo-chamber amplification."
+  ],
+  "contributions": [
+    "Extends the MPAS methodology from two-party (US) to multiparty systems, providing a replicable MP-MPAS metric usable across national contexts.",
+    "Introduces a novel quantitative measure of news-source 'insularity' combining maximum partisan attention with Gini-based dispersion.",
+    "Demonstrates a methodological strategy that triangulates Twitter (for partisan attention estimation) and Facebook (for engagement patterns), working within current data-access constraints.",
+    "Provides empirical evidence from a non-US, polarized-pluralist multiparty context, addressing a gap in the predominantly US-focused literature on selective exposure and echo chambers.",
+    "Offers a nuanced challenge to the 'echo chamber' thesis by showing that cross-partisan sources are loci of commenting/contestation while insular sources drive amplification.",
+    "Identifies a distinctive 'cyber party' effect for the Five Star Movement, linking populist ideology with digitally enabled attention-economy tactics."
+  ],
+  "framing": "The paper situates itself in debates over partisan selective exposure, echo chambers, and the hybrid media system (Iyengar & Hahn, Sunstein, Dubois & Blank, Chadwick), as well as in the literature on populism and media (Waisbord, Hallin, Benkler) and the social media attention economy (Tufekci). It positions the Italian 2018 election as a strategic non-US case within Hallin and Mancini's 'polarized pluralist' model, allowing scrutiny of how populist and 'cyber party' actors exploit social media ecologies.",
+  "pdf_source": "drive"
+}
