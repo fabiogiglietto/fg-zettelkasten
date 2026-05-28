@@ -2255,6 +2255,18 @@
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-28T06:24:33.543605+00:00"
+    },
+    "bibtex:Iannelli2015-e0818c3e": {
+      "note_path": "Papers/Iannelli2015-e0818c3e.md",
+      "topics": [
+        "social-tv-and-second-screen",
+        "italian-elections-political-communication"
+      ],
+      "kind": "own",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-05-28T08:42:44.171857+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",

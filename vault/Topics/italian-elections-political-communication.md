@@ -15,6 +15,7 @@ Long-running empirical line on Italian electoral campaigns (2018, 2019, 2022) co
 - [[Giglietto2023-fa71a001]]
 - [[Giglietto2025-1765bb4f]]
 - [[Giglietto2025-1e9a0917]]
+- [[Iannelli2015-e0818c3e]]
 - [[Marino2024-2fbc690f]]
 
 ## All papers (Dataview)

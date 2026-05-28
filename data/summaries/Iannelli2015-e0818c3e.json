@@ -1,0 +1,34 @@
+{
+  "abstract": "This article examines the hybrid relationship between television and Twitter during the 'permanent campaign' for the 2013 Italian general elections, focusing on how audiences, politicians, and journalists used Twitter as a second screen during political talk shows. Drawing on a complete collection of 2,489,669 tweets containing official hashtags of 11 talk shows across 1,076 episodes (September 2012 to June 2013), and a content-analyzed sample of 8,031 tweets tied to 23 peaks around the three main parties (PD, PDL, M5S), the authors map forms of participation 'in' and 'through' the media. They find that access to these practices was narrow, politicians and broadcasters largely failed to engage with connected audiences, and tweeting predominantly took the form of opinion/comment and requests for interaction rather than agenda-shaping contributions.",
+  "key_claims": [
+    "Contemporary political communication should be analyzed through a hybrid approach that emphasizes the interdependence of older (TV) and newer (Twitter) media rather than treating social media as an independent variable.",
+    "Second-screen practices during Italian political talk shows constitute 'spontaneous' audience engagement, since the Italian TV industry has not structurally integrated audience participation.",
+    "Despite high tweet volumes, only a narrow segment of the Italian Twitter and TV population participated in these hybrid practices, and politicians and broadcasters did not meaningfully activate or respond to audience engagement.",
+    "Participation through Twitter during talk shows is dominated by opinions/comments and requests for interaction, while substantive participation 'in' agenda-building (introducing new issues, angles, or sources) is residual.",
+    "Twitter conversations remain heavily shaped by TV logic, with peaks and content following the broadcast agenda and media events rather than challenging them."
+  ],
+  "methods": [
+    "Practice-based, hybrid-media approach combining big-data analysis of Twitter with content analysis of corresponding TV scenes.",
+    "Collection via DiscoverText/GNIP of 2,489,669 tweets (Aug 2012–Jun 2013) containing official or dominant hashtags of 11 Italian political talk shows; 1,889,281 tweets filtered to airtime windows.",
+    "Computation of per-minute Twitter metrics (replies, retweets, unique contributors, reach, original tweets) following Bruns and Stieglitz (2013), and keyword-based attribution of tweets to PD, PDL, and M5S.",
+    "Application of the Marcus et al. (2011) peak-detection algorithm to party-specific streams, identifying 530 peaks; stratified random sampling of one peak per party per political period yielded 23 peaks with 15,737 tweets (8,031 original).",
+    "Hybrid content analysis pairing tweets with the corresponding on-air TV scene, using a code-set covering orientation (politics/media), form (opinion, information/streaming, request for interaction, introduction of new issues, plus emotion/irony/violence), and content (political, policy, campaign, personal issues; show, host, non-political guests), with double coding and Krippendorff's alpha (training α < 0.7; final α < 0.81)."
+  ],
+  "findings": [
+    "1,889,281 tweets were posted during talk-show airtime by 187,031 unique users—a small fraction of Italy's ~4 million Twitter users—indicating narrow audience access.",
+    "Only 3 of 11 talk shows displayed selected tweets on screen, and party/leader official accounts produced just 969 tweets; Beppe Grillo and M5S were almost entirely absent from these conversations.",
+    "Tweet volumes around the three parties were comparable (PDL 11%, PD 10%, M5S 8%) and tracked the broadcast and political event calendar.",
+    "Across the coded sample, 77.3% of tweets were politics-oriented and 27.6% media-oriented; opinions/comments (79.8%) and requests for interaction (28.6%) dominated, with information/streaming at 18.6% and introduction of new issues/angles/sources only 2.4%.",
+    "PDL-related tweets emphasized media-oriented opinions (notably around Berlusconi's appearance on 'Servizio Pubblico'); PD-related tweets featured politics-oriented streaming on political issues; M5S-related tweets were marked by requests for interaction on political issues.",
+    "Requests for interaction showed elevated use of irony (35% vs. 27% average) and violent/vulgar language (11% vs. 8% average)."
+  ],
+  "contributions": [
+    "Provides one of the first large-scale empirical mappings of TV–Twitter hybrid practices in the Italian political context during a national election cycle.",
+    "Operationalizes Carpentier, Dahlgren, and Pasquali's distinction between participation 'in' and 'through' the media for second-screen Twitter practices, adapting Wohn and Na's typology.",
+    "Demonstrates a mixed-method workflow integrating firehose-level big-data collection, peak detection, sampling, and scene-anchored content analysis of tweets paired with the corresponding TV broadcast.",
+    "Releases an open dataset of episodes and metrics (figshare) to support replication and further hybrid-media research.",
+    "Offers evidence that, in Italy, the democratic and agenda-shaping potential of second-screen practices remains largely unrealized, contributing to debates on hybrid media systems and mediatization."
+  ],
+  "framing": "The paper situates itself within hybrid-media-systems scholarship (Chadwick, Blumler & Coleman, Enli & Moe, Castells) and a practice-based approach to media (Couldry), bridging audience studies, political communication, and social TV research. It pushes back against accounts that treat social media as autonomous from broadcast politics, instead foregrounding the interdependence of TV logic and networked publics in shaping political participation.",
+  "pdf_source": "drive"
+}
