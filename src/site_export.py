@@ -16,6 +16,8 @@ import re
 import shutil
 from pathlib import Path
 
+import yaml
+
 # ```dataview``` fenced blocks render only inside Obsidian; Quartz would print
 # them verbatim. The closing fence is anchored to start-of-line so a stray
 # triple-backtick inside the block cannot end the match early.
@@ -62,6 +64,27 @@ def inject_date(text: str) -> str:
     return f"---\ndate: {year.group(1)}-01-01\n{block}\n---\n{text[fm.end():]}"
 
 
+def _read_paper_meta(text: str) -> dict | None:
+    """Extract the fields needed for the homepage 'Latest papers' list.
+
+    Returns None for notes without a parseable frontmatter or without a
+    `discovery_date` — those can't be ranked by recency.
+    """
+    fm = _FRONTMATTER.match(text)
+    if not fm:
+        return None
+    data = yaml.safe_load(fm.group(1)) or {}
+    if not data.get("discovery_date"):
+        return None
+    aliases = data.get("aliases") or []
+    title = aliases[0] if aliases else data.get("title", "")
+    return {
+        "title": title,
+        "discovery_date": data["discovery_date"],
+        "topics": data.get("topics") or [],
+    }
+
+
 def topic_paper_counts(state: dict) -> dict[str, int]:
     """Map each topic slug to the number of papers assigned to it."""
     counts: dict[str, int] = {}
@@ -81,8 +104,10 @@ def build_index(
     structure_slugs: set[str],
     topics_dir: str,
     structures_dir: str,
+    recent_papers: list[tuple[str, dict]],
+    papers_dir: str,
 ) -> str:
-    """Render `content/index.md`: a homepage listing Topics and Structures.
+    """Render `content/index.md`: a homepage listing recent papers, Topics and Structures.
 
     Links use explicit `[[<dir>/<slug>|Name]]` paths because Topic and
     Structure notes collide on basename.
@@ -100,9 +125,32 @@ def build_index(
         "",
         f"A topic-anchored Zettelkasten built from the `toread` paper feed — "
         f"{_plural(total_papers, 'paper')} across {_plural(len(topics), 'topic')}. "
-        "Use the graph, backlinks, and search to explore; the entry points below "
-        "group the archive by theme.",
+        "The name follows the [Niklas Luhmann archive](https://niklas-luhmann-archiv.de/) "
+        "model: each Topic is a *Schlagwort* (keyword) register that links back to every "
+        "paper it covers. Use the graph, backlinks, and search to explore; the entry "
+        "points below group the archive by theme.",
         "",
+    ]
+
+    if recent_papers:
+        lines += [
+            "## Latest papers",
+            "",
+            "Most recent additions to the feed.",
+            "",
+        ]
+        for stem, meta in recent_papers:
+            date = str(meta["discovery_date"])[:10]
+            topic_names = [
+                by_slug[s]["name"] for s in meta["topics"] if s in by_slug
+            ]
+            line = f"- [[{papers_dir}/{stem}|{meta['title']}]] — {date}"
+            if topic_names:
+                line += f" · {', '.join(topic_names)}"
+            lines.append(line)
+        lines.append("")
+
+    lines += [
         "## Topics",
         "",
         "Thematic registers — each lists every paper assigned to it.",
@@ -152,6 +200,7 @@ def export_site(
 
     notes = 0
     stripped = 0
+    paper_meta: list[tuple[str, dict]] = []
     for subdir in subdirs:
         src = vault_dir / subdir
         if not src.is_dir():
@@ -165,11 +214,26 @@ def export_site(
                 stripped += 1
             (dst / note.name).write_text(inject_date(cleaned), encoding="utf-8")
             notes += 1
+            if subdir == papers_dir:
+                meta = _read_paper_meta(text)
+                if meta is not None:
+                    paper_meta.append((note.stem, meta))
+
+    paper_meta.sort(key=lambda item: item[1]["discovery_date"], reverse=True)
+    recent_papers = paper_meta[:5]
 
     structure_slugs = {
         p.stem for p in (vault_dir / structures_dir).glob("*.md")
     }
-    index = build_index(topics, state, structure_slugs, topics_dir, structures_dir)
+    index = build_index(
+        topics,
+        state,
+        structure_slugs,
+        topics_dir,
+        structures_dir,
+        recent_papers,
+        papers_dir,
+    )
     (content_dir / "index.md").write_text(index, encoding="utf-8")
 
     return {"notes": notes, "stripped": stripped}
