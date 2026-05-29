@@ -1,0 +1,40 @@
+{
+  "abstract": "This Registered Report describes a large-scale field experiment on Bluesky Social during the 2024 US presidential election in which 2,000 US partisans were randomly assigned for 8 weeks to one of three custom feed-ranking algorithms: an engagement-based feed mimicking major platforms, a reverse-chronological feed, and a newly developed 'diversified extremity' algorithm designed to reduce the influence of extreme political users. The authors tested whether engagement-based algorithms amplify intergroup, moralized and emotional (IME) content, distort perceptions of social norms around political dialogue, and increase perceived partisan animosity, and whether the diversified extremity algorithm could mitigate these effects. They find that engagement-based feeds amplify IME and toxic content, reduce prescriptive norm accuracy, and increase perceived partisan animosity, while the diversified extremity algorithm reduces IME exposure and improves norm accuracy without harming overall platform enjoyment.",
+  "key_claims": [
+    "Engagement-based feed-ranking algorithms used by major platforms systematically amplify intergroup, moralized, emotional (IME) and toxic content relative to a reverse-chronological baseline.",
+    "Algorithmic amplification of IME content distorts users' perceptions of descriptive and prescriptive social norms about political dialogue, and increases perceptions of partisan animosity.",
+    "A 'diversified extremity' algorithm that limits the influence of extreme political users can reduce IME and toxic exposure and improve prescriptive norm accuracy while maintaining comparable platform enjoyment.",
+    "The psychological pathway from algorithmic amplification to partisan animosity runs primarily through misperception of social norms rather than direct attitude change.",
+    "Algorithmic exposure changes did not produce large, immediate shifts in users' own engagement behaviours during the 8-week window."
+  ],
+  "methods": [
+    "Preregistered Stage 1 Registered Report (protocol on OSF: https://osf.io/c9a3m) with a 3-condition between-subjects field experiment.",
+    "Recruited 2,000 US Democrats and Republicans who were active Bluesky users via Bluesky, Reddit, X, Prolific, and CloudResearch Connect, run across two waves spanning the 2024 US election (Sept-Dec 2024).",
+    "Built three custom feed-ranking algorithms deployed on Bluesky's open-source infrastructure: (1) engagement-based algorithm using a state-of-the-art ML engagement prediction model with approximate nearest-neighbour search; (2) a diversified extremity algorithm applying three filters (reducing super posters, reducing toxicity, increasing constructive dialogue); (3) a reverse-chronological control feed.",
+    "Collected ~20,000,000 posts via the Bluesky firehose; classified content as intergroup, moral, or emotional using fine-tuned and prompt-tuned large language models, and toxicity/constructiveness via Google's Perspective API.",
+    "Administered weekly surveys measuring perceived descriptive and prescriptive norms, perceived partisan animosity (in/outgroup dislike on a -50 to 50 scale), platform enjoyment, political sectarianism, and attitude extremity on six issues.",
+    "Analyzed outcomes with generalized linear mixed models with random intercepts for participant ID, a pre/post-election indicator and its interaction with condition; a priori power analysis targeted d=0.20 at 99% power.",
+    "Exploratory analyses included named-entity recognition on feed content, reclassification of intergroup content with an improved model, and bounding analyses on engagement null effects."
+  ],
+  "findings": [
+    "Engagement-based feeds increased aggregate IME content by 5.1% (pre-election) and 23.1% (post-election) relative to reverse-chronological feeds, with the largest amplification for moral outrage (up to 79.2% relative increase post-election) and political content (up to 57.3% post-election).",
+    "Engagement-based feeds increased toxic content by 13-17% and negative emotional content by 7.6-14.7%, while suppressing positive emotional content by 2.5-11.4%.",
+    "The diversified extremity algorithm reduced aggregate IME content by roughly 6-7% relative to engagement-based feeds and consistently reduced moral outrage, toxic and political content; effects on positive emotional and intergroup content varied across pre/post-election periods.",
+    "Engagement-based feeds significantly reduced prescriptive norm accuracy (by ~5 scale points pre- and post-election), but in an unexpected direction: users underestimated rather than overestimated peer permissiveness for toxic political content.",
+    "Engagement-based feeds significantly increased perceptions of outgroup (and ingroup) dislike after the election (~4.5 and ~3.5 scale points respectively).",
+    "Diversified extremity feeds improved prescriptive norm accuracy relative to engagement-based feeds but did not significantly change descriptive norm accuracy or perceived partisan animosity.",
+    "Contrary to hypotheses, neither algorithm significantly changed users' own engagement behaviour with IME or toxic content; bounding analyses ruled out very large but not small effects.",
+    "Engagement with toxic content was extremely rare and highly concentrated: only 13.6% of participants ever engaged with toxic content, and the top 5% accounted for 75% of toxic engagement (Gini = 0.93).",
+    "After the election, engagement-based feeds reduced overall enjoyment of Bluesky, while diversified extremity feeds preserved or improved platform enjoyment even though users rated their specific feed content as slightly less enjoyable.",
+    "Exploratory analyses showed small, non-significant increases in political sectarianism under engagement-based feeds and no detectable changes in political attitude extremity over 8 weeks."
+  ],
+  "contributions": [
+    "Provides one of the first industry-independent, large-scale field experiments with full researcher control over feed-ranking algorithm features on a real social media platform (Bluesky).",
+    "Introduces and empirically tests a novel 'diversified extremity' algorithm as a scalable intervention to mitigate algorithmic distortion of social norm perceptions.",
+    "Advances a theory of algorithm-mediated social learning, foregrounding misperception of social norms (rather than selective exposure or direct attitude change) as the key psychological mechanism linking algorithms to partisan animosity.",
+    "Delivers a preregistered, transparent causal test of how engagement-based ranking shapes IME content exposure, norm perceptions, and engagement behaviours around a major political event (the 2024 US election).",
+    "Releases a methodological template (custom algorithms on open-source Bluesky, LLM-based content classification, weekly norm and animosity surveys) that future researchers can extend without industry partnerships."
+  ],
+  "framing": "The paper situates itself within ongoing debates in political psychology, communication and computational social science about whether and how social media algorithms exacerbate partisan animosity, explicitly responding to mixed evidence from prior academic-industry collaborations (notably the 2020 Facebook/Meta studies). It reframes the question from selective exposure and echo chambers toward an algorithm-mediated social-learning account in which feed algorithms distort perceived social norms of political dialogue, and uses this framing to motivate prosocial algorithm design as a research priority.",
+  "pdf_source": "drive"
+}
