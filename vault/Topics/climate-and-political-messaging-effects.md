@@ -11,6 +11,7 @@ Experimental and field studies evaluating how messaging interventions—climate 
 ## Papers
 
 - [[Allcott2025-jb]]
+- [[Brady2026-ln]]
 - [[Dubey2026-bl]]
 - [[Gauthier2026-iq]]
 - [[Szabo2026-rd]]

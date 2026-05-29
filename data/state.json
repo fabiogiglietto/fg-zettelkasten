@@ -2125,9 +2125,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "dc2819c4a9dfeed337eeca518b6a89dfbc37cd3cf6e13a740cb24172adb78ab1",
+      "content_hash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d",
       "podcast_linked": true,
-      "last_processed": "2026-05-28T06:24:33.543632+00:00"
+      "last_processed": "2026-05-29T06:04:00.137663+00:00"
     },
     "bibtex:Vertesi2026-lv": {
       "note_path": "Papers/Vertesi2026-lv.md",
@@ -2267,8 +2267,20 @@
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-28T08:42:44.171857+00:00"
+    },
+    "bibtex:Brady2026-ln": {
+      "note_path": "Papers/Brady2026-ln.md",
+      "topics": [
+        "climate-and-political-messaging-effects",
+        "polarization-partisanship-hyperpartisan-media"
+      ],
+      "pdf_source": "drive",
+      "content_hash": "c25ca4bc0009d9a5bfdd9507c83319d82d6caab58a630b154c67802e2a5990c7",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-05-29T06:03:35.205005+00:00"
     }
   },
   "last_full_cluster": "2026-05-17T10:31:30.222500+00:00",
-  "papers_since_cluster": 11
+  "papers_since_cluster": 12
 }
