@@ -19,33 +19,33 @@ discovery_date:
 
 ## Summary
 
-This paper leverages Meta's Privacy-Protected Full URLs Dataset to examine how user sharing translates into actual viewership on Facebook across 130,448 highly circulated URLs in the US (2017–2022). The authors show that while shares reliably predict views, this amplification is systematically dampened for content with highly partisan audiences and boosted for content from sources adhering to professional journalistic standards. Crucially, by re-estimating their model quarterly, they demonstrate that these effects are highly volatile and shift in alignment with known Facebook governance interventions — most strikingly the 2020 "break the glass" measures. This temporal pattern, they argue, constitutes empirical evidence that Facebook operates as an active algorithmic curator rather than a neutral conduit, and that platform governance must be understood as a dynamic rather than background variable.
+This study uses Meta's Privacy-Protected Full URLs Dataset to examine how sharing translates into viewership for 130,448 widely-circulated URLs on Facebook in the US between 2017 and 2022. The authors show that while shares reliably predict views, the relationship is systematically dampened for content shared by partisan audiences and amplified for content from sources adhering to professional journalistic standards. Crucially, by re-estimating these effects quarterly, they show that the partisan penalty and quality reward fluctuate sharply in alignment with Facebook's documented governance interventions—especially the 2020 "break the glass" measures—providing empirical evidence that the platform operates as an active curator rather than a neutral conduit.
 
 ## Key Contributions
 
-- Provides large-scale empirical evidence of the share-to-view amplification relationship using viewership data historically unavailable to outside researchers.
-- Distinguishes empirically between structural homophily and active algorithmic suppression as mechanisms limiting partisan content reach, using temporal variation to favor the latter.
-- Offers independent quantitative corroboration of Facebook's "break the glass" emergency interventions previously documented only through journalism and leaks.
-- Extends prior European amplification frameworks to the US context using Political Page Affinity scores and NewsGuard journalistic quality measures.
-- Advances a longitudinal methodology for detecting platform governance through temporal discontinuities in amplification coefficients.
+- Large-scale empirical mapping of the share-to-view amplification relationship using viewing data previously unavailable to researchers.
+- Empirical distinction between structural network homophily and active algorithmic suppression as mechanisms limiting partisan reach, with temporal variation favoring the latter.
+- Independent quantitative corroboration of Facebook's "break the glass" emergency interventions, previously known mainly through leaks and journalism.
+- Extension of European amplification frameworks (Trilling et al., 2022) to the US, incorporating Political Page Affinity and NewsGuard quality scores.
+- A longitudinal methodological template for detecting platform governance shifts through temporal discontinuities in amplification coefficients.
 
 ## Methods
 
-The authors analyze Meta's Facebook Privacy-Protected Full URLs Dataset (v10) via Social Science One, restricted to US engagement (Jan 2017–Oct 2022). After applying signal-to-noise filters and merging with NewsGuard scores, the analytic sample comprises 130,448 URLs. They use privacy-aware linear regression (the `lmdp` function from the PrivacyUnbiased R package) to correct for differential privacy noise, with bootstrapped variance estimation (1000 replications). Four nested models predict URL views from shares, audience partisan alignment strength, NewsGuard journalistic quality score, and clicks as a control. The full model is then re-estimated quarterly from 2017-Q1 to 2021-Q3 to capture temporal variation across shifting governance regimes.
+The authors analyze Meta's Facebook Privacy-Protected Full URLs Dataset (v10) released via Social Science One, covering January 2017 to October 2022. After signal-to-noise filtering and merging with NewsGuard scores, the analytic sample comprises 130,448 URLs. They use privacy-aware linear regression (the `lmdp` function from the PrivacyUnbiased R package) to correct for differential-privacy noise, with bootstrap variance estimation. Four nested models predict views from shares, audience partisan alignment strength (from Political Page Affinity scores), NewsGuard quality, and clicks as a control. Critically, they re-estimate the full model quarterly from 2017-Q1 to 2021-Q3 to capture how coefficients shift across governance regimes.
 
 ## Findings
 
-- Each additional share corresponds to ~56 additional views after controlling for clicks.
-- A one-SD increase in audience partisan alignment strength is associated with ~2.3–2.4 million fewer views, holding shares and clicks constant.
-- A one-point increase on NewsGuard's 100-point scale corresponds to ~28,700 additional views, independent of sharing volume.
-- The shares-to-views amplification rate fluctuated substantially, peaking at ~71 views/share in 2017-Q4 and 2019-Q2 and falling to ~46 in 2020-Q3 during the election and pandemic.
+- Each additional share corresponds to roughly 56 additional views after controlling for clicks.
+- A one-SD increase in partisan alignment strength is associated with ~2.3–2.4 million fewer views, holding shares and clicks constant.
+- A one-point increase on NewsGuard's 100-point scale yields ~28,700 additional views, independent of sharing volume.
+- The shares-to-views amplification rate fluctuated substantially: peaking ~71 views/share in 2017-Q4 and 2019-Q2, falling to ~46 in 2020-Q3 during the election and pandemic.
 - The partisan penalty intensified sharply in 2020-Q3 (~-2.90 million views), coinciding with reported "break the glass" interventions.
-- The journalistic quality reward surged from ~31,500 additional views per quality point in 2020-Q2 to over 76,900 by mid-2021, synchronized with the heightened partisan penalty.
-- The click coefficient remained stable (6–7.5 views per click) throughout, contrasting with the volatility of shares and partisanship coefficients.
+- The journalistic quality reward surged from ~31,500 additional views per quality point in 2020-Q2 to over 76,900 by mid-2021.
+- The click coefficient remained stable (6–7.5 views per click) throughout, in striking contrast to the volatility of share and partisanship coefficients.
 
 ## Connections
 
-This paper builds directly on the authors' own prior work on coordinated link sharing and problematic information on Facebook ([[Giglietto2025-1765bb4f]], [[Giglietto2025-1e9a0917]], [[Giglietto2022-b30e8b4e]], [[Giglietto2019-882f1900]]), extending that lineage from sharing dynamics to viewership outcomes. It engages critically with the Meta-partnered 2020 election studies — notably [[Bakshy2015-rn]]'s foundational exposure framework and reanalyses such as [[Bak-Coleman2025-pm]] — by arguing that treating governance interventions as stable background conditions misses their dynamic curatorial role. It also speaks to ongoing debates about algorithmic amplification and platform power exemplified by [[Bouchaud2026-lr]], [[Rieder2025-ju]], [[Rieder2026-pp]], and [[Bruns2026-yv]], and complements work on hyperpartisan reach and quality news visibility such as [[Allen2025-ot]] and [[Pierri2025-hm]].
+This paper extends a line of work using the Social Science One URLs dataset and methodologically engaging with differential privacy, connecting directly to [[Giglietto2025-1765bb4f]], [[Giglietto2025-1e9a0917]], and the earlier [[Giglietto2022-b30e8b4e]] and [[Giglietto2019-882f1900]] on coordinated sharing and amplification dynamics. It speaks to and partially challenges the Meta-partnered 2020 election studies typified by [[Bakshy2015-rn]]-style platform-research collaborations, by showing that governance interventions cannot be treated as stable background. It also complements work on hyperpartisan reach, algorithmic curation, and platform gatekeeping such as [[Bouchaud2026-lr]], [[Rieder2026-pp]], [[Rieder2025-ju]], and [[Bruns2026-yv]].
 
 ## Podcast
 
