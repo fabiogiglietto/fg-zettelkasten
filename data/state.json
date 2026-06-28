@@ -2482,8 +2482,19 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-28T07:01:51.313741+00:00"
+    },
+    "bibtex:Zhu2026-tn": {
+      "note_path": "Papers/Zhu2026-tn.md",
+      "topics": [
+        "polarization-hybrid-media"
+      ],
+      "pdf_source": "drive",
+      "content_hash": "6d601536b653e2b4e0596ab39855fbf70110a33200193255be1632494275233e",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-06-28T21:54:19.950505+00:00"
     }
   },
   "last_full_cluster": "2026-06-22T10:04:41.162976+00:00",
-  "papers_since_cluster": 3
+  "papers_since_cluster": 4
 }

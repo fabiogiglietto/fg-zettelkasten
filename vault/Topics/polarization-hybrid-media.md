@@ -37,6 +37,7 @@ Theoretical and empirical work on how the interplay between social media and tra
 - [[Unknown2023-9137f448]]
 - [[Ventura2026-yc]]
 - [[Yoo2026-ev]]
+- [[Zhu2026-tn]]
 - [[van-Eck2026-xg]]
 
 ## All papers (Dataview)
