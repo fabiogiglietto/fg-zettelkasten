@@ -1,0 +1,38 @@
+{
+  "abstract": "Lev Manovich analyzes generative AI as a creative medium, setting aside ethical and social critiques in favor of a media-theoretical account of its specific affordances and constraints. Drawing on his experience as both artist and media theorist, and comparing AI to prior media like photography, painting, and generative code art, he identifies six structural properties that define what the medium makes possible and what it resists. Central among these are a built-in cognitive capacity—making AI the first artistic medium that itself thinks—and an encyclopedic 'media cognition' of art history and techniques, paired with structural conservatism and the entanglement of style and content.",
+  "key_claims": [
+    "Generative AI should be analyzed as a medium with specific properties, not only as a social or ethical phenomenon.",
+    "Probabilistic generation creates an inherent, non-removable trade-off between variability and precise authorial control.",
+    "AI image generation offers unprecedented degrees of freedom compared to prior indeterminacy-based artistic methods.",
+    "The medium is structurally anti-avant-garde: it privileges the logic of the familiar world and resists defamiliarization, particularly violations of relational/causal logic.",
+    "AI is aesthetically conservative, biased toward 19th-century academic and photographic conventions due to training data dominance.",
+    "Generative AI is the first artistic medium whose cognitive capacity is built in rather than externally programmed.",
+    "'Media cognition'—internalized knowledge of artistic techniques, media conventions, and styles—is a distinctive property of AI models.",
+    "Style and content are structurally entangled in AI models, making clean style extraction difficult and revealing limits in concepts like 'an artist's style.'"
+  ],
+  "methods": [
+    "Theoretical and historical analysis grounded in media theory and art history.",
+    "Comparative reflection drawing on the author's 50 years of practice across painting, drawing, etching, photography, and generative programming.",
+    "Conceptual comparison of AI with prior media (photography, film, generative art) and prior artistic strategies (Jazz, Judson Dance Theatre, Cage, Surrealism, avant-garde movements).",
+    "Illustrative examples from contemporary AI tools (Midjourney, including the --sref style reference feature) and reference resources like Midlibrary's catalogues of techniques and artist styles.",
+    "Focus on mainstream use of unmodified AI tools at scale rather than on critical/experimental AI art practices."
+  ],
+  "findings": [
+    "AI handles 'visual surrealism' (recombining familiar objects) well but resists 'logical surrealism' (inverting causal or behavioral norms), e.g., struggling to depict a cat chasing a dog.",
+    "Outputs cluster around idealized academic and photographic aesthetics—centered subjects, one-point perspective, polished surfaces—exemplifying 'bounded creativity' (Boden).",
+    "Naming an artist in a prompt produces 'bleed,' transferring characteristic subject matter (e.g., Hokusai → waves and Mount Fuji) along with style.",
+    "Image-based style references (Midjourney's --sref) reduce style/content entanglement more effectively than artist-name prompts.",
+    "AI tends to produce homogeneous brushwork, texture, and detail across an image, failing to reproduce hierarchical stylistic distributions found in pre-modern European and East Asian painting.",
+    "The medium's cognition and its conservatism are linked—both arise from learning patterns of how things normally are."
+  ],
+  "contributions": [
+    "Articulates six structural properties of the AI medium as a framework for media-theoretic analysis.",
+    "Introduces the concept of 'media cognition' to describe AI's internalized practical knowledge of art and media.",
+    "Reframes AI as the first artistic medium with intrinsic cognitive capacity, distinguishing it from earlier algorithmic/generative art.",
+    "Proposes a new way to categorize art, media, and design practices around whether precise control and editability are essential.",
+    "Identifies the entanglement of style and content as a structural, not incidental, feature of generative models.",
+    "Frames AI as the structural opposite of avant-garde defamiliarization, offering a new lens for evaluating AI art."
+  ],
+  "framing": "The article positions itself within media theory and art history—explicitly invoking McLuhan and Boden, and resisting the dominant framings of AI as primarily an ethical, social, or critical-art issue. Manovich situates his inquiry against both the art world's narrow definition of 'AI artists' and against modernist assumptions about novelty, arguing for an analysis of AI as it is actually used at scale, analogous to how earlier media (photography, film, digital media) have been theorized.",
+  "pdf_source": "drive"
+}
