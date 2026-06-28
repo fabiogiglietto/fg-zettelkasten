@@ -5,7 +5,7 @@ authors: ["Lev Manovich"]
 year: 2026
 doi: 10.1177/27523543261454458
 bibtex_key: Manovich2026-ih
-topics: []
+topics: [generative-ai-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/27523543261454458
@@ -22,28 +22,34 @@ discovery_date: 2026-06-28T06:40:06.966638Z
 
 ## Summary
 
-No faithful note on *A medium that thinks: Generative AI and media cognition* by Lev Manovich can be written here. The source material supplied for this entry is not Manovich's paper but a World Health Organization procurement document (RFP reference WHO-SHQ-RFP-26-3015-P) soliciting bids for a Long Term Agreement on literature review and evidence synthesis concerning AI, health information ecosystems, and misinformation. Because the content and the stated title/author do not match, any "summary" would be fabrication.
+Lev Manovich offers a media-theoretical reading of generative AI as an artistic medium, deliberately bracketing the now-dominant ethical and social critiques to ask what kind of medium it actually is. Drawing on McLuhan, Boden, and fifty years of his own practice across painting, photography, and generative code, he proposes six structural properties that characterize AI image generation, the most novel being that it is the first creative medium with built-in cognitive capacity. This "media cognition"—an internalized, encyclopedic knowledge of artistic techniques, conventions, and styles—both empowers the medium and explains its conservatism: because AI has learned how things normally are, it resists the avant-garde gesture of defamiliarization and gravitates toward 19th-century academic and photographic norms. Style and content, Manovich argues, are structurally entangled in these models, complicating the very idea of an "artist's style."
 
 ## Key Contributions
 
-- None attributable to the named paper from the supplied text.
-- The actual source is a procurement instrument establishing a 3-year (extendable to 5) Long Term Agreement supporting WHO's Frontier Technologies team within the AI and Frontier Technologies Unit, including work in the Eastern Mediterranean Region.
-- It specifies required contractor expertise across evidence synthesis, AI/LLM evaluation, and AI governance.
+- A six-property framework for analyzing generative AI as a medium rather than as a social or ethical object.
+- The concept of **media cognition**: AI's internalized practical knowledge of art history, techniques, and conventions.
+- Reframing AI as the first artistic medium with *intrinsic* cognitive capacity, distinct from prior algorithmic/generative art.
+- A new axis for categorizing creative practices: whether precise authorial control and editability are essential.
+- The claim that style/content entanglement is structural, not incidental, to generative models.
+- Positioning AI as the structural opposite of avant-garde defamiliarization.
 
 ## Methods
 
-Not applicable to the named paper. The supplied document describes procurement procedures: eligibility requirements, a 70/30 technical-to-financial evaluation weighting, mandatory submission forms, and the UNGM e-tendering portal. The commissioned work it anticipates would involve systematic/scoping literature reviews, evidence synthesis, analytical framework development, comparative case analysis of AI use, and review of AI governance frameworks across three segments.
+Theoretical and historical analysis grounded in media theory and art history. Manovich proceeds through comparative reflection — situating AI against photography, film, generative programming, and avant-garde strategies (Jazz, Cage, Judson Dance Theatre, Surrealism) — and through illustrative probing of mainstream tools, especially Midjourney (including its `--sref` style reference feature) and Midlibrary's style catalogues. The focus is deliberately on unmodified, at-scale use rather than experimental critical AI art.
 
 ## Findings
 
-- No research findings are present in the source.
-- Expected deliverables of the procured work include: a comprehensive literature review report, an analytical framework on misinformation pathways, evaluation frameworks for AI in misinformation detection, and policy/governance recommendation briefs.
-- WHO frames health misinformation as a growing public health challenge amplified by digital platforms, with AI presenting both opportunities and risks.
-- Robust regulatory and ethical safeguards are positioned as essential given rapid AI and large multimodal model development.
+- Probabilistic generation imposes a non-removable trade-off between variability and precise authorial control.
+- AI handles *visual* surrealism (recombining familiar objects) well but resists *logical* surrealism — e.g., it struggles to render a cat chasing a dog.
+- Outputs cluster around idealized academic and photographic aesthetics: centered subjects, one-point perspective, polished surfaces — an instance of Boden's "bounded creativity."
+- Naming an artist in a prompt produces "bleed": Hokusai pulls in waves and Mount Fuji along with style.
+- Image-based style references (`--sref`) disentangle style from content more cleanly than artist-name prompts.
+- AI produces homogeneous brushwork and detail across an image, failing to reproduce the hierarchical stylistic distributions characteristic of pre-modern European and East Asian painting.
+- Media cognition and aesthetic conservatism are two sides of the same learned distribution over "how things normally are."
 
 ## Connections
 
-No genuine intellectual connections can be drawn, as the supplied text is not the Manovich paper and no related bibtex keys were provided. This entry should be regenerated once the correct source for *A medium that thinks: Generative AI and media cognition* is available.
+This paper is an outlier within the topic cluster, which is dominated by empirical studies of AI-generated misinformation, persuasion, and journalistic uptake; Manovich's media-theoretic register has few direct interlocutors here. The most genuine resonance is with [[Hepp2026-oi]], which similarly takes a theoretical-conceptual approach to generative AI as an infrastructure shaping communication, and tangentially with work on stylistic detection and provenance such as [[Stanusch2026-ec]] and [[Dierickx2026-tw]], where the entanglement of style and content has practical stakes for identifying AI outputs.
 
 ## Podcast
 

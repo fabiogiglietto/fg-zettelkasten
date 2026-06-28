@@ -26,6 +26,7 @@ Studies of generative AI as both an object (synthetic visual persuasion, AI-driv
 - [[Hepp2026-oi]]
 - [[Lee2026-je]]
 - [[Lin2025-xp]]
+- [[Manovich2026-ih]]
 - [[Nguyen2026-vm]]
 - [[Orlando2025-ul]]
 - [[Schiffrin_undated-gi]]
