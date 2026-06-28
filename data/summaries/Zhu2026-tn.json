@@ -1,0 +1,39 @@
+{
+  "abstract": "This study uses a network-analytic, cross-country comparative approach to examine how audiences of alternative and mainstream news media overlap in six European countries (Norway, Sweden, Austria, Germany, France, Spain). Drawing on 2020 Reuters Digital News Report survey data and a content-analytic classification of alternative outlets, the authors build chance-corrected audience overlap networks and assess how media systems and the institutional access of populist parties shape alternative media's position in the news ecosystem. They find generally low overlap, but higher overlap where far-right populist parties have institutionalized political access, and a distinctive isolated alternative enclave in Sweden, where such actors were politically marginalized at the time.",
+  "key_claims": [
+    "Structural audience overlap between alternative and mainstream media is generally low, even though individual users may include both in their repertoires.",
+    "The marginality and network position of alternative media is context-dependent, shaped by media system type and the institutional access of populist political actors.",
+    "Alternative media in Northern-type systems with strong professional journalism tend to occupy more central network positions, likely because they orient themselves toward mainstream norms to gain legitimacy.",
+    "Greater institutionalized access of right-wing populist parties to mainstream politics is associated with more audience overlap between alternative and mainstream media, blurring the alternative/mainstream boundary.",
+    "Dense, isolated alternative media enclaves are most likely to form when strong professional journalism coexists with political marginalization of alternative actors (exemplified by Sweden).",
+    "'Alternativeness' is a fluid, relational, and context-dependent category rather than a fixed property of outlets."
+  ],
+  "methods": [
+    "Cross-country comparative design covering Norway, Sweden, Austria, Germany, France, and Spain, classified using Brüggemann et al.'s (2014) Northern, Central, and Southern media system types.",
+    "Secondary analysis of the 2020 Reuters Institute Digital News Report survey (N = 12,161 across six countries) to measure weekly use of 257 news outlets.",
+    "Content analysis of 46 emerging online outlets using a coding manual based on journalism practice, financing model, organizational structure, and journalistic/political ideology, classifying 39 as alternative (intercoder agreement = 100%, Krippendorff's alpha = 1).",
+    "Construction of weighted, undirected audience overlap networks where outlets are nodes and ties represent shared users.",
+    "Application of the disparity-filter 'backbone extraction' technique (Serrano et al. 2009; R 'backbone' package) to retain only statistically significant audience overlap ties (p < .05).",
+    "Computation of global network metrics (density, transitivity, components, assortativity) and node-level centrality measures (degree, betweenness, eigenvector); Welch's t-tests to compare alternative vs. mainstream outlets and across political-context groups.",
+    "Categorization of countries by populist actors' institutionalized access to political discourse following Heft et al. (2020)."
+  ],
+  "findings": [
+    "Basic audience overlap networks are very dense, but after backbone extraction the networks are sparse (density 0.01–0.09; transitivity 0.13–0.39), with many alternative outlets isolated.",
+    "Northern-type systems (Norway, Sweden) have the densest backbone networks and positive assortativity, indicating that alternative outlets tend to share audiences with each other; Sweden shows a tightly knit alternative cluster of seven outlets.",
+    "Central and Southern systems (Austria, Germany, France, Spain) show sparser networks with negative or near-zero assortativity; in Germany all alternative outlets are isolates, and Spain's network is highly fragmented (36 components).",
+    "Contrary to H1-2, alternative outlets in Northern-type systems occupy more central, not more peripheral, network positions; in Norway no centrality differences with mainstream outlets, and in Sweden alternative outlets have higher degree centrality but lower eigenvector centrality.",
+    "In Central-type countries and France, alternative outlets have significantly smaller audiences and significantly lower degree, betweenness, and eigenvector centralities than mainstream outlets.",
+    "Audience overlap with mainstream outlets is higher where populist parties had institutionalized access (Austria, Norway, France) — e.g., Unzensuriert.at and Kontrast.at overlap with ORF.at; Resett.no and Document.no overlap with Nettavisen — supporting H2-1.",
+    "H2-2 is not supported: Welch's t-tests show no significant differences in alternative media's audience size or centrality across high- vs. low-access political contexts.",
+    "Spain is an outlier: despite low institutional access, fact-checker Maldita.es shares audiences with El País, likely due to its recognized credibility."
+  ],
+  "contributions": [
+    "Introduces an audience-centric, network-analytic framework for studying alternative media, shifting focus from outlet content and individual repertoires to structural audience relations.",
+    "Provides the first cross-country comparative application of chance-corrected audience overlap networks to alternative vs. mainstream media.",
+    "Develops and applies a replicable content-analytic coding scheme for identifying alternative media across multiple national contexts.",
+    "Offers empirical evidence on how media systems and populist political access jointly condition the formation of alternative media enclaves and the blurring of alternative/mainstream boundaries.",
+    "Refines theoretical understanding of 'alternativeness' as relational and context-dependent, with implications for debates on polarization, radicalization, and isolated information spheres."
+  ],
+  "framing": "The paper situates itself within audience-centric and relational approaches to alternative media research (Frischlich et al. 2023; Holt, Ustad Figenschou, and Frischlich 2019), in dialogue with comparative media systems theory (Hallin and Mancini 2004; Brüggemann et al. 2014) and audience overlap network analysis (Webster and Ksiazek 2012; Fletcher and Nielsen 2017). It engages debates about whether digital alternative media constitute isolated enclaves that foster polarization, arguing instead that their structural position is shaped by national media and political contexts.",
+  "pdf_source": "drive"
+}
