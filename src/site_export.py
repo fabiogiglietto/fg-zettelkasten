@@ -39,18 +39,23 @@ def strip_dataview(text: str) -> str:
 
 # Quartz's ContentMeta dates a note from a `date` frontmatter key (falling back
 # to git/filesystem mtime — which is the build time for freshly exported,
-# untracked content). Paper notes carry `year` but no `date`, so without this
-# every page would show the build date. Topic/Structure notes have neither and
-# keep the (acceptable) build date.
+# untracked content). Paper notes carry `discovery_date` (when the paper entered
+# the feed) and `year`, but no `date`, so without this every page would show the
+# build date. We prefer `discovery_date` for a real per-paper date and fall back
+# to `<year>-01-01` only when it is missing. Topic/Structure notes have neither
+# and keep the (acceptable) build date.
 _FRONTMATTER = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
 _YEAR = re.compile(r"^year:[ \t]*(\d{4})[ \t]*$", re.MULTILINE)
+_DISCOVERY = re.compile(r"^discovery_date:[ \t]*(\S+)[ \t]*$", re.MULTILINE)
 _HAS_DATE = re.compile(r"^date:", re.MULTILINE)
 
 
 def inject_date(text: str) -> str:
-    """Add a `date: <year>-01-01` frontmatter key to a note that has `year`.
+    """Add a `date` frontmatter key derived from `discovery_date` (preferred) or
+    `<year>-01-01` (fallback).
 
-    No-op when the note lacks a `year` field or already has a `date` key.
+    No-op when the note already has a `date` key or carries neither
+    `discovery_date` nor `year`.
     """
     fm = _FRONTMATTER.match(text)
     if not fm:
@@ -58,10 +63,15 @@ def inject_date(text: str) -> str:
     block = fm.group(1)
     if _HAS_DATE.search(block):
         return text
-    year = _YEAR.search(block)
-    if not year:
-        return text
-    return f"---\ndate: {year.group(1)}-01-01\n{block}\n---\n{text[fm.end():]}"
+    discovery = _DISCOVERY.search(block)
+    if discovery:
+        date = discovery.group(1)[:10]  # YYYY-MM-DD from the ISO timestamp
+    else:
+        year = _YEAR.search(block)
+        if not year:
+            return text
+        date = f"{year.group(1)}-01-01"
+    return f"---\ndate: {date}\n{block}\n---\n{text[fm.end():]}"
 
 
 _BODY_H1 = re.compile(r"^# (.+?)[ \t]*$", re.MULTILINE)
