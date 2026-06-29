@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper develops an explainable machine learning framework to detect and longitudinally analyze suspected state-linked troll activity in South Korean news comment sections. Using a hierarchical classifier that labels comments by foreign-state origin, moral-emotional framing, and target country—with span-level rationales—the authors process 112 million comments by 4 million users on Naver News spanning nearly two decades (2006–2025), identifying 23,998 suspected troll accounts. They find that these accounts predominantly use morally condemning rhetoric (especially directed at South Korea and its political leaders across the ideological spectrum) rather than direct praise of foreign actors, and that such condemning content achieves disproportionately high visibility under engagement-based ranking.",
+  "key_claims": [
+    "Suspected troll accounts in Korean news comments rely more heavily on morally condemning rhetoric than on direct promotion of foreign-aligned narratives.",
+    "Condemning rhetoric—particularly 'Condemning Korea'—receives significantly higher engagement and visibility than praising rhetoric, making it the most amplified influence strategy.",
+    "Troll-like account influx rises around major elections and diplomatic tensions, indicating strategic responsiveness to political context.",
+    "High-visibility condemning comments target political leaders from both left- and right-leaning camps, suggesting campaigns aim to amplify polarization rather than promote a single faction.",
+    "Explainable, hierarchical detection with span-level rationales enables auditable, transparent moderation and can guide defensive prioritization for platforms."
+  ],
+  "methods": [
+    "Assembled a corpus of 112,658,554 Naver News comments from 4,047,831 users (2006–2025) by expanding from a seed set of 70 known troll accounts (released by the Institute for National Security Strategy in Korea) via follow-network ties and shared-article commenting.",
+    "Designed a three-level hierarchical labeling scheme grounded in cognitive-warfare and moral-emotion theory: (L1) foreign-state-suspected origin, (L2) other-condemning vs. other-praising moral emotion, (L3) target country (Korea, MNS, Partner, Rival, Unknown).",
+    "Human-annotated 1,452 gold-standard comments with class labels and span-level rationales (Krippendorff's α up to 0.994 for L1; 0.813 for final troll label); fine-tuned GPT-4.1 on these labels and used it to annotate ~49,745 additional comments.",
+    "Distilled GPT annotations into lightweight Korean PLMs (KcBERT, KLUE-RoBERTa, KcELECTRA, ~0.1B params); selected KcELECTRA as the final content-level detector, performing binary, multi-label, and BIO-tagged span classification (18 classifiers).",
+    "Built a user-level XGBoost classifier on 24 features (14 aggregated content probabilities plus 10 behavioral/metadata features including follow-network ties, self-duplication, engagement statistics) trained on 70 known trolls and 81 unanimously verified non-trolls, evaluated by 10-fold CV.",
+    "Applied SHAP for feature importance; validated detected accounts via temporal synchronization (Pearson + Williams test), Welch's t-tests on content-level probabilities, and span-level linguistic analyses of MNS language markers.",
+    "Conducted strategy analysis via longitudinal trends, fractional logit regression of like-ratio on rhetorical intensity with year/month fixed effects, and span-level targeted-entity extraction."
+  ],
+  "findings": [
+    "The user-level XGBoost detector achieved F1 = 0.94 (other classifiers 0.91–0.93), flagging 23,998 suspected troll accounts (0.59% of users) from the candidate pool.",
+    "Model-detected trolls exhibited strong temporal synchronization with known trolls (daily r=0.81, weekly r=0.84, monthly r=0.85), significantly higher than non-trolls (Williams test, p<0.001).",
+    "Model-detected trolls had elevated rates across all troll-related classes (e.g., 67% troll comments, 81% foreign-state-suspected, 57% Condemning Korea) vs. non-trolls (22%, 31%, 18%); they used MNS-language tokens at 53% frequency vs. 5% for non-trolls.",
+    "'Condemning Korea' was the dominant rhetoric throughout 2006–2025, peaking in 2018 (~675,107 comments), coinciding with MNS military-civil fusion in 2017 and the THAAD diplomatic conflict.",
+    "New troll-like account entries surged around elections (weekly influx 34.2 vs. 22.6 non-election; +51%, p<0.01), with the largest spike around the May 2017 presidential election (635 new accounts); troll penetration density also rose ~11% during election windows.",
+    "Only 'Condemning Korea' exceeded the 0.5 like-ratio neutrality threshold (mean 0.514); fractional logit showed its intensity positively predicted like ratio (β=0.109, p<0.001), while Condemning Rival (β=−0.51) and Praising MNS (β=−1.09) significantly suppressed visibility.",
+    "Top targets in high-visibility Condemning Korea comments were political leaders from both ideological camps (Moon Jae-in, Lee Jae-myung, Yoon Suk-yeol, Cho Kuk), consistent with polarization-amplifying tactics."
+  ],
+  "contributions": [
+    "A publicly released near-two-decade dataset of 112M Korean news comments linked to verified troll seeds, enabling longitudinal influence-operations research (Zenodo: 10.5281/zenodo.20257085).",
+    "An explainable, theory-grounded hierarchical troll detector that outputs class labels plus span-level rationales, distilled into a ~0.1B-parameter model for scalable inference and auditable moderation.",
+    "Empirical evidence on influence-operation strategies—election-timed account entry, dominance of condemning over praising rhetoric, and disproportionate visibility of moral-condemnation targeting domestic political elites—providing actionable guidance for defensive prioritization.",
+    "Sharing the suspected-troll account list with Naver and the Institute for National Security Strategy to support operational mitigation, alongside privacy safeguards (masking, removal procedures)."
+  ],
+  "framing": "The paper situates itself within research on cognitive warfare, online influence operations, and computational detection of coordinated inauthentic behavior, drawing on moral-psychology theories of other-condemning vs. other-praising emotions (Brady et al.) and NATO-aligned framings of weaponized public opinion. It positions explainable AI and span-level rationales as a bridge between detection research and platform governance, arguing for transparent, evidence-based moderation over black-box classifiers.",
+  "pdf_source": "drive"
+}
