@@ -27,6 +27,7 @@ Detection, conceptualisation and longitudinal study of coordinated link sharing 
 - [[Iannucci2025-eg]]
 - [[Jovanovic-Harrington2026-ze]]
 - [[Kansaon2025-id]]
+- [[Kim2026-br]]
 - [[Kulichkina2026-zk]]
 - [[Kuznetsova2025-nu]]
 - [[Luceri2025-tr]]

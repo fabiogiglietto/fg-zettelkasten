@@ -1961,9 +1961,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "content_hash": "56cf2a6e45f2bd1c33c79d6977a82fff91f6af5b1caae5e7bf7f9dd8da5adf9b",
       "podcast_linked": false,
-      "last_processed": "2026-06-28T10:05:12.202629+00:00"
+      "last_processed": "2026-06-29T08:46:47.194370+00:00"
     },
     "bibtex:Unknown2023-9137f448": {
       "note_path": "Papers/Unknown2023-9137f448.md",
@@ -2493,8 +2493,20 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-28T21:54:19.950505+00:00"
+    },
+    "bibtex:Kim2026-br": {
+      "note_path": "Papers/Kim2026-br.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "information-disorder"
+      ],
+      "pdf_source": "drive",
+      "content_hash": "b2ac8069942689763374190b3a5d5b068076f0807df3d6b8f330ed36eeba0a94",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-06-29T08:46:21.105767+00:00"
     }
   },
   "last_full_cluster": "2026-06-22T10:04:41.162976+00:00",
-  "papers_since_cluster": 4
+  "papers_since_cluster": 5
 }
