@@ -4,13 +4,12 @@ slug: polarization-hybrid-media
 emergent: false
 ---
 
-# Polarization in Hybrid Media Systems
+# Polarization and the Hybrid Media System
 
-Theoretical and empirical work on how the interplay between social media and traditional media shapes political polarization, insularity and the amplification of extremes.
+How partisan alignment, algorithmic curation and the interplay of traditional and social media shape political polarisation, insularity and cross-partisan exposure.
 
 ## Papers
 
-- [[Askanius2026-de]]
 - [[Bakshy2015-rn]]
 - [[Bennett2025-xs]]
 - [[Brady2026-ln]]
@@ -19,21 +18,21 @@ Theoretical and empirical work on how the interplay between social media and tra
 - [[Dehghan2026-sy]]
 - [[Elfes2026-jb]]
 - [[Esau2025-tf]]
-- [[F2020-6278a4aa]]
 - [[Gaisbauer2025-by]]
+- [[Gauthier2026-iq]]
 - [[Ghezzi2023-8bebc91f]]
 - [[Giglietto2019-882f1900]]
-- [[Giglietto2019-e9be81c1]]
 - [[Giglietto2026-632ef967]]
 - [[Green2025-ap]]
 - [[Hartmann2025-px]]
 - [[Knupfer2025-vt]]
 - [[Kristensen2025-ni]]
-- [[Marino2023-9137f448]]
+- [[Lai2024-to]]
 - [[Mosleh2024-op]]
+- [[Oswald2025-km]]
 - [[Rodarte2026-dk]]
-- [[Rothut2026-or]]
 - [[Sarmiento2025-as]]
+- [[Suau_Martinez2026-lv]]
 - [[Unknown2023-9137f448]]
 - [[Ventura2026-yc]]
 - [[Yoo2026-ev]]

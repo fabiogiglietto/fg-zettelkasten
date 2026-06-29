@@ -4,9 +4,9 @@ slug: elections-political-communication
 emergent: false
 ---
 
-# Elections and Political Communication on Social Media
+# Elections and Political Communication
 
-Empirical studies of electoral campaigns on digital platforms — Italian, German, Brazilian and European — covering partisanship, polarisation, political advertising and parliamentarians' online visibility.
+Empirical studies of social media in electoral campaigns — Italian, German, European, Brazilian — covering partisan attention, hyperpartisan networks, polarisation and political advertising.
 
 ## Papers
 
@@ -17,12 +17,14 @@ Empirical studies of electoral campaigns on digital platforms — Italian, Germa
 - [[Arceneaux2026-xk]]
 - [[Balluff2026-bv]]
 - [[Bouchafra2026-ts]]
-- [[Di-Marco2025-aa]]
+- [[Efstratiou2025-gs]]
 - [[F2020-6278a4aa]]
 - [[Gattermann2025-yx]]
 - [[Gauthier2026-iq]]
 - [[Gaw2025-ru]]
+- [[Giglietto2019-882f1900]]
 - [[Giglietto2020-9d8acdd7]]
+- [[Giglietto2023-fa71a001]]
 - [[Giglietto2025-1765bb4f]]
 - [[Giglietto2025-1e9a0917]]
 - [[Gonzalez-Bailon2024-rq]]
@@ -38,7 +40,6 @@ Empirical studies of electoral campaigns on digital platforms — Italian, Germa
 - [[Li2026-wq]]
 - [[Lin2025-xp]]
 - [[Lukito2026-nb]]
-- [[Marino2024-2fbc690f]]
 - [[Munger2025-cz]]
 - [[Oprea2025-lf]]
 - [[Philipp2026-tl]]
@@ -52,6 +53,7 @@ Empirical studies of electoral campaigns on digital platforms — Italian, Germa
 - [[Van_Erkel2026-mk]]
 - [[Ventura2025-sw]]
 - [[Votta2025-xz]]
+- [[noauthor_undated-bm]]
 
 ## All papers (Dataview)
 

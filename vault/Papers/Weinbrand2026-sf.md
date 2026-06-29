@@ -5,7 +5,7 @@ authors: ["Shir Weinbrand", "Ashwin Nagappa", "Daniel Angus"]
 year: 2026
 doi: 10.1177/17504813261447684
 bibtex_key: Weinbrand2026-sf
-topics: [generative-ai-media]
+topics: [generative-ai-and-media, platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/17504813261447684

@@ -4,9 +4,9 @@ slug: information-disorder
 emergent: false
 ---
 
-# Information Disorder and Disinformation Narratives
+# Information Disorder and Disinformation
 
-Mis-, dis- and malinformation in hybrid media systems, including problematic health content, hyperpartisan news and the propagation of false or misleading narratives across platforms and national contexts.
+Misinformation, disinformation, fake news and problematic content circulating in hybrid media ecologies, including health misinformation, war narratives, and strategic information operations.
 
 ## Papers
 
@@ -25,22 +25,21 @@ Mis-, dis- and malinformation in hybrid media systems, including problematic hea
 - [[Costello2024-bg]]
 - [[DeVerna2025-dl]]
 - [[Di-Domenico2026-zq]]
+- [[Dierickx2026-tw]]
 - [[Donovan2025-ws]]
-- [[Efstratiou2026-ij]]
+- [[Dubey2026-bl]]
 - [[Emilio2026-ik]]
 - [[Farkas2026-lr]]
 - [[FitzGerald2025-nv]]
 - [[Frischlich2025-vn]]
 - [[Gardam2025-er]]
 - [[Gattermann2025-yx]]
-- [[Ghezzi2023-8bebc91f]]
+- [[Gaw2025-ru]]
 - [[Giglietto2019-e9be81c1]]
 - [[Goel2025-iq]]
 - [[Gonzalez-Bailon2024-rq]]
 - [[Graham2025-gp]]
-- [[Grusauskaite2026-po]]
 - [[Hameleers2026-mc]]
-- [[Hollingshead2026-vx]]
 - [[Hourigan2026-oc]]
 - [[Humprecht2025-ml]]
 - [[Kim2026-br]]
@@ -56,12 +55,13 @@ Mis-, dis- and malinformation in hybrid media systems, including problematic hea
 - [[Marwick2025-vx]]
 - [[Marwick2026-qd]]
 - [[Mosleh2024-op]]
-- [[Nangle2026-yo]]
 - [[Nenno2025-xa]]
+- [[Pante2025-pq]]
 - [[Poliakoff2026-fa]]
 - [[Prochaska2025-ef]]
 - [[Renault2025-uh]]
 - [[Rieder2026-pp]]
+- [[Rodriguez_Farres2025-sg]]
 - [[Rohrbach2026-rc]]
 - [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
@@ -69,7 +69,6 @@ Mis-, dis- and malinformation in hybrid media systems, including problematic hea
 - [[Sadler2025-vu]]
 - [[Scalco2026-bd]]
 - [[Simeone2025-vo]]
-- [[Song2025-yh]]
 - [[Spampatti2026-kx]]
 - [[Starbird2025-jj]]
 - [[Suau_Martinez2026-lv]]

@@ -5,7 +5,7 @@ authors: ["Kobi Hackenburg", "Caroline Wagner", "Luke Hewitt", "Ben M. Tappin", 
 year: 2026
 doi: 
 bibtex_key: Hackenburg2026-ud
-topics: [generative-ai-media]
+topics: [generative-ai-and-media]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2606.16475v1

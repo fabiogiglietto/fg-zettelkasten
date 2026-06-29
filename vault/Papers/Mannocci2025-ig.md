@@ -5,7 +5,7 @@ authors: ["Lorenzo Mannocci", "Stefano Cresci", "Matteo Magnani", "Anna Monreale
 year: 2025
 doi: 
 bibtex_key: Mannocci2025-ig
-topics: [coordinated-inauthentic-behavior, digital-methods-tools]
+topics: [coordinated-inauthentic-behavior, computational-methods-social-research]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2507.12108v3

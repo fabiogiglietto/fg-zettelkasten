@@ -5,7 +5,7 @@ authors: ["CATIE SNOW BAILARD", "REBEKAH TROMBLE", "WEI ZHONG", "FEDERICO BIANCH
 year: 2024
 doi: 10.1017/s0003055423001478
 bibtex_key: Bailard2024-pj
-topics: [computational-methods-llms, information-disorder]
+topics: [computational-methods-social-research, information-disorder]
 citation_count: 9
 open_access: false
 source_url: https://doi.org/10.1017/s0003055423001478

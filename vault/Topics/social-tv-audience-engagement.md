@@ -6,7 +6,7 @@ emergent: false
 
 # Social TV and Audience Engagement
 
-Long-running line on second-screen practices, TV-Twitter interactions and networked audience participation — foundational work that continues to anchor the PI's view of hybrid media systems.
+Long-running line of work on second-screen practices, Twitter conversations around television, and audience participation across genres — a foundational theme that continues to inform the researcher's encyclopaedia entries.
 
 ## Papers
 

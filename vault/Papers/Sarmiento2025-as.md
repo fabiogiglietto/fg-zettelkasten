@@ -5,7 +5,7 @@ authors: ["Hernan Sarmiento", "Ricardo Córdova", "Jorge Ortiz", "Felipe Bravo-M
 year: 2025
 doi: 10.1145/3711912
 bibtex_key: Sarmiento2025-as
-topics: [computational-methods-llms, polarization-hybrid-media]
+topics: [computational-methods-social-research, polarization-hybrid-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3711912

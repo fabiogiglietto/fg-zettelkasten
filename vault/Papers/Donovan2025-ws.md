@@ -5,7 +5,7 @@ authors: ["Joan Donovan"]
 year: 2025
 doi: 10.1177/07439156251384249
 bibtex_key: Donovan2025-ws
-topics: [platform-governance-data-access, information-disorder]
+topics: [information-disorder, platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/07439156251384249

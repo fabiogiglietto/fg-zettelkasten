@@ -5,7 +5,7 @@ authors: ["Silke Adam", "Tobias Rohrbach", "Franziska Keller", "Mykola Makhortyk
 year: 2026
 doi: 10.1093/joc/jqaf033
 bibtex_key: Adam2026-tz
-topics: [information-disorder]
+topics: [information-disorder, health-information-online]
 citation_count: 4
 open_access: false
 source_url: https://doi.org/10.1093/joc/jqaf033

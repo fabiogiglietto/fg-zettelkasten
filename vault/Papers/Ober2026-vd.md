@@ -5,7 +5,7 @@ authors: ["Teresa Ober", "Karyssa A. Courey", "Michael Flor"]
 year: 2026
 doi: 10.5281/zenodo.18733521
 bibtex_key: Ober2026-vd
-topics: []
+topics: [computational-methods-social-research]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.5281/zenodo.18733521

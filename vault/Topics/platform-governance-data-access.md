@@ -6,21 +6,16 @@ emergent: false
 
 # Platform Governance and Research Data Access
 
-Algorithmic curation, content moderation and visibility policies (e.g. Meta's political content reduction), together with the shifting landscape of social media APIs, DSA-era research access and the post-CrowdTangle ecosystem.
+Policies, APIs and DSA-era infrastructures shaping access to social media data for academic research, including Meta's content reduction, CrowdTangle shutdown, and the state of platform research tooling.
 
 ## Papers
 
-- [[Ahuja2025-ku]]
 - [[Allen2025-ot]]
 - [[Bak-Coleman2025-pm]]
 - [[Bak-Coleman2026-mk]]
-- [[Bakshy2015-rn]]
-- [[Bastos2025-ol]]
 - [[Bastos2025-ya]]
 - [[Bouchaud2026-lr]]
-- [[Boyd2026-op]]
 - [[Brady2026-ln]]
-- [[Brown2026-br]]
 - [[Bruns2026-yv]]
 - [[Cazzamatta2026-lo]]
 - [[Crosset2026-mq]]
@@ -30,8 +25,6 @@ Algorithmic curation, content moderation and visibility policies (e.g. Meta's po
 - [[Entrena-Serrano2025-gw]]
 - [[Farkas2026-lr]]
 - [[Freelon2024-sc]]
-- [[Gauthier2026-iq]]
-- [[Gerbaudo2026-fo]]
 - [[Giglietto2022-b30e8b4e]]
 - [[Giglietto2025-1765bb4f]]
 - [[Giglietto2025-1e9a0917]]
@@ -40,6 +33,7 @@ Algorithmic curation, content moderation and visibility policies (e.g. Meta's po
 - [[Giglietto2026-855a54cb]]
 - [[Heiss2026-qv]]
 - [[Hurcombe2025-cs]]
+- [[Inacio-da-Silva2026-zf]]
 - [[Jurg2025-ur]]
 - [[Karo2026-dn]]
 - [[Lewandowsky2026-ob]]
@@ -49,7 +43,6 @@ Algorithmic curation, content moderation and visibility policies (e.g. Meta's po
 - [[Moran2025-qn]]
 - [[Munger2025-cz]]
 - [[Murtfeldt2025-wu]]
-- [[Nangle2026-yo]]
 - [[Ohme2026-nv]]
 - [[Peters2026-mo]]
 - [[Philipp2026-tl]]
@@ -67,6 +60,8 @@ Algorithmic curation, content moderation and visibility policies (e.g. Meta's po
 - [[Ventura2026-yc]]
 - [[Vincent_undated-re]]
 - [[Votta2025-xz]]
+- [[Wang2026-ub]]
+- [[Weinbrand2026-sf]]
 - [[Yang2026-tq]]
 - [[de-Vreese2026-zx]]
 

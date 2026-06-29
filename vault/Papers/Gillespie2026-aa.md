@@ -5,7 +5,7 @@ authors: ["Tarleton Gillespie", "Ryland Shaw", "Mary L. Gray", "Jina Suh"]
 year: 2026
 doi: 10.1145/3731657
 bibtex_key: Gillespie2026-aa
-topics: []
+topics: [generative-ai-and-media]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1145/3731657

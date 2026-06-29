@@ -5,7 +5,7 @@ authors: ["Ryan Murtfeldt", "Sejin Paik", "Naomi Alterman", "Ihsan Kahveci", "Je
 year: 2024
 doi: 
 bibtex_key: Murtfeldt2025-wu
-topics: [platform-governance-data-access, digital-methods-tools]
+topics: [platform-governance-data-access, computational-methods-social-research]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2404.07340v2

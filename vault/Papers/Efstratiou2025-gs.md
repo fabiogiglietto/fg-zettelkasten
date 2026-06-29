@@ -5,7 +5,7 @@ authors: ["Alexandros Efstratiou", "Kayla Duskin", "Kate Starbird", "Emma Spiro"
 year: 2025
 doi: 
 bibtex_key: Efstratiou2025-gs
-topics: [platform-governance-data-access]
+topics: [platform-governance-data-access, elections-political-communication]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2512.06129v2

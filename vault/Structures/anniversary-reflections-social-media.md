@@ -1,0 +1,31 @@
+---
+type: structure
+slug: anniversary-reflections-social-media
+topic: "Anniversary Reflections on the Trajectory of Social Media"
+---
+
+# Anniversary Reflections on the Trajectory of Social Media
+
+## From Promise to Diagnosis: A Decade's Reckoning
+
+The four essays gathered here share an occasion — an anniversary issue inviting retrospection — and an unhappy verdict: the platforms that scholars of this journal helped name, theorize, and dignify with the label "social" have, over roughly two decades, become something else. Each author writes from a position of personal investment in the vocabulary now under revision. [[Helmond2026-ll]] revisits "platformization" a decade after coining it; [[Boyd2026-op]] reconsiders the very phrase "social media"; [[Baym2026-tr]] returns to her 2015 manifesto to audit which threats came true; and [[Marwick2026-ss]] mourns an "old internet" she inhabited as a LiveJournal user. The genre is confessional and corrective at once — an effort to update the field's conceptual toolkit to match what platforms have actually become.
+
+### Diagnoses of Drift
+
+The essays converge on a shared diagnosis even as they cut the problem differently. For [[Boyd2026-op]], the decisive shift is from reciprocal posting to algorithmically curated scrolling: peer-to-peer sociality has been displaced by one-sided attention to professionalized influencers, warranting the relabeling of "social media" as "parasocial media." [[Marwick2026-ss]] reaches a similar verdict from an autoethnographic angle, contrasting the intimacy, vulnerability, and granular privacy of early-2000s LiveJournal with the alienation and surveillance of today's feeds. [[Helmond2026-ll]] frames the same drift infrastructurally: the retirement of Facebook's Like button signals the obsolescence of the social-graph paradigm itself, as Meta turns from harvesting open-web behavioral signals toward in-app data and AI-driven inference. [[Baym2026-tr]], meanwhile, ledgers the damage in political-economic terms — wealth concentration, opaque algorithms, precarious creator labor, and data extraction have each metastasized since 2015. Read together, the essays describe the same arc from different elevations: the architectures of reciprocity that earlier scholarship took as social media's defining feature have been hollowed out.
+
+### Contingency, Not Inevitability
+
+A second shared move is the insistence that this trajectory was chosen rather than fated. [[Marwick2026-ss]] is most explicit: the present configuration is the contingent outcome of political-economic decisions, and different design and governance choices could have yielded a more humane public sphere. [[Boyd2026-op]] traces the parasocial turn to corporate financialization, consolidation, and algorithmic incentives — invoking Doctorow's "enshittification" as a periodization of how platforms came to serve investors rather than users. [[Baym2026-tr]] sharpens the political reading, naming a "broligarchy" in which concentrated tech wealth has converted directly into political power. [[Helmond2026-ll]] complicates the determinism from another direction, arguing that platformization has always unfolded collaboratively through third parties — webmasters, app developers, sectoral partners — drawn in under promises of mutual benefit, and thus unevenly across regions and domains. The shared upshot is anti-deterministic: whatever the platforms now are, they were made, and could be remade.
+
+### Conceptual Hygiene as Intervention
+
+Strikingly, three of the four essays treat *renaming* as a substantive intellectual intervention. [[Boyd2026-op]] proposes deprecating "social media" in favor of "parasocial media," arguing that the older label has biased normative interpretation of practices that no longer resemble it. [[Helmond2026-ll]] worries that "platformization" has eroded through conflation with "digitization," and reanchors it via Manovich as a platform-specific form of "transcoding" that makes domains "platform-ready." [[Baym2026-tr]] reaches for Jodi Dean's "communicative capitalism" and Gillespie's diagnostic framing to keep critique adequate to a moving target. Even [[Marwick2026-ss]]'s elegiac mode performs conceptual work by reframing social media as social *infrastructure* requiring stewardship and care. The essays read collectively as an argument that vocabulary lags reality, and that updating terms is part of how scholarship retains analytic purchase on platforms that change underneath it.
+
+### What Comes After Critique
+
+Where the essays diverge most productively is on what to do next. [[Baym2026-tr]] is the most self-critical about the field itself, arguing that two decades of trenchant critique have not bent the curve and calling for interdisciplinary, cross-sector collaboration aimed at concrete change. [[Marwick2026-ss]] gestures toward small-scale, care-oriented alternatives rather than replicas of legacy platforms — a critique that lands pointedly on Bluesky-as-Twitter-mimicry, an alternative both she and [[Baym2026-tr]] note with cautious interest alongside Mastodon and mutual aid networks. [[Boyd2026-op]] charges scholars with developing new analytic tools for a parasocial genre of media that older frameworks of networked publics cannot fully describe. [[Helmond2026-ll]] looks forward by looking outward and upward: the next decade of platformization will involve new actors (Nvidia, Anduril, Palantir), new sectors (military, energy, space), and Big Tech's pivot to "Big AI" — exemplified by Google's Project Suncatcher and the move of AI compute literally into orbit. The collective horizon, then, runs from intimate alternatives at one end to planetary AI infrastructures at the other, with the field asked to attend to both.
+
+### A Note on Mood
+
+The essays share a tone worth registering: rueful, implicated, and addressed as much to colleagues as to readers. Each author writes as someone whose earlier vocabulary helped legitimize the very platforms now under indictment, and each treats the anniversary not as celebration but as occasion for accounting. The shared question — what the field got right, what it missed, and what it should do now — gives this cluster its coherence and marks it as a turning point in the journal's intellectual self-understanding.

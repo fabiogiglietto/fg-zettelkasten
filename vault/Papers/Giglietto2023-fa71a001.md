@@ -6,7 +6,7 @@ year: 2023
 doi: 10.1177/20563051231196866
 bibtex_key: Giglietto2023-fa71a001
 kind: own
-topics: [coordinated-inauthentic-behavior, digital-methods-tools]
+topics: [coordinated-inauthentic-behavior, elections-political-communication]
 citation_count: 7
 open_access: true
 source_url: https://doi.org/10.1177/20563051231196866

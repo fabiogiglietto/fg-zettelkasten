@@ -6,7 +6,7 @@ year: 2025
 doi: 10.5281/zenodo.16269197
 bibtex_key: Giglietto2025-ed60bc90
 kind: own
-topics: [platform-governance-data-access, digital-methods-tools]
+topics: [platform-governance-data-access]
 citation_count: 1
 open_access: true
 source_url: https://doi.org/10.5281/zenodo.16269197
