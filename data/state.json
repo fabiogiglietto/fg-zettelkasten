@@ -2543,8 +2543,17 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-29T08:46:21.105767+00:00"
+    },
+    "bibtex:Gottfried2026-ww": {
+      "note_path": "Papers/Gottfried2026-ww.md",
+      "topics": [],
+      "pdf_source": "drive",
+      "content_hash": "c32b00d18ccce3190864d3a6fe24c2b608d7018d49fb4df4d14fb08d26012051",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-06-30T10:39:37.061758+00:00"
     }
   },
   "last_full_cluster": "2026-06-29T09:20:04.981277+00:00",
-  "papers_since_cluster": 0
+  "papers_since_cluster": 1
 }
