@@ -2575,8 +2575,20 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-01T11:05:55.415355+00:00"
+    },
+    "bibtex:Bechmann2026-dr": {
+      "note_path": "Papers/Bechmann2026-dr.md",
+      "topics": [
+        "platform-governance-data-access"
+      ],
+      "pdf_source": "abstract_only",
+      "content_hash": "3cf00d30a76239d6a1e2d224f421c00f8a89d851a8c9d63d206002f231426704",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-01T18:35:59.913282+00:00"
     }
   },
   "last_full_cluster": "2026-06-29T09:20:04.981277+00:00",
-  "papers_since_cluster": 3
+  "papers_since_cluster": 4
 }
