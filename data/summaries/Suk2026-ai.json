@@ -1,0 +1,23 @@
+{
+  "abstract": "This article proposes a multilevel conceptual framework for understanding public trust in generative AI, drawing lessons from prior scholarship on trust in mass media and social media. The authors argue that trust in generative AI should be examined across individual, institutional, and societal levels, integrating insights from communication research on media trust. The paper is positioned as a theoretical contribution meant to guide future empirical work in this emerging area.",
+  "key_claims": [
+    "Trust in generative AI is a distinct but related phenomenon to trust in mass media and social media, and can be theorized by building on those traditions.",
+    "A multilevel framework spanning individual, institutional, and societal factors is needed to adequately capture the dynamics of trust in generative AI.",
+    "Lessons from decades of media trust research can inform how communication scholars approach generative AI as a new information intermediary."
+  ],
+  "methods": [
+    "Conceptual and theoretical synthesis of prior literature on trust in mass media and social media.",
+    "Development of a multilevel analytical framework applied to generative AI."
+  ],
+  "findings": [
+    "Existing frameworks of media trust are informative but insufficient on their own for generative AI, which introduces new features such as generative outputs and human-AI interaction.",
+    "Trust dynamics operate across interdependent levels, with individual perceptions, institutional practices, and broader societal contexts jointly shaping trust in generative AI."
+  ],
+  "contributions": [
+    "Introduces a multilevel conceptual framework for studying trust in generative AI within communication research.",
+    "Bridges scholarship on media trust and emerging work on AI, offering a roadmap for future empirical investigation.",
+    "Clarifies conceptual distinctions and continuities across trust in mass media, social media, and generative AI."
+  ],
+  "framing": "The paper is situated within communication and media studies scholarship on public trust in information intermediaries, extending that lineage to generative AI. It engages debates about how audiences evaluate credibility and trustworthiness as media technologies evolve from mass media through social media to AI-driven systems.",
+  "pdf_source": "abstract_only"
+}
