@@ -2041,9 +2041,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "3cb0d1b609ce1b66a38145c9bb959ee96781f985ffd52ebf9b31ed77f54f9dc0",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
-      "last_processed": "2026-05-19T06:46:02.012310+00:00"
+      "last_processed": "2026-07-01T07:17:36.573415+00:00"
     },
     "bibtex:Ghezzi2023-8bebc91f": {
       "note_path": "Papers/Ghezzi2023-8bebc91f.md",
@@ -2552,8 +2552,20 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-30T10:39:37.061758+00:00"
+    },
+    "bibtex:Suk2026-ai": {
+      "note_path": "Papers/Suk2026-ai.md",
+      "topics": [
+        "generative-ai-and-media"
+      ],
+      "pdf_source": "abstract_only",
+      "content_hash": "677015a8e317f6fb0e96d0bcc0d7cc5a97c2a2b4bebc1272e6817f2df80f114b",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-01T07:17:23.042388+00:00"
     }
   },
   "last_full_cluster": "2026-06-29T09:20:04.981277+00:00",
-  "papers_since_cluster": 1
+  "papers_since_cluster": 2
 }

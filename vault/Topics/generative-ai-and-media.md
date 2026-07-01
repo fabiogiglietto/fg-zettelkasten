@@ -44,6 +44,7 @@ The role of LLMs and generative AI in content production, persuasion, and as res
 - [[Schiffrin_undated-gi]]
 - [[Schroeder2026-im]]
 - [[Stanusch2026-ec]]
+- [[Suk2026-ai]]
 - [[Szabo2026-rd]]
 - [[Tan2024-vl]]
 - [[Tornberg2026-lc]]
