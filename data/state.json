@@ -2564,8 +2564,19 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-07-01T07:17:23.042388+00:00"
+    },
+    "bibtex:Gilardi2026-hw": {
+      "note_path": "Papers/Gilardi2026-hw.md",
+      "topics": [
+        "generative-ai-and-media"
+      ],
+      "pdf_source": "drive",
+      "content_hash": "d7497863802c0b027c61e4fd4e3efe8c3dc534b77b86fe7c4d3dd56879776d02",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-01T11:05:55.415355+00:00"
     }
   },
   "last_full_cluster": "2026-06-29T09:20:04.981277+00:00",
-  "papers_since_cluster": 2
+  "papers_since_cluster": 3
 }

@@ -26,6 +26,7 @@ The role of LLMs and generative AI in content production, persuasion, and as res
 - [[Fattorini2026-bo]]
 - [[Giglietto2024-cbeb3f70]]
 - [[Giglietto2026-9b6a992d]]
+- [[Gilardi2026-hw]]
 - [[Gillespie2026-aa]]
 - [[Hackenburg2025-dj]]
 - [[Hackenburg2026-ud]]
