@@ -1,0 +1,25 @@
+{
+  "abstract": "This paper evaluates X's Community Notes crowdsourced moderation system, which relies on inferring a latent ideological dimension and privileging notes that attract cross-partisan agreement. Drawing on the full corpus of 1.9 million notes and 135 million ratings through March 2025, the authors cross-reference this data with ideological scaling across 13 countries to assess how the system performs under different polarization conditions. They argue that the design systematically undermoderates polarizing content, with implications for electoral integrity.",
+  "key_claims": [
+    "Community Notes' bridging-based algorithm structurally undermoderates polarizing content because such content is least likely to attract cross-partisan agreement.",
+    "The system's performance varies with the polarization context of the country in which it is deployed.",
+    "This design flaw creates risks for electoral processes as Community Notes is rolled out globally."
+  ],
+  "methods": [
+    "Analysis of the complete set of approximately 1.9 million Community Notes and 135 million associated ratings up to March 2025.",
+    "Cross-referencing note and rater data with ideological scaling datasets covering 13 countries.",
+    "Evaluation of the bridging algorithm's behavior across differing national polarization contexts."
+  ],
+  "findings": [
+    "Notes addressing polarizing content are systematically less likely to be surfaced as helpful due to lack of cross-partisan support.",
+    "Moderation coverage and effectiveness vary across the 13 countries analyzed depending on polarization structure.",
+    "The system's undermoderation of polarizing material is a design feature rather than an incidental gap (as stated in abstract framing)."
+  ],
+  "contributions": [
+    "Provides the first large-scale, cross-national empirical audit of Community Notes across diverse polarization contexts.",
+    "Identifies a structural limitation of bridging-based moderation algorithms for handling polarizing and electorally sensitive content.",
+    "Supplies evidence relevant to platform governance and electoral integrity debates as such systems scale globally."
+  ],
+  "framing": "The paper situates itself within research on platform governance, crowdsourced content moderation, and computational studies of political polarization. It engages critically with bridging-based algorithms — increasingly promoted as a neutral alternative to top-down moderation — by testing their behavior against comparative ideological data.",
+  "pdf_source": "abstract_only"
+}
