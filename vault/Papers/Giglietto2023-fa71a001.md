@@ -7,7 +7,7 @@ doi: 10.1177/20563051231196866
 bibtex_key: Giglietto2023-fa71a001
 kind: own
 topics: [coordinated-inauthentic-behavior, elections-political-communication]
-citation_count: 7
+citation_count: 20
 open_access: true
 source_url: https://doi.org/10.1177/20563051231196866
 podcast_url: 
@@ -23,28 +23,28 @@ discovery_date:
 
 ## Summary
 
-This paper introduces a circular, near-real-time workflow for detecting, monitoring, and continuously updating lists of coordinated social media accounts spreading problematic information. The authors argue that static, manually compiled lists of malicious actors decay quickly as accounts adapt, get suspended, or switch assets, leading to systematic underestimation of information operations' reach. Their solution leverages the coordinated behavior of already-known actors as a seed: by repeatedly scraping their overperforming posts via API and applying near-duplicate detection across links, image-text pairs, and message content, the system iteratively surfaces new accounts engaged in coordinated sharing. Applied to the 2022 Italian snap election, the workflow expanded an initial seed of 435 accounts by surfacing 620 additional coordinated accounts and revealed three structurally distinct operations: a hyperpartisan Five Star Movement echo chamber, a clickbait click-economy scheme exploiting religious Pages, and a covert religious proselytism network run by the Church of Almighty God.
+This paper proposes an iterative workflow to keep lists of coordinated social media accounts current rather than allowing them to decay as bad actors adapt, migrate, or get suspended. Starting from a seed of known coordinated accounts, the system polls their overperforming posts every six hours via the CrowdTangle API and applies near-duplicate detection across links, image-text, and messages to surface newly coordinating accounts, which then feed back into the monitored set. Applied to the 2022 Italian snap election, the workflow expanded an initial 435-account seed by hundreds of new coordinated accounts and revealed three qualitatively distinct operations — a Five Star Movement hyperpartisan echo chamber, a religious-Page clickbait network, and a Church of Almighty God proselytism operation using Messenger bots — demonstrating that a behavior- and actor-agnostic approach can flag ideological, economic, and religious coordination alike.
 
 ## Key Contributions
 
-- A novel iterative workflow that keeps lists of coordinated accounts current rather than treating detection as a one-shot exercise.
-- An extension of Coordinated Link Sharing Behavior (CLSB) detection to also cover Coordinated Image Text Sharing Behavior (CITSB) and Coordinated Message Sharing Behavior (CMSB), addressing actor adaptations such as moving links into comments.
-- A behaviorally and ideologically agnostic alert system useful to fact-checkers, journalists, and researchers for triage rather than automatic harm attribution.
-- An empirical demonstration on the 2022 Italian election yielding three contrasting case studies (political, economic, religious motivations).
-- A discussion of portability to other platforms under emerging researcher API regimes and the EU Digital Services Act Article 40.
+- A circular, near-real-time workflow for **updating** rather than merely compiling lists of coordinated accounts.
+- Extension of Coordinated Link Sharing Behavior (CLSB) detection with Coordinated Image-Text Sharing Behavior (CITSB) and Coordinated Message Sharing Behavior (CMSB), addressing adaptations such as hiding links in comments.
+- Empirical demonstration on the 2022 Italian election, with three documented case studies spanning ideological, economic, and religious motivations.
+- A behavior-agnostic alerting logic for fact-checkers and researchers, framed cautiously so that flagged accounts are treated as leads rather than verdicts.
+- A discussion of platform portability under the EU Digital Services Act Article 40 data access regime.
 
 ## Methods
 
-The workflow combines scheduled CrowdTangle API queries (every 6 hours over the July 28–September 25, 2022 campaign) for overperforming posts, with CooRnet-based coordination detection (30-second window, 26+ share threshold at the 0.995 percentile) extended to images and near-duplicate text (cosine similarity > .7). A keyword-based political filter (party names, leaders, institutions) with capitalization checks reduces false positives. The seed was 435 accounts derived from prior CLSB studies of Italian elections and COVID-19. Surfaced cases were analyzed through François's A-B-C (Actors–Behavior–Content) framework, with URL sources classified as Facebook-internal vs. external and reliability assessed via NewsGuard.
+The authors seeded the pipeline with 435 coordinated accounts identified in prior Italian CLSB studies (2018, 2019, COVID). An R script scheduled via cronR queried CrowdTangle every six hours for the top overperforming political and general posts, plus content from the top 10% of newly detected accounts. CooRnet was run with a 30-second coordination interval and a 26+ share threshold at the 0.995 percentile to detect CLSB; CITSB and CMSB used near-duplicate matching (text cosine similarity > .7). Political filtering relied on a keyword list of parties, leaders, and institutions with capitalization heuristics. Surfaced networks were analyzed using François's A-B-C (Actors–Behavior–Content) framework, with URL sources classified as Facebook-internal vs. external and reliability assessed via NewsGuard ratings.
 
 ## Findings
 
-- The workflow surfaced 1,022 overperforming political posts, 272 coordinated links, 66 new coordinated political accounts, and 554 generic coordinated accounts beyond the seed.
-- **M5S hyperpartisan network**: 90 entities reaching ~1.55M users, publishing 534,353 posts in two months and averaging 6.2 posts/minute on election day (peaks >50/min). 80% of posts contained no links; most linked content was Facebook-internal, indicating a self-referential echo chamber circulating fabricated polls favoring M5S.
-- **Clickbait operation**: 46 Pages including two religious Pages ("La Preghiera di Oggi", "Santa Rita da Cascia") with ~768K combined followers; two-thirds of their content was non-religious political clickbait with misleading headlines, incidentally exposing devout audiences to politicized content for ad revenue.
-- **Church of Almighty God**: 1,390 groups across seven language clusters; the Italian subset (61 groups, 1.72M members; 13 Pages, 295K subscribers) used Messenger bots to funnel users into undisclosed catechism chats, with Pages showing anomalously many administrators (avg 72.6).
-- Only 2% of external links in the M5S network came from NewsGuard-rated unreliable sources, but 76% were unrated, complicating reliability-based assessment.
+- The workflow surfaced 1,022 overperforming political posts, 272 coordinated links, 66 new coordinated political accounts, and 554 additional generic coordinated accounts beyond the seed.
+- **M5S network**: 90 entities, potential reach ~1.55M users, 534,353 posts in two months, peaking above 50 posts/minute on election day; 80% of posts had no links and most links were Facebook-internal, sustaining an echo chamber that circulated fabricated pro-M5S polls.
+- **Clickbait network**: 46 Pages publishing 58,035 posts; two religious Pages ("La Preghiera di Oggi", "Santa Rita da Cascia") with ~768,000 combined followers used misleading headlines to expose religious audiences to political clickbait.
+- **Church of Almighty God**: 1,390 public groups across seven language clusters; the Italian subset had 61 groups (~1.72M members) and 13 Pages (~294K subscribers), with abnormally many admins (avg 72.6) and Messenger bots funneling users into catechism chats without disclosing affiliation.
+- Only 2% of external links in the M5S network came from NewsGuard-rated unreliable sources, but 76% were unrated, with reliable links skewing toward outlets ideologically aligned with M5S.
 
 ## Connections
 
-This paper is a direct methodological extension of the authors' prior CLSB program on Italian elections and COVID-19 disinformation, including [[Giglietto2022-b30e8b4e]], [[Giglietto2022-0e951ac5]], [[Giglietto2020-9d8acdd7]], and [[Iannelli2018-ebd918b7]], and shares concerns with subsequent CooRnet-based and coordination-detection work such as [[Giglietto2026-9b6a992d]], [[Giglietto2026-855a54cb]], [[Graham2025-gp]], and [[Schroeder2026-im]]. Its emphasis on iteratively updating actor lists and on behavior-based rather than content-based detection resonates with broader methodological reflections in [[Bruns2025-fz]] and [[Rieder2025-ju]], while the case of bot-mediated religious proselytism connects to recent work on automated and inauthentic account behavior such as [[Minici2024-tf]] and [[Luceri2025-tr]].
+This paper is an explicit methodological extension of the authors' prior CLSB program on Italian elections and COVID-era information operations — see [[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], [[Giglietto2019-882f1900]], and [[F2020-6278a4aa]] — and connects to more recent refinements and applications of the CooRnet/CLSB paradigm in [[Giglietto2025-1765bb4f]], [[Giglietto2025-1e9a0917]], and [[Giglietto2026-9b6a992d]]. Its behavior-first, actor-agnostic stance sits alongside broader debates on defining and detecting coordinated inauthentic behavior discussed in [[Graham2026-fb]], [[Graham2025-gp]], and [[Starbird2025-jj]], and speaks to work on cross-platform monitoring pipelines such as [[Minici2024-tf]] and [[Luceri2025-tr]]. The Italian election context also connects to [[Iannelli2015-e0818c3e]] and [[Iannucci2025-eg]].

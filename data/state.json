@@ -1981,9 +1981,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "f2c5c99ba774c8e3dd39f84f62e95eab7c0629c58f4cb504d78c5f77f05e48b7",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
-      "last_processed": "2026-06-22T12:01:59.764587+00:00"
+      "last_processed": "2026-07-02T18:06:08.494017+00:00"
     },
     "bibtex:Rossi2023-847d5a9f": {
       "note_path": "Papers/Rossi2023-847d5a9f.md",
@@ -1993,9 +1993,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "56cf2a6e45f2bd1c33c79d6977a82fff91f6af5b1caae5e7bf7f9dd8da5adf9b",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
-      "last_processed": "2026-06-29T08:46:47.194370+00:00"
+      "last_processed": "2026-07-02T18:06:08.494020+00:00"
     },
     "bibtex:Unknown2023-9137f448": {
       "note_path": "Papers/Unknown2023-9137f448.md",
@@ -2017,9 +2017,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "3e1fc597d891c59df345b4a61c2f8d1ec90c4229caf9a15793cea82b345538ad",
+      "content_hash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d",
       "podcast_linked": true,
-      "last_processed": "2026-06-17T11:39:53.411914+00:00"
+      "last_processed": "2026-07-02T18:06:08.494010+00:00"
     },
     "bibtex:Giglietto2024-cbeb3f70": {
       "note_path": "Papers/Giglietto2024-cbeb3f70.md",
@@ -2041,9 +2041,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "3cb0d1b609ce1b66a38145c9bb959ee96781f985ffd52ebf9b31ed77f54f9dc0",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
-      "last_processed": "2026-07-01T09:52:57.619582+00:00"
+      "last_processed": "2026-07-02T18:06:08.494014+00:00"
     },
     "bibtex:Ghezzi2023-8bebc91f": {
       "note_path": "Papers/Ghezzi2023-8bebc91f.md",
@@ -2167,9 +2167,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "dc2819c4a9dfeed337eeca518b6a89dfbc37cd3cf6e13a740cb24172adb78ab1",
+      "content_hash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d",
       "podcast_linked": true,
-      "last_processed": "2026-05-31T08:52:20.301522+00:00"
+      "last_processed": "2026-07-02T18:06:08.493994+00:00"
     },
     "bibtex:Vertesi2026-lv": {
       "note_path": "Papers/Vertesi2026-lv.md",
@@ -2420,9 +2420,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "946cdaf1a586f653b55b2920324849e62e5ea2fcf52dac5ee41fdeb430edc583",
+      "content_hash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d",
       "podcast_linked": true,
-      "last_processed": "2026-06-16T11:07:34.672250+00:00"
+      "last_processed": "2026-07-02T18:06:08.494006+00:00"
     },
     "bibtex:Fattorini2026-bo": {
       "note_path": "Papers/Fattorini2026-bo.md",
@@ -2475,9 +2475,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "7fe0a3fc99f8cebc6b18df207c4c78ab25786851770b644bfbd99e7546ab5fa9",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
-      "last_processed": "2026-06-27T08:45:53.348004+00:00"
+      "last_processed": "2026-07-02T18:06:08.494022+00:00"
     },
     "bibtex:Sofia2012-802a21dc": {
       "note_path": "Papers/Sofia2012-802a21dc.md",
@@ -2587,8 +2587,31 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-07-01T18:35:59.913282+00:00"
+    },
+    "bibtex:Jayaram2026-wd": {
+      "note_path": "Papers/Jayaram2026-wd.md",
+      "topics": [],
+      "pdf_source": "drive",
+      "content_hash": "c58a45f6ffcc48989cdad244a13b4dba7c5ac02263e013844c6f4466115e2a06",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-02T18:05:33.414237+00:00"
+    },
+    "bibtex:Bouchaud2026-np": {
+      "note_path": "Papers/Bouchaud2026-np.md",
+      "topics": [
+        "platform-governance-data-access",
+        "polarization-hybrid-media"
+      ],
+      "pdf_source": "abstract_only",
+      "content_hash": "dc8d76f48c69b1267bf36ee808d329140bb43f5c845da09321de68313c764762",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-02T18:05:35.374161+00:00"
     }
   },
   "last_full_cluster": "2026-06-29T09:20:04.981277+00:00",
-  "papers_since_cluster": 4
+  "papers_since_cluster": 6
 }

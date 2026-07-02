@@ -16,6 +16,7 @@ Policies, APIs and DSA-era infrastructures shaping access to social media data f
 - [[Bastos2025-ya]]
 - [[Bechmann2026-dr]]
 - [[Bouchaud2026-lr]]
+- [[Bouchaud2026-np]]
 - [[Brady2026-ln]]
 - [[Bruns2026-yv]]
 - [[Cazzamatta2026-lo]]

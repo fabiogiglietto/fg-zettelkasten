@@ -12,6 +12,7 @@ How partisan alignment, algorithmic curation and the interplay of traditional an
 
 - [[Bakshy2015-rn]]
 - [[Bennett2025-xs]]
+- [[Bouchaud2026-np]]
 - [[Brady2026-ln]]
 - [[Brown2026-br]]
 - [[Copland2025-em]]
