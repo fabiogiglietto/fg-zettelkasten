@@ -1,5 +1,5 @@
 anthropic>=0.40
-requests>=2.31
+requests>=2.34.2
 PyYAML>=6.0
 pypdf>=4.0
 google-api-python-client>=2.100
