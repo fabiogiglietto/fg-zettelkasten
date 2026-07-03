@@ -12,6 +12,7 @@ explicit folder paths rather than bare basenames.
 """
 from __future__ import annotations
 
+import json
 import re
 import shutil
 from pathlib import Path
@@ -48,6 +49,7 @@ _FRONTMATTER = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
 _YEAR = re.compile(r"^year:[ \t]*(\d{4})[ \t]*$", re.MULTILINE)
 _DISCOVERY = re.compile(r"^discovery_date:[ \t]*(\S+)[ \t]*$", re.MULTILINE)
 _HAS_DATE = re.compile(r"^date:", re.MULTILINE)
+_HAS_TITLE = re.compile(r"^title:", re.MULTILINE)
 
 
 def inject_date(text: str) -> str:
@@ -101,6 +103,54 @@ def strip_duplicate_title(text: str) -> str:
     return text[:match.start()] + text[end:].lstrip("\n")
 
 
+def inject_title(text: str, suffix: str = "") -> str:
+    """Promote the body's leading `# H1` to a frontmatter `title` (plus
+    `suffix`) and drop the H1 line.
+
+    Topic and Structure notes carry no `title`, so Quartz falls back to the
+    file stem — and because the two kinds share a slug basename, the graph
+    shows every topic as two identically-labelled nodes. The suffix keeps the
+    pair distinguishable (" (Structure)"). No-op when the note already has a
+    `title` or no body H1.
+    """
+    fm = _FRONTMATTER.match(text)
+    if not fm:
+        return text
+    block = fm.group(1)
+    if _HAS_TITLE.search(block):
+        return text
+    match = _BODY_H1.search(text, fm.end())
+    if not match:
+        return text
+    title = json.dumps(match.group(1).strip() + suffix)
+    end = match.end()
+    if text[end:end + 2] == "\n\n":
+        end += 1
+    body = text[fm.end():match.start()] + text[end:].lstrip("\n")
+    return f"---\ntitle: {title}\n{block}\n---\n{body}"
+
+
+def inject_contributor(text: str) -> str:
+    """Append a "Suggested by <name>" footer when the note carries a
+    `submitted_by` frontmatter (a team-mate's Slack submission).
+
+    A website-only presentation detail: the attribution already lives in the
+    vault frontmatter, and this surfaces it at the bottom of the page. No-op for
+    own publications and plain toread papers, which have no `submitted_by`.
+    Runs last, on the already-cleaned body, so the footer sits below any
+    `## Podcast` section. The Slack permalink is deliberately not linked — it
+    points to a private workspace, useless to public visitors.
+    """
+    fm = _FRONTMATTER.match(text)
+    if not fm:
+        return text
+    data = yaml.safe_load(fm.group(1)) or {}
+    contributor = data.get("submitted_by")
+    if not contributor:
+        return text
+    return f"{text.rstrip()}\n\n---\n\n*Suggested by {contributor}*\n"
+
+
 def _read_paper_meta(text: str) -> dict | None:
     """Extract the fields needed for the homepage 'Latest papers' list.
 
@@ -143,6 +193,7 @@ def build_index(
     structures_dir: str,
     recent_papers: list[tuple[str, dict]],
     papers_dir: str,
+    site_title: str = "fg-zettelkasten",
 ) -> str:
     """Render `content/index.md`: a homepage listing recent papers, Topics and Structures.
 
@@ -155,7 +206,7 @@ def build_index(
 
     lines = [
         "---",
-        'title: "fg-zettelkasten"',
+        f'title: "{site_title}"',
         "---",
         "",
         f"A topic-anchored Zettelkasten built from the `toread` paper feed — "
@@ -221,6 +272,7 @@ def export_site(
     subdirs: list[str],
     topics: list[dict],
     state: dict,
+    site_title: str = "fg-zettelkasten",
 ) -> dict:
     """Populate `content_dir` from the vault and write the homepage.
 
@@ -229,6 +281,9 @@ def export_site(
     stats dict: `{"notes": int, "stripped": int}`.
     """
     papers_dir, topics_dir, structures_dir = subdirs
+    # Topic and Structure notes share slug basenames and identical H1s; the
+    # suffix keeps their graph-node labels apart.
+    title_suffix = {topics_dir: "", structures_dir: " (Structure)"}
 
     shutil.rmtree(content_dir, ignore_errors=True)
     content_dir.mkdir(parents=True, exist_ok=True)
@@ -245,9 +300,12 @@ def export_site(
         for note in sorted(src.glob("*.md")):
             text = note.read_text(encoding="utf-8")
             cleaned = strip_duplicate_title(strip_dataview(text))
+            if subdir in title_suffix:
+                cleaned = inject_title(cleaned, title_suffix[subdir])
             if cleaned != text:
                 stripped += 1
-            (dst / note.name).write_text(inject_date(cleaned), encoding="utf-8")
+            exported = inject_contributor(inject_date(cleaned))
+            (dst / note.name).write_text(exported, encoding="utf-8")
             notes += 1
             if subdir == papers_dir:
                 meta = _read_paper_meta(text)
@@ -268,6 +326,7 @@ def export_site(
         structures_dir,
         recent_papers,
         papers_dir,
+        site_title=site_title,
     )
     (content_dir / "index.md").write_text(index, encoding="utf-8")
 

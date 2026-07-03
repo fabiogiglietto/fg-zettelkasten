@@ -275,7 +275,10 @@ def build_paper_note(
     Filename is the bibtex key; the readable title goes in frontmatter `aliases`.
 
     `kind` adds a frontmatter `kind:` field when set — used to mark the
-    author's own publications (`kind: own`); toread papers leave it unset.
+    author's own publications (`kind: own`) and team-mates' Slack submissions
+    (`kind: team`); toread papers leave it unset. A team submission also gets
+    `submitted_by`/`slack_permalink` frontmatter from the paper, surfaced on the
+    site for attribution.
     """
     academic = paper.academic or {}
     fields: dict[str, Any] = {
@@ -288,6 +291,10 @@ def build_paper_note(
     }
     if kind:
         fields["kind"] = kind
+    if getattr(paper, "submitted_by", None):
+        fields["submitted_by"] = _yaml_quote(paper.submitted_by)
+        if getattr(paper, "slack_permalink", None):
+            fields["slack_permalink"] = paper.slack_permalink
     fields.update(
         {
             "topics": topics,

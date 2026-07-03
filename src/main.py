@@ -63,6 +63,17 @@ def _note_url(cfg: dict, bibtex_key: str) -> str | None:
     return f"{base.rstrip('/')}/{bibtex_key}" if base else None
 
 
+def _claude(cfg: dict):
+    """Build the Claude SDK wrapper from config (lazy import keeps --help cheap)."""
+    from .claude_client import ClaudeClient
+
+    cc = cfg["claude"]
+    return ClaudeClient(
+        summary_model=cc["summary_model"],
+        reasoning_model=cc["reasoning_model"],
+    )
+
+
 def _slack_wait_expired(entry: dict, max_days: float) -> bool:
     """True once a paper has waited longer than `max_days` for its episode.
 
@@ -76,17 +87,6 @@ def _slack_wait_expired(entry: dict, max_days: float) -> bool:
     return age.total_seconds() >= max_days * 86400
 
 
-def _claude(cfg: dict):
-    """Build the Claude SDK wrapper from config (lazy import keeps --help cheap)."""
-    from .claude_client import ClaudeClient
-
-    cc = cfg["claude"]
-    return ClaudeClient(
-        summary_model=cc["summary_model"],
-        reasoning_model=cc["reasoning_model"],
-    )
-
-
 def _drive_client(cfg: dict):
     """Build a DriveClient from the environment, or None when unavailable.
 
@@ -98,10 +98,16 @@ def _drive_client(cfg: dict):
     if not creds or not folder or not Path(creds).exists():
         print("WARN: Google Drive not configured — using abstract-only summaries")
         return None
+    # The team fork also searches team-toread's Slack-inbox Drive folder, where
+    # team-submitted PDFs are uploaded (separate from the Paperpile folder).
+    folders = [folder]
+    inbox_folder = os.environ.get("SLACK_INBOX_DRIVE_FOLDER_ID")
+    if inbox_folder:
+        folders.append(inbox_folder)
     try:
         from .drive_client import DriveClient
 
-        return DriveClient(creds, folder)
+        return DriveClient(creds, folders)
     except Exception as exc:  # noqa: BLE001 - Drive is optional, never fatal
         print(f"WARN: could not initialise Drive client ({exc}) — abstract-only")
         return None
@@ -476,6 +482,10 @@ def cmd_update(cfg: dict, args) -> int:
     # Post a digest of each newly-added paper to Slack only when the feature is
     # enabled in config *and* a webhook secret is present (so local runs and
     # contributors without the secret are unaffected).
+    # Digest scope/timing knobs — defaults are the fg-chain behavior; the
+    # team fork sets digest_scope: "team" and episode_wait_days: 0.
+    digest_scope = cfg.get("slack", {}).get("digest_scope", "all")
+    episode_wait_days = cfg.get("slack", {}).get("episode_wait_days", 2)
     post_to_slack = bool(cfg.get("slack", {}).get("enabled")) and bool(
         os.environ.get("SLACK_WEBHOOK_URL")
     )
@@ -503,6 +513,29 @@ def cmd_update(cfg: dict, args) -> int:
             new_papers.append(paper)
         elif entry.get("content_hash") != new_hash:
             changed_papers.append(paper)
+
+    # Duplicate safety net (multi-user archive): a brand-new id may refer to a
+    # paper already in the vault under a different id — e.g. a team-mate's Slack
+    # submission of a paper Fabio already curates. team-toread replies "already
+    # in the archive" at ingest time, but races/older notes can slip through, so
+    # we also skip here by normalized DOI/title. Changed papers keep their id and
+    # are never deduped.
+    dup_index = state_mod.dedup_index(state)
+    # Augment with the seeded corpus: notes whose state entry predates the
+    # per-entry doi/title fields (the ~hundreds of papers a team fork is seeded
+    # with) are only indexable from their frontmatter. Without this, a re-submit
+    # of an already-archived paper is missed at launch — the common case.
+    for k, v in state_mod.dedup_index_from_notes(Path(vault) / papers_dir).items():
+        dup_index.setdefault(k, v)
+    deduped = []
+    for paper in new_papers:
+        existing = state_mod.find_duplicate(dup_index, paper.doi, paper.title)
+        if existing:
+            print(f"  dedup: {paper.bibtex_key} duplicates {existing} "
+                  f"— skipping")
+            continue
+        deduped.append(paper)
+    new_papers = deduped
     print(f"update: {len(new_papers)} new, {len(changed_papers)} changed")
 
     summaries: dict[str, dict] = {}
@@ -524,19 +557,33 @@ def cmd_update(cfg: dict, args) -> int:
             paper, summary, register, claude, claude.reasoning_model
         )
         podcast = paper.id in episodes
-        state["papers"][paper.id] = {
+        entry = {
             "note_path": f"{papers_dir}/{paper.bibtex_key}.md",
             "topics": slugs,
+            # DOI + title persisted so dedup_index can catch a later id that
+            # refers to the same paper.
+            "doi": paper.doi or "",
+            "title": paper.title,
             "pdf_source": summary["pdf_source"],
             "content_hash": state_mod.content_hash(paper.abstract, podcast),
             "podcast_linked": podcast,
             "slack_posted": False,
-            # Queued for a #toread digest; the post itself is deferred until
-            # the paper's research-radio episode lands (see the Slack section
-            # below). Papers predating the Slack feature lack this flag.
-            "slack_pending": True,
+            # Queued for a #toread digest. Scope depends on config
+            # (`slack.digest_scope`): "all" (fg default) queues every new
+            # paper; "team" (mine) queues only team Slack submissions —
+            # Paperpile-origin papers flow through both kastens' pipelines
+            # and fg-zettelkasten already announces them, so the team kasten
+            # posting them too would double-post in #toread.
+            "slack_pending": (paper.is_team_submission
+                              if digest_scope == "team" else True),
             "last_processed": _now(),
         }
+        # A team-mate's Slack submission: tag it `kind: team` and carry the
+        # submitter through to the note frontmatter (published for attribution).
+        if paper.is_team_submission:
+            entry["kind"] = "team"
+            entry["submitted_by"] = paper.submitted_by
+        state["papers"][paper.id] = entry
 
     # Changed papers: refresh the state hash (e.g. a podcast episode appeared).
     for paper in changed_papers:
@@ -560,15 +607,20 @@ def cmd_update(cfg: dict, args) -> int:
         note = note_builder.build_paper_note(
             paper, summary, entry["topics"], related,
             episodes.get(paper.id), claude, claude.reasoning_model,
+            kind=entry.get("kind"),
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
 
     # --- Slack digests ----------------------------------------------------
-    # Post each new paper's digest to #toread exactly once. The post is held
-    # until the paper's research-radio episode appears, so the digest can
-    # carry the 🎧 Listen link — research-radio publishes episodes a few hours
-    # after a paper is added, later than this `update` run. `episode_wait_days`
-    # caps the wait so a paper that never gets an episode is still announced.
+    # Post each queued paper's digest to #toread exactly once. Scope and
+    # timing come from config:
+    #   - digest_scope "all" (fg default): every new paper, held until its
+    #     research-radio episode appears so the post carries the 🎧 Listen
+    #     link, with `episode_wait_days` as the fallback deadline.
+    #   - digest_scope "team" + episode_wait_days 0 (mine): only team Slack
+    #     submissions, posted immediately — research-radio never sources the
+    #     Slack-inbox folder, so a team paper never gets an episode and
+    #     waiting would only delay every post.
     # `slack_pending` marks a paper as awaiting its digest (set when first
     # seen, cleared once posted); `slack_posted` keeps the post idempotent
     # across retries.
@@ -580,19 +632,26 @@ def cmd_update(cfg: dict, args) -> int:
     # entry with no `slack_posted` key at all is pre-Slack bootstrap backlog
     # and must stay excluded so deploying this feature does not flood #toread.
     if post_to_slack:
-        wait_days = cfg.get("slack", {}).get("episode_wait_days", 2)
         for paper in papers:
             entry = state["papers"].get(paper.id)
             if entry is None or entry.get("slack_posted"):
+                continue
+            # In "team" scope only team Slack submissions are announced —
+            # see the queueing comment above. This also guards any backlog
+            # queued under a wider scope, so flipping the config does not
+            # flood #toread.
+            if digest_scope == "team" and not paper.is_team_submission:
+                continue
+            # Hold for the research-radio episode (or the fallback deadline)
+            # when an episode wait is configured.
+            if (episode_wait_days > 0 and paper.id not in episodes
+                    and not _slack_wait_expired(entry, episode_wait_days)):
                 continue
             pending = entry.get("slack_pending")
             if pending is None:
                 pending = "slack_posted" in entry  # Slack-era, never posted
             if not pending:
                 continue
-            if (paper.id not in episodes
-                    and not _slack_wait_expired(entry, wait_days)):
-                continue  # hold for the episode (or the fallback deadline)
             summary = summaries.get(paper.bibtex_key) or summarizer.load_summary(
                 summaries_dir, paper.bibtex_key
             )
@@ -678,6 +737,8 @@ def cmd_update(cfg: dict, args) -> int:
             "note_path": f"{papers_dir}/{paper.bibtex_key}.md",
             "topics": slugs,
             "kind": "own",
+            "doi": paper.doi or "",
+            "title": paper.title,
             "pdf_source": summary["pdf_source"],
             "content_hash": state_mod.content_hash(paper.abstract, podcast),
             "podcast_linked": podcast,
@@ -853,7 +914,9 @@ def cmd_export_site(cfg: dict, args) -> int:
     topics = topics_client.load_topics(_abs(cfg["paths"]["topics_file"]))
     state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
 
-    stats = site_export.export_site(vault_dir, content_dir, subdirs, topics, state)
+    site_title = cfg.get("vault", {}).get("site_title", "fg-zettelkasten")
+    stats = site_export.export_site(vault_dir, content_dir, subdirs, topics,
+                                    state, site_title=site_title)
     print(
         f"export-site: {stats['notes']} note(s) -> "
         f"{content_dir.relative_to(ROOT)} "
