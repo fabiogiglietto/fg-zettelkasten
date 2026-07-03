@@ -4,7 +4,7 @@ PyYAML>=6.0
 pypdf>=6.14.2
 google-api-python-client>=2.100
 google-auth>=2.55.1
-python-dotenv>=1.0
+python-dotenv>=1.2.2
 
 # Feed contract validation (schema/feed.schema.json)
 jsonschema>=4.26.0
