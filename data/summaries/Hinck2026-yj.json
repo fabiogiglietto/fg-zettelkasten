@@ -1,0 +1,22 @@
+{
+  "abstract": "This paper argues that survey researchers routinely fail to provide evidence that respondents interpret questions as intended, undermining the validity of survey-based inference. The authors call for explicit tests of question comprehension and propose approaches to gather such evidence. They frame this as a foundational methodological gap in survey research practice.",
+  "key_claims": [
+    "Survey research generally lacks empirical evidence that respondents understand questions in the way researchers intend.",
+    "Without such evidence, inferences drawn from survey responses rest on unverified assumptions about shared meaning.",
+    "Researchers should systematically test and document respondent comprehension as part of standard survey methodology."
+  ],
+  "methods": [
+    "Methodological critique and prescriptive argument regarding survey research practice.",
+    "(From abstract only) Discussion of approaches for eliciting and evaluating evidence of respondent comprehension."
+  ],
+  "findings": [
+    "The abstract does not report specific empirical findings; the central observation is that evidence of comprehension is largely absent from published survey work."
+  ],
+  "contributions": [
+    "Foregrounds respondent comprehension as an underexamined validity threat in survey research.",
+    "Advocates a shift in norms toward providing explicit evidence that questions are understood as intended.",
+    "Sets an agenda for developing and adopting tools to test question interpretation."
+  ],
+  "framing": "The paper positions itself within survey methodology and measurement validity debates, extending long-standing concerns about question wording and cognitive interviewing into a broader claim about evidentiary standards. It speaks to political science and social science audiences that rely heavily on survey data for causal and descriptive inference.",
+  "pdf_source": "abstract_only"
+}
