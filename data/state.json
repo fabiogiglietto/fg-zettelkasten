@@ -1981,9 +1981,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "content_hash": "f2c5c99ba774c8e3dd39f84f62e95eab7c0629c58f4cb504d78c5f77f05e48b7",
       "podcast_linked": false,
-      "last_processed": "2026-07-02T18:06:08.494017+00:00"
+      "last_processed": "2026-07-03T06:09:51.185354+00:00"
     },
     "bibtex:Rossi2023-847d5a9f": {
       "note_path": "Papers/Rossi2023-847d5a9f.md",
@@ -1993,9 +1993,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "content_hash": "56cf2a6e45f2bd1c33c79d6977a82fff91f6af5b1caae5e7bf7f9dd8da5adf9b",
       "podcast_linked": false,
-      "last_processed": "2026-07-02T18:06:08.494020+00:00"
+      "last_processed": "2026-07-03T06:09:51.185359+00:00"
     },
     "bibtex:Unknown2023-9137f448": {
       "note_path": "Papers/Unknown2023-9137f448.md",
@@ -2017,9 +2017,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d",
+      "content_hash": "3e1fc597d891c59df345b4a61c2f8d1ec90c4229caf9a15793cea82b345538ad",
       "podcast_linked": true,
-      "last_processed": "2026-07-02T18:06:08.494010+00:00"
+      "last_processed": "2026-07-03T06:09:51.185349+00:00"
     },
     "bibtex:Giglietto2024-cbeb3f70": {
       "note_path": "Papers/Giglietto2024-cbeb3f70.md",
@@ -2167,9 +2167,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d",
+      "content_hash": "dc2819c4a9dfeed337eeca518b6a89dfbc37cd3cf6e13a740cb24172adb78ab1",
       "podcast_linked": true,
-      "last_processed": "2026-07-02T18:06:08.493994+00:00"
+      "last_processed": "2026-07-03T06:09:51.185320+00:00"
     },
     "bibtex:Vertesi2026-lv": {
       "note_path": "Papers/Vertesi2026-lv.md",
@@ -2420,9 +2420,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d",
+      "content_hash": "946cdaf1a586f653b55b2920324849e62e5ea2fcf52dac5ee41fdeb430edc583",
       "podcast_linked": true,
-      "last_processed": "2026-07-02T18:06:08.494006+00:00"
+      "last_processed": "2026-07-03T06:09:51.185341+00:00"
     },
     "bibtex:Fattorini2026-bo": {
       "note_path": "Papers/Fattorini2026-bo.md",
@@ -2475,9 +2475,9 @@
       ],
       "kind": "own",
       "pdf_source": "drive",
-      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "content_hash": "7fe0a3fc99f8cebc6b18df207c4c78ab25786851770b644bfbd99e7546ab5fa9",
       "podcast_linked": false,
-      "last_processed": "2026-07-02T18:06:08.494022+00:00"
+      "last_processed": "2026-07-03T06:09:51.185363+00:00"
     },
     "bibtex:Sofia2012-802a21dc": {
       "note_path": "Papers/Sofia2012-802a21dc.md",
@@ -2559,11 +2559,10 @@
         "generative-ai-and-media"
       ],
       "pdf_source": "abstract_only",
-      "content_hash": "677015a8e317f6fb0e96d0bcc0d7cc5a97c2a2b4bebc1272e6817f2df80f114b",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-07-01T07:17:23.042388+00:00"
+      "content_hash": "947d3e3a1df9f9790746e49e66295c5b9f24d685820f764d14c79d3f8232f77d",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-03T06:08:36.618360+00:00"
     },
     "bibtex:Gilardi2026-hw": {
       "note_path": "Papers/Gilardi2026-hw.md",
@@ -2582,21 +2581,19 @@
         "platform-governance-data-access"
       ],
       "pdf_source": "abstract_only",
-      "content_hash": "3cf00d30a76239d6a1e2d224f421c00f8a89d851a8c9d63d206002f231426704",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-07-01T18:35:59.913282+00:00"
+      "content_hash": "e3acf719a14d5eab23b4f5afe9a22beb85d62bcd1221f87f6fb73befba3da203",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-03T06:08:36.618355+00:00"
     },
     "bibtex:Jayaram2026-wd": {
       "note_path": "Papers/Jayaram2026-wd.md",
       "topics": [],
       "pdf_source": "drive",
-      "content_hash": "c58a45f6ffcc48989cdad244a13b4dba7c5ac02263e013844c6f4466115e2a06",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-07-02T18:05:33.414237+00:00"
+      "content_hash": "2935dc317d16acdb237212db005102e4ca65c0ee578f5c2f07ea1ad44d5c4e9d",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-03T06:08:36.618343+00:00"
     },
     "bibtex:Bouchaud2026-np": {
       "note_path": "Papers/Bouchaud2026-np.md",
@@ -2605,13 +2602,22 @@
         "polarization-hybrid-media"
       ],
       "pdf_source": "abstract_only",
-      "content_hash": "dc8d76f48c69b1267bf36ee808d329140bb43f5c845da09321de68313c764762",
+      "content_hash": "dd7bc5ed1396eb2b4a161debf0f8d2a86c11fc9bc70fafc966452aced1ef01a0",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-03T06:08:36.618350+00:00"
+    },
+    "bibtex:Hinck2026-yj": {
+      "note_path": "Papers/Hinck2026-yj.md",
+      "topics": [],
+      "pdf_source": "abstract_only",
+      "content_hash": "77920868da1384096bfce8fce8f9fc8a81b7f627ca542a22dc6d0dd6c7adf0d9",
       "podcast_linked": false,
       "slack_posted": false,
       "slack_pending": true,
-      "last_processed": "2026-07-02T18:05:35.374161+00:00"
+      "last_processed": "2026-07-03T06:08:36.618317+00:00"
     }
   },
   "last_full_cluster": "2026-06-29T09:20:04.981277+00:00",
-  "papers_since_cluster": 6
+  "papers_since_cluster": 7
 }

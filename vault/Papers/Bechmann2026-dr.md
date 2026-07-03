@@ -9,7 +9,7 @@ topics: [platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2679475
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bechmann2026-dr.mp3
 pdf_available: false
 discovery_date: 2026-07-01T18:20:46.890032Z
 ---
@@ -22,22 +22,27 @@ discovery_date: 2026-07-01T18:20:46.890032Z
 
 ## Summary
 
-This conceptual paper argues that platform-and-democracy scholarship has become overly fixated on identifying narrow causal effects — the isolated impact of specific features, exposures, or interventions on individual attitudes and behaviors — at the expense of understanding what platforms actually are in democratic life. Writing in the context of the EU's Digital Services Act (DSA), Bechmann proposes that researchers instead treat *platform collective behavior* as a form of democratic infrastructure: a persistent, shared substrate through which public life is enacted, rather than a discrete stimulus whose effects can be cleanly measured. The DSA moment, with its new data access provisions and regulatory imperatives, is framed as both an opportunity and a reason to shift paradigms.
+This conceptual intervention argues that platform-and-democracy research has been overly constrained by a causal-effects paradigm — one that asks whether specific platform features or exposures produce measurable political outcomes. Written against the backdrop of the EU's Digital Services Act, Bechmann proposes reframing platform collective behavior as *democratic infrastructure*: a shared, generative substrate for political life whose significance cannot be captured through isolated cause-and-effect designs. The DSA era, with its new data access provisions and regulatory expectations, is presented as both an opportunity and an obligation to reorient how scholars conceptualize, study, and evaluate platforms' democratic role.
 
 ## Key Contributions
 
-- Reframes platform collective behavior as *democratic infrastructure*, drawing on infrastructure studies to reorient platform-democracy research.
-- Articulates a systematic critique of causal-effects dominance in the field, arguing it misses the constitutive, aggregate, and infrastructural roles platforms play.
-- Situates this theoretical move within the DSA regulatory environment, linking methodological reform to newly available data access regimes and public-interest research obligations.
+- Reframes platform collective behavior as democratic infrastructure rather than as a cluster of discrete causal mechanisms.
+- Critiques the dominance of causal-effects research designs in platform-democracy scholarship.
+- Links political communication research directly to the DSA regulatory environment, arguing that regulation changes the epistemic stakes of platform research.
+- Imports infrastructure studies into debates about platforms and democracy.
 
 ## Methods
 
-Conceptual and theoretical argumentation. No empirical study; the paper is a programmatic intervention that reads political communication debates through the lens of infrastructure studies and EU platform regulation.
+Conceptual and theoretical argumentation. No empirical study; the paper is a programmatic intervention situated in the EU DSA context.
 
 ## Findings
 
-- Not applicable — the paper is a conceptual intervention rather than an empirical investigation.
+- Not applicable — the paper is a conceptual argument. Its "results" are the reframing and critique summarized above.
 
 ## Connections
 
-This piece speaks directly to ongoing debates about what DSA-era data access should enable methodologically and epistemically, connecting to work rethinking research infrastructures and access regimes such as [[Rieder2026-pp]], [[Rieder2025-ju]], and [[Ohme2026-nv]]. Its call to study platforms as collective/infrastructural phenomena rather than sources of isolated causal effects resonates with the collective-behavior framing in [[Bak-Coleman2025-pm]] and [[Bak-Coleman2026-mk]], and with broader agenda-setting statements on platform governance research like [[de-Vreese2026-zx]] and [[Tornberg2026-lc]].
+This piece sits alongside other calls to rethink platform research in the DSA era, particularly work theorizing data access, researcher–platform relations, and collective behavioral analysis: see [[Bak-Coleman2025-pm]] and [[Bak-Coleman2026-mk]] on collective behavior as a democratic concern, [[Rieder2025-ju]] and [[Rieder2026-pp]] on platform data infrastructures and research access, and [[de-Vreese2026-zx]], [[Ohme2026-nv]], and [[Tornberg2026-lc]] on the shifting agenda for political communication under the DSA. It also speaks to critiques of narrow effects-based designs found in [[Munger2025-cz]] and to broader governance framings in [[Schiffrin_undated-gi]] and [[Karo2026-dn]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bechmann2026-dr.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)

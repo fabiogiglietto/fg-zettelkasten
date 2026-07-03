@@ -9,7 +9,7 @@ topics: [generative-ai-and-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/08838151.2026.2694048
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Suk2026-ai.mp3
 pdf_available: false
 discovery_date: 2026-07-01T07:01:31.989319Z
 ---
@@ -22,24 +22,29 @@ discovery_date: 2026-07-01T07:01:31.989319Z
 
 ## Summary
 
-This paper develops a conceptual framework for understanding public trust in generative AI by drawing on decades of communication scholarship on trust in mass media and social media. The authors argue that generative AI represents a new type of information intermediary whose distinctive features — generative outputs and human-AI interaction — require a dedicated theoretical apparatus, but one that inherits lessons from earlier media trust research. They propose a multilevel framework spanning individual, institutional, and societal factors, positioning it as a roadmap for future empirical work rather than a set of empirical findings.
+This article develops a conceptual framework for understanding public trust in generative AI by drawing on decades of communication research on trust in mass media and social media. Suk and Zhang argue that generative AI represents a new kind of information intermediary whose trust dynamics cannot be captured by any single level of analysis. They propose that trust in generative AI must be theorized across three interdependent levels — individual, institutional, and societal — and position the paper as a theoretical scaffold for future empirical work on how publics come to trust (or distrust) generative AI systems.
 
 ## Key Contributions
 
-- Introduces a multilevel conceptual framework (individual, institutional, societal) for studying trust in generative AI within communication research.
-- Bridges the well-established literatures on media trust and the emerging scholarship on trust in AI systems.
-- Clarifies conceptual continuities and distinctions across trust in mass media, social media, and generative AI as successive information intermediaries.
+- Proposes a multilevel conceptual framework (individual, institutional, societal) for studying trust in generative AI.
+- Bridges the mass media trust and social media trust traditions with emerging AI scholarship, situating generative AI within a longer lineage of information intermediaries.
+- Clarifies both continuities and distinctions between trust in legacy media, platforms, and generative AI, including new features such as generative outputs and human-AI interaction.
+- Offers a roadmap and vocabulary for communication scholars to design empirical studies of trust in generative AI.
 
 ## Methods
 
-Conceptual and theoretical synthesis. The authors review prior scholarship on trust in mass media and social media, extract transferable insights, and construct a multilevel analytical framework tailored to the distinctive properties of generative AI.
+Theoretical and conceptual synthesis. The authors review prior scholarship on media trust across the mass media and social media eras, extract transferable insights, and integrate them into a new multilevel analytical framework applied to generative AI.
 
 ## Findings
 
-- Existing media trust frameworks are informative but incomplete for generative AI, which introduces novel features such as generative content production and interactive human-AI exchanges.
-- Trust dynamics operate across interdependent levels: individual perceptions, institutional practices (of AI developers and deploying organizations), and broader societal and cultural contexts jointly shape trust.
-- Treating generative AI as continuous with prior information intermediaries — rather than wholly sui generis — enables cumulative theory-building in communication research.
+- Existing media trust frameworks are informative but insufficient on their own for generative AI, which introduces novel dynamics such as generated (rather than curated) content and interactive human-AI exchanges.
+- Trust operates across interdependent levels: individual perceptions and use, institutional practices of AI developers and deployers, and broader societal contexts jointly shape trust outcomes.
+- Treating generative AI as continuous with — but not reducible to — prior information intermediaries clarifies what is genuinely new about trust in these systems.
 
 ## Connections
 
-This framework is a natural companion to empirical work on how audiences perceive and evaluate AI-generated content and its producers, such as [[Hameleers2026-mc]] and [[Waight2026-ts]], as well as studies of AI as a news and information intermediary like [[Dierickx2026-tw]] and [[Schroeder2026-im]]. It also speaks to broader theoretical accounts of how generative AI reshapes the media environment, including [[Hepp2026-oi]] and [[Manovich2026-ih]].
+This piece provides a theoretical backbone for empirical work on how people perceive and evaluate generative AI, connecting closely to studies of user trust and interaction with LLMs such as [[Wang2025-zy]] and to work on AI as a news and information intermediary like [[Dierickx2026-tw]] and [[Hameleers2026-mc]]. Its emphasis on institutional and societal dynamics also resonates with critical and infrastructural accounts of AI's role in the media ecosystem, such as [[Hepp2026-oi]] and [[Gillespie2026-aa]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Suk2026-ai.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)
