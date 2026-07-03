@@ -22,15 +22,19 @@ class DriveClient:
 
     SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
-    def __init__(self, credentials_path: str, folder_id: str):
+    def __init__(self, credentials_path: str, folder_id):
         """
         Initialize the Drive client.
 
         Args:
             credentials_path: Path to service account JSON credentials
-            folder_id: Google Drive folder ID where PaperPile stores PDFs
+            folder_id: Google Drive folder ID, or a list of folder IDs, to
+                search for PDFs. Multiple folders support the team fork, where
+                Paperpile PDFs and team-toread's Slack-inbox uploads live in
+                separate folders; both are scanned, earlier folders winning on
+                a filename collision.
         """
-        self.folder_id = folder_id
+        self.folder_ids = [folder_id] if isinstance(folder_id, str) else list(folder_id)
         credentials = service_account.Credentials.from_service_account_file(
             credentials_path, scopes=self.SCOPES
         )
@@ -103,31 +107,39 @@ class DriveClient:
         }
 
     def _list_folder_files(self) -> list[dict]:
-        """List all PDF files in the PaperPile folder."""
+        """List all PDF files across the configured folder(s)."""
         if self._file_cache:
             return list(self._file_cache.values())
 
         files = []
-        page_token = None
+        for folder_id in self.folder_ids:
+            page_token = None
+            while True:
+                query = f"'{folder_id}' in parents and mimeType='application/pdf'"
+                results = self.service.files().list(
+                    q=query,
+                    fields="nextPageToken, files(id, name, size, modifiedTime)",
+                    pageSize=1000,
+                    pageToken=page_token,
+                    # Required to see files in a Shared Drive (the team
+                    # Slack-inbox folder lives on one); harmless for My Drive.
+                    supportsAllDrives=True,
+                    includeItemsFromAllDrives=True,
+                ).execute()
 
-        while True:
-            query = f"'{self.folder_id}' in parents and mimeType='application/pdf'"
-            results = self.service.files().list(
-                q=query,
-                fields="nextPageToken, files(id, name, size, modifiedTime)",
-                pageSize=1000,
-                pageToken=page_token
-            ).execute()
+                files.extend(results.get('files', []))
+                page_token = results.get('nextPageToken')
 
-            files.extend(results.get('files', []))
-            page_token = results.get('nextPageToken')
+                if not page_token:
+                    break
 
-            if not page_token:
-                break
-
-        # Cache for future lookups
-        self._file_cache = {f['name']: f for f in files}
-        return files
+        # Cache for future lookups. setdefault keeps the first folder's file on
+        # a name collision (Paperpile wins over the Slack-inbox folder).
+        cache: dict[str, dict] = {}
+        for f in files:
+            cache.setdefault(f['name'], f)
+        self._file_cache = cache
+        return list(cache.values())
 
     def find_pdf(self, paper: Paper) -> Optional[dict]:
         """
@@ -197,7 +209,8 @@ class DriveClient:
     def download_pdf(self, file_id: str) -> Optional[bytes]:
         """Download a PDF file from Drive by its ID."""
         try:
-            request = self.service.files().get_media(fileId=file_id)
+            request = self.service.files().get_media(
+                fileId=file_id, supportsAllDrives=True)
             buffer = io.BytesIO()
             downloader = MediaIoBaseDownload(buffer, request)
 

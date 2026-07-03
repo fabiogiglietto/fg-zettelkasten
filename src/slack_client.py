@@ -153,6 +153,30 @@ def build_blocks(
             }
         )
 
+    # Attribute the team-mate who suggested the paper. Prefer the opaque Slack
+    # user-id so it renders as a real `@name` mention; fall back to the plain
+    # display name. This goes in a `section` block, not the `context` footer:
+    # a `<@id>` mention reliably *notifies* the user only from a section/text
+    # field, so the submitter actually gets pinged.
+    submitter_id = getattr(paper, "submitted_by_id", None)
+    submitter_name = getattr(paper, "submitted_by", None)
+    if submitter_id:
+        blocks.append(
+            {
+                "type": "section",
+                "text": {"type": "mrkdwn",
+                         "text": f"👤 Suggested by <@{_esc(submitter_id)}>"},
+            }
+        )
+    elif submitter_name:
+        blocks.append(
+            {
+                "type": "section",
+                "text": {"type": "mrkdwn",
+                         "text": f"👤 Suggested by {_esc(submitter_name)}"},
+            }
+        )
+
     blocks.append(
         {
             "type": "context",

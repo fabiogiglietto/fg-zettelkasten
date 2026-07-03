@@ -42,6 +42,18 @@ class Paper:
     volume: Optional[str] = None
     pages: Optional[str] = None
     is_own: bool = False                           # True for own-publications papers
+    submitted_by: Optional[str] = None             # team-mate who suggested it via Slack
+    submitted_by_id: Optional[str] = None          # their opaque Slack user-id, for @-mentioning
+    slack_permalink: Optional[str] = None          # link to the originating Slack message
+
+    @property
+    def is_team_submission(self) -> bool:
+        """True for a paper that entered via a team-mate's Slack suggestion
+        (the feed carries a `_slack_suggestion` block identifying the suggester
+        by display name and/or opaque user-id). Either is enough — a submission
+        whose display name failed to resolve still carries the user-id. Always
+        False on the fg chain, whose feed strips suggester identity."""
+        return bool(self.submitted_by or self.submitted_by_id)
 
     @property
     def bibtex_key(self) -> str:
@@ -64,6 +76,9 @@ def _extract_journal(item: dict, academic: dict) -> Optional[str]:
 
 def _item_to_paper(item: dict) -> Paper:
     academic = item.get("_academic", {}) or {}
+    # The team (mine) chain adds `submitted_by` / `submitted_by_id` to the
+    # `_slack_suggestion` block for team submissions; fg feeds omit them.
+    slack = item.get("_slack_suggestion", {}) or {}
     return Paper(
         id=item["id"],
         title=item.get("title", ""),
@@ -78,6 +93,9 @@ def _item_to_paper(item: dict) -> Paper:
         journal=_extract_journal(item, academic),
         volume=academic.get("volume"),
         pages=academic.get("pages"),
+        submitted_by=slack.get("submitted_by") or None,
+        submitted_by_id=slack.get("submitted_by_id") or None,
+        slack_permalink=slack.get("permalink") or None,
     )
 
 
