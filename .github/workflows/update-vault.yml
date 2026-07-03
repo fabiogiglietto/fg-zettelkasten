@@ -45,7 +45,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        # requirements.lock is compiled from requirements.txt (uv pip compile);
+        # regenerate it when requirements.txt changes.
+        run: pip install -r requirements.lock
 
       - name: Write Google service-account credentials
         run: printf '%s' '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json

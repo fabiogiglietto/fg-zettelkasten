@@ -14,6 +14,8 @@ from typing import Optional
 
 import requests
 
+from .feed_contract import validate_toread_feed
+
 # The toread feed carries the journal name only inside the rendered
 # `content_html` ("Published in: <name>"); the own-publications feed carries it
 # in `_academic.venue`. This pulls it out of the toread HTML.
@@ -101,6 +103,8 @@ def fetch_feed(url: str, timeout: int = 30) -> list[Paper]:
     resp = requests.get(url, headers=github_raw_headers(), timeout=timeout)
     resp.raise_for_status()
     data = resp.json()
+    # Contract gate: abort before any vault/state mutation on drift.
+    validate_toread_feed(data)
     return [_item_to_paper(it) for it in data.get("items", [])]
 
 
