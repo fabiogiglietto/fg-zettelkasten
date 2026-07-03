@@ -1,0 +1,32 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      python-deps:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+
+  # Vendored Quartz site (quartz/package-lock.json). Major Quartz bumps can
+  # revert vendored patches — see quartz/VENDORED_PATCHES.md before merging.
+  - package-ecosystem: npm
+    directory: /quartz
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      quartz-deps:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns: ["*"]
