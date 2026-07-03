@@ -54,9 +54,17 @@ jobs:
 
       - name: Run
         env:
+          # Authenticates feed_client's GitHub Contents API reads, lifting the
+          # rate limit from 60/h (shared-runner-IP, exhausted by other tenants
+          # -> intermittent 403) to 5000/h per token.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GOOGLE_APPLICATION_CREDENTIALS: ./credentials.json
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
+          # Team fork: mine-toread uploads team-submitted PDFs here and
+          # main.py searches it alongside the Paperpile folder. Unset on the
+          # fg chain (harmless empty).
+          SLACK_INBOX_DRIVE_FOLDER_ID: ${{ secrets.SLACK_INBOX_DRIVE_FOLDER_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           if [ "${{ github.event.action }}" = "pipeline-summarize" ]; then
