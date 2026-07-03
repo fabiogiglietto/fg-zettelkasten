@@ -7,4 +7,4 @@ google-auth>=2.20
 python-dotenv>=1.0
 
 # Feed contract validation (schema/feed.schema.json)
-jsonschema>=4.21
+jsonschema>=4.26.0
