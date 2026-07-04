@@ -2616,8 +2616,23 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-07-03T06:08:36.618317+00:00"
+    },
+    "bibtex:Mosca2026-yh": {
+      "note_path": "Papers/Mosca2026-yh.md",
+      "topics": [
+        "information-disorder",
+        "mine-program"
+      ],
+      "doi": "10.1177/02673231261458935",
+      "title": "Fake news as a rhetorical weapon: Strategic delegitimization and selective amplification in Italian newspapers",
+      "pdf_source": "abstract_only",
+      "content_hash": "1f9d5951fe3ca26363a737296b481c6501699545f03f9d6d1773bd6e19e94d7a",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-04T05:44:34.662241+00:00"
     }
   },
   "last_full_cluster": "2026-06-29T09:20:04.981277+00:00",
-  "papers_since_cluster": 7
+  "papers_since_cluster": 8
 }

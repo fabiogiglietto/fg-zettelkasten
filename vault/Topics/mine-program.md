@@ -10,7 +10,7 @@ The Mapping Italian News research programme as institutional umbrella: mapping I
 
 ## Papers
 
-_No papers yet._
+- [[Mosca2026-yh]]
 
 ## All papers (Dataview)
 
