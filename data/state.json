@@ -2613,8 +2613,7 @@
       "pdf_source": "abstract_only",
       "content_hash": "77920868da1384096bfce8fce8f9fc8a81b7f627ca542a22dc6d0dd6c7adf0d9",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-07-03T06:08:36.618317+00:00"
     },
     "bibtex:Mosca2026-yh": {
