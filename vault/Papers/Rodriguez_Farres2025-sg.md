@@ -5,7 +5,7 @@ authors: ["Pol Rodríguez Farrés", "Athina Masali", "Jesus Cerquides"]
 year: 2025
 doi: 10.3233/faia250576
 bibtex_key: Rodriguez_Farres2025-sg
-topics: [coordinated-inauthentic-behavior, information-disorder]
+topics: [coordinated-inauthentic-behavior]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.3233/faia250576

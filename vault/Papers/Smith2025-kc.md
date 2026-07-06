@@ -5,7 +5,7 @@ authors: ["Alyssa H Smith", "Jon Green", "Brooke F. Welles", "David Lazer"]
 year: 2025
 doi: 10.1093/pnasnexus/pgaf106
 bibtex_key: Smith2025-kc
-topics: [computational-methods-social-research]
+topics: [computational-social-science]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1093/pnasnexus/pgaf106

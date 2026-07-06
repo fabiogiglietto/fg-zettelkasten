@@ -5,7 +5,7 @@ authors: ["danah boyd"]
 year: 2026
 doi: 10.1177/20563051261437487
 bibtex_key: Boyd2026-op
-topics: [anniversary-reflections-social-media]
+topics: [platform-governance-apis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20563051261437487

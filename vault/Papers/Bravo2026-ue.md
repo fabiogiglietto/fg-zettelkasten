@@ -5,7 +5,7 @@ authors: ["Isaac Bravo", "Stefanie Walter", "Katharina Prasse", "Margret Keuper"
 year: 2026
 doi: 10.1093/anncom/wlag011
 bibtex_key: Bravo2026-ue
-topics: []
+topics: [climate-and-misinformation-message-interventions]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1093/anncom/wlag011

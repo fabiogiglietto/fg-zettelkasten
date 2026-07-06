@@ -5,7 +5,7 @@ authors: ["Eliana Fattorini", "Andrea Rubin", "Barbara Saracino", "Massimiano Bu
 year: 2026
 doi: 10.1080/1369118x.2026.2689030
 bibtex_key: Fattorini2026-bo
-topics: [generative-ai-and-media]
+topics: [public-perceptions-and-labor-impacts-of-ai]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2026.2689030

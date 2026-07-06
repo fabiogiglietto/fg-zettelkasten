@@ -5,7 +5,7 @@ authors: ["Gian Marco Orlando", "Jinyi Ye", "Valerio La Gatta", "Mahdi Saeedi", 
 year: 2025
 doi: 
 bibtex_key: Orlando2025-ul
-topics: [coordinated-inauthentic-behavior, generative-ai-and-media]
+topics: [coordinated-inauthentic-behavior, generative-ai-media]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2510.25003v1

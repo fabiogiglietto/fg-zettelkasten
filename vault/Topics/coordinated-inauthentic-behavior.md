@@ -6,15 +6,17 @@ emergent: false
 
 # Coordinated Inauthentic Behavior
 
-Detection, conceptualisation and longitudinal study of coordinated link sharing and inauthentic networks on social media. This is the researcher's signature methodological and theoretical contribution, originating the CooRnet/CLSB framework.
+Detection, definition and evolving strategies of coordinated link sharing and networked manipulation on social media platforms. This is the researcher's signature line, spanning the CooRnet method, cross-electoral case studies and conceptual entries.
 
 ## Papers
 
 - [[Appel2026-qr]]
+- [[Askanius2026-de]]
 - [[Bastos2025-ol]]
 - [[Di-Marco2025-aa]]
 - [[Efstratiou2026-ij]]
 - [[FitzGerald2025-nv]]
+- [[Gaw2025-ru]]
 - [[Gerard2025-br]]
 - [[Giglietto2020-9d8acdd7]]
 - [[Giglietto2022-0e951ac5]]
@@ -36,6 +38,7 @@ Detection, conceptualisation and longitudinal study of coordinated link sharing 
 - [[Oprea2025-lf]]
 - [[Orlando2025-ul]]
 - [[Pante2025-pq]]
+- [[Poliakoff2026-fa]]
 - [[Rodriguez_Farres2025-sg]]
 - [[Schroeder2026-im]]
 - [[Song2025-yh]]

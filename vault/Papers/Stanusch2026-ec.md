@@ -5,7 +5,7 @@ authors: ["Natalia Stanusch", "Richard Rogers"]
 year: 2026
 doi: 10.31124/advance.174979411.18178682/v1
 bibtex_key: Stanusch2026-ec
-topics: [generative-ai-and-media]
+topics: [generative-ai-media]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.31124/advance.174979411.18178682/v1

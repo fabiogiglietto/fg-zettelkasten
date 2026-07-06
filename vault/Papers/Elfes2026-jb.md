@@ -5,7 +5,7 @@ authors: ["Jan Elfes", "Marco Bastos", "Aiello, Luca Maria"]
 year: 2026
 doi: 10.48550/arxiv.2601.07398
 bibtex_key: Elfes2026-jb
-topics: [polarization-hybrid-media, computational-methods-social-research]
+topics: [polarization-hybrid-media, generative-ai-media]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.48550/arxiv.2601.07398

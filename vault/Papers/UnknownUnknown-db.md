@@ -5,7 +5,7 @@ authors: []
 year: 
 doi: 
 bibtex_key: UnknownUnknown-db
-topics: [generative-ai-and-media]
+topics: [public-perceptions-and-labor-impacts-of-ai]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=What%2081%2C000%20people%20told%20us%20about%20the%20economics%20of%20AI

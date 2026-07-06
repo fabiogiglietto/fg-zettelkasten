@@ -5,7 +5,7 @@ authors: ["Daniel Jurg", "Salvatore Romano", "Bernhard Rieder"]
 year: 2025
 doi: 10.31219/osf.io/j3cn5_v1
 bibtex_key: Jurg2025-ur
-topics: [platform-governance-data-access, elections-political-communication]
+topics: [platform-governance-apis, elections-political-communication]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31219/osf.io/j3cn5_v1

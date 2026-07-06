@@ -5,7 +5,7 @@ authors: ["Daria Kuznetsova"]
 year: 2025
 doi: 10.1080/19331681.2025.2540822
 bibtex_key: Kuznetsova2025-nu
-topics: [coordinated-inauthentic-behavior, information-disorder]
+topics: [coordinated-inauthentic-behavior]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1080/19331681.2025.2540822

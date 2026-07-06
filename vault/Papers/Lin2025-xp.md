@@ -5,7 +5,7 @@ authors: ["Hause Lin", "Gabriela Czarnek", "Benjamin Lewis", "Joshua P. White", 
 year: 2025
 doi: 10.1038/s41586-025-09771-9
 bibtex_key: Lin2025-xp
-topics: [generative-ai-and-media, elections-political-communication]
+topics: [generative-ai-media, elections-political-communication]
 citation_count: 14
 open_access: false
 source_url: https://doi.org/10.1038/s41586-025-09771-9

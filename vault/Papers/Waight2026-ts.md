@@ -5,7 +5,7 @@ authors: ["Hannah Waight", "Eddie Yang", "Yin Yuan", "Solomon Messing", "Margare
 year: 2026
 doi: 10.1038/s41586-026-10506-7
 bibtex_key: Waight2026-ts
-topics: [generative-ai-and-media, information-disorder]
+topics: [generative-ai-media, information-disorder]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1038/s41586-026-10506-7

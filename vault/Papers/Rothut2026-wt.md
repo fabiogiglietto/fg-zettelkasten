@@ -5,7 +5,7 @@ authors: ["Sophia Rothut", "Heidi Schulze", "Julian Hohner", "Simon Greipl", "Di
 year: 2026
 doi: 10.1080/10714421.2026.2658935
 bibtex_key: Rothut2026-wt
-topics: [far-right-online-radicalization]
+topics: [online-radicalization-and-extremism-on-platforms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10714421.2026.2658935

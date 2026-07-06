@@ -5,7 +5,7 @@ authors: ["Stephan Lewandowsky"]
 year: 2026
 doi: 10.1126/science.aee9835
 bibtex_key: Lewandowsky2026-ob
-topics: [platform-governance-data-access]
+topics: [platform-governance-apis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1126/science.aee9835

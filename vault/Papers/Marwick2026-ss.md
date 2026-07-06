@@ -5,7 +5,7 @@ authors: ["Alice E. Marwick"]
 year: 2026
 doi: 10.1177/20563051261434796
 bibtex_key: Marwick2026-ss
-topics: [anniversary-reflections-social-media]
+topics: [platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20563051261434796

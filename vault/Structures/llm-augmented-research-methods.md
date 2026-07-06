@@ -1,0 +1,27 @@
+---
+type: structure
+slug: llm-augmented-research-methods
+topic: "LLMs and Computational Methods for Research Workflows"
+---
+
+# LLMs and Computational Methods for Research Workflows
+
+## From Augmentation to Automation: An Emerging Spectrum
+
+The three papers filed here trace an arc of increasing autonomy in how LLMs are enlisted into scholarly work. [[Ober2026-vd]] anchors the human-in-the-loop end, using LLMs as labeling assistants inside a qualitative coding pipeline where interpretive authority remains with the analyst. [[Meher2025-qb]] occupies a middle position, in which a domain-adapted LLM takes over a well-defined classification task previously done by human coders, but under strict supervised evaluation. [[Jayaram2026-wd]] pushes furthest, proposing an agentic system that performs substantive scientific review at conference scale, and explicitly articulates a four-level taxonomy — Author Tool, Reviewer Tool, Supporting Reviewer, Total Automation — that can be read as a map of the very spectrum these three papers occupy.
+
+## Methodological Strategies: Prompting, Fine-Tuning, Orchestration
+
+Each paper embodies a distinct technical strategy for adapting general-purpose LLMs to scholarly tasks. [[Ober2026-vd]] relies on prompt engineering over frozen commercial models (ChatGPT-4o, Copilot), coupling them with topic modeling to provide a transparent, mathematically grounded scaffold that constrains and interprets LLM output. [[Meher2025-qb]] instead invests in parameter-efficient fine-tuning: QLoRA adaptation of Llama 3.1 (8B) yields large gains over zero-shot baselines (macro AUC 0.791 vs 0.575), with especially dramatic improvements on rare categories — a reminder that for structured classification, domain adaptation still outperforms clever prompting. [[Jayaram2026-wd]] combines both approaches with a third ingredient — agentic orchestration — segmenting manuscripts, allocating inference compute dynamically, and grounding claims via search, achieving a 34-point gain over zero-shot Gemini on the SPOT proof-error benchmark. Together they suggest that the appropriate technique depends on task structure: interpretive tasks favor lightweight prompting with human oversight, closed-label tasks reward fine-tuning, and open-ended verification demands multi-agent scaffolding.
+
+## Evaluation and the Problem of Ground Truth
+
+The three papers diverge sharply on what "evaluation" means, and this divergence is itself instructive. [[Meher2025-qb]] has the luxury of a labeled benchmark (GTD) and reports standard multi-label metrics, prompt-robustness checks, and ablations over temporal windows and quantization precision. [[Jayaram2026-wd]] blends benchmark evaluation (SPOT) with in-the-wild deployment metrics — author surveys at STOC and ICML — that measure perceived helpfulness and downstream behavior (31% of ICML respondents ran new experiments in response to feedback). [[Ober2026-vd]] has no ground truth at all and instead triangulates: inter-model agreement between ChatGPT-4o and Copilot labels, cosine similarity of embeddings (0.83–0.88), and human review for hallucination. The progression from labeled benchmarks to deployment surveys to inter-annotator-style agreement mirrors the epistemic character of each task, and highlights an unresolved methodological question: how do we validate LLM contributions when the underlying scholarly activity is itself interpretive?
+
+## Hallucination, Oversight, and Epistemic Risk
+
+All three papers grapple with hallucination, but the stakes differ. [[Ober2026-vd]] reports no clear hallucinations in topic labeling, arguing that grounding LLM outputs in topic-model clusters constrains fabrication — an implicit argument for the value of transparent intermediate representations. [[Jayaram2026-wd]] is more candid about residual risk: only 55–65% of surveyed authors rated PAT's feedback as "mostly or fully grounded," and the authors document date-cutoff errors and false claims of proof incorrectness. [[Meher2025-qb]] sidesteps the issue through the discipline of closed-label classification, where "hallucination" collapses into misclassification. The comparison underscores that as LLM tasks move from constrained labeling toward open-ended scientific judgment, oversight costs rise non-linearly, and the design of the human-AI interface — codebook refinement in one case, structured reviewer feedback in another — becomes as consequential as the underlying model.
+
+## Accessibility and the Politics of Compute
+
+A quieter but important thread concerns who gets to do this work. [[Meher2025-qb]] explicitly foregrounds accessibility, showing that QLoRA fine-tuning fits under 6 GB of VRAM and framing this as a democratizing move for resource-constrained political scientists. [[Ober2026-vd]] relies on commodity commercial APIs, similarly accessible but at the cost of opacity and reproducibility — a tension the authors acknowledge through their emphasis on topic modeling as an interpretable anchor. [[Jayaram2026-wd]], by contrast, deploys Gemini Deep Think at conference scale in a system developed by Google Research, representing a mode of scholarly infrastructure that individual researchers cannot replicate. Read together, the three papers sketch a stratified landscape in which the level of AI autonomy achievable in a research workflow is closely tied to institutional compute access — a structural fact that the human-in-the-loop discourse tends to obscure.

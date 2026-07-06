@@ -5,7 +5,7 @@ authors: ["Edward Hurcombe", "Ehsan Dehghan", "Laura Vodden", "Daniel Angus"]
 year: 2025
 doi: 10.1177/13548565251315521
 bibtex_key: Hurcombe2025-cs
-topics: [platform-governance-data-access, coordinated-inauthentic-behavior]
+topics: [platform-governance-apis, coordinated-inauthentic-behavior]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1177/13548565251315521

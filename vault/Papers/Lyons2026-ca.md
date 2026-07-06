@@ -5,7 +5,7 @@ authors: ["Benjamin Lyons", "Andy J. King", "Rebecca L. Barter", "Kimberly A. Ka
 year: 2026
 doi: 10.1038/s43587-025-01059-x
 bibtex_key: Lyons2026-ca
-topics: [health-information-online, information-disorder]
+topics: [information-disorder]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1038/s43587-025-01059-x

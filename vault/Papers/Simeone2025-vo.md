@@ -5,7 +5,7 @@ authors: ["Michael Simeone", "Steven R. Corman"]
 year: 2025
 doi: 10.1177/21582440251314538
 bibtex_key: Simeone2025-vo
-topics: [platform-governance-data-access, information-disorder]
+topics: [platform-governance-apis, information-disorder]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/21582440251314538

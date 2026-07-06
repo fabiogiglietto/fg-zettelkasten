@@ -6,7 +6,7 @@ year: 2015
 doi: 10.1080/1369118x.2015.1006658
 bibtex_key: Iannelli2015-e0818c3e
 kind: own
-topics: [social-tv-audience-engagement, elections-political-communication]
+topics: [social-tv-audience-engagement, polarization-hybrid-media]
 citation_count: 22
 open_access: true
 source_url: https://doi.org/10.1080/1369118x.2015.1006658

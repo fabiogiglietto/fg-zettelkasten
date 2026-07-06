@@ -5,7 +5,7 @@ authors: ["Paul Balluff", "Jakob-Moritz Eberl", "Sarina Joy Oberhänsli", "Jana 
 year: 2026
 doi: 10.1177/19401612241285672
 bibtex_key: Balluff2026-bv
-topics: [elections-political-communication, computational-methods-social-research]
+topics: [elections-political-communication, computational-social-science]
 citation_count: 5
 open_access: false
 source_url: https://doi.org/10.1177/19401612241285672

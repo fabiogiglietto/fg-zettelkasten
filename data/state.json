@@ -3,8 +3,8 @@
     "bibtex:Rodarte2026-dk": {
       "note_path": "Papers/Rodarte2026-dk.md",
       "topics": [
-        "elections-political-communication",
-        "polarization-hybrid-media"
+        "polarization-hybrid-media",
+        "elections-political-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "7039ed94a7c767e61157db0a9a72b7297b2a4ea199720401f640970937bff28a",
@@ -14,7 +14,7 @@
     "bibtex:Bailard2024-pj": {
       "note_path": "Papers/Bailard2024-pj.md",
       "topics": [
-        "computational-methods-social-research",
+        "computational-social-science",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -26,7 +26,7 @@
       "note_path": "Papers/Adam2026-tz.md",
       "topics": [
         "information-disorder",
-        "health-information-online"
+        "polarization-hybrid-media"
       ],
       "pdf_source": "drive",
       "content_hash": "f6a2057412428f70117deff0054d4f08f055089a0e4c1675a8070605ebbd31ba",
@@ -47,7 +47,7 @@
       "note_path": "Papers/Mahl2026-hc.md",
       "topics": [
         "information-disorder",
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "ef72a889aad53f2951e808ad02d3a899b21fef98b6e7773df6ad02076cc2ccfd",
@@ -57,7 +57,7 @@
     "bibtex:Nguyen2026-vm": {
       "note_path": "Papers/Nguyen2026-vm.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "7fa71fb10eb35853cc8957d907f8e40bb974fdd116bfd8effdbbe2092d8c369b",
@@ -67,7 +67,7 @@
     "bibtex:Waight2026-ts": {
       "note_path": "Papers/Waight2026-ts.md",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -86,8 +86,8 @@
     "bibtex:Yang2026-tq": {
       "note_path": "Papers/Yang2026-tq.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "27cd569bd7534b66be44078ef8960bb85cbd7570481de3f6ecb7e8d5a8099b21",
@@ -98,7 +98,7 @@
       "note_path": "Papers/Rothut2026-or.md",
       "topics": [
         "information-disorder",
-        "health-information-online"
+        "polarization-hybrid-media"
       ],
       "pdf_source": "drive",
       "content_hash": "837abfe20b87585cd359fcc182374a683280f2f7206405cdf360e9461ef6df85",
@@ -108,7 +108,7 @@
     "bibtex:Wang2025-zy": {
       "note_path": "Papers/Wang2025-zy.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "e986458b0204112456cd40c8917f0f772d7ecf22a4412657e44c8c6bd9fac0f7",
@@ -118,7 +118,7 @@
     "bibtex:Achmann-Denkler2026-lx": {
       "note_path": "Papers/Achmann-Denkler2026-lx.md",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "elections-political-communication"
       ],
       "pdf_source": "drive",
@@ -129,7 +129,7 @@
     "bibtex:Ohme2026-nv": {
       "note_path": "Papers/Ohme2026-nv.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "1505266fdeba919c55cd62de73dc5bde890c7d405117779dc1517a59a558876b",
@@ -138,7 +138,9 @@
     },
     "bibtex:Gerbaudo2026-fo": {
       "note_path": "Papers/Gerbaudo2026-fo.md",
-      "topics": [],
+      "topics": [
+        "platform-governance-apis"
+      ],
       "pdf_source": "drive",
       "content_hash": "d9a0fb8bb8450b9662a87b1dcfd6adcb9e02bd7be95f66c22d69b81fc7f85fe8",
       "podcast_linked": true,
@@ -147,8 +149,8 @@
     "bibtex:Tornberg2026-lc": {
       "note_path": "Papers/Tornberg2026-lc.md",
       "topics": [
-        "platform-governance-data-access",
-        "generative-ai-and-media"
+        "platform-governance-apis",
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "eff92779375593d2cf8b25f44ba730a6650d28371e91cfcd70bad33792747049",
@@ -158,7 +160,7 @@
     "bibtex:Rothut2026-wt": {
       "note_path": "Papers/Rothut2026-wt.md",
       "topics": [
-        "far-right-online-radicalization"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "drive",
       "content_hash": "18be0ca13b5389c7c68289da806dd6f33d6c1f1c583555da30a525e2a75ded10",
@@ -167,7 +169,9 @@
     },
     "bibtex:Swartz2026-zb": {
       "note_path": "Papers/Swartz2026-zb.md",
-      "topics": [],
+      "topics": [
+        "platform-critique-anniversary-essays"
+      ],
       "pdf_source": "drive",
       "content_hash": "f0de257fc93524b5ccfeeac927e924dca313178c0458c43462a340e63bebe87f",
       "podcast_linked": true,
@@ -176,7 +180,7 @@
     "bibtex:Helmond2026-ll": {
       "note_path": "Papers/Helmond2026-ll.md",
       "topics": [
-        "anniversary-reflections-social-media"
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "4d545d7373c5c93d2f1cd506404f6ad878a6838f252a0d530c1ed9f8ea27d12d",
@@ -186,7 +190,7 @@
     "bibtex:Marwick2026-ss": {
       "note_path": "Papers/Marwick2026-ss.md",
       "topics": [
-        "anniversary-reflections-social-media"
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "5be0b396637caecdb41bda77a013ca6cf72eaab0dc1bad1d567366ac3a29a705",
@@ -196,7 +200,7 @@
     "bibtex:Boyd2026-op": {
       "note_path": "Papers/Boyd2026-op.md",
       "topics": [
-        "anniversary-reflections-social-media"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "b758c7277af92803b6a9d281ef63840d2af8643d56f950e8bd6a060b3e1580ff",
@@ -238,8 +242,8 @@
     "bibtex:Peters2026-mo": {
       "note_path": "Papers/Peters2026-mo.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "a1fb805d9eb1c801ce2b4aac80d3904c6ce48fbe14014a6f104ed4c21cb63e8d",
@@ -258,7 +262,9 @@
     },
     "bibtex:Bravo2026-ue": {
       "note_path": "Papers/Bravo2026-ue.md",
-      "topics": [],
+      "topics": [
+        "climate-and-misinformation-message-interventions"
+      ],
       "pdf_source": "abstract_only",
       "content_hash": "a5cced38e189d0951049c682a9815da7461158d69e59598abcbb8cca83959df7",
       "podcast_linked": false,
@@ -267,7 +273,7 @@
     "bibtex:Nangle2026-yo": {
       "note_path": "Papers/Nangle2026-yo.md",
       "topics": [
-        "far-right-online-radicalization"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "23c9daed28740fd6b258660303f3beeb5fb85f6dc8a553c776bccfeff13ecdf1",
@@ -278,7 +284,7 @@
       "note_path": "Papers/Vincent_undated-re.md",
       "topics": [
         "information-disorder",
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "5b3033e1ea2bbc830d4dfb839301e225c2d61c1093d279481d1f4cdb666dfbd5",
@@ -288,7 +294,7 @@
     "bibtex:Karo2026-dn": {
       "note_path": "Papers/Karo2026-dn.md",
       "topics": [
-        "platform-governance-data-access"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "drive",
       "content_hash": "ab761ca2f537bd66302f1661ced26d9c7859fec53c2bddf90d79a54077754000",
@@ -309,8 +315,8 @@
     "bibtex:Ventura2026-yc": {
       "note_path": "Papers/Ventura2026-yc.md",
       "topics": [
-        "polarization-hybrid-media",
-        "platform-governance-data-access"
+        "platform-governance-apis",
+        "polarization-hybrid-media"
       ],
       "pdf_source": "drive",
       "content_hash": "54065b353f715182db739580b1c21b806e47198cf5b6022a1dd09e0614cd286a",
@@ -321,7 +327,7 @@
       "note_path": "Papers/Efstratiou2026-ij.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "health-information-online"
+        "information-disorder"
       ],
       "pdf_source": "drive",
       "content_hash": "db66ab0b51da7d95b146095c2ac55e147208c96da92e0f7ec9e4d8010f8cf134",
@@ -330,9 +336,7 @@
     },
     "bibtex:Wang2026-ub": {
       "note_path": "Papers/Wang2026-ub.md",
-      "topics": [
-        "platform-governance-data-access"
-      ],
+      "topics": [],
       "pdf_source": "drive",
       "content_hash": "586006a8159918fdd8ef2ce53931438920e11648306fdaea78043251e458fe12",
       "podcast_linked": true,
@@ -340,9 +344,7 @@
     },
     "bibtex:Ahuja2025-ku": {
       "note_path": "Papers/Ahuja2025-ku.md",
-      "topics": [
-        "participatory-ai-evaluation"
-      ],
+      "topics": [],
       "pdf_source": "drive",
       "content_hash": "de35e55acf3a860d02ee2281273e391b613bdc6b7af7f8a51d444714983d08c9",
       "podcast_linked": true,
@@ -359,8 +361,8 @@
     "bibtex:Bouchaud2026-lr": {
       "note_path": "Papers/Bouchaud2026-lr.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "b70388abba2e077008ae548c50c21d1904ee9971c2f0682da8d9b18658914d9e",
@@ -370,7 +372,7 @@
     "bibtex:Dodds2026-df": {
       "note_path": "Papers/Dodds2026-df.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "f7f992b743eb719a6f30515d32dab62de5f59f0c36fcb030c9085c9738376c0e",
@@ -380,8 +382,8 @@
     "bibtex:Lee2026-je": {
       "note_path": "Papers/Lee2026-je.md",
       "topics": [
-        "generative-ai-and-media",
-        "computational-methods-social-research"
+        "generative-ai-media",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "d49f41cadd7d17fb1ec7e418ff705d454d086502006f302ccf069019eb5ec91f",
@@ -391,7 +393,8 @@
     "bibtex:Kulichkina2026-zk": {
       "note_path": "Papers/Kulichkina2026-zk.md",
       "topics": [
-        "coordinated-inauthentic-behavior"
+        "coordinated-inauthentic-behavior",
+        "information-disorder"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "771e37e83b5bb0868b2f44ee77c8fab16bf132cb8f243918d188da601da3fd56",
@@ -400,10 +403,7 @@
     },
     "bibtex:Schiffrin_undated-gi": {
       "note_path": "Papers/Schiffrin_undated-gi.md",
-      "topics": [
-        "generative-ai-and-media",
-        "platform-governance-data-access"
-      ],
+      "topics": [],
       "pdf_source": "drive",
       "content_hash": "879449da3f1b2d3b5122e0b143f9405b90b9b5b62e3ceb47a07eec124fd1c94f",
       "podcast_linked": true,
@@ -423,7 +423,7 @@
     "bibtex:Hackenburg2025-dj": {
       "note_path": "Papers/Hackenburg2025-dj.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "99607fe99571e6b1faaa5b46adb695728cf61f4518519339799db419b678a105",
@@ -433,7 +433,7 @@
     "bibtex:Baym2026-tr": {
       "note_path": "Papers/Baym2026-tr.md",
       "topics": [
-        "anniversary-reflections-social-media"
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "467a774dafb1d743a8cc24e6d5e95f7e2000b01cb9f2de51928f4a72efd1aa6f",
@@ -453,7 +453,7 @@
     "bibtex:DiGiuseppe2026-pu": {
       "note_path": "Papers/DiGiuseppe2026-pu.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "d93b9902c22e4c2dddc5aa0efd5613f6721f8f4945d1b250aab83c6209251751",
@@ -481,7 +481,7 @@
     "bibtex:Ober2026-vd": {
       "note_path": "Papers/Ober2026-vd.md",
       "topics": [
-        "computational-methods-social-research"
+        "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "d92446fb8b9e5e463188c958dde77ba9580bd4b5f5fe9d5af22fb252517c94df",
@@ -491,7 +491,7 @@
     "bibtex:DeVerna2025-dl": {
       "note_path": "Papers/DeVerna2025-dl.md",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -514,7 +514,7 @@
       "note_path": "Papers/Scalco2026-bd.md",
       "topics": [
         "information-disorder",
-        "health-information-online"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "94dc1af265b7ae00cbe4dcd976deab96e032fafcd00cb9d2fe8702ff0d61a797",
@@ -524,8 +524,8 @@
     "bibtex:Balluff2026-if": {
       "note_path": "Papers/Balluff2026-if.md",
       "topics": [
-        "generative-ai-and-media",
-        "computational-methods-social-research"
+        "generative-ai-media",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "eb7aca6ab035800b9bc25233797178fbc316cf3d4685f4e35109aef321ecfcc7",
@@ -536,7 +536,7 @@
       "note_path": "Papers/Farkas2026-lr.md",
       "topics": [
         "information-disorder",
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "3d88690613fb57341b3249f63dbd5ad0d9f52132c9ede04cef01a61012941131",
@@ -546,7 +546,7 @@
     "bibtex:Gauthier2026-iq": {
       "note_path": "Papers/Gauthier2026-iq.md",
       "topics": [
-        "elections-political-communication",
+        "platform-governance-apis",
         "polarization-hybrid-media"
       ],
       "pdf_source": "drive",
@@ -557,7 +557,7 @@
     "bibtex:Stanusch2026-ec": {
       "note_path": "Papers/Stanusch2026-ec.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "389a43158a93ce90e744c17a922a8a9abc764fc24863fe412f070e56df514817",
@@ -567,8 +567,7 @@
     "bibtex:Dierickx2026-tw": {
       "note_path": "Papers/Dierickx2026-tw.md",
       "topics": [
-        "generative-ai-and-media",
-        "information-disorder"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "74eebc90f04e82efaa53da02dd340474a796db3d7e7dffcbaeb3da718206632f",
@@ -586,7 +585,7 @@
     "bibtex:Philipp2026-tl": {
       "note_path": "Papers/Philipp2026-tl.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "elections-political-communication"
       ],
       "pdf_source": "abstract_only",
@@ -598,7 +597,7 @@
       "note_path": "Papers/Choi2026-bz.md",
       "topics": [
         "information-disorder",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "42a3f57912bd5bd54ad79acc2b61425adc44866ce047419acbd963b400268c74",
@@ -609,7 +608,7 @@
       "note_path": "Papers/Inacio-da-Silva2026-zf.md",
       "topics": [
         "elections-political-communication",
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "7992753add0a143c67f6600394e850cbec1bfb3ccd83da2cf941e36c76afc5aa",
@@ -619,7 +618,8 @@
     "bibtex:Heiss2026-qv": {
       "note_path": "Papers/Heiss2026-qv.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "8a43d120348d59e04a6d83fed1af8d9dce0a2bf3ad991a2a27ae935f5752f0d9",
@@ -650,7 +650,6 @@
     "bibtex:Lyons2026-ca": {
       "note_path": "Papers/Lyons2026-ca.md",
       "topics": [
-        "health-information-online",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -691,8 +690,7 @@
     "bibtex:Szabo2026-rd": {
       "note_path": "Papers/Szabo2026-rd.md",
       "topics": [
-        "information-disorder",
-        "generative-ai-and-media"
+        "climate-and-misinformation-message-interventions"
       ],
       "pdf_source": "drive",
       "content_hash": "3d78af6711538e05c9a9fc1a4ed80872f05234374e10450ded00514b5de6fb21",
@@ -702,8 +700,8 @@
     "bibtex:Bollenbacher2026-vz": {
       "note_path": "Papers/Bollenbacher2026-vz.md",
       "topics": [
-        "health-information-online",
-        "information-disorder"
+        "information-disorder",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "f8872c5f0554e39f90b80bf95f2773b7f78342095437dab89fb926328003cafe",
@@ -713,7 +711,7 @@
     "bibtex:Lewandowsky2026-ob": {
       "note_path": "Papers/Lewandowsky2026-ob.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "d5584362d55f4a2fc16089238765714c60f5b316f27bf57f6d7a7ba679c1eace",
@@ -724,7 +722,7 @@
       "note_path": "Papers/Elfes2026-jb.md",
       "topics": [
         "polarization-hybrid-media",
-        "computational-methods-social-research"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "f8ea72b58809418511b3fd8029aa9f1b74468fc19bbd7d202a8e67dbcfa4deed",
@@ -753,7 +751,7 @@
     "bibtex:Cazzamatta2026-lo": {
       "note_path": "Papers/Cazzamatta2026-lo.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -765,7 +763,7 @@
       "note_path": "Papers/Balluff2026-bv.md",
       "topics": [
         "elections-political-communication",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "d8a5c3868c69a27ebb34b5e3182d54f6006d45ad225a67ecc4fa0770ee3a5bb6",
@@ -775,7 +773,7 @@
     "bibtex:Gillespie2026-aa": {
       "note_path": "Papers/Gillespie2026-aa.md",
       "topics": [
-        "generative-ai-and-media"
+        "ai-red-teaming-and-participatory-evaluation"
       ],
       "pdf_source": "drive",
       "content_hash": "3b5943a3387593c73913ccfb09deb84bc74af5a15b45362a0f53d3f553ee654b",
@@ -786,7 +784,7 @@
       "note_path": "Papers/Schroeder2026-im.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "fc0018094ba5be4df6eed8f3f8e0a3a950b264938937e4e1596cf82e9c998311",
@@ -796,8 +794,8 @@
     "bibtex:Hameleers2026-mc": {
       "note_path": "Papers/Hameleers2026-mc.md",
       "topics": [
-        "information-disorder",
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "information-disorder"
       ],
       "pdf_source": "drive",
       "content_hash": "70e683b6e742dbb03ff9324cfe2b2ca9606e28f6514975b548025cfbcf33c96e",
@@ -817,8 +815,8 @@
     "bibtex:Bak-Coleman2026-mk": {
       "note_path": "Papers/Bak-Coleman2026-mk.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "318421d806e42308d3874aacc509cb456f4b872575426a38a96f755e536c5fe3",
@@ -828,7 +826,7 @@
     "bibtex:De2026-ld": {
       "note_path": "Papers/De2026-ld.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "1e4b6a71558a84848fc96e61268e9bff6750d5c96ed1746c5d6980bf5709e5d1",
@@ -838,7 +836,7 @@
     "bibtex:Emilio2026-ik": {
       "note_path": "Papers/Emilio2026-ik.md",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -850,7 +848,7 @@
       "note_path": "Papers/Iris2026-pg.md",
       "topics": [
         "elections-political-communication",
-        "computational-methods-social-research"
+        "polarization-hybrid-media"
       ],
       "pdf_source": "drive",
       "content_hash": "85d1db9d6883324b0ee29d445c0fb4e7841e54dfff4b4b1d823c987a73b6fa43",
@@ -860,7 +858,7 @@
     "bibtex:Dubey2026-bl": {
       "note_path": "Papers/Dubey2026-bl.md",
       "topics": [
-        "information-disorder"
+        "climate-and-misinformation-message-interventions"
       ],
       "pdf_source": "drive",
       "content_hash": "3dd7e855b8bcdf3dafe1771c147e1d594da58fd303b0cd52c80a7081d001c0c4",
@@ -869,7 +867,9 @@
     },
     "bibtex:Voelkel2026-lc": {
       "note_path": "Papers/Voelkel2026-lc.md",
-      "topics": [],
+      "topics": [
+        "climate-and-misinformation-message-interventions"
+      ],
       "pdf_source": "drive",
       "content_hash": "f0e65b0f0c6d931a79854397bd129c8da271131d09089ff142bf45d19f0f261c",
       "podcast_linked": true,
@@ -878,6 +878,7 @@
     "bibtex:Poliakoff2026-fa": {
       "note_path": "Papers/Poliakoff2026-fa.md",
       "topics": [
+        "coordinated-inauthentic-behavior",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -909,8 +910,7 @@
     "bibtex:Rieder2026-pp": {
       "note_path": "Papers/Rieder2026-pp.md",
       "topics": [
-        "platform-governance-data-access",
-        "information-disorder"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "183ac717448c8f99152e57ef2e5e078a771aad9ddb1d73a3fc0c903d65ac39dc",
@@ -921,7 +921,7 @@
       "note_path": "Papers/Larsson2026-ro.md",
       "topics": [
         "elections-political-communication",
-        "computational-methods-social-research"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "2b7a3bfbc58bec3176c3ea0d28d648bc48a210ae6c6831d38911c58bc92cb346",
@@ -963,8 +963,7 @@
     "bibtex:Efstratiou2025-gs": {
       "note_path": "Papers/Efstratiou2025-gs.md",
       "topics": [
-        "platform-governance-data-access",
-        "elections-political-communication"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "725468c1d0d43b22e90d315a6d073ca1a5952289d9468b7cdddc16de9b9144b1",
@@ -974,7 +973,7 @@
     "bibtex:Pierri2025-hm": {
       "note_path": "Papers/Pierri2025-hm.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "cec12e63308ea73c432a45166b22ad6bcc5f9f09f378e30efa95b606f989b452",
@@ -985,7 +984,7 @@
       "note_path": "Papers/Iannucci2025-eg.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "3c20b0f9be870245eda46adf66930f373fd6338af42785cd9fd6e774ad986ac5",
@@ -995,8 +994,7 @@
     "bibtex:Gardam2025-er": {
       "note_path": "Papers/Gardam2025-er.md",
       "topics": [
-        "information-disorder",
-        "computational-methods-social-research"
+        "information-disorder"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "5345c77de9a787fe23d707c745a4bd15359e7e00ba41e29d0687f48f9dcc5ac6",
@@ -1006,7 +1004,7 @@
     "bibtex:Lin2025-xp": {
       "note_path": "Papers/Lin2025-xp.md",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "elections-political-communication"
       ],
       "pdf_source": "drive",
@@ -1017,7 +1015,7 @@
     "bibtex:Matias2025-px": {
       "note_path": "Papers/Matias2025-px.md",
       "topics": [
-        "participatory-ai-evaluation"
+        "ai-red-teaming-and-participatory-evaluation"
       ],
       "pdf_source": "drive",
       "content_hash": "584626daa98674fa95d3c9ae65dc80640a36a3f15505e18195e003dddead144a",
@@ -1038,7 +1036,8 @@
     "bibtex:Kalsnes2025-zb": {
       "note_path": "Papers/Kalsnes2025-zb.md",
       "topics": [
-        "elections-political-communication"
+        "elections-political-communication",
+        "polarization-hybrid-media"
       ],
       "pdf_source": "drive",
       "content_hash": "26893e6aa4679cb18762abb9afc9329b7c11968cc60c54c1708fb3cc0c0ee0e5",
@@ -1069,7 +1068,7 @@
     "bibtex:Triedman2025-uy": {
       "note_path": "Papers/Triedman2025-uy.md",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -1081,7 +1080,7 @@
       "note_path": "Papers/Song2025-yh.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "health-information-online"
+        "information-disorder"
       ],
       "pdf_source": "drive",
       "content_hash": "8182f4999eef60f2eae190e48243a8a6fb51b661b3835f34a9b41813978a12be",
@@ -1091,8 +1090,8 @@
     "bibtex:Allen2025-ot": {
       "note_path": "Papers/Allen2025-ot.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "polarization-hybrid-media"
       ],
       "pdf_source": "drive",
       "content_hash": "3b7ec0244cfb2c7e90a7052d82e94a4b8853a12f512629dce2d4d758757809f0",
@@ -1113,8 +1112,8 @@
     "bibtex:Murtfeldt2025-wu": {
       "note_path": "Papers/Murtfeldt2025-wu.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "691d95a1e2ec9484e8849145bd5b23723cf7faf62b891f2105e5c0c45a150f73",
@@ -1124,8 +1123,8 @@
     "bibtex:Bak-Coleman2025-pm": {
       "note_path": "Papers/Bak-Coleman2025-pm.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "4d864b5035181fc648d0925c7c7522b45ee210cf982b0b955d182884ae19b6c9",
@@ -1136,7 +1135,7 @@
       "note_path": "Papers/Orlando2025-ul.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "36e15e5405c2255ff69e35df8e5b6aae40a2a80738fcf87a47fc3bdee679a765",
@@ -1178,8 +1177,7 @@
     "bibtex:Oswald2025-km": {
       "note_path": "Papers/Oswald2025-km.md",
       "topics": [
-        "computational-methods-social-research",
-        "polarization-hybrid-media"
+        "computational-social-science"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "4ccdef2afdca646b5c08dcf208df34272296f3c00f9c44dd639c05c268b3062f",
@@ -1190,7 +1188,7 @@
       "note_path": "Papers/Donovan2025-ws.md",
       "topics": [
         "information-disorder",
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "c67d282037b4dace2e6157b258215a7dcefda0dee5de04fac2e3e0d778f672ad",
@@ -1200,8 +1198,8 @@
     "bibtex:Arminio2025-tw": {
       "note_path": "Papers/Arminio2025-tw.md",
       "topics": [
-        "computational-methods-social-research",
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "9000996b3adc471293d39036ff669c59cc71ef8ab97276af41880bbb5a87e29b",
@@ -1222,8 +1220,7 @@
     "bibtex:Rodriguez_Farres2025-sg": {
       "note_path": "Papers/Rodriguez_Farres2025-sg.md",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "information-disorder"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "b24e8fbd505ee7e5a062d8f3383ae6c4057914ff153a89afa61ed33e41fa07ee",
@@ -1233,7 +1230,7 @@
     "bibtex:Tonneau2025-bv": {
       "note_path": "Papers/Tonneau2025-bv.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "7bcad0d9156376a419b656869f36bf3160680828f9947e95f258f2be2e92ed2c",
@@ -1243,7 +1240,7 @@
     "bibtex:Fan2025-ut": {
       "note_path": "Papers/Fan2025-ut.md",
       "topics": [
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "f6a11065ced9359f75925f942ceafccabce78ae670ed13037493c4afb6659848",
@@ -1254,7 +1251,7 @@
       "note_path": "Papers/Mannocci2025-ig.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "4d339c4a581735397c0a3ae01e5a69fe711d849f0db30670a102a42dba424eb8",
@@ -1275,8 +1272,7 @@
     "bibtex:Kuznetsova2025-nu": {
       "note_path": "Papers/Kuznetsova2025-nu.md",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "information-disorder"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "bdc67930c1becf7496117a755b80df717b528e4a30fbfbad37d87f7353eea3c1",
@@ -1307,7 +1303,7 @@
     "bibtex:Meher2025-qb": {
       "note_path": "Papers/Meher2025-qb.md",
       "topics": [
-        "computational-methods-social-research"
+        "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "3d7fbf3d524ff71bd46380b46bee5bc9d0f6015ea36833533379070344e7b5d0",
@@ -1327,7 +1323,7 @@
     "bibtex:Jurg2025-ur": {
       "note_path": "Papers/Jurg2025-ur.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "elections-political-communication"
       ],
       "pdf_source": "drive",
@@ -1338,8 +1334,7 @@
     "bibtex:Paci2025-ag": {
       "note_path": "Papers/Paci2025-ag.md",
       "topics": [
-        "generative-ai-and-media",
-        "computational-methods-social-research"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "10d3324f84d20bb8eca4aa02a127e3b07ec2799edcac72dcb4b6e9e2c34171d0",
@@ -1349,7 +1344,7 @@
     "bibtex:Entrena-Serrano2025-gw": {
       "note_path": "Papers/Entrena-Serrano2025-gw.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "3dc6f534c0059e35bb058991fd1f179e99a564a8a7316c995f298a9b16d4edb9",
@@ -1359,8 +1354,8 @@
     "bibtex:Rieder2025-ju": {
       "note_path": "Papers/Rieder2025-ju.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "09ecbf376785d2c3e712e1475cfd1d781c3403eaa135d477322681945999daa7",
@@ -1382,7 +1377,7 @@
       "note_path": "Papers/Renault2025-uh.md",
       "topics": [
         "information-disorder",
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "51303ffaa46f35663af534b596cc94450ac514e14877d744924e910ed94bbcee",
@@ -1393,7 +1388,7 @@
       "note_path": "Papers/Ventura2025-sw.md",
       "topics": [
         "information-disorder",
-        "elections-political-communication"
+        "global-south-problematic-content"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "678e56cc6f9aa31fdf9f03aaa3dfc9eb733d8950bef8638e9887b83b86398eec",
@@ -1403,8 +1398,8 @@
     "bibtex:Waight2025-al": {
       "note_path": "Papers/Waight2025-al.md",
       "topics": [
-        "computational-methods-social-research",
-        "information-disorder"
+        "information-disorder",
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "82134ddbd3a827b0a583c886507995337c8c633d2bab2006c569e2fde3fee064",
@@ -1415,7 +1410,7 @@
       "note_path": "Papers/Kansaon2025-id.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "elections-political-communication"
+        "global-south-problematic-content"
       ],
       "pdf_source": "drive",
       "content_hash": "124e3c484778b83334e6e80bddbe8930aec1f7f3c85eb97b2737a31061579efc",
@@ -1436,7 +1431,7 @@
       "note_path": "Papers/Gaisbauer2025-by.md",
       "topics": [
         "polarization-hybrid-media",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "d7cd56497d83b0f4d29d2bf72dd8eb6873cca215123c235e18bdec3bf45281b3",
@@ -1446,8 +1441,7 @@
     "bibtex:Luceri2025-tr": {
       "note_path": "Papers/Luceri2025-tr.md",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "computational-methods-social-research"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "4265ef31fbe9281205c9323fabaaabaee2a8cb115f8914fcf946eb807c74eb1a",
@@ -1457,8 +1451,8 @@
     "bibtex:Gerard2025-br": {
       "note_path": "Papers/Gerard2025-br.md",
       "topics": [
-        "computational-methods-social-research",
-        "coordinated-inauthentic-behavior"
+        "coordinated-inauthentic-behavior",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "86a4604d00a06ee25864ca12d99477a8d357da59fc8d3d87a5d1085dcfda9394",
@@ -1478,8 +1472,7 @@
     "bibtex:Yang2025-iv": {
       "note_path": "Papers/Yang2025-iv.md",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "computational-methods-social-research"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "a23209aa11937b878056c7f32f0eba80aca30a6fc5958ea1524bd7a435260f41",
@@ -1489,8 +1482,8 @@
     "bibtex:Votta2025-xz": {
       "note_path": "Papers/Votta2025-xz.md",
       "topics": [
-        "elections-political-communication",
-        "platform-governance-data-access"
+        "platform-governance-apis",
+        "elections-political-communication"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "bac0fb34e310fea459f150138b593fb7366c4e81c22b4eabc95db869c5ac4e14",
@@ -1501,7 +1494,7 @@
       "note_path": "Papers/Di-Marco2025-aa.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "0cb9e53cba18e7174797cfaf3b3877d0d31bcf97b49147ce7c631debe7c59f34",
@@ -1532,7 +1525,7 @@
     "bibtex:Smith2025-kc": {
       "note_path": "Papers/Smith2025-kc.md",
       "topics": [
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "80e4839ebd99482c32397ff2e22fba3c8bc9b694edcf3a7a790c87c229feed92",
@@ -1542,7 +1535,7 @@
     "bibtex:Moran2025-qn": {
       "note_path": "Papers/Moran2025-qn.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "b624ef55d3294b085f0a5ef532ef4e9a17f815cd1d6634495fa22bd7c4a092bb",
@@ -1552,7 +1545,7 @@
     "bibtex:Bruns2025-fz": {
       "note_path": "Papers/Bruns2025-fz.md",
       "topics": [
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "355a237d703d2d9e9addcc9b4b977ee37396a97283399dfe64e0299efd374957",
@@ -1572,8 +1565,8 @@
     "bibtex:Bastos2025-ya": {
       "note_path": "Papers/Bastos2025-ya.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "0277dd97e78de02de45b244757d521adcd06871facd4d662c35ebc7ebd001fcb",
@@ -1583,7 +1576,7 @@
     "bibtex:Arora2025-tx": {
       "note_path": "Papers/Arora2025-tx.md",
       "topics": [
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "87e44b8281a1c39f523cecaed8c518cab3c0da92cefa68fd22684ef0045a6d08",
@@ -1593,8 +1586,8 @@
     "bibtex:Brown2025-jk": {
       "note_path": "Papers/Brown2025-jk.md",
       "topics": [
-        "computational-methods-social-research",
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "dae4d3fa59f59a8beb6a6ab9442a33cef90dc5a421a86c3c00203dd4e7b4012c",
@@ -1625,8 +1618,8 @@
     "bibtex:Gaw2025-ru": {
       "note_path": "Papers/Gaw2025-ru.md",
       "topics": [
-        "information-disorder",
-        "elections-political-communication"
+        "coordinated-inauthentic-behavior",
+        "global-south-problematic-content"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "65bf3d9fd5e4ee6ff8560f891d541632316fce9e6bbb51a481e87107f9747ab7",
@@ -1637,7 +1630,7 @@
       "note_path": "Papers/Pante2025-pq.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "information-disorder"
+        "computational-social-science"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "a546db8afb8da44c77f6637236c6cc017b3fcb4871dfa5f9b05af7fa7342b8db",
@@ -1647,7 +1640,7 @@
     "bibtex:Hurcombe2025-cs": {
       "note_path": "Papers/Hurcombe2025-cs.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "drive",
@@ -1658,8 +1651,8 @@
     "bibtex:Le-Mens2025-qz": {
       "note_path": "Papers/Le-Mens2025-qz.md",
       "topics": [
-        "computational-methods-social-research",
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "computational-social-science"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "3870fc52d04ddb1c96f8e94eac43c88d8b1a748d2ebcb040fe43fc71131ea7ad",
@@ -1670,7 +1663,7 @@
       "note_path": "Papers/Green2025-ap.md",
       "topics": [
         "polarization-hybrid-media",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "0c14b64ad01b15cdd74595037a814fdefe2412021eba20f45edb28c91ba63053",
@@ -1680,8 +1673,8 @@
     "bibtex:Munger2025-cz": {
       "note_path": "Papers/Munger2025-cz.md",
       "topics": [
-        "platform-governance-data-access",
-        "elections-political-communication"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "d5a9f114caba11dea104bd64fdd4a0920b1a88167f1c62d75cb4c89abbb48cc0",
@@ -1691,8 +1684,8 @@
     "bibtex:Graham2025-gp": {
       "note_path": "Papers/Graham2025-gp.md",
       "topics": [
-        "information-disorder",
-        "coordinated-inauthentic-behavior"
+        "coordinated-inauthentic-behavior",
+        "information-disorder"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "cc9d26c30f78f08cf0c24e1fc990385b9f7cef8ea7c06e2f0c4927493db2caa2",
@@ -1702,8 +1695,8 @@
     "bibtex:McNally2025-dn": {
       "note_path": "Papers/McNally2025-dn.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "f2397fb04740b14083aa41959c1b3f60bd37e288ff0860eb1f07dbdbdda67366",
@@ -1713,7 +1706,7 @@
     "bibtex:Sarmiento2025-as": {
       "note_path": "Papers/Sarmiento2025-as.md",
       "topics": [
-        "computational-methods-social-research",
+        "computational-social-science",
         "polarization-hybrid-media"
       ],
       "pdf_source": "abstract_only",
@@ -1736,7 +1729,7 @@
       "note_path": "Papers/Nenno2025-xa.md",
       "topics": [
         "information-disorder",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "f495f7cc496bb315e695bd9b77bc3fbdf1e80e305b8c249e034f3b003847af89",
@@ -1757,7 +1750,7 @@
       "note_path": "Papers/Bastos2025-ol.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "computational-methods-social-research"
+        "information-disorder"
       ],
       "pdf_source": "drive",
       "content_hash": "4259f426d1ffdcc8d24c206273d299aeae035caf4bc0cf39aa59d00a82b7f8bc",
@@ -1767,7 +1760,7 @@
     "bibtex:Simeone2025-vo": {
       "note_path": "Papers/Simeone2025-vo.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -1778,8 +1771,8 @@
     "bibtex:DiGiuseppe2025-es": {
       "note_path": "Papers/DiGiuseppe2025-es.md",
       "topics": [
-        "computational-methods-social-research",
-        "generative-ai-and-media"
+        "computational-social-science",
+        "generative-ai-media"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "c64ad0a2a4c62203956e04b07c359d7db538ee7c42e6595634827448c9c5998b",
@@ -1790,7 +1783,7 @@
       "note_path": "Papers/Luhring2025-od.md",
       "topics": [
         "information-disorder",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "ecfae0842af0d96b2630f917297a94e1578c85ed0f8edc5ddac91eaa01e0b2d7",
@@ -1800,7 +1793,7 @@
     "bibtex:Unknown2025-qj": {
       "note_path": "Papers/Unknown2025-qj.md",
       "topics": [
-        "participatory-ai-evaluation"
+        "ai-red-teaming-and-participatory-evaluation"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "8be6c26018714da8376fdbcbdc9bf23f398b99e3e3e7f385198412005b176468",
@@ -1821,7 +1814,7 @@
       "note_path": "Papers/Minici2024-tf.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "e498b22fb720f00f2c892d0c55f0ff02995c06aac126913460cbb3f962446dfb",
@@ -1861,7 +1854,7 @@
     "bibtex:Ulloa2024-jm": {
       "note_path": "Papers/Ulloa2024-jm.md",
       "topics": [
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "ffa3abaa3ece99b90024568f9dd66d6a129575739957a08381fe90f4f1d846bd",
@@ -1879,8 +1872,8 @@
     "bibtex:Freelon2024-sc": {
       "note_path": "Papers/Freelon2024-sc.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "da801f159359c6af12238f6a4a7480e9a0110c05555e5774a7dc83cbcd5504b1",
@@ -1910,8 +1903,7 @@
     "bibtex:Tan2024-vl": {
       "note_path": "Papers/Tan2024-vl.md",
       "topics": [
-        "generative-ai-and-media",
-        "computational-methods-social-research"
+        "generative-ai-media"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "65b7b658a9f3a940477600541302bf68450520a6ceed238791b0cf6e973dc17c",
@@ -1921,8 +1913,7 @@
     "bibtex:Lai2024-to": {
       "note_path": "Papers/Lai2024-to.md",
       "topics": [
-        "computational-methods-social-research",
-        "polarization-hybrid-media"
+        "computational-social-science"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "3a8ffa58c4a11c6df779e23d741bbf1723598f081ed5d66cbe3544054a310cce",
@@ -1942,8 +1933,7 @@
     "bibtex:Bruns2026-yv": {
       "note_path": "Papers/Bruns2026-yv.md",
       "topics": [
-        "platform-governance-data-access",
-        "information-disorder"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "ff39db25c51f68b6ad4b3620a5256659b81200d5429fb728853e34d5d289c308",
@@ -1952,10 +1942,7 @@
     },
     "bibtex:Ng2026-og": {
       "note_path": "Papers/Ng2026-og.md",
-      "topics": [
-        "generative-ai-and-media",
-        "computational-methods-social-research"
-      ],
+      "topics": [],
       "pdf_source": "drive",
       "content_hash": "f49f19f083ea39768dd17d05887ca731145b5e747c3a98f0a79ac25d72d27522",
       "podcast_linked": true,
@@ -1965,6 +1952,7 @@
     "bibtex:Askanius2026-de": {
       "note_path": "Papers/Askanius2026-de.md",
       "topics": [
+        "coordinated-inauthentic-behavior",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -1989,7 +1977,7 @@
       "note_path": "Papers/Rossi2023-847d5a9f.md",
       "topics": [
         "information-disorder",
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2013,7 +2001,7 @@
       "note_path": "Papers/Giglietto2026-9b6a992d.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2024,8 +2012,8 @@
     "bibtex:Giglietto2024-cbeb3f70": {
       "note_path": "Papers/Giglietto2024-cbeb3f70.md",
       "topics": [
-        "computational-methods-social-research",
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "computational-social-science"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2036,8 +2024,8 @@
     "bibtex:Anwar2024-34dba628": {
       "note_path": "Papers/Anwar2024-34dba628.md",
       "topics": [
-        "elections-political-communication",
-        "computational-methods-social-research"
+        "polarization-hybrid-media",
+        "elections-political-communication"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2049,7 +2037,7 @@
       "note_path": "Papers/Ghezzi2023-8bebc91f.md",
       "topics": [
         "polarization-hybrid-media",
-        "health-information-online"
+        "information-disorder"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2060,8 +2048,8 @@
     "bibtex:Giglietto2022-b30e8b4e": {
       "note_path": "Papers/Giglietto2022-b30e8b4e.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2073,7 +2061,7 @@
       "note_path": "Papers/Giglietto2022-0e951ac5.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "health-information-online"
+        "italian-media-ecosystem"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2093,8 +2081,7 @@
     "bibtex:Weinbrand2026-sf": {
       "note_path": "Papers/Weinbrand2026-sf.md",
       "topics": [
-        "generative-ai-and-media",
-        "platform-governance-data-access"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "a8c315bf25659c324d894cfbe21f0220467a4709b53e2f83f34372563c667364",
@@ -2105,7 +2092,7 @@
     "bibtex:UnknownUnknown-db": {
       "note_path": "Papers/UnknownUnknown-db.md",
       "topics": [
-        "generative-ai-and-media"
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
       "content_hash": "cdd122b20c58deb3ec4b85797dd79293f1a57d1b7f46403fe29a5b1caa6ab7af",
@@ -2128,7 +2115,7 @@
     "bibtex:Grusauskaite2026-po": {
       "note_path": "Papers/Grusauskaite2026-po.md",
       "topics": [
-        "far-right-online-radicalization"
+        "information-disorder"
       ],
       "pdf_source": "drive",
       "content_hash": "7de5314103a40b0bd02d5b57c8f44be5361c80169d67baea414a758affd851f3",
@@ -2139,7 +2126,7 @@
     "bibtex:Schulte2026-df": {
       "note_path": "Papers/Schulte2026-df.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "elections-political-communication"
       ],
       "pdf_source": "drive",
@@ -2151,7 +2138,7 @@
     "bibtex:Hepp2026-oi": {
       "note_path": "Papers/Hepp2026-oi.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "b1e3b6194e8cbab60c8ce2915e70311e7ba480d42b4aaa94f61470efc86263a2",
@@ -2162,7 +2149,7 @@
     "bibtex:Giglietto2026-632ef967": {
       "note_path": "Papers/Giglietto2026-632ef967.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "polarization-hybrid-media"
       ],
       "kind": "own",
@@ -2174,7 +2161,7 @@
     "bibtex:Vertesi2026-lv": {
       "note_path": "Papers/Vertesi2026-lv.md",
       "topics": [
-        "generative-ai-and-media"
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "b58bcb74f7f3c9922f7569bb048147011a7dda30b6b66cc599a3e8efa8a14305",
@@ -2185,7 +2172,7 @@
     "bibtex:Giglietto2025-1765bb4f": {
       "note_path": "Papers/Giglietto2025-1765bb4f.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "elections-political-communication"
       ],
       "kind": "own",
@@ -2221,8 +2208,8 @@
     "bibtex:Marino2024-2fbc690f": {
       "note_path": "Papers/Marino2024-2fbc690f.md",
       "topics": [
-        "generative-ai-and-media",
-        "computational-methods-social-research"
+        "generative-ai-media",
+        "computational-social-science"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2245,8 +2232,8 @@
     "bibtex:F2020-6278a4aa": {
       "note_path": "Papers/F2020-6278a4aa.md",
       "topics": [
-        "elections-political-communication",
-        "computational-methods-social-research"
+        "computational-social-science",
+        "polarization-hybrid-media"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2257,8 +2244,8 @@
     "bibtex:Giglietto2019-882f1900": {
       "note_path": "Papers/Giglietto2019-882f1900.md",
       "topics": [
-        "elections-political-communication",
-        "polarization-hybrid-media"
+        "italian-media-ecosystem",
+        "elections-political-communication"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2270,7 +2257,7 @@
       "note_path": "Papers/Giglietto2019-e9be81c1.md",
       "topics": [
         "information-disorder",
-        "sociocybernetics-social-systems"
+        "sociocybernetics-systems-theory"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2281,7 +2268,7 @@
     "bibtex:Iannelli2018-ebd918b7": {
       "note_path": "Papers/Iannelli2018-ebd918b7.md",
       "topics": [
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2302,7 +2289,7 @@
       "note_path": "Papers/Iannelli2015-e0818c3e.md",
       "topics": [
         "social-tv-audience-engagement",
-        "elections-political-communication"
+        "polarization-hybrid-media"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2314,7 +2301,7 @@
       "note_path": "Papers/Brady2026-ln.md",
       "topics": [
         "polarization-hybrid-media",
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "c25ca4bc0009d9a5bfdd9507c83319d82d6caab58a630b154c67802e2a5990c7",
@@ -2325,7 +2312,7 @@
     "bibtex:Lukito2026-nb": {
       "note_path": "Papers/Lukito2026-nb.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "elections-political-communication"
       ],
       "pdf_source": "drive",
@@ -2349,7 +2336,7 @@
     "bibtex:de-Vreese2026-zx": {
       "note_path": "Papers/de-Vreese2026-zx.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "4b7cefb217bade99ee70dedf4edb142776dfd8498ac275bd8896d5c3873dd915",
@@ -2360,7 +2347,7 @@
     "bibtex:Fan2026-af": {
       "note_path": "Papers/Fan2026-af.md",
       "topics": [
-        "computational-methods-social-research"
+        "computational-social-science"
       ],
       "pdf_source": "drive",
       "content_hash": "3bd195a02387172096cd7d82c037145b44445aff3db57d9974ab6c5517b1e3f7",
@@ -2371,8 +2358,8 @@
     "bibtex:Brown2026-br": {
       "note_path": "Papers/Brown2026-br.md",
       "topics": [
-        "polarization-hybrid-media",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "polarization-hybrid-media"
       ],
       "pdf_source": "drive",
       "content_hash": "351d02496539ed51d03daf75f65a228dc382d93793db7c22de6a1f94e510598a",
@@ -2383,8 +2370,8 @@
     "bibtex:Alizadeh2026-es": {
       "note_path": "Papers/Alizadeh2026-es.md",
       "topics": [
-        "generative-ai-and-media",
-        "computational-methods-social-research"
+        "computational-social-science",
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "7571ea58b6dc8a7b5f7741622777a75c50f0a16fbc344a2bce3c410cf253d109",
@@ -2404,7 +2391,7 @@
     "bibtex:Richter2026-bt": {
       "note_path": "Papers/Richter2026-bt.md",
       "topics": [
-        "generative-ai-and-media"
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
       "content_hash": "56d30dcb2e865022d66edf7377e089b6a1a9fb24dcc1c953beac06a5f99f808c",
@@ -2415,8 +2402,8 @@
     "bibtex:Giglietto2026-855a54cb": {
       "note_path": "Papers/Giglietto2026-855a54cb.md",
       "topics": [
-        "platform-governance-data-access",
-        "computational-methods-social-research"
+        "platform-governance-apis",
+        "computational-social-science"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2427,7 +2414,7 @@
     "bibtex:Fattorini2026-bo": {
       "note_path": "Papers/Fattorini2026-bo.md",
       "topics": [
-        "generative-ai-and-media"
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
       "content_hash": "dbbe555e589a6dd7a51d4ec9c200d0288d040bd3cb8a01acd53c97daa498d8c9",
@@ -2447,7 +2434,7 @@
     "bibtex:Costello2024-bg": {
       "note_path": "Papers/Costello2024-bg.md",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "information-disorder"
       ],
       "pdf_source": "drive",
@@ -2459,7 +2446,7 @@
     "bibtex:Giglietto2025-ed60bc90": {
       "note_path": "Papers/Giglietto2025-ed60bc90.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "kind": "own",
       "pdf_source": "abstract_only",
@@ -2470,8 +2457,8 @@
     "bibtex:Marino2023-9137f448": {
       "note_path": "Papers/Marino2023-9137f448.md",
       "topics": [
-        "health-information-online",
-        "information-disorder"
+        "information-disorder",
+        "italian-media-ecosystem"
       ],
       "kind": "own",
       "pdf_source": "drive",
@@ -2491,7 +2478,7 @@
     "bibtex:Hackenburg2026-ud": {
       "note_path": "Papers/Hackenburg2026-ud.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "88e0bd3dddaac87dec7a6e53bd01a6f5874669081bcb7e6362d1f51884d1a360",
@@ -2502,7 +2489,7 @@
     "bibtex:Manovich2026-ih": {
       "note_path": "Papers/Manovich2026-ih.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "e157ebe34d98407292c149a3bce5d4c656a6c8e160a2d6ddcaede229c9551b03",
@@ -2513,7 +2500,7 @@
     "bibtex:Crosset2026-mq": {
       "note_path": "Papers/Crosset2026-mq.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "drive",
       "content_hash": "32203caea3cc728b9a7de58efaaedd5ba7872fd2e59127746d1d8b861f865552",
@@ -2546,7 +2533,9 @@
     },
     "bibtex:Gottfried2026-ww": {
       "note_path": "Papers/Gottfried2026-ww.md",
-      "topics": [],
+      "topics": [
+        "generative-ai-media"
+      ],
       "pdf_source": "drive",
       "content_hash": "c32b00d18ccce3190864d3a6fe24c2b608d7018d49fb4df4d14fb08d26012051",
       "podcast_linked": true,
@@ -2556,7 +2545,7 @@
     "bibtex:Suk2026-ai": {
       "note_path": "Papers/Suk2026-ai.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "947d3e3a1df9f9790746e49e66295c5b9f24d685820f764d14c79d3f8232f77d",
@@ -2567,7 +2556,7 @@
     "bibtex:Gilardi2026-hw": {
       "note_path": "Papers/Gilardi2026-hw.md",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "pdf_source": "drive",
       "content_hash": "d7497863802c0b027c61e4fd4e3efe8c3dc534b77b86fe7c4d3dd56879776d02",
@@ -2578,7 +2567,7 @@
     "bibtex:Bechmann2026-dr": {
       "note_path": "Papers/Bechmann2026-dr.md",
       "topics": [
-        "platform-governance-data-access"
+        "platform-governance-apis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "e3acf719a14d5eab23b4f5afe9a22beb85d62bcd1221f87f6fb73befba3da203",
@@ -2588,7 +2577,9 @@
     },
     "bibtex:Jayaram2026-wd": {
       "note_path": "Papers/Jayaram2026-wd.md",
-      "topics": [],
+      "topics": [
+        "llm-augmented-research-methods"
+      ],
       "pdf_source": "drive",
       "content_hash": "2935dc317d16acdb237212db005102e4ca65c0ee578f5c2f07ea1ad44d5c4e9d",
       "podcast_linked": true,
@@ -2598,7 +2589,7 @@
     "bibtex:Bouchaud2026-np": {
       "note_path": "Papers/Bouchaud2026-np.md",
       "topics": [
-        "platform-governance-data-access",
+        "platform-governance-apis",
         "polarization-hybrid-media"
       ],
       "pdf_source": "abstract_only",
@@ -2620,18 +2611,17 @@
       "note_path": "Papers/Mosca2026-yh.md",
       "topics": [
         "information-disorder",
-        "mine-program"
+        "italian-media-ecosystem"
       ],
       "doi": "10.1177/02673231261458935",
       "title": "Fake news as a rhetorical weapon: Strategic delegitimization and selective amplification in Italian newspapers",
       "pdf_source": "abstract_only",
       "content_hash": "1f9d5951fe3ca26363a737296b481c6501699545f03f9d6d1773bd6e19e94d7a",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-07-04T05:44:34.662241+00:00"
     }
   },
-  "last_full_cluster": "2026-06-29T09:20:04.981277+00:00",
-  "papers_since_cluster": 8
+  "last_full_cluster": "2026-07-06T08:42:38.474538+00:00",
+  "papers_since_cluster": 0
 }

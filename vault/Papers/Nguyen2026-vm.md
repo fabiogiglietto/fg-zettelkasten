@@ -5,7 +5,7 @@ authors: ["Dennis Nguyen", "Magdalena Wischnewski"]
 year: 2026
 doi: 10.1007/s00146-026-03070-1
 bibtex_key: Nguyen2026-vm
-topics: [generative-ai-and-media]
+topics: [generative-ai-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1007/s00146-026-03070-1

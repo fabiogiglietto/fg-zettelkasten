@@ -5,7 +5,7 @@ authors: ["Valentine Crosset", "Tommaso Venturini", "Benoît Dupont"]
 year: 2026
 doi: 10.1080/21624887.2026.2692735
 bibtex_key: Crosset2026-mq
-topics: [platform-governance-data-access]
+topics: [platform-governance-apis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/21624887.2026.2692735

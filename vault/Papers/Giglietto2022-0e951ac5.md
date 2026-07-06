@@ -6,7 +6,7 @@ year: 2022
 doi: 10.31235/osf.io/6umqs
 bibtex_key: Giglietto2022-0e951ac5
 kind: own
-topics: [coordinated-inauthentic-behavior, health-information-online]
+topics: [coordinated-inauthentic-behavior, italian-media-ecosystem]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.31235/osf.io/6umqs

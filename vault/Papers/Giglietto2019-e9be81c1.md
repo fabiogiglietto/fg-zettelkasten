@@ -6,7 +6,7 @@ year: 2019
 doi: 10.1177/0011392119837536
 bibtex_key: Giglietto2019-e9be81c1
 kind: own
-topics: [information-disorder, sociocybernetics-social-systems]
+topics: [information-disorder, sociocybernetics-systems-theory]
 citation_count: 170
 open_access: true
 source_url: https://doi.org/10.1177/0011392119837536

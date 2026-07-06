@@ -5,7 +5,7 @@ authors: ["André K. Rodarte", "Carolina V. Kuahara", "Ahmer Arif"]
 year: 2026
 doi: 10.1080/21670811.2026.2669534
 bibtex_key: Rodarte2026-dk
-topics: [elections-political-communication, polarization-hybrid-media]
+topics: [polarization-hybrid-media, elections-political-communication]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2669534

@@ -5,7 +5,7 @@ authors: ["Yunya Song", "Yin Zhang", "Sheng Zou", "Xian Yang", "Qintao Huang"]
 year: 2025
 doi: 10.1007/s42001-025-00401-y
 bibtex_key: Song2025-yh
-topics: [coordinated-inauthentic-behavior, health-information-online]
+topics: [coordinated-inauthentic-behavior, information-disorder]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1007/s42001-025-00401-y

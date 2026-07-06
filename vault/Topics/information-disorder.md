@@ -4,9 +4,9 @@ slug: information-disorder
 emergent: false
 ---
 
-# Information Disorder and Disinformation
+# Information Disorder & Disinformation Narratives
 
-Misinformation, disinformation, fake news and problematic content circulating in hybrid media ecologies, including health misinformation, war narratives, and strategic information operations.
+Mapping mis-, dis- and mal-information within hybrid media systems, including problematic health content, fake-news taxonomies, and monitoring of disinformation narratives around elections, war and public health.
 
 ## Papers
 
@@ -14,10 +14,10 @@ Misinformation, disinformation, fake news and problematic content circulating in
 - [[Arceneaux2026-xk]]
 - [[Askanius2026-de]]
 - [[Bailard2024-pj]]
+- [[Bastos2025-ol]]
 - [[Bennett2025-xs]]
 - [[Bollenbacher2026-vz]]
 - [[Bosch2024-hj]]
-- [[Bruns2026-yv]]
 - [[Budak2024-ef]]
 - [[Cazzamatta2026-lo]]
 - [[Choi2026-bz]]
@@ -25,26 +25,26 @@ Misinformation, disinformation, fake news and problematic content circulating in
 - [[Costello2024-bg]]
 - [[DeVerna2025-dl]]
 - [[Di-Domenico2026-zq]]
-- [[Dierickx2026-tw]]
 - [[Donovan2025-ws]]
-- [[Dubey2026-bl]]
+- [[Efstratiou2026-ij]]
 - [[Emilio2026-ik]]
 - [[Farkas2026-lr]]
 - [[FitzGerald2025-nv]]
 - [[Frischlich2025-vn]]
 - [[Gardam2025-er]]
 - [[Gattermann2025-yx]]
-- [[Gaw2025-ru]]
+- [[Ghezzi2023-8bebc91f]]
 - [[Giglietto2019-e9be81c1]]
 - [[Goel2025-iq]]
 - [[Gonzalez-Bailon2024-rq]]
 - [[Graham2025-gp]]
+- [[Grusauskaite2026-po]]
 - [[Hameleers2026-mc]]
 - [[Hourigan2026-oc]]
 - [[Humprecht2025-ml]]
 - [[Kim2026-br]]
 - [[Kim2026-wg]]
-- [[Kuznetsova2025-nu]]
+- [[Kulichkina2026-zk]]
 - [[Li2026-wq]]
 - [[Lieu2025-nl]]
 - [[Luhring2025-od]]
@@ -57,12 +57,9 @@ Misinformation, disinformation, fake news and problematic content circulating in
 - [[Mosca2026-yh]]
 - [[Mosleh2024-op]]
 - [[Nenno2025-xa]]
-- [[Pante2025-pq]]
 - [[Poliakoff2026-fa]]
 - [[Prochaska2025-ef]]
 - [[Renault2025-uh]]
-- [[Rieder2026-pp]]
-- [[Rodriguez_Farres2025-sg]]
 - [[Rohrbach2026-rc]]
 - [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
@@ -70,10 +67,10 @@ Misinformation, disinformation, fake news and problematic content circulating in
 - [[Sadler2025-vu]]
 - [[Scalco2026-bd]]
 - [[Simeone2025-vo]]
+- [[Song2025-yh]]
 - [[Spampatti2026-kx]]
 - [[Starbird2025-jj]]
 - [[Suau_Martinez2026-lv]]
-- [[Szabo2026-rd]]
 - [[Tai2026-qk]]
 - [[Thiele2025-ol]]
 - [[Tornberg2025-ir]]

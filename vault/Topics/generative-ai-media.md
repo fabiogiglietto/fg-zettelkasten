@@ -1,12 +1,12 @@
 ---
 type: topic
-slug: generative-ai-and-media
+slug: generative-ai-media
 emergent: false
 ---
 
-# Generative AI and Media
+# Generative AI & Media
 
-The role of LLMs and generative AI in content production, persuasion, and as research instruments — including LLM-in-the-loop pipelines, embedding models, and synthetic visual persuasion. Anchors a current teaching course and an emerging research line.
+AI-assisted verification, synthetic visual persuasion, LLMs-in-the-loop pipelines for content analysis, and embedding models for political news — reflecting both the vera.ai project legacy and the researcher's new master's course on Generative AI and Media.
 
 ## Papers
 
@@ -22,36 +22,32 @@ The role of LLMs and generative AI in content production, persuasion, and as res
 - [[DiGiuseppe2026-pu]]
 - [[Dierickx2026-tw]]
 - [[Dodds2026-df]]
+- [[Elfes2026-jb]]
 - [[Emilio2026-ik]]
-- [[Fattorini2026-bo]]
 - [[Giglietto2024-cbeb3f70]]
 - [[Giglietto2026-9b6a992d]]
 - [[Gilardi2026-hw]]
-- [[Gillespie2026-aa]]
+- [[Gottfried2026-ww]]
 - [[Hackenburg2025-dj]]
 - [[Hackenburg2026-ud]]
 - [[Hameleers2026-mc]]
 - [[Hepp2026-oi]]
+- [[Larsson2026-ro]]
 - [[Le-Mens2025-qz]]
 - [[Lee2026-je]]
 - [[Lin2025-xp]]
 - [[Manovich2026-ih]]
 - [[Marino2024-2fbc690f]]
-- [[Ng2026-og]]
 - [[Nguyen2026-vm]]
 - [[Orlando2025-ul]]
 - [[Paci2025-ag]]
-- [[Richter2026-bt]]
-- [[Schiffrin_undated-gi]]
 - [[Schroeder2026-im]]
 - [[Stanusch2026-ec]]
 - [[Suk2026-ai]]
-- [[Szabo2026-rd]]
 - [[Tan2024-vl]]
 - [[Tornberg2026-lc]]
 - [[Triedman2025-uy]]
-- [[UnknownUnknown-db]]
-- [[Vertesi2026-lv]]
+- [[Waight2025-al]]
 - [[Waight2026-ts]]
 - [[Wang2025-zy]]
 - [[Weinbrand2026-sf]]
@@ -60,6 +56,6 @@ The role of LLMs and generative AI in content production, persuasion, and as res
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "generative-ai-and-media")
+WHERE contains(topics, "generative-ai-media")
 SORT discovery_date DESC
 ```

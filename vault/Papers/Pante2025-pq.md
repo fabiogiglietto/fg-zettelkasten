@@ -5,7 +5,7 @@ authors: ["Valeria Pantè", "David Axelrod", "Alessandro Flammini", "Filippo Men
 year: 2025
 doi: 
 bibtex_key: Pante2025-pq
-topics: [coordinated-inauthentic-behavior, information-disorder]
+topics: [coordinated-inauthentic-behavior, computational-social-science]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2502.17344v1

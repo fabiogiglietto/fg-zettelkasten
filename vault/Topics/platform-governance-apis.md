@@ -1,12 +1,12 @@
 ---
 type: topic
-slug: platform-governance-data-access
+slug: platform-governance-apis
 emergent: false
 ---
 
-# Platform Governance and Research Data Access
+# Platform Governance, APIs & DSA-Era Research Access
 
-Policies, APIs and DSA-era infrastructures shaping access to social media data for academic research, including Meta's content reduction, CrowdTangle shutdown, and the state of platform research tooling.
+Critical analysis of platform policies (Meta's political content reduction, algorithmic curation), the availability of research APIs and tools in the Digital Services Act era, and the methodological consequences of shrinking data access.
 
 ## Papers
 
@@ -17,7 +17,9 @@ Policies, APIs and DSA-era infrastructures shaping access to social media data f
 - [[Bechmann2026-dr]]
 - [[Bouchaud2026-lr]]
 - [[Bouchaud2026-np]]
+- [[Boyd2026-op]]
 - [[Brady2026-ln]]
+- [[Brown2026-br]]
 - [[Bruns2026-yv]]
 - [[Cazzamatta2026-lo]]
 - [[Crosset2026-mq]]
@@ -27,9 +29,10 @@ Policies, APIs and DSA-era infrastructures shaping access to social media data f
 - [[Entrena-Serrano2025-gw]]
 - [[Farkas2026-lr]]
 - [[Freelon2024-sc]]
+- [[Gauthier2026-iq]]
+- [[Gerbaudo2026-fo]]
 - [[Giglietto2022-b30e8b4e]]
 - [[Giglietto2025-1765bb4f]]
-- [[Giglietto2025-1e9a0917]]
 - [[Giglietto2025-ed60bc90]]
 - [[Giglietto2026-632ef967]]
 - [[Giglietto2026-855a54cb]]
@@ -37,7 +40,6 @@ Policies, APIs and DSA-era infrastructures shaping access to social media data f
 - [[Hurcombe2025-cs]]
 - [[Inacio-da-Silva2026-zf]]
 - [[Jurg2025-ur]]
-- [[Karo2026-dn]]
 - [[Lewandowsky2026-ob]]
 - [[Lukito2026-nb]]
 - [[Mahl2026-hc]]
@@ -53,17 +55,13 @@ Policies, APIs and DSA-era infrastructures shaping access to social media data f
 - [[Rieder2025-ju]]
 - [[Rieder2026-pp]]
 - [[Rossi2023-847d5a9f]]
-- [[Schiffrin_undated-gi]]
 - [[Schulte2026-df]]
 - [[Simeone2025-vo]]
 - [[Tonneau2025-bv]]
 - [[Tornberg2026-lc]]
-- [[Unknown2025-ed60bc90]]
 - [[Ventura2026-yc]]
 - [[Vincent_undated-re]]
 - [[Votta2025-xz]]
-- [[Wang2026-ub]]
-- [[Weinbrand2026-sf]]
 - [[Yang2026-tq]]
 - [[de-Vreese2026-zx]]
 
@@ -71,6 +69,6 @@ Policies, APIs and DSA-era infrastructures shaping access to social media data f
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "platform-governance-data-access")
+WHERE contains(topics, "platform-governance-apis")
 SORT discovery_date DESC
 ```

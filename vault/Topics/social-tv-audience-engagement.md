@@ -4,9 +4,9 @@ slug: social-tv-audience-engagement
 emergent: false
 ---
 
-# Social TV and Audience Engagement
+# Social TV & Audience Engagement
 
-Long-running line of work on second-screen practices, Twitter conversations around television, and audience participation across genres — a foundational theme that continues to inform the researcher's encyclopaedia entries.
+Second-screen practices, TV-Twitter interactions and algorithmic catalogues (Netflix). A historically important strand of the researcher's work retained for archival cohesion, though less active on the current agenda.
 
 ## Papers
 

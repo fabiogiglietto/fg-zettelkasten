@@ -1,23 +1,27 @@
 ---
 type: structure
 slug: social-tv-audience-engagement
-topic: "Social TV and Audience Engagement"
+topic: "Social TV & Audience Engagement"
 ---
 
-# Social TV and Audience Engagement
+# Social TV & Audience Engagement
 
-## Social TV as a Hybrid Media Practice
+## Social TV & Audience Engagement
 
-The throughline of this topic is the claim that "social TV" is not a story about social media displacing broadcast, but about their *entanglement*. [[Iannelli2015-e0818c3e]] anchors this position empirically by treating second-screen tweeting during Italy's 2013 election campaign as a hybrid practice — one in which Twitter activity peaks, themes, and rhythms are dictated by the broadcast schedule of political talk shows rather than emerging autonomously from networked publics. The methodological choice to sample tweets via official show hashtags and align them with episode-level peaks is itself an argument: the unit of analysis for social TV must straddle both media, not isolate the platform.
+This topic is preserved for archival cohesion rather than as a live line of inquiry, and currently rests on a single anchor paper. The through-line here concerns how broadcast television and networked platforms co-produce audience participation — a question that sits at the intersection of political communication, audience studies, and platform research.
 
-## Participation: Narrow, Reactive, Agenda-Taking
+### Hybridity over displacement
 
-A recurring concern in this line of work is the gap between the *rhetoric* of participatory audiences and the *thin* empirical reality. [[Iannelli2015-e0818c3e]] shows that even when millions of tweets are produced, the population of active participants is a small sliver of the Twitter user base, broadcasters rarely surface audience contributions on air, and politicians do not meaningfully reciprocate. Within the tweets themselves, the dominant modes are opinion/comment and requests for interaction; genuinely agenda-shaping contributions — new issues, angles, or sources — are residual (around 2%). This distinction between participation *through* media and participation *in* media-building becomes a useful analytic lever for thinking about audience engagement across other genres as well.
+The central move in [[Iannelli2015-e0818c3e]] is methodological and conceptual: to refuse the framing of social media as an independent variable displacing television, and instead treat second-screen practices as evidence of a *hybrid media system* in which TV logic continues to organise the tempo, agenda, and emotional peaks of networked conversation. Twitter activity during the 2013 Italian talk-show cycle tracks the broadcast calendar rather than escaping it — a finding that anchors this topic's broader scepticism toward technologically-driven accounts of participatory transformation.
 
-## TV Logic Still Sets the Agenda
+### The narrowness of "participation"
 
-A second, related argument is that the broadcast frame continues to govern the conversation. In [[Iannelli2015-e0818c3e]], tweet volumes track the political and televised event calendar, party-specific discourse mirrors the on-air staging (e.g., the Berlusconi appearance on *Servizio Pubblico* drove a wave of media-oriented commentary), and even the more affectively charged interaction requests — marked by elevated irony and vulgarity — remain tethered to what is happening on screen. Social TV, on this evidence, amplifies and inflects TV logic rather than overturning it.
+A recurring tension in social-TV scholarship is the gap between the visibility of second-screen activity and its structural thinness. [[Iannelli2015-e0818c3e]] documents this sharply: nearly two million tweets, but from a demographically narrow slice of users; broadcasters selectively displaying tweets on only a minority of shows; politicians and parties barely engaging back. Participation *through* the media (commentary, requests for interaction) crowds out participation *in* the media (agenda-shaping contributions, introduction of new issues or sources — a residual 2.4%). The topic thus contributes to a wider deflation of early participatory-web optimism: hybrid spaces open, but access and uptake remain asymmetric.
 
-## Openings for the Encyclopaedia Entries
+### Genres of second-screen talk
 
-For the broader entries that draw on this topic, three takeaways travel well beyond the Italian case: (1) hybrid-media-systems framings (Chadwick; Couldry's practice approach) are more productive than platform-centric ones; (2) measuring engagement requires distinguishing volume from breadth of access and from substantive influence on the agenda; and (3) the institutional posture of broadcasters and elites — whether they integrate, ignore, or merely display audience contributions — is decisive for whether second-screen activity becomes participation in any meaningful sense.
+A finer-grained contribution concerns the *form* second-screen speech takes. Opinion and comment dominate; requests for interaction carry a distinctive affective signature marked by irony and vulgarity; different political actors attract different tweet genres (media-oriented critique around Berlusconi, streaming commentary around the PD, interaction-seeking around the M5S). This suggests that second-screen practices are not a uniform "engagement" metric but a differentiated repertoire whose composition depends on the political object and the broadcast frame — a point that connects this archival strand to later work on algorithmic catalogues and platformed audiences, where similar questions of genre, visibility, and asymmetric interaction recur.
+
+### Position in the wider agenda
+
+While the researcher's current agenda has moved on, this topic retains value as the empirical and conceptual ground on which later interests — algorithmic mediation, platform logics, hybrid publics — were first tested against a concrete case. [[Iannelli2015-e0818c3e]] stands as its representative node.

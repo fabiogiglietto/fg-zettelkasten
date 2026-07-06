@@ -5,7 +5,7 @@ authors: ["Manuel Tonneau", "Diyi Liu", "Ryan McGrady", "Kevin Zheng", "Ralph Sc
 year: 2025
 doi: 10.31235/osf.io/amfws_v1
 bibtex_key: Tonneau2025-bv
-topics: [platform-governance-data-access]
+topics: [platform-governance-apis]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/amfws_v1

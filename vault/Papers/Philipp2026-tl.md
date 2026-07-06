@@ -5,7 +5,7 @@ authors: ["Philipp Darius", "Johannes Breuer", "Simon Kruschinski", "Felicia Loe
 year: 2026
 doi: 10.14763/2026.1.2080
 bibtex_key: Philipp2026-tl
-topics: [platform-governance-data-access, elections-political-communication]
+topics: [platform-governance-apis, elections-political-communication]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.14763/2026.1.2080

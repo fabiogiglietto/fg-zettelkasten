@@ -4,12 +4,15 @@ slug: polarization-hybrid-media
 emergent: false
 ---
 
-# Polarization and the Hybrid Media System
+# Polarization & Hybrid Media Systems
 
-How partisan alignment, algorithmic curation and the interplay of traditional and social media shape political polarisation, insularity and cross-partisan exposure.
+How social and traditional media jointly shape political polarization, partisan attention, and the amplification of extremes — a cross-cutting theme from the 2013 Italian talk-show studies to recent Latin American and comparative work.
 
 ## Papers
 
+- [[Adam2026-tz]]
+- [[Allen2025-ot]]
+- [[Anwar2024-34dba628]]
 - [[Bakshy2015-rn]]
 - [[Bennett2025-xs]]
 - [[Bouchaud2026-np]]
@@ -19,19 +22,21 @@ How partisan alignment, algorithmic curation and the interplay of traditional an
 - [[Dehghan2026-sy]]
 - [[Elfes2026-jb]]
 - [[Esau2025-tf]]
+- [[F2020-6278a4aa]]
 - [[Gaisbauer2025-by]]
 - [[Gauthier2026-iq]]
 - [[Ghezzi2023-8bebc91f]]
-- [[Giglietto2019-882f1900]]
 - [[Giglietto2026-632ef967]]
 - [[Green2025-ap]]
 - [[Hartmann2025-px]]
+- [[Iannelli2015-e0818c3e]]
+- [[Iris2026-pg]]
+- [[Kalsnes2025-zb]]
 - [[Knupfer2025-vt]]
 - [[Kristensen2025-ni]]
-- [[Lai2024-to]]
 - [[Mosleh2024-op]]
-- [[Oswald2025-km]]
 - [[Rodarte2026-dk]]
+- [[Rothut2026-or]]
 - [[Sarmiento2025-as]]
 - [[Suau_Martinez2026-lv]]
 - [[Unknown2023-9137f448]]

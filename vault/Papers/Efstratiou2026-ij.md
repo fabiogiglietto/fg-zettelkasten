@@ -5,7 +5,7 @@ authors: ["Alexandros Efstratiou", "Giuseppe Russo", "Luca Luceri"]
 year: 2026
 doi: 
 bibtex_key: Efstratiou2026-ij
-topics: [coordinated-inauthentic-behavior, health-information-online]
+topics: [coordinated-inauthentic-behavior, information-disorder]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2603.17249v1

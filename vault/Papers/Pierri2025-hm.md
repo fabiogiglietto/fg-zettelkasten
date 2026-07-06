@@ -5,7 +5,7 @@ authors: ["Francesco Pierri", "Theo Araujo", "Sanne Kruikemeier", "Philipp Loren
 year: 2025
 doi: 10.48550/arxiv.2512.14223
 bibtex_key: Pierri2025-hm
-topics: [platform-governance-data-access]
+topics: [platform-governance-apis]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.48550/arxiv.2512.14223

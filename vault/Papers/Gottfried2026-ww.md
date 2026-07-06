@@ -5,7 +5,7 @@ authors: ["Gottfried, Jeffrey", "Bishop, William", "Anderson, Monica", "Faverio,
 year: 2026
 doi: 
 bibtex_key: Gottfried2026-ww
-topics: []
+topics: [generative-ai-media]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Americans%20and%20AI%202026%3A%20Chatbots%2C%20Smart%20Devices%20and%20Views%20on%20Impact
