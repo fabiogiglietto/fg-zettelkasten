@@ -50,6 +50,7 @@ Mapping mis-, dis- and mal-information within hybrid media systems, including pr
 - [[Luhring2025-od]]
 - [[Lyons2026-ca]]
 - [[Mahl2026-hc]]
+- [[Makeev2026-ma]]
 - [[Marino2023-9137f448]]
 - [[Marwick2025-ov]]
 - [[Marwick2025-vx]]

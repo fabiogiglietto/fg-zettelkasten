@@ -2620,8 +2620,22 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-07-04T05:44:34.662241+00:00"
+    },
+    "bibtex:Makeev2026-ma": {
+      "note_path": "Papers/Makeev2026-ma.md",
+      "topics": [
+        "information-disorder"
+      ],
+      "doi": "",
+      "title": "Selling war at home and abroad: The dual objective of state media propaganda in the Russo-Ukrainian war",
+      "pdf_source": "abstract_only",
+      "content_hash": "4b54ae7d350955e05544c2ea1077c34b18378fd8a887d552b93cc1e1981f4262",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-07T06:54:40.626417+00:00"
     }
   },
   "last_full_cluster": "2026-07-06T08:42:38.474538+00:00",
-  "papers_since_cluster": 0
+  "papers_since_cluster": 1
 }
