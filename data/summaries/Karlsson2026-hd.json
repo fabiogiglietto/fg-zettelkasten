@@ -1,0 +1,34 @@
+{
+  "abstract": "This study examines whether media narratives about digital election interference affect political polarisation in the UK, using a survey experiment (N=3779) conducted in March 2024. Participants read fictitious news stories about coordinated fake account interference during the 2019 UK general election, with varied information about which party (Labour, Conservative, or unspecified) benefitted. While aggregate exposure did not increase perceived, affective, or ideological polarisation, respondents whose opposing party was portrayed as the beneficiary reported higher perceived societal division and greater affective polarisation toward ideological opponents.",
+  "key_claims": [
+    "Media discourse about digital election interference can have democratic consequences independent of whether the interference campaigns themselves succeed in changing voter behaviour.",
+    "Exposure to interference narratives does not, on aggregate, significantly increase perceived, affective, or ideological polarisation.",
+    "Asymmetric polarisation emerges based on partisan alignment: those seeing the opposing party benefit report heightened perceived division and affective polarisation against ideological opponents.",
+    "Ideological (left–right) identities appear more affected than partisan (party) identities, suggesting ideological categories may trigger stronger emotional reactions.",
+    "News media should balance informing the public with avoiding alarmism, since coverage of interference may inadvertently advance the campaigns' polarising goals."
+  ],
+  "methods": [
+    "Pre-registered online survey experiment fielded via Qualtrics and recruited through Prolific in the UK (March 2024), with N=3779 after exclusions.",
+    "Ten conditions (9 treatments + 1 control, ~378 per cell) presenting a fictitious news article about coordinated fake account interference in the 2019 UK general election, fully crossing interference source (foreign/domestic/unspecified) and beneficiary party (Labour/Conservative/unspecified).",
+    "Pre-screening for UK residency, partisanship (to balance Labour/Conservative voters), and prior consent to deception studies; manipulation checks used to exclude non-attentive treated participants.",
+    "Outcome measures: perceived polarisation (societal division and extremism items from Lee 2022), affective polarisation (feeling thermometers for in/out-party and in/out-ideology, min-max normalised), and ideological polarisation (strength of party support and left–right self-placement recoded to distance from centre).",
+    "Linear regression with robust standard errors comparing binary treatment vs. control and partisan 'match' vs. 'no-match' conditions; average marginal effects reported; Benjamini–Hochberg correction (q-values) applied for multiple testing."
+  ],
+  "findings": [
+    "H1a/H1b rejected at aggregate level: treatment exposure alone did not significantly increase perceived political division or perceived extremism.",
+    "When the treatment party did not match the respondent's partisanship, perceived societal division was significantly higher (~0.026 units on 0–1 scale, p=.01, q=.09), but perceived extremism was unaffected.",
+    "H2a rejected: no significant aggregate effect of treatment on the affective polarisation index.",
+    "Partial support for H2b: 'no-match' condition produced higher affective polarisation toward ideological opponents (~0.026 units, p=.016, q=.094); no comparable effect for partisan out-group thermometer ratings.",
+    "Exploratory analysis suggests those seeing their preferred party benefit reported systematically lower affective polarisation, hinting at cognitive dissonance / motivated justification.",
+    "H3a and H3b rejected: no significant treatment effects on ideological polarisation (strength of party support or left–right self-placement), for either binary treatment or partisan match conditions."
+  ],
+  "contributions": [
+    "Provides causal experimental evidence on an underexplored outcome — political polarisation — of media narratives about digital election interference, moving beyond prior work focused on trust and satisfaction with democracy.",
+    "Distinguishes empirically between three dimensions (perceived, affective, ideological) of polarisation and shows they respond differently to interference narratives.",
+    "Demonstrates that partisan alignment with the portrayed beneficiary moderates effects, indicating potential for asymmetric polarisation dynamics.",
+    "Offers a UK-based test complementing US-centric literature on disinformation discourse effects, and suggests ideological identities may be more consequential than partisan ones in fluid party systems.",
+    "Contributes to normative debates about media responsibility in covering election interference and to policy discussions on digital harms."
+  ],
+  "framing": "The paper situates itself within debates on digital disinformation, democratic resilience, and the effects of alarmist discourse (Benkler, Karpf, Jungherr), extending them to the literature on political polarisation and media effects (Kubin & Von Sikorski; Iyengar; Levendusky & Malhotra). It bridges research on election interference — which has produced ambiguous evidence of direct persuasion effects — with polarisation theory, arguing that discourse about interference may itself be a distinct causal pathway to democratic harm.",
+  "pdf_source": "drive"
+}
