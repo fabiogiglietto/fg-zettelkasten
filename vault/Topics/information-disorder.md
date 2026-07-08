@@ -33,6 +33,7 @@ Study of disinformation, misinformation and 'fake news' circulation within hybri
 - [[Frischlich2025-vn]]
 - [[Gattermann2025-yx]]
 - [[Ghezzi2023-8bebc91f]]
+- [[Giada2026-fc9a3833]]
 - [[Giglietto2017-4375de2f]]
 - [[Giglietto2019-e9be81c1]]
 - [[Goel2025-iq]]
