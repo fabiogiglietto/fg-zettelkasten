@@ -1,5 +1,7 @@
 """Tests for src.state incremental-work fingerprints (and the ClaudeClient
 assign_model fallback they key on)."""
+import pytest
+
 from src.state import (
     assign_fingerprint,
     emergent_fingerprint,
@@ -71,6 +73,7 @@ def test_summary_digest_shape():
 
 
 def test_claude_client_assign_model_falls_back_to_reasoning(monkeypatch):
+    pytest.importorskip("anthropic")  # ClaudeClient lazily imports the SDK
     monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
     from src.claude_client import ClaudeClient
 
