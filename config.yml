@@ -26,9 +26,13 @@ claude:
   # on Opus: the summary is the flagship artifact every downstream stage
   # (podcast script, notes, structure notes) builds on.
   summary_model: "claude-opus-4-8"
-  # Generative prose: register synthesis, emergent clustering, paper-note
-  # bodies and hub-note narratives.
+  # Generative prose: register synthesis, emergent clustering and hub-note
+  # narratives.
   reasoning_model: "claude-sonnet-5"
+  # Paper-note bodies — deliberately the best model: the Connections
+  # paragraph is the kasten's intellectual glue and worth Opus rates.
+  # Falls back to reasoning_model when unset.
+  note_model: "claude-opus-4-8"
   # Mechanical per-paper topic classification (themes.assign_paper).
   # Falls back to reasoning_model when unset.
   assign_model: "claude-haiku-4-5"

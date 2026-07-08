@@ -48,6 +48,7 @@ class ClaudeClient:
         reasoning_model: str,
         api_key: Optional[str] = None,
         assign_model: Optional[str] = None,
+        note_model: Optional[str] = None,
     ):
         import anthropic  # lazy import: keep the package importable pre-`pip install`
 
@@ -56,6 +57,9 @@ class ClaudeClient:
         # Topic assignment is classification-grade work; a config without
         # `assign_model` keeps the pre-tiering behavior (reasoning_model).
         self.assign_model = assign_model or reasoning_model
+        # Paper-note bodies (the Connections paragraph lives there) get their
+        # own knob so they can run on a stronger model than the other prose.
+        self.note_model = note_model or reasoning_model
         key = api_key or os.environ.get("ANTHROPIC_API_KEY")
         if not key:
             raise RuntimeError("ANTHROPIC_API_KEY is not set")

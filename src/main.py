@@ -72,6 +72,7 @@ def _claude(cfg: dict):
         summary_model=cc["summary_model"],
         reasoning_model=cc["reasoning_model"],
         assign_model=cc.get("assign_model"),
+        note_model=cc.get("note_model"),
     )
 
 
@@ -468,7 +469,7 @@ def cmd_bootstrap(cfg: dict, args) -> int:
         related = _related_keys(state, paper.id, entry["topics"])
         note = note_builder.build_paper_note(
             paper, summaries[paper.bibtex_key], entry["topics"], related,
-            episodes.get(paper.id), claude, claude.reasoning_model,
+            episodes.get(paper.id), claude, claude.note_model,
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
 
@@ -668,7 +669,7 @@ def cmd_update(cfg: dict, args) -> int:
         related = _related_keys(state, paper.id, entry["topics"])
         note = note_builder.build_paper_note(
             paper, summary, entry["topics"], related,
-            episodes.get(paper.id), claude, claude.reasoning_model,
+            episodes.get(paper.id), claude, claude.note_model,
             kind=entry.get("kind"),
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
@@ -831,7 +832,7 @@ def cmd_update(cfg: dict, args) -> int:
         related = _related_keys(state, paper.id, entry["topics"])
         note = note_builder.build_paper_note(
             paper, summary, entry["topics"], related,
-            episodes.get(paper.id), claude, claude.reasoning_model, kind="own",
+            episodes.get(paper.id), claude, claude.note_model, kind="own",
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
 

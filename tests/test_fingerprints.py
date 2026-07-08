@@ -79,5 +79,8 @@ def test_claude_client_assign_model_falls_back_to_reasoning(monkeypatch):
 
     client = ClaudeClient(summary_model="s", reasoning_model="r")
     assert client.assign_model == "r"
-    client = ClaudeClient(summary_model="s", reasoning_model="r", assign_model="a")
+    assert client.note_model == "r"
+    client = ClaudeClient(summary_model="s", reasoning_model="r",
+                          assign_model="a", note_model="n")
     assert client.assign_model == "a"
+    assert client.note_model == "n"
