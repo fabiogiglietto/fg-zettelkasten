@@ -5,7 +5,7 @@ authors: ["Gaël Le Mens", "Aina Gallego"]
 year: 2025
 doi: 10.1017/pan.2024.29
 bibtex_key: Le-Mens2025-qz
-topics: [generative-ai-media, computational-social-science]
+topics: [llms-computational-content-analysis, political-polarization-partisan-news]
 citation_count: 21
 open_access: false
 source_url: https://doi.org/10.1017/pan.2024.29

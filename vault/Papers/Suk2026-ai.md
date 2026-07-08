@@ -5,7 +5,7 @@ authors: ["Jiyoun Suk", "Yini Zhang"]
 year: 2026
 doi: 10.1080/08838151.2026.2694048
 bibtex_key: Suk2026-ai
-topics: [generative-ai-media]
+topics: [public-perceptions-and-labor-impacts-of-ai]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/08838151.2026.2694048

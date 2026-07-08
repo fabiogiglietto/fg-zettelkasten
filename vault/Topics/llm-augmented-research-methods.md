@@ -10,9 +10,15 @@ Methodological papers deploying LLMs or fine-tuned models to augment scholarly t
 
 ## Papers
 
+- [[Alizadeh2026-es]]
+- [[Arminio2025-tw]]
+- [[DiGiuseppe2025-es]]
+- [[Fan2026-af]]
 - [[Jayaram2026-wd]]
 - [[Meher2025-qb]]
 - [[Ober2026-vd]]
+- [[Tan2024-vl]]
+- [[UnknownUnknown-db]]
 
 ## All papers (Dataview)
 

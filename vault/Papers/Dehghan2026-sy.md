@@ -5,7 +5,7 @@ authors: ["Ehsan Dehghan", "Dominique Carlon", "Kateryna Kasianenko", "Ashwin Na
 year: 2026
 doi: 10.6084/m9.figshare.31275028
 bibtex_key: Dehghan2026-sy
-topics: [polarization-hybrid-media]
+topics: [political-polarization-partisan-news, computational-network-structure-analysis]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.6084/m9.figshare.31275028

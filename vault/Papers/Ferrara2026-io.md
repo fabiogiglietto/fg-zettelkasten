@@ -5,7 +5,7 @@ authors: ["Emilio Ferrara"]
 year: 2026
 doi: 
 bibtex_key: Ferrara2026-io
-topics: []
+topics: [computational-network-structure-analysis]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.22446v1

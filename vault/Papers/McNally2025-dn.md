@@ -5,7 +5,7 @@ authors: ["Naoise McNally", "Marco Bastos"]
 year: 2025
 doi: 10.1080/21670811.2025.2450623
 bibtex_key: McNally2025-dn
-topics: [platform-governance-apis, computational-social-science]
+topics: [platform-governance-data-access, italian-election-media-mapping]
 citation_count: 6
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2025.2450623

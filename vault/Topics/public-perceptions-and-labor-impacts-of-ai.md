@@ -10,8 +10,15 @@ Survey- and discourse-based studies of how publics and workers perceive, use, an
 
 ## Papers
 
+- [[DiGiuseppe2026-pu]]
 - [[Fattorini2026-bo]]
+- [[Gilardi2026-hw]]
+- [[Gillespie2026-aa]]
+- [[Gottfried2026-ww]]
+- [[Hackenburg2026-ud]]
+- [[Nguyen2026-vm]]
 - [[Richter2026-bt]]
+- [[Suk2026-ai]]
 - [[UnknownUnknown-db]]
 
 ## All papers (Dataview)

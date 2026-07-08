@@ -5,7 +5,7 @@ authors: ["Thomas H Costello", "Gordon Pennycook", "David Gertler Rand"]
 year: 2024
 doi: 10.31234/osf.io/xcwdn
 bibtex_key: Costello2024-bg
-topics: [generative-ai-media, information-disorder]
+topics: [climate-and-misinformation-message-interventions, llms-computational-content-analysis]
 citation_count: 12
 open_access: false
 source_url: https://doi.org/10.31234/osf.io/xcwdn

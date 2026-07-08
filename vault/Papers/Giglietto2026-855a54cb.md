@@ -6,7 +6,7 @@ year: 2026
 doi: 10.5204/mcj.3257
 bibtex_key: Giglietto2026-855a54cb
 kind: own
-topics: [platform-governance-apis, computational-social-science]
+topics: [platform-governance-data-access]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.5204/mcj.3257

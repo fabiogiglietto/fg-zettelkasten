@@ -5,7 +5,7 @@ authors: ["Axel Bruns"]
 year: 2026
 doi: 10.5204/mcj.3247
 bibtex_key: Bruns2026-yv
-topics: [platform-governance-apis]
+topics: [platform-critique-anniversary-essays, platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.5204/mcj.3247

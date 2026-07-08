@@ -5,7 +5,7 @@ authors: ["Hinck, Musashi", "King, Gary", "Nakamura, Kentaro", "Stewart, Brandon
 year: 2026
 doi: 
 bibtex_key: Hinck2026-yj
-topics: []
+topics: [survey-methodology-validity]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Where%27s%20the%20Evidence%20that%20Respondents%20Understand%20Your%20Survey%20Questions%3F

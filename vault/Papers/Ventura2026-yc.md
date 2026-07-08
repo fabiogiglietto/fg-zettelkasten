@@ -5,7 +5,7 @@ authors: ["Tiago Ventura", "Christopher Barrie", "Margaret E. Roberts", "Christo
 year: 2026
 doi: 10.31235/osf.io/4stfw_v1
 bibtex_key: Ventura2026-yc
-topics: [platform-governance-apis, polarization-hybrid-media]
+topics: [political-polarization-partisan-news, digital-media-elections-global]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/4stfw_v1

@@ -5,7 +5,7 @@ authors: ["Arnav Arora", "Srishti Yadav", "Maria Antoniak", "Serge Belongie", "I
 year: 2025
 doi: 
 bibtex_key: Arora2025-tx
-topics: [computational-social-science]
+topics: [political-polarization-partisan-news]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2503.20960v3

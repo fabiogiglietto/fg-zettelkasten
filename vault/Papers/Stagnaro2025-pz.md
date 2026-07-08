@@ -5,7 +5,7 @@ authors: ["Michael Nicholas Stagnaro", "James Druckman", "Adam J. Berinsky", "An
 year: 2025
 doi: 10.31234/osf.io/h9j2d_v2
 bibtex_key: Stagnaro2025-pz
-topics: []
+topics: [survey-methodology-validity]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.31234/osf.io/h9j2d_v2

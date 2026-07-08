@@ -5,7 +5,7 @@ authors: ["Volpe, Camilla"]
 year: 2026
 doi: 
 bibtex_key: Volpe2026-um
-topics: []
+topics: [platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Posting%20what%20you%20know%20and%20caring%20for%20the%20niche%3A%20How%20micro-influencers%20survive%20platform%20culture%20demands

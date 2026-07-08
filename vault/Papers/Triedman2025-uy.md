@@ -5,7 +5,7 @@ authors: ["Harold Triedman", "Alexios Mantzarlis"]
 year: 2025
 doi: 
 bibtex_key: Triedman2025-uy
-topics: [generative-ai-media, information-disorder]
+topics: [generative-ai-disinformation, information-disorder]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2511.09685v1

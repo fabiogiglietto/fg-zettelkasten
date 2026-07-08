@@ -5,7 +5,7 @@ authors: ["Katjana Gattermann", "Elske van den Hoogen", "Claes de Vreese"]
 year: 2026
 doi: 10.1080/13501763.2025.2489088
 bibtex_key: Gattermann2025-yx
-topics: [elections-political-communication, information-disorder]
+topics: [political-polarization-partisan-news, information-disorder]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1080/13501763.2025.2489088
