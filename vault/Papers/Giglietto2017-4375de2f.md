@@ -7,7 +7,7 @@ doi: 10.1177/2056305116686992
 bibtex_key: Giglietto2017-4375de2f
 kind: own
 topics: []
-citation_count: 57
+citation_count: 125
 open_access: true
 source_url: https://doi.org/10.1177/2056305116686992
 podcast_url: 
@@ -23,24 +23,24 @@ discovery_date:
 
 ## Summary
 
-This paper investigates how Twitter users mobilised the counter-hashtag #JeNeSuisPasCharlie ("I am not Charlie") in the wake of the January 2015 Charlie Hebdo shooting in Paris. Against the overwhelming tide of #JeSuisCharlie solidarity, the authors treat the dissenting hashtag as a window into how social media users carve out space for disagreement during moments of mass affective convergence. The paper argues that #JeNeSuisPasCharlie operated less as an endorsement of the violence than as a discursive vehicle for nuance, critique, and refusal of a totalising solidarity frame.
+This paper investigates how Twitter users mobilised the hashtag #JeNeSuisPasCharlie ("I am not Charlie") in the wake of the January 2015 Charlie Hebdo shooting in Paris. Positioning the tag as a counter-hashtag to the massively circulated #JeSuisCharlie, the authors treat it as a strategic site where dissenting voices negotiated their position against a dominant expression of mass solidarity. The paper argues that participants developed distinct discursive strategies to articulate nuance, critique, and disagreement — often without condoning the violence — thereby complicating the apparently unified public response to the attack.
 
 ## Key Contributions
 
-- Offers an empirical case study of *counter-hashtag* practice, extending hashtag research beyond canonical solidarity or activist hashtags.
-- Articulates how dissent is rhetorically managed online during high-salience, emotionally charged events.
-- Contributes to debates on free speech, identity, and the politics of solidarity in the post-Charlie Hebdo public sphere.
+- Offers a focused case study of *counter-hashtag* practices during a high-salience, emotionally charged news event.
+- Extends work on hashtag activism by examining dissent within, rather than opposition to, moments of ostensible collective solidarity.
+- Illuminates how users manage the rhetorical difficulty of dissenting from a solidarity frame without appearing to legitimise terrorist violence.
 
 ## Methods
 
-Qualitative/discursive analysis of Twitter posts carrying the #JeNeSuisPasCharlie hashtag in the period following the January 2015 attack, with attention to the rhetorical strategies users adopted to articulate disagreement.
+The study analyses Twitter posts carrying #JeNeSuisPasCharlie following the January 2015 attack, using qualitative discursive analysis to identify the rhetorical strategies participants deployed to articulate their positions.
 
 ## Findings
 
-- #JeNeSuisPasCharlie served as a recognisable site of dissent and nuance positioned against the dominant #JeSuisCharlie narrative.
-- Users deployed distinct discursive strategies to register disagreement while distancing themselves from endorsement of the violence.
-- (More granular findings are not specified in the available summary.)
+- #JeNeSuisPasCharlie operated as a discursive space for dissent and nuance rather than as an endorsement of the attackers.
+- Users deployed identifiable rhetorical strategies to distance themselves from the dominant solidarity frame while pre-empting accusations of sympathising with violence.
+- Solidarity hashtags and their counter-hashtags coexist in tension, with the latter revealing pluralism obscured by aggregate metrics of participation in the former.
 
 ## Connections
 
-No related papers have been provided under shared topics, so no intellectual wikilinks can be drawn here. Thematically, the work sits adjacent to literatures on hashtag activism, networked publics, and the discursive negotiation of solidarity after terrorist events.
+No other papers were provided under this topic, so no wikilinks are made here. Thematically, the work sits alongside broader literatures on hashtag activism, networked publics, and post-terror online discourse.

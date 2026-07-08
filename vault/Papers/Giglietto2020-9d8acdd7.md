@@ -7,7 +7,7 @@ doi: 10.1080/1369118X.2020.1739732
 bibtex_key: Giglietto2020-9d8acdd7
 kind: own
 topics: [coordinated-inauthentic-behavior, elections-political-communication]
-citation_count: 114
+citation_count: 232
 open_access: true
 source_url: https://doi.org/10.1080/1369118X.2020.1739732
 podcast_url: 
@@ -23,33 +23,33 @@ discovery_date:
 
 ## Summary
 
-This paper argues that disinformation research has overinvested in content-veracity and bad-actor detection, and proposes instead an ecological, action-centered framing built around what the authors call *coordinated link sharing behavior* (CLSB) — networks of Facebook pages, groups, and verified profiles that repeatedly share the same URLs in near-simultaneous bursts. Using CrowdTangle data on Italian political news from the six months preceding the 2018 general election and the 2019 European election, the authors develop a reproducible algorithm to detect such networks and show that coordination is strongly associated with the diffusion of problematic information. They further distinguish openly political from deceptively non-political coordinated networks, linking these self-presentations to different content strategies and plausibly different (ideological vs. commercial) motivations.
+This paper argues that disinformation research should pivot from content-veracity and bad-actor detection toward identifying **coordinated collective action** on platforms. Using CrowdTangle data on Facebook shares of Italian political news during the run-ups to the 2018 general and 2019 European elections, the authors develop a reproducible algorithm to detect entities that repeatedly share the same URLs near-simultaneously. These "coordinated link sharing behavior" (CLSB) networks are shown to be strongly associated with the diffusion of problematic domains and with entities previously flagged as disinformation sources. The paper further distinguishes networks by their self-presentation (openly political vs. deceptively non-political), linking these to different — likely ideological vs. commercial — sharing strategies.
 
 ## Key Contributions
 
-- Reframes Facebook's operational notion of "coordinated inauthentic behavior" within scholarship on online coordination, participatory culture, and cloaked identities.
-- Defines and operationalizes *coordinated link sharing behavior* as a measurable, action-based unit of analysis for disinformation research.
-- Releases an open-source R algorithm for detecting CLSB from CrowdTangle link-share data, using a data-driven near-simultaneity threshold and a repetition threshold at the 90th percentile.
-- Provides empirical evidence from two Italian elections that coordinated networks disproportionately spread content from known problematic domains and overlap with previously flagged disinformation pages.
-- Introduces a typology distinguishing ideologically motivated (openly political) from commercially motivated (deceptive non-political) coordinated networks via the relationship between self-presentation and breadth of domains shared.
+- Grounds Facebook's operational label "coordinated inauthentic behavior" in scholarly work on online coordination, participatory culture, and cloaked identities.
+- Introduces a reproducible two-step algorithm (open-source R code) for detecting CLSB from CrowdTangle data, based on a data-driven time threshold and repeated co-sharing.
+- Provides empirical evidence that coordinated sharing patterns are linked to problematic information across two Italian elections.
+- Differentiates ideologically-motivated from commercially-motivated coordinated networks via the interaction of politicalness and domain-sharing breadth.
+- Identifies two recurring structural configurations of coordinated networks — highly centralized and highly clustered — as an open puzzle for future work.
 
 ## Methods
 
-- Two corpora of Italian political news URLs (84,815 in 2018; 164,760 in 2019) compiled from Google News, GDELT, and the Twitter Streaming API.
-- CrowdTangle link endpoint used to retrieve all public Facebook/Instagram shares within 7 days of publication.
-- Two-step detection algorithm: (1) estimate a near-simultaneous sharing window from the median time for the fastest 10% of URLs to reach 50% of their shares; (2) extract entities that repeatedly co-share within that window above the 90th-percentile frequency threshold.
-- Cross-referencing of shared domains against Italian fact-checker blacklists (376 problematic domains) and of entities against Avaaz's list of 87 problematic Facebook pages; Risk Ratios compare coordinated vs. non-coordinated entities.
-- Qualitative coding of each coordinated entity's self-presentation (political / non-political / mixed) and computation of a network-level "politicalness" score; Gini coefficient for domain concentration; Spearman correlations; degree centralization and clustering coefficient for network structure.
+- Two corpora of Italian political news stories were built from Google News, GDELT, and the Twitter Streaming API for the six months prior to each election (~85k URLs in 2018; ~165k in 2019).
+- Public Facebook/Instagram shares within 7 days of publication were harvested via CrowdTangle.
+- The CLSB algorithm (1) estimates a "near-simultaneous" sharing window from the median time for the fastest 10% of URLs to reach half their shares, and (2) retains entities that co-share within that window above the 90th percentile of frequency.
+- Shared domains and entities were cross-referenced against Italian fact-checker blacklists (376 domains) and an Avaaz list of 87 problematic Facebook pages; Risk Ratios compared coordinated vs. non-coordinated entities.
+- Each coordinated entity was qualitatively coded as political / non-political / mixed to yield a network-level "politicalness" score; Gini coefficients captured domain-sharing concentration; Spearman correlations related the two; degree centralization and clustering coefficients characterized network structure.
 
 ## Findings
 
-- 24 coordinated networks (82 entities) detected in 2018; 92 networks (606 entities) in 2019.
-- Coordinated entities shared problematic domains 1.79× more often in 2018 (95% CI [1.08, 2.96]) and 2.22× more often in 2019 (95% CI [1.35, 3.67]) than non-coordinated entities.
-- Coordinated entities were 19.24× (2018) and 23.19× (2019) more likely to appear on the Avaaz problematic-pages list.
-- Network composition shifted between elections: in 2018, 44% of networks were fully political, 27% non-political, 29% mixed; in 2019 mixed networks dominated (64%).
-- Strong negative correlation between politicalness and domain-sharing concentration (r_s = −0.76 in 2018; r_s = −0.63 in 2019): non-political networks concentrate amplification on a narrow set of (often problematic) domains, while political networks diversify sources.
-- Coordinated networks fall into two structural ideal types — highly centralized (star-like) or highly clustered — but neither politicalness nor Gini coefficient predicts which configuration emerges.
+- Identified 24 coordinated networks (82 entities) in 2018 and 92 networks (606 entities) in 2019.
+- Coordinated entities shared problematic domains 1.79× more often (2018) and 2.22× more often (2019) than non-coordinated entities.
+- Coordinated entities were 19.24× (2018) and 23.19× (2019) more likely to appear on the Avaaz list of problematic Facebook pages.
+- Network composition shifted between elections: in 2018, 44% of networks were fully political; in 2019, 64% were of mixed composition.
+- Strong negative Spearman correlations between politicalness and domain concentration (r_s = -0.76 in 2018; -0.63 in 2019): non-political networks amplified a narrow band of (often problematic) domains, while political networks drew from broader source repertoires.
+- Networks fell into two structural ideal-types (star-like centralized vs. densely clustered), but neither politicalness nor concentration explained which form emerged.
 
 ## Connections
 
-This paper is a foundational statement in the authors' ongoing program on CLSB, extended methodologically and empirically in [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]], [[Giglietto2025-1765bb4f]], [[Giglietto2025-1e9a0917]], [[Giglietto2026-9b6a992d]], and [[Marino2024-2fbc690f]], with [[Giglietto2019-882f1900]] situating it in the broader Italian electoral-disinformation context. Its action-based, network-detection logic anticipates later coordinated-behavior detection work such as [[Luceri2025-tr]], [[Minici2024-tf]], [[Graham2025-gp]], and [[Hurcombe2025-cs]], while the distinction between ideological and commercially motivated coordination resonates with downstream studies of inauthentic amplification dynamics.
+This paper is a foundational statement in the author group's programme on coordinated link sharing, extended and refined in [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]], [[Giglietto2025-1765bb4f]], [[Giglietto2025-1e9a0917]], and [[Giglietto2026-9b6a992d]], and its methodological lineage traces back to [[Giglietto2019-882f1900]]. The behavior-centered detection approach it advocates connects directly to broader work on coordinated inauthentic behavior detection and network-level manipulation such as [[Graham2026-fb]], [[Graham2025-gp]], [[Luceri2025-tr]], [[Minici2024-tf]], and [[Kim2026-br]].

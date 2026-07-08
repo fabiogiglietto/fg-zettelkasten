@@ -26,6 +26,7 @@ How social and traditional media jointly shape political polarization, partisan 
 - [[Gaisbauer2025-by]]
 - [[Gauthier2026-iq]]
 - [[Ghezzi2023-8bebc91f]]
+- [[Giglietto2020-6278a4aa]]
 - [[Giglietto2026-632ef967]]
 - [[Green2025-ap]]
 - [[Hartmann2025-px]]

@@ -31,6 +31,7 @@ Methodological reflection and toolmaking for social-media data analysis: ethics 
 - [[Freelon2024-sc]]
 - [[Gaisbauer2025-by]]
 - [[Gerard2025-br]]
+- [[Giglietto2020-6278a4aa]]
 - [[Giglietto2022-b30e8b4e]]
 - [[Giglietto2024-cbeb3f70]]
 - [[Giglietto2026-855a54cb]]

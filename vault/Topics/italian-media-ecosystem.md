@@ -10,6 +10,7 @@ The institutional umbrella and empirical focus of the MINE programme: mapping It
 
 ## Papers
 
+- [[Ducci2022-10cb5d70]]
 - [[Giglietto2019-882f1900]]
 - [[Giglietto2022-0e951ac5]]
 - [[Marino2023-9137f448]]

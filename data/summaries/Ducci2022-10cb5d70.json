@@ -1,0 +1,36 @@
+{
+  "abstract": "This conference paper examines how Google News Italia, acting as an online gatekeeper, shapes the health-related public agenda and how those aggregated news items translate into user engagement on Facebook. Drawing on Health Communication and gatekeeping literature, the authors collected nine months of Google News Italia health items (Feb–Nov 2019) and matched them with Facebook interaction data. Findings show that medical-scientific and healthcare system topics dominate news aggregation, but celebrity and healthcare malfunction items generate the highest engagement, especially comments. The study argues that online gatekeepers now play a non-negligible role in constructing digital public spheres around health.",
+  "key_claims": [
+    "Online gatekeepers such as Google News play a significant, and often under-recognized, role in shaping the health agenda in digital public spheres.",
+    "The intertwining of traditional media, digital platforms, and user-generated content has transformed health communication from top-down representation to a post-representational, fluid environment.",
+    "News topics that are 'emotional' or 'popular' (e.g., celebrity, malpractice) drive higher user engagement on Facebook than technical scientific topics, though scientific topics are more prevalent in aggregated news.",
+    "Engagement structure depends more on the specific topic of a news item than on the source that produced it.",
+    "User engagement (via comments/shares) around health news can either support health literacy or amplify emotionally charged, less-informed debate — a dual potential relevant for combating misinformation."
+  ],
+  "methods": [
+    "Quantitative content analysis of health news aggregated by Google News Italia between 1 February and 30 November 2019.",
+    "Automated data collection via custom software querying Google News Italia RSS feeds every two hours across the categories health, medicine, mental health, nutrition, and fitness.",
+    "Use of the Facebook Graph API to collect reactions, comments, and shares for each article during the week following publication.",
+    "Filtering of the initial 12,080 news items to 9,456 with engagement, and further selection of the top 10% most-engaged items (960 articles) for thematic classification.",
+    "Manual coding of the 960 articles into seven thematic categories (healthcare system, health service malfunction, wellness, medical science, medical practice, celebrity, others) by five coders, with intercoder reliability assessed via Krippendorff's alpha (0.58).",
+    "Computation of a comparison index (Ic) between comments and shares to characterize engagement polarization across categories, plus source-level analysis of the 25 outlets producing at least seven articles."
+  ],
+  "findings": [
+    "Of Google News Italia health items published in the study window, 78.3% received at least one Facebook interaction.",
+    "Among the 960 most-engaged items, the most frequent thematic categories were medical science (18.5%) and healthcare system (18.4%); celebrity was the least frequent (5.3%).",
+    "Celebrity news generated the highest average engagement (1,862 interactions) and the most comments; medical practice generated the fewest comments.",
+    "Across all categories, shares outnumbered comments; 'technical' topics (medical science, medical practice) showed a relative excess of shares, while celebrity content showed an excess of comments.",
+    "News agency sites (notably Ansa) and national newspapers dominated production; 1% of the most productive sources generated 17% of the analyzed news.",
+    "Source-level specialization was visible: Quotidiano Sanità focused on healthcare system (69.2%), Il Giornale and Fanpage on healthcare malfunction (~40–44%), Ragusa-based local outlets on medical practice, and Vanity Fair on celebrity health news.",
+    "Engagement volume varied more within than between sources, suggesting that article specificity matters more than outlet identity."
+  ],
+  "contributions": [
+    "Provides empirical evidence of Google News's gatekeeping influence on the online health agenda in the Italian media ecosystem.",
+    "Introduces a thematic coding scheme for health news categories usable in future audience and agenda-setting research.",
+    "Develops a comparison index (Ic) to characterize the balance between comments and shares as distinct engagement modalities.",
+    "Connects health communication theory with platform-level empirical analysis, linking agenda-setting, gatekeeping, and social media engagement research.",
+    "Highlights implications for health organizations and communicators: online gatekeepers must be integrated into strategic communication planning, especially to counter misinformation."
+  ],
+  "framing": "The paper positions itself within Health Communication scholarship and the sociology of hybrid/convergent media ecosystems, engaging with debates on the e-patient, digital health literacy, and misinformation. It extends classic agenda-setting and gatekeeping theory (Shoemaker & Vos) into algorithmically mediated environments, where news aggregators and social platforms perform selective functions alongside traditional editorial actors.",
+  "pdf_source": "drive"
+}

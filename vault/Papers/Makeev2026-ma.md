@@ -9,7 +9,7 @@ topics: [information-disorder]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Selling%20war%20at%20home%20and%20abroad%3A%20The%20dual%20objective%20of%20state%20media%20propaganda%20in%20the%20Russo-Ukrainian%20war
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Makeev2026-ma.mp3
 pdf_available: false
 discovery_date: 2026-07-07T06:27:02.909806Z
 ---
@@ -22,22 +22,30 @@ discovery_date: 2026-07-07T06:27:02.909806Z
 
 ## Summary
 
-This paper develops a dual-objective theory of state media propaganda by authoritarian regimes at war, using the Russo-Ukrainian conflict as its empirical case. The authors argue that regimes whose legitimacy depends on public support must simultaneously address two audiences with divergent — and potentially contradictory — messaging strategies. Domestic propaganda works to sustain regime legitimacy by amplifying the stakes of the war while minimizing perceived costs, whereas foreign-directed propaganda pursues a distinct strategic aim of shaping international perceptions of the war's costs and benefits. The framework foregrounds the tension between inward-facing legitimation and outward-facing influence as a defining feature of contemporary wartime state communication.
+This paper examines how authoritarian regimes engaged in armed conflict construct parallel but distinct propaganda agendas for domestic and foreign audiences, using Russian state media coverage of the Russo-Ukrainian war as its empirical case. The authors advance a dual-objective model of wartime propaganda: at home, messaging works to sustain regime legitimacy by amplifying the stakes of the conflict while downplaying its costs; abroad, messaging pursues a separate strategic aim of shaping international perceptions of the war's costs and benefits. The paper situates state media not as a monolithic apparatus but as a bifurcated instrument reconciling — and sometimes straining under — the competing demands of internal control and external influence.
 
 ## Key Contributions
 
-- Articulates a dual-objective framework distinguishing domestic legitimation from foreign audience influence as separate propaganda goals.
-- Extends theories of authoritarian state media by highlighting the structural tension between these two agendas.
-- Applies the framework empirically to Russian state media during the Russo-Ukrainian war.
+- Proposes a **dual-objective theoretical framework** distinguishing domestic legitimation from foreign audience management as separate propaganda goals.
+- Articulates the specific pressures faced by regimes that rely on public support for legitimacy when their two audiences require divergent framings.
+- Applies the framework empirically to Russian state media coverage of the Russo-Ukrainian war.
+- Bridges political communication and international relations scholarship on state media and strategic communication.
 
 ## Methods
 
-Case-based analysis of Russian state media propaganda during the Russo-Ukrainian war. Specific empirical procedures are not detailed in the available material.
+Case-based analysis of state media output during the Russo-Ukrainian war, comparing domestic-facing and foreign-facing propaganda streams. The specific empirical procedures (corpus, coding, quantitative techniques) are not detailed in the available abstract.
 
 ## Findings
 
-- The paper's specific empirical findings are not available in the summary provided; the contribution as presented is primarily theoretical, positing that domestic messaging emphasizes high stakes and low costs while foreign messaging pursues a distinct strategic framing aimed at international audiences.
+- Domestic propaganda emphasizes **high stakes and low costs** of the conflict, sustaining unity and pre-empting dissent.
+- Foreign-directed propaganda adopts a **distinct framing** aimed at influencing international audiences' perceptions of the war.
+- The two agendas can be in tension, requiring active management by regimes dependent on public legitimacy.
+- Detailed empirical findings are not specified in the available abstract.
 
 ## Connections
 
-This paper sits at the intersection of state-sponsored influence operations and comparative propaganda studies, complementing work on coordinated information campaigns and platform-level influence such as [[Starbird2025-jj]] and [[Bollenbacher2026-vz]]. Its dual-audience framing also resonates with cross-national work on resilience to disinformation like [[Humprecht2025-ml]], though the specific focus on authoritarian wartime legitimation is largely orthogonal to the mis/disinformation-effects literature that dominates this topic cluster.
+This paper connects to work on state-affiliated influence operations and coordinated information campaigns around the Russo-Ukrainian war, notably [[Kulichkina2026-zk]] and [[Bollenbacher2026-vz]], as well as broader research on cross-national propaganda and disinformation ecosystems such as [[Humprecht2025-ml]] and [[Cazzamatta2026-lo]]. Its focus on audience-tailored strategic communication also resonates with studies of narrative framing and manipulation in polarized information environments like [[Starbird2025-jj]] and [[Hameleers2026-mc]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Makeev2026-ma.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)
