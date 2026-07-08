@@ -979,6 +979,12 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
 
     topics_client.save_topics(register, _abs(cfg["paths"]["topics_file"]))
 
+    # Checkpoint: the assignment/emergent fingerprints just seeded are the
+    # expensive part of this run — persist them now so a transient failure in
+    # the structure-note pass below doesn't throw them away (a re-run would
+    # otherwise re-bill every assignment call).
+    state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
+
     # Update each paper note's frontmatter topics in place (no re-summary).
     vault = Path(_abs(cfg["vault"]["path"]))
     for paper in papers:
