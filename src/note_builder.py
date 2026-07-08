@@ -385,7 +385,9 @@ def build_structure_note(topic: dict, papers: list, summaries: dict, claude, mod
         model=model,
         system=_STRUCTURE_SYSTEM,
         prompt=prompt,
-        max_tokens=8192,
+        # Sonnet 5 runs adaptive thinking by default and thinking tokens count
+        # against max_tokens — 16000 leaves headroom so the body never truncates.
+        max_tokens=16000,
     ).strip()
 
     return f"{fm}\n\n# {topic['name']}\n\n{body}\n"

@@ -14,12 +14,20 @@ Schema (see the implementation plan):
           "pdf_source": "drive" | "abstract_only",
           "content_hash": "<sha256>",
           "podcast_linked": true,
-          "last_processed": "2026-05-17T..."
+          "last_processed": "2026-05-17T...",
+          "assign_fp": "<sha256>"      # optional: topic-assignment input fingerprint
         }
       },
       "last_full_cluster": "2026-05-17T...",
-      "papers_since_cluster": 0
+      "papers_since_cluster": 0,
+      "register_signals_hash": "<sha256>",   # optional: refresh-topics skip key
+      "structure_fps": {"<slug>": "<sha256>"},  # optional: structure-note skip keys
+      "emergent_fp": "<sha256>"              # optional: emergent-clustering skip key
     }
+
+The `*_fp`/`*_hash` keys fingerprint the *inputs* of each billable Claude call
+so incremental runs (`topics.skip_unchanged_signals`,
+`processing.incremental_recluster`) can skip calls whose inputs are unchanged.
 """
 from __future__ import annotations
 
@@ -54,6 +62,61 @@ def content_hash(source_text: str | None, podcast_linked: bool) -> str:
     h.update((source_text or "").encode("utf-8"))
     h.update(b"\x00podcast" if podcast_linked else b"\x00")
     return h.hexdigest()
+
+
+# --- Incremental-work fingerprints ------------------------------------------
+# sha256 over the *inputs* of a billable Claude call. Persisted in state.json
+# so refresh-topics / recluster can skip calls whose inputs are byte-identical
+# to the previous run. Any input change — register wording, summary digest,
+# model id — changes the fingerprint and forces a re-run, which is correct
+# because the output could genuinely differ.
+
+
+def _h(*parts: str) -> str:
+    h = hashlib.sha256()
+    for part in parts:
+        h.update(part.encode("utf-8"))
+        h.update(b"\x00")
+    return h.hexdigest()
+
+
+def signals_hash(signals: dict[str, str]) -> str:
+    """Hash of the github.io research-agenda signals feeding register synthesis."""
+    return _h(*(s for path in sorted(signals) for s in (path, signals[path])))
+
+
+def register_fingerprint(topics: list[dict]) -> str:
+    """Hash of the register as an assignment input (slug/name/description),
+    order-independent."""
+    return _h(*(
+        str(t.get(field, ""))
+        for t in sorted(topics, key=lambda t: str(t.get("slug", "")))
+        for field in ("slug", "name", "description")
+    ))
+
+
+def assign_fingerprint(register_fp: str, digest_text: str, model: str) -> str:
+    """Hash of one paper's topic-assignment inputs."""
+    return _h(register_fp, digest_text, model)
+
+
+def emergent_fingerprint(register_fp: str, unassigned_keys: list[str], model: str) -> str:
+    """Hash of one emergent-clustering pass's inputs."""
+    return _h(register_fp, *sorted(unassigned_keys), model)
+
+
+def structure_fingerprint(
+    topic: dict, member_keys: list[str], digests_text: str, model: str
+) -> str:
+    """Hash of one structure note's inputs (topic + membership + digests)."""
+    return _h(
+        str(topic.get("slug", "")),
+        str(topic.get("name", "")),
+        str(topic.get("description", "")),
+        *sorted(member_keys),
+        digests_text,
+        model,
+    )
 
 
 # --- Duplicate detection ---------------------------------------------------

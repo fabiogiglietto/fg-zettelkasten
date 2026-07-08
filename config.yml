@@ -22,11 +22,16 @@ inputs:
     - "scripts/data/bio-seed.md"
 
 claude:
-  # Per-paper full-PDF summary pass — the bulk of the cost.
-  # Switch to a Sonnet model id to cut this ~5x.
-  summary_model: "claude-opus-4-7"
-  # Topic-register synthesis, clustering, and hub-note narratives.
-  reasoning_model: "claude-opus-4-7"
+  # Per-paper full-PDF summary pass — the bulk of the cost. Deliberately kept
+  # on Opus: the summary is the flagship artifact every downstream stage
+  # (podcast script, notes, structure notes) builds on.
+  summary_model: "claude-opus-4-8"
+  # Generative prose: register synthesis, emergent clustering, paper-note
+  # bodies and hub-note narratives.
+  reasoning_model: "claude-sonnet-5"
+  # Mechanical per-paper topic classification (themes.assign_paper).
+  # Falls back to reasoning_model when unset.
+  assign_model: "claude-haiku-4-5"
   # PDF text is capped before being sent to Claude.
   max_pdf_chars: 80000
 
@@ -36,11 +41,20 @@ topics:
   # An emergent topic is created only when at least this many mutually
   # cohesive unassigned papers exist — prevents one-paper topics.
   emergent_min_papers: 3
+  # refresh-topics: skip register synthesis when the github.io signals are
+  # byte-identical to the last synthesized run (keeps topic wording stable,
+  # which the incremental-recluster fingerprints depend on).
+  skip_unchanged_signals: true
 
 processing:
   # A full recluster is triggered when papers added since the last cluster
   # exceeds this threshold (or when --recluster is passed).
   recluster_threshold: 25
+  # Incremental recluster: reuse the refresh-topics register and skip
+  # assignment / emergent-clustering / structure-note LLM calls whose input
+  # fingerprints are unchanged since the last run. `recluster --full`
+  # overrides for a one-off complete pass.
+  incremental_recluster: true
 
 vault:
   path: "vault"
