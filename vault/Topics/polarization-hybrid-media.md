@@ -32,6 +32,7 @@ How social and traditional media jointly shape political polarization, partisan 
 - [[Iannelli2015-e0818c3e]]
 - [[Iris2026-pg]]
 - [[Kalsnes2025-zb]]
+- [[Karlsson2026-hd]]
 - [[Knupfer2025-vt]]
 - [[Kristensen2025-ni]]
 - [[Mosleh2024-op]]

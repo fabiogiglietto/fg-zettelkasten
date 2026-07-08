@@ -42,6 +42,7 @@ Mapping mis-, dis- and mal-information within hybrid media systems, including pr
 - [[Hameleers2026-mc]]
 - [[Hourigan2026-oc]]
 - [[Humprecht2025-ml]]
+- [[Karlsson2026-hd]]
 - [[Kim2026-br]]
 - [[Kim2026-wg]]
 - [[Kulichkina2026-zk]]

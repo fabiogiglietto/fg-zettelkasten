@@ -14,6 +14,7 @@ AI-assisted verification, synthetic visual persuasion, LLMs-in-the-loop pipeline
 - [[Alizadeh2026-es]]
 - [[Arminio2025-tw]]
 - [[Balluff2026-if]]
+- [[Beacken2026-zb]]
 - [[Brown2025-jk]]
 - [[Choi2026-bz]]
 - [[Costello2024-bg]]

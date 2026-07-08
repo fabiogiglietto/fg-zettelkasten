@@ -10,6 +10,7 @@ Studies of coordinated networks circulating problematic health and political con
 
 ## Papers
 
+- [[Beacken2026-zb]]
 - [[Gaw2025-ru]]
 - [[Kansaon2025-id]]
 - [[Ventura2025-sw]]

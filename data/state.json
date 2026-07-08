@@ -2634,8 +2634,38 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-07-07T06:54:40.626417+00:00"
+    },
+    "bibtex:Beacken2026-zb": {
+      "note_path": "Papers/Beacken2026-zb.md",
+      "topics": [
+        "generative-ai-media",
+        "global-south-problematic-content"
+      ],
+      "doi": "10.1177/20539517251410064",
+      "title": "Generative AI, propaganda, and digital authoritarianism: Comparative insights from six democratically weakened countries",
+      "pdf_source": "abstract_only",
+      "content_hash": "00ea701ecef353af6a38f037873401fdb4700456c30f8926bd9b9a688f19e24a",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-08T07:28:17.652433+00:00"
+    },
+    "bibtex:Karlsson2026-hd": {
+      "note_path": "Papers/Karlsson2026-hd.md",
+      "topics": [
+        "information-disorder",
+        "polarization-hybrid-media"
+      ],
+      "doi": "10.1177/14614448251410509",
+      "title": "Divide and conquer? The impact of media narratives on digital election interference on political and perceived polarisation",
+      "pdf_source": "drive",
+      "content_hash": "2baad618633b317b24d56d02308768535929720dbdfe7aafe3bef034cba41ae3",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-08T07:28:20.043196+00:00"
     }
   },
   "last_full_cluster": "2026-07-06T08:42:38.474538+00:00",
-  "papers_since_cluster": 1
+  "papers_since_cluster": 3
 }
