@@ -28,13 +28,20 @@ def _year_of(paper) -> str:
 
 def _format_author(name: str) -> str:
     """An author name in APA form: "Eytan Bakshy" -> "Bakshy, E.",
-    "Lada A. Adamic" -> "Adamic, L. A.", "Claes H. de Vreese" -> "de Vreese, C. H.".
+    "Lada A. Adamic" -> "Adamic, L. A.", "Claes H. de Vreese" -> "de Vreese, C. H.",
+    "Righetti, Nicola" -> "Righetti, N.".
 
-    Heuristic: the surname is the last token plus any immediately preceding
-    run of lowercase nobiliary particles (de, van, von, della, ...); the
-    remaining leading tokens become initials. "Last, First" ordering may still
-    format imperfectly.
+    Heuristic: a single-comma name is already "Family, Given" (some feed
+    sources deliver that form) — initialize the given part directly. Otherwise
+    the surname is the last token plus any immediately preceding run of
+    lowercase nobiliary particles (de, van, von, della, ...); the remaining
+    leading tokens become initials.
     """
+    if name.count(",") == 1:
+        family, given = (p.strip() for p in name.split(","))
+        if family and given:
+            initials = " ".join(f"{g[0]}." for g in given.split() if g)
+            return f"{family}, {initials}" if initials else family
     parts = name.split()
     if not parts:
         return ""
