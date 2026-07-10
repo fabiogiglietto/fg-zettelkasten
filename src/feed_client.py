@@ -9,6 +9,7 @@ from __future__ import annotations
 import html
 import os
 import re
+import time
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -114,12 +115,45 @@ def github_raw_headers() -> dict:
     return headers
 
 
+# The GitHub API intermittently returns 5xx; these fetches gate the whole
+# update run, so retry briefly before failing the workflow.
+_TRANSIENT_STATUSES = {429, 500, 502, 503, 504}
+_RETRIES = 3
+
+
+def get_with_retries(
+    url: str, headers: Optional[dict] = None, timeout: int = 30
+) -> requests.Response:
+    """GET `url`, retrying with backoff on transient failures (connection
+    errors, timeouts, 429/5xx). Non-transient HTTP errors raise immediately;
+    a still-failing final attempt raises like a plain `requests.get`."""
+    for attempt in range(_RETRIES):
+        wait = 2 * (attempt + 1)
+        try:
+            resp = requests.get(url, headers=headers, timeout=timeout)
+        except (requests.ConnectionError, requests.Timeout) as exc:
+            if attempt == _RETRIES - 1:
+                raise
+            print(f"WARN: {exc} fetching {url}; retrying in {wait}s")
+            time.sleep(wait)
+            continue
+        if resp.status_code in _TRANSIENT_STATUSES and attempt < _RETRIES - 1:
+            print(
+                f"WARN: HTTP {resp.status_code} fetching {url}; "
+                f"retrying in {wait}s"
+            )
+            time.sleep(wait)
+            continue
+        resp.raise_for_status()
+        return resp
+    raise AssertionError("unreachable")
+
+
 def fetch_feed(url: str, timeout: int = 30) -> list[Paper]:
     """Fetch the published JSON Feed and return its items as `Paper` objects.
 
     `url` is a GitHub Contents API URL (see `config.yml`)."""
-    resp = requests.get(url, headers=github_raw_headers(), timeout=timeout)
-    resp.raise_for_status()
+    resp = get_with_retries(url, headers=github_raw_headers(), timeout=timeout)
     data = resp.json()
     # Contract gate: abort before any vault/state mutation on drift.
     validate_toread_feed(data)
@@ -133,8 +167,7 @@ def fetch_own_publications(url: str, timeout: int = 30) -> list[Paper]:
     published by fabiogiglietto.github.io. `url` is a raw.githubusercontent.com
     URL — the ~5-min CDN cache is harmless here, own papers change rarely.
     """
-    resp = requests.get(url, timeout=timeout)
-    resp.raise_for_status()
+    resp = get_with_retries(url, timeout=timeout)
     data = resp.json()
     papers = []
     for item in data.get("items", []):

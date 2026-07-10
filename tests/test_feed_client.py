@@ -1,5 +1,8 @@
-"""Tests for src.feed_client item parsing (characterization)."""
-from src.feed_client import Paper, _item_to_paper
+"""Tests for src.feed_client item parsing (characterization) and retries."""
+import pytest
+import requests
+
+from src.feed_client import Paper, _item_to_paper, get_with_retries
 
 
 def _item(**overrides) -> dict:
@@ -59,3 +62,59 @@ def test_tolerates_null_content_fields():
     )
     assert p.abstract is None
     assert p.date_published is None
+
+
+class _Resp:
+    def __init__(self, status_code: int):
+        self.status_code = status_code
+
+    def raise_for_status(self):
+        if self.status_code >= 400:
+            raise requests.HTTPError(f"{self.status_code} Server Error")
+
+
+def _serve(monkeypatch, responses):
+    """Stub requests.get to pop from `responses` (a _Resp or an exception);
+    disable backoff sleeps. Returns the list of attempts made."""
+    attempts = []
+
+    def fake_get(url, headers=None, timeout=None):
+        attempts.append(url)
+        item = responses.pop(0)
+        if isinstance(item, Exception):
+            raise item
+        return item
+
+    monkeypatch.setattr("src.feed_client.requests.get", fake_get)
+    monkeypatch.setattr("src.feed_client.time.sleep", lambda s: None)
+    return attempts
+
+
+def test_get_with_retries_recovers_from_transient_502(monkeypatch):
+    attempts = _serve(monkeypatch, [_Resp(502), _Resp(200)])
+    resp = get_with_retries("https://api.example/feed.json")
+    assert resp.status_code == 200
+    assert len(attempts) == 2
+
+
+def test_get_with_retries_recovers_from_connection_error(monkeypatch):
+    attempts = _serve(
+        monkeypatch, [requests.ConnectionError("reset"), _Resp(200)]
+    )
+    resp = get_with_retries("https://api.example/feed.json")
+    assert resp.status_code == 200
+    assert len(attempts) == 2
+
+
+def test_get_with_retries_gives_up_after_max_attempts(monkeypatch):
+    attempts = _serve(monkeypatch, [_Resp(502), _Resp(502), _Resp(502)])
+    with pytest.raises(requests.HTTPError):
+        get_with_retries("https://api.example/feed.json")
+    assert len(attempts) == 3
+
+
+def test_get_with_retries_does_not_retry_client_errors(monkeypatch):
+    attempts = _serve(monkeypatch, [_Resp(404)])
+    with pytest.raises(requests.HTTPError):
+        get_with_retries("https://api.example/feed.json")
+    assert len(attempts) == 1
