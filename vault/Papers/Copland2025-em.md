@@ -22,33 +22,38 @@ discovery_date: 2025-12-15T00:00:00Z
 
 ## Summary
 
-This article traces how Sky News Australia, a low-rated News Corp cable channel, leveraged Facebook and YouTube between 2020 and 2021 to become a transnational node in the global right-wing media ecosystem. Combining cross-platform data collection, network analysis, and BERTopic modelling, Copland, Bruns, and Graham argue that Sky News Australia pursues a two-pronged digital strategy: native Facebook video serves a domestic Australian right-wing audience with parochial content, while YouTube uploads — disproportionately focused on US politics, COVID-19, and conspiracy narratives like the "Great Reset" — are absorbed into the American right-wing propaganda pipeline. The paper extends Benkler et al.'s network propaganda framework across national borders and argues that the channel exemplifies infrastructural, computational, and participatory propaganda forms adapted to algorithmic platforms.
+This paper traces how Sky News Australia — a low-rated, News Corp–owned right-wing cable channel — reinvented itself as an internationally influential digital media operation between 2020 and 2021. Combining cross-platform data from YouTube and Facebook (via CrowdTangle) with temporal, network, and topic-modelling analysis, the authors argue that the channel operates a deliberate two-pronged strategy: serving committed domestic right-wing audiences with native Facebook content, while inserting itself into the US right-wing propaganda pipeline through YouTube videos that amplify conspiracy theories about COVID-19, the 2020 US election, and the "Great Reset." Theoretically, the paper extends Benkler et al.'s network propaganda framework across national borders, positioning Sky News Australia as a transnational node bridging Australian and American media ecosystems.
 
 ## Key Contributions
 
-- First systematic empirical mapping of Sky News Australia's cross-platform dissemination on Facebook and YouTube.
-- Geographic extension of the network propaganda framework, showing asymmetric right-wing media ecosystems are transnational, not US-bound.
-- A replicable methodological pipeline combining CrowdTangle, text-based cross-platform video matching, network visualisation, and BERTopic modelling.
-- Application of "infrastructural" and "participatory" propaganda concepts to a non-US partisan outlet.
-- A template research agenda for comparable channels (Fox News, GB News, Rebel News).
+- First systematic empirical mapping of Sky News Australia's transnational digital dissemination across Facebook and YouTube.
+- Geographically extends Benkler et al.'s (2018) network propaganda framework, showing asymmetric right-wing media ecosystems span national boundaries.
+- Introduces a replicable methodological pipeline combining CrowdTangle data, cross-platform video matching via text comparison, network visualisation, and BERTopic modelling.
+- Develops and applies concepts of "infrastructural" and "participatory" propaganda to a non-US case.
+- Offers a research agenda for comparable channels such as Fox News, GB News, and Rebel News.
 
 ## Methods
 
-The authors collected the 20,000 most recent Sky News Australia YouTube videos (March 2020 – January 2021) via the Digital Methods Initiative's YouTube Data Tools, then queried CrowdTangle for both Facebook posts linking to those videos and native Sky News Australia Facebook video posts. A text-matching procedure aligned YouTube and Facebook content. Temporal analysis by hour, week, and administrator country was paired with Gephi/Force Atlas 2 network visualisation of video-sharing relationships, and BERTopic modelling (KeyBERTInspired, UMAP, HDBSCAN, 1–3 n-grams) over 19,957 video descriptions yielded 111 topics.
+- Collected the 20,000 most recent Sky News Australia YouTube videos (30 March 2020 – 21 January 2021) via the Digital Methods Initiative's YouTube Data Tools.
+- Queried CrowdTangle for Facebook posts (April 2020 – January 2021) linking to these videos, plus native Facebook video posts from the channel's page.
+- Used text-matching between YouTube descriptions and Facebook message fields to link video instances across platforms.
+- Performed temporal analysis of posting patterns by hour and week, broken down by administrator country.
+- Built network visualisations in Gephi (Force Atlas 2) mapping video-sharing relationships between videos and Facebook spaces.
+- Applied BERTopic modelling (KeyBERTInspired, UMAP, HDBSCAN, 1–3 n-grams) to 19,957 video descriptions, yielding 111 topics.
 
 ## Findings
 
-- Of 20,000 YouTube videos, only 3,470 were shared on Facebook (22,282 posts across 7,955 spaces); 11,660 native Facebook videos generated 37,350 posts in 5,184 spaces.
-- Native Facebook video sharing peaks in Australian evening hours, while YouTube sharing is globally distributed with a US-daytime bump.
-- Top native-Facebook sharers are Australian right-wing pages and Sky presenters; top YouTube sharers are US right-wing pages (Tucker Carlson, Mark Levin, Lauren Southern, Kayleigh McEnany Fan Club).
-- YouTube sharing roughly doubled from October 2020, tracking the US election and voter-fraud claims, with rising US-administered page activity.
-- Network visualisation reveals two clusters — a dense Australian native-Facebook cluster and a dispersed US-focused YouTube cluster — bridged by globally themed conspiracist content.
-- The top 20 topics (60.66% of videos) span COVID/anti-lockdown, partisan critique (pro-Trump/anti-Biden, pro-LNP/anti-Labor), China-focused content, and pro-fossil-fuel economic framing.
-- Five overtly disinformation topics (~2% of videos: voter fraud, Great Reset/climate denial, hydroxychloroquine, Hunter Biden laptop, wildfires-as-climate-denial) often achieved the highest sharing counts.
+- Of 20,000 YouTube videos, only 3,470 were shared on Facebook (22,282 posts); 11,660 native Facebook videos generated 37,350 posts.
+- Native Facebook videos circulate mostly within Australian time zones; YouTube video sharing is globally distributed with a slight US-daytime peak.
+- Top native-Facebook sharers are Australian right-wing pages and Sky presenters (Peta Credlin, Alan Jones, Mark Latham); top YouTube sharers are US-centric pages (Tucker Carlson, Lauren Southern, Mark Levin).
+- YouTube sharing roughly doubled from October 2020, coinciding with the US election and Trump's voter-fraud claims, with a rise in US-administered pages.
+- Network visualisation reveals two clusters — a dense Australian cluster (native Facebook) and a dispersed US-focused cluster (YouTube) — joined by a transitional zone of globally themed conspiracist content.
+- Top 20 topics (60.66% of videos) span four themes: COVID/anti-lockdown, political bias, global/national concerns (especially China), and pro-fossil-fuel economic policy.
+- Five topics (~1 in 50 videos) explicitly disseminate misinformation — 2020 voter fraud, climate denial and the Great Reset, hydroxychloroquine, the Hunter Biden laptop, and wildfire climate denial — often with the highest sharing counts.
 
 ## Connections
 
-This study sits alongside other work on transnational right-wing media ecosystems and hyperpartisan cross-platform amplification: it complements [[Waight2026-ts]] and [[Waight2025-al]] on Australian partisan media, [[Starbird2025-jj]] on participatory disinformation (a framework the authors explicitly extend), and [[Marwick2025-ov]] and [[Donovan2025-ws]] on networked propaganda dynamics. Its cross-platform sharing methodology resonates with [[Graham2025-gp]], [[Bollenbacher2026-vz]], and [[Gonzalez-Bailon2024-rq]] on platform-level diffusion of partisan content, while its focus on COVID and election conspiracies links to [[DeVerna2025-dl]] and [[Prochaska2025-ef]].
+This paper shares authorship and an interest in Australian and cross-platform propaganda dynamics with [[Graham2025-gp]] and [[Hurcombe2025-cs]]. Its focus on transnational right-wing media ecosystems and coordinated dissemination connects it to work on participatory disinformation and networked propaganda such as [[Starbird2025-jj]] and [[Marwick2025-ov]], while its concern with cross-national information disorder resonates with comparative studies like [[Humprecht2025-ml]] and [[Cazzamatta2026-lo]].
 
 ## Podcast
 

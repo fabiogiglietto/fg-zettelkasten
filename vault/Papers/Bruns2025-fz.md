@@ -22,27 +22,27 @@ discovery_date: 2025-04-15T00:00:00Z
 
 ## Summary
 
-This article introduces *practice mapping*, a methodological framework for analyzing multimodal social media interactions through vector embeddings of user actions. The authors argue that conventional social network analysis and its visualizations — frequently degenerating into illegible "hairball" or "furball" diagrams — are poorly suited to platforms where users engage through many distinct interaction modes (likes, replies, shares, mentions, follows, etc.). By embedding network actions as vectors, practice mapping locates users in a shared analytical space according to the similarity of their interactional repertoires, allowing multiple modes to be integrated into a single, interpretable representation. The piece is primarily methodological, outlining the framework and its conceptual motivation rather than reporting empirical findings.
+This article introduces **"practice mapping"** as an analytical approach for studying social media interactions. Rather than relying on conventional node-and-edge network visualizations — which frequently collapse into illegible "hairball" or "furball" tangles as data scale grows — the authors propose representing users' network *actions* as vector embeddings, then mapping the resulting commonalities and divergences in user practices within a unified analytical space. The central methodological advantage is the ability to integrate multiple distinct modes of interaction (e.g., replying, sharing, mentioning) into a single map, addressing a long-standing limitation of network analysis when applied to multimodal social media data. The paper is primarily a framework proposal rather than an empirical study.
 
 ## Key Contributions
 
-- Proposes *practice mapping* as a novel analytical approach for social media research.
-- Reframes the unit of analysis from ties between accounts to similarities between users' interactional *practices*.
-- Provides a way to integrate multimodal interaction data (across action types) into a unified visual analysis.
-- Offers a methodological alternative to conventional network visualizations whose density renders them analytically opaque.
+- Introduces **practice mapping** as a novel analytical approach for social media research.
+- Provides a framework for incorporating **multimodal interaction data** into integrated visual analyses.
+- Offers a methodological alternative to conventional, often illegible, network "furball" visualizations.
+- Reframes the unit of analysis from network topology toward similarity in **user practices**.
 
 ## Methods
 
-- Conceptual/methodological introduction of the practice mapping framework.
-- Use of vector embeddings to represent the actions and interactions performed by users on social media.
-- Projection of users into a shared embedding space where proximity reflects commonalities in practice and distance reflects divergence.
-- Comparison with, and critique of, standard network-graph visualization techniques.
+- Presents the practice mapping framework conceptually rather than through a large empirical evaluation.
+- Uses **vector embeddings** to represent the network actions and interactions of social media users.
+- Maps commonalities and disjunctures across user practices in a shared analytical space, allowing multiple interaction modes to be combined into one representation.
 
 ## Findings
 
-- The paper is methodological; no specific empirical findings are reported in the available material.
-- The principal argumentative result is the claim that practice mapping yields more legible and analytically tractable representations of multimodal interaction than conventional network graphs.
+- The abstract excerpt does not report specific empirical results; the contribution is chiefly methodological.
+- The approach is argued to overcome the "hairball"/"furball" legibility problem of conventional network visualizations.
+- Embedding-based representation is presented as capable of unifying multimodal interaction types that traditional network diagrams handle poorly.
 
 ## Connections
 
-This paper sits alongside other methodological interventions seeking to make large-scale platform data analytically tractable, including work on platform data access and measurement infrastructures such as [[Rieder2025-ju]] and [[Ulloa2024-jm]], and engages debates about how researchers conceptualize online "behavior" and engagement, as in [[Bak-Coleman2026-mk]] and [[Freelon2024-sc]]. Its emphasis on multimodal interaction also resonates with research that moves beyond single-signal analyses of social media activity, such as [[Balluff2026-if]].
+This paper sits within the broader methodological conversation on how to analyze and represent complex online network structure, connecting to work by one of its own authors on network-based social media analysis [[Dehghan2026-sy]]. Its use of embeddings to reduce and compare structural behavior resonates with other computational-network approaches to detecting patterns and coordination in social media data, such as [[Minici2024-tf]] and [[Mannocci2025-ig]].

@@ -22,18 +22,21 @@ discovery_date: 2025-05-15T00:00:00Z
 
 ## Summary
 
-This large-scale field experiment, conducted in collaboration with Meta, estimates the causal effect of political advertising on Facebook and Instagram in the six weeks before the 2020 US presidential election. Roughly 63,000 users were randomly assigned to have political ads removed from their feeds. The authors find no detectable effects on political knowledge, polarization, perceptions, or related attitudinal outcomes, though they caution that the study was underpowered to rule out small effects on turnout and vote choice. Descriptively, they document that presidential ads were aimed mostly at co-partisans and that fundraising — not persuasion — was the dominant ad category.
+This paper reports a large-scale randomized field experiment examining the causal effects of political advertising on Facebook and Instagram in the six weeks leading up to the 2020 US presidential election. Conducted as part of a collaborative research effort with Meta, the study randomly assigned subsets of 36,906 Facebook and 25,925 Instagram users to have political ads removed from their feeds. The intervention produced no detectable effects across a broad range of political attitudes, knowledge, and behaviors — though the authors are careful to note that the design was statistically underpowered to rule out small effects on turnout and vote choice specifically. The paper contributes rare experimental causal evidence to debates that have long relied on observational or smaller-scale data, and it complicates strong claims about the persuasive power of digital political advertising.
 
 ## Key Contributions
 
-- Large-scale randomized causal evidence on social media political advertising during a high-salience US election.
-- Descriptive documentation of presidential ad targeting (largely co-partisan) and content mix (fundraising-heavy).
-- An empirical contribution to platform regulation debates, suggesting attitudinal effects of political ads may be smaller than often presumed.
-- A methodological template — platform-collaborative randomized ad removal — for studying advertising effects in real feeds.
+- Delivers large-scale experimental causal evidence on the effects of social media political advertising during a major US election.
+- Documents descriptive patterns in presidential ad targeting — showing ads went largely to co-partisans — and in ad content, where fundraising appeals dominated.
+- Informs platform-regulation and persuasion debates by demonstrating null effects on attitudinal outcomes.
+- Establishes a methodological template of platform-collaborative randomized ad removal for studying advertising effects in situ.
 
 ## Methods
 
-A six-week pre-election randomized controlled experiment with 36,906 Facebook and 25,925 Instagram users, in which treated users had political ads suppressed from their feeds. Outcomes spanned political knowledge, affective and issue polarization, perceptions, turnout, and vote choice, complemented by descriptive analyses of ad targeting and content categories.
+- Randomized controlled experiment with 36,906 Facebook users and 25,925 Instagram users.
+- Treatment condition removed political ads from participants' news feeds for six weeks before the 2020 election.
+- Descriptive analysis of presidential ad targeting patterns and content categories.
+- Outcome measures spanned political knowledge, affective and issue polarization, political perceptions, turnout, and vote choice.
 
 ## Findings
 
@@ -46,4 +49,4 @@ A six-week pre-election randomized controlled experiment with 36,906 Facebook an
 
 ## Connections
 
-This paper belongs to the Meta–academic 2020 US Election Research collaboration and sits alongside [[Voelkel2026-lc]], another experiment from that program testing platform-level interventions on attitudinal outcomes; both report striking nulls on polarization despite substantively different treatments. It also speaks to broader work on persuasion and messaging effects in political communication, where similar small-or-null findings have been recurrent.
+This work sits within the broader study of digital media and elections, sharing an analytical focus on advertising and platform data with [[Gonzalez-Bailon2024-rq]], which likewise examines exposure dynamics on Facebook. Its concern with how political actors deploy and target platform advertising connects to [[Votta2025-xz]] and [[Nenno2025-xa]] on political ad targeting and content. Most other papers under this topic address non-US or non-experimental contexts and are only loosely related.

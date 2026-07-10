@@ -22,31 +22,30 @@ discovery_date: 2025-10-15T00:00:00Z
 
 ## Summary
 
-This paper offers a scientometric "eulogy" for Twitter's research APIs, quantifying the scholarly footprint they enabled before X effectively closed access in 2023 by pricing the Enterprise API at $42,000/month. Through a systematic search of eight databases spanning 2006–2024, the authors identify 33,306 studies in 8,914 venues accumulating over 610,000 citations across 16 disciplines. They document a "Golden Age" of roughly 25% annual growth in Twitter-based scholarship through 2022, followed by stagnation in 2023 and a 13% decline in 2024 — empirical evidence that platform data restrictions are reshaping what social science can know about online discourse. The piece doubles as a policy argument for legislative interventions (DSA, PATA) to guarantee researcher access.
+This paper delivers a scientometric "eulogy" to Twitter's research APIs, quantifying the scholarly output they enabled and the measurable collapse that followed their 2023 closure. By systematically tabulating academic publications using Twitter data from 2006 to 2024, the authors document a "Golden Age" of open social media research spanning 16 disciplines, then chart its stagnation and decline after Twitter restricted access and set Enterprise API pricing at $42,000/month. The central argument is that API restrictions are not merely technical or economic decisions but exercises of platform power that reshape society's empirical capacity to study online public discourse — and that legislative interventions are needed to preserve researcher access.
 
 ## Key Contributions
 
-- The most comprehensive cross-disciplinary bibliometric accounting of Twitter-data research to date, surpassing prior reviews (Karami et al. 2020; Yu & Munoz-Justicia 2020) in database coverage and scope.
-- First systematic empirical documentation of the post-API-closure decline in scholarly output, moving the debate beyond anecdote.
-- A dual classification scheme (venue-based vs. top-cited-study-based) that surfaces how disciplinary labels themselves shape bibliometric portraits of a field.
-- Transparent, replicable pipeline (code + data on GitHub) including a corrected citation extraction that fixes an error in the preprint version.
-- Empirical grounding for policy arguments framing API access as a structural determinant of public knowledge.
+- The most comprehensive cross-disciplinary bibliometric accounting of Twitter-data research to date (33,306 studies), surpassing prior reviews in scope and database coverage.
+- Empirical (rather than anecdotal) documentation of the immediate post-API-closure decline in scholarship across 2023–2024.
+- A transparent, replicable methodology with code and data released via GitHub, plus a corrected citation count fixing an error in the earlier preprint version.
+- A dual-discipline classification scheme (venue-based and study-based) that exposes how labeling choices shape bibliometric portraits.
+- Empirical grounding for policy debates on platform data governance (DSA, PATA), framing API access as a structural determinant of public knowledge.
 
 ## Methods
 
-A systematic search across eight databases (LISTA, Web of Science, Global Health, ACM DL, IEEE Xplore, Engineering Village) using a tailored Boolean string (`twitter NEAR/3 data OR api OR dataset NOT survey`) restricted to articles, conference papers, dissertations, and preprints. Engineering Village's full 43,354-record set was retrieved via Elsevier's API to bypass a 1,000-result UI cap. Hand-coded relevance sampling (≥50 papers/database) yielded relevance rates of 80–97%. Records were deduplicated in R by DOI/title/abstract, and citation counts pulled from Crossref. Disciplines were assigned twice — to the top 100 venues and to the top 100 most-cited studies — followed by manual thematic analysis of top-cited papers per discipline.
+The authors ran a systematic literature search across eight databases (LISTA, Web of Science, Global Health, ACM Digital Library, IEEE Xplore, and Engineering Village), using a tailored Boolean search string adjusted per database and restricted to journal articles, conference papers, dissertations, and preprints. To overcome the web interface's 1,000-result download cap, they retrieved Engineering Village's full 43,354-record set via Elsevier's APIs. Relevance was validated through hand-coded sampling (≥50 papers per database, yielding 80–97% relevance rates). Deduplication was performed in R via DOI, title, and abstract; citation counts came from the Crossref REST API. Two parallel disciplinary classifications were applied — one to the top 100 venues and one to the top 100 most-cited studies — followed by manual thematic analysis of top-cited papers.
 
 ## Findings
 
 - 33,306 unique studies in 8,914 venues with 610,738 Crossref citations across 16 disciplines (2006–2024).
-- Median 25% annual growth from 2006 to 2022; +0.6% in 2023; –13% in 2024.
-- Earliest identified paper is Java et al. (2007), "Why we twitter," despite APIs being available from 2006.
-- Venue-based disciplinary breakdown: Science/Engineering 27%, Information Science 14%, Computer Science 11%, Data Science 10%, Social Media 9%, Medicine 8%, Social Science & Internet Technology 7% each.
-- Study-based breakdown of top-cited papers: Social Science 24%, Data Science 19%, Social Media Studies 14%, with the rest spread across Public Health, CS, AI, Business, Emergency Response, etc.
-- Dominant themes: information dissemination, information integrity (disinformation, hate speech), big-data methods (sentiment analysis, topic modeling, geolocation), event/crisis detection, and behavior research (politics, marketing, mental health).
-- External reports indicate >100 research projects were directly disrupted in 2023, including the shutdown of Botometer.
-- Continued decline is likely, since much 2024 output still drew on pre-shutdown data.
+- Research grew at a median 25% annually from 2006–2022, stagnated in 2023 (+0.6%), then declined 13% in 2024.
+- The earliest identified Twitter-data paper is Java et al. (2007), despite API availability beginning in 2006.
+- Venue-based classification skews toward Science/Engineering (27%) and Information/Computer/Data Science; study-based classification of top-cited work is led by Social Science (24%), Data Science (19%), and Social Media Studies (14%).
+- Dominant topics: information dissemination, information integrity (disinformation, hate speech), big data methods, event detection/response, and human behavior.
+- External reports indicate over 100 research projects were directly impacted in 2023, including the shutdown of Botometer.
+- Further declines are anticipated, since much 2024 output still relied on pre-shutdown data.
 
 ## Connections
 
-This paper sits at the empirical center of the "post-API age" debate and pairs naturally with [[Freelon2024-sc]] and [[Bruns2025-fz]] on the political economy of platform data access, as well as [[Tornberg2025-ir]] and Davis-style critiques of platform power. Its policy framing connects directly to work on the DSA and Article 40 access regimes — see [[Rieder2025-ju]], [[Rieder2026-pp]], and [[Ohme2026-nv]] — while its bibliometric strategy complements methodological reflections in [[Bak-Coleman2025-pm]], Bastos2025-ol, and [[Munger2025-cz]] on the fragility of computational social science infrastructures. Substantively adjacent are studies that themselves depended on Twitter APIs and now face replication crises, including [[Pierri2025-hm]], [[Luceri2025-tr]], and [[Minici2024-tf]].
+This paper is a keystone empirical reference for the platform-governance-data-access literature, providing the bibliometric scale against which more focused analyses of the post-API landscape operate. It connects directly to work interrogating platform data access regimes and their scholarly consequences, including [[Freelon2024-sc]], [[Tonneau2025-bv]], [[Rieder2025-ju]], and [[Rieder2026-pp]], as well as policy-oriented studies of the DSA and researcher access such as [[Bechmann2026-dr]] and [[Schulte2026-df]]. Its documentation of lost empirical capacity also speaks to work on data infrastructures and misinformation research reliant on that data, e.g. [[Pierri2025-hm]] and [[Bak-Coleman2025-pm]].

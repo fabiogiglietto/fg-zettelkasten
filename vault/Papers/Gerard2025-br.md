@@ -22,33 +22,37 @@ discovery_date: 2025-05-15T00:00:00Z
 
 ## Summary
 
-This paper proposes **Cluster Affiliation Network Embedding (CANE)** and a temporal variant **t-CANE**, a platform-agnostic method for building user-user networks from shared participation in latent narrative clusters rather than from reposts, follows, or other platform-specific signals. By embedding posts with MPNet, clustering them with DP-Means, and linking users via TF-IDF-weighted affiliation vectors (accelerated with FAISS-HNSW), the authors construct discourse networks that match or exceed interaction- and similarity-based baselines on information operation detection, ideological stance prediction, and a newly introduced cross-platform engagement prediction task — using a fraction of the data. Applied to Truth Social and X during the 2024 U.S. Presidential election, the framework uncovers a small set of "bridge users" (0.33% of users) who introduce roughly 70% of narratives that migrate between the two platforms, reframing cross-platform influence as a structural phenomenon rooted in discursive alignment rather than direct ties.
+This paper introduces **Cluster Affiliation Network Embedding (CANE)** and its temporal extension **t-CANE**, a platform-agnostic framework for reconstructing user-user discourse networks. Rather than relying on platform-specific behavioral signals like reposts or follower ties — increasingly unavailable due to API restrictions and platform fragmentation — the method links users through shared participation in latent narrative clusters derived from content. The authors benchmark the approach against interaction- and similarity-based baselines across information operation detection, ideological stance prediction, and a new cross-platform engagement prediction task, achieving state-of-the-art results with far less data. Applied to Truth Social and X during the 2024 U.S. Presidential election, the framework surfaces a tiny set of "bridge users" who seed the majority of narratives that migrate between platforms, reframing cross-platform influence as a structural phenomenon rooted in shared discursive alignment rather than direct interaction.
 
 ## Key Contributions
 
-- A content-driven, platform-agnostic framework (CANE / t-CANE) for reconstructing user networks from latent narrative participation, bypassing reliance on increasingly inaccessible interaction data.
-- A novel **cross-platform engagement prediction** benchmark that tests whether discourse-based graphs encode behavioral alignment across fragmented ecosystems.
-- Empirical evidence that political narrative diffusion between Truth Social and X is structured, directional, and concentrated in a small bridge population.
-- A theoretical link between computational discourse-network analysis and classical sociological constructs — Granovetter's weak ties, Gould–Fernandez brokers, and boundary spanners.
-- Released anonymized code, datasets, and a cross-platform Truth Social/X corpus.
+- A platform-agnostic, content-driven framework (CANE and temporal t-CANE) for building user-user discourse networks from latent narrative participation instead of platform behavioral signals.
+- A novel **cross-platform engagement prediction** benchmark testing whether user graphs encode behavioral alignment across fragmented ecosystems.
+- Empirical evidence that 2024 U.S. election narrative diffusion between Truth Social and X was structured, directional, and concentrated in a small subset of bridge users.
+- A theoretical bridge linking computational discourse network analysis to classic sociological concepts (Granovetter's weak ties, Gould and Fernandez's brokers, boundary spanners).
+- Released anonymized code and datasets, including a cross-platform Truth Social/X corpus with narrative cluster annotations.
 
 ## Methods
 
-Posts are embedded with MPNet and clustered into latent narratives via DP-Means (cosine threshold ≈0.65). Users are represented as TF-IDF-weighted distributions over clusters; user-user edges are computed via cosine similarity with FAISS-HNSW nearest-neighbor search. The temporal extension t-CANE applies a Hawkes-process-inspired decay over discrete timesteps. Evaluation spans (i) state-backed information operation detection on China/Iran datasets, (ii) ideological stance prediction on labeled X and TikTok 2024 election data using GCN/node2vec classifiers, and (iii) a new cross-platform engagement task over 321 narrative themes from May–Nov 2024 Truth Social/X posts. Cross-platform diffusion is analyzed with Transfer Entropy (permutation-tested), Louvain communities, Shannon entropy for identifying mixed-platform bridge zones, and a fear-speech classifier for content analysis.
+- Posts embedded with MPNet (768-dim), then clustered into latent narratives using DP-Means with a cosine threshold (λ≈0.65).
+- User-user graphs built from TF-IDF-weighted cluster affiliation vectors via cosine similarity, accelerated with FAISS-HNSW approximate nearest-neighbor search; **t-CANE** adds a Hawkes-process-inspired memory update over discrete timesteps.
+- Benchmarks: state-backed IO detection (China and Iran datasets) with node2vec + random forest; ideological stance prediction on X and TikTok using GCN/node2vec structure-only classifiers; and a new cross-platform engagement prediction task on X + Truth Social (May–Nov 2024, 321 narrative themes) with GCNs.
+- Narrative migration analyzed via Transfer Entropy with permutation tests; Louvain community detection plus Shannon entropy to locate mixed-platform "bridge zones."
+- Validation via human evaluation of clustering, two-stage de-duplication, k-NN matched-pair engagement comparisons, and fear-speech classification.
 
 ## Findings
 
-- t-CANE achieves state-of-the-art results across all tasks (e.g., F1 0.83/AUC 0.98 on China IO; F1 0.35/AUC 0.94 on cross-platform engagement vs. best baseline F1 0.11/AUC 0.64).
-- CANE/t-CANE reach 95% of peak AUC using only 5–10% of available content, dramatically outperforming baselines in data efficiency.
-- Of 1,552 cross-platform migrating narratives, 238 (15.3%) show statistically significant directional diffusion via Transfer Entropy; **Truth Social is overrepresented as origin by ~11–14× relative to its post share**.
-- Truth-Social-originating narratives contain ~22.5% more fear-laden language than X-originating ones (log-odds +0.22, p<0.01).
-- A single high-entropy community of 2,864 users (0.33% of users, 2.14% of posts) is the first carrier of ~68–69% of migrating narratives; 122 users account for all earliest introductions of Truth Social narratives into X, with 4 users responsible for ~25%.
-- Narratives where bridge users engage early (first 5% of participants) receive significantly higher likes, replies, and reposts than matched controls — robust even for low-virality narratives.
-- Ablations confirm TF-IDF affiliation weighting beats raw counts/softmax, and FAISS-HNSW matches brute-force similarity at far lower cost.
+- t-CANE achieves top performance across tasks (e.g., F1 0.83/AUC 0.98 on China IO; F1 0.35/AUC 0.94 on cross-platform engagement vs. best baseline F1 0.11/AUC 0.64).
+- CANE/t-CANE reach 95% of peak AUC with only 5–10% of available content data — far more data-efficient than baselines.
+- Of 1,552 narratives showing cross-platform migration, 238 (15.3%) exhibit statistically significant directional diffusion; Truth Social is overrepresented as origin by ~11–14× relative to its post share.
+- Truth Social-seeded narratives contain significantly more fear-laden language than X-originating ones (log-odds +0.22, ~22.5% relative increase).
+- A single high-entropy discourse community of 2,864 users (0.33% of users, 2.14% of posts) is the first cross-platform carrier for ~68–69% of migrating narratives; just 122 users account for all earliest introductions of Truth Social narratives into X, and 4 users for ~25%.
+- Narratives with early bridge-user engagement receive significantly more likes, replies, and reposts than matched controls, even for low-virality narratives.
+- Ablations confirm TF-IDF weighting beats raw count and softmax, and FAISS-HNSW matches brute-force similarity at far lower cost.
 
 ## Connections
 
-This work sits squarely within current efforts to study **coordinated and cross-platform information dynamics under deteriorating API access**, alongside [[Minici2024-tf]] and [[Luceri2025-tr]] on coordination detection, and [[Lai2024-to]] and [[Freelon2024-sc]] on inferring structure from limited signals. Its cross-platform narrative-diffusion framing connects to [[Bouchaud2026-lr]], Bastos2025-ya, and Bastos2025-ol on multi-platform political communication, while the methodological turn toward latent semantic/topic representations of users echoes [[Balluff2026-if]] and [[Kansaon2025-id]]. The "bridge user" finding resonates with broader work on small influential subpopulations such as [[Bak-Coleman2026-mk]] and [[Graham2025-gp]] on structurally pivotal accounts in online discourse.
+This work sits within the coordinated inauthentic behavior literature through its IO-detection benchmarks and shares the cross-platform diffusion focus of related studies of narrative migration and multi-platform coordination such as [[Ng2026-og]] and [[Kansaon2025-id]]. Its methodological emphasis on structure-only, content-driven network construction connects to other computational network-structure analyses of influence and community detection like [[Luceri2025-tr]] and [[Minici2024-tf]], while its bridge-user brokerage framing resonates with structural accounts of cross-cutting exposure and platform ecosystems in works such as [[Bakshy2015-rn]].
 
 ## Podcast
 

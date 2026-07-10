@@ -22,27 +22,27 @@ discovery_date: 2025-11-15T00:00:00Z
 
 ## Summary
 
-This paper examines how coordinated informational manipulation campaigns persist over time by adapting to and appropriating emerging events. Rather than treating influence operations as discrete, short-lived bursts, the authors frame them as ongoing, opportunistic enterprises that maintain relevance by latching onto new crises, controversies, and news cycles. The central argument is that persistence itself is a strategic property of manipulation campaigns, achieved through the continual appropriation of whatever is salient in the public information environment.
+This paper investigates the temporal dynamics of coordinated informational manipulation, arguing that such campaigns are neither short-lived nor static. Instead, they persist over extended periods by adapting to and appropriating emerging events — latching onto new topics, crises, and news cycles to maintain relevance and sustain influence. The central reframing is to treat manipulation as a dynamic, opportunistic process rather than a discrete, bounded campaign, thereby drawing attention to the longevity and adaptive strategies that let information operations survive across shifting information environments.
 
 ## Key Contributions
 
-- Reframes informational manipulation as a durable, adaptive phenomenon rather than a series of isolated campaigns.
-- Highlights the appropriation of emerging events as a core mechanism through which manipulation operations sustain attention and influence.
-- Provides a conceptual vocabulary for analyzing the longevity and opportunism of coordinated influence efforts.
+- Advances understanding of how informational manipulation operations endure by continually adapting to new events.
+- Reframes manipulation as an ongoing, opportunistic process rather than a one-off or static campaign.
+- Highlights the appropriation of emerging events as a mechanism for campaign persistence and continued relevance.
 
 ## Methods
 
-Not specified in the available abstract.
+The methods are not specified in the available abstract. The framing situates the work within empirical research on coordinated inauthentic behavior and information operations, but the specific analytical approach, data, and time frame cannot be characterized from the summary provided.
 
 ## Findings
 
-- Manipulation campaigns persist over extended timeframes rather than dissipating after their initial deployment.
-- Persistence is achieved by appropriating emerging events, allowing campaigns to remain topically relevant and continue accumulating engagement.
+- Specific findings are not detailed in the available abstract.
+- The paper's core empirical claims — as stated — are that manipulation campaigns persist over long periods and that they appropriate emerging events to sustain themselves.
 
 ## Connections
 
-This work fits within an active strand of research on coordinated inauthentic behavior that emphasizes temporal dynamics and cross-event continuity, connecting to the Giglietto et al. program on coordinated link sharing and its persistence ([[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]], [[Giglietto2026-9b6a992d]], [[Giglietto2026-632ef967]]). It also speaks to studies of how influence operations exploit crisis and event contexts ([[Starbird2025-jj]], [[Kuznetsova2025-nu]]) and to longitudinal accounts of campaign behavior on platforms ([[Luceri2025-tr]], [[Graham2026-fb]], [[Graham2025-gp]]).
+This paper sits within the coordinated inauthentic behavior and information operations literature and shares authorship and thematic ground with related work on detecting and characterizing coordinated campaigns, such as [[Graham2026-fb]] and [[Graham2025-gp]]. Its emphasis on the temporal persistence and adaptive appropriation of events complements longitudinal accounts of information operations and rumoring around crises, including [[Starbird2025-jj]], and connects to broader efforts to detect and track coordinated activity across events, such as [[Luceri2025-tr]] and [[DeVerna2025-dl]].
 
 ## Podcast
 
-A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/FitzGerald2025-nv.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-the-persistence-of/id1866587707?i=1000743818387)
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/FitzGerald2025-nv.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-the-low-level-simmer-how/id1866587707?i=1000743818387)

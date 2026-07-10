@@ -16,41 +16,41 @@ discovery_date: 2025-06-15T00:00:00Z
 
 # True costs of misinformation| mountains of evidence: Processual “redpilling” as a Socio-technical effect of disinformation
 
-> E, M. A., & Katherine, F. (2025). True costs of misinformation| mountains of evidence: Processual “redpilling” as a Socio-technical effect of disinformation. *Int. J. Commun.*, *19*, 26.
+> Marwick, A. E., & Furl, K. (2025). True costs of misinformation| mountains of evidence: Processual “redpilling” as a Socio-technical effect of disinformation. *Int. J. Commun.*, *19*, 26.
 >
 > [View paper](https://scholar.google.com/scholar?q=True%20costs%20of%20misinformation%7C%20mountains%20of%20evidence%3A%20Processual%20%E2%80%9Credpilling%E2%80%9D%20as%20a%20Socio-technical%20effect%20of%20disinformation)
 
 ## Summary
 
-Marwick and Furl analyze how participants in U.S. Far-Right online communities narrate their adoption of extremist beliefs through the metaphor of taking the "redpill." Drawing on a roughly 7-million-word corpus from Reddit, Gab, and leaked Discord servers, they argue that while the redpill metaphor implies sudden conversion, most accounts in fact describe a gradual, processual socialization in which disinformation—pseudoscientific books, statistics, charts, memes—is marshaled as "evidence" that legitimizes racist, anti-Semitic, and misogynist beliefs. The paper reframes online radicalization as a socio-technical effect of disinformation rather than as instantaneous ideological capture, and shows how Far-Right adherents' self-presentation as rational, scientific evaluators is constitutive of their extremism.
+This article examines how members of U.S.-based Far-Right online communities narrate their own adoption of extremist beliefs through the metaphor of taking the "redpill." Drawing on a large cross-platform corpus of "redpilling narratives," Marwick and Furl argue against the popular "exposure equals belief" model of radicalization. While some accounts frame the redpill as a sudden "eureka" conversion, most reveal a gradual **processual redpilling** — an incremental socialization shaped by sustained community participation and repeated encounters with disinformation presented as "evidence." Crucially, they show that Far-Right adherents present themselves as rational, scientific evaluators of evidence, a self-image that legitimizes hateful beliefs and makes disinformation central, rather than incidental, to extremist recruitment.
 
 ## Key Contributions
 
-- Develops the concept of **processual redpilling** to describe the incremental, community-mediated adoption of Far-Right beliefs.
-- Repositions disinformation—including books, statistics, and pseudoscience—as central, not peripheral, to extremist recruitment.
-- Challenges both "exposure equals belief" media effects models and post-9/11 radicalization frameworks.
-- Applies a socio-technical theory of media effects (actors, messages, affordances) to Far-Right community participation.
-- Shows how claims to rationality, science, and "doing your own research" legitimize prejudice and weaponize academic-style discourse.
-- Provides cross-platform empirical analysis incorporating rare leaked Discord data alongside Reddit and Gab.
+- Introduces and develops the concept of **processual redpilling** as a more accurate framework than instantaneous "brainwashing" for how extremist beliefs are adopted.
+- Reframes online radicalization as ordinary political **socialization**, challenging both popular and Far-Right framings of the redpill.
+- Demonstrates the centrality of disinformation — especially historical, pseudoscientific, and book-based forms — to Far-Right recruitment, expanding disinformation studies beyond social media posts.
+- Applies a **socio-technical theory of media effects**, linking actors, messages, and platform affordances.
+- Shows how claims of rationality, science, and evidence are weaponized to legitimize prejudice, with implications for counter-messaging and academic responsibility.
+- Provides a rare in-situ analysis of leaked Discord data alongside Reddit and Gab.
 
 ## Methods
 
-Qualitative content analysis of ~153 documents (~7 million words) of "redpilling narratives" drawn from 14 subreddits (via Pushshift), Gab archives (Aug 2016–Oct 2018), and 129 Far-Right Discord servers leaked by Unicorn Riot (4,773 conversations extracted via keyword search plus surrounding context). Codebooks were developed abductively, starting from prior radicalization and disinformation scholarship and refined through line-by-line coding keyed to "redpill" and "rabbit hole" vocabularies. Usernames and identifying details from leaked data were redacted.
+Qualitative content analysis of a roughly 7-million-word corpus across 153 documents. Data were drawn from 14 subreddits (including DebateAltRight, MGTOW, MensRights, greatawakening, The_Donald, and ex-redpill support communities) via the Pushshift Reddit API; from Gab archives (August 2016–October 2018); and from 129 Far-Right Discord servers leaked by Unicorn Riot, yielding 4,773 keyword-extracted conversations. Targeted term lists keyed to "redpill" and "rabbit hole" vocabularies guided extraction, with codebooks developed abductively through line-by-line coding. Usernames and identifying details were redacted from the leaked Discord data.
 
 ## Findings
 
-- Two dominant narrative types emerge: redpilling as a singular "eureka" conversion, and redpilling as a long-term process of reading, listening, and community participation—with the latter predominating.
-- Users often describe ideological trajectories passing through communism, anti-feminism, conservatism, and fascism, frequently starting with "ironic" racism that becomes sincere.
-- "Redpills" circulate as short, decontextualized facts and statistics rooted in biological essentialism and anti-Black, anti-Semitic, or misogynist tropes.
-- Books (e.g., *Mein Kampf*, *The Bell Curve*, *Gone With the Wind*) are the most frequently cited redpilling source—more than friends, family, or influencers—often shared as free PDFs in organized "book clubs."
-- Communities valorize "doing your own research," demanding "sauce," and critical thinking, constructing rational superiority over "normies."
-- Massive archives of "evidence" (e.g., "2 terabytes of redpills") function as proof through sheer volume rather than accuracy.
-- Conversion is strongly affective—marked by gratitude, love, and awakening—consistent with theories of radicalization as adopting a community's "way of feeling."
-- Anti-feminism, transphobia, Islamophobia, and anti-immigration function as socially acceptable gateways into more extreme ideologies.
+- Two dominant narrative types: redpilling as a singular "eureka" conversion moment, and redpilling as a lifelong process of reading, listening, and community participation.
+- Users frequently described sequences of ideological evolution (e.g., communism → anti-feminism → conservatism → fascism), often beginning with "ironic" racism that became sincere.
+- "Redpills" circulate as standalone "facts" — short statistics rooted in biological essentialism and anti-Black, anti-Semitic, or misogynist tropes.
+- **Books** were the most frequently cited source, surpassing friends, family, or influencers; titles ranged from *Mein Kampf* and *The Bell Curve* to *Gone With the Wind*, often shared as free PDFs and discussed in organized "book clubs."
+- Communities emphasize "doing your own research," critical thinking, and demanding sources ("sauce"), constructing rational superiority over "normies."
+- Vast "evidence" archives (e.g., "2 terabytes of redpills") function as proof through sheer volume rather than veracity.
+- Conversion carries strong affective dimensions — gratitude, love, awakening — consistent with radicalization as taking on a community's "way of feeling."
+- Anti-feminism, transphobia, Islamophobia, and anti-immigration often serve as socially acceptable "gateway beliefs."
 
 ## Connections
 
-No other papers have been provided under shared topics, so there are no internal wikilinks to make here. Intellectually, the work sits adjacent to critical disinformation studies, sociology of affect and socialization (McDonald, Hochschild), and manosphere/Far-Right scholarship, and could anchor future notes on radicalization-as-socialization, evidentiary aesthetics in extremist discourse, and the weaponization of "doing your own research."
+This paper sits alongside other work in the same research program on Far-Right online communities and gradual radicalization, notably [[Marwick2026-qd]] and [[Marwick2025-ov]]. Its focus on processual socialization within manosphere and "redpill" spaces connects to studies of far-right subcultures and influencer-driven radicalization such as [[Grusauskaite2026-po]], [[Rothut2026-or]], [[Rothut2026-wt]], [[Frischlich2025-vn]], and [[Askanius2026-de]]. Its critical framing of disinformation as embedded in social practice rather than isolated posts resonates with the critical disinformation scholarship represented by [[Starbird2025-jj]] and [[Donovan2025-ws]].
 
 ## Podcast
 

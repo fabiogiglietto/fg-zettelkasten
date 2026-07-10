@@ -22,26 +22,24 @@ discovery_date: 2025-10-15T00:00:00Z
 
 ## Summary
 
-This paper develops the "tip of the iceberg" metaphor to describe a fundamental distortion in how public opinion appears on social media: a small minority of highly active users generates the overwhelming majority of political content, while most users consume passively and stay silent. The authors argue that this production-consumption gap means visible online discourse systematically misrepresents the views of the broader public — with consequences for both ordinary citizens, who form distorted impressions of what others believe, and researchers, who treat social media traces as proxies for public opinion. The piece synthesizes existing empirical evidence to establish the gap as a robust regularity across platforms, time periods, and cultural contexts.
+This conceptual synthesis examines the **production-consumption gap** on social media: a small minority of highly active users generates the bulk of political content, while the majority consume passively and remain silent. The authors argue that this skew makes visible online discourse the "tip of an iceberg" that obscures the far larger, quieter public beneath. The distortion has consequences for two audiences at once — ordinary citizens who form impressions of collective opinion from what they see online, and researchers who treat social media traces as proxies for public attitudes. In both cases, inferences drawn from observable content risk systematically misrepresenting what the broader public actually thinks.
 
 ## Key Contributions
 
-- Articulates a unifying "tip of the iceberg" framing for the production-consumption gap on social media.
-- Connects two literatures that rarely speak: misperceptions of public opinion among citizens, and methodological validity concerns in computational social science.
-- Synthesizes evidence that the production-consumption asymmetry is cross-platform, cross-cultural, and temporally stable.
-- Highlights dual risks — distorted democratic perception and biased inference from social media data.
+- Articulates the "tip of the iceberg" framing for how social media distorts perceptions of public opinion.
+- Synthesizes evidence that the production-consumption gap is a consistent empirical regularity across platforms, time, and cultures.
+- Highlights the dual risk of misinference — for lay citizens gauging public opinion and for researchers using social media as a data source.
 
 ## Methods
 
-Conceptual synthesis drawing on prior empirical work documenting skewed activity distributions across social media platforms. The paper integrates findings rather than presenting new primary data.
+A conceptual and synthesis piece rather than a primary empirical study. It draws together prior findings on user activity distributions across social media platforms to establish the robustness of the production-consumption asymmetry. Specific analytic methods are not detailed in the available abstract.
 
 ## Findings
 
-- A small minority of users produces most political content on social media; this pattern is stable across platforms, cultures, and time.
-- Most users consume passively, leaving the silent majority's views invisible in observable traces.
-- Visible online political content is therefore a biased sample of broader public opinion.
-- Both lay citizens and researchers are susceptible to drawing incorrect inferences from this visible tip.
+- A small minority of users produces the majority of political content, a pattern robust across platforms, time periods, and cultural contexts.
+- Most users consume passively and remain silent, so observable discourse is unrepresentative of broader opinion.
+- Visible online political content systematically misrepresents the views of the silent majority, biasing inferences by both citizens and researchers.
 
 ## Connections
 
-This paper speaks directly to ongoing methodological scrutiny of using social media as a measurement instrument for public opinion, complementing work that questions representativeness and inference from digital traces such as [[Bak-Coleman2026-mk]], [[Munger2025-cz]], and [[Murtfeldt2025-wu]]. Its concerns about who produces visible political content also connect to studies of activity skew and influential minorities like [[Bouchaud2026-lr]] and [[Green2025-ap]], as well as to broader critiques of platform-data validity in [[Freelon2024-sc]] and [[Rieder2025-ju]].
+This paper speaks directly to methodological debates about whether social media traces can stand in for public attitudes, connecting to work on measuring opinion and polarization from platform data such as [[Le-Mens2025-qz]] and [[Green2025-ap]], and to critical assessments of the representativeness and construction of social media data as an object of study like [[Vertesi2026-lv]] and [[Munger2025-cz]]. Its concern with how skewed visible discourse shapes perceptions of collective opinion also links to accounts of engagement asymmetries and amplification dynamics such as [[Bak-Coleman2026-mk]].

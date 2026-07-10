@@ -22,29 +22,31 @@ discovery_date: 2025-07-15T00:00:00Z
 
 ## Summary
 
-ConflLlama is a methodological proof-of-concept showing that parameter-efficient fine-tuning of open-source LLMs can deliver state-of-the-art classification of conflict events while running on consumer-grade hardware. The authors fine-tune Llama 3.1 (8B) with QLoRA on the Global Terrorism Database to classify attack types as a multi-label problem, achieving macro AUC 0.791 and weighted F1 0.753 — a 37.6% improvement over the zero-shot base model and dramatic gains for rare attack categories. The paper argues that fine-tuned generative LLMs should now displace both BERT-style encoders (e.g., ConfliBERT) and manual/rule-based coding pipelines as the default approach for conflict event coding, and provides a replicable roadmap for political scientists to adapt LLMs to their own domains.
+ConflLlama is a methods-oriented proof of concept showing that open-source large language models can be efficiently adapted for domain-specific classification in political science. The authors fine-tune Llama 3.1 (8B) using Quantized Low-Rank Adaptation (QLoRA) to classify attack types in terrorism events drawn from the Global Terrorism Database (GTD), achieving a macro-averaged AUC of 0.791 and a weighted F1 of 0.753. Their central argument is dual: that efficient fine-tuning dramatically outperforms zero-shot base models on nuanced, multi-label conflict coding, and that this performance is attainable on consumer-grade hardware (under 6 GB of GPU VRAM), lowering barriers to entry for resource-constrained researchers. The paper frames fine-tuned generative LLMs as the successor to manual coding, rule-based systems, and BERT-style encoders like ConfliBERT.
 
 ## Key Contributions
 
-- A reproducible QLoRA-based fine-tuning recipe for adapting open-source LLMs to political science classification, runnable in ~1 hour under 6 GB VRAM.
-- Released ConflLlama model variants (Q4, Q8, BF16) as LoRA adapters and GGUF files, plus replication code on Harvard Dataverse.
-- Systematic multi-label benchmarks on the GTD across quantization levels, temporal training windows, and prompt formulations.
-- Empirical case for moving conflict event coding from BERT-style encoders toward fine-tuned generative LLMs.
-- A practical accessibility argument: lowering hardware and expertise barriers for computational conflict research.
+- A practical, reproducible QLoRA fine-tuning methodology for political science classification tasks, positioned as a roadmap other researchers can follow.
+- Released ConflLlama model variants (Q4, Q8, BF16) as LoRA adapters and GGUF files on Hugging Face, with replication code on Harvard Dataverse.
+- Systematic multi-label benchmarks on the GTD, comparing quantization levels, temporal training scopes, and prompt formulations.
+- Empirical support for a shift away from encoder-based approaches (ConfliBERT) toward fine-tuned generative LLMs for conflict event coding.
 
 ## Methods
 
-The authors fine-tune Llama 3.1 8B with QLoRA (via the Unsloth library), targeting key transformer components for 1000 training steps. The GTD is split temporally at January 1, 2017, yielding 171,514 training and 38,192 test events; preprocessing standardizes descriptions and combines primary/secondary/tertiary attack labels to preserve multi-label structure. They produce zero-shot, Q4, Q8, and BF16 variants and evaluate with macro AUC, accuracy, macro/weighted F1, Hamming Loss, Subset Accuracy, Jaccard partial match, and label density. Ablations vary the temporal training window (1990–2005 through full data) and prompt framing (terrorism-framed vs. neutral).
+- Fine-tuned Llama 3.1 8B via Parameter-Efficient Fine-Tuning with QLoRA, targeting key transformer components using the Unsloth optimization package (1000 steps, ~1 hour, constant GPU memory under 6 GB).
+- Built train/test splits from the GTD with a January 1, 2017 cutoff (171,514 pre-2017 training events; 38,192 post-2017 test events), with preprocessing that standardized event descriptions and combined primary/secondary/tertiary attack labels to preserve multi-label structure.
+- Produced base zero-shot, Q4, Q8, and unquantized BF16 variants; evaluated with macro/weighted F1, macro ROC/AUC, Hamming Loss, Subset Accuracy, Partial Match (Jaccard), and label density.
+- Ran temporal scope experiments (expanding windows from 1990–2005 through full data) and prompt-variation experiments (terrorism-framed vs. neutral prompts).
 
 ## Findings
 
-- ConflLlama-Q8 reached macro AUC 0.791 vs. 0.575 for the zero-shot base; Q4 reached 0.749, indicating higher-precision quantization better preserves nuanced distinctions.
-- Largest gains were on rare classes: Unarmed Assault +1464%, Barricade Hostage Taking +692%, Hijacking +527%; common classes also improved substantially.
-- Multi-label metrics improved sharply: Hamming Loss 0.148 → 0.052, Subset Accuracy 0.320 → 0.724, Partial Match 0.356 → 0.738, with predicted label density (0.975) tracking true density (0.963).
-- Broader temporal coverage monotonically improved performance (accuracy 0.69 → 0.76, F1 0.51 → 0.66), suggesting evolving conflict patterns benefit from longer historical windows.
-- Residual errors cluster among semantically adjacent categories (e.g., Armed Assault vs. Assassination), where contextual rather than tactical cues dominate.
-- Prompt rephrasing barely changed macro F1 (0.635 vs. 0.634), suggesting the fine-tuned model has internalized robust category representations.
+- ConflLlama-Q8 reached macro AUC 0.791 vs. 0.575 for base Llama-3.1 (a 37.6% overall improvement); Q4 reached 0.749.
+- Gains were largest for rare categories: Unarmed Assault +1464%, Hostage Taking (Barricade) +692%, Hijacking +527%; common categories also improved (Bombing/Explosion +65%, Armed Assault +84%).
+- Multi-label metrics improved sharply: Hamming Loss dropped to 0.052 (from 0.148), Subset Accuracy rose to 0.724 (from 0.320), Partial Match to 0.738, with predicted label density (0.975) closely matching truth (0.963).
+- Broader temporal coverage raised accuracy from 0.69 to 0.76 and F1 from 0.51 to 0.66.
+- Misclassifications clustered among semantically related categories (Armed Assault vs. Assassination; Kidnapping vs. Barricade hostage-taking), where context matters more than tactical cues.
+- Prompt rephrasing produced near-identical macro F1 (0.635 vs. 0.634), indicating the model learned robust internal representations rather than surface patterns.
 
 ## Connections
 
-This work fits a growing methodological literature on adapting LLMs to substantive social-science classification tasks, especially efforts to validate LLM outputs against curated human-coded data — see [[DiGiuseppe2026-pu]] and [[DiGiuseppe2025-es]] on conflict/IR applications, and [[Schroeder2026-im]], [[Le-Mens2025-qz]], and [[Tornberg2025-ir]] on LLMs as annotators or classifiers for political text. The accessibility-via-fine-tuning argument also resonates with broader assessments of open-source LLM viability such as [[Tan2024-vl]].
+This paper sits within the broader methodological conversation on using LLMs as substitutes for human annotators in political text analysis, sharing that concern with [[DiGiuseppe2025-es]], [[Le-Mens2025-qz]], and [[Tan2024-vl]]. Its emphasis on fine-tuning open-source models for domain-specific classification complements work benchmarking LLM classification reliability and validity such as [[Fan2025-ut]] and [[Fan2026-af]].

@@ -22,29 +22,31 @@ discovery_date: 2025-06-15T00:00:00Z
 
 ## Summary
 
-Rieder, Padilla, and Coromina conduct the first systematic empirical audit of YouTube Data API v3's search endpoint, a tool heavily relied on for academic research yet rarely scrutinized methodologically. Through six months of weekly searches across eleven queries (health, political, popular culture), they document that the endpoint is "forgetful by design": it behaves more like a recommendation engine optimized for freshness than a traditional information retrieval system. The authors find severe temporal decay, inconsistent results across identical queries, large discrepancies between ranking parameters, and conclude that the API is inadequate both for robust academic research and for fulfilling Digital Services Act obligations to study systemic platform risks.
+This paper delivers the first systematic empirical audit of the search endpoint of YouTube's Data API (v3), a widely used but methodologically under-scrutinized tool for academic research. Through weekly maximalist searches over six months across eleven health, political, and popular-culture queries, the authors document severe deficiencies in completeness, representativeness, consistency, and bias. Their central argument is that the API is "forgetful by design": it systematically privileges freshness over comprehensive retrieval, behaving more like a recommendation engine than a traditional information retrieval system. The authors conclude the endpoint is inadequate for robust academic work — especially for meeting Digital Services Act obligations around studying systemic platform risks — and offer both researcher mitigation strategies and structural recommendations to YouTube.
 
 ## Key Contributions
 
-- First systematic empirical audit of YouTube's search API endpoint, extending API-critique scholarship from Twitter, Facebook, and TikTok to YouTube.
-- Names and quantifies a three-phase **temporal decay** pattern (head ~20 days, middle ~40 days, flat tail) affecting findability of still-public videos.
-- Demonstrates replicability failures: repeated identical queries yield non-overlapping result sets.
-- Offers concrete mitigation strategies (early/repeated collection, keyword filtering, multiple query formulations, complementary crawling/random sampling).
-- Provides policy-relevant evidence that current API access fails DSA researcher-access requirements, with specific recommendations to YouTube.
+- First systematic empirical audit of YouTube Data API's search endpoint, addressing a major gap in platform data-access scholarship.
+- Documents and names a previously unquantified **temporal decay** problem, with distinct head/middle/tail phases.
+- Demonstrates concrete consistency and replicability failures via a 2024 European Parliament election case study.
+- Offers practical mitigation strategies (early collection, repeated searches, multiple keyword combinations, crawling, random sampling, keyword filtering).
+- Provides policy-relevant evidence that current API access does not satisfy DSA requirements for studying systemic risks of very large online platforms.
+- Extends the API-audit literature — previously centered on Twitter, Facebook, and TikTok — to YouTube.
 
 ## Methods
 
-A "maximalist" collection strategy using YouTube Data Tools' one-search-per-day technique to bypass the 500-result cap. Weekly searches were run for six months starting April 2024 across eleven queries (e.g., "Andrew Tate," "Gaza ceasefire," "European Parliament election," "Mukbang"), all anchored to a fixed start date of 15 October 2023. The team compared "relevance" vs. "date" ranking and analyzed three dimensions: precision (keyword matching on titles, descriptions, tags), temporal coverage (decay as a function of distance from publication), and consistency across repeated extractions. A qualitative case study on the 2024 European Parliament elections used five search dates spaced five weeks apart.
+The authors used a "maximalist" collection strategy via YouTube Data Tools' "one search per day" technique to circumvent the 500-results-per-query cap. Eleven queries were run weekly over six months (from April 2024), each anchored to a fixed October 2023 start date, with primary focus on the default "relevance" ranking compared against "date" ranking. Analysis spanned three quantitative dimensions — query precision (via keyword filtering of titles, descriptions, and tags), temporal coverage (drop-off by distance from publication), and sample consistency across repeated extractions — complemented by a qualitative case study of the 2024 European Parliament elections across five search dates spaced five weeks apart.
 
 ## Findings
 
-- Relevance ranking returns up to 8× more videos than date ranking but at far lower precision (e.g., 17.2% vs. 57.6% keyword match for "European Parliament election").
-- Three temporal phases recur across queries: ~450 videos/day in the 20-day head, ~130/day in the 40-day middle, and <20/day in the long tail.
-- The decay reflects a search-indexing artifact, not video deletion — affected videos remain publicly accessible on YouTube.
-- Repeated extractions are inconsistent: ten consecutive [chatgpt] searches returned 773 unique videos vs. only 456 from a single run.
-- For the 2024 EP elections, waiting five weeks post-event reduced retrievable on-topic videos by ~41% (filtered) / 64% (unfiltered); ten weeks reduced them by 76% / 92%.
-- Even highly-viewed videos vanish from search: only 5 of the top 10 most-viewed remained findable four months later.
+- Relevance ranking retrieves far more videos than date ranking (up to 8x for "European Parliament election") but at much lower precision (17.2% vs. 57.6% keyword match).
+- A consistent three-phase temporal pattern: a ~20-day head (~450 videos/day), a ~40-day middle (~130 videos/day), and a long tail (<20 videos/day).
+- Decay affects videos that remain publicly available, confirming it is a search-indexing/ranking artifact rather than deletion.
+- Higher-volume queries show stronger decay under relevance ranking; lower-volume date-ranked queries decay less.
+- Repeated identical searches yield different result sets — a "chatgpt" test found 773 videos across ten searches versus 456 in a single run.
+- In the EP case study, waiting five weeks cut retrievable on-topic videos by ~41% (filtered) / 64% (unfiltered); ten weeks cut them by 76% / 92%.
+- Popularity is no protection: only 5 of the top 10 most-viewed post-election videos remained findable four months later, despite still being live.
 
 ## Connections
 
-This paper extends the "APIcalypse"/"Post-API Age" lineage of platform-data critique most directly carried forward by [[Bruns2025-fz]] and [[Freelon2024-sc]], and complements other recent infrastructural audits and data-access analyses such as [[Helmond2026-ll]], [[Ohme2026-nv]], and [[Bouchaud2026-lr]]. It pairs naturally with [[Rieder2026-pp]] from the same lead author and informs DSA-oriented governance work including [[Vincent_undated-re]] and [[Schiffrin_undated-gi]]; methodologically it is also relevant to YouTube-based studies relying on search retrieval, such as [[Ulloa2024-jm]].
+This paper is closely allied with [[Rieder2026-pp]], sharing an author and its critical-audit orientation toward platform research infrastructure. It contributes to the broader platform-governance-data-access conversation about the adequacy of API and DSA researcher provisions, connecting with work such as [[Bruns2026-yv]], [[Bechmann2026-dr]], and [[de-Vreese2026-zx]] on data access under emerging European regulation. Its concern with the reliability and reproducibility of platform-derived samples also resonates with methodological critiques like [[Bouchaud2026-lr]] and [[Bouchaud2026-np]].

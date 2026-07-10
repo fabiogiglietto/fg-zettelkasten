@@ -6,7 +6,7 @@ year: 2025
 doi: 10.1609/icwsm.v19i1.35857
 bibtex_key: Kansaon2025-id
 topics: [coordinated-inauthentic-behavior, digital-media-elections-global]
-citation_count: 1
+citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1609/icwsm.v19i1.35857
 podcast_url: 
@@ -22,31 +22,36 @@ discovery_date: 2025-06-15T00:00:00Z
 
 ## Summary
 
-This paper offers the first large-scale empirical study of coordinated inauthentic behavior on WhatsApp, analyzing 13.4 million messages from 1,444 public Brazilian political groups around the 2022 presidential election. Adapting Pacheco et al.'s Rapid Retweet Network to WhatsApp's closed-messaging architecture, the authors detect 1,575 accounts that post identical content within tight time windows and amplify misinformation, news links, and stickers. Crucially, they document how this digital coordination scaffolded offline mobilization — including the doxxing of Supreme Court justices and the January 8, 2023 attacks — and they argue that WhatsApp's existing anti-virality tools (forwarding limits, bans) are largely irrelevant because coordinated actors bypass forwarding entirely.
+This paper offers the first large-scale empirical study of rapid, synchronous coordination on WhatsApp, examining Brazilian political groups during the 2022 presidential election and its violent aftermath. Analyzing 13 million messages from 1,444 public groups (July 2022–January 2023), the authors adapt a network-based coordination-detection method from Twitter research to WhatsApp's closed messaging architecture. They demonstrate that coordinated accounts systematically amplified news and misinformation and — critically — that this digital coordination fed directly into offline mobilization, including the doxxing of Supreme Court justices and the protests culminating in the January 8, 2023 attacks. The paper argues that WhatsApp's existing anti-virality countermeasures are insufficient because coordinated actors largely bypass the forwarding mechanisms those measures target.
 
 ## Key Contributions
 
-- First large-scale empirical evidence of synchronous coordination on WhatsApp using a 13M-message Brazilian political corpus.
-- Methodological adaptation of the Rapid Retweet Network to a closed messaging platform, providing a stricter operational definition of coordination than content-similarity alone.
-- Empirical chain-of-evidence linking WhatsApp coordination to specific offline events (justice doxxing, military-intervention protests, Jan 8 mobilization).
-- Critique of platform countermeasures: forwarding limits miss the bulk (58.9%) of coordinated messages, which are sent directly rather than forwarded.
-- Policy implications for transparency, simultaneous-posting detection, and electoral-authority collaboration in the Global South.
+- First large-scale empirical study of rapid, synchronous coordination on WhatsApp, using a 13-million-message dataset.
+- Adapts the "Rapid Retweet Network" method into a "Rapid Spread Network" for WhatsApp, offering a more restrictive, timing-based definition of coordination than content-similarity-only approaches.
+- Documents a direct link between digital coordination and offline political mobilization, including the events surrounding January 8, 2023.
+- Empirically demonstrates the limitations of WhatsApp's forwarding limits, since coordinated actors largely avoid forwarding.
+- Offers concrete policy implications: platform transparency, simultaneous-posting detection, and collaboration with electoral authorities.
 
 ## Methods
 
-The authors collected messages via invitation-link discovery and local extraction over seven months, deduplicating with MD5 and perceptual hashing. They built a "Rapid Spread Network" linking users who posted identical content within 60 seconds, applied elbow-thresholding (min edge weight 5) and Louvain community detection, and validated robustness with 30s/90s sensitivity analyses and 35 random non-coordinated samples. URL domains were manually coded using an iteratively refined five-category codebook, and BERTopic with PTT5 Portuguese embeddings produced 15 topical clusters, two of which (Supreme Court attacks; electoral fraud) were examined qualitatively.
+- Collected 13,452,039 messages from 1,444 public Brazilian political WhatsApp groups over seven months via invitation-link discovery and periodic local extraction.
+- Deduplicated text/media with MD5 hashing and images with perceptual hashing (pHash).
+- Built a Rapid Spread Network linking users who post identical messages within a 60-second window; applied an elbow-method edge-weight threshold (≥5) and Louvain community detection.
+- Validated the time window via sensitivity analyses (30s, 60s, 90s) and compared results against 35 random non-coordinated samples with 95% confidence intervals.
+- Manually labeled URL domains with an iteratively refined five-category codebook.
+- Modeled 15 topics in coordinated text using BERTopic with PTT5 Portuguese embeddings, UMAP, HDBSCAN, and c-TF-IDF, then conducted qualitative case studies on Supreme Court attacks and electoral fraud narratives.
 
 ## Findings
 
-- 1,575 coordinated accounts produced 14,440+ amplified messages; 27.2% of accounts generated 80% of coordinated traffic.
-- The coordination graph is highly fragmented (450 components, 73.7% pairs) but contains a large connected component of 332 nodes.
-- Coordinated messages are overwhelmingly textual (70.24%) and URL-rich (97.31% contain links vs. 16.91% for non-coordinated baselines).
-- 85.11% of coordinated URLs are news links; 26% trace to two misinformation sites (pensandodireita, terrabrasilnoticias) flagged by Aos Fatos.
-- Stickers are weaponized for flooding (e.g., three users dispatched 1,200 duplicate stickers in seven minutes).
-- Topic distribution skews toward Supreme Court attacks (42.9%), election-fraud narratives, and calls for military intervention.
-- Case 1: a doxxing message exposing justices' NYC hotel spread to 102 groups and precipitated in-person harassment (Nov 13, 2022).
-- Case 2: a coordinated reinterpretation of Bolsonaro's post-election speech as endorsing military intervention reached 74 groups and helped seed protests at military barracks.
+- Identified 1,575 coordinated nodes and 1,491 edges forming 450 components; 73.7% were pairs, but one large component held 332 nodes (21% of the network).
+- Activity was highly concentrated: 27.2% of coordinated accounts produced 80% of coordinated messages.
+- Text dominated coordinated messaging (70.24% vs. 43.78% in non-coordinated samples), and 97.31% of coordinated text messages contained embedded URLs (vs. 16.91%).
+- 85.11% of coordinated URLs linked to news sites; 26% came from two misinformation domains flagged by Aos Fatos.
+- Stickers featured in flooding attacks (e.g., three users sent 1,200 duplicate stickers in seven minutes).
+- Topics were dominated by Supreme Court attacks (42.9%), plus election fraud and military-intervention narratives.
+- Case study 1: a doxxing message revealing Supreme Court ministers' New York hotel spread to 102 groups and led to in-person harassment.
+- Case study 2: a coordinated message reframing Bolsonaro's speech as endorsing military intervention reached 74 groups and helped mobilize street protests.
 
 ## Connections
 
-This paper extends Twitter/Facebook coordination-detection traditions into encrypted messaging, complementing platform-comparative work on coordinated networks like [[Minici2024-tf]] and the rapid-network detection lineage drawn on by [[Luceri2025-tr]] and [[Bollenbacher2026-vz]]. Its documentation of how online coordination materializes into offline political action speaks directly to [[Kulichkina2026-zk]] on protest mobilization and to broader Brazilian-context studies of WhatsApp and information disorder such as [[Rossini2026-jn]] and [[Emilio2026-ik]]. The platform-governance critique resonates with transparency- and intervention-focused work like [[DeVerna2025-dl]] and [[Starbird2025-jj]].
+This paper extends the coordinated-inauthentic-behavior detection tradition — particularly the coordinated-link-sharing and rapid-retweet lineage of [[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], and [[Giglietto2023-fa71a001]] — into WhatsApp's closed, encrypted ecosystem. Its focus on Brazilian elections and offline mobilization connects it to other Global South and election-integrity work in the register, notably [[Inacio-da-Silva2026-zf]] and [[Pante2025-pq]]. Methodologically it shares the network-based coordination-detection framing found in [[Minici2024-tf]], [[Luceri2025-tr]], and [[Gonzalez-Bailon2024-rq]].

@@ -22,30 +22,35 @@ discovery_date: 2025-07-15T00:00:00Z
 
 ## Summary
 
-This paper argues that pretrained sentence embeddings encode "medium" signals — source, language, style — that act as *observed confounders* when researchers use embedding similarity to cluster or retrieve documents pooled from heterogeneous corpora. The authors recast linear concept erasure (LEACE) as a way to subtract these confounder loadings from a structural decomposition of dot-product similarity, and show empirically across ten embedding models and a new paired benchmark that erasure substantially improves clustering and retrieval — sometimes spectacularly — without degrading out-of-distribution performance. The practical claim is that linear erasure should be a default preprocessing step whenever applied analysts pool texts across known sources or languages.
+This paper argues that pretrained text embeddings encode spurious attributes — document source, language, style — that act as *observed confounders* and distort similarity-based analyses when researchers pool heterogeneous corpora. The authors reframe this longstanding concern about corpus-driven structure in unsupervised text analysis as a problem of confounding in embedding dot-product similarity, and propose applying LEACE (a closed-form linear concept erasure method) as a cheap preprocessing step that removes the confounder subspace. They formalize how erasure purges the confounder's contribution from a structural decomposition of similarity, build a benchmark of paired multi-source and multilingual datasets, and show across ten embedding models that erasure substantially improves clustering and retrieval — sometimes dramatically — without harming out-of-distribution performance.
 
 ## Key Contributions
 
-- A formal framing of embedding debiasing as removing observed-confounder contributions from similarity estimands.
-- A paired benchmark spanning category-level (Comparative Agendas Project) and event-level (Super-SCOTUS, SemEval 2022 Task 8, SwilTra-Bench Swiss court summaries) data designed to isolate confounder effects.
-- Broad empirical evaluation of LEACE across ten embedding models, with clustering, retrieval, and OOD-MTEB diagnostics.
-- A variance-alignment diagnostic linking erasure gains to PC1: the more confounders dominate top variance directions, the larger the gain.
-- Open-source code framing linear erasure as a cheap, principled preprocessing step for applied computational social science.
+- A formal account of how linear concept erasure removes observed-confounder loadings from dot-product document similarity via a structural decomposition.
+- A new benchmark of paired category-level (Comparative Agendas Project) and event-level (Super-SCOTUS, SemEval 2022 Task 8, Swiss court summaries) datasets designed to isolate confounder effects on embedding tasks.
+- Broad empirical evidence across ten embedding models that LEACE consistently improves clustering and retrieval without degrading OOD MTEB performance.
+- A diagnostic linking LEACE's effectiveness to alignment between the confounder and dominant variance (PC1) directions.
+- Open-source code and practical guidance recommending erasure as a default step for practitioners pooling documents across sources or languages.
 
 ## Methods
 
-The authors apply the closed-form LEACE algorithm to precomputed embeddings to remove subspaces linearly predictive of metadata confounders (source, language). They evaluate on (i) k-means purity and ARI for clustering, (ii) Recall@1/@10 for paired retrieval against distractor pools, and (iii) MTEB legal retrieval, news retrieval, STS, and bitext mining tasks for OOD effects. A PCA-removal baseline (drop PC1) is included for contrast, and a correlation analysis ties variance-in-PC1 to Recall@1 improvement.
+- Adapt the closed-form LEACE algorithm to remove subspaces predictive of confounding metadata (source, language) from precomputed embeddings.
+- Evaluate ten embedding models (MiniLM, GIST small/base/large, multilingual E5 small/base/large, MPNet, Nomic-v2, MXB-large) varying in size, multilinguality, and instruction tuning.
+- Measure clustering with k-means purity and Adjusted Rand Index, and retrieval with Recall@1 / Recall@10 on paired items pooled with distractors.
+- Test out-of-distribution effects by applying erasers trained on CAP and legal data to MTEB legal/news retrieval and STS tasks.
+- Compare against a PCA baseline (removing PC1), plus bitext-mining experiments on 28 MTEB tasks and qualitative analysis of legal summary pairs.
 
 ## Findings
 
-- Erasing source improved clustering for every CAP source-pair across all ten models (e.g., GIST-small on Bills–Newspapers: +0.169 purity, +0.157 ARI).
-- Language erasure produced very large cross-language retrieval gains on Swiss court summaries (E5-large +0.651 Recall@1 on DE–IT) and on SemEval multilingual news (E5-small +0.236 Recall@1).
-- All model/dataset combinations on SCOTUS paired summaries improved with erasure.
-- LEACE-trained erasers transferred to MTEB legal/news/STS tasks with no meaningful degradation; on bitext mining, E5-large-instruct + LEACE set new SOTA on three leaderboard tasks.
-- PC1 variance share correlated strongly with Recall@1 improvement (r = 0.79).
-- Naive PC1 removal gave inconsistent in-domain gains and catastrophically harmed MTEB, unlike LEACE.
-- Erasure is weaker when confounder categories are numerous relative to data, and in some short-query retrieval settings.
+- Erasing source improved purity and ARI across all four CAP source pairings and all ten models.
+- Cross-family multilingual gains were dramatic: E5-large Recall@1 rose +0.651 on German–Italian court summaries; overall multilingual Recall@1 improved from 0.175 to 0.826.
+- Every SCOTUS model/dataset combination improved with erasure; all ten models improved on SemEval multilingual news after erasing language.
+- Erasers trained on one domain left MTEB legal/news/STS performance essentially unchanged — occasionally with small gains.
+- PC1 variance in original embeddings correlated strongly with Recall@1 improvement (r = 0.79, p < 0.001).
+- The naive PCA baseline gave inconsistent in-domain gains and catastrophically degraded MTEB, unlike LEACE.
+- LEACE reached state-of-the-art on three public bitext-mining leaderboard tasks, with no task degrading by more than 0.01 F1.
+- Erasure is weaker when confounder categories are very numerous relative to data size, and may fail in some short-query retrieval settings.
 
 ## Connections
 
-This work is methodological infrastructure for the growing strand of CSS research using embedding similarity to compare or cluster heterogeneous corpora — relevant to applications like cross-platform or cross-source measurement in [[Bouchaud2026-lr]], [[Balluff2026-if]], and Bastos2025-ya, and to embedding-based pipelines for political or legal text such as [[Peters2026-mo]]. It also complements critical methodological work questioning what unsupervised text representations actually capture (e.g., [[Bak-Coleman2026-mk]], [[Munger2025-cz]]), reframing those concerns as a tractable observed-confounding problem rather than a fundamental limit.
+This paper is largely methodological and stands somewhat apart from the more applied LLM-based content-analysis work under this topic. Its concern with reliable embedding-based measurement for computational social science connects most naturally to work using LLM-derived representations to scale or validate text measurement, such as [[Le-Mens2025-qz]] and [[Tan2024-vl]]; the debiasing framing has no close counterpart among the other listed papers.

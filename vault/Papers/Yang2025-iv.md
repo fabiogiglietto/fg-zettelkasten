@@ -22,27 +22,27 @@ discovery_date: 2025-05-15T00:00:00Z
 
 ## Summary
 
-This paper proposes a new method for detecting coordinated link-sharing behavior on Facebook that reduces reliance on post-timing signals, which adversaries can easily manipulate. The authors argue that the *speed* and *frequency* of link sharing across accounts follow consistent statistical regularities, and that deviations from these regularities provide a more evasion-resistant signature of coordination. They validate the approach on a large corpus of 11.2 million Facebook link posts drawn from roughly 16,000 sources, positioning the work as a methodological contribution to platform integrity research and the broader study of coordinated inauthentic behavior.
+This paper introduces a new method for detecting coordinated link-sharing behavior on Facebook that reduces reliance on post-timing signals, which manipulators can easily alter. The authors argue that while timing has been a mainstay of coordination detection, it is trivially manipulable and therefore vulnerable to evasion. Instead, they exploit statistical regularities in the *speed* and *frequency* of link sharing across accounts as more robust indicators of coordination. The approach is validated on a large corpus of 11.2 million Facebook link posts drawn from roughly 16,000 sources, positioning the work within computational social science and platform integrity research.
 
 ## Key Contributions
 
-- A coordination detection method that moves beyond timing-based signals, which are trivially gameable by sophisticated actors.
-- Identification of statistical regularities in link-sharing speed and frequency that function as robust behavioral signatures.
-- Empirical validation at scale using a corpus of 11.2 million Facebook link posts across ~16,000 sources.
+- A methodological advance in coordination detection that reduces dependence on easily manipulated post-timing features.
+- Introduction of speed- and frequency-based statistical signatures as detection signals.
+- Empirical application and validation at scale using millions of Facebook link posts.
 
 ## Methods
 
-- Assembly of a large-scale Facebook link-sharing dataset (11.2M posts, ~16K sources).
-- Statistical characterization of the distributions of sharing speed and frequency across accounts.
-- Development of a detection procedure based on departures from these regularities.
-- Empirical evaluation of the procedure on the assembled corpus.
+- Analysis of a large-scale Facebook dataset comprising 11.2 million link posts.
+- Posts sourced from a curated list of roughly 16,000 accounts or domains.
+- Statistical modeling of sharing speed and frequency distributions to identify coordinated activity.
+- Empirical validation of the detection approach against this corpus.
 
 ## Findings
 
-- Sharing speed and frequency exhibit stable, regular statistical patterns across accounts under normal conditions.
-- Coordinated link-sharing activity produces detectable deviations from these regularities.
-- The proposed signals function effectively at scale, suggesting practical viability for platform-level detection.
+- Link-sharing speed and frequency display consistent statistical regularities across accounts.
+- These regularities can be leveraged to detect coordinated sharing behavior on Facebook.
+- The proposed signals offer a more evasion-resistant alternative to timing-based methods, validated on a large empirical dataset.
 
 ## Connections
 
-This work sits squarely in the methodological strand of coordinated inauthentic behavior detection that critiques timing-based co-sharing approaches; it relates closely to [[Graham2025-gp]] and [[Graham2026-fb]]–style network methods, and to robustness/evasion concerns raised in [[Bouchaud2026-lr]] and [[Luceri2025-tr]]. It also complements broader CIB detection efforts such as [[Minici2024-tf]] and [[Kulichkina2026-zk]], which similarly seek behavioral signatures that go beyond temporal co-occurrence.
+This work sits squarely in the coordinated link-sharing detection tradition, most directly extending the coordinated link-sharing behavior (CLSB) framework developed across [[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], and [[Giglietto2023-fa71a001]], whose reliance on temporal co-sharing this paper critiques and seeks to improve. Its focus on evasion-resistant, network-based coordination signals connects it to broader methodological efforts in [[Luceri2025-tr]] and [[Minici2024-tf]] on robust detection of coordinated inauthentic behavior.

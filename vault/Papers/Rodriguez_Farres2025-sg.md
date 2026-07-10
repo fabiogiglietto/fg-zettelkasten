@@ -22,26 +22,27 @@ discovery_date: 2025-09-15T00:00:00Z
 
 ## Summary
 
-This paper addresses the detection of coordinated bot activity on Bluesky, a decentralized social media platform that has received comparatively little attention in the bot-detection literature. The authors argue that misinformation gains credibility through viralization, and that viralization is often manufactured by coordinated bot networks rather than emerging organically. They propose a real-time detection approach aimed at identifying such coordinated behavior as it unfolds, distinguishing malicious coordination from benign organic activity.
+This paper tackles the detection of coordinated bot activity on Bluesky, a comparatively young decentralized social media platform. The authors argue that misinformation gains perceived credibility largely through virality, and that virality is frequently manufactured by coordinated bot networks rather than emerging organically. Against this backdrop, they propose an approach to identify coordinated bot behavior in real time, positioning early detection as a necessary defense for information integrity on emerging platforms. The work extends the established literature on social bots and coordinated inauthentic behavior — largely developed around X, Instagram, and TikTok — to the understudied Bluesky context.
 
 ## Key Contributions
 
-- Extends coordinated inauthentic behavior detection to **Bluesky**, an emerging decentralized platform underrepresented relative to X, Instagram, and TikTok.
-- Frames detection around **coordination in real time**, rather than retrospective post-hoc analysis or per-account bot scoring.
-- Articulates a conceptual distinction between **organic coordination** and **malicious coordinated bot activity** as the basis for detection.
+- Addresses coordinated bot detection on Bluesky, a relatively new and understudied platform.
+- Frames the detection task around *coordination in real time*, rather than retrospective analysis or per-account classification.
+- Introduces a conceptual distinction between benign organic coordination and malicious coordinated bot activity as the basis for detection.
 
 ## Methods
 
-- Case study on the Bluesky platform.
-- A real-time detection pipeline for coordinated bot networks (specific algorithmic details are not available from the abstract).
+- Uses Bluesky as the case study platform, taking advantage of its openness for observing activity as it unfolds.
+- Develops a real-time detection approach for coordinated bot networks. The specific algorithmic details are not available from the abstract.
 
 ## Findings
 
-- Specific empirical results are not reported in the available abstract.
+- Specific empirical results are not reported in the available abstract; the contribution is primarily framing and methodological direction.
+- Conceptually, the authors assert that viralization is often driven by coordinated activity, and that real-time detection of such coordination on Bluesky is both feasible and necessary.
 
 ## Connections
 
-This work sits alongside other recent efforts targeting Bluesky as a new venue for coordinated behavior research, notably [[Graham2025-gp]] and [[Hurcombe2025-cs]]. Its real-time framing connects to streaming and online detection approaches such as [[Iannucci2025-eg]] and [[Minici2024-tf]], while the broader conceptual move of separating organic from malicious coordination echoes [[Luceri2025-tr]] and [[Graham2026-fb]].
+This work sits at the intersection of coordinated inauthentic behavior and information disorder, sharing the coordination-detection focus of methodological contributions like [[Kansaon2025-id]] and the coordinated-network line advanced in [[Giglietto2020-9d8acdd7]] and [[Giglietto2022-0e951ac5]]. Its platform-specific attention to Bluesky connects it to other studies of emerging and decentralized platforms and bot-driven amplification such as [[Pierri2025-hm]] and [[DeVerna2025-dl]].
 
 ## Podcast
 

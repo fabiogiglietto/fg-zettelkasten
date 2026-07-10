@@ -22,25 +22,25 @@ discovery_date: 2025-06-15T00:00:00Z
 
 ## Summary
 
-This paper offers an early empirical evaluation of TikTok's Research API, which the platform expanded in July 2023 to comply with the Digital Services Act's (DSA) obligations on Very Large Online Platforms (VLOPs) to facilitate independent researcher access to data. The authors argue that, despite the expansion, the API falls well short of the transparency and accessibility envisioned by the DSA: it exhibits persistent limitations and inconsistencies that undermine its usefulness for studying systemic risks on the platform. The work positions TikTok's API as a case of compliance gesture rather than substantive transparency.
+This paper offers an early empirical evaluation of TikTok's Research API, which the platform expanded in Europe in July 2023 to satisfy the Digital Services Act's (DSA) requirement that Very Large Online Platforms (VLOPs) facilitate data access for independent researchers. Testing the API in practice, the authors argue that it fails to deliver the transparency and accessibility the DSA envisions: persistent limitations, inconsistencies, and gaps undermine its utility for studying systemic risks. The broader claim is that VLOP compliance gestures often fall short of the DSA's substantive transparency goals, making platform-provided access mechanisms an unreliable foundation for accountability research.
 
 ## Key Contributions
 
-- An early empirical assessment of TikTok's DSA-driven Research API expansion in the European context.
-- Documentation of concrete shortcomings — limitations, inconsistencies, and gaps — in platform-provided research access mechanisms.
-- A contribution to ongoing policy and academic debates over what meaningful researcher data access under the DSA should look like.
+- Provides one of the earliest empirical assessments of TikTok's DSA-driven Research API expansion.
+- Documents concrete shortcomings and inconsistencies in a platform-provided research access mechanism.
+- Feeds ongoing policy and academic debate over what "adequate" researcher data access should look like under the DSA.
 
 ## Methods
 
-The authors empirically test and assess TikTok's Research API access from a European researcher perspective, analyzing its features, limitations, and inconsistencies relative to the data accessibility obligations imposed by the DSA. Specific procedural details are not provided in the available material.
+- Empirical, hands-on testing of access to TikTok's Research API in the European context.
+- Analysis of the API's limitations, inconsistencies, and gaps measured against DSA transparency requirements (detailed methodology not available from the abstract).
 
 ## Findings
 
-- TikTok's expanded Research API does not adequately fulfill the data accessibility obligations of the DSA.
-- The API contains persistent limitations and inconsistencies even after its July 2023 expansion.
-- These shortcomings materially constrain researchers' ability to study transparency and systemic risks on the platform.
-- VLOP compliance gestures may diverge significantly from the substantive transparency goals envisioned by regulators.
+- Despite the July 2023 expansion, the Research API continues to exhibit substantial limitations and inconsistencies.
+- These shortcomings constrain researchers' ability to study transparency and systemic risks on the platform.
+- Formal compliance with the DSA does not translate into practical, reliable data access.
 
 ## Connections
 
-This work sits at the center of a growing body of critical scrutiny of platform-provided research APIs and DSA-era data access mechanisms; it pairs directly with broader critiques of API-mediated research such as [[Rieder2025-ju]] and [[Freelon2024-sc]], and complements platform- and policy-focused analyses of access regimes like [[Vincent_undated-re]] and [[Schiffrin_undated-gi]]. It also speaks to empirical TikTok-focused research that depends on (or works around) such APIs, including [[Jurg2025-ur]] and [[Votta2025-xz]].
+This work sits within the growing literature on the DSA's data-access regime and the reliability of platform-provided research APIs, connecting to broader critiques of how VLOPs implement transparency obligations such as [[Rieder2025-ju]] and [[Rieder2026-pp]]. It also complements empirical audits of the data infrastructures researchers must rely on, including [[Bruns2026-yv]] and [[Murtfeldt2025-wu]].

@@ -6,7 +6,7 @@ year: 2025
 doi: 10.1007/s42001-025-00401-y
 bibtex_key: Song2025-yh
 topics: [coordinated-inauthentic-behavior, health-misinformation-networks]
-citation_count: 0
+citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1007/s42001-025-00401-y
 podcast_url: 
@@ -22,30 +22,33 @@ discovery_date: 2025-11-15T00:00:00Z
 
 ## Summary
 
-This paper offers a cross-national comparison of coordinated link sharing behavior (CLSB) around COVID-19 vaccine discourse on Facebook in the UK and US between January 2020 and October 2022. Drawing on 3.47 million public posts, the authors combine transfer-learning stance classification, CooRnet-based network analysis, manual fact-checking, and structural topic modeling to characterize who coordinates, what they share, and which narratives they amplify. The central argument is that CLSB is not inherently malicious: anti-vaccine coordinators disseminate disproportionately problematic or unverifiable content, while pro-vaccine coordinators amplify institutional sources like the NHS, CDC, and NIH. National political cultures shape the discourse — UK anti-vaccine messaging foregrounds safety and scientific skepticism, while US anti-vaccine messaging centers individual freedom and government distrust.
+This study conducts a cross-national comparison of coordinated link sharing behavior (CLSB) surrounding COVID-19 vaccine discourse on Facebook in the UK and US. Drawing on a corpus of nearly 3.5 million public posts, the authors combine stance classification, network analysis, URL fact-checking, and structural topic modeling to characterize who coordinates, how credible the shared content is, and what narratives are amplified. Their central argument is that CLSB is ideologically agnostic — it is not inherently malicious but rather a scalable dissemination tactic used by both anti-vaccine communities spreading problematic content and pro-vaccine actors circulating institutional, evidence-based messaging. The disaggregation by nation reveals that coordination strategies and thematic emphases are strongly shaped by local political culture.
 
 ## Key Contributions
 
-- One of the first systematic UK–US comparisons of CLSB in vaccine discourse on Facebook.
-- Reframes CLSB as ideologically agnostic infrastructure, used by both misinformation actors and credible public health communicators.
-- Extends Xu and Wang's framework with a six-metric scheme for characterizing the scope and structure of coordinated link sharing networks.
-- Integrates network analysis, URL-level fact-checking, and STM to jointly map coordination, content authenticity, and thematic emphasis.
-- Draws practical implications for designing culturally tailored, coordination-aware public health communication.
+- One of the first systematic cross-national comparisons of vaccine-related CLSB across the UK and US.
+- Complicates the framing of CLSB as inherently malicious by demonstrating its dual use for both misinformation and credible public health communication.
+- Extends Xu and Wang's approach into a six-metric framework for characterizing coordinated link sharing networks.
+- Integrates network analysis, fact-checking, and structural topic modeling to jointly map actors, content authenticity, and narrative themes.
+- Draws implications for culturally and politically tailored public health communication that could leverage CLSB constructively.
 
 ## Methods
 
-The authors collected 3,469,719 English-language Facebook posts via CrowdTangle using COVID-19/vaccine keywords, then classified post-level stance using a CT-BERT model fine-tuned on 5,000 annotated posts (κ = 0.86), yielding four corpora (UK/US × Pro/Anti). CLSB was detected with CooRnet, which flags entities sharing identical URLs within unusually short windows. Networks were characterized with six descriptive metrics plus standard structural attributes (density, modularity, clustering, diameter). Unique URLs were manually fact-checked via Google Fact Check Explorer (94.6% inter-coder agreement) and coded as Problematic, True, or Unknown. Finally, 14-topic STM models with date and country as covariates were fit separately to anti- and pro-vaccine corpora.
+- Collected 3,469,719 English-language public Facebook posts (Jan 2020–Oct 2022) via CrowdTangle using COVID-19 and vaccine keywords/hashtags.
+- Stance classification with a CT-BERT transfer-learning model trained on 5,000 annotated posts (κ = 0.86), yielding four subsets: UK-Anti, UK-Pro, US-Anti, US-Pro.
+- CLSB detection using the CooRnet R package, identifying entities sharing identical URLs within unusually short intervals, followed by network component and structural analysis (density, modularity, clustering, diameter).
+- Manual fact-checking of unique URLs via Google's Fact Check Explorer (Problematic / True / Unknown; 94.6% inter-coder agreement).
+- Structural Topic Modeling (14-topic models) with publication date and country as covariates.
 
 ## Findings
 
-- CLSB accounted for a large share of nodes in every network: 61.5% (UK-Anti), 38.5% (UK-Pro), 49.8% (US-Anti), 57.6% (US-Pro).
-- UK anti-vaccine networks were densest (density 0.01, avg degree 21.88); US pro-vaccine networks were largest and most connected (avg degree 27.54).
-- Fact-checking showed sharp credibility asymmetries: only 9.6% of UK-Anti and 12% of US-Anti URLs verified as true, versus 45.6% (UK-Pro) and 40.4% (US-Pro); ~74–80% of anti-vaccine URLs were "Unknown."
-- Anti-vaccine topics clustered into Vaccine Safety Issues (59.1%), Vaccine Refusal (27.3%), and Criticism of Politicians/Big Pharma (13.5%).
-- Pro-vaccine topics centered on Effectiveness and Safety (38.5%), Vaccination Progress (34.2%), and Efficacy Evidence (27.2%).
-- National framings diverged: UK anti-vaccine discourse emphasized trial safety (e.g., AstraZeneca); US anti-vaccine discourse foregrounded freedom and religious exemptions; UK pro-vaccine messaging stressed centralized NHS rollout, while US pro-vaccine messaging stressed incentives and grassroots mobilization.
-- Anti-vaccine coordinators in the UK skewed ideological (liberty groups, conspiracy communities); US anti-vaccine networks spanned partisan, religious, and local political pages; pro-vaccine networks were institutionally anchored.
+- CLSB constituted a substantial share of network activity: 61.5% of nodes in UK-Anti, 38.5% in UK-Pro, 49.8% in US-Anti, and 57.6% in US-Pro networks.
+- UK anti-vaccine networks were densest (density 0.01, avg degree 21.88); US pro-vaccine networks had the highest average degree (27.54) and largest entity count.
+- Only 9.6% of UK-Anti URLs verified as true versus 45.6% for UK-Pro; 12% of US-Anti versus 40.4% for US-Pro. Anti-vaccine networks carried ~74–80% "Unknown" content.
+- Anti-vaccine topics: Vaccine Safety Issues (59.1%), Vaccine Refusal (27.3%), Criticism of Politicians/Big Pharma (13.5%).
+- Pro-vaccine topics: Effectiveness and Safety (38.5%), Vaccination Progress (34.2%), Efficacy Evidence (27.2%).
+- National framing diverged: UK anti-vaccine discourse stressed safety and trial concerns (e.g., AstraZeneca), while US anti-vaccine discourse foregrounded individual freedom and religious exemption; pro-vaccine actors were institutionally grounded (NHS, CDC, hospitals).
 
 ## Connections
 
-This paper sits squarely in the CLSB tradition initiated by Giglietto and colleagues and shares its dual-use reframing of coordination with [[Graham2025-gp]] and [[Graham2026-fb]], which similarly probe whether coordinated behavior should be treated as inherently inauthentic. Its focus on COVID-19 vaccine misinformation ecosystems connects to broader work on problematic health information such as [[Di-Marco2025-aa]], [[Pante2025-pq]], and [[Kansaon2025-id]], while its cross-national comparative design resonates with [[Kuznetsova2025-nu]] and [[Hurcombe2025-cs]]. Methodologically, the CooRnet-based network detection links it to [[Minici2024-tf]] and [[Luceri2025-tr]] on computational approaches to coordination discovery.
+This paper sits within CLSB scholarship built on the CooRnet toolkit and coordinated link sharing framework developed by Giglietto and colleagues — see [[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]], and [[Giglietto2026-9b6a992d]]. Its focus on COVID-19 vaccine and health misinformation networks connects it to [[Di-Marco2025-aa]], while its argument that coordination is not inherently inauthentic or malicious speaks to methodological debates about detecting and interpreting coordinated behavior found in [[Luceri2025-tr]] and [[Minici2024-tf]].

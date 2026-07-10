@@ -22,30 +22,34 @@ discovery_date: 2025-06-15T00:00:00Z
 
 ## Summary
 
-This paper challenges the dominant source-level paradigm in misinformation research, which classifies content as "fake" based on the domain that publishes it. The authors argue this approach misses a larger phenomenon: users selectively sharing factually accurate mainstream news articles to advance misleading narratives. Using a 1.6M-user Twitter panel matched to a U.S. voter file (2018–2021), they identify mainstream articles disproportionately co-shared with fake news and show these articles are significantly more likely than control articles from the same outlets to contain narrative structures present in fake news and fact-checked false claims. Because co-shared mainstream articles reach roughly twice the audience of fake news itself, the authors contend that misinformation ecosystems are substantially broader than fake-news-domain metrics suggest.
+This paper argues that the dominant source-level (domain blocklist) approach to measuring online misinformation systematically overlooks a potentially larger phenomenon: users repurposing factually true content from mainstream, reliable outlets to advance misleading narratives. Using a large Twitter/X panel matched to a U.S. voter file (May 2018–November 2021), the authors identify mainstream news articles that are disproportionately co-shared alongside "fake news," and test whether those articles more often contain the narrative structures found in fake news and fact-checked false claims. They find co-shared mainstream articles are significantly more likely than control articles from the same outlets to carry potentially misleading narratives, an effect robust to partisan controls, and illustrate the mechanism through vaccine and voter-fraud case studies. The core conceptual move is to shift misinformation measurement from source reliability toward user behavior and narrative function.
 
 ## Key Contributions
 
-- A scalable co-sharing-based method for identifying mainstream articles likely repurposed for misinformation, complementing domain-list approaches.
-- An operational definition of "potentially misleading narratives" via automated narrative extraction (relatio) over fake news articles, fake news headlines, and ~24k fact-checked false claims — producing reusable narrative libraries.
-- Empirical evidence that misinformation networks extend well beyond fake-news domains, with cross-source diffusion plausibly larger in reach than fake news itself.
-- Two qualitative case studies (anti-vaccine narratives; 2020 mail-in-ballot fraud) demonstrating concrete repurposing mechanisms.
-- Implications for journalistic practice — headlines and framing carry repurposing risk independent of factual accuracy — plus released code and data.
+- A scalable, generalizable **co-sharing-based method** to identify mainstream articles likely repurposed for misinformation, complementing domain-list approaches.
+- Operationalizes **"potentially misleading narratives"** via automated narrative extraction over fake news content and fact-checked claims, producing reusable narrative libraries.
+- Empirical evidence that misinformation networks extend well beyond fake-news domains, broadening the conceptual scope of the field.
+- Two detailed qualitative case studies (vaccines, 2020 voter fraud) demonstrating concrete repurposing mechanisms.
+- Implications for journalistic practice — framing and headline choices as repurposing risks — plus released code and data.
 
 ## Methods
 
-The authors build a weighted bipartite co-sharing graph linking fake news URLs and reliable-news URLs, using a graph-pruning algorithm to control for popularity; the top 1% of co-sharing scores define the treated set, articles outside the top 5% serve as controls. Domain classification uses NewsGuard plus prior reliability ratings and YouGov passive-metering data. Narratives in AGENT–VERB→PATIENT form are extracted at two granularities. One-sided Wilcoxon signed-rank tests compare narrative occurrence in co-shared vs. control mainstream articles, with robustness checks for partisan curation, audience partisanship, domain fixed effects, trustworthy-only and liberal-only subsets, and removal of direct quotations. Two case studies (vaccines, voter fraud) supplement the quantitative analysis, along with manual coding of 100 tweets to check for share-to-criticize behavior.
+- Twitter panel of >1.6M U.S. users exact-matched to a TargetSmart voter file; tweets sharing English-language news collected via Twitter API v1 (May 2018–Nov 2021).
+- Filtering to URLs shared by ≥20 distinct users yielded ~420,000 URLs from ~2,400 domains; article text scraped with Newspaper3k.
+- NewsGuard used to classify domains, with "fake news" defined narrowly (regularly publishing false content); mainstream outlets identified via prior domain ratings and YouGov passive-metering popularity.
+- A weighted **bipartite co-sharing graph** between fake news and reliable URLs, pruned to control for popularity; top 1% of co-sharing scores define the co-shared set, and articles outside the top 5% form the control group.
+- Narratives extracted with the `relatio` tool as AGENT–VERB→PATIENT strings at two granularities; three misleading-narrative libraries built from fake news articles, fake news headlines, and ~24k fact-checked false claims.
+- One-sided Wilcoxon signed-rank tests comparing co-shared vs. control articles, with robustness checks (audience-partisanship controls, domain fixed effects, trustworthy- and liberal-only subsets, quote removal) and two qualitative case studies.
 
 ## Findings
 
-- Co-shared mainstream articles contain potentially misleading narratives at significantly higher rates than controls across all three narrative libraries and both granularities (≈0.94 vs. ≈0.58 narratives per article; 2.2% vs. 1.3% as a share of all narratives).
-- Co-shared articles have roughly 1.24× the odds of containing misleading narratives after controls.
-- Effect persists in trustworthy-only and liberal-leaning-only subsets, ruling out a purely partisan-composition explanation.
-- Co-shared mainstream articles reach about twice the audience of fake news articles in this panel.
-- Vaccine case study reveals three repurposing patterns: clickbait headlines, older articles recontextualized, and ambiguous content.
-- Voter-fraud case study identifies 11 mainstream articles supporting the 2020 mail-in-ballot fraud narrative — clickbait pieces, reports on isolated fraud incidents, and unrebutted quotation of fraud claims.
-- Effect holds in 16/18 tests after removing direct quotations, and share-to-criticize behavior is rare (3/100 sampled tweets).
+- Across all three narrative libraries and both granularities, co-shared mainstream articles contain misleading narratives at significantly higher rates than controls (~0.94 vs. ~0.58 per article; 2.2% vs. 1.3% of extracted narratives).
+- Effect holds under partisan controls, trustworthy-only, and liberal-only subsets — not an artifact of partisan composition; odds ~1.24× for co-shared articles.
+- Co-shared mainstream articles reach roughly **twice** the audience of fake news articles (≈121 vs. ≈58 sharing users), making cross-source diffusion larger than fake-news-only metrics suggest.
+- Vaccine case study identifies three repurposed article types: clickbait headlines, recontextualized older articles, and ambiguous content.
+- Voter-fraud case study identifies 11 mainstream articles usable to support mail-in-ballot conspiracies (clickbait, isolated fraud reports, and unrebutted quoted claims).
+- Removing direct quotations, the effect holds in 16 of 18 testing instances; manual annotation finds "share-to-criticize" behavior rare (3/100 tweets), supporting an endorsement interpretation.
 
 ## Connections
 
-This paper directly engages debates about how misinformation should be measured and bounded, complementing critiques of narrow fake-news exposure estimates such as [[Budak2024-ef]] and [[Gonzalez-Bailon2024-rq]], and pairing naturally with [[Mosleh2024-op]] on user-level sharing behavior. Its focus on narrative-level repurposing across mainstream and fringe sources connects to coordinated-amplification and rumoring work like [[Starbird2025-jj]] and [[Luceri2025-tr]], and to research on how journalistic framing carries misinformation risk, e.g. [[Hameleers2026-mc]] and [[Cazzamatta2026-lo]]. The co-sharing graph methodology resonates methodologically with network-based detection work such as [[Minici2024-tf]] and [[DeVerna2025-dl]].
+This work reframes information-disorder measurement around user behavior and narrative rather than source reliability, and its co-sharing graph methodology connects directly to the co-sharing/coordination-detection literature associated with [[Giglietto2022-0e951ac5]], [[Giglietto2020-9d8acdd7]], [[Giglietto2019-e9be81c1]], [[Giglietto2017-4375de2f]], and [[Giglietto2023-fa71a001]]. Its critique of domain-list fake-news metrics and attention to overall misinformation exposure speaks to audience-scope work such as [[Budak2024-ef]] and [[Gonzalez-Bailon2024-rq]], while its narrative-repurposing framing resonates with research on strategic misleading framing like [[Hameleers2026-mc]].

@@ -22,28 +22,29 @@ discovery_date: 2025-07-15T00:00:00Z
 
 ## Summary
 
-Sadler argues that disinformation studies invokes "narrative" loosely, treating stories' meanings as transparent and their truth-status reducible to true/false judgments. Drawing on Ricoeur's hermeneutics, narratology (Bal, Chatman, Genette), and Phelan's narrative ethics, he proposes a "hermeneutic realist" alternative in which narratives *disclose* aspects of reality rather than mirror or construct it, and in which ethical appraisal of telling and told supplements referential assessment. He demonstrates the framework on five Spanish-language tweets by Venezuelan influencer Roi López Rivas blaming NATO enlargement for Russia's 2022 invasion of Ukraine, showing that content can be ethically and referentially problematic without containing outright falsehoods.
+Sadler argues that disinformation research has treated the concept of "narrative" loosely and intuitively, reducing stories to plot summaries whose meanings are self-evident and whose value can be judged on a true/false axis. Against this, he advances a **hermeneutic realist** approach—drawing on Ricoeur's threefold mimesis and narratology—in which stories *disclose* aspects of reality rather than simply mirroring or constructing it. Coupled with Phelan's narrative ethics, this framework lets analysts evaluate both the ethics of the told and the ethics of the telling. The argument is demonstrated through a close reading of Spanish-language tweets by Venezuelan influencer Roi López Rivas that blame NATO enlargement for Russia's 2022 invasion of Ukraine, showing how content can be referentially and ethically problematic without being straightforwardly false.
 
 ## Key Contributions
 
-- A theoretically disciplined definition of narrative (temporally and causally related happenings) distinguishing it from discourse, theme, or frame.
-- A "hermeneutic realist" middle path between naïve realism and constructivism for evaluating narrative truth in disinformation research.
-- An adaptation of Phelan's narrative ethics (ethics of the telling vs. the told; reporting/interpreting/evaluating) as an analytical instrument for suspect stories.
-- A worked analytical method pairing fabula/sjuzhet analysis with ethical appraisal, applied to a non-elite, Spanish-language, Global South case.
-- A challenge to the field's "cryptonormativity," urging that evaluative criteria be made explicit and contestable.
+- A theoretically grounded definition of narrative (temporally and causally related happenings) that distinguishes it from the discourses, themes, and structures loosely labelled "narratives" in the field.
+- Introduces **hermeneutic realism** as a middle path between naïve realism and constructivism for disinformation studies.
+- Adapts Phelan's narrative ethics—the ethics of the told vs. the telling, and the triad of reporting/interpreting/evaluating—into an analytical framework for suspect narratives.
+- A worked method combining fabula/sjuzhet analysis with ethical appraisal, applied to a non-elite, Spanish-language, Global South case underrepresented in the literature.
+- Challenges the field's "cryptonormativity" by making evaluative criteria explicit and defeasible.
 
 ## Methods
 
-Conceptual synthesis across narratology, hermeneutic philosophy, and the strategic narrative tradition, paired with a single-case qualitative narrative analysis of five tweets (Feb 2022–Aug 2023) by Roi López Rivas. The analysis moves between fabula and sjuzhet to identify what is reported, interpreted, evaluated, disnarrated, and sideshadowed, before appraising the narrative on both referential and ethical grounds.
+Primarily conceptual and theoretical synthesis, drawing on Ricoeur, Bakhtin's dialogism, and narratological work by Bal, Chatman, and Genette, alongside a critical review of qualitative/quantitative disinformation studies and the "strategic narrative" tradition. This is applied in a single-case qualitative analysis of five Spanish-language tweets (Feb 2022–Aug 2023) by Roi López Rivas. The analytical procedure moves between fabula and sjuzhet to identify what is reported, interpreted, and evaluated—including disnarrated and sideshadowed events—before appraising the narrative on both referential and ethical grounds.
 
 ## Findings
 
-- The tweets contain few outright false statements; instead they rely on imprecision, ambiguous referents, and ventriloquized voices to avoid commitment to questionable claims.
-- Sideshadowing attributes agency and contingency to NATO/US actors while disnarrating Russian agency, producing a deterministic account where Russia "had no other option."
-- Apparent multivocality (Putin, Biden, Brand, Stoltenberg) functions monologically, funnelling diverse voices into a single interpretive line.
-- Evaluation is delivered implicitly via presupposed moral principles applied asymmetrically to Russia and the US.
-- The narrative is thus referentially thin and ethically Manichean without being demonstrably "false" — and NATO's own debunking materials can mirror these simplifications.
+- The tweets contain few outright false statements, relying instead on imprecision, ambiguous referents, and quotation of others' voices to avoid direct commitment.
+- Sideshadowing attributes agency and contingency to the US/NATO while disnarrating Russian agency, producing a deterministic account in which Russia "had no other option."
+- Apparent multivocality (quoting Putin, Biden, Stoltenberg, Brand) functions *monologically*, channelling diverse voices toward a single interpretation despite a professed commitment to multipolarity.
+- Evaluation is delivered implicitly through presupposed moral principles applied asymmetrically to Russia and the US.
+- The result is a narrative that is referentially and ethically problematic—reductive, Manichean, disingenuous—without being demonstrably false.
+- Counter-disinformation materials, such as NATO's own debunking pages, can mirror these same ethically problematic simplifications.
 
 ## Connections
 
-This paper sits with other work pushing disinformation studies beyond infocentric, true/false framings: it resonates with normative-conceptual critiques like [[Farkas2026-lr]] and [[Marwick2025-ov]], and with calls to study disinformation as meaning-making and storytelling rather than discrete claims, including [[Starbird2025-jj]] on collaborative narrative production and [[Frischlich2025-vn]]. Its attention to a Global South, Spanish-language influencer also complements geographically broadening work such as [[Cazzamatta2026-lo]] and [[Humprecht2025-ml]].
+This paper contributes to a growing body of critical and conceptual work questioning the true/false framing dominant in the field; it resonates with definitional and normative critiques of disinformation such as [[Marwick2025-ov]] and [[Marwick2026-qd]], and with work on the strategic and rhetorical dimensions of manipulative content like [[Hameleers2026-mc]]. Its focus on narrative disclosure and ethics stands somewhat apart from the field's largely quantitative and platform-analytic mainstream, offering a humanistic counterpoint to that tradition.

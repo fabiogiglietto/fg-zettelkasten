@@ -22,32 +22,33 @@ discovery_date: 2025-09-15T00:00:00Z
 
 ## Summary
 
-This paper proposes and evaluates a Vision-and-Large-Language-Model (VLLM) based pipeline for clustering social media images by *connotative* rather than *denotative* meaning. Drawing on Barthes' semiotic distinction, the authors argue that computational social science needs clusters organised by culturally embedded meaning (e.g., "renewable energy") rather than by depicted objects (e.g., "round things"). They use GPT-4-turbo (and LLaVA as an open alternative) to generate paragraph-length descriptions of Instagram climate-change images, embed those texts, and cluster them — then compare against a standard VGG16 CNN baseline. The VLLM pipeline yields substantially higher connotative cluster quality, comparable denotative quality, and—crucially—high human interpretability via TF-IDF keyword summaries.
+This paper argues that semantic image clustering for computational social science should be reframed as **connotative clustering** — grouping images by their socially and culturally embedded meaning rather than merely by the objects they depict. Drawing on Barthes' denotation/connotation distinction, the authors contend that the CNN-based pipelines currently dominant in the field capture denotative content well but miss connotative meaning and are hard to interpret. They propose a Vision-and-Large-Language-Model (VLLM) pipeline that generates connotative textual descriptions of images, embeds and clusters those descriptions, and summarizes clusters with TF-IDF keywords. Tested on a dataset of 11,873 climate-change Instagram images, the VLLM approach substantially improves connotative cluster quality and interpretability at a small cost to denotative coherence.
 
 ## Key Contributions
 
-- Reframes semantic image clustering for social science as **connotative clustering**, grounded in Barthesian semiotics rather than object-recognition benchmarks.
-- Proposes a VLLM-to-text-to-embedding-to-clustering pipeline as a drop-in alternative to CNN feature extraction.
-- Adapts the Grimmer & King cluster-quality measure to separately quantify denotative and connotative validity using expert-coded image pairs.
-- Demonstrates that intermediate textual descriptions make clusters human-interpretable, addressing a long-standing opacity problem in CNN-based visual analysis.
-- Shows the result generalises (with reduced absolute performance) to open-source VLLMs, suggesting the finding is about model class rather than vendor.
+- Reframes semantic clustering for social science explicitly as connotative clustering, grounded in Barthesian semiotic theory.
+- Proposes and evaluates a VLLM-to-text-to-embedding-to-clustering pipeline as a drop-in alternative to CNN feature extraction, enabling direct comparison.
+- Adapts the Grimmer & King cluster quality measure to separately quantify denotative and connotative validity using human-annotated image pairs.
+- Provides empirical evidence that VLLM pipelines yield both higher connotative quality and much greater interpretability.
+- Demonstrates generality by replicating gains with an open-source model (LLaVA), and identifies trade-offs and future directions.
 
 ## Methods
 
-- Dataset of 11,873 Instagram climate-change images (Zhang & Peng, 2022).
-- VLLM pipeline: GPT-4-turbo (and LLaVA-1.5-7b) generates one-paragraph connotative descriptions → MiniLM BERT embedding → UMAP/PCA reduction → HDBSCAN clustering.
-- Baseline: VGG16 features → same reduction/clustering family.
-- Evaluation: 500 expert-annotated image pairs scored on denotative and connotative similarity (Krippendorff's α reaching .81/.71 after consensus). Interpretability assessed by having three raters match image sets to TF-IDF keyword summaries of clusters (Cohen's κ ≈ .74).
-- Robustness: alternative embedders (OpenAI text-embedding-3-small), alternative CNNs, alternative prompts.
+- **Data:** 11,873 climate-change Instagram images, previously used as a clustering benchmark.
+- **VLLM pipeline:** one-paragraph connotative descriptions from GPT-4-turbo (and LLaVA-1.5 for open replication), embedded with a MiniLM BERT model, dimensionality-reduced (UMAP/PCA), and clustered with HDBSCAN (min cluster sizes 50/100/200).
+- **Baseline:** VGG16 feature extraction with matched reduction and clustering.
+- **Quality evaluation:** adapted Grimmer & King measure split into denotative and connotative dimensions, using 500 expert-rated image pairs (Krippendorff's α reaching .81/.71 after consensus rounds).
+- **Interpretability evaluation:** three coders matched 160 image sets to TF-IDF cluster summaries (Cohen's Kappa ≈ .74).
+- Robustness checks with alternative embeddings, CNNs, and prompts in the appendix.
 
 ## Findings
 
-- VLLM-based clustering yields substantially higher connotative quality across all minimum cluster sizes; CNN baseline is marginally better on denotative quality — an explicit and acceptable trade-off.
-- Qualitative example: VLLM groups wind turbines and solar panels together as "renewable energy"; CNN groups visually similar Earth images that are semantically heterogeneous.
-- Interpretability: raters matched image sets to TF-IDF cluster summaries with .83 precision/recall (vs. ~.03 chance), rising to .87 after merging semantically adjacent clusters; 18/32 clusters had perfect precision.
-- Open-source LLaVA reproduces the trend but with lower absolute quality, partly because it misreads embedded text and misses symbolic cues (e.g., an eco-fascist rune that GPT-4 identified).
-- Larger minimum cluster sizes increase variance and can degrade connotative quality by merging visually similar but connotatively distinct images.
+- The VLLM pipeline achieves substantially higher connotative quality across all tested cluster sizes; the CNN pipeline is only marginally better on denotative quality — the expected trade-off.
+- Larger minimum cluster sizes can degrade VLLM connotative quality by merging visually similar but connotatively distinct images.
+- Qualitatively, the VLLM pipeline groups wind turbines and solar panels together (renewable energy), whereas the CNN groups visually similar Earth imagery despite semantic heterogeneity.
+- Open-source LLaVA reproduces the trend at lower absolute scores; it was weaker at reading text and missed symbolic cues (e.g., a runic eco-fascist symbol GPT-4 caught).
+- Interpretability: precision/recall ≈ .83 (vs. ~.03 chance), rising to .87 after merging adjacent clusters; errors concentrated on semantically overlapping cluster pairs.
 
 ## Connections
 
-This paper sits in the strand of work using VLLMs and LLMs as semantic interpreters for social-science data, alongside [[Achmann-Denkler2026-lx]] on visual political communication and [[Tornberg2026-lc]] on LLM-driven analysis. It contributes to broader methodological efforts to make generative models reliable, interpretable measurement instruments — adjacent to validation-oriented work like [[Le-Mens2025-qz]] and [[DiGiuseppe2026-pu]] on LLM-based classification, and [[Lai2024-to]] on multimodal social-media analysis. The Barthesian framing and focus on memes/protest imagery also resonate with visual-content studies of platforms such as [[Pante2025-pq]].
+This is primarily a methods contribution to the [[llm-augmented-research-methods]] register, using LLM-generated text as an interpretable intermediate representation for computational analysis. Its climate-communication testbed of memes and protest imagery touches on visual content relevant to misinformation and message-intervention research, though the other papers under those topics address persuasion and intervention effects rather than clustering methodology, so the intellectual overlap is thematic rather than direct.

@@ -22,32 +22,32 @@ discovery_date: 2025-07-15T00:00:00Z
 
 ## Summary
 
-This conceptual paper tackles the "attribution problem" in research on coordinated social media manipulation (CSMM): how to infer the covert principals behind campaigns when only downstream traces are visible. The authors argue that platform-derived concepts like Meta's "coordinated inauthentic behavior" conflate inauthenticity with manipulative intent and are poorly suited to comparative scholarly inquiry. They propose a consolidated definition of CSMM centered on manipulative intent, synthesize a literature-based catalogue of observable campaign features, and adapt Esser's rational choice framework to model principals' commissioning decisions. The output is a 2×2×2 typology of eight campaign types that maps observable structural features (scale, elaborateness, disguise) onto hidden principal attributes (resources, stakes, influence strategy).
+This theoretical paper tackles the "attribution problem" in research on coordinated social media manipulation (CSMM): how to identify the covert principals who commission manipulative campaigns when direct evidence is scarce. The authors argue that platform-derived concepts like Meta's "coordinated inauthentic behavior" are analytically inadequate because they conflate inauthenticity with manipulative intent and were tailored to real-name platforms. In response, they offer a consolidated definition of CSMM built around three dimensions—coordination, social media, and manipulation—and develop a rational choice model that reconstructs principals' strategic decisions from observable campaign features. The central move is to shift attribution away from (potentially misleading) campaign content toward structural signals like scale, elaborateness, and disguise, which the authors claim reveal a principal's resources, stakes, and influence strategy.
 
 ## Key Contributions
 
-- A consolidated definition of CSMM organized around three dimensions—coordination, social media, manipulation (influence + deception)—that decouples manipulative intent from inauthenticity.
-- A review-derived catalogue of observable (scale, elaborateness, disguise) and hidden (principal type, agent organization, audience, strategy) CSMM characteristics.
-- A rational choice expected-utility model formalizing the principal's decision: EU_i = p_Wi·U_W − (1−p_Wi)·C_F − p_Di·p_Pi·C_P − C_i.
-- An eight-cell typology with worked empirical exemplars and bridging hypotheses linking campaign structure to principal attributes.
-- An interdisciplinary research agenda emphasizing triangulation, expanded platform data access (e.g., via the EU DSA), and the integration of computational and social-scientific methods.
+- A consolidated definition of CSMM organized around coordination, social media, and manipulation (with influence and deception subdimensions), foregrounding manipulative intent rather than inauthenticity.
+- A review-based catalogue of observable (scale, elaborateness, disguise) and hidden (principal type, agent organization, audience, influence strategy) campaign characteristics.
+- A rational choice model formalizing the principal's commissioning decision via an expected-utility function, generating "bridging hypotheses" that link visible campaign features to hidden actor attributes.
+- An eight-cell (2×2×2) typology of CSMM campaigns with worked empirical examples and inferred principal traits.
+- An interdisciplinary research agenda stressing methodological triangulation, improved data access (e.g., via the EU Digital Services Act), and integration of computational and social-scientific methods.
 
 ## Methods
 
-The paper is theory-building rather than empirical. The authors conduct a systematic literature review across Web of Science and EBSCOhost (515 articles screened by five coders, 62 empirical studies retained) to inductively extract recurring campaign features. They then adapt Esser's (1999) rational choice framework to derive a three-stage decision model (principal → agents → audience) and dichotomize three observable dimensions to construct a 2×2×2 typology. The typology is illustrated through documented cases including the IRA, the Chinese "50c party," the South Korean NIS, Saudi Twitter operations, GRU activity in Syria, and the Adani coal mine lobbying campaign.
+The work is primarily conceptual theory-building, synthesizing disinformation, cybersecurity, and strategic communication literatures. It draws on a systematic literature review across Web of Science and EBSCOhost—515 articles screened by four researchers and one student coder, with 62 empirical studies retained. The authors adapt Esser's (1999) rational choice framework into a principal's expected-utility function (EU_i = p_Wi·U_W − (1−p_Wi)·C_F − p_Di·p_Pi·C_P − C_i), build a three-stage decision model (principal → agents → audience), and construct a typology by dichotomizing scale, elaborateness, and disguise. The typology is illustrated against documented cases (IRA, the Chinese "50c party," South Korean NIS, Saudi Twitter operations, and the Adani coal mine campaign).
 
 ## Findings
 
-- Three observable characteristics recur across the empirical literature: **scale** (accounts, posts, platforms, duration), **elaborateness** (content sophistication), and **disguise** (camouflage techniques).
-- Disguise sophistication is a particularly diagnostic signal of what is *at stake* for the principal, while scale and elaborateness index available resources and strategy.
-- Existing strategy typologies (boosting, pollution, bullying, polarization, distraction) are non-mutually-exclusive and conceptually inconsistent.
-- Seven of the eight typology cells have recognizable empirical exemplars; "low-stakes targeting" has no clear documented case, suggesting either a real rarity or a systematic detection gap.
-- Attribution-relevant ground-truth data is heavily Twitter-skewed; Meta and Reddit disclosures lag far behind, constraining comparative research.
-- Structural features should be prioritized over content for attribution, since content is often deliberately misleading.
+- Three observable characteristics recur across the empirical literature: scale (accounts, posts, platforms, duration), elaborateness (content sophistication), and disguise (camouflage techniques).
+- Disguise sophistication specifically signals what is at stake for the principal, while scale and elaborateness indicate resources and influence strategy.
+- Hidden, attribution-relevant characteristics include principal type (political/nonpolitical, government-backed/independent), agent organization (in-house/outsourced, human/automated), audience location and resources, and influence strategy.
+- Existing strategy typologies (boosting, pollution, bullying, polarization, distraction) are neither mutually exclusive nor conceptually consistent.
+- Seven of eight typology cells map onto recognizable exemplars; "low-stakes targeting" has no clear documented case, suggesting a detection gap.
+- Ground-truth data is skewed toward Twitter releases, with Meta and Reddit providing far less raw data, limiting comparative attribution research.
 
 ## Connections
 
-This paper provides a conceptual scaffold for much of the empirical CIB/CSMM literature in this register, including work on troll-farm operations and strategic actor identification such as [[Kulichkina2026-zk]], [[DeVerna2025-dl]], [[Luceri2025-tr]], [[Kuznetsova2025-nu]], and [[Bollenbacher2026-vz]]. Its critique of platform-derived definitions and call for analytic clarity speaks directly to debates on the conceptual status of disinformation and CIB raised in [[Farkas2026-lr]], [[Starbird2025-jj]], and [[Marwick2025-ov]]. The principal–agent and rational choice framing also connects to research on astroturfing detection and account-coordination methods like [[Minici2024-tf]] and [[Graham2025-gp]].
+This paper offers a conceptual and definitional backbone for the broader coordinated-inauthentic-behavior literature and critically engages the CIB paradigm operationalized in empirical detection work such as [[Giglietto2020-9d8acdd7]], [[Giglietto2019-e9be81c1]], and [[Luceri2025-tr]]. Its principal–agent and rational choice framing complements astroturfing and state-backed operation analyses, and its emphasis on data-access constraints and platform ground-truth releases connects to studies of information operations like [[Pierri2025-hm]] and [[Starbird2025-jj]]. As a theory-and-typology piece, it sits upstream of the many case-specific detection studies in these topics rather than replicating their methods.
 
 ## Podcast
 

@@ -22,23 +22,23 @@ discovery_date: 2025-05-15T00:00:00Z
 
 ## Summary
 
-This methodological paper proposes a "political cartography" framework for studying how news circulates on Twitter, arguing that the dominant approach in partisan news-sharing research is too coarse to capture the actual political structure of circulation. The authors identify three recurring limitations in existing work: reliance on unidimensional (typically left–right) measures of political leaning, near-exclusive focus on the outlet as the unit of analysis, and overconcentration on a few national contexts (notably the US). In response, they develop a multi-level approach that maps circulation simultaneously at the level of individual stories, outlets, and content, paired with a richer characterization of the political positions of sharers.
+This paper offers a methodological intervention into the study of online news circulation, arguing that dominant approaches to partisan news sharing suffer from three recurring limitations: an oversimplified, often unidimensional measurement of political leaning; an exclusive focus on the outlet level while ignoring how individual stories and content travel; and an overconcentration in particular national contexts. In response, the authors propose a "political cartography" framework that maps news sharing on Twitter simultaneously across story, outlet, and content levels, and that constructs a more nuanced measure of the political leanings of news sharers. The contribution is primarily conceptual and methodological rather than a report of substantive empirical findings.
 
 ## Key Contributions
 
-- Introduces a "political cartography" framework for mapping news circulation on social platforms.
-- Argues for moving beyond unidimensional left–right scales toward a more nuanced (multi-dimensional) measure of sharer political leaning.
-- Integrates **story-level**, **outlet-level**, and **content-level** analyses into a single analytical scheme.
-- Offers a methodological critique of dominant trace-data approaches to partisan news sharing.
+- Introduces a "political cartography" framework for mapping online news circulation.
+- Advances the measurement of political leaning beyond simple left–right scales in news-sharing research.
+- Integrates story, outlet, and content levels into a single unified analytical approach.
+- Delivers a methodological critique of the dominant paradigm in partisan news circulation studies.
 
 ## Methods
 
-The approach uses Twitter trace data on news sharing and analyzes it across three nested levels — stories, outlets, and content. Sharers are positioned politically using a more nuanced measure than the conventional left–right axis, enabling the mapping of circulation patterns onto a richer political space. Specific datasets, sample sizes, and statistical techniques are not detailed in the available abstract.
+The approach rests on analysis of news-sharing trace data from Twitter, examined across three nested levels — story, outlet, and content. Central to the design is a more nuanced (presumably multidimensional) measure of sharers' political leaning, intended to replace the unidimensional left–right scales common in prior work. Specific datasets, sample sizes, and analytical techniques are not detailed in the available abstract.
 
 ## Findings
 
-- Substantive empirical findings are not specified in the available abstract; the paper's principal payoff is the methodological framework itself.
+- Substantive empirical findings are not specified in the available abstract; the paper's value in this version lies in its methodological and conceptual proposals.
 
 ## Connections
 
-This paper sits alongside other recent efforts to refine measurement of partisan media exposure and circulation on platforms, including audience-based outlet scaling and large-scale trace analyses such as [[Bakshy2015-rn]] and [[Bouchaud2026-lr]]. Its push to move beyond the outlet level toward story- and content-level circulation resonates with work on hyperpartisan and alternative news ecosystems like [[Rothut2026-or]] and [[Balluff2026-if]], and its multi-dimensional take on political positioning connects to broader debates about polarization measurement in computational communication research, e.g. [[Bruns2025-fz]] and [[Yang2025-iv]].
+This paper sits within the tradition of using social-platform trace data to characterize partisan asymmetries in news exposure and sharing, engaging critically with the outlet-centric ideology-scoring approach exemplified by [[Bakshy2015-rn]]. Its multi-level and cross-story focus resonates with coordinated and story-level circulation work such as [[Giglietto2019-882f1900]], [[Giglietto2019-e9be81c1]], and [[Giglietto2020-6278a4aa]], and its concern with measuring political leaning in shared content connects to computational estimation efforts like [[Le-Mens2025-qz]].

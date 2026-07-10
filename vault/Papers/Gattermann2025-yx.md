@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1080/13501763.2025.2489088
 bibtex_key: Gattermann2025-yx
 topics: [political-polarization-partisan-news, information-disorder]
-citation_count: 2
+citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1080/13501763.2025.2489088
 podcast_url: 
@@ -22,24 +22,25 @@ discovery_date: 2025-04-15T00:00:00Z
 
 ## Summary
 
-This paper examines whether the electoral performance of far-right parties in the 2024 European Parliament elections shaped how European voters perceive disinformation as a threat. Moving beyond individual-level predictors of disinformation concern, the authors leverage cross-national variation in far-right vote shares across EU member states to argue that the electoral context itself conditions citizens' worry about information integrity. The study thus situates disinformation concern as not only a psychological or media-use phenomenon, but also a politically contingent attitude tied to the visible success of parties associated with contested information practices.
+This paper examines how the electoral success of far-right parties in the 2024 European Parliament elections shaped European voters' concerns about disinformation. Moving beyond individual-level predispositions, the authors argue that the *electoral context* itself — specifically how well far-right parties performed in a given country — helps explain variation in how worried citizens are about the integrity of the information environment. Situated at the intersection of European elections research, far-right party studies, and political communication scholarship on disinformation, the study offers empirical evidence from a recent, politically salient case to illuminate the contextual drivers of citizen perceptions of information integrity.
 
 ## Key Contributions
 
-- Bridges the literatures on far-right party success and public perceptions of disinformation in a unified European framework.
-- Provides timely empirical evidence from the 2024 European Parliament elections, a high-salience pan-European case.
-- Establishes electoral outcomes as a contextual-level driver of citizens' attitudes toward the information ecosystem, complementing individual-level accounts.
+- Connects research on far-right party success with research on public perceptions of disinformation in the European context.
+- Provides empirical evidence from the 2024 EP elections, a recent and highly salient case, on contextual drivers of disinformation concern.
+- Advances understanding of how electoral outcomes can shape citizens' attitudes toward information ecosystems in the EU.
+- Highlights that electoral context — not only individual-level factors — matters for how threats to information integrity are perceived.
 
 ## Methods
 
-The study uses cross-national empirical analysis tied to the 2024 EP elections, linking country-level far-right electoral performance to survey-based measures of voter concern about disinformation across EU member states. The comparative design allows the authors to isolate contextual effects from individual predispositions.
+- Empirical analysis drawing on data situated in the 2024 European Parliament elections context.
+- Cross-national comparison across EU member states, linking country-level far-right electoral outcomes to voter-level concerns about disinformation.
 
 ## Findings
 
-- Variation in far-right electoral performance across EU countries corresponds to variation in voter concern about disinformation.
-- Electoral context matters: country-level political outcomes, not just individual characteristics, shape how citizens perceive disinformation threats.
-- The pattern reinforces the idea that disinformation concern is politically situated and responsive to the visibility and success of contested political actors.
+- Variation in far-right electoral performance across countries is associated with variation in voters' disinformation concerns.
+- Electoral context influences perceived threat of disinformation, over and above individual predispositions. (Specific direction and magnitude of the effect are not recoverable from the abstract alone.)
 
 ## Connections
 
-This paper speaks directly to work mapping cross-national patterns of disinformation perception and resilience in Europe, such as [[Humprecht2025-ml]], and to research on how populist and far-right communication ecosystems shape information environments, including [[Frischlich2025-vn]] and [[Hameleers2026-mc]]. It also complements studies of partisan asymmetries in disinformation exposure and concern like [[Gonzalez-Bailon2024-rq]] and [[Budak2024-ef]], extending those debates to the question of how *electoral outcomes themselves* feed back into public attitudes about information integrity.
+This paper's focus on European far-right politics and its interaction with information integrity connects it to work on disinformation resilience and concern in European democracies, such as [[Humprecht2025-ml]], and to studies of populist and mis/disinformation dynamics like [[Hameleers2026-mc]]. Its cross-national electoral framing also relates to broader European political communication and election-context research, including [[Van_Erkel2026-mk]].
