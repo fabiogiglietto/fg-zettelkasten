@@ -82,6 +82,9 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add vault/ data/
           git diff --staged --quiet || git commit -m "🤖 Update vault $(date -u +%Y-%m-%dT%H:%MZ)"
+          # main may have moved during the (long) update step; vault/data paths
+          # are only written by this job, so a rebase is conflict-free.
+          git pull --rebase origin main
           git push
 
       # Summarize leg only: kick research-radio so it builds the podcast from
