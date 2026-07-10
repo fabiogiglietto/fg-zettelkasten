@@ -22,23 +22,24 @@ discovery_date: 2026-02-08T18:59:43.466569Z
 
 ## Summary
 
-Rohrbach and Valli examine how routine journalistic strategies — the framing, narrative choices, and reporting conventions used in mainstream news coverage — may inadvertently contribute to the *formation* of new conspiracy beliefs in audiences, rather than merely amplifying pre-existing ones. Published in *Journalism Studies*, the paper shifts the analytical lens from conspiracy diffusion to conspiracy genesis, arguing that the press itself is implicated in the epistemic conditions that make conspiratorial thinking plausible to readers.
+This paper argues that journalists are not merely passive conduits through which conspiracy beliefs spread, but can be active participants in the *formation* of such beliefs. Rohrbach and Valli examine how specific reporting practices — particularly framing and narrative choices — may inadvertently foster conspiratorial thinking among audiences. Positioned within journalism studies and media effects research, the work engages debates about the press's role in misinformation and public epistemology, asking under what conditions ordinary news coverage helps generate rather than counter conspiratorial worldviews.
 
 ## Key Contributions
 
-- Reframes journalism's role in the conspiracy ecosystem from passive vector of spread to active site of belief formation.
-- Bridges journalism studies and the psychology/sociology of conspiracy theories, two literatures that have largely developed separately.
-- Identifies specific reporting practices as potential inadvertent drivers of conspiratorial uptake among audiences.
+- Connects journalism studies with the literature on conspiracy theory formation.
+- Shifts the analytical focus from the *diffusion* of conspiracy beliefs to their *generation* through journalistic practice.
+- Highlights the possibility that well-intentioned reporting strategies may have unintended epistemic consequences.
 
 ## Methods
 
-Methodological specifics are not available from the abstract. The work is positioned as empirical research within journalism studies, examining the link between identifiable journalistic strategies and audience belief outcomes.
+The approach and methodological details are not specified in the available abstract. The paper appears in *Journalism Studies* and centers on the relationship between reporting practices (framing, narrative choices) and audience belief formation.
 
 ## Findings
 
-- Detailed findings are not recoverable from the available abstract.
-- The central thrust is that certain journalistic strategies are associated with the emergence of new conspiracy beliefs, suggesting that well-intentioned coverage can backfire.
+- Specific empirical findings are not available from the abstract alone.
+- The central claim is that journalistic strategies play a role in the formation — not just the spread — of conspiracy beliefs.
+- Certain reporting practices may inadvertently cultivate conspiratorial thinking in audiences.
 
 ## Connections
 
-This paper speaks directly to work on how mainstream media coverage shapes mis- and disinformation environments, including [[Cazzamatta2026-lo]] and [[Hameleers2026-mc]] on journalistic responses to falsehoods, and [[Mahl2026-hc]] on conspiracy theory dynamics. It also complements the strategic-amplification literature represented by [[Marwick2025-ov]] and [[Donovan2025-ws]], which examines how attention from legitimate outlets can launder fringe narratives into wider publics.
+This work sits within a broader body of research on conspiracy belief and resistance to misinformation, complementing psychological studies of conspiratorial thinking such as [[van-der-Linden2026-jt]] and inoculation-oriented approaches like [[Spampatti2026-kx]]. Its emphasis on the mechanics of journalistic framing also resonates with work on news production and information disorder more generally.

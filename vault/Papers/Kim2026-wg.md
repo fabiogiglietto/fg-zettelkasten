@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1073/pnas.2519944123
 bibtex_key: Kim2026-wg
 topics: [digital-media-elections-global, information-disorder]
-citation_count: 0
+citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1073/pnas.2519944123
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kim2026-wg.mp3
@@ -22,31 +22,31 @@ discovery_date: 2026-02-02T06:36:34.699078Z
 
 ## Summary
 
-This paper offers the first independent, individual-level empirical analysis of targeted digital voter suppression during the 2016 US Presidential Election, including ads later attributed to Russia's Internet Research Agency. Combining a custom browser-based ad tracking tool (EScope) with survey responses and verified turnout records, the authors document systematic geo-racial targeting of suppression ads at non-White voters in minority-majority counties of battleground states, and estimate that exposure was associated with reduced turnout — modest on average (~1.86 percentage points) but substantial (~17%) among the precisely targeted subpopulations. The authors argue that prior null findings on Russian interference reflect methodological limits of average treatment effect designs and indirect exposure proxies, and that heterogeneous effects are essential to understanding microtargeted political advertising.
+This study offers the first systematic, individual-level empirical documentation of targeted digital voter suppression advertising during the 2016 US Presidential Election, including ads later attributed to Russia's Internet Research Agency (IRA). Rather than relying on indirect exposure proxies or self-reported behavior—the methodological choices the authors argue produced prior null findings on Russian interference—the team directly measured individual ad exposure with a custom browser tracking tool, then linked that exposure to survey responses and verified voter turnout records. They document clear geo-racial targeting and an association between exposure and reduced turnout, with the sharpest declines concentrated precisely among the most heavily targeted voters. The core methodological argument is that average treatment effects obscure the real-world consequences of microtargeting; heterogeneous effects on targeted subpopulations are where the damage lives.
 
 ## Key Contributions
 
-- First independent, individual-level empirical documentation of digital voter suppression targeting and turnout effects, free from reliance on platform or government data.
-- Methodological framework integrating real-time user-side ad capture, survey data, and verified voter file turnout records, bypassing both platform opacity and self-report bias.
-- Reframes microtargeting research around heterogeneous treatment effects, showing how ATE-only designs can obscure real-world impacts on small targeted segments.
-- Empirical evidence that undisclosed (including foreign) campaigns exploit the absence of disclosure rules to suppress turnout among racial minorities in pivotal jurisdictions.
-- Public replication materials and an archived dataset (ICPSR) for downstream research on targeted political advertising.
+- First independent, individual-level empirical evidence on digital voter suppression targeting and its turnout effects, obtained without reliance on governments or platform companies.
+- A methodological framework combining user-based real-time ad tracking (EScope), survey data, and verified turnout records to circumvent platform data-access limits and self-report bias.
+- A demonstration that heterogeneous treatment effects are essential in microtargeting research, challenging the field's reliance on average treatment effects.
+- Documentation of undisclosed campaigns—including foreign interference—exploiting microtargeting in the absence of disclosure requirements, with normative implications for election integrity.
+- Publicly archived data and replication materials via ICPSR.
 
 ## Methods
 
-EScope, a browser-based ad-tracking tool, was deployed for roughly six weeks before the November 2016 election to a GfK Knowledge Panel sample (~13,500 consenting; 10,441 baseline survey completers) representative of the US voting-age population. A validated dictionary (Krippendorff's α = 0.93) identified four suppression ad categories — election boycott, deception, third-party promotion, and same-side candidate attack — yielding 59,771 suppression ads. Exposure was linked to verified turnout via TargetSmart voter files. Targeting was tested with hierarchical linear models; turnout effects were estimated via entropy balancing on 35 covariates with PU-learning for missing labels, plus exact and CBPS full matching, false-shock tests, sensitivity analyses for unobserved confounders, and 2012 placebo tests.
+The authors deployed EScope, a user-based browser tool that captures ads and metadata in real time, to a GfK KnowledgePanel sample (~13,500 consenting participants, 10,441 completing baseline surveys) resembling the US voting-age population over roughly six weeks before the November 2016 election. A dictionary-based classifier identified four voter suppression ad types (election boycott, deception, third-party promotion, same-side candidate attack), validated by human coders (Krippendorff's α = 0.93), yielding 59,771 suppression ads. Individual exposure was linked to geographic context (minority-majority counties, battleground states with <5% margins) and to verified turnout records matched via TargetSmart voter files. Analyses used Hierarchical Linear Models for targeting patterns and entropy balancing with 35 covariates for average and heterogeneous treatment effects, with PU-learning to impute missing turnout labels. Robustness checks included exact and full matching (CBPS), unobserved-confounder sensitivity analyses, false-shock tests, and 2012 placebo tests.
 
 ## Findings
 
-- Non-Whites in minority counties of battleground states received disproportionately more suppression ads, controlling for income, education, and party ID (HLM interaction b = 0.24, p = 0.04).
-- Exposure was associated with a 1.86-point lower turnout (67.75% → 65.89%; Cohen's d = 0.059), implying roughly 4.7 million fewer votes nationally.
-- Among non-Whites in minority counties of battleground states, exposure tracked a 17.3% lower turnout (d ≈ −0.515); the gap versus unexposed Whites in non-minority, non-battleground counties reached 14.2%.
-- Non-suppression political ad exposure was associated with *higher* turnout, distinguishing suppression from generic mobilization effects.
-- Results were robust across counterfactual specifications, matching strategies, confounder sensitivity, and 2012 placebo tests.
+- Non-White voters in minority counties of battleground states received significantly more suppression ads even after controlling for income, education, and party ID (HLM interaction b = 0.24, p = 0.04).
+- Exposure was associated with a 1.86 percentage-point lower turnout (67.75% vs 65.89%; Cohen's d = 0.059), roughly 4.7 million fewer votes nationally.
+- Among non-Whites in minority counties of battleground states, exposure was associated with a 17.3% lower turnout (d ≈ -0.515); the gap versus unexposed Whites in non-minority, non-battleground counties reached 14.2%.
+- Non-suppression political ad exposure was associated with *increased* turnout, distinguishing suppression effects from generic political advertising.
+- Results held across multiple counterfactual comparisons, confounder sensitivity analyses, 2012 placebo tests, and alternative matching techniques.
 
 ## Connections
 
-This work speaks directly to research on foreign influence operations and their measured effects, complementing platform-data studies such as [[DeVerna2025-dl]] and [[Bollenbacher2026-vz]] by offering an alternative, user-side measurement strategy that challenges the prevailing null-effects consensus on IRA impact. It connects to broader work on the limited but heterogeneous reach of disinformation and political ads (e.g., [[Budak2024-ef]], [[Gonzalez-Bailon2024-rq]]) by arguing that average effects mask consequential targeted harms, and resonates with scholarship on platform-mediated harms to marginalized communities such as [[Marwick2025-ov]].
+This paper's argument that microtargeted political manipulation demands direct exposure measurement and attention to heterogeneous effects speaks to broader work on coordinated influence operations and their measurable reach, such as [[Luceri2025-tr]] and [[Pierri2025-hm]]. Its focus on foreign interference and information disorder around US elections connects it to work on manipulation campaigns and their contested effects, including [[DeVerna2025-dl]] and [[Starbird2025-jj]]. The turnout-suppression framing also relates to studies of targeted political advertising and audience effects more broadly, such as [[Votta2025-xz]].
 
 ## Podcast
 

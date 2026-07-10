@@ -1,14 +1,14 @@
 ---
 title: "Posting what you know and caring for the niche: How micro-influencers survive platform culture demands"
 aliases: ["Posting what you know and caring for the niche: How micro-influencers survive platform culture demands"]
-authors: ["Volpe, Camilla"]
-year: 2026
-doi: 
+authors: ["Camilla Volpe"]
+year: 2025
+doi: 10.13136/isr.v16i16s.975
 bibtex_key: Volpe2026-um
 topics: [platform-critique-anniversary-essays]
 citation_count: 0
-open_access: false
-source_url: https://scholar.google.com/scholar?q=Posting%20what%20you%20know%20and%20caring%20for%20the%20niche%3A%20How%20micro-influencers%20survive%20platform%20culture%20demands
+open_access: true
+source_url: https://doi.org/10.13136/isr.v16i16s.975
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Volpe2026-um.mp3
 pdf_available: true
 discovery_date: 2026-05-13T05:42:18.649186Z
@@ -22,33 +22,33 @@ discovery_date: 2026-05-13T05:42:18.649186Z
 
 ## Summary
 
-Volpe examines how Italian micro-influencers (2,000–100,000 followers) produce second-hand fashion content on Instagram and TikTok, asking whether their visibly ethical and community-oriented practices reflect genuine commitment or strategic self-branding. Drawing on digital ethnography and interviews, the paper argues that this is a false dichotomy: care and branding are intertwined survival strategies under the dual precarity of unstable labour markets and demanding platform infrastructures. Second-hand fashion emerges less as an ideological choice than as a familiar, low-cost niche that lets creators sustain the algorithmically required pace of production while performing narratives of expertise, sustainability, and care.
+Volpe investigates how Italian micro-influencers (2,000–100,000 followers) represent and perform second-hand fashion content on Instagram and TikTok, asking whether these practices reflect genuine ethical commitment and community care or strategic self-branding under platform pressure. Through digital ethnography and interviews, the paper argues that the two are not opposed: care and self-branding are intertwined survival strategies within an attention economy marked by dual precarity — unstable labour markets and demanding platform infrastructures. Second-hand fashion emerges less as an ideological choice than as a familiar, low-cost niche that lets creators sustain the constant production that algorithms reward, while performing narratives of sustainability, expertise, and trustworthy curation.
 
 ## Key Contributions
 
-- Reframes "performative ethics" in influencer content as socially coded survival strategy rather than inauthenticity.
-- Extends visibility, aspirational, and reputational labour scholarship by showing how a specific niche operates as both symbolic and logistical resource.
-- Empirically situates platformised sustainability discourse in the under-studied Italian context.
-- Distinguishes micro-influencers as a fragile, professionally liminal category separate from mainstream influencers.
-- Offers cross-platform (Instagram + TikTok) ethnographic insight into the co-construction of niches by algorithms and users.
+- Extends theories of visibility, aspirational, and reputational labour by showing how a specific niche (second-hand fashion) serves as both symbolic and logistical resource.
+- Reframes care-oriented content not as inauthentic performative activism but as a socially coded survival strategy within platform capitalism.
+- Empirically grounds how platformised consumption intersects with sustainability discourse and performative ethics in the Italian context.
+- Distinguishes micro-influencers from mainstream influencers, foregrounding their fragile ecosystem and informal routes to professionalisation.
+- Provides cross-platform ethnographic insight into how content niches are co-constructed by algorithmic affordances and user practices.
 
 ## Methods
 
-Qualitative cross-platform design combining a year of digital ethnography (Oct 2022–Oct 2023) on 30 micro-influencers with 15 remote semi-structured interviews (~1 hour each), recruited via snowball sampling. Ethnographic material included non-intrusive observation, screenshots, screen recordings, and analytical memos, guided by Caliandro's "follow the user" principle for post-API research. Data were coded inductively and regrouped into four broader dynamics.
+Qualitative cross-platform design combining digital ethnography (30 micro-influencers observed October 2022–October 2023 via non-intrusive observation, screenshots, screen recordings, and analytical memos) with 15 remote semi-structured interviews (~1 hour each), recruited through snowball sampling. Volpe applies Caliandro's "follow the user" principle to navigate the post-API research environment, then uses inductive thematic coding regrouped into four broader dynamics.
 
 ## Findings
 
-- Second-hand fashion is chosen primarily because it is familiar and operationally efficient, lowering cognitive and emotional costs of constant content production.
-- Algorithmic demands for consistency produce affective strain, including reported burnout and mental fatigue.
-- Creators frame their work as service, curation, and sustainability advocacy, distinguishing themselves from "commercial" influencers.
-- Platform visibility is treated as reputational capital convertible into freelance work, collaborations, or transitions into social media management and consulting.
-- Most participants reject the "influencer" label, viewing their accounts as portfolios and stepping stones to "real" jobs.
+- Familiarity with second-hand fashion offers an intuitive, low-cost entry point that reduces cognitive and emotional production costs.
+- Platform demands for constant posting and algorithmic optimisation produce affective and logistical strain, including reported burnout and mental fatigue.
+- Creators rhetorically frame their work as service, community-building, and sustainability advocacy, positioning themselves as trustworthy curators rather than commercial influencers.
+- Under structural precarity, they use platform visibility as reputational capital to access freelance work, collaborations, or career transitions (e.g., social media management, consulting).
+- Most participants do not identify as influencers, treating platform activity as a portfolio and stepping stone toward "real" jobs.
 - The sample is overwhelmingly female, reflecting gendered patterns in both second-hand fashion and micro-influencing.
 
 ## Connections
 
-No related papers have been registered under shared topics yet, so no wikilinks are warranted here. The paper sits at the intersection of platform studies, digital labour theory (Abidin, Duffy, Gandini, Arriagada), and platformised consumption (Caliandro et al.), and would connect naturally to future notes on visibility/aspirational labour, sustainable fashion discourse, and algorithmic precarity.
+This essay's account of care performed as reputational labour under algorithmic pressure resonates with Baym's long-standing work on relational and communicative labour in platformed cultures [[Baym2026-tr]] and with Marwick's analyses of self-presentation and visibility [[Marwick2026-ss]]. Its emphasis on how platform infrastructures shape ostensibly authentic or ethical practice also connects to broader critiques of platform power and datafication such as [[Helmond2026-ll]] and [[Bechmann2026-dr]].
 
 ## Podcast
 
-A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Volpe2026-um.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-niche-know/id1866587707?i=1000767535832)
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Volpe2026-um.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-micro-influencers-and-the-hustle/id1866587707?i=1000767535832)

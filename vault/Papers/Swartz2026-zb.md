@@ -22,32 +22,32 @@ discovery_date: 2026-04-19T12:34:29.201164Z
 
 ## Summary
 
-Lana Swartz argues that social media has entered a "scam age" in which scams are not aberrant criminal activity at the platform's edges but a central organizing logic of its economies, infrastructures, and culture. Drawing on her prior work on cryptocurrency and fintech, and framed autobiographically through scam-saturated Florida (from Ponzi and the 1920s land boom to Miami as "crypto capital"), Swartz contends that the boundaries between legitimate and illegitimate economic activity are dissolving as platform rules, anti-fraud systems, and hustle culture are jointly remade. The essay is agenda-setting: it calls on social media scholars to treat both scams and the discursive category of "scam" as key sites for understanding platform governance, economic citizenship, and the possible futures of online life.
+Lana Swartz argues that social media is entering a "scam age," in which scams are not peripheral criminal deviations but a central organizing logic of platform economies and culture. Written as a reflective anniversary essay rather than an empirical study, the piece contends that the boundaries between legitimate and illegitimate economic activity are dissolving as platform rules, anti-fraud infrastructures, and hustle culture are jointly rebuilt. Drawing on the author's prior research in cryptocurrency and financial technology—plus autobiographical reflection on growing up in scam-saturated 1990s Miami—Swartz issues an agenda-setting call for scholars to treat scams, and the discursive category of "scam" itself, as a key site for understanding platform governance, economic citizenship, and possible online futures.
 
 ## Key Contributions
 
-- Reframes scams as a *central* rather than peripheral object of social media research.
-- Introduces the concept of **network scams**: massively multiplayer, role-blurring formations in which believer, shill, and victim are not cleanly separable.
-- Connects anti-fraud infrastructures to questions of economic citizenship, surveillance, and algorithmic sorting.
-- Offers Florida as a historical and metaphorical lens — a "digital swampland" — for theorizing scam-driven platform futures.
-- Treats "scam" itself as a category that does boundary work, legitimating some forms of capitalism while delegitimating others.
+- Reframes scams as a central object of study for social media research, not marginal crime.
+- Introduces the concept of **"network scams"**—massively multiplayer, multi-role fraud in which believer, shill, and victim blur—replacing the dyadic con-artist/mark model.
+- Links platform governance and anti-fraud infrastructures to questions of economic citizenship, surveillance, and data access.
+- Offers Florida as a historical and metaphorical lens (Ponzi, the 1920s land boom, the Howey Test, Miami as "crypto capital")—a "digital swampland" for theorizing scam-driven futures.
+- Argues that calling something a "scam" performs boundary work that legitimates some capitalism while delegitimating other forms.
 
 ## Methods
 
-A reflective, essayistic intervention in an anniversary special issue rather than an empirical study. Swartz synthesizes her prior research on cryptocurrency and financial technology, deploys autobiographical and historical framing through Florida's fraud history, and engages secondary scholarship (including on racial capitalism) and cultural commentary to build a conceptual argument.
+Reflective and essayistic argument, situated in an anniversary special issue rather than a data-driven study. Swartz synthesizes her prior research on cryptocurrency, fintech, and the digital economy, framing the argument autobiographically and historically through Florida as an analytic case. The piece engages secondary sources and cultural commentary, including scholarship on racial capitalism.
 
 ## Findings
 
-- The global scam industry was estimated at roughly $1.03 trillion in 2024; most Americans report having encountered an online scam, and over a third have lost money or personal information.
-- Scams disproportionately target the vulnerable: children on Roblox, teens facing sextortion, immigrants via naturalization-services fraud, poor people via benefits scams.
-- Each new communication technology has historically opened new scam vectors; AI tools and deepfakes now massively expand scam scale and efficiency.
-- "Scammy" alternatives to failing institutions — MLMs, crypto, creator economies, hustle courses — are routed through and dependent on social media infrastructures.
-- Anti-fraud measures justify expansive behavioral data collection that is also used for profiling, targeting, algorithmic sorting, and AI training.
+- The global scam industry was estimated at **$1.03 trillion in 2024**; most Americans have experienced an online scam, and over a third report losing money or personal information.
+- Scams disproportionately target vulnerable populations: children on Roblox, teens via sextortion, immigrants via naturalization-service scams, and poor people via government-assistance scams.
+- New communication technologies historically generate new scam vectors; AI tools such as deepfakes are dramatically expanding scam scale and efficiency.
+- Scammy alternatives to failing institutions—MLMs, crypto, creator platforms, hustle courses—are routed through and dependent on social media infrastructures.
+- Anti-fraud measures legitimize behavioral data collection used for profiling, targeting, algorithmic sorting, and training AI models.
 
 ## Connections
 
-This piece resonates strongly with [[Marwick2026-ss]] and [[Marwick2026-qd]] in its concern with how platform infrastructures shape harm, vulnerability, and governance, and with [[Boyd2026-op]] on the institutional erosion that scam economies exploit and accelerate. Less directly, [[Baym2026-tr]] offers a complementary register for thinking about how relational and economic logics of platforms have shifted over the anniversary horizon this special issue marks.
+As a platform-critique anniversary essay, this sits alongside other reflective pieces in the same register such as [[Baym2026-tr]] and [[Marwick2026-ss]]. Its claim that anti-fraud and scam-prevention infrastructures function as expansive surveillance-legitimating governance mechanisms speaks directly to platform-governance work on data access and infrastructural control, including [[Helmond2026-ll]] and [[Rieder2026-pp]]. The essay's attention to who is authorized as a legitimate economic actor also resonates with governance debates about platform authority and access more broadly.
 
 ## Podcast
 
-A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Swartz2026-zb.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-the-scam-age/id1866587707?i=1000762289647)
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Swartz2026-zb.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-welcome-to-the-scam-age-of-social-media/id1866587707?i=1000762289647)

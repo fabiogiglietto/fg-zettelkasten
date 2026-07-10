@@ -22,35 +22,35 @@ discovery_date: 2026-04-07T11:43:33.804347Z
 
 ## Summary
 
-Marwick, Schnabel, McGregor, and Schmitt reconceptualize disinformation as cultural narrative rather than discrete false claims. Drawing on three U.S. cases from 2017–2019 — the nonpartisan "Lottery Manure" satire, the right-wing "Parkland Crisis Actor" conspiracy, and the left-wing "Pee Tape" rumor — they argue that successful disinformation circulates as stories with characters, settings, and plots, signaled by discursive and visual catchphrases. These narratives spread because they affirm partisan and moral identities, cohere with audiences' "deep stories," and deliver cathartic emotional payoffs of humor, outrage, or desire. The reframing explains why fact-checking, media literacy, and domain-level moderation routinely fail: they target propositions, while disinformation operates as ritual storytelling that traverses memes, late-night comedy, news aggregation, Kickstarter campaigns, and video games.
+Marwick, Schnabel, McGregor, and Schmitt reconceptualize disinformation as **cultural narrative** rather than as discrete false facts. On their account, disinformation succeeds not because audiences mistake it for true, but because it functions as a *story* — with characters, settings, and plots — that affirms partisan or moral identities and delivers emotional catharsis through humor and outrage. Drawing on three U.S. case studies from 2017–2019 (the nonpartisan "Lottery Manure" satire, the right-wing "Parkland Crisis Actor" conspiracy, and the left-wing "Pee Tape" rumor), the authors argue that these narratives travel across platforms and genres, signaled by compact discursive and visual catchphrases. This reframing explains why fact-checking, media literacy, and domain-level detection struggle: they target facts and platforms, not stories, identities, and emotions.
 
 ## Key Contributions
 
-- A narrative-based theoretical framework integrating deep stories, identity propaganda, affect, and spreadability into disinformation studies.
-- One of the first sustained empirical analyses of a left-wing disinformation case (the Pee Tape), theorizing how mainstream media amplify disinformation that aligns with elite liberal moral frames.
-- A demonstration that cross-platform, cross-genre analysis is necessary — challenging single-platform and domain-level methods.
-- An argument for why fact-checking and individual media literacy are structurally insufficient against identity-affirming, cathartic narratives.
-- A publicly available qualitative dataset and replicable case-comparison methodology.
+- Advances a **narrative-based theoretical framework** for disinformation, integrating deep stories, identity propaganda, emotion, and spreadability.
+- Provides a rare sustained empirical analysis of a **left-wing disinformation case** (the Pee Tape) and theorizes how mainstream media amplify disinformation that aligns with elite liberal frames.
+- Demonstrates the necessity of **cross-platform and cross-genre analysis**, challenging single-platform and domain-level classification approaches.
+- Articulates why fact-checking and individual media literacy are insufficient against identity-affirming, cathartic narratives.
+- Supplies a publicly available OSF qualitative dataset and a replicable case-comparison methodology.
 
 ## Methods
 
-Theory-generating qualitative case study following Luker's "logic of discovery." The authors built a cross-platform URL corpus using Twitter's Academic API, CrowdTangle, and the Social Science One Condor dataset, sampling top-shared URLs per case and capping high-frequency domains for a final corpus of 359 URLs across the three cases. A five-coder team double-coded each URL with descriptive memos capturing genre, author, headline, domain, and partisan slant, resolving disagreements through discussion. The Wayback Machine was used to recover deplatformed material.
+Qualitative, theory-generating case study work following a "logic of discovery." The team selected three illustrative cases spanning right-wing, left-wing, and nonpartisan disinformation, then built a **cross-platform URL corpus** using Twitter's Academic Research API, Facebook CrowdTangle, and the Social Science One "Condor" dataset. Top-shared URLs were sampled, deduplicated, and capped by domain, yielding 359 URLs total (27 Lottery Manure, 99 Parkland Crisis Actor, 233 Pee Tape). A five-member team coded each URL twice using descriptive memos (content type, genre, author, headline, domain, partisan slant), resolving disagreements through discussion. The Wayback Machine was used to recover deplatformed content.
 
 ## Findings
 
-- All three cases functioned as narratives recognizable through synecdochic catchphrases and visual cues (the laughing mugshot, David Hogg images, the yellow VHS tape).
-- Narratives were retold across satire, blogs, tweets, memes, Claymation, SNL sketches, Kickstarter products, aggregated news, and late-night comedy — preserving consistent characters, settings, and plots.
-- Each story carried moral evaluations: righteous revenge against a bad boss; media/government deception (or moral condemnation of conspiracists); just shaming of a corrupt president.
-- Desire for the story to be true — not evidence of truth — energized engagement, with commenters explicitly wishing it were real.
-- Humor and catharsis allowed mainstream outlets to cover disinformative content by reporting on comedians, bypassing objectivity norms.
-- Aggregation amplified outrage by recycling the same event across outlets in condemnatory language.
-- The Pee Tape was not debunked by major fact-checkers and was treated as "shorthand" rather than a factual claim, showing how elite frame alignment shields speculative claims from scrutiny.
-- Visual catchphrases evoked entire narratives without textual elaboration, functioning equivalently to discursive ones.
+- All three cases functioned as narratives recognizable through **synecdochic catchphrases** and visual cues (the laughing mugshot, David Hogg images, the yellow VHS tape).
+- Narratives were retold across many genres — satire, blogs, tweets, memes, Claymation, SNL sketches, Kickstarter products, aggregation, late-night comedy — while keeping characters, settings, and plots consistent.
+- Each carried **moral evaluations**: righteous revenge, media/government deception (or condemnation of conspiracists), and just shaming of a corrupt president.
+- **Desire for the story to be true**, not evidence of truth, energized engagement; commenters openly wished the stories were real.
+- Humor and catharsis let mainstream outlets cover disinformation *by reporting on comedians' coverage*, bypassing objectivity norms.
+- Aggregation amplified moral outrage by repeatedly reporting the same event in condemnatory language.
+- The Pee Tape was **not debunked by major fact-checkers** and was treated as "shorthand," showing how alignment with elite media frames shields speculative claims from scrutiny.
+- **Visual catchphrases** worked equivalently to discursive ones, evoking whole narratives without text.
 
 ## Connections
 
-This paper extends a broader argument about reframing platform-era communication beyond information transmission toward ritual, identity, and meaning — resonating with [[Baym2026-tr]] on relational and cultural dimensions of media and with [[Marwick2026-ss]] in its attention to networked identity and audience dynamics. Its critique of fact-checking and domain-level moderation as inadequate to cultural narrative also speaks to broader rethinkings of platform governance found in [[Boyd2026-op]] and [[Swartz2026-zb]].
+This paper is a cornerstone of the cultural/narrative turn in disinformation research and connects directly to the authors' related work on identity propaganda and networked media manipulation in [[Marwick2025-ov]] and [[Marwick2025-vx]]. Its emphasis on emotion, moral framing, and the limits of fact-checking speaks to work on inoculation and correction such as [[van-der-Linden2026-jt]], while its cross-platform, ecosystem-level view of how manipulation circulates resonates with participatory and multi-platform accounts like [[Starbird2025-jj]] and [[Donovan2025-ws]]. The argument that partisan identity and moral frames drive spread also links to research on partisan asymmetries and affective engagement such as [[Frischlich2025-vn]] and [[Humprecht2025-ml]].
 
 ## Podcast
 
-A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marwick2026-qd.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-what-we-lost/id1866587707?i=1000762464081)
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marwick2026-qd.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-beyond-fact-checking-why-disinformation/id1866587707?i=1000762464081)

@@ -22,34 +22,33 @@ discovery_date: 2026-03-18T06:36:45.219988Z
 
 ## Summary
 
-This paper provides the first empirical demonstration that X's (Twitter's) "Who to Follow" recommender system inadvertently learns and encodes users' political orientations, even though it is not designed to do so. Combining a French data donation program (2.5M recommendations from 682 volunteers, Jan 2023–May 2024) with X's publicly documented architecture, the authors reconstruct an approximation of its 256-dimensional user embedding and show that a single linear direction in this space correlates at ρ=0.887 with users' Left-Right ideology, independently of demographics. They argue this implicit profiling blurs the legal distinction between "active" and "passive" profiling under regimes like the GDPR and DSA, and propose an iterative orthogonal projection method that strips ideological information from recommendations while preserving topical relevance.
+This paper asks whether X's friend-recommendation system inadvertently learns and exploits users' political orientations, even though it is not explicitly designed to profile ideology. Using a data donation program that gathered over 2.5 million "Who to Follow" recommendations from 682 French volunteers, the authors reconstruct an approximation of X's 256-dimensional user embedding from publicly documented architectural details. They find a single spatial direction in this embedding that correlates almost perfectly (ρ=0.887) with users' Left-Right ideological positions, independently of demographics. The paper then proposes an iterative orthogonal projection method that removes this linearly-encoded political information while largely preserving recommendation relevance, offering both a diagnostic and a candidate regulatory-compliance tool.
 
 ## Key Contributions
 
-- First quantitative, individual-level measurement of inadvertent political profiling in a deployed large-scale recommender system.
-- A reproducible methodology to approximate a closed recommender's embedding from donated exposure data plus public architectural details.
-- Empirical validation of the **linear representation hypothesis** in a production AI system serving hundreds of millions of users.
-- A constrained recommendation procedure (orthogonal projection) that removes sensitive linearly-encoded attributes while largely preserving relevance — a candidate compliance tool for GDPR/LGPD/PIPA/nFADP/DSA.
-- A geometric framework for analyzing how multiple socio-demographic and political attributes are jointly encoded in recommender embeddings.
-- A conceptual challenge to the legal active/passive profiling dichotomy, since explainability methods can render implicit profiling explicit.
+- First empirical, quantitative measurement of inadvertent political profiling in a large-scale real-world recommender serving individual regular users.
+- A reproducible methodology for approximating a closed recommender's internal embedding from donated exposure data plus public architectural knowledge — applicable beyond X.
+- Empirical demonstration of the linear representation hypothesis in a deployed AI system at scale.
+- A constrained-recommendation procedure that strips sensitive linearly-encoded attributes while retaining topical relevance, framed as a possible compliance tool for GDPR, LGPD, PIPA, nFADP, and the DSA.
+- A conceptual argument that AI explainability undermines the legal distinction between active and passive profiling.
 
 ## Methods
 
-The authors deploy a browser plug-in collecting WTF recommendations from 682 French volunteers and target a study population of ~26,500 users, retrieving their follower graphs, profiles, and recent posts via the X API. They then reconstruct X's embedding via constrained optimization with a TransE scoring function (256 dims, Adagrad, mixed Follow/WTF loss with α≈62.6%, 3:1 negative sampling combining uniform/prevalence/second-neighborhood strategies). Validation uses AUC-ROC and Precision@k against heuristic baselines, with extensive robustness checks. User attributes are inferred externally: Left-Right and anti-elite scores via ideology scaling calibrated to the Chapel Hill Expert Survey, age/gender via the M3 model, and topic interests via a tweet topic model. Canonical Correlation Analysis identifies attribute-aligned directions, and iterative orthogonal projection (à la Bolukbasi/Ravfogel) is used to scrub ideological encoding.
+The authors ran a browser plug-in data donation campaign collecting 2,549,008 WTF recommendations from 682 volunteers (Jan 2023–May 2024), plus follower networks, profiles, and recent posts for a study population of ~26,500 users. They reconstructed X's embedding via constrained optimization using a TransE scoring function, training a 256-dimensional space with Adagrad and a convex combination of "Follow" and "WTF" losses, using mixed negative-sampling strategies. Validation relied on AUC-ROC (0.700) and Precision@k against heuristic baselines and extensive robustness checks. User attributes (Left-Right and anti-elite position, age, gender, popularity, topic interests) were inferred using ideology scaling calibrated to the Chapel Hill Expert Survey and off-the-shelf demographic and topic classifiers. Canonical Correlation Analysis identified attribute-aligned directions, and an iterative orthogonal projection (adapting debiasing techniques from the ML fairness literature) removed the ideological direction.
 
 ## Findings
 
-- Reconstructed embedding achieves AUC-ROC 0.700, P@1 0.725, P@3 0.691 on held-out WTF recommendations, far above baselines.
-- CCA correlations with attributes: Left-Right 0.887, anti-elite 0.863, news interest 0.848, popularity 0.730, age 0.562, gender 0.384 (all p<0.0001).
-- Attribute directions are largely orthogonal; only age and news interest meaningfully overlap.
-- The Left-Right axis correctly orders followers of French parties (LFI ≪ Renaissance ≪ RN); anti-elite axis correctly elevates LFI and RN over Renaissance.
-- Left-Right encoding is not reducible to demographics (Spearman ρ=0.172 with age, −0.275 with gender).
-- The embedding is robust to perturbations in training, negative sampling, device-coverage bias (up to 39% missing data), demographic sub-sampling, and temporal/graph evolution.
-- Stripping the Left-Right direction increases ideological diversity of recommendations (Cohen's d=0.477) while preserving topical relevance (cosine 0.948) and news interest matching — and produces the largest change among all attributes tested.
+- The reconstructed embedding predicted held-out recommendations well (AUC-ROC 0.700, Precision@1 0.725), far exceeding baselines.
+- CCA directions correlated strongly with attributes: Left-Right (0.887), anti-elite (0.863), news interest (0.848), popularity (0.730), age (0.562), gender (0.384), all p<0.0001.
+- Attribute directions were largely orthogonal; only age and news interest showed significant alignment.
+- The Left-Right direction correctly ordered followers of French parties (La France Insoumise leftmost through Rassemblement National rightmost).
+- The Left-Right encoding was not reducible to demographics (Spearman ρ=0.172 with age, −0.275 with gender).
+- Inference was robust to variation in training parameters, negative sampling, simulated device-coverage bias, demographic sub-sampling, temporal splits, and friend-graph evolution.
+- Removing the Left-Right direction increased ideological diversity of recommendations (Cohen's d=0.477) while preserving topical relevance (topic-distribution cosine similarity=0.948); it produced the largest change of any attribute removed.
 
 ## Connections
 
-This paper sits at the intersection of platform auditing via data donation and the analysis of algorithmic curation, sharing infrastructural concerns with work that leverages donated or scraped exposure data such as [[Ohme2026-nv]] and [[Ulloa2024-jm]]. Its substantive focus on ideological sorting and amplification by recommender systems connects directly to audits of political content distribution like Bartl2025-...—and more concretely to [[Bak-Coleman2025-pm]], [[Luceri2025-tr]], and [[Green2025-ap]] on political bias and influence dynamics on X. The methodological strategy of reconstructing a closed model's internals from external signals also resonates with reverse-engineering efforts on platform algorithms reflected in [[Rieder2025-ju]] and [[Rieder2026-pp]].
+This paper is by one of the authors of the closely related audit work [[Bouchaud2026-np]], and shares that project's focus on reconstructing and interrogating platform recommender behavior under the platform-governance and data-access agenda. It extends recommender-audit literature that previously emphasized item-level diversity or the causal effects of algorithmic policies toward analyzing the *internal user representations* these systems learn. The remaining papers under these topics deal largely with news exposure, polarization, and platform data access at the content level rather than embedding-level profiling, so the intellectual overlap beyond the shared methodological lineage is limited.
 
 ## Podcast
 

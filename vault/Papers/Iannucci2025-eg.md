@@ -22,32 +22,32 @@ discovery_date: 2025-12-15T00:00:00Z
 
 ## Summary
 
-This paper introduces a framework for detecting coordinated inauthentic behavior (CIB) on social media that simultaneously addresses two underexploited signals: the *temporal proximity* of co-actions and the *modality* through which coordination occurs. The authors extend Newman's node-normalized collaboration model with an exponential temporal-decay kernel, then layer it into a multiplex network in which hashtag, retweet, mention, and URL co-actions form separate slices linked across users. Per-layer decay parameters are chosen by maximizing Leiden modularity, and multiplex community detection extracts coordinated groups. Validated on synthetic patterns and benchmarked against 12+ baselines on the 26 labeled datasets from Seckin et al. (2025), the multiplex time-aware model attains the best mean rank on weighted precision and the second-best mean rank overall, with notable robustness when adversaries dilute coordination across modalities.
+This paper introduces a framework for detecting coordinated inauthentic behavior (CIB) that combines two ideas: a time-aware collaboration model and a multiplex network representation of user activity. The authors extend Newman's node-normalized collaboration model with an exponential decay temporal kernel, so that co-actions closer in time contribute more strongly to inferred coordination, and they represent different coordination modalities (hashtags, retweets, mentions, URLs) as separate layers of a multiplex network rather than aggregating them into one. The core argument is that both *temporal proximity* and *frequency* of co-actions are needed to distinguish deliberate coordination from coincidental synchronicity, and that keeping modalities separate makes detection more robust against dilution tactics. Validated on synthetic simulations and 26 labeled datasets, the multiplex time-aware model achieves the best average rank on weighted precision and second-best across all metrics.
 
 ## Key Contributions
 
-- Time-aware extension of Newman's collaboration model using an exponential decay kernel over inter-action time differences.
-- Multiplex representation that preserves modalities (hashtag/retweet/mention/URL) rather than collapsing them, providing resilience to cross-modality "dilution" tactics.
-- Modularity-driven, per-layer selection of the temporal decay parameter β_a, removing the need to assume a coordination time-scale a priori.
-- A new *weighted precision* metric (WP = Σn_k p_k² / Σn_k p_k) that penalizes trivial singleton clusters favored by some prior methods.
-- Open-source implementation and a reproducible benchmark of 12+ detection methods across 26 labeled influence operation datasets.
+- A time-aware extension of Newman's node-normalized collaboration model, weighting co-actions with an exponential temporal decay kernel over time differences.
+- A multiplex framework that separates and integrates coordination evidence across modalities without prior knowledge of which modality or time scale is exploited.
+- A data-driven, modularity-maximizing procedure for selecting the per-layer temporal decay parameter β_a.
+- A new weighted precision metric (WP = Σn_k p_k² / Σn_k p_k) that penalizes trivial/singleton clusters and rewards cohesive identification of coordinated groups.
+- A reproducible benchmark of 12+ detection methods across 26 labeled datasets, with open-source code released.
 
 ## Methods
 
-The authors build latent collaboration networks where edge weights between users are computed from time-discounted co-action counts, normalized by each user's total activity. They construct one such network per modality and assemble them into a multiplex graph, then apply the Leiden algorithm optimizing multislice weighted modularity (Mucha et al. 2010). A tolerance cutoff Δt_max = −ln(ε)/β_a keeps computational complexity sub-quadratic. Evaluation uses three synthetic coordination regimes (synchronous bursts, alternating bursts, rotating active subsets) and the 26 Seckin et al. labeled datasets, with F1*, precision*, recall*, homogeneity, NMI, and WP as metrics. Baselines include co-hashtag sequences, fixed-window rapid retweets, co-retweet cardinality, text similarity, synchronized-action frameworks, AMDN-HAGE variants, and BLOC.
+The latent collaboration network is built per modality, with edge weights combining Newman's normalization and an exponential decay over the time gap between users' co-actions. A tolerance cutoff (Δt_max = -ln(ε)/β_a) keeps computational complexity sub-quadratic. Each modality forms its own layer of a multiplex network; the decay parameter β_a is chosen per layer by scanning values (0–10, step 0.01) and selecting the one maximizing modularity of the Leiden partition. Community detection uses the Leiden algorithm optimizing multislice weighted modularity. The approach is validated on synthetic simulations of three coordination patterns (synchronous bursts, alternating bursts with inactivity, alternating subsets of active accounts) and benchmarked against baselines including co-hashtag sequences, rapid retweets at fixed windows, co-retweet cardinality, text-similarity methods, synchronized action frameworks, AMDN-HAGE variants, and BLOC, using F1*, precision*, recall*, homogeneity, NMI, and WP.
 
 ## Findings
 
-- Perfect detection (F1*, homogeneity, WP = 1.00) on all three synthetic coordination patterns.
-- Best mean rank (3.12) on weighted precision and second-best mean rank (5.10) across all six metrics on the 26-dataset benchmark.
-- Single time-aware monoplex layers already outperform most single-modality baselines, including fixed-time-window retweet methods.
-- Single-modality baselines collapse on campaigns whose primary modality differs (e.g., co-retweet methods fail on hashtag-driven Iran campaigns), whereas the multiplex approach remains stable.
-- Some high-precision baselines (Magelinski 2022; Ng & Carley 2022) achieve their scores via trivial singleton clusters — WP exposes this artifact.
-- Trade-off observed: multiplex integration can fragment communities that look cohesive in a single layer, raising precision but lowering best-cluster recall.
+- On synthetic simulations the time-aware multiplex model achieved perfect scores (F1*, homogeneity, WP = 1.00) across all three coordination patterns.
+- The 4-layer time-aware multiplex model achieved the best average rank (3.12) on weighted precision and second-best (5.10) across all six metrics on 26 datasets.
+- Individual time-aware monoplex layers (retweet, mention, hashtag) outperformed most single-modality baselines, including fixed-window rapid-retweet methods.
+- Single-modality methods showed high variance — e.g. co-retweet methods failed on Iran campaigns dominated by text/hashtag coordination — while the multiplex approach stayed robust.
+- Some baselines achieved high precision/homogeneity only by producing trivial singleton clusters; WP penalizes this and confirms the multiplex model's practical superiority.
+- Multiplex clustering can fragment communities visible in a single layer, raising precision but reducing recall — a trade-off between integration and within-layer cohesion.
 
 ## Connections
 
-This work belongs to the latent-coordination-network strand of CIB detection and directly engages benchmark efforts and similarity-based detection pipelines such as [[Luceri2025-tr]], [[Minici2024-tf]], and [[Bouchaud2026-lr]], while sharing the multimodal/multilayer impulse with [[Kulichkina2026-zk]] and [[Schroeder2026-im]]. Its critique of fixed time-window and single-modality detectors resonates with methodological discussions in [[Graham2025-gp]], Bastos2025-ya, and [[Freelon2024-sc]], and its benchmark posture parallels reproducibility-oriented work like [[Murtfeldt2025-wu]] and [[Lai2024-to]].
+This paper builds directly on the multiplex/temporal coordination detection tradition and shares its benchmark-and-method framing with [[Luceri2025-tr]] and [[Minici2024-tf]], which similarly develop and evaluate coordination-detection pipelines on labeled information-operations data. It also connects to the Giglietto group's work on coordinated link and content sharing detection ([[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]], [[Giglietto2026-9b6a992d]]), which likewise reasons about temporal co-action windows across modalities, and to broader network-structural analyses of coordinated behavior such as [[Gerard2025-br]].
 
 ## Podcast
 

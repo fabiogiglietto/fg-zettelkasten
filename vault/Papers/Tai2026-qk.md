@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1080/10584609.2026.2613661
 bibtex_key: Tai2026-qk
 topics: [information-disorder, political-polarization-partisan-news]
-citation_count: 0
+citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2613661
 podcast_url: 
@@ -22,24 +22,25 @@ discovery_date: 2026-02-25T06:36:53.218205Z
 
 ## Summary
 
-This study investigates how institutional roles and ideological positions condition the online sharing of misinformation by U.S. elected officials. Rather than treating elite misinformation diffusion as a uniform partisan phenomenon, the authors ask whether features of the political context — the office a politician holds and where they sit ideologically — function as systematic checks that constrain or enable the circulation of low-credibility content. Published in *Political Communication*, the paper argues that elite-driven misinformation is patterned: institutional and ideological structures meaningfully moderate which officeholders amplify dubious information on social media.
+This paper investigates how U.S. elected officials share misinformation and low-credibility content online, arguing that this behavior is not uniform but conditioned by two structural factors: the institutional roles officials occupy and their ideological positions. The authors frame certain political contexts as "checks" that can either constrain or enable the diffusion of dubious information by politicians. Published in *Political Communication*, the work contributes to the study of elite-driven misinformation, emphasizing that officeholders are consequential actors in shaping the online information environment and that features of institutional design and partisanship bear on democratic accountability in digital ecosystems.
 
 ## Key Contributions
 
-- Reframes elite misinformation sharing as conditional on institutional and ideological context, rather than as a flat partisan trait.
-- Identifies specific structural "checks" — institutional position and ideological placement — that shape officeholders' contribution to the online information environment.
-- Extends political communication scholarship on elite cues into the domain of low-credibility content diffusion by elected representatives.
+- Advances scholarship on elite-driven political misinformation by identifying the institutional and ideological conditions that constrain or amplify its diffusion.
+- Reframes misinformation sharing as context-dependent rather than a flat individual trait, tying it to institutional position and ideological orientation.
+- Contributes to political communication research on how officeholders shape the online information environment and on the accountability implications of institutional design.
 
 ## Methods
 
-Empirical analysis of elected officials' online behavior, measuring sharing of misinformation or low-credibility sources. The design compares behavior across institutional roles (e.g., differing offices or chambers) and across ideological positions to isolate moderating factors that predict misinformation-sharing propensity.
+- Empirical analysis of the online sharing behavior of elected officials, focused specifically on misinformation and low-credibility content.
+- Comparative design across institutional roles and ideological positions to isolate the factors that moderate misinformation-sharing behavior.
 
 ## Findings
 
-- Institutional and ideological context systematically structure misinformation sharing among elected officials.
-- Certain institutional roles appear to operate as constraints on misinformation diffusion, while others enable it.
-- Ideological position interacts with institutional setting to shape officeholders' likelihood of amplifying low-credibility content.
+- Officials' propensity to share misinformation is systematically shaped by institutional and ideological context rather than being uniform across politicians.
+- Certain institutional positions and ideological orientations function as checks that moderate (constrain or enable) misinformation sharing.
+- (Precise magnitudes and directional effects are not recoverable from the abstract-level summary alone.)
 
 ## Connections
 
-This paper sits alongside other elite-focused studies of political misinformation diffusion, particularly [[DeVerna2025-dl]] on politician-driven low-credibility sharing and [[Mosleh2024-op]] on elite-level misinformation patterns on social platforms. It also complements platform-level evidence from [[Gonzalez-Bailon2024-rq]] and [[Bakshy2015-rn]] on how partisan asymmetries in exposure and sharing emerge, and connects to broader debates on partisan information ecosystems represented by [[Budak2024-ef]] and [[Green2025-ap]].
+This study sits within a cluster of work on elite and partisan drivers of online misinformation; it complements research on how politicians and elite cues shape low-credibility content circulation such as [[Mosleh2024-op]] and [[Pierri2025-hm]]. Its concern with ideological asymmetry and partisan information environments links to broader accountability and platform-exposure debates in [[Gonzalez-Bailon2024-rq]] and [[Bakshy2015-rn]].

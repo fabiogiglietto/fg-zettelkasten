@@ -22,32 +22,31 @@ discovery_date: 2026-02-11T06:01:18.849873Z
 
 ## Summary
 
-This study examines how the term "fake news" is rhetorically deployed in two ideologically extreme U.S. alternative outlets — Newsmax (right) and Occupy Democrats (left) — across nearly a decade (April 2015–October 2023). Combining manual content analysis grounded in Egelhofer et al.'s (2020) typology with LDA topic modeling interpreted through Hallin's three-sphere model, the authors argue that "fake news" functions overwhelmingly as a weaponized label to delegitimize ideological opponents rather than to describe actual misinformation. Both left- and right-leaning hyperpartisan outlets repurpose the term in functionally similar ways, actively renegotiating the boundaries between consensus, legitimate controversy, and deviance, and thereby eroding shared epistemic norms.
+This paper examines how the phrase "fake news" is rhetorically deployed across two ideologically extreme U.S. alternative media outlets — Newsmax on the right and Occupy Democrats on the left — over an eight-year span (April 2015–October 2023). Rather than studying misinformation's effects on audiences, the authors focus on the label itself, arguing that "fake news" functions predominantly as a weaponized term used to delegitimize ideological opponents rather than to describe fabricated content. Grounding the analysis in Egelhofer et al.'s two-dimensional typology and interpreting topic-modeling results through Hallin's three-sphere model, the study shows that hyperpartisan outlets actively renegotiate the boundaries between consensus, legitimate controversy, and deviance — recasting rival actors and mainstream narratives as illegitimate and thereby contributing to media fragmentation and polarization.
 
 ## Key Contributions
 
-- Reframes "fake news" research away from audience-level misinformation effects toward the rhetorical deployment of the label itself.
-- Extends Egelhofer et al.'s (2020) typology (disinformation genre, empty buzzword, weaponized label) beyond mainstream journalism to ideologically extreme alternative media.
-- Integrates Hallin's macro-level sphere model with Egelhofer et al.'s micro-level typology into a dual-level analytical framework.
-- Demonstrates a mixed-methods workflow combining manual coding with LDA topic modeling for large hyperpartisan corpora.
-- Draws practical implications for journalism ethics, urging professional restraint in using "fake news" to avoid further trivialization.
+- Shifts analytic attention from audience-level misinformation effects to the *rhetorical deployment* of the "fake news" label within partisan media.
+- Extends Egelhofer et al.'s (2020) typology beyond mainstream journalism into ideologically extreme alternative media.
+- Integrates Hallin's macro-level sphere model with Egelhofer et al.'s micro-level typology to create a dual-level framework for analyzing weaponized discourse.
+- Demonstrates methodological integration of manual content analysis with LDA topic modeling across large corpora.
+- Draws practical implications for journalism ethics and media literacy, urging more cautious professional use of the term.
 
 ## Methods
 
-The authors scraped articles containing "fake news" from both outlets, yielding a corpus of 2,536 Newsmax and 513 Occupy Democrats pieces. A 30% stratified random sample (759 / 154) was hand-coded using a binary scheme derived from Egelhofer et al. (2020) covering the three rhetorical uses plus actor categories, with intercoder reliability (Cohen's κ = .84–.94) established on a ~10% pretest. In parallel, LDA topic models were fit in R (k=11 for Newsmax, k=8 for Occupy Democrats, selected by perplexity), consolidated into higher-order themes, and mapped onto Hallin's spheres of consensus, legitimate controversy, and deviance.
+Mixed-methods design combining manual content analysis and computational topic modeling. Articles containing "fake news" were scraped (Python, BeautifulSoup) from both outlets, yielding a corpus of 2,536 Newsmax and 513 Occupy Democrats articles after filtering. A 30% stratified random sample (759 Newsmax, 154 Occupy Democrats) was hand-coded using a binary scheme based on Egelhofer et al.'s typology — disinformation genre, empty buzzword, weaponized label — plus actor-based categories, with strong intercoder reliability (Cohen's κ = .84–.94). LDA topic modeling (R's `tm`/`topicmodels`; preprocessing via NLTK and spaCy) produced k=11 topics for Newsmax and k=8 for Occupy Democrats, consolidated into higher-order themes and mapped onto Hallin's three spheres.
 
 ## Findings
 
-- "Fake news" was deployed as a weaponized label in 89.6% of Newsmax and 98.7% of Occupy Democrats articles (χ²=13.14, p<.001), and as an empty buzzword in nearly all articles.
-- Occupy Democrats invoked the disinformation-genre framing more often (81.8%) than Newsmax (67.2%); it also reported actors spreading disinformation in 96.1% vs. 73.5% of articles.
-- The term appeared incidentally (64–71%) more often than as a main focus, suggesting it operates as a habitual rhetorical reference.
-- Newsmax themes targeted mainstream outlets (NYT, CNN, WaPo), framed Trump–press conflicts, and invoked conspiracy and election-interference narratives.
-- Occupy Democrats themes centered on Trump-era media conflict, election integrity, Russian interference, and critiques of right-wing propaganda.
-- Most themes in both outlets fell within Hallin's deviance sphere, but identical issues (e.g., Russian interference, mainstream credibility) were classified differently across outlets — empirical evidence for the fluidity of Hallin's spheres.
+- "Fake news" served as a weaponized label in 89.6% of Newsmax and 98.7% of Occupy Democrats articles (χ²=13.14, p<.001), and as an empty buzzword in nearly all articles across both outlets.
+- Occupy Democrats deployed disinformation-genre framing more often (81.8%) than Newsmax (67.2%), and reported actors spreading disinformation in 96.1% vs. 73.5% of articles — using the term more aggressively as a counterstrategy.
+- The term was more often used incidentally (64–71%) than as a main focus, marking it as a recurring rhetorical reference rather than a topic in itself.
+- Newsmax themes targeted mainstream outlets (NYT, CNN, WaPo), framed Trump's conflicts with the press, and invoked conspiracy and election-interference narratives; Occupy Democrats centered on Trump-era media conflict, Russian interference, and critiques of right-wing propaganda.
+- Themes in both outlets fell predominantly within Hallin's deviance sphere, with identical issues classified differently across outlets — supporting the fluidity of the spheres.
 
 ## Connections
 
-This paper sits at the intersection of hyperpartisan media research and the discursive study of disinformation labels, complementing work that examines how alternative and partisan ecosystems construct epistemic authority — see [[Frischlich2025-vn]] and [[Marwick2025-ov]] on alternative/partisan media practices, and [[Kalsnes2025-zb]] and [[Farkas2026-lr]] on the political instrumentalization of "fake news" discourse. Its dual focus on polarization and information disorder connects to broader debates on partisan asymmetry and media fragmentation in [[Humprecht2025-ml]], [[Rossini2026-jn]], and [[Hameleers2026-mc]]. The LDA-plus-coding methodology also resonates with computational-qualitative hybrids found in [[Kansaon2025-id]] and [[Nenno2025-xa]].
+This study's focus on the *weaponization* of "fake news" as a delegitimizing label connects to work on how disinformation discourse and its labeling shape epistemic authority, such as [[Farkas2026-lr]] and [[Hameleers2026-mc]]. Its concern with hyperpartisan alternative media as sites of polarization and boundary-work aligns with research on partisan news ecosystems like [[Frischlich2025-vn]] and [[Humprecht2025-ml]], and its LDA-based content analysis of partisan rhetoric resonates methodologically with computational studies of polarized media discourse such as [[Balluff2026-if]].
 
 ## Podcast
 

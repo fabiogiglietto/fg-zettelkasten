@@ -6,7 +6,7 @@ year: 2026
 doi: 10.14763/2026.1.2080
 bibtex_key: Philipp2026-tl
 topics: [platform-governance-data-access, italian-election-media-mapping]
-citation_count: 0
+citation_count: 1
 open_access: false
 source_url: https://doi.org/10.14763/2026.1.2080
 podcast_url: 
@@ -22,25 +22,24 @@ discovery_date: 2026-02-17T06:14:16.218868Z
 
 ## Summary
 
-This paper examines how the EU Digital Services Act (DSA) is reshaping the empirical study of online election communication by mandating new forms of platform data access for researchers. After years in which the withdrawal or commercialisation of platform APIs eroded the empirical basis of election research, the DSA has compelled major platforms to (re-)establish access to "public" data through dedicated APIs and portals. The authors survey this emerging landscape, comparing how platforms have implemented these obligations, and argue that while the DSA partially reopens avenues for election research, the heterogeneity, restrictive eligibility, and substantive gaps of current regimes leave significant aspects of campaigns, political advertising, and electoral discourse difficult to study.
+This paper assesses how the EU Digital Services Act (DSA) is reshaping researchers' ability to study online election communication. After years in which platform data was withdrawn or commercialised — undermining empirical work on campaigns and political discourse — the DSA has pressured major platforms to (re-)establish access to "public" data through APIs and dedicated portals. The authors survey and comparatively evaluate these new access mechanisms, analysing their scope, conditions, and eligibility rules, and argue that the design of each regime materially shapes what kinds of election research are feasible. Positioned within political communication and computational social science, it engages ongoing debates about platform governance, transparency, and researcher access.
 
 ## Key Contributions
 
-- A comparative overview of the post-DSA data access landscape (APIs, portals, eligibility rules) as it pertains to election research.
-- Identification of practical and methodological challenges introduced by regulated data access, including issues of equity and reproducibility across researcher communities.
-- Practical guidance for election researchers navigating the new infrastructure, plus a diagnosis of where further regulatory or platform action is needed.
+- Maps the post-DSA data access landscape as it pertains to election communication research.
+- Identifies practical and methodological challenges of working under regulated data access regimes.
+- Offers guidance for navigating the new APIs and portals, and flags where further regulatory or platform action is required.
 
 ## Methods
 
-A review and comparative analysis of the data access modalities (APIs, transparency portals, vetted-researcher mechanisms) that major online platforms have established in response to DSA requirements, with a focus on their utility and limitations for election communication research.
+Review and comparative analysis of the data access modalities that major online platforms have established in response to DSA requirements, with a focus on their relevance and usability for election communication research. The comparison spans API design, available data fields, and access/eligibility procedures across platforms.
 
 ## Findings
 
-- Platforms diverge substantially in how they implement DSA-mandated public data access, including in API design, data fields exposed, and access procedures.
-- Researcher eligibility is unevenly distributed, raising concerns about equity, reproducibility, and the concentration of empirical work in particular institutional settings.
-- Current access regimes leave notable gaps for studying campaign communication, political advertising, and broader election-related discourse.
-- The DSA has improved conditions relative to the post-API-withdrawal low point, but does not restore the breadth of access researchers previously enjoyed.
+- Platforms differ substantially in how they implement DSA-mandated public data access, including in API design, the data fields exposed, and the procedures for obtaining access.
+- Eligibility for access is unevenly distributed across researcher communities, raising concerns about equity and reproducibility.
+- Current access regimes leave significant gaps for studying campaigns, political advertising, and election-related discourse.
 
 ## Connections
 
-This paper sits at the centre of an active debate about regulated platform data access for researchers, connecting closely to broader assessments of DSA Article 40 and vetted-researcher regimes in [[Rieder2025-ju]] and [[Rieder2026-pp]], and to critical evaluations of platform-provided research APIs in [[Murtfeldt2025-wu]] and [[Votta2025-xz]]. It also speaks to the political-advertising transparency strand represented by [[Bouchaud2026-lr]] and to wider concerns about the fragility of platform research infrastructures voiced in [[Freelon2024-sc]] and [[Bak-Coleman2025-pm]].
+This paper sits at the centre of the platform-governance-data-access literature and speaks directly to work evaluating the practical realities of DSA-era research access, such as [[Rieder2026-pp]], [[Rieder2025-ju]], [[Bruns2026-yv]], [[Bechmann2026-dr]], and [[de-Vreese2026-zx]]. Its concerns about API design and researcher eligibility connect to studies of data infrastructure and reproducibility including [[Murtfeldt2025-wu]], [[Tonneau2025-bv]], and [[Freelon2024-sc]], while its election-communication focus links it to applied platform studies of campaigns and political discourse such as [[Pierri2025-hm]] and [[Votta2025-xz]].

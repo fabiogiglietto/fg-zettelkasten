@@ -22,32 +22,37 @@ discovery_date: 2026-03-27T17:13:56.619909Z
 
 ## Summary
 
-This paper exploits Brazil's 2024 Supreme Court–ordered nationwide ban on X to study how platform-level bans reshape partisan information environments in democracies. Combining ideal-point estimates from news-sharing behavior with an event-study design on a panel of politically engaged users, the authors show that conservative (anti-government) users disproportionately circumvented the ban via VPNs while liberal users complied and went silent. The resulting rightward shift in posting, engagement, and shared news persisted months after the ban was lifted. The authors theorize this as a "sorting ratchet": politicized bans produce asymmetric compliance shaped by partisan reputational and instrumental incentives, durably reshaping the digital public sphere rather than neutrally reducing harm.
+This paper offers one of the first causal analyses of a nationwide social-media ban in a democratic, polarized context: Brazil's Supreme Court–ordered shutdown of X from August 30 to October 8, 2024. Using an event-study design on a panel of politically engaged users with correspondence-analysis-based ideal-point estimates, the authors show that the ban did not silence the platform uniformly. Instead, conservative (anti-government) users disproportionately circumvented the ban while liberal users went silent or left, shifting the platform's news environment sharply rightward. Crucially, these effects persisted for months after the ban was lifted, which the authors interpret as a durable "sorting ratchet" — asymmetric partisan compliance that reshapes a platform's composition long after the intervention ends. The core policy implication is that misinformation-targeting bans in democracies may reallocate rather than neutralize partisan control of information environments.
 
 ## Key Contributions
 
-- Provides one of the first causal estimates of a democratic platform ban's partisan consequences, moving beyond the authoritarian cases that dominate the information-control literature.
-- Introduces the **sorting ratchet** concept: asymmetric partisan compliance with platform regulation that durably alters platform composition even after restrictions end.
-- Methodologically combines correspondence-analysis ideal-point estimation (validated against survey audience-ideology measures, r = 0.85) with a Poisson event-study design.
-- Reframes platform polarization debates by emphasizing between-platform sorting induced by state regulation, not just within-platform algorithmic dynamics.
-- Surfaces a regulator's dilemma: misinformation-targeted bans may reallocate rather than neutralize partisan control of information ecosystems.
+- Provides an early causal analysis of a platform ban in a democratic, polarized setting, extending a literature dominated by authoritarian cases.
+- Introduces and empirically documents the **"sorting ratchet"** concept: asymmetric partisan compliance that durably reshapes platform composition even after restrictions end.
+- Combines correspondence-analysis ideal-point estimation of both users and news domains with a Poisson event-study design.
+- Shifts the analytic focus from *within-platform* algorithmic sorting to *between-platform* sorting induced by state regulation.
+- Frames a policy trade-off: bans intended to curb misinformation can deepen polarization instead.
 
 ## Methods
 
-A case study of Brazil's Aug 30–Oct 8, 2024 X ban. The authors collected ~14M Portuguese tweets with URLs (Decahose, 90 days pre-ban) and used GPT-4o plus manual review to identify 242 political news domains. Correspondence analysis on a 9,061-user × 242-domain sharing matrix yielded ideal points for users and outlets. They scraped timelines (Jun–Dec 2024) for 7,471 politically engaged users via Nitter (~6.7M tweets, ~430K news shares), then estimated Poisson event-study models with user and day fixed effects to capture monthly partisan differences in posting and news-sharing, alongside descriptive analyses of dropout, engagement concentration, and news-environment ideology. Robustness checks vary bandwidths, ideology cutoffs, estimators, and engagement outcomes.
+- Case study of Brazil's ~six-week ban on X, with tweet data collected via the X Decahose API (~14M Portuguese-language tweets with URLs over 90 pre-ban days).
+- Estimated ideal points for 9,061 users and 242 political news domains via correspondence analysis on a user-by-domain sharing matrix; political/news domains identified with GPT-4o zero-shot classification plus manual review.
+- Validated ideology scores against survey-based audience-ideology measures (Pearson r = 0.85).
+- Scraped timelines (June–December 2024) for 7,471 users via Nitter (~6.7M tweets, ~430K news shares).
+- Poisson event-study (flexible difference-in-differences) models with user and day fixed effects and clustered standard errors, with robustness checks across OLS specifications, bandwidths (10/30 days), alternative ideology cutoffs, and engagement outcomes.
 
 ## Findings
 
-- Overall activity collapsed during the ban (daily tweets fell from ~37k to ~11k; news shares from ~2,587 to ~395).
+- Overall activity collapsed during the ban (daily tweets fell from ~37,207 to ~11,305; news shares from 2,587 to 395).
 - Right-leaning users posted roughly 5.8× more than left-leaning users during the ban (β = 1.76, z = 12.6).
-- The weighted median ideology of shared news rose from 0.27 pre-ban to 1.26 during the ban (~1.05 SD rightward), and remained elevated at 0.30 post-ban.
-- 2,346 of 7,291 pre-ban active users went silent during the ban; 656 never returned, with left-leaning users disproportionately exiting.
-- Right-leaning users' share of likes rose from ~73% pre-ban to ~90% during the ban, settling around 80% post-ban — engagement concentration is durable.
-- Partisan divergence began *before* formal enforcement, tracking the political escalation of the legal conflict in mid-August.
+- Weighted median news ideology rose from 0.27 pre-ban to 1.26 during the ban (~1.05 SD more right-leaning), and remained elevated at 0.30 afterward.
+- Of 7,291 pre-ban active users, 2,346 went silent and 656 never returned; dropouts were disproportionately left-leaning.
+- Engagement concentrated among right-leaning users: their share of likes rose from ~73% pre-ban to ~90% during, settling around 80% post-ban.
+- Partisan divergence began *before* formal enforcement, tracking the mid-August legal escalation.
+- Results are robust across alternative specifications and outcomes.
 
 ## Connections
 
-This paper speaks directly to platform governance work on the political consequences of moderation and removal decisions, complementing studies of deplatforming and migration such as [[Efstratiou2025-gs]] and [[Jurg2025-ur]], and broader debates on platform power and regulation in [[Rieder2026-pp]] and [[Helmond2026-ll]]. Its sorting-ratchet account of asymmetric partisan exit and persistence engages the polarization and echo-chamber literature represented by [[Tornberg2025-ir]], [[Tornberg2026-lc]], and [[Bakshy2015-rn]], reframing platform-induced polarization as a between-platform phenomenon driven by state regulation. The Brazilian case also resonates with hyperpartisan and misinformation-ecosystem work like [[Rossini2026-jn]] and [[Cazzamatta2026-lo]].
+This paper shares authors and methodological lineage with [[Ventura2025-sw]], and its correspondence-analysis approach to platform-level ideological composition and news exposure connects to large-scale platform-audience studies such as [[Gonzalez-Bailon2024-rq]], [[Bakshy2015-rn]], and [[Allcott2025-jb]]. Its focus on platform governance and content moderation as drivers of information-environment change also links it to work on misinformation and platform interventions like [[Starbird2025-jj]] and [[Mosleh2024-op]].
 
 ## Podcast
 

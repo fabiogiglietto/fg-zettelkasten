@@ -1,14 +1,14 @@
 ---
 title: "Research opportunities and challenges of the EU&#x27;s Digital Services Act"
 aliases: ["Research opportunities and challenges of the EU&#x27;s Digital Services Act"]
-authors: ["Francesco Pierri", "Theo Araujo", "Sanne Kruikemeier", "Philipp Lorenz-Spreen", "Mariek Vanden Abeele", "Laura Vandenbosch", "Joana Gonçalves-Sá", "Przemyslaw A. Grabowicz"]
+authors: ["Francesco Pierri", "Theo Araujo", "Sanne Kruikemeier", "Philipp Lorenz-Spreen", "Mariek M. P. Vanden Abeele", "Laura Vandenbosch", "Joana Gonçalves-Sa", "Przemyslaw A. Grabowicz"]
 year: 2025
-doi: 10.48550/arxiv.2512.14223
+doi: 
 bibtex_key: Pierri2025-hm
 topics: [platform-governance-data-access, information-disorder]
 citation_count: 0
 open_access: true
-source_url: https://doi.org/10.48550/arxiv.2512.14223
+source_url: http://arxiv.org/abs/2512.14223v1
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Pierri2025-hm.mp3
 pdf_available: true
 discovery_date: 2025-12-15T00:00:00Z
@@ -22,31 +22,31 @@ discovery_date: 2025-12-15T00:00:00Z
 
 ## Summary
 
-This commentary, authored by researchers actively engaged in EU policy processes, assesses the early implementation of Article 40 of the Digital Services Act (DSA), which obliges very large online platforms (VLOPs) and search engines (VLOSEs) to grant vetted researchers access to internal data. Drawing on an 18-month ERC-supported pilot with DG-CONNECT, national Digital Services Coordinators (DSCs), and roundtables with major platforms, the authors diagnose three interlocking obstacles — misaligned incentives, severe asymmetries between platforms and academia, and operational bottlenecks — and offer three corresponding recommendations: streamline access procedures, fund independent research infrastructure, and close regulatory blind spots, most urgently around large language models. The piece argues that without robust enforcement, the DSA risks being hollowed out by industry resistance and the persistence of "independence by permission" research arrangements.
+This commentary examines the practical implementation of Article 40 of the EU's Digital Services Act (DSA), which grants vetted researchers access to data from very large online platforms (VLOPs) and search engines (VLOSEs). Written by researchers directly embedded in EU policy processes, the piece argues that while Article 40 is a landmark mechanism for platform transparency and accountability, substantial legal, technical, and organizational barriers threaten its effectiveness. The authors frame the DSA as a distinctively European model of platform governance, contrasting with US-based deregulatory trends, and contend that its success is essential for democratic oversight of digital infrastructures. They organize their analysis around three categories of challenges — misaligned incentives, resource asymmetries, and implementation bottlenecks — and offer concrete recommendations to address them.
 
 ## Key Contributions
 
-- A practitioner-grounded snapshot of Article 40's operational state as of late 2025, ahead of the first expected data-access decisions in February 2026.
-- A tripartite framing of DSA implementation challenges: misaligned incentives, resource asymmetries, and bottlenecks.
-- Three concrete policy recommendations: standardized data-sharing frameworks; dedicated funding and community coordination for independent research; and extending DSA scope to LLMs.
-- An argument that LLMs (e.g., ChatGPT, Grok) meet DSA criteria for systemic risk as intermediary services and represent a current regulatory blind spot.
+- Provides an informed practitioner perspective on the operational state of DSA Article 40 implementation as of late 2025.
+- Structures the policy debate around three categories of challenges: misaligned incentives, resource asymmetries, and implementation bottlenecks.
+- Offers three concrete recommendations: streamlining access with standardized data-sharing frameworks; supporting independent research through dedicated funding and community coordination; and extending DSA scope to large language models.
+- Frames LLMs as intermediary services that should fall within DSA oversight, identifying a specific regulatory blind spot.
 
 ## Methods
 
-Expert commentary synthesizing the authors' direct involvement in EU policy deliberations, an ERC-supported pilot program engaging DG-CONNECT and national DSCs, roundtables with platforms and the European Commission, and a review of literature on platform research, AI industry influence, and DSA legal scholarship.
+The paper is a collective expert commentary synthesizing the authors' direct participation in EU policy processes. It draws on an 18-month ERC-supported pilot program connecting researchers, DG-CONNECT, and national Digital Services Coordinators (DSCs), alongside roundtable discussions with major platforms and the European Commission. These experiential insights are combined with a review of literature on platform research, industry influence in AI, and DSA legal scholarship.
 
 ## Findings
 
-- Platforms have expressed reluctance toward direct data sharing, occasionally signaling potential legal action against researchers and NGOs.
-- Meta's 2020 US election collaboration illustrates how undisclosed algorithmic changes can bias platform-mediated research outcomes.
-- National DSCs and university Data Protection Officers face mismatches in vocabulary and expectations with both researchers and platforms, delaying initial requests.
-- A circular resource problem disadvantages early-career and less-resourced researchers: grants require data access, but pursuing access requires funding.
-- Industry AI research now dwarfs public research in resources, while DSA-as-censorship narratives have circulated to tens of millions on social media.
-- First DSA portal decisions on data-access requests are anticipated in late February 2026.
+- Platforms have shown varying reluctance toward direct data sharing, sometimes alluding to potential legal action against researchers and NGOs.
+- A documented case (Meta's collaboration with researchers around the 2020 US election) shows how undisclosed algorithmic changes can bias platform-mediated research conclusions.
+- National DSCs and local university Data Protection Officers face likely mismatches in language and expectations with researchers and platforms, slowing first data requests.
+- Industry AI research has overtaken public research in financial and infrastructural resources, while social media campaigns framing the DSA as censorship have reached tens of millions of users.
+- A circular resource problem disadvantages early-career and under-resourced researchers: data access is needed to win grants, but funding is needed to pursue data access.
+- The first decisions on data access requests via the DSA portal are expected in late February 2026.
 
 ## Connections
 
-This commentary speaks directly to ongoing scholarship critiquing platform-led transparency regimes and the politics of researcher data access — see [[Rieder2026-pp]] and [[Rieder2025-ju]] on the institutional shape of DSA access, and [[Helmond2026-ll]] on platform governance dynamics. The diagnosis of "independence by permission" resonates with concerns about industry-mediated research raised in [[Bak-Coleman2025-pm]] and [[Bak-Coleman2026-mk]], while the regulatory blind spot around LLMs connects to broader debates on platform-adjacent infrastructures discussed in [[Bouchaud2026-lr]] and [[Ohme2026-nv]].
+This commentary is a keystone reference for the platform-governance-data-access literature, directly informing empirical work that depends on or evaluates platform data access regimes such as [[Bruns2026-yv]] and [[Rieder2026-pp]]. Its warning about "independence by permission" and biased platform-mediated research echoes concerns central to studies of independent research access and platform transparency. The paper's framing of large language models as a systemic-risk regulatory blind spot connects it to the broader information-disorder conversation about emerging AI-driven manipulation risks.
 
 ## Podcast
 

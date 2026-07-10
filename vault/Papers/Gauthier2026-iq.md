@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1038/s41586-026-10098-2
 bibtex_key: Gauthier2026-iq
 topics: [political-polarization-partisan-news, platform-governance-data-access]
-citation_count: 1
+citation_count: 8
 open_access: false
 source_url: https://doi.org/10.1038/s41586-026-10098-2
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gauthier2026-iq.mp3
@@ -22,33 +22,39 @@ discovery_date: 2026-02-19T06:33:46.898860Z
 
 ## Summary
 
-This paper reports a pre-registered field experiment with ~5,000 active US-based X users in summer 2023, exploiting X's then-new ability to toggle between an algorithmic "For you" feed and a chronological "Following" feed. Random assignment for seven weeks shows that switching users from chronological to algorithmic exposure causally shifts political attitudes in a conservative direction — on policy priorities, the Trump investigations, and the war in Ukraine — while leaving partisanship and affective polarization unmoved. The effect is strikingly asymmetric: turning the algorithm off does not undo it, because algorithmic exposure induces users to follow conservative activist accounts whose content continues to dominate their feed afterward. The authors argue this persistence mechanism reconciles their findings with the null results of the 2020 Meta studies and reconceptualizes algorithms as shaping exposure indirectly through follow choices, not merely through ranking.
+This paper reports a pre-registered field experiment (July–September 2023, 4,965 US-based X users) that randomly assigned participants for seven weeks to either X's algorithmic "For you" feed or its chronological "Following" feed. The core finding is that switching from a chronological to an algorithmic feed causally shifted users' political attitudes in a conservative direction — on policy priorities, the criminal investigations into Trump, and the war in Ukraine — while switching the algorithm *off* produced no comparable reversal. The authors trace this asymmetry to a persistence mechanism: algorithmic exposure leads users to follow conservative activist accounts, and those follows (and the exposure they create) endure even after the algorithm is deactivated. In doing so, the paper offers an explanation for why Meta's 2020 collaborative studies found null feed-algorithm effects, and documents the partisan slant of X's algorithm following Musk's acquisition.
 
 ## Key Contributions
 
-- First independent (non-platform-collaborative) randomized evidence that a major feed algorithm causally moves political attitudes.
-- Identifies an asymmetric, hysteretic mechanism — algorithm-induced follows persist — that resolves the puzzle of prior null findings.
-- Documents the post-Musk slant of X's algorithm: amplification of conservative and activist content, demotion of traditional news outlets.
-- Methodological template for platform-independent RCTs that exploits user-facing feed-choice features.
-- Conceptual distinction between malleable outcomes (issue attitudes) and rigid ones (party ID, affective polarization).
+- First independent (non-platform-cooperative) randomized evidence that a major feed algorithm causally shifts political attitudes.
+- Resolves the puzzle of null effects in the 2020 Meta study by demonstrating that algorithmic effects are asymmetric and persist through users' follow choices.
+- Documents the conservative/activist slant of X's post-acquisition algorithm, which amplifies conservative and activist content while demoting traditional media.
+- Introduces a design that exploits platform-provided feed-choice features to run platform-independent randomized experiments.
+- Reframes algorithmic influence as operating not only directly (what is shown) but indirectly (whom users choose to follow).
+- Distinguishes malleable outcomes (policy attitudes, current-event views) from rigid ones (partisanship, affective polarization).
 
 ## Methods
 
-Pre-registered RCT (AEARCTR-0011464) with 4,965 YouGov panelists who are active X users, randomized for seven weeks between the "For you" and "Following" tabs, with pre/post surveys on engagement, attitudes, and polarization. A custom Chrome extension scraped the first 100 posts shown to each user under each feed, and follow-lists were collected for 2,387 consenting users. Posts and accounts were classified for political leaning and type (activist, news, entertainment, official) using a Llama-3 pipeline validated against ML and human annotators. Estimation combines ITT regressions, GRF-adjusted conditional specifications, 2SLS LATEs, Lee bounds for attrition, and Poisson/OLS models with fixed effects for content composition.
+- Pre-registered RCT (AEARCTR-0011464) with US-based YouGov panelists who were active X users; two simultaneous experiments based on users' initial feed setting.
+- Seven-week treatment with pre/post surveys covering engagement, partisanship, affective polarization, policy priorities, Trump-investigation views, Ukraine attitudes, and life satisfaction.
+- Custom Chrome extension captured the first 100 posts each user saw under each feed setting; scraping of followed-account lists for 2,387 consenting participants.
+- Llama 3-based NLP classified posts and accounts by political leaning and type (activist, news outlet, entertainment, official), validated against ML classifiers and human annotators.
+- ITT regressions (unconditional and GRF-adjusted), LATE via 2SLS instrumenting self-reported compliance, Lee bounds and re-weighting for attrition, and Poisson/OLS with fixed effects for content differences.
 
 ## Findings
 
-- Switching on the algorithm increased conservative policy priorities by 0.12 SD, belief that Trump investigations are unacceptable by 0.08 SD, and pro-Kremlin Ukraine attitudes by 0.12 SD.
-- Engagement rose 0.14 SD when the algorithm was turned on; likes, reposts, and comments on shown posts jumped roughly 480%, 408%, and 508%.
-- Switching the algorithm off produced no significant attitude changes — confirming asymmetry.
-- Partisanship and affective polarization were precisely null in both directions.
-- Algorithmic feed showed 19.9% more conservative posts, 27.4% more activist content, 21.5% more entertainment, and 58.1% fewer traditional news outlet posts.
-- Algorithm exposure increased follows of conservative accounts (+0.17 SD) and conservative activists (+0.18 SD), and these follows persisted; users later on chronological feeds still saw 9 pp more conservative content.
-- Attitude effects concentrated among Republicans and Independents; Democrats largely unaffected.
+- Switching onto the algorithm produced a 0.12 SD rise in conservative policy priorities, 0.08 SD greater belief that Trump investigations are unacceptable, and 0.12 SD more pro-Kremlin attitudes on Ukraine.
+- Engagement rose 0.14 SD when the algorithm was switched on; switching it off gave a non-significant 0.06 SD decline.
+- Effects were precisely null for partisanship and affective polarization in both directions.
+- The algorithmic feed made conservative posts 2.9 pp (19.9%) more likely, political-activist posts 5.9 pp (27.4%) more likely, and entertainment posts 9.1 pp more likely, while cutting news-outlet posts by 15.5 pp (58.1%).
+- It increased likes, reposts, and comments on shown posts by roughly 480%, 408%, and 508%.
+- Users switched onto the algorithm became more likely to follow conservative accounts (+0.17 SD) and conservative activist accounts (+0.18 SD) — follows that persisted.
+- Even on later chronological feeds, previously exposed users saw ~9 pp more conservative-account posts, showing persistent reshaping of exposure.
+- Effects concentrated among Republicans and Independents; Democrats were largely unaffected.
 
 ## Connections
 
-This paper is in direct dialogue with the Meta 2020 collaborative studies, and its asymmetry-via-follows mechanism offers a substantive reinterpretation of [[Allcott2025-jb]]'s broader work on social-media exposure and political outcomes. It also complements experimental work on persuasion and messaging effects such as [[Voelkel2026-lc]] by showing that algorithmically curated exposure — rather than designed interventions — can shift issue attitudes while leaving identity-laden measures like partisanship and affective polarization unchanged.
+This is a rare independent, causal counterpoint to platform-cooperative feed experiments, and it directly engages the algorithmic-amplification and filter-bubble debates that run through much of this literature — including [[Bakshy2015-rn]]'s foundational work on selective exposure and algorithmic curation on social platforms. Its focus on X's post-Musk partisan slant and content ranking connects to platform-behavior and amplification studies such as [[Bouchaud2026-lr]] and [[Efstratiou2025-gs]], while its distinction between malleable attitudes and stable affective polarization speaks to the partisan-news and polarization strand represented by work like [[Green2025-ap]] and [[Tornberg2025-ir]].
 
 ## Podcast
 

@@ -22,37 +22,37 @@ discovery_date: 2026-04-30T07:40:12.891395Z
 
 ## Summary
 
-This paper benchmarks a multimodal large language model (GPT-4o) against specialized computer vision pipelines (RetinaFace + FaceNet512, Google Cloud Vision) on two visual political communication tasks — front-runner face recognition and person counting — using 1,424 Instagram stories and 547 posts from the 2021 German federal election. GPT-4o substantially outperforms the specialized tools and approaches inter-annotator reliability levels, leading the authors to argue that prompt-based multimodal analysis lowers technical barriers for visual computational social science. They then deploy the validated pipeline in a substantive case study of *concentrated visibility*, showing that candidate accounts foreground front-runners more than party accounts and that stories and posts play distinct roles in personalized campaign communication.
+This paper evaluates whether multimodal large language models can serve as practical tools for analyzing visual political communication, using Instagram content from the 2021 German federal election. The authors benchmark GPT-4o against established computer vision pipelines (RetinaFace, FaceNet512, Google Cloud Vision) on two tasks: identifying front-runner politicians and counting individuals in images. GPT-4o substantially outperforms the specialized tools while lowering technical barriers to entry. The validated methods are then applied to a substantive case study of "concentrated visibility," revealing that candidate and party accounts pursue complementary visual strategies and that Instagram stories and posts play distinct communicative roles.
 
 ## Key Contributions
 
-- An early systematic benchmark of a multimodal LLM versus specialized CV pipelines for political image analysis.
-- A replicable, prompt-based workflow for measuring concentrated visibility at scale.
-- Empirical extension to Instagram **stories**, an ephemeral format underrepresented in campaign research.
-- Open release of annotations, prompts, model outputs, and evaluation notebooks (corpus withheld for copyright).
-- Practical guidance on trade-offs (cost, privacy, replicability) between open-source and proprietary tools.
+- One of the first systematic benchmarks comparing multimodal LLMs against specialized computer vision tools for visual political communication research.
+- A replicable, scalable prompt-based framework for measuring concentrated visibility.
+- Extends empirical study to Instagram stories, an underexplored ephemeral campaign format.
+- Open release of annotations, prompts, model outputs, and evaluation notebooks (corpus excluded for copyright).
+- Explicit discussion of open-source vs. proprietary trade-offs (cost, privacy, replicability) to guide methodological choices in computational social science.
 
 ## Methods
 
-- Corpus: 1,424 stories and 547 posts (957 images) from five German parties and their front-runners, Sept 12–25, 2021.
-- Three computational approaches compared: RetinaFace + FaceNet512, Google Cloud Vision, and GPT-4o with iteratively engineered prompts (refined via ChatGPT).
-- Two annotation studies in Label Studio: 13 annotators for face identity (Krippendorff's α = 0.86 / 0.94) and 5 annotators on a 30% subsample for person counts (α = 0.81 / 0.91).
-- Evaluation via precision, recall, macro/weighted F1, and treating each model as an additional annotator for α.
-- Substantive analysis with chi-squared tests (Bonferroni-corrected) and Cramér's V to compare visibility across accounts, parties, and formats.
+- Corpus of 1,424 Instagram stories and 547 posts (957 images) from five German parties and five front-runners, Sept 12–25, 2021.
+- Compared three approaches: RetinaFace + FaceNet512 (face detection/recognition), Google Cloud Vision API (object detection), and GPT-4o (multimodal LLM with iteratively engineered prompts).
+- Two human annotation studies for ground truth: 13 annotators for face identities (Krippendorff's α = 0.86 stories / 0.94 posts) and 5 annotators for person counts on a 30% subsample (α = 0.81 / 0.91), coded in Label Studio.
+- Evaluation via precision, recall, macro/weighted F1, and treating each model as an additional annotator for Krippendorff's alpha.
+- Case study analysis via chi-squared tests with Bonferroni correction and Cramér's V across account types, parties, and content formats.
 
 ## Findings
 
-- GPT-4o face verification macro F1 = 0.89 (stories) / 0.91 (posts), versus FaceNet512 at 0.74 / 0.87.
-- GPT-4o person counting macro F1 = 0.86 / 0.93, far above Google Cloud Vision (0.58 / 0.44) and RetinaFace (0.48 / 0.53).
-- FaceNet512 performed worst on Annalena Baerbock (F1 = 0.66), hinting at gender bias or distinct visual personalization patterns.
-- Front-runners appeared alone in 33.5% of candidate stories but only 12% of party stories (χ² = 173.24, Cramér's V = 0.349).
-- Stories and posts differ significantly in front-runner visibility (χ² = 95.20), especially for CDU, CSU, and SPD.
-- Markus Söder showed the sharpest split between his account and the CSU account (Cramér's V = 0.53 stories, 0.70 posts).
+- GPT-4o achieved macro F1 of 0.89 (stories) / 0.91 (posts) for face verification, versus 0.74 / 0.87 for FaceNet512.
+- For person counting, GPT-4o reached macro F1 of 0.86 (stories) / 0.93 (posts), far ahead of Google Cloud Vision (0.58/0.44) and RetinaFace (0.48/0.53).
+- FaceNet512 performed worst on the only female candidate, Annalena Baerbock (F1 = 0.66), suggesting possible gender bias or distinct visual personalization.
+- Party accounts showed front-runners alone in only 12% of stories versus 33.5% in candidate accounts (χ² = 173.24, p < .001, Cramér's V = 0.349).
+- Stories and posts differed significantly in front-runner visibility (χ² = 95.20, p < .001), with CDU, CSU, and SPD showing the strongest format variation.
+- Markus Söder (CSU) showed the largest divergence between his own and the party account (Cramér's V = 0.53 stories, 0.70 posts).
 
 ## Connections
 
-This paper sits with other CSS work validating LLMs as flexible annotators and classifiers, particularly visual and multimodal extensions of that agenda — see [[Balluff2026-if]] and [[Dierickx2026-tw]] on automated content analysis pipelines, and [[Le-Mens2025-qz]] on LLMs as measurement tools. It also speaks to ongoing benchmarking of GPT-class models against task-specific systems explored in [[Hackenburg2025-dj]] and [[Allen2025-ot]]. Substantively, its focus on Instagram political communication links to platform-level studies of campaign behavior such as [[Minici2024-tf]] and [[Bouchaud2026-lr]].
+This paper sits within the growing use of LLMs for computational content analysis and shares methodological concerns with work validating LLMs as annotators and classifiers, such as [[Le-Mens2025-qz]] and [[Votta2025-xz]]. Its focus on visual and platform-specific political campaigning connects it to Instagram and visual communication research including [[Larsson2026-ro]] and [[Bouchafra2026-ts]], while its election-campaign framing complements broader studies of digital media in elections like [[Kalsnes2025-zb]].
 
 ## Podcast
 
-A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Achmann-Denkler2026-lx.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-ai-sees/id1866587707?i=1000764671260)
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Achmann-Denkler2026-lx.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-can-gpt-4o-see-politicians-like-we-do/id1866587707?i=1000764671260)

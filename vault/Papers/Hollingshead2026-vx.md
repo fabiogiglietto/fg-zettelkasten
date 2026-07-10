@@ -22,33 +22,33 @@ discovery_date: 2026-02-03T13:55:44.669422Z
 
 ## Summary
 
-This paper investigates how immigration is framed on Canadian TikTok and how the platform's distinctive memetic and interactive affordances shape that discourse. Through a mixed-methods content analysis of 344 high-engagement English-language videos collected in July 2025, the authors find that pro-immigration content outnumbers anti-immigration content roughly three to one — a striking inversion of patterns documented on X/Twitter. They argue that TikTok's affordances operate as a "double-edged resource": users across ideological positions deploy the same vernacular features (humor, community Toks, trending audio) in largely symmetrical ways, meaning the platform can simultaneously enable digital inclusion and amplify xenophobia. The dominant axis of contestation in Canada is economic rather than identity-based, reflecting post-pandemic affordability anxieties.
+This paper offers one of the first systematic content analyses of how immigration is framed on TikTok, focusing on the Canadian context and the platform's distinctive affordances of mimesis and interactivity. Through a mixed-methods content analysis of 344 high-reach English-language videos, the authors find that pro-immigration content substantially outweighs anti-immigration content — a reversal of the hostility documented in prior X/Twitter research. They argue that TikTok's affordances act as a "double-edged resource," simultaneously enabling digital inclusion and amplifying xenophobia. Crucially, users across ideological divides deploy the platform's features in largely symmetrical ways, suggesting a shared memetic vernacular that transcends stance, while the primary axis of contestation in Canada is economic rather than identity-based.
 
 ## Key Contributions
 
-- One of the first systematic content analyses of immigration framing on TikTok, extending a literature concentrated on X and Facebook.
-- A replicable methodology for studying geographically-bounded TikTok content in jurisdictions lacking Research API access, combining the Zeeschuimer scraper with time-varied sampling to mitigate algorithmic personalization.
-- Operationalization of the Memetic Interactivity Codebook (MIC) for rule-based analysis of TikTok affordances.
-- Empirical bridging of immigration-framing scholarship with platform-affordance theory, showing that identical features support both inclusionary and exclusionary discourse.
-- Documentation of generative AI as an emerging vector for racist "speculative worldbuilding" in anti-immigration content.
+- One of the first content analyses of immigration framing on TikTok, extending a literature dominated by X/Twitter and Facebook.
+- A replicable sampling methodology for studying geographically-bounded TikTok content in jurisdictions without Research API access (via Zeeschuimer scraping and time-varied searches).
+- Operationalizes the Memetic Interactivity Codebook (MIC) for rule-based analysis of TikTok metadata.
+- Bridges immigration framing scholarship and platform affordance theory, showing the same features support both inclusion and exclusion.
+- Empirical insight into Canadian digital discourse during a period of shifting public sentiment and affordability anxiety.
 
 ## Methods
 
-The authors scraped 5,305 videos via Zeeschuimer (a Firefox extension) using value-neutral keywords and hashtags (e.g., "Canada immigration", #canadaimmigration), searching twice daily over seven days in July 2025. Purposive filtering — 2025 videos, >100,000 plays, English/unknown metadata, non-US location, most-played video per user — yielded 344 videos after intercoder reliability checks. Stance and frame were manually coded using a 13-frame typology drawn from Helbling, Kelling & Monroe, and Gruzd et al. (Krippendorff's α > 0.8), while affordances were coded via the MIC. Analysis used chi-square and Fisher-Freeman-Halton exact tests with Monte Carlo simulation and Bonferroni-adjusted post-hoc comparisons.
+Mixed-methods content analysis of TikTok videos collected in July 2025 using the Zeeschuimer Firefox extension (chosen because TikTok's Research API is unavailable to Canadian institutions). Value-neutral English keywords and hashtags (e.g., "Canada immigration", #canadaimmigration) were searched twice daily over seven days to mitigate algorithmic personalization. Purposive filtering retained 2025 videos with over 100,000 plays, non-US location, and one video per user, yielding 344 videos after intercoder reliability checks. Immigration stance was manually coded against a 13-frame typology (Krippendorff's alpha > 0.8), and affordances were coded with the MIC. Analysis used chi-square and Fisher-Freeman-Halton exact tests with post-hoc odds ratios and Bonferroni adjustment.
 
 ## Findings
 
-- Stance distribution: 41% pro-immigration, 13% anti-immigration, 8% neutral, 38% unrelated — inverting typical X/Twitter patterns.
-- Pro-immigration content was dominated by an "other" frame (62%) covering immigration-consultant advice, peer support, and citizenship celebrations; economic benefits came second (14%).
-- Anti-immigration content centered on economic costs (47%), with cultural threats (18%) and nationalism (16%) trailing; identity frames together comprised roughly one-third.
-- Only one affordance was statistically significantly associated with stance: anti-immigration videos used non-original audio far less (16%) than pro-immigration (44%) or unrelated (57%) videos.
-- Duet and Stitch were entirely unused; community Toks (e.g., #canadatiktok) appeared similarly (~21%) across stances, often signaling patriotism.
-- Humor served as a shared register across ideological camps, supporting both solidarity narratives and racist anti-South-Asian tropes.
-- A minority of anti-immigration videos used generative AI to construct dystopian "speculative futures" of Indian demographic takeover.
+- Stance distribution: 41% pro-immigration, 13% anti-immigration, 8% neutral, 38% unrelated.
+- Pro-immigration content was dominated by an "other" frame (62%) — consultant advice, peer support, citizenship celebrations — with economic benefits second (14%).
+- Anti-immigration content was led by economic costs (47%), then cultural threats (18%) and nationalism (16%); identity frames were roughly one-third.
+- Only one affordance showed a significant association with stance: anti-immigration videos used non-original audio far less (16%) than pro-immigration (44%) and unrelated (57%) videos.
+- No Duet or Stitch use; community Toks appeared similarly across stances (~21%), often signaling Canadian patriotism.
+- Humor served as a shared discursive register, enabling both solidarity narratives and racist anti-South-Asian tropes.
+- Generative AI appeared in a minority of anti-immigration videos to construct dystopian "speculative futures" of an Indian "takeover" of Canada.
 
 ## Connections
 
-This paper sits within a growing strand of TikTok-as-political-discourse research that takes the platform's content-centric, memetic logic seriously as distinct from network-centric platforms. It connects directly to [[Gerbaudo2026-fo]] on TikTok's role in political communication and to [[Cabbuag2024-me]] on the platform's memetic and vernacular practices — both relevant for understanding how the "shared language" of TikTok affordances can be appropriated across ideological lines.
+The paper's observation that generative AI is emerging as a tool for racist "speculative worldbuilding" connects it to broader work on generative-AI-fueled disinformation such as [[Hackenburg2025-dj]] and [[DeVerna2025-dl]]. Its platform-vernacular and affordance-centric framing of ideological discourse resonates with TikTok and memetic-culture scholarship including [[Baym2026-tr]] and [[Copland2025-em]]. The focus on framing and cross-ideological narrative contestation also relates to information-disorder research like [[Hameleers2026-mc]] and [[Cazzamatta2026-lo]].
 
 ## Podcast
 

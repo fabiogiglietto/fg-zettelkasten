@@ -22,34 +22,34 @@ discovery_date: 2026-05-15T05:52:01.125136Z
 
 ## Summary
 
-This paper investigates how English-language news media linguistically construct large language models (LLMs) and generative AI, with particular attention to *mentalistic-agentic* framings that attribute human-like cognition to these systems. Drawing on a corpus of 18,032 articles from 15 outlets across Europe, Asia, North America, and the Middle East (2022–2024), the authors combine computational NLP with manual content analysis to map thematic emphases, isolate LLM-centric coverage, and detect anthropomorphic metaphors. They argue that mentalistic framings are present but neither dominant nor uniform, varying more by outlet and editorial culture than by region. Crucially, the authors resist a blanket critique of anthropomorphic language: such framings can reproduce corporate hype, serve as conventional explanatory shorthand, or function as adversarial critique. The paper positions journalism as a central site where public epistemologies of AI are negotiated.
+This study asks how English-language news media linguistically construct large language models (LLMs) and generative AI, with particular attention to *mentalistic-agentic framings* — language that attributes human-like cognitive or experiential capacities to these systems. Drawing on media framing theory and science and technology studies (notably sociotechnical imaginaries), the authors analyze 18,032 articles from 15 outlets across Europe, Asia, the Middle East, and North America (2022–2024). Their central argument is nuanced: mentalistic framings do appear in journalistic discourse but are neither dominant nor uniformly problematic. Anthropomorphic language can reproduce corporate hype, but it can also serve routine explanatory simplification or adversarial critique. The paper positions journalism as a key site where public epistemologies of AI are co-produced, and resists a one-dimensional condemnation of anthropomorphism.
 
 ## Key Contributions
 
-- A text-level, LLM-specific (rather than AI-general) analysis of journalistic framing.
-- An empirically grounded, multi-functional account of anthropomorphic language in AI news — challenging the assumption that it uniformly fuels hype.
-- A cross-regional comparison testing whether AI framings are globally uniform or culturally differentiated.
-- A replicable mixed-methods pipeline integrating BERTopic, dependency parsing, dictionary-based mentalism detection, and manual coding.
-- A contribution to debates on AI imaginaries, public epistemology, and critical AI literacy in journalism.
+- Fine-grained, text-level analysis of how LLMs *specifically* (not AI broadly) are linguistically framed in news.
+- Empirical grounding for normative debates on anthropomorphic AI language, showing it is not uniformly tied to hype.
+- A comparative cross-cultural dimension testing whether framings are globally uniform or culturally differentiated.
+- A replicable mixed-methods pipeline: BERTopic topic modeling, dependency parsing, dictionary-based mind-perception detection, and manual coding.
+- Contribution to debates on AI imaginaries, public epistemology, and critical AI literacy in journalism.
 
 ## Methods
 
-A mixed computational–manual design. Articles were retrieved from Nexis and preprocessed with SpaCy's transformer model. BERTopic (run 20 times; mean pairwise Jaccard 0.75) produced a 316-cluster solution inductively labeled into 24 meta-frames. A validated RegEx classifier isolated 1,631 LLM-centric articles. Dependency parsing identified 2,188 sentences with LLMs as grammatical subjects, which were then manually coded for agentic framing (Krippendorff's α = 0.76) and mentalistic framing using Schweitzer et al.'s Mind Perception Dictionary (α = 0.78). Word2Vec embeddings probed semantic neighborhoods of "ChatGPT" and "Bard/Gemini"; chi-square tests and Cramér's V assessed associations with region and outlet.
+Mixed computational and manual content analysis of a Nexis-sourced corpus (Jan 2022–Aug 2024). Preprocessing used SpaCy's transformer model; BERTopic (run 20 times for stability, mean pairwise Jaccard 0.75) yielded a 316-cluster solution labeled inductively into emphasis frames and 24 meta-frames. A RegEx classifier (>95% accuracy) identified 1,631 LLM-centric articles. Sentence-level dependency parsing detected LLMs as grammatical subjects (2,188 subject-sentences), which were manually coded for agentic framing (α = 0.76) and mentalistic/experiential framing using Schweitzer et al.'s Mind Perception Dictionary (α = 0.78). Word2Vec embeddings explored semantic neighborhoods, and chi-square tests with Cramér's V assessed framing associations with region and outlet.
 
 ## Findings
 
-- AI articles form a small but growing share of news output (e.g., 0.9% at NYT).
-- A techno-capitalist master frame dominates globally; secondary emphases diverge — risk/ethics in Europe and North America; education, applications, and industry in Asia (χ²(46) = 1399.64, p < 0.001).
-- Only 9.2% of AI articles are LLM-centric, and ChatGPT appears in 82.5% of these, dwarfing Gemini/Bard (15.7%), Claude (2.5%), and Mistral (1%).
-- 45.5% of LLM articles present the technology as agentic, but only 8.8% deploy explicitly mentalistic-agentic framings (0.8% of full corpus); no experiential/emotional framings were detected.
-- Mentalistic framing varies significantly by outlet (NYT, Straits Times, AFP over-represented) but not by region (p = 0.75).
-- Only 6.19% of LLM-subject sentences contain negations denying agency — explicit critical pushback is rare.
-- Anthropomorphic language serves diverse rhetorical functions, from uncritical reproduction of corporate narratives to adversarial critique (e.g., chatbots as "bullshitters").
-- ChatGPT clusters semantically with education; Bard/Gemini clusters around user interaction and "hallucination."
+- AI articles are a small share of total news output (e.g., 0.9% of NYT) but grew over the period.
+- A techno-capitalist master frame dominates globally; secondary themes diverge regionally — European/North American outlets emphasize risks/ethics, Asian outlets emphasize education, applications, and industry (χ²(46) = 1399.64, p < 0.001).
+- Only 9.2% of AI articles are LLM-centric; ChatGPT appears in 82.5% of these, dwarfing Gemini/Bard (15.7%), Claude (2.5%), and Mistral (1%).
+- 45.5% of LLM articles present the technology as agentic, but only 8.8% (0.8% of the full corpus) use explicitly mentalistic-agentic framings; no experiential/emotional framings were found.
+- Framing distribution differed by outlet (χ²(12) = 74.00, p < 0.001; V = 0.06) but *not* by region (p = 0.75), implicating editorial and individual journalistic practice over culture.
+- Critical denials of agency (negated constructions) are rare (6.19%).
+- Anthropomorphic language serves multiple functions — corporate reproduction, explanation, and critique (e.g., calling chatbots "dumb" or "bullshitters").
+- Embeddings cluster ChatGPT with education terms and Bard/Gemini with user-interaction and limitation terms like "hallucination."
 
 ## Connections
 
-This paper sits within an emerging strand of LLM-and-media scholarship attentive to how generative AI is publicly represented and discursively shaped. It connects most directly to work on AI hype, narrative framing, and journalistic practice such as [[Waight2026-ts]], [[Waight2025-al]], [[Achmann-Denkler2026-lx]], and [[Dierickx2026-tw]], and complements studies of how LLMs themselves construct or distort discourse, such as [[Tornberg2026-lc]] and [[Le-Mens2025-qz]]. Its concern with public epistemology and sociotechnical imaginaries also resonates with [[Schiffrin_undated-gi]] on news ecosystems shaped by generative AI.
+This paper's focus on media framing and public epistemology of generative AI connects it to work on how the public perceives and reasons about AI systems and to journalism-facing research on AI in newsrooms — see [[Dierickx2026-tw]] on AI and journalistic practice, [[Beacken2026-zb]] and [[Baym2026-tr]] on public perceptions and discourse around AI. Its concern with hype, anthropomorphic imaginaries, and the risks of inflated AI claims also sits alongside [[Schiffrin_undated-gi]] on media narratives about AI.
 
 ## Podcast
 

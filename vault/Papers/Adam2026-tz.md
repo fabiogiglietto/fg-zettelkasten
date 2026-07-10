@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1093/joc/jqaf033
 bibtex_key: Adam2026-tz
 topics: [information-disorder, health-misinformation-networks]
-citation_count: 4
+citation_count: 5
 open_access: false
 source_url: https://doi.org/10.1093/joc/jqaf033
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Adam2026-tz.mp3
@@ -22,36 +22,39 @@ discovery_date: 2026-05-16T09:10:27.779284Z
 
 ## Summary
 
-This study combines a two-wave panel survey (Germany and German-speaking Switzerland, March–May 2020) with browser-level web tracking to ask how media exposure and political predispositions jointly shaped emerging COVID-19 conspiracy beliefs at the pandemic's outset. Using BERT classifiers to identify conspiracy-related sentences and their stance (supporting vs. opposing) across 3.5 million tracked documents, the authors test a holistic model integrating alternative media, mainstream media, populism, and political mistrust. They find both direct contagion (from conspiracy-supporting alternative media) and direct mitigation (from conspiracy-opposing mainstream media), but also indirect reinforcement via selective engagement and a backfire pathway in which mainstream debunking *increases* conspiracy belief among populists.
+This study leverages a fortuitously timed two-wave panel survey in Germany and German-speaking Switzerland (March–May 2020), bracketing a web-tracking phase, to examine how *actual* online exposure to conspiracy content combined with political predispositions to shape early COVID-19 conspiracy beliefs. The authors argue that conspiracy belief formation is a "marriage" of media information and predispositions, requiring a holistic model that integrates alternative media (as vectors of contagion), mainstream media (as debunking mitigators), and audience dispositions such as populism and political mistrust. Grounding itself in Zaller's information-plus-predispositions framework and motivated reasoning theory, the paper traces both direct exposure effects and indirect pathways of selective engagement, selective avoidance, reinforcement, and counterarguing.
 
 ## Key Contributions
 
-- One of the first behaviorally-tracked, real-time studies of conspiracy belief formation during an unfolding global crisis, sidestepping retrospective self-report bias.
-- A holistic model marrying Zaller-style information-plus-predispositions theory with selective exposure and motivated reasoning, operationalized at the level of both source and content stance.
-- Empirical evidence that mainstream debunking works on average but backfires among populists — clarifying when correction succeeds or fails.
-- Released methodological infrastructure: the WebTrack browser plugin and fine-tuned German BERT classifiers for conspiracy detection and stance.
-- Demonstrates that even mainstream quality outlets carried substantial conspiracy-supporting content during the early pandemic.
+- One of the first real-time, behavioral-tracking studies of conspiracy belief formation at the *onset* of a global crisis, avoiding retrospective and self-report bias.
+- Integrates content-level exposure measurement (source *and* stance) with panel measurement of predispositions and beliefs.
+- Develops and tests a holistic model uniting alternative media, mainstream media, and predispositions, with selective engagement/avoidance and reinforcement/counterarguing pathways.
+- Shows empirically that mainstream debunking works for the general public but can backfire among strong populists.
+- Releases methodological infrastructure: the WebTrack browser plugin and fine-tuned German BERT classifiers for conspiracy detection and stance.
 
 ## Methods
 
-Two-wave online panel (N≈1,147) with quota sampling, bracketing a desktop web-tracking phase via a custom Chrome/Firefox plugin capturing full HTML. Sentence-level conspiracy detection and stance classification used fine-tuned German BERT models trained on 12,745 manually coded sentences (α ≥ .80), validated on a 498-sentence gold standard (macro F1 = 0.94 for detection; 0.78–0.82 for stance). URLs were mapped to mainstream quality/tabloid, hyperpartisan alternative conspiracy (HAC), and social media sources. OLS regression and bootstrapped mediation (10,000 iterations) tested direct and indirect effects of populism and political mistrust on T2 conspiracy beliefs through stance-specific exposure.
+- Two-wave online panels: Germany (n=573) and German-speaking Switzerland (n=574), quota-sampled, fielded T1 (March 2020) and T2 (May 2020).
+- Web tracking via a custom Chrome/Firefox plugin capturing desktop browsing HTML between waves (3,531,606 documents).
+- Sentence-level classification using fine-tuned German BERT to detect conspiracy content and supporting/opposing stance, validated against a 498-sentence gold standard (macro F1 = 0.94 detection; 0.78–0.82 stance) and trained on 12,745 manually coded sentences.
+- URL-based source classification (mainstream quality/tabloid, hyperpartisan alternative conspiracy media, social platforms).
+- Survey scales for populism, political mistrust, and COVID-19 conspiracy beliefs; OLS regression plus bootstrapped mediation (10,000 iterations) on pooled data with country control.
 
 ## Findings
 
-- 7.2% of visited documents on average contained conspiracy-related content (~113 per participant over the tracking window).
-- Conspiracy-supporting content outweighed opposing content across all media types, including mainstream outlets.
-- Exposure across source types was positively correlated — users encountered conspiracy content across multiple channels rather than via clean single-source filter bubbles.
-- **Contagion**: conspiracy-supporting alternative media exposure raised conspiracy beliefs (b=0.14, p<.001).
-- **Mitigation**: conspiracy-opposing mainstream media exposure lowered conspiracy beliefs (b=−0.05, p=.001).
+- On average 7.2% of visited documents contained conspiracy-related content (~113 documents per participant).
+- Conspiracy-*supporting* content was more prevalent than opposing content across all media types — including mainstream media.
+- Exposure across sources was positively correlated: most users met conspiracy content across multiple sources, not via single-source selectivity.
+- **Contagion:** conspiracy-supporting alternative media exposure increased beliefs (b=0.14, p<.001).
+- **Mitigation:** conspiracy-opposing mainstream media exposure decreased beliefs (b=-0.05, p=.001).
 - Populism (b=0.38) and political mistrust (b=0.20) directly predicted conspiracy beliefs.
-- Populists selectively engaged with supporting alternative media (b=0.76) and avoided opposing mainstream media (b=−0.91); mistrust effects were weaker.
-- Significant indirect reinforcement effect via alternative media for both predispositions.
-- Backfire pathway: among populists, the mainstream exposure they did receive *increased* rather than reduced conspiracy beliefs.
-- 25–30% of respondents saw at least some truth in COVID-19 conspiracies or were uncertain.
+- Populists selectively engaged with conspiracy-supporting alternative media (b=0.76) and avoided conspiracy-opposing mainstream media (b=-0.91).
+- Significant reinforcement (via alternative media) and counterarguing/backfire (mainstream debunking increasing populists' beliefs) indirect effects.
+- Roughly 25–30% of respondents saw at least some truth in, or were uncertain about, COVID-19 conspiracies.
 
 ## Connections
 
-This paper sits at the intersection of misinformation-correction work and behavioral exposure measurement, complementing platform- and tracking-based studies of misinformation diets such as [[Gonzalez-Bailon2024-rq]] and [[Budak2024-ef]], and the cross-national exposure perspective in [[Humprecht2025-ml]]. Its findings on populism-driven selective exposure and backfire connect to inoculation and correction debates explored in [[van-der-Linden2026-jt]] and [[Spampatti2026-kx]], while its account of alternative-media contagion resonates with work on hyperpartisan and conspiratorial ecosystems like [[Frischlich2025-vn]] and [[Rohrbach2026-rc]].
+This paper sits alongside other work on health misinformation and inoculation/correction dynamics, notably [[Spampatti2026-kx]] and [[van-der-Linden2026-jt]] on countering conspiracy and misinformation, where the backfire finding among populists is a relevant complication. Its web-tracking approach to measuring actual exposure connects methodologically to behavioral-trace studies such as [[Gonzalez-Bailon2024-rq]] and [[DeVerna2025-dl]], and its populism–conspiracy nexus links to research on alternative and hyperpartisan media audiences like [[Frischlich2025-vn]]. It also shares first-author infrastructure and concerns with [[Rohrbach2026-rc]].
 
 ## Podcast
 

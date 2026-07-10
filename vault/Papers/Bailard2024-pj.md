@@ -6,7 +6,7 @@ year: 2024
 doi: 10.1017/s0003055423001478
 bibtex_key: Bailard2024-pj
 topics: [online-radicalization-and-extremism-on-platforms, llms-computational-content-analysis]
-citation_count: 9
+citation_count: 11
 open_access: false
 source_url: https://doi.org/10.1017/s0003055423001478
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bailard2024-pj.mp3
@@ -22,35 +22,35 @@ discovery_date: 2026-05-17T08:06:58.350298Z
 
 ## Summary
 
-This paper investigates whether and how the Proud Boys' online discourse on Telegram is linked to their offline violent and nonviolent activities between January 2020 and July 2022. Combining a fine-tuned DeBERTa classifier of collective action frames across 500,000+ messages from 92 affiliated channels with ACLED event data, the authors use vector autoregression and impulse response analysis to demonstrate temporal relationships between framing and action. Their core argument is that diagnostic (grievance) and motivational (solidarity/pride) framing—not explicit calls-to-action—predict subsequent offline violence, and that offline nonviolent protests feed back into motivational framing, producing a reciprocal cycle that culminates in violent mobilization. The findings challenge content-moderation paradigms focused on discrete hateful posts and argue for analyzing extremist discourse as a temporally dynamic ecosystem.
+This paper investigates how the online discourse of the Proud Boys on Telegram relates to their offline violent and nonviolent activities across a 31-month period (January 2020–July 2022). Drawing on collective action framing theory and supplementing it with theories of moralizing and moral convergence, the authors move away from a content-moderation paradigm that treats extremist speech as discrete hateful posts. Instead, they analyze the discursive ecosystem and its temporal dynamics, classifying over 500,000 messages into collective action frames and linking them to real-world event records. Their central finding is a reciprocal "online messaging–offline action cycle": grievance-based (diagnostic) and solidarity-building (motivational) framing predict subsequent offline violence, while offline nonviolent protests in turn feed back into motivational framing online.
 
 ## Key Contributions
 
-- One of the first large-scale longitudinal empirical links between specific types of far-right online discourse and offline violent/nonviolent events.
-- A fine-tuned DeBERTa NLP pipeline for detecting collective action frames at scale, moving beyond toxicity/hate-speech classifiers (macro F1 = 0.80).
-- Theoretical articulation of a reciprocal "online messaging–offline action cycle" between protest activity and solidarity discourse.
-- Extension of collective action framing theory with moralizing and moral convergence concepts to explain the grievance-to-violence pathway.
-- Practical implications for moderation: explicit calls-to-action are *not* the most predictive content; grievance and solidarity-building speech matter more.
-- Public release of code and classified datasets via the APSR Dataverse.
+- One of the first large-scale empirical analyses linking specific types of right-wing extremist online discourse to offline violent and nonviolent activity over time.
+- A fine-tuned DeBERTa NLP pipeline for detecting collective action frames at scale, going beyond standard hate speech or toxicity classifiers.
+- Identification and theorization of a reciprocal online messaging–offline action cycle between offline protest and online solidarity messaging.
+- Extension of collective action framing theory by integrating moralizing and moral convergence frameworks.
+- Practical implications for content moderation: explicit calls-to-action and hateful posts are less predictive than grievance and solidarity-building speech.
+- Public release of documentation, classified datasets, and analysis scripts via the APSR Dataverse.
 
 ## Methods
 
-The authors snowball-collected Telegram channels via Telethon, narrowing to 92 explicitly Proud Boys-affiliated channels. Trained annotators hand-coded 12,189 messages (Gwet's AC ≈ 0.82) along diagnostic, prognostic, motivational, injustice, and othering frames, which were used to fine-tune a DeBERTa multi-label classifier. Classified weekly time series were merged with 376 ACLED Proud Boys-involved events and analyzed using VAR models, Granger causality tests, and impulse response functions, with stationarity and residual diagnostics. Robustness checks include a regional first-difference time-series cross-sectional analysis across 53 region-specific channels and a structural equation mediation model.
+The authors snowball-collected Telegram data via the Telethon API, identifying ~2,900 Proud Boys-affiliated channels and focusing on a core network of 92 explicitly Proud Boys channels. Trained annotators hand-coded 12,189 messages using a codebook covering diagnostic, prognostic, motivational, injustice, and othering frames (Gwet's AC ≈ 0.82, 88% agreement). A pretrained DeBERTa model was fine-tuned for multi-label frame classification (macro F1 = 0.80) and validated against held-out and blind-annotated samples. The classified message data were merged with ACLED US Crisis Monitor records of 376 Proud Boys-involved events, aggregated into weekly time-series. Analysis used vector autoregression (VAR) with Granger causality tests and impulse response functions, plus a regional first-difference cross-sectional analysis and a structural equation mediation model as robustness checks.
 
 ## Findings
 
-- Diagnostic frames dominate (~34% of weekly posts); motivational frames appear in ~9%.
-- Rising diagnostic framing Granger-causes later offline violent events; injustice/othering subframes show weaker but similar effects.
-- Increases in motivational framing (both proportion and frequency) predict subsequent violent events.
-- Prognostic frames (explicit calls-to-action) predict neither violent nor nonviolent events.
-- Nonviolent protests predict subsequent increases in motivational framing—but not other frame types.
-- Impulse response analysis suggests a ~4-week cycle: nonviolent protest → motivational framing peaks at ~2 weeks → violent event probability peaks ~2 weeks later.
-- SEM estimates ~8% of the nonviolent-to-violent effect is mediated by motivational framing.
-- Regional analysis confirms motivational frequency predicts state-level violence, while diagnostic framing does not at that scale.
+- Diagnostic frames appeared in ~34% of weekly posts (injustice 13%, othering 11%), prognostic in 12%, motivational in 9%.
+- Increased proportion of diagnostic frames Granger-causes subsequent offline violent events; injustice and othering subframes show weaker effects (p ≈ 0.07–0.09).
+- Both the proportion and frequency of motivational frames predict subsequent violent events.
+- Prognostic frames (explicit calls-to-action) do not predict either violent or nonviolent offline events.
+- Nonviolent protests predict an increase in the proportion of motivational frames online in following weeks; no other frame type shows this responsiveness.
+- Impulse response functions suggest a roughly four-week cycle: nonviolent protest → peak motivational framing at ~2 weeks → peak violent event probability ~2 weeks later.
+- SEM estimates ~8% of the effect of nonviolent protests on later violent events is mediated by increases in motivational framing.
+- Regional first-difference analysis confirms motivational message frequency predicts state-level violent events, while diagnostic framing does not at the regional level.
 
 ## Connections
 
-This work complements other computational and discursive analyses of far-right online ecosystems—particularly studies that map how grievance and identity-building discourse drive radicalization trajectories such as [[Rothut2026-wt]] and [[Askanius2026-de]]. Its emphasis on solidarity/motivational framing as a mobilization mechanism resonates with work on far-right community-building and affective belonging like [[Nangle2026-yo]] and [[Karo2026-dn]], while its critique of content-moderation paradigms speaks to platform-governance concerns raised in [[Bouchafra2026-ts]].
+This work sits within a cluster of studies on right-wing extremism and mobilization dynamics on platforms; it connects to research on the Proud Boys and far-right ecosystems such as [[Grusauskaite2026-po]] and [[Askanius2026-de]], and to work on radicalization pathways and online-to-offline linkages like [[Rothut2026-or]] and [[Rothut2026-wt]]. On the methodological side, its fine-tuned supervised classification of frames beyond toxicity detection aligns with computational content-analysis efforts such as [[Achmann-Denkler2026-lx]] and [[Balluff2026-if]].
 
 ## Podcast
 

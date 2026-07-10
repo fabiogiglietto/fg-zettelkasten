@@ -22,32 +22,37 @@ discovery_date: 2026-01-27T10:52:07.596221Z
 
 ## Summary
 
-This paper provides empirical evidence for media capture in an established Western democracy by examining Austria's *Inseratenaffäre* — the alleged 2016 arrangement in which Chancellor Sebastian Kurz funneled government advertising to the tabloid OE24 in exchange for favorable coverage and manipulated polls. Using a quasi-experimental design on a decade of Austrian political news, the authors show that after 2016 OE24 dramatically amplified Kurz's visibility relative to comparable outlets, without making coverage of Kurz himself more positive but by turning more negative against his competitors. They interpret this as a "pay positive to go negative" pattern of advertiser-driven media bias and argue that Austria's regulatory framework, despite the 2012 Media Transparency Law, leaves democratic-corporatist systems structurally vulnerable to covert political capture.
+This paper investigates Austria's *Inseratenaffäre* ("advertisement scandal"), in which former chancellor Sebastian Kurz allegedly arranged for the tabloid OE24 to receive government advertising revenue in exchange for favorable coverage and manipulated polling. Using automated content analysis of 222,659 political news articles from 17 Austrian outlets (2012–2021) and a difference-in-differences design, the authors test whether OE24's coverage of Kurz diverged from comparable outlets after the alleged 2016 onset of the scheme. They find a substantial increase in Kurz's visibility in OE24, no significant boost in his favorability, but more negative coverage of his political competitors — a pattern consistent with "paying positive to go negative" dynamics in media capture. The study frames Austria as a "most likely case" within the democratic-corporatist model, demonstrating that media capture via government advertising is not confined to hybrid or Central/Eastern European regimes.
 
 ## Key Contributions
 
-- Empirical demonstration of media capture mechanisms inside a consolidated Western European democracy, extending a literature dominated by CEE and hybrid-regime cases.
-- A reusable computational pipeline combining transformer-based sentiment analysis with difference-in-differences and synthetic DiD to detect covert media-political arrangements.
-- A fine-tuned GottBERT sentiment classifier trained on AUTNES data with counterfactual name-swapping augmentation to mitigate actor-specific bias.
-- Documentation of the "pay positive to go negative" dynamic (Blasco et al. 2016) in a political — rather than commercial — advertiser context.
-- Methodological template and policy implications for regulating government advertising and safeguarding media independence.
+- Provides rare empirical evidence of media capture mechanisms within an established Western European democracy, extending a literature focused largely on CEE and developing contexts.
+- Introduces a quasi-experimental computational pipeline combining transformer-based sentiment analysis with difference-in-differences (DiD) and synthetic DiD to detect coverage irregularities consistent with covert political-media arrangements.
+- Develops and validates a fine-tuned GottBERT German sentiment model using counterfactual data augmentation (name-swapping) to reduce actor-specific bias.
+- Documents the "pay positive to go negative" pattern in a political (rather than purely commercial) advertiser context.
+- Offers a transferable methodological template for studying alleged media capture and informs policy debates on regulating government advertising.
 
 ## Methods
 
-The authors assembled 222,659 political news articles from 17 Austrian print and online outlets (2012–2021) via APA archives and web scraping, filtered with validated AUTNES Boolean queries for Kurz, Mitterlehner, Strache, and successive SPÖ leaders. Actor visibility was measured at the paragraph level via word-proximity search (corpustools) and aggregated monthly; favorability was scored using a fine-tuned GottBERT model (F1 = 0.77; RMSE = 0.65). The core identification strategy is a difference-in-differences design treating OE24 as the treated unit with 2015 as baseline, supplemented by 2012–2015 placebo tests, party-level robustness checks on a separate 250,442-article sample, alternative control sets (including Kronen Zeitung and Heute), and a synthetic DiD estimator that relaxes the common-trend assumption.
+- Automated content analysis of 222,659 political news articles from 17 Austrian print/online outlets (2012–2021), sourced via the APA archive and targeted web scraping.
+- Article filtering with validated Boolean search strings (from AUTNES) identifying mentions of Kurz, Mitterlehner, Strache, and successive SPÖ leaders.
+- Paragraph-level actor visibility via word-proximity search (R package `corpustools`), aggregated to monthly outlet-level counts and log-transformed.
+- Favorability measured with a fine-tuned GottBERT model trained on AUTNES manual coding (classification F1 = 0.77, regression RMSE = 0.65).
+- DiD estimation of the Average Treatment Effect on the Treated (ATET), treating OE24 as the treated outlet with 2015 as baseline; placebo tests (2012–2015) checked the common trend assumption.
+- Robustness checks: party-level analysis (250,442 articles), alternative control groups (Kronen Zeitung, Heute), and a synthetic DiD estimator relaxing the common trend assumption.
 
 ## Findings
 
-- Pre-2016 visibility trends were largely parallel across OE24 and control outlets, supporting the DiD assumptions.
-- Post-2016, paragraphs mentioning Kurz in OE24 roughly doubled relative to the counterfactual, with highly significant ATETs across all post-treatment years.
-- No comparable visibility boost appeared for Mitterlehner or the SPÖ leader; Strache showed smaller, election-year-specific effects.
-- Favorability toward Kurz did not significantly improve, but coverage of all his competitors in OE24 trended more negative after 2016.
-- Synthetic DiD confirmed an average ~50% increase in Kurz's OE24 visibility over 2016–2019 (significant at 1%).
-- Party-level analyses revealed no partisan tilt: the bias was actor-specific to Kurz, not pro-ÖVP in general.
+- Pre-2016 visibility trends across OE24 and controls were largely parallel, supporting the common trend assumption.
+- After 2016, paragraphs mentioning Kurz in OE24 roughly doubled relative to the counterfactual, with highly significant ATETs across all post-treatment years.
+- No comparable visibility effects for Mitterlehner or the SPÖ leader; Strache showed significant positive effects only in two election years and at smaller magnitudes.
+- Favorability ATETs for Kurz were not statistically significant, but coverage of all other candidates trended more negative in OE24 after 2016.
+- Synthetic DiD estimated an average ~50% increase in Kurz's visibility over 2016–2019 relative to a weighted control (significant at 1%).
+- Party-level checks showed a general uptick in OE24 coverage of all parties but no party-specific effect — the bias was actor-focused on Kurz rather than partisan.
 
 ## Connections
 
-No other papers have been provided under shared topics, so there are no sibling notes to link. Intellectually, this work sits at the intersection of media-capture theory (Besley & Prat; Schiffrin), comparative media systems (Hallin & Mancini), and computational measurement of media bias, and would naturally connect to future notes on advertiser-driven slant and party-press parallelism once added to the vault.
+This paper sits within the strand of information-disorder research concerned with structural, top-down manipulation of the news environment rather than bottom-up misinformation. Its focus on partisan and biased coverage of political actors connects it to [[Balluff2026-if]], sharing a lead author and likely methodological lineage in computational Austrian media analysis. Beyond that shared computational-content-analysis tradition, the paper stands somewhat apart from the topic cluster's typical emphasis on social-media disorder, since its core concern is covert political-media capture through advertising rather than platform dynamics.
 
 ## Podcast
 

@@ -22,35 +22,36 @@ discovery_date: 2026-02-10T06:52:51.874075Z
 
 ## Summary
 
-This paper combines a US national survey (n=1,059) with roughly four weeks of passive web and YouTube tracking in late 2023 to measure actual exposure to low-credibility online health content. The authors find that such exposure is rare in aggregate — about 3% of web health visits and 10% of YouTube health views — but heavily concentrated, with the top 10% of users accounting for 77% of exposure. Adults aged 60+ are disproportionately exposed, even controlling for overall browsing volume, and exposure correlates with poorer headline discernment, false cancer beliefs, conspiracism, and consumption of dubious political news. Crucially, referrals to low-credibility health sites come overwhelmingly from other low-credibility sites rather than search engines or social media, suggesting habitual cross-domain consumption rather than incidental encounters.
+This paper links national US survey data (n=1,059) with passive web-tracking and YouTube viewing histories collected over roughly four weeks in late 2023 to measure real-world exposure to low-credibility online health content. The central finding is that such exposure is rare in the aggregate — a mean of 0.5 low-credibility health visits per person, roughly 3% of all health browsing — but highly concentrated: the top 10% of users account for 77% of it. That concentration is patterned by age, cognition, and worldview: adults aged 60+, those with poorer health-information discernment, those holding stronger conspiracist beliefs, and consumers of dubious political news are disproportionately exposed. Crucially, exposure is driven not by social media or search engines but by referrals from other low-credibility sites, implying habitual cross-domain consumption rather than incidental encounters. The work extends the digital-trace misinformation literature from its usual focus on political news into the health domain, showing that age-based vulnerability generalizes across topics and platforms.
 
 ## Key Contributions
 
-- Extends the digital-trace misinformation literature from political news into health, testing whether age-based vulnerability generalizes across domains.
-- One of the first studies pairing linked survey data with passive web and YouTube traces specifically for health misinformation.
-- Introduces a scalable hybrid pipeline (embeddings + fine-tuned GPT-4o + manual coding) to classify health content and rate credibility, validated against human coders.
-- Maps referral pathways into low-credibility health sites, with platform-design implications: search and social are not the main gateways.
-- Validates trace-based exposure measures by linking them to survey misperception and discernment outcomes.
+- Extends digital-trace misinformation research beyond political news into online health content, testing cross-domain generalizability of age effects.
+- Provides one of the first linked studies combining survey responses with passive web and YouTube tracking specifically for health misinformation exposure.
+- Introduces a hybrid embedding + LLM-assisted pipeline for classifying and credibility-rating health content at scale, validated against human coders.
+- Identifies referral pathways (cross-linking among low-credibility sites, not search/social) with implications for platform intervention design.
+- Validates digital-trace exposure measures against survey-based misperception and discernment outcomes.
 
 ## Methods
 
-The authors linked YouGov's Pulse Panel survey data to RealityMine passive metering of 9.7M URLs across devices over ~4 weeks per participant. Health relevance was classified using YouGov tags plus OpenAI text embeddings; 1,155 health domains were hand-coded for credibility (78 flagged as low-credibility, Krippendorff's α = 1.00). YouTube health videos (~3,900) were rated via a hybrid manual + fine-tuned GPT-4o procedure (κ = 0.89–0.97). Survey instruments measured cancer headline discernment, false risk-factor beliefs, conspiracism, ideology, and demographics. Preregistered OLS regressions with robust standard errors and survey weights were supplemented by logistic and negative binomial models, plus temporal referrer-sequence analysis.
+The authors used YouGov's Pulse Panel (n=1,059 with web data; survey October–November 2023), approximating the US adult population. Passive metering (RealityMine) captured 9.7 million web addresses across devices over ~4 weeks per participant. URLs were classified as health-related using YouGov category tags plus OpenAI text embeddings; 1,155 health domains were hand-coded for credibility (78 flagged, Krippendorff's α = 1.00). YouTube data (~470,000 videos) were classified for health relevance via embeddings, then 3,902 health videos were credibility-coded using a hybrid manual + fine-tuned GPT-4o approach (Cohen's κ = 0.89–0.97). Survey measures covered cancer headline discernment, cancer risk-factor (mis)perceptions, conspiracism, ideology, and demographics. Analysis relied on preregistered OLS regression with robust standard errors and survey weights, supplemented by logistic and negative binomial models and outlier-exclusion robustness checks, plus a referrer analysis based on the temporal sequence of visits.
 
 ## Findings
 
-- 13% of respondents visited any low-credibility health domain in the 4-week window; mean = 0.5 visits, max = 122.
-- Exposure concentration: top 1% of users = 37% of all low-credibility exposure; top 10% = 77%.
-- Adults 60+ were substantially more likely to be exposed than 18–29 year olds, robust to controls for total health and total web activity.
-- Poorer cancer headline discernment and stronger false-risk-factor beliefs predicted greater exposure, with effects strongest among older adults.
+- ~13% of respondents visited any low-credibility health domain in the window (mean 0.5, max 122); ~77% saw any health content (mean 34 visits).
+- Low-credibility content made up ~3% of health visits on the open web and ~10% on YouTube.
+- Exposure was highly concentrated: top 1% of users accounted for 37%, top 10% for 77%, of total low-credibility exposure.
+- Adults 60+ were significantly more exposed than 18–29 year olds, robust to controls for total health visits and total web sessions.
+- Poorer cancer headline discernment and belief in false cancer risk factors predicted greater exposure, with effects strongest among older adults.
 - Older conservatives and older heavy consumers of right-leaning partisan news showed the highest exposure.
-- Referrals came mainly from other low-credibility sites (especially for 60+), not from search engines or social media.
-- On YouTube, absolute low-credibility exposure did not differ by age, but it constituted a larger share of older adults' overall lighter YouTube health diet.
-- Dubious political news consumption and low-credibility health web visits independently predicted low-credibility YouTube health exposure, indicating cross-platform clustering.
-- A media literacy intervention from a companion experiment produced no significant downstream effects on exposure.
+- Referrals to low-credibility health sites came predominantly from other low-credibility sites (especially among 60+), with minimal search or social referral.
+- No age difference in absolute YouTube low-credibility exposure, but older adults' lower overall YouTube use made such content a larger share of their health video diet.
+- Dubious political news consumption and low-credibility health website visits independently predicted low-credibility YouTube health exposure.
+- A companion media-literacy treatment had no significant downstream effects on exposure.
 
 ## Connections
 
-This paper directly extends the digital-trace tradition that has documented older adults' heightened engagement with untrustworthy political content into the health domain, complementing platform- and content-focused work on health misinformation ecosystems like [[Rothut2026-or]] and [[Bollenbacher2026-vz]]. Its finding that low-credibility consumption clusters across topics and platforms resonates with cross-domain perspectives on problematic information consumers seen in [[Efstratiou2026-ij]]. The null result for a media literacy treatment also speaks to ongoing debates about intervention efficacy explored in [[Scalco2026-bd]] and [[Song2025-yh]].
+This work sits within the broader effort to validate what digital trace and survey data actually reveal about online information exposure, connecting to methodological discussions of measurement and platform data in [[Ulloa2024-jm]] and web-tracking approaches in [[Fattorini2026-bo]]. Its emphasis on cross-domain consumption profiles and the limited, concentrated nature of misinformation exposure resonates with related evidence on who encounters low-credibility content in [[Stagnaro2025-pz]] and [[DiGiuseppe2025-es]]. The other topic papers largely concern network diffusion or political news specifically and are not directly engaged here.
 
 ## Podcast
 

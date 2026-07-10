@@ -22,32 +22,34 @@ discovery_date: 2026-01-15T00:00:00Z
 
 ## Summary
 
-This paper tracks a decade (2013–2023) of Facebook activity from Norway's right-wing populist Progress Party and its two successive leaders, Siv Jensen and Sylvi Listhaug, to examine how the sentiment of political posts relates to audience engagement over time. Larsson uses a hybrid pipeline — GPT-4 zero-shot classification of 11,160 Norwegian-language posts, validated against human coders — to categorize posts as negative, positive, or neutral, then compares shares, comments, and likes across sentiment, account, and year. The central argument is twofold: negativity in populist Facebook content has grown (especially after Listhaug's 2021 takeover) and reliably amplifies shares and comments, while likes follow a different, more positivity-driven logic. The title's nod to "the new boss" captures the finding that leadership transitions reshape party-level communication style toward greater negativity.
+This paper offers a decade-long (2013–2023) longitudinal study of Facebook communication by Norway's populist Progress Party and its two consecutive leaders, Siv Jensen and Sylvi Listhaug. Larsson asks how the *sentiment* of political posts relates to *audience engagement* over time, combining a supply-side analysis of what parties post with a demand-side analysis of how users respond. Working with 11,160 posts, the author documents a growing reliance on negative campaigning—especially after Listhaug's 2021 leadership takeover—and shows that negativity reliably drives shares and comments, while likes follow a distinct, more positively-valenced logic. The paper doubles as a methodological demonstration of LLM-assisted content analysis in a non-English (Norwegian) setting.
 
 ## Key Contributions
 
-- A rare 10-year longitudinal account of populist Facebook communication outside the Anglo-American context.
-- A reproducible hybrid LLM + human coding workflow for sentiment annotation in Norwegian, with strong reliability (α = .91 intracoder, .82 intercoder).
-- Empirical disaggregation of engagement types, showing likes diverge from shares and comments in their relation to sentiment.
-- Integration of supply-side (party/leader production) and demand-side (audience engagement) analyses in one design.
-- Evidence bearing on negative campaigning, permanent campaigning, and political professionalization debates.
+- Rare 10-year longitudinal evidence on sentiment and engagement in populist political Facebook communication outside the Anglo-American context.
+- A reproducible hybrid workflow pairing GPT-4 zero-shot annotation with human validation for sentiment coding in Norwegian, achieving high reliability.
+- Demonstrates that likes operate on a different logic from shares and comments with respect to sentiment.
+- Integrates content-production (supply) and audience-engagement (demand) analyses within a single design.
+- Speaks to debates on negative campaigning, populism, permanent campaigning, and political professionalization.
 
 ## Methods
 
-CrowdTangle was used to harvest 11,160 public posts from the Progress Party page and the personal pages of Jensen and Listhaug (2013–2023). Each post was classified as negative/positive/neutral campaigning by GPT-4 (gpt-4-0314) using a Norwegian-language zero-shot prompt; reliability was tested by re-running the LLM on a 20% sample and by independent human coding of a 5% sample. Engagement (shares, comments, likes) was analyzed with medians, Kruskal-Wallis, and Dunn's tests due to non-normal distributions, accompanied by visual breakdowns across account, sentiment, and year.
+- Longitudinal collection via CrowdTangle of 11,160 public Facebook posts from three pages: the Progress Party (5,941), Sylvi Listhaug (2,791), and Siv Jensen (2,428).
+- Hybrid content analysis: zero-shot classification by GPT-4 (gpt-4-0314) using a Norwegian-language prompt to label posts as negative, positive, or neutral, validated against human coding.
+- Reliability: LLM re-coding of a 20% sample (Krippendorff's α = .91); human coding of a 5% sample (α = .82).
+- Engagement analysis using medians, Kruskal-Wallis rank sum tests, and Dunn's post-hoc tests (given non-normal distributions), plus visualizations across account, sentiment, and year.
 
 ## Findings
 
-- Negative content rose markedly over the decade, with Listhaug shifting toward negativity from 2017 and the party page following after her 2021 ascension.
-- Negative posts produced the highest median shares across nearly all accounts and years (H2a confirmed).
-- Negative posts also produced more comments, with 2021 (election year) as a notable exception (H2b largely confirmed).
-- Likes diverged: positive posts dominated likes for Jensen (2020–2023) and Listhaug (2021–2022), suggesting "lightweight" engagement obeys a different affective logic.
-- Election years no longer produced clear engagement surges, consistent with a shift toward permanent campaigning.
-- Posting volume mirrored leadership status: Listhaug ramped up after 2021, Jensen wound down.
+- The share of negative posts rose over the decade, sharply so after Listhaug became leader in 2021; her own content shifted from mostly positive (2013–2016) to predominantly negative from 2017.
+- The Progress Party's page stayed positive until 2021, then turned negative—suggesting leaders shape party-level communication style.
+- Negative posts consistently earned the highest median shares across accounts and years, and drove more comments in most years (2021 being an exception).
+- Likes diverged: positive content became the dominant driver of likes for Jensen (2020–2023) and Listhaug (2021–2022).
+- Election years no longer reliably produced engagement surges, pointing toward more permanent campaigning rhythms.
 
 ## Connections
 
-This paper sits naturally alongside other work using LLMs as annotation instruments for political and media content — particularly [[Balluff2026-if]] and [[Le-Mens2025-qz]] on validating LLM-based text classification, and [[Tornberg2025-ir]] / [[Tornberg2026-lc]] on LLMs in political and social analysis. Its non-English (Norwegian) application speaks to multilingual evaluation concerns raised in [[Nguyen2026-vm]]. Substantively, the focus on populist negativity and platform dynamics resonates with [[DeVerna2025-dl]] on social media political content, though most other papers in this register address LLM capabilities rather than political communication directly.
+This paper's methodological core—LLM zero-shot classification with human validation in a non-English language—connects to broader work on the reliability and use of LLMs for computational content analysis, such as [[Le-Mens2025-qz]] and [[Balluff2026-if]]. Its substantive focus on affective/negative content and engagement dynamics resonates with research on emotional amplification and outrage online like [[Brady2026-ln]], while its populist political-communication framing links loosely to studies of partisan online behavior in this register.
 
 ## Podcast
 
