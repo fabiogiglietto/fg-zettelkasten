@@ -5,8 +5,8 @@ authors: ["Tomás Dodds", "Naomi Mine", "Natali Helberger", "Andrea L. Guzman", 
 year: 2026
 doi: 10.1080/21670811.2026.2630187
 bibtex_key: Dodds2026-df
-topics: [generative-ai-and-media]
-citation_count: 0
+topics: [platform-critique-anniversary-essays, information-disorder]
+citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2630187
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dodds2026-df.mp3
@@ -22,33 +22,32 @@ discovery_date: 2026-03-16T19:45:07.150011Z
 
 ## Summary
 
-This editorial introduces a Digital Journalism special issue reframing AI hype as a systemic infrastructure that structures journalism — not just a discursive bubble or passing cultural narrative. Dodds and colleagues define AI hype as a set of exaggerated promises and anticipatory narratives that mobilize resources, redistribute legitimacy, and configure sociotechnical futures before those futures materialize. They argue that journalists occupy a contradictory dual position as both hype makers and hype watchers, and that hype is sustained through routine sourcing choices, professional anxieties, managerial pressures, and geopolitically inflected narratives. Rather than simply debunking hype, the authors call for "breakdown and repair" — making hype's mechanisms visible so alternative futures become imaginable.
+This editorial introduces a special issue of *Digital Journalism* that reconceptualizes AI hype not as a passing discursive bubble but as a systemic, structuring force within journalism. The authors — Dodds, Mine, Helberger, Guzman, and Diakopoulos — define AI hype as a set of exaggerated promises and anticipatory narratives that mobilize resources, redistribute legitimacy, and configure sociotechnical futures before they materialize. Drawing on infrastructure studies and community-of-practice theory, they argue that journalists occupy a contradictory dual role as both hype makers and hype watchers, and that debunking alone is insufficient. Instead they call for "breakdown-and-repair" approaches that render hype's mechanisms visible and open space for alternative futures.
 
 ## Key Contributions
 
-- A working definition of AI hype as a *structuring sociotechnical force* rather than mere discourse, expectation, or bubble.
-- A shift in the scholarly question: from whether AI hype is justified to *how it functions* — how it mobilizes resources and reconfigures labor in journalism.
-- An integrated framework spanning communities of practice, recurring narratives, reach/scope, and breakdown-and-repair.
-- An "infrastructural inversion" approach bridging journalism studies with STS infrastructure scholarship.
-- Concrete recommendations: diversify expert sources, practice active reflexivity, and produce more critical scholarship on AI's environmental, labor, and societal costs.
+- Offers a working definition of AI hype as a structuring sociotechnical force rather than mere discourse or transient expectation.
+- Reframes the scholarly question from *whether* hype is justified to *how* it functions, mobilizes resources, and reconfigures journalistic labor.
+- Synthesizes special-issue contributions into an integrated framework spanning communities of practice, recurring narratives, reach and scope, and breakdown/repair.
+- Bridges journalism studies with STS infrastructure scholarship by applying "infrastructural inversion" to AI hype.
+- Provides concrete recommendations: diversify expert sources, practice active reflexivity, and produce critical scholarship on labor, environmental, and societal impacts.
 
 ## Methods
 
-Editorial synthesis and theoretical framing of contributions to a Digital Journalism special issue. The authors draw on Star's ethnography of infrastructure and Lave & Wenger's community-of-practice theory, integrating empirical work from the issue — including ethnography of the Associated Press AI initiative, interviews with Chinese journalists, comparative content analysis across US, Dutch, Brazilian, German, Chilean, and African media, and analysis of media union responses to GenAI. Comparative historical analogies to Hyperloop and metaverse hype cycles further contextualize the argument.
+An editorial synthesis and theoretical framing rather than an empirical study. The authors draw on Star's ethnography of infrastructure and Lave & Wenger's community-of-practice theory, and conduct an integrative review of the special issue's empirical studies — including ethnography of the Associated Press AI initiative, interviews with Chinese journalists, comparative content analyses across US/Dutch/Brazilian/German/Chilean/African media, and analyses of media-union responses to generative AI. Comparative historical analogies with prior hype cycles (Hyperloop, metaverse) contextualize the argument.
 
 ## Findings
 
-- Newsroom actors strategically *leverage* AI hype to secure funding and legitimacy — e.g., rebranding existing automation projects as "AI" at the AP.
-- Sourcing patterns shifted with the "AI" framing: from government officials/administrators in earlier automation reporting to tech executives once AI became the dominant frame.
-- Metaverse coverage was largely uncritical (~11% critical framing), suggesting structural patterns recur across hype cycles.
-- Journalistic discourse frames AI as "open-ended technological inevitability," foreclosing questions about whether such futures should arrive at all.
-- National framings diverge significantly: Chinese journalists adopt a "loyal-facilitator" stance aligned with state AI strategy; German coverage emphasizes "European values" against US/China competition.
-- Hype renders invisible the hidden labor (annotators, moderators), environmental costs, and material infrastructures of AI — including the contradiction of "fully automated" systems requiring constant human supervision.
-- Media union agreements on GenAI often use vague language that reproduces invisibility for marginalized media workers.
+- Newsroom actors strategically leverage AI hype to secure funding and legitimacy — e.g., reframing older automation projects as "AI" projects.
+- Sourcing has shifted from government officials in the "automation" era to tech executives once "AI" became dominant, sustaining hype and rendering alternative actors invisible.
+- Media unions have negotiated GenAI protections, but vague language reproduces the invisibility of marginalized media workers.
+- Journalistic discourse frames AI through "open-ended technological inevitability," foreclosing questions about whether such futures should arrive at all.
+- National framings diverge: Chinese journalists position as "loyal facilitators" aligned with state strategy, while German coverage emphasizes "European values" against US/China competitors.
+- Hype obscures hidden labor (data annotators, moderators), environmental costs, and material infrastructures, and masks contradictions like labeling systems "fully automated" while requiring constant human supervision.
 
 ## Connections
 
-This editorial frames the conceptual terrain that empirical studies of AI discourse in journalism then populate — connecting closely to [[Stanusch2026-ec]] on how news coverage constructs AI narratives, and to [[Wang2025-zy]] on the production and circulation of AI imaginaries. Together these works trace how hype operates as both newsroom infrastructure and public-facing narrative system.
+This editorial's concern with how professional and platform actors construct legitimizing narratives around new technologies resonates with platform-critique work such as [[Helmond2026-ll]] and [[Baym2026-tr]] on the political economy and evolution of digital infrastructures. Its treatment of hidden labor, material infrastructure, and infrastructural inversion connects to [[Vertesi2026-lv]], while its attention to how media narratives redistribute visibility and power sits alongside broader concerns about information disorder and public understanding of emerging technologies. Beyond these, the special-issue framing is largely distinct from the misinformation-focused papers under these topics.
 
 ## Podcast
 

@@ -5,7 +5,7 @@ authors: ["Alice E. Marwick"]
 year: 2026
 doi: 10.1177/20563051261434796
 bibtex_key: Marwick2026-ss
-topics: [anniversary-reflections-social-media]
+topics: [platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20563051261434796
@@ -22,31 +22,31 @@ discovery_date: 2026-04-17T16:41:08.022790Z
 
 ## Summary
 
-In this anniversary-issue essay, Alice Marwick uses autobiographical reflection — particularly her years on LiveJournal in the early 2000s — to mourn what has been lost in the move from the "old internet" to today's platform ecosystem. She argues that the intimacy, reciprocity, and community formation that characterized early online spaces were not quaint accidents of small user bases alone, but products of design and governance choices that contemporary mega-platforms have deliberately foreclosed. The piece reframes social media as *social infrastructure* requiring stewardship and care, insisting that the current alienating, extractive, surveillance-driven web is a contingent political-economic outcome rather than a technological inevitability.
+In this reflective essay for *Social Media + Society*'s anniversary issue, Alice Marwick uses her own history as an early internet user—especially her years on LiveJournal in the early 2000s—to argue that something genuinely valuable has been lost in the shift to today's platform-dominated web. She contrasts the intimacy, reciprocity, and community formation of legacy sites with the alienation, surveillance, and extractive logics of contemporary social media. Crucially, she frames the present state of platforms not as technological inevitability but as the contingent outcome of political-economic choices, and gestures toward alternative futures grounded in small-scale, care-oriented communication infrastructures.
 
 ## Key Contributions
 
-- A first-person historical account of LiveJournal as a counterweight to dominant Twitter/Facebook-centric narratives of social media history.
-- A normative critique of platform capitalism grounded in lived experience rather than abstract theorization.
-- An argument for reconceiving social media as social infrastructure, with implications for governance and alternative platform design.
-- A biographical anchoring of two decades of social media scholarship within one researcher's own trajectory as a user.
+- A first-person historical account of LiveJournal and adjacent early-internet spaces (Prodigy, IRC, VAX/VMS bulletin boards) as a counterpoint to dominant social media histories.
+- A normative critique of contemporary platform political economy grounded in lived experience rather than abstract theory.
+- Reframes social media as *social infrastructure* requiring stewardship, safety, and care rather than a business optimized for scale and profit.
+- Situates two decades of social media scholarship within the author's own biography of internet use.
 
 ## Methods
 
-Autobiographical reflection and narrative essay, drawing on memory of using Prodigy, IRC, VAX/VMS bulletin boards, and especially LiveJournal in the 1990s and 2000s. Marwick re-reads her own archived LJ entries and comment threads (preserved as a PDF) as a kind of personal fieldnote corpus.
+The essay is autobiographical and reflective, drawing on the author's two-decade engagement with online communities. It combines a retrospective reading of her own archived LiveJournal entries and comment threads (preserved as a PDF) with narrative recollection of using Prodigy, IRC, bulletin boards, and LiveJournal across the 1990s and early 2000s.
 
 ## Findings
 
-- LiveJournal supported sustained reciprocal writing: long posts routinely drew dozens of substantive, supportive comments constituting meaningful affective labor.
-- Granular privacy and filtering controls enabled semi-private, socially coherent spaces — affordances largely absent from current platforms.
-- Relationships forged on LJ produced lasting offline friendships, partnerships, and community ties enduring into middle age.
-- Today's platforms (Meta, X, YouTube, Bluesky) leave the author feeling bored, surveilled, and unable to be honest, with vulnerability now displaced into ephemeral or encrypted channels (Instagram stories, Signal).
-- The subcultural smallness and self-selection of the early internet were necessary but not sufficient conditions for the intimacy LJ enabled — design choices mattered too.
-- Cloning legacy platforms (e.g., Bluesky-as-Twitter) is the wrong horizon; meaningful alternatives require reimagining infrastructure for small-scale, reciprocal sociality.
+- LiveJournal fostered sustained reciprocal writing, with lengthy posts generating dozens of substantive, supportive comments that constituted meaningful affective labor.
+- Granular privacy and filtering features enabled semi-private, socially coherent spaces largely absent from today's platforms.
+- Relationships formed on LiveJournal produced lasting offline friendships, partnerships, and community ties persisting into middle age.
+- Contemporary platforms (Meta, X, YouTube, Bluesky) leave the author feeling bored, surveilled, and unable to be honest, despite continued use of ephemeral channels like Instagram stories and Signal.
+- Subcultural conditions—a relatively small, self-selected early user base—were part of what made these intimate dynamics possible.
+- The trajectory toward consolidation, surveillance, and virality was not inevitable; alternative infrastructures should support small-scale, reciprocal sociality rather than replicate legacy platforms.
 
 ## Connections
 
-This essay sits in close dialogue with other anniversary reflections in the same register, particularly [[Baym2026-tr]] on the affective texture of earlier online sociality and [[Boyd2026-op]] on networked publics and what platform consolidation has eroded. It also resonates with [[Marwick2026-qd]] as part of the author's own ongoing reckoning with platform critique, and with [[Swartz2026-zb]] insofar as both frame current platform conditions as contingent outcomes of political-economic choices rather than technological destiny.
+As an anniversary-issue reflection, this sits within a cluster of essays revisiting the promises and losses of social media's history; it shares its infrastructural and care-oriented framing with [[Baym2026-tr]] and [[Swartz2026-zb]], and its concern with alternatives to corporate platforms and platform decay resonates with [[Bruns2026-yv]] and [[Helmond2026-ll]]. Its emphasis on networked intimacy and community formation also connects to work on online publics such as [[Boyd2026-op]].
 
 ## Podcast
 

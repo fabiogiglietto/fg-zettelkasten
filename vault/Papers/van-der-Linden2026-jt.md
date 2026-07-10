@@ -5,8 +5,8 @@ authors: ["Sander van der Linden", "Debra Louison-Lavoy", "Nicholas Blazer", "Na
 year: 2026
 doi: 10.37016/mr-2020-193
 bibtex_key: van-der-Linden2026-jt
-topics: [information-disorder]
-citation_count: 1
+topics: [climate-and-misinformation-message-interventions, information-disorder]
+citation_count: 2
 open_access: false
 source_url: https://doi.org/10.37016/mr-2020-193
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/van-der-Linden2026-jt.mp3
@@ -22,32 +22,37 @@ discovery_date: 2026-02-09T06:52:57.031866Z
 
 ## Summary
 
-This research note reports a field experiment testing whether psychological inoculation ("prebunking") against emotional manipulation can be deployed at scale within Instagram's native ad environment. Partnering with Google Jigsaw and Reality Team, the authors served a 19-second prebunking video as a Story Feed ad to 375,597 UK Instagram users aged 18–34, then measured manipulation-recognition via the platform's poll sticker on a fictitious fearmongering headline. Treated users were 21 percentage points more accurate than controls at spotting emotional manipulation, the effect held at a five-month follow-up, and treated users clicked through to learn more at roughly three times the control rate — establishing that brief, cheap, in-feed inoculation ads can produce durable and behaviorally consequential gains outside the lab.
+This research note reports a field experiment testing whether psychological inoculation ("prebunking") against emotional manipulation can be scaled in a real social media scroll feed. Working with Google Jigsaw and Reality Team, the authors served a 19-second prebunking video as a Story Feed ad to 375,597 UK Instagram users aged 18–34, then used the platform's own poll sticker to measure whether treated users could better spot fearmongering in a fictitious headline. The study argues that inoculation efficacy—well established in lab and YouTube settings—transfers to the ecologically valid, high-scroll environment of Instagram, and that such campaigns can be deployed cheaply and at scale. Treated users were roughly 21 percentage points more accurate at identifying emotional manipulation, an effect that persisted at a five-month follow-up, and they clicked through to learn more at about three times the control rate.
 
 ## Key Contributions
 
-- One of the first real-world demonstrations of inoculation efficacy inside the Instagram scroll feed, extending prior YouTube-based prebunking field trials.
-- A novel quasi-experimental methodology that exploits Instagram's poll sticker (for outcome measurement) and birth-month targeting (as a control-assignment workaround for the absence of native randomization in the ad manager).
-- Evidence of unusually durable single-technique inoculation effects, with the lift undiminished at five months.
-- Evidence that prebunking shifts not just recognition but downstream behavior (click-through), suggesting genuine engagement rather than mere demand effects.
-- Practical cost benchmarks ($8.25 CPM, below Meta averages) and operational guidance for NGOs, platforms, and policymakers running scaled prebunking campaigns.
+- One of the first real-world field demonstrations of inoculation efficacy in an Instagram scroll-feed environment, extending prior YouTube-based work.
+- An innovative quasi-experimental methodology using Instagram's poll sticker and birth-month targeting to evaluate interventions where true randomization is unavailable.
+- Evidence of unusually long-lasting (five-month) inoculation effects for a single-technique prebunking message, informing the literature on inoculation decay.
+- Demonstration that prebunking shifts digital behavior (click-through), not just recognition, suggesting downstream behavioral relevance.
+- Practical cost benchmarks and guidance for policymakers, NGOs, and platforms aiming to scale prebunking.
 
 ## Methods
 
-A field experiment ran February 5–11, 2025, targeting UK Instagram users aged 18–34. A weakened-dose fearmongering example ("Yoga linked to terrifying full body cancer") anchored a 19-second video produced after A/B pilot testing of color, tone, length, and music. Because the Instagram ad platform does not permit randomization, control assignment was based on birth months (April, July, October). Treatment was "as-treated": users had to watch ≥50% of the video to enter the watchlist. Outcomes were captured via a binary Instagram poll sticker asking users to identify the manipulation technique used in a headline, with the correct answer placed on the left to require intentional swiping. Initial responses (n = 806) were collected 24 hours to 10 days post-exposure; a five-month follow-up poll (July 2025) collected n = 676 further responses. Analyses used two-proportion z-tests and chi-square tests with Cohen's *h* effect sizes.
+- Field experiment on Instagram targeting UK users aged 18–34, running a 19-second prebunking video using a weakened-dose fearmongering example ("Yoga linked to terrifying full body cancer") as a Story Feed ad (Feb 5–11, 2025).
+- Quasi-experimental assignment: control group defined by birth month (April, July, October), since the Instagram ad manager does not permit true randomization.
+- "As-treated" design: users had to watch ≥50% of the video to enter the treatment watchlist.
+- Outcome measured via a single binary Instagram Poll Sticker asking users to identify the manipulation technique, with the correct answer placed left to require intentional swiping.
+- Initial poll responses (n = 806) collected 24 hours to 10 days post-exposure; a follow-up poll was run five months later (July 2025).
+- Pilot A/B tests optimized video hook/hold rates; analysis used two-proportion z-tests / chi-square tests with Cohen's h and 95% CIs.
 
 ## Findings
 
-- Treated users identified fearmongering correctly 59.55% of the time vs. 38.21% for controls — a 21.4 pp lift (χ²(1) = 35.87, *p* < .001, *h* = 0.43).
-- Control baseline accuracy fell below chance (38%), indicating poor default sensitivity to emotional manipulation.
-- At five months, the gap was effectively unchanged: 66.39% treatment vs. 43.98% control (χ²(1) = 31.38, *p* < .001, *h* = 0.45).
-- Click-through to "learn more" was ~3× higher in treatment (0.31% vs. 0.11%), persisting at follow-up (0.274% vs. 0.101%).
-- Treatment-to-watchlist conversion was 12.05%; poll response rates were ~0.85% (treatment) and 0.34% (control).
-- Cost per thousand impressions was $8.25, below platform averages, supporting low-cost scalability.
+- Treatment group identified emotional manipulation 59.55% of the time vs. 38.21% for controls—a 21.4 pp lift (X²(1) = 35.87, p < .001, h = 0.43).
+- Control baseline recognition (38%) was below chance, indicating poor default ability to detect fearmongering.
+- At five months, treatment accuracy remained higher (66.39% vs. 43.98%; +22.21 pp; X²(1) = 31.38, p < .001, h = 0.45).
+- Click-through rate was roughly triple in the treatment group (0.31% vs. 0.11%; X²(1) = 84.61, p < .001), persisting at follow-up.
+- Treatment-to-watchlist conversion was 12.05%; poll response rate was about 1%.
+- Cost-per-thousand impressions of $8.25 was below Meta averages, demonstrating low-cost scalability.
 
 ## Connections
 
-This study extends the inoculation/prebunking literature into Instagram's native ad environment and complements platform-scale work on the dynamics of misinformation exposure such as [[Gonzalez-Bailon2024-rq]] and [[Mosleh2024-op]], as well as broader assessments of the misinformation problem space like [[Budak2024-ef]]. Its emphasis on resilience-building also speaks to comparative work on societal vulnerability to misinformation, e.g. [[Humprecht2025-ml]]. The use of an ad platform as both delivery and measurement infrastructure connects methodologically to other field-experimental approaches in the topic cluster, though most adjacent papers here focus on misinformation supply, narratives, or detection rather than user-side intervention.
+This paper sits within the message-intervention strand of the misinformation literature and speaks directly to work on AI- and dialogue-based debunking such as [[Costello2024-bg]], which similarly tests scalable, real-world corrective interventions. Its concern with emotional-manipulation susceptibility and platform-level countermeasures also connects it to studies of misinformation diffusion and platform dynamics like [[DeVerna2025-dl]] and [[Pierri2025-hm]]. The remaining papers under these topics address distinct facets of information disorder without a direct methodological or theoretical tie to prebunking.
 
 ## Podcast
 

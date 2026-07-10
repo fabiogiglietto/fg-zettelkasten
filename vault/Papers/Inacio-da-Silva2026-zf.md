@@ -5,7 +5,7 @@ authors: ["Marcio Inacio da Silva", "Lucas de Oliveira", "Pedro Olmo Vaz de Melo
 year: 2026
 doi: 10.1145/3796545
 bibtex_key: Inacio-da-Silva2026-zf
-topics: [elections-political-communication, platform-governance-data-access]
+topics: [digital-media-elections-global, platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3796545
@@ -22,27 +22,30 @@ discovery_date: 2026-02-16T20:52:21.543650Z
 
 ## Summary
 
-This paper reports on an independent auditing infrastructure deployed during the 2018 Brazilian general elections to monitor political advertising on Facebook. Motivated by concerns raised after the 2016 U.S. presidential election about opaque targeted political ads, the authors built a browser plugin that scraped ads served to volunteer users' timelines and analyzed the resulting corpus to identify advertising that appeared to violate Brazilian electoral rules. The work argues that volunteer-based, crowdsourced auditing is a feasible response to platforms' insufficient ad transparency, and demonstrates that such a system can surface concrete cases of potentially irregular electoral advertising in a major election outside the U.S.
+This paper presents an independent auditing system built to monitor political advertising on Facebook/Meta during the 2018 Brazilian elections. Motivated by concerns about targeted-ad abuse of the kind observed in the 2016 U.S. presidential election, the authors adapted a browser plugin — installed by over 2,000 volunteers — to collect the ads appearing on real users' timelines and analyze them for signs of irregular electoral advertising. The central argument is that crowdsourced, volunteer-based auditing is a feasible and valuable method for bringing transparency to opaque ad-targeting systems, especially in contexts where platforms fail to provide adequate disclosure. The work extends post-2016 debates on platform accountability from the U.S. into the Brazilian electoral environment.
 
 ## Key Contributions
 
-- Design and deployment of an independent, crowdsourced ad-auditing infrastructure adapted to the Brazilian electoral and regulatory context.
-- Empirical evidence on the nature of political advertising on Facebook during the 2018 Brazilian elections, including ads flagged as potentially irregular.
-- A reusable methodological template for browser-plugin-based platform auditing applicable to other electoral environments where platform-provided disclosure is inadequate.
+- Design and deployment of an independent ad-auditing infrastructure tailored to the Brazilian electoral context.
+- Empirical evidence on political advertising practices on Meta during the 2018 Brazilian elections.
+- A methodological template for crowdsourced platform auditing that can be applied to other electoral settings.
 
 ## Methods
 
-The authors adapted an existing browser plugin to capture ads appearing on the Facebook timelines of more than 2,000 Brazilian volunteers during the 2018 election period. The collected ads were then analyzed and classified, with attention to whether they conformed to Brazilian electoral advertising rules; ads deviating from these rules were flagged as potentially irregular.
+- Adaptation of a browser plugin to scrape advertisements appearing on volunteers' Facebook timelines.
+- Recruitment and deployment of the tool to more than 2,000 volunteer users across Brazil.
+- Collection of political ads served during the 2018 Brazilian election period.
+- Identification and classification of ads as potentially irregular under Brazilian electoral rules.
 
 ## Findings
 
-- The crowdsourced infrastructure successfully assembled a real-world corpus of political ads served to Brazilian Facebook users during the campaign.
-- A meaningful subset of collected ads were identified as potentially irregular under Brazilian electoral law.
-- The exercise demonstrates concrete gaps between platform self-disclosure and what independent auditing can reveal.
+- The system successfully gathered a corpus of political ads from real Facebook users during the election.
+- A subset of the collected ads were flagged as potentially irregular under Brazilian electoral law.
+- Volunteer-based crowdsourcing proved viable as a transparency mechanism where platform-provided disclosure was inadequate.
 
 ## Connections
 
-This paper sits squarely in the lineage of independent platform auditing that responds to inadequate data access from major platforms; methodologically it resonates with browser-extension and donation-based approaches discussed in [[Ohme2026-nv]] and [[Ulloa2024-jm]], and with broader arguments about researcher access in [[Rieder2026-pp]] and [[Rieder2025-ju]]. Its substantive focus on political ad transparency connects to work on ad libraries and electoral influence such as [[Bouchaud2026-lr]] and [[Votta2025-xz]], extending those concerns from U.S. and European contexts to Brazil.
+This work sits within a growing body of research using independent, crowdsourced, or infrastructural approaches to audit opaque platform advertising and data-access limitations — see [[Bouchaud2026-lr]] and [[Bouchaud2026-np]] on independent measurement of platform ad systems, and [[Rieder2025-ju]] and [[Rieder2026-pp]] on the politics of platform data access. Its focus on Brazilian elections and coordinated/irregular political messaging connects it to Latin American election studies such as [[Ventura2025-sw]] and [[Ventura2026-yc]], as well as broader work on coordinated and problematic electoral behavior on Meta like [[Giglietto2020-6278a4aa]] and [[Kansaon2025-id]].
 
 ## Podcast
 

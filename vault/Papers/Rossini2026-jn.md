@@ -5,7 +5,7 @@ authors: ["Patrícia Rossini", "Antonis Kalogeropoulos", "Camila Mont’Alverne"
 year: 2026
 doi: 10.1177/20563051261419393
 bibtex_key: Rossini2026-jn
-topics: [information-disorder, elections-political-communication]
+topics: [information-disorder, digital-media-elections-global]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20563051261419393
@@ -22,31 +22,35 @@ discovery_date: 2026-03-12T08:47:21.087868Z
 
 ## Summary
 
-This paper investigates how belief in electoral misinformation shaped political intolerance during Brazil's polarized 2022 presidential election. Drawing on a three-wave panel survey timed around the runoff and the subsequent anti-democratic protests, Rossini, Kalogeropoulos, and Mont'Alverne show that Brazilians who accepted false claims about electoral fraud became measurably less willing to extend civil rights to disliked political groups. They further argue that messaging apps — particularly WhatsApp — operate as an indirect pathway to intolerance by elevating misinformation beliefs, distinguishing them from general social media use. The authors reframe electoral misinformation not as a problem of confused citizens but as a corrosive force on democratic norms themselves, one that amplifies pre-existing cleavages like Brazilian *antipetismo*.
+This paper investigates the relationship between belief in electoral misinformation and political intolerance during Brazil's contested 2022 presidential election. Using a three-wave panel survey of Brazilian internet users, the authors show that citizens who believed false claims of electoral fraud grew more intolerant of political opponents over time. They further identify messaging apps (particularly WhatsApp) as an *indirect* pathway to intolerance: using these apps for news strengthened misinformation beliefs, which in turn eroded tolerance. The core argument reframes the democratic stakes of misinformation — it does not merely confuse citizens or undermine institutional trust, but corrodes commitment to democratic norms like tolerance toward disliked groups, amplifying pre-existing cleavages such as *antipetismo* rather than creating division from scratch.
 
 ## Key Contributions
 
-- First empirical link between electoral misinformation belief and political (in)tolerance, extending the standard focus on knowledge and institutional trust.
-- Differentiates messaging apps from broader social media: the former indirectly fuel intolerance through misinformation, the latter do not.
-- A rare longitudinal panel design in a major non-Western democracy during an actively contested election.
-- Reframes the democratic stakes of misinformation toward tolerance erosion and democratic backsliding.
-- Argues fact-checking is necessary but insufficient as a response.
+- First empirical evidence linking electoral misinformation *beliefs* to political intolerance, moving beyond effects on knowledge and institutional trust.
+- Distinguishes messaging apps (WhatsApp) from general social media as an indirect informational route to intolerance via heightened misinformation belief.
+- A longitudinal panel design in a major non-Western democracy, addressing a literature skewed toward authoritarian/hybrid regimes and cross-sectional data.
+- Reframes misinformation's democratic threat as the erosion of tolerance norms, not just epistemic confusion.
+- Argues fact-checking alone is insufficient for misinformation interventions and electoral regulation.
 
 ## Methods
 
-A three-wave nationally representative panel of Brazilian internet users (W1 N=1600 post first round; W2 N=1328 post second round; W3 N=1034 during anti-democratic protests), fielded by Ipec with demographic quotas. Political intolerance was measured via a GSS-style "least-liked group" approach across rights (voting, protesting, civil service, public speech). Misinformation belief was measured in W2 only (for ethical reasons) using eight fact-checked false statements with true and placebo controls. Analysis used autoregressive OLS models predicting W2 and W3 intolerance controlling for prior intolerance, plus structural equation models (lavaan, bootstrapped CIs) to test mediation from messaging/social media news use through misinformation belief to intolerance.
+- Three-wave nationally representative panel of Brazilian internet users (N=1600 W1, 1328 W2, 1034 W3), fielded by Ipec Inteligência with demographic quotas.
+- Waves timed to the 2022 election: W1 after first round, W2 after second round, W3 during the anti-democratic protests.
+- Political intolerance measured via a "least-liked" GSS-style approach (extending civil rights to disliked political groups: petistas, bolsonaristas, communists, dictatorship advocates).
+- Electoral misinformation belief measured in W2 only (for ethical reasons) using eight fact-checked false statements plus true and placebo controls.
+- Autoregressive OLS models predicting W2/W3 intolerance controlling for prior levels, plus SEM mediation models (lavaan, bootstrapped 95% CIs, 5000 samples).
 
 ## Findings
 
-- Belief in electoral misinformation predicted lower tolerance in W2 (β = −.09, p<.001) and W3 (β = −.10, p<.01).
-- Messaging app news use had no direct effect on intolerance, but an indirect effect via misinformation belief (β = −.009, p<.05).
-- Social media news use had no comparable indirect effect; if anything, it was marginally associated with greater tolerance in W3.
-- Engagement with online disagreement was associated with decreased tolerance between W1 and W2, contrary to classical deliberative expectations.
-- 46% of respondents endorsed zero false claims; the mean was 1.58 out of 8, suggesting concentrated rather than universal exposure.
+- Electoral misinformation beliefs significantly predicted increases in intolerance in both W2 (β = −.09) and W3 (β = −.10).
+- Social media news use had no significant effect (only marginally *positive* for tolerance in W3); messaging app news use had no significant *direct* effect.
+- SEM confirmed an indirect effect: W1 messaging app news use → higher W2 misinformation belief → lower W3 tolerance (β = −.009); no equivalent path for social media.
+- Engagement with online disagreement was *negatively* associated with tolerance (W1→W2, β = −.07), contrary to classical deliberation theory.
+- 46% of respondents held zero misinformed beliefs; mean score was 1.58 of 8.
 
 ## Connections
 
-This paper sits naturally alongside other work on Brazilian information environments and election-period misinformation, particularly [[Cazzamatta2026-lo]], [[Ventura2026-yc]], [[Ventura2025-sw]], and [[Kansaon2025-id]] on Brazil-specific dynamics, and [[Emilio2026-ik]] on WhatsApp-mediated politics. Its turn from knowledge effects to attitudinal/democratic-norm effects connects to [[Hameleers2026-mc]], [[van-der-Linden2026-jt]], and [[Humprecht2025-ml]], while its finding that online disagreement can erode tolerance complements [[Mosleh2024-op]] and the platform-effects debate in [[Gonzalez-Bailon2024-rq]] and [[Budak2024-ef]].
+This work sits alongside other studies of the Brazilian information environment and its democratic stakes, most directly [[Ventura2025-sw]], [[Ventura2026-yc]], and [[Inacio-da-Silva2026-zf]], as well as work on WhatsApp and messaging-app misinformation such as [[Bosch2024-hj]]. Its concern with attitudinal downstream effects of misinformation and platform use also connects to broader debates on misinformation susceptibility and intervention efficacy, e.g. [[van-der-Linden2026-jt]] on inoculation and fact-checking limits, and [[Arceneaux2026-xk]] on the affective/attitudinal consequences of exposure.
 
 ## Podcast
 

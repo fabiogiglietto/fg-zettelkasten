@@ -5,7 +5,7 @@ authors: ["Aytalina Kulichkina", "Paul Balluff", "Nicola Righetti", "Annie Waldh
 year: 2026
 doi: 10.1140/epjds/s13688-026-00637-2
 bibtex_key: Kulichkina2026-zk
-topics: [coordinated-inauthentic-behavior]
+topics: [coordinated-inauthentic-behavior, online-radicalization-and-extremism-on-platforms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1140/epjds/s13688-026-00637-2
@@ -22,27 +22,27 @@ discovery_date: 2026-03-14T09:23:35.278524Z
 
 ## Summary
 
-This paper examines coordinated activity on Twitter during the November 2022 COVID-19 ("A4" / White Paper) protests in China, treating the platform as a dual-use infrastructure that simultaneously enabled grassroots protest mobilization and state-aligned digital repression. Using a coordination detection algorithm on multilingual tweets, the authors identify a large set of accounts engaged in coordinated communication and analyze the thematic, temporal, and linguistic signatures of competing narratives. The work bridges connective action theory with research on authoritarian digital repression, arguing that social media around contentious events in China are shaped by overlapping, oppositional coordinated campaigns rather than a single dominant logic.
+This paper examines coordinated activity on Twitter surrounding China's 2022 COVID-19 protests, arguing that social media in authoritarian contexts operates as dual-use infrastructure — simultaneously enabling grassroots protest mobilization and facilitating state-aligned repression. Drawing on frameworks of connective action and digital repression, the authors use a coordination detection algorithm to identify accounts engaged in coordinated communication and characterize their thematic, temporal, and linguistic signatures. The central insight is that contentious politics online is not a one-sided affair: protest coordination and repressive counter-narratives coexist and compete within the same platform.
 
 ## Key Contributions
 
-- Empirical mapping of the scale and structure of coordinated communication during a major protest event in an authoritarian context.
-- Application of coordination detection methods to multilingual (Chinese and other languages) Twitter data, extending a largely English-centric literature.
-- Theoretical bridging of connective action and digital repression by framing protest and state-aligned coordination as competing forms on the same platform.
-- A case study showing that "coordinated inauthentic behavior" frameworks need to accommodate genuine protest coordination alongside repressive operations.
+- Empirical evidence on the scale and structure of coordinated communication during a major protest event in an authoritarian setting.
+- Demonstrates application of coordination detection methods to *multilingual* social media data on Chinese contentious politics.
+- Bridges connective action theory and digital repression research through a case study of competing coordinated narratives.
 
 ## Methods
 
-- Collection of Twitter data linked to the 2022 China COVID-19 protests.
-- A coordination detection algorithm to identify accounts behaving in unusually synchronized ways.
-- Multilingual content analysis of identified clusters, plus thematic and temporal pattern analysis to differentiate protest-mobilizing from repression-aligned activity.
+- Computational analysis of Twitter data related to China's COVID-19 protests.
+- Application of a coordination detection algorithm to surface accounts exhibiting coordinated behavior.
+- Multilingual analysis of linguistic patterns across coordinated activity.
+- Examination of thematic content and temporal dynamics of the identified accounts.
 
 ## Findings
 
-- 13,557 Twitter accounts were classified as engaged in coordinated activity around the protests.
-- Coordinated communication clustered into distinguishable thematic, temporal, and linguistic patterns, consistent with competing protest and state-aligned narratives.
-- The volume and structure of coordination suggest social media served as contested infrastructure during the protest wave, not merely a mobilization channel.
+- 13,557 Twitter accounts were identified as involved in coordinated activity around the protests.
+- Coordinated communication displayed identifiable and distinct patterns across themes, time, and language (specifics beyond the abstract not available).
+- Coordination served both mobilizing and repressive functions, consistent with the dual-use framing.
 
 ## Connections
 
-This work sits alongside other recent efforts to detect and characterize coordinated behavior on platforms, particularly those treating coordination as a methodological problem solvable via temporal/behavioral signatures — see [[Luceri2025-tr]], [[Minici2024-tf]], and [[Mannocci2025-ig]]. Its focus on state-aligned and protest-aligned coordination in an authoritarian setting connects it to studies of geopolitically motivated influence operations such as [[Kuznetsova2025-nu]] and [[Zhao2025-ny]], while its concern with multilingual and protest-context coordination resonates with [[Graham2025-gp]] and [[Pante2025-pq]].
+This work sits within the coordinated-behavior detection literature; its algorithmic approach connects to methodological efforts to identify coordinated link-sharing and inauthentic activity such as [[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], and [[Giglietto2023-fa71a001]], as well as broader coordination-detection studies like [[Luceri2025-tr]] and [[Minici2024-tf]]. Its focus on state-aligned repression and protest in an authoritarian context resonates with research on platform politics in similar settings, notably [[Kuznetsova2025-nu]] and [[Bosch2024-hj]].

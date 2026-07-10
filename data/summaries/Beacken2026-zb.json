@@ -1,0 +1,25 @@
+{
+  "abstract": "This paper examines how generative AI (GenAI) is used for political propaganda across six democratically weakened countries: Bolivia, Hungary, India, Nigeria, Tunisia, and Turkey. Challenging assumptions that GenAI's transformative impact is inevitable and uniform, the authors argue that geographic, political, economic, and social structures shape distinct patterns of adoption and use. The study contributes comparative international insights to debates on digital authoritarianism and computational propaganda.",
+  "key_claims": [
+    "GenAI adoption and use for propaganda varies significantly across weakening democracies rather than following a uniform trajectory.",
+    "Prevailing scholarship overstates the inevitability and transformative power of AI, neglecting the structural conditions that shape propaganda practices.",
+    "Understanding GenAI propaganda requires comparative, context-sensitive analysis attentive to local political, economic, and social conditions."
+  ],
+  "methods": [
+    "Comparative qualitative study across six countries: Bolivia, Hungary, India, Nigeria, Tunisia, and Turkey.",
+    "Focus on countries characterized as democratically weakened or backsliding.",
+    "Analysis of political elites' adoption and deployment of generative AI for propaganda purposes (specific methods not detailed in abstract)."
+  ],
+  "findings": [
+    "GenAI propaganda uses differ across the six cases, shaped by contextual structural factors.",
+    "Political, geographic, economic, and social conditions mediate how and whether elites integrate GenAI into propaganda strategies."
+  ],
+  "contributions": [
+    "Provides one of the first comparative international analyses of GenAI-enabled propaganda across multiple weakening democracies.",
+    "Responds to calls in the field for cross-national empirical work on GenAI and political communication.",
+    "Critiques technologically deterministic framings of AI's political impact by centering structural and contextual variation.",
+    "Extends scholarship on digital authoritarianism and computational propaganda to include GenAI-specific dynamics."
+  ],
+  "framing": "The paper situates itself within scholarship on digital authoritarianism, computational propaganda, and democratic backsliding, engaging critically with technologically deterministic accounts of AI's political effects. It advances a comparative, structurally grounded framework for analyzing how emerging technologies are adopted in illiberal or weakening political contexts.",
+  "pdf_source": "abstract_only"
+}

@@ -5,8 +5,8 @@ authors: ["Paolo Gerbaudo"]
 year: 2026
 doi: 10.1177/14614448241304106
 bibtex_key: Gerbaudo2026-fo
-topics: []
-citation_count: 38
+topics: [platform-critique-anniversary-essays]
+citation_count: 52
 open_access: false
 source_url: https://doi.org/10.1177/14614448241304106
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gerbaudo2026-fo.mp3
@@ -22,33 +22,33 @@ discovery_date: 2026-04-25T08:39:36.580958Z
 
 ## Summary
 
-Gerbaudo argues that TikTok inaugurates a "second generation" of social media that breaks with the networked logic of Facebook, Twitter, and Instagram. Where first-generation platforms organized "networked publics" around explicit interpersonal ties — friending, following, liking — TikTok produces "clustered publics": algorithmically inferred neighborhoods of users grouped by behavioral similarity, primarily through implicit signals like watch time. The meaning of "social" itself shifts from interpersonal connection to statistical commonality of interest. Drawing on Simmel's notion of social forms and Weberian ideal-types, the paper theorizes this as a morphological transformation of online publicity with three normative consequences: depersonalization, opacity, and subcultural fragmentation.
+Gerbaudo argues that TikTok inaugurates a "second generation" of social media (c. 2015–2024) that is qualitatively distinct from the first-generation social network sites like Facebook, Instagram, and Twitter (c. 2004–2014). Where earlier platforms organized what boyd termed *networked publics* around explicit interpersonal ties — friending, following, liking — TikTok produces what Gerbaudo calls **clustered publics**: statistically-constructed neighborhoods of users grouped by inferred similarity of interest and behavior, largely from implicit signals such as watch time. The essay theorizes this as a morphological transformation in the "social form" of online publics, drawing on Simmel and Weberian ideal-types, and warns of three consequences: depersonalization, opacity, and subcultural fragmentation of the public sphere.
 
 ## Key Contributions
 
-- Introduces **"clustered publics"** as a conceptual counterpart to boyd's "networked publics," giving sociology a vocabulary for algorithmically curated platforms.
-- Proposes a periodization of social media into a first generation (~2004–2014, network-centric) and a second generation (~2015–2024, cluster-centric).
-- Builds an ideal-typical comparative framework contrasting networks and clusters as distinct social forms across platform logic, signals, focus, and visibility.
-- Bridges technical literature on recommender systems (collaborative filtering, embeddings, neighborhood methods) with sociological theory of publics.
-- Reframes filter-bubble debates by identifying depersonalization, opacity, and fragmentation as distinctive harms of cluster-based curation.
-- Positions the concept relative to adjacent terms such as "refracted publics," "imitation publics," "algorithmic audiencing," and "calculated publics."
+- Introduces **clustered publics** as a conceptual counterpart to networked publics, giving vocabulary to algorithmically-curated sociality.
+- Proposes a periodization of social media into first- and second-generation forms tied to distinct logics of publicity.
+- Offers a comparative ideal-typical framework contrasting *networks* and *clusters* as distinct social forms (platform logic, collective categories, focus, signals, visibility).
+- Bridges technical recommender-system literature (collaborative filtering, embeddings, neighborhood methods, ByteDance's "Monolith") with sociological theory of the public sphere.
+- Revives filter-bubble debates for the algorithmic-feed era, naming depersonalization, opacity, and fragmentation as normative concerns.
+- Positions itself against adjacent concepts: refracted publics, imitation publics, algorithmic audiencing, and calculated publics.
 
 ## Methods
 
-Conceptual and theoretical analysis. Gerbaudo constructs an ideal-typical typology (presented as a comparative table) contrasting networked and clustered publics, synthesizes literature on platform affordances and recommender systems, and analyzes TikTok's published documentation, leaked materials, and technical descriptions of ByteDance's "Monolith" recommendation algorithm. The argument is anchored in social theory (Simmel, Weber, Tarde, Habermas) and platform studies (boyd, Gillespie, Bucher, Van Dijck).
+Conceptual and theoretical analysis grounded in social theory (Simmel's social forms, Weberian ideal-types, Habermas, Tarde) and platform studies. Gerbaudo builds an analytical typology contrasting networked and clustered publics along multiple dimensions (presented as a comparative table), synthesizes scholarship on affordances and algorithmic curation, and reads TikTok's public documentation, leaked materials, and technical literature on its recommendation pipeline to unpack the mechanics of interest clustering.
 
 ## Findings
 
-- Networked publics are people-centric, visible, and explicit; clustered publics are item-centric, opaque, and implicit.
-- TikTok's "For You" pipeline (signals → predictions → ranking) leans heavily on watch time as a behavioral proxy for interest.
-- Interface design — default For You feed, full-screen autoplay, swipe navigation, endless stream — maximizes immersion and tightens the algorithmic feedback loop while minimizing deliberate choice.
-- Follower count poorly predicts reach on TikTok, marking the declining role of interpersonal networks in visibility.
-- Survey-style evidence suggests TikTok is used less for maintaining personal ties than other platforms, supporting the depersonalization claim.
-- Clustering generates niche subcultures (BookTok, CottageCore, WitchTok) but as "silosociality": users are *assigned* to communities rather than opting in, unlike subreddit-style affiliation.
+- Networked publics are people-centric, visible, and driven by explicit signals; clustered publics are item-centric, opaque, and driven by implicit behavioral signals.
+- TikTok's "For You" feed operationalizes clustering through a signals→predictions→ranking pipeline in which watch time is a decisive implicit signal.
+- Interface design (default For You feed, full-screen autoplay, swipe navigation, endless stream) maximizes immersion while minimizing explicit user choice, tightening the algorithmic feedback loop.
+- Follower count is a weak predictor of reach, signaling the diminished role of interpersonal networks for visibility.
+- Users report using TikTok less for staying in touch with friends, supporting the depersonalization thesis.
+- Clustering favors niche subcultures (BookTok, CottageCore, WitchTok), producing a "silosociality" of automatic assignment rather than opt-in membership (contrast with Reddit's subreddits).
 
 ## Connections
 
-This piece sits in productive tension with work that examines how creators and users actually navigate TikTok's clustered architecture, such as [[Hollingshead2026-vx]] and [[Cabbuag2024-me]], both of which can be read as empirical complements to Gerbaudo's macro-theoretical claim about the shift from networked to algorithmically clustered publicity. Gerbaudo's framework provides the structural backdrop against which such ethnographic and practice-oriented studies of TikTok culture can be situated.
+This essay's account of a shift from explicit networks to inferred, behavior-driven clusters resonates with work theorizing platform recommendation and algorithmic ordering of attention, such as [[Tornberg2026-lc]] and [[Brady2026-ln]]. Its concern with fragmentation and the health of the digital public sphere connects to broader platform-critique arguments in [[Bak-Coleman2026-mk]] and [[Lewandowsky2026-ob]], while its periodization of platform generations and revisiting of foundational "networked publics" scholarship situates it alongside retrospective essays like [[Boyd2026-op]] and [[Baym2026-tr]].
 
 ## Podcast
 

@@ -5,7 +5,7 @@ authors: ["Niccolò Di Marco", "Sara Brunetti", "Matteo Cinelli", "Walter Quattr
 year: 2025
 doi: 10.1145/3700644
 bibtex_key: Di-Marco2025-aa
-topics: [coordinated-inauthentic-behavior, computational-methods-social-research]
+topics: [coordinated-inauthentic-behavior, computational-network-structure-analysis]
 citation_count: 6
 open_access: false
 source_url: https://doi.org/10.1145/3700644

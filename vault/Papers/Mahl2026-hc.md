@@ -22,34 +22,33 @@ discovery_date: 2026-05-15T05:52:01.125327Z
 
 ## Summary
 
-This paper presents a three-wave Delphi study (May–September 2022) involving 47 international scholars and practitioners across 13 countries, designed as an anticipatory, multi-level impact assessment of conspiracy theories and misinformation in digital media. The authors argue that the existing literature is fragmented, individualistic, and presentist, and use the Delphi format to produce an integrative ten-area taxonomy connecting current challenges, expected five-to-ten-year trends, and prioritized interventions. The core claim is that there is "no silver bullet": mitigating information disorder requires coordinated action across platforms, journalism, science, politics, and civil society, with structural interventions (platform governance, news ecosystems) rated more important than individual-level fixes like literacy or fact-checking.
+This paper reports a three-wave Delphi study convening 47 international scholars and practitioners to produce an integrative, anticipatory impact assessment of conspiracy theories and misinformation in digital media. Rather than another siloed, present-focused, or Western-centric study, it aims to map current challenges, anticipate problematic trends over the coming five to ten years, and develop tailored interventions across a ten-area taxonomy spanning macro, meso, and micro levels. Its central argument is that there is "no silver bullet": effective mitigation demands coordinated action across civil society, journalism, platforms, politics, and science, not isolated individual-level fixes. The authors also treat conspiracy theories and misinformation as conceptually distinct but practically intertwined phenomena best analysed together.
 
 ## Key Contributions
 
-- One of the first integrative, anticipatory, multi-stakeholder impact assessments of conspiracy theories and misinformation crossing disciplinary and Global North/South boundaries.
-- A ten-area thematic taxonomy mapping challenges → trends → interventions at macro, meso, and micro levels.
-- Surfacing of underexplored issues: circumvention of moderation via subcultural language, "Uberization" of journalism, demand-side dynamics for deceptive content, and a shift from misinformed citizens to cynical nihilists.
-- Methodological demonstration of combining Classic and Group Delphi designs for fast-moving information-environment research.
-- DACH-region-specific policy recommendations from the Wave 3 workshop.
+- One of the first integrative, multi-perspectival, and *anticipatory* impact assessments of conspiracy theories and misinformation that crosses disciplinary, stakeholder, and societal-level boundaries.
+- A structured ten-area taxonomy linking current challenges, anticipated trends, and tailored interventions.
+- Surfaces underexplored issues: user strategies to circumvent moderation, the "Uberization" of journalism, demand-side dynamics for deceptive content, and the rise of cynical nihilism.
+- Demonstrates the value and limits of combining Classic and Group Delphi designs for fast-moving information-environment topics.
+- Generates actionable, context-sensitive policy recommendations, including DACH-specific strategies.
 
 ## Methods
 
-A three-wave Delphi conducted in 2022. Wave 1 (n=47; 38 scholars, 9 practitioners) used anonymous open-ended online surveys to elicit challenges, trends, and interventions. Wave 2 (n=26) used 4-point Likert ratings to prioritize items. Wave 3 was a two-day Group Delphi workshop (n=9) with rotating focus groups, oriented toward the DACH region. Recruitment combined purposive snowball and maximum-variation sampling across 13 countries and multiple disciplines (communication, history, philosophy, political science, psychology) plus practitioner roles (journalists, fact-checkers, activists, educators). Qualitative coding was iterative-inductive in MAXQDA; quantitative analysis in R.
+A three-wave Delphi study (May–September 2022). Waves 1 and 2 used a Classic Delphi design via anonymous online surveys: Wave 1 posed open-ended exploratory questions; Wave 2 used 4-point Likert ratings to prioritise challenges and interventions. Wave 3 was a Group Delphi — a two-day on-site workshop with rotating focus groups centred on the DACH region. Multi-stage sampling combined purposive snowball and maximum-variation strategies: 120 experts invited, 47 completing Wave 1 (38 scholars, 9 practitioners), 26 in Wave 2, and 9 in the workshop, spanning 13 countries and multiple disciplines and practitioner roles. Analysis used inductive-iterative thematic coding in MAXQDA and descriptive quantitative analysis in R.
 
 ## Findings
 
-- Experts mapped issues across ten thematic areas spanning platform governance, platform design, journalism, science communication, societal dynamics, socio-political institutions, individual behavior, prebunking/literacy, and debunking/fact-checking.
-- 47% of experts expect the information environment to worsen over 5–10 years; 43% expect stasis; only 11% expect improvement.
-- Current challenges: weak platform regulation, opaque algorithmic curation, clickbait journalism, restricted researcher data access, eroding institutional trust, polarization, and underdeveloped literacy initiatives.
-- Anticipated trends: deepfakes, burner accounts, moderation circumvention via subcultural language, "Uberization" of journalism, growing distrust in science, democracy-threatening populism, and a drift toward cynical nihilism.
-- Top-rated intervention areas: platform governance (M=3.50) and journalism/news ecosystems (M=3.50); debunking/fact-checking rated lowest (M=3.04).
-- Recommended interventions: evidence-based transparent platform regulation, an independent monitoring board, algorithm recalibration, disincentivizing clickbait, strengthened science communication, funded literacy programs, and support for independent fact-checkers.
-- Notably, generative AI's role in misinformation was *not* anticipated by experts in 2022 — a striking gap given subsequent developments.
+- Ten thematic areas: governance *of* platforms, governance *by* platforms, platform design, journalism/news media ecosystems, research/science communication ecosystems, societal dynamics, socio-political institutions, individual behavior, prebunking/literacy, and debunking/fact-checking.
+- 47% of experts expect the situation to worsen, 43% expect no change, only 11% expect improvement.
+- Key current challenges: weak platform regulation, opaque algorithmic curation, clickbait journalism, limited researcher access to platform data, eroding institutional trust, and polarization.
+- Anticipated trends: deepfakes, burner accounts, circumvention of moderation via subcultural language, "Uberization" of journalism, growing distrust in science, populism, and a shift from misinformed citizens to uninformed cynics and nihilists.
+- Highest-rated intervention areas: governance of platforms (M=3.50) and journalism/news media ecosystems (M=3.50), then societal dynamics (3.38); debunking/fact-checking rated lowest (3.04).
+- Notably, generative AI's impact on misinformation was *not* anticipated by experts in 2022.
 
 ## Connections
 
-This paper offers a structural counterweight to the individualistic intervention literature on prebunking and inoculation (e.g., [[van-der-Linden2026-jt]], [[Spampatti2026-kx]]) by foregrounding platform governance and journalism ecosystems. Its arguments about opaque algorithmic curation and restricted researcher access connect closely to platform-data-access work such as [[Rieder2026-pp]], [[Helmond2026-ll]], [[Bouchaud2026-lr]], and [[Ohme2026-nv]], while its skepticism toward fact-checking-as-cure resonates with critical assessments like [[Allen2025-ot]] and [[Budak2024-ef]]. The "no silver bullet" framing and concerns about cynical disengagement also align with broader diagnostic work on information disorder by [[Lewandowsky2026-ob]] and [[Starbird2025-jj]].
+This assessment's emphasis on platform data access as a key bottleneck connects directly to work on that theme, such as [[Rieder2025-ju]] and [[Bruns2026-yv]]. Its prioritisation of individual-level interventions — prebunking, literacy, and inoculation — relative to structural fixes engages debates carried in [[van-der-Linden2026-jt]], [[Lewandowsky2026-ob]], and [[Spampatti2026-kx]], while its treatment of conspiracy-theory and misinformation subcultures and moderation circumvention resonates with [[Marwick2026-qd]] and [[Frischlich2025-vn]].
 
 ## Podcast
 
-A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mahl2026-hc.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-no-silver/id1866587707?i=1000768096466)
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mahl2026-hc.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/fgs-research-radio-experts-forecast-the-future/id1866587707?i=1000768096466)

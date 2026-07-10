@@ -5,7 +5,7 @@ authors: ["Stephen Prochaska", "Julie Vera", "Douglas Lew Tan", "Ben Yamron", "S
 year: 2025
 doi: 10.1145/3757576
 bibtex_key: Prochaska2025-ef
-topics: [information-disorder, elections-political-communication]
+topics: [information-disorder, political-polarization-partisan-news]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1145/3757576

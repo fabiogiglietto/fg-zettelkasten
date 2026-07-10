@@ -80,7 +80,9 @@ def synthesize_register(
         model=claude.reasoning_model,
         system=_SYNTHESIS_SYSTEM,
         prompt=prompt,
-        max_tokens=8192,
+        # Sonnet 5 runs adaptive thinking by default and thinking tokens count
+        # against max_tokens — 16000 leaves headroom so the JSON never truncates.
+        max_tokens=16000,
     )
 
     register: list[dict] = []

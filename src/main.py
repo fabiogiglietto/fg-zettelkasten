@@ -71,6 +71,8 @@ def _claude(cfg: dict):
     return ClaudeClient(
         summary_model=cc["summary_model"],
         reasoning_model=cc["reasoning_model"],
+        assign_model=cc.get("assign_model"),
+        note_model=cc.get("note_model"),
     )
 
 
@@ -279,22 +281,52 @@ def _topic_members(slug: str, state: dict, papers_by_key: dict) -> list:
     ]
 
 
-def _generate_structure_notes(cfg, register, state, papers_by_key, summaries, claude):
-    """Render one Structures/<slug>.md hub note per non-empty topic."""
-    from . import note_builder
+def _generate_structure_notes(
+    cfg, register, state, papers_by_key, summaries, claude, force: bool = False
+):
+    """Render one Structures/<slug>.md hub note per non-empty topic.
 
+    With `processing.incremental_recluster` on, a topic whose inputs (name,
+    description, membership, member digests, model) are unchanged since the
+    last run keeps its existing note instead of re-billing the LLM call."""
+    from . import note_builder, themes, state as state_mod
+
+    incremental = cfg.get("processing", {}).get("incremental_recluster", False)
     vault = _abs(cfg["vault"]["path"])
     structures_dir = cfg["vault"]["structures_dir"]
+    fps = state.setdefault("structure_fps", {})
     written: set[str] = set()
+    generated = skipped = 0
     for topic in register:
         members = _topic_members(topic["slug"], state, papers_by_key)
         if not members:
+            continue
+        member_keys = [p.bibtex_key for p in members]
+        digests = "\n".join(
+            themes.summary_digest(summaries.get(k, {})) for k in sorted(member_keys)
+        )
+        fp = state_mod.structure_fingerprint(
+            topic, member_keys, digests, claude.reasoning_model
+        )
+        note_file = Path(vault) / structures_dir / f"{topic['slug']}.md"
+        if (incremental and not force
+                and fps.get(topic["slug"]) == fp and note_file.exists()):
+            written.add(topic["slug"])  # keep — _prune_stale_notes must not delete it
+            skipped += 1
             continue
         note = note_builder.build_structure_note(
             topic, members, summaries, claude, claude.reasoning_model
         )
         note_builder.write_note(vault, structures_dir, topic["slug"], note)
+        fps[topic["slug"]] = fp
         written.add(topic["slug"])
+        generated += 1
+    # Fingerprints of topics that vanished (or emptied out) go with their notes.
+    for slug in list(fps):
+        if slug not in written:
+            del fps[slug]
+    if incremental:
+        print(f"  structure notes: {generated} generated, {skipped} skipped (unchanged)")
     stale = _prune_stale_notes(Path(vault) / structures_dir, written)
     if stale:
         print(f"  pruned {len(stale)} stale structure note(s)")
@@ -304,19 +336,39 @@ def cmd_refresh_topics(cfg: dict, args) -> int:
     """Rebuild the topic register from the live github.io research-agenda signals."""
     from . import topics_client, state as state_mod
 
-    claude = _claude(cfg)
-    register = _build_register(cfg, claude)
-
-    # Anchor topics are re-synthesized; emergent topics (created at
-    # bootstrap/recluster) are carried over so existing assignments survive.
     topics_file = _abs(cfg["paths"]["topics_file"])
-    emergent = [t for t in topics_client.load_topics(topics_file) if t.get("is_emergent")]
-    register = register + emergent
+    state_file = _abs(cfg["paths"]["state_file"])
+    state = state_mod.load_state(state_file)
 
-    topics_client.save_topics(register, topics_file)
-    state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
+    signals = topics_client.fetch_signals(
+        cfg["inputs"]["github_io_base"], cfg["inputs"]["github_io_signals"]
+    )
+    if not signals:
+        raise RuntimeError("no research-agenda signals could be fetched")
+    sig_hash = state_mod.signals_hash(signals)
+
+    existing = topics_client.load_topics(topics_file)
+    skip_unchanged = cfg.get("topics", {}).get("skip_unchanged_signals", False)
+    if (skip_unchanged and existing
+            and state.get("register_signals_hash") == sig_hash):
+        # The github.io agenda is byte-identical to what the last synthesis
+        # saw. Re-running the LLM would only re-word the same topics — and
+        # needlessly invalidate every assignment fingerprint downstream.
+        register = existing
+        print(f"refresh-topics: signals unchanged — register kept "
+              f"({len(register)} topics, no Claude call)")
+    else:
+        claude = _claude(cfg)
+        register = topics_client.synthesize_register(signals, claude, cfg["topics"])
+        # Anchor topics are re-synthesized; emergent topics (created at
+        # bootstrap/recluster) are carried over so existing assignments survive.
+        register = register + [t for t in existing if t.get("is_emergent")]
+        topics_client.save_topics(register, topics_file)
+        state["register_signals_hash"] = sig_hash
+        state_mod.save_state(state, state_file)
+        print(f"refresh-topics: {len(register)} topics written to the register")
+
     _regenerate_topic_notes(cfg, register, state)
-    print(f"refresh-topics: {len(register)} topics written to the register")
     return 0
 
 
@@ -374,12 +426,17 @@ def cmd_bootstrap(cfg: dict, args) -> int:
         }
 
     # 2. topic-anchored assignment + emergent sub-themes.
+    reg_fp = state_mod.register_fingerprint(register)
     unassigned = []
     for paper in papers:
         slugs = themes.assign_paper(
-            paper, summaries[paper.bibtex_key], register, claude, claude.reasoning_model
+            paper, summaries[paper.bibtex_key], register, claude, claude.assign_model
         )
         state["papers"][paper.id]["topics"] = slugs
+        state["papers"][paper.id]["assign_fp"] = state_mod.assign_fingerprint(
+            reg_fp, themes.summary_digest(summaries[paper.bibtex_key]),
+            claude.assign_model,
+        )
         if not slugs:
             unassigned.append(paper)
 
@@ -412,7 +469,7 @@ def cmd_bootstrap(cfg: dict, args) -> int:
         related = _related_keys(state, paper.id, entry["topics"])
         note = note_builder.build_paper_note(
             paper, summaries[paper.bibtex_key], entry["topics"], related,
-            episodes.get(paper.id), claude, claude.reasoning_model,
+            episodes.get(paper.id), claude, claude.note_model,
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
 
@@ -496,6 +553,9 @@ def cmd_update(cfg: dict, args) -> int:
     if not register:
         print("update: no topic register — run refresh-topics or bootstrap first")
         return 1
+    # Fingerprint of the assignment inputs shared by every paper this run;
+    # lets Monday's recluster skip papers assigned against the same register.
+    reg_fp = state_mod.register_fingerprint(register)
 
     papers = feed_client.fetch_feed(cfg["inputs"]["feed_url"])
     episodes = episodes_client.fetch_episodes(cfg["inputs"]["episodes_url"])
@@ -554,12 +614,15 @@ def cmd_update(cfg: dict, args) -> int:
             summarizer.save_summary(summary, summaries_dir, paper.bibtex_key)
         summaries[paper.bibtex_key] = summary
         slugs = themes.assign_paper(
-            paper, summary, register, claude, claude.reasoning_model
+            paper, summary, register, claude, claude.assign_model
         )
         podcast = paper.id in episodes
         entry = {
             "note_path": f"{papers_dir}/{paper.bibtex_key}.md",
             "topics": slugs,
+            "assign_fp": state_mod.assign_fingerprint(
+                reg_fp, themes.summary_digest(summary), claude.assign_model
+            ),
             # DOI + title persisted so dedup_index can catch a later id that
             # refers to the same paper.
             "doi": paper.doi or "",
@@ -606,7 +669,7 @@ def cmd_update(cfg: dict, args) -> int:
         related = _related_keys(state, paper.id, entry["topics"])
         note = note_builder.build_paper_note(
             paper, summary, entry["topics"], related,
-            episodes.get(paper.id), claude, claude.reasoning_model,
+            episodes.get(paper.id), claude, claude.note_model,
             kind=entry.get("kind"),
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
@@ -730,12 +793,15 @@ def cmd_update(cfg: dict, args) -> int:
             summarizer.save_summary(summary, summaries_dir, paper.bibtex_key)
         summaries[paper.bibtex_key] = summary
         slugs = themes.assign_paper(
-            paper, summary, register, claude, claude.reasoning_model
+            paper, summary, register, claude, claude.assign_model
         )
         podcast = paper.id in episodes
         state["papers"][paper.id] = {
             "note_path": f"{papers_dir}/{paper.bibtex_key}.md",
             "topics": slugs,
+            "assign_fp": state_mod.assign_fingerprint(
+                reg_fp, themes.summary_digest(summary), claude.assign_model
+            ),
             "kind": "own",
             "doi": paper.doi or "",
             "title": paper.title,
@@ -766,7 +832,7 @@ def cmd_update(cfg: dict, args) -> int:
         related = _related_keys(state, paper.id, entry["topics"])
         note = note_builder.build_paper_note(
             paper, summary, entry["topics"], related,
-            episodes.get(paper.id), claude, claude.reasoning_model, kind="own",
+            episodes.get(paper.id), claude, claude.note_model, kind="own",
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
 
@@ -789,7 +855,7 @@ def cmd_update(cfg: dict, args) -> int:
         return 0
 
     if do_recluster:
-        _recluster(cfg, claude, drive)
+        _recluster(cfg, claude, drive, force=getattr(args, "full", False))
 
     sanitised = _sanitize_vault_links(cfg)
     print(
@@ -800,14 +866,29 @@ def cmd_update(cfg: dict, args) -> int:
     return 0
 
 
-def _recluster(cfg: dict, claude, drive) -> None:
+def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     """Full re-cluster: rebuild the register, re-assign every processed paper,
     regenerate Topics/ and Structures/. Paper note bodies are not re-summarised
-    (cost) — only their frontmatter `topics:` is updated in place."""
+    (cost) — only their frontmatter `topics:` is updated in place.
+
+    With `processing.incremental_recluster` on, the register maintained by
+    `refresh-topics` is reused (no second synthesis) and per-paper assignment,
+    emergent clustering, and structure notes are skipped when their input
+    fingerprints are unchanged. `force=True` (--full) re-bills everything."""
     from . import feed_client, topics_client, summarizer, themes, state as state_mod
 
+    incremental = cfg.get("processing", {}).get("incremental_recluster", False)
     print("recluster: rebuilding the register and re-clustering the archive")
-    register = _build_register(cfg, claude)
+    if incremental:
+        # Reuse the register refresh-topics maintains — on Mondays it ran
+        # minutes earlier in the same workflow, so synthesizing again here
+        # would re-bill identical inputs. Includes carried emergent topics,
+        # so papers can be filed directly into established emergent topics.
+        register = topics_client.load_topics(_abs(cfg["paths"]["topics_file"]))
+        if not register:
+            register = _build_register(cfg, claude)
+    else:
+        register = _build_register(cfg, claude)
     state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
 
@@ -832,22 +913,46 @@ def _recluster(cfg: dict, claude, drive) -> None:
         if s is not None:
             summaries[paper.bibtex_key] = s
 
+    reg_fp = state_mod.register_fingerprint(register)
     unassigned = []
+    assigned = skipped = 0
     for paper in papers:
         summary = summaries.get(paper.bibtex_key)
         if summary is None:
             continue
-        slugs = themes.assign_paper(
-            paper, summary, register, claude, claude.reasoning_model
+        entry = state["papers"][paper.id]
+        fp = state_mod.assign_fingerprint(
+            reg_fp, themes.summary_digest(summary), claude.assign_model
         )
-        state["papers"][paper.id]["topics"] = slugs
+        if incremental and not force and entry.get("assign_fp") == fp:
+            slugs = entry.get("topics", [])
+            skipped += 1
+        else:
+            slugs = themes.assign_paper(
+                paper, summary, register, claude, claude.assign_model
+            )
+            entry["topics"] = slugs
+            entry["assign_fp"] = fp
+            assigned += 1
         if not slugs:
             unassigned.append(paper)
+    print(f"recluster: {assigned} assigned, {skipped} skipped (unchanged inputs)")
 
-    emergent = themes.find_emergent(
-        unassigned, summaries, claude, claude.reasoning_model,
-        cfg["topics"]["emergent_min_papers"],
+    emergent_fp = state_mod.emergent_fingerprint(
+        reg_fp, [p.bibtex_key for p in unassigned], claude.reasoning_model
     )
+    if incremental and not force and state.get("emergent_fp") == emergent_fp:
+        # Same register + same unassigned set as last time — re-running the
+        # clustering call would reproduce the same (non-)finding.
+        print(f"recluster: emergent clustering skipped "
+              f"({len(unassigned)} unassigned, inputs unchanged)")
+        emergent = []
+    else:
+        emergent = themes.find_emergent(
+            unassigned, summaries, claude, claude.reasoning_model,
+            cfg["topics"]["emergent_min_papers"],
+        )
+        state["emergent_fp"] = emergent_fp
     for topic in emergent:
         register.append(
             {
@@ -863,7 +968,23 @@ def _recluster(cfg: dict, claude, drive) -> None:
             if entry is not None:
                 entry["topics"].append(topic["slug"])
 
+    if incremental:
+        # The reused register carries emergent topics over; a reassignment can
+        # empty one out — prune register entries no paper references any more.
+        live = {s for e in state["papers"].values() for s in e.get("topics", [])}
+        empty = [t["slug"] for t in register
+                 if t.get("is_emergent") and t["slug"] not in live]
+        if empty:
+            register = [t for t in register if t["slug"] not in empty]
+            print(f"recluster: pruned {len(empty)} empty emergent topic(s)")
+
     topics_client.save_topics(register, _abs(cfg["paths"]["topics_file"]))
+
+    # Checkpoint: the assignment/emergent fingerprints just seeded are the
+    # expensive part of this run — persist them now so a transient failure in
+    # the structure-note pass below doesn't throw them away (a re-run would
+    # otherwise re-bill every assignment call).
+    state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
 
     # Update each paper note's frontmatter topics in place (no re-summary).
     vault = Path(_abs(cfg["vault"]["path"]))
@@ -873,7 +994,9 @@ def _recluster(cfg: dict, claude, drive) -> None:
 
     _regenerate_topic_notes(cfg, register, state)
     papers_by_key = {p.bibtex_key: p for p in papers}
-    _generate_structure_notes(cfg, register, state, papers_by_key, summaries, claude)
+    _generate_structure_notes(
+        cfg, register, state, papers_by_key, summaries, claude, force=force
+    )
 
     state["last_full_cluster"] = _now()
     state["papers_since_cluster"] = 0
@@ -983,9 +1106,17 @@ def build_parser() -> argparse.ArgumentParser:
     p_update.add_argument(
         "--recluster", action="store_true", help="also run a full re-cluster"
     )
+    p_update.add_argument(
+        "--full", action="store_true",
+        help="with --recluster: ignore fingerprints and re-bill every call",
+    )
 
     sub.add_parser("refresh-topics", help="rebuild the topic register from github.io")
-    sub.add_parser("recluster", help="force a full re-cluster")
+    p_recluster = sub.add_parser("recluster", help="force a full re-cluster")
+    p_recluster.add_argument(
+        "--full", action="store_true",
+        help="ignore fingerprints and re-bill every call",
+    )
     sub.add_parser("fix-links", help="repair/de-link unresolved [[wikilinks]] in the vault")
     sub.add_parser("export-site", help="export the vault to quartz/content/ for the website")
 

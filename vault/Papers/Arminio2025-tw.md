@@ -5,7 +5,7 @@ authors: ["Luigi Arminio", "Matteo Magnani", "Matias Piqueras", "Luca Rossi", "A
 year: 2025
 doi: 10.31235/osf.io/bf459
 bibtex_key: Arminio2025-tw
-topics: [computational-methods-social-research, generative-ai-and-media]
+topics: [llm-augmented-research-methods, climate-and-misinformation-message-interventions]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/bf459

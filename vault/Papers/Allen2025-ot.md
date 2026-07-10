@@ -5,7 +5,7 @@ authors: ["Jennifer Allen", "Joshua A. Tucker"]
 year: 2025
 doi: 10.1126/science.aec7388
 bibtex_key: Allen2025-ot
-topics: [platform-governance-data-access, computational-methods-social-research]
+topics: [platform-governance-data-access, political-polarization-partisan-news]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1126/science.aec7388

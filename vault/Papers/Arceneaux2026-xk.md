@@ -5,8 +5,8 @@ authors: ["Phillip Arceneaux", "Joshua Anderson", "Josephine Lukito", "Mansi Sha
 year: 2026
 doi: 10.1080/1062726x.2025.2606676
 bibtex_key: Arceneaux2026-xk
-topics: [elections-political-communication, information-disorder]
-citation_count: 2
+topics: [coordinated-inauthentic-behavior, information-disorder]
+citation_count: 4
 open_access: false
 source_url: https://doi.org/10.1080/1062726x.2025.2606676
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Arceneaux2026-xk.mp3
@@ -22,33 +22,39 @@ discovery_date: 2026-01-15T00:00:00Z
 
 ## Summary
 
-This paper asks whether social bots, through algorithmic amplification, can serve as *agenda-builders* that compete with organizations, press, and the public in shaping political discourse. Using the 2022 Ohio midterm elections as a case, the authors analyze over 935,000 tweets across campaigns, newspapers, the public, and bot-classified accounts to test first- (object), second- (attribute), and third-level (network) agenda-building transfers. They find that bots most powerfully shape *attribute salience*—particularly negative sentiment—in campaign messaging, while having little measurable effect on the press. The core theoretical move is to argue that classical agenda-building theory, premised on human actors, must be revised to incorporate machine actors as a fourth category of political communicator in human-computer information ecosystems.
+This study reconceptualizes social bots as *agenda-builders* — non-human political communicators that compete with organizations, press, and the public for influence over public discourse. Drawing on political public relations (PPR) and agenda-building theory, the authors analyze over 935,000 tweets from the 2022 Ohio midterm elections to test whether algorithmically amplified bot accounts can transfer object, attribute, and network salience to human actors. They find that bots were particularly effective at influencing campaign messaging — especially at the second level, driving negative sentiment — while the press remained largely insulated. The paper argues that classical agenda-building theory, built on human-centric assumptions, must be revised to accommodate machine actors operating within human-computer information ecosystems.
 
 ## Key Contributions
 
-- Extends agenda-building theory by positing social bots as a fourth category of communicator alongside organizations, press, and public.
-- Provides the first public relations–focused empirical assessment of how bots interfere with news management and strategic issues management.
-- Reframes social bots as a *medium-specific information subsidy* unique to online environments.
-- Offers an explanatory mechanism for failure of organizational agenda-building, tying it to bot-driven information disorder.
-- Connects structuration theory to algorithmic platforms, treating platform affordances as governance structures for machine actors.
-- Draws out practical implications about ROI on paid/earned media when algorithmic competitors are active in the ecosystem.
+- First empirical public relations assessment of how social bots interfere with organizational news and strategic issues management.
+- Extends agenda-building theory by adding non-human, algorithmic actors as a fourth communicator category alongside organizations, press, and public.
+- Frames social bots as a medium-specific *information subsidy* unique to online environments.
+- Offers a mechanism for why agenda-building fails in digital ecosystems, tied to bot-driven information disorder.
+- Applies structuration theory to online ecosystems, treating algorithms and platform affordances as governance structures for machine actors.
+- Draws out practical implications for campaigns weighing ROI on paid and earned media amid algorithmic competitors.
 
 ## Methods
 
-Automated content analysis of 935,021 tweets collected via X's API (May–November 2022) from 32 campaign accounts (Gubernatorial, Senate, House), 47 Ohio newspaper accounts, public users surfaced via 24 election keywords/hashtags, and 2,064 bot-classified accounts identified via Tweetbotornot at a 0.5 threshold. Issue coding used 17 expert-validated keyword dictionaries (333 indicators); sentiment was scored with LIWC-22. Granger causality models tested directional time-series influence among the four actor types, while QAP assessed third-level network salience and issue co-occurrence, disaggregated by race type and party.
+- Automated content analysis of 935,021 tweets collected via X's API (May 4–November 8, 2022).
+- Sampled 32 candidate campaign accounts (Gubernatorial, Senate, House), 47 Ohio newspaper accounts, and public users identified through 24 election-related keywords/hashtags.
+- Bot classification via Tweetbotornot (0.5 threshold), yielding 2,064 bot accounts (9,141 tweets).
+- 17 manually built keyword dictionaries (333 indicators) covering issues, stakeholders, campaign rhetoric, and Ohio cities, validated by a subject-matter expert.
+- Sentiment coded with LIWC-22 (positive/negative tone).
+- Granger causality models tested directional influence across time series; QAP assessed third-level network salience, disaggregated by race type and party.
 
 ## Findings
 
-- Bots were the strongest *second-level* agenda-builders, driving both positive and negative sentiment in campaign messaging, with negative-tone effects roughly twice as strong.
-- First-level (object) influence of bots was modest: four issues onto campaigns, only one each onto press and public.
-- The public exerted the strongest first-level influence *on* bots (eight objects), suggesting a bottom-up dynamic in which bots amplify pre-existing public discourse.
-- Senate and Democratic campaigns more strongly shaped bot discourse; Republican campaigns appeared marginally more susceptible to bot influence (six vs. three objects).
-- Third-level network agendas were highly correlated across all sources at every monthly time point.
-- The press was essentially insulated: no meaningful bidirectional object or attribute influence with bots, apart from one campaigning-related exchange.
+- Bots transferred object salience to campaigns on four issues but had limited first-level influence on press (one object) and public (one object).
+- Bots were the strongest second-level agenda-builders, driving both positive and negative sentiment — effects roughly doubled for negative tone.
+- The public exerted the strongest first-level influence *on* the bot agenda (leading across eight objects), suggesting bottom-up agenda-building.
+- Senate and Democratic campaigns influenced bot discourse more than Gubernatorial, House, or Republican campaigns.
+- Republican campaigns were marginally more susceptible to bot agenda-building (six objects) than Democratic campaigns (three objects).
+- Issue networks across all sources were highly correlated at every monthly time point, indicating shared third-level network agendas.
+- The press neither influenced nor was influenced by bots (aside from one campaigning-related exchange).
 
 ## Connections
 
-This study sits at the intersection of bot/automation research and agenda-setting/agenda-building theory, complementing computational audits of bot influence such as [[DeVerna2025-dl]] and [[Bollenbacher2026-vz]], and resonating with work on the limited persuasive reach of inauthentic accounts like [[Mosleh2024-op]]. Its concern with how algorithmic amplification reshapes information ecosystems connects to broader treatments of platform-mediated disorder in [[Starbird2025-jj]] and [[Budak2024-ef]], while its focus on attribute and especially negative-tone transfer aligns with analyses of affective and partisan dynamics in [[Gonzalez-Bailon2024-rq]].
+This work sits within the broader literature on automated political influence and bot-driven amplification, connecting to studies of bot behavior and impact such as [[DeVerna2025-dl]], [[Minici2024-tf]], and [[Yang2025-iv]]. Its focus on how coordinated, algorithmically amplified accounts shape discourse relates to agenda-setting and cross-actor influence work like [[Rohrbach2026-rc]] and [[Kulichkina2026-zk]], while its framing of bot activity as a vector of information disorder links it to the disorder-oriented scholarship represented by [[Starbird2025-jj]] and [[Marwick2025-ov]].
 
 ## Podcast
 

@@ -5,7 +5,7 @@ authors: ["Renee Lieu", "Oliver R. Hayes", "John Cook"]
 year: 2025
 doi: 10.1111/bjop.70049
 bibtex_key: Lieu2025-nl
-topics: [information-disorder]
+topics: [climate-and-misinformation-message-interventions, political-polarization-partisan-news]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1111/bjop.70049

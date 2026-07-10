@@ -5,7 +5,7 @@ authors: ["Emilio Ferrara"]
 year: 2026
 doi: 
 bibtex_key: Ferrara2026-io
-topics: []
+topics: [computational-network-structure-analysis]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.22446v1
@@ -22,32 +22,32 @@ discovery_date: 2026-03-03T07:13:16.098918Z
 
 ## Summary
 
-ECHO is a self-supervised graph learning framework for attributed community detection that targets two complementary failure modes of GNN-based approaches: a *Semantic Wall* (over-smoothing and heterophilic poisoning from rigid inductive biases) and a *Systems Wall* (the O(N²) memory cost of dense pairwise similarity clustering). The system routes each graph to an Isolating (MLP) or Densifying (GraphSAGE) encoder via unsupervised structural heuristics, applies attention-guided K-step diffusion to throttle information flow across heterophilic edges, trains with a memory-sharded full-batch InfoNCE objective, and extracts communities through chunked O(N·K) top-k similarity feeding into modularity maximization. On LFR benchmarks up to 1M nodes and real attributed graphs including Pokec (1.6M nodes, 30M edges), ECHO reaches state-of-the-art NMI on several datasets while sustaining >2,800 nodes/sec on a single A100.
+ECHO (Encoding Communities via High-order Operators) is a self-supervised graph learning framework for community detection in attributed networks. It targets two structural bottlenecks that have limited GNN-based approaches: a "Semantic Wall" of over-smoothing in dense or heterophilic graphs, and a "Systems Wall" of O(N²) memory cost in pairwise similarity clustering. The core insight is that no single inductive bias suits all graph morphologies, so ECHO routes graphs to either an isolating MLP encoder or a densifying GraphSAGE encoder based on unsupervised structural heuristics, then applies attention-guided diffusion, a memory-sharded contrastive objective, and chunked similarity extraction before modularity maximization. The paper positions this as a synthesis of classical multi-scale modularity methods (Louvain/Leiden) with modern attributed representation learning, engineered specifically to scale to million-node graphs on a single commercial GPU.
 
 ## Key Contributions
 
-- **Topology-Aware Router** that picks between MLP and GraphSAGE encoders using feature sparsity ρ_X, mean degree ⟨k⟩, and semantic assortativity H_R, avoiding a one-size-fits-all inductive bias.
-- **Attention-guided multi-scale diffusion** with learned edge weights and an L1 sparsity penalty, dynamically pruning heterophilic edges to mitigate over-smoothing.
-- **Memory-sharded full-batch InfoNCE**: exact full-batch gradients with VRAM bounded by dynamic chunking of the negative-sample tensor.
-- **Chunked O(N·K) similarity extraction** with degree-adaptive top-k and mutual-max symmetrization, replacing the dense O(N²) similarity matrix.
-- An **open-source unified framework (ECHO-GNN)** demonstrated end-to-end on graphs >1.6M nodes / >30M edges on commodity hardware.
+- A **Topology-Aware Router** that selects between an isolating (MLP) and densifying (GraphSAGE) encoder using feature sparsity, density, and semantic assortativity heuristics.
+- An **attention-guided multi-scale diffusion operator** that prunes heterophilic edges via learned edge weights plus an L1 sparsity penalty.
+- A **memory-sharded full-batch InfoNCE** objective that preserves exact full-batch gradients while capping VRAM through dynamic chunking of the negative-sample tensor.
+- A **chunked O(N·K) similarity extraction** with degree-adaptive top-k filtering, replacing the dense O(N²) similarity matrix.
+- An open-source unified framework (ECHO-GNN) that auto-engages sharded optimization based on hardware constraints, demonstrated at >1.6M nodes and >30M edges.
 
 ## Methods
 
-Four-phase pipeline: (1) unsupervised routing on ρ_X, ⟨k⟩, H_R to select Isolating MLP vs. Densifying SAGE; (2) adaptive semantic encoding; (3) K-step diffusion with softmax edge attention from an MLP over concatenated node pairs; (4) chunked cosine top-k extraction with degree-adaptive k_i ∈ [k_min, k_max], followed by Louvain/Leiden modularity maximization via igraph. Training uses an InfoNCE loss with attention-weighted positives and 256 negatives per node, sharding triggered when N×P×d exceeds 2×10⁸ elements. Evaluation spans LFR (N=500–5,000 and scaled to 1M, μ=0.5) and real graphs (Chameleon, Actor, Amazon Photo/Computers, Coauthor CS, CoraFull, YouTube, Pokec), against K-Means, LPA, Leiden, LINE, DGI, MVGRL, and SDCN. Implementation is PyTorch 2.6 with TF32/AMP on a single A100 80GB.
+The pipeline runs in four phases: (1) topology-aware routing using feature sparsity ρ_X, mean degree ⟨k⟩, and semantic assortativity H_R; (2) adaptive semantic encoding via MLP or 1-hop GraphSAGE; (3) attention-guided K-step diffusion with softmax edge attention from an MLP over concatenated node pairs; and (4) chunked cosine-similarity extraction with degree-adaptive k, mutual-max symmetrization above a threshold δ, followed by modularity maximization in igraph (Louvain/Leiden). Training uses a self-supervised InfoNCE loss with attention-weighted positives, an L1 attention penalty, and 256 negatives per node, with tensor sharding triggered above 2×10⁸ elements. Evaluation spans LFR synthetic benchmarks (up to 1M nodes) and real-world attributed graphs (Chameleon, Actor, Amazon Photo/Computers, Coauthor CS, CoraFull, YouTube, Pokec), against baselines including K-Means, LPA, Leiden, LINE, DGI, MVGRL, and SDCN, with NMI as the primary metric. Implemented in PyTorch 2.6 on a single NVIDIA A100 80GB.
 
 ## Findings
 
-- At the LFR boundary μ=0.5 with N=5,000, ECHO reaches NMI 0.3663, well above DGI (0.1607), MVGRL (0.1677), LINE (0.3463), LPA (0.1912), and SDCN (0.1737), and is stable or improving with scale while SDCN degrades.
-- State-of-the-art NMI on Chameleon (0.1701), Amazon Photo (0.7290), Amazon Computers (0.5957), CoraFull (0.5114), and a near-tie with DGI on Coauthor CS (0.7042 vs 0.7071).
-- MVGRL OOMs beyond ~5,000 nodes and SDCN is numerically unstable, underscoring the systems advantage of the sharded design.
-- Throughput: ≈3,266 nodes/s on synthetic YouTube (347s) and ≈2,805 nodes/s on Pokec (582s) on a single A100.
-- The router systematically picks the Isolating MLP for dense/heterophilic graphs (Chameleon, Actor, Amazon Photo/Computers) and the Densifying SAGE for sparse, feature-rich, or large graphs (Coauthor CS, CoraFull, YouTube, Pokec); K=0 dominates mid-scale, K=1 for the largest social graphs.
-- t-SNE on Cora and Amazon Computers shows visibly more separable clusters in ECHO embeddings than in raw features.
+- On LFR at the critical boundary μ=0.5, ECHO reaches NMI 0.3663 at N=5,000, substantially outperforming DGI (0.1607), MVGRL (0.1677), LINE (0.3463), LPA (0.1912), and SDCN (0.1737), with performance stable or improving as scale grows while SDCN degrades.
+- State-of-the-art NMI on Chameleon (0.1701), Amazon Photo (0.7290), Amazon Computers (0.5957), and CoraFull (0.5114); essentially tied with DGI on Coauthor CS.
+- MVGRL hit out-of-memory errors beyond ~5,000 nodes and SDCN showed near-zero NMI instability, prompting their omission from final comparisons.
+- Massive-scale throughput: ≈3,266 nodes/s on synthetic YouTube and ≈2,805 nodes/s on Pokec on a single A100.
+- The router consistently chose the isolating MLP encoder for dense/heterophilic datasets and the densifying SAGE encoder for sparse, feature-rich, or large-scale graphs, with K=0 for most mid-scale datasets and K=1 for the massive social graphs.
+- t-SNE visualizations show ECHO embeddings yield more separable clusters than raw features, even under high edge density.
 
 ## Connections
 
-No other papers have been registered under this note's topics yet, so there are no sibling notes to link. Conceptually, ECHO sits between classical modularity-based community detection (Louvain/Leiden, generalized k-path methods) and self-supervised attributed graph learning (DGI, MVGRL, GraphCL, SDCN), and would naturally connect to future notes on over-smoothing in GNNs, contrastive learning at scale, and heterophily-aware message passing.
+This is a single-author methodological contribution to computational network structure analysis; among the papers in this topic set, its intellectual connections are to work that studies large-scale network structure and community organization rather than to the social-media and information-ecosystem studies that dominate the register. No genuinely close methodological neighbor appears among the provided keys, so I do not force a link.
 
 ## Podcast
 

@@ -5,42 +5,46 @@ authors: ["Hinck, Musashi", "King, Gary", "Nakamura, Kentaro", "Stewart, Brandon
 year: 2026
 doi: 
 bibtex_key: Hinck2026-yj
-topics: []
+topics: [survey-methodology-validity]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Where%27s%20the%20Evidence%20that%20Respondents%20Understand%20Your%20Survey%20Questions%3F
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hinck2026-yj.mp3
 pdf_available: false
 discovery_date: 2026-07-03T05:40:54.467243Z
 ---
 
 # Where&#x27;s the Evidence that Respondents Understand Your Survey Questions?
 
-> Musashi, H., Gary, K., Kentaro, N., & M, S. B. (2026). Where&#x27;s the Evidence that Respondents Understand Your Survey Questions?.
+> Hinck, M., King, G., Nakamura, K., & Stewart, B. M. (2026). Where&#x27;s the Evidence that Respondents Understand Your Survey Questions?.
 >
 > [View paper](https://scholar.google.com/scholar?q=Where%27s%20the%20Evidence%20that%20Respondents%20Understand%20Your%20Survey%20Questions%3F)
 
 ## Summary
 
-This paper mounts a methodological critique of standard survey research practice, arguing that researchers routinely fail to demonstrate that respondents actually interpret questions in the way researchers intend. Because survey-based inference depends on shared meaning between researcher and respondent, the absence of such evidence leaves a foundational validity gap. The authors call for a shift in disciplinary norms: comprehension should be tested and documented explicitly, not assumed, and they sketch approaches for generating this kind of evidence.
+This paper mounts a methodological critique of standard survey research practice, arguing that researchers routinely fail to demonstrate that respondents interpret questions in the way the researchers intended. The authors contend that this gap undermines the validity of survey-based inference: when there is no evidence of shared meaning between question designer and respondent, any conclusion drawn from the responses rests on an unverified assumption. Rather than reporting a single empirical study, the paper is a prescriptive argument that calls for explicit tests of question comprehension to become part of standard survey methodology, and sketches approaches for eliciting and evaluating such evidence.
 
 ## Key Contributions
 
-- Identifies respondent comprehension as an underexamined but foundational validity threat in survey research.
-- Argues that unverified assumptions about shared meaning undermine both descriptive and causal inferences drawn from surveys.
-- Advocates a normative shift toward requiring explicit evidence of question understanding as part of standard practice.
-- Sets an agenda for developing, adopting, and reporting tools that probe question interpretation.
+- Foregrounds respondent comprehension as an underexamined threat to measurement validity in survey research.
+- Advocates a shift in disciplinary norms toward routinely providing explicit evidence that questions are understood as intended.
+- Sets a research agenda for developing and adopting tools to test question interpretation.
+- Reframes long-standing concerns about question wording and cognitive interviewing as a broader claim about evidentiary standards.
 
 ## Methods
 
-The paper is a methodological critique and prescriptive argument rather than an empirical study. It discusses approaches for eliciting and evaluating evidence that respondents understand survey questions as intended, extending traditions of cognitive interviewing and question-wording analysis into a broader evidentiary standard.
+The paper is primarily a methodological critique paired with a prescriptive argument about survey practice. Drawing on the abstract, it discusses approaches for eliciting and evaluating evidence of respondent comprehension rather than testing a specific hypothesis. It does not present a self-contained empirical study; the central observation is the general absence of comprehension evidence in published survey work.
 
 ## Findings
 
-- The core observation is diagnostic: published survey research generally does not supply evidence that respondents understood the questions as intended.
-- Without such evidence, standard inferences from survey data rest on unverified interpretive assumptions.
-- Comprehension testing is feasible and should become part of routine survey reporting.
+- No specific empirical results are reported in the abstract.
+- The core observation is that evidence of respondent comprehension is largely missing from published survey research.
+- Inferences from survey responses therefore frequently depend on untested assumptions about shared meaning between researcher and respondent.
 
 ## Connections
 
-No other papers were provided under shared topics, so there are no genuine intellectual links to draw here. The argument connects most naturally to the broader literatures on measurement validity, cognitive interviewing, and question-wording effects in survey methodology.
+This paper speaks to broader concerns about the validity and reliability of survey-based measurement in political and social science, a theme also present in work on survey experiment robustness and measurement quality such as [[DiGiuseppe2025-es]] and [[Luhring2025-od]]. Its emphasis on evidentiary standards for interpreting responses complements methodological scrutiny of respondent behavior and data quality found in [[Stagnaro2025-pz]] and [[Ulloa2024-jm]]; the remaining papers under this topic appear less directly related to the comprehension-validity argument advanced here.
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hinck2026-yj.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)

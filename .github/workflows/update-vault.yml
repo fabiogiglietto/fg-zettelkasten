@@ -54,9 +54,17 @@ jobs:
 
       - name: Run
         env:
+          # Authenticates feed_client's GitHub Contents API reads, lifting the
+          # rate limit from 60/h (shared-runner-IP, exhausted by other tenants
+          # -> intermittent 403) to 5000/h per token.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GOOGLE_APPLICATION_CREDENTIALS: ./credentials.json
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
+          # Team fork: mine-toread uploads team-submitted PDFs here and
+          # main.py searches it alongside the Paperpile folder. Unset on the
+          # fg chain (harmless empty).
+          SLACK_INBOX_DRIVE_FOLDER_ID: ${{ secrets.SLACK_INBOX_DRIVE_FOLDER_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           if [ "${{ github.event.action }}" = "pipeline-summarize" ]; then
@@ -108,7 +116,21 @@ jobs:
         with:
           path: quartz/public
 
+      # Pages deploys fail transiently on the service side ("Deployment
+      # failed, try again later") — e.g. 2026-07-03, three sites, all
+      # recovered on plain retry. One automatic retry absorbs that, so the
+      # failure alert below only fires when the deploy fails twice in a row.
       - name: Deploy to GitHub Pages
+        id: deploy
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait before deploy retry
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 90
+
+      - name: Retry Pages deploy (transient failure)
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v5
 
       # Pipeline observability — alert on any failed run. Prefers the incoming

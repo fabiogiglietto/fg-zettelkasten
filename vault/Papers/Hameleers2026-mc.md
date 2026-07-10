@@ -5,7 +5,7 @@ authors: ["Michael Hameleers", "Toni van der Meer"]
 year: 2026
 doi: 10.1177/14614448251409208
 bibtex_key: Hameleers2026-mc
-topics: [information-disorder, generative-ai-and-media]
+topics: [information-disorder, generative-ai-disinformation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448251409208
@@ -22,34 +22,38 @@ discovery_date: 2026-01-27T05:48:02.219127Z
 
 ## Summary
 
-This pre-registered experiment (N=982, U.S.) tests whether visual disinformation is more persuasive than textual disinformation, comparing three modalities — text, AI-generated still images, and decontextualized real videos — across two issues (the MH370 disappearance and the Russian invasion of Ukraine). Contrary to widespread assumptions that "seeing is believing" and that generative AI poses unprecedented persuasive threats, Hameleers and van der Meer find that visual disinformation does **not** uniformly outperform text. Only for the salient, polarized Ukraine issue did decontextualized video prove more credible and engaging than text, and AI-generated imagery rarely outperformed either. Fact-checks reduced credibility roughly equally across all modalities.
+This pre-registered experiment (N=982, U.S.) directly compares the effects of textual disinformation against two forms of visual disinformation—AI-generated still images and decontextualized real videos—across two issues (the disappearance of flight MH370 and the Russian invasion of Ukraine). The core argument pushes back against alarmist narratives about generative AI: visual disinformation does *not* universally outperform text in credibility, emotional arousal, or engagement. Instead, its persuasive power is context-bound, depending on issue salience, polarization, and—crucially—the availability of plausible authentic footage that can be recontextualized. Only for the more salient, polarized Ukraine war did decontextualized video prove more credible and engaging than text, while low-tech video manipulation often outperformed AI-generated imagery.
 
 ## Key Contributions
 
-- One of the first direct experimental comparisons of textual, AI-image, and decontextualized-video disinformation within a single design.
-- Empirically tempers alarmist narratives about generative AI by showing that low-tech video decontextualization can be more persuasive than AI-generated stills.
-- Identifies issue salience, polarization, and availability of plausible authentic footage as boundary conditions for visual disinformation effects.
-- Shows fact-checks work across modalities, suggesting correction strategies need not be modality-specific (though explaining visual deception techniques remains useful).
-- Clarifies moderating roles of conspiracy mentality, media distrust, and self-perceived media literacy.
+- One of the first direct experimental comparisons of textual, AI-generated still-image, and decontextualized video disinformation within a single design.
+- Demonstrates that visual disinformation effects are contingent on issue salience, polarization, and the availability of plausible authentic footage for recontextualization.
+- Challenges alarmist framing of generative AI by showing that low-tech video decontextualization can be more persuasive than AI-generated imagery.
+- Shows fact-checks are equally effective across modalities—fact-checkers need not build modality-specific correction tools, though they should explain the techniques behind visual deception.
+- Clarifies moderating roles of conspiracy mentality, media distrust, and self-perceived media literacy across modalities.
 
 ## Methods
 
-Pre-registered between-subjects online experiment with a 3 (modality: text / AI image / decontextualized video) × 2 (correction vs. none) + 3 control design, with topic (MH370 vs. Ukraine) varied within-subjects in randomized order. N=982 U.S. adults from a Kantar opt-in panel (Dec 5–11, 2023). Stimuli were mocked-up news articles: a false missile-strike claim for MH370 and a fabricated Putin–Zelenskyy peace deal for Ukraine. DVs were credibility, engagement intentions, and discrete emotions on 7-point scales; moderators included media distrust, conspiracy mentality (Bruder et al.), and self-perceived media literacy. Analyses used ANOVAs, OLS regressions with interactions, and Wald coefficient comparisons.
+- Pre-registered between-subjects online experiment (AsPredicted #6MX_9VL): 3 (modality: text vs. AI image vs. decontextualized video) × 2 (correction present/absent) + 3 controls, with topic (MH370 vs. Ukraine) varied within-subjects in randomized order.
+- N=982 U.S. adults via Kantar opt-in panel with soft quotas (age, gender, education); collected December 5–11, 2023.
+- Stimuli mimicked online news articles (MH370: false missile-strike claim; Ukraine: false Putin–Zelenskyy peace deal), each paired with decontextualized footage or AI-generated imagery.
+- DVs: credibility (7 items), engagement intentions (6 items), discrete emotions (8 items), all 7-point scales. Moderators (media distrust, conspiracy mentality, self-perceived media literacy) measured pre-exposure.
+- Analyses: ANOVAs with LSD post hoc, OLS regressions with two-way interactions, Wald coefficient comparisons, plus exploratory ideology and partisan-belief analyses.
 
 ## Findings
 
-- For MH370, no modality differences in credibility, emotion, or engagement; all disinformation was rated less credible than authentic control content.
-- For Ukraine, decontextualized video was significantly more credible and engaging than textual disinformation; differences from AI imagery were smaller or marginal.
+- **MH370:** no significant modality differences in credibility, emotions, or engagement; all disinformation rated less credible than the authentic control.
+- **Ukraine:** video disinformation was significantly more credible and engaging than text; differences from AI imagery were smaller or marginal.
 - Emotional responses did not differ by modality for either issue.
-- Conspiracy mentality amplified credibility of MH370 disinformation across modalities but not for Ukraine.
-- Media distrust modestly boosted credibility of textual MH370 disinformation.
-- Self-perceived media literacy had little moderating effect, except slightly reducing engagement with textual MH370 disinformation.
-- Fact-checks reduced credibility for both issues, with no significant modality interaction.
-- Exploratory: right-leaning participants showed less emotional response and lower belief in some messages; issue-specific partisan beliefs increased credibility.
+- Conspiracy mentality amplified MH370 disinformation credibility across modalities (but not Ukraine), consistent with epistemic uncertainty driving susceptibility.
+- Media distrust modestly increased credibility of textual (and somewhat video) MH370 disinformation.
+- Self-perceived media literacy generally did not moderate effects, except reducing engagement with textual MH370 disinformation.
+- Fact-checks significantly reduced credibility for both issues, with no interaction by modality.
+- Exploratory: right-leaning participants were less responsive to some messages; stronger issue-specific partisan beliefs increased perceived credibility.
 
 ## Connections
 
-This study speaks directly to ongoing debates about generative-AI-driven disinformation and visual manipulation, complementing concerns raised in [[Spampatti2026-kx]] and the broader resilience framework developed by [[Humprecht2025-ml]]. Its finding that fact-checks work across modalities resonates with prebunking and correction work such as [[van-der-Linden2026-jt]] and [[DeVerna2025-dl]], while its tempering of AI-alarmism aligns with the prevalence-focused critiques in [[Budak2024-ef]] and Simon-style arguments echoed across [[Starbird2025-jj]] and [[Marwick2025-ov]]. The role of conspiracy mentality as a moderator connects to audience-susceptibility work like [[Frischlich2025-vn]].
+This paper's empirical rebuttal to generative-AI alarmism complements experimental work finding limited persuasive advantages for AI-driven persuasion and disinformation, such as [[Hackenburg2025-dj]] and [[DeVerna2025-dl]]. Its focus on fact-check efficacy and resilience across contexts connects to comparative and correction-oriented studies including [[Cazzamatta2026-lo]], and its treatment of decontextualized visual manipulation and AI-generated imagery relates to [[Di-Domenico2026-zq]].
 
 ## Podcast
 

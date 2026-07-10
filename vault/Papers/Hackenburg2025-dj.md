@@ -5,8 +5,8 @@ authors: ["Kobi Hackenburg", "Ben M. Tappin", "Luke Hewitt", "Ed Saunders", "Sid
 year: 2025
 doi: 10.1126/science.aea3884
 bibtex_key: Hackenburg2025-dj
-topics: [generative-ai-and-media]
-citation_count: 19
+topics: [generative-ai-disinformation, llms-computational-content-analysis]
+citation_count: 24
 open_access: false
 source_url: https://doi.org/10.1126/science.aea3884
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hackenburg2025-dj.mp3
@@ -22,36 +22,35 @@ discovery_date: 2026-03-11T09:32:00.321924Z
 
 ## Summary
 
-This paper presents the largest systematic empirical investigation of what makes conversational AI persuasive in political contexts, using three preregistered experiments with 42,357 UK participants, 19 LLMs spanning four orders of magnitude in compute, and 707 political issues. The authors find that *post-training* (especially reward modeling) and *prompting strategies* are far more powerful persuasion levers than model scale or personalization, and they identify **information density**—the number of fact-checkable claims per conversation—as the unifying mechanism. Crucially, the same levers that boost persuasion systematically *degrade* factual accuracy, exposing a persuasion–accuracy trade-off with direct implications for AI safety and political communication.
+This paper reports the largest systematic empirical investigation to date of what makes conversational AI persuasive in the political domain. Across three preregistered experiments involving nearly 77,000 responses from 42,357 UK participants, 19 LLMs, and 707 political issues, the authors dismantle the persuasion process into its component "levers": model scale, prompting strategy, personalization, and post-training. Their central finding is that post-training and prompting matter far more than raw model size or personalization, and that all of these effects operate through a single mechanism — **information density**, the volume of fact-checkable claims packed into a conversation. Crucially, the same techniques that maximize persuasion also degrade factual accuracy, exposing a systematic persuasion–accuracy trade-off with direct implications for AI safety and misinformation policy.
 
 ## Key Contributions
 
-- Largest-scale mapping to date of which technical levers (scale, prompting, personalization, post-training) drive AI persuasion.
-- Identification of **information density** as a unifying causal mechanism (~44–75% of variance explained).
-- Quantification of a **persuasion–accuracy trade-off**: optimized persuasion configurations achieve 15.9 pp shifts but with ~30% inaccurate claims.
-- Demonstration that cheap, subfrontier open-source models can be post-trained into highly persuasive agents, broadening the threat model.
-- Empirical pushback against microtargeting alarmism: personalization effects are real but ≤1 pp.
-- Evidence that information-based persuasion outperforms identity/affect-based strategies (moral reframing, deep canvassing) when delivered by AI.
-- Public release of dataset and pipeline covering 466,769 fact-checked LLM claims.
+- Maps the technical levers of conversational AI persuasion across model families and four orders of magnitude of pretraining compute.
+- Identifies **information density** as a unifying mechanism linking scale, post-training, and prompting effects.
+- Documents and quantifies a previously unmeasured **persuasion–accuracy trade-off**.
+- Shows that cheap, subfrontier open-source models can be post-trained into agents matching or exceeding frontier models like GPT-4o — broadening the threat model beyond well-resourced labs.
+- Reframes microtargeting fears by showing personalization yields only marginal gains.
+- Contributes empirical evidence to the motivated-reasoning debate: information-based persuasion beats identity-based psychological strategies when delivered by AI.
+- Releases a large dataset and analysis pipeline.
 
 ## Methods
 
-Three large-scale preregistered survey experiments measured pre/post attitude change (0–100 scale) after multi-turn (2–10) conversations with LLMs about politically balanced issues, benchmarked against no-conversation controls. The authors manipulated model scale (19 LLMs including GPT-3.5/4o/4.5, Grok-3-beta, Qwen, Llama), eight prompting strategies, three personalization methods, and three post-training regimes (SFT, reward modeling, SFT+RM)—the latter using 9,000 curated successful dialogues and a reward model trained on 56,283 conversations for best-of-k reranking. Claim-level accuracy was assessed via GPT-4o Search Preview, validated against professional fact-checkers (r = 0.84–0.87). Joint effects were estimated using cross-fit machine learning.
+Three large-scale preregistered survey experiments had UK adults engage in multi-turn (2–10 turn) conversations with LLMs about politically balanced issues, with pre/post attitude measured on a 0–100 scale against a no-conversation control. The authors deployed 19 open- and closed-source models (GPT-3.5 through GPT-4.5, Grok-3-beta, Qwen and Llama families), and systematically manipulated model scale, eight prompting strategies (information, moral reframing, storytelling, deep canvassing, etc.), three personalization methods, and three post-training methods (SFT, reward modeling, SFT+RM). Persuasion post-training used a curated SFT set of 9,000 dialogues plus a reward model trained on 56,283 conversations for best-of-k reranking. They fact-checked 466,769 generated claims via GPT-4o Search Preview, validated against professional fact-checkers (r ≈ 0.84–0.87), and used cross-fit ML to estimate the joint effect of stacking all persuasion-maximizing levers.
 
 ## Findings
 
-- Each order-of-magnitude compute increase yielded only +1.83 pp persuasion among chat-tuned models.
-- Reward-model post-training added +2.32 pp on open-source models (+0.63 pp on frontier); SFT alone was null.
-- The simple "information" prompt was the most persuasive strategy (+27% over basic); moral reframing and deep canvassing underperformed.
-- Information density correlated r ≈ 0.77 with persuasion.
-- Personalization yielded only +0.43 pp on average; never above +1 pp.
-- Conversations were 41–52% more persuasive than 200-word static messages; 36–42% of effects persisted at one-month follow-up.
-- Information-prompting dropped GPT-4o accuracy from 78% to 62%; GPT-4.5 was no more accurate than Llama3.1-8B.
-- Fully optimized configuration: 15.9 pp average effect (26.1 pp among initial disagreers), 30% inaccurate claims.
+- Each order-of-magnitude increase in compute yielded only +1.59–1.83 pp of persuasion (holding post-training constant).
+- Reward-model post-training added +2.32 pp on open-source and +0.63 pp on frontier models; SFT alone had no significant effect.
+- The "information" prompt was the most persuasive strategy (+27% over baseline); moral reframing and deep canvassing underperformed a basic prompt.
+- Information density correlated strongly with persuasion (r ≈ 0.77), explaining ~44% of variance overall and ~75% among developer post-trained models.
+- Personalization had a small effect (+0.43 pp, never exceeding +1 pp).
+- Conversation beat static messages by 41–52%, with 36–42% of effects persisting at one month.
+- Information-prompted GPT-4o accuracy fell from 78% to 62%; a maximally optimized configuration reached a 15.9 pp average effect (26.1 pp among disagreers) but with 30% of claims rated inaccurate.
 
 ## Connections
 
-This work directly extends and complicates concerns raised in [[DeVerna2025-dl]] about LLM-driven misinformation and in [[Triedman2025-uy]] on adversarial/persuasive AI behaviors, by isolating *which* technical levers actually drive persuasion and showing they trade off against accuracy. It also speaks to [[Tan2024-vl]] and [[Lin2025-xp]] on LLM-mediated political communication, and provides an empirical counterweight to microtargeting-focused narratives that recur across the broader generative-AI-and-politics literature (e.g., [[Schiffrin_undated-gi]], [[Brown2025-jk]]). Other listed papers under this topic appear less directly connected to its mechanism-focused persuasion agenda.
+This work directly complements [[Costello2024-bg]], which demonstrated conversational AI's power to durably reduce conspiracy beliefs — both find that fact-dense, multi-turn dialogue is a potent persuasive tool, though the present paper sharpens this by exposing the accuracy costs. Its quantification of AI persuasion mechanisms also situates it against broader concerns about generative-AI-driven influence explored in [[DeVerna2025-dl]] and the disinformation-vulnerability work in [[Triedman2025-uy]]. The finding that microtargeting yields only marginal gains offers an empirical counterweight to speculative manipulation narratives.
 
 ## Podcast
 

@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1177/29768624261452529
 bibtex_key: Giglietto2026-632ef967
 kind: own
-topics: [platform-governance-data-access, polarization-hybrid-media]
+topics: [platform-governance-data-access, political-polarization-partisan-news]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.1177/29768624261452529

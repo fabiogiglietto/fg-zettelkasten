@@ -8,8 +8,11 @@ papers exist, so the register never fragments into one-paper topics.
 from __future__ import annotations
 
 
-def _summary_digest(summary: dict) -> str:
-    """A compact one-block digest of a structured summary for prompting."""
+def summary_digest(summary: dict) -> str:
+    """A compact one-block digest of a structured summary for prompting.
+
+    Also the canonical assignment input that `state.assign_fingerprint`
+    hashes — keep the two in sync by always going through this function."""
     fields = ("abstract", "key_claims", "findings", "framing")
     lines = []
     for field in fields:
@@ -53,7 +56,7 @@ def assign_paper(paper, summary: dict, topics: list[dict], claude, model: str) -
         f"Topic register:\n{register}\n\n"
         f"Paper:\nTitle: {paper.title}\n"
         f"Authors: {', '.join(paper.authors) or 'unknown'}\n\n"
-        f"{_summary_digest(summary)}"
+        f"{summary_digest(summary)}"
     )
 
     result = claude.complete_json(
@@ -99,7 +102,7 @@ def find_emergent(
 
     blocks = []
     for paper in unassigned:
-        digest = _summary_digest(summaries.get(paper.bibtex_key, {}))
+        digest = summary_digest(summaries.get(paper.bibtex_key, {}))
         blocks.append(
             f"===== {paper.bibtex_key} =====\nTitle: {paper.title}\n{digest}"
         )

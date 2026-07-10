@@ -5,7 +5,7 @@ authors: ["Tarleton Gillespie", "Ryland Shaw", "Mary L. Gray", "Jina Suh"]
 year: 2026
 doi: 10.1145/3731657
 bibtex_key: Gillespie2026-aa
-topics: [generative-ai-and-media]
+topics: [ai-red-teaming-and-participatory-evaluation, public-perceptions-and-labor-impacts-of-ai]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1145/3731657
@@ -22,33 +22,33 @@ discovery_date: 2026-01-27T06:19:49.072567Z
 
 ## Summary
 
-This essay reframes AI red-teaming — the adversarial probing of generative AI systems for harmful outputs, vulnerabilities, and biases — as a sociotechnical practice rather than a purely technical safety procedure. Gillespie, Shaw, Gray, and Suh argue that the rapid institutionalization of red-teaming across industry and policy (e.g., Biden's EO 14110, DEFCON 2023) has obscured three critical dimensions: the embedded value judgments about what counts as harm, the labor arrangements that organize the work, and the psychological costs borne by red-teamers. Drawing an extended analogy to the history of commercial content moderation, the authors warn that the field is repeating familiar patterns of opacity, outsourcing, and worker neglect — and call for a coordinated interdisciplinary research agenda before these arrangements become entrenched.
+This conceptual essay argues that AI red-teaming — the adversarial probing of generative AI systems for vulnerabilities, harmful outputs, and biases — should be understood as a sociotechnical practice rather than a narrowly technical procedure. The authors contend that red-teaming has been rapidly normalized as a central AI safety and policy mechanism even though the public knows little about how it is conducted, by whom, or according to whose values. Drawing an extended parallel with the history of commercial content moderation, they surface three underexamined dimensions: the value judgments embedded in defining harms, the labor arrangements that organize the work, and the psychological toll it exacts on workers. Their central move is a warning and a call: before red-teaming's current opaque, market-driven form becomes entrenched, a coordinated interdisciplinary research network should study it empirically.
 
 ## Key Contributions
 
-- Establishes AI red-teaming as a *sociotechnical* problem domain rather than a technical evaluation method.
-- Develops a structured analogy between red-teaming and commercial content moderation, exposing shared dynamics of harm definition, labor arbitrage, and worker harm.
-- Identifies *moral injury* and secondary traumatic stress as red-teaming-specific psychological risks tied to sustained adversarial roleplay.
-- Provides a critical vocabulary — values, labor, well-being — for empirical and policy research on AI safety work.
-- Issues a programmatic call for a cross-disciplinary research network spanning CS, social science, humanities, and law.
+- Reframes AI red-teaming as a *sociotechnical problem* rather than a purely technical or compliance issue.
+- Develops a structured comparison between red-teaming and commercial content moderation, extracting transferable lessons about values, labor, and worker harm.
+- Names psychological risks specific to red-teaming, including **moral injury** arising from sustained adversarial roleplay and transgressive imagination.
+- Issues a programmatic call for a cross-disciplinary research network (computer science, social science, humanities, law).
+- Offers a critical vocabulary — value judgments, labor politics, well-being — to organize future empirical and policy work on AI safety labor.
 
 ## Methods
 
-A conceptual and critical essay rather than empirical study. The authors synthesize their prior research on Responsible AI labor and participatory AI governance, draw comparative lessons from the content moderation literature (Roberts, Gray & Suri), and engage STS, labor studies, and psychology. They review public-facing materials from major AI companies (OpenAI, Anthropic, Google, Microsoft), U.S. policy documents, and high-profile red-teaming events.
+A conceptual and critical essay, explicitly not based on internal Microsoft information, synthesizing the authors' prior work on Responsible AI labor, generative AI politics, and participatory governance. The argument proceeds by comparative analysis (red-teaming vs. content moderation) and engagement with science and technology studies, labor studies, psychology, and design. It reviews public-facing materials from major AI companies (OpenAI, Anthropic, Google, Microsoft), policy documents (Executive Order 14110), and events such as DEFCON 2023's Generative Red Team.
 
 ## Findings
 
-- Red-teaming remains conceptually fuzzy, blurring with evaluation, bug bounties, penetration testing, and ethical hacking.
-- Internal red-teamers often lack the sociocultural and linguistic expertise to surface diverse harms, and are constrained by NDAs and corporate incentives.
-- Third-party and crowdsourced red-teaming replicates the precarity, weak protections, and labor arbitrage of content moderation pipelines.
-- Volunteer/event-based formats (e.g., DEFCON) broaden participation but risk extractive reliance on marginalized communities and don't scale.
-- Workers face secondary trauma, PTSD-like symptoms, and moral injury — the last sharpened by the demand to inhabit adversarial, transgressive personas.
-- Existing well-being supports (EAPs, content warnings, opt-outs) are unevenly applied and undermined by surveillance and performance pressures; non-use is wrongly read as non-need.
-- Claims that red-teaming will be automated away obscure rather than eliminate the human labor involved.
+- Definitions of red-teaming remain fuzzy, overlapping with evaluation, bug bounties, penetration testing, and "ethical hacking," and are institutionally unsettled.
+- Internal red-teamers often lack the sociocultural, linguistic, and ethical expertise to identify diverse harms, and may be constrained by NDAs and corporate incentives — leaving value judgments with designers who do not reflect affected users.
+- Red-teaming labor is increasingly outsourced to vendors and crowdworkers, replicating the labor arbitrage, weak protections, and precarity of content moderation.
+- Volunteer and event-based red-teaming (e.g., DEFCON) can broaden participation but risks extractive reliance on marginalized communities and does not scale.
+- Workers face secondary traumatic stress, PTSD-like symptoms, and moral injury from repeated exposure to harmful content and from inhabiting adversarial personas.
+- Existing well-being supports (EAPs, content warnings, opt-outs) are inconsistently applied and undermined by NDAs, performance pressure, and surveillance dynamics.
+- Claims that red-teaming will be automated away are misleading and obscure the human labor involved rather than eliminating it.
 
 ## Connections
 
-This paper extends the content-moderation-as-labor tradition into generative AI safety and connects directly to participatory and community-based approaches to AI evaluation, such as [[Matias2025-px]] and [[Unknown2025-qj]], which similarly interrogate who gets to identify harms and on what terms. Its critique of internal, proprietary harm definitions resonates with calls to broaden participation in red-teaming beyond corporate boundaries, while its attention to worker well-being adds a labor-and-health dimension often missing from participatory governance discussions.
+This essay's participatory and event-based angle on red-teaming connects to work on broadening evaluation beyond corporate insiders, such as [[Nguyen2026-vm]] and [[Ng2026-og]]. Its attention to the hidden labor and well-being costs of AI work — extending the "ghost work" tradition into generative AI safety — resonates with research on the labor impacts of AI, though the specific papers grouped under that topic here appear to address public perceptions and downstream effects rather than the frontline red-teaming labor this essay foregrounds.
 
 ## Podcast
 

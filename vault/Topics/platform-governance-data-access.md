@@ -6,18 +6,19 @@ emergent: false
 
 # Platform Governance and Research Data Access
 
-Policies, APIs and DSA-era infrastructures shaping access to social media data for academic research, including Meta's content reduction, CrowdTangle shutdown, and the state of platform research tooling.
+Analysis of social media platform policies, moderation/content-reduction decisions, and the shifting landscape of research APIs and data access tools under regulatory regimes like the EU Digital Service Act, including the transition away from CrowdTangle and toward walled-garden platform environments.
 
 ## Papers
 
+- [[Ahuja2025-ku]]
 - [[Allen2025-ot]]
 - [[Bak-Coleman2025-pm]]
 - [[Bak-Coleman2026-mk]]
+- [[Bastos2025-ol]]
 - [[Bastos2025-ya]]
 - [[Bechmann2026-dr]]
 - [[Bouchaud2026-lr]]
 - [[Bouchaud2026-np]]
-- [[Brady2026-ln]]
 - [[Bruns2026-yv]]
 - [[Cazzamatta2026-lo]]
 - [[Crosset2026-mq]]
@@ -27,6 +28,8 @@ Policies, APIs and DSA-era infrastructures shaping access to social media data f
 - [[Entrena-Serrano2025-gw]]
 - [[Farkas2026-lr]]
 - [[Freelon2024-sc]]
+- [[Gauthier2026-iq]]
+- [[Giglietto2020-6278a4aa]]
 - [[Giglietto2022-b30e8b4e]]
 - [[Giglietto2025-1765bb4f]]
 - [[Giglietto2025-1e9a0917]]
@@ -43,27 +46,24 @@ Policies, APIs and DSA-era infrastructures shaping access to social media data f
 - [[Mahl2026-hc]]
 - [[McNally2025-dn]]
 - [[Moran2025-qn]]
+- [[Mosleh2024-op]]
 - [[Munger2025-cz]]
 - [[Murtfeldt2025-wu]]
 - [[Ohme2026-nv]]
 - [[Peters2026-mo]]
 - [[Philipp2026-tl]]
 - [[Pierri2025-hm]]
-- [[Renault2025-uh]]
+- [[Richter2026-bt]]
 - [[Rieder2025-ju]]
 - [[Rieder2026-pp]]
-- [[Rossi2023-847d5a9f]]
 - [[Schiffrin_undated-gi]]
 - [[Schulte2026-df]]
-- [[Simeone2025-vo]]
+- [[Swartz2026-zb]]
 - [[Tonneau2025-bv]]
-- [[Tornberg2026-lc]]
 - [[Unknown2025-ed60bc90]]
-- [[Ventura2026-yc]]
 - [[Vincent_undated-re]]
 - [[Votta2025-xz]]
 - [[Wang2026-ub]]
-- [[Weinbrand2026-sf]]
 - [[Yang2026-tq]]
 - [[de-Vreese2026-zx]]
 

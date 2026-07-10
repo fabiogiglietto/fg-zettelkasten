@@ -5,7 +5,7 @@ authors: ["Yannik Peters", "Katrin Weller"]
 year: 2026
 doi: 10.1177/29768624261438624
 bibtex_key: Peters2026-mo
-topics: [platform-governance-data-access, computational-methods-social-research]
+topics: [platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/29768624261438624
@@ -22,33 +22,37 @@ discovery_date: 2026-04-09T17:34:28.924451Z
 
 ## Summary
 
-This paper examines how data quality is conceptualized — or notably absent — in the European Union's Digital Services Act (DSA), particularly Article 40 and its Delegated Regulation, which govern researcher access to data from Very Large Online Platforms. Through a mixed-methods analysis of regulatory documents and 242 stakeholder feedback submissions to two European Commission Calls for Evidence, the authors show that data quality is barely mentioned in official EU texts and was instead pushed onto the agenda by academics and NGOs. They argue that data quality should be understood not as a neutral methodological construct but as a politically contested concept negotiated between three stakeholder perspectives: a research standard (academics), an economic good (platforms), and a regulatory concern (EU institutions).
+This paper examines how *data quality* is conceptualized and contested within the European Union's Digital Services Act (DSA), specifically Article 40 and its Delegated Regulation, which govern researcher access to public and nonpublic data from Very Large Online Platforms. Through a mixed-methods analysis of the regulatory texts and 242 feedback entries submitted during two European Commission Call for Evidence periods, Peters and Weller show that data quality was largely absent from official EU documents but was pushed onto the agenda by academic and NGO stakeholders, who partially succeeded in embedding it into the final Delegated Regulation. Their central argument is that data quality should be understood not as a purely methodological construct but as a politically contested concept negotiated among researchers, platforms, and regulators.
 
 ## Key Contributions
 
 - First empirical analysis of how data quality is discursively constructed and contested within the DSA regulatory process.
-- A typology of three stakeholder perspectives on platform data quality: research standard, economic good, and European-regulative perspective.
-- Application of Multiple Correspondence Analysis as a tool for mapping discursive positions in platform governance debates.
-- A bridge between computational social science literature on data quality and critical platform governance scholarship.
-- Concrete policy recommendations, including independent institutions for ongoing data quality assessment, benchmark datasets, and audit mechanisms.
-- An annotated dataset and reproducible code released via a public repository.
+- A typology of three stakeholder perspectives on platform data quality: **research standard** (academics), **economic good** (platforms), and **regulatory perspective** (EU institutions).
+- Demonstrates Multiple Correspondence Analysis (MCA) as a tool for mapping discursive positions in platform governance debates.
+- Bridges methodological data-quality literature with platform governance and platformization scholarship.
+- Concrete policy recommendations: independent institutions for long-term quality assessment, benchmark datasets, and auditing mechanisms.
+- An annotated dataset and reproducible code released publicly.
 
 ## Methods
 
-The authors quantitatively coded 242 feedback entries (from 214 unique organizations) for references to data quality and its intrinsic indicators (accuracy, completeness, consistency), achieving high inter-coder reliability (Krippendorff's α = 0.92). They used Multiple Correspondence Analysis (MCA) — drawing on Bourdieusian geometric data analysis — to construct a "data quality discursive space," followed by Hierarchical Clustering on Principal Components (HCPC) to identify four actor profiles. A thematic analysis (Braun and Clarke) of relevant text passages and a word frequency analysis across the DSA, the draft, and the final Delegated Regulation complement the quantitative findings.
+- Quantitative content analysis of 242 feedback entries (133 in period 1, 109 in period 2) from 214 unique organizations, with binary coding of general and intrinsic (accuracy, completeness, consistency) references to data quality; inter-coder reliability was high (Krippendorff's α = 0.92, Holsti = 0.95).
+- **Multiple Correspondence Analysis (MCA)** on four data-quality variables to construct a discursive "data quality space," with stakeholder type as a supplementary variable.
+- **Hierarchical Clustering on Principal Components (HCPC)** to identify four actor response-profile clusters.
+- Thematic analysis (Braun & Clarke) of data-quality text passages, plus word-frequency analysis across the DSA, draft Delegated Regulation, and final Delegated Regulation. The analytic frame draws on Bourdieusian geometric data analysis.
 
 ## Findings
 
-- 38.79% of submitters referenced intrinsic data quality at least once; mentions were more frequent in the second consultation period (24.3%) than the first (19.6%).
-- Academic/research institutions (35.98%) and NGOs (21.02%) were the most active submitters; 20.56% of submissions came from the USA.
-- The first two MCA dimensions explained 69.2% of inertia; dimension 2 separated those mentioning data quality (academics, NGOs) from those who did not (companies, business associations, public authorities).
-- Among major platforms, only Meta and Snapchat explicitly raised data quality, with Meta strategically inverting the argument: claiming that platform data is too poor to be useful, therefore researcher access is futile.
-- Researchers most frequently invoked completeness and accuracy, tying these to specific collection methods (APIs, data donations, scraping) and calls for independent audits.
-- Advocacy partially succeeded: data quality language entered Recitals 7 and 13 of the final Delegated Regulation, but researchers did not secure rights to initiate mediation under Article 13.
+- 38.79% of submitters referenced intrinsic data quality at least once; mentions rose in the second period (24.3% general references vs. 19.6% in the first).
+- Academic/research institutions (35.98%) and NGOs (21.02%) were the most active submitters; 20.56% of submissions came from the USA, signalling transnational engagement.
+- MCA's first two dimensions explained 69.2% of inertia: Dimension 1 (44.3%) distinguished feedback periods; Dimension 2 (24.8%) distinguished mention vs. non-mention of data quality.
+- NGOs and academics clustered as more likely to mention data quality; companies, business associations, and public authorities clustered as less likely.
+- Of major platforms, only Meta and Snapchat explicitly mentioned data quality — Meta strategically inverted the argument, claiming low platform data quality rendered researcher access futile.
+- Researchers most often cited completeness and accuracy, linking them to collection methods (APIs, donations, scraping) and calling for independent audits.
+- Advocacy succeeded in adding data-quality language to Recitals 7 and 13 of the final Delegated Regulation, but failed to secure researcher rights to initiate mediation under Article 13.
 
 ## Connections
 
-This paper sits at the heart of ongoing debates about platform data access in the "post-API age," directly engaging with work on the DSA's Article 40 infrastructure such as [[Ohme2026-nv]] and broader critical analyses of platform research conditions like [[Rieder2026-pp]] and [[Rieder2025-ju]]. Its concern with data quality as a methodological-political hybrid resonates with computational social science work on measurement and validity in platform data, including [[Bak-Coleman2025-pm]] and [[Murtfeldt2025-wu]], as well as historical perspectives on platform-research relations such as [[Freelon2024-sc]]. The argument for independent auditing institutions also connects to platform governance proposals discussed in [[Helmond2026-ll]] and [[Schiffrin_undated-gi]].
+This paper sits squarely in the DSA Article 40 data-access debate and connects to work on the mechanics and limits of that access regime, such as [[Rieder2026-pp]] and [[Rieder2025-ju]]. Its concern with platform-provided data quality and the "post-API age" resonates with studies of API and data-donation validity like [[Ohme2026-nv]] and with broader critical assessments of platform data reliability. Its regulatory-governance framing complements policy-oriented analyses of researcher access such as [[de-Vreese2026-zx]] and [[Bruns2026-yv]].
 
 ## Podcast
 

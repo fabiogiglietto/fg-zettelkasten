@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1177/14614448251413687
 bibtex_key: Cazzamatta2026-lo
 topics: [platform-governance-data-access, information-disorder]
-citation_count: 0
+citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1177/14614448251413687
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Cazzamatta2026-lo.mp3
@@ -22,35 +22,40 @@ discovery_date: 2026-02-01T07:29:57.124171Z
 
 ## Summary
 
-This paper empirically tests the censorship narrative behind Mark Zuckerberg's January 2025 decision to dismantle Meta's Third-Party Fact-Checking Program. Combining a content analysis of 2,053 debunking articles from 16 Meta-partner fact-checkers across eight European and Latin American countries with 30 expert interviews, Cazzamatta shows that fact-checkers never had takedown authority and that, post-verification, content removal occurs in only about 30% of cases—most flagged content stays online, often unlabeled. Fact-checkers themselves overwhelmingly favor transparency, labeling, and counter-speech over deletion, distinguishing "freedom of speech" from "freedom of reach," and view Community Notes as an inadequate, manipulable substitute. The paper reframes Meta's shift as a move from "preemptive" to "conflictual" cooperation, raising particular alarm for under-regulated Latin American contexts.
+This paper interrogates the empirical basis of Mark Zuckerberg's January 2025 decision to end Meta's Third-Party Fact-Checking Program and his characterization of fact-checkers as agents of censorship. Combining a comparative content analysis of 2,053 debunking articles from 16 Meta-partner organizations across eight European and Latin American countries with 30 expert interviews, Cazzamatta demonstrates that the censorship narrative is empirically unfounded: fact-checkers never had authority to remove or downrank content, and most verified false content stays online, either labeled or entirely unaltered. The study argues that Meta's shift from "preemptive" to "conflictual" cooperation signals a turn toward politically aligned, oligarchic moderation that threatens evidence-based regulation—especially in under-regulated regions like Latin America.
 
 ## Key Contributions
 
-- First empirical evidence on what actually happens to content after fact-checker verification on Meta, directly rebutting the censorship framing.
-- Cross-regional comparative design covering the two regions Zuckerberg explicitly targeted (Europe and Latin America).
-- Triangulates large-scale content analysis with practitioner interviews to align observed platform behavior with insider accounts.
-- Documents fact-checkers' normative positions on free speech, transparency, and moderation.
-- Extends Rone's preemptive-vs-conflictual cooperation framework to the dismantling of the 3PFC program.
-- Provides grounded skepticism about Community Notes as a replacement in polarized, weakly regulated contexts.
+- First empirical evidence on what actually happens to content after fact-checker verification on Meta platforms, directly testing censorship claims.
+- Cross-regional comparison spanning the two regions (Europe and Latin America) named in Zuckerberg's speech.
+- Triangulation of large-scale content analysis with practitioner interviews.
+- Documentation of fact-checkers' normative positions on free speech, transparency, and moderation.
+- Extension of Rone's framework of preemptive versus conflictual platform cooperation to the dismantling of the fact-checking program.
+- Empirically grounded skepticism about replacing professional fact-checking with Community Notes in polarized, under-regulated contexts.
 
 ## Methods
 
-Quantitative content analysis of 2,053 debunking articles published in 2022 by 16 Meta-partner organizations in Germany, Portugal, Spain, the UK, Argentina, Chile, Brazil, and Venezuela, sampled from 11,636 links. An inductive codebook (developed via a 500-article pre-test) captured post-verification outcomes (labels, removal, court orders, no action, residual footprint, source pressure, voluntary corrections), coded by eight native-language assistants with intercoder agreement of 77–93%. Correspondence analysis mapped country–outcome associations (85% variance). Thirty semi-structured interviews with fact-checkers (Aug 2024–Mar 2025) were analyzed inductively in NVivo following Tracy's approach. Country selection drew on Hallin and Mancini's typology and deliberative democracy indices.
+- Comparative quantitative content analysis of 2,053 debunking articles (2022) from 16 Meta-partner organizations across eight countries (Germany, Portugal, Spain, UK, Argentina, Chile, Brazil, Venezuela), stratified from 11,636 collected links.
+- Inductively developed codebook (via a 500-article pre-test) capturing post-verification outcomes: warning labels, removal, court orders, no action, residual footprint, source pressure, voluntary corrections.
+- Coding by eight native-language assistants over eight months; intercoder agreement 77%–93%.
+- Correspondence analysis mapping country–outcome associations (85% of variance).
+- 30 semi-structured expert interviews (Aug 2024–Mar 2025), analyzed inductively in NVivo following Tracy's qualitative textual analysis.
+- Country selection grounded in Hallin and Mancini's media system typology and levels of deliberative democracy plus market size.
 
 ## Findings
 
-- Correspondence analysis showed cross-national uniformity rather than country-specific moderation patterns.
-- Removal rates ranged from 21% (Venezuela) to 45% (Portugal), clustering near 30%, with attribution to Meta vs. original spreader often unclear.
-- Platform labeling varied widely: 0% in Argentina (Chequeado uses screenshots), 10% in Portugal, up to 56% in Brazil.
-- In many cases no action was taken—false posts remained accessible and unlabeled, undermining censorship narratives.
-- Fact-checker requests for corrections from public figures rarely succeeded.
-- Fact-checkers articulated ten arguments against removal, prioritizing speech protection, distinguishing "freedom of reach," and warning that opaque takedowns fuel conspiracy theories.
-- European fact-checkers welcomed the DSA and EFCSN-led advocacy; Latin American ones expressed pessimism about regulation and funding.
-- Concerns about coordinated vote manipulation of Community Notes were grounded in experiences on X.
+- Correspondence analysis found no strong country-specific patterns—most outcomes clustered near the null point, indicating cross-national uniformity.
+- Content removal ranged from 21% (Venezuela) to 45% (Portugal), clustering around 30%, but attribution to Meta versus the original spreader is often unclear.
+- Platform labeling varied widely, from 10% (Portugal) and 0% (Argentina) to 56% (Brazil).
+- In many cases no action was taken and false posts remained accessible without labels, undermining censorship narratives.
+- Successful correction requests from public figures were rare across all countries.
+- Fact-checkers marshal ten key arguments against removal, foremost protecting free speech while distinguishing it from "freedom of reach," and worry that opaque takedown criteria fuel conspiracy theories.
+- European fact-checkers welcome the Digital Services Act and EU-level advocacy (EFCSN); Latin American fact-checkers are more pessimistic about regulation and funding.
+- Fact-checkers fear Community Notes can be weaponized via coordinated voting, citing experiences on X.
 
 ## Connections
 
-This work speaks directly to research on the post-2025 collapse of professional fact-checking infrastructures and the rise of Community Notes as a replacement, connecting to [[Allen2025-ot]], [[DeVerna2025-dl]], and [[Renault2025-uh]] on crowd-sourced verification, and to [[Bak-Coleman2025-pm]] and [[Donovan2025-ws]] on the political economy of moderation rollbacks. Its framing of conflictual platform cooperation and oligarchic moderation resonates with [[Rieder2025-ju]], [[Helmond2026-ll]], and [[Starbird2025-jj]] on platform governance and the weaponization of censorship rhetoric, while its Latin American focus complements [[Rossini2026-jn]] and [[Inacio-da-Silva2026-zf]]. Broader debates on misinformation interventions and labeling link it to [[van-der-Linden2026-jt]], [[Lewandowsky2026-ob]], and [[Budak2024-ef]].
+This paper sits within work on the political economy and governance of fact-checking, resonating with studies of Community Notes and crowdsourced verification such as [[Allen2025-ot]] and [[DeVerna2025-dl]], as well as analyses of platform moderation and data-access regimes like [[Rieder2025-ju]] and [[Rieder2026-pp]]. Its concern with counter-speech, labeling, and misinformation correction connects to the debunking and inoculation literature represented by [[van-der-Linden2026-jt]] and [[Lewandowsky2026-ob]].
 
 ## Podcast
 

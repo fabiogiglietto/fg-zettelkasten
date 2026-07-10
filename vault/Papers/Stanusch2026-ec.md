@@ -5,7 +5,7 @@ authors: ["Natalia Stanusch", "Richard Rogers"]
 year: 2026
 doi: 10.31124/advance.174979411.18178682/v1
 bibtex_key: Stanusch2026-ec
-topics: [generative-ai-and-media]
+topics: [platform-critique-anniversary-essays]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.31124/advance.174979411.18178682/v1
@@ -22,32 +22,32 @@ discovery_date: 2026-02-18T17:45:32.060369Z
 
 ## Summary
 
-This paper treats the November 2023 firing and rehiring of OpenAI CEO Sam Altman as a controversy that surfaces how the AI industry imagines, narrates, and contains AI as a public issue. Through cross-platform digital methods on LinkedIn and X/Twitter, Stanusch and Rogers map three dominant industry-aligned imaginaries — Longtermism, Regulatory Ambivalence, and Techno-Hagiography — and argue that the industry deploys two complementary tactics, *premediation* (externalizing concerns into a speculative future) and *preclusion* (internalizing critique by positioning itself as the only competent problem-solver). The result is a near-monopolization of AI's future framing, partially contested by counter-imaginaries on X/Twitter that re-center governance, intersectional harms, and the black-boxed sublime.
+This paper takes the November 2023 firing and rehiring of OpenAI CEO Sam Altman as a critical moment for surfacing how the AI industry imagines and talks about artificial intelligence. Drawing on controversy mapping and cross-platform digital methods, Stanusch and Rogers identify three dominant industry-aligned imaginaries—**Longtermism**, **Regulatory Ambivalence**, and **Techno-Hagiography**—and argue that the industry uses two rhetorical strategies to manage the concerns these imaginaries raise: **premediation** (externalizing critique into a speculative future) and **preclusion** (internalizing critique by casting itself as the actor best able to resolve it). Together these tactics let the industry "occupy the future and absorb the present," though counter-imaginaries circulating on X/Twitter show this monopolization is incomplete.
 
 ## Key Contributions
 
-- Recasts sociotechnical imaginaries as sites of *issuefication*: actively shaping which concerns become salient and which are made invisible.
-- Names *premediation* and *preclusion* as concrete discursive tactics by which the AI industry absorbs and redirects controversy.
-- Provides an empirical, cross-platform map of AI imaginaries during a discrete, high-visibility controversy.
-- Demonstrates platform specificity: LinkedIn as an aspirational echo chamber for industry imaginaries; X/Twitter as a more contested arena hosting counter-imaginaries.
-- Extends Latourian controversy mapping and digital methods to AI industry self-representation on professional/discourse platforms.
+- Introduces a framework treating AI imaginaries as sites of **issuefication**—actively shaping which concerns become salient and which are rendered invisible.
+- Identifies **premediation** and **preclusion** as concrete tactics by which the AI industry manages controversy.
+- Provides an empirical, cross-platform mapping of AI imaginaries during a discrete, high-visibility controversy.
+- Extends controversy mapping and digital methods to AI industry self-representation on professional and discourse-oriented platforms.
+- Demonstrates **platform specificity**: LinkedIn as an aspirational space reinforcing industry imaginaries versus X/Twitter as a more contested space hosting counter-imaginaries.
 
 ## Methods
 
-Controversy mapping in the Latourian tradition, operationalized through cross-platform digital methods. The authors scraped ~1,900 LinkedIn posts and ~1,700 X/Twitter posts (Nov 2023–Jan 2024) using the Zeeschuimer browser extension, with X/Twitter accounts compiled by Google-querying 101 AI research/safety/ethics/justice organizations and selecting three associated accounts each. Network analysis (co-hashtag and mention networks for LinkedIn; retweet networks for X/Twitter) was done in Gephi with 4CAT for filtering. A three-step inductive qualitative coding process (ethnographic content analysis → keyword/actor/issue identification → labeling of emergent imaginaries) yielded the imaginary categories. Posts were anonymized via paraphrasing.
+The authors use Latourian controversy mapping, treating the Altman incident as an opportune moment to trace actor associations. They scraped ~1,900 LinkedIn posts (via queries on Sam Altman) and ~1,700 X/Twitter posts (from 101 AI-related organizations and associated accounts) covering Nov 2023–Jan 2024, using the Zeeschuimer extension and research accounts due to API closures. Network analysis in Gephi (co-hashtag and mention networks for LinkedIn, retweet networks for X/Twitter) was combined with the 4CAT toolkit and a three-step inductive qualitative coding process—ethnographic content analysis, keyword/actor/issue identification, and labeling of emergent imaginaries. Post content was anonymized through paraphrasing.
 
 ## Findings
 
-- LinkedIn discourse was dominated by **Longtermism** (AGI, superalignment, existential risk), **Techno-Hagiography** (Altman mythologized as lone-genius hero), and **Regulatory Ambivalence** (acknowledging the need for regulation while resisting external oversight).
-- LinkedIn also hosted heavy "LinkedIn Talk" (self-promotion, recruitment) and opportunistic crypto discourse riding the controversy.
-- X/Twitter surfaced counter-imaginaries: **Governing Urgency** (demanding state regulation, distrusting Big Tech self-regulation) and **Intersectionality** (highlighting white-male dominance, racism, anti-Palestinian bias, including the Tal Broda controversy).
-- A **Technological Sublime** imaginary emerged around copyright disputes and the unpredictability of black-boxed AI capability.
-- Notably *absent*: AI's environmental costs, labor effects, slow-AI alternatives, and historical comparison — present-day harms displaced by speculative future risk.
-- Longtermism's roots in early-2000s effective altruism, x-risk, and AI Safety communities help explain its current displacement of present harms.
+- On **LinkedIn**, three imaginaries dominated: Longtermism (AGI, superalignment, existential risk), Techno-Hagiography (mythologizing Altman as a lone-genius hero), and Regulatory Ambivalence (acknowledging regulation while resisting external oversight).
+- LinkedIn also featured "LinkedIn Talk" (self-promotion, recruitment) and cryptocurrency discourse leveraging the controversy.
+- On **X/Twitter**, counter-imaginaries emerged: Governing Urgency (demanding strong governmental regulation) and Intersectionality (highlighting white-male dominance, racism, and anti-Palestinian bias, including the Tal Broda controversy).
+- An imaginary of the **Technological Sublime** emerged around copyright and the black-boxed unpredictability of AI capability.
+- Present-day concerns—environmental costs, labor implications, slow-AI alternatives, historical comparisons—were **notably absent** from the discourse.
+- Longtermism's roots trace to early-2000s effective altruism and AI Safety communities that displace present harms with speculative future threats.
 
 ## Connections
 
-This piece pairs naturally with [[Dodds2026-df]] and [[Weinbrand2026-sf]] as critical analyses of how AI discourse is constructed, mythologized, and strategically circulated by industry actors, and it complements [[Wang2025-zy]] in examining how AI hype operates as a structuring force. Its premediation/preclusion framework offers a useful analytic lens for the broader literature on AI hype imaginaries, particularly where future-oriented rhetoric crowds out present harms.
+This paper sits within the platform-critique lineage that treats industry self-representation and imaginaries as objects of critical scrutiny; its concern with how AI discourse is framed and contested connects it to work on AI's epistemic and public effects such as [[Lewandowsky2026-ob]] and [[Bak-Coleman2026-mk]]. Its methodological reliance on cross-platform digital methods and scraping under API closures resonates with infrastructural and data-access critiques like [[Bruns2026-yv]] and [[Helmond2026-ll]].
 
 ## Podcast
 

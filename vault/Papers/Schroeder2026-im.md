@@ -5,8 +5,8 @@ authors: ["Daniel Thilo Schroeder", "Meeyoung Cha", "Andrea Baronchelli", "Nick 
 year: 2026
 doi: 10.31219/osf.io/qm9yk_v1
 bibtex_key: Schroeder2026-im
-topics: [coordinated-inauthentic-behavior, generative-ai-and-media]
-citation_count: 2
+topics: [coordinated-inauthentic-behavior, generative-ai-disinformation]
+citation_count: 3
 open_access: false
 source_url: https://doi.org/10.31219/osf.io/qm9yk_v1
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schroeder2026-im.mp3
@@ -16,38 +16,39 @@ discovery_date: 2026-01-27T06:19:49.072533Z
 
 # How malicious AI swarms can threaten democracy
 
-> Schroeder, D. T., Cha, M., Baronchelli, A., Bostrom, N., Christakis, N., Garcia, D., Goldenberg, A., Kyrychenko, Y., Leyton-Brown, K., Lutz, N., Marcus, G., Menczer, F., Pennycook, G., Rand, D. G., Schweitzer, F., Summerfield, C., Tang, A., Bavel, J. J. V., van der Linden, S., Song, D., & Kunst, J. R. (2026). How malicious AI swarms can threaten democracy. *Science*, *391*, 354–357. https://doi.org/10.31219/osf.io/qm9yk_v2
+> Schroeder, D. T., Cha, M., Baronchelli, A., Bostrom, N., Christakis, N., Garcia, D., Goldenberg, A., Kyrychenko, Y., Leyton-Brown, K., Lutz, N., Marcus, G., Menczer, F., Pennycook, G., Rand, D. G., Schweitzer, F., Summerfield, C., Tang, A., Bavel, J. J. V., van der Linden, S., Song, D., & Kunst, J. R. (2026). How malicious AI swarms can threaten democracy. *Science*, *391*, 354–357. https://doi.org/10.31219/osf.io/qm9yk_v1
 >
-> [View paper](https://doi.org/10.31219/osf.io/qm9yk_v2)
+> [View paper](https://doi.org/10.31219/osf.io/qm9yk_v1)
 
 ## Summary
 
-This Science Policy Forum article warns that the convergence of large language models with multi-agent AI architectures enables a qualitatively new threat: *malicious AI swarms*—persistent, adaptive, cross-platform collectives of agents that can infiltrate online communities, mimic human social dynamics, and fabricate consensus at scale. The authors argue that such swarms threaten democracy through multiple pathways beyond direct persuasion, including synthetic consensus, epistemic vertigo, training-data poisoning ("LLM grooming"), coordinated harassment, and erosion of institutional legitimacy. They propose a layered response combining continuous detection, provenance infrastructure, narrowly authorized defensive AI, an international "AI Influence Observatory," and commercial-incentive levers to disrupt manipulation markets—while resisting both naive self-regulation and state-controlled speech regimes.
+This Science Policy Forum article, authored by a broad interdisciplinary coalition, introduces the concept of **malicious AI swarms**: the fusion of large language model reasoning with autonomous multi-agent architectures to produce persistent, adaptive, cross-platform influence operations. The authors argue this constitutes a qualitative leap beyond prior human-driven botnets and generative-AI disinformation, because swarms can autonomously coordinate, map and infiltrate online communities, mimic human social dynamics, and fabricate consensus at scale — all with minimal human oversight. They map how these capabilities threaten democracy through several pathways, from manufactured consensus and segmented realities to training-data poisoning, coordinated harassment, and erosion of institutional trust. Framed as an extension of Habermasian concerns about the public sphere into the agentic-AI era, the piece rejects both naive market solutions and heavy-handed state speech regulation, instead proposing a layered governance and technical agenda.
 
 ## Key Contributions
 
-- Introduces *malicious AI swarms* as a distinct category beyond prior coordinated inauthentic behavior and generative-AI disinformation.
-- Offers a taxonomy of five swarm capabilities: fluid real-time coordination, social-network mapping and infiltration, human-level mimicry, self-optimization via live A/B testing, and persistent presence.
-- Develops a typology of democratic harm pathways: manufactured consensus, segmented realities, LLM grooming, harassment, FUD/disengagement, elite attention concentration, antidemocratic mobilization, and legitimacy erosion.
-- Proposes a multilayered governance agenda spanning detection, provenance, defensive AI under democratic oversight, simulation stress-tests, and a distributed AI Influence Observatory.
-- Argues for shifting from voluntary platform compliance to commercial-incentive levers (delisting, demonetization of swarm content, audited bot-traffic metrics).
+- Introduces and operationalizes "malicious AI swarms" as a distinct threat category beyond coordinated inauthentic behavior or generative-AI disinformation.
+- Provides a **taxonomy of swarm capabilities** and a **typology of democratic harm pathways** (synthetic consensus, segmented realities, LLM grooming, harassment, FUD/disengagement, elite attention concentration, antidemocratic mobilization, legitimacy erosion).
+- Proposes a multilayered governance agenda: always-on detection with public audits, user-side "AI shields," agent-based stress-testing, watermarked defensive counternarratives under democratic oversight, strengthened provenance, and a distributed "AI Influence Observatory."
+- Argues for shifting from voluntary platform compliance to **commercial-incentive levers** (delisting, no-revenue policies, audited bot-traffic metrics) to disrupt the manipulation economy.
+- Bridges computer science, political science, communication, and psychology in a single cross-disciplinary policy framework.
 
 ## Methods
 
-Conceptual and policy synthesis rather than empirical study. The authors integrate literature on influence operations, multi-agent LLMs, social contagion, and democratic theory; use historical framing across print/broadcast/digital eras; and draw on cases such as the 2016 IRA operation, the pro-Kremlin Pravda network, and 2024 elections in Taiwan, India, Indonesia, and the US. Documented trends, projections, and uncertainties are explicitly distinguished.
+Conceptual and policy analysis rather than empirical study. The authors synthesize literature on influence operations, multi-agent LLM systems, social contagion, coordinated inauthentic behavior detection, and democratic theory. They employ historical framing (print, broadcast, digital eras) to situate AI swarms in the evolution of the public sphere, and use case-based reasoning drawing on the 2016 IRA Twitter operation, the pro-Kremlin "Pravda" network, and 2024 election cycles in Taiwan, India, Indonesia, and the US. Documented trends, projections, and uncertainties are explicitly distinguished.
 
 ## Findings
 
-- Swarms differ from prior botnets through persistent identities, memory, coordinated-but-varied tone, real-time adaptation, and minimal human oversight.
-- Earlier human-driven operations (e.g., IRA 2016) showed limited measurable persuasion, but AI removes prior cost, cadence, and iteration constraints.
-- "LLM grooming"—flooding the web with fabricated content—appears designed to contaminate future model training data, embedding adversarial narratives in model weights.
-- Symmetric "pro-social swarms" cannot reliably counter malicious ones, because the attention economy rewards outrage and ethical actors are constrained from manipulative tactics.
-- Detection faces an arms race; the realistic goal is raising attacker cost rather than prevention.
-- Provenance mechanisms raise manipulation costs but create trade-offs around privacy, dissident safety, and unverified users.
+- Defining features of swarms: persistent identities/memory, coordinated objectives with varied tone, real-time adaptation, minimal human oversight, and cross-platform deployment.
+- Five capability advances enable the threat: fluid real-time coordination toward emergent "hive" behavior, social-network mapping and community infiltration, human-level mimicry that evades synchrony-based detectors, self-optimization via real-time A/B testing, and persistent around-the-clock presence.
+- Prior human-driven botnets (e.g., IRA 2016) had limited measurable persuasive effect, but AI removes earlier constraints on cost, cadence, and iteration.
+- **"LLM grooming"** — flooding the web with fabricated content — appears designed to poison future model training data, embedding adversarial narratives in model weights.
+- Detection-based defenses face an inevitable arms race; the realistic goal is to raise attacker cost and complexity rather than achieve perfect prevention.
+- Provenance mechanisms (passkeys, cryptographic attestations, verified-anonymous posting) raise manipulation costs but cannot fully resolve trade-offs around privacy, dissident safety, and unverified users.
+- Symmetric "pro-social swarms" cannot reliably counter malicious ones, since the attention economy rewards outrage and ethical actors are constrained from manipulative tactics.
 
 ## Connections
 
-This piece sits upstream of empirical work probing whether LLM-driven agents can actually persuade or coordinate at scale, including [[Hackenburg2025-dj]] on LLM persuasion, [[Triedman2025-uy]] and [[Lin2025-xp]] on adversarial/agentic manipulation, and [[DeVerna2025-dl]] on AI-generated influence content. Its swarm framing extends the coordinated-inauthentic-behavior literature represented by [[Luceri2025-tr]], [[Minici2024-tf]], [[Kulichkina2026-zk]], and [[Tornberg2025-ir]], while its concern with training-data contamination and epistemic environment degradation connects to [[Yang2025-iv]] and [[Kuznetsova2025-nu]]. The governance proposals dialogue with platform- and election-focused analyses such as [[Schiffrin_undated-gi]] and [[Gerard2025-br]].
+This paper sits at the head of the coordinated-inauthentic-behavior and generative-AI-disinformation literatures, projecting empirical work on detection and LLM-driven manipulation into a forward-looking threat model. Its arms-race framing and emphasis on raising attacker cost resonate with red-teaming and detection studies such as [[Triedman2025-uy]] and [[Luceri2025-tr]], while its "LLM grooming" and training-data poisoning concerns connect to work on AI-generated content flooding like [[Yang2025-iv]] and [[Mannocci2025-ig]]. The taxonomy of swarm capabilities also builds on multi-agent and bot-behavior analyses including [[Minici2024-tf]] and [[Emilio2026-ik]].
 
 ## Podcast
 

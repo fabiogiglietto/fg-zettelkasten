@@ -5,7 +5,7 @@ authors: ["Emilio Ferrara"]
 year: 2026
 doi: 
 bibtex_key: Emilio2026-ik
-topics: [generative-ai-and-media, information-disorder]
+topics: [generative-ai-disinformation, information-disorder]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2601.00306v1
@@ -22,33 +22,32 @@ discovery_date: 2026-01-15T00:00:00Z
 
 ## Summary
 
-Ferrara argues that the dominant framing of generative AI risk — isolated deepfakes and discrete synthetic artifacts — badly understates what is actually at stake. The deeper threat is the emergence of *synthetic realities*: coherent, interactive, personalized information environments in which content, identity, and social interaction are jointly fabricated at low cost and high throughput. The paper formalizes this as a four-layer stack (content, identity, interaction, institutions), expands existing GenAI harm taxonomies to foreground epistemic and institutional integrity, catalogs 2023–2025 incidents that exemplify the pattern, and proposes a layered mitigation strategy plus a research agenda for "epistemic security." It culminates in the *Generative AI Paradox*: as synthetic media saturates the information environment, rational actors may discount all digital evidence, raising the social cost of truth itself and empowering strategic denial.
+Ferrara argues that the gravest risk posed by generative AI is not the isolated deepfake but the rise of **synthetic realities**: coherent, interactive, and personalized information environments in which content, identity, and social interaction are jointly fabricated. Rather than treating GenAI as merely producing "more misinformation," the paper formalizes it as a systemic threat to the shared epistemic ground societies depend on. The central thesis — the **Generative AI Paradox** — holds that as synthetic media becomes ubiquitous, rational actors may discount *all* digital evidence, empowering strategic denial and imposing an "epistemic tax" on institutions. The paper is conceptual and agenda-setting, offering a layered framework, an expanded harm taxonomy, a case bank of recent incidents, and a defense-in-depth mitigation stack oriented toward a new research program on "epistemic security."
 
 ## Key Contributions
 
-- A four-layer formalization of *synthetic reality* — content, identity, interaction, institutions — mapping attack surfaces to defensive levers.
-- An expanded GenAI harms taxonomy that adds epistemic/institutional integrity as a cross-cutting category alongside personal, financial, informational, and socio-technical harms.
-- Seven qualitative shifts distinguishing GenAI from prior deception tech: cost collapse, scale/throughput, customization, micro-segmentation, automated social engineering, provenance gaps, and trust erosion.
-- A mechanism-focused case bank of 2023–2025 incidents linking documented harms to specific stack layers.
-- A defense-in-depth mitigation framework spanning provenance, platform governance, institutional process redesign, public resilience, and policy.
-- A research agenda for *epistemic security*, including candidate metrics (authenticity coverage, correction latency, manipulation susceptibility, verification load, attribution stability) and interactive-manipulation benchmarks.
-- Formulation of the *Generative AI Paradox* as a testable systemic-discounting thesis.
+- Formalizes **synthetic reality** as a four-layer stack: content, identity, interaction, and institutions — mapping attack surfaces to defensive levers.
+- Expands GenAI harm taxonomies by adding **epistemic and institutional integrity** as a cross-cutting harm category.
+- Identifies **seven qualitative shifts** distinguishing GenAI from prior deception tech: cost collapse, throughput, customization, micro-segmentation, synthetic interaction, provenance gap, and trust erosion.
+- Compiles a mechanism-focused **case bank** of 2023–2025 incidents linked to stack layers.
+- Proposes a **layered mitigation framework** (provenance, platform governance, institutional redesign, public resilience, policy accountability).
+- Sets a **research agenda for epistemic security** with candidate metrics (authenticity coverage, correction latency, manipulation susceptibility, verification load, attribution stability).
 
 ## Methods
 
-The paper is conceptual and synthesis-driven rather than empirical. Ferrara develops a theoretical framework (the four-layer synthetic-reality stack), conducts taxonomic expansion of harm categories, performs a mechanism analysis of how GenAI differs qualitatively from earlier deception technologies, and constructs a curated case bank of 2023–2025 incidents selected for documentation quality, mechanism diversity, and coverage across stack layers. Mitigation strategies and research priorities are then mapped back onto the framework.
+The paper is theoretical and synthetic rather than empirical. It develops a conceptual framework (the four-layer stack), performs a taxonomic expansion of harm categories, and conducts a mechanism analysis of the qualitative differences GenAI introduces. To ground the framework, Ferrara constructs a curated **case bank** of representative 2023–2025 incidents, selected for documentation quality, mechanism diversity, and linkage to the stack layers. Mitigation strategies and proposed measurement constructs are then mapped back onto the framework.
 
 ## Findings
 
-- Five recurring case archetypes exemplify synthetic-reality harms: (A) high-conviction impersonation fraud (e.g., the Arup ~$25M deepfake video-conference scam), (B) election-adjacent synthetic outreach (e.g., AI-generated Biden robocalls), (C) non-consensual synthetic sexual imagery (e.g., the Taylor Swift incident), (D) fabricated everyday documentation (AI receipts, invoices, expense fraud), and (E) compromised generative pipelines (malicious model uploads, backdoors, data poisoning).
-- A common operational pattern recurs across cases: cheap high-conviction artifact production, insertion at workflow choke points, scale-driven exposure, lagging correction, and institutions absorbing the verification externalities.
-- Detection and watermarking are structurally brittle in open ecosystems due to compression, re-encoding, adversarial perturbations, and unauthenticated generation — producing a durable *provenance gap*.
-- Trust erosion produces dual failure modes — credulity (believing fakes) and cynicism (dismissing truths) — both exploitable for plausible deniability.
-- Harms are unevenly distributed: marginalized communities and those without authenticated channels bear disproportionate verification burdens.
+- Five recurring case categories illustrate synthetic-reality harms: high-conviction impersonation fraud (e.g., the ~$25M Arup Hong Kong deepfake video-conference scam), election-adjacent synthetic outreach (AI-generated Biden robocalls), non-consensual synthetic sexual imagery (the Taylor Swift incident), fabricated everyday documentation (AI-generated receipts/invoices), and compromised generative pipelines (malicious models, backdoors, data poisoning).
+- A common operational pattern: cheap high-conviction artifact production → insertion at workflow choke points → scale-driven exposure → lagging correction → institutional absorption of verification costs.
+- Detection and watermarking are **brittle in open ecosystems** (compression, re-encoding, adversarial perturbation, unauthenticated generation), producing a persistent provenance gap.
+- Trust erosion yields dual failure modes — **credulity** (believing fakes) and **cynicism** (dismissing truths) — both exploitable via plausible deniability.
+- Harms are **unevenly distributed**, burdening marginalized communities and those without access to authenticated channels.
 
 ## Connections
 
-This paper sits upstream of much of the empirical work on GenAI-enabled influence and persuasion, providing a framework that organizes findings on AI-driven persuasion at scale [[Hackenburg2025-dj]] and on generative-AI fingerprints in coordinated influence operations [[Rothut2026-or]]. Its emphasis on trust erosion and the dual credulity/cynicism failure mode connects to work on synthetic-media skepticism and the "liar's dividend" [[Hameleers2026-mc]], while its claim that GenAI is qualitatively, not just quantitatively, different speaks directly to debates over whether AI meaningfully reshapes the misinformation landscape [[DeVerna2025-dl]]. The epistemic-security agenda also resonates with broader assessments of the misinformation problem's scope and structure [[Budak2024-ef]].
+This paper's epistemic-security framing complements empirical work on the actual persuasive limits and reach of AI-generated content, such as [[Hackenburg2025-dj]] and [[DeVerna2025-dl]], as well as psychological inoculation approaches to resilience discussed in [[van-der-Linden2026-jt]]. Its emphasis on trust erosion and the discounting of digital evidence resonates with scholarship on the "liar's dividend" and information disorder more broadly, including [[Hameleers2026-mc]] and work on data voids and manipulation by [[Marwick2025-ov]]. The provenance and platform-governance dimensions link it to studies of detection and moderation at scale like [[Pierri2025-hm]].
 
 ## Podcast
 

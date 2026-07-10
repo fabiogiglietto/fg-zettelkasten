@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1093/anncom/wlag011
 bibtex_key: Bravo2026-ue
 topics: []
-citation_count: 0
+citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1093/anncom/wlag011
 podcast_url: 
@@ -22,26 +22,26 @@ discovery_date: 2026-04-07T09:56:47.779699Z
 
 ## Summary
 
-This paper offers a systematic and scoping literature review, combined with content analysis, of research on climate change visualizations in traditional and digital media published between 2005 and 2024. The authors map the field to identify what kinds of visuals, media platforms, and regional contexts have been studied, and where significant gaps remain. Their central argument is that the existing literature is skewed toward traditional media and Western contexts, and that future work should expand into social media imagery, non-Western settings, and computational approaches to large-scale image analysis.
+This paper offers a systematic and scoping literature review, paired with content analysis, of scholarship on climate change visualizations in traditional and digital media from 2005 to 2024. Situated at the intersection of climate communication, media studies, and visual studies, the authors map the state of the field and argue that existing research is imbalanced: it over-represents traditional media and Western contexts while neglecting social media imagery, the Global South, and computational approaches to image analysis. The core argument is that climate imagery is central to public awareness and mobilization, yet current scholarship leaves substantial methodological and geographic blind spots that future work should confront.
 
 ## Key Contributions
 
 - A comprehensive 2005–2024 overview of the climate change visualization literature within media studies.
-- Identification of methodological, geographic, and media-type imbalances in the field.
-- A future research agenda foregrounding social media, non-Western contexts, and computational image analysis.
-- A structured framework integrating systematic review, scoping review, and content analysis.
+- Identification of methodological, geographic, and media-type gaps in the field.
+- A future research agenda emphasizing social media, non-Western contexts, and computational image analysis.
+- A structured framework combining systematic and scoping review methodology with content analysis.
 
 ## Methods
 
-The authors combine a systematic literature review with a scoping review covering publications from 2005 to 2024, and apply content analysis to the included studies to characterize their media types, geographic focus, methodological choices, and substantive themes.
+The authors conduct a systematic literature review of publications spanning 2005–2024, complemented by a scoping review to map the breadth of the field. They then apply content analysis to the reviewed studies to characterize dimensions such as media type, geographic region, methodological approach, and thematic focus.
 
 ## Findings
 
-- Traditional media (newspapers, television) dominate the literature, while social and digital media visuals are comparatively understudied.
-- Research is heavily concentrated on Western countries, with limited coverage of the Global South.
-- Computational and large-scale image analysis methods are rarely employed.
-- Substantive gaps remain in understanding how climate visuals shape audience perception across cultural contexts.
+- Most studies examine traditional media (newspapers, television) rather than social or digital media.
+- The literature is dominated by case studies of Western countries, with limited representation of the Global South.
+- Computational or large-scale image analysis methods are rarely used in existing work.
+- Substantive gaps remain in understanding how visualizations shape audience perception across cultural contexts.
 
 ## Connections
 
-No related papers have been registered under shared topics yet, so no wikilinks are warranted here. Conceptually, the paper sits at the intersection of climate communication, visual studies, and computational media analysis, and would connect naturally to future entries on social media image analysis, non-Western climate communication, and machine learning approaches to visual discourse.
+No other papers were provided under this note's topics, so there are no direct intellectual links to record here. The paper's call for computational and cross-cultural image analysis positions it as a bridge between climate communication scholarship and emerging methods in automated visual analysis.

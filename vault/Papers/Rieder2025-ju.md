@@ -5,7 +5,7 @@ authors: ["Bernhard Rieder", "Adrian Padilla", "Oscar Coromina"]
 year: 2025
 doi: 10.1080/1369118X.2025.2591767
 bibtex_key: Rieder2025-ju
-topics: [platform-governance-data-access, computational-methods-social-research]
+topics: [platform-governance-data-access]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.1080/1369118X.2025.2591767

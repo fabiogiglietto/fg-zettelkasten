@@ -5,7 +5,7 @@ authors: ["Benjamin Megarry Nangle", "Leen d’Haenens"]
 year: 2026
 doi: 10.1177/14614448261428632
 bibtex_key: Nangle2026-yo
-topics: [far-right-online-radicalization]
+topics: [online-radicalization-and-extremism-on-platforms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448261428632
@@ -22,25 +22,27 @@ discovery_date: 2026-04-04T11:48:54.878928Z
 
 ## Summary
 
-This article theorises far-right Instagram as an *affective-discursive ecology* in which ideology, emotion, and platform logics are mutually constitutive. Drawing on a corpus of 2,603 Reels with far-right adjacent themes, Nangle and d'Haenens argue that contemporary far-right communication does not rely primarily on overt hostility but on positively valenced affect, humour, and memetic forms that *soften* extremist worldviews and render them shareable. Combined with Instagram's recommender system, this multimodal softening produces an algorithmic proximity between mainstream lifestyle content and far-right adjacent material, enabling normalisation and mobilisation.
+This article examines how far-right actors on Instagram use positive affect, humour, and memetic content to normalise extremist worldviews. Rather than framing radicalisation as a matter of overt hostility, the authors argue that far-right Instagram operates as an "affective–discursive ecology" in which ideology, emotion, and platform logics are mutually constitutive. Drawing on algorithmic ethnography and multimodal discourse analysis of 2,603 Reels featuring far-right adjacent themes, the study shows how "multimodal softening" through humour and memes facilitates mainstreaming, while "algorithmic proximity" produces visibility and circulation that support mobilisation. The paper sits at the intersection of mainstreaming research, memetic and affective communication studies, and critical platform studies.
 
 ## Key Contributions
 
-- Introduces *affective-discursive ecology* as a conceptual frame for far-right communication on visual platforms.
-- Bridges scholarship on mainstreaming, memetic/affective publics, and critical platform/algorithm studies.
-- Delivers a large-scale multimodal empirical study of Reels — an under-examined format in extremism research.
-- Demonstrates a methodological pairing of algorithmic ethnography with multimodal discourse analysis.
+- Introduces the concept of the **affective–discursive ecology** to theorise far-right communication on Instagram.
+- Bridges literatures on mainstreaming, memetic communication, and affective publics with platform and algorithm studies.
+- Provides a large-scale multimodal empirical analysis of far-right Reels — an under-studied format.
+- Demonstrates a combined methodology of algorithmic ethnography and multimodal discourse analysis for studying extremism on visual platforms.
 
 ## Methods
 
-The authors combine algorithmic ethnography — tracing how Instagram's recommendation system surfaces and connects far-right adjacent content — with multimodal discourse analysis attentive to audiovisual, textual, and affective layers. The empirical base is a dataset of 2,603 Reels coded for far-right adjacent themes.
+- Algorithmic ethnography of Instagram, tracing how far-right adjacent content circulates and is recommended.
+- Multimodal discourse analysis attending to audiovisual, textual, and affective dimensions of Reels.
+- Analysis of a dataset of 2,603 Reels featuring far-right adjacent themes.
 
 ## Findings
 
-- Far-right Reels foreground humour, irony, and positive affect rather than aggression, lowering the threshold for engagement.
-- Memetic and multimodal genres serve as vehicles for mainstreaming, embedding ideology in familiar entertainment registers.
-- Instagram's algorithmic logics generate proximity between ordinary lifestyle content and far-right adjacent material, amplifying circulation and supporting mobilisation pathways.
+- Far-right content relies on positive affect and humour rather than overt hostility to soften extremist messaging.
+- Memetic and multimodal forms serve as vehicles for the normalisation and mainstreaming of far-right ideology.
+- Platform algorithmic logics generate proximity between mainstream and far-right adjacent content, supporting mobilisation.
 
 ## Connections
 
-This work pairs naturally with [[Rothut2026-wt]] on how everyday platform content channels radicalisation, and with [[Karo2026-dn]] and [[Bouchafra2026-ts]] insofar as they address ideological diffusion and platform-mediated extremism. [[Bailard2024-pj]] offers a complementary platform-effects perspective, though from a different methodological angle.
+This paper's emphasis on humour, memes, and affective softening resonates with work on the aesthetics and everyday styling of far-right online content such as [[Askanius2026-de]] and [[Grusauskaite2026-po]], and its attention to algorithmic recommendation and visibility connects to platform-focused analyses like [[Rothut2026-or]] and [[Rothut2026-wt]]. Its account of mainstreaming through emotionally resonant content also relates to broader discussions of how platforms mediate extremism in [[Marwick2025-ov]] and [[Marwick2025-vx]].

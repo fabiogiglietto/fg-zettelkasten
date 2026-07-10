@@ -22,31 +22,32 @@ discovery_date: 2026-03-06T07:10:12.318481Z
 
 ## Summary
 
-This Australian study challenges the dominant framing of misinformation research as a problem of "hot button" topics (health, politics, science) propagated by fringe actors. Using a week-long digital diary method that lets participants flag content themselves — without imposing a pre-set definition of misinformation — the authors find that everyday encounters with perceived misinformation span mundane domains like business/economics, celebrity, and crime; are overwhelmingly text-based (especially news headlines); and are most often attributed to mainstream domestic news outlets engaging in clickbait and sensationalism. The paper argues that misinformation perceptions are inseparable from broader crises of trust in journalism, shifting news logics, and platform dynamics, and that effective responses must therefore address the texture of everyday digital life rather than single-issue interventions.
+This paper investigates how ordinary Australian adults encounter and make sense of misinformation in the course of their everyday online routines. Using a digital diary methodology that deliberately avoids imposing scholarly definitions of misinformation, the authors let participants flag content they themselves considered false, misleading, or untrustworthy. The central argument is that misinformation research has been too narrowly topic-driven (health, politics, science) and methodologically detached from lived experience, thereby missing the "everyday" texture of misinformation encounters. Contrary to prevailing framings, they find that perceived misinformation extends into mundane domains like business and economics, is overwhelmingly text-based, and is most often attributed to *mainstream and alternative news outlets* rather than fringe or anonymous sources — a finding that complicates the standard view of news media as remediators of information disorder.
 
 ## Key Contributions
 
-- Empirically maps the *everyday* character of misinformation encounters, moving beyond single-issue and big-data approaches.
-- Introduces a participant-driven diary methodology that avoids pre-imposing what counts as misinformation, surfacing user perceptions rather than researcher categories.
-- Documents the perception of mainstream news outlets — not fringe sources — as the leading propagators of misleading content, complicating the framing of journalism as a remediator of information disorder.
-- Offers a three-dimensional analytic framework (topic × mode × source) for everyday misinformation.
-- Derives policy and pedagogical implications for whole-of-society media literacy, journalistic transparency, and context-sensitive interventions.
+- Empirical account of the everyday, in situ texture of misinformation encounters, departing from single-issue and big-data approaches.
+- Demonstrates the value of diary-based, participant-driven methods that avoid pre-imposed definitions of misinformation.
+- Documents mainstream news as a leading *perceived* source of misinformation, unsettling the "news-as-corrective" framing.
+- Offers a three-dimensional analytic framework — topic, mode, and source — for studying misinformation perceptions.
+- Draws out policy and pedagogical implications favouring whole-of-society media literacy responses and greater journalistic transparency.
 
 ## Methods
 
-A two-wave digital diary study (mid-2024) on the Indeemo platform with 55 purposively sampled Australian adults, balanced for demographics and self-reported misinformation exposure. Participants captured screenshots, photos, and recordings of online information across seven-day windows and narrated their trust judgments via video, yielding 1,564 examples and ~221,735 words of reflection. A 322-item subsample of user-flagged false/misleading/untrustworthy content was analyzed via deductive thematic analysis (Braun & Clarke) across topic, mode, and source dimensions, with strong intercoder reliability (Krippendorff's α = 1.0 for topic/source; 0.91 for mode). An independent verification pass on 10% of flagged claims assessed objective veracity.
+A digital diary study conducted via the Indeemo platform across two seven-day waves in mid-2024. A purposive sample of 55 Australian adults (balanced across age, gender, education, region, cultural/linguistic diversity, and self-reported misinformation exposure) captured screenshots and recordings of online content as they encountered it, narrating spoken reflections on trustworthiness plus opening (day 1) and closing (day 7) videos. This yielded 1,564 examples and ~221,735 words of reflection, from which a subsample of 322 user-flagged false/misleading/untrustworthy examples was analysed via deductive thematic analysis across topic, mode, and source dimensions (Krippendorff's α = 1.0 for topic/source, 0.91 for mode). An independent verification analysis assessed the objective veracity of 10% of flagged claims.
 
 ## Findings
 
-- **Topics**: Business/economics led (18%), often exploiting cost-of-living anxieties (e.g., dubious "tax hacks"); celebrity (16%) and crime/crisis (16%) followed.
-- **Modes**: Text dominated at 68%, with news headlines making up 53% of text-based claims; multimodal 18%, video 11%, image 3%, audio 1% — undercutting alarm about audiovisual and AI-generated content.
-- **Sources**: Mainstream/alternative news outlets accounted for 62% of flagged sources, 82% domestic (News Corp 25%, Seven West 17%, Nine 15%); social media was second at 19%, dominated by Meta platforms (Facebook 35%).
-- **"Clickbait Concern"**: Untrustworthiness was most often attributed to clickbait headlines, sensationalism, perceived bias, and headline–article disconnect.
-- **Perception vs. veracity gap**: Independent verification of flagged claims found only 9% objectively false/misleading, 28% indeterminate, 25% containing no verifiable claim — user perceptions of misinformation diverge substantially from objective falsity.
+- Business/economics was the most-flagged topic (18%), often exploiting cost-of-living anxieties (e.g. misleading "tax hacks"); celebrity (16%) and crime/crisis (16%) followed.
+- Text dominated (68% of examples), with news headlines making up 53% of text-based claims; multimodal 18%, video 11%, image 3%, audio 1% — challenging alarmism about AI-generated and audiovisual content.
+- Mainstream and alternative news outlets accounted for 62% of flagged sources, 82% of them domestic (News Corp Australia 25%, Seven West Media 17%, Nine Entertainment 15%).
+- Social media accounts/groups were the second-largest source category (19%), dominated by Meta platforms (Facebook 35%).
+- Untrustworthiness was attributed chiefly to clickbait, sensationalism, perceived bias, and headline–article disconnect — termed "Clickbait Concern."
+- Independent verification found only 9% of a sampled 10% of claims were objectively false/misleading, 28% indeterminate, and 25% contained no verifiable claim — user perception often diverges from objective falsity.
 
 ## Connections
 
-This paper sits within an audience-centered turn in misinformation research that interrogates how ordinary people perceive and label false content, resonating with work questioning the prevalence and definitional scope of misinformation (e.g., [[Budak2024-ef]], [[Gonzalez-Bailon2024-rq]]). Its finding that mainstream news is widely perceived as a misinformation source connects to scholarship on declining institutional trust and journalistic credibility ([[Humprecht2025-ml]], [[Cazzamatta2026-lo]]), while its emphasis on everyday text-based encounters over AI/deepfake alarmism complements skepticism about generative-AI panic ([[DeVerna2025-dl]], [[Appel2026-qr]]). The methodological move toward situated, participant-driven accounts of news engagement also aligns with diary- and perception-based studies of information disorder ([[Rossini2026-jn]], [[Hameleers2026-mc]]).
+This audience-centered, perception-driven approach contrasts with the platform- and big-data-scale mapping of exposure found in work like [[Gonzalez-Bailon2024-rq]] and [[Budak2024-ef]], offering an experiential counterpoint. Its emphasis on trust in journalism and everyday encounters connects to research on news reliability and audience trust such as [[Rossini2026-jn]] and [[Cazzamatta2026-lo]], while its skepticism toward alarmism over AI-generated and audiovisual misinformation speaks to debates addressed in [[Marwick2026-qd]].
 
 ## Podcast
 

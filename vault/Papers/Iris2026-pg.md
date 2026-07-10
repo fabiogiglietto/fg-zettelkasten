@@ -1,14 +1,14 @@
 ---
 title: "Cross-national evidence of disproportionate media visibility for the Radical Right in the 2024 European elections"
 aliases: ["Cross-national evidence of disproportionate media visibility for the Radical Right in the 2024 European elections"]
-authors: ["Íris Damião", "João Franco", "Mariana Menezes Melo Silva", "Paulo Almeida", "Pedro V.S. Magalhaes", "Joana Gonçalves-Sá"]
+authors: ["Íris Damião", "João Franco", "Mariana Silva", "Paulo Almeida", "Pedro C. Magalhães", "Joana Gonçalves-Sá"]
 year: 2026
 doi: 
 bibtex_key: Iris2026-pg
-topics: [elections-political-communication, computational-methods-social-research]
+topics: [digital-media-elections-global, political-polarization-partisan-news]
 citation_count: 0
 open_access: true
-source_url: http://arxiv.org/abs/2601.05826
+source_url: http://arxiv.org/abs/2601.05826v1
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Iris2026-pg.mp3
 pdf_available: true
 discovery_date: 2026-01-15T00:00:00Z
@@ -22,34 +22,32 @@ discovery_date: 2026-01-15T00:00:00Z
 
 ## Summary
 
-This paper examines whether the Radical Right received media visibility commensurate with its electoral strength during the two months preceding the 2024 European Parliament elections. Analyzing ~21,500 online news articles from leading outlets across Austria, Germany, Ireland, Poland, and Portugal, the authors use an LLM-based pipeline to extract mentions of political parties and politicians in article titles and URLs, then compare visibility shares against three benchmarks: 2019 EP results, 2024 polling projections, and the actual 2024 outcomes. They find a systematic and structural overrepresentation of the Radical Right that intensifies in the final campaign weeks, persists across outlets of differing popularity and editorial orientation, and contradicts populist claims of being marginalized by mainstream media.
+This paper offers a cross-national computational analysis of online media visibility for political families during the run-up to the 2024 European Parliament elections. Drawing on nearly 21,500 news articles from leading outlets in Austria, Germany, Ireland, Poland, and Portugal, the authors extract and map political entities mentioned in article titles and URLs onto European Parliament groups and broad ideological leanings. Their central argument is that the Radical Right received disproportionate media visibility — well beyond what prior electoral results, polling projections, or actual 2024 outcomes would predict — and that this imbalance is a structural feature of European online news rather than a quirk of particular outlets. The authors interpret this attention pattern as a mechanism that may contribute to the normalization of radical-right movements.
 
 ## Key Contributions
 
-- A cross-national, computational mapping of political-family media visibility across five European countries during a major election cycle.
-- A reproducible multilingual pipeline combining ChatGPT-4o entity extraction, fuzzy matching (Ratcliff/Obershelp), and manual validation (~95% accuracy).
-- Empirical evidence that rightward visibility bias is *structural* rather than outlet-specific, appearing even in center-left outlets like *Der Spiegel* and *The Guardian*.
-- A direct empirical rebuttal to the populist narrative that mainstream media systematically marginalize the Radical Right.
-- Extension of media-salience literature to a transnational frame, suggesting party-family contagion via coverage of foreign actors even where domestic radical-right organization is weak (e.g., Ireland).
+- A systematic, cross-national mapping of media visibility across five diverse European contexts, addressing a gap left by prior single-country studies.
+- A reproducible multilingual pipeline combining LLM-based entity extraction (ChatGPT-4o), fuzzy matching, and manual validation.
+- Empirical documentation of a *structural* rightward visibility bias that persists across editorial orientation, outlet popularity, and publication volume.
+- Direct empirical rebuttal of populist claims that mainstream media systematically marginalize or censor the Radical Right.
+- An extension of media-salience theory showing visibility can decouple from domestic party strength, with implications for transnational party-family contagion.
 
 ## Methods
 
-Outlets were selected from Semrush traffic rankings, and news collected via Media Cloud using a combinatorial keyword strategy across three thematic groups in English, German, Polish, and Portuguese, with exclusions filtering concurrent local elections. The two-month window (9 April – 9 June 2024) produced 21,528 unique items. Political entities were extracted from titles/URLs via three ChatGPT-4o runs per country plus fuzzy matching, with manual coder validation. Parties were mapped to EP groups and to five ideological leanings (Radical Left, Mainstream Left, Greens, Mainstream Right, Radical Right) using the 2024 Chapel Hill Expert Survey. Visibility shares were benchmarked against 2019 seats, pre-election polling, and 2024 results, with both per-country and seat-weighted aggregate analyses.
+Outlets were selected per country using Semrush traffic rankings and news was collected via Media Cloud with a combinatorial, natively-validated keyword strategy across four languages, yielding 21,528 unique items from April 9 to June 9, 2024 (with a filter to exclude concurrent local election coverage). Political entities were extracted from headlines and URLs using ChatGPT-4o (three runs per country) complemented by fuzzywuzzy Ratcliff/Obershelp fuzzy matching, with manual validation of 150 articles by ten coders reaching ~95% accuracy. Entities were mapped onto EP groups and five broad leanings using the 2024 Chapel Hill Expert Survey and official EP sources, then compared against three benchmarks: 2019 seat distribution, pre-election polling, and 2024 results.
 
 ## Findings
 
-- About 50% of EU-election articles named a political entity; ~31% of those mentioned the Radical Right.
-- Mainstream Right + Radical Right combined captured 57% (Portugal) to 85% (Poland) of all mentions; Left families never exceeded 35%.
-- The Radical Right was the most-mentioned family in Austria, Germany, and Poland, and second in Ireland.
-- Overrepresentation exceeded two standard deviations across all three benchmarks in Austria, Germany, and Ireland — including Ireland, which has no radical-right MEPs.
-- Poland was the lone exception, with the Radical Right slightly under-represented relative to its strength (though still having the highest absolute mention count, 1,526).
-- From mid-May onward, Radical Right mentions overtook Mainstream Right mentions in Austria, Germany, and Poland — coinciding with the most persuadable period for undecided voters.
-- The Radical Right dominated coverage in 50–62.5% of outlets across all popularity/output quadrants; Mainstream Left dominated in only 2 outlets and Radical Left in none.
-- Mainstream Left was systematically underrepresented in Austria and Portugal.
+- About 50% of election news items mentioned political entities; the Radical Right appeared in ~31% of those articles.
+- Mainstream Right and Radical Right together drew between 57% (Portugal) and 85% (Poland) of all political mentions; the Left never exceeded 35%.
+- Radical Right overrepresentation exceeded two standard deviations against all three benchmarks in Austria, Germany, and Ireland — notably in Ireland, where the Radical Right holds no parliamentary seats.
+- Poland was the sole exception, with the Radical Right slightly underrepresented relative to its strength, yet still holding the highest absolute mention count (1,526).
+- From mid-May, Radical Right mentions overtook Mainstream Right mentions in Austria, Germany, and Poland — intensifying in the crucial final campaign weeks.
+- The bias appeared even in center-left outlets (e.g., Der Spiegel, The Guardian); the Radical Right dominated 50–62.5% of outlets across popularity/output quadrants, while the Mainstream Left dominated only two.
 
 ## Connections
 
-This paper sits alongside other computational studies using LLMs to audit political content and ideological dynamics in news and platforms, including [[Balluff2026-if]] and [[Tornberg2025-ir]] on automated analysis of political media, and [[Larsson2026-ro]] on coverage patterns in European political communication. Its findings on radical-right amplification also resonate with platform-level work on partisan and ideological asymmetries such as [[DeVerna2025-dl]] and [[Emilio2026-ik]], and complement methodological efforts to use LLMs for entity and stance extraction in multilingual political text (e.g., [[Dierickx2026-tw]], [[Achmann-Denkler2026-lx]]).
+This work sits within research on media salience, partisan news, and the media's role in the rise of the Radical Right. Its focus on how visibility patterns in digital news shape political perception connects to broader questions of algorithmic and editorial amplification explored in [[Gonzalez-Bailon2024-rq]] and [[Bakshy2015-rn]]. Its examination of European Parliament election communication and cross-national coverage relates to [[Gattermann2025-yx]], while its interest in the normalization and diffusion of radical-right discourse links to [[Nenno2025-xa]].
 
 ## Podcast
 

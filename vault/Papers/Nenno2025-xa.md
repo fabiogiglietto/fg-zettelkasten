@@ -5,7 +5,7 @@ authors: ["Sami Nenno", "Cornelius Puschmann"]
 year: 2026
 doi: 10.1177/19401612241311893
 bibtex_key: Nenno2025-xa
-topics: [information-disorder, computational-methods-social-research]
+topics: [information-disorder, digital-media-elections-global]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1177/19401612241311893

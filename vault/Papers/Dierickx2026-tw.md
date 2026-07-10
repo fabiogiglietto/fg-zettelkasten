@@ -5,8 +5,8 @@ authors: ["Laurence Dierickx", "Andreas L. Opdahl", "Fredrik Bjerknes", "Carl-Gu
 year: 2026
 doi: 10.1080/1369118x.2026.2630697
 bibtex_key: Dierickx2026-tw
-topics: [generative-ai-and-media, information-disorder]
-citation_count: 0
+topics: [generative-ai-disinformation, information-disorder]
+citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2026.2630697
 podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dierickx2026-tw.mp3
@@ -22,32 +22,32 @@ discovery_date: 2026-02-18T06:35:38.111534Z
 
 ## Summary
 
-This conceptual paper uses fact-checking as an epistemological lens to interrogate what counts as a "fact" when generative AI produces fluent, plausible, but unverified content. Dierickx and colleagues argue that the three fact categories implicit in fact-checking practice — evidence-based (positivist), interpretative (constructivist), and rule-based (institutional) — each fail to capture the epistemic status of LLM outputs, which are probabilistic recombinations without ontological referents, traceable provenance, or genuine adherence to verification norms. They propose a fourth category, *emergent facts*, drawn from emergence theory and complex-systems thinking, and offer four indicators — accuracy, verifiability, contextual relevance, and consistency — for evaluating such outputs relationally rather than through binary true/false judgments.
+This theoretical paper asks what "a fact" means when generative AI produces text that is plausible yet untethered from empirical evidence. Using fact-checking as an epistemological lens, Dierickx and colleagues examine three established categories of facts — evidence-based (positivist), interpretative (constructivist), and rule-based (institutional) — and argue that none can adequately account for AI-generated content, which arises from probabilistic recombination rather than retrieval of verified information. To fill the gap they propose a fourth category, **emergent facts**, drawn from emergence theory and complex-systems thinking, and offer four indicators (accuracy, verifiability, contextual relevance, consistency) for evaluating such outputs. The argument reframes factuality as a dynamic sociotechnical outcome rather than a stable property of statements.
 
 ## Key Contributions
 
-- Introduces **emergent facts** as a new epistemic category for AI-generated content: plausible, prompt-dependent, variable, and opaque.
-- Provides a four-indicator evaluative framework (accuracy, verifiability, contextual relevance, consistency) for assessing GenAI outputs.
-- Distinguishes *emergent facts* from *algorithmic truth*: the former demands external validation; the latter relies on internal coherence or plausibility.
-- Extends fact-checking epistemology from journalism into computational and AI contexts.
-- Bridges philosophy of science, AI ethics, and media studies, reframing factuality as a sociotechnical outcome.
+- Introduces "emergent facts" as a novel epistemic category for GenAI outputs — computationally constructed, prompt-dependent, variable across models, and epistemically opaque.
+- Provides a conceptual framework with four evaluative indicators: accuracy, verifiability, contextual relevance, and consistency.
+- Distinguishes emergent facts from "algorithmic truth," insisting on external validation over coherence or plausibility alone.
+- Extends fact-checking epistemology from human-centered journalism into computational/AI contexts.
+- Bridges philosophy of science, AI ethics, and media/information studies by treating factuality as a relational, dynamic outcome.
 
 ## Methods
 
-Purely theoretical and conceptual. The authors synthesize literature from philosophy of science (correspondence, coherence, pragmatic theories of truth), sociology of knowledge (Durkheim, Searle, Latour & Woolgar, Foucault), and journalism/fact-checking scholarship. They map each of three established fact categories against the characteristics of LLMs, then build a new conceptual framework summarized in a comparative table and a diagram.
+Conceptual and theoretical rather than empirical. The authors synthesise philosophy of science (correspondence, coherence, and pragmatic theories of truth), the sociology of knowledge (Durkheim, Searle, Latour & Woolgar, Foucault), and journalism/fact-checking scholarship. They map the three conventional fact categories against the characteristics of large language models, then construct the "emergent facts" framework and its four indicators, summarised in a table and figure.
 
 ## Findings
 
-- Evidence-based fact-checking fails for GenAI because outputs lack referents and verifiable provenance.
-- Interpretative/constructivist framings illuminate negotiation of facts but cannot account for opaque probabilistic generation absent shared social practice.
-- Rule-based/institutional facts depend on collective protocols that LLMs only mimic linguistically.
-- Emergent facts form a distinct epistemic category: computationally constructed, context-dependent, and irreducible to brute facts.
-- The four indicators provide a structured way to evaluate hallucination, bias, and contextual drift without collapsing into binary verification.
-- The framework foregrounds evaluation and AI literacy over purely technical mitigation.
+- Positivist/evidence-based fact-checking fails for GenAI because outputs lack ontological referents and traceable provenance.
+- Constructivist/interpretative approaches capture the negotiated nature of facts, but GenAI outputs emerge from opaque probabilistic processes rather than shared social practices.
+- Institutional/rule-based facts rely on collective agreements and verification protocols that GenAI mimics linguistically without genuinely following.
+- Emergent facts occupy a distinct category: plausible but unverified, context-dependent, highly variable, and not reducible to brute facts, thus requiring relational rather than binary true/false assessment.
+- The four indicators offer a structured way to evaluate outputs while addressing hallucination and bias.
+- The framework prioritises evaluation and AI literacy over technical intervention.
 
 ## Connections
 
-This piece sits among other theoretically and normatively oriented work on factuality and AI-mediated information, complementing empirical studies of LLM-driven fact-checking such as [[DeVerna2025-dl]] and [[Cazzamatta2026-lo]], and conceptual treatments of misinformation epistemics like [[van-der-Linden2026-jt]] and [[Marwick2025-ov]]. Its concern with how generative outputs destabilize verification norms also resonates with [[Starbird2025-jj]] on contested knowledge production and with [[Triedman2025-uy]] and [[FitzGerald2025-nv]] on the epistemic risks of LLM-generated content.
+This paper's epistemological reframing of factuality complements empirical and design work on generative AI in fact-checking and verification, such as [[Gilardi2026-hw]] and [[Suau_Martinez2026-lv]], which examine how AI is actually deployed in fact-sensitive contexts. Its emphasis on AI literacy and evaluating opaque GenAI outputs also speaks to concerns about AI-generated persuasion and disinformation raised in [[Hackenburg2025-dj]] and [[DeVerna2025-dl]]. The others under these topics address related but distinct empirical questions rather than the epistemology of factuality per se.
 
 ## Podcast
 

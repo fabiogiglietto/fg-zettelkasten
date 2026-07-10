@@ -1,0 +1,30 @@
+{
+  "abstract": "This paper examines how the proliferation of big data analytics and ubiquitous connected digital technologies has transformed both political communication practice and the scholarship that studies it. Giglietto identifies three intertwined vectors of transformation: the blurring of political organizational boundaries via networked publics, the rise of micro-targeted political advertising on social media, and new dynamics of attention and strategic amplification in a hybrid media system. He argues that each shift poses distinct methodological and conceptual challenges for political communication researchers, particularly around exposure measurement, data access, and disentangling official from unofficial political actors.",
+  "key_claims": [
+    "Ubiquitous digital technologies have blurred the boundaries of traditional political organizations, enabling networked forms of connective action that support (or oppose) parties without formal affiliation.",
+    "Micro-targeted political advertising on platforms like Facebook enables politicians to deliver differentiated, potentially contradictory messages to narrow audiences, though evidence of actual persuasive impact remains weak.",
+    "In an attention-scarce, high-choice media environment, strategic amplification of partisan or false narratives has become a central and hard-to-measure form of political influence.",
+    "Traditional methodologies in political communication—especially self-reported media consumption and lists of mainstream sources—are increasingly inadequate for capturing exposure in fragmented, incidental, and social-media-mediated contexts.",
+    "The three vectors interact: fuzzy organizational boundaries hinder the regulation of micro-targeted ads, while fringe amplification strategies circumvent whatever regulation exists, producing a condition of 'permanent potential influence.'"
+  ],
+  "methods": [
+    "Conceptual and theoretical essay synthesizing prior literature rather than presenting new empirical analysis.",
+    "Illustrative case discussion of events such as the Cambridge Analytica scandal, Facebook's Ad Library, Twitter's political ad ban, and movements like Occupy, Indignados, Five Star Movement, and Podemos.",
+    "Critical review of methodological limitations in existing political communication research (e.g., exposure measurement, Ad Library API shortcomings)."
+  ],
+  "findings": [
+    "Networked collaboration produces skewed contribution distributions (a small core plus many occasional contributors) that let loose coalitions rival traditional organizations in political mobilization.",
+    "Fringe and unofficially affiliated groups can back mainstream candidates while providing plausible deniability, complicating analysis based on official communication channels.",
+    "Facebook's Ad Library, while a large dataset (over 5 million ads and ~$900 million in spend in the U.S. since May 2018 at time of writing), lacks targeting detail needed to assess ad exposure meaningfully.",
+    "Social media's 'all sources are equal' display format weakens brand cues, making self-reported exposure to specific outlets unreliable.",
+    "Interaction metrics (likes, shares, retweets) provide only a partial proxy for genuine exposure or attention to news content."
+  ],
+  "contributions": [
+    "Offers an integrative framework identifying three interconnected vectors—networked publics, micro-targeting, and attention/amplification—through which big data reshapes political communication.",
+    "Articulates specific methodological challenges (source lists, exposure concepts, API access) that scholars must confront in the post-Cambridge Analytica environment.",
+    "Connects contemporary phenomena to classical communication theory (e.g., Lazarsfeld's People's Choice, Granovetter's weak ties, Meyrowitz on audience segmentation).",
+    "Highlights the policy tension between transparency initiatives (Ad Libraries, ad bans) and the persistence of unregulated fringe amplification tactics."
+  ],
+  "framing": "The paper positions itself within political communication scholarship on the hybrid media system, connective action, and platform studies, drawing on Bennett & Segerberg, Benkler, Webster, and boyd. It responds to debates over disinformation, filter bubbles, and platform regulation by arguing that methodological adaptation is as urgent as substantive theorizing in an era of big data.",
+  "pdf_source": "drive"
+}

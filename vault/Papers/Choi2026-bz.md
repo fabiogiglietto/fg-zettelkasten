@@ -5,7 +5,7 @@ authors: ["Sukyoung Choi"]
 year: 2026
 doi: 10.1177/10776990251413726
 bibtex_key: Choi2026-bz
-topics: [information-disorder, generative-ai-and-media]
+topics: [generative-ai-disinformation, information-disorder]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/10776990251413726
@@ -22,27 +22,25 @@ discovery_date: 2026-02-16T20:52:21.543674Z
 
 ## Summary
 
-Choi reports a two-wave online experiment investigating how the experience of trying to authenticate one piece of (deep)fake news shapes responses to subsequent fake content. Participants encountered celebrity (deep)fake news in either text or video form within a social media context, and the study tracked downstream effects on self-confidence in truth discernment and susceptibility to further disinformation. The central argument is that there is a *modality-congruent carryover effect*: difficulty authenticating fake news in one format propagates to later fake content, but only when the subsequent material appears in the same modality (text-to-text or video-to-video).
+This paper investigates how the *experience* of trying to authenticate one piece of (deep)fake news shapes a person's response to later disinformation. Using a two-wave online experiment, Choi shows that the difficulty encountered when attempting to judge the authenticity of celebrity fake news carries over to affect both self-confidence in truth discernment and susceptibility to subsequent fake content. The central conceptual move is the proposal of a **modality-congruent carryover effect**: the difficulty experienced with one format (text or video) shapes reactions to later fake news presented in that *same* format, rather than transferring across modalities. This reframes disinformation susceptibility as a sequential, cumulative phenomenon rather than a series of isolated single-exposure judgments.
 
 ## Key Contributions
 
-- Introduces the concept of a **modality-congruent carryover effect** for sequential (deep)fake news exposure.
-- Provides experimental evidence that authentication experiences with one fake item shape vulnerability to later fake items.
-- Shifts disinformation research from single-exposure paradigms toward sequential, cumulative exposure dynamics.
-- Identifies modality (text vs. video) as a moderator of cumulative disinformation susceptibility.
+- Introduces the concept of a **modality-congruent carryover effect** in the processing of (deep)fake news.
+- Provides experimental evidence linking authentication experience with one piece of fake content to vulnerability toward subsequent fake content.
+- Extends disinformation research by modeling sequential exposure dynamics rather than treating exposures as independent.
+- Identifies modality (text vs. video) as a moderating factor in cumulative disinformation susceptibility.
 
 ## Methods
 
-- Two-wave online experiment with temporal separation between initial and subsequent (deep)fake news exposures.
-- Manipulation of news modality, presenting celebrity (deep)fake news in either text or video form within a simulated social media environment.
-- Measurement of authentication difficulty, self-confidence in truth discernment, and susceptibility to later (deep)fake content.
+A two-wave online experiment with temporal separation between an initial and a subsequent (deep)fake news exposure. News modality was manipulated, presenting celebrity (deep)fake news in both text and video formats within a social media context. The study measured authentication difficulty, self-confidence in truth discernment, and susceptibility to the later (deep)fake stimulus, allowing the author to trace how the first experience conditioned responses to the second.
 
 ## Findings
 
-- Difficulty during initial authentication carried over to shape responses to subsequent fake content.
-- Carryover was modality-congruent: it manifested when initial and subsequent fake news shared the same format, not across formats.
-- Experienced difficulty influenced both metacognitive self-confidence in truth-discernment and downstream susceptibility to disinformation.
+- Difficulty induced during initial authentication carried over to influence responses to subsequent fake content.
+- These carryover effects were modality-congruent — occurring when the initial and subsequent fake news shared the same format (text-to-text or video-to-video).
+- Authentication difficulty affected both self-confidence in truth-discernment ability and susceptibility to later disinformation.
 
 ## Connections
 
-This paper sits within a wave of work on synthetic media and deepfake susceptibility, complementing [[Appel2026-qr]] and [[Di-Domenico2026-zq]] on AI-generated content perception, and [[Hameleers2026-mc]] on multimodal disinformation. Its focus on metacognitive confidence in discernment relates to [[van-der-Linden2026-jt]] and inoculation-style work, while the sequential-exposure framing offers a complement to single-shot susceptibility studies such as [[Mosleh2024-op]] and [[DeVerna2025-dl]].
+This work sits alongside experimental studies of individual-level susceptibility and resistance to AI-generated and deceptive content, notably inoculation and persuasion research such as [[van-der-Linden2026-jt]] and [[Hackenburg2025-dj]]. Its focus on deepfakes and the cognitive/metacognitive challenge of distinguishing synthetic media connects to broader treatments of generative-AI disinformation like [[Spampatti2026-kx]] and [[Di-Domenico2026-zq]]. The emphasis on sequential, cumulative exposure dynamics offers a complementary lens to the largely single-exposure or macro-level framings elsewhere in these topics.

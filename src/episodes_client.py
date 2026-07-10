@@ -5,9 +5,7 @@ feed uses, so this is a direct join — no normalisation needed.
 """
 from __future__ import annotations
 
-import requests
-
-from .feed_client import github_raw_headers
+from .feed_client import get_with_retries, github_raw_headers
 
 
 def fetch_episodes(url: str, timeout: int = 30) -> dict[str, dict]:
@@ -24,8 +22,7 @@ def fetch_episodes(url: str, timeout: int = 30) -> dict[str, dict]:
 
     `url` is a GitHub Contents API URL — see `feed_client.github_raw_headers`
     for why the API is used instead of raw.githubusercontent.com."""
-    resp = requests.get(url, headers=github_raw_headers(), timeout=timeout)
-    resp.raise_for_status()
+    resp = get_with_retries(url, headers=github_raw_headers(), timeout=timeout)
     data = resp.json()
     episodes = data if isinstance(data, list) else data.get("episodes", [])
     out: dict[str, dict] = {}

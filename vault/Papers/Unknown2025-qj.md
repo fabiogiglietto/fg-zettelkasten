@@ -5,7 +5,7 @@ authors: ["Ranjit Singh", "Borhane Blili-Hamelin", "Carol Anderson", "Emnet Tafe
 year: 2025
 doi: 10.69985/vvgp4368
 bibtex_key: Unknown2025-qj
-topics: [participatory-ai-evaluation]
+topics: [ai-red-teaming-and-participatory-evaluation, generative-ai-disinformation]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.69985/vvgp4368

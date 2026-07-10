@@ -5,7 +5,7 @@ authors: ["Kamile Grusauskaite", "Matthias De Bondt", "Lars de Wildt", "Stef Aup
 year: 2026
 doi: 10.1177/14614448261446590
 bibtex_key: Grusauskaite2026-po
-topics: [far-right-online-radicalization]
+topics: [online-radicalization-and-extremism-on-platforms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448261446590

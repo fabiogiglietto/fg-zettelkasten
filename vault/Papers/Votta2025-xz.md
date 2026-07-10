@@ -5,7 +5,7 @@ authors: ["Fabio Votta", "Tom Dobber", "Benjamin Guinaudeau", "Natali Helberger"
 year: 2025
 doi: 10.1080/10584609.2024.2439317
 bibtex_key: Votta2025-xz
-topics: [elections-political-communication, platform-governance-data-access]
+topics: [platform-governance-data-access, digital-media-elections-global]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2024.2439317

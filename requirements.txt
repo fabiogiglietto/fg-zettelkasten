@@ -1,10 +1,10 @@
-anthropic>=0.40
-requests>=2.31
+anthropic>=0.116.0
+requests>=2.34.2
 PyYAML>=6.0.3
-pypdf>=4.0
-google-api-python-client>=2.100
-google-auth>=2.20
-python-dotenv>=1.0
+pypdf>=6.14.2
+google-api-python-client>=2.198.0
+google-auth>=2.55.1
+python-dotenv>=1.2.2
 
 # Feed contract validation (schema/feed.schema.json)
-jsonschema>=4.21
+jsonschema>=4.26.0

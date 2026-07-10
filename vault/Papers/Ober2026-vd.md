@@ -5,7 +5,7 @@ authors: ["Teresa Ober", "Karyssa A. Courey", "Michael Flor"]
 year: 2026
 doi: 10.5281/zenodo.18733521
 bibtex_key: Ober2026-vd
-topics: [computational-methods-social-research]
+topics: [llm-augmented-research-methods, llms-computational-content-analysis]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.5281/zenodo.18733521
@@ -16,39 +16,39 @@ discovery_date: 2026-02-27T06:09:00.657393Z
 
 # Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts
 
-> Ober, T., Courey, K. A., & Flor, M. (2026). Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts. *Zenodo (CERN European Organization for Nuclear Research)*, *18*, 156–179. https://doi.org/10.5281/zenodo.18733520
+> Ober, T., Courey, K. A., & Flor, M. (2026). Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts. *Open MIND*, *18*, 156–179. https://doi.org/10.5281/zenodo.18733521
 >
-> [View paper](https://doi.org/10.5281/zenodo.18733520)
+> [View paper](https://doi.org/10.5281/zenodo.18733521)
 
 ## Summary
 
-This paper proposes a human-in-the-loop methodological framework that integrates grounded human coding, sentence-embedding topic modeling, and LLM prompt engineering to analyze qualitative interview data at scale without sacrificing interpretive depth. The authors demonstrate the workflow on six focus groups with 13 U.S. middle and high school teachers discussing how communication and digital literacy should be conceptualized and assessed within competency-based education (CBE). They argue that topic modeling supplies mathematically transparent thematic structure, LLMs accelerate labeling and codebook refinement, and human analysts preserve construct validity and theoretical coherence — yielding a refined, more structured codebook and substantive insights into teacher perspectives on 21st-century skills.
+This paper proposes a hybrid, human-in-the-loop methodological framework for analyzing qualitative interview data that integrates three components: grounded human coding, semantic topic modeling, and LLM prompt engineering. The authors apply the workflow to focus group transcripts from 13 U.S. middle and high school teachers discussing how communication and digital literacy skills should be conceptualized and assessed within competency-based education (CBE). The central argument is that combining mathematically grounded, reproducible topic clustering with LLM-assisted labeling and iterative human codebook refinement can scale qualitative analysis while preserving interpretive depth and epistemological integrity. Topic modeling is positioned as a more transparent foundation than opaque neural approaches, with LLMs augmenting — never replacing — human analysts.
 
 ## Key Contributions
 
-- A replicable multi-stage pipeline combining grounded human coding, SentenceBERT embeddings with Affinity Propagation clustering, and LLM-assisted topic labeling.
-- Use of **cross-model agreement** (ChatGPT-4o vs. Copilot) — exact-match rates and cosine similarity — as a quality-assurance heuristic for LLM-generated labels.
-- A worked example of codebook refinement (Version 1 → Version 2) illustrating how AI-surfaced clusters can reshape human categories.
-- Substantive findings on how teachers conceptualize and assess communication and digital literacy in CBE contexts.
-- Practical guidance (prompts, model settings, thresholds) for transparent, reproducible AI-augmented qualitative research.
+- A replicable, multi-stage framework combining grounded human coding, SentenceBERT topic modeling with Affinity Propagation clustering, and LLM prompt engineering.
+- A cross-model consistency check (ChatGPT-4o vs. Copilot) as a quality-assurance strategy for AI-generated topic labels.
+- Transparent documentation of LLM configurations, prompts, and a worked example of codebook refinement (Version 1 → Version 2).
+- Substantive insights into how teachers conceptualize and assess communication and digital literacy in CBE contexts.
+- A contribution to emerging best practices for integrating AI into qualitative educational research under a human-in-the-loop paradigm.
 
 ## Methods
 
-Six Zoom-based semi-structured focus groups (2023–2024, 13 teachers) were transcribed, cleaned, and segmented by skill and topic at the sentence level. After preliminary grounded human coding produced an initial codebook, sentences were embedded with SentenceBERT, clustered via Affinity Propagation into first-level clusters and superclusters, and filtered by cosine similarity (threshold 0.5) to extract representative "bestwords." ChatGPT-4o and Copilot were then prompted (following Barany et al., 2024) to generate topic labels and descriptions from the representative content. Cross-model exact-match and cosine-similarity comparisons served as quality checks, and human analysts iteratively mapped themes onto clusters to produce the refined codebook.
+Six semi-structured Zoom focus groups (2023–2024) with 13 teachers were transcribed, cleaned, and segmented by skill (communication, digital literacy) and topic (framework, assessment), with sentences as units of analysis. Preliminary grounded coding produced an initial codebook. A topic modeling pipeline used SentenceBERT embeddings, Affinity Propagation clustering (~78–79 first-level clusters, 32 superclusters per skill), cosine similarity filtering (threshold 0.5), and representative "bestwords." LLM prompting (adapted from Barany et al., 2024) with ChatGPT-4o and Copilot generated topic labels and descriptions, evaluated via exact-match rates and cosine similarity across models. Human analysts then mapped themes onto data-derived clusters to refine the codebook.
 
 ## Findings
 
-- Topic modeling yielded 14 meaningful higher-level clusters for communication and 16 for digital literacy after pruning conversational-filler outliers.
-- LLM label agreement: 33.3% identical labels for communication clusters and 43.8% for digital literacy; cosine similarities ranged 0.827–0.880 across labels and descriptions.
-- Human review found no clear hallucinations; cross-model disagreements were mostly minor phrasing differences.
-- Teachers framed communication as multimodal (speaking, listening, writing, presenting) with audience and social-emotional dimensions, and asked for less "squishy" frameworks.
-- Digital literacy was described as fast-evolving, centered on information evaluation, digital citizenship, and ethical engagement under AI and misinformation pressures.
-- Assessment challenges clustered around validity, subjectivity, equity, and difficulty of standardizing interpersonal/ethical dimensions; disciplinary differences (STEM vs. humanities) also emerged.
-- Codebook V2 introduced finer subcategories (e.g., whole-skill vs. subskill prioritization), added a "teaching" category, and consolidated redundant codes.
+- Topic modeling produced 14 meaningful high-level clusters for communication and 16 for digital literacy after removing conversational-filler outliers.
+- Cross-model label agreement: 33.3% identical labels (communication) and 43.8% (digital literacy); average cosine similarities ranged 0.827–0.880 for labels and descriptions.
+- No clear hallucinations were observed on human review; divergences were mostly minor phrasing differences.
+- Teachers framed communication as inherently multimodal with audience awareness and social-emotional dimensions, calling for less "squishy" frameworks.
+- Digital literacy was seen as fluid and rapidly evolving, emphasizing information evaluation, digital citizenship, and ethical engagement amid AI and misinformation.
+- Assessment challenges centered on validity, subjectivity, equity, and capturing nuanced interpersonal/ethical dimensions.
+- Disciplinary variation emerged (STEM technical precision vs. humanities audience adaptation), and the codebook revision introduced finer subcategories, a new "teaching" category, and more explicit contextual dimensions.
 
 ## Connections
 
-No other papers have been indexed under shared topics yet, so there are no sibling notes to link. Intellectually, the work sits alongside Barany et al. (2024) and Xiao et al. (2023) on hybrid LLM-assisted qualitative coding, and extends Braun & Clarke–style thematic analysis and grounded theory into a transparent, embeddings-plus-LLM workflow.
+This paper sits within the growing literature on LLM-augmented content analysis and coding; its cross-model consistency check and human-in-the-loop stance connect it to work validating LLMs as classifiers and coders such as [[Le-Mens2025-qz]], [[Tan2024-vl]], and [[Fan2025-ut]]. Its emphasis on reproducibility and preserving human interpretive authority resonates with methodological caution found in [[Waight2025-al]] and [[Balluff2026-if]].
 
 ## Podcast
 
