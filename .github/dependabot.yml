@@ -12,6 +12,9 @@ updates:
 
   # Vendored Quartz site (quartz/package-lock.json). Major Quartz bumps can
   # revert vendored patches — see quartz/VENDORED_PATCHES.md before merging.
+  # Majors are ignored entirely: Quartz pins the versions it was tested
+  # against, so majors arrive via Quartz upgrades, not per-dependency bumps.
+  # Security updates are unaffected by `ignore`.
   - package-ecosystem: npm
     directory: /quartz
     schedule:
@@ -21,6 +24,9 @@ updates:
       quartz-deps:
         patterns: ["*"]
         update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     directory: /
