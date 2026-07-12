@@ -55,6 +55,7 @@ Research on partisan alignment, insularity, cross-partisan interaction patterns 
 - [[Prochaska2025-ef]]
 - [[Renault2025-uh]]
 - [[Sarmiento2025-as]]
+- [[Schemer2026-mh]]
 - [[Starbird2025-jj]]
 - [[Tai2026-qk]]
 - [[Tornberg2025-ir]]

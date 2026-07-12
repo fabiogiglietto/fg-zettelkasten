@@ -20,6 +20,7 @@ Emerging strand examining how generative AI is used to produce and scale decepti
 - [[Hackenburg2025-dj]]
 - [[Hameleers2026-mc]]
 - [[Hollingshead2026-vx]]
+- [[Kotz2026-lk]]
 - [[Lin2025-xp]]
 - [[Nguyen2026-vm]]
 - [[Orlando2025-ul]]

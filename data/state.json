@@ -3018,10 +3018,42 @@
       "content_hash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d",
       "podcast_linked": true,
       "last_processed": "2026-07-08T19:21:58.013818+00:00"
+    },
+    "bibtex:Kotz2026-lk": {
+      "note_path": "Papers/Kotz2026-lk.md",
+      "topics": [
+        "climate-and-misinformation-message-interventions",
+        "generative-ai-disinformation"
+      ],
+      "assign_fp": "729bf010bf104b4bd52274277514dc03fba569455b714bafbc70b9e91b4cdab8",
+      "doi": "10.31234/osf.io/7szrn_v1",
+      "title": "Conversational AI shifts beliefs and policy support among skeptics across contested societal issues",
+      "pdf_source": "drive",
+      "content_hash": "72c89b38b71b0ff2b114d2e2617e4a273b5aa35d07e930fed00373c033f0422b",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-12T07:28:06.593908+00:00"
+    },
+    "bibtex:Schemer2026-mh": {
+      "note_path": "Papers/Schemer2026-mh.md",
+      "topics": [
+        "political-polarization-partisan-news",
+        "survey-methodology-validity"
+      ],
+      "assign_fp": "db9361224f4f117e10ec0c51151e7fb9acf5045bf0276bb803d98ba8962fb541",
+      "doi": "10.1080/10584609.2026.2699105",
+      "title": "Does the method affect the outcome? How measures of partisan slant of media outlets and affective polarization drive results about polarization in the United States",
+      "pdf_source": "drive",
+      "content_hash": "fa74e0189113effe6f4bef2b5c4c78c1583d50bce3b52a516a8b3a581fabc0e7",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-12T07:28:07.314404+00:00"
     }
   },
   "last_full_cluster": "2026-07-08T13:52:49.159338+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 2,
   "register_signals_hash": "e28de163f248b7da02c7f4159b2c0dca222344415261b75268033a572e21471c",
   "emergent_fp": "9209f1cd4916372ffdd413c0f87730e7741f01033f3a74f9fe64f6d752a463c2",
   "structure_fps": {
