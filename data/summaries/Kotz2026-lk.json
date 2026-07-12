@@ -1,0 +1,34 @@
+{
+  "abstract": "This preregistered experiment with 6,558 U.S. participants tested whether interactive, evidence-based dialogues with GPT-5 can shift beliefs and support for contested policies across three structurally distinct societal issues: climate change, vaccination, and economic inequality. Compared to a neutral control conversation, brief AI dialogues shifted beliefs in all three domains and increased support for politically contested policies such as carbon and estate taxes. Effects were strongest among initially skeptical participants and those with higher trust in science, and text analysis showed GPT-5 adapted its persuasive strategy to skeptics. The authors conclude that brief AI dialogues may serve as a scalable, generalizable tool for evidence-based public communication.",
+  "key_claims": [
+    "Evidence-based AI dialogues shift beliefs across structurally distinct societal domains (climate change, vaccination, economic inequality), demonstrating domain-general persuasive potential.",
+    "AI dialogues can increase support for concrete and contested policy instruments (carbon tax, mandatory vaccination, estate tax), but this requires directly targeting policy attitudes rather than relying on belief change as an intermediary.",
+    "Persuasive effects are strongest among initially skeptical individuals — the group typically hardest to reach — rather than among already-supportive audiences.",
+    "Trust in science is the most consistent moderator, amplifying (nearly doubling) treatment effects, while trust in AI and government matter less.",
+    "Actively open-minded thinking does not reliably moderate treatment effects once baseline attitudes are controlled, and effects do not differ significantly between Republicans and Democrats after adjusting for baseline attitudes."
+  ],
+  "methods": [
+    "Preregistered large-scale online experiment (Qualtrics, panel provider Bilendi) with N=6,558 U.S. participants (mean age 58.6; 62.8% female), with a deliberate oversample of conservative-leaning participants (~57.6% Republicans / 42.4% Democrats).",
+    "Ten randomly assigned conditions: 3 topics (climate, vaccination, inequality) × 3 intervention types (belief-targeted, policy-targeted, combined) plus a neutral control condition (discussing whether cats or dogs are better pets).",
+    "Participants engaged in a structured three-round dialogue with GPT-5, which advocated for the target belief/policy using scientific evidence while inviting questions; baseline and post-intervention beliefs and policy support were measured on 0–100 slider scales.",
+    "Outcome measures: validated climate belief scale (4 items, ω=.97) and carbon tax support; Vaccination Confidence Scale (4 items, ω=.95) and mandatory school-entry vaccination support; single-item inequality belief and estate tax support.",
+    "Analysis via multiple linear regression predicting post-intervention attitudes (controlling for baseline and AOT), with interaction terms for baseline attitudes, AOT, and trust moderators; Bonferroni correction within outcome families (α=.0056); linear mixed-effects within-subject robustness checks; and exploratory GPT-5-based text classification of 11 persuasive strategies (reproducibility check: 88.5% identical ratings)."
+  ],
+  "findings": [
+    "All interventions increased beliefs and policy support in their targeted domains, with the largest main effects for economic inequality (belief +6.36 pps; estate tax support +8.98 pps for the policy treatment) where baseline attitudes were lowest.",
+    "Climate belief increased ~3.5–3.7 pps and carbon tax support rose up to 4.80 pps (combined intervention); vaccination effects were smaller (beliefs +2.76 to +3.40 pps) reflecting high baseline support, with mandatory-vaccination policy shifts not surviving multiple-testing correction.",
+    "Treatment effects grew substantially as baseline attitudes declined, indicating dialogues were most effective among skeptics; treatment slopes exceeded control slopes, exceeding what regression to the mean would predict.",
+    "Combined (belief+policy) interventions generally did not outperform outcome-specific interventions; belief-targeted interventions produced only smaller spillover effects on policy support.",
+    "Trust in science consistently amplified effects across domains (roughly doubling effect sizes at +1 SD); trust in AI showed a weaker pattern and trust in government was inconsistent; AOT was not a reliable moderator.",
+    "Text analysis showed GPT-5 most consistently used iterative collaborative dialogue and person-centered alignment; it used prebunking/debunking and steelmanning more with skeptical participants (r ≈ -.19 to -.42) and bridging-to-action strategies more with already-supportive participants."
+  ],
+  "contributions": [
+    "Demonstrates the generalizability of AI-based persuasion across three structurally distinct contested issues, moving beyond single-domain studies.",
+    "Extends AI persuasion research from belief change to specific contested policy instruments (carbon tax, mandatory vaccination, estate tax) and shows belief change alone does not reliably translate into policy support.",
+    "Provides systematic evidence on heterogeneity — showing effects are strongest among skeptics and those with high trust in science, contrasting prior findings that static AI messages work best on sympathetic audiences.",
+    "Characterizes the persuasive strategies conversational AI adopts and how it adapts them to participants' baseline attitudes.",
+    "Offers a scalable, low-cost communication tool (requiring only a brief system prompt) while flagging ethical and governance concerns about persuasion at scale."
+  ],
+  "framing": "The paper situates itself within science communication, political persuasion, and emerging AI-dialogue research (building on work showing LLM dialogues can reduce conspiracy beliefs), engaging debates over whether factual misbeliefs versus value disagreements drive resistance and how citizen preferences shape evidence-based policy adoption. It positions conversational AI as a potential remedy to the limited success of traditional informational interventions, especially among skeptical audiences.",
+  "pdf_source": "drive"
+}
