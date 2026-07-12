@@ -3029,11 +3029,10 @@
       "doi": "10.31234/osf.io/7szrn_v1",
       "title": "Conversational AI shifts beliefs and policy support among skeptics across contested societal issues",
       "pdf_source": "drive",
-      "content_hash": "72c89b38b71b0ff2b114d2e2617e4a273b5aa35d07e930fed00373c033f0422b",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-07-12T07:28:06.593908+00:00"
+      "content_hash": "ea8ea740c883ffbfb2c0056b13217f64ac08eb0c3ba2b3a7aaad395988e4ff61",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-12T07:48:14.047781+00:00"
     },
     "bibtex:Schemer2026-mh": {
       "note_path": "Papers/Schemer2026-mh.md",
