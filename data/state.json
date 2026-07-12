@@ -3044,11 +3044,10 @@
       "doi": "10.1080/10584609.2026.2699105",
       "title": "Does the method affect the outcome? How measures of partisan slant of media outlets and affective polarization drive results about polarization in the United States",
       "pdf_source": "drive",
-      "content_hash": "fa74e0189113effe6f4bef2b5c4c78c1583d50bce3b52a516a8b3a581fabc0e7",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-07-12T07:28:07.314404+00:00"
+      "content_hash": "9b0b584e6ee96047465ac2ff63a9fc5200c6891328ab7d68706c46f41643b863",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-12T09:15:27.024011+00:00"
     }
   },
   "last_full_cluster": "2026-07-08T13:52:49.159338+00:00",
