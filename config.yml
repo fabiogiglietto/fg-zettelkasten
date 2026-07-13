@@ -54,6 +54,28 @@ processing:
   # A full recluster is triggered when papers added since the last cluster
   # exceeds this threshold (or when --recluster is passed).
   recluster_threshold: 25
+  # Quarantined papers: dropped from every source feed the moment it is fetched,
+  # so they are never summarized, never assigned, never given a note and never
+  # posted to Slack.
+  #
+  # The toread feed emits a `noauthor_undated-xx` bibtex key whenever an entry
+  # has no author, title *and* date. The five below carry no source material at
+  # all — their summaries read "No source material was provided" — so there is
+  # nothing to write a note from. Deleting the note and summary (as b97aadd did)
+  # is NOT enough: a missing summary is exactly what makes the summarizer treat
+  # a paper as un-summarized and regenerate it, which is how they came back.
+  # Their state entries are deliberately left in place.
+  #
+  # The junk keys themselves can only be fixed upstream in toread; this list is
+  # the downstream quarantine. Note that noauthor_undated-bm is NOT skipped — it
+  # is a real paper (the FIES deceptive-networks study) that merely has a junk
+  # feed title ("cib.pdf"), and it is cited from the Structures notes.
+  skip_keys:
+    - noauthor_undated-bz
+    - noauthor_undated-fm
+    - noauthor_undated-jo
+    - noauthor_undated-pl
+    - noauthor_undated-ue
   # Incremental recluster: reuse the refresh-topics register and skip
   # assignment / emergent-clustering / structure-note LLM calls whose input
   # fingerprints are unchanged since the last run. `recluster --full`

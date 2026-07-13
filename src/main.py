@@ -53,6 +53,34 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def _drop_skipped(papers: list, cfg: dict) -> list:
+    """Drop the papers quarantined in `processing.skip_keys`.
+
+    Applied at the moment a feed is fetched — the single choke point every
+    command shares — so a quarantined paper is never summarized, assigned,
+    written to a note or posted to Slack by any code path.
+    """
+    skip = set(cfg.get("processing", {}).get("skip_keys") or ())
+    return [p for p in papers if p.bibtex_key not in skip]
+
+
+def _fetch_feed(cfg: dict) -> list:
+    """The toread feed, minus the quarantined keys."""
+    from . import feed_client
+
+    return _drop_skipped(feed_client.fetch_feed(cfg["inputs"]["feed_url"]), cfg)
+
+
+def _fetch_own_publications(cfg: dict) -> list:
+    """The own-publications feed, minus the quarantined keys."""
+    from . import feed_client
+
+    return _drop_skipped(
+        feed_client.fetch_own_publications(cfg["inputs"]["own_publications_url"]),
+        cfg,
+    )
+
+
 def _note_url(cfg: dict, bibtex_key: str) -> str | None:
     """Live website URL of a paper's note, for the Slack digest's Full-note link.
 
@@ -375,7 +403,6 @@ def cmd_refresh_topics(cfg: dict, args) -> int:
 def cmd_bootstrap(cfg: dict, args) -> int:
     """Process the whole archive: register, per-paper notes, themes, hub notes."""
     from . import (
-        feed_client,
         episodes_client,
         topics_client,
         summarizer,
@@ -388,7 +415,7 @@ def cmd_bootstrap(cfg: dict, args) -> int:
     drive = _drive_client(cfg)
 
     register = _build_register(cfg, claude)
-    papers = feed_client.fetch_feed(cfg["inputs"]["feed_url"])
+    papers = _fetch_feed(cfg)
     episodes = episodes_client.fetch_episodes(cfg["inputs"]["episodes_url"])
     if args.limit:
         papers = papers[: args.limit]
@@ -497,13 +524,13 @@ def cmd_summarize(cfg: dict, args) -> int:
     of research-radio in the chain. `update` (which runs after the podcast)
     reuses these summaries and stays self-sufficient: run on its own, the
     daily fallback cron still summarizes anything this stage missed."""
-    from . import feed_client, summarizer
+    from . import summarizer
 
     claude = _claude(cfg)
     drive = _drive_client(cfg)
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
 
-    papers = feed_client.fetch_feed(cfg["inputs"]["feed_url"])
+    papers = _fetch_feed(cfg)
     pending = [
         p for p in papers
         if summarizer.load_summary(summaries_dir, p.bibtex_key) is None
@@ -557,7 +584,7 @@ def cmd_update(cfg: dict, args) -> int:
     # lets Monday's recluster skip papers assigned against the same register.
     reg_fp = state_mod.register_fingerprint(register)
 
-    papers = feed_client.fetch_feed(cfg["inputs"]["feed_url"])
+    papers = _fetch_feed(cfg)
     episodes = episodes_client.fetch_episodes(cfg["inputs"]["episodes_url"])
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
     papers_dir = cfg["vault"]["papers_dir"]
@@ -750,9 +777,7 @@ def cmd_update(cfg: dict, args) -> int:
     own_new, own_changed = [], []
     if own_cfg.get("enabled", True):
         try:
-            own_papers = feed_client.fetch_own_publications(
-                cfg["inputs"]["own_publications_url"]
-            )
+            own_papers = _fetch_own_publications(cfg)
         except Exception as exc:  # noqa: BLE001 - a second source must never break the run
             own_papers = []
             print(f"update: could not fetch own-publications feed ({exc})")
@@ -875,7 +900,7 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     `refresh-topics` is reused (no second synthesis) and per-paper assignment,
     emergent clustering, and structure notes are skipped when their input
     fingerprints are unchanged. `force=True` (--full) re-bills everything."""
-    from . import feed_client, topics_client, summarizer, themes, state as state_mod
+    from . import topics_client, summarizer, themes, state as state_mod
 
     incremental = cfg.get("processing", {}).get("incremental_recluster", False)
     print("recluster: rebuilding the register and re-clustering the archive")
@@ -893,7 +918,7 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
 
     papers = [
-        p for p in feed_client.fetch_feed(cfg["inputs"]["feed_url"])
+        p for p in _fetch_feed(cfg)
         if p.id in state["papers"]
     ]
     # Own publications already in state are reclustered alongside toread papers,
@@ -901,9 +926,7 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     own_cfg = cfg.get("own_publications", {})
     if own_cfg.get("enabled", True):
         try:
-            own = feed_client.fetch_own_publications(
-                cfg["inputs"]["own_publications_url"]
-            )
+            own = _fetch_own_publications(cfg)
             papers += [p for p in own if p.id in state["papers"]]
         except Exception as exc:  # noqa: BLE001 - never break recluster on a fetch error
             print(f"recluster: could not fetch own-publications feed ({exc})")
@@ -1051,7 +1074,7 @@ def cmd_export_site(cfg: dict, args) -> int:
 def cmd_slack_test(cfg: dict, args) -> int:
     """Post one paper's digest to Slack — verify Block Kit rendering / re-post."""
     from . import (
-        feed_client, episodes_client, summarizer, slack_client,
+        episodes_client, summarizer, slack_client,
         state as state_mod,
     )
 
@@ -1061,7 +1084,7 @@ def cmd_slack_test(cfg: dict, args) -> int:
         return 1
 
     key = args.bibtex_key
-    papers = feed_client.fetch_feed(cfg["inputs"]["feed_url"])
+    papers = _fetch_feed(cfg)
     paper = next((p for p in papers if p.bibtex_key == key), None)
     if paper is None:
         print(f"slack-test: no paper with bibtex key {key!r} in the feed")
