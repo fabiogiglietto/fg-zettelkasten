@@ -11,6 +11,8 @@ import json
 from pathlib import Path
 from typing import Optional
 
+from .claude_client import json_obj
+
 
 _SUMMARY_SYSTEM = """\
 You are a research analyst writing a structured summary of an academic paper \
@@ -57,12 +59,21 @@ def summarize_paper(paper, pdf_text: Optional[str], claude, model: str) -> dict:
         )
     prompt = "\n".join(header) + "\n\n" + body
 
-    summary = claude.complete_json(
-        model=model,
-        system=_SUMMARY_SYSTEM,
-        prompt=prompt,
-        max_tokens=4096,
+    summary = json_obj(
+        claude.complete_json(
+            model=model,
+            system=_SUMMARY_SYSTEM,
+            prompt=prompt,
+            max_tokens=4096,
+        )
     )
+    # The caller persists this to data/summaries/ and reads it from cache ever
+    # after, so an off-shape reply must fail loudly rather than be coerced to an
+    # empty summary that would be cached — and never regenerated — for good.
+    if not summary:
+        raise ValueError(
+            f"summary for {paper.bibtex_key} came back malformed; not caching it"
+        )
     summary["pdf_source"] = pdf_source
     return summary
 

@@ -10,6 +10,8 @@ from pathlib import Path
 
 import requests
 
+from .claude_client import json_list
+
 
 def fetch_signals(
     base_url: str, signal_paths: list[str], timeout: int = 30
@@ -76,25 +78,40 @@ def synthesize_register(
         parts.append(f"\n===== {path} =====\n{text.strip()}")
     prompt = "\n".join(parts)
 
-    topics = claude.complete_json(
-        model=claude.reasoning_model,
-        system=_SYNTHESIS_SYSTEM,
-        prompt=prompt,
-        # Sonnet 5 runs adaptive thinking by default and thinking tokens count
-        # against max_tokens — 16000 leaves headroom so the JSON never truncates.
-        max_tokens=16000,
+    topics = json_list(
+        claude.complete_json(
+            model=claude.reasoning_model,
+            system=_SYNTHESIS_SYSTEM,
+            prompt=prompt,
+            # Sonnet 5 runs adaptive thinking by default and thinking tokens count
+            # against max_tokens — 16000 leaves headroom so the JSON never truncates.
+            max_tokens=16000,
+        )
     )
 
     register: list[dict] = []
     for topic in topics:
+        if not isinstance(topic, dict):
+            continue
+        slug, name = topic.get("slug"), topic.get("name")
+        if not slug or not name:
+            continue
         register.append(
             {
-                "slug": topic["slug"],
-                "name": topic["name"],
+                "slug": slug,
+                "name": name,
                 "description": topic.get("description", ""),
                 "source_signals": topic.get("source_signals", []),
                 "is_emergent": False,
             }
+        )
+    # An empty register is never a legitimate synthesis: the caller writes a note
+    # per topic and prunes every note it did not write, so returning [] here would
+    # silently delete the whole register. Fail loudly and keep the previous one.
+    if not register:
+        raise ValueError(
+            "topic synthesis produced no usable topics — refusing to write an "
+            "empty register, which would prune every topic note"
         )
     return register
 

@@ -41,6 +41,34 @@ def _extract_json(text: str):
     raise ValueError(f"no JSON found in response: {text[:200]!r}")
 
 
+def json_list(value) -> list:
+    """Normalize a `complete_json` reply that is expected to be a JSON array.
+
+    Claude is asked for a bare array but sometimes wraps it in an object
+    (`{"topics": [...]}`); unwrap the first list value so one off-shape reply
+    cannot abort a whole run. Anything else normalizes to an empty list, which
+    every caller already treats as "the model proposed nothing".
+    """
+    if isinstance(value, list):
+        return value
+    if isinstance(value, dict):
+        return next((v for v in value.values() if isinstance(v, list)), [])
+    return []
+
+
+def json_obj(value) -> dict:
+    """Normalize a `complete_json` reply that is expected to be a JSON object.
+
+    The mirror of `json_list`: unwraps a single-object array. Callers that
+    persist the result must still reject an empty dict rather than cache it.
+    """
+    if isinstance(value, dict):
+        return value
+    if isinstance(value, list):
+        return next((v for v in value if isinstance(v, dict)), {})
+    return {}
+
+
 class ClaudeClient:
     def __init__(
         self,

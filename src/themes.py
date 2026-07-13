@@ -7,6 +7,8 @@ papers exist, so the register never fragments into one-paper topics.
 """
 from __future__ import annotations
 
+from .claude_client import json_list, json_obj
+
 
 def summary_digest(summary: dict) -> str:
     """A compact one-block digest of a structured summary for prompting.
@@ -67,12 +69,7 @@ def assign_paper(paper, summary: dict, topics: list[dict], claude, model: str) -
     )
     # Claude is asked for {"topics": [...]} but sometimes answers with the bare
     # array; accept either rather than crash a whole recluster on the shape.
-    if isinstance(result, dict):
-        slugs = result.get("topics", [])
-    elif isinstance(result, list):
-        slugs = result
-    else:
-        slugs = []
+    slugs = result if isinstance(result, list) else json_obj(result).get("topics", [])
 
     valid = {t["slug"] for t in topics}
     chosen = [slug for slug in slugs if isinstance(slug, str) and slug in valid]
@@ -120,21 +117,14 @@ def find_emergent(
         + "\n\n".join(blocks)
     )
 
-    proposals = claude.complete_json(
-        model=model,
-        system=_EMERGENT_SYSTEM.format(min_papers=min_papers),
-        prompt=prompt,
-        max_tokens=4096,
-    )
-
-    # Claude is asked for a bare array but sometimes wraps it in an object;
-    # take the first list value rather than crash a whole recluster on the shape.
-    if isinstance(proposals, dict):
-        proposals = next(
-            (v for v in proposals.values() if isinstance(v, list)), []
+    proposals = json_list(
+        claude.complete_json(
+            model=model,
+            system=_EMERGENT_SYSTEM.format(min_papers=min_papers),
+            prompt=prompt,
+            max_tokens=4096,
         )
-    if not isinstance(proposals, list):
-        proposals = []
+    )
 
     keys = {p.bibtex_key for p in unassigned}
     emergent: list[dict] = []
