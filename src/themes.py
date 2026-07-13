@@ -65,8 +65,17 @@ def assign_paper(paper, summary: dict, topics: list[dict], claude, model: str) -
         prompt=prompt,
         max_tokens=1024,
     )
+    # Claude is asked for {"topics": [...]} but sometimes answers with the bare
+    # array; accept either rather than crash a whole recluster on the shape.
+    if isinstance(result, dict):
+        slugs = result.get("topics", [])
+    elif isinstance(result, list):
+        slugs = result
+    else:
+        slugs = []
+
     valid = {t["slug"] for t in topics}
-    chosen = [slug for slug in result.get("topics", []) if slug in valid]
+    chosen = [slug for slug in slugs if isinstance(slug, str) and slug in valid]
     return chosen[:2]
 
 
@@ -118,16 +127,30 @@ def find_emergent(
         max_tokens=4096,
     )
 
+    # Claude is asked for a bare array but sometimes wraps it in an object;
+    # take the first list value rather than crash a whole recluster on the shape.
+    if isinstance(proposals, dict):
+        proposals = next(
+            (v for v in proposals.values() if isinstance(v, list)), []
+        )
+    if not isinstance(proposals, list):
+        proposals = []
+
     keys = {p.bibtex_key for p in unassigned}
     emergent: list[dict] = []
     for topic in proposals:
+        if not isinstance(topic, dict):
+            continue
+        slug, name = topic.get("slug"), topic.get("name")
+        if not slug or not name:
+            continue
         members = [m for m in topic.get("members", []) if m in keys]
         if len(members) < min_papers:
             continue
         emergent.append(
             {
-                "slug": topic["slug"],
-                "name": topic["name"],
+                "slug": slug,
+                "name": name,
                 "description": topic.get("description", ""),
                 "is_emergent": True,
                 "members": members,
