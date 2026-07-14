@@ -1,0 +1,36 @@
+{
+  "abstract": "This position paper, produced by 26 authors from academia, industry, and civil society following a 2024 convening of over 70 experts, examines how large language models (LLMs) could transform digital public squares. It argues that after the internet's first reshaping of public discourse, LLMs offer a second potential paradigm shift toward more decentralized, participatory, and deliberative online spaces—while also risking the exacerbation of societal divisions. The paper organizes its analysis around four families of AI-enabled technologies and proposes a research and investment agenda to strengthen digital public squares and guard against misuse.",
+  "key_claims": [
+    "LLMs afford a genuine opportunity to shift the paradigm for online conversations at scale toward more inclusive, deliberative, and participatory forms, while also posing distinct risks to digital public squares.",
+    "Today's digital public squares fall short of democratic ideals due to failures in access and inclusion, privacy and surveillance harms, and distorted information ecosystems (engagement optimization, echo chambers, manipulative propaganda, extremist movements).",
+    "Four AI-enabled technology families—collective dialogue systems, bridging systems, community-driven moderation, and proof-of-humanity systems—have demonstrated potential to significantly disrupt and potentially improve conversations at scale.",
+    "LLMs should augment rather than wholesale substitute human deliberation; aggregation of opinions is only one part of genuine deliberation, which requires iterative exchange of reasons and justifications.",
+    "Synthetic (AI) participation in deliberation is promising for representativeness but democratically problematic, risking loss of legitimacy, diluted public agency, and convincing misrepresentation of reality.",
+    "Bridging-based ranking can elevate content that builds trust and common ground across divides and may align with business goals, but risks elevating insubstantial content, being gamed, and being perceived as illegitimate.",
+    "Community-driven moderation can be made more robust and legitimate by empowering community moderators with AI tools, rather than centralizing moderation at the platform level."
+  ],
+  "methods": [
+    "Synthesis of insights from an April 3, 2024 convening in New York City of the co-authors plus roughly 50 additional experts and technologists.",
+    "Integration of applied research and case studies on improving digital public squares globally.",
+    "Structured analysis organized into four technology domains, each examining current applications, challenges, AI-enabled opportunities, risks/mitigations, and future research directions.",
+    "Review of existing platforms and tools including Polis, Remesh, Make.org, All Our Ideas, Community Notes, Perspective API, and Policy Synth.",
+    "Drawing on democratic theory (Habermas, Rawls, Du Bois, Landemore's Open Democracy) and prior technical work on preference aggregation, generative social choice, and matrix factorization."
+  ],
+  "findings": [
+    "Collective dialogue systems (CDS) sit between surveys and focus groups—offering scalable, inclusive, quantifiable yet nuanced feedback—but currently require heavy human labor for setup, facilitation, moderation, and sensemaking, plus institutional capacity and political will.",
+    "LLMs can address CDS bottlenecks through facilitator training (RAG systems), participant education, intelligent prompting/mediation, near-real-time translation, elicitation inference (vote prediction), and automated summarization and visualization.",
+    "Google DeepMind's fine-tuned models plus preference aggregation can find common ground on controversial topics; generative social choice (Fish et al.) generates statement slates representing heterogeneous populations.",
+    "Meta's 'diverse engagement' comment ranking reduced polarizing and bullying content and yielded a 0.69% increase in comment views; X's Community Notes uses matrix factorization to select notes rated helpful across the primary axis of division regardless of politics.",
+    "Bridging can be based on user-diversity signals (embeddings like World2Vec, behavior, social networks, self-identification) or on content analysis (Perspective API scoring affinity, compassion, curiosity, personal story, reasoned argument), with a combination likely optimal.",
+    "Community moderators face declining platform support, volunteer burnout, quality-control problems, and inadequate tools; LLMs performed worse than a coin toss on subreddits requiring context (ChatGPT 3.5 study).",
+    "AI can support both proactive moderation (listening/summarizing, simulation, guideline co-creation, author nudges, conversational bots) and reactive moderation (customizable filters, triaging, appeals like AppealMod, post-moderation governance)."
+  ],
+  "contributions": [
+    "Provides a structured framework mapping four AI-enabled technology families to specific opportunities, risks, and mitigations for digital public squares.",
+    "Bridges democratic theory and applied sociotechnical research, connecting ideals of open democracy and public reason to concrete LLM applications.",
+    "Lays out a concrete research and investment agenda for each domain, including proposals for open CDS benchmark datasets, interoperable elicitation-inference toolboxes, meta-platforms for composable deliberation, and methods for measuring bridging outcomes.",
+    "Consolidates cross-sector expert input (academia, platforms like Reddit/Google, civil society) into a shared reference articulating both promise and peril of AI in democratic discourse."
+  ],
+  "framing": "The paper situates itself within democratic theory—especially Habermas's public sphere, Rawls's public reason, Du Bois, and Landemore's 'Open Democracy'—and the sociotechnical study of digital platforms (New_Public Civic Signals, Tang and Weyl's Plurality). It frames LLMs as a potential second technological turning point for the informal 'public square' track of democratic life, positioning itself between techno-optimism about participatory governance and critical concern about polarization, surveillance, and distorted information ecosystems.",
+  "pdf_source": "drive"
+}

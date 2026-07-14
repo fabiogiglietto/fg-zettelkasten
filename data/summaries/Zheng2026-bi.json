@@ -1,0 +1,35 @@
+{
+  "abstract": "This paper introduces TubeStats and TokStats, two dashboard-based research tools that provide platform-wide statistics for YouTube and TikTok derived from random sampling techniques. Because neither platform offers mechanisms to produce representative samples, researchers typically rely on opportunistic samples of popular content; these tools instead supply defensible denominators and engagement distributions to contextualize non-representative research. The authors describe the architecture and sampling pipelines of each tool, document real-world use cases by their lab, other scholars, and journalists, and reflect on the technical, financial, and ethical challenges of maintaining open research infrastructure.",
+  "key_claims": [
+    "Neither YouTube nor TikTok provides adequate sanctioned mechanisms (including their research APIs) to produce verifiable, representative samples of platform content.",
+    "Random sampling of these platforms is theoretically possible by exploiting their unique-URL/ID indexing schemes, and can be made practical by narrowing the enormous ID search space.",
+    "Opportunistic and keyword/search-based samples systematically oversample popular, algorithmically amplified content and cannot be generalized to whole platforms.",
+    "Representative random samples solve 'denominator problems' and 'distribution problems' by providing platform-wide totals and engagement distributions to contextualize narrower studies.",
+    "Unpermissioned, platform-centered research is an essential and ethically defensible tool for public-interest transparency research in the post-API age.",
+    "Regularly updated, publicly available tools with shared code are necessary to track ongoing change in digital communications infrastructure and to support reproducibility."
+  ],
+  "methods": [
+    "For YouTube: 'dialing for videos' (querying purely random 11-character IDs) to build a true random sample, validated against the more efficient 'random prefix sampling' method (Zhou et al., 2011) that exploits hyphen-based prefix/postfix indexing in YouTube's case-insensitive search engine.",
+    "YouTube tooling: searching via the Innertube Python package, downloading audio and metadata with yt-dlp, and identifying spoken language with OpenAI's Whisper multilingual model (audio discarded immediately, never archived).",
+    "For TikTok: exploiting the 64-bit binary structure of 19-digit video IDs (first 32 bits encode a Unix creation timestamp per Benson, 2020), selecting a random second and generating tens of thousands of candidate combinations for the remaining bits, then querying each via Selenium and retrieving metadata for extant videos.",
+    "Dashboard construction: SvelteKit front-end, static summary data in an S3 bucket, charts built with Chart.js, and summary statistics generated with pandas (logarithmic binning and categorical counts); percentile calculators use linear interpolation across 100 segments.",
+    "Data sharing plan involving two dataset versions—a gated full sample released to vetted researchers under privacy agreements, and a public version with all potentially identifying fields removed, distributed as processed CSVs."
+  ],
+  "findings": [
+    "Random prefix sampling produces results sufficiently similar to full random 'dialing for videos', making it the recommended efficient method for YouTube (sampling takes hours), whereas TikTok sampling takes on the order of months.",
+    "Example calibration: a YouTube video with 150 views falls at the 68th percentile of all videos, and videos with 1,000-10,000 views are in the top 10%, indicating search-based samples heavily overrepresent popular content.",
+    "Comparative language sampling showed Hindi YouTube differs markedly from English, Spanish, and Russian YouTube—videos are newer, shorter, more often education/entertainment, with distinct like-to-view patterns.",
+    "TikTok is not predominantly a US phenomenon; most videos are uploaded outside the US, with popularity concentrated in Asian countries rather than the US or Europe.",
+    "External researchers used the datasets as baselines: Edelson et al. found X/Twitter attention more imbalanced than YouTube, and the data has contextualized Facebook engagement skew, abortion-related content, and educational/how-to content prevalence.",
+    "Platform changes—such as YouTube shifting streaming from DASH to the more opaque SABR protocol and increased IP throttling (partly attributed to AI-training scrapers)—create ongoing maintenance and access obstacles."
+  ],
+  "contributions": [
+    "Two publicly available, regularly updated dashboard tools (TubeStats, launched; TokStats, planned September 2026) offering platform-wide statistics on video counts, view/like/comment/subscriber distributions, languages, categories, and growth over time.",
+    "Open-source release of the sampling and dashboard code via GitHub repositories, enabling reuse and reproducibility.",
+    "A validated, reproducible, API-independent methodology for generating representative random samples of YouTube and TikTok.",
+    "A practical solution to 'denominator' and 'distribution' problems, providing benchmarks that let other researchers contextualize non-representative samples and enable cross-platform comparison.",
+    "A model for privacy-preserving data sharing (aggregate-only dashboards plus tiered gated/public datasets) and reflection on sustaining open research infrastructure under technical, financial, and regulatory pressures."
+  ],
+  "framing": "The paper positions itself within platform studies, computational communication research, and the open research infrastructure movement, responding to the 'APIcalypse' and 'post-API age' in which platform data access has been sharply curtailed. It engages debates about representativeness, denominator/distribution problems, unpermissioned versus user-centered research ethics, and emerging data-access regimes such as the EU Digital Services Act.",
+  "pdf_source": "drive"
+}
