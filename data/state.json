@@ -3048,10 +3048,40 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-12T09:15:27.024011+00:00"
+    },
+    "bibtex:Zheng2026-bi": {
+      "note_path": "Papers/Zheng2026-bi.md",
+      "topics": [
+        "platform-governance-data-access",
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "060eb4f10aebdde503a419254e306f8abc98eb75798b783d8df0bfaff87370b0",
+      "doi": "10.17645/mac.12085",
+      "title": "TubeStats and TokStats: Research tools for random samples of YouTube and TikTok",
+      "pdf_source": "drive",
+      "content_hash": "fe338624c5ee923a60c4e07eac6f9c7b423152c3e7804e157f8f36d7e519aac4",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-14T06:58:00.957796+00:00"
+    },
+    "bibtex:Goldberg2026-eb": {
+      "note_path": "Papers/Goldberg2026-eb.md",
+      "topics": [
+        "platform-governance-data-access",
+        "ai-red-teaming-and-participatory-evaluation"
+      ],
+      "assign_fp": "fde23188429dd31ca1290259b074c3ea600a1a5bee141da24629ae71544d4c78",
+      "doi": "10.1177/26339137261459441",
+      "title": "AI and the future of digital public squares",
+      "pdf_source": "drive",
+      "content_hash": "c3b513402d4cf66e35c54b10c1bb5bf26edf88ddc5454f68091ba6e8bd735d60",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-14T06:58:02.034593+00:00"
     }
   },
   "last_full_cluster": "2026-07-08T13:52:49.159338+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 4,
   "register_signals_hash": "e28de163f248b7da02c7f4159b2c0dca222344415261b75268033a572e21471c",
   "emergent_fp": "9209f1cd4916372ffdd413c0f87730e7741f01033f3a74f9fe64f6d752a463c2",
   "structure_fps": {

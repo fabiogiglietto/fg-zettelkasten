@@ -36,6 +36,7 @@ Analysis of social media platform policies, moderation/content-reduction decisio
 - [[Giglietto2025-ed60bc90]]
 - [[Giglietto2026-632ef967]]
 - [[Giglietto2026-855a54cb]]
+- [[Goldberg2026-eb]]
 - [[Heiss2026-qv]]
 - [[Hurcombe2025-cs]]
 - [[Inacio-da-Silva2026-zf]]
@@ -65,6 +66,7 @@ Analysis of social media platform policies, moderation/content-reduction decisio
 - [[Votta2025-xz]]
 - [[Wang2026-ub]]
 - [[Yang2026-tq]]
+- [[Zheng2026-bi]]
 - [[de-Vreese2026-zx]]
 
 ## All papers (Dataview)

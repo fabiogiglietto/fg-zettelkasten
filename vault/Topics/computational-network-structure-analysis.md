@@ -28,6 +28,7 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 - [[Rothut2026-or]]
 - [[Sarmiento2025-as]]
 - [[Smith2025-kc]]
+- [[Zheng2026-bi]]
 - [[Zhu2026-tn]]
 
 ## All papers (Dataview)
