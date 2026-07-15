@@ -17,6 +17,7 @@ Methodological papers deploying LLMs or fine-tuned models to augment scholarly t
 - [[Jayaram2026-wd]]
 - [[Meher2025-qb]]
 - [[Ober2026-vd]]
+- [[Ramos2026-qo]]
 - [[Tan2024-vl]]
 - [[UnknownUnknown-db]]
 

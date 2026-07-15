@@ -3093,10 +3093,25 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-07-14T09:10:06.883828+00:00"
+    },
+    "bibtex:Ramos2026-qo": {
+      "note_path": "Papers/Ramos2026-qo.md",
+      "topics": [
+        "information-disorder",
+        "llm-augmented-research-methods"
+      ],
+      "assign_fp": "eb967e0668c98ab28cbfcfa68b96b4b160dc77a4217877c5b7ef1bf0653d3503",
+      "doi": "10.37016/mr-2020-198",
+      "title": "Narrative monitoring and argument-checking: Enhancing effectiveness in countering disinformation beyond fact-checking",
+      "pdf_source": "drive",
+      "content_hash": "a178d98e6924c10060143f107e32e42f226a8c657f4d6d2cf7c058482126be2c",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-15T06:52:15.728945+00:00"
     }
   },
   "last_full_cluster": "2026-07-08T13:52:49.159338+00:00",
-  "papers_since_cluster": 5,
+  "papers_since_cluster": 6,
   "register_signals_hash": "e28de163f248b7da02c7f4159b2c0dca222344415261b75268033a572e21471c",
   "emergent_fp": "9209f1cd4916372ffdd413c0f87730e7741f01033f3a74f9fe64f6d752a463c2",
   "structure_fps": {
