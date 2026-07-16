@@ -3090,8 +3090,7 @@
       "pdf_source": "abstract_only",
       "content_hash": "a332ea7f55731dd42a2ada131ff0373040f1f3cc7117287cb1f3314b6daccdaa",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-07-14T09:10:06.883828+00:00"
     },
     "bibtex:Ramos2026-qo": {
