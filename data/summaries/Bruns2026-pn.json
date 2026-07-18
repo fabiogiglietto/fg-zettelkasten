@@ -1,0 +1,34 @@
+{
+  "abstract": "This report examines the emergence of 'clean room' data access environments as the dominant model through which major platforms now provide research data, following the closure of open APIs after the Cambridge Analytica scandal. Focusing primarily on the Meta Content Library (MCL) and its access frameworks, the authors argue that while clean rooms address legitimate privacy, ethical, and legal concerns, their design severely constrains the range of researchers and research methods that can make use of platform data. They conclude that regulators must scrutinise not only whether platforms grant access under laws such as the EU Digital Services Act, but whether that access is genuinely useful to researchers.",
+  "key_claims": [
+    "Clean room environments, while responding to valid privacy and legal concerns, are also used by platforms to justify curtailing independent, public-interest research access.",
+    "The clean room model embeds a philosophy that distrusts researchers' handling of data and structurally privileges certain users and research approaches over others.",
+    "Clean rooms privilege quantitative, code-based analysis and obstruct qualitative, mixed-methods, and cross-platform comparative research.",
+    "Clean rooms widen the resource gap between well-funded Global North research teams and isolated researchers or institutions in the Majority World, reinforcing a WEIRD/English-language bias in scholarship.",
+    "Merely mandating data access (e.g., via the DSA) is insufficient; the specific manner of access determines whether it is actually useful for research."
+  ],
+  "methods": [
+    "Critical, descriptive analysis of clean room data access infrastructures based on the authors' hands-on experience with the systems.",
+    "Detailed case description of the Meta Content Library and its two access frameworks: the 'Virtual Data Enclave' (VDE) hosted via SOMAR/ICPSR and the newer 'Secure Research Environment' (SRE).",
+    "Comparative reference to ProQuest's TDM Studio as a non-social-media example of the clean room philosophy.",
+    "Situating the analysis within a body of prior scholarship on API closures ('APIcalypse'), platform data governance, and the DSA."
+  ],
+  "findings": [
+    "MCL access replaced CrowdTangle (decommissioned August 2024), reducing data access precisely during the final phase of the 2024 US presidential election.",
+    "The original VDE access chain (remote Windows machine to Linux machine to Jupyter Notebook querying AWS-hosted data) is cumbersome and especially slow from outside the US.",
+    "The improved SRE uses an Amazon Workplaces Secure Browser plugin but mandatorily deletes all accessed data from the working directory on the first of each month, obstructing longitudinal studies.",
+    "Restriction to Jupyter Notebooks with limited packages excludes researchers lacking coding skills and those from media, communication, and political communication disciplines.",
+    "Clean rooms lack qualitative coding tools (e.g., NVivo, MaxQDA), spreadsheets, and open-Web access, preventing use of commercial LLMs and hindering mixed-methods work.",
+    "Clean rooms exist in isolation, preventing combination of datasets across platforms and limiting cross-platform analysis to high-level aggregate observations.",
+    "The EU has begun proceedings against Meta and TikTok for failing their DSA transparency and data-access obligations."
+  ],
+  "contributions": [
+    "Provides a concrete, practitioner-informed account of how the Meta Content Library's VDE and SRE environments actually operate and evolve.",
+    "Articulates a systematic critique of the clean room model's methodological and equity limitations for social media research.",
+    "Highlights the underexplored downstream effects of DSA Article 40 implementation on real-world research usability.",
+    "Extends the clean room critique beyond social media by connecting it to news-content databases like ProQuest TDM Studio.",
+    "Offers guidance to legislators and regulators to attend not just to access provision but to its practical adequacy."
+  ],
+  "framing": "The paper situates itself within ongoing debates in internet and platform studies about researcher data access, following the trajectory from the permissive API 'Wild West' through the 'APIcalypse' to today's regulated but restrictive 'walled garden' environments. It frames clean rooms as a governance and power question about who controls authoritative platform data, connecting methodological critique to concerns about democratic accountability and global equity in research.",
+  "pdf_source": "drive"
+}
