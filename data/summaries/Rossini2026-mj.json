@@ -1,0 +1,35 @@
+{
+  "abstract": "This study examines how informational pathways and beliefs in electoral misinformation shaped citizens' trust in the results of the 2022 Brazilian Presidential Election, a contest marked by incumbent Jair Bolsonaro's systematic disinformation attacks on the voting system. Using a three-wave panel survey of Brazilian internet users conducted around the two rounds of voting and results certification, the authors find that mainstream news use bolsters electoral trust—even among Bolsonaro voters—while belief in electoral misinformation and voting for Bolsonaro predict lower trust. The findings position mainstream journalism as a source of democratic resilience and elite-driven disinformation channeled through digital and messaging platforms as a pathway for eroding electoral legitimacy.",
+  "key_claims": [
+    "Belief in electoral misinformation targeting voting integrity is associated with lower trust in election results.",
+    "Mainstream news use strengthens electoral trust over time, contributing to democratic resilience even among supporters of the losing illiberal incumbent.",
+    "Illiberal incumbents like Bolsonaro can undermine electoral trust by combining motivated reasoning, elite cues, and the winner-loser gap, amplified by fragmented digital media environments.",
+    "Voting for Bolsonaro is a powerful predictor of lower trust in the election results.",
+    "The effects of messaging apps on trust are conditional on how they are used and the composition of discussion networks, differing notably between Bolsonaro voters and the general population.",
+    "Understanding democratic backsliding requires treating disinformation as a strategic elite practice embedded in evolving media systems rather than as isolated false content."
+  ],
+  "methods": [
+    "Original three-wave panel survey of Brazilian internet users (Wave 1 = 1,600; Wave 2 = 1,328; Wave 3 = 1,034), fielded around the two rounds of voting and one month later (October, November, December 2022).",
+    "Participants recruited via opt-in panels from Ipec Inteligência with quotas for age, gender, social class, and region to represent internet users.",
+    "Dependent variable: single-item measure of trust in 2022 presidential election results on a 4-point scale, adapted from the World Values Survey.",
+    "Independent variables: mainstream news use scale, social media news use, messaging (WhatsApp) news use, WhatsApp/Telegram group talk with strong, weak, and no-tie networks, and an electoral disinformation 'misinformed score' (0-8) based on twelve statements from fact-checking sources, measured only in Wave 2.",
+    "Controls for political interest, ideology (10-point left-right), retrospective vote for Bolsonaro, age, gender, and education.",
+    "Analysis via random effects within-between models to separate within-person change over time from between-person differences, with a subset analysis of Bolsonaro voters and a Bonferroni correction for multiple hypothesis testing."
+  ],
+  "findings": [
+    "Belief in electoral misinformation was negatively and significantly correlated with trust in elections (between-person effect, beta = -.157), supporting H1.",
+    "Increases in mainstream news use predicted increases in trust in the election results over time (within-person, beta = .069), supporting H2.",
+    "Social media news use showed null effects on electoral trust, rejecting H3; messaging news use showed no over-time effect (rejecting H4) but a negative between-person association (beta = -.129).",
+    "Voting for Bolsonaro was strongly associated with lower trust (beta = -.946), and right-wing ideology remained negatively associated with trust even controlling for vote choice.",
+    "WhatsApp group discussion effects were contingent on network composition: weak-tie discussion weakly positive, no-tie (stranger) discussion negative, strong-tie non-significant in the full sample.",
+    "Among Bolsonaro voters, mainstream news still raised trust, but messaging news use lowered trust over time (beta = -.069), no-tie group talk lowered trust, and strong-tie group talk raised trust (beta = .165)."
+  ],
+  "contributions": [
+    "Provides the first over-time (panel) evidence on how informational pathways and misinformation beliefs shape electoral trust in a major Global South, multi-party democracy, extending literature dominated by US cases.",
+    "Demonstrates the stabilizing role of professional/mainstream journalism as a counterweight to elite disinformation even among electoral losers.",
+    "Disaggregates messaging-app use into news consumption versus discussion across strong, weak, and no-tie networks, showing heterogeneous effects on trust.",
+    "Reframes disinformation as a strategic elite practice embedded in evolving media systems, informing theories of democratic backsliding and resilience."
+  ],
+  "framing": "The paper situates itself within research on democratic backsliding, electoral integrity, and political mis/disinformation, drawing on theories of motivated reasoning, elite cues, and the winner-loser gap. It positions itself against a US-centric literature by examining a Global South, weak-partisanship, multi-party context, and engages debates on how high-choice, platform-driven media environments condition citizens' trust in elections.",
+  "pdf_source": "drive"
+}
