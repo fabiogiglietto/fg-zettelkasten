@@ -35,6 +35,7 @@ Cross-national comparative studies of coordinated political advertising, informa
 - [[Rodarte2026-dk]]
 - [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
+- [[Rossini2026-mj]]
 - [[Schulte2026-df]]
 - [[Ventura2025-sw]]
 - [[Ventura2026-yc]]

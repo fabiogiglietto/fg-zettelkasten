@@ -3121,10 +3121,25 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-18T06:13:06.418715+00:00"
+    },
+    "bibtex:Rossini2026-mj": {
+      "note_path": "Papers/Rossini2026-mj.md",
+      "topics": [
+        "information-disorder",
+        "digital-media-elections-global"
+      ],
+      "assign_fp": "740c6f18cf1dc8786bff5e63433db6ca2e1b76bbc4bfcbad43302db2224afd40",
+      "doi": "10.1080/17457289.2026.2701896",
+      "title": "Disrupting democracy: how informational pathways and misinformation shape trust in election results",
+      "pdf_source": "drive",
+      "content_hash": "87d162e03049c55cd20717b6d00532ecfce77a3d1d7d9240dbdfcb89b09c3af6",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-18T11:02:24.901467+00:00"
     }
   },
   "last_full_cluster": "2026-07-08T13:52:49.159338+00:00",
-  "papers_since_cluster": 7,
+  "papers_since_cluster": 8,
   "register_signals_hash": "e28de163f248b7da02c7f4159b2c0dca222344415261b75268033a572e21471c",
   "emergent_fp": "9209f1cd4916372ffdd413c0f87730e7741f01033f3a74f9fe64f6d752a463c2",
   "structure_fps": {

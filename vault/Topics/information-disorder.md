@@ -68,6 +68,7 @@ Study of disinformation, misinformation and 'fake news' circulation within hybri
 - [[Rohrbach2026-rc]]
 - [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
+- [[Rossini2026-mj]]
 - [[Sadler2025-vu]]
 - [[Scalco2026-bd]]
 - [[Spampatti2026-kx]]
