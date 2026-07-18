@@ -715,9 +715,9 @@
         "computational-network-structure-analysis"
       ],
       "pdf_source": "drive",
-      "content_hash": "4f8003f130ea1c1e23994d27955a03cc1049afa100a089c5f7b47d62e5988c2e",
+      "content_hash": "a70ae877401964bb57802ca36190ee1e41c0807234785a6ffb5ce024f1b4f182",
       "podcast_linked": true,
-      "last_processed": "2026-07-08T14:59:27.173511+00:00",
+      "last_processed": "2026-07-18T06:13:06.418743+00:00",
       "assign_fp": "c0063e7a06e32cf7251fbfc6d45fb35be878885b35d3edcc8f0e88b6561b1be7"
     },
     "bibtex:Yoo2026-ev": {
@@ -3107,10 +3107,24 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-15T06:52:15.728945+00:00"
+    },
+    "bibtex:Bruns2026-pn": {
+      "note_path": "Papers/Bruns2026-pn.md",
+      "topics": [
+        "platform-governance-data-access"
+      ],
+      "assign_fp": "12d7173f78cbda82d21e3b709e1d67fcd76fe0abb85d66b379888217565fc965",
+      "doi": "10.25358/openscience-15825",
+      "title": "The challenges of working with platform data from clean room environments",
+      "pdf_source": "drive",
+      "content_hash": "8e7e17c569e7ba3802f0ebddb5f42c43860449d765d81687859c9d019501c64e",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-18T06:13:06.418715+00:00"
     }
   },
   "last_full_cluster": "2026-07-08T13:52:49.159338+00:00",
-  "papers_since_cluster": 6,
+  "papers_since_cluster": 7,
   "register_signals_hash": "e28de163f248b7da02c7f4159b2c0dca222344415261b75268033a572e21471c",
   "emergent_fp": "9209f1cd4916372ffdd413c0f87730e7741f01033f3a74f9fe64f6d752a463c2",
   "structure_fps": {

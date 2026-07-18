@@ -19,6 +19,7 @@ Analysis of social media platform policies, moderation/content-reduction decisio
 - [[Bechmann2026-dr]]
 - [[Bouchaud2026-lr]]
 - [[Bouchaud2026-np]]
+- [[Bruns2026-pn]]
 - [[Bruns2026-yv]]
 - [[Cazzamatta2026-lo]]
 - [[Crosset2026-mq]]
