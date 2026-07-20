@@ -1,0 +1,37 @@
+{
+  "abstract": "This paper introduces a statistical measurement model and software for estimating the political ideology of news media organizations, politicians, and ordinary social media users on a common scale, using the shared behavior of posting web links (URLs) to news content. Applying the model to Twitter data from U.S. members of Congress and politically engaged users, the authors map the ideological structure of online news sharing. They find that ideologically extreme legislators share the most and the most polarized news, and that reduced electoral competition is associated with more polarized sharing behavior.",
+  "key_claims": [
+    "Web links (URLs) can serve as a near-universal, platform-agnostic currency for jointly measuring the ideology of news media, politicians, and the mass public from sharing behavior alone, without requiring labeled data.",
+    "Politically interested ordinary citizens—not politicians—share the majority of ideologically polarized political news and commentary.",
+    "News content shared by politicians is an exceptionally strong signal of ideology and partisanship, nearly perfectly separating politicians by party.",
+    "Ideologically extreme legislators within both parties share far more political news overall and share more extreme content, making the elite information environment unrepresentative and skewed toward polarization.",
+    "Sharing of polarized information is linked to electoral incentives: politicians in less competitive (more partisan-aligned) districts share more polarized and more voluminous news.",
+    "A behavioral news-sharing measure captures aspects of ideology (e.g., placing 'The Squad' far to the left) that roll-call-based measures like NOMINATE do not."
+  ],
+  "methods": [
+    "A Bayesian measurement model treating link-sharing counts as arising from a negative binomial distribution, where the probability a user shares a media outlet decreases with the squared distance between latent user ideology (theta) and latent media ideology (zeta), including user-specific and domain-specific intercepts and a media-organization dispersion parameter (omega).",
+    "Uses a homophily assumption; identification handled via Jackman's (2001) approach to reflection invariance, hierarchical priors by group (Democratic politicians, Republican politicians, ordinary users), and centering media priors at zero to resolve additive aliasing.",
+    "Data: manually compiled Twitter accounts of the 116th Congress, governors, executive/cabinet, and prominent party figures (1,152 accounts, 699 actors); 220 national news domains; a random sample of 10,000 politically engaged ordinary users (following Barberá's definition); tweets back to 2015, with quote-tweet links excluded.",
+    "Constructs an N x M user-domain count matrix; implemented as a parallelized open-source R software library ('mediascores').",
+    "Validation via convergent validity: correlating politicians' 'media scores' with NOMINATE roll-call scores, and correlating users' media scores with YouGov survey-linked measures (issue-position factor scores, ideological self-placement, strength of partisanship) from 481 respondents in 2016.",
+    "OLS regressions of politicians' ideological extremity of news sharing on district/state partisan alignment (measured by 2016 Trump–Clinton vote-share gap), controlling for party, chamber, and NOMINATE scores."
+  ],
+  "findings": [
+    "News-sharing behavior cleanly separates members of Congress by party; with a single common prior (removing indirect party info), only 3% overlap remains between the two parties' distributions.",
+    "Media scores correlate strongly with NOMINATE overall (rho = 0.96) and reasonably within party (Senate: Dem 0.76, Rep 0.61; House: Dem 0.51, Rep 0.58).",
+    "User media scores correlate with survey-based ideology measures at rho = 0.73 on average, comparable to inter-correlations among the survey measures themselves (0.64).",
+    "Media-outlet ideology estimates have high face validity (e.g., Breitbart right of FOX News, right of WSJ; HuffPost and The Nation left of NYT, WaPo, CNN; Reuters and AP near center) and show a bimodal distribution with more liberal outlets.",
+    "Politically engaged users on the left are more liberal than the most liberal member of Congress, while conservative users cluster closer to Republican legislators; following-based measures (Barberá 2015) yield a different mapping than sharing-based measures.",
+    "Greater partisan alignment (less electoral competition) predicts more ideologically extreme news sharing for both parties, robust to controlling for NOMINATE (district alignment coefficient significant at 99% in all models); more extreme politicians also share substantially more news.",
+    "Politicians share news more frequently than users (~0.082 vs ~0.024 news links per tweet)."
+  ],
+  "contributions": [
+    "A unified, platform-agnostic, label-free Bayesian model that places news media, politicians, and ordinary users on a common ideological scale using link-sharing behavior.",
+    "An open-source R software package ('mediascores') and publicly available replication data enabling applied research.",
+    "A behavioral measure of politician ideology derived from politicians' own conduct rather than from users' perceptions (following/endorsement), enabling study of little-known candidates lacking voting records.",
+    "Empirical documentation of how elite online information environments are skewed by ideologically extreme, high-volume sharers, and evidence linking sharing polarization to electoral competitiveness—implying gerrymandering/electoral reform may affect the online information ecosystem.",
+    "A tool amenable to cross-platform application, temporal/dynamic extension, and article-level ideology estimation."
+  ],
+  "framing": "The paper situates itself within the political-science literature on measuring the ideology of political actors and news media, building on homophily-based social media ideal-point methods (Barberá 2015; Bond and Messing 2015) and news-slant/sharing-based media measurement (Gentzkow and Shapiro; Bakshy et al.). It engages debates on political polarization, elite vs. mass polarization, and how electoral incentives shape legislators' communication versus voting behavior (Grimmer; Cormack).",
+  "pdf_source": "drive"
+}
