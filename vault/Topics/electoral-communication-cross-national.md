@@ -17,6 +17,7 @@ Empirical studies of political communication and coordinated online activity aro
 - [[Balluff2026-bv]]
 - [[Bouchafra2026-ts]]
 - [[Brady2026-ln]]
+- [[Eady2025-vm]]
 - [[Gaisbauer2025-by]]
 - [[Gattermann2025-yx]]
 - [[Gaw2025-ru]]

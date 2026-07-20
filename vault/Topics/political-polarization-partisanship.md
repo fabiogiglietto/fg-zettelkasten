@@ -19,6 +19,7 @@ Investigation of partisan community dynamics, affective polarization, hyperparti
 - [[Dehghan2026-sy]]
 - [[Di-Domenico2026-zq]]
 - [[DiGiuseppe2026-pu]]
+- [[Eady2025-vm]]
 - [[Elfes2026-jb]]
 - [[Esau2025-tf]]
 - [[Gaisbauer2025-by]]
