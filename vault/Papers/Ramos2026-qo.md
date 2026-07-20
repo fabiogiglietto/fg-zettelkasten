@@ -5,7 +5,7 @@ authors: ["Celia Ramos", "Clara Jiménez-Cruz", "Pablo Hernández-Escayola"]
 year: 2026
 doi: 10.37016/mr-2020-198
 bibtex_key: Ramos2026-qo
-topics: [information-disorder, llm-augmented-research-methods]
+topics: [information-disorder-disinformation, llm-computational-content-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.37016/mr-2020-198

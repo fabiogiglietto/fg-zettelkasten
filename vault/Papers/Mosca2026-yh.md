@@ -5,7 +5,7 @@ authors: ["Lorenzo Mosca", "Fred Paxton"]
 year: 2026
 doi: 10.1177/02673231261458935
 bibtex_key: Mosca2026-yh
-topics: [information-disorder, italian-election-media-mapping]
+topics: [information-disorder-disinformation, electoral-communication-cross-national]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/02673231261458935

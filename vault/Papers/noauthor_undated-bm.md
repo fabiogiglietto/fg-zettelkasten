@@ -5,7 +5,7 @@ authors: []
 year: 
 doi: 
 bibtex_key: noauthor_undated-bm
-topics: [coordinated-inauthentic-behavior, information-disorder]
+topics: [coordinated-inauthentic-behavior, electoral-communication-cross-national]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=cib.pdf

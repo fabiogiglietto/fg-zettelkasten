@@ -5,7 +5,7 @@ authors: ["Jan G. Voelkel", "Ashwini Ashokkumar", "Adina T. Abeles", "Jarret Cra
 year: 2026
 doi: 10.31235/osf.io/xwceg_v1
 bibtex_key: Voelkel2026-lc
-topics: [climate-and-misinformation-message-interventions]
+topics: [climate-and-misinformation-message-interventions, survey-methodology-validity]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/xwceg_v1

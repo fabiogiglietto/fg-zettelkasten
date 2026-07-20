@@ -6,7 +6,7 @@ year: 2015
 doi: 10.1080/1369118x.2015.1006658
 bibtex_key: Iannelli2015-e0818c3e
 kind: own
-topics: [italian-election-media-mapping, political-polarization-partisan-news]
+topics: [electoral-communication-cross-national, platform-governance-content-curation]
 citation_count: 42
 open_access: true
 source_url: https://doi.org/10.1080/1369118x.2015.1006658

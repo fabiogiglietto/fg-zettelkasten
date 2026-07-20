@@ -5,7 +5,7 @@ authors: ["Gilad Karo", "Tom Divon", "Blake Hallinan"]
 year: 2026
 doi: 10.1177/20563051251412167
 bibtex_key: Karo2026-dn
-topics: [online-radicalization-and-extremism-on-platforms, platform-governance-data-access]
+topics: [online-radicalization-and-extremism-on-platforms, platform-governance-content-curation]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1177/20563051251412167

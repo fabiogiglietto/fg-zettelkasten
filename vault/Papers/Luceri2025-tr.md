@@ -5,7 +5,7 @@ authors: ["Luca Luceri", "Tanishq Vijay Salkar", "Ashwin Balasubramanian", "Gabr
 year: 2025
 doi: 
 bibtex_key: Luceri2025-tr
-topics: [coordinated-inauthentic-behavior, digital-media-elections-global]
+topics: [coordinated-inauthentic-behavior, platform-data-access-methods]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2505.10867v2

@@ -10,9 +10,9 @@ Papers examining the methodological foundations of online survey research, inclu
 
 ## Papers
 
-- [[Alizadeh2026-es]]
+- [[Brown2025-jk]]
 - [[DiGiuseppe2025-es]]
-- [[Fattorini2026-bo]]
+- [[Dubey2026-bl]]
 - [[Hinck2026-yj]]
 - [[Iannelli2018-ebd918b7]]
 - [[Luhring2025-od]]
@@ -20,6 +20,8 @@ Papers examining the methodological foundations of online survey research, inclu
 - [[Schemer2026-mh]]
 - [[Stagnaro2025-pz]]
 - [[Ulloa2024-jm]]
+- [[UnknownUnknown-db]]
+- [[Voelkel2026-lc]]
 
 ## All papers (Dataview)
 

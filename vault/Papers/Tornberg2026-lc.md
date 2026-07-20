@@ -5,7 +5,7 @@ authors: ["Petter Törnberg", "Richard Rogers"]
 year: 2026
 doi: 10.31235/osf.io/6nue7_v1
 bibtex_key: Tornberg2026-lc
-topics: [platform-critique-anniversary-essays, generative-ai-disinformation]
+topics: [platform-critique-anniversary-essays, generative-ai-media-manipulation]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/6nue7_v1

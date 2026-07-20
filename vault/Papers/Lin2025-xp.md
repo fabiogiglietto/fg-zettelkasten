@@ -5,7 +5,7 @@ authors: ["Hause Lin", "Gabriela Czarnek", "Benjamin Lewis", "Joshua P. White", 
 year: 2025
 doi: 10.1038/s41586-025-09771-9
 bibtex_key: Lin2025-xp
-topics: [generative-ai-disinformation, digital-media-elections-global]
+topics: [generative-ai-media-manipulation, electoral-communication-cross-national]
 citation_count: 22
 open_access: false
 source_url: https://doi.org/10.1038/s41586-025-09771-9

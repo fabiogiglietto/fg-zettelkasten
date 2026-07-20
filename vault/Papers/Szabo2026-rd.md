@@ -5,7 +5,7 @@ authors: ["Dániel Szabó", "Chi-Lan Yang", "Aku Visuri", "Jonas Oppenlaender", 
 year: 2026
 doi: 10.1145/3772318.379095
 bibtex_key: Szabo2026-rd
-topics: [climate-and-misinformation-message-interventions, llms-computational-content-analysis]
+topics: [climate-and-misinformation-message-interventions, llm-augmented-research-methods]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.1145/3772318.379095

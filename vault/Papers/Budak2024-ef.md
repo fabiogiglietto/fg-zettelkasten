@@ -5,7 +5,7 @@ authors: ["Ceren Budak", "Brendan Nyhan", "David M. Rothschild", "Emily Thorson"
 year: 2024
 doi: 10.1038/s41586-024-07417-w
 bibtex_key: Budak2024-ef
-topics: [information-disorder]
+topics: [information-disorder-disinformation, platform-governance-content-curation]
 citation_count: 82
 open_access: false
 source_url: https://doi.org/10.1038/s41586-024-07417-w

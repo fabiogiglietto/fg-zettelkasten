@@ -5,7 +5,7 @@ authors: ["Sophia Rothut", "Heidi Schulze", "Diana Rieger", "Maximilian Lechner"
 year: 2026
 doi: 10.1080/1369118x.2026.2654668
 bibtex_key: Rothut2026-or
-topics: [online-radicalization-and-extremism-on-platforms, computational-network-structure-analysis]
+topics: [online-radicalization-and-extremism-on-platforms, political-polarization-partisanship]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2026.2654668

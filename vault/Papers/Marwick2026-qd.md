@@ -5,7 +5,7 @@ authors: ["Alice E. Marwick", "Elaine Schnabel", "Shannon McGregor", "Carolyn Sc
 year: 2026
 doi: 10.1080/10584609.2026.2644198
 bibtex_key: Marwick2026-qd
-topics: [information-disorder, political-polarization-partisan-news]
+topics: [information-disorder-disinformation, political-polarization-partisanship]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2644198

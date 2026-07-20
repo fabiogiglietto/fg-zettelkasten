@@ -5,7 +5,7 @@ authors: ["Byunghwee Lee", "Sangyeon Kim", "Filippo Menczer", "Yong-Yeol Ahn", "
 year: 2026
 doi: 
 bibtex_key: Lee2026-je
-topics: [llms-computational-content-analysis, political-polarization-partisan-news]
+topics: [llm-computational-content-analysis, political-polarization-partisanship]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2603.11253v2

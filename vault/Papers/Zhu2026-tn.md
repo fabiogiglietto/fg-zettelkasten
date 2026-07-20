@@ -5,7 +5,7 @@ authors: ["Qinfeng Zhu", "Fan Liang", "Gabriel Miao Li"]
 year: 2026
 doi: 10.1080/21670811.2026.2683342
 bibtex_key: Zhu2026-tn
-topics: [computational-network-structure-analysis, political-polarization-partisan-news]
+topics: [political-polarization-partisanship, computational-network-structure-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2683342

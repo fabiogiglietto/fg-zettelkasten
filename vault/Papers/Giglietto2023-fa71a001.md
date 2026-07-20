@@ -6,7 +6,7 @@ year: 2023
 doi: 10.1177/20563051231196866
 bibtex_key: Giglietto2023-fa71a001
 kind: own
-topics: [coordinated-inauthentic-behavior, italian-election-media-mapping]
+topics: [coordinated-inauthentic-behavior, electoral-communication-cross-national]
 citation_count: 20
 open_access: true
 source_url: https://doi.org/10.1177/20563051231196866
