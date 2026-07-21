@@ -3188,11 +3188,10 @@
       "doi": "10.31219/osf.io/ch8gj",
       "title": "News sharing on social media: Mapping the ideology of news media, politicians, and the mass public",
       "pdf_source": "drive",
-      "content_hash": "2b8ac4e18d8cf1cc172c9f9c8c8dc5cb582f528edac7f5e6d9c5cb9674c8a7b3",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-07-20T15:48:47.549781+00:00"
+      "content_hash": "2d9bbb93808dcbb0931981a4e4f36f85c6b1fa1433dcbdf81cac86eede750427",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-21T07:51:28.275252+00:00"
     },
     "bibtex:Rogers2026-cy": {
       "note_path": "Papers/Rogers2026-cy.md",
@@ -3204,11 +3203,10 @@
       "doi": "10.65476/1fw44702",
       "title": "Beyond verification| post-truth spaces: Studying authenticity and influence on the internet",
       "pdf_source": "drive",
-      "content_hash": "ae2c22e2ecd81b5611de0f67c3a4291fd760fddf87eaebfb031ad356d6ddfee4",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-07-21T07:31:47.974980+00:00"
+      "content_hash": "da6bb82ce162a83e7b1ca98949be394daf5a0a625338fd9ff2440644ca9d89e6",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-21T07:51:28.275228+00:00"
     }
   },
   "last_full_cluster": "2026-07-20T07:08:54.467963+00:00",
