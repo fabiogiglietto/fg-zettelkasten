@@ -1,0 +1,33 @@
+{
+  "abstract": "This paper introduces the concept of the 'post-truth space' — clusters of densely interlinked web pages and public social media accounts that are difficult to verify or known to spread disinformation — as a tool for helping fact-checkers locate influential problematic sources. The authors situate this concept alongside four related phenomena (alternative influence networks, fake news engagement spaces, coordinated inauthentic behavior campaigns, and participatory propaganda) and develop a mapping technique combining network analysis, digital investigation of source provenance, and an influence metric. They demonstrate the method through a case study of Russia-Ukraine war discourse on Moldovan Facebook. The work was conducted as part of the EU-funded vera.ai project aimed at aiding verification specialists.",
+  "key_claims": [
+    "The 'post-truth space' is a distinct and useful conceptual category among online spaces where problematic information circulates, defined as clusters of interlinked pages/accounts that are hard to verify or known disinformation sources advancing a program to assert political influence.",
+    "Post-truth spaces can be located and measured practically through a combination of mapping (inter-referencing/co-sharing of URLs), digital investigation of source provenance, and an influence metric based on cluster proximity to mainstream spaces.",
+    "The influence of a post-truth space can be gauged by its overlap with, proximity to, or penetration into more mainstream clusters; intermingling of fringe and mainstream content indicates impact.",
+    "In the Moldova case, post-truth clusters themselves had limited direct centrality, but a proximate 'borderline' content cluster (with pro-Russian material) was the most influential in the overall network and linked to the post-truth spaces.",
+    "The methods produce actionable leads for fact-checkers, who can add identified sources to curated monitoring lists."
+  ],
+  "methods": [
+    "Conceptual situating of the post-truth space against four prior frameworks: alternative influence networks (YouTube co-host/co-occurrence analysis), fake news engagement spaces (engagement comparison of hyper-partisan vs. mainstream sources), coordinated inauthentic behavior (signals/signature and network analysis of synchronized sharing), and participatory propaganda (analysis of narratives, memes, and actor provenance).",
+    "Post-truth space mapping technique: querying war-related keywords in CrowdTangle (Facebook data source) to retrieve posts, accounts, pages, and groups; tidying data by shortening URLs to domains and resolving Facebook native links.",
+    "Network analysis in Gephi using the ForceAtlas2 spatialization algorithm and Louvain modularity community detection (weighted in-degree 5–50, gravity 0.005, edge weight 0.47) plus visual network analysis to identify clusters.",
+    "Digital investigation / verification techniques using Facebook transparency indicators (account name history, default 'digital creator' names, pending verification status) to assess source provenance.",
+    "A cluster betweenness centrality metric developed as a proxy for influence, measuring the extent to which post-truth clusters bridge into other communities.",
+    "Case study of Russia-Ukraine war discourse on Moldovan Facebook (mapping dated March 2023), chosen for Moldova's exposure to pro-Kremlin disinformation and Facebook's dominance there."
+  ],
+  "findings": [
+    "The mapping surfaced distinct clusters in the Moldovan Facebook war discourse: three proximate 'post-truth' clusters, a 'borderline' cluster, plus conservative/nationalist, pro-Ukraine, mainstream media, and finance/military analysis clusters.",
+    "Top post-truth nodes included stiripesurse.ro (an 'alternative media' site denying the Bucha massacre), digital creator Liliana Mitrea (>17,000 followers, resharing East-West divide commentary), and Ionel Mojoiu (<10,000 followers, laundering Russian news sources like TASS, lenta.ru without attribution).",
+    "Post-truth clusters had low betweenness (Stiri pe surse 76.39, Mitrea 12.73, Mojoiu 11.14), indicating minimal direct centrality, but they supplied bridges to the influential borderline cluster.",
+    "The borderline cluster (top node Aktual24.ro, listed by Romanian cyber security as a disinformation provider) had the highest betweenness (2567.10), higher than the mainstream media cluster (Libertatea.ro, 1798.77), indicating that war discourse was driven substantially by content straddling the post-truth spaces rather than by mainstream media.",
+    "Post-truth cluster URLs were rarely shared outside their own clusters except for bridges to the borderline cluster, illustrating how the influence metric captures cluster interpenetration."
+  ],
+  "contributions": [
+    "A conceptual contribution: defining and situating the 'post-truth space' among existing frameworks for studying problematic online information.",
+    "A methodological contribution: an integrated mapping technique combining keyword-based network mapping, provenance verification via platform transparency signals, and a cluster-betweenness influence metric.",
+    "A practical contribution: a workflow that generates monitorable source leads for fact-checkers and verification specialists, developed within the EU vera.ai project.",
+    "A demonstrated, replicable case-study protocol (Moldova) that can be extended to other Eastern European countries and regions."
+  ],
+  "framing": "The paper positions itself within misinformation/disinformation and digital methods research, engaging debates on 'problematic information' and the post-truth phenomenon (McIntyre, Wight, Oxford Dictionaries) and building on prior typologies of online manipulation (Lewis's alternative influence networks, Silverman's fake news, Facebook's coordinated inauthentic behavior, and Wanless/Berk/Starbird's participatory propaganda). It is explicitly applied and interventionist, framed as service to fact-checking and verification practice.",
+  "pdf_source": "drive"
+}
