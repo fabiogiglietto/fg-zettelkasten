@@ -59,6 +59,7 @@ Broad study of misinformation, disinformation and fake news within hybrid media 
 - [[Renault2025-uh]]
 - [[Rodarte2026-dk]]
 - [[Rodriguez_Farres2025-sg]]
+- [[Rogers2026-cy]]
 - [[Rohrbach2026-rc]]
 - [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]

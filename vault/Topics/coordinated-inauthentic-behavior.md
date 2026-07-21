@@ -43,6 +43,7 @@ Detection and analysis of coordinated link-sharing and inauthentic network activ
 - [[Pante2025-pq]]
 - [[Poliakoff2026-fa]]
 - [[Rodriguez_Farres2025-sg]]
+- [[Rogers2026-cy]]
 - [[Schroeder2026-im]]
 - [[Simeone2025-vo]]
 - [[Song2025-yh]]

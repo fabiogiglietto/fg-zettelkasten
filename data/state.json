@@ -3193,10 +3193,26 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-07-20T15:48:47.549781+00:00"
+    },
+    "bibtex:Rogers2026-cy": {
+      "note_path": "Papers/Rogers2026-cy.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "information-disorder-disinformation"
+      ],
+      "assign_fp": "2909885226410639a28585fa2f001042a79cb61742326701a93f3301a741009b",
+      "doi": "10.65476/1fw44702",
+      "title": "Beyond verification| post-truth spaces: Studying authenticity and influence on the internet",
+      "pdf_source": "drive",
+      "content_hash": "ae2c22e2ecd81b5611de0f67c3a4291fd760fddf87eaebfb031ad356d6ddfee4",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-21T07:31:47.974980+00:00"
     }
   },
   "last_full_cluster": "2026-07-20T07:08:54.467963+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "9db3747d4169b414be111bda5a7c1ab499e850c778bab029df4f7ede43fd2a7b",
   "emergent_fp": "40f5810a9ec2bcf517f9702596881364225b4e68779a577d6d034f7fdf1a8f6d",
   "structure_fps": {
