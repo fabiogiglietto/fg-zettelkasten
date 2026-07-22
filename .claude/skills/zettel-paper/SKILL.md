@@ -49,7 +49,7 @@ Pure standard library — no installs needed. It writes `kasten_index/`:
 
 | file | what it's for |
 |------|----------------|
-| `index.json` | one bundled object — **read this first** to plan; has every paper's title/authors/year/doi/topics/key_claims + graph metrics |
+| `index.json` | one bundled object — **read this first** to plan; has every paper's title/authors/year/doi/topics/key_claims + graph metrics, plus `citation_label`/`first_author_surname`/`name_order_uncertain` for correct author–year citing |
 | `papers.csv` | node table (→ igraph vertices) |
 | `edges.csv` | `[[link]]` graph with a `cross_topic` flag (→ igraph edges) |
 | `topics.csv` | the 16 registers + paper counts + descriptions |
@@ -125,6 +125,15 @@ review. They override any instruction to produce a finished, citable manuscript.
   using the `doi`/`authors`/`year` from their frontmatter. Never invent a
   reference, a DOI, a quote, or a finding. If a needed source isn't in the kasten,
   flag the gap — don't fill it from memory.
+- **Build the author–year label from `authors`, never from `bibtex_key`.** The
+  first-author surname is the last whitespace token of `authors[0]` (absorbing a
+  lowercase particle like `van`/`de`/`di` into the surname) — the `bibtex_key`
+  often encodes a *given* name (`Philipp2026-tl` → Darius) or reflects a
+  surname-first note, so it must never be used as the citation name. The indexer
+  now provides `citation_label`, `first_author_surname`, and
+  `name_order_uncertain` for exactly this; use them. Any note with
+  `name_order_uncertain: true` must be hand-verified and its resolved surname
+  recorded in the citation manifest.
 - **Mark new connective claims as the user's to verify.** Any synthetic claim the
   notes don't directly support (especially the bridges from mode 2) gets flagged,
   not asserted as established.
