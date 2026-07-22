@@ -37,7 +37,7 @@ import re
 import shutil
 import subprocess
 import sys
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 DEFAULT_REPO = "https://github.com/fabiogiglietto/fg-zettelkasten.git"
 WIKILINK = re.compile(r"\[\[([^\]|#]+)")  # [[id]], [[id|alias]], [[id#section]]
@@ -195,8 +195,85 @@ def build(vault, data_dir):
                             "path": os.path.join("vault", "Structures", fn)})
 
     _annotate_graph(papers, edges, topic_members)
+    build.name_warnings = _resolve_first_authors(papers)
     crossings = _crossings(papers, edges)
     return papers, edges, topics, structures, crossings
+
+
+def _resolve_first_authors(papers):
+    """Robustly determine each paper's first-author SURNAME and flag uncertain
+    orderings. Targets the failure modes seen in this corpus:
+      (a) surname-first storage without a comma ("Marino Giada") -> caught by
+          comparing against the MAJORITY ordering of that same person across all
+          notes (she is "Giada Marino" in ~40 notes, "Marino Giada" in 1);
+      (b) surname-first with a comma ("Vincent, Emmanuel") -> comma is explicit;
+      (c) the auto-generated bibtex_key encoding a GIVEN name ("Philipp2026" for
+          "Philipp Darius") -> caught when key == folded(first token) != surname.
+    Diacritics and lowercase name particles (van, de, di ...) are folded/absorbed
+    so accented and particle surnames (Toernberg, van Erkel) are NOT false-flagged.
+    Returns [(id, stored_first_author, resolved_surname, reason), ...].
+    """
+    import unicodedata
+    def fold(t):
+        t = unicodedata.normalize("NFKD", t or "")
+        t = "".join(c for c in t if not unicodedata.combining(c))
+        return t.lower().strip(".,")
+    def toks(name):
+        return [t for t in re.split(r"\s+", (name or "").strip()) if t]
+    PARTICLES = {"van","von","de","del","della","der","di","da","dos","das",
+                 "la","le","du","den","ten","ter","al","bin","ibn","san","st"}
+
+    registry = defaultdict(Counter)
+    for p in papers.values():
+        for a in p.get("authors") or []:
+            if "," in a:            # comma names are unambiguous; skip registry
+                continue
+            ts = toks(a)
+            if len(ts) >= 2:
+                registry[frozenset(fold(t) for t in ts)][tuple(ts)] += 1
+
+    def surname_from_order(ordering):
+        ts = list(ordering)
+        s = ts[-1]
+        if len(ts) >= 2 and fold(ts[-2]) in PARTICLES:
+            s = ts[-2] + " " + s
+        return s
+
+    warnings = []
+    for pid, p in papers.items():
+        p["first_author_surname"] = None
+        p["citation_label"] = None
+        p["name_order_uncertain"] = False
+        authors = p.get("authors") or []
+        if not authors:
+            continue
+        a0 = authors[0]
+        reason = []
+        if "," in a0:                       # "Surname, Given" -> surname-first
+            surname = a0.split(",")[0].strip()
+            if not fold(pid).startswith(fold(surname.split()[-1])):
+                reason.append("first author stored surname-first (comma form)")
+        else:
+            ts = toks(a0)
+            if len(ts) == 1:
+                surname = ts[0]
+            else:
+                canon = registry[frozenset(fold(t) for t in ts)].most_common(1)[0][0]
+                surname = surname_from_order(canon)
+                if tuple(fold(t) for t in ts) != tuple(fold(t) for t in canon):
+                    reason.append("first author stored in minority order vs. rest of corpus")
+                m = re.match(r"([A-Za-z]+)", pid)
+                keytok = m.group(1).lower() if m else ""
+                if keytok and keytok == fold(ts[0]) and keytok != fold(surname.split()[-1]) \
+                        and fold(ts[0]) not in PARTICLES:
+                    reason.append('bibtex-key token "%s" is the given name, not the surname "%s"' % (keytok, surname))
+        p["first_author_surname"] = surname
+        label = surname if len(authors) == 1 else surname + " et al."
+        p["citation_label"] = (label + ", " + str(p["year"])) if p.get("year") else label
+        if reason:
+            p["name_order_uncertain"] = True
+            warnings.append((pid, a0, surname, "; ".join(reason)))
+    return warnings
 
 
 def _annotate_graph(papers, edges, topic_members):
@@ -266,13 +343,16 @@ def write_outputs(out_dir, papers, edges, topics, structures, crossings):
         w = csv.writer(f)
         w.writerow(["id", "title", "authors", "year", "doi", "topics",
                     "n_topics", "citation_count", "links_out", "links_in",
-                    "foreign_topics_reached", "bridge_score", "has_summary"])
+                    "foreign_topics_reached", "bridge_score", "has_summary",
+                    "citation_label", "first_author_surname", "name_order_uncertain"])
         for p in sorted(papers.values(), key=lambda x: -x["bridge_score"]):
             w.writerow([p["id"], p["title"], "; ".join(p["authors"]), p["year"],
                         p["doi"], "|".join(p["topics"]), p["n_topics"],
                         p["citation_count"], p["links_out_n"], p["links_in"],
                         p["foreign_topics_reached"], p["bridge_score"],
-                        int(p["has_summary"])])
+                        int(p["has_summary"]), p.get("citation_label"),
+                        p.get("first_author_surname"),
+                        int(bool(p.get("name_order_uncertain")))])
 
     with open(os.path.join(out_dir, "edges.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
@@ -320,7 +400,9 @@ def write_outputs(out_dir, papers, edges, topics, structures, crossings):
         "structures": structures,
         "papers": {pid: {k: p[k] for k in
                          ("title", "authors", "year", "doi", "topics",
-                          "bridge_score", "links_in", "key_claims")}
+                          "bridge_score", "links_in", "key_claims",
+                          "citation_label", "first_author_surname",
+                          "name_order_uncertain")}
                    for pid, p in papers.items()},
     }
     with open(os.path.join(out_dir, "index.json"), "w", encoding="utf-8") as f:
@@ -357,6 +439,13 @@ def main():
           f"{index['n_structures']} structures")
     print(f"graph:   {index['n_edges']} links ({dangling} dangling) · "
           f"{index['n_crossings']} cross-topic pairs")
+    warns = getattr(build, "name_warnings", [])
+    if warns:
+        print(f"name checks: {len(warns)} first-author name(s) flagged for review:")
+        for pid, stored, surname, why in warns:
+            print(f"   ⚠ {pid}: stored \"{stored}\" -> cite as \"{surname}\" ({why})")
+    else:
+        print("name checks: 0 flagged")
     print(f"written: {os.path.abspath(args.out_dir)}/  "
           f"(index.json, papers.csv, edges.csv, topics.csv, structures.csv, "
           f"bridges.csv, crossings.csv)")
