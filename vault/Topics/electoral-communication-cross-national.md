@@ -40,6 +40,7 @@ Empirical studies of political communication and coordinated online activity aro
 - [[Lin2025-xp]]
 - [[Lukito2026-nb]]
 - [[Marino2024-2fbc690f]]
+- [[Marino2026-he]]
 - [[Mosca2026-yh]]
 - [[Munger2025-cz]]
 - [[Nenno2025-xa]]

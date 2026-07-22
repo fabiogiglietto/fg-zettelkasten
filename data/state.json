@@ -3207,10 +3207,25 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-21T07:51:28.275228+00:00"
+    },
+    "bibtex:Marino2026-he": {
+      "note_path": "Papers/Marino2026-he.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "electoral-communication-cross-national"
+      ],
+      "assign_fp": "dfb35c35272de8435f20a9004471b6eb0f91df61add84c9e70898e9e8fde2b63",
+      "doi": "10.1080/1369118x.2026.2696929",
+      "title": "Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks",
+      "pdf_source": "drive",
+      "content_hash": "fa9ba8b199dab37bf0eaf81d41109048f771e62669f44acd1946cb6e937fba6c",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-22T09:28:01.171593+00:00"
     }
   },
   "last_full_cluster": "2026-07-20T07:08:54.467963+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 3,
   "register_signals_hash": "9db3747d4169b414be111bda5a7c1ab499e850c778bab029df4f7ede43fd2a7b",
   "emergent_fp": "40f5810a9ec2bcf517f9702596881364225b4e68779a577d6d034f7fdf1a8f6d",
   "structure_fps": {
