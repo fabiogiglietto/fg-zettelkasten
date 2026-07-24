@@ -22,6 +22,7 @@ Investigation of partisan community dynamics, affective polarization, hyperparti
 - [[Eady2025-vm]]
 - [[Elfes2026-jb]]
 - [[Esau2025-tf]]
+- [[Falkenberg2026-ka]]
 - [[Gaisbauer2025-by]]
 - [[Gauthier2026-iq]]
 - [[Gerbaudo2026-fo]]

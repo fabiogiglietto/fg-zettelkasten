@@ -31,6 +31,7 @@ Emerging research on how generative AI tools are used in deceptive information o
 - [[Tornberg2026-lc]]
 - [[Triedman2025-uy]]
 - [[Unknown2025-qj]]
+- [[Wack2026-bt]]
 - [[Waight2026-ts]]
 
 ## All papers (Dataview)

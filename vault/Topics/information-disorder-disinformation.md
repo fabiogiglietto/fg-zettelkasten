@@ -75,6 +75,7 @@ Broad study of misinformation, disinformation and fake news within hybrid media 
 - [[Van_Erkel2026-mk]]
 - [[Ventura2025-sw]]
 - [[Vincent_undated-re]]
+- [[Wack2026-bt]]
 - [[Waight2025-al]]
 - [[Xue2025-bp]]
 - [[Yoo2026-ev]]
