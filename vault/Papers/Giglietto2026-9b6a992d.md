@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1007/978-3-032-11782-3_4
 bibtex_key: Giglietto2026-9b6a992d
 kind: own
-topics: [coordinated-inauthentic-behavior, generative-ai-media-manipulation]
+topics: [coordinated-inauthentic-behavior, generative-ai-and-synthetic-media]
 citation_count: 2
 open_access: true
 source_url: https://doi.org/10.1007/978-3-032-11782-3_4

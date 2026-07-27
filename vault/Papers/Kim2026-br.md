@@ -5,7 +5,7 @@ authors: ["Jaehong Kim", "Hyeonseung Kim", "Jiseon Kim", "Alice Oh", "Thorsten H
 year: 2026
 doi: 
 bibtex_key: Kim2026-br
-topics: [coordinated-inauthentic-behavior, information-disorder-disinformation]
+topics: [coordinated-inauthentic-behavior, online-radicalization-and-extremism-on-platforms]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2606.22785v1

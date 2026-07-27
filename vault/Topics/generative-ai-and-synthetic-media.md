@@ -1,12 +1,12 @@
 ---
 type: topic
-slug: generative-ai-media-manipulation
+slug: generative-ai-and-synthetic-media
 emergent: false
 ---
 
-# Generative AI and Media Manipulation
+# Generative AI & Synthetic Media Manipulation
 
-Emerging research on how generative AI tools are used in deceptive information operations (e.g. synthetic imagery in gambling promotion), and on AI's broader impact on public trust, opinion and content authenticity — reflected in new teaching (IA Generativa e Media) and 2025-2026 publications.
+Emerging focus on how generative AI tools are used for persuasion, deception, and manipulation—e.g., synthetic visuals in gambling promotion, AI-generated disinformation, and deepfakes—reflecting a rapidly growing current agenda area (2025-2026 book chapters and news items).
 
 ## Papers
 
@@ -23,14 +23,12 @@ Emerging research on how generative AI tools are used in deceptive information o
 - [[Kotz2026-lk]]
 - [[Lin2025-xp]]
 - [[Manovich2026-ih]]
-- [[Nguyen2026-vm]]
 - [[Orlando2025-ul]]
 - [[Schiffrin_undated-gi]]
 - [[Schroeder2026-im]]
 - [[Suk2026-ai]]
 - [[Tornberg2026-lc]]
 - [[Triedman2025-uy]]
-- [[Unknown2025-qj]]
 - [[Wack2026-bt]]
 - [[Waight2026-ts]]
 
@@ -38,6 +36,6 @@ Emerging research on how generative AI tools are used in deceptive information o
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "generative-ai-media-manipulation")
+WHERE contains(topics, "generative-ai-and-synthetic-media")
 SORT discovery_date DESC
 ```

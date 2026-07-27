@@ -5,7 +5,7 @@ authors: ["Rajesh Jayaram", "Drew Tyler", "David Woodruff", "Corinna Cortes", "Y
 year: 2026
 doi: 
 bibtex_key: Jayaram2026-wd
-topics: [llm-augmented-research-methods, llm-computational-content-analysis]
+topics: [llm-augmented-research-methods, computational-text-methods-llms]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2606.28277v1

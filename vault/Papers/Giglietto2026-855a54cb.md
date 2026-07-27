@@ -6,7 +6,7 @@ year: 2026
 doi: 10.5204/mcj.3257
 bibtex_key: Giglietto2026-855a54cb
 kind: own
-topics: [platform-data-access-methods, platform-governance-content-curation]
+topics: [platform-data-access-and-governance, cross-national-digital-campaign-analysis]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.5204/mcj.3257

@@ -5,7 +5,7 @@ authors: ["danah boyd"]
 year: 2026
 doi: 10.1177/20563051261437487
 bibtex_key: Boyd2026-op
-topics: [platform-critique-anniversary-essays, platform-governance-content-curation]
+topics: [platform-critique-anniversary-essays]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1177/20563051261437487

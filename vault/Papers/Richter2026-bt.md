@@ -5,7 +5,7 @@ authors: ["Vanessa Richter", "Daria Dergacheva", "Vasilisa Kuznetsova", "Christi
 year: 2026
 doi: 10.1007/s00146-026-03079-6
 bibtex_key: Richter2026-bt
-topics: [generative-ai-imaginaries, public-perceptions-and-labor-impacts-of-ai]
+topics: [generative-ai-imaginaries, cross-national-digital-campaign-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1007/s00146-026-03079-6

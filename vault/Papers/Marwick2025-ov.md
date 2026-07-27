@@ -5,7 +5,7 @@ authors: ["Alice Marwick", "Courtlyn Pippert", "Katherine Furl", "Elaine Schnabe
 year: 2025
 doi: 10.1177/20563051251357483
 bibtex_key: Marwick2025-ov
-topics: [information-disorder-disinformation, online-radicalization-and-extremism-on-platforms]
+topics: [information-disorder-and-disinformation, online-radicalization-and-extremism-on-platforms]
 citation_count: 5
 open_access: false
 source_url: https://doi.org/10.1177/20563051251357483

@@ -5,7 +5,7 @@ authors: ["Caroline Gardam", "Michelle Riedlinger", "Daniel Angus", "Xue Ying (J
 year: 2025
 doi: 10.1016/j.dcm.2025.100946
 bibtex_key: Gardam2025-er
-topics: [climate-and-misinformation-message-interventions, information-disorder-disinformation]
+topics: [climate-and-misinformation-message-interventions]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1016/j.dcm.2025.100946

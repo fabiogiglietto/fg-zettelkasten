@@ -5,7 +5,7 @@ authors: ["Janet Vertesi", "danah boyd", "Alex Taylor", "Benjamin Shestakofsky"]
 year: 2026
 doi: 
 bibtex_key: Vertesi2026-lv
-topics: [platform-critique-anniversary-essays]
+topics: [platform-critique-anniversary-essays, ai-red-teaming-and-participatory-evaluation]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2604.16106v2

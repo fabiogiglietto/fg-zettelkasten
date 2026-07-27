@@ -5,7 +5,7 @@ authors: ["Kai-Cheng Yang", "Pranav Goel", "Meredith L. Pruden", "Qunfang Wu", "
 year: 2026
 doi: 10.31235/osf.io/yexp6_v1
 bibtex_key: Yang2026-tq
-topics: [platform-data-access-methods, llm-augmented-research-methods]
+topics: [platform-data-access-and-governance, llm-augmented-research-methods]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/yexp6_v1

@@ -5,7 +5,7 @@ authors: ["William Hollingshead", "Anatoliy Gruzd", "Philip Mai"]
 year: 2026
 doi: 10.17645/mac.11409
 bibtex_key: Hollingshead2026-vx
-topics: [information-disorder-disinformation, generative-ai-media-manipulation]
+topics: [information-disorder-and-disinformation, generative-ai-and-synthetic-media]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.17645/mac.11409

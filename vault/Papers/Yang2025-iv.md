@@ -5,7 +5,7 @@ authors: ["Yunkang Yang", "Ramesh Paudel", "Jordan McShan", "Matthew Hindman", "
 year: 2025
 doi: 10.1038/s41598-025-00233-w
 bibtex_key: Yang2025-iv
-topics: [coordinated-inauthentic-behavior, platform-data-access-methods]
+topics: [coordinated-inauthentic-behavior]
 citation_count: 4
 open_access: false
 source_url: https://doi.org/10.1038/s41598-025-00233-w

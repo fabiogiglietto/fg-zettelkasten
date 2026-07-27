@@ -5,7 +5,7 @@ authors: ["Haoning Xue", "Jingwen Zhang", "Xinzhi Zhang"]
 year: 2025
 doi: 10.1177/20563051251318172
 bibtex_key: Xue2025-bp
-topics: [information-disorder-disinformation, climate-and-misinformation-message-interventions]
+topics: [information-disorder-and-disinformation, climate-and-misinformation-message-interventions]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1177/20563051251318172

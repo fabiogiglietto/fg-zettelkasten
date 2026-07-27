@@ -5,7 +5,7 @@ authors: ["Gaël Le Mens", "Aina Gallego"]
 year: 2025
 doi: 10.1017/pan.2024.29
 bibtex_key: Le-Mens2025-qz
-topics: [llm-computational-content-analysis, electoral-communication-cross-national]
+topics: [computational-text-methods-llms, llm-augmented-research-methods]
 citation_count: 21
 open_access: false
 source_url: https://doi.org/10.1017/pan.2024.29

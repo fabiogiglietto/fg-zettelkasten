@@ -15,9 +15,10 @@ Empirical and review studies of how extremist actors (far-right, jihadist) explo
 - [[Bastos2025-ol]]
 - [[Bosch2024-hj]]
 - [[Brown2026-br]]
+- [[Cabbuag2024-me]]
 - [[Grusauskaite2026-po]]
 - [[Karo2026-dn]]
-- [[Kulichkina2026-zk]]
+- [[Kim2026-br]]
 - [[Kuznetsova2025-nu]]
 - [[Marwick2025-ov]]
 - [[Marwick2025-vx]]
@@ -25,6 +26,7 @@ Empirical and review studies of how extremist actors (far-right, jihadist) explo
 - [[Rieder2026-pp]]
 - [[Rothut2026-or]]
 - [[Rothut2026-wt]]
+- [[Simeone2025-vo]]
 
 ## All papers (Dataview)
 

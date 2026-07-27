@@ -5,7 +5,7 @@ authors: ["Hernan Sarmiento", "Ricardo Córdova", "Jorge Ortiz", "Felipe Bravo-M
 year: 2025
 doi: 10.1145/3711912
 bibtex_key: Sarmiento2025-as
-topics: [political-polarization-partisanship, llm-computational-content-analysis]
+topics: [political-polarization-partisanship, computational-text-methods-llms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3711912

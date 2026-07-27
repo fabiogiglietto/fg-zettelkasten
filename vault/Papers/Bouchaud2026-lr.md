@@ -5,7 +5,7 @@ authors: ["Paul Bouchaud", "Pedro Ramaciotti"]
 year: 2026
 doi: 
 bibtex_key: Bouchaud2026-lr
-topics: [platform-governance-content-curation, llm-computational-content-analysis]
+topics: [platform-data-access-and-governance, political-polarization-partisanship]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.02624v1

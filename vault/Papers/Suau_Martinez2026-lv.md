@@ -5,7 +5,7 @@ authors: ["Jaume Suau Martínez", "Clara Juarez Miro"]
 year: 2026
 doi: 10.1177/14648849241303249
 bibtex_key: Suau_Martinez2026-lv
-topics: [information-disorder-disinformation]
+topics: [information-disorder-and-disinformation]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1177/14648849241303249

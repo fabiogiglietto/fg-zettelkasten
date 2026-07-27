@@ -5,7 +5,7 @@ authors: ["Patrícia Rossini", "Antonis Kalogeropoulos", "Camila Mont’Alverne"
 year: 2026
 doi: 10.1177/20563051261419393
 bibtex_key: Rossini2026-jn
-topics: [electoral-communication-cross-national, information-disorder-disinformation]
+topics: [information-disorder-and-disinformation, cross-national-digital-campaign-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20563051261419393

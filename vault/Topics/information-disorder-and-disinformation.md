@@ -1,18 +1,25 @@
 ---
 type: topic
-slug: information-disorder-disinformation
+slug: information-disorder-and-disinformation
 emergent: false
 ---
 
-# Information Disorder & Disinformation Narratives
+# Information Disorder & Disinformation
 
-Broad study of misinformation, disinformation and fake news within hybrid media systems, including narrative-level monitoring, fact-checking support tools, and EU-funded work (PROMPT) on tracking disinformation around war, elections and LGBTQI+ issues.
+Broad research line on mis/disinformation, fake news taxonomies, problematic information circulation, and deceptive information operations, spanning war/health/political contexts; underpins the PROMPT and MINE-FACTS projects and numerous recent papers on 'zombie internet' and iterative deception.
 
 ## Papers
 
 - [[Adam2026-tz]]
+- [[Anwar2024-34dba628]]
+- [[Arceneaux2026-xk]]
+- [[Bak-Coleman2025-pm]]
+- [[Balluff2026-bv]]
+- [[Beacken2026-zb]]
 - [[Bollenbacher2026-vz]]
 - [[Bosch2024-hj]]
+- [[Bouchafra2026-ts]]
+- [[Bruns2026-yv]]
 - [[Budak2024-ef]]
 - [[Cazzamatta2026-lo]]
 - [[Choi2026-bz]]
@@ -21,38 +28,43 @@ Broad study of misinformation, disinformation and fake news within hybrid media 
 - [[Di-Domenico2026-zq]]
 - [[Dierickx2026-tw]]
 - [[Donovan2025-ws]]
+- [[Ducci2022-10cb5d70]]
 - [[Efstratiou2026-ij]]
 - [[Emilio2026-ik]]
 - [[Farkas2026-lr]]
 - [[FitzGerald2025-nv]]
 - [[Frischlich2025-vn]]
-- [[Gardam2025-er]]
 - [[Gattermann2025-yx]]
 - [[Ghezzi2023-8bebc91f]]
 - [[Giada2026-fc9a3833]]
 - [[Giglietto2017-4375de2f]]
 - [[Giglietto2019-e9be81c1]]
+- [[Giglietto2026-632ef967]]
 - [[Goel2025-iq]]
 - [[Gonzalez-Bailon2024-rq]]
 - [[Graham2025-gp]]
 - [[Hameleers2026-mc]]
+- [[Heiss2026-qv]]
 - [[Hollingshead2026-vx]]
 - [[Hourigan2026-oc]]
 - [[Humprecht2025-ml]]
 - [[Hurcombe2025-cs]]
-- [[Iris2026-pg]]
 - [[Karlsson2026-hd]]
-- [[Kim2026-br]]
 - [[Knupfer2025-vt]]
+- [[Kulichkina2026-zk]]
 - [[Luhring2025-od]]
 - [[Mahl2026-hc]]
 - [[Makeev2026-ma]]
+- [[Marino2023-9137f448]]
 - [[Marwick2025-ov]]
 - [[Marwick2025-vx]]
 - [[Marwick2026-qd]]
+- [[McNally2025-dn]]
 - [[Mosca2026-yh]]
 - [[Mosleh2024-op]]
+- [[Munger2025-cz]]
 - [[Nenno2025-xa]]
+- [[Pierri2025-hm]]
 - [[Poliakoff2026-fa]]
 - [[Prochaska2025-ef]]
 - [[Ramos2026-qo]]
@@ -64,27 +76,33 @@ Broad study of misinformation, disinformation and fake news within hybrid media 
 - [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
 - [[Rossini2026-mj]]
+- [[Rothut2026-wt]]
 - [[Sadler2025-vu]]
 - [[Scalco2026-bd]]
 - [[Spampatti2026-kx]]
 - [[Starbird2025-jj]]
 - [[Suau_Martinez2026-lv]]
+- [[Swartz2026-zb]]
 - [[Tai2026-qk]]
 - [[Thiele2025-ol]]
 - [[Tornberg2025-ir]]
+- [[Triedman2025-uy]]
 - [[Van_Erkel2026-mk]]
 - [[Ventura2025-sw]]
 - [[Vincent_undated-re]]
 - [[Wack2026-bt]]
 - [[Waight2025-al]]
+- [[Waight2026-ts]]
 - [[Xue2025-bp]]
 - [[Yoo2026-ev]]
 - [[Zhao2025-ny]]
+- [[noauthor_undated-bm]]
+- [[van-der-Linden2026-jt]]
 
 ## All papers (Dataview)
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "information-disorder-disinformation")
+WHERE contains(topics, "information-disorder-and-disinformation")
 SORT discovery_date DESC
 ```

@@ -5,7 +5,7 @@ authors: ["Simon Copland", "Axel Bruns", "Timothy Graham"]
 year: 2025
 doi: 10.1177/1329878x251406899
 bibtex_key: Copland2025-em
-topics: [coordinated-inauthentic-behavior, information-disorder-disinformation]
+topics: [coordinated-inauthentic-behavior, information-disorder-and-disinformation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/1329878x251406899

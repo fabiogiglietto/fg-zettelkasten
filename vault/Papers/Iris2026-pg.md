@@ -5,7 +5,7 @@ authors: ["Íris Damião", "João Franco", "Mariana Silva", "Paulo Almeida", "Pe
 year: 2026
 doi: 
 bibtex_key: Iris2026-pg
-topics: [electoral-communication-cross-national, information-disorder-disinformation]
+topics: [cross-national-digital-campaign-analysis, political-polarization-partisanship]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2601.05826v1
