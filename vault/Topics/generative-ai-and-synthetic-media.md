@@ -23,6 +23,7 @@ Emerging focus on how generative AI tools are used for persuasion, deception, an
 - [[Kotz2026-lk]]
 - [[Lin2025-xp]]
 - [[Manovich2026-ih]]
+- [[Mattis2026-gu]]
 - [[Orlando2025-ul]]
 - [[Schiffrin_undated-gi]]
 - [[Schroeder2026-im]]

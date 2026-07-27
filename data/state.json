@@ -3239,10 +3239,25 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-24T11:47:41.958966+00:00"
+    },
+    "bibtex:Mattis2026-gu": {
+      "note_path": "Papers/Mattis2026-gu.md",
+      "topics": [
+        "public-perceptions-and-labor-impacts-of-ai",
+        "generative-ai-and-synthetic-media"
+      ],
+      "assign_fp": "d08a6e2fc97083a3cbf7ff661b062adfcc336f2dda2ffe71665c31891ab10f54",
+      "doi": "10.1080/21670811.2026.2703599",
+      "title": "Feeling iffy about generative AI: Investigating audiences’ trustworthiness perceptions of task-specific AI disclosures",
+      "pdf_source": "drive",
+      "content_hash": "3bf1a5d999d9a30c648ce1c975547cea45bd2f2fccb4cb9fff53ed28b699be30",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-27T15:40:58.678389+00:00"
     }
   },
   "last_full_cluster": "2026-07-27T07:55:10.174058+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "d7400dbc4e55d9ede418876fe433ea1ab1ea222c048868d87756a84eea230e92",
   "emergent_fp": "07cb226289ac877291adfff5f3c54f5e5719835e1ff9cbfd4da84ec2d85cadf5",
   "structure_fps": {

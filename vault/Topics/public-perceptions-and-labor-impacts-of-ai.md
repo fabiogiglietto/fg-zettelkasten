@@ -15,6 +15,7 @@ Survey- and discourse-based studies of how publics and workers perceive, use, an
 - [[Gilardi2026-hw]]
 - [[Gillespie2026-aa]]
 - [[Gottfried2026-ww]]
+- [[Mattis2026-gu]]
 - [[Suk2026-ai]]
 - [[Tonneau2025-bv]]
 - [[UnknownUnknown-db]]
