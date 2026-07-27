@@ -1,0 +1,40 @@
+{
+  "abstract": "This paper investigates how task-specific disclosures of generative AI (GenAI) use in journalism affect audiences' perceptions of news trustworthiness. Through a preregistered conjoint experiment with 683 Dutch respondents, the authors tested disclosures across seven journalistic tasks along the news value chain. They find consistently negative effects on trustworthiness across all AI disclosures, but the magnitude varies by task and is moderated by individual-level characteristics such as political position and knowledge of journalistic AI. Cluster analysis reveals five distinct audience preference profiles, informing debates about what meaningful transparency should look like.",
+  "key_claims": [
+    "All task-specific AI disclosures reduce the perceived trustworthiness of news, reflecting a general skepticism toward AI use in journalism.",
+    "The magnitude of trust penalties varies by journalistic task, with fact-checking incurring the strongest penalty and earlier value-chain tasks (image and idea generation) incurring the smallest.",
+    "Disclosure effects are not universal but depend on individual-level moderators—particularly political position and knowledge of journalistic AI—rather than on news topic.",
+    "Audiences hold heterogeneous preference profiles regarding AI disclosures, which can be segmented into five distinctive groups with different socio-demographic and attitudinal predictors.",
+    "Generic AI labels used in prior research obscure important variation in how audiences respond to different, more nuanced task-specific disclosures.",
+    "News organizations must communicate GenAI use carefully to avoid further eroding already-declining audience trust."
+  ],
+  "methods": [
+    "Preregistered conjoint experiment (N = 683) conducted with a quota sample broadly representative of the Dutch population (age, gender, education) via Qualtrics in January 2025.",
+    "An 'AI Monitor' table disclosing whether each of seven journalistic tasks (idea generation, image generation, background research, article writing, proofreading, fact-checking, human in the loop) was performed by a human or AI, embedded with mock-up news articles.",
+    "Fractional factorial design with eight stimulus compositions; respondents rated 24 profiles on perceived trustworthiness using a 7-point Likert scale.",
+    "Two pretests selecting three news topics of varying controversiality (vaccination, housing policy, logistics) and creating comparable ChatGPT-generated article versions.",
+    "Average marginal component effects (AMCEs) and average marginal component interaction effects (AMCIEs) computed using the cjoint package in R, with human-task performance as baseline; moderators included political position and AI journalism knowledge.",
+    "Exploratory k-means cluster analysis (k=5) on respondents' conjoint regression coefficients (run per topic due to attribute volatility), followed by MANOVA, ANOVAs, and Tukey HSD post-hoc tests to identify predictors of cluster membership.",
+    "Measured variables including political position, general AI attitudes (Schepman & Rodway 20-item scale), AI journalism knowledge (7 true/false items), GenAI experience, general news trust, and topic interests."
+  ],
+  "findings": [
+    "Every AI disclosure attribute significantly reduced trustworthiness ratings, by between 0.23 and 0.62 points on a 7-point scale.",
+    "A hierarchy emerged: idea and image generation had the smallest negative effects, news production tasks larger effects, and fact-checking the largest; lacking a human in the loop had only a modest effect.",
+    "No significant differences in disclosure effects were found across the three news topics of varying controversiality.",
+    "Politically left respondents showed stronger negative reactions to disclosing AI-written articles, while right-leaning respondents were less concerned about AI fact-checking (for logistics and vaccination news).",
+    "High-knowledge respondents (correct on 6+ of 7 knowledge questions) reacted more negatively to AI fact-checking disclosures across all topics.",
+    "No moderation effect reversed the overall negative direction—task-specific disclosures did not increase perceived trustworthiness for any group.",
+    "Five preference clusters were identified (for the vaccination topic): Cautious Optimists (27.7%, the only group generally trusting AI), Indifferents (28.7%), Fact-Checkers (15.2%), Human Creatives (14.2%), and Human in the Loops (14.2%), each with distinct age, education, AI attitude, knowledge, and political predictors.",
+    "Lower concern about GenAI use was most prominent among respondents with little factual knowledge of how journalists actually use GenAI (the Cautious Optimists)."
+  ],
+  "contributions": [
+    "Provides empirical evidence on the effects of nuanced, task-specific AI disclosures rather than the generic 'AI-generated' vs 'human-generated' labels tested in prior work.",
+    "Identifies important individual-level moderators (political position, journalistic AI knowledge) of disclosure effects.",
+    "Describes five distinctive audience preference profiles and their predictors, offering practitioners guidance for tailoring transparency to reader subgroups.",
+    "Demonstrates robustness of negative disclosure effects across three news topics of varying controversiality.",
+    "Situates findings within normative debates on what meaningful journalistic transparency should look like, cautioning that trust penalties should not justify neglecting transparency.",
+    "Highlights the need for media literacy initiatives, given that low-knowledge audiences are least concerned about AI use."
+  ],
+  "framing": "The paper positions itself within journalism studies research on transparency and audience trust in an age of generative AI, drawing on attribution theory and expectancy violations theory to explain disclosure effects, and engaging debates on algorithmic aversion versus appreciation. It responds to calls for empirical research on the specificity of AI disclosures and contributes to normative discussions about meaningful transparency in journalistic workflows.",
+  "pdf_source": "drive"
+}
