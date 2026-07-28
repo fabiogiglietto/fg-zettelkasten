@@ -11,6 +11,7 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 ## Papers
 
 - [[Askanius2026-de]]
+- [[Balluff2026-ev]]
 - [[Bruns2025-fz]]
 - [[Dehghan2026-sy]]
 - [[Di-Marco2025-aa]]

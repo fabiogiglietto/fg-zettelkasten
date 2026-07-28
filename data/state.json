@@ -3254,10 +3254,24 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-27T15:40:58.678389+00:00"
+    },
+    "bibtex:Balluff2026-ev": {
+      "note_path": "Papers/Balluff2026-ev.md",
+      "topics": [
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "3ec3a326da384d61457f58507213a8e95fa8bc26875e9f5c1d3e9298c0dec332",
+      "doi": "10.31235/osf.io/43nvp_v1",
+      "title": "Relying on the mainstream? Entity networks in alternative media",
+      "pdf_source": "drive",
+      "content_hash": "d4f14db3b87d314ecbe5e9a7b983a3ac1a009dcb6ccad65479187ab695490c99",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-07-28T12:41:54.557724+00:00"
     }
   },
   "last_full_cluster": "2026-07-27T07:55:10.174058+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "d7400dbc4e55d9ede418876fe433ea1ab1ea222c048868d87756a84eea230e92",
   "emergent_fp": "07cb226289ac877291adfff5f3c54f5e5719835e1ff9cbfd4da84ec2d85cadf5",
   "structure_fps": {
