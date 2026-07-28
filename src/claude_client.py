@@ -100,19 +100,15 @@ class ClaudeClient:
         system: str,
         prompt: str,
         max_tokens: int = 4096,
-        cache_system: bool = True,
     ) -> str:
-        """Single-turn completion returning the text response.
-
-        When `cache_system` is True the system prompt is marked as a
-        prompt-cache breakpoint, so a stable instruction prefix reused across
-        many papers is billed at the cache-read rate.
-        """
+        """Single-turn completion returning the text response."""
+        # No prompt-cache breakpoint on the system prompt: every per-stage
+        # system prompt here is 170-425 tokens, far below the cache minimum
+        # (4096 for Opus/Haiku, 2048 for Sonnet 5), so a `cache_control` marker
+        # would silently never cache. The volatile per-paper content (PDF text,
+        # summary) is unique per call and uncacheable too. Add a breakpoint back
+        # only if a system prompt ever grows past the model's minimum.
         system_block = {"type": "text", "text": system}
-        if cache_system:
-            # Mark the (stable) instruction prefix as a prompt-cache breakpoint;
-            # reused verbatim across many papers it bills at the cache-read rate.
-            system_block["cache_control"] = {"type": "ephemeral"}
 
         response = self._client.messages.create(
             model=model,
