@@ -3268,10 +3268,26 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-28T12:41:54.557724+00:00"
+    },
+    "bibtex:Anicker2024-vp": {
+      "note_path": "Papers/Anicker2024-vp.md",
+      "topics": [
+        "generative-ai-imaginaries",
+        "ai-red-teaming-and-participatory-evaluation"
+      ],
+      "assign_fp": "b5478f69ca8e7fa754cae0ac822f697d7b3f219eb2d88a70b677c69ca24c1d75",
+      "doi": "10.1177/07352751241289925",
+      "title": "The matrix of AI agency: On the demarcation problem in social theory",
+      "pdf_source": "abstract_only",
+      "content_hash": "1bdbcaa0b74c76e45796b0ffe003f868c550dfa860e4c716406f6348038218c5",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-29T07:41:36.723875+00:00"
     }
   },
   "last_full_cluster": "2026-07-27T07:55:10.174058+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 3,
   "register_signals_hash": "d7400dbc4e55d9ede418876fe433ea1ab1ea222c048868d87756a84eea230e92",
   "emergent_fp": "07cb226289ac877291adfff5f3c54f5e5719835e1ff9cbfd4da84ec2d85cadf5",
   "structure_fps": {

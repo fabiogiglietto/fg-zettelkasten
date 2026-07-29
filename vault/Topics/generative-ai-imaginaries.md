@@ -10,6 +10,7 @@ Papers examining how generative AI is culturally imagined, discursively framed, 
 
 ## Papers
 
+- [[Anicker2024-vp]]
 - [[Dodds2026-df]]
 - [[Gilardi2026-hw]]
 - [[Hepp2026-oi]]
