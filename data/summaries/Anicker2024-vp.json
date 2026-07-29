@@ -1,0 +1,25 @@
+{
+  "abstract": "This paper addresses the question of whether and how artificial intelligence systems can be considered agents, framing it as a 'demarcation problem' in social theory. Rather than treating agency as an inherent property of a system, the authors argue that agency is a social status—a socially granted and monitored license to issue actions. They develop theoretical criteria to distinguish agents from nonagents based on the abilities socially attributed to entities.",
+  "key_claims": [
+    "Agency is not an inherent quality of a system but a socially granted status or license to act.",
+    "This social license is acquired and monitored through social practices.",
+    "The demarcation between agents and nonagents can be theoretically grounded in socially attributed abilities.",
+    "Recent AI developments make the question of machine agency urgent for social theory."
+  ],
+  "methods": [
+    "Conceptual and theoretical analysis grounded in social theory.",
+    "Development of demarcation criteria to distinguish agents from nonagents.",
+    "Reframing of agency as an attributed social status rather than an intrinsic system property."
+  ],
+  "findings": [
+    "A framework (described by the authors as a 'matrix of AI agency') can be used to classify entities according to the abilities socially attributed to them.",
+    "Machine agency is contingent on social recognition and ongoing monitoring within social practices rather than on technical capability alone."
+  ],
+  "contributions": [
+    "Offers a social-theoretic account of AI agency that shifts the debate from system properties to social attribution.",
+    "Proposes theoretical criteria for demarcating agents and nonagents.",
+    "Introduces a conceptual matrix for situating AI within questions of agency."
+  ],
+  "framing": "The paper situates itself within social theory and the sociology of agency, engaging debates over machine agency prompted by advances in AI. It positions its social-status conception of agency against views that treat agency as an inherent quality of a system.",
+  "pdf_source": "abstract_only"
+}
