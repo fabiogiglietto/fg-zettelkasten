@@ -1,0 +1,25 @@
+{
+  "abstract": "This paper investigates how often US adults were exposed to content from untrustworthy sources (those that repeatedly publish misinformation) on Facebook and Instagram during 2020, and whether such exposure affected political attitudes. Using platform-wide data covering all active US adult users, the authors measure exposure across Facebook Pages, groups, web domains, and public Instagram accounts. They find that exposure was low on average but heavily concentrated among a small subset of users, and that experimental reductions in exposure produced no detectable attitudinal effects.",
+  "key_claims": [
+    "The average Facebook and Instagram user saw relatively little content from untrustworthy sources in their feeds during 2020.",
+    "Exposure to untrustworthy-source content was highly concentrated among a small fraction of users rather than evenly distributed.",
+    "Reducing exposure to content from untrustworthy sources did not produce measurable effects on users' political attitudes."
+  ],
+  "methods": [
+    "Analysis of 2020 platform data covering all active US adults on Facebook and Instagram.",
+    "Measurement of exposure to content from Pages, groups, and web domains on Facebook and public accounts on Instagram identified as repeatedly publishing misinformation.",
+    "Assessment of attitudinal effects associated with exposure (the abstract indicates an experimental/interventional component reducing exposure)."
+  ],
+  "findings": [
+    "Average users encountered a small amount of content from untrustworthy sources in their feeds.",
+    "Exposure was concentrated among a minority of users rather than broadly shared across the population.",
+    "No attitudinal effects were detected from reducing exposure to untrustworthy-source content."
+  ],
+  "contributions": [
+    "Provides platform-scale empirical evidence on the frequency of exposure to untrustworthy sources across an entire national adult user base.",
+    "Distinguishes between average exposure and its concentration among specific users, refining understanding of who encounters misinformation.",
+    "Contributes causal evidence on the limited attitudinal impact of exposure reductions, informing debates on misinformation harms."
+  ],
+  "framing": "The paper positions itself within debates about the prevalence and political consequences of online misinformation, challenging assumptions that widespread exposure to untrustworthy sources drives attitudinal change. It contributes to the broader social-science literature on social media, misinformation, and democratic behavior.",
+  "pdf_source": "abstract_only"
+}
