@@ -16,6 +16,7 @@ Broad research line on mis/disinformation, fake news taxonomies, problematic inf
 - [[Bak-Coleman2025-pm]]
 - [[Balluff2026-bv]]
 - [[Beacken2026-zb]]
+- [[Bergeron-Boutin2026-yh]]
 - [[Bollenbacher2026-vz]]
 - [[Bosch2024-hj]]
 - [[Bouchafra2026-ts]]

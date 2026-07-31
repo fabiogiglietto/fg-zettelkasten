@@ -3283,10 +3283,26 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-07-29T07:41:36.723875+00:00"
+    },
+    "bibtex:Bergeron-Boutin2026-yh": {
+      "note_path": "Papers/Bergeron-Boutin2026-yh.md",
+      "topics": [
+        "information-disorder-and-disinformation",
+        "platform-data-access-and-governance"
+      ],
+      "assign_fp": "808e0796802d0a2435d9da8dbb1ae51b394c68810f0d1ab99a9e2cf80805ca5e",
+      "doi": "10.1126/sciadv.adz6502",
+      "title": "Untrustworthy sources on Facebook and Instagram in 2020: Concentrated exposure but no attitudinal effects",
+      "pdf_source": "abstract_only",
+      "content_hash": "b6679679b6e780f060547f8157fec8266c68b40ac51260d9b8e4ab8b9475a47a",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-07-31T08:03:40.648246+00:00"
     }
   },
   "last_full_cluster": "2026-07-27T07:55:10.174058+00:00",
-  "papers_since_cluster": 3,
+  "papers_since_cluster": 4,
   "register_signals_hash": "d7400dbc4e55d9ede418876fe433ea1ab1ea222c048868d87756a84eea230e92",
   "emergent_fp": "07cb226289ac877291adfff5f3c54f5e5719835e1ff9cbfd4da84ec2d85cadf5",
   "structure_fps": {

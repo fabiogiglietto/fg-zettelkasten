@@ -18,6 +18,7 @@ Critical examination of social media research infrastructures, API access, the D
 - [[Bakshy2015-rn]]
 - [[Bastos2025-ya]]
 - [[Bechmann2026-dr]]
+- [[Bergeron-Boutin2026-yh]]
 - [[Bouchaud2026-lr]]
 - [[Bruns2026-pn]]
 - [[Cazzamatta2026-lo]]
