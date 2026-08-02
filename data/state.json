@@ -3296,8 +3296,7 @@
       "pdf_source": "abstract_only",
       "content_hash": "b6679679b6e780f060547f8157fec8266c68b40ac51260d9b8e4ab8b9475a47a",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-07-31T08:03:40.648246+00:00"
     }
   },
