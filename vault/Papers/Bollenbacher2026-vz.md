@@ -5,7 +5,7 @@ authors: ["John Bollenbacher", "Filippo Menczer", "John Bryden"]
 year: 2026
 doi: 10.1140/epjds/s13688-025-00606-1
 bibtex_key: Bollenbacher2026-vz
-topics: [health-misinformation-networks, information-disorder-and-disinformation]
+topics: [health-misinformation-online, information-disorder-misinformation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1140/epjds/s13688-025-00606-1

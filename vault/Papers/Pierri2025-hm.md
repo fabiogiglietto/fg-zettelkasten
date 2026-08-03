@@ -5,7 +5,7 @@ authors: ["Francesco Pierri", "Theo Araujo", "Sanne Kruikemeier", "Philipp Loren
 year: 2025
 doi: 
 bibtex_key: Pierri2025-hm
-topics: [platform-data-access-and-governance, information-disorder-and-disinformation]
+topics: [platform-data-access-governance, information-disorder-misinformation]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2512.14223v1

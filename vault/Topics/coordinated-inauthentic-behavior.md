@@ -6,14 +6,16 @@ emergent: false
 
 # Coordinated Inauthentic Behavior
 
-Detection and analysis of coordinated link-sharing, inauthentic networks, and manipulated amplification on social media, including the CooRnet/CLSB methodology and its successors. This is the researcher's signature methodological contribution and remains central to current publications and tools (VERA-AI Alert, coordinated network studies in Italy, Germany, Nigeria, India, Brazil).
+Detection and analysis of coordinated link-sharing, inauthentic networks, and deceptive information operations across Facebook, Instagram and other platforms, including the CooRnet/CLSB methodology and its applications to elections, gambling promotion and cross-national disinformation campaigns. This is the researcher's signature methodological contribution and the throughline of vera.ai WP4, PROMPT-adjacent work, and multiple recent case studies (Nigeria, India, Germany, Brazil, Italy).
 
 ## Papers
 
 - [[Appel2026-qr]]
 - [[Arceneaux2026-xk]]
 - [[Bastos2025-ol]]
+- [[Bouchafra2026-ts]]
 - [[Copland2025-em]]
+- [[Di-Domenico2026-zq]]
 - [[Di-Marco2025-aa]]
 - [[Efstratiou2026-ij]]
 - [[FitzGerald2025-nv]]
@@ -26,6 +28,7 @@ Detection and analysis of coordinated link-sharing, inauthentic networks, and ma
 - [[Giglietto2026-9b6a992d]]
 - [[Graham2025-gp]]
 - [[Iannucci2025-eg]]
+- [[Inacio-da-Silva2026-zf]]
 - [[Jovanovic-Harrington2026-ze]]
 - [[Kansaon2025-id]]
 - [[Kim2026-br]]
@@ -33,6 +36,7 @@ Detection and analysis of coordinated link-sharing, inauthentic networks, and ma
 - [[Kuznetsova2025-nu]]
 - [[Luceri2025-tr]]
 - [[Mannocci2025-ig]]
+- [[Marino2023-9137f448]]
 - [[Minici2024-tf]]
 - [[Oprea2025-lf]]
 - [[Orlando2025-ul]]

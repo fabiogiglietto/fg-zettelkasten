@@ -5,7 +5,7 @@ authors: ["Hannah Waight", "Eddie Yang", "Yin Yuan", "Solomon Messing", "Margare
 year: 2026
 doi: 10.1038/s41586-026-10506-7
 bibtex_key: Waight2026-ts
-topics: [generative-ai-and-synthetic-media, information-disorder-and-disinformation]
+topics: [computational-methods-llms, information-disorder-misinformation]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1038/s41586-026-10506-7

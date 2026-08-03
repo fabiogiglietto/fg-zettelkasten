@@ -5,7 +5,7 @@ authors: ["Matthew DiGiuseppe", "Joshua Robison"]
 year: 2026
 doi: 
 bibtex_key: DiGiuseppe2026-pu
-topics: [public-perceptions-and-labor-impacts-of-ai, political-polarization-partisanship]
+topics: [computational-methods-llms, public-perceptions-and-labor-impacts-of-ai]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.18092v1

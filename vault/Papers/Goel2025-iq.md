@@ -5,7 +5,7 @@ authors: ["Pranav Goel", "Jon Green", "David Lazer", "Philip S. Resnik"]
 year: 2025
 doi: 10.1038/s41562-025-02223-4
 bibtex_key: Goel2025-iq
-topics: [information-disorder-and-disinformation, computational-text-methods-llms]
+topics: [information-disorder-misinformation, political-communication-elections]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1038/s41562-025-02223-4

@@ -5,7 +5,7 @@ authors: ["Byunghwee Lee", "Sangyeon Kim", "Filippo Menczer", "Yong-Yeol Ahn", "
 year: 2026
 doi: 
 bibtex_key: Lee2026-je
-topics: [computational-text-methods-llms, political-polarization-partisanship]
+topics: [computational-methods-llms, political-communication-elections]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2603.11253v2

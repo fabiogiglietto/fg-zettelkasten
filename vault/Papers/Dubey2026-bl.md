@@ -5,7 +5,7 @@ authors: ["Shreya Dubey", "Paul E. Ketelaar", "Tilman Dingler", "Hannah K. Peetz
 year: 2026
 doi: 10.1016/j.chb.2026.108920
 bibtex_key: Dubey2026-bl
-topics: [climate-and-misinformation-message-interventions, survey-methodology-validity]
+topics: [climate-and-misinformation-message-interventions, public-perceptions-and-labor-impacts-of-ai]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1016/j.chb.2026.108920

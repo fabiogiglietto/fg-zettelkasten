@@ -5,7 +5,7 @@ authors: ["Fabrizio Gilardi", "Sabrina Di Lorenzo", "Juri Ezzaini", "Beryl Santa
 year: 2026
 doi: 10.1038/s41598-026-58743-0
 bibtex_key: Gilardi2026-hw
-topics: [public-perceptions-and-labor-impacts-of-ai, generative-ai-imaginaries]
+topics: [public-perceptions-and-labor-impacts-of-ai, computational-methods-llms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1038/s41598-026-58743-0

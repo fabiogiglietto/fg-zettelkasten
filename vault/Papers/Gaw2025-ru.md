@@ -5,7 +5,7 @@ authors: ["Gaw, Fatima", "Agonos, Mariam Jayne", "Ruijgrok, Kris", "Suarez, Gera
 year: 2025
 doi: 
 bibtex_key: Gaw2025-ru
-topics: [coordinated-inauthentic-behavior, cross-national-digital-campaign-analysis]
+topics: [coordinated-inauthentic-behavior, political-communication-elections]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Influence%20operations%20as%20brokerage%3A%20Political-economic%20infrastructures%20of%20manipulation%20in%20the%202022%20Philippine%20elections

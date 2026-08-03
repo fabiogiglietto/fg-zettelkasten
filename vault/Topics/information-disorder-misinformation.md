@@ -1,25 +1,23 @@
 ---
 type: topic
-slug: information-disorder-and-disinformation
+slug: information-disorder-misinformation
 emergent: false
 ---
 
-# Information Disorder & Disinformation
+# Information Disorder & Misinformation
 
-Broad research line on mis/disinformation, fake news taxonomies, problematic information circulation, and deceptive information operations, spanning war/health/political contexts; underpins the PROMPT and MINE-FACTS projects and numerous recent papers on 'zombie internet' and iterative deception.
+Conceptual and empirical work on fake news, disinformation and problematic information circulating in hybrid media systems, spanning taxonomy-building, fact-checking support (MINE-FACTS), and monitoring of sensitive narratives (Ukraine war, health, elections) under projects like PROMPT. A core, long-running theme that anchors the researcher's identity as an information-disorder scholar.
 
 ## Papers
 
 - [[Adam2026-tz]]
 - [[Anwar2024-34dba628]]
-- [[Arceneaux2026-xk]]
 - [[Bak-Coleman2025-pm]]
-- [[Balluff2026-bv]]
-- [[Beacken2026-zb]]
+- [[Bak-Coleman2026-mk]]
+- [[Bakshy2015-rn]]
 - [[Bergeron-Boutin2026-yh]]
 - [[Bollenbacher2026-vz]]
 - [[Bosch2024-hj]]
-- [[Bouchafra2026-ts]]
 - [[Bruns2026-yv]]
 - [[Budak2024-ef]]
 - [[Cazzamatta2026-lo]]
@@ -29,9 +27,10 @@ Broad research line on mis/disinformation, fake news taxonomies, problematic inf
 - [[Di-Domenico2026-zq]]
 - [[Dierickx2026-tw]]
 - [[Donovan2025-ws]]
-- [[Ducci2022-10cb5d70]]
 - [[Efstratiou2026-ij]]
 - [[Emilio2026-ik]]
+- [[Esau2025-tf]]
+- [[Falkenberg2026-ka]]
 - [[Farkas2026-lr]]
 - [[FitzGerald2025-nv]]
 - [[Frischlich2025-vn]]
@@ -40,33 +39,36 @@ Broad research line on mis/disinformation, fake news taxonomies, problematic inf
 - [[Giada2026-fc9a3833]]
 - [[Giglietto2017-4375de2f]]
 - [[Giglietto2019-e9be81c1]]
-- [[Giglietto2026-632ef967]]
+- [[Giglietto2022-0e951ac5]]
+- [[Giglietto2022-b30e8b4e]]
+- [[Giglietto2026-855a54cb]]
 - [[Goel2025-iq]]
 - [[Gonzalez-Bailon2024-rq]]
 - [[Graham2025-gp]]
 - [[Hameleers2026-mc]]
-- [[Heiss2026-qv]]
+- [[Hartmann2025-px]]
 - [[Hollingshead2026-vx]]
 - [[Hourigan2026-oc]]
 - [[Humprecht2025-ml]]
 - [[Hurcombe2025-cs]]
+- [[Iris2026-pg]]
+- [[Kalsnes2025-zb]]
 - [[Karlsson2026-hd]]
 - [[Knupfer2025-vt]]
 - [[Kulichkina2026-zk]]
+- [[Lieu2025-nl]]
 - [[Luhring2025-od]]
+- [[Lyons2026-ca]]
 - [[Mahl2026-hc]]
 - [[Makeev2026-ma]]
-- [[Marino2023-9137f448]]
 - [[Marwick2025-ov]]
 - [[Marwick2025-vx]]
 - [[Marwick2026-qd]]
-- [[McNally2025-dn]]
 - [[Mosca2026-yh]]
 - [[Mosleh2024-op]]
-- [[Munger2025-cz]]
 - [[Nenno2025-xa]]
+- [[Oswald2025-km]]
 - [[Pierri2025-hm]]
-- [[Poliakoff2026-fa]]
 - [[Prochaska2025-ef]]
 - [[Ramos2026-qo]]
 - [[Renault2025-uh]]
@@ -77,33 +79,32 @@ Broad research line on mis/disinformation, fake news taxonomies, problematic inf
 - [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
 - [[Rossini2026-mj]]
-- [[Rothut2026-wt]]
+- [[Rothut2026-or]]
 - [[Sadler2025-vu]]
 - [[Scalco2026-bd]]
 - [[Spampatti2026-kx]]
 - [[Starbird2025-jj]]
 - [[Suau_Martinez2026-lv]]
-- [[Swartz2026-zb]]
 - [[Tai2026-qk]]
 - [[Thiele2025-ol]]
 - [[Tornberg2025-ir]]
-- [[Triedman2025-uy]]
 - [[Van_Erkel2026-mk]]
 - [[Ventura2025-sw]]
+- [[Ventura2026-yc]]
 - [[Vincent_undated-re]]
 - [[Wack2026-bt]]
 - [[Waight2025-al]]
 - [[Waight2026-ts]]
 - [[Xue2025-bp]]
 - [[Yoo2026-ev]]
-- [[Zhao2025-ny]]
 - [[noauthor_undated-bm]]
+- [[van-Eck2026-xg]]
 - [[van-der-Linden2026-jt]]
 
 ## All papers (Dataview)
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "information-disorder-and-disinformation")
+WHERE contains(topics, "information-disorder-misinformation")
 SORT discovery_date DESC
 ```

@@ -5,7 +5,7 @@ authors: ["Richard Rogers", "Kamila Koronska"]
 year: 2026
 doi: 10.65476/1fw44702
 bibtex_key: Rogers2026-cy
-topics: [coordinated-inauthentic-behavior, information-disorder-and-disinformation]
+topics: [coordinated-inauthentic-behavior, information-disorder-misinformation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.65476/1fw44702

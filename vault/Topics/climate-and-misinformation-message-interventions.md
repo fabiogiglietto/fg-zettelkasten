@@ -10,16 +10,15 @@ Experimental and review studies testing how framed messages, chatbots, or inocul
 
 ## Papers
 
+- [[Arminio2025-tw]]
 - [[Costello2024-bg]]
 - [[Dubey2026-bl]]
 - [[Gardam2025-er]]
 - [[Kotz2026-lk]]
 - [[Lieu2025-nl]]
-- [[Ramos2026-qo]]
 - [[Spampatti2026-kx]]
 - [[Szabo2026-rd]]
 - [[Voelkel2026-lc]]
-- [[Xue2025-bp]]
 - [[van-der-Linden2026-jt]]
 
 ## All papers (Dataview)

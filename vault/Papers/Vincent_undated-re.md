@@ -5,7 +5,7 @@ authors: ["Vincent, Emmanuel", "Crisan, Daiana"]
 year: 
 doi: 
 bibtex_key: Vincent_undated-re
-topics: [information-disorder-and-disinformation, platform-data-access-and-governance]
+topics: [information-disorder-misinformation, platform-data-access-governance]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=What%20our%20second%20measurement%20says%20about%20misinformation%20on%20major%20platforms%20in%20Europe

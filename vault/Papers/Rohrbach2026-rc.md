@@ -5,7 +5,7 @@ authors: ["Tobias Rohrbach", "Chiara Valli"]
 year: 2026
 doi: 10.1080/1461670x.2026.2623882
 bibtex_key: Rohrbach2026-rc
-topics: [information-disorder-and-disinformation]
+topics: [information-disorder-misinformation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/1461670x.2026.2623882

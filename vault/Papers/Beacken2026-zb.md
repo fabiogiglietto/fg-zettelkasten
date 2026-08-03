@@ -5,7 +5,7 @@ authors: ["Gabrielle D Beacken", "Inga K Trauthig", "Samuel C Woolley"]
 year: 2026
 doi: 10.1177/20539517251410064
 bibtex_key: Beacken2026-zb
-topics: [generative-ai-and-synthetic-media, information-disorder-and-disinformation]
+topics: [generative-ai-media-manipulation, online-radicalization-and-extremism-on-platforms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20539517251410064

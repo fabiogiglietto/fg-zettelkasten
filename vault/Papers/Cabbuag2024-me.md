@@ -5,7 +5,7 @@ authors: ["Samuel Idris Cabbuag", "Crystal Abidin"]
 year: 2025
 doi: 10.5210/spir.v2024i0.13913
 bibtex_key: Cabbuag2024-me
-topics: [online-radicalization-and-extremism-on-platforms, platform-critique-anniversary-essays]
+topics: []
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.5210/spir.v2024i0.13913

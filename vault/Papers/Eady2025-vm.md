@@ -5,7 +5,7 @@ authors: ["Gregory Eady", "Richard Bonneau", "Joshua A Tucker", "Jonathan Nagler
 year: 2025
 doi: 10.31219/osf.io/ch8gj
 bibtex_key: Eady2025-vm
-topics: [political-polarization-partisanship, computational-network-structure-analysis]
+topics: [political-communication-elections, computational-methods-llms]
 citation_count: 14
 open_access: false
 source_url: https://doi.org/10.31219/osf.io/ch8gj

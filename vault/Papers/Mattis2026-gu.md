@@ -5,7 +5,7 @@ authors: ["Nicolas Mattis", "Kimon Kieslich", "Claes Holger de Vreese"]
 year: 2026
 doi: 10.1080/21670811.2026.2703599
 bibtex_key: Mattis2026-gu
-topics: [public-perceptions-and-labor-impacts-of-ai, generative-ai-and-synthetic-media]
+topics: [public-perceptions-and-labor-impacts-of-ai, generative-ai-media-manipulation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2703599

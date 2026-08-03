@@ -5,7 +5,7 @@ authors: ["Fabian Anicker", "Golo Flaßhoff", "Frank Marcinkowski"]
 year: 2024
 doi: 10.1177/07352751241289925
 bibtex_key: Anicker2024-vp
-topics: [generative-ai-imaginaries, ai-red-teaming-and-participatory-evaluation]
+topics: [sociocybernetics-social-systems, generative-ai-imaginaries]
 citation_count: 8
 open_access: false
 source_url: https://doi.org/10.1177/07352751241289925

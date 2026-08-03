@@ -5,7 +5,7 @@ authors: ["Beth Goldberg", "Diana Acosta-Navas", "Michiel Bakker", "Ian Beacock"
 year: 2026
 doi: 10.1177/26339137261459441
 bibtex_key: Goldberg2026-eb
-topics: [platform-critique-anniversary-essays, ai-red-teaming-and-participatory-evaluation]
+topics: [computational-methods-llms, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/26339137261459441

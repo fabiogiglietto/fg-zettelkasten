@@ -5,7 +5,7 @@ authors: ["Ruth E. Appel", "Young Mie Kim", "Jennifer Pan", "Yiqing Xu", "Ben Ni
 year: 2026
 doi: 10.1038/s41562-026-02435-2
 bibtex_key: Appel2026-qr
-topics: [coordinated-inauthentic-behavior, cross-national-digital-campaign-analysis]
+topics: [coordinated-inauthentic-behavior, political-communication-elections]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1038/s41562-026-02435-2

@@ -5,7 +5,7 @@ authors: ["Marcio Inacio da Silva", "Lucas de Oliveira", "Pedro Olmo Vaz de Melo
 year: 2026
 doi: 10.1145/3796545
 bibtex_key: Inacio-da-Silva2026-zf
-topics: [cross-national-digital-campaign-analysis, platform-data-access-and-governance]
+topics: [political-communication-elections, coordinated-inauthentic-behavior]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3796545

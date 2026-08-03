@@ -5,7 +5,7 @@ authors: ["Matthew R. DeVerna", "Kai-Cheng Yang", "Harry Yaojun Yan", "Filippo M
 year: 2025
 doi: 
 bibtex_key: DeVerna2025-dl
-topics: [computational-text-methods-llms, information-disorder-and-disinformation]
+topics: [computational-methods-llms, information-disorder-misinformation]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2511.18749v1

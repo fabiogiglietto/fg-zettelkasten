@@ -5,7 +5,7 @@ authors: ["André K. Rodarte", "Carolina V. Kuahara", "Ahmer Arif"]
 year: 2026
 doi: 10.1080/21670811.2026.2669534
 bibtex_key: Rodarte2026-dk
-topics: [information-disorder-and-disinformation, cross-national-digital-campaign-analysis]
+topics: [political-communication-elections, information-disorder-misinformation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2669534
