@@ -3294,6 +3294,18 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-07-31T08:03:40.648246+00:00"
+    },
+    "bibtex:Unknown2020-d568b728": {
+      "note_path": "Papers/Unknown2020-d568b728.md",
+      "topics": [],
+      "assign_fp": "727dad7a1c8edf113bf40933f47796a14631b9e8016f7effbb94c0bec3e1f0a7",
+      "kind": "own",
+      "doi": "10.1080/1369118x.2020.1755558",
+      "title": "Correction",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-08-07T07:23:45.388764+00:00"
     }
   },
   "last_full_cluster": "2026-08-03T07:50:20.477921+00:00",
