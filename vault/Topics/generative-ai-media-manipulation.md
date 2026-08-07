@@ -16,6 +16,7 @@ Investigation of how generative AI is used to produce and evolve deceptive visua
 - [[Choi2026-bz]]
 - [[Dierickx2026-tw]]
 - [[Emilio2026-ik]]
+- [[Galip2026-ix]]
 - [[Giglietto2026-9b6a992d]]
 - [[Hackenburg2025-dj]]
 - [[Hackenburg2026-ud]]

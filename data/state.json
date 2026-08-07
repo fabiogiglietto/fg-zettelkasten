@@ -1561,9 +1561,9 @@
         "political-communication-elections"
       ],
       "pdf_source": "drive",
-      "content_hash": "51303ffaa46f35663af534b596cc94450ac514e14877d744924e910ed94bbcee",
+      "content_hash": "054eb961afa2bd9e6896b8e81a0c6cdeaa1abe04b434f21a7453ae8d3e43e5b2",
       "podcast_linked": false,
-      "last_processed": "2026-07-10T14:17:32.324103+00:00",
+      "last_processed": "2026-08-07T09:51:50.952262+00:00",
       "assign_fp": "fbad56000d974e83ea76975e8cb2dc3a4dbcc1709b38358cd6d1426d377ae139"
     },
     "bibtex:Ventura2025-sw": {
@@ -3306,10 +3306,25 @@
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-08-07T07:23:45.388764+00:00"
+    },
+    "bibtex:Galip2026-ix": {
+      "note_path": "Papers/Galip2026-ix.md",
+      "topics": [
+        "generative-ai-imaginaries",
+        "generative-ai-media-manipulation"
+      ],
+      "assign_fp": "f2b4ce2ec8902cab9df3ce096d8a2536dd3e4f8dcb4bfe3c96d73fbe47b35f96",
+      "doi": "10.1177/13675494261468638",
+      "title": "Degenerative AI: AI slop, brainrot, and the gimmick of generative culture",
+      "pdf_source": "drive",
+      "content_hash": "c990a7e85d20d614624e55dc4ebb174d9776ca118875d57e03d41a5517421d63",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-08-07T09:51:50.952238+00:00"
     }
   },
   "last_full_cluster": "2026-08-03T07:50:20.477921+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "20dbf7afa978132eafa339bafa27f47c4a12eb4c2597ff0b0149ab705a63b5fe",
   "emergent_fp": "e6b7b30bd0326115c11fc7b2623c61430b3160adef4eb84bbe410c8d650bb116",
   "structure_fps": {
