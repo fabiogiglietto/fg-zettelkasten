@@ -5,7 +5,7 @@ authors: ["Daniel Thiele", "Miriam Milzner", "Annett Heft", "Baoning Gong", "Bar
 year: 2025
 doi: 10.1177/14614448251350100
 bibtex_key: Thiele2025-ol
-topics: [coordinated-inauthentic-behavior, information-disorder-misinformation]
+topics: [coordinated-inauthentic-behavior, disinformation-narratives-and-information-operations]
 citation_count: 4
 open_access: false
 source_url: https://doi.org/10.1177/14614448251350100

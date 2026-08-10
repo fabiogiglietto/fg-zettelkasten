@@ -5,7 +5,7 @@ authors: ["Katharina Esau"]
 year: 2025
 doi: 10.1177/20563051251332421
 bibtex_key: Esau2025-tf
-topics: [political-communication-elections, information-disorder-misinformation]
+topics: [political-polarization-and-partisanship]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1177/20563051251332421

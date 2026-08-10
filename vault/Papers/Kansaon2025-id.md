@@ -5,7 +5,7 @@ authors: ["Daniel Kansaon", "Philipe de Freitas Melo", "Savvas Zannettou", "Fabr
 year: 2025
 doi: 10.1609/icwsm.v19i1.35857
 bibtex_key: Kansaon2025-id
-topics: [coordinated-inauthentic-behavior, political-communication-elections]
+topics: [coordinated-inauthentic-behavior, cross-national-coordinated-networks]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1609/icwsm.v19i1.35857

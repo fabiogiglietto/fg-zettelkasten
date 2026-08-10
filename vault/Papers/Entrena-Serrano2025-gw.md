@@ -5,7 +5,7 @@ authors: ["Carlos Entrena-Serrano", "Martin Degeling", "Salvatore Romano", "Razi
 year: 2025
 doi: 
 bibtex_key: Entrena-Serrano2025-gw
-topics: [platform-data-access-governance]
+topics: [platform-data-access-and-research-infrastructure]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2506.09746v2

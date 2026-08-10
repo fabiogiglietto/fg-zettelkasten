@@ -5,7 +5,7 @@ authors: ["Kristensen, Jakob Bæk", "Kristensen, Jakob Bæk"]
 year: 2025
 doi: 
 bibtex_key: Kristensen2025-ni
-topics: [political-communication-elections, platform-critique-anniversary-essays]
+topics: [political-polarization-and-partisanship, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Platform%20polarization.%20Do%20alternative%20platforms%20drive%20discursive%20polarization%3F

@@ -5,7 +5,7 @@ authors: ["William J. Brady", "Meriel Doyle", "Abdo Elnakouri", "Eli J. Finkel",
 year: 2026
 doi: 10.1038/s41586-026-10536-1
 bibtex_key: Brady2026-ln
-topics: [political-communication-elections, computational-methods-llms]
+topics: [meta-platform-policy-and-visibility, political-polarization-and-partisanship]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1038/s41586-026-10536-1

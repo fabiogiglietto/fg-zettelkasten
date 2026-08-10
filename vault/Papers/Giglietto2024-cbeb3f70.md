@@ -6,7 +6,7 @@ year: 2024
 doi: 10.31219/osf.io/2j9ed
 bibtex_key: Giglietto2024-cbeb3f70
 kind: own
-topics: [computational-methods-llms, political-communication-elections]
+topics: [llms-for-content-analysis, italian-election-media-coverage]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.31219/osf.io/2j9ed

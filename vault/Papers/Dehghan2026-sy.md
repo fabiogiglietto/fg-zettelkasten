@@ -5,7 +5,7 @@ authors: ["Ehsan Dehghan", "Dominique Carlon", "Kateryna Kasianenko", "Ashwin Na
 year: 2026
 doi: 10.1080/1369118x.2026.2623523
 bibtex_key: Dehghan2026-sy
-topics: [political-communication-elections, computational-network-structure-analysis]
+topics: [political-polarization-and-partisanship, computational-network-structure-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2026.2623523

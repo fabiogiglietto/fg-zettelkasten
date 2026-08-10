@@ -5,7 +5,7 @@ authors: ["Giandomenico Di Domenico", "Federico Mangió", "Denitsa Dineva"]
 year: 2026
 doi: 10.1002/mar.70106
 bibtex_key: Di-Domenico2026-zq
-topics: [information-disorder-misinformation, coordinated-inauthentic-behavior]
+topics: [disinformation-narratives-and-information-operations, online-radicalization-and-extremism-on-platforms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1002/mar.70106

@@ -5,7 +5,7 @@ authors: ["Michael Achmann-Denkler", "Mario Haim", "Christian Wolff"]
 year: 2026
 doi: 
 bibtex_key: Achmann-Denkler2026-lx
-topics: [computational-methods-llms, political-communication-elections]
+topics: [llms-for-content-analysis, meta-platform-policy-and-visibility]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2604.19489v1

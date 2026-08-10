@@ -5,7 +5,7 @@ authors: ["Matthew DiGiuseppe", "Joshua Robison"]
 year: 2026
 doi: 
 bibtex_key: DiGiuseppe2026-pu
-topics: [computational-methods-llms, public-perceptions-and-labor-impacts-of-ai]
+topics: [public-perceptions-and-labor-impacts-of-ai, llms-for-content-analysis]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.18092v1

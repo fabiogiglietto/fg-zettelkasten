@@ -5,7 +5,7 @@ authors: ["Anya Schiffrin", "Alice E. Marwick", "Navya Sinha", "Anusha Wangnoo",
 year: 2026
 doi: 10.69985/enbp3007
 bibtex_key: Schiffrin_undated-gi
-topics: [generative-ai-media-manipulation, platform-data-access-governance]
+topics: [generative-ai-and-synthetic-media, platform-data-access-and-research-infrastructure]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.69985/enbp3007

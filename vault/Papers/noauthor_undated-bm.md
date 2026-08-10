@@ -5,7 +5,7 @@ authors: []
 year: 
 doi: 
 bibtex_key: noauthor_undated-bm
-topics: [coordinated-inauthentic-behavior, information-disorder-misinformation]
+topics: [coordinated-inauthentic-behavior, disinformation-narratives-and-information-operations]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=cib.pdf

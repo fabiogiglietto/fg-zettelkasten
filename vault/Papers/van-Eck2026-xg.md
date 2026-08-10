@@ -5,7 +5,7 @@ authors: ["Christel W van Eck", "Hendrik M A Meyer", "Michael Brüggemann"]
 year: 2026
 doi: 10.1093/anncom/wlag012
 bibtex_key: van-Eck2026-xg
-topics: [political-communication-elections, information-disorder-misinformation]
+topics: [political-polarization-and-partisanship]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1093/anncom/wlag012

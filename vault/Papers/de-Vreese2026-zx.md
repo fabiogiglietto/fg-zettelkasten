@@ -5,7 +5,7 @@ authors: ["Claes H. de Vreese", "Rebekah Tromble"]
 year: 2026
 doi: 10.1080/10584609.2026.2681041
 bibtex_key: de-Vreese2026-zx
-topics: [platform-data-access-governance, political-communication-elections]
+topics: [platform-data-access-and-research-infrastructure]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2681041

@@ -5,7 +5,7 @@ authors: ["Meysam Alizadeh", "Mohsen Mosleh", "Fabrizio Gilardi", "Atoosa Kasirz
 year: 2026
 doi: 
 bibtex_key: Alizadeh2026-es
-topics: [llm-augmented-research-methods, computational-methods-llms]
+topics: [llm-augmented-research-methods, llms-for-content-analysis]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2606.11447v1

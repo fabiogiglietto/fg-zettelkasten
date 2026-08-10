@@ -5,7 +5,7 @@ authors: ["Jan Elfes", "Marco Bastos", "Luca Maria Aiello"]
 year: 2026
 doi: 
 bibtex_key: Elfes2026-jb
-topics: [computational-methods-llms, political-communication-elections]
+topics: [llms-for-content-analysis, political-polarization-and-partisanship]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2601.07398v1

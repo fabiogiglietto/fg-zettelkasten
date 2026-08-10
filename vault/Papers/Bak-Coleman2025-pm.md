@@ -5,7 +5,7 @@ authors: ["Joseph Bak-Coleman", "Cailin O'Connor", "Carl Bergstrom", "Jevin West
 year: 2025
 doi: 
 bibtex_key: Bak-Coleman2025-pm
-topics: [platform-data-access-governance, information-disorder-misinformation]
+topics: [platform-data-access-and-research-infrastructure, ai-red-teaming-and-participatory-evaluation]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2510.19894v2

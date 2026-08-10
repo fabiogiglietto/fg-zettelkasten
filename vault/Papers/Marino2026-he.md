@@ -5,7 +5,7 @@ authors: ["Giada Marino", "Bruna Paroni", "Fabio Giglietto"]
 year: 2026
 doi: 10.1080/1369118x.2026.2696929
 bibtex_key: Marino2026-he
-topics: [political-communication-elections, computational-methods-llms]
+topics: [political-polarization-and-partisanship, cross-national-coordinated-networks]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2026.2696929

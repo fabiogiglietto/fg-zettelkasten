@@ -5,7 +5,7 @@ authors: ["Walter Paci", "Alessandro Panunzi", "Sandro Pezzelle"]
 year: 2025
 doi: 
 bibtex_key: Paci2025-ag
-topics: [computational-methods-llms, political-communication-elections]
+topics: [llms-for-content-analysis, llm-augmented-research-methods]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2506.06775v1
