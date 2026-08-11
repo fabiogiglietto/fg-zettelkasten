@@ -18,6 +18,7 @@ Comparative investigation of coordinated social media networks and political inf
 - [[Inacio-da-Silva2026-zf]]
 - [[Iris2026-pg]]
 - [[Jovanovic-Harrington2026-ze]]
+- [[Kakavand2026-kt]]
 - [[Kalsnes2025-zb]]
 - [[Kansaon2025-id]]
 - [[Kulichkina2026-zk]]

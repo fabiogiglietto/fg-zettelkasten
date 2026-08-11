@@ -15,6 +15,7 @@ Empirical and review studies of how extremist actors (far-right, jihadist) explo
 - [[Brown2026-br]]
 - [[Di-Domenico2026-zq]]
 - [[Grusauskaite2026-po]]
+- [[Kakavand2026-kt]]
 - [[Karo2026-dn]]
 - [[Kim2026-br]]
 - [[Marwick2025-ov]]
