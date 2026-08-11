@@ -1,0 +1,35 @@
+{
+  "abstract": "This study examines the network structures of German far-right actors across five social media platforms — Facebook, Twitter (X), Instagram, YouTube, and Telegram — through the theoretical lens of technology affordances. Using platform-specific forms of visible interaction (retweets, forwarded messages, shared posts, mentions, and subscriptions) as connectors, the authors trace how the same or similar features produce distinct network patterns. They find that each platform affords connectivity, replicability, and scalability differently, so far-right actors do not simply reproduce the same networks across platforms but adapt their practices to platform-specific affordances.",
+  "key_claims": [
+    "Far-right network structures differ substantially across social media platforms in terms of size, cohesion, key actors, and forms of connectivity.",
+    "Technology affordances — particularly connectivity, replicability, and scalability — are not fixed properties of platforms but relational, sociotechnical outcomes of the interaction between platform design and user practice.",
+    "Network analysis of visible ties can be used to infer platform affordances and characterize how far-right actors connect and circulate content.",
+    "Single-platform studies capture only a limited part of a broader multi-platform communication ecosystem, so multi-platform research is essential for understanding far-right networking.",
+    "Even text-based platforms with relatively similar connectors (Twitter, Facebook, Telegram) produce distinct network patterns, underscoring the role of situated user practices."
+  ],
+  "methods": [
+    "Exploratory multi-platform, network-analytic case study of the German-speaking far right over roughly six months in 2022.",
+    "Snowball sampling starting from a seed list of prominent far-right actors (politicians and parties such as the AfD, journalists, alternative media, authors, activists), compiled from prior research, official reports (Bundesamt für Verfassungsschutz), and media coverage, then expanded over three iterations with a final round retaining only nodes linking back to the existing sample.",
+    "Platform-specific connectors used to define network edges: retweets/mentions on Twitter, forwarded messages on Telegram, reshared posts on Facebook, mentions/tags in captions on Instagram, and channel subscriptions on YouTube.",
+    "Data collected via platform APIs (Twitter API v2, CrowdTangle for Facebook and Instagram, Google API for YouTube, Telegram API supplemented with the Telethon package); YouTube captured as a subscription snapshot (Oct 31, 2022) since it lacks time-windowed access.",
+    "Analysis conducted in Python (NetworkX) with visualization in Gephi; focus on size-robust measures — weakly connected components, reciprocity, average clustering coefficient, and modularity (Louvain community detection on undirected networks).",
+    "Node-level roles identified using the HITS algorithm (hubs and authorities, linked to replicability and scalability) and betweenness centrality (brokers, linked to connectivity)."
+  ],
+  "findings": [
+    "Twitter hosts by far the largest network (42,389 nodes; ~7.7M edges) in a single component, with low clustering, very low reciprocity, and moderate modularity — an expansive, international, loosely connected broadcast arena where authority scores exceed hub scores, suggesting the salience of scalability.",
+    "Telegram is the second largest network (8,397 nodes; ~449,037 edges), with higher clustering but low reciprocity and moderate modularity; it is inward-oriented, dominated by fringe and conspiracy channels, with differentiated roles for content producers, amplifiers, and brokers.",
+    "YouTube (5,183 nodes; ~30,947 edges, two components) links disparate genres and thematic communities (e.g., politics, weaponry, cooking, prepping, conspiracy theories) but shows low clustering and reciprocity and limited direct connectivity; recommendation/subscription ties may act as gateways to radicalization.",
+    "Instagram (843 nodes; ~3,040 edges, six components) shows the highest reciprocity, clustering, and modularity — tightly connected but fragmented echo chambers — yet is dominated by mainstream political and media actors, with the AfD cluster tightly knit but peripheral.",
+    "Facebook is the smallest network (625 nodes; ~2,809 edges) and is hierarchically dominated by the AfD, with a division of labor between national-level accounts as authorities (content producers) and local accounts as hubs (amplifiers), reflecting an organized party social media strategy.",
+    "Because seed accounts were largely the same across platforms, cross-platform differences in structure and key actors reveal platform-specific tendencies rather than differences in the underlying actor set."
+  ],
+  "contributions": [
+    "Provides a rare five-platform comparative analysis of far-right networks, moving beyond common single-platform studies.",
+    "Demonstrates how network analysis can be used to empirically infer technology affordances (connectivity, replicability, scalability) and links specific measures to specific affordances.",
+    "Offers a detailed, empirically grounded characterization of the German far-right's platform-specific networking practices, informative for academic, civil, and political actors and for countermeasures.",
+    "Advances an affordance-based, sociotechnical framework showing that network structures are joint outcomes of platform features, user practices, and data accessibility, cautioning against generalizing from one platform to another.",
+    "Documents methodological challenges of multi-platform research under uneven data access (e.g., Twitter API costs, CrowdTangle discontinuation) and points to future directions such as URL tracing and cross-platform actor matching."
+  ],
+  "framing": "The paper situates itself within research on technology affordances and multi-platform (or cross-platform) digital media studies, drawing on boyd's and Bossetta's affordance concepts and Evans et al.'s relational definition. It contributes to the political communication and far-right studies literature by treating affordances as relational, sociotechnical outcomes rather than fixed platform properties, and by advocating multi-platform network analysis over single-platform approaches.",
+  "pdf_source": "drive"
+}
