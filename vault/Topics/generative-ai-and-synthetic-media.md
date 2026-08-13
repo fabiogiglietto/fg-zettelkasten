@@ -32,6 +32,7 @@ Study of generative AI's role in disinformation, including synthetic visual pers
 - [[Schroeder2026-im]]
 - [[Stanusch2026-ec]]
 - [[Suk2026-ai]]
+- [[Tang2026-gu]]
 - [[Tornberg2026-lc]]
 - [[Triedman2025-uy]]
 - [[Wack2026-bt]]

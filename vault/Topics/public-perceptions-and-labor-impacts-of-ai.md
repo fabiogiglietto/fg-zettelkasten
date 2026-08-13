@@ -21,6 +21,7 @@ Survey- and discourse-based studies of how publics and workers perceive, use, an
 - [[Mattis2026-gu]]
 - [[Richter2026-bt]]
 - [[Suk2026-ai]]
+- [[Tang2026-gu]]
 - [[UnknownUnknown-db]]
 
 ## All papers (Dataview)

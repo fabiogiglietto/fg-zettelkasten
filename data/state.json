@@ -3300,10 +3300,26 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-08-11T08:19:26.043799+00:00"
+    },
+    "bibtex:Tang2026-gu": {
+      "note_path": "Papers/Tang2026-gu.md",
+      "topics": [
+        "generative-ai-and-synthetic-media",
+        "public-perceptions-and-labor-impacts-of-ai"
+      ],
+      "assign_fp": "84a7a3110564baca7e133b552a605dee302960e776ab9e90cb3bee70edb3ad25",
+      "doi": "10.1007/s00146-026-03254-9",
+      "title": "Behind the “AI slop”: exploring the AI-generated viral short video production in China",
+      "pdf_source": "abstract_only",
+      "content_hash": "be4b94ec34c9ed72fbd84121d23c6ea6f5141ad3c12541e29d5d364fa90cdee0",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-08-13T07:06:04.845478+00:00"
     }
   },
   "last_full_cluster": "2026-08-10T05:52:18.185001+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "327b66d1dca426ac9c199db32dbb5bc83a8c4f4af0d0473b354468b435717cf2",
   "emergent_fp": "56476d0870ba7e165467880a2973b9103c497e29ca1ab095a24c000274919b54",
   "structure_fps": {
