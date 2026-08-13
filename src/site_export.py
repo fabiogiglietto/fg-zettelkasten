@@ -155,13 +155,16 @@ def _read_paper_meta(text: str) -> dict | None:
     """Extract the fields needed for the homepage 'Latest papers' list.
 
     Returns None for notes without a parseable frontmatter or without a
-    `discovery_date` — those can't be ranked by recency.
+    `discovery_date` — those can't be ranked by recency — and for superseded
+    notes, which are redirect stubs: they keep their original discovery date so
+    the tombstone stays a faithful record, which would otherwise let a
+    just-superseded paper occupy a "Latest papers" slot with an empty page.
     """
     fm = _FRONTMATTER.match(text)
     if not fm:
         return None
     data = yaml.safe_load(fm.group(1)) or {}
-    if not data.get("discovery_date"):
+    if not data.get("discovery_date") or data.get("superseded_by"):
         return None
     aliases = data.get("aliases") or []
     title = aliases[0] if aliases else data.get("title", "")

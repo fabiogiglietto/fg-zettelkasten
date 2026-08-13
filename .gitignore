@@ -17,6 +17,8 @@ service-account*.json
 
 # Transient extracted PDF text — never committed (copyright: Paperpile PDFs)
 data/.cache/
+# Transient report from `dedupe-vault --dry-run`; regenerated on every run.
+data/supersede_candidates.json
 
 # IDE / OS
 .idea/

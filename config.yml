@@ -126,6 +126,35 @@ own_publications:
   # the daily cron drains the remaining queue over subsequent runs.
   max_per_run: 10
 
+supersede:
+  # A working paper is often re-added later in its published form under a new
+  # bibtex key. When the two are recognized as the same work, the published note
+  # wins and the working-paper note becomes a stub pointing at it — the file
+  # stays so inbound [[wikilinks]] and the published site URL keep working, but
+  # its topics are cleared so it leaves the registers.
+  #
+  # Direction is decided by publication status, never by arrival order: a
+  # preprint added *after* the journal version is itself tombstoned.
+  enabled: true
+  # A cheap deterministic prefilter (title / author / abstract similarity) picks
+  # candidates; Claude decides whether each pair really is one work. Only an
+  # unhedged yes is applied. This caps the per-run Claude calls — pairs sharing a
+  # DOI need none, and every verdict is cached in state so a rejected pair is
+  # never re-billed.
+  max_adjudications_per_run: 5
+  openalex:
+    # `check-published` asks OpenAlex whether preprints already in the vault have
+    # since been published without anyone re-adding them. Such a paper has no
+    # upstream bibtex key, so its note is upgraded in place (new DOI + venue,
+    # old DOI kept as `preprint_doi`) rather than replaced.
+    enabled: true
+    # OpenAlex's polite pool — no API key, just a contact address.
+    mailto: "fabio.giglietto@gmail.com"
+    # Per-run cap; the scan is ordered oldest-check-first so it rotates through
+    # the backlog rather than re-asking about the same few notes.
+    max_lookups_per_run: 15
+    recheck_after_days: 90
+
 paths:
   topics_file: "data/topics.json"
   state_file: "data/state.json"
