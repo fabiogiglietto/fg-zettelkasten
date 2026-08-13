@@ -15,19 +15,36 @@ Schema (see the implementation plan):
           "content_hash": "<sha256>",
           "podcast_linked": true,
           "last_processed": "2026-05-17T...",
-          "assign_fp": "<sha256>"      # optional: topic-assignment input fingerprint
+          "assign_fp": "<sha256>",     # optional: topic-assignment input fingerprint
+          "superseded_by": "bibtex:...",  # optional: this note is now a stub
+          "supersedes": "Boyd2025-aa",    # optional: replaced that working paper
+          "published_doi": "10.xxxx/...", # optional: found by check-published
+          "published_venue": "...",       # optional: found by check-published
+          "openalex_checked": "2026-07-30T..."  # optional: scan rotation marker
         }
       },
       "last_full_cluster": "2026-05-17T...",
       "papers_since_cluster": 0,
       "register_signals_hash": "<sha256>",   # optional: refresh-topics skip key
       "structure_fps": {"<slug>": "<sha256>"},  # optional: structure-note skip keys
-      "emergent_fp": "<sha256>"              # optional: emergent-clustering skip key
+      "emergent_fp": "<sha256>",             # optional: emergent-clustering skip key
+      "supersede_decisions": {               # optional: same-work verdict cache
+        "bibtex:A|bibtex:B": {"same_work": false, "confidence": "high",
+                              "reason": "...", "source": "claude|doi",
+                              "model": "..."}
+      }
     }
 
 The `*_fp`/`*_hash` keys fingerprint the *inputs* of each billable Claude call
 so incremental runs (`topics.skip_unchanged_signals`,
 `processing.incremental_recluster`) can skip calls whose inputs are unchanged.
+
+`supersede_decisions` is the same idea for duplicate detection, and it caches
+*negative* verdicts too: a pair of genuinely distinct papers that trips the
+prefilter would otherwise be re-sent to Claude on every run forever. Its key is
+the unordered pair of paper ids (see `supersede.pair_key`). An entry whose
+`superseded_by` is set is a tombstone — kept, never deleted, because `update`
+diffs the feed by id and a missing entry would make the paper look new again.
 """
 from __future__ import annotations
 

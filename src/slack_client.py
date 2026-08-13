@@ -70,8 +70,16 @@ def build_blocks(
     podcast_url: Optional[str],
     note_url: Optional[str] = None,
     apple_url: Optional[str] = None,
+    superseded_note: Optional[dict] = None,
 ) -> list[dict]:
-    """Assemble the Block Kit digest for one paper. Deterministic — no LLM."""
+    """Assemble the Block Kit digest for one paper. Deterministic — no LLM.
+
+    `superseded_note` ({"key", "venue", "discovery_date"}) marks a paper that
+    arrived as the published version of a working paper already in the archive.
+    It is still worth announcing — the version of record is what people cite —
+    but it is not a new discovery, so the digest says so instead of presenting
+    it as unseen.
+    """
     blocks: list[dict] = [
         {
             "type": "header",
@@ -82,6 +90,19 @@ def build_blocks(
             },
         }
     ]
+
+    if superseded_note:
+        venue = (superseded_note.get("venue") or "").strip()
+        added = str(superseded_note.get("discovery_date") or "")[:10]
+        line = "⬆️  Now published" + (f" in *{_esc(venue)}*" if venue else "")
+        line += " — supersedes the working paper"
+        line += f" added {added}" if added else " already in the archive"
+        blocks.append(
+            {
+                "type": "context",
+                "elements": [{"type": "mrkdwn", "text": line}],
+            }
+        )
 
     # Byline: authors · year · topics.
     meta = [_esc(_authors(paper.authors))]
@@ -194,6 +215,7 @@ def post_paper(
     podcast_url: Optional[str],
     note_url: Optional[str] = None,
     apple_url: Optional[str] = None,
+    superseded_note: Optional[dict] = None,
 ) -> bool:
     """Post one paper's digest to the Slack incoming webhook.
 
@@ -206,7 +228,8 @@ def post_paper(
         # shows when blocks can't render (push notifications, screen readers).
         "text": _truncate(paper.title, _TEXT_MAX),
         "blocks": build_blocks(
-            paper, summary, topics, podcast_url, note_url, apple_url
+            paper, summary, topics, podcast_url, note_url, apple_url,
+            superseded_note,
         ),
     }
     try:

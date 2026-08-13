@@ -186,6 +186,145 @@ def _related_keys(state: dict, paper_id: str, topics: list[str]) -> list[str]:
     return out
 
 
+def classify_feed_paper(entry: dict | None, new_hash: str) -> str:
+    """How `update` should treat one feed paper: new / changed / tombstoned / unchanged.
+
+    Split out of `cmd_update` so the tombstone guard is testable as itself. A
+    tombstoned paper is still delivered by the feed — it was merged into its
+    published version here, not withdrawn upstream — so its content hash keeps
+    moving as episodes appear and abstracts are edited. It must reach neither
+    bucket: `new` would re-summarize it and `changed` would re-render its note,
+    overwriting the stub with a full paper note again.
+    """
+    if entry is None:
+        return "new"
+    if entry.get("superseded_by"):
+        return "tombstoned"
+    if entry.get("content_hash") != new_hash:
+        return "changed"
+    return "unchanged"
+
+
+def _resolve_supersedes(
+    cfg: dict,
+    state: dict,
+    new_papers: list,
+    claude,
+    vault: str,
+    papers_dir: str,
+    summaries_dir: str,
+) -> tuple[list, dict[str, str], dict[str, str], list[tuple[str, str]]]:
+    """Merge each new paper that is the same work as a note already in the vault.
+
+    Returns `(remaining_papers, supersedes_map, inherit_podcast, merged)`:
+    papers still to be processed normally, a `{winner_key: loser_key}` map for
+    the note frontmatter, `{winner_key: podcast_url}` for episodes inherited
+    from a superseded note, and the `(loser, winner)` pairs actually applied.
+
+    Runs *before* summarization deliberately: a paper about to become a
+    tombstone must not cost a full-PDF summary first. The consequence is that
+    the incoming side is matched on its feed abstract while the vault side uses
+    its structured summary — the prefilter thresholds were measured on
+    summary-to-summary pairs, so this direction is slightly noisier. That only
+    costs recall, and only for the abstract-similarity rule.
+    """
+    from . import supersede, note_builder
+
+    sup_cfg = cfg.get("supersede", {})
+    if not new_papers or not sup_cfg.get("enabled", True):
+        return new_papers, {}, {}, []
+
+    papers_path = Path(vault) / papers_dir
+    records = supersede.load_vault_records(papers_path, Path(summaries_dir))
+    index = supersede.build_candidate_index(records)
+    decisions = state.setdefault("supersede_decisions", {})
+    budget = int(sup_cfg.get("max_adjudications_per_run", 5))
+    model = claude.reasoning_model
+
+    kept: list = []
+    supersedes_map: dict[str, str] = {}
+    inherit_podcast: dict[str, str] = {}
+    merged: list[tuple[str, str]] = []
+
+    for paper in new_papers:
+        incoming = supersede.record_from_paper(paper)
+        match = None
+        for cand in supersede.find_candidates(incoming, records, index):
+            other = records[cand.key]
+            cached = supersede.pair_key(incoming.paper_id, other.paper_id) in decisions
+            if not cand.auto and not cached and budget <= 0:
+                print(f"  supersede: adjudication budget spent, deferring "
+                      f"{incoming.key} ~ {other.key}")
+                continue
+            verdict = supersede.adjudicate(
+                incoming, other, cand, claude, model, decisions
+            )
+            if verdict.source == "claude":
+                budget -= 1
+            if verdict.applies:
+                match = (other, cand, verdict)
+                break
+            print(f"  supersede: {incoming.key} != {other.key} "
+                  f"({cand.rule}, {verdict.confidence}) — {verdict.reason}")
+
+        if match is None:
+            kept.append(paper)
+            continue
+
+        other, cand, verdict = match
+        # A chain (v1 -> v2 -> journal) must collapse: every stub points at the
+        # note that still has content, never at another stub.
+        head = supersede.resolve_head(other.key, records)
+        other = records.get(head, other)
+        winner, loser = supersede.direction(incoming, other)
+        now = _now()
+
+        if winner.key == incoming.key:
+            # The published version has arrived. The incumbent note becomes a
+            # stub; the incoming paper goes on to the normal pipeline below and
+            # renders with `supersedes:` in its frontmatter.
+            # Read the episode link before tombstoning — the stub clears it.
+            podcast_url = supersede.podcast_url_of(papers_path, loser.key)
+            if podcast_url:
+                inherit_podcast[winner.key] = podcast_url
+            supersede.write_tombstone(papers_path, loser.key, winner)
+            supersede.tombstone_state(
+                state, loser.paper_id, winner.paper_id,
+                f"{papers_dir}/{loser.key}.md", now,
+            )
+            if loser.key in records:
+                records[loser.key] = supersede.dataclass_replace(
+                    records[loser.key], superseded_by=winner.key
+                )
+            # Anything already pointing at the note we just tombstoned must
+            # follow it, or a stub ends up redirecting to another stub.
+            moved = supersede.retarget_chain(
+                papers_path, records, state, loser.key, winner.key, now
+            )
+            if moved:
+                print(f"  supersede: retargeted {', '.join(moved)} -> {winner.key}")
+            supersedes_map[winner.key] = loser.key
+            merged.append((loser.key, winner.key))
+            kept.append(paper)
+            print(f"  supersede: {loser.key} -> {winner.key} "
+                  f"({verdict.source}: {verdict.reason})")
+        else:
+            # A preprint of something already held in published form. Write it
+            # out as a stub rather than dropping it: a dropped paper leaves no
+            # state entry, so the same decision gets re-made every single run.
+            supersede.tombstone_from_record(papers_path, loser, winner)
+            supersede.tombstone_state(
+                state, loser.paper_id, winner.paper_id,
+                f"{papers_dir}/{loser.key}.md", now,
+            )
+            supersede.mark_supersedes(papers_path, winner.key, loser.key)
+            merged.append((loser.key, winner.key))
+            print(f"  supersede: {loser.key} filed under existing {winner.key} "
+                  f"({verdict.source}: {verdict.reason})")
+
+    return kept, supersedes_map, inherit_podcast, merged
+
+
 def _prune_stale_notes(notes_dir: Path, keep: set[str]) -> list[str]:
     """Delete *.md files in `notes_dir` whose slug is not in `keep`.
 
@@ -524,16 +663,23 @@ def cmd_summarize(cfg: dict, args) -> int:
     of research-radio in the chain. `update` (which runs after the podcast)
     reuses these summaries and stays self-sufficient: run on its own, the
     daily fallback cron still summarizes anything this stage missed."""
-    from . import summarizer
+    from . import summarizer, state as state_mod
 
     claude = _claude(cfg)
     drive = _drive_client(cfg)
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
+    state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
 
     papers = _fetch_feed(cfg)
+    # A tombstoned paper stays in the feed forever — it was merged into its
+    # published version, not withdrawn upstream. Most keep the summary they were
+    # created with, but one filed straight to a stub never had one, and without
+    # this it would be summarized once at full price for a note that is a
+    # three-line redirect.
     pending = [
         p for p in papers
         if summarizer.load_summary(summaries_dir, p.bibtex_key) is None
+        and not (state["papers"].get(p.id) or {}).get("superseded_by")
     ]
     print(f"summarize: {len(pending)} of {len(papers)} paper(s) need a summary")
     for i, paper in enumerate(pending, 1):
@@ -596,9 +742,15 @@ def cmd_update(cfg: dict, args) -> int:
         podcast = paper.id in episodes
         new_hash = state_mod.content_hash(paper.abstract, podcast)
         entry = state["papers"].get(paper.id)
-        if entry is None:
+        kind = classify_feed_paper(entry, new_hash)
+        if kind == "new":
             new_papers.append(paper)
-        elif entry.get("content_hash") != new_hash:
+        elif kind == "tombstoned":
+            # Keep the bookkeeping current, but never let a stub reach the
+            # render loop — see `classify_feed_paper`.
+            entry["podcast_linked"] = podcast
+            entry["content_hash"] = new_hash
+        elif kind == "changed":
             changed_papers.append(paper)
 
     # Duplicate safety net (multi-user archive): a brand-new id may refer to a
@@ -623,6 +775,14 @@ def cmd_update(cfg: dict, args) -> int:
             continue
         deduped.append(paper)
     new_papers = deduped
+
+    # Supersede resolution: a new id may be the *published version* of a working
+    # paper already in the vault (or, less often, a preprint of one). Exact-match
+    # dedup above cannot see either case — the DOI and the title both move
+    # between the preprint and the version of record.
+    new_papers, supersedes_map, inherit_podcast, merged = _resolve_supersedes(
+        cfg, state, new_papers, claude, vault, papers_dir, summaries_dir
+    )
     print(f"update: {len(new_papers)} new, {len(changed_papers)} changed")
 
     summaries: dict[str, dict] = {}
@@ -673,6 +833,9 @@ def cmd_update(cfg: dict, args) -> int:
         if paper.is_team_submission:
             entry["kind"] = "team"
             entry["submitted_by"] = paper.submitted_by
+        # This paper replaced a working-paper note, now a stub pointing here.
+        if paper.bibtex_key in supersedes_map:
+            entry["supersedes"] = supersedes_map[paper.bibtex_key]
         state["papers"][paper.id] = entry
 
     # Changed papers: refresh the state hash (e.g. a podcast episode appeared).
@@ -694,10 +857,17 @@ def cmd_update(cfg: dict, args) -> int:
             print(f"  WARN: no summary for {paper.bibtex_key}, skipping note")
             continue
         related = _related_keys(state, paper.id, entry["topics"])
+        # research-radio produces an episode per paper id, so a published
+        # version normally has none while the working paper it replaced does.
+        # Carry the episode across rather than dropping the Listen link.
+        podcast_ep = episodes.get(paper.id)
+        if podcast_ep is None and paper.bibtex_key in inherit_podcast:
+            podcast_ep = {"audio_url": inherit_podcast[paper.bibtex_key]}
         note = note_builder.build_paper_note(
             paper, summary, entry["topics"], related,
-            episodes.get(paper.id), claude, claude.note_model,
+            podcast_ep, claude, claude.note_model,
             kind=entry.get("kind"),
+            supersedes=entry.get("supersedes"),
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
 
@@ -748,12 +918,24 @@ def cmd_update(cfg: dict, args) -> int:
             if summary is None:
                 print(f"  slack: no summary for {paper.bibtex_key}, skipping")
                 continue
+            # A paper that superseded a working paper is announced as the
+            # version of record, not as a fresh discovery.
+            superseded_note = None
+            if entry.get("supersedes"):
+                prior = state["papers"].get(f"bibtex:{entry['supersedes']}") or {}
+                superseded_note = {
+                    "key": entry["supersedes"],
+                    "venue": paper.journal or "",
+                    "discovery_date": prior.get("discovery_date")
+                    or paper.discovery_date or "",
+                }
             try:
                 ep = episodes.get(paper.id) or {}
                 posted = slack_client.post_paper(
                     os.environ["SLACK_WEBHOOK_URL"], paper, summary,
                     entry["topics"], ep.get("audio_url"),
                     _note_url(cfg, paper.bibtex_key), ep.get("apple_url"),
+                    superseded_note,
                 )
             except Exception as exc:  # noqa: BLE001 - Slack must never break the build
                 posted = False
@@ -790,10 +972,25 @@ def cmd_update(cfg: dict, args) -> int:
             podcast = paper.id in episodes
             new_hash = state_mod.content_hash(paper.abstract, podcast)
             entry = state["papers"].get(paper.id)
-            if entry is None:
+            kind = classify_feed_paper(entry, new_hash)
+            if kind == "new":
                 own_new.append(paper)
-            elif entry.get("content_hash") != new_hash:
+            elif kind == "tombstoned":
+                entry["podcast_linked"] = podcast
+                entry["content_hash"] = new_hash
+            elif kind == "changed":
                 own_changed.append(paper)
+
+        # Own publications had no duplicate check at all, which is how three
+        # pairs of notes for one paper ended up in the vault: the same work
+        # re-ingested under a second key after upstream author parsing changed.
+        # They go through the same resolution as the toread feed.
+        own_new, own_supersedes, own_inherit, own_merged = _resolve_supersedes(
+            cfg, state, own_new, claude, vault, papers_dir, summaries_dir
+        )
+        supersedes_map.update(own_supersedes)
+        inherit_podcast.update(own_inherit)
+        merged.extend(own_merged)
 
         # Cap only new papers (each costs a Claude summary); changed papers are
         # cheap re-renders and are always processed. The feed is newest-first,
@@ -835,6 +1032,8 @@ def cmd_update(cfg: dict, args) -> int:
             "podcast_linked": podcast,
             "last_processed": _now(),
         }
+        if paper.bibtex_key in supersedes_map:
+            state["papers"][paper.id]["supersedes"] = supersedes_map[paper.bibtex_key]
 
     # Changed own papers: refresh the state hash (e.g. a podcast episode appeared).
     for paper in own_changed:
@@ -855,9 +1054,13 @@ def cmd_update(cfg: dict, args) -> int:
             print(f"  WARN: no summary for {paper.bibtex_key}, skipping note")
             continue
         related = _related_keys(state, paper.id, entry["topics"])
+        podcast_ep = episodes.get(paper.id)
+        if podcast_ep is None and paper.bibtex_key in inherit_podcast:
+            podcast_ep = {"audio_url": inherit_podcast[paper.bibtex_key]}
         note = note_builder.build_paper_note(
             paper, summary, entry["topics"], related,
-            episodes.get(paper.id), claude, claude.note_model, kind="own",
+            podcast_ep, claude, claude.note_model, kind="own",
+            supersedes=entry.get("supersedes"),
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
 
@@ -868,7 +1071,9 @@ def cmd_update(cfg: dict, args) -> int:
     state["papers_since_cluster"] = (
         state.get("papers_since_cluster", 0) + len(new_papers)
     )
-    if touched or own_touched:
+    # A supersede empties the tombstoned paper's topics, so the registers must be
+    # rebuilt even when no note was otherwise rendered this run.
+    if touched or own_touched or merged:
         _regenerate_topic_notes(cfg, register, state)
 
     threshold = cfg["processing"]["recluster_threshold"]
@@ -1048,6 +1253,198 @@ def cmd_fix_links(cfg: dict, args) -> int:
     return 0
 
 
+def cmd_dedupe_vault(cfg: dict, args) -> int:
+    """Find (and optionally merge) notes in the vault that are the same work.
+
+    The one-off backfill for duplicates that predate the supersede logic. Unlike
+    the live path this never re-summarizes or re-renders the winner: no new PDF
+    is arriving, its note is already correct, and the merge is a tombstone plus
+    one frontmatter line.
+    """
+    import json
+
+    from . import supersede, topics_client, state as state_mod
+
+    vault = _abs(cfg["vault"]["path"])
+    papers_dir = cfg["vault"]["papers_dir"]
+    papers_path = Path(vault) / papers_dir
+    summaries_dir = _abs(cfg["paths"]["summaries_dir"])
+    state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
+
+    records = supersede.load_vault_records(papers_path, Path(summaries_dir))
+    index = supersede.build_candidate_index(records)
+    print(f"dedupe-vault: scanning {len(records)} notes")
+
+    seen: set[tuple[str, str]] = set()
+    pairs: list[tuple] = []
+    for key, record in records.items():
+        if record.superseded_by:
+            continue
+        for cand in supersede.find_candidates(record, records, index):
+            pair = tuple(sorted((key, cand.key)))
+            if pair in seen:
+                continue
+            seen.add(pair)
+            winner, loser = supersede.direction(records[pair[0]], records[pair[1]])
+            pairs.append((loser, winner, cand))
+
+    if not pairs:
+        print("dedupe-vault: no candidates")
+        return 0
+
+    limit = getattr(args, "limit", None)
+    if limit and len(pairs) > limit:
+        print(f"dedupe-vault: {len(pairs)} candidates, capped at {limit}")
+        pairs = pairs[:limit]
+
+    report = []
+    for loser, winner, cand in pairs:
+        print(f"  {loser.key} -> {winner.key}"
+              f"  [{cand.rule} title={cand.title_score:.2f} "
+              f"abstract={cand.abstract_score:.2f} auto={cand.auto}]")
+        report.append({
+            "loser": loser.key, "winner": winner.key, "rule": cand.rule,
+            "title_score": round(cand.title_score, 3),
+            "abstract_score": round(cand.abstract_score, 3),
+            "auto": cand.auto,
+        })
+
+    if not getattr(args, "apply", False):
+        out = Path(_abs("data/supersede_candidates.json"))
+        out.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+        print(f"dedupe-vault: {len(report)} candidate(s) written to {out} "
+              f"— re-run with --apply to merge")
+        return 0
+
+    claude = _claude(cfg)
+    decisions = state.setdefault("supersede_decisions", {})
+    applied = 0
+    for loser, winner, cand in pairs:
+        verdict = supersede.adjudicate(
+            loser, winner, cand, claude, claude.reasoning_model, decisions
+        )
+        if not verdict.applies:
+            print(f"  skip {loser.key} -> {winner.key} "
+                  f"({verdict.confidence}) — {verdict.reason}")
+            continue
+        now = _now()
+        supersede.write_tombstone(papers_path, loser.key, winner)
+        supersede.mark_supersedes(papers_path, winner.key, loser.key)
+        supersede.tombstone_state(
+            state, loser.paper_id, winner.paper_id,
+            f"{papers_dir}/{loser.key}.md", now,
+        )
+        records[loser.key] = supersede.dataclass_replace(
+            records[loser.key], superseded_by=winner.key
+        )
+        moved = supersede.retarget_chain(
+            papers_path, records, state, loser.key, winner.key, now
+        )
+        if moved:
+            print(f"    retargeted {', '.join(moved)} -> {winner.key}")
+        entry = state["papers"].setdefault(winner.paper_id, {})
+        entry["supersedes"] = loser.key
+        applied += 1
+        print(f"  merged {loser.key} -> {winner.key} "
+              f"({verdict.source}: {verdict.reason})")
+
+    state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
+    if applied:
+        register = topics_client.load_topics(_abs(cfg["paths"]["topics_file"]))
+        if register:
+            _regenerate_topic_notes(cfg, register, state)
+        _sanitize_vault_links(cfg)
+        print(f"dedupe-vault: merged {applied} pair(s). Structure notes still "
+              f"cite the tombstoned keys — run `recluster` to regenerate them.")
+    return 0
+
+
+def cmd_check_published(cfg: dict, args) -> int:
+    """Ask OpenAlex whether any preprint note has since been published.
+
+    Upgrades in place, keeping the note's bibtex key: there is no upstream feed
+    record for the published version, and minting a key locally would collide
+    with whatever `toread` assigns if the paper later arrives through the feed.
+    """
+    from . import openalex_client, supersede, state as state_mod
+
+    sup_cfg = cfg.get("supersede", {}).get("openalex", {})
+    if not sup_cfg.get("enabled", True):
+        print("check-published: disabled in config")
+        return 0
+
+    vault = _abs(cfg["vault"]["path"])
+    papers_dir = cfg["vault"]["papers_dir"]
+    papers_path = Path(vault) / papers_dir
+    summaries_dir = _abs(cfg["paths"]["summaries_dir"])
+    state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
+
+    records = supersede.load_vault_records(papers_path, Path(summaries_dir))
+    # Scan preprints we have not already upgraded, oldest check first, so a
+    # capped run rotates through the backlog instead of re-asking about the
+    # same handful every time.
+    pending = [
+        r for r in records.values()
+        if r.rank == supersede.RANK_PREPRINT and not r.superseded_by
+        and not (state["papers"].get(r.paper_id) or {}).get("published_doi")
+    ]
+    pending.sort(
+        key=lambda r: (state["papers"].get(r.paper_id) or {}).get("openalex_checked", "")
+    )
+    cap = int(sup_cfg.get("max_lookups_per_run", 15))
+    batch = pending[:cap]
+    print(f"check-published: {len(pending)} preprint note(s) unchecked, "
+          f"looking up {len(batch)}")
+
+    mailto = sup_cfg.get("mailto") or None
+    apply = getattr(args, "apply", False)
+    claude = _claude(cfg) if apply else None
+    decisions = state.setdefault("supersede_decisions", {})
+    found = 0
+    for record in batch:
+        entry = state["papers"].setdefault(record.paper_id, {})
+        # Only an --apply run advances the rotation. A dry run stays read-only so
+        # it can be repeated and always reports on the same batch; recording the
+        # check there would make two consecutive dry runs show different papers.
+        if apply:
+            entry["openalex_checked"] = _now()
+        work = openalex_client.find_published_version(record, mailto=mailto)
+        if work is None:
+            continue
+        info = openalex_client.describe(work)
+        found += 1
+        print(f"  {record.key}: {record.doi or '(no doi)'} -> {info['doi']} "
+              f"[{info['venue']} {info['year']}]")
+        if not apply:
+            continue
+        # Same gate as the passive path: a title match plus a plausible venue is
+        # not on its own enough to rewrite a note's identity.
+        candidate = openalex_client.as_record(work)
+        cand = supersede.Candidate(
+            candidate.key, "openalex",
+            supersede.title_sim(record.title, candidate.title), 0.0, True, False,
+        )
+        verdict = supersede.adjudicate(
+            record, candidate, cand, claude, claude.reasoning_model, decisions
+        )
+        if not verdict.applies:
+            print(f"    skipped ({verdict.confidence}) — {verdict.reason}")
+            continue
+        if supersede.apply_inplace_upgrade(
+            papers_path, record.key, info["doi"], info["venue"], info["year"]
+        ):
+            entry["published_doi"] = info["doi"]
+            entry["published_venue"] = info["venue"]
+            print(f"    upgraded in place")
+
+    if apply:
+        state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
+    elif found:
+        print(f"check-published: {found} published version(s) found "
+              f"— re-run with --apply to upgrade the notes")
+    return 0
+
+
 def cmd_export_site(cfg: dict, args) -> int:
     """Export the vault to quartz/content/ for the public Quartz website."""
     from . import site_export, topics_client, state as state_mod
@@ -1143,6 +1540,35 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("fix-links", help="repair/de-link unresolved [[wikilinks]] in the vault")
     sub.add_parser("export-site", help="export the vault to quartz/content/ for the website")
 
+    p_dedupe = sub.add_parser(
+        "dedupe-vault",
+        help="find (and optionally merge) notes that are the same work",
+    )
+    # Reporting is the default; --dry-run is accepted so the safe invocation can
+    # be written out explicitly in scripts and docs.
+    p_dedupe.add_argument(
+        "--apply", action="store_true",
+        help="merge the candidates instead of only reporting them",
+    )
+    p_dedupe.add_argument(
+        "--dry-run", action="store_true", help="report only (the default)"
+    )
+    p_dedupe.add_argument(
+        "--limit", type=int, default=None, help="consider only the first N candidates"
+    )
+
+    p_published = sub.add_parser(
+        "check-published",
+        help="ask OpenAlex whether any preprint note has since been published",
+    )
+    p_published.add_argument(
+        "--apply", action="store_true",
+        help="upgrade the notes instead of only reporting the findings",
+    )
+    p_published.add_argument(
+        "--dry-run", action="store_true", help="report only (the default)"
+    )
+
     p_slack = sub.add_parser(
         "slack-test", help="post one paper's digest to the Slack webhook"
     )
@@ -1160,6 +1586,8 @@ def main(argv=None) -> int:
         "update": cmd_update,
         "refresh-topics": cmd_refresh_topics,
         "recluster": cmd_recluster,
+        "dedupe-vault": cmd_dedupe_vault,
+        "check-published": cmd_check_published,
         "fix-links": cmd_fix_links,
         "export-site": cmd_export_site,
         "slack-test": cmd_slack_test,

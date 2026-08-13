@@ -273,6 +273,7 @@ def build_paper_note(
     claude,
     model: str,
     kind: Optional[str] = None,
+    supersedes: Optional[str] = None,
 ) -> str:
     """Render a Papers/<bibtex-key>.md note (LLM-assisted).
 
@@ -286,6 +287,9 @@ def build_paper_note(
     (`kind: team`); toread papers leave it unset. A team submission also gets
     `submitted_by`/`slack_permalink` frontmatter from the paper, surfaced on the
     site for attribution.
+
+    `supersedes` names the bibtex key of a working-paper note this published
+    version replaced; that note becomes a tombstone pointing back here.
     """
     academic = paper.academic or {}
     fields: dict[str, Any] = {
@@ -296,6 +300,8 @@ def build_paper_note(
         "doi": paper.doi or "",
         "bibtex_key": paper.bibtex_key,
     }
+    if supersedes:
+        fields["supersedes"] = supersedes
     if kind:
         fields["kind"] = kind
     if getattr(paper, "submitted_by", None):
@@ -406,3 +412,99 @@ def write_note(vault_dir: str, subdir: str, filename: str, content: str) -> Path
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     return path
+
+
+# --- superseded notes ------------------------------------------------------
+
+_FRONTMATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
+# The citation blockquote is the run of `> ` lines directly after the H1.
+_CITATION_BLOCK_RE = re.compile(r"^(> .*(?:\n>.*)*)", re.MULTILINE)
+
+# Frontmatter keys a tombstone keeps. It stays a record of what *that* entry
+# was — its own title, authors and discovery date — not a copy of the winner:
+# `site_export` reads `aliases[0]` as the display title, and re-dating a stub to
+# the merge date would push it into the homepage's "Latest papers".
+_TOMBSTONE_KEEP = (
+    "title", "aliases", "authors", "year", "doi", "bibtex_key",
+    "kind", "submitted_by", "slack_permalink", "source_url", "discovery_date",
+)
+
+
+def build_tombstone_note(
+    frontmatter: dict[str, Any],
+    winner_key: str,
+    winner_title: str = "",
+    winner_venue: str = "",
+    winner_year: str = "",
+) -> str:
+    """Render a stub replacing a note whose work was published elsewhere.
+
+    The note file survives so inbound [[wikilinks]] keep resolving and the
+    published site URL keeps returning a page instead of a 404 — the reason a
+    tombstone is preferable to deleting the file. `topics` is emptied so the
+    stub drops out of the Topics registers and out of `_related_keys`.
+    """
+    fields: dict[str, Any] = {}
+    for key in _TOMBSTONE_KEEP:
+        if key in frontmatter and frontmatter[key] not in (None, ""):
+            value = frontmatter[key]
+            if key in ("title",):
+                fields[key] = _yaml_quote(value)
+            elif key in ("aliases", "authors"):
+                fields[key] = [_yaml_quote(v) for v in (value or [])]
+            elif key in ("submitted_by",):
+                fields[key] = _yaml_quote(value)
+            else:
+                fields[key] = value
+    fields["superseded_by"] = winner_key
+    fields["topics"] = []
+    fields["podcast_url"] = ""
+
+    heading = frontmatter.get("title") or frontmatter.get("bibtex_key") or winner_key
+    detail = f"**[[{winner_key}]]**"
+    if winner_title:
+        detail += f' — "{winner_title.rstrip(".")}"'
+    venue_year = ", ".join(p for p in (f"*{winner_venue}*" if winner_venue else "",
+                                       str(winner_year) if winner_year else "") if p)
+    if venue_year:
+        detail += f" ({venue_year})"
+
+    return (
+        f"{render_frontmatter(fields)}\n\n"
+        f"# {heading}\n\n"
+        f"> This record has been superseded by the published version of the same work.\n\n"
+        f"Superseded by {detail}. The full note, summary and connections live there.\n"
+    )
+
+
+def set_frontmatter_field(text: str, key: str, value: Any) -> str:
+    """Set one frontmatter key in an existing note, leaving the body untouched.
+
+    Used where re-rendering would mean a billable `build_paper_note` call for a
+    one-line metadata change — adding `supersedes:` to a note that is otherwise
+    already correct, or clearing `topics:` on a note about to be tombstoned.
+    """
+    match = _FRONTMATTER_RE.match(text)
+    if not match:
+        return text
+    rendered = render_frontmatter({key: value}).splitlines()[1]
+    lines = match.group(1).splitlines()
+    for i, line in enumerate(lines):
+        if line.split(":", 1)[0].strip() == key:
+            lines[i] = rendered
+            break
+    else:
+        lines.append(rendered)
+    return f"---\n" + "\n".join(lines) + "\n---\n" + text[match.end():]
+
+
+def replace_citation_block(text: str, block: str) -> str:
+    """Swap the APA citation blockquote for a freshly rendered one.
+
+    Lets an in-place preprint -> published upgrade refresh the visible citation
+    (new DOI, real venue) without regenerating the LLM-written body.
+    """
+    match = _CITATION_BLOCK_RE.search(text)
+    if not match:
+        return text
+    return text[: match.start()] + block + text[match.end():]
