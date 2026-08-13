@@ -1,7 +1,14 @@
 import matter from "gray-matter"
 import remarkFrontmatter from "remark-frontmatter"
 import { QuartzTransformerPlugin } from "../types"
-import yaml from "js-yaml"
+// LOCAL MODIFICATION to vendored Quartz v4.5.2 — do not drop when re-vendoring.
+// js-yaml 5 removed the CommonJS-style default export, so upstream's
+// `import yaml from "js-yaml"` fails at module load with
+//   SyntaxError: The requested module 'js-yaml' does not provide an export named 'default'
+// and takes the whole site build down. The named exports are unchanged, so
+// this is an import-shape fix only — `load` and `JSON_SCHEMA` behave as before.
+// Revert to the default import only if this pin ever goes back below js-yaml 5.
+import { load as loadYaml, JSON_SCHEMA as YAML_JSON_SCHEMA } from "js-yaml"
 import toml from "toml"
 import { FilePath, FullSlug, getFileExtension, slugifyFilePath, slugTag } from "../../util/path"
 import { QuartzPluginData } from "../vfile"
@@ -66,7 +73,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             const { data } = matter(fileData, {
               ...opts,
               engines: {
-                yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }) as object,
+                yaml: (s) => loadYaml(s, { schema: YAML_JSON_SCHEMA }) as object,
                 toml: (s) => toml.parse(s) as object,
               },
             })
