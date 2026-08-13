@@ -1,0 +1,24 @@
+{
+  "abstract": "This article investigates 'AI slop' creators in China who use generative AI tools to systematically produce viral short-form video content. It argues that these creators represent an emerging form of platform-based creative labour that reframes virality from an unpredictable phenomenon into a manageable, engineered outcome. Through examining practices such as benchmarking viral content, testing formats, and running matrix account systems, the paper challenges conventional understandings of creativity and authorship in the age of generative AI.",
+  "key_claims": [
+    "Generative AI is enabling new forms of creative labour that destabilise established notions of what it means to be a 'creator'.",
+    "AI slop creators treat virality as an object of systematic management rather than an unpredictable outcome.",
+    "The industrialisation and formalisation of viral content production constitutes a distinct mode of platform-based cultural production in China."
+  ],
+  "methods": [
+    "Ethnographic research (as indicated by the truncated abstract) focused on AI slop creators in China.",
+    "Analysis of creator practices including benchmarking viral content, testing content formats, operating matrix account systems, and formalising production workflows."
+  ],
+  "findings": [
+    "Creators use generative AI tools to reverse-engineer and replicate viral formats at scale.",
+    "Matrix account systems allow coordinated, high-volume content production and distribution.",
+    "Production processes are formalised and systematised, turning virality into an engineered rather than serendipitous result."
+  ],
+  "contributions": [
+    "Introduces and characterises 'AI slop' creators as a distinct category of creative labourers in China's platform economy.",
+    "Advances scholarly understanding of how generative AI reshapes creativity, authorship, and the concept of the 'creator'.",
+    "Provides an empirical account of how virality is systematically managed within AI-driven cultural production."
+  ],
+  "framing": "The paper is positioned within scholarship on platform-based cultural production, creative labour, and the impact of generative AI on creativity and authorship, using the Chinese short-video ecosystem as its case study.",
+  "pdf_source": "abstract_only"
+}
