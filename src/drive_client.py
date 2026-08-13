@@ -151,6 +151,24 @@ class DriveClient:
 
         files = self._list_folder_files()
 
+        # Bibkey prefix first. toread names Slack-sourced uploads
+        # `{bibkey} - {Author} {Year} - {Title}.pdf`, so this match needs no
+        # metadata at all — which is the point. When enrichment failed upstream
+        # the file lands as `Unknown - untitled.pdf`, whose title tokens can
+        # never match, and the paper falls off the bottom of this function.
+        # Anchoring on the bibkey makes PDF retrieval independent of enrichment
+        # success (toread issue #13).
+        #
+        # This must run *before* the `not title_tokens` guard below: a
+        # title-less paper returns None there and would never reach a check
+        # placed lower down.
+        bibkey = (paper.bibtex_key or "").strip().lower()
+        if bibkey:
+            prefix = f"{bibkey} - "
+            for file in files:
+                if file['name'].lower().startswith(prefix):
+                    return file
+
         # Try exact match first (case-insensitive)
         for file in files:
             if file['name'].lower() == f"{expected_name.lower()}.pdf":
