@@ -3241,10 +3241,10 @@
       "doi": "10.1177/07352751241289925",
       "title": "The matrix of AI agency: On the demarcation problem in social theory",
       "pdf_source": "abstract_only",
-      "content_hash": "1bdbcaa0b74c76e45796b0ffe003f868c550dfa860e4c716406f6348038218c5",
-      "podcast_linked": false,
+      "content_hash": "1a40277f9df82f082d4b39a075486c344c0153eef8d0174ec4429f29dfa4cbd8",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-07-29T07:41:36.723875+00:00"
+      "last_processed": "2026-08-14T08:35:38.212575+00:00"
     },
     "bibtex:Bergeron-Boutin2026-yh": {
       "note_path": "Papers/Bergeron-Boutin2026-yh.md",
@@ -3255,10 +3255,10 @@
       "doi": "10.1126/sciadv.adz6502",
       "title": "Untrustworthy sources on Facebook and Instagram in 2020: Concentrated exposure but no attitudinal effects",
       "pdf_source": "abstract_only",
-      "content_hash": "b6679679b6e780f060547f8157fec8266c68b40ac51260d9b8e4ab8b9475a47a",
-      "podcast_linked": false,
+      "content_hash": "0dedbc489af76fabc2ecd10ec527e8bf0c29e12c028cc5bf2d4bc81fc87bb457",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-07-31T08:03:40.648246+00:00"
+      "last_processed": "2026-08-14T08:35:38.212555+00:00"
     },
     "bibtex:Unknown2020-d568b728": {
       "note_path": "Papers/Unknown2020-d568b728.md",

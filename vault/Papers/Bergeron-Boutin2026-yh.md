@@ -9,7 +9,7 @@ topics: [misinformation-exposure-recalibration]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1126/sciadv.adz6502
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bergeron-Boutin2026-yh.mp3
 pdf_available: false
 discovery_date: 2026-07-31T07:51:07.272601Z
 ---
@@ -22,24 +22,28 @@ discovery_date: 2026-07-31T07:51:07.272601Z
 
 ## Summary
 
-This paper uses platform-scale data covering essentially all active US adult users of Facebook and Instagram to measure how often people encountered content from untrustworthy sources — those that repeatedly publish misinformation — during 2020, and whether reducing that exposure changed political attitudes. The authors document that average exposure was low but heavily concentrated among a small minority of users, and that an experimental reduction in exposure produced no detectable attitudinal effects. The work directly challenges the assumption that broad exposure to untrustworthy sources is a major driver of attitudinal change, contributing empirical and causal evidence to debates over the prevalence and political consequences of online misinformation.
+This paper offers platform-scale empirical evidence on how often US adults encountered content from untrustworthy sources — outlets that repeatedly publish misinformation — on Facebook and Instagram during 2020, and whether that exposure moved political attitudes. Drawing on data covering the entire active US adult user base and pairing observational measurement with an experimental reduction of exposure, the authors argue that exposure was low on average, heavily concentrated among a small minority of users, and, when experimentally reduced, produced no detectable attitudinal effects. The work thus challenges the common assumption that widespread exposure to untrustworthy sources is a primary driver of attitudinal change.
 
 ## Key Contributions
 
-- Delivers platform-scale empirical evidence on the frequency of exposure to untrustworthy sources across an entire national adult user base, rather than relying on survey samples or single-platform slices.
-- Distinguishes average exposure from its concentration among specific users, refining understanding of *who* actually encounters misinformation.
-- Adds causal evidence on the limited attitudinal impact of reducing exposure, informing debates about the real-world harms of misinformation.
+- Platform-scale empirical evidence on the frequency of exposure to untrustworthy sources across an entire national adult user base, rather than convenience or panel samples.
+- A crucial distinction between *average* exposure and its *concentration* among specific users, sharpening the question of who actually encounters misinformation.
+- Causal evidence — via experimental exposure reduction — on the limited attitudinal impact of untrustworthy-source content, informing debates on misinformation harms.
 
 ## Methods
 
-The analysis draws on 2020 Facebook and Instagram platform data covering all active US adults. Exposure was measured across multiple content types — Facebook Pages, groups, and web domains, plus public Instagram accounts — identified as repeatedly publishing misinformation. Beyond descriptive measurement, the study includes an experimental/interventional component in which exposure to untrustworthy-source content was reduced to assess downstream effects on political attitudes.
+The authors analyze 2020 platform data covering all active US adults on Facebook and Instagram, measuring exposure to content from Pages, groups, and web domains on Facebook and public accounts on Instagram that were identified as repeatedly publishing misinformation. Alongside this observational measurement, an experimental/interventional component reduced exposure to such content in order to assess associated attitudinal effects.
 
 ## Findings
 
 - The average Facebook and Instagram user saw relatively little content from untrustworthy sources in their feeds during 2020.
 - Exposure was highly concentrated among a small fraction of users rather than evenly distributed across the population.
-- Experimentally reducing exposure produced no measurable effects on users' political attitudes.
+- Experimentally reducing exposure to untrustworthy-source content produced no measurable effects on users' political attitudes.
 
 ## Connections
 
-This paper belongs to the large-scale platform-collaboration research on Facebook and Instagram in 2020 and shares data infrastructure and empirical framing with [[Gonzalez-Bailon2024-rq]] and [[Allcott2025-jb]]. Its finding of concentrated but low-average exposure resonates with prevalence estimates in [[Budak2024-ef]] and [[Allen2025-ot]], while its null attitudinal-effects result speaks to broader debates about misinformation susceptibility engaged by [[Bak-Coleman2025-pm]] and [[van-der-Linden2026-jt]].
+This paper sits squarely in the recalibration literature that pushes back on inflated estimates of misinformation's reach and effects, aligning closely with [[Budak2024-ef]] on the modest prevalence and impact of misinformation exposure. Its emphasis on concentrated exposure among a small subset of users also complements work reconsidering how misinformation reach is estimated and interpreted, as in [[Hourigan2026-oc]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bergeron-Boutin2026-yh.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)
