@@ -3315,10 +3315,25 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-08-15T07:41:11.921807+00:00"
+    },
+    "bibtex:Rauchfleisch2026-fa": {
+      "note_path": "Papers/Rauchfleisch2026-fa.md",
+      "topics": [
+        "generative-ai-and-synthetic-media",
+        "public-perceptions-and-labor-impacts-of-ai"
+      ],
+      "assign_fp": "ff929ce8314018aaf7839d33d1384ffaf147549146caaa8e2012c7427d1cf433",
+      "doi": "",
+      "title": "Toward meaningful transparency for AI chatbots: Disclosing persuasive intent reduces persuasion",
+      "pdf_source": "drive",
+      "content_hash": "e8dc9e1a99d27ff61dff404ce50dc378dda39362f9fce206fe6eb2267692e194",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-08-15T08:07:55.430237+00:00"
     }
   },
   "last_full_cluster": "2026-08-10T05:52:18.185001+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 3,
   "register_signals_hash": "327b66d1dca426ac9c199db32dbb5bc83a8c4f4af0d0473b354468b435717cf2",
   "emergent_fp": "56476d0870ba7e165467880a2973b9103c497e29ca1ab095a24c000274919b54",
   "structure_fps": {
@@ -3343,5 +3358,6 @@
     "cross-national-coordinated-networks": "4387f6bffacf71ee5fd76898763c9077c7cda6360cda7e3a69b59f75f1d1ce41",
     "social-tv-and-audience-participation": "7530d733a6b09f9c2b0bf90bc25cc1bdb54e58146a1616adf290d31eba8dee6e",
     "misinformation-exposure-recalibration": "013b17e0a50b7d1391caf5a057ac0917b007ae3acfcef88ea4d343822b29dffb"
-  }
+  },
+  "supersede_decisions": {}
 }

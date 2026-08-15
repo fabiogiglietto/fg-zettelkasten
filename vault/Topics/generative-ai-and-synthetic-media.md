@@ -28,6 +28,7 @@ Study of generative AI's role in disinformation, including synthetic visual pers
 - [[Nangle2026-yo]]
 - [[Nguyen2026-vm]]
 - [[Orlando2025-ul]]
+- [[Rauchfleisch2026-fa]]
 - [[Schiffrin_undated-gi]]
 - [[Schroeder2026-im]]
 - [[Stanusch2026-ec]]
