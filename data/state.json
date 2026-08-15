@@ -3311,11 +3311,10 @@
       "doi": "10.1007/s00146-026-03254-9",
       "title": "Behind the “AI slop”: exploring the AI-generated viral short video production in China",
       "pdf_source": "abstract_only",
-      "content_hash": "be4b94ec34c9ed72fbd84121d23c6ea6f5141ad3c12541e29d5d364fa90cdee0",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-08-13T07:06:04.845478+00:00"
+      "content_hash": "de429a84ead9b3180bb09913f40bb256358dd5700eb90a076fc98e324404cab4",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-08-15T07:41:11.921807+00:00"
     }
   },
   "last_full_cluster": "2026-08-10T05:52:18.185001+00:00",
