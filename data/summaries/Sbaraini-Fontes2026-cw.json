@@ -1,0 +1,22 @@
+{
+  "abstract": "This article investigates what shapes audiences' trust in different configurations of AI use within the information ecosystem, distinguishing between AI acting as an intermediary in automated search results and AI embedded within news organisations. Drawing on a representative survey of Italian adults conducted in September 2025, the study compares trust patterns across these two contexts. The findings indicate that AI-generated search results are trusted more than AI-produced news, pointing to the growing role of search intermediaries in the information ecosystem.",
+  "key_claims": [
+    "Audience trust in AI varies depending on the configuration in which AI is deployed within the information ecosystem.",
+    "AI-generated search results command higher trust than AI-involved news produced by news organisations.",
+    "Search intermediaries are playing an increasingly significant role in how audiences access and trust information."
+  ],
+  "methods": [
+    "Representative survey of Italian adults conducted in September 2025.",
+    "Comparative analysis of trust across two AI configurations: AI as an intermediary in automated search results versus AI embedded in news organisations."
+  ],
+  "findings": [
+    "AI-generated search results are more trusted by Italian audiences than AI-involved news.",
+    "The relative trust advantage of search results highlights the growing importance of search intermediaries in the information ecosystem."
+  ],
+  "contributions": [
+    "Provides empirical evidence on audience trust in AI across distinct roles (intermediary search vs. embedded in news) using a representative national sample.",
+    "Contributes to understanding the differentiated dynamics of trust in AI within the Italian media and information ecosystem."
+  ],
+  "framing": "The paper is situated within research on audience trust, AI in journalism, and the evolving information ecosystem, positioning itself in debates about how automation and AI intermediaries reshape public trust in news and search.",
+  "pdf_source": "abstract_only"
+}
