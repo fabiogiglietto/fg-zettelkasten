@@ -5,7 +5,7 @@ authors: ["Zoë Natalia Cullen", "Nicole B Ellison", "Irene V Pasquetto"]
 year: 2026
 doi: 10.1177/20539517261461463
 bibtex_key: Cullen2026-cb
-topics: [platform-data-access-and-research-infrastructure]
+topics: [platform-data-access-and-governance]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20539517261461463

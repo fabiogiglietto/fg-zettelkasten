@@ -5,7 +5,7 @@ authors: ["Angela Lai", "Megan Brown", "James Bisbee", "Richard Bonneau", "Joshu
 year: 2024
 doi: 10.2139/ssrn.4088828
 bibtex_key: Lai2024-to
-topics: [llms-for-content-analysis]
+topics: [llm-and-computational-content-analysis, political-polarization-and-partisanship]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.2139/ssrn.4088828

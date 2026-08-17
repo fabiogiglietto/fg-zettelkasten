@@ -5,7 +5,7 @@ authors: ["Naoise McNally", "Marco Bastos"]
 year: 2025
 doi: 10.1080/21670811.2025.2450623
 bibtex_key: McNally2025-dn
-topics: [meta-platform-policy-and-visibility, platform-data-access-and-research-infrastructure]
+topics: [platform-data-access-and-governance, italian-electoral-communication]
 citation_count: 6
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2025.2450623

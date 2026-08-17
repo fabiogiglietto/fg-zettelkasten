@@ -5,7 +5,7 @@ authors: ["Jennifer Allen", "Joshua A. Tucker"]
 year: 2025
 doi: 10.1126/science.aec7388
 bibtex_key: Allen2025-ot
-topics: [platform-data-access-and-research-infrastructure, llms-for-content-analysis]
+topics: [platform-data-access-and-governance, llm-and-computational-content-analysis]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1126/science.aec7388

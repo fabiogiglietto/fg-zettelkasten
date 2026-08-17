@@ -3,117 +3,122 @@
     "bibtex:Rodarte2026-dk": {
       "note_path": "Papers/Rodarte2026-dk.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "political-polarization-and-partisanship"
+        "political-polarization-and-partisanship",
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "drive",
       "content_hash": "7039ed94a7c767e61157db0a9a72b7297b2a4ea199720401f640970937bff28a",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684498+00:00",
-      "assign_fp": "5bca1aae469b434cb8e7e0e07d975aeb2bacf65f28c2f6cba911cff382e52a4b"
+      "assign_fp": "9f29df4f8c3e0fc0d892731ed849a47b49479f3eceeae21a24841fb5806bffb1"
     },
     "bibtex:Bailard2024-pj": {
       "note_path": "Papers/Bailard2024-pj.md",
       "topics": [
         "online-radicalization-and-extremism-on-platforms",
-        "llm-augmented-research-methods"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "da9607d5cff7f690d6849954536517d9836460e024f273c8caa0145dfc75df9c",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684554+00:00",
-      "assign_fp": "5268362f36ef46b407b8612b28176136e84665b8e8e60591fd17736073cd2f43"
+      "assign_fp": "c47dde1c644a1507df3bf889814a9379331ab79f072ec89c175befeefddb1cec"
     },
     "bibtex:Adam2026-tz": {
       "note_path": "Papers/Adam2026-tz.md",
       "topics": [
-        "problematic-health-information",
-        "political-polarization-and-partisanship"
+        "health-misinformation-and-fact-checking",
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "f6a2057412428f70117deff0054d4f08f055089a0e4c1675a8070605ebbd31ba",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684564+00:00",
-      "assign_fp": "decea9916b362b26a1f15817286ca251039e436e784e30c2709f39642c03ccb0"
+      "assign_fp": "6a452966a8c4ace367d7422570dba413a545e3a2b28f413a03ca38bf2396e953"
     },
     "bibtex:Spampatti2026-kx": {
       "note_path": "Papers/Spampatti2026-kx.md",
       "topics": [
-        "climate-and-misinformation-message-interventions"
+        "climate-and-misinformation-message-interventions",
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "dada899fdb4f213e34aeeef6ce18d178f6fbcc838ab90d3e59992d5b5537212f",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684570+00:00",
-      "assign_fp": "38dadf8571eff7db7365c0ed67789e8331d1c0732434e7d1aa745afebd131729"
+      "assign_fp": "c050c60f4b2e7607a48cda7f7c53bfa9489ee88635907fc937e9d821b9df4f31"
     },
     "bibtex:Mahl2026-hc": {
       "note_path": "Papers/Mahl2026-hc.md",
-      "topics": [],
+      "topics": [
+        "disinformation-narratives-and-information-operations",
+        "platform-data-access-and-governance"
+      ],
       "pdf_source": "drive",
       "content_hash": "ef72a889aad53f2951e808ad02d3a899b21fef98b6e7773df6ad02076cc2ccfd",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684576+00:00",
-      "assign_fp": "37192fbde1acad1ea9a7aea8b0ce6a98f607ba41cb58488392136500aee9ab4a"
+      "assign_fp": "46fe0b19de77d5d4b4013f73a651d3bdefa4a2e1b9da94fc99c979423fd373b0"
     },
     "bibtex:Nguyen2026-vm": {
       "note_path": "Papers/Nguyen2026-vm.md",
       "topics": [
         "generative-ai-imaginaries",
-        "generative-ai-and-synthetic-media"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "7fa71fb10eb35853cc8957d907f8e40bb974fdd116bfd8effdbbe2092d8c369b",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684583+00:00",
-      "assign_fp": "e303d00787ba6aacddb7537379fc1f8a9de05e9d81b696d78d2eede24999c773"
+      "assign_fp": "56414df6b04f586ee5d1a251b104dcb9c7f33e8f5a331b3178ced05cb6ce4fd5"
     },
     "bibtex:Waight2026-ts": {
       "note_path": "Papers/Waight2026-ts.md",
       "topics": [
-        "llms-for-content-analysis",
-        "generative-ai-and-synthetic-media"
+        "disinformation-narratives-and-information-operations",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "3f3e2660e1f6f0723b1568dfaa48a07d9f6ce9680747896ec039841d98e27cfe",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684589+00:00",
-      "assign_fp": "12593d7c9e953d5fd7f5feff41e52138bd89ad967ca4507fe0b1a5a26459c9ed"
+      "assign_fp": "2967135e28524fe662a87d183d4dfb1239aa978cfed6a247a4f84d8e92115835"
     },
     "bibtex:Volpe2026-um": {
       "note_path": "Papers/Volpe2026-um.md",
       "topics": [
-        "meta-platform-policy-and-visibility"
+        "platform-critique-anniversary-essays",
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
       "content_hash": "453c140aacff01140f66aad350897604dfdabec3a92cf50ca8776644195a74b1",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684595+00:00",
-      "assign_fp": "ba5ff8b7327762e95d4c37545649072b2b5305d03a625138cfae3aecefca1b15"
+      "assign_fp": "c364e9048c5d2757ab8124f995219cc59a9369eb5d89bd075c9b191d2ffc0e94"
     },
     "bibtex:Yang2026-tq": {
       "note_path": "Papers/Yang2026-tq.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "llms-for-content-analysis"
+        "platform-data-access-and-governance",
+        "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "27cd569bd7534b66be44078ef8960bb85cbd7570481de3f6ecb7e8d5a8099b21",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684601+00:00",
-      "assign_fp": "36192b6f912d4063593387b8d9d9df354a6358f1d0ca405d868b83a3ee604fed"
+      "assign_fp": "2fe2ceeeaded3d8f7a64f598ca773d9b3beccc25e6fa8b1d9d88acb4eb37d3b3"
     },
     "bibtex:Rothut2026-or": {
       "note_path": "Papers/Rothut2026-or.md",
       "topics": [
         "online-radicalization-and-extremism-on-platforms",
-        "cross-national-coordinated-networks"
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "drive",
       "content_hash": "837abfe20b87585cd359fcc182374a683280f2f7206405cdf360e9461ef6df85",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684606+00:00",
-      "assign_fp": "e5e2d82e62cc9c011dbe4e08baa78068d4ab8b5aadd58ce85b09842d58469dd1"
+      "assign_fp": "6dedef2fd3f5c260c31c4ca718159c3fba81fd7c60f0e5b2b721e35064d244f7"
     },
     "bibtex:Wang2025-zy": {
       "note_path": "Papers/Wang2025-zy.md",
@@ -124,53 +129,54 @@
       "content_hash": "e986458b0204112456cd40c8917f0f772d7ecf22a4412657e44c8c6bd9fac0f7",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684613+00:00",
-      "assign_fp": "89e93d96e1f069a34e2dd8b3c9f27dee2dc375d4941abd4d1c0e6c6eaf533212"
+      "assign_fp": "8b509e5d34a130c7bc05951de65b1018acd99a906d82359e3993e0befe0e023f"
     },
     "bibtex:Achmann-Denkler2026-lx": {
       "note_path": "Papers/Achmann-Denkler2026-lx.md",
       "topics": [
-        "llms-for-content-analysis",
-        "meta-platform-policy-and-visibility"
+        "llm-and-computational-content-analysis",
+        "italian-electoral-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "06e0edcd5aae29a8297e64fc45e731d4f81d15acd158bc0be2f0d2c0e13d08bb",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684618+00:00",
-      "assign_fp": "17dd2360f4901a18473ba9d1085e3510b6124efedc0541551b5ca19bcf70d1d4"
+      "assign_fp": "f796787c3000d8d83f45647ac6dc25a9ec8d5e9111f277e63b1fb34e689c6b0d"
     },
     "bibtex:Ohme2026-nv": {
       "note_path": "Papers/Ohme2026-nv.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "1505266fdeba919c55cd62de73dc5bde890c7d405117779dc1517a59a558876b",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684623+00:00",
-      "assign_fp": "fdf12b61a0b6b67ccffdda8d0e2b310e4bdddc35f86185884d05fe2ca35023e6"
+      "assign_fp": "0164d0c3ab66c12685d8c6986cb6bdd16df7b34035def9e9d75224b24a40d699"
     },
     "bibtex:Gerbaudo2026-fo": {
       "note_path": "Papers/Gerbaudo2026-fo.md",
       "topics": [
-        "platform-critique-anniversary-essays"
+        "computational-network-structure-analysis",
+        "sociocybernetics-and-social-systems-theory"
       ],
       "pdf_source": "drive",
       "content_hash": "d9a0fb8bb8450b9662a87b1dcfd6adcb9e02bd7be95f66c22d69b81fc7f85fe8",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684630+00:00",
-      "assign_fp": "1ecbefbabb04e1d8d13439b4938ae724c4995ece0b9e522ba9ea1831f8e062ae"
+      "assign_fp": "fbb179d3d96ac237dc0d251b66237484598cabad5356b4af49bba30995968195"
     },
     "bibtex:Tornberg2026-lc": {
       "note_path": "Papers/Tornberg2026-lc.md",
       "topics": [
         "platform-critique-anniversary-essays",
-        "generative-ai-and-synthetic-media"
+        "generative-ai-imaginaries"
       ],
       "pdf_source": "drive",
       "content_hash": "eff92779375593d2cf8b25f44ba730a6650d28371e91cfcd70bad33792747049",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684636+00:00",
-      "assign_fp": "5749f7bae6aef119032ef2733c67d8e663f443a7895e22f851edf0c19154920a"
+      "assign_fp": "b21dfaac552068d7fb916d427e6f76e9a76dc782e02f6dce1a0d370be2fbf8e0"
     },
     "bibtex:Rothut2026-wt": {
       "note_path": "Papers/Rothut2026-wt.md",
@@ -181,31 +187,30 @@
       "content_hash": "18be0ca13b5389c7c68289da806dd6f33d6c1f1c583555da30a525e2a75ded10",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684641+00:00",
-      "assign_fp": "f417ff473b4f183647fa949672cd6c941556427344001e2d37712f7d64f20fdf"
+      "assign_fp": "595a6f5eda00580d27a75edefdb546682f3c28bf5fb0b0c6523d896e90e3a81e"
     },
     "bibtex:Swartz2026-zb": {
       "note_path": "Papers/Swartz2026-zb.md",
       "topics": [
         "platform-critique-anniversary-essays",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "f0de257fc93524b5ccfeeac927e924dca313178c0458c43462a340e63bebe87f",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684646+00:00",
-      "assign_fp": "876cac4052985f958e51bf05e8be3d59f5bd7d16319bdf2d6192271c88322c32"
+      "assign_fp": "9a2d693fa67d956d9a4c6545686039ca19d10e6b7b4bd28082fdb49f7053681b"
     },
     "bibtex:Helmond2026-ll": {
       "note_path": "Papers/Helmond2026-ll.md",
       "topics": [
-        "platform-critique-anniversary-essays",
-        "generative-ai-imaginaries"
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "4d545d7373c5c93d2f1cd506404f6ad878a6838f252a0d530c1ed9f8ea27d12d",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684652+00:00",
-      "assign_fp": "0e4b195c6d0b3b01c6bd03f971fea4ac08d109be8f0cdef52d5afbb67fa933b8"
+      "assign_fp": "c78a4a146ab88106cfcbad54bc20b243879c324d9970bd9767348ca4cf6c3dcc"
     },
     "bibtex:Marwick2026-ss": {
       "note_path": "Papers/Marwick2026-ss.md",
@@ -216,29 +221,31 @@
       "content_hash": "5be0b396637caecdb41bda77a013ca6cf72eaab0dc1bad1d567366ac3a29a705",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684659+00:00",
-      "assign_fp": "1efe475e2cbdc3cdc1e6fc2410a320b7e3417eaf1ffcfbcfde2388fee01a75d7"
+      "assign_fp": "0f274739fc44242752d1dbc1c36b588fc945353b641a4460ecc16ff4a865ed7f"
     },
     "bibtex:Boyd2026-op": {
       "note_path": "Papers/Boyd2026-op.md",
       "topics": [
-        "platform-critique-anniversary-essays"
+        "platform-critique-anniversary-essays",
+        "sociocybernetics-and-social-systems-theory"
       ],
       "pdf_source": "drive",
       "content_hash": "b758c7277af92803b6a9d281ef63840d2af8643d56f950e8bd6a060b3e1580ff",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684665+00:00",
-      "assign_fp": "5e53467eaddf83cb318380f240ba21df10b568fdc119299707971f9a14531778"
+      "assign_fp": "14f48fa9376eb3059a7027c55ad5aef263d3c2e5313a19c2c66f089dbbba474d"
     },
     "bibtex:van-Eck2026-xg": {
       "note_path": "Papers/van-Eck2026-xg.md",
       "topics": [
-        "political-polarization-and-partisanship"
+        "political-polarization-and-partisanship",
+        "sociocybernetics-and-social-systems-theory"
       ],
       "pdf_source": "drive",
       "content_hash": "7ff2e91a0194e7b7a879f07093f74f984de1f801bc0eec6ed64912fa60c1e91b",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684671+00:00",
-      "assign_fp": "94487a67908130bbd64287785b963d18472bbc5fcd0a154998aea2aaada944d4"
+      "assign_fp": "be9d9c21df2c9e359e0dd88cf5460849f4ba8eca40ce7f73f5d799c03ccafec0"
     },
     "bibtex:Li2026-wq": {
       "note_path": "Papers/Li2026-wq.md",
@@ -255,36 +262,37 @@
       "note_path": "Papers/Appel2026-qr.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "disinformation-narratives-and-information-operations"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "c6cf5ff13b6a319a4b88c566834fae6047efaa66c818a27617290d1ded3733a0",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684676+00:00",
-      "assign_fp": "40a0b16bb3f41a9c7d7ae2db6eac2e15f80b480e0992f06d2e1e0266808dbd83"
+      "assign_fp": "a3132004ff7e48fa0da8fba9c68be029d5b27f903922e653d824f0ea2488c94e"
     },
     "bibtex:Peters2026-mo": {
       "note_path": "Papers/Peters2026-mo.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "a1fb805d9eb1c801ce2b4aac80d3904c6ce48fbe14014a6f104ed4c21cb63e8d",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684682+00:00",
-      "assign_fp": "663bb835d2b2a2727591b4f7718e6bae52be0305e6e174eb6bac3a7a9bc8f1aa"
+      "assign_fp": "54f7197d77eb55bbf71ff7f1d1b84a32d210951fe15798c94124caa480f9ec96"
     },
     "bibtex:Marwick2026-qd": {
       "note_path": "Papers/Marwick2026-qd.md",
       "topics": [
-        "disinformation-narratives-and-information-operations"
+        "disinformation-narratives-and-information-operations",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "50bd19c80dd0571963223be4175f1c3407120cc94dc5f3bfcbd0e93d8e5152f6",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684687+00:00",
-      "assign_fp": "3b7f7c21c02825d2b2cb0429e1c4b80247bbcb25ea46641e1ea3f0a63ef4ad5e"
+      "assign_fp": "a576d0d4547d763c725e042d9249858a6824100e35afe85d8a17e9223511d526"
     },
     "bibtex:Bravo2026-ue": {
       "note_path": "Papers/Bravo2026-ue.md",
@@ -293,100 +301,97 @@
       "content_hash": "a5cced38e189d0951049c682a9815da7461158d69e59598abcbb8cca83959df7",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684693+00:00",
-      "assign_fp": "45c19794f5b35046f8d7c1dd1a8f3e2d6c362b7ab6dd72722289377ccda03a86"
+      "assign_fp": "5a7ab7cd4c0131a8efe2bf85448c1314f12f05b781d3472b69293dd91daffa82"
     },
     "bibtex:Nangle2026-yo": {
       "note_path": "Papers/Nangle2026-yo.md",
       "topics": [
-        "online-radicalization-and-extremism-on-platforms",
-        "generative-ai-and-synthetic-media"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "23c9daed28740fd6b258660303f3beeb5fb85f6dc8a553c776bccfeff13ecdf1",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684698+00:00",
-      "assign_fp": "504684d9a175b9a101e4c81e7171ff5f5118dd19506877567ef5cc856911e1c7"
+      "assign_fp": "5aa6dded6074057fbd6f5a6e10bd882587bba3a2a065ebbfb8eed1b4fbe8ec5c"
     },
     "bibtex:Vincent_undated-re": {
       "note_path": "Papers/Vincent_undated-re.md",
-      "topics": [
-        "disinformation-narratives-and-information-operations",
-        "platform-data-access-and-research-infrastructure"
-      ],
+      "topics": [],
       "pdf_source": "abstract_only",
       "content_hash": "5b3033e1ea2bbc830d4dfb839301e225c2d61c1093d279481d1f4cdb666dfbd5",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684703+00:00",
-      "assign_fp": "4b34a75a9a81d0c8cb7fb56b7b77663b598e44585ded5f61d69fc5348d1f85b8"
+      "assign_fp": "ee87ab052e69a9fda446f34ccdcde8a7ae1012eaf1377bbcdd117b9f3db0b4b9"
     },
     "bibtex:Karo2026-dn": {
       "note_path": "Papers/Karo2026-dn.md",
       "topics": [
-        "online-radicalization-and-extremism-on-platforms",
-        "meta-platform-policy-and-visibility"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "drive",
       "content_hash": "ab761ca2f537bd66302f1661ced26d9c7859fec53c2bddf90d79a54077754000",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684709+00:00",
-      "assign_fp": "3cbdcacec9e08a37fe73f3735658a338185c4d9e90b76809e44b7925a4825326"
+      "assign_fp": "a4e79f8be99c499d36f50b10603b287cd467ff9f1d7d2fd71e8c1ea6d4deeb94"
     },
     "bibtex:noauthor_undated-bm": {
       "note_path": "Papers/noauthor_undated-bm.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "disinformation-narratives-and-information-operations"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684713+00:00",
-      "assign_fp": "b6e30ea3cf02acfb0a697d82a30a5331412972d3fcf42ba3320ed574e5bba79a"
+      "assign_fp": "d9cf5bf2358374cdbfc28d275df402ede107bc4cfb23b8e8a3eebc8db1bbc349"
     },
     "bibtex:Ventura2026-yc": {
       "note_path": "Papers/Ventura2026-yc.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "54065b353f715182db739580b1c21b806e47198cf5b6022a1dd09e0614cd286a",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684719+00:00",
-      "assign_fp": "b9ebded66e8c981ef27879be8053f22b608ad0467dcdb63c278f8dfb911f974e"
+      "assign_fp": "5fe5927b632b57a6caf2ad2abc5e0771411837793c893d442b02597f989616a5"
     },
     "bibtex:Efstratiou2026-ij": {
       "note_path": "Papers/Efstratiou2026-ij.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "problematic-health-information"
+        "health-misinformation-and-fact-checking"
       ],
       "pdf_source": "drive",
       "content_hash": "db66ab0b51da7d95b146095c2ac55e147208c96da92e0f7ec9e4d8010f8cf134",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684724+00:00",
-      "assign_fp": "bf7b4ea5be6c8eba3b7242eb40c58cacee1acace2959efa539c6f5841d8f962a"
+      "assign_fp": "03933484db098491c08a296f3eec1028bf3e0d95f12e792466ed30a2c4829508"
     },
     "bibtex:Wang2026-ub": {
       "note_path": "Papers/Wang2026-ub.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "political-polarization-and-partisanship"
+        "computational-network-structure-analysis",
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "586006a8159918fdd8ef2ce53931438920e11648306fdaea78043251e458fe12",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684729+00:00",
-      "assign_fp": "0237843557ad31241f38c28b89b332349a099a6155e74d29ab0e90c2940a07f2"
+      "assign_fp": "be4927cfa0e888f769a9391c49771ccfd46ee72e2241238436f1a1953d79ccc1"
     },
     "bibtex:Ahuja2025-ku": {
       "note_path": "Papers/Ahuja2025-ku.md",
-      "topics": [],
+      "topics": [
+        "platform-data-access-and-governance"
+      ],
       "pdf_source": "drive",
       "content_hash": "de35e55acf3a860d02ee2281273e391b613bdc6b7af7f8a51d444714983d08c9",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684734+00:00",
-      "assign_fp": "efcf9d571b4e222886c1eb7c0a8b60ac170f25c56d3fd75058fa4830e9a5d0fe"
+      "assign_fp": "a082c3508ef662d7692593c9549e5b13032a6c9c05f42e952e85c64650293b12"
     },
     "bibtex:Stagnaro2025-pz": {
       "note_path": "Papers/Stagnaro2025-pz.md",
@@ -397,19 +402,19 @@
       "content_hash": "d10c2c37b4fb4a677d7d21be016831bdcc796f863551d554720ff76991feae88",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684739+00:00",
-      "assign_fp": "1eddad1d78863876f3f389944a6aeb13c0511e3b257e3768f597e31e182cc5da"
+      "assign_fp": "27a1b9838135af110b4b78fe56d34f0afefc825916afa019c73d42cd8db42ef2"
     },
     "bibtex:Bouchaud2026-lr": {
       "note_path": "Papers/Bouchaud2026-lr.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "meta-platform-policy-and-visibility"
+        "computational-network-structure-analysis",
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "b70388abba2e077008ae548c50c21d1904ee9971c2f0682da8d9b18658914d9e",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684744+00:00",
-      "assign_fp": "d74ec2767b8b0f1290e7761f62b33da3e78204fe80de4c86467b9c06454168e5"
+      "assign_fp": "26f750152f69346bd6ff2786852bd9b89e89c1479bc443350b6c503cc1576116"
     },
     "bibtex:Dodds2026-df": {
       "note_path": "Papers/Dodds2026-df.md",
@@ -421,114 +426,115 @@
       "content_hash": "f7f992b743eb719a6f30515d32dab62de5f59f0c36fcb030c9085c9738376c0e",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684749+00:00",
-      "assign_fp": "b9922f0846673e6b1dfb4c3a915185b0efa3e29f0792e071f6f833e57a0fa688"
+      "assign_fp": "bff5a9408ed35d3ce580fb85aeed91b83a5600f303c4ddd06a9350276ff52f68"
     },
     "bibtex:Lee2026-je": {
       "note_path": "Papers/Lee2026-je.md",
       "topics": [
-        "llms-for-content-analysis",
+        "llm-and-computational-content-analysis",
         "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "d49f41cadd7d17fb1ec7e418ff705d454d086502006f302ccf069019eb5ec91f",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684754+00:00",
-      "assign_fp": "2e7bcab0850521a2327ae4b5c275d996bb23be44b7ce4ac918d3c765b7623eb5"
+      "assign_fp": "ac3a68517b8498b3444dc8fad51f22e7b52c7756586e545178658dfb613db87e"
     },
     "bibtex:Kulichkina2026-zk": {
       "note_path": "Papers/Kulichkina2026-zk.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "cross-national-coordinated-networks"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "771e37e83b5bb0868b2f44ee77c8fab16bf132cb8f243918d188da601da3fd56",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684760+00:00",
-      "assign_fp": "cbfda1e755f7c199554fe6096535850b79071d177200213aaf1638d8e2b861f2"
+      "assign_fp": "eff8844497a3914b1a98f949da85f300d1ea402397064d4aaf7f0f0001e52701"
     },
     "bibtex:Schiffrin_undated-gi": {
       "note_path": "Papers/Schiffrin_undated-gi.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance",
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "drive",
       "content_hash": "879449da3f1b2d3b5122e0b143f9405b90b9b5b62e3ceb47a07eec124fd1c94f",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684766+00:00",
-      "assign_fp": "8d489a73a2b4e956aea670dfe526c00f0b9ec9138ba6ebf7e7b791eb33b5a973"
+      "assign_fp": "c7546d67db220c625726fc71ba5ac6c5e659ccac65cc746da19121513a078931"
     },
     "bibtex:Rossini2026-jn": {
       "note_path": "Papers/Rossini2026-jn.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "political-polarization-and-partisanship"
+        "political-polarization-and-partisanship",
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "6932fec4773b19edff4438cc08bdb3f5a8f02287e87bd0168e6c660706266d04",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684771+00:00",
-      "assign_fp": "c4d00150ffc58f3a2b9ed5fe4a1a181de28f84606f3c4965cfd6930d8cc15b70"
+      "assign_fp": "88c43a572600f6e462dffe75f6114ab3e33640c7f5950f2072b8a5b11ae561ad"
     },
     "bibtex:Hackenburg2025-dj": {
       "note_path": "Papers/Hackenburg2025-dj.md",
       "topics": [
-        "llms-for-content-analysis",
-        "public-perceptions-and-labor-impacts-of-ai"
+        "disinformation-narratives-and-information-operations",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "99607fe99571e6b1faaa5b46adb695728cf61f4518519339799db419b678a105",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684777+00:00",
-      "assign_fp": "1528e1dc4fe4ba496356189b3ef2aef3aa99a7734eed202327079ef7e2fe3525"
+      "assign_fp": "1f8e92955e0a4300d6aba257b6a1638c9a8fa486d00b28138a065ded4f134005"
     },
     "bibtex:Baym2026-tr": {
       "note_path": "Papers/Baym2026-tr.md",
       "topics": [
         "platform-critique-anniversary-essays",
-        "generative-ai-and-synthetic-media"
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
       "content_hash": "467a774dafb1d743a8cc24e6d5e95f7e2000b01cb9f2de51928f4a72efd1aa6f",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684782+00:00",
-      "assign_fp": "89bfd96fe8d17afdf99f86e8192c84e5ba6718e4133ee6193c074b15746a29dc"
+      "assign_fp": "1e55604877185270a129670b24611a81a49d7c7a986cc41829c8adf6c7bbd598"
     },
     "bibtex:Hourigan2026-oc": {
       "note_path": "Papers/Hourigan2026-oc.md",
       "topics": [
-        "misinformation-exposure-recalibration"
+        "misinformation-exposure-recalibration",
+        "survey-methodology-validity"
       ],
       "pdf_source": "drive",
       "content_hash": "a3462abdb205be775658536a039e990ce318403c8ab7a1818595576f7e1fa705",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684786+00:00",
-      "assign_fp": "ed33e6cd937b6519edfda0f981e62d03fae1910d03afeafce8bf00d9bb5df155"
+      "assign_fp": "306816caa0bdb9c6f53632300666dab843f4f16513f4f4db25db38bc97042f41"
     },
     "bibtex:DiGiuseppe2026-pu": {
       "note_path": "Papers/DiGiuseppe2026-pu.md",
       "topics": [
         "public-perceptions-and-labor-impacts-of-ai",
-        "llms-for-content-analysis"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "d93b9902c22e4c2dddc5aa0efd5613f6721f8f4945d1b250aab83c6209251751",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684791+00:00",
-      "assign_fp": "773cf93aa2a5284d9850bc0ae952f20036222ed4efc0c38b1bed02c158e9f98b"
+      "assign_fp": "b95b2e9bc8445ae54cb13e90e14a37e3bc509b86f1ef0ba68496774a219de5b1"
     },
     "bibtex:Jovanovic-Harrington2026-ze": {
       "note_path": "Papers/Jovanovic-Harrington2026-ze.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "cross-national-coordinated-networks"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "b7da72d372b74f78cba2b135bd8bd6167196befda695a7858697db452bd6a296",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684796+00:00",
-      "assign_fp": "d3a42e18d34aa02562f0a4fc7505a2441400d92d85f695e9bb241b59e9f32b4f"
+      "assign_fp": "8bd8e786cd8b931d1d1296ccf5ea1fdcb1d79a13ade2f49d6698f42d41b70fce"
     },
     "bibtex:Ferrara2026-io": {
       "note_path": "Papers/Ferrara2026-io.md",
@@ -539,30 +545,31 @@
       "content_hash": "af1c585d4326b1e9a1cec2b42165211385ded4c518c946a38a4571497740a953",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684801+00:00",
-      "assign_fp": "15a515774ffc3577a4e3c58fa0938ab809483fc8288a68c12eac513d7b34cd7b"
+      "assign_fp": "067b3ae2e7eca8d71cce41c1011ae5e82b1c1f53d43d169981e360162bb6d1d3"
     },
     "bibtex:Ober2026-vd": {
       "note_path": "Papers/Ober2026-vd.md",
       "topics": [
-        "llm-augmented-research-methods"
+        "llm-augmented-research-methods",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "d92446fb8b9e5e463188c958dde77ba9580bd4b5f5fe9d5af22fb252517c94df",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684806+00:00",
-      "assign_fp": "2f77cba370382838cb87e733baf792559c81d8961ec02e524365feb3c40c9fcd"
+      "assign_fp": "8f7640ab5a62d5340c22e231f8a54a22e765a16c8b410713486233e0ab2241cc"
     },
     "bibtex:DeVerna2025-dl": {
       "note_path": "Papers/DeVerna2025-dl.md",
       "topics": [
-        "llms-for-content-analysis",
-        "problematic-health-information"
+        "llm-and-computational-content-analysis",
+        "health-misinformation-and-fact-checking"
       ],
       "pdf_source": "drive",
       "content_hash": "4e7d16c247eabcff3af2b07571cdb3732454c8beac75f4ae4a4018578d99a3af",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:45:44.684811+00:00",
-      "assign_fp": "74324b6239f4ccd3849b3907e1f143789995312cd1242df2a7474a5bd70d3265"
+      "assign_fp": "cb4adbae5ba4ca7762493bb9cd09e1679329c2c2999ee017bc04744f4ec90c97"
     },
     "bibtex:Tai2026-qk": {
       "note_path": "Papers/Tai2026-qk.md",
@@ -574,79 +581,79 @@
       "content_hash": "e24de555a86ee453c096551ab463af0a7a0ddc4959a078d6134e98fccad12907",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684816+00:00",
-      "assign_fp": "a5fbfcd55f03833cb1a41e3562b0ed5a4f1e6228ab1397f1604984409b63080d"
+      "assign_fp": "55a3c3107bbcd607576b3f8dca379ef5d81d6991eea63646fa299fdb1c660a94"
     },
     "bibtex:Scalco2026-bd": {
       "note_path": "Papers/Scalco2026-bd.md",
       "topics": [
-        "problematic-health-information",
-        "llms-for-content-analysis"
+        "health-misinformation-and-fact-checking",
+        "computational-network-structure-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "94dc1af265b7ae00cbe4dcd976deab96e032fafcd00cb9d2fe8702ff0d61a797",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173409+00:00",
-      "assign_fp": "e210d7b3d9e208f88a305be6ff732aadf269e7a858a426b5c8c105568eb1587c"
+      "assign_fp": "fa2b3f8b10e254dd91d2086059f8f02f757635ddf1666c0e5c0e40674e3f91da"
     },
     "bibtex:Balluff2026-if": {
       "note_path": "Papers/Balluff2026-if.md",
       "topics": [
-        "llms-for-content-analysis",
+        "llm-and-computational-content-analysis",
         "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "eb7aca6ab035800b9bc25233797178fbc316cf3d4685f4e35109aef321ecfcc7",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173453+00:00",
-      "assign_fp": "79c00d671faa700cd8c92e0c59020e1ac32d731a65db5604351b05e334791cec"
+      "assign_fp": "8b1276b5b171626305d863e0dadd2064768bd74b3f67468570d9b6a65b360cc0"
     },
     "bibtex:Farkas2026-lr": {
       "note_path": "Papers/Farkas2026-lr.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "disinformation-narratives-and-information-operations"
+        "health-misinformation-and-fact-checking",
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "3d88690613fb57341b3249f63dbd5ad0d9f52132c9ede04cef01a61012941131",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173460+00:00",
-      "assign_fp": "b59b590087d61a0569c8c3cc93eed08cc1b58dad77d134d1765796d8434f34a5"
+      "assign_fp": "2c707d12dd04310a1463d732ee80c5f0d1f80cfb312b35cc43d8797b74f248ba"
     },
     "bibtex:Gauthier2026-iq": {
       "note_path": "Papers/Gauthier2026-iq.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "political-polarization-and-partisanship"
+        "political-polarization-and-partisanship",
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "7703bebf843297c6e8c5f39884bac5fe2e25edd89f8deddbefb5b141852ab84d",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173468+00:00",
-      "assign_fp": "c98d49de7bf0e70642ef96f4330f6db7b06a6d53fef5758d9ac122d96aa2d76a"
+      "assign_fp": "539a5861f07860e8dec226c8f21f14dda7144b9bb527721bf04c1dc75ef6bdc9"
     },
     "bibtex:Stanusch2026-ec": {
       "note_path": "Papers/Stanusch2026-ec.md",
       "topics": [
         "generative-ai-imaginaries",
-        "generative-ai-and-synthetic-media"
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "389a43158a93ce90e744c17a922a8a9abc764fc24863fe412f070e56df514817",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173474+00:00",
-      "assign_fp": "a99def1f496bd36fe84b5ccb0be3320835db9b19c0695d2e6515bb40992cbee0"
+      "assign_fp": "001425ec5842022a35627ed2459cff4eb43edbad57bce352717fb963ec75f7a4"
     },
     "bibtex:Dierickx2026-tw": {
       "note_path": "Papers/Dierickx2026-tw.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "llms-for-content-analysis"
+        "llm-and-computational-content-analysis",
+        "generative-ai-imaginaries"
       ],
       "pdf_source": "drive",
       "content_hash": "74eebc90f04e82efaa53da02dd340474a796db3d7e7dffcbaeb3da718206632f",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173478+00:00",
-      "assign_fp": "3866cb135d9bd564a142f4db2a6900ab3040315588077f57db0f6813a8180c4f"
+      "assign_fp": "ceece52bf5bfd61665e883e01e07386c1b9ac7b354c3a88424aa56b38d594032"
     },
     "bibtex:Shi2026-ko": {
       "note_path": "Papers/Shi2026-ko.md",
@@ -659,50 +666,48 @@
     "bibtex:Philipp2026-tl": {
       "note_path": "Papers/Philipp2026-tl.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "italian-election-media-coverage"
+        "platform-data-access-and-governance",
+        "italian-electoral-communication"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "f80e34e2c62560e9635a7dfdf73cb269d9738f5e6c85eb83f7c923b0bba868f2",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:59:27.173484+00:00",
-      "assign_fp": "9017a0a7c44aca17a46fb012c45b2a7f844a889e0bbe5118691c3bbe697a6525"
+      "assign_fp": "e6f8baf09e51a3c0712c9af95632b45a0839c321acd4902ed0c0e9baf4588b8d"
     },
     "bibtex:Choi2026-bz": {
       "note_path": "Papers/Choi2026-bz.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
         "climate-and-misinformation-message-interventions"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "42a3f57912bd5bd54ad79acc2b61425adc44866ce047419acbd963b400268c74",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:59:27.173492+00:00",
-      "assign_fp": "5f3d56d85875f6ee208cf258ad79807a2acc97731a128c553d5de23007d2d196"
+      "assign_fp": "4139a4fec6fb55b5910d42d59c23b2edd416943e90e866ae84adb8e73a6783d7"
     },
     "bibtex:Inacio-da-Silva2026-zf": {
       "note_path": "Papers/Inacio-da-Silva2026-zf.md",
       "topics": [
-        "cross-national-coordinated-networks",
-        "platform-data-access-and-research-infrastructure"
+        "political-polarization-and-partisanship",
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "7992753add0a143c67f6600394e850cbec1bfb3ccd83da2cf941e36c76afc5aa",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173499+00:00",
-      "assign_fp": "de632208b108dc74a03b90601cc2c81793b81efb255a6360f2341b785eb7f10f"
+      "assign_fp": "1dbe75b1b78447835501f903c8bb084dc3d3972808ae9b4f4968bc0e94055acb"
     },
     "bibtex:Heiss2026-qv": {
       "note_path": "Papers/Heiss2026-qv.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "platform-critique-anniversary-essays"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "8a43d120348d59e04a6d83fed1af8d9dce0a2bf3ad991a2a27ae935f5752f0d9",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173505+00:00",
-      "assign_fp": "3b4b5aa89a97dd12b36352730717537874f697a387cf04048c08cc88ca0362a0"
+      "assign_fp": "f80d068492a594980a42439538db45f259fd76e19e510d29018abb8b5fa4ad70"
     },
     "bibtex:Dehghan2026-sy": {
       "note_path": "Papers/Dehghan2026-sy.md",
@@ -714,7 +719,7 @@
       "content_hash": "a70ae877401964bb57802ca36190ee1e41c0807234785a6ffb5ce024f1b4f182",
       "podcast_linked": true,
       "last_processed": "2026-07-18T06:13:06.418743+00:00",
-      "assign_fp": "6c1ed438bf771bb5040cb9e651d0d6c9db1f4638090d2d00aff71cf00a8efa19"
+      "assign_fp": "12857cdf24d422a1c9b18af77fb85efad39dffcbb1a623584603bcdba71111ef"
     },
     "bibtex:Yoo2026-ev": {
       "note_path": "Papers/Yoo2026-ev.md",
@@ -726,19 +731,19 @@
       "content_hash": "239baef051fce53da502a7c868cfa9c9db31c4304aa6d40d52dc4e3c4bd7cdbd",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173517+00:00",
-      "assign_fp": "bd42362def6f22ad43b2c0aa9f1c3863fc7d2610e179787da2df3ad209bc8a0b"
+      "assign_fp": "23ee4facdaa09c1762979c1f66b7d962b6a415f968c8dc0a7694d016aa313f50"
     },
     "bibtex:Lyons2026-ca": {
       "note_path": "Papers/Lyons2026-ca.md",
       "topics": [
-        "problematic-health-information",
-        "survey-methodology-validity"
+        "misinformation-exposure-recalibration",
+        "health-misinformation-and-fact-checking"
       ],
       "pdf_source": "drive",
       "content_hash": "1aec54afcf8f8bc0fcdc8fda3423429500d25093837ee1d5a892aa3865690eb9",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173522+00:00",
-      "assign_fp": "7889c09130922c271b69163753929f499a27c54f915a69d0b6d817bd06e79e98"
+      "assign_fp": "1cf1f57e2a3b2e4b39bcd566fcd443f632c6133c54e8b5b5dff21f2c3b20b725"
     },
     "bibtex:van-der-Linden2026-jt": {
       "note_path": "Papers/van-der-Linden2026-jt.md",
@@ -749,7 +754,7 @@
       "content_hash": "d5dff8270f4cf7a35dd2ee31973ac89acffd1d13d24a8fa0c4b2f3db8f6eda1f",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173528+00:00",
-      "assign_fp": "7817adfaf903c84812564f23a96eecd03a84b10d079e945a1d81aa266cc79a00"
+      "assign_fp": "6808d6a534514f973d67c48846cbfddf087f2da6d834a39e8d765d406f8cd9a3"
     },
     "bibtex:Graham2026-fb": {
       "note_path": "Papers/Graham2026-fb.md",
@@ -758,42 +763,42 @@
       "content_hash": "275a85650ccf90ac64ffefc88e86b130d2108c45f2d5868290d685be2903490d",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173534+00:00",
-      "assign_fp": "d822cfdfef47f5b6b1368e338a7994c3c3e243947a60c4b0b1776408e861d879"
+      "assign_fp": "11f9dd5b03c2f35b2c1efeba44f17ee2cdfd8f37ade0474560fc8182a2243fc5"
     },
     "bibtex:Rohrbach2026-rc": {
       "note_path": "Papers/Rohrbach2026-rc.md",
       "topics": [
-        "disinformation-narratives-and-information-operations"
+        "conspiracy-narratives-in-media"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "dfd94a2c46eb7b8f877b07de92511df4c5d127ce6f4839a4626abbbcaa1f2816",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:59:27.173538+00:00",
-      "assign_fp": "8e06cfc56945dd727b75d34b25b1d30ce7326fddad0d787cc4707fd5503845c6"
+      "assign_fp": "950c3123b37a73f85c4b01759d973b72be5b9c8164faadbefabe9a89cec5ea50"
     },
     "bibtex:Szabo2026-rd": {
       "note_path": "Papers/Szabo2026-rd.md",
       "topics": [
         "climate-and-misinformation-message-interventions",
-        "llms-for-content-analysis"
+        "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "3d78af6711538e05c9a9fc1a4ed80872f05234374e10450ded00514b5de6fb21",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173543+00:00",
-      "assign_fp": "47223aa43f3db0b73ef2486430427f64a248726351eaf9ba4a2a68beabf97f93"
+      "assign_fp": "e01674caf463bfeb2dec4baf5d9c9132b263429de1fd83d63a906b2ad90f4ff0"
     },
     "bibtex:Bollenbacher2026-vz": {
       "note_path": "Papers/Bollenbacher2026-vz.md",
       "topics": [
-        "problematic-health-information",
-        "disinformation-narratives-and-information-operations"
+        "health-misinformation-and-fact-checking",
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "drive",
       "content_hash": "f8872c5f0554e39f90b80bf95f2773b7f78342095437dab89fb926328003cafe",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173549+00:00",
-      "assign_fp": "562d96696d846721376225f51e22a05a499b228afc03ad852ce2d28e7f0dfff2"
+      "assign_fp": "1f0f7465523756ea6ac2f90387f48714abe09e4ba639dae2859711c3a805f19b"
     },
     "bibtex:Lewandowsky2026-ob": {
       "note_path": "Papers/Lewandowsky2026-ob.md",
@@ -804,67 +809,66 @@
       "content_hash": "d5584362d55f4a2fc16089238765714c60f5b316f27bf57f6d7a7ba679c1eace",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:59:27.173554+00:00",
-      "assign_fp": "78be3836b02331ec78ea575367931d136c6635a421347bf59d78f4a57e80650a"
+      "assign_fp": "6f91766c78d91c3746efbd229e42c01fe7c9aa008ffa4c3b81286aabbb838f4f"
     },
     "bibtex:Elfes2026-jb": {
       "note_path": "Papers/Elfes2026-jb.md",
       "topics": [
-        "llms-for-content-analysis",
-        "political-polarization-and-partisanship"
+        "political-polarization-and-partisanship",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "f8ea72b58809418511b3fd8029aa9f1b74468fc19bbd7d202a8e67dbcfa4deed",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173560+00:00",
-      "assign_fp": "d7a851b4ffd9a7e89f2eb51056267e68d1caebe7ebe4b894adc3f33a824dc6d1"
+      "assign_fp": "5e17ba97a6ef589d95fe6bf472c46b97ca18d7addc7e92ea3cfa9181545461c5"
     },
     "bibtex:Hollingshead2026-vx": {
       "note_path": "Papers/Hollingshead2026-vx.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "generative-ai-and-synthetic-media"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "drive",
       "content_hash": "07873b595a4272e8afd035b9fe9f4c6be314769d1ca6d102b8beb91ad6072e6d",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173565+00:00",
-      "assign_fp": "865a6e698fac51001dd4744f30a15ba793b25f2f1615a36d049f1075021d4d81"
+      "assign_fp": "dd3db57ea83191c9750910e15b1a4d724a56f2b38606c53cae94d5a1fa92dd67"
     },
     "bibtex:Kim2026-wg": {
       "note_path": "Papers/Kim2026-wg.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
+        "coordinated-inauthentic-behavior",
         "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "1bb84f0b04098f891699a31bbef10049ff6b251c597ad54634712e31a44f80de",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173572+00:00",
-      "assign_fp": "3622f22b6aa38d91dcdce4037488c718e09ca2945ceeb64cbe2a575d37684b84"
+      "assign_fp": "1e1f728e2d08ca3bcc16e4724e58cb33113b1d2a87cebca15f8f3754fadceae7"
     },
     "bibtex:Cazzamatta2026-lo": {
       "note_path": "Papers/Cazzamatta2026-lo.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "disinformation-narratives-and-information-operations"
+        "health-misinformation-and-fact-checking",
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "635c44bddf09f68c7451aa971c292720473f77d3247e79e4dd4b5ba9d4a08b08",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173578+00:00",
-      "assign_fp": "acd3f01a5a0ed2bdae9574031811c45c3275329a38668286e616c9990d03d3c6"
+      "assign_fp": "32d4cff320976d05b936632de515d3bcd5c216a8c9e15877e3b75228e8fa966d"
     },
     "bibtex:Balluff2026-bv": {
       "note_path": "Papers/Balluff2026-bv.md",
       "topics": [
-        "italian-election-media-coverage",
-        "meta-platform-policy-and-visibility"
+        "italian-electoral-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "d8a5c3868c69a27ebb34b5e3182d54f6006d45ad225a67ecc4fa0770ee3a5bb6",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173584+00:00",
-      "assign_fp": "c32a51890e215005c70d32a66be962fb1b85f786bae244635c5edd6a5c638eef"
+      "assign_fp": "eda5cab010a789f5c5fe2a1dcc4c9710eb4e818e621707e3d649e3851fe68c5f"
     },
     "bibtex:Gillespie2026-aa": {
       "note_path": "Papers/Gillespie2026-aa.md",
@@ -876,174 +880,175 @@
       "content_hash": "3b5943a3387593c73913ccfb09deb84bc74af5a15b45362a0f53d3f553ee654b",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173589+00:00",
-      "assign_fp": "f5939c3d382e14b6fd90506ae9d1ab169db6516e4b235be04adde238b657bac5"
+      "assign_fp": "fab351518c9d4db3753222392eef3caf8726839606593b61104c03db572fa65a"
     },
     "bibtex:Schroeder2026-im": {
       "note_path": "Papers/Schroeder2026-im.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "generative-ai-and-synthetic-media"
+        "coordinated-inauthentic-behavior",
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "drive",
       "content_hash": "fc0018094ba5be4df6eed8f3f8e0a3a950b264938937e4e1596cf82e9c998311",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173595+00:00",
-      "assign_fp": "1039ac5f03da47a92d8978fcdbd3bc149db7b020618d21371fcd6a5a90894d35"
+      "assign_fp": "e956b1849d3f3dc107fec73687c172d28d25df28fbf7b9be927c8029f2c7885a"
     },
     "bibtex:Hameleers2026-mc": {
       "note_path": "Papers/Hameleers2026-mc.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "disinformation-narratives-and-information-operations"
+        "disinformation-narratives-and-information-operations",
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "70e683b6e742dbb03ff9324cfe2b2ca9606e28f6514975b548025cfbcf33c96e",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173601+00:00",
-      "assign_fp": "233eb445dd82a697bc5189209447814f62111f6015d10b47781f3f0ed7bf6e93"
+      "assign_fp": "79d42c96166698be510e6747aaf92be3ee5a8874d0c1d145a90397d877b953bf"
     },
     "bibtex:Di-Domenico2026-zq": {
       "note_path": "Papers/Di-Domenico2026-zq.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "online-radicalization-and-extremism-on-platforms"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "drive",
       "content_hash": "1fc0c2986026e7d18da75cfd3aa7d7c440bfa51dbc7e8c4073fe3ece02775e20",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173607+00:00",
-      "assign_fp": "997ea238442514dad1305822af275333c483302348a94a8b4796ffaf7e93c0ef"
+      "assign_fp": "f5c78c766b780aa3d2e56c620486a55aa4689c41c2529f9fb7a9405e6e3bd0eb"
     },
     "bibtex:Bak-Coleman2026-mk": {
       "note_path": "Papers/Bak-Coleman2026-mk.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
+        "platform-data-access-and-governance",
         "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "318421d806e42308d3874aacc509cb456f4b872575426a38a96f755e536c5fe3",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173612+00:00",
-      "assign_fp": "41f9159083e7ce62e9726f185efddd5a2053d61519f1d97976917f4e607b99f9"
+      "assign_fp": "49246ede8f171bae79ce6df7ce5e4bcc205c501f56e62fec31fadaa5c48ef300"
     },
     "bibtex:De2026-ld": {
       "note_path": "Papers/De2026-ld.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
+        "platform-data-access-and-governance",
         "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "1e4b6a71558a84848fc96e61268e9bff6750d5c96ed1746c5d6980bf5709e5d1",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173618+00:00",
-      "assign_fp": "3b8a12d7d4d5c936b1ad44dc9a752425fa88874d3560f0a28972fb1aaa106993"
+      "assign_fp": "b15a8b57341cf4acbeaa448158edc71300de0c5919911f4d1e704b5f45a6bdf5"
     },
     "bibtex:Emilio2026-ik": {
       "note_path": "Papers/Emilio2026-ik.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "disinformation-narratives-and-information-operations"
+        "disinformation-narratives-and-information-operations",
+        "generative-ai-imaginaries"
       ],
       "pdf_source": "drive",
       "content_hash": "9ef7537163e024c1e86968dcdc2afa0a1cc878d2a7f0fb0f00c733adab9a56d5",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173623+00:00",
-      "assign_fp": "01c9808783a78d2db88bc9cb133fb93334e77adde8e1bdabacada0e6428e1c5f"
+      "assign_fp": "f1b6dd92921475b42496e5d1f1f162a2c201c5a63f1dfd8e6329b2f57ec4b0a7"
     },
     "bibtex:Iris2026-pg": {
       "note_path": "Papers/Iris2026-pg.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "cross-national-coordinated-networks"
+        "italian-electoral-communication",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "85d1db9d6883324b0ee29d445c0fb4e7841e54dfff4b4b1d823c987a73b6fa43",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173643+00:00",
-      "assign_fp": "6d5d411c224a720125865c5fd5d7a8d893b71fb9e5837ad07e099f98fe33effc"
+      "assign_fp": "943a57b7ff182abba87f3f6eb6d4e04bff679abd07a5e49917ae60790681f111"
     },
     "bibtex:Dubey2026-bl": {
       "note_path": "Papers/Dubey2026-bl.md",
       "topics": [
-        "climate-and-misinformation-message-interventions"
+        "climate-and-misinformation-message-interventions",
+        "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "3dd7e855b8bcdf3dafe1771c147e1d594da58fd303b0cd52c80a7081d001c0c4",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173664+00:00",
-      "assign_fp": "fa90071c333c5adbec2fb59aa97ecfcf25f13bb775e5900dc753ef5dfb69d9aa"
+      "assign_fp": "bae1ee0de9a6486fa103994afe8c827199fb9dbc4c87ba3933a1f1b25ef25432"
     },
     "bibtex:Voelkel2026-lc": {
       "note_path": "Papers/Voelkel2026-lc.md",
       "topics": [
         "climate-and-misinformation-message-interventions",
-        "survey-methodology-validity"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "f0e65b0f0c6d931a79854397bd129c8da271131d09089ff142bf45d19f0f261c",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173649+00:00",
-      "assign_fp": "ea807260e3199d66b6813d8b55b1a3cfc98f29ed16a383dff86ce53966b9ca30"
+      "assign_fp": "74db52d9774b36de9e6b4a8287bb05826ac052312f37c02da7d7b08b248b04ce"
     },
     "bibtex:Poliakoff2026-fa": {
       "note_path": "Papers/Poliakoff2026-fa.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "cross-national-coordinated-networks"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "drive",
       "content_hash": "7a9d636e56eaab34ae66d0cf5995e8682f641b75f1c91a286dfd1a1763259c2a",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173638+00:00",
-      "assign_fp": "3c5f5f7bf57a001ee3629aa5fe22c335a035818a2449be72586ef8e110e9787a"
+      "assign_fp": "da77631a0367a3aa69670535a95c807058f5c2399346a6d2e6296b750ed659c5"
     },
     "bibtex:Arceneaux2026-xk": {
       "note_path": "Papers/Arceneaux2026-xk.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "political-polarization-and-partisanship"
+        "italian-electoral-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "aca6e1505b5f3188399b49d0abfac3a223ed2336f02416e03a95c72865870495",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173628+00:00",
-      "assign_fp": "7ede12ee64bb01ef70a9c5fbe567e3455245e611d73cef0f1f723ff0d93ae3d5"
+      "assign_fp": "df04c48dbd20845a69791d97f0210e9fbb71854281f31dda7ef053579eb2956f"
     },
     "bibtex:Bouchafra2026-ts": {
       "note_path": "Papers/Bouchafra2026-ts.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "cross-national-coordinated-networks"
+        "italian-electoral-communication",
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "drive",
       "content_hash": "9fe18b2dedc8eb7f414ebf5be64f3f7ca458ff1a8d3bd6c9cbb8a95220adeaf8",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173661+00:00",
-      "assign_fp": "4ec1957d97f20c1ea48cf12ecc68003cd1c64838ca3248d93f76161dddd29058"
+      "assign_fp": "75fb17de87b074250d234715d450edcd2c590816dd616a74a4076b74e95339c2"
     },
     "bibtex:Rieder2026-pp": {
       "note_path": "Papers/Rieder2026-pp.md",
       "topics": [
         "online-radicalization-and-extremism-on-platforms",
-        "meta-platform-policy-and-visibility"
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "183ac717448c8f99152e57ef2e5e078a771aad9ddb1d73a3fc0c903d65ac39dc",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173655+00:00",
-      "assign_fp": "cf157c18423a376b0957eed51b43aa8691dadc040e218d1e2616b3dfc8fde6d8"
+      "assign_fp": "2a969d9d71309d38a960b9ef689cc4187a20cec277b81cddc56641603ee6ca75"
     },
     "bibtex:Larsson2026-ro": {
       "note_path": "Papers/Larsson2026-ro.md",
       "topics": [
-        "llms-for-content-analysis",
+        "llm-and-computational-content-analysis",
         "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "2b7a3bfbc58bec3176c3ea0d28d648bc48a210ae6c6831d38911c58bc92cb346",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173634+00:00",
-      "assign_fp": "e948c14c0962d11616163993ca943ba01cfbe6e3acd33a6f74f705cd714605f4"
+      "assign_fp": "fff194c25052574eb98fd7f46946fb56a7bc1fe9729caf39165d338f1df5a4a3"
     },
     "bibtex:noauthor_undated-ue": {
       "note_path": "Papers/noauthor_undated-ue.md",
@@ -1084,26 +1089,26 @@
     "bibtex:Efstratiou2025-gs": {
       "note_path": "Papers/Efstratiou2025-gs.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "coordinated-inauthentic-behavior"
+        "computational-network-structure-analysis",
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "725468c1d0d43b22e90d315a6d073ca1a5952289d9468b7cdddc16de9b9144b1",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173707+00:00",
-      "assign_fp": "72e89c4432e275df7ee25caa25c1c35ebf7fcb4c2b83f7e7b728ba03714d5a31"
+      "assign_fp": "7c1bd0289c3876ffc69417695b38886a555c16375a759a4261539e71c30d5a39"
     },
     "bibtex:Pierri2025-hm": {
       "note_path": "Papers/Pierri2025-hm.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance",
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "cec12e63308ea73c432a45166b22ad6bcc5f9f09f378e30efa95b606f989b452",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173686+00:00",
-      "assign_fp": "c8efe653e05df625a0c1cb4def80f773b828a66eebc718aea7705f890256476e"
+      "assign_fp": "70d5575257171769e29b0de13b51fc8b89302fa064a9a83f45c615a81f5918ba"
     },
     "bibtex:Iannucci2025-eg": {
       "note_path": "Papers/Iannucci2025-eg.md",
@@ -1115,30 +1120,30 @@
       "content_hash": "3c20b0f9be870245eda46adf66930f373fd6338af42785cd9fd6e774ad986ac5",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173712+00:00",
-      "assign_fp": "9f0919319a96bc94a0cf203beb9d376b20514fcfbfde1741c555c87432827f69"
+      "assign_fp": "5ed8a9de84fb2563613ae3d6d444df01e2b8a17d1e9ce9c4534ef5f399d0c72a"
     },
     "bibtex:Gardam2025-er": {
       "note_path": "Papers/Gardam2025-er.md",
       "topics": [
-        "disinformation-narratives-and-information-operations"
+        "conspiracy-narratives-in-media"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "5345c77de9a787fe23d707c745a4bd15359e7e00ba41e29d0687f48f9dcc5ac6",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:59:27.173695+00:00",
-      "assign_fp": "df6b8a1a4e70d4dff722617a76535ff264baf98d78e0d3607ffd15d68ddf92b7"
+      "assign_fp": "573e9d293258d6620f51209a336be702f63c039c11d2cfa854261adee6a04979"
     },
     "bibtex:Lin2025-xp": {
       "note_path": "Papers/Lin2025-xp.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "climate-and-misinformation-message-interventions"
+        "disinformation-narratives-and-information-operations",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "b626893270f5500b719f80ac1a2b21e7adfe23dc27448afe69b5ff5fc3b31011",
       "podcast_linked": true,
       "last_processed": "2026-07-08T14:59:27.173701+00:00",
-      "assign_fp": "820698668dbcd9e629190663a4a694d43ee02f246cee149bfaf3cba8ad605f6c"
+      "assign_fp": "fa4118da8f4c3d8444075cd928359dd13afd27d30a5d00f79371d0e51fb716f7"
     },
     "bibtex:Matias2025-px": {
       "note_path": "Papers/Matias2025-px.md",
@@ -1150,31 +1155,31 @@
       "content_hash": "584626daa98674fa95d3c9ae65dc80640a36a3f15505e18195e003dddead144a",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:59:27.173691+00:00",
-      "assign_fp": "28b32f07d81c69abf71d30ba655681bcee0422f4832f017474049123bbd0b093"
+      "assign_fp": "feab06cdd3eb1b37a44111c9037943f7ec2497fdabaa7a5887eb5701d73322e4"
     },
     "bibtex:Knupfer2025-vt": {
       "note_path": "Papers/Knupfer2025-vt.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "disinformation-narratives-and-information-operations"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "drive",
       "content_hash": "4c9a270a65cff7fe5d5f52305de44dcaf914b573a3cd4fda0bece90be354a9c2",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.323985+00:00",
-      "assign_fp": "ba4200e1ba295ad1cb3789da6d7f446853e0493513e23defeee31da963e20a2d"
+      "assign_fp": "7fed348204ef011829df3af160985c447ed8dbd2976f4ca88370cfd61efc07c4"
     },
     "bibtex:Kalsnes2025-zb": {
       "note_path": "Papers/Kalsnes2025-zb.md",
       "topics": [
-        "political-polarization-and-partisanship",
-        "cross-national-coordinated-networks"
+        "italian-electoral-communication",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "26893e6aa4679cb18762abb9afc9329b7c11968cc60c54c1708fb3cc0c0ee0e5",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.323999+00:00",
-      "assign_fp": "8a979a966fd94486489d3e6b883b1e4d376d4bfad89d8ad42c8690cada80c232"
+      "assign_fp": "9a825112ca7933d78a4b53a40064f94044eef3ecfbff6bc5de9e66a857ed1ec3"
     },
     "bibtex:Lieu2025-nl": {
       "note_path": "Papers/Lieu2025-nl.md",
@@ -1186,55 +1191,55 @@
       "content_hash": "f8a2f3ef65fd55a8b7ab4ea3fc341aea3394ef38b93e8072a75874a53d88fd21",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.324006+00:00",
-      "assign_fp": "92c6f5a3f2576a804947cf40fc6d4b68b455bb2d1873c09c7fa0821e863b7f0b"
+      "assign_fp": "9364f3f804ce6975d840fcc74956fb382d173e602628ed9ea586d996894eba9f"
     },
     "bibtex:Copland2025-em": {
       "note_path": "Papers/Copland2025-em.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "cross-national-coordinated-networks"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "drive",
       "content_hash": "3798a4576d0f8306d93ec0cf5224639cf37e35d363b1c9492bb6e480149a16cd",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.324010+00:00",
-      "assign_fp": "a277b8dcdca6f1dd77d463d3da0ef4da9eccc4dc9ef6c8949a2506b6390571fe"
+      "assign_fp": "6b0fbde03ec9e380059b5cb8b69ae7167c72d86f76a012bcada1cd132d138552"
     },
     "bibtex:Triedman2025-uy": {
       "note_path": "Papers/Triedman2025-uy.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "llms-for-content-analysis"
+        "llm-and-computational-content-analysis",
+        "generative-ai-imaginaries"
       ],
       "pdf_source": "drive",
       "content_hash": "9462680e8a5a7ce92266ac5bd371ef76b56dd2c0d0be4183c07360bf328441ff",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324013+00:00",
-      "assign_fp": "7b53899950bdbbe2a273b51a8b18f202891e1b7a8a06e01c3cc8d10e1631709d"
+      "assign_fp": "64ee34af0d2d4d039794c52eee5ad984a6be31a5c51db0be19f9ce347ce221ee"
     },
     "bibtex:Song2025-yh": {
       "note_path": "Papers/Song2025-yh.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "problematic-health-information"
+        "health-misinformation-and-fact-checking"
       ],
       "pdf_source": "drive",
       "content_hash": "8182f4999eef60f2eae190e48243a8a6fb51b661b3835f34a9b41813978a12be",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324017+00:00",
-      "assign_fp": "024ba53172f138fc65dea427ffae4fc53df63d43a72de109f79bed3e93d08b16"
+      "assign_fp": "4d179ad9027e3428345a13c8b49f0c22ace74bff923dbedfa23a5f04dfa46730"
     },
     "bibtex:Allen2025-ot": {
       "note_path": "Papers/Allen2025-ot.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "llms-for-content-analysis"
+        "platform-data-access-and-governance",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "3b7ec0244cfb2c7e90a7052d82e94a4b8853a12f512629dce2d4d758757809f0",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.324019+00:00",
-      "assign_fp": "ca70924ddde5c9c1523a21d62ff82da68c9d0e3695025f9ce2862e75684bc4ab"
+      "assign_fp": "b00fe7813d9e57af4bbf285578798a54d2f2463a7f512e90d895b86a91ee0c31"
     },
     "bibtex:FitzGerald2025-nv": {
       "note_path": "Papers/FitzGerald2025-nv.md",
@@ -1246,53 +1251,54 @@
       "content_hash": "8e01b3c86bad19916d05d6b2dac36e7511b2f07e3da6bcd0d88eb47e4cab5a74",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.324022+00:00",
-      "assign_fp": "3735c6db3e4b10ac0753998a2dae074e60fc48f05bc19ad5cee683e9c3cf049a"
+      "assign_fp": "8ef22411343c5c71f5832bd828691dfdc9429c3865262fed17bbd19092696718"
     },
     "bibtex:Murtfeldt2025-wu": {
       "note_path": "Papers/Murtfeldt2025-wu.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "691d95a1e2ec9484e8849145bd5b23723cf7faf62b891f2105e5c0c45a150f73",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324025+00:00",
-      "assign_fp": "e4ea92b34e849ac6b8cc335fc38865c5c6d5b2482c91a8bbce738aebdbbc20c8"
+      "assign_fp": "0ba8d0177aa75ea34d0fa3dd128d76ea28e20432066a7de19f466f0be6bc661a"
     },
     "bibtex:Bak-Coleman2025-pm": {
       "note_path": "Papers/Bak-Coleman2025-pm.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
+        "platform-data-access-and-governance",
         "ai-red-teaming-and-participatory-evaluation"
       ],
       "pdf_source": "drive",
       "content_hash": "4d864b5035181fc648d0925c7c7522b45ee210cf982b0b955d182884ae19b6c9",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324028+00:00",
-      "assign_fp": "cac9ead840baa8cac29703fede717cb58aad1db011b75ad05f799afc7369ecfc"
+      "assign_fp": "300de15545b5a40c36ef2bafa489c484853741cc18ee84610adb9d9e3041b33d"
     },
     "bibtex:Orlando2025-ul": {
       "note_path": "Papers/Orlando2025-ul.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "generative-ai-and-synthetic-media"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "36e15e5405c2255ff69e35df8e5b6aae40a2a80738fcf87a47fc3bdee679a765",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324031+00:00",
-      "assign_fp": "122489b7cfe14660e87061e3d49af3f2b85a7f8eec8ccdd6be65bf6f4f618263"
+      "assign_fp": "410967d02d41256682d4ac7482d7c9ab6897d97c8291f6c250112b2715432cd6"
     },
     "bibtex:Frischlich2025-vn": {
       "note_path": "Papers/Frischlich2025-vn.md",
       "topics": [
-        "disinformation-narratives-and-information-operations"
+        "sociocybernetics-and-social-systems-theory",
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "28e82738af681bf7be927beccc268e2db66d84fe5ee39ca3c93eda177c5a0edb",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324035+00:00",
-      "assign_fp": "fd713fe4fbac70a965784b32421076c03ac93593bb288af304fd4b55a3dde14e"
+      "assign_fp": "a131329ffd2e85591e70843ef8fc92bd23cf0f515a5fd10e4a2de2c81ff470b7"
     },
     "bibtex:Starbird2025-jj": {
       "note_path": "Papers/Starbird2025-jj.md",
@@ -1304,103 +1310,102 @@
       "content_hash": "bb429cbcdc74ce572398d2c9f04cf775cf8b45b1e13b9eb75f358dd24100592c",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324038+00:00",
-      "assign_fp": "dcc92e098af299ad476d215ce58c9e92d4cfcaeec7ec28ad7e98fe1472da4a3d"
+      "assign_fp": "883ce1f09f25c2fd82d6fcfb4547ef9b3a8db9dfb45b795578f785bb5062a276"
     },
     "bibtex:Prochaska2025-ef": {
       "note_path": "Papers/Prochaska2025-ef.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "political-polarization-and-partisanship"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "3eb1b55c367a7e645879ae092d43fe786dc0f46129b9bb2be4f6ed1ca8a514ad",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324041+00:00",
-      "assign_fp": "fb17e4adce8a21639727c6b6f22a6a3742ff17e52bf78c335e4ab58c580922db"
+      "assign_fp": "bf375477c10e9938f066cb0cbaf19c9eb3a92759dc8dc68857b372d90ecfa9d0"
     },
     "bibtex:Oswald2025-km": {
       "note_path": "Papers/Oswald2025-km.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "political-polarization-and-partisanship"
+        "misinformation-exposure-recalibration",
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "4ccdef2afdca646b5c08dcf208df34272296f3c00f9c44dd639c05c268b3062f",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324045+00:00",
-      "assign_fp": "c03876ad2cc2506bed18f3b1caabd2708eb8ab503a772d2bb1f15fc7c5926cfb"
+      "assign_fp": "06ab28c8436cc4cbcd451d68db9a3d76b131cad18c77ba0e04f4f3f1a3b1beed"
     },
     "bibtex:Donovan2025-ws": {
       "note_path": "Papers/Donovan2025-ws.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "meta-platform-policy-and-visibility"
+        "coordinated-inauthentic-behavior",
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "c67d282037b4dace2e6157b258215a7dcefda0dee5de04fac2e3e0d778f672ad",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324048+00:00",
-      "assign_fp": "23ba75f06c4f3bc8dc24b0dbd53f33345074304e24f32833d1dc298a91161acc"
+      "assign_fp": "0669d819466a6b8e8dfdd2a4d0a18363075d86204366951ee9b57df3aa3e9287"
     },
     "bibtex:Arminio2025-tw": {
       "note_path": "Papers/Arminio2025-tw.md",
       "topics": [
-        "llms-for-content-analysis",
-        "llm-augmented-research-methods"
+        "llm-and-computational-content-analysis",
+        "climate-and-misinformation-message-interventions"
       ],
       "pdf_source": "drive",
       "content_hash": "9000996b3adc471293d39036ff669c59cc71ef8ab97276af41880bbb5a87e29b",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324051+00:00",
-      "assign_fp": "7d1c6bb7128c517ae98d1ed416ff8be6decf5c7a9225c0b099ac95d6c7b9b1f5"
+      "assign_fp": "fc3e13cd354a4d3694ba1fdf2d106ef2d96629913cf9bd486a99aeceffa43b9a"
     },
     "bibtex:Oprea2025-lf": {
       "note_path": "Papers/Oprea2025-lf.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "cross-national-coordinated-networks"
+        "italian-electoral-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "80f77df476e9b438364f7da1e254ce7ae4a9a05c7e67e44b25e6dc3ed934beaf",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324054+00:00",
-      "assign_fp": "2cacaec8ec564fa2bdf34a21968525adf5ffa7e4c4499ba47e18050090aabe06"
+      "assign_fp": "2ede3d07ab5b905553c18641fd0ef2cc14d4106d46a51b1865cee238e01ffa2f"
     },
     "bibtex:Rodriguez_Farres2025-sg": {
       "note_path": "Papers/Rodriguez_Farres2025-sg.md",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "cross-national-coordinated-networks"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "b24e8fbd505ee7e5a062d8f3383ae6c4057914ff153a89afa61ed33e41fa07ee",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.324057+00:00",
-      "assign_fp": "4370317fa4a8d0e8542807b2c4109843917329ccf457c0bc5e82635a5e38ae4f"
+      "assign_fp": "61b4fe822268c2faaff4c26a52e59732a22a5933aaebcb56f10a02032567c427"
     },
     "bibtex:Tonneau2025-bv": {
       "note_path": "Papers/Tonneau2025-bv.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance",
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
       "content_hash": "7bcad0d9156376a419b656869f36bf3160680828f9947e95f258f2be2e92ed2c",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324060+00:00",
-      "assign_fp": "cc1a125fdc0c6d6715b6971306678801fb9a16ca1ac0b883e7bffc1ef36d9349"
+      "assign_fp": "68e06cec6ef1c9a92438bb8507d84f1deff54620a1f9a022a90abd62bc99c6a9"
     },
     "bibtex:Fan2025-ut": {
       "note_path": "Papers/Fan2025-ut.md",
       "topics": [
-        "llms-for-content-analysis",
+        "llm-and-computational-content-analysis",
         "computational-network-structure-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "f6a11065ced9359f75925f942ceafccabce78ae670ed13037493c4afb6659848",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324063+00:00",
-      "assign_fp": "840385a6dbf75f8e02304d6036b538badb2ee33d0f4395171680b970001a0ef3"
+      "assign_fp": "0fbbce9e9ba66cab2b683b679f0bb77b58c0c576c8cfe13fbb50cc6e07a6133b"
     },
     "bibtex:Mannocci2025-ig": {
       "note_path": "Papers/Mannocci2025-ig.md",
@@ -1412,7 +1417,7 @@
       "content_hash": "4d339c4a581735397c0a3ae01e5a69fe711d849f0db30670a102a42dba424eb8",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324066+00:00",
-      "assign_fp": "408f96df7867f90c955cb71c5f49c65d46794c8ed5fee70b11496edd596c2d0d"
+      "assign_fp": "1ec9d098655af3a7dc6a0eb684384da08ddff1e7e9634d2ce3703bc36b318683"
     },
     "bibtex:Zhao2025-ny": {
       "note_path": "Papers/Zhao2025-ny.md",
@@ -1424,30 +1429,31 @@
       "content_hash": "55f43cad45277e5c430ea3e1ba7a5044415e448b44ae5182c17f7d44bd9681d2",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324069+00:00",
-      "assign_fp": "b0eccc08e8e36ce53c47f41d45af3b090bdf6755c496cecbe711cca45262380b"
+      "assign_fp": "f46f83e4bc93c9092f1375205f2059e763ef4ede49c23836242b41a1bd95c67d"
     },
     "bibtex:Kuznetsova2025-nu": {
       "note_path": "Papers/Kuznetsova2025-nu.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "cross-national-coordinated-networks"
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "bdc67930c1becf7496117a755b80df717b528e4a30fbfbad37d87f7353eea3c1",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324072+00:00",
-      "assign_fp": "b6e4ba01a815d763fa305900f8efde733d929c15e3c69bdcdb81ef0596ce3b4b"
+      "assign_fp": "11bc340f398d64388085b9dcec0f3b06a2e3bcc13f62ed4468bf87cc9e1f3815"
     },
     "bibtex:Sadler2025-vu": {
       "note_path": "Papers/Sadler2025-vu.md",
       "topics": [
-        "disinformation-narratives-and-information-operations"
+        "disinformation-narratives-and-information-operations",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "cbfe9e15bd382c5b36a7a3457b9fa0e1134fe6069ffedbfc5bac764381aae5fa",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324075+00:00",
-      "assign_fp": "bd0b95545abe0b50d82e3e0e9dee59eedd5fe454a6380733584638ac5790a3ea"
+      "assign_fp": "ff19d99d29b280c8611524497d8a4f4ab5d5be1c9cae41fa5037d72cfcc03ac1"
     },
     "bibtex:Thiele2025-ol": {
       "note_path": "Papers/Thiele2025-ol.md",
@@ -1459,19 +1465,19 @@
       "content_hash": "c55752f4e4ef6650a8cc591da41c978d0885b297fcaf31f48bd86765c2a3e5ce",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.324078+00:00",
-      "assign_fp": "4f4950d29579faf889c308dc32fe4b0196b3bf818c4aa99b9718851796a5bde1"
+      "assign_fp": "5ad3986639436a4d9dcd4a2ace65f56d1c6114083efaeb6915a35419c18379bb"
     },
     "bibtex:Meher2025-qb": {
       "note_path": "Papers/Meher2025-qb.md",
       "topics": [
-        "llms-for-content-analysis",
-        "llm-augmented-research-methods"
+        "llm-augmented-research-methods",
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "3d7fbf3d524ff71bd46380b46bee5bc9d0f6015ea36833533379070344e7b5d0",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324081+00:00",
-      "assign_fp": "1fb9ce3c59bfff61dcb52dde9baf420564a4dbbdf2986e28092800ab131b3dc1"
+      "assign_fp": "55ebeb35b2096709e9c08f48bea3471a5f154a84cba1adaf63ec56c21a9b9f89"
     },
     "bibtex:Marwick2025-ov": {
       "note_path": "Papers/Marwick2025-ov.md",
@@ -1483,173 +1489,173 @@
       "content_hash": "dc9794ad2a9fcf94c512db7536c67a13bb94c77681724dceff2ad4ce507a8719",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324084+00:00",
-      "assign_fp": "c0575282086d4454385055cfbf5b4ce85cae0d726b73b6ed746bd0d74142cf37"
+      "assign_fp": "7c9e09f25d1cd5184e8b81c7e00623c224af144b4f2348c4271f6201273ff184"
     },
     "bibtex:Jurg2025-ur": {
       "note_path": "Papers/Jurg2025-ur.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance",
+        "italian-electoral-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "50b35a8f7edfdf8264ac5ae787948f48e52b844d81babc3d35a10aaca9abeb31",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324088+00:00",
-      "assign_fp": "6006c218de2ce2b1205409094dca2652ac729f42ac1ae2428848ce8dd6f607db"
+      "assign_fp": "c602d669eecb3a9c825363a30a524d3c734a93b24f5f17bc4751512c1b4d7dea"
     },
     "bibtex:Paci2025-ag": {
       "note_path": "Papers/Paci2025-ag.md",
       "topics": [
-        "llms-for-content-analysis",
-        "llm-augmented-research-methods"
+        "llm-and-computational-content-analysis",
+        "italian-electoral-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "10d3324f84d20bb8eca4aa02a127e3b07ec2799edcac72dcb4b6e9e2c34171d0",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324091+00:00",
-      "assign_fp": "4cc84be3399c03c8412e88e8bc2ebcc04451afd079570a48066a405344ee2a40"
+      "assign_fp": "ce849eba1e688c40d8897897eb64b89fd33a6bf865c42cb72dd4170ac8d90ca3"
     },
     "bibtex:Entrena-Serrano2025-gw": {
       "note_path": "Papers/Entrena-Serrano2025-gw.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "3dc6f534c0059e35bb058991fd1f179e99a564a8a7316c995f298a9b16d4edb9",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324094+00:00",
-      "assign_fp": "2c77f8cc9b9e478ff0f5b3ca28544c8a8d9918bc8df12be24cae04f488327673"
+      "assign_fp": "3a4e1d2c732630dd6e673a46e326e5598f803953006a8e3610a4a6ea3ff9dfe4"
     },
     "bibtex:Rieder2025-ju": {
       "note_path": "Papers/Rieder2025-ju.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "llms-for-content-analysis"
+        "platform-data-access-and-governance",
+        "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "09ecbf376785d2c3e712e1475cfd1d781c3403eaa135d477322681945999daa7",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324096+00:00",
-      "assign_fp": "51f70a72c2472eb3428b85fb567f1d8f699a54f0dc09564ba4235a1def30ca08"
+      "assign_fp": "8d337e9f9a7392e25ae0ba0c565bb67e8b2d0e5d3ab09548d524f87262dee6ec"
     },
     "bibtex:Goel2025-iq": {
       "note_path": "Papers/Goel2025-iq.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "coordinated-inauthentic-behavior"
+        "misinformation-exposure-recalibration",
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "drive",
       "content_hash": "076bb1b142bbae1dc87555778ad0baf3b065771afac33819d808d6e884d0d719",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324099+00:00",
-      "assign_fp": "9f42299a2d620f9be282c021ad29aa7a728105d71972f1dd645650f2bc4566e2"
+      "assign_fp": "4b9ed3f8ed9cced1ef0da92e3ae5dfc78dfc27672c1a874c32831caa5d571ef4"
     },
     "bibtex:Renault2025-uh": {
       "note_path": "Papers/Renault2025-uh.md",
       "topics": [
-        "political-polarization-and-partisanship",
-        "meta-platform-policy-and-visibility"
+        "misinformation-exposure-recalibration",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "054eb961afa2bd9e6896b8e81a0c6cdeaa1abe04b434f21a7453ae8d3e43e5b2",
       "podcast_linked": false,
       "last_processed": "2026-08-07T09:51:50.952262+00:00",
-      "assign_fp": "f2b383d0dc9d00bfd31bbccca13ced956934d9614bcb64ecdcc7446effcbcfed"
+      "assign_fp": "c182959b0f4620a90d42e192352542828c7e904e38d0d71b6536280c7738f9d8"
     },
     "bibtex:Ventura2025-sw": {
       "note_path": "Papers/Ventura2025-sw.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "cross-national-coordinated-networks"
+        "misinformation-exposure-recalibration",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "678e56cc6f9aa31fdf9f03aaa3dfc9eb733d8950bef8638e9887b83b86398eec",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324105+00:00",
-      "assign_fp": "7701e657b02f097c4c032c7523f3aa98f338ccf67369901bceb12a5047fc2cdd"
+      "assign_fp": "e1765cc63d3671c808c1a1f1094fcbb742935cdd1e0a91eb4154d836c87d2fe0"
     },
     "bibtex:Waight2025-al": {
       "note_path": "Papers/Waight2025-al.md",
       "topics": [
-        "llms-for-content-analysis",
+        "llm-and-computational-content-analysis",
         "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "drive",
       "content_hash": "82134ddbd3a827b0a583c886507995337c8c633d2bab2006c569e2fde3fee064",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324108+00:00",
-      "assign_fp": "33cc6fe8e60c62fccd87773f586057bc3da7ac1887bc02fbb6e577dad8397e10"
+      "assign_fp": "ec36f2af895b107a79d62525bb4f84035e9fe5fe08eb21456749ac717eb227de"
     },
     "bibtex:Kansaon2025-id": {
       "note_path": "Papers/Kansaon2025-id.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "cross-national-coordinated-networks"
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "124e3c484778b83334e6e80bddbe8930aec1f7f3c85eb97b2737a31061579efc",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324111+00:00",
-      "assign_fp": "488e6aa66f88d99b2a22c1f1fb29393f430583ecabc25b6d4b1653643381a546"
+      "assign_fp": "4f1cac995b148be53095e2bec54f67f21b5f7d605fe2fb35c659bbc1bf7926a1"
     },
     "bibtex:Marwick2025-vx": {
       "note_path": "Papers/Marwick2025-vx.md",
       "topics": [
         "online-radicalization-and-extremism-on-platforms",
-        "disinformation-narratives-and-information-operations"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "9f1e6e7c4bc0884289d8c03335c8e79cf0c25634c1fa06116605d6d53c294413",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.324114+00:00",
-      "assign_fp": "a8cb4142639056820f433ffeb8c9e77723fdf08070c0a788947971ffaae860bb"
+      "assign_fp": "32ef7adb1773031e79d7884ca7ca354bd70d124baccee0defb91d51ea5736670"
     },
     "bibtex:Gaisbauer2025-by": {
       "note_path": "Papers/Gaisbauer2025-by.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "platform-data-access-and-research-infrastructure"
+        "computational-network-structure-analysis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "d7cd56497d83b0f4d29d2bf72dd8eb6873cca215123c235e18bdec3bf45281b3",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324117+00:00",
-      "assign_fp": "e8d964643e165046e57aa16adde5859c4dc7081d5543b91294048d538b1f6bbf"
+      "assign_fp": "edef29edd4d5e7f42a8ec234c4ec57ed5588b5e3f3020cb25f3bf31fa8b54a27"
     },
     "bibtex:Luceri2025-tr": {
       "note_path": "Papers/Luceri2025-tr.md",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "generative-ai-and-synthetic-media"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "4265ef31fbe9281205c9323fabaaabaee2a8cb115f8914fcf946eb807c74eb1a",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324120+00:00",
-      "assign_fp": "9da5db630ce58069936518a94abb84c0dc0ddfb08b65ff0d74f80e4c9ed17e46"
+      "assign_fp": "79dbfbd01791db80ca55d44f75169372f6f4c470862cbb1d1b62537488171713"
     },
     "bibtex:Gerard2025-br": {
       "note_path": "Papers/Gerard2025-br.md",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "computational-network-structure-analysis"
+        "computational-network-structure-analysis",
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "drive",
       "content_hash": "86a4604d00a06ee25864ca12d99477a8d357da59fc8d3d87a5d1085dcfda9394",
       "podcast_linked": true,
       "last_processed": "2026-07-10T14:17:32.324123+00:00",
-      "assign_fp": "bc40a5e678f7cd3de2e15845c3097888acd4ccbc7683123d73f0690cdd664132"
+      "assign_fp": "22534a1cd6efbfd23d56a010760fcc480c39d92578209609a572bbf4e0a3040a"
     },
     "bibtex:Hartmann2025-px": {
       "note_path": "Papers/Hartmann2025-px.md",
       "topics": [
-        "political-polarization-and-partisanship"
+        "misinformation-exposure-recalibration",
+        "computational-network-structure-analysis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "d369b390be26a6db5c09fa4e23d90e69c012eae0cf43b2e316c922a507684035",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324126+00:00",
-      "assign_fp": "570f83c601d9cee8d91c9d381d6b1cad3dda5b9333470cac5226dc15236910e2"
+      "assign_fp": "c632b95385a011d52b01417cc5ae0b1fcdca4e3202fe286f3a0021ea99cae68e"
     },
     "bibtex:Yang2025-iv": {
       "note_path": "Papers/Yang2025-iv.md",
@@ -1660,311 +1666,313 @@
       "content_hash": "a23209aa11937b878056c7f32f0eba80aca30a6fc5958ea1524bd7a435260f41",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324129+00:00",
-      "assign_fp": "5db1ac89dbe5cf9ed7708150d64ebc639aec1d405bba4e4d243c69dd51fc6901"
+      "assign_fp": "0d16d66abcecb54333a892ae4498b403d4026fb3c36281d95d66b9f8f3fbaaed"
     },
     "bibtex:Votta2025-xz": {
       "note_path": "Papers/Votta2025-xz.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "bac0fb34e310fea459f150138b593fb7366c4e81c22b4eabc95db869c5ac4e14",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324132+00:00",
-      "assign_fp": "62e39fe47669625de42ecaa5b044ed1a305cd3e130f03e62b10a48635cb0f616"
+      "assign_fp": "db042e2b5ebdc4feccee33d9d68bd1e139345a135cd8046ec8add386216a4d55"
     },
     "bibtex:Di-Marco2025-aa": {
       "note_path": "Papers/Di-Marco2025-aa.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "computational-network-structure-analysis"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "0cb9e53cba18e7174797cfaf3b3877d0d31bcf97b49147ce7c631debe7c59f34",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324135+00:00",
-      "assign_fp": "3465090f1a5682260cb10f59ee1f1c3f706d7bc5b93dd405aa9d52975f55eb5e"
+      "assign_fp": "a4bbf94e9d5bb5fecb3e13e7fc0348b1fb69989b7f96a0fe0050cbf16849577c"
     },
     "bibtex:Allcott2025-jb": {
       "note_path": "Papers/Allcott2025-jb.md",
       "topics": [
-        "meta-platform-policy-and-visibility"
+        "misinformation-exposure-recalibration",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "9cea2f8ef879958d25d0ba6b17470292749f606e836b43f899f0cb6c660f93da",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324138+00:00",
-      "assign_fp": "cd165f924f419befcf5ef611b8ab2aa131064cbb940c593e760e9fc35a41b7a2"
+      "assign_fp": "b6b6f1e4e274ff71f75d4c50352c87b0b0ff4982303400f923b7250f3565435c"
     },
     "bibtex:Gattermann2025-yx": {
       "note_path": "Papers/Gattermann2025-yx.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "disinformation-narratives-and-information-operations"
+        "italian-electoral-communication"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "5b3a80e76323f62e66f803a24bf0a9559586e70b4413ded40d2a944ecec28d0c",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324141+00:00",
-      "assign_fp": "f8422d923d31eebbf5bafaad7acf039401e8117842e03fd78582b268344e6452"
+      "assign_fp": "8b0080de6aae6d0289b9befcfe46424aab951169167b72b27b920a47927e72b5"
     },
     "bibtex:Smith2025-kc": {
       "note_path": "Papers/Smith2025-kc.md",
       "topics": [
-        "computational-network-structure-analysis",
-        "coordinated-inauthentic-behavior"
+        "computational-network-structure-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "80e4839ebd99482c32397ff2e22fba3c8bc9b694edcf3a7a790c87c229feed92",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324143+00:00",
-      "assign_fp": "287cf0136997c0bdc854d789a44af948172abbcf128446c40942448e801c66bd"
+      "assign_fp": "cd22aed5250a047e94df1ecae4a501a093174415d67102e966fcb01e0a168de4"
     },
     "bibtex:Moran2025-qn": {
       "note_path": "Papers/Moran2025-qn.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "b624ef55d3294b085f0a5ef532ef4e9a17f815cd1d6634495fa22bd7c4a092bb",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324146+00:00",
-      "assign_fp": "0fa137c68fedef8e8f5ebb27fb35a0d5ea2421d84045e93021b52f04875d4811"
+      "assign_fp": "a639dc029500d0a80c3c156f21ce79ee492976643dce81bca8193ce39d275b89"
     },
     "bibtex:Bruns2025-fz": {
       "note_path": "Papers/Bruns2025-fz.md",
       "topics": [
         "computational-network-structure-analysis",
-        "llms-for-content-analysis"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "355a237d703d2d9e9addcc9b4b977ee37396a97283399dfe64e0299efd374957",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324149+00:00",
-      "assign_fp": "b852812da6e3c854e95cc4938352e217c602cd41080bd1a704d6c54c733f7209"
+      "assign_fp": "38a5710d868347eab56d97493d7c9d207f139e482ce7cc0096087825c1d645dd"
     },
     "bibtex:Esau2025-tf": {
       "note_path": "Papers/Esau2025-tf.md",
       "topics": [
-        "political-polarization-and-partisanship"
+        "political-polarization-and-partisanship",
+        "sociocybernetics-and-social-systems-theory"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "35bde1c5aa11f8b88b0b2b2eedd7ddea1688efab2b928c5d21851bf79369134b",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.266363+00:00",
-      "assign_fp": "75c291131c9e1a045bb43ec1d276a0248f0a2f1f84a9c77043c4139d6e71f7fe"
+      "assign_fp": "952b57673d56f60efa3911f392a228d429d7520145de67892e635c03daca3bdd"
     },
     "bibtex:Bastos2025-ya": {
       "note_path": "Papers/Bastos2025-ya.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
+        "platform-data-access-and-governance",
         "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "0277dd97e78de02de45b244757d521adcd06871facd4d662c35ebc7ebd001fcb",
       "podcast_linked": true,
       "last_processed": "2026-05-17T10:31:30.266461+00:00",
-      "assign_fp": "364653d332584ccaede05a584d7c5dbe26bff859501efb32865f573c54d7d7a9"
+      "assign_fp": "7b99557eef55d554b925191dfaf2e078b2517d01fb2e69f4c8b6ebf23958a089"
     },
     "bibtex:Arora2025-tx": {
       "note_path": "Papers/Arora2025-tx.md",
       "topics": [
-        "llms-for-content-analysis",
-        "political-polarization-and-partisanship"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "87e44b8281a1c39f523cecaed8c518cab3c0da92cefa68fd22684ef0045a6d08",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.266567+00:00",
-      "assign_fp": "d2f2065cbb93e374b8e7d16edd5dc31e57475d0ef07d1e0370e72b496ff4b60c"
+      "assign_fp": "ea7d1d66afe5b9ecd57b5da2067bc6855fe0168a819fec0a9bbf3b8b3afeef3e"
     },
     "bibtex:Brown2025-jk": {
       "note_path": "Papers/Brown2025-jk.md",
       "topics": [
-        "llms-for-content-analysis",
+        "llm-and-computational-content-analysis",
         "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "dae4d3fa59f59a8beb6a6ab9442a33cef90dc5a421a86c3c00203dd4e7b4012c",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.266670+00:00",
-      "assign_fp": "b4188e59362f31d6f3b05922d775f9b8fc4bf9b034ba94e9b53314d39194c6dd"
+      "assign_fp": "eaf1095705ff632ad7aebde43830335ff00a13a405fc10a1b65662a737c27c69"
     },
     "bibtex:Bennett2025-xs": {
       "note_path": "Papers/Bennett2025-xs.md",
       "topics": [
-        "platform-critique-anniversary-essays",
-        "disinformation-narratives-and-information-operations"
+        "political-polarization-and-partisanship",
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "b6cbee61c42252d8b1da3c8496c953029f604f8c689bcc5e52a0bf3cbcddcbba",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.266779+00:00",
-      "assign_fp": "2b42bdb16437c24c44a3112f0d710183e3d9c3a7c15f2b96b3186ae17a3d6ccf"
+      "assign_fp": "2b43656a826987bbe6f623bcdcee3ab53b24a11de405d1c9510ecd27edf04cce"
     },
     "bibtex:Humprecht2025-ml": {
       "note_path": "Papers/Humprecht2025-ml.md",
-      "topics": [
-        "disinformation-narratives-and-information-operations",
-        "cross-national-coordinated-networks"
-      ],
+      "topics": [],
       "pdf_source": "abstract_only",
       "content_hash": "8d06a2b944ab18ac9c8260b3bf826f6224cd061d0b1b1c630b47a8b4441294e9",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.266872+00:00",
-      "assign_fp": "1bbef43492cd60ef3778cd8903b7d5f3714e0856e16e7896728a2c0a649218a4"
+      "assign_fp": "373cf4b00a8e2215a03aa515893fe79a783e093488cd4881df6aebcc85c6d707"
     },
     "bibtex:Gaw2025-ru": {
       "note_path": "Papers/Gaw2025-ru.md",
-      "topics": [
-        "disinformation-narratives-and-information-operations",
-        "cross-national-coordinated-networks"
-      ],
-      "pdf_source": "abstract_only",
-      "content_hash": "65bf3d9fd5e4ee6ff8560f891d541632316fce9e6bbb51a481e87107f9747ab7",
-      "podcast_linked": false,
-      "last_processed": "2026-05-17T10:31:30.266967+00:00",
-      "assign_fp": "0897125cc04970dafd152523eeaa14b9e08bb770370d25325c9d340af8876243"
-    },
-    "bibtex:Pante2025-pq": {
-      "note_path": "Papers/Pante2025-pq.md",
       "topics": [
         "coordinated-inauthentic-behavior",
         "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "abstract_only",
+      "content_hash": "65bf3d9fd5e4ee6ff8560f891d541632316fce9e6bbb51a481e87107f9747ab7",
+      "podcast_linked": false,
+      "last_processed": "2026-05-17T10:31:30.266967+00:00",
+      "assign_fp": "86791cf559f11f6092db2f30af3101480696304c017d9ec751ed90982cd98582"
+    },
+    "bibtex:Pante2025-pq": {
+      "note_path": "Papers/Pante2025-pq.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "misinformation-exposure-recalibration"
+      ],
+      "pdf_source": "abstract_only",
       "content_hash": "a546db8afb8da44c77f6637236c6cc017b3fcb4871dfa5f9b05af7fa7342b8db",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.267086+00:00",
-      "assign_fp": "6c5a1484c9f4b5bf2784dd8118560791d8c13beacc48d46874aa725b90da9188"
+      "assign_fp": "43fd3c4c172eea531725778f1342244babcab997303d3865a96af75f1ef800cb"
     },
     "bibtex:Hurcombe2025-cs": {
       "note_path": "Papers/Hurcombe2025-cs.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "disinformation-narratives-and-information-operations"
+        "platform-data-access-and-governance",
+        "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "6920de5b5e176e35e7ff6cf41bf8b406556488085620099932052b25a2d32524",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.267189+00:00",
-      "assign_fp": "5b5ac342e109af7318071dd8e967192f3f9ff2e019870c8cd1028b473ff0895f"
+      "assign_fp": "b1171c4da50c1f27644d6dea2414f8145d4af44e1c191596bf4d9e3661041be5"
     },
     "bibtex:Le-Mens2025-qz": {
       "note_path": "Papers/Le-Mens2025-qz.md",
       "topics": [
-        "llms-for-content-analysis",
-        "llm-augmented-research-methods"
+        "llm-and-computational-content-analysis",
+        "italian-electoral-communication"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "3870fc52d04ddb1c96f8e94eac43c88d8b1a748d2ebcb040fe43fc71131ea7ad",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.267359+00:00",
-      "assign_fp": "fad2e3bf003a708440783b15bb28cfab9097d0b8bf29a4d4ab368f54a9783a47"
+      "assign_fp": "590da33e3a67aab1ca6f97fcc8dbd90c3a2ec567d0e6d2a16cdd3c1c7f92aeea"
     },
     "bibtex:Green2025-ap": {
       "note_path": "Papers/Green2025-ap.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "computational-network-structure-analysis"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "0c14b64ad01b15cdd74595037a814fdefe2412021eba20f45edb28c91ba63053",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.267477+00:00",
-      "assign_fp": "c901c41b8c1094f24be565fc4865697fc1e4daa9cc7682a5a465ef402a971d5a"
+      "assign_fp": "ddf1c3dba34ea3db61585cc0e468b3b604577ce83335d6e171c38bc167d81f6d"
     },
     "bibtex:Munger2025-cz": {
       "note_path": "Papers/Munger2025-cz.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
+        "platform-data-access-and-governance",
         "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
       "content_hash": "d5a9f114caba11dea104bd64fdd4a0920b1a88167f1c62d75cb4c89abbb48cc0",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.267619+00:00",
-      "assign_fp": "4dd4502337acf59937781f384be5e0d99b430973ff69e7445a78a6f7283b4744"
+      "assign_fp": "de16e168dca1da74ffbf2ace4ce7a1bfdba58fb09642fde602a939ac097526c4"
     },
     "bibtex:Graham2025-gp": {
       "note_path": "Papers/Graham2025-gp.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "platform-data-access-and-research-infrastructure"
+        "coordinated-inauthentic-behavior"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "cc9d26c30f78f08cf0c24e1fc990385b9f7cef8ea7c06e2f0c4927493db2caa2",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.267709+00:00",
-      "assign_fp": "552b0b1a5cfa59600382095700fbfa1029f14cd83686651b0eabf202fe67d8b3"
+      "assign_fp": "b134c6f57c5c133180b9ffb2701bac4a053ea4d332891a8a6d789a09a99d2798"
     },
     "bibtex:McNally2025-dn": {
       "note_path": "Papers/McNally2025-dn.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance",
+        "italian-electoral-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "f2397fb04740b14083aa41959c1b3f60bd37e288ff0860eb1f07dbdbdda67366",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.267823+00:00",
-      "assign_fp": "4790cb06875837b5f42cb7d2c780b4f2ffcfb56708ff3649356f736eb196b7a2"
+      "assign_fp": "5f622d024bad0e9624accead5c2798707841e7a95a43424278ae64f53524eb8d"
     },
     "bibtex:Sarmiento2025-as": {
       "note_path": "Papers/Sarmiento2025-as.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "llms-for-content-analysis"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "21bb3fa32314a739f3b1a108420584138bbe51049d061ec510ab774078673b4e",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.267914+00:00",
-      "assign_fp": "91472c26cb773b2c00c8308a99f66f5b58d6422c1f4765ab7d34831f111b3295"
+      "assign_fp": "534adf81a54cea4c11855cc91f2d4fe23d5c02b44ca0b28e6fe231a59e4aba22"
     },
     "bibtex:Tornberg2025-ir": {
       "note_path": "Papers/Tornberg2025-ir.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "cross-national-coordinated-networks"
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "3fe0f4603f7c03f57d59f4c7e9a207fd85b5ac99f6e57ad018cb2fd6705f1d38",
       "podcast_linked": true,
       "last_processed": "2026-06-21T15:55:06.895476+00:00",
-      "assign_fp": "db7b727e73b6cc4492ae05bce0b99f9d0550969618430724e6b45881a5fcccb8"
+      "assign_fp": "94f97633f20c8aad95dab6c451afe760b7663febb38739eefacda6870b4ca72d"
     },
     "bibtex:Nenno2025-xa": {
       "note_path": "Papers/Nenno2025-xa.md",
-      "topics": [],
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "llm-and-computational-content-analysis"
+      ],
       "pdf_source": "drive",
       "content_hash": "f495f7cc496bb315e695bd9b77bc3fbdf1e80e305b8c249e034f3b003847af89",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.268125+00:00",
-      "assign_fp": "82ea952ffe87e6c631e8b991345e39e735ea3387d19e269d7fa0f7a7087a28ab"
+      "assign_fp": "3118e5bce766cb73b44d8229288def5db51c9a31eb413a5dc09f2ee027224c36"
     },
     "bibtex:Xue2025-bp": {
       "note_path": "Papers/Xue2025-bp.md",
-      "topics": [],
+      "topics": [
+        "health-misinformation-and-fact-checking",
+        "climate-and-misinformation-message-interventions"
+      ],
       "pdf_source": "abstract_only",
       "content_hash": "de1ceceba38b816e160b50f4dbdb9f2f827e9a3155ddb54ac57471fbd6e37323",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.268236+00:00",
-      "assign_fp": "7e7a09092316d30716d6bae416a437172a9f38a84b48511bf41b5fe280f2f288"
+      "assign_fp": "7d57057604fb84e21798f184a467d8c7efa55f6a8baa4066b86c9ca728ac9b8e"
     },
     "bibtex:Bastos2025-ol": {
       "note_path": "Papers/Bastos2025-ol.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "cross-national-coordinated-networks"
+        "online-radicalization-and-extremism-on-platforms"
       ],
       "pdf_source": "drive",
       "content_hash": "4259f426d1ffdcc8d24c206273d299aeae035caf4bc0cf39aa59d00a82b7f8bc",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.268350+00:00",
-      "assign_fp": "ed6f325607e023e47b79dd02cb23aadfcd7d106d416570cf592243344d6e5eb0"
+      "assign_fp": "723d7453fb6f79410bbee192aca3f878b2ba2a19c99f745ff59c2f172a8ceb89"
     },
     "bibtex:Simeone2025-vo": {
       "note_path": "Papers/Simeone2025-vo.md",
@@ -1976,42 +1984,43 @@
       "content_hash": "849609ee53c325554cfb1f4f88ade5d91b33bad8753e1ca1a0ba40a724bea6a7",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.268453+00:00",
-      "assign_fp": "9fd81e5ee29fbd75519528d778d85732331634942dd3096313b6020dbc7b2941"
+      "assign_fp": "f604ac7677632a4034f8cdb5ca505decb6f7c8e627ae8c28b530ab3f071a797a"
     },
     "bibtex:DiGiuseppe2025-es": {
       "note_path": "Papers/DiGiuseppe2025-es.md",
       "topics": [
-        "llms-for-content-analysis",
+        "llm-augmented-research-methods",
         "survey-methodology-validity"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "c64ad0a2a4c62203956e04b07c359d7db538ee7c42e6595634827448c9c5998b",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.268671+00:00",
-      "assign_fp": "5108f5bfefc01d33b06185bb8c4fe8d28210a598b5ce83da9a1a1c9c92c67d95"
+      "assign_fp": "64c0cf4a4b6ac680c4235f9dc7ad3e9850138df8cba5fbef7439861a00c4fd97"
     },
     "bibtex:Luhring2025-od": {
       "note_path": "Papers/Luhring2025-od.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "problematic-health-information"
+        "misinformation-exposure-recalibration",
+        "survey-methodology-validity"
       ],
       "pdf_source": "drive",
       "content_hash": "ecfae0842af0d96b2630f917297a94e1578c85ed0f8edc5ddac91eaa01e0b2d7",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.268820+00:00",
-      "assign_fp": "e2346ca8d594caecfa1cc44d8eedaf387d029b2646e0388a4fc23a2e2fcc17e4"
+      "assign_fp": "eab7b2a2e89c7a2ecd74c8a60bb94683f8e4e7cb75d86f598c93b397c4fa3a9a"
     },
     "bibtex:Unknown2025-qj": {
       "note_path": "Papers/Unknown2025-qj.md",
       "topics": [
-        "ai-red-teaming-and-participatory-evaluation"
+        "ai-red-teaming-and-participatory-evaluation",
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "8be6c26018714da8376fdbcbdc9bf23f398b99e3e3e7f385198412005b176468",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.268915+00:00",
-      "assign_fp": "dfa3430caec96c4d32b41eec1b83d5a60ede5b6860724c61a2c046fd6a04e81a"
+      "assign_fp": "6c5649d1d480f6c5c8c17f8993a5303a57a6a1f4937c62973481a7fbf1a786b8"
     },
     "bibtex:Kristensen2025-ni": {
       "note_path": "Papers/Kristensen2025-ni.md",
@@ -2023,7 +2032,7 @@
       "content_hash": "54f505d8eb9ce3fbdd78a4549a74f24ee6ae8e0b1534ae3e93a5bec21c45f31e",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.269009+00:00",
-      "assign_fp": "d5dd7417ba2c8bb978c23900467c511ab3c033b2e4aae9b1207801eff0dbfaab"
+      "assign_fp": "7cd279ec626db41a0cec63cd0656d521a10d7cfe8858953703a3992e2c24e083"
     },
     "bibtex:Minici2024-tf": {
       "note_path": "Papers/Minici2024-tf.md",
@@ -2035,7 +2044,7 @@
       "content_hash": "e498b22fb720f00f2c892d0c55f0ff02995c06aac126913460cbb3f962446dfb",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.269114+00:00",
-      "assign_fp": "160074e67fe71201bd488019b2f5293563c9c82327c468531483db76e12bc00a"
+      "assign_fp": "9395995b68e2860723746cbae0d4c1abe89f6f1c49c6996d8378ea41689c4fb6"
     },
     "bibtex:Cabbuag2024-me": {
       "note_path": "Papers/Cabbuag2024-me.md",
@@ -2044,43 +2053,43 @@
       "content_hash": "7de49a8e7a6c77878878db11824295b2530d5241d8905674614a6fecdff494ac",
       "podcast_linked": true,
       "last_processed": "2026-06-21T15:55:06.895480+00:00",
-      "assign_fp": "3d31f588ec12d452fe5c437bcffddb2081b4698fe53bf3082daf6dc0017ee53c"
+      "assign_fp": "d19565e63b30d1eb9920edfe745752862617714da07831e96b43addea1191484"
     },
     "bibtex:Gonzalez-Bailon2024-rq": {
       "note_path": "Papers/Gonzalez-Bailon2024-rq.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "political-polarization-and-partisanship"
+        "misinformation-exposure-recalibration",
+        "computational-network-structure-analysis"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "a8a8a5790581081cc3fd13c9a33627b2c6a3dacfceaf2ba14403a399418633ec",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.269312+00:00",
-      "assign_fp": "4747f595066b359106fcc82d984608a27d30e046b930bd5b600a2fee8f880c21"
+      "assign_fp": "eeabb19e2e63fc529b6a844a8831dbfcc3dbf80911f2ea94a11bf8315b3f85a2"
     },
     "bibtex:Mosleh2024-op": {
       "note_path": "Papers/Mosleh2024-op.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "platform-data-access-and-research-infrastructure"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "a7997fd6743ecac779c5a7581f370c3574fc4819331e0271e18c8653ccd89bf5",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.269403+00:00",
-      "assign_fp": "27f91fd50468d1bdc89ffc42c048e54101cfc5a8cd2d9eb38922bb0ccf341fd4"
+      "assign_fp": "efbbd02e0d4218787ea19750715a06516c9eeb4560fa6dc42eda66fe8893aa5d"
     },
     "bibtex:Ulloa2024-jm": {
       "note_path": "Papers/Ulloa2024-jm.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "survey-methodology-validity"
+        "survey-methodology-validity",
+        "llm-augmented-research-methods"
       ],
       "pdf_source": "drive",
       "content_hash": "ffa3abaa3ece99b90024568f9dd66d6a129575739957a08381fe90f4f1d846bd",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.269553+00:00",
-      "assign_fp": "d4f7da9b2f3cb0b7d04e293019f36f825912bf24a2feda0aa815fba25201db39"
+      "assign_fp": "741f2721ef3075af5756b3400810e614c2f769745e1f933d3d0c5da6a27e49b6"
     },
     "bibtex:Gagrcin2024-dl": {
       "note_path": "Papers/Gagrcin2024-dl.md",
@@ -2089,30 +2098,29 @@
       "content_hash": "becc3276c330a4b76732589889c6714b36f2ab35a0576b110fd8fa9fd766fcd2",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.269648+00:00",
-      "assign_fp": "2b8a96f0c42a2a34e3eaefa1f04fca01f581daddc6024126aa41356cc3c49aaf"
+      "assign_fp": "96ef1ceb830dadcb808b75516e2781ed028d26f82f986fcfb48716145f3234a4"
     },
     "bibtex:Freelon2024-sc": {
       "note_path": "Papers/Freelon2024-sc.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "da801f159359c6af12238f6a4a7480e9a0110c05555e5774a7dc83cbcd5504b1",
       "podcast_linked": true,
       "last_processed": "2026-05-17T10:31:30.269750+00:00",
-      "assign_fp": "2150806e05d9852758f3e15c703f8bf9385e31c5013f6cb2e95d7161c742d17e"
+      "assign_fp": "583a97e9d6ae86daf3358f15682b5ab6715e66b5f5f7b70332d8981d77dfcbb7"
     },
     "bibtex:Bosch2024-hj": {
       "note_path": "Papers/Bosch2024-hj.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "generative-ai-and-synthetic-media"
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "9d8c5d80cedd49f511438dc847a313ef5561b154c07ee839680e5f612edb1b34",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.269841+00:00",
-      "assign_fp": "f03290cc412002505f4577469b1936a1f896b1a671b7fa688b8911d2c608ace9"
+      "assign_fp": "d81f42a2531588dafebca248fad680682262348275010c4dc69e5fc57c3a84a1"
     },
     "bibtex:Budak2024-ef": {
       "note_path": "Papers/Budak2024-ef.md",
@@ -2123,64 +2131,68 @@
       "content_hash": "89b07d26383fa35b43f5aaf16172f6a2795a7ebda6b62a8601e2f14a9b9380e3",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.270599+00:00",
-      "assign_fp": "8d464d57e0bd6c9875a771bc133bf1e60d4f8ec9a83348cef8604e7bec7fb2ba"
+      "assign_fp": "2ce2b7ffadd62a231d3330eac324766166dab534da519259b6e669e38e516112"
     },
     "bibtex:Tan2024-vl": {
       "note_path": "Papers/Tan2024-vl.md",
       "topics": [
-        "llms-for-content-analysis",
+        "llm-and-computational-content-analysis",
         "llm-augmented-research-methods"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "65b7b658a9f3a940477600541302bf68450520a6ceed238791b0cf6e973dc17c",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.270781+00:00",
-      "assign_fp": "0df5a5aafd86a0cd522b1734e06224051fe260953a63e65913663d353e243c3e"
+      "assign_fp": "4b1ca94b68725b5fcbe9068e3bd1d53054faf62a3584e8a6790dc8b2d7965a53"
     },
     "bibtex:Lai2024-to": {
       "note_path": "Papers/Lai2024-to.md",
       "topics": [
-        "llms-for-content-analysis"
+        "llm-and-computational-content-analysis",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "3a8ffa58c4a11c6df779e23d741bbf1723598f081ed5d66cbe3544054a310cce",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.270892+00:00",
-      "assign_fp": "916d9f7bcbef67f01b95b544da021fc8c935cea7599b6ad8c29b514640afa274"
+      "assign_fp": "d761ae742024a2ba95833d09fc4a7e83714cc7c7d955e8c2d47048e909b7bc50"
     },
     "bibtex:Bakshy2015-rn": {
       "note_path": "Papers/Bakshy2015-rn.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "meta-platform-policy-and-visibility"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "38635edbd35b0b25f4273b60c97a4ed2f599949c742f4270a29b57bc55866483",
       "podcast_linked": false,
       "last_processed": "2026-05-17T10:31:30.271017+00:00",
-      "assign_fp": "4bd334f4a3dc70966009ffc51d31335787263957c66b82ca2c049a64c59ec26b"
+      "assign_fp": "2caf33fc9c6bcbc55f8a26e1ae174566490b4df2f646070662c07ea52f1d9a06"
     },
     "bibtex:Bruns2026-yv": {
       "note_path": "Papers/Bruns2026-yv.md",
       "topics": [
         "platform-critique-anniversary-essays",
-        "disinformation-narratives-and-information-operations"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "ff39db25c51f68b6ad4b3620a5256659b81200d5429fb728853e34d5d289c308",
       "podcast_linked": true,
       "last_processed": "2026-05-18T08:43:50.677252+00:00",
-      "assign_fp": "4b41ba44c1a443a96143b329a9cab78999642a6c988206a1f06bad663539bc3e"
+      "assign_fp": "01ebff301f04566a2417010901cdc879ab0eaa5ab95abf745d86a170dc3121c0"
     },
     "bibtex:Ng2026-og": {
       "note_path": "Papers/Ng2026-og.md",
-      "topics": [],
+      "topics": [
+        "sociocybernetics-and-social-systems-theory",
+        "computational-network-structure-analysis"
+      ],
       "pdf_source": "drive",
       "content_hash": "f49f19f083ea39768dd17d05887ca731145b5e747c3a98f0a79ac25d72d27522",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-18T08:43:50.677244+00:00",
-      "assign_fp": "1f6740b61bca4b0034f515ff9b62fef0f3e7bb6ccb5d272a3f7bab474ad1fca2"
+      "assign_fp": "f7645aa4fba92d555d60c7bf73f2399b65785fcefed55d8be28c6e05034e5f86"
     },
     "bibtex:Askanius2026-de": {
       "note_path": "Papers/Askanius2026-de.md",
@@ -2193,33 +2205,33 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-18T09:12:28.164289+00:00",
-      "assign_fp": "1ee6506dfa8ded8bfaf4f0c33880737c70e143dd18b0d9303d7d2cbf799b5265"
+      "assign_fp": "3952e2ffb01a982bee201b14149320414f709f30894272f72cf054905fc647d7"
     },
     "bibtex:Giglietto2023-fa71a001": {
       "note_path": "Papers/Giglietto2023-fa71a001.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "italian-election-media-coverage"
+        "italian-electoral-communication"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "f2c5c99ba774c8e3dd39f84f62e95eab7c0629c58f4cb504d78c5f77f05e48b7",
       "podcast_linked": false,
       "last_processed": "2026-07-03T06:09:51.185354+00:00",
-      "assign_fp": "fd4904f9840efa604ca6c5d6968bdae24d3fa608eda2edefc8275f809c87d97b"
+      "assign_fp": "5460042c5f454bf799504a99925d065766f85b8f68f1d91507765e5dcb540e1b"
     },
     "bibtex:Rossi2023-847d5a9f": {
       "note_path": "Papers/Rossi2023-847d5a9f.md",
       "topics": [
-        "italian-election-media-coverage",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance",
+        "misinformation-exposure-recalibration"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "56cf2a6e45f2bd1c33c79d6977a82fff91f6af5b1caae5e7bf7f9dd8da5adf9b",
       "podcast_linked": false,
       "last_processed": "2026-07-03T06:09:51.185359+00:00",
-      "assign_fp": "97287968e8772275fe9b463b625d77d92ce637c364759d4829eb4e71f0e3c2b8"
+      "assign_fp": "9b06eee0ffa2846d44dd7ae99ada2c79a898619e2bdc177e24a52fd7be4e7d54"
     },
     "bibtex:Unknown2023-9137f448": {
       "note_path": "Papers/Unknown2023-9137f448.md",
@@ -2237,91 +2249,89 @@
       "note_path": "Papers/Giglietto2026-9b6a992d.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "generative-ai-and-synthetic-media"
+        "disinformation-narratives-and-information-operations"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "3e1fc597d891c59df345b4a61c2f8d1ec90c4229caf9a15793cea82b345538ad",
       "podcast_linked": true,
       "last_processed": "2026-07-03T06:09:51.185349+00:00",
-      "assign_fp": "c157cddf4bdfb08439516046ee776823f04ee18e283fd4de6565b875e0eede60"
+      "assign_fp": "88d107e506cd966a5cfc3e430b2633496185e21ff71dc3724d4b0f38845ce212"
     },
     "bibtex:Giglietto2024-cbeb3f70": {
       "note_path": "Papers/Giglietto2024-cbeb3f70.md",
       "topics": [
-        "llms-for-content-analysis",
-        "italian-election-media-coverage"
+        "llm-and-computational-content-analysis",
+        "italian-electoral-communication"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-19T06:45:27.121062+00:00",
-      "assign_fp": "f1d4e09041da8a2384127fe20f39bc224ec0ab127c0e8cc089fa80d9b404d636"
+      "assign_fp": "63b9eaeeae3765142debecc91a07f06385e6f5cdabd82427ce5491b56810a6aa"
     },
     "bibtex:Anwar2024-34dba628": {
       "note_path": "Papers/Anwar2024-34dba628.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "meta-platform-policy-and-visibility"
+        "llm-and-computational-content-analysis"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "3cb0d1b609ce1b66a38145c9bb959ee96781f985ffd52ebf9b31ed77f54f9dc0",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750734+00:00",
-      "assign_fp": "d1f8e0c3baf71b88df414777181ee2b86ad9249a1ff8d7c59d83037dd70adf68"
+      "assign_fp": "2500ffb30d5a5eee0f8cebb5e06b1a0c8d52ef767a40b35daed961c86a5cf458"
     },
     "bibtex:Ghezzi2023-8bebc91f": {
       "note_path": "Papers/Ghezzi2023-8bebc91f.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "problematic-health-information"
+        "health-misinformation-and-fact-checking"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-19T06:46:48.770777+00:00",
-      "assign_fp": "d885bc233ed5c62a840aa36821afe9854b1d2b2f807fe4c248c0ea97b30b71dc"
+      "assign_fp": "cb6e3feb2db786262a92dc920f30d91dce0c9ff54e20ac7aa9d342ac081067bf"
     },
     "bibtex:Giglietto2022-b30e8b4e": {
       "note_path": "Papers/Giglietto2022-b30e8b4e.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance",
+        "misinformation-exposure-recalibration"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-05-19T06:47:54.337243+00:00",
-      "assign_fp": "660811233978adbf1df3597054bda12812fb624b8a83a67abc41b6c875268941"
+      "assign_fp": "d7b11807ee5ac58ef9216fb14f968e79a09ee6640e9d18e194e7c158bd61b0b9"
     },
     "bibtex:Giglietto2022-0e951ac5": {
       "note_path": "Papers/Giglietto2022-0e951ac5.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "problematic-health-information"
+        "health-misinformation-and-fact-checking"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "f0cfd46364ab5d4cdf8ded4392550ef9e9b0d35d53be29ffc09f432e58c15c15",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750739+00:00",
-      "assign_fp": "b06d664f9a34c81b1a62440b56de9273f2b8ccbd91557b539ae1d16e7720d933"
+      "assign_fp": "aace8d7d6232a67ca166389abf23c22c5cd66c9b44bbeb7d16514599a5f20ac2"
     },
     "bibtex:Giglietto2017-4375de2f": {
       "note_path": "Papers/Giglietto2017-4375de2f.md",
-      "topics": [
-        "political-polarization-and-partisanship",
-        "disinformation-narratives-and-information-operations"
-      ],
+      "topics": [],
       "kind": "own",
       "pdf_source": "abstract_only",
       "content_hash": "0d6437636a56ae84dac5bd6b4c0c3928be1dbf0fb95cfd0e3ecd724c2674fb3f",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750770+00:00",
-      "assign_fp": "70e35cba551d0e4d2a29838848922ba4a2063d4fae7fbcf032afab3fb5423734"
+      "assign_fp": "f9aa60f0bd8d9ec0a4ae982c55c9a466e85cdc67600db4d5b5b3a0fd518b8cf5"
     },
     "bibtex:Weinbrand2026-sf": {
       "note_path": "Papers/Weinbrand2026-sf.md",
@@ -2334,7 +2344,7 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-19T10:56:06.192606+00:00",
-      "assign_fp": "db1680373e8aaac0fbc5b1bef238c2a1dc01b181984573dba3577055ef1a0410"
+      "assign_fp": "07e1f7061b6869607c07e12c3295e0b1285d9f5fbf8609ee3bd198a29a07555e"
     },
     "bibtex:UnknownUnknown-db": {
       "note_path": "Papers/UnknownUnknown-db.md",
@@ -2347,20 +2357,20 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-20T18:50:58.353821+00:00",
-      "assign_fp": "2282e598f95d5a7cbf2ef6bdb7e796885f4989c3793b00de7fd5bfb96ebb9fef"
+      "assign_fp": "f109af82abc3f888c75b6ce0c4fbaff2b71978467a039d9c05cc839d7da9745b"
     },
     "bibtex:Van_Erkel2026-mk": {
       "note_path": "Papers/Van_Erkel2026-mk.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "disinformation-narratives-and-information-operations"
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "cda7345c7a829e061ac4aa574b72f96d2909054a6da8c6de3fd617ffeada936c",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-21T06:44:53.624033+00:00",
-      "assign_fp": "ecd0883fcdc4b54dbe81a404dd418582142ea199560c95078992976804a3e7f9"
+      "assign_fp": "bf80e55abd5eefbc6842e0efe89984c0602b0a7a0cf4890f09c91c8460ee6854"
     },
     "bibtex:Grusauskaite2026-po": {
       "note_path": "Papers/Grusauskaite2026-po.md",
@@ -2373,20 +2383,20 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-21T10:46:10.287253+00:00",
-      "assign_fp": "115004c939d5981a3c7ab5271573780399e8817844dfd40c9cc1127752aa9dec"
+      "assign_fp": "e48d39b482ad163aeea36a045758b75c30f1ca0d7b958cad913a5191abddb035"
     },
     "bibtex:Schulte2026-df": {
       "note_path": "Papers/Schulte2026-df.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "cross-national-coordinated-networks"
+        "platform-data-access-and-governance",
+        "italian-electoral-communication"
       ],
       "pdf_source": "drive",
       "content_hash": "a47ebe0a693a1df58f41561911025be7d5f0e2eb261efc32431c39a40ecd2f5f",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-26T17:31:41.341628+00:00",
-      "assign_fp": "2bad2e393bd3ecf9945de6a57a9daaadeeb1cd26e85c78de659e0bdd05a6caaa"
+      "assign_fp": "ed6637c8572c1fae0e45532b9a6f547b28f5f181dc638dcfefa5b487c6797aca"
     },
     "bibtex:Hepp2026-oi": {
       "note_path": "Papers/Hepp2026-oi.md",
@@ -2399,45 +2409,46 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-21T15:55:06.895457+00:00",
-      "assign_fp": "789711954ad68aefe57530dda1d5a9e729f1e3c8e4ba286f453b62664bc4b3a0"
+      "assign_fp": "1017741e9e73cd3f360c71be343346bfccc37273d01882071038650064e9c352"
     },
     "bibtex:Giglietto2026-632ef967": {
       "note_path": "Papers/Giglietto2026-632ef967.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "italian-election-media-coverage"
+        "platform-data-access-and-governance",
+        "political-polarization-and-partisanship"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "dc2819c4a9dfeed337eeca518b6a89dfbc37cd3cf6e13a740cb24172adb78ab1",
       "podcast_linked": true,
       "last_processed": "2026-07-03T06:09:51.185320+00:00",
-      "assign_fp": "4f134d7f9b2b4b2335eecc125eec557d314427dab845e9c3be87d535c727c468"
+      "assign_fp": "280a4766bb61b5f8c854ee05e41da9a4b077d8fda347ccd58ee17f767ff3673e"
     },
     "bibtex:Vertesi2026-lv": {
       "note_path": "Papers/Vertesi2026-lv.md",
       "topics": [
-        "platform-critique-anniversary-essays"
+        "platform-critique-anniversary-essays",
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
       "content_hash": "b58bcb74f7f3c9922f7569bb048147011a7dda30b6b66cc599a3e8efa8a14305",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-27T20:15:12.554222+00:00",
-      "assign_fp": "977934e8ffba0dd1f721f5c6eb883e088e0570205ff31fbb0208b3894d8d01f8"
+      "assign_fp": "b313af66f81431503351c3a6c210d6965860da8f0134ed3bfa0f902f52d08d03"
     },
     "bibtex:Giglietto2025-1765bb4f": {
       "note_path": "Papers/Giglietto2025-1765bb4f.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "italian-election-media-coverage"
+        "platform-data-access-and-governance",
+        "italian-electoral-communication"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "723fcf0805b00f9c125a9bf45b8164c26235b1d3dc4d7bb991c09ce970defe4c",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750719+00:00",
-      "assign_fp": "9334d72dbfb041616702b6dadc240f78194f8cbc7cb6acf1bc364501c52d5d01"
+      "assign_fp": "636f4c96a1cc78104ef10ac72c2190b0f88d1fb31f0a186a67587e1c12c4c253"
     },
     "bibtex:Unknown2025-ed60bc90": {
       "note_path": "Papers/Unknown2025-ed60bc90.md",
@@ -2466,28 +2477,28 @@
     "bibtex:Marino2024-2fbc690f": {
       "note_path": "Papers/Marino2024-2fbc690f.md",
       "topics": [
-        "llms-for-content-analysis",
-        "italian-election-media-coverage"
+        "llm-and-computational-content-analysis",
+        "italian-electoral-communication"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "58c9266ae6ab0d3c874b86ecbf35f3e8f813d2d829f7797de3c65c71459b7973",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750728+00:00",
-      "assign_fp": "8937bbcc0ad1268d38448c6d9de3ec5fb7eca4ce62ac52724a29a5a7f406999f"
+      "assign_fp": "21c852f1f244d0d4cf2b98b155791a09bd5dbf56edb1d9a585dbba740f2a43cf"
     },
     "bibtex:Giglietto2020-9d8acdd7": {
       "note_path": "Papers/Giglietto2020-9d8acdd7.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "italian-election-media-coverage"
+        "italian-electoral-communication"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "0f0e33b159e54151370ca073b17ee3b7473fa426f2fd485d9f7ae6776182c257",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750746+00:00",
-      "assign_fp": "9c24106a2e194aa8015fe83b3fd6164d3a4fd341a33d074f4b7c06dc70c6b52b"
+      "assign_fp": "defe335e7c96c7d82f9b78e97f085f105827343e1039adff1c141d8c827fbfc3"
     },
     "bibtex:F2020-6278a4aa": {
       "note_path": "Papers/F2020-6278a4aa.md",
@@ -2504,7 +2515,7 @@
     "bibtex:Giglietto2019-882f1900": {
       "note_path": "Papers/Giglietto2019-882f1900.md",
       "topics": [
-        "italian-election-media-coverage",
+        "italian-electoral-communication",
         "political-polarization-and-partisanship"
       ],
       "kind": "own",
@@ -2512,82 +2523,83 @@
       "content_hash": "050e8a793fb5b64f8c03fe3c4c01cd58c552ef47579ad40298f49d961734be80",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750752+00:00",
-      "assign_fp": "f61c70d80852c7c7e9da4fbc676b528da96f34be025f83389b1316dbf61916c7"
+      "assign_fp": "0c4d8c9738e3d35d18190a7e6777c77639df214458d1358c3408507317cb647a"
     },
     "bibtex:Giglietto2019-e9be81c1": {
       "note_path": "Papers/Giglietto2019-e9be81c1.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "political-polarization-and-partisanship"
+        "sociocybernetics-and-social-systems-theory",
+        "disinformation-narratives-and-information-operations"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "a0b1e8f909040e268c3dd6e00beb9441ccde0526f6a26182b1810f098cbf71ae",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750758+00:00",
-      "assign_fp": "51d9a34c507a05d7a2fc0c53035da4f4dda351cc22d8775213304ae881f25715"
+      "assign_fp": "c6db33529c28eedae37df2219a5db7373554027c7273b74fb281ddc59b764773"
     },
     "bibtex:Iannelli2018-ebd918b7": {
       "note_path": "Papers/Iannelli2018-ebd918b7.md",
       "topics": [
         "survey-methodology-validity",
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "56352809301e3fa7cd2ab2fcc350c56100e88a7001c4fd5657eee520e6022f6e",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750765+00:00",
-      "assign_fp": "6adfa4c761b9cf7ac40a28812bffeb193eb820f2b887bec11566eacad9c4fa01"
+      "assign_fp": "919204e6afc8babd60d753e0d974af70b3f052a661b561fcea055c28a4230d3f"
     },
     "bibtex:Farci2017-2a88c00e": {
       "note_path": "Papers/Farci2017-2a88c00e.md",
-      "topics": [],
+      "topics": [
+        "social-tv-and-audience-engagement"
+      ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "c862f17527d664382c3434044d80727137c48aac3e6d0f628d94758534d5acf3",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750776+00:00",
-      "assign_fp": "6e43b4bcc603b48aef35e440cf39c72aff8946293ee07ad59d81177603a48d01"
+      "assign_fp": "b4bed9b6046413cd00dabd5f3f559c7f96aff4485fd4681a2de8739b83d53ad4"
     },
     "bibtex:Iannelli2015-e0818c3e": {
       "note_path": "Papers/Iannelli2015-e0818c3e.md",
       "topics": [
-        "italian-election-media-coverage",
-        "social-tv-and-audience-participation"
+        "italian-electoral-communication",
+        "social-tv-and-audience-engagement"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "6bb3cb5d0ad83ac5a55e39a9ed6c3100fc72bf02418d68917f93ce991dd56ca5",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750782+00:00",
-      "assign_fp": "628996202444fd4c936354dccfdf6bb418806509dd1cdf7ecce8c25845dcee9a"
+      "assign_fp": "1cdae7f12b1b98d365984991720668acc740837a23dc2f5fe8d4f98f609b0dd9"
     },
     "bibtex:Brady2026-ln": {
       "note_path": "Papers/Brady2026-ln.md",
       "topics": [
-        "meta-platform-policy-and-visibility",
-        "political-polarization-and-partisanship"
+        "political-polarization-and-partisanship",
+        "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
       "content_hash": "c25ca4bc0009d9a5bfdd9507c83319d82d6caab58a630b154c67802e2a5990c7",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-05-29T06:03:35.205005+00:00",
-      "assign_fp": "f0c6f208fad53b6606248226b540b7545fef2abab2b87e79a6e9badbd3064674"
+      "assign_fp": "3f84b9749ed200540268c558de8a8ea9291c6d3bce3f8cecc5ec1a3aa8e7b8f2"
     },
     "bibtex:Lukito2026-nb": {
       "note_path": "Papers/Lukito2026-nb.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "italian-election-media-coverage"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "28096bd26582f298fe78b83f9624889e18f0933b226016bd907ba5659b7962a3",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-03T20:08:01.555775+00:00",
-      "assign_fp": "ab172b80eead675de1a58c1b08a7339927234436237b13aa137995ca7a62f18b"
+      "assign_fp": "62267518ae42b1f51318116566a805b5ab075cf442a9e9112cda4f052d67e569"
     },
     "bibtex:Suau_Martinez2026-lv": {
       "note_path": "Papers/Suau_Martinez2026-lv.md",
@@ -2599,55 +2611,58 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-06-01T09:28:11.867238+00:00",
-      "assign_fp": "2e1bcabac335b5e4ba55c52ed0673d5ab7065ee9cc6b4e480abbfd6267792d8e"
+      "assign_fp": "414e3b824963c29e4c8fbf78193ce8d4993844792fb343b01b14f05e4e7921a9"
     },
     "bibtex:de-Vreese2026-zx": {
       "note_path": "Papers/de-Vreese2026-zx.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "4b7cefb217bade99ee70dedf4edb142776dfd8498ac275bd8896d5c3873dd915",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-04T09:20:03.068884+00:00",
-      "assign_fp": "debd3782497e6760eca9ae69d54f0fed2e5098a188b6ac00a38646b38bd7a578"
+      "assign_fp": "1d84d7e8a068f66588aa2b09e9ad01bd8c2c116d5ee42c98c38d9604de6f899d"
     },
     "bibtex:Fan2026-af": {
       "note_path": "Papers/Fan2026-af.md",
-      "topics": [],
+      "topics": [
+        "llm-and-computational-content-analysis",
+        "computational-network-structure-analysis"
+      ],
       "pdf_source": "drive",
       "content_hash": "3bd195a02387172096cd7d82c037145b44445aff3db57d9974ab6c5517b1e3f7",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-06T11:18:21.419723+00:00",
-      "assign_fp": "45d67a1d53ec72ef34c9773d5504c832b69a1abf8fa9ae1930b6073ccc416281"
+      "assign_fp": "c49063448af6fde7f7de9504785179e0f349c8b3d76bb16151422668f65f0dd6"
     },
     "bibtex:Brown2026-br": {
       "note_path": "Papers/Brown2026-br.md",
       "topics": [
-        "online-radicalization-and-extremism-on-platforms",
-        "political-polarization-and-partisanship"
+        "misinformation-exposure-recalibration",
+        "computational-network-structure-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "351d02496539ed51d03daf75f65a228dc382d93793db7c22de6a1f94e510598a",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-13T22:50:28.902712+00:00",
-      "assign_fp": "920678c17cd2173a06489c6ede5d22113a9ca283a26bebd38125bdb17c95d413"
+      "assign_fp": "003f8b62b94ec035747ed27e4874e7f108397bd69656e9ade0f5243427cac3e3"
     },
     "bibtex:Alizadeh2026-es": {
       "note_path": "Papers/Alizadeh2026-es.md",
       "topics": [
         "llm-augmented-research-methods",
-        "llms-for-content-analysis"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "7571ea58b6dc8a7b5f7741622777a75c50f0a16fbc344a2bce3c410cf253d109",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-15T05:47:37.294216+00:00",
-      "assign_fp": "b4e6db9af8898a6482b5880226faa9a1869e30d6bf97613eefb67b78f8bbd93d"
+      "assign_fp": "1e5a3c99b87aab298c438c3bd88ef174ce85d9c6f0f2688b4ff228a62398b520"
     },
     "bibtex:Wedel2026-ix": {
       "note_path": "Papers/Wedel2026-ix.md",
@@ -2657,7 +2672,7 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-15T17:07:10.861127+00:00",
-      "assign_fp": "239bb7bda6b21d93aab588246b61b802480cfaff1bb26df6c71e42390d4ba264"
+      "assign_fp": "f901e386de83eea43b576e4333a8aba182ae29c497c769021c8f4ac738fb11f7"
     },
     "bibtex:Richter2026-bt": {
       "note_path": "Papers/Richter2026-bt.md",
@@ -2670,33 +2685,31 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-16T11:06:24.187999+00:00",
-      "assign_fp": "46c413459c4fb5ccc33733a1351f358b54dc85fdf81e39c409a6d9d84df6f0ed"
+      "assign_fp": "bd598706d21bbec6e572764713d4a52392c77bcfba83b7ce73844318f594f64c"
     },
     "bibtex:Giglietto2026-855a54cb": {
       "note_path": "Papers/Giglietto2026-855a54cb.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance"
       ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "946cdaf1a586f653b55b2920324849e62e5ea2fcf52dac5ee41fdeb430edc583",
       "podcast_linked": true,
       "last_processed": "2026-07-03T06:09:51.185341+00:00",
-      "assign_fp": "3de3f1ba7ee2b78dbe85df1d3253410d7911d48f993b336c883d029284b89ca9"
+      "assign_fp": "c932da73c1da03861e157f17967611d3304952449236040d50ff8522edc7788c"
     },
     "bibtex:Fattorini2026-bo": {
       "note_path": "Papers/Fattorini2026-bo.md",
       "topics": [
-        "public-perceptions-and-labor-impacts-of-ai",
-        "generative-ai-imaginaries"
+        "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
       "content_hash": "dbbe555e589a6dd7a51d4ec9c200d0288d040bd3cb8a01acd53c97daa498d8c9",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-19T16:45:23.053151+00:00",
-      "assign_fp": "afdcf442f53a2704857b4590bec7c44b8c686f3a035b8693ac947d4b5136096d"
+      "assign_fp": "51af9045bbab58f7adca78f716d2e3a15a3a6ebfe5a7bfa72753c03df62231ed"
     },
     "bibtex:noauthor_undated-jo": {
       "note_path": "Papers/noauthor_undated-jo.md",
@@ -2718,24 +2731,24 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-06-21T15:55:06.895431+00:00",
-      "assign_fp": "a01c99bef7de8a4d7269e791912765180473047e9ca01d2451ac61019a5591bc"
+      "assign_fp": "d44f0e53d8a650e331cc4ed7e6836a6c63cf87fe6b4f5947a68207c539b325b7"
     },
     "bibtex:Giglietto2025-ed60bc90": {
       "note_path": "Papers/Giglietto2025-ed60bc90.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
       "kind": "own",
       "pdf_source": "abstract_only",
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-06-27T08:45:17.512605+00:00",
-      "assign_fp": "a1556870190c501de0ebfb62b72f951395d858182ab8950a91165f9808c96261"
+      "assign_fp": "a9b7a25a97b7e951cb487fe4ccfec839f2b40cc2f5e8d3b6c1b417e0f75d5fae"
     },
     "bibtex:Marino2023-9137f448": {
       "note_path": "Papers/Marino2023-9137f448.md",
       "topics": [
-        "problematic-health-information",
+        "health-misinformation-and-fact-checking",
         "coordinated-inauthentic-behavior"
       ],
       "kind": "own",
@@ -2743,22 +2756,24 @@
       "content_hash": "7fe0a3fc99f8cebc6b18df207c4c78ab25786851770b644bfbd99e7546ab5fa9",
       "podcast_linked": false,
       "last_processed": "2026-07-03T06:09:51.185363+00:00",
-      "assign_fp": "b26833c024b2ac004f5b774d434e0e3c959d5d679fa02a1b6e17132699ea5f91"
+      "assign_fp": "76b296deb7e61c97ebd41da8decc1d1b37d1a037d06963c0ce97de06465a970d"
     },
     "bibtex:Sofia2012-802a21dc": {
       "note_path": "Papers/Sofia2012-802a21dc.md",
-      "topics": [],
+      "topics": [
+        "sociocybernetics-and-social-systems-theory"
+      ],
       "kind": "own",
       "pdf_source": "drive",
       "content_hash": "46d4355f96ebc8315a991fcd0e80821c11d722c274f340c8c161611ed1f95fd7",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750787+00:00",
-      "assign_fp": "c1885ae590af0d9689c915c99b0267ab865457d318ffbbe0bc0c47d6049a5cba"
+      "assign_fp": "d03f8bc3217d8a15d79976d94f65220997d3adec088d16f40941be79815b05cd"
     },
     "bibtex:Hackenburg2026-ud": {
       "note_path": "Papers/Hackenburg2026-ud.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
+        "disinformation-narratives-and-information-operations",
         "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "drive",
@@ -2766,59 +2781,58 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-27T09:39:39.409766+00:00",
-      "assign_fp": "0cb419c1b59b2787656ee8546991722012d0ac8c6c350ddd4f2beac28d612d7d"
+      "assign_fp": "5b2cdf2ee211e255711002e2166b7103877d327a44570dd7a9b7ba91f8e060ee"
     },
     "bibtex:Manovich2026-ih": {
       "note_path": "Papers/Manovich2026-ih.md",
       "topics": [
         "generative-ai-imaginaries",
-        "generative-ai-and-synthetic-media"
+        "llm-and-computational-content-analysis"
       ],
       "pdf_source": "drive",
       "content_hash": "e157ebe34d98407292c149a3bce5d4c656a6c8e160a2d6ddcaede229c9551b03",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-28T10:55:38.042393+00:00",
-      "assign_fp": "1ded58a8e557257e30e3a100cd9798b260ce6a61b15b949505706ae4cc9b2d70"
+      "assign_fp": "82d1bca103a496fb6b32ad1aa17e1b95493c115f706b3c6c3e31baaa38769d40"
     },
     "bibtex:Crosset2026-mq": {
       "note_path": "Papers/Crosset2026-mq.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "drive",
       "content_hash": "32203caea3cc728b9a7de58efaaedd5ba7872fd2e59127746d1d8b861f865552",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-28T07:01:51.313741+00:00",
-      "assign_fp": "b91b7a9347e6f39678642a312f4e4258488bc7378a8747d10c42fb39677f9b8c"
+      "assign_fp": "10a9a4db0b941c0b7e70484bf29b246660392b0a189827e3cd2bdc66d56f609b"
     },
     "bibtex:Zhu2026-tn": {
       "note_path": "Papers/Zhu2026-tn.md",
       "topics": [
-        "political-polarization-and-partisanship",
-        "computational-network-structure-analysis"
+        "computational-network-structure-analysis",
+        "political-polarization-and-partisanship"
       ],
       "pdf_source": "drive",
       "content_hash": "6d601536b653e2b4e0596ab39855fbf70110a33200193255be1632494275233e",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-28T21:54:19.950505+00:00",
-      "assign_fp": "f64de79190bb6f508bbb7a95b519356b6078f93babe563018968e054a021ba84"
+      "assign_fp": "14ab705da183e22f827879000624701a11a353e798c746062d327e90aa56b40a"
     },
     "bibtex:Kim2026-br": {
       "note_path": "Papers/Kim2026-br.md",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "online-radicalization-and-extremism-on-platforms"
+        "disinformation-narratives-and-information-operations"
       ],
       "pdf_source": "drive",
       "content_hash": "b2ac8069942689763374190b3a5d5b068076f0807df3d6b8f330ed36eeba0a94",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-29T08:46:21.105767+00:00",
-      "assign_fp": "1f149948d34a9b79151cf48f0d2258781f1905d6735b4bd3a66f3572f6cf124d"
+      "assign_fp": "302e5fb0acf25b99684c2d1ffd322d7df64e23e0ac25595b7256e512544ea3d0"
     },
     "bibtex:Gottfried2026-ww": {
       "note_path": "Papers/Gottfried2026-ww.md",
@@ -2830,12 +2844,12 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-06-30T10:39:37.061758+00:00",
-      "assign_fp": "49feec81a3b311aa4d15f4be4ca132ee4383bfb90d9667dcbc7c1121403661d5"
+      "assign_fp": "a18d1e65942901ad32aea3f8d27eff9554f1fef491a0493bc62e0eaf7114a122"
     },
     "bibtex:Suk2026-ai": {
       "note_path": "Papers/Suk2026-ai.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
+        "generative-ai-imaginaries",
         "public-perceptions-and-labor-impacts-of-ai"
       ],
       "pdf_source": "abstract_only",
@@ -2843,59 +2857,59 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-03T06:08:36.618360+00:00",
-      "assign_fp": "5d4e7d7b97485b372500e6a703b256daded474eec1d13acefdf903a3cda8b8de"
+      "assign_fp": "0ebd168b73bbe71b3c4178c7ef843f5da102b694751611b790670518bbc39478"
     },
     "bibtex:Gilardi2026-hw": {
       "note_path": "Papers/Gilardi2026-hw.md",
       "topics": [
         "public-perceptions-and-labor-impacts-of-ai",
-        "generative-ai-and-synthetic-media"
+        "survey-methodology-validity"
       ],
       "pdf_source": "drive",
       "content_hash": "d7497863802c0b027c61e4fd4e3efe8c3dc534b77b86fe7c4d3dd56879776d02",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-01T11:05:55.415355+00:00",
-      "assign_fp": "af58398da259051c0690a6054ee19432a780bc368723949754c876e6589e25a7"
+      "assign_fp": "156f8f0d93bac9dd0631c2960e857ca3c06e65b229cba21bc0e6bbbbfe48db90"
     },
     "bibtex:Bechmann2026-dr": {
       "note_path": "Papers/Bechmann2026-dr.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
-        "platform-critique-anniversary-essays"
+        "platform-data-access-and-governance",
+        "sociocybernetics-and-social-systems-theory"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "e3acf719a14d5eab23b4f5afe9a22beb85d62bcd1221f87f6fb73befba3da203",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-03T06:08:36.618355+00:00",
-      "assign_fp": "02d84f0ee7a0b4c4893957ea64d2e3a1ef86ef80ebfb1cf8814ad6ba32a66fe3"
+      "assign_fp": "ae6124cf015ed0a903baf4d94cfa6c3b4c4af8f61cf1adc7803dc4a2594bbcf5"
     },
     "bibtex:Jayaram2026-wd": {
       "note_path": "Papers/Jayaram2026-wd.md",
       "topics": [
         "llm-augmented-research-methods",
-        "llms-for-content-analysis"
+        "ai-red-teaming-and-participatory-evaluation"
       ],
       "pdf_source": "drive",
       "content_hash": "2935dc317d16acdb237212db005102e4ca65c0ee578f5c2f07ea1ad44d5c4e9d",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-03T06:08:36.618343+00:00",
-      "assign_fp": "35b03a0d1504ab757f9c957060f8cbdb35775aadb45e150503ed74daf8cfdfc7"
+      "assign_fp": "2de69dad64fe87d93223571ec6543b1368e4f020873832f3ea4e72efb4326eb4"
     },
     "bibtex:Bouchaud2026-np": {
       "note_path": "Papers/Bouchaud2026-np.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "meta-platform-policy-and-visibility"
+        "platform-data-access-and-governance"
       ],
       "pdf_source": "abstract_only",
       "content_hash": "dd7bc5ed1396eb2b4a161debf0f8d2a86c11fc9bc70fafc966452aced1ef01a0",
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-03T06:08:36.618350+00:00",
-      "assign_fp": "644131bf1a9a702217614fa10daae6ce763b51c454bdca17e0e2b9d053d46757"
+      "assign_fp": "cab972bea4199590add930c153714b73bf9ff614b9ee0d154b1a36bff8296e7a"
     },
     "bibtex:Hinck2026-yj": {
       "note_path": "Papers/Hinck2026-yj.md",
@@ -2907,12 +2921,12 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-09T10:54:19.685187+00:00",
-      "assign_fp": "e6d0ef64c529825e5ff53317c714db28c905ab1aaea85f6a28bc9a6287abbc9b"
+      "assign_fp": "aefbeddd8ba6014148e180321066766c19a94038cb35ff24af578745fe4930c2"
     },
     "bibtex:Mosca2026-yh": {
       "note_path": "Papers/Mosca2026-yh.md",
       "topics": [
-        "italian-election-media-coverage",
+        "italian-electoral-communication",
         "disinformation-narratives-and-information-operations"
       ],
       "doi": "10.1177/02673231261458935",
@@ -2922,7 +2936,7 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-08T19:21:47.125903+00:00",
-      "assign_fp": "cafca4222ef350fac767f98446bc3bb919b316378e231c7b17ddd1b1a85d7d9e"
+      "assign_fp": "dad7e5f75e94ec8ea7035dfc117ca03de056f6c67dea1f9ded7d6c8fb31e5fad"
     },
     "bibtex:Makeev2026-ma": {
       "note_path": "Papers/Makeev2026-ma.md",
@@ -2936,13 +2950,13 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-08T07:42:45.087761+00:00",
-      "assign_fp": "f76137f8d8c16ae19523eedc70899dc59321416a361022888e3259aeded625b2"
+      "assign_fp": "1a860887c823a8111fb19fa4085bc87ff198b17dd661640496ebeae924b6b891"
     },
     "bibtex:Beacken2026-zb": {
       "note_path": "Papers/Beacken2026-zb.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "disinformation-narratives-and-information-operations"
+        "disinformation-narratives-and-information-operations",
+        "generative-ai-imaginaries"
       ],
       "doi": "10.1177/20539517251410064",
       "title": "Generative AI, propaganda, and digital authoritarianism: Comparative insights from six democratically weakened countries",
@@ -2951,13 +2965,13 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-07-08T07:28:17.652433+00:00",
-      "assign_fp": "2d6cb45274590218e2edb01eb455bc84620a43aa6e050ceb18c186efd8a1bdca"
+      "assign_fp": "182c1d1d9243128a2a081672e6d3a65b8be36a3f226ca0d42329541cfb98a4a9"
     },
     "bibtex:Karlsson2026-hd": {
       "note_path": "Papers/Karlsson2026-hd.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "disinformation-narratives-and-information-operations"
+        "misinformation-exposure-recalibration"
       ],
       "doi": "10.1177/14614448251410509",
       "title": "Divide and conquer? The impact of media narratives on digital election interference on political and perceived polarisation",
@@ -2966,13 +2980,13 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-07-08T07:42:45.087739+00:00",
-      "assign_fp": "f27c9fbe2c9abc5cb0cfcff1d08b172f2f74bfad4b519592da4d6fa66c0683b5"
+      "assign_fp": "a68009d197d47418e43e93d35ad852091e77b2f05663b8e7100556ffc7dafe17"
     },
     "bibtex:Ducci2022-10cb5d70": {
       "note_path": "Papers/Ducci2022-10cb5d70.md",
       "topics": [
-        "problematic-health-information",
-        "meta-platform-policy-and-visibility"
+        "italian-electoral-communication",
+        "health-misinformation-and-fact-checking"
       ],
       "kind": "own",
       "doi": "",
@@ -2981,12 +2995,12 @@
       "content_hash": "ff325c33297c1e349b0c56ea92a422e4e07ff08e35be9ef897bed571a7c16945",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:02.036380+00:00",
-      "assign_fp": "e8434989d38e92e720fed5fb42e856223ba916435efe6e092fcebc5ecc6545d3"
+      "assign_fp": "37b6c4b8617a87f0bed19200272d05b15de1c7bb71371bc158cbdb7d465c3c3c"
     },
     "bibtex:Giglietto2020-6278a4aa": {
       "note_path": "Papers/Giglietto2020-6278a4aa.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
+        "platform-data-access-and-governance",
         "political-polarization-and-partisanship"
       ],
       "kind": "own",
@@ -2996,15 +3010,15 @@
       "content_hash": "c7e116c288d22cc16f9e3a029297f1cfbece435e24bba098ecf3eab6f231cfb8",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750696+00:00",
-      "assign_fp": "aa3bcb3b15bd2dba1d61a119d9477d1c271ea2698b7e702aa72d9e761c347481"
+      "assign_fp": "82ba1c9bc0bd14dc9a511fa53db491fdc15e8f714273d598dd92dfe9fd8087da"
     },
     "bibtex:Giada2026-fc9a3833": {
       "note_path": "Papers/Giada2026-fc9a3833.md",
       "topics": [
-        "disinformation-narratives-and-information-operations",
-        "coordinated-inauthentic-behavior"
+        "coordinated-inauthentic-behavior",
+        "disinformation-narratives-and-information-operations"
       ],
-      "assign_fp": "857de30af5429d246d55ada535420feb3dfb6e4a07eedf4c385f36d74d0fb4f9",
+      "assign_fp": "9f44df014aff93cdfe8fc3c9916a8526532afe7f29ff6b311b2615a443cf43ce",
       "kind": "own",
       "doi": "",
       "title": "Exploring the Zombie Internet: Anatomy of Three Deceptive Information Operations on Facebook",
@@ -3019,7 +3033,7 @@
         "climate-and-misinformation-message-interventions",
         "public-perceptions-and-labor-impacts-of-ai"
       ],
-      "assign_fp": "b0615d1bea2cdcb1989c6b50cf4a289eb04adf672671c22bb0913fd866d31d8c",
+      "assign_fp": "af77c3d5285047cf9f922ab26e51d46a537eb5941d601a063c178062ec10a9ce",
       "doi": "10.31234/osf.io/7szrn_v1",
       "title": "Conversational AI shifts beliefs and policy support among skeptics across contested societal issues",
       "pdf_source": "drive",
@@ -3034,7 +3048,7 @@
         "political-polarization-and-partisanship",
         "survey-methodology-validity"
       ],
-      "assign_fp": "8b7980ed9da3f99c5647b414e3d026e2bcf8679d6fa7904275dc89c536bd2101",
+      "assign_fp": "26f0cf776a87ffc9f143fd58d3f41863b25acd7fcc35de77b065e756a5801de7",
       "doi": "10.1080/10584609.2026.2699105",
       "title": "Does the method affect the outcome? How measures of partisan slant of media outlets and affective polarization drive results about polarization in the United States",
       "pdf_source": "drive",
@@ -3046,10 +3060,10 @@
     "bibtex:Zheng2026-bi": {
       "note_path": "Papers/Zheng2026-bi.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure",
+        "platform-data-access-and-governance",
         "computational-network-structure-analysis"
       ],
-      "assign_fp": "6344bcde8c922aef43e46f1b7f7cdc26a309897b3da509c73b74c95b74dfc14e",
+      "assign_fp": "93e359b6ed5585427120e6e3270ac5e4fb941b369497d63297ac698e55e1f8a5",
       "doi": "10.17645/mac.12085",
       "title": "TubeStats and TokStats: Research tools for random samples of YouTube and TikTok",
       "pdf_source": "drive",
@@ -3061,10 +3075,10 @@
     "bibtex:Goldberg2026-eb": {
       "note_path": "Papers/Goldberg2026-eb.md",
       "topics": [
-        "platform-critique-anniversary-essays",
-        "ai-red-teaming-and-participatory-evaluation"
+        "generative-ai-imaginaries",
+        "platform-critique-anniversary-essays"
       ],
-      "assign_fp": "09b5e38daf35db1550043f1631e66aacdf205c117f6689772e5724bc4059783f",
+      "assign_fp": "29f8069b718c737eba34f4ea7881719fdb963ea43aba0eb53818ead7996ed9b1",
       "doi": "10.1177/26339137261459441",
       "title": "AI and the future of digital public squares",
       "pdf_source": "drive",
@@ -3076,9 +3090,9 @@
     "bibtex:Cullen2026-cb": {
       "note_path": "Papers/Cullen2026-cb.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance"
       ],
-      "assign_fp": "7a53bb303e61337a6f6238063c8463925cbc9ef131fa7c9f0d6fe68bba8dd513",
+      "assign_fp": "ad690c19c5d6934794d1135899a40d057a73ec3c53a1568baa24bd94c5a40994",
       "doi": "10.1177/20539517261461463",
       "title": "Seeing like an API: Platform-mediated research and the politics of access",
       "pdf_source": "abstract_only",
@@ -3091,9 +3105,9 @@
       "note_path": "Papers/Ramos2026-qo.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "llms-for-content-analysis"
+        "health-misinformation-and-fact-checking"
       ],
-      "assign_fp": "982d1e055f65a1f02223f114857cbcc1211bcaee8fdb59a8c2f6d4143821002b",
+      "assign_fp": "58a3c777818ceb76c51cea49cdbf721d26a8aaff88ff88450293619d54ae3f32",
       "doi": "10.37016/mr-2020-198",
       "title": "Narrative monitoring and argument-checking: Enhancing effectiveness in countering disinformation beyond fact-checking",
       "pdf_source": "drive",
@@ -3105,9 +3119,10 @@
     "bibtex:Bruns2026-pn": {
       "note_path": "Papers/Bruns2026-pn.md",
       "topics": [
-        "platform-data-access-and-research-infrastructure"
+        "platform-data-access-and-governance",
+        "llm-and-computational-content-analysis"
       ],
-      "assign_fp": "83b2c9ac88c0640179d167c18950182b3b71eff85fa66115267c9fd5ff4f8759",
+      "assign_fp": "d23da298f23d31c2d099f4d78320515ca0ff359399f75c94bb8836ddbe05e4e6",
       "doi": "10.25358/openscience-15825",
       "title": "The challenges of working with platform data from clean room environments",
       "pdf_source": "drive",
@@ -3120,9 +3135,9 @@
       "note_path": "Papers/Rossini2026-mj.md",
       "topics": [
         "disinformation-narratives-and-information-operations",
-        "cross-national-coordinated-networks"
+        "political-polarization-and-partisanship"
       ],
-      "assign_fp": "6bf70e44e6898b960a6aab629a2f30a7353439dfdb20178b5afa0a267970e011",
+      "assign_fp": "8c3627ca4d4531a474779e34f0d9d89b40993e3ae7dc753771381dfb4436ff74",
       "doi": "10.1080/17457289.2026.2701896",
       "title": "Disrupting democracy: how informational pathways and misinformation shape trust in election results",
       "pdf_source": "drive",
@@ -3137,7 +3152,7 @@
         "political-polarization-and-partisanship",
         "computational-network-structure-analysis"
       ],
-      "assign_fp": "e340fb9d548284df67d6f8abd5d0d5c31b72c546e6d911661393094e95f50931",
+      "assign_fp": "8b8f2a057d005cabdde7a096dbb7b2b184f4534c731de89b0240667a8087809d",
       "doi": "10.31219/osf.io/ch8gj",
       "title": "News sharing on social media: Mapping the ideology of news media, politicians, and the mass public",
       "pdf_source": "drive",
@@ -3152,7 +3167,7 @@
         "coordinated-inauthentic-behavior",
         "disinformation-narratives-and-information-operations"
       ],
-      "assign_fp": "c5ad60f340fed5c8256f59e903a58ded334227913f93fc29609ef3bb8d74876d",
+      "assign_fp": "fe61c39e9c672e5ee4b73b025f22553b55e2b8b07ea622343e6f46048612c2ee",
       "doi": "10.65476/1fw44702",
       "title": "Beyond verification| post-truth spaces: Studying authenticity and influence on the internet",
       "pdf_source": "drive",
@@ -3165,9 +3180,9 @@
       "note_path": "Papers/Marino2026-he.md",
       "topics": [
         "political-polarization-and-partisanship",
-        "cross-national-coordinated-networks"
+        "llm-and-computational-content-analysis"
       ],
-      "assign_fp": "3d377589ecf42611e0915fdbdcac38be5fe965bee74210044eb5bc17c55057ec",
+      "assign_fp": "3ac93ebf7592c0dfa78aefe589c388ef1303d0e8c1e3c9417baf832eafe65008",
       "doi": "10.1080/1369118x.2026.2696929",
       "title": "Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks",
       "pdf_source": "drive",
@@ -3179,9 +3194,10 @@
     "bibtex:Falkenberg2026-ka": {
       "note_path": "Papers/Falkenberg2026-ka.md",
       "topics": [
-        "political-polarization-and-partisanship"
+        "political-polarization-and-partisanship",
+        "sociocybernetics-and-social-systems-theory"
       ],
-      "assign_fp": "130b3af64021ec7bd394a31c679a630ad601bb1eab2fa716a73fd1e996412976",
+      "assign_fp": "5dbea2c984c90675591def9f8fe9112feb8b9694886d019f95432e0026b50395",
       "doi": "",
       "title": "Toward an integrated and globally equitable understanding of political polarization",
       "pdf_source": "abstract_only",
@@ -3193,10 +3209,10 @@
     "bibtex:Wack2026-bt": {
       "note_path": "Papers/Wack2026-bt.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "disinformation-narratives-and-information-operations"
+        "disinformation-narratives-and-information-operations",
+        "climate-and-misinformation-message-interventions"
       ],
-      "assign_fp": "efb1b0f25def3a5a25d90568a94dab70b00ff56cbd03ddb9359e7639a65261e7",
+      "assign_fp": "098cc6e403240be45318d8647fff7ceca3aeaddb31d81b3a61d19b4eca4a3834",
       "doi": "10.1177/20563051261462092",
       "title": "Making sense of AI-generated disinformation: How audience interpretations influence the impact of deepfakes in Kenya",
       "pdf_source": "drive",
@@ -3208,10 +3224,10 @@
     "bibtex:Mattis2026-gu": {
       "note_path": "Papers/Mattis2026-gu.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "public-perceptions-and-labor-impacts-of-ai"
+        "public-perceptions-and-labor-impacts-of-ai",
+        "generative-ai-imaginaries"
       ],
-      "assign_fp": "a5e00d035f5b12a6fef691faeffe3ac4a245cdf4bb80cc04e2dbc768459277bb",
+      "assign_fp": "e270816bf37fad6834d6797e7a59887d3f6ffb001428e2e0bd6236e4851703b8",
       "doi": "10.1080/21670811.2026.2703599",
       "title": "Feeling iffy about generative AI: Investigating audiences’ trustworthiness perceptions of task-specific AI disclosures",
       "pdf_source": "drive",
@@ -3222,8 +3238,10 @@
     },
     "bibtex:Balluff2026-ev": {
       "note_path": "Papers/Balluff2026-ev.md",
-      "topics": [],
-      "assign_fp": "8431b7d7a7376f3d86b4fd3f17c97140bd8c53278c36b0b5b075ce5e8b0b6079",
+      "topics": [
+        "conspiracy-narratives-in-media"
+      ],
+      "assign_fp": "fd8f7faf300942787a2f5b136e3b433748033748baf02d5377433419a1ab3074",
       "doi": "10.31235/osf.io/43nvp_v1",
       "title": "Relying on the mainstream? Entity networks in alternative media",
       "pdf_source": "drive",
@@ -3235,9 +3253,10 @@
     "bibtex:Anicker2024-vp": {
       "note_path": "Papers/Anicker2024-vp.md",
       "topics": [
+        "sociocybernetics-and-social-systems-theory",
         "generative-ai-imaginaries"
       ],
-      "assign_fp": "60b556eb1e606871155fa04a5ed4080248bb1d0ff575ecc9cc0b95596a3df76a",
+      "assign_fp": "47754152cf23a4e1b04e0dcd0601becc8229cae9ad79e17e1edad20ebf24dee0",
       "doi": "10.1177/07352751241289925",
       "title": "The matrix of AI agency: On the demarcation problem in social theory",
       "pdf_source": "abstract_only",
@@ -3251,7 +3270,7 @@
       "topics": [
         "misinformation-exposure-recalibration"
       ],
-      "assign_fp": "8eb48a7dc91a4b8ee46b94d31727730117e838458250e29a1bb6f5ea6e8dc8d4",
+      "assign_fp": "f7d5da952e36969c5d727a0a260793a95c176470847911f79edfa3334e58fe5b",
       "doi": "10.1126/sciadv.adz6502",
       "title": "Untrustworthy sources on Facebook and Instagram in 2020: Concentrated exposure but no attitudinal effects",
       "pdf_source": "abstract_only",
@@ -3263,7 +3282,7 @@
     "bibtex:Unknown2020-d568b728": {
       "note_path": "Papers/Unknown2020-d568b728.md",
       "topics": [],
-      "assign_fp": "14986bc0337bcaaad84d24d81b6943391a8f6c458b9e303796c6ffb3187a9bef",
+      "assign_fp": "497db9bf3372b5e24d4b019080de074079248c8722766e8848cc4a72341dabde",
       "kind": "own",
       "doi": "10.1080/1369118x.2020.1755558",
       "title": "Correction",
@@ -3277,7 +3296,7 @@
       "topics": [
         "generative-ai-imaginaries"
       ],
-      "assign_fp": "7515bdf14e9d1cd417940a66f250157c5e572283a78a7c72008b6b050a73ea34",
+      "assign_fp": "9ff89fb60142c41b8e23cf6e715569d82c0328f5cd53dd9c8bd50197ccf80335",
       "doi": "10.1177/13675494261468638",
       "title": "Degenerative AI: AI slop, brainrot, and the gimmick of generative culture",
       "pdf_source": "drive",
@@ -3290,9 +3309,9 @@
       "note_path": "Papers/Kakavand2026-kt.md",
       "topics": [
         "online-radicalization-and-extremism-on-platforms",
-        "cross-national-coordinated-networks"
+        "computational-network-structure-analysis"
       ],
-      "assign_fp": "778f0be175e324815c581359901ea1a1da1cc17a58279932d9fb6dee8e42b909",
+      "assign_fp": "6a83da503249d1cc0fe0e7c4df7290401afed5b86bc59cee212247b24f4b492e",
       "doi": "10.1080/19331681.2026.2697186",
       "title": "Multi-platform research in the light of technology affordances: networks of the far right in Germany",
       "pdf_source": "drive",
@@ -3304,10 +3323,9 @@
     "bibtex:Tang2026-gu": {
       "note_path": "Papers/Tang2026-gu.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
-        "public-perceptions-and-labor-impacts-of-ai"
+        "generative-ai-imaginaries"
       ],
-      "assign_fp": "84a7a3110564baca7e133b552a605dee302960e776ab9e90cb3bee70edb3ad25",
+      "assign_fp": "f56cf164003dd0698db40eecf6bf01939cdbe10efc48010408503fd9e93ed9d8",
       "doi": "10.1007/s00146-026-03254-9",
       "title": "Behind the “AI slop”: exploring the AI-generated viral short video production in China",
       "pdf_source": "abstract_only",
@@ -3319,10 +3337,10 @@
     "bibtex:Rauchfleisch2026-fa": {
       "note_path": "Papers/Rauchfleisch2026-fa.md",
       "topics": [
-        "generative-ai-and-synthetic-media",
+        "llm-augmented-research-methods",
         "public-perceptions-and-labor-impacts-of-ai"
       ],
-      "assign_fp": "ff929ce8314018aaf7839d33d1384ffaf147549146caaa8e2012c7427d1cf433",
+      "assign_fp": "46e2e24f6d8008e36e651be8188f622a861cce13c71d1ccce96d4119c69ccd29",
       "doi": "",
       "title": "Toward meaningful transparency for AI chatbots: Disclosing persuasive intent reduces persuasion",
       "pdf_source": "drive",
@@ -3335,9 +3353,9 @@
       "note_path": "Papers/Sbaraini-Fontes2026-cw.md",
       "topics": [
         "public-perceptions-and-labor-impacts-of-ai",
-        "generative-ai-and-synthetic-media"
+        "generative-ai-imaginaries"
       ],
-      "assign_fp": "d4acd9acec6f9ffdce57f6aa64332013cb631d015ad16cabff414818548b4e26",
+      "assign_fp": "c6b4f3bc11f03cfaee24b246e39627f2a152eb2ec0bcb1c9e9e5b893df8126a4",
       "doi": "10.1177/02673231261473432",
       "title": "Trust beyond algorithms: What drives Italian audiences’ perceptions of search results and news produced with AI",
       "pdf_source": "abstract_only",
@@ -3348,32 +3366,31 @@
       "last_processed": "2026-08-16T07:17:29.868046+00:00"
     }
   },
-  "last_full_cluster": "2026-08-10T05:52:18.185001+00:00",
-  "papers_since_cluster": 4,
-  "register_signals_hash": "327b66d1dca426ac9c199db32dbb5bc83a8c4f4af0d0473b354468b435717cf2",
-  "emergent_fp": "56476d0870ba7e165467880a2973b9103c497e29ca1ab095a24c000274919b54",
+  "last_full_cluster": "2026-08-17T05:04:50.999033+00:00",
+  "papers_since_cluster": 0,
+  "register_signals_hash": "a7874dbb60abe09ff71f8121d7f36748ce7a91fc2da51ad7e166f913b1d97523",
+  "emergent_fp": "6adb83e488358b992806224fc7f47b22822f51d9ef4de5f632bdb08b9fe77dd6",
   "structure_fps": {
-    "coordinated-inauthentic-behavior": "aeeb55e89cca920703948ce9b82646341d7489273da654e8a0dd71ed0b6340f5",
-    "ai-red-teaming-and-participatory-evaluation": "69cbe009be36289cd431040b54517c205ed678ca51fc426056dc2358ca34b635",
-    "online-radicalization-and-extremism-on-platforms": "59894642b57027a5742f0cf8a0a60196e37dafedaa28f930155dee62418f22ff",
-    "platform-critique-anniversary-essays": "0eace2dd850d697b5eb104d5686a34fbe0be60fb87a5ed7fe429a1788b831380",
-    "public-perceptions-and-labor-impacts-of-ai": "60add373322cb35672d6ac35b9308935608b7f91448a057dbb350c6d53e04b2c",
-    "llm-augmented-research-methods": "01dc5913ba96ca849e73b405cfb7b4ddb409e3620d8a24332ac7c526e23ceebc",
-    "climate-and-misinformation-message-interventions": "661c1c030f30ed8ee5a5898aa8b75e1634cb739a715db7256d77b7c194d51abf",
-    "survey-methodology-validity": "fe9b3082b895df7babfdb132034c65d6586f8fa5498ff9dcd88ba8502126a942",
-    "computational-network-structure-analysis": "a6558944fb779ef4641a46d34132ad5758639475f6dcd20d0c3dc4080480540e",
-    "generative-ai-imaginaries": "cdd673ec07d972c88e6df9353ff5867d9f5ae72790151c56018fd1521f409e08",
-    "disinformation-narratives-and-information-operations": "dd9fb668f03d7568bde877fbc54dba7f0453f9ac46d0c98f3390b01e440f137d",
-    "generative-ai-and-synthetic-media": "3c588ea0c2b059cc79d7629b261f29197525a7f67043d8c0656367d7e5c6c1ba",
-    "llms-for-content-analysis": "fb196e7810dabf2a61a969e77ac716eac542663b20ce30ebb05cd921d9f2c4e9",
-    "platform-data-access-and-research-infrastructure": "f3e74bba77e1860efd9e644c1ef1e08b9b6b111c55f214fee7565db6a78d0744",
-    "political-polarization-and-partisanship": "06d8c438d3417a76f6034d5ddf13e9248110ed5b4b1d00bcf81665baa644351d",
-    "italian-election-media-coverage": "6f73c7745f9d1056584e83ba5fb8e15c2935d5fb6252f7a6317515a9ffc5f28b",
-    "problematic-health-information": "f3110988049a8a9824bea29b2a533843c8a87e5716dda7da8357ae3fab05abde",
-    "meta-platform-policy-and-visibility": "e62ca897674e229996ffde13682379adaea246acd28f3cc696037affdd160631",
-    "cross-national-coordinated-networks": "4387f6bffacf71ee5fd76898763c9077c7cda6360cda7e3a69b59f75f1d1ce41",
-    "social-tv-and-audience-participation": "7530d733a6b09f9c2b0bf90bc25cc1bdb54e58146a1616adf290d31eba8dee6e",
-    "misinformation-exposure-recalibration": "013b17e0a50b7d1391caf5a057ac0917b007ae3acfcef88ea4d343822b29dffb"
+    "coordinated-inauthentic-behavior": "bb75ee8fdcb2b7bd5536264eebcf64623b7e40ae66311eb6ff9642bbf8ccabdf",
+    "ai-red-teaming-and-participatory-evaluation": "b296a4186b5ff972ff0d74ddd5ac3a6d88a206050af960cbcbdf138f34e7af40",
+    "online-radicalization-and-extremism-on-platforms": "21a1c18a3ee11aef965fd9540d0645b71221aaee36591dc20562a649cc15b619",
+    "platform-critique-anniversary-essays": "e433398ad2bfa41b3598247077ebeb7456ef3825a6f72f16ffa94662ee073904",
+    "public-perceptions-and-labor-impacts-of-ai": "2860262fbb8c9012c081910d0c71236d907c7da42d5540db20a09c34ca5b9407",
+    "llm-augmented-research-methods": "53e6c5dd51d5b08af6bd6313a8932864621cbeb803b32b80afe059f8a4a62791",
+    "climate-and-misinformation-message-interventions": "4136192360ab72096e4bd5933cdd874a428e6eb996e70cb2fcc86162c97c4e1c",
+    "survey-methodology-validity": "ff2c321aaa8da6a61c7b4fbe1064bfa65050e81e44afbda5d6895a319b223bad",
+    "computational-network-structure-analysis": "4a253b8c14b1233039c9019ecb7235ef37763961558b64ac60adb171887b3be5",
+    "generative-ai-imaginaries": "7ef3f9b9f419d52b3e2282a7573b9437d3d78791b495c59d9d03fb835302ab63",
+    "disinformation-narratives-and-information-operations": "f057e4bd2c28e2eb79e3bdc549148dbf6821777d1275859ef8df28843336afe0",
+    "political-polarization-and-partisanship": "0f05f8fbe68a3f68a01646459fa7d3caa8018d0ec6d9f13d96aa36cefaa81477",
+    "misinformation-exposure-recalibration": "83eddab8d572fcf80390317c9424149257ed60291b4c7d18f2010938385c31de",
+    "platform-data-access-and-governance": "37bf62ecede3e5e4e6123b33679d5fa88cb34e70f78a9fd6cef1740ab96e6aee",
+    "llm-and-computational-content-analysis": "e5162d75620ebc909b65ea9476d5c238770995d6db7acd330b7b9663a641ece7",
+    "health-misinformation-and-fact-checking": "36537d54a454a323d5c67d4dad633f8811b900a43ae79ecc1cdf193461a047d6",
+    "italian-electoral-communication": "ead91b488af870c77a2216e5856d509c9cc0746c4c41ef27387f3fef92f8bb65",
+    "social-tv-and-audience-engagement": "fd7ae7c0f7ea86cf6c3ed0dd61d13710b9bb3d386e17b4fba46b7cef04e53af7",
+    "sociocybernetics-and-social-systems-theory": "ae3bdff8226789500ce92526cfa76758de789f353f6ad7761293a5cbe77ca262",
+    "conspiracy-narratives-in-media": "97e8bed8f048b36dd7788443cb6f12df20047760c221697c1cac1ac807e9a17a"
   },
   "supersede_decisions": {}
 }

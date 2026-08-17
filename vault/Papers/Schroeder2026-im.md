@@ -5,7 +5,7 @@ authors: ["Daniel Thilo Schroeder", "Meeyoung Cha", "Andrea Baronchelli", "Nick 
 year: 2026
 doi: 10.31219/osf.io/qm9yk_v1
 bibtex_key: Schroeder2026-im
-topics: [disinformation-narratives-and-information-operations, generative-ai-and-synthetic-media]
+topics: [coordinated-inauthentic-behavior, disinformation-narratives-and-information-operations]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.31219/osf.io/qm9yk_v1

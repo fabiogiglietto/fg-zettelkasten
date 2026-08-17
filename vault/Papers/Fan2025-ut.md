@@ -5,7 +5,7 @@ authors: ["Yu Fan", "Yang Tian", "Shauli Ravfogel", "Mrinmaya Sachan", "Elliott 
 year: 2025
 doi: 10.2139/ssrn.5340592
 bibtex_key: Fan2025-ut
-topics: [llms-for-content-analysis, computational-network-structure-analysis]
+topics: [llm-and-computational-content-analysis, computational-network-structure-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.2139/ssrn.5340592

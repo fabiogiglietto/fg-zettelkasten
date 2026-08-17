@@ -5,7 +5,7 @@ authors: ["Gaël Le Mens", "Aina Gallego"]
 year: 2025
 doi: 10.1017/pan.2024.29
 bibtex_key: Le-Mens2025-qz
-topics: [llms-for-content-analysis, llm-augmented-research-methods]
+topics: [llm-and-computational-content-analysis, italian-electoral-communication]
 citation_count: 21
 open_access: false
 source_url: https://doi.org/10.1017/pan.2024.29

@@ -12,7 +12,7 @@ Papers framing AI safety practices—red-teaming and evaluation—as sociotechni
 
 - [[Bak-Coleman2025-pm]]
 - [[Gillespie2026-aa]]
-- [[Goldberg2026-eb]]
+- [[Jayaram2026-wd]]
 - [[Matias2025-px]]
 - [[Unknown2025-qj]]
 

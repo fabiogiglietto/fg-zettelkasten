@@ -5,7 +5,7 @@ authors: ["Fabio Votta", "Tom Dobber", "Benjamin Guinaudeau", "Natali Helberger"
 year: 2025
 doi: 10.1080/10584609.2024.2439317
 bibtex_key: Votta2025-xz
-topics: [meta-platform-policy-and-visibility, platform-data-access-and-research-infrastructure]
+topics: [platform-data-access-and-governance, political-polarization-and-partisanship]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2024.2439317

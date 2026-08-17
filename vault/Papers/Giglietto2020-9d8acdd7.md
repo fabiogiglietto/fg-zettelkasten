@@ -6,7 +6,7 @@ year: 2020
 doi: 10.1080/1369118X.2020.1739732
 bibtex_key: Giglietto2020-9d8acdd7
 kind: own
-topics: [coordinated-inauthentic-behavior, italian-election-media-coverage]
+topics: [coordinated-inauthentic-behavior, italian-electoral-communication]
 citation_count: 232
 open_access: true
 source_url: https://doi.org/10.1080/1369118X.2020.1739732

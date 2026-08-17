@@ -5,7 +5,7 @@ authors: ["Bogdan Oprea", "Paula Pașnicu", "Alexandru-Ninel Niculae", "Constant
 year: 2025
 doi: 10.17645/mac.10733
 bibtex_key: Oprea2025-lf
-topics: [coordinated-inauthentic-behavior, cross-national-coordinated-networks]
+topics: [coordinated-inauthentic-behavior, italian-electoral-communication]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.17645/mac.10733

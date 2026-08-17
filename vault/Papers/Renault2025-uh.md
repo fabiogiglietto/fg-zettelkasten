@@ -5,7 +5,7 @@ authors: ["Thomas Renault", "Mohsen Mosleh", "David Gertler Rand"]
 year: 2025
 doi: 10.31234/osf.io/vk5yj_v3
 bibtex_key: Renault2025-uh
-topics: [political-polarization-and-partisanship, meta-platform-policy-and-visibility]
+topics: [misinformation-exposure-recalibration, political-polarization-and-partisanship]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31234/osf.io/vk5yj_v3

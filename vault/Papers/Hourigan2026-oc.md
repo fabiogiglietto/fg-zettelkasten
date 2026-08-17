@@ -5,7 +5,7 @@ authors: ["Aimee Hourigan", "T.J. Thomson", "Tanya Notley", "Sora Park", "Michae
 year: 2026
 doi: 10.1080/1369118x.2026.2636132
 bibtex_key: Hourigan2026-oc
-topics: [misinformation-exposure-recalibration]
+topics: [misinformation-exposure-recalibration, survey-methodology-validity]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2026.2636132

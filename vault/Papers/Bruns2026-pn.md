@@ -5,7 +5,7 @@ authors: ["Axel Bruns", "Laura Vodden"]
 year: 2026
 doi: 10.25358/openscience-15825
 bibtex_key: Bruns2026-pn
-topics: [platform-data-access-and-research-infrastructure]
+topics: [platform-data-access-and-governance, llm-and-computational-content-analysis]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.25358/openscience-15825
