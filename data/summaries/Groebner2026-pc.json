@@ -1,0 +1,36 @@
+{
+  "abstract": "This article investigates the transnationalisation of far-right digital media by analysing four English-speaking far-right hyperpartisan news channels on YouTube: Sky News Australia (Australia), Fox News (US), Rebel News (Canada) and GB News (UK). Using a novel data-gathering method, the author assembles a dataset of 114,025 videos and 51,449,494 comments spanning the full lifetime of each channel, then applies social network analysis and topic modelling to trace audience overlaps and content strategies. The findings reveal a highly integrated transnational far-right information space on YouTube with sustained commenter overlaps across the channels, with US-based content occupying a central position.",
+  "key_claims": [
+    "A transnational far-right audience exists on YouTube, evidenced by significant and sustained commenter overlaps between far-right hyperpartisan news channels based in four different English-speaking countries.",
+    "Far-right hyperpartisan news sources adapt their content to transcend national boundaries, leveraging platform affordances such as YouTube's recommendation algorithm to reach transnational audiences.",
+    "US-focused content and the US far right occupy a particularly central position in this transnational information space, raising questions about US influence over comparable movements elsewhere.",
+    "The most engaged users are the most transnational, being active across multiple channels and over longer time spans.",
+    "These four outlets should be classified as far-right hyperpartisan news sources (rather than 'alternative' news) because of their overt partisanship, hostility to opponents, and neglect of journalistic norms."
+  ],
+  "methods": [
+    "Constructed a novel dataset by using YouTube's Search endpoint on a per-day, per-channel basis (to circumvent the 20,000-video limit of the PlaylistItems endpoint), collecting metadata, engagement metrics, captions, and top-level comments back to each channel's founding, restricted to videos uploaded up to 31 December 2024.",
+    "Final dataset: 114,025 videos (103,545 with captions) and 51,449,494 comments — 43,037 videos from Fox News, 28,928 from Sky News Australia, 21,604 from Rebel News, 17,456 from GB News.",
+    "Validated the data-gathering method against a ground-truth dataset of the 20,000 most recent videos per channel using binary logistic regression predicting video presence from views, likes, comments, and duration.",
+    "Topic modelling with BERTopic on video captions (all-MiniLM-L6-v2 embeddings, UMAP dimensionality reduction with n_neighbours=15, HDBSCAN clustering with min_cluster_size=50), producing 175 topics with topic coherence 0.61 and diversity 0.60.",
+    "Social network analysis of lifetime and monthly commenter overlap between channel pairs, and a co-commenting network of each channel's top 1000 videos (filtered to edges with >200 shared commenters), with community detection in Gephi (Louvain/Blondel algorithm).",
+    "Quantitative indices for community structure: E-I index (Krackhardt and Stern) for internal vs external linkage and Gini-Simpson index for channel diversity within communities."
+  ],
+  "findings": [
+    "Substantial lifetime commenter overlap among all four channels; the strongest was Sky News Australia to Fox News (56.22% of Sky commenters also commented on Fox); Fox News was a major overlap target for Rebel News (44%) and GB News (38%).",
+    "Fox News is the largest channel with a predominantly domestic audience but is the central overlap target for the other channels; Sky News Australia emerges as the central transnational hub connecting to all channels.",
+    "Monthly (stricter same-month) overlap reached close to 50% of commenters for some channels; new channels (Sky News Australia 2019, GB News 2021) rapidly gained transnational commenter overlap within 2–3 months of founding, indicating a pre-existing transnational audience.",
+    "Commenter engagement rises with transnationality: mean comments per account rose from 3.01 (one channel) to 97.4 (all four channels), and average time between first and last comment rose from 155 to 1687 days.",
+    "The co-commenting network (2743 nodes, 121,703 edges) was structured by both upload period and topic; communities formed around shared themes (e.g., British Royals uniting GB News and Sky News Australia; the 2024 US election uniting Sky and Fox), while Rebel News formed a relatively isolated Canada-focused cluster.",
+    "Transphobia functions as a transnational connector across channels by constructing a common enemy; US politics (attacks on Biden, praise for Trump) is a central transnational theme.",
+    "Topic modelling confirmed content built on the far-right pillars of nativism, authoritarianism, and populism (e.g., Fox News border/police topics, GB News anti-immigration/Islamophobia, Rebel News Trudeau criticism at 28.86% of its output)."
+  ],
+  "contributions": [
+    "Provides strong empirical evidence for the existence of a transnational far-right audience on YouTube, addressing a gap where prior work focused mainly on elites, institutions, and hyperlink networks rather than audiences.",
+    "Introduces and validates a novel data-gathering method using the YouTube Search API to build a historically representative, near-complete dataset of channel uploads, overcoming the platform's 20,000-video playlist limit.",
+    "Shifts analytic attention from the 'Alternative Influence Network' of individual influencers to more traditional far-right hyperpartisan news outlets active on YouTube, and reframes 'alternative' news as 'hyperpartisan' news.",
+    "Identifies concrete content strategies used to build transnational audiences: covering another country's politics, constructing shared enemies, and featuring internationally recognisable figures.",
+    "Documents the central role of US-based content and the US far right within the transnational YouTube ecosystem, and outlines future research directions (more outlets, non-English contexts, other platforms, individual user flows)."
+  ],
+  "framing": "The paper positions itself within social movement theory and the growing literature on the transnational far right (Global Right Wing, Reactionary Internationale), deliberately moving beyond political science's electoral and elite-centred focus to examine the movement's broader digital information environment and audiences. It engages debates on hyperpartisan news (Rae), asymmetric media polarisation (Benkler), and YouTube's role in radicalisation and transnational far-right convergence.",
+  "pdf_source": "drive"
+}
