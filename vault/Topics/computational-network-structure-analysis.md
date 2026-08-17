@@ -24,6 +24,7 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 - [[Gerard2025-br]]
 - [[Gerbaudo2026-fo]]
 - [[Gonzalez-Bailon2024-rq]]
+- [[Groebner2026-pc]]
 - [[Hartmann2025-px]]
 - [[Iannucci2025-eg]]
 - [[Kakavand2026-kt]]

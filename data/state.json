@@ -3126,10 +3126,10 @@
       "doi": "10.25358/openscience-15825",
       "title": "The challenges of working with platform data from clean room environments",
       "pdf_source": "drive",
-      "content_hash": "8e7e17c569e7ba3802f0ebddb5f42c43860449d765d81687859c9d019501c64e",
+      "content_hash": "092f65937c52f2a8e8e9372f32143dd1dfdcbceb86cded6e2e57024c45a56ab0",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-07-18T06:13:06.418715+00:00"
+      "last_processed": "2026-08-17T06:17:43.485114+00:00"
     },
     "bibtex:Rossini2026-mj": {
       "note_path": "Papers/Rossini2026-mj.md",
@@ -3364,10 +3364,25 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-08-16T07:17:29.868046+00:00"
+    },
+    "bibtex:Groebner2026-pc": {
+      "note_path": "Papers/Groebner2026-pc.md",
+      "topics": [
+        "online-radicalization-and-extremism-on-platforms",
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "2c51a986ec5ca6a42a58517a3a4bf21b813df1210e4e240dc0980af75fcdb81f",
+      "doi": "10.1177/1329878x261474201",
+      "title": "From national outlets to transnational audiences: far-right hyperpartisan news sources on YouTube",
+      "pdf_source": "drive",
+      "content_hash": "34274093c5dca07a4693e1ef61ba0e863847c4548c81a5a25d5822c904d36114",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-08-17T06:17:43.485085+00:00"
     }
   },
   "last_full_cluster": "2026-08-17T05:04:50.999033+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "a7874dbb60abe09ff71f8121d7f36748ce7a91fc2da51ad7e166f913b1d97523",
   "emergent_fp": "6adb83e488358b992806224fc7f47b22822f51d9ef4de5f632bdb08b9fe77dd6",
   "structure_fps": {

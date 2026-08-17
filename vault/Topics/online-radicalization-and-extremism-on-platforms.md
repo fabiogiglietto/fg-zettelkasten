@@ -13,6 +13,7 @@ Empirical and review studies of how extremist actors (far-right, jihadist) explo
 - [[Askanius2026-de]]
 - [[Bailard2024-pj]]
 - [[Bastos2025-ol]]
+- [[Groebner2026-pc]]
 - [[Grusauskaite2026-po]]
 - [[Hollingshead2026-vx]]
 - [[Jovanovic-Harrington2026-ze]]
