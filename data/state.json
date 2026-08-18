@@ -3361,8 +3361,7 @@
       "pdf_source": "abstract_only",
       "content_hash": "f2f8e7892f92132beeb85bfb53e7f05515948814ed05f56d773781735be45605",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-08-16T07:17:29.868046+00:00"
     },
     "bibtex:Groebner2026-pc": {
