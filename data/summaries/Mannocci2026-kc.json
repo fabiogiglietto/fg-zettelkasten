@@ -1,0 +1,36 @@
+{
+  "abstract": "This survey collects, categorizes, and critically reviews the body of research on coordinated online behavior—the phenomenon of multiple actors acting together on social media to pursue shared goals, ranging from benign activism to malicious disinformation. The authors reconcile industry (e.g., Facebook's 'coordinated inauthentic behavior') and academic definitions, propose a new general definition and a comprehensive conceptual framework, and systematically survey methods for detecting and characterizing online coordination. Based on a PRISMA-guided review of 122 papers, they identify open challenges and future research directions for scholars, practitioners, and policymakers.",
+  "key_claims": [
+    "Coordinated online behavior is a fundamental, orthogonal dimension of many online phenomena (disinformation, bots, trolls, activism, echo chambers) that warrants study beyond the narrow, threat-focused 'coordinated inauthentic behavior' lens adopted by platforms.",
+    "Existing definitions from both industry and academia are fragmented, operationally driven, and lack theoretical rigor, hindering comparison, reproducibility, and generalization.",
+    "A general definition of coordinated online behavior can be built from three fundamental components—actors, synergic actions, and intent—inherited from decades of offline coordination research.",
+    "Coordinated online behavior can be characterized along four defining dimensions: authenticity, harmfulness, orchestration, and time-variance, which are orthogonal (e.g., coordination can be authentic yet harmful, or inauthentic yet harmless).",
+    "The analytical study of coordination decomposes into two distinct tasks—detection f(·) and characterization g(·)—that map directly onto the framework's components (actions for detection; actors and intent for characterization)."
+  ],
+  "methods": [
+    "Systematic literature review following the PRISMA protocol, searching Scopus (353 records) and Google Scholar (first 1000 results), covering publications from 2014–2026 in English.",
+    "After removing 147 duplicates and screening 1206 records (excluding 4 non-English and 1118 out-of-scope), 83 papers were retained; backward reference searching added 38 more, yielding a final corpus of 122 papers.",
+    "Disciplinary classification of papers using Scimago Journal Rank (journals), CORE conference ranking (conferences), and arXiv categories (preprints), showing predominance of Computer Science venues alongside Social Sciences and interdisciplinary outlets.",
+    "Conceptual synthesis reconciling platform definitions (Meta/Facebook, Twitter/X, YouTube/Google, Reddit, TikTok) and academic operational definitions into a unified framework.",
+    "Formalization of detection and characterization as functions with defined inputs (users U and their timestamped actions H) and outputs (network communities P, clusters C, or binary labels B; and indicators M).",
+    "Structured taxonomy of detection methods into network science approaches (user selection, network construction via co-actions, filtering, community discovery) and machine learning approaches."
+  ],
+  "findings": [
+    "Platform definitions are inconsistent and contingency-driven, producing contradictory treatment of the same campaign (e.g., the Tulsa TikTok ticket-reservation campaign not treated as CIB by Facebook; Spamouflage labeled differently by Google, Twitter, and Reddit).",
+    "Academic operational definitions vary along axes of behavioral similarity, synchronicity, and shared intent, and are often shaped by the detection technique used rather than by theory; the field lacks a formal, statistically grounded definition with well-defined null models.",
+    "Network science detection methods commonly build 'coordination networks' (often latent, undirected, and connecting users who never directly interact) using co-actions such as co-retweet/co-sharing (most common), co-reply, co-like, co-post, co-URL, co-hashtag, co-mention, and newer platform-specific ones (co-stitch, co-duet, co-follow, co-report).",
+    "Similarity functions rely mainly on co-action cardinality or cosine similarity (often TF-IDF weighted to discount viral content); network filtering uses fixed thresholds, k-nearest-neighbor graphs, statistical validation of edges, and time-window constraints (adjacent, evenly distributed overlapping, action-driven overlapping).",
+    "Time-window choice materially affects which co-actions count as valid: shorter windows capture highly synchronized (often inauthentic/harmful) coordination, while longer windows capture looser emergent human coordination; overlapping windows avoid missing temporally close actions at higher computational cost.",
+    "Community discovery predominantly uses Louvain, Leiden, or modularity clustering, with multiplex networks either flattened or analyzed with generalized algorithms.",
+    "Detection output ranges in informativeness from rich network communities, to clusters, to least-informative binary labels."
+  ],
+  "contributions": [
+    "A reconciliation of industry and academic definitions and a new general definition of coordinated online behavior grounded in the actors–actions–intent triad.",
+    "A comprehensive conceptual framework built on three fundamental components and four defining dimensions (authenticity, harmfulness, orchestration, time-variance), instantiated in a taxonomy (e.g., mapping bots, trolls, activists, fandoms across authenticity/harmfulness axes).",
+    "A formal problem definition separating detection and characterization tasks with explicit input/output formalisms.",
+    "A systematic categorization and critical comparison of detection methods (network science vs. machine learning) and characterization indicators, with detailed tabulation of co-actions, similarity functions, filters, and community detection algorithms across the literature.",
+    "Identification of open challenges (lack of shared definitions and null models, methodological fragmentation, difficulty estimating impact) and a research roadmap for scholars, practitioners, and policymakers."
+  ],
+  "framing": "The paper positions itself at the intersection of computer science and computational social science, drawing on decades of offline coordination theory from organization science, management, economics, and psychology to ground the study of online coordination. It situates its contribution within the surge of research following Facebook's 2018 introduction of 'coordinated inauthentic behavior,' while deliberately adopting a broader, non-threat-centric view that also encompasses legitimate collective action, and it echoes the 'information disorder' framework in constructing its taxonomy.",
+  "pdf_source": "drive"
+}
