@@ -38,6 +38,7 @@ Detection and analysis of coordinated link-sharing and inauthentic network activ
 - [[Kuznetsova2025-nu]]
 - [[Luceri2025-tr]]
 - [[Mannocci2025-ig]]
+- [[Mannocci2026-kc]]
 - [[Marino2023-9137f448]]
 - [[Minici2024-tf]]
 - [[Oprea2025-lf]]

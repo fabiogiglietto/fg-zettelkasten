@@ -3378,10 +3378,26 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-08-17T06:17:43.485085+00:00"
+    },
+    "bibtex:Mannocci2026-kc": {
+      "note_path": "Papers/Mannocci2026-kc.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "71d964e2375797b5cea5c7c89333865892c0bc549fe641f27e8311a62b3d60ff",
+      "doi": "10.1145/3839225",
+      "title": "Detection and characterization of coordinated online behavior: A survey",
+      "pdf_source": "drive",
+      "content_hash": "9274f604653fbf8885a97c36818584f966e8b2c183cefb7a6a7c8191eb3df0c8",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-08-19T05:28:15.975526+00:00"
     }
   },
   "last_full_cluster": "2026-08-17T05:04:50.999033+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "a7874dbb60abe09ff71f8121d7f36748ce7a91fc2da51ad7e166f913b1d97523",
   "emergent_fp": "6adb83e488358b992806224fc7f47b22822f51d9ef4de5f632bdb08b9fe77dd6",
   "structure_fps": {
