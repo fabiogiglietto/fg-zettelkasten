@@ -12,6 +12,32 @@ import re
 from typing import Optional
 
 
+def credential_source() -> Optional[str]:
+    """Which credential the Anthropic SDK will resolve, or None if it finds none.
+
+    Deliberately not a bare `ANTHROPIC_API_KEY` check. In CI the credentials
+    come from Workload Identity Federation: the workflow writes a short-lived
+    GitHub OIDC token to a file and the SDK exchanges it for an access token.
+    There is no API key at all on that path, so gating on one would silently
+    disable every Claude call in production while still working locally.
+
+    Federation needs the whole quartet; a partial set is a misconfiguration,
+    not a usable credential.
+    """
+    if os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"):
+        return "api-key"
+    federated = (
+        os.environ.get("ANTHROPIC_FEDERATION_RULE_ID")
+        and os.environ.get("ANTHROPIC_ORGANIZATION_ID")
+        and os.environ.get("ANTHROPIC_SERVICE_ACCOUNT_ID")
+        and (
+            os.environ.get("ANTHROPIC_IDENTITY_TOKEN_FILE")
+            or os.environ.get("ANTHROPIC_IDENTITY_TOKEN")
+        )
+    )
+    return "federation" if federated else None
+
+
 def _extract_json(text: str):
     """Parse a JSON value out of a model response.
 
@@ -88,10 +114,20 @@ class ClaudeClient:
         # Paper-note bodies (the Connections paragraph lives there) get their
         # own knob so they can run on a stronger model than the other prose.
         self.note_model = note_model or reasoning_model
-        key = api_key or os.environ.get("ANTHROPIC_API_KEY")
-        if not key:
-            raise RuntimeError("ANTHROPIC_API_KEY is not set")
-        self._client = anthropic.Anthropic(api_key=key)
+        # An explicit api_key still wins (tests, callers that inject one), but
+        # the default path constructs zero-arg so the SDK can resolve either an
+        # API key or a federated identity token. Passing api_key= unconditionally
+        # would pin tier 1 of the credential chain and defeat federation.
+        if api_key:
+            self._client = anthropic.Anthropic(api_key=api_key)
+        else:
+            if credential_source() is None:
+                raise RuntimeError(
+                    "No Anthropic credentials: set ANTHROPIC_API_KEY, or set "
+                    "ANTHROPIC_FEDERATION_RULE_ID / _ORGANIZATION_ID / "
+                    "_SERVICE_ACCOUNT_ID / _IDENTITY_TOKEN_FILE for federation"
+                )
+            self._client = anthropic.Anthropic()
 
     def complete(
         self,

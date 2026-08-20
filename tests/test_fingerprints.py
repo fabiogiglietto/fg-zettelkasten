@@ -84,3 +84,28 @@ def test_claude_client_assign_model_falls_back_to_reasoning(monkeypatch):
                           assign_model="a", note_model="n")
     assert client.assign_model == "a"
     assert client.note_model == "n"
+
+
+def test_credential_source_detects_federation_without_api_key(monkeypatch):
+    """Federation must be recognised when no API key is present.
+
+    Guards the migration's sharpest edge: a bare ANTHROPIC_API_KEY check here
+    would make every CI run a silent no-op while local runs kept working.
+    """
+    from src.claude_client import credential_source
+
+    for var in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN"):
+        monkeypatch.delenv(var, raising=False)
+    for var in ("ANTHROPIC_FEDERATION_RULE_ID", "ANTHROPIC_ORGANIZATION_ID",
+                "ANTHROPIC_SERVICE_ACCOUNT_ID", "ANTHROPIC_IDENTITY_TOKEN_FILE"):
+        monkeypatch.setenv(var, "x")
+    assert credential_source() == "federation"
+
+    # A partial quartet is a misconfiguration, not a credential.
+    monkeypatch.delenv("ANTHROPIC_SERVICE_ACCOUNT_ID")
+    assert credential_source() is None
+
+    # An API key still outranks federation, matching SDK precedence.
+    monkeypatch.setenv("ANTHROPIC_SERVICE_ACCOUNT_ID", "x")
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "k")
+    assert credential_source() == "api-key"

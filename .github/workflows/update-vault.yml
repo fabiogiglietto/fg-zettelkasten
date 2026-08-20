@@ -52,13 +52,36 @@ jobs:
       - name: Write Google service-account credentials
         run: printf '%s' '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
 
+      # Fetched here rather than at job start: the GitHub OIDC token expires
+      # ~5 minutes after issuance and the pip install above runs first. The
+      # Anthropic SDK exchanges this JWT for a short-lived access token
+      # (Workload Identity Federation) — no API key involved.
+      # Recent runs finish in 1-2 min, well inside one token's life, so a
+      # single fetch is enough; a longer job would need a refresher loop.
+      - name: Fetch GitHub OIDC token
+        env:
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ runner.temp }}/anthropic-oidc-jwt
+        run: |
+          curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" \
+            | jq -r .value > "$ANTHROPIC_IDENTITY_TOKEN_FILE"
+
       - name: Run
         env:
           # Authenticates feed_client's GitHub Contents API reads, lifting the
           # rate limit from 60/h (shared-runner-IP, exhausted by other tenants
           # -> intermittent 403) to 5000/h per token.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Workload Identity Federation. ANTHROPIC_API_KEY stays for now so
+          # the job keeps working until the federation rule is verified; it
+          # outranks federation in the SDK's credential precedence, so this is
+          # deliberately still the winning source. Remove the secret (and this
+          # line) at cutover — see ANTHROPIC_AUTH_MIGRATION.md section 7.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ runner.temp }}/anthropic-oidc-jwt
           GOOGLE_APPLICATION_CREDENTIALS: ./credentials.json
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
           # Team fork: mine-toread uploads team-submitted PDFs here and
