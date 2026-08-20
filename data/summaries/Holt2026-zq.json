@@ -1,0 +1,38 @@
+{
+  "abstract": "This article investigates what types of links Facebook users historically report as 'False News,' motivated by Meta's January 2025 decision to discontinue third-party professional fact-checking in the US in favor of a Community Notes system and greater reliance on user reports. Using a mixed-methods analysis of the Meta-created URL Shares dataset, the author compares user-reported links, links fact-checked as false, and a matched control sample of non-reported, non-fact-checked links. The findings show that users tend to report links about polarized political topics that contextualize controversial events rather than links that are outright false, suggesting users often report content they disagree with rather than content they believe to be false.",
+  "key_claims": [
+    "User-reported 'False News' links on Facebook largely concern polarized political topics (e.g., vaccine mandates, controversial political figures) rather than clearly false claims.",
+    "Most reported links contextualize or discuss controversial topics rather than presenting false claims themselves, differing from links fact-checked as false.",
+    "User reporting functions largely as a 'narrow statement of objection' or strategic/political flagging rather than as reliable misinformation detection.",
+    "The Wisdom of Crowds effect observed in laboratory studies does not straightforwardly transfer to real-world Facebook user reports, partly due to simple aggregation, varied user motivations, and coordinated reporting.",
+    "Mainstream, trustworthy news sources (like the BBC) can receive disproportionate reports when their content touches politically polarized topics.",
+    "Meta's shift toward user-report-driven moderation raises concerns that content moderation outcomes may reflect political disagreement rather than factual falsity."
+  ],
+  "methods": [
+    "Analysis of the Meta-created URL Shares dataset (all URLs shared publicly on Facebook more than 100 times, January 2017–November 2022), using the Attributes, Breakdown, and User Reports tables.",
+    "Filtering of differentially-private noisy data to retain only cells with statistically certain (alpha < 0.001) real interactions, following Holt et al. (2025).",
+    "Construction of three samples: a Reported Sample (110,224 URLs reported as False News with a conservative threshold of 20+ real reports, using a 44-report query cutoff), a Misinformation Sample (28,271 URLs fact-checked as false), and a Control Sample (200,000 non-reported, non-fact-checked URLs matched by top-share country).",
+    "Mixed-methods design combining NLP and statistics with qualitative content analysis; multilingual texts translated to English using Meta's NLLB-200-3B model within the FORT environment, with language detection triangulated via langdetect, langid, and pycld2.",
+    "Frequency analysis and Rank Difference Score (RDS, Kessler 2017) to identify characteristic and common words across samples; qualitative close reading and thematic grouping of link texts.",
+    "Two critical case studies: links top-shared in Brazil during October 2018 (last month of the Bolsonaro election, a low-fact-checking-resource context) and links from the BBC.com/news domain (a high-trust mainstream source).",
+    "Interaction pattern analysis following Bailey et al. (2021): interaction counts (views, clicks, shares, shares-without-clicks, comments, likes, and emoji reactions) summed by age group and normalized per view, visualized via heatmaps."
+  ],
+  "findings": [
+    "In the 2018 Brazil case, user-reported URLs outnumbered fact-checked false URLs 71:1 (1,568 reported vs. 22 misinformation), demonstrating scale potential but weak precision.",
+    "Reported Brazil links overwhelmingly concerned the two candidates (994 mentioned Bolsonaro, 462 Haddad), electoral processes, corruption/fraud allegations, WhatsApp smear campaigns, the Superior Electoral Court, and the contested 'gay kit' story—often contextualizing rather than asserting falsehoods.",
+    "Contradictory reported links existed on the same contested topic (e.g., some claiming the 'gay kit' was real, others that it was false), indicating politically motivated flagging.",
+    "For the BBC case, reported links (239) had a narrower, more political focus (Trump, Covid-19, vaccines, Kashmir) and were more negative and sensational than the more diverse, neutral, and 'evergreen' control links (301).",
+    "The Reported and Misinformation samples overlapped only modestly (3,446 shared URLs = 12.2% of Misinformation, 3.1% of Reported), showing reports are not merely a subset of fact-checked content.",
+    "Older users engaged more heavily with reported URLs (more likes, comments, shares, shares-without-clicks, and angry reactions), while the two youngest age groups clicked control links more than reported links.",
+    "Higher use of the angry reaction and shares-without-clicks for reported content further indicates it is more political, contested, or partisan."
+  ],
+  "contributions": [
+    "Provides an empirical, URL-level content analysis of what users actually report as false, addressing a literature that has been largely theoretical, experimental, or qualitative.",
+    "Directly engages Facebook's 2025 policy shift toward user-report-driven moderation and Community Notes, offering evidence relevant to that debate.",
+    "Introduces a methodological approach using user reports as a platform-intrinsic signal of 'problematic' content within the URL Shares dataset, whose reporting data had previously only been used to validate simulated models.",
+    "Delivers non-US-centric evidence through the Brazil case and a controlled mainstream-media comparison through the BBC case.",
+    "Extends descriptive research on demographic engagement patterns (e.g., age effects) to user-reported content specifically."
+  ],
+  "framing": "The paper positions itself within the digital journalism and platform content-moderation literature (drawing on Gillespie's work on flagging as objection, 'malicious flagging'/'user-generated warfare,' and Crawford & Gillespie's vocabulary of complaint) and engages the debate over crowd-sourced fact-checking and the Wisdom of Crowds. It contributes empirical evidence to questions about whether user reports can substitute for professional fact-checking in the wake of Meta's 2025 moderation policy change.",
+  "pdf_source": "drive"
+}
