@@ -72,12 +72,10 @@ jobs:
           # rate limit from 60/h (shared-runner-IP, exhausted by other tenants
           # -> intermittent 403) to 5000/h per token.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Workload Identity Federation. ANTHROPIC_API_KEY stays for now so
-          # the job keeps working until the federation rule is verified; it
-          # outranks federation in the SDK's credential precedence, so this is
-          # deliberately still the winning source. Remove the secret (and this
-          # line) at cutover — see ANTHROPIC_AUTH_MIGRATION.md section 7.
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Workload Identity Federation — no API key. The SDK exchanges the
+          # OIDC token fetched above for a short-lived access token. Do not
+          # reintroduce ANTHROPIC_API_KEY here: it outranks federation in the
+          # credential chain and would silently shadow it.
           ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
           ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
           ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
