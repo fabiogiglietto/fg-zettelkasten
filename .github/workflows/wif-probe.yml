@@ -27,3 +27,25 @@ jobs:
           echo "--- claims ---"
           jq -rR 'split(".")[1] | gsub("-";"+") | gsub("_";"/") | @base64d | fromjson
                   | {iss,sub,aud,ref,repository,repository_owner,event_name,workflow}' < /tmp/jwt
+
+      # Proves the federation rule end to end: exchange the JWT for a
+      # short-lived Anthropic token and make one real Messages call. Runs with
+      # no ANTHROPIC_API_KEY in the environment, so a success here can only
+      # have come from the federated credential.
+      - name: Exchange and call
+        env:
+          ANTHROPIC_FEDERATION_RULE_ID:  ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID:     ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID:  ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: /tmp/jwt
+        run: |
+          test -n "$ANTHROPIC_FEDERATION_RULE_ID" || { echo "rule id variable is empty"; exit 1; }
+          pip install --quiet anthropic
+          python - <<'PY'
+          import anthropic
+          m = anthropic.Anthropic().messages.create(
+              model="claude-opus-5", max_tokens=16,
+              messages=[{"role": "user", "content": "reply with the single word OK"}],
+          )
+          print("federated call OK ->", next(b.text for b in m.content if b.type == "text"))
+          PY
