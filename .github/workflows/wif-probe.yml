@@ -1,0 +1,29 @@
+# TEMPORARY — Workload Identity Federation bring-up probe.
+# Dumps the GitHub OIDC claims this repo's jobs actually present, so the
+# Anthropic federation rule can be authored against real values instead of
+# the doc's example `sub` shapes. Delete once the migration is verified.
+# See ANTHROPIC_AUTH_MIGRATION.md section 5a.
+name: WIF claims probe
+
+on: workflow_dispatch
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    # Mirrors the `update` job in update-vault.yml. Naming an environment
+    # changes the OIDC `sub` claim to repo:<owner>/<repo>:environment:<name>,
+    # so the probe must declare it to observe the real subject.
+    environment: github-pages
+    steps:
+      - name: Dump OIDC claims
+        run: |
+          curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" \
+            | jq -r .value > /tmp/jwt
+          echo "--- claims ---"
+          jq -rR 'split(".")[1] | gsub("-";"+") | gsub("_";"/") | @base64d | fromjson
+                  | {iss,sub,aud,ref,repository,repository_owner,event_name,workflow}' < /tmp/jwt
