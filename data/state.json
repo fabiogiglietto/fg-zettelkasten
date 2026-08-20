@@ -3156,10 +3156,10 @@
       "doi": "10.31219/osf.io/ch8gj",
       "title": "News sharing on social media: Mapping the ideology of news media, politicians, and the mass public",
       "pdf_source": "drive",
-      "content_hash": "2d9bbb93808dcbb0931981a4e4f36f85c6b1fa1433dcbdf81cac86eede750427",
+      "content_hash": "be8f5e5af7227aff366c3feb50ccd69c850746e4c9f6457f7aa53615ebfd8d55",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-07-21T07:51:28.275252+00:00"
+      "last_processed": "2026-08-20T17:22:28.007935+00:00"
     },
     "bibtex:Rogers2026-cy": {
       "note_path": "Papers/Rogers2026-cy.md",
@@ -3394,10 +3394,26 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-08-19T05:28:15.975526+00:00"
+    },
+    "bibtex:Holt2026-zq": {
+      "note_path": "Papers/Holt2026-zq.md",
+      "topics": [
+        "platform-data-access-and-governance",
+        "health-misinformation-and-fact-checking"
+      ],
+      "assign_fp": "fb2134607289eef4628ea4ef018dabe11a96c55caf63fc3d9609a5cb674c842d",
+      "doi": "10.1080/21670811.2026.2703607",
+      "title": "What Facebook users flag as false news: A mixed-methods investigation of user-reported links",
+      "pdf_source": "drive",
+      "content_hash": "04d00631f5fbab9ee606aab17402a07039206c095a72f07e60f9853bdb26720a",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-08-20T17:22:28.007907+00:00"
     }
   },
   "last_full_cluster": "2026-08-17T05:04:50.999033+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 3,
   "register_signals_hash": "a7874dbb60abe09ff71f8121d7f36748ce7a91fc2da51ad7e166f913b1d97523",
   "emergent_fp": "6adb83e488358b992806224fc7f47b22822f51d9ef4de5f632bdb08b9fe77dd6",
   "structure_fps": {

@@ -19,6 +19,7 @@ Investigation of coordinated networks circulating problematic health content (CO
 - [[Farkas2026-lr]]
 - [[Ghezzi2023-8bebc91f]]
 - [[Giglietto2022-0e951ac5]]
+- [[Holt2026-zq]]
 - [[Lyons2026-ca]]
 - [[Marino2023-9137f448]]
 - [[Ramos2026-qo]]

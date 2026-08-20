@@ -34,6 +34,7 @@ Research on the changing landscape of social media research APIs, data access to
 - [[Giglietto2026-632ef967]]
 - [[Giglietto2026-855a54cb]]
 - [[Heiss2026-qv]]
+- [[Holt2026-zq]]
 - [[Hurcombe2025-cs]]
 - [[Iannelli2018-ebd918b7]]
 - [[Inacio-da-Silva2026-zf]]
