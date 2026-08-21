@@ -1,0 +1,38 @@
+{
+  "abstract": "This chapter examines long-term global trends in public trust in news by combining two large survey datasets — the World Values Survey/European Values Study (WVS/EVS, 1981–2022) and the Reuters Institute Digital News Report (DNR, 2015–2025) — covering 115 countries and nearly 1.5 million responses over almost half a century. Using harmonised, dichotomised trust measures and multi-level modelling, the authors document a clear but non-universal decline in trust in news, beginning in the 1980s and accelerating from around 2000 as digital media displaced television. The analysis is deliberately descriptive rather than causal, and finds that the trend varies systematically with countries' press freedom situations, with trust actually rising in countries lacking press freedom.",
+  "key_claims": [
+    "There has been a clear, consistent, and general (though not universal) decline in trust in news across most countries over the past half-century.",
+    "The decline predates the internet, beginning in the 1980s, but accelerated from around 2000 as digital media and platforms became mass media.",
+    "Contrary to nostalgic assumptions, even 50 years ago fewer than half the public in the countries covered trusted the news; majority trust is the exception, not the rule.",
+    "The United States is an outlier — with unusually high late-20th-century trust and an unusually sharp decline — rather than representative of global trends.",
+    "Trends differ by press freedom context: trust declined in free and changing-freedom countries but rose in countries consistently rated 'Not Free'.",
+    "Trust in news is subjective, relational, and context-dependent, functioning as a Durkheimian 'social fact' regardless of actual trustworthiness."
+  ],
+  "methods": [
+    "Combined two survey datasets: WVS/EVS (632,711 valid responses, 8 waves, 1981–2022) and the Reuters Institute DNR (858,668 responses, 11 waves, 2015–2025), yielding ~1.5 million responses across 115 countries.",
+    "Harmonised divergent trust questions by dichotomising responses into 'Trust' (1) versus 'Lack of trust' (0); WVS/EVS asks confidence in 'the press' (four-point scale), DNR asks whether respondents 'trust most news most of the time' (five-point Likert).",
+    "Applied an approach adapted from Valgarðsson et al. (2025) on political trust: linear multi-level modelling with year predicting trust and random intercepts for country (and dataset in pooled models).",
+    "Estimated non-linearity using a B-spline with five degrees of freedom, and ran 140 separate OLS models across 94 countries to map country-level trends.",
+    "Classified countries using Freedom House press-freedom data (1980–2016) into consistently 'Free' (n=27), 'Not Free' (n=10), and changing categories: 'Improving' (n=22), 'Deteriorating' (n=26), 'Fluctuating' (n=28), then interacted press-freedom group with year in pooled models."
+  ],
+  "findings": [
+    "In WVS/EVS data, trust declined about 1 percentage point every 5 years (b=-.002, p<.001), from ~49% in the 1980s to ~39% in the 2020s.",
+    "In DNR data, the decline was slightly steeper — ~2 points every 5 years (b=-.004, p<.001) — from 44% in 2015 to ~40% today.",
+    "A B-spline model shows a slight decline from 1981 that accelerates from around 2000, coinciding with the mainstreaming of digital media.",
+    "Of 140 country-dataset combinations, 78 showed a significant negative trend, 34 a positive trend, and 28 were non-significant — confirming a general but not universal decline.",
+    "Between-country and between-dataset variance explains far more than the time trend (low marginal R2, e.g. .003 for the pooled model).",
+    "Consistently 'Free' countries saw small declines, while consistently 'Not Free' countries saw trust rise since the 1980s; countries with improving, fluctuating, or deteriorating press freedom all saw declines.",
+    "Question wording matters: 'confidence in the press' (WVS/EVS) diverges from 'trust in news' (DNR) — e.g. higher in Japan (high newspaper circulation) and lower in the UK (low-trust partisan press, high-trust broadcasters like the BBC).",
+    "The US showed sharp decline in WVS/EVS (50% in 1981 to 23% in 2011) but was basically stable in DNR (32% in 2015 to 30% in 2025), making it an exception in the recent period."
+  ],
+  "contributions": [
+    "Substantially expands the empirical scope of longitudinal trust-in-news research — from the prior benchmark of 53 countries over 40 years (Hanitzsch et al., 2018) to 115 countries over nearly 50 years.",
+    "Provides a harmonisation strategy for combining conceptually distinct trust measures across major survey projects into a single longitudinal analysis.",
+    "Addresses the noted gap that trust in news has been studied extensively at the individual level but relatively little at the societal level.",
+    "Documents that recent DNR-observed declines are part of a longer-term downward trend, and empirically links acceleration to the shift toward digital, platform-dominated media environments.",
+    "Introduces press-freedom trajectory as an analytic lens, showing divergent trust dynamics between free, unfree, and changing-freedom contexts.",
+    "Offers competing interpretive frameworks (optimistic 'critical citizens' vs. pessimistic 'cynical citizenry'; and acquiescence, 'negative trust', or autocratic response bias in unfree countries) to guide future qualitative work."
+  ],
+  "framing": "The chapter positions itself within comparative political-communication and political-science scholarship on institutional trust, extending Hanitzsch et al.'s (2018) argument that decline in media trust is not universal and drawing on debates about 'critical citizens' (Norris), a 'democratic recession' (Bermeo), and the meaning of trust in authoritarian contexts. It explicitly adopts a descriptive rather than causal or theory-building stance, invoking Gerring and King/Keohane/Verba to defend rigorous description as a necessary foundation for understanding an evolving media environment.",
+  "pdf_source": "drive"
+}
