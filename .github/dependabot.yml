@@ -1,14 +1,19 @@
 version: 2
 updates:
+  # Version updates are off (limit 0). Nothing installs requirements.txt —
+  # tests.yml and update-vault.yml both `pip install -r requirements.lock`, and
+  # the lock is compiled by hand with `uv pip compile`. Dependabot only bumps
+  # the `>=` floor in requirements.txt and never recompiles the lock, so every
+  # such PR either does nothing or leaves the declared floor above the pinned
+  # version while CI stays green. Refresh deliberately instead:
+  #   uv pip compile requirements.txt -o requirements.lock
+  # Security updates are NOT subject to open-pull-requests-limit and still arrive.
   - package-ecosystem: pip
     directory: /
     schedule:
       interval: weekly
       day: monday
-    groups:
-      python-deps:
-        patterns: ["*"]
-        update-types: ["minor", "patch"]
+    open-pull-requests-limit: 0
 
   # Vendored Quartz site (quartz/package-lock.json). Major Quartz bumps can
   # revert vendored patches — see quartz/VENDORED_PATCHES.md before merging.
