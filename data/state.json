@@ -3389,10 +3389,10 @@
       "doi": "10.1145/3839225",
       "title": "Detection and characterization of coordinated online behavior: A survey",
       "pdf_source": "drive",
-      "content_hash": "9274f604653fbf8885a97c36818584f966e8b2c183cefb7a6a7c8191eb3df0c8",
-      "podcast_linked": false,
+      "content_hash": "ba53c534372ec9eaf44c14974db28e308d12ef37ec802b1c28c2ee3ba27fe5ff",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-08-19T05:28:15.975526+00:00"
+      "last_processed": "2026-08-21T08:42:53.530788+00:00"
     },
     "bibtex:Holt2026-zq": {
       "note_path": "Papers/Holt2026-zq.md",
@@ -3404,11 +3404,10 @@
       "doi": "10.1080/21670811.2026.2703607",
       "title": "What Facebook users flag as false news: A mixed-methods investigation of user-reported links",
       "pdf_source": "drive",
-      "content_hash": "04d00631f5fbab9ee606aab17402a07039206c095a72f07e60f9853bdb26720a",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-08-20T17:22:28.007907+00:00"
+      "content_hash": "cc6234d3c08c728fbc01ceb89e9e4db225ef3f634b7e6ef94fae3cb716280168",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-08-21T08:42:53.530784+00:00"
     },
     "bibtex:Fletcher2026-lv": {
       "note_path": "Papers/Fletcher2026-lv.md",
@@ -3417,11 +3416,10 @@
       "doi": "10.4324/9781003618041-6",
       "title": "What has happened to trust in news in the long run globally?",
       "pdf_source": "drive",
-      "content_hash": "040178b98284b262529466e3add050f992e8df59303f2e70bdbc2d3abd672590",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-08-21T05:30:25.328343+00:00"
+      "content_hash": "7628c8b6054eb7069a8dc10e42fddce9ddf3bffcf1b75018b4c60df0aabb9f92",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-08-21T08:42:53.530766+00:00"
     }
   },
   "last_full_cluster": "2026-08-17T05:04:50.999033+00:00",

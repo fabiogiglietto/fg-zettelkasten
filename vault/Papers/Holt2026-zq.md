@@ -9,7 +9,7 @@ topics: [platform-data-access-and-governance, health-misinformation-and-fact-che
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2703607
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Holt2026-zq.mp3
 pdf_available: true
 discovery_date: 2026-08-20T12:21:52.011920Z
 ---
@@ -22,30 +22,34 @@ discovery_date: 2026-08-20T12:21:52.011920Z
 
 ## Summary
 
-This paper asks an empirically neglected question with sharp policy relevance: what do Facebook users actually flag as "False News"? Motivated by Meta's January 2025 decision to abandon third-party fact-checking in the US in favour of Community Notes and greater reliance on user reports, the author uses the Meta-created URL Shares dataset to compare three sets of links — those users reported as false, those professionally fact-checked as false, and a matched control sample. The central finding is that user reports do not reliably track factual falsity. Instead, users tend to flag content about polarized political topics that *contextualizes* controversial events rather than content that is outright false — reporting functions closer to a "statement of objection" than to misinformation detection. This casts serious doubt on the assumption that crowd-sourced reporting can substitute for professional fact-checking.
+This paper investigates what kinds of links Facebook users have historically flagged as "False News," using the question to probe the wisdom of Meta's January 2025 decision to abandon third-party fact-checking in the US in favor of Community Notes and greater reliance on user reports. Drawing on the Meta-created URL Shares dataset, the author compares three samples — user-reported links, links fact-checked as false, and a matched control of unreported/unchecked links — through a mixed-methods design blending NLP, statistics, and qualitative close reading. The central argument is that user reporting behaves less like reliable misinformation detection and more like a "narrow statement of objection": users disproportionately flag polarized political content that contextualizes controversy rather than content that is demonstrably false.
 
 ## Key Contributions
 
-- First URL-level empirical content analysis of what users actually report as false, moving beyond largely theoretical, experimental, or lab-based literature.
-- Directly engages Meta's 2025 policy shift toward user-report-driven moderation and Community Notes with relevant evidence.
-- Introduces user reports as a platform-intrinsic signal of "problematic" content within the URL Shares dataset, whose reporting data had previously only served to validate simulated models.
-- Provides non-US-centric evidence (Brazil 2018 election) alongside a controlled high-trust mainstream-media comparison (BBC).
-- Extends descriptive work on demographic (age) engagement patterns to user-reported content specifically.
+- Empirical, URL-level content analysis of what users actually report as false, moving beyond the largely theoretical, experimental, or qualitative prior literature.
+- Direct engagement with Meta's 2025 shift toward user-report-driven moderation and Community Notes, supplying evidence relevant to that policy debate.
+- A methodological approach treating user reports as a platform-intrinsic signal of "problematic" content within the URL Shares dataset — data previously used only to validate simulated models.
+- Non-US-centric evidence via the Brazil case and a controlled mainstream-media comparison via the BBC case.
+- Extension of demographic engagement research (notably age effects) to user-reported content specifically.
 
 ## Methods
 
-A mixed-methods design applied to the Meta URL Shares dataset (URLs shared publicly 100+ times, Jan 2017–Nov 2022), using the Attributes, Breakdown, and User Reports tables. Differentially-private noisy cells were filtered to retain only statistically certain interactions (alpha < 0.001). Three samples were built: a Reported Sample (110,224 URLs with 20+ real reports), a Misinformation Sample (28,271 fact-checked-false URLs), and a matched Control Sample (200,000 non-reported, non-fact-checked URLs). Multilingual link texts were translated via Meta's NLLB-200-3B model inside the FORT environment. Analysis combined frequency counts and Rank Difference Scores with qualitative close reading, two critical case studies (Brazil October 2018; BBC.com/news), and interaction-pattern heatmaps by age group normalized per view.
+The study uses the Meta URL Shares dataset (URLs shared publicly >100 times, Jan 2017–Nov 2022), filtering differentially-private noisy cells to retain statistically certain interactions (alpha < 0.001). Three samples are built: a Reported Sample (110,224 URLs with 20+ real reports), a Misinformation Sample (28,271 fact-checked-false URLs), and a Control Sample (200,000 unreported/unchecked URLs matched by top-share country). Multilingual texts were translated to English via NLLB-200-3B inside the FORT environment, with language detection triangulated. Analysis combined frequency statistics and Rank Difference Scores (Kessler 2017) with qualitative thematic reading, two critical case studies (2018 Brazil election, BBC.com/news), and interaction-pattern heatmaps normalized per view by age group.
 
 ## Findings
 
-- In 2018 Brazil, user-reported URLs outnumbered fact-checked-false URLs 71:1 (1,568 vs. 22) — large scale, weak precision.
-- Reported Brazil links overwhelmingly concerned the two candidates, electoral processes, corruption/fraud allegations, WhatsApp smears, and the contested "gay kit" story — often contextualizing rather than asserting falsehoods.
-- Contradictory reported links existed on the same contested topic, indicating politically motivated flagging.
-- BBC reported links (239) had a narrower, more political, more negative and sensational focus (Trump, Covid, vaccines, Kashmir) than the diverse, neutral control links (301).
-- Reported and Misinformation samples overlapped only modestly (12.2% of Misinformation, 3.1% of Reported), so reports are not a subset of fact-checked content.
-- Older users engaged more heavily with reported URLs (more likes, comments, shares-without-clicks, angry reactions); the youngest groups clicked control links more.
-- Elevated angry reactions and shares-without-clicks signal that reported content is more partisan and contested.
+- In the 2018 Brazil case, user-reported URLs outnumbered fact-checked false URLs 71:1 (1,568 vs. 22) — high scale, weak precision.
+- Reported Brazil links overwhelmingly concerned the two candidates (994 mentioning Bolsonaro, 462 Haddad), electoral fraud claims, WhatsApp smear campaigns, and the contested "gay kit" story — often contextualizing rather than asserting falsehoods.
+- Contradictory reported links appeared on the same contested topic (some claiming the "gay kit" was real, others false), indicating politically motivated flagging.
+- BBC reported links (239) had a narrower, more political, more negative and sensational focus (Trump, Covid-19, vaccines, Kashmir) than the diverse, neutral, "evergreen" control links (301).
+- The Reported and Misinformation samples overlapped only modestly (12.2% of Misinformation, 3.1% of Reported), so reports are not a subset of fact-checked content.
+- Older users engaged more heavily with reported URLs (likes, comments, shares-without-clicks, angry reactions); the youngest groups clicked control links more.
+- Elevated angry reactions and shares-without-clicks on reported content signal its more political, contested, partisan character.
 
 ## Connections
 
-This paper's empirical use of the URL Shares dataset and its differential-privacy handling connect it methodologically to broader debates about platform data access and the reliability of Meta's research products; see [[Bak-Coleman2026-mk]], [[Bak-Coleman2025-pm]], and [[Pierri2025-hm]] on working with and validating platform-provided data. Its critical assessment of crowd-sourced moderation and Community Notes speaks to work on the value and limits of community-based fact-checking, notably [[Allen2025-ot]] and [[DeVerna2025-dl]]. The Brazil case and mainstream-media focus also link it to research on fact-checking practice and misinformation ecosystems such as [[Cazzamatta2026-lo]].
+This paper is grounded in the same Meta URL Shares dataset used by [[Allen2025-ot]] for estimating misinformation exposure, and its skepticism about crowd-sourced flagging speaks directly to work evaluating Community Notes and crowd fact-checking such as [[DeVerna2025-dl]] and [[Pierri2025-hm]]. It also fits the broader debate over post-2025 platform moderation and fact-checking regimes explored in [[Cazzamatta2026-lo]] and [[Schulte2026-df]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Holt2026-zq.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)
