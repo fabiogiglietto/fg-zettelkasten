@@ -5,7 +5,7 @@ authors: ["Timothy Graham"]
 year: 2025
 doi: 10.1080/15295036.2025.2473002
 bibtex_key: Graham2025-gp
-topics: [disinformation-narratives-and-information-operations, coordinated-inauthentic-behavior]
+topics: [coordinated-inauthentic-behavior, information-disorder-and-fact-checking]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1080/15295036.2025.2473002

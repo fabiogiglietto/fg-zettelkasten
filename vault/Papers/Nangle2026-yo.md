@@ -5,7 +5,7 @@ authors: ["Benjamin Megarry Nangle", "Leen d’Haenens"]
 year: 2026
 doi: 10.1177/14614448261428632
 bibtex_key: Nangle2026-yo
-topics: [online-radicalization-and-extremism-on-platforms]
+topics: [online-radicalization-and-extremism-on-platforms, platform-policy-and-content-visibility]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448261428632

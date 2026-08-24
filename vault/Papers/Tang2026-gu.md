@@ -5,7 +5,7 @@ authors: ["Jiaru Tang", "Xiaoting Yu", "Patrik Wikström", "Kylie Pappalardo"]
 year: 2026
 doi: 10.1007/s00146-026-03254-9
 bibtex_key: Tang2026-gu
-topics: [generative-ai-imaginaries]
+topics: [generative-ai-disinformation, coordinated-inauthentic-behavior]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1007/s00146-026-03254-9

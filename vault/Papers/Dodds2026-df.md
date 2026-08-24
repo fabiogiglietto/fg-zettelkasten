@@ -5,7 +5,7 @@ authors: ["Tomás Dodds", "Naomi Mine", "Natali Helberger", "Andrea L. Guzman", 
 year: 2026
 doi: 10.1080/21670811.2026.2630187
 bibtex_key: Dodds2026-df
-topics: [generative-ai-imaginaries, platform-critique-anniversary-essays]
+topics: [generative-ai-imaginaries, platform-policy-and-content-visibility]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2630187

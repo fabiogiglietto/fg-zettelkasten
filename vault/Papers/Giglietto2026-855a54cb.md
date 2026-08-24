@@ -6,7 +6,7 @@ year: 2026
 doi: 10.5204/mcj.3257
 bibtex_key: Giglietto2026-855a54cb
 kind: own
-topics: [platform-data-access-and-governance]
+topics: [platform-data-access-and-governance, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.5204/mcj.3257

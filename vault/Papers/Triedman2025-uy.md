@@ -5,7 +5,7 @@ authors: ["Harold Triedman", "Alexios Mantzarlis"]
 year: 2025
 doi: 
 bibtex_key: Triedman2025-uy
-topics: [llm-and-computational-content-analysis, generative-ai-imaginaries]
+topics: [misinformation-exposure-recalibration, generative-ai-imaginaries]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2511.09685v1

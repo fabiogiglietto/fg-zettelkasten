@@ -5,7 +5,7 @@ authors: ["Anton Elias Holt"]
 year: 2026
 doi: 10.1080/21670811.2026.2703607
 bibtex_key: Holt2026-zq
-topics: [platform-data-access-and-governance, health-misinformation-and-fact-checking]
+topics: [information-disorder-and-fact-checking, platform-policy-and-content-visibility]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2703607

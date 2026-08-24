@@ -5,7 +5,7 @@ authors: ["Silke Adam", "Tobias Rohrbach", "Franziska Keller", "Mykola Makhortyk
 year: 2026
 doi: 10.1093/joc/jqaf033
 bibtex_key: Adam2026-tz
-topics: [health-misinformation-and-fact-checking, misinformation-exposure-recalibration]
+topics: [conspiracy-narratives-in-media, information-disorder-and-fact-checking]
 citation_count: 5
 open_access: false
 source_url: https://doi.org/10.1093/joc/jqaf033

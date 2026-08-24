@@ -5,7 +5,7 @@ authors: ["Edda Humprecht", "Sebastián Valenzuela", "Frank Esser", "Edson Tando
 year: 2026
 doi: 10.1177/19401612251327530
 bibtex_key: Humprecht2025-ml
-topics: []
+topics: [information-disorder-and-fact-checking]
 citation_count: 5
 open_access: false
 source_url: https://doi.org/10.1177/19401612251327530

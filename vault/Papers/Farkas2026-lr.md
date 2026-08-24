@@ -5,7 +5,7 @@ authors: ["Johan Farkas", "Mette Bengtsson"]
 year: 2026
 doi: 10.1177/02673231261422085
 bibtex_key: Farkas2026-lr
-topics: [health-misinformation-and-fact-checking, platform-data-access-and-governance]
+topics: [information-disorder-and-fact-checking, platform-policy-and-content-visibility]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1177/02673231261422085

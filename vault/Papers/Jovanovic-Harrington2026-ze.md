@@ -5,7 +5,7 @@ authors: ["Ana Jovanovic-Harrington", "Alessio Cornia"]
 year: 2026
 doi: 10.1177/02673231261422076
 bibtex_key: Jovanovic-Harrington2026-ze
-topics: [coordinated-inauthentic-behavior, online-radicalization-and-extremism-on-platforms]
+topics: [coordinated-inauthentic-behavior, election-campaigns-on-social-media]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1177/02673231261422076

@@ -5,7 +5,7 @@ authors: ["Lorenzo Mannocci", "Michele Mazza", "Anna Monreale", "Maurizio Tescon
 year: 2026
 doi: 10.1145/3839225
 bibtex_key: Mannocci2026-kc
-topics: [coordinated-inauthentic-behavior, computational-network-structure-analysis]
+topics: [coordinated-inauthentic-behavior, information-disorder-and-fact-checking]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3839225

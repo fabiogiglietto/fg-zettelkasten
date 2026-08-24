@@ -5,7 +5,7 @@ authors: ["Anja Bechmann"]
 year: 2026
 doi: 10.1080/10584609.2026.2679475
 bibtex_key: Bechmann2026-dr
-topics: [platform-data-access-and-governance, sociocybernetics-and-social-systems-theory]
+topics: [platform-data-access-and-governance, platform-policy-and-content-visibility]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2679475

@@ -5,7 +5,7 @@ authors: ["Michael Hameleers", "Toni van der Meer"]
 year: 2026
 doi: 10.1177/14614448251409208
 bibtex_key: Hameleers2026-mc
-topics: [disinformation-narratives-and-information-operations, misinformation-exposure-recalibration]
+topics: [information-disorder-and-fact-checking, generative-ai-disinformation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448251409208

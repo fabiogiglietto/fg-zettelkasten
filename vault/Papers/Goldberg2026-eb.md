@@ -5,7 +5,7 @@ authors: ["Beth Goldberg", "Diana Acosta-Navas", "Michiel Bakker", "Ian Beacock"
 year: 2026
 doi: 10.1177/26339137261459441
 bibtex_key: Goldberg2026-eb
-topics: [generative-ai-imaginaries, platform-critique-anniversary-essays]
+topics: [platform-policy-and-content-visibility, llm-driven-content-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/26339137261459441

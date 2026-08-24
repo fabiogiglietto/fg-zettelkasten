@@ -5,7 +5,7 @@ authors: ["Sukyoung Choi"]
 year: 2026
 doi: 10.1177/10776990251413726
 bibtex_key: Choi2026-bz
-topics: [climate-and-misinformation-message-interventions]
+topics: [information-disorder-and-fact-checking, generative-ai-disinformation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/10776990251413726

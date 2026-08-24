@@ -5,7 +5,7 @@ authors: ["Sandra González-Bailón", "David Lazer", "Pablo Barberá", "William 
 year: 2024
 doi: 10.15195/v11.a41
 bibtex_key: Gonzalez-Bailon2024-rq
-topics: [misinformation-exposure-recalibration, computational-network-structure-analysis]
+topics: [information-disorder-and-fact-checking, election-campaigns-on-social-media]
 citation_count: 8
 open_access: false
 source_url: https://doi.org/10.15195/v11.a41

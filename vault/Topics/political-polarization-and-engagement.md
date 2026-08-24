@@ -1,39 +1,38 @@
 ---
 type: topic
-slug: political-polarization-and-partisanship
+slug: political-polarization-and-engagement
 emergent: false
 ---
 
-# Political Polarization & Partisan Dynamics
+# Political Polarization & Audience Engagement
 
-Studies of partisan community engagement, affective polarization, and cross-partisan media exposure on social platforms, spanning Italian, Brazilian, and comparative contexts; includes recent work on pro-Bolsonaro Facebook networks and the interplay of social/traditional media in amplifying political extremes.
+Studies of partisan attention, affective engagement, insularity and cross-partisan interaction patterns around news on Facebook and other platforms, spanning long-standing polarization research and newer work on reactions and community-level affective dynamics.
 
 ## Papers
 
-- [[Allcott2025-jb]]
 - [[Anwar2024-34dba628]]
+- [[Arora2025-tx]]
 - [[Bakshy2015-rn]]
-- [[Bennett2025-xs]]
 - [[Bouchaud2026-np]]
 - [[Brady2026-ln]]
 - [[Dehghan2026-sy]]
+- [[Di-Domenico2026-zq]]
 - [[Eady2025-vm]]
 - [[Elfes2026-jb]]
 - [[Esau2025-tf]]
 - [[Falkenberg2026-ka]]
 - [[Gaisbauer2025-by]]
-- [[Gattermann2025-yx]]
 - [[Gauthier2026-iq]]
+- [[Gerbaudo2026-fo]]
 - [[Ghezzi2023-8bebc91f]]
+- [[Giglietto2017-4375de2f]]
 - [[Giglietto2019-882f1900]]
-- [[Giglietto2020-6278a4aa]]
-- [[Giglietto2026-632ef967]]
+- [[Giglietto2019-e9be81c1]]
 - [[Green2025-ap]]
 - [[Grusauskaite2026-po]]
-- [[Inacio-da-Silva2026-zf]]
-- [[Iris2026-pg]]
+- [[Hartmann2025-px]]
+- [[Iannelli2015-e0818c3e]]
 - [[Kalsnes2025-zb]]
-- [[Kansaon2025-id]]
 - [[Karlsson2026-hd]]
 - [[Kim2026-wg]]
 - [[Knupfer2025-vt]]
@@ -43,22 +42,19 @@ Studies of partisan community engagement, affective polarization, and cross-part
 - [[Lee2026-je]]
 - [[Lieu2025-nl]]
 - [[Marino2026-he]]
-- [[Marwick2026-qd]]
 - [[Mosleh2024-op]]
+- [[Oswald2025-km]]
 - [[Renault2025-uh]]
 - [[Rodarte2026-dk]]
-- [[Rossini2026-jn]]
-- [[Rossini2026-mj]]
 - [[Sarmiento2025-as]]
 - [[Schemer2026-mh]]
-- [[Starbird2025-jj]]
+- [[Smith2025-kc]]
 - [[Tai2026-qk]]
-- [[Tornberg2025-ir]]
 - [[Van_Erkel2026-mk]]
-- [[Ventura2025-sw]]
 - [[Ventura2026-yc]]
-- [[Votta2025-xz]]
+- [[Xue2025-bp]]
 - [[Yoo2026-ev]]
+- [[Zhao2025-ny]]
 - [[Zhu2026-tn]]
 - [[van-Eck2026-xg]]
 
@@ -66,6 +62,6 @@ Studies of partisan community engagement, affective polarization, and cross-part
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "political-polarization-and-partisanship")
+WHERE contains(topics, "political-polarization-and-engagement")
 SORT discovery_date DESC
 ```

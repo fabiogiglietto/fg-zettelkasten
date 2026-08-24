@@ -5,7 +5,7 @@ authors: ["Lana Swartz"]
 year: 2026
 doi: 10.1177/20563051261437922
 bibtex_key: Swartz2026-zb
-topics: [platform-critique-anniversary-essays, platform-data-access-and-governance]
+topics: [platform-critique-anniversary-essays, platform-policy-and-content-visibility]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20563051261437922

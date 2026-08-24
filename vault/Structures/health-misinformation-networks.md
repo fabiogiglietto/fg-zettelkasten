@@ -1,0 +1,39 @@
+---
+type: structure
+slug: health-misinformation-networks
+topic: "Health Misinformation Networks"
+---
+
+# Health Misinformation Networks
+
+## From Coordination to Consequence: Mapping the Infodemic
+
+The papers filed here trace a research arc that runs from *detecting* who coordinates problematic health content, through *characterising* how that content moves between platforms and gatekeepers, to *measuring* its downstream exposure and epidemiological cost. Read together, they suggest that health misinformation is less a matter of isolated bad actors than of structured ecosystems — coordinated networks, alternative influencer clusters, and algorithmic gatekeepers — that interact with legacy media and public health messaging in patterned, often self-reinforcing ways.
+
+### Detecting and characterising coordinated networks
+
+The empirical core of the collection is built on Coordinated Link Sharing Behaviour (CLSB) methodology. [[Giglietto2022-0e951ac5]] establishes the baseline case in Italy: using the CooRnet package, it shows how a covid-skeptic coordinated network emerged as an offshoot of pre-existing political clusters (League- and Five Star-affiliated pages), and documents the evasive tactics — link laundering through reputable outlets, first-comment link placement, cross-posting into image macros, infiltration of religious groups — that such networks use to survive platform enforcement. This work is explicitly operational, packaged as a content-agnostic tool (MINE-FACTS) to help fact-checkers triage problematic content faster than manual review allows.
+
+[[Marino2023-9137f448]] builds directly on this Italian CLSB-identified network, but shifts the lens from *behavioural* coordination to *actor typology*: within the covid-skeptic ecosystem, it isolates an "Intellectual Dark Web" (IDW) cluster of alternative influencers whose content is disproportionately share-driven, and shows that legacy journalists and right-leaning newspapers remain the most central nodes for circulating this material — largely through remediation of TV and print statements by doctors, politicians, and intellectuals. Together these two papers establish Italy as a site where political coordination, alternative influence, and legacy media hybridise into a single infodemic infrastructure.
+
+[[Song2025-yh]] extends the CLSB paradigm comparatively to Facebook in the UK and US, showing that coordination itself is ideologically agnostic: both pro- and anti-vaccine communities coordinate link-sharing, but with different network topologies (denser anti-vaccine networks in the UK vs. larger pro-vaccine networks in the US) and different national framings (safety concerns in the UK, individual liberty in the US). This comparative move complicates the Italian findings by showing that coordination is a general organisational strategy, not an inherent signature of misinformation — credibility and alignment of actors, not the mere presence of coordination, determine harm.
+
+### Gatekeeping, pathways, and the media ecosystem
+
+A second thread interrogates how content crosses from platforms into mainstream visibility — the gatekeeping dynamics named in this topic's remit. [[Ducci2022-10cb5d70]] examines Google News Italia as an algorithmic gatekeeper for health news, finding that while medical-scientific topics dominate aggregation, celebrity and healthcare-malfunction stories drive disproportionate Facebook engagement — evidence that gatekeeping now operates jointly through editorial selection and audience-engagement dynamics, with emotionally charged content amplified regardless of its epistemic quality.
+
+[[Efstratiou2026-ij]] operationalises this pathway question at larger scale and cross-platform: tracing how COVID-19 scientific papers move between Twitter and news outlets, it finds that a small, non-automated but highly coordinated contrarian network disproportionately amplifies a narrow set of credentialed anti-consensus experts, and that news coverage tends to follow rather than lead this superspreader activity — with high-trust outlets mirroring conformist superspreaders and low-trust outlets mirroring contrarian ones. This resonates strongly with the Italian findings: in both cases, media and coordinated networks form a two-way amplification loop, and journalists/outlets function as gatekeepers who can either legitimise fringe expertise or contain it.
+
+### Measuring information gaps and unequal exposure
+
+A distinct but complementary set of papers turns from *supply-side* network structure to *demand-side* measurement — asking not just who spreads problematic content but where and to whom it lands. [[Scalco2026-bd]] introduces a quantitative framework for detecting "information voids," moments when public demand for health information (Wikipedia, Google Trends) outstrips credible supply (Facebook, Twitter, news). Applied across six European countries during COVID-19 vaccine rollout, it shows that voids are longer-lived than periods of overabundance and are empirically linked to reduced circulation of credible content and increased misinformation — providing a mechanistic account of *when* gatekeeping failures create openings for coordinated networks to fill.
+
+[[Lyons2026-ca]] complements this with an audience-side account from the US, showing that exposure to low-credibility health content is rare in aggregate but heavily concentrated among older adults with poorer information discernment and more conspiracist worldviews — and, crucially, that this exposure flows through habitual cross-domain browsing (other low-credibility sites) rather than social media or search referrals. This finding qualifies the platform-centric focus of the coordination literature: much low-credibility exposure may occur outside the coordinated-network dynamics captured by CLSB and superspreader analyses, in older, self-selecting audiences navigating an alternative web ecosystem.
+
+### From networks to outcomes
+
+The collection closes its arc with [[Bollenbacher2026-vz]], which asks what all this coordination and exposure actually costs. Using a novel SIRVA epidemic model fit to US county-level data, it estimates a causal effect of geolocated antivaccine tweets on vaccine refusal, translating network-level amplification into concrete public-health outcomes — roughly 14,000 vaccine refusals and measurable excess cases and deaths. This paper anchors the more descriptive network-mapping work in the rest of the corpus to a quantified, causally-modeled harm, making explicit the stakes that motivate the entire research programme: coordinated amplification and gatekeeping failures are not merely descriptive curiosities of platform ecosystems but have traceable epidemiological consequences.
+
+### Synthesis
+
+Across Italy (coordination and alternative influence), the UK/US (comparative coordination and superspreader/news pathways), and international vaccine discourse more broadly, a consistent picture emerges: problematic health information rarely spreads through isolated virality but through structured, often non-automated coordination among credentialed or quasi-credentialed actors, legitimised through legacy media remediation and algorithmic gatekeeping, and disproportionately absorbed by audiences already predisposed toward alternative information ecosystems. The move from detection ([[Giglietto2022-0e951ac5]], [[Marino2023-9137f448]], [[Song2025-yh]]) to pathway-tracing (Efst6ratiou2026-ij, [[Ducci2022-10cb5d70]]) to measurement of gaps and exposure ([[Scalco2026-bd]], [[Lyons2026-ca]]) to causal outcome estimation ([[Bollenbacher2026-vz]]) charts a maturing methodological trajectory: from qualitative and network-descriptive accounts of "who coordinates" toward quantitative, mechanistic, and increasingly causal accounts of how coordination and gatekeeping jointly shape what publics come to believe — and how many, ultimately, are harmed by it.

@@ -5,7 +5,7 @@ authors: ["Christian Schemer", "Klara Langmann", "Ariel Hasell", "Brian Weeks"]
 year: 2026
 doi: 10.1080/10584609.2026.2699105
 bibtex_key: Schemer2026-mh
-topics: [political-polarization-and-partisanship, survey-methodology-validity]
+topics: [political-polarization-and-engagement, survey-methodology-validity]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2699105

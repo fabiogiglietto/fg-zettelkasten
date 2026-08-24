@@ -5,7 +5,7 @@ authors: ["Anne Helmond"]
 year: 2026
 doi: 10.1177/20563051261436101
 bibtex_key: Helmond2026-ll
-topics: [platform-critique-anniversary-essays]
+topics: [platform-critique-anniversary-essays, platform-policy-and-content-visibility]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1177/20563051261436101

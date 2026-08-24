@@ -5,7 +5,7 @@ authors: ["Kobi Hackenburg", "Caroline Wagner", "Luke Hewitt", "Ben M. Tappin", 
 year: 2026
 doi: 
 bibtex_key: Hackenburg2026-ud
-topics: [disinformation-narratives-and-information-operations, public-perceptions-and-labor-impacts-of-ai]
+topics: [generative-ai-disinformation, public-perceptions-and-labor-impacts-of-ai]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2606.16475v1

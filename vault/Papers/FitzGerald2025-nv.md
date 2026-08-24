@@ -5,7 +5,7 @@ authors: ["Katherine M. FitzGerald", "Daniel Whelan-Shamy", "Timothy Graham"]
 year: 2025
 doi: 10.4324/9781003628088-6
 bibtex_key: FitzGerald2025-nv
-topics: [disinformation-narratives-and-information-operations, coordinated-inauthentic-behavior]
+topics: [coordinated-inauthentic-behavior, information-disorder-and-fact-checking]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.4324/9781003628088-6

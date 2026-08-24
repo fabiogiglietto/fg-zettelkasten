@@ -5,7 +5,7 @@ authors: ["Falkenberg, Max", "Cinelli, Matteo", "Galeazzi, Alessandro", "Bail, C
 year: 2026
 doi: 
 bibtex_key: Falkenberg2026-ka
-topics: [political-polarization-and-partisanship, sociocybernetics-and-social-systems-theory]
+topics: [political-polarization-and-engagement]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Toward%20an%20integrated%20and%20globally%20equitable%20understanding%20of%20political%20polarization

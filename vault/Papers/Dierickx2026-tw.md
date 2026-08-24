@@ -5,7 +5,7 @@ authors: ["Laurence Dierickx", "Andreas L. Opdahl", "Fredrik Bjerknes", "Carl-Gu
 year: 2026
 doi: 10.1080/1369118x.2026.2630697
 bibtex_key: Dierickx2026-tw
-topics: [llm-and-computational-content-analysis, generative-ai-imaginaries]
+topics: [information-disorder-and-fact-checking, generative-ai-disinformation]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2026.2630697

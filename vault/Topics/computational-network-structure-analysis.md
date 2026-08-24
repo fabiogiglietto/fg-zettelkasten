@@ -10,33 +10,21 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 
 ## Papers
 
+- [[Arminio2025-tw]]
 - [[Askanius2026-de]]
-- [[Bouchaud2026-lr]]
-- [[Brown2026-br]]
+- [[Balluff2026-ev]]
 - [[Bruns2025-fz]]
 - [[Dehghan2026-sy]]
-- [[Eady2025-vm]]
 - [[Efstratiou2025-gs]]
-- [[Fan2025-ut]]
 - [[Fan2026-af]]
 - [[Ferrara2026-io]]
-- [[Gaisbauer2025-by]]
 - [[Gerard2025-br]]
-- [[Gerbaudo2026-fo]]
-- [[Gonzalez-Bailon2024-rq]]
 - [[Groebner2026-pc]]
-- [[Hartmann2025-px]]
 - [[Iannucci2025-eg]]
 - [[Kakavand2026-kt]]
+- [[Lai2024-to]]
 - [[Mannocci2025-ig]]
-- [[Mannocci2026-kc]]
-- [[Minici2024-tf]]
-- [[Ng2026-og]]
-- [[Scalco2026-bd]]
 - [[Smith2025-kc]]
-- [[Wang2026-ub]]
-- [[Zheng2026-bi]]
-- [[Zhu2026-tn]]
 
 ## All papers (Dataview)
 

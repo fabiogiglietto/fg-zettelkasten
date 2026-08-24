@@ -5,7 +5,7 @@ authors: ["Yuehong Cassandra Tai", "Yu-Ru Lin", "Bruce A. Desmarais"]
 year: 2026
 doi: 10.1080/10584609.2026.2613661
 bibtex_key: Tai2026-qk
-topics: [disinformation-narratives-and-information-operations, political-polarization-and-partisanship]
+topics: [information-disorder-and-fact-checking, political-polarization-and-engagement]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2613661

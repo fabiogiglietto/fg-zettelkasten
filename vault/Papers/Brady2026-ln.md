@@ -5,7 +5,7 @@ authors: ["William J. Brady", "Meriel Doyle", "Abdo Elnakouri", "Eli J. Finkel",
 year: 2026
 doi: 10.1038/s41586-026-10536-1
 bibtex_key: Brady2026-ln
-topics: [political-polarization-and-partisanship, misinformation-exposure-recalibration]
+topics: [platform-policy-and-content-visibility, political-polarization-and-engagement]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1038/s41586-026-10536-1

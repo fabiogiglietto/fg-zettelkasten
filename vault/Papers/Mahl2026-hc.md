@@ -5,7 +5,7 @@ authors: ["Daniela Mahl", "Sabrina H. Kessler", "Mike S. Schäfer", "Anna Jobin"
 year: 2026
 doi: 10.1515/commun-2024-0123
 bibtex_key: Mahl2026-hc
-topics: [disinformation-narratives-and-information-operations, platform-data-access-and-governance]
+topics: [information-disorder-and-fact-checking, conspiracy-narratives-in-media]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1515/commun-2024-0123

@@ -5,7 +5,7 @@ authors: ["Lisa Oswald", "Will Schulz", "Ralph Hertwig", "David Lazer", "Sebasti
 year: 2025
 doi: 10.31235/osf.io/frcv5_v2
 bibtex_key: Oswald2025-km
-topics: [misinformation-exposure-recalibration, platform-critique-anniversary-essays]
+topics: [misinformation-exposure-recalibration, political-polarization-and-engagement]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/frcv5_v2
