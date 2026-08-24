@@ -180,7 +180,14 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_ALERT_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
-          ALERT_TEXT: ":rotating_light: ${{ github.repository }} / ${{ github.workflow }} failed (${{ github.event_name }} ${{ github.event.action }}): ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          # `run_id` is stable across re-runs, so an alert that carries only the
+          # run URL is ambiguous in two ways: two failed attempts post two
+          # identical messages (2026-08-24 alerted twice on run 32691108609),
+          # and the earlier alert's link silently retargets to the newest
+          # attempt's logs — it stops pointing at the failure it reported.
+          # Naming the attempt and deep-linking to it fixes both. `event.action`
+          # is empty on schedule/workflow_dispatch, hence the conditional space.
+          ALERT_TEXT: ":rotating_light: ${{ github.repository }} / ${{ github.workflow }} failed (${{ github.event_name }}${{ github.event.action && format(' {0}', github.event.action) || '' }}, attempt ${{ github.run_attempt }}): ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/${{ github.run_attempt }}"
         run: |
           # Ops alerts belong in the channel OPS_SLACK_CHANNEL names, so the
           # explicit channel wins over the webhook. The webhook is bound to
