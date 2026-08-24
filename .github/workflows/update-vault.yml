@@ -86,6 +86,18 @@ jobs:
           # the second replayed the first's token, which is what 401'd on
           # 2026-08-24; that leg had never run under federation before then.
           mint() { bash .github/scripts/mint-oidc-token.sh; }
+          # A minted JWT lives 5 minutes, but `update --recluster` is a single
+          # process that runs ~10 (269 papers on 2026-08-24). When the SDK
+          # refreshes its access token it re-reads this file, so one mint per
+          # process is not enough either: it would find an assertion that is
+          # both expired and already burned. Keep the file stocked.
+          # 60s, not research-radio's 120s: the SDK begins its advisory refresh
+          # at 120s remaining and hard-fails at 30s, so a 120s rotation can
+          # leave a burned token in place for most of that window.
+          # Detached with output redirected — a background process holding the
+          # step's stdout open can stall step teardown. `|| true` keeps a
+          # transient failure from killing the loop under `set -e`.
+          ( while true; do sleep 60; OIDC_ECHO_CLAIMS=0 mint || true; done ) >/dev/null 2>&1 &
           if [ "${{ github.event.action }}" = "pipeline-summarize" ]; then
             mint
             python -m src.main summarize
