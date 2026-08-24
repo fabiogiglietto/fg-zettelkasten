@@ -52,40 +52,6 @@ jobs:
       - name: Write Google service-account credentials
         run: printf '%s' '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
 
-      # Fetched here rather than at job start: the GitHub OIDC token expires
-      # ~5 minutes after issuance and the pip install above runs first. The
-      # Anthropic SDK exchanges this JWT for a short-lived access token
-      # (Workload Identity Federation) — no API key involved.
-      # Recent runs finish in 1-2 min, well inside one token's life, so a
-      # single fetch is enough; a longer job would need a refresher loop.
-      - name: Fetch GitHub OIDC token
-        env:
-          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ runner.temp }}/anthropic-oidc-jwt
-        run: |
-          set -euo pipefail
-          # --fail and pipefail are load-bearing. Without them curl exits 0 on
-          # an HTTP error, the pipeline's status comes from jq, and a failed
-          # fetch writes "null" to the token file. The SDK sends the assertion
-          # verbatim with no local validation, so the run died a minute later
-          # deep inside Python on "Token exchange failed (HTTP 401) ... ensure
-          # your federation rule matches your identity token" — blaming the
-          # federation rule for a token that was never fetched.
-          curl -fsS --retry 5 --retry-delay 2 --retry-all-errors \
-            -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" \
-            | jq -er .value > "$ANTHROPIC_IDENTITY_TOKEN_FILE"
-          # Refuse to hand the SDK anything that is not a three-segment JWT.
-          awk -F. 'NF == 3 && length($1) && length($2) && length($3) { ok = 1 }
-                   END { exit !ok }' "$ANTHROPIC_IDENTITY_TOKEN_FILE" \
-            || { echo "::error::OIDC fetch produced no usable JWT"; exit 1; }
-          # Echo the non-secret claims (never the token). These are the values
-          # the federation rule is matched against, so a genuine rule mismatch
-          # is diagnosable from the run log instead of needing a probe branch.
-          # Best-effort: a decode quirk must not fail the run.
-          jq -rR 'split(".")[1] | gsub("-";"+") | gsub("_";"/") | @base64d | fromjson
-                  | {sub, aud, repository, event_name, ref, exp}' \
-            < "$ANTHROPIC_IDENTITY_TOKEN_FILE" || true
-
       - name: Run
         env:
           # Authenticates feed_client's GitHub Contents API reads, lifting the
@@ -93,7 +59,7 @@ jobs:
           # -> intermittent 403) to 5000/h per token.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Workload Identity Federation — no API key. The SDK exchanges the
-          # OIDC token fetched above for a short-lived access token. Do not
+          # OIDC token minted below for a short-lived access token. Do not
           # reintroduce ANTHROPIC_API_KEY here: it outranks federation in the
           # credential chain and would silently shadow it.
           ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
@@ -112,12 +78,24 @@ jobs:
           SLACK_INBOX_DRIVE_FOLDER_ID: ${{ secrets.SLACK_INBOX_DRIVE_FOLDER_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
+          # The OIDC assertion is single use: Anthropic burns its `jti` on the
+          # first token exchange and rejects a replay with `jti_reused`. Each
+          # `python -m src.main` below is a separate process with its own
+          # credential cache, so each performs its own exchange — mint a fresh
+          # JWT before every one. The weekly recluster leg runs two commands and
+          # the second replayed the first's token, which is what 401'd on
+          # 2026-08-24; that leg had never run under federation before then.
+          mint() { bash .github/scripts/mint-oidc-token.sh; }
           if [ "${{ github.event.action }}" = "pipeline-summarize" ]; then
+            mint
             python -m src.main summarize
           elif [ "${{ github.event.schedule }}" = "0 4 * * 1" ] || [ "${{ inputs.recluster }}" = "true" ]; then
+            mint
             python -m src.main refresh-topics
+            mint
             python -m src.main update --recluster
           else
+            mint
             python -m src.main update
           fi
 
