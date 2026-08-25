@@ -1,0 +1,25 @@
+{
+  "abstract": "This paper investigates 'false polarization' on social media—the mistaken impression that public opinion is more polarized than it actually is—and attributes it to users' self-selection into posting. Drawing on over a decade of linked social media behavior, controlled experiments, and a 40-country survey, the authors argue that people with more extreme ideological views are disproportionately likely to post about political issues, skewing the visible discourse. The result is a systematic distortion that makes online political conversation appear more divided than the underlying population.",
+  "key_claims": [
+    "Online political discourse appears more polarized than the actual distribution of opinions in the population.",
+    "This false polarization is driven substantially by selective posting behavior, in which users with stronger or more extreme ideological attitudes are more likely to post about political issues.",
+    "The phenomenon is broad in scope, observable across a large sample of posts, experimental settings, and many countries."
+  ],
+  "methods": [
+    "Analysis of more than a decade of social media behavior linked to individual ideological attitudes, spanning over 1.7 million posts.",
+    "A series of controlled experiments.",
+    "A large global survey covering 40 countries, with a combined total sample of N = 49,222."
+  ],
+  "findings": [
+    "Individuals with stronger ideological attitudes are more inclined to post political content, producing a skewed visible discourse.",
+    "The observed polarization in online discourse exceeds the actual polarization of opinions in the underlying population.",
+    "Evidence for these patterns is consistent across observational data, experiments, and the cross-national survey (based on the abstract as provided)."
+  ],
+  "contributions": [
+    "Provides comprehensive, multi-method evidence quantifying the magnitude and scope of false polarization on social media.",
+    "Links large-scale behavioral data on 1.7 million posts to individual-level ideological attitudes.",
+    "Offers cross-national generalizability through a 40-country survey."
+  ],
+  "framing": "The paper is positioned within research on political polarization, misperceptions of public opinion, and the effects of social media on democratic discourse, emphasizing self-selection as a mechanism generating apparent rather than actual polarization.",
+  "pdf_source": "abstract_only"
+}
