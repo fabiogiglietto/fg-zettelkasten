@@ -48,6 +48,7 @@ Studies of partisan attention, affective engagement, insularity and cross-partis
 - [[Rodarte2026-dk]]
 - [[Sarmiento2025-as]]
 - [[Schemer2026-mh]]
+- [[Schulz2026-ts]]
 - [[Smith2025-kc]]
 - [[Tai2026-qk]]
 - [[Van_Erkel2026-mk]]

@@ -3433,10 +3433,26 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-08-21T08:42:53.530766+00:00"
+    },
+    "bibtex:Schulz2026-ts": {
+      "note_path": "Papers/Schulz2026-ts.md",
+      "topics": [
+        "political-polarization-and-engagement",
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "111c313777393a914134964c3a95a11497fe7ffad227e5e115da5dcae79230f2",
+      "doi": "10.31234/osf.io/7z69m_v1",
+      "title": "Online Discourse is Falsely Polarized by Self-Selection",
+      "pdf_source": "abstract_only",
+      "content_hash": "58a6475e33dcfdaa65468ed6ce97814a90aad24c39c5ab342695f7ede60d1a72",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-08-25T06:33:15.413504+00:00"
     }
   },
   "last_full_cluster": "2026-08-24T17:17:06.149882+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "f52dc511cfbe7a463ce7eec89645c71bb13ac976fb65e2754a19d3b98f8fb732",
   "emergent_fp": "52dc766180e5b07d948083855f1593924afd8def93e39aac4299c1653aed120c",
   "structure_fps": {

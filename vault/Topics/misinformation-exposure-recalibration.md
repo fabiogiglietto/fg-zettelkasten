@@ -24,6 +24,7 @@ Papers that use empirical, large-scale, or naturalistic data to challenge alarmi
 - [[Lyons2026-ca]]
 - [[Nenno2025-xa]]
 - [[Oswald2025-km]]
+- [[Schulz2026-ts]]
 - [[Triedman2025-uy]]
 - [[Voelkel2026-lc]]
 - [[noauthor_undated-bm]]
