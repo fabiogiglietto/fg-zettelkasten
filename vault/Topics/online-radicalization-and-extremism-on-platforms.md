@@ -16,6 +16,7 @@ Empirical and review studies of how extremist actors (far-right, jihadist) explo
 - [[Bennett2025-xs]]
 - [[Bosch2024-hj]]
 - [[Cabbuag2024-me]]
+- [[De_Leon2025-qn]]
 - [[Groebner2026-pc]]
 - [[Kakavand2026-kt]]
 - [[Karo2026-dn]]

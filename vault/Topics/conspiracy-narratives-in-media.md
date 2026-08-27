@@ -14,6 +14,7 @@ Studies examining how conspiracy theories and conspiratorial narratives are form
 - [[Balluff2026-ev]]
 - [[Bouchafra2026-ts]]
 - [[Costello2024-bg]]
+- [[De_Leon2025-qn]]
 - [[Dubey2026-bl]]
 - [[Gardam2025-er]]
 - [[Giglietto2017-4375de2f]]

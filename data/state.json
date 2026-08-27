@@ -3448,10 +3448,26 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-08-25T06:33:15.413504+00:00"
+    },
+    "bibtex:De_Leon2025-qn": {
+      "note_path": "Papers/De_Leon2025-qn.md",
+      "topics": [
+        "conspiracy-narratives-in-media",
+        "online-radicalization-and-extremism-on-platforms"
+      ],
+      "assign_fp": "7dcc363684f175fc330e2c2aa7ca4c2e1bd143fc987957605aa7d0a6efb52792",
+      "doi": "10.31235/osf.io/grne7_v1",
+      "title": "The political weaponization of online content: From direct to networked exposure",
+      "pdf_source": "abstract_only",
+      "content_hash": "933aac6d512de154f8c9ff5a27f53db17eafb42232d2358eaa2d46e4ab982d6b",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-08-27T16:48:29.081382+00:00"
     }
   },
   "last_full_cluster": "2026-08-24T17:17:06.149882+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "f52dc511cfbe7a463ce7eec89645c71bb13ac976fb65e2754a19d3b98f8fb732",
   "emergent_fp": "52dc766180e5b07d948083855f1593924afd8def93e39aac4299c1653aed120c",
   "structure_fps": {
