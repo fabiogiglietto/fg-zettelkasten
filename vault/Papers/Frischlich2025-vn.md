@@ -5,7 +5,7 @@ authors: ["Lena Frischlich", "Henrik Olsson", "Abhishek Roy", "Heidi Schulze", "
 year: 2025
 doi: 10.1038/s44260-025-00053-z
 bibtex_key: Frischlich2025-vn
-topics: [information-disorder-and-fact-checking, misinformation-exposure-recalibration]
+topics: [information-disorder-theory, misinformation-exposure-recalibration]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1038/s44260-025-00053-z

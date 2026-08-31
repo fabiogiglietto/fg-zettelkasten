@@ -5,7 +5,7 @@ authors: ["Patrick van Erkel", "Michael Hameleers", "Aqsa Farooq", "Katjana Gatt
 year: 2026
 doi: 10.1080/10584609.2026.2671760
 bibtex_key: Van_Erkel2026-mk
-topics: [information-disorder-and-fact-checking, political-polarization-and-engagement]
+topics: [political-polarization-partisanship, misinformation-exposure-recalibration]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2671760

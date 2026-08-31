@@ -5,7 +5,7 @@ authors: ["Megan A. Brown", "Shubham Atreja", "Libby Hemphill", "Patrick Y. Wu"]
 year: 2025
 doi: 
 bibtex_key: Brown2025-jk
-topics: [llm-driven-content-analysis, llm-augmented-research-methods]
+topics: [llms-in-content-analysis, llm-augmented-research-methods]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2503.23243v2

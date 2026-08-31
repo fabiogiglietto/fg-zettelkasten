@@ -5,7 +5,7 @@ authors: ["Renee Lieu", "Oliver R. Hayes", "John Cook"]
 year: 2025
 doi: 10.1111/bjop.70049
 bibtex_key: Lieu2025-nl
-topics: [climate-and-misinformation-message-interventions, political-polarization-and-engagement]
+topics: [climate-and-misinformation-message-interventions, political-polarization-partisanship]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1111/bjop.70049

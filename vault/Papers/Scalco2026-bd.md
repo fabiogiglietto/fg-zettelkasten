@@ -5,7 +5,7 @@ authors: ["Irene Scalco", "Francesco Gesualdo", "Roy Cerqueti", "Matteo Cinelli"
 year: 2026
 doi: 
 bibtex_key: Scalco2026-bd
-topics: [health-misinformation-networks, information-disorder-and-fact-checking]
+topics: [health-misinformation-networks, information-disorder-theory]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.15476v1

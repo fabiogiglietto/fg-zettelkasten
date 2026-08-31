@@ -5,7 +5,7 @@ authors: ["Emilio Ferrara"]
 year: 2026
 doi: 
 bibtex_key: Emilio2026-ik
-topics: [generative-ai-disinformation, information-disorder-and-fact-checking]
+topics: [generative-ai-disinformation, platform-data-governance]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2601.00306v1

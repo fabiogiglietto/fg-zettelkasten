@@ -5,7 +5,7 @@ authors: ["Xinyu Wang", "Sai Koneru", "Sarah Rajtmajer"]
 year: 2024
 doi: 
 bibtex_key: Wang2026-ub
-topics: []
+topics: [platform-critique-anniversary-essays, social-tv-second-screen]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2406.04005v4

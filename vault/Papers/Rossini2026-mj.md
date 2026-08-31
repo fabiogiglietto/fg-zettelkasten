@@ -5,7 +5,7 @@ authors: ["Patrícia Rossini", "Camila Mont'Alverne", "Antonis Kalogeropoulos"]
 year: 2026
 doi: 10.1080/17457289.2026.2701896
 bibtex_key: Rossini2026-mj
-topics: [information-disorder-and-fact-checking, election-campaigns-on-social-media]
+topics: [political-polarization-partisanship, information-disorder-theory]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/17457289.2026.2701896

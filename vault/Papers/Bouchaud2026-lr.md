@@ -5,7 +5,7 @@ authors: ["Paul Bouchaud", "Pedro Ramaciotti"]
 year: 2026
 doi: 
 bibtex_key: Bouchaud2026-lr
-topics: [platform-policy-and-content-visibility, llm-driven-content-analysis]
+topics: [platform-data-governance, computational-network-structure-analysis]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.02624v1

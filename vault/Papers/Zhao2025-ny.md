@@ -5,7 +5,7 @@ authors: ["Bei Zhao", "Wujiong Ren", "Yuan He", "Hongzhong Zhang"]
 year: 2026
 doi: 10.1080/1369118x.2025.2531130
 bibtex_key: Zhao2025-ny
-topics: [coordinated-inauthentic-behavior, political-polarization-and-engagement]
+topics: [coordinated-inauthentic-behavior, political-polarization-partisanship]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2025.2531130

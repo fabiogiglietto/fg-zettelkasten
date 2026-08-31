@@ -5,7 +5,7 @@ authors: ["Timothy Graham", "Dominique Carlon"]
 year: 2026
 doi: 10.1177/14614448251409210
 bibtex_key: Graham2026-fb
-topics: []
+topics: [platform-performance-and-authenticity]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448251409210

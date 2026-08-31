@@ -5,7 +5,7 @@ authors: ["Anders Olof Larsson"]
 year: 2026
 doi: 10.5210/fm.v31i1.14448
 bibtex_key: Larsson2026-ro
-topics: [llm-driven-content-analysis, political-polarization-and-engagement]
+topics: [llms-in-content-analysis, political-polarization-partisanship]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.5210/fm.v31i1.14448

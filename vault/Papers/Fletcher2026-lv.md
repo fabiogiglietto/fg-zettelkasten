@@ -5,7 +5,7 @@ authors: ["Richard Fletcher", "Rasmus Kleis Nielsen"]
 year: 2026
 doi: 10.4324/9781003618041-6
 bibtex_key: Fletcher2026-lv
-topics: [information-disorder-and-fact-checking, platform-policy-and-content-visibility]
+topics: []
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.4324/9781003618041-6

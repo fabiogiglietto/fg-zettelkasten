@@ -5,7 +5,7 @@ authors: ["Arnav Arora", "Srishti Yadav", "Maria Antoniak", "Serge Belongie", "I
 year: 2025
 doi: 
 bibtex_key: Arora2025-tx
-topics: [political-polarization-and-engagement, llm-driven-content-analysis]
+topics: [llms-in-content-analysis, political-polarization-partisanship]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2503.20960v3

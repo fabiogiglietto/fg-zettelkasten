@@ -5,7 +5,7 @@ authors: ["Olivier Bergeron-Boutin", "Brendan Nyhan", "Jaime Settle", "Emily Tho
 year: 2026
 doi: 10.1126/sciadv.adz6502
 bibtex_key: Bergeron-Boutin2026-yh
-topics: [misinformation-exposure-recalibration, information-disorder-and-fact-checking]
+topics: [misinformation-exposure-recalibration]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1126/sciadv.adz6502

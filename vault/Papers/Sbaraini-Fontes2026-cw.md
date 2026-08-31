@@ -5,7 +5,7 @@ authors: ["Giulia Sbaraini Fontes", "Sergio Splendore"]
 year: 2026
 doi: 10.1177/02673231261473432
 bibtex_key: Sbaraini-Fontes2026-cw
-topics: [public-perceptions-and-labor-impacts-of-ai, platform-policy-and-content-visibility]
+topics: [public-perceptions-and-labor-impacts-of-ai, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/02673231261473432

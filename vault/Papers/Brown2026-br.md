@@ -5,7 +5,7 @@ authors: ["Megan A. Brown", "James Bisbee", "Angela Lai", "Richard Bonneau", "Jo
 year: 2026
 doi: 10.1080/10584609.2026.2671765
 bibtex_key: Brown2026-br
-topics: [platform-policy-and-content-visibility, misinformation-exposure-recalibration]
+topics: [online-radicalization-and-extremism-on-platforms, misinformation-exposure-recalibration]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2671765

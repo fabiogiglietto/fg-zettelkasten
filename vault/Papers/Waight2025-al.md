@@ -5,7 +5,7 @@ authors: ["Hannah Waight", "Solomon Messing", "Anton Shirikov", "Margaret E. Rob
 year: 2025
 doi: 10.1177/00491241251340080
 bibtex_key: Waight2025-al
-topics: [llm-driven-content-analysis, information-disorder-and-fact-checking]
+topics: [llms-in-content-analysis, coordinated-inauthentic-behavior]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1177/00491241251340080

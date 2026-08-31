@@ -5,7 +5,7 @@ authors: ["Idil Galip", "Ludmila Lupinacci"]
 year: 2026
 doi: 10.1177/13675494261468638
 bibtex_key: Galip2026-ix
-topics: [generative-ai-imaginaries]
+topics: [generative-ai-imaginaries, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/13675494261468638

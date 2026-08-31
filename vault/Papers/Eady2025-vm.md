@@ -5,7 +5,7 @@ authors: ["Gregory Eady", "Richard Bonneau", "Joshua A. Tucker", "Jonathan Nagle
 year: 2025
 doi: 10.1017/pan.2024.19
 bibtex_key: Eady2025-vm
-topics: [political-polarization-and-engagement, election-campaigns-on-social-media]
+topics: [political-polarization-partisanship, llms-in-content-analysis]
 citation_count: 9
 open_access: false
 source_url: https://doi.org/10.1017/pan.2024.19

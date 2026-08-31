@@ -5,7 +5,7 @@ authors: ["Marcus Bösch", "Tom Divon"]
 year: 2024
 doi: 10.1177/14614448241251804
 bibtex_key: Bosch2024-hj
-topics: [information-disorder-and-fact-checking, online-radicalization-and-extremism-on-platforms]
+topics: [generative-ai-disinformation, conspiracy-narratives-in-media]
 citation_count: 32
 open_access: false
 source_url: https://doi.org/10.1177/14614448241251804

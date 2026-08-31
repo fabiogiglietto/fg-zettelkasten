@@ -5,7 +5,7 @@ authors: ["Matthew DiGiuseppe", "Joshua Robison"]
 year: 2026
 doi: 
 bibtex_key: DiGiuseppe2026-pu
-topics: [public-perceptions-and-labor-impacts-of-ai, misinformation-exposure-recalibration]
+topics: [llms-in-content-analysis, political-polarization-partisanship]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.18092v1

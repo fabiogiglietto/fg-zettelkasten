@@ -6,7 +6,7 @@ year: 2017
 doi: 10.1177/2056305116686992
 bibtex_key: Giglietto2017-4375de2f
 kind: own
-topics: [political-polarization-and-engagement, conspiracy-narratives-in-media]
+topics: [political-polarization-partisanship]
 citation_count: 125
 open_access: true
 source_url: https://doi.org/10.1177/2056305116686992

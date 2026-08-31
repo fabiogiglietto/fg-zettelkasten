@@ -17,6 +17,7 @@ Papers examining the methodological foundations of online survey research, inclu
 - [[Stagnaro2025-pz]]
 - [[Ulloa2024-jm]]
 - [[UnknownUnknown-db]]
+- [[Voelkel2026-lc]]
 
 ## All papers (Dataview)
 

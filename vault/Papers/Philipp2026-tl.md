@@ -5,7 +5,7 @@ authors: ["Philipp Darius", "Johannes Breuer", "Simon Kruschinski", "Felicia Loe
 year: 2026
 doi: 10.14763/2026.1.2080
 bibtex_key: Philipp2026-tl
-topics: [platform-data-access-and-governance, election-campaigns-on-social-media]
+topics: [platform-data-governance, coordinated-inauthentic-behavior]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.14763/2026.1.2080

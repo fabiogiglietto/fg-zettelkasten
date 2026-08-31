@@ -5,7 +5,7 @@ authors: ["Sander van der Linden", "Debra Louison-Lavoy", "Nicholas Blazer", "Na
 year: 2026
 doi: 10.37016/mr-2020-193
 bibtex_key: van-der-Linden2026-jt
-topics: [climate-and-misinformation-message-interventions, information-disorder-and-fact-checking]
+topics: [climate-and-misinformation-message-interventions]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.37016/mr-2020-193

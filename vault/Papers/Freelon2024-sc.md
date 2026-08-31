@@ -5,7 +5,7 @@ authors: ["Deen Freelon", "Cristina Monzer", "Gayoung Jeon", "Cameron Moy", "Nat
 year: 2024
 doi: 10.1177/00027162251372557
 bibtex_key: Freelon2024-sc
-topics: [platform-data-access-and-governance]
+topics: [platform-data-governance, digital-research-methods-teaching]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1177/00027162251372557

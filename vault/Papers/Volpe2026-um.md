@@ -5,7 +5,7 @@ authors: ["Camilla Volpe"]
 year: 2025
 doi: 10.13136/isr.v16i16s.975
 bibtex_key: Volpe2026-um
-topics: [platform-policy-and-content-visibility, public-perceptions-and-labor-impacts-of-ai]
+topics: [platform-performance-and-authenticity]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.13136/isr.v16i16s.975

@@ -5,7 +5,7 @@ authors: ["Joseph Bak-Coleman", "Jevin West", "Cailin O'Connor", "Carl T. Bergst
 year: 2026
 doi: 
 bibtex_key: Bak-Coleman2026-mk
-topics: [platform-data-access-and-governance, platform-critique-anniversary-essays]
+topics: [platform-data-governance, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2601.11507v1

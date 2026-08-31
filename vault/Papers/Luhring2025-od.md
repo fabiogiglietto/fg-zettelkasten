@@ -5,7 +5,7 @@ authors: ["Jula Lühring", "Hannah Metzler", "Ruggero Lazzaroni", "Apeksha Shett
 year: 2025
 doi: 10.51685/jqd.2025.003
 bibtex_key: Luhring2025-od
-topics: [information-disorder-and-fact-checking, misinformation-exposure-recalibration]
+topics: [platform-data-governance, misinformation-exposure-recalibration]
 citation_count: 4
 open_access: false
 source_url: https://doi.org/10.51685/jqd.2025.003

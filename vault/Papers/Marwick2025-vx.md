@@ -5,7 +5,7 @@ authors: ["Marwick, Alice E", "Furl, Katherine"]
 year: 2025
 doi: 
 bibtex_key: Marwick2025-vx
-topics: [online-radicalization-and-extremism-on-platforms, information-disorder-and-fact-checking]
+topics: [online-radicalization-and-extremism-on-platforms, generative-ai-disinformation]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=True%20costs%20of%20misinformation%7C%20mountains%20of%20evidence%3A%20Processual%20%E2%80%9Credpilling%E2%80%9D%20as%20a%20Socio-technical%20effect%20of%20disinformation

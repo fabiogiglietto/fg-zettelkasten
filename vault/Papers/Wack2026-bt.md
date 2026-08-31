@@ -5,7 +5,7 @@ authors: ["Morgan Wack", "Stephen Prochaska"]
 year: 2026
 doi: 10.1177/20563051261462092
 bibtex_key: Wack2026-bt
-topics: [generative-ai-disinformation, information-disorder-and-fact-checking]
+topics: [generative-ai-disinformation, misinformation-exposure-recalibration]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20563051261462092

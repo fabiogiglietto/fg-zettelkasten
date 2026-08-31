@@ -5,7 +5,7 @@ authors: ["Paul Balluff", "Hajo G. Boomgaarden", "Annie Waldherr"]
 year: 2026
 doi: 10.31235/osf.io/43nvp_v1
 bibtex_key: Balluff2026-ev
-topics: [conspiracy-narratives-in-media, computational-network-structure-analysis]
+topics: [computational-network-structure-analysis, conspiracy-narratives-in-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/43nvp_v1

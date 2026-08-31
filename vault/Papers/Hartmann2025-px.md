@@ -5,7 +5,7 @@ authors: ["David Hartmann", "Sonja Mei Wang", "Lena Pohlmann", "Bettina Berendt"
 year: 2025
 doi: 10.1007/s42001-025-00381-z
 bibtex_key: Hartmann2025-px
-topics: [political-polarization-and-engagement, misinformation-exposure-recalibration]
+topics: [political-polarization-partisanship, misinformation-exposure-recalibration]
 citation_count: 41
 open_access: false
 source_url: https://doi.org/10.1007/s42001-025-00381-z

@@ -5,7 +5,7 @@ authors: ["Bernhard Rieder", "Bastian August", "Brogan Latil"]
 year: 2026
 doi: 10.1177/14614448251409209
 bibtex_key: Rieder2026-pp
-topics: [online-radicalization-and-extremism-on-platforms, platform-policy-and-content-visibility]
+topics: [online-radicalization-and-extremism-on-platforms, platform-data-governance]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448251409209
