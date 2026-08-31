@@ -1,0 +1,44 @@
+{
+  "abstract": "This paper presents the first qualitative study focused on researchers' lived experiences of legal risks arising from overbroad computer crime, intellectual property, and related laws (e.g., the US Computer Fraud and Abuse Act and UK Computer Misuse Act). Drawing on interviews with 36 researchers (covering 130 projects/incidents) and 8 professionals who support such researchers, it documents the chilling effects, emotional and professional impacts, and coping strategies researchers use to navigate legal uncertainty. The authors synthesise actionable strategies for researchers and provide empirical evidence to support policy reform.",
+  "key_claims": [
+    "Overbroad anti-hacking, IP, and related laws fail to distinguish malicious hacking from good-faith research, creating serious legal risks and chilling effects that deter public-interest research.",
+    "Legal risk is ubiquitous or unavoidable in certain research fields (vulnerability and social computing research most prominently), yet the community's understanding rests largely on anecdote rather than systematic study.",
+    "Chilling effects are real and consequential: researchers abandon projects, suppress results, and 'stockpile' undisclosed vulnerabilities due to legal fear, creating downstream security and coercion risks.",
+    "The legal risk landscape has improved for vulnerability research over decades (prosecutorial discretion, DOJ policies, DMCA exemptions), but risks for social computing research have escalated, driven by a changing US political climate and politically motivated threats.",
+    "Having one's own lawyer is important and researchers report overwhelmingly positive experiences with personal counsel, whereas institutional lawyer experiences are mixed because institutional lawyers serve the institution's interests, not the researcher's.",
+    "Empirical documentation of these lived experiences can and should support law and policy reform."
+  ],
+  "methods": [
+    "Qualitative study using reflexive thematic analysis (following Mason and Saldaña), with coding conducted in NVivo.",
+    "Semi-structured interviews (30–120 minutes, ~75 min average, ~54 hours total) conducted Nov 2024–Feb 2026 by video/audio call or in person.",
+    "Two participant groups: NR = 36 researchers with US/UK research-related legal risk experience (discussing 130 projects/incidents) and NS = 8 supporting professionals such as lawyers who had each helped at least 20 (some hundreds of) researchers; N = 44 total.",
+    "Recruitment via public documents, professional networks, snowball sampling, and outreach to researcher communities; participants spanned academia, industry, independent, and government research.",
+    "Systematic documentation of project attributes (experience, position, timing, research area, jurisdiction, type of legal risk, whether threatened, whether legally represented); corroboration via privately shared documents (emails, threats).",
+    "Strong ethics/confidentiality mitigations: IRB and institutional approval (US and UK), verbal consent, deletion of consent forms, optional audio recording, end-to-end encrypted communication (Signal/Zoom/Keybase), anonymised and participant-approved quotes.",
+    "Study did not reach saturation; authors stopped to keep findings timely and explicitly disclaim representativeness and quantitative generalisability."
+  ],
+  "findings": [
+    "Projects spanned over a dozen research types; vulnerability research is the area with the longest history of legal risk, while social computing surged since 2020 (four times as many projects and twice as many legal threats as the next largest category).",
+    "Twenty-three participants described legal risk as ubiquitous, unavoidable, or very common in their fields; researchers commonly framed their work as a public service despite risks.",
+    "About 30% of projects involved actual legal threats; most threats did not escalate into prosecution or litigation, and some were on legally tenuous grounds.",
+    "Emotional impacts were pronounced: fear, worry, frustration, and stress were the most common feelings (90 expressions across interviews); some reported all-consuming anxiety, weight loss, sleeplessness; a few found civil risk exciting but none found criminal risk exciting.",
+    "Chilling effects included abandoning or not publishing projects and avoiding research areas; 'stockpiling' of undisclosed vulnerabilities was reported at significant scale, with three researchers approached with 'life-changing money' to buy stockpiles and silence.",
+    "Severe consequences occurred: job loss and blacklisting, criminal convictions (later overturned), months of incarceration, and a collaborator likely unable to return to their home country.",
+    "Legal representation: researchers retained their own lawyer in 30 of 130 projects; most who accessed counsel did so at no cost, predominantly via pro bono (17 of 30 projects), raising sustainability concerns.",
+    "Industry lawyers and employers were generally experienced as protective; academic/university institutional support varied widely and was more often negative than positive.",
+    "Jurisdictional differences were less stark than expected—UK researchers often navigate US law; only 15% of UK-based projects involved an actual threat vs. 40% of US-based; most threats were US civil threats; the UK CMA lacks a civil cause of action, reducing private-party risk exposure.",
+    "The second Trump administration and politically motivated (McCarthy-esque) threats, including Congressional investigations, were seen as making social computing research risk more unpredictable; researchers noted the fragility of relying on norms rather than laws.",
+    "Conference ethics review was widely criticised as immature and sometimes making unnecessary or unethical demands, whereas institutional (IRB/Ethics Committee) review was viewed as generally reasonable.",
+    "Terms of Service violations were a recurring and often necessary feature of essential research, especially in social computing; bug bounty and vulnerability disclosure programmes can create restrictive NDAs and heightened risk, and requesting payment can appear as extortion."
+  ],
+  "contributions": [
+    "Provides the first qualitative, systematic empirical study of researchers' lived experiences with legal risks, moving beyond anecdote and 'professional folklore.'",
+    "Offers an unprecedented big-picture view of the legal risk landscape across UK and US computer science research, including trends over time and across subfields.",
+    "Identifies and names the phenomenon of 'stockpiling' undisclosed vulnerabilities as a systemic consequence of legal risk with security implications.",
+    "Synthesises actionable strategies, precautions, and advice for researchers, plus three broad unilaterally actionable recommendations (think through risks early; consider stakeholder incentives and public communication; build a support network of trusted colleagues and lawyers).",
+    "Documents the role and value of legal representation (personal vs. institutional) and the reliance on and limits of pro bono support.",
+    "Supplies empirical evidence to inform law and policy reform around computer crime, IP, and related laws."
+  ],
+  "framing": "The paper positions itself within security research, law, and science-and-technology policy scholarship on 'chilling effects' and overbroad computer crime and IP law (e.g., the CFAA, CMA, DMCA). It responds to a gap where the research community broadly recognises legal risks but lacks systematic empirical evidence, arguing that documenting lived experiences is essential groundwork for legal and institutional reform.",
+  "pdf_source": "drive"
+}
