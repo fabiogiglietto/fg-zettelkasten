@@ -3471,10 +3471,25 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-08-27T16:48:29.081382+00:00"
+    },
+    "bibtex:Park2026-tr": {
+      "note_path": "Papers/Park2026-tr.md",
+      "topics": [
+        "platform-data-governance",
+        "digital-research-methods-teaching"
+      ],
+      "assign_fp": "cc247166c9592c153ea7f54f450ff29ee555bd4bce63102cb742c3d7923e1b88",
+      "doi": "",
+      "title": "&quot;Sticking their heads out above the parapets&quot;: Lived Experiences of Legal Risks in Research",
+      "pdf_source": "drive",
+      "content_hash": "c1f7d0a1a0d6cf41394b3ab05a702c129b6ee13420d1843d3e4a082ceee96e6a",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-08-31T14:46:59.718331+00:00"
     }
   },
   "last_full_cluster": "2026-08-31T11:05:27.750150+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "f9e80e56216144585933f4ec3c2510214d87c96d6e62efbddf2fdbeedb00b9e3",
   "emergent_fp": "ff1da40ff8829f57a49c6021649d498761802b264996f833ed3cc647a30f4ddf",
   "structure_fps": {

@@ -59,6 +59,7 @@ Study of social media platforms' data-access regimes and content-moderation poli
 - [[Murtfeldt2025-wu]]
 - [[Ohme2026-nv]]
 - [[Oprea2025-lf]]
+- [[Park2026-tr]]
 - [[Peters2026-mo]]
 - [[Philipp2026-tl]]
 - [[Pierri2025-hm]]

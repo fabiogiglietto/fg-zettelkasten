@@ -23,6 +23,7 @@ Teaching and tool-building around social network analysis, digital methods, gene
 - [[Marino2024-2fbc690f]]
 - [[Meher2025-qb]]
 - [[Ober2026-vd]]
+- [[Park2026-tr]]
 - [[Rieder2025-ju]]
 - [[Ulloa2024-jm]]
 - [[Yang2026-tq]]
