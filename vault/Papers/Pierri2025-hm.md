@@ -1,6 +1,6 @@
 ---
-title: "Research opportunities and challenges of the EU&#x27;s Digital Services Act"
-aliases: ["Research opportunities and challenges of the EU&#x27;s Digital Services Act"]
+title: "Research opportunities and challenges of the EU's Digital Services Act"
+aliases: ["Research opportunities and challenges of the EU's Digital Services Act"]
 authors: ["Francesco Pierri", "Theo Araujo", "Sanne Kruikemeier", "Philipp Lorenz-Spreen", "Mariek M. P. Vanden Abeele", "Laura Vandenbosch", "Joana Gonçalves-Sa", "Przemyslaw A. Grabowicz"]
 year: 2025
 doi: 
@@ -14,9 +14,9 @@ pdf_available: true
 discovery_date: 2025-12-15T00:00:00Z
 ---
 
-# Research opportunities and challenges of the EU&#x27;s Digital Services Act
+# Research opportunities and challenges of the EU's Digital Services Act
 
-> Pierri, F., Araujo, T., Kruikemeier, S., Lorenz-Spreen, P., Abeele, M. M. P. V., Vandenbosch, L., Gonçalves-Sa, J., & Grabowicz, P. A. (2025). Research opportunities and challenges of the EU&#x27;s Digital Services Act. *arXiv [cs.CY]*.
+> Pierri, F., Araujo, T., Kruikemeier, S., Lorenz-Spreen, P., Abeele, M. M. P. V., Vandenbosch, L., Gonçalves-Sa, J., & Grabowicz, P. A. (2025). Research opportunities and challenges of the EU's Digital Services Act. *arXiv [cs.CY]*.
 >
 > [View paper](http://arxiv.org/abs/2512.14223v1)
 

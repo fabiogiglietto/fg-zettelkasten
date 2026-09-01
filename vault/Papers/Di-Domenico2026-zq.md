@@ -1,6 +1,6 @@
 ---
-title: "don&#x27;t you know that you&#x27;re toxic? how influencer‐driven misinformation fuels online toxicity"
-aliases: ["don&#x27;t you know that you&#x27;re toxic? how influencer‐driven misinformation fuels online toxicity"]
+title: "don't you know that you're toxic? how influencer‐driven misinformation fuels online toxicity"
+aliases: ["don't you know that you're toxic? how influencer‐driven misinformation fuels online toxicity"]
 authors: ["Giandomenico Di Domenico", "Federico Mangió", "Denitsa Dineva"]
 year: 2026
 doi: 10.1002/mar.70106
@@ -14,9 +14,9 @@ pdf_available: true
 discovery_date: 2026-01-25T09:11:59.349818Z
 ---
 
-# don&#x27;t you know that you&#x27;re toxic? how influencer‐driven misinformation fuels online toxicity
+# don't you know that you're toxic? how influencer‐driven misinformation fuels online toxicity
 
-> Domenico, G. D., Mangió, F., & Dineva, D. (2026). don&#x27;t you know that you&#x27;re toxic? how influencer‐driven misinformation fuels online toxicity. *Psychology & Marketing*. https://doi.org/10.1002/mar.70106
+> Domenico, G. D., Mangió, F., & Dineva, D. (2026). don't you know that you're toxic? how influencer‐driven misinformation fuels online toxicity. *Psychology & Marketing*. https://doi.org/10.1002/mar.70106
 >
 > [View paper](https://doi.org/10.1002/mar.70106)
 

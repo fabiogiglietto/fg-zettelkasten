@@ -1,6 +1,6 @@
 ---
-title: "Forgetful by design? A critical audit of YouTube&#x27;s search API for academic research"
-aliases: ["Forgetful by design? A critical audit of YouTube&#x27;s search API for academic research"]
+title: "Forgetful by design? A critical audit of YouTube's search API for academic research"
+aliases: ["Forgetful by design? A critical audit of YouTube's search API for academic research"]
 authors: ["Bernhard Rieder", "Adrian Padilla", "Oscar Coromina"]
 year: 2025
 doi: 10.1080/1369118X.2025.2591767
@@ -14,9 +14,9 @@ pdf_available: true
 discovery_date: 2025-06-15T00:00:00Z
 ---
 
-# Forgetful by design? A critical audit of YouTube&#x27;s search API for academic research
+# Forgetful by design? A critical audit of YouTube's search API for academic research
 
-> Rieder, B., Padilla, A., & Coromina, O. (2025). Forgetful by design? A critical audit of YouTube&#x27;s search API for academic research. *Information, Communication and Society, 1-20*. https://doi.org/10.1080/1369118X.2025.2591767
+> Rieder, B., Padilla, A., & Coromina, O. (2025). Forgetful by design? A critical audit of YouTube's search API for academic research. *Information, Communication and Society, 1-20*. https://doi.org/10.1080/1369118X.2025.2591767
 >
 > [View paper](https://doi.org/10.1080/1369118X.2025.2591767)
 

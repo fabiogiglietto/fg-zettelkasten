@@ -1,6 +1,6 @@
 ---
-title: "Towards automating scientific review with Google&#x27;s Paper Assistant Tool"
-aliases: ["Towards automating scientific review with Google&#x27;s Paper Assistant Tool"]
+title: "Towards automating scientific review with Google's Paper Assistant Tool"
+aliases: ["Towards automating scientific review with Google's Paper Assistant Tool"]
 authors: ["Rajesh Jayaram", "Drew Tyler", "David Woodruff", "Corinna Cortes", "Yossi Matias", "Vahab Mirrokni", "Vincent Cohen-Addad"]
 year: 2026
 doi: 
@@ -14,9 +14,9 @@ pdf_available: true
 discovery_date: 2026-07-02T11:04:44.126112Z
 ---
 
-# Towards automating scientific review with Google&#x27;s Paper Assistant Tool
+# Towards automating scientific review with Google's Paper Assistant Tool
 
-> Jayaram, R., Tyler, D., Woodruff, D., Cortes, C., Matias, Y., Mirrokni, V., & Cohen-Addad, V. (2026). Towards automating scientific review with Google&#x27;s Paper Assistant Tool. *arXiv [cs.LG]*.
+> Jayaram, R., Tyler, D., Woodruff, D., Cortes, C., Matias, Y., Mirrokni, V., & Cohen-Addad, V. (2026). Towards automating scientific review with Google's Paper Assistant Tool. *arXiv [cs.LG]*.
 >
 > [View paper](http://arxiv.org/abs/2606.28277v1)
 

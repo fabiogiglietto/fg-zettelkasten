@@ -1,6 +1,6 @@
 ---
-title: "TikTok&#x27;s Research API: Problems Without Explanations"
-aliases: ["TikTok&#x27;s Research API: Problems Without Explanations"]
+title: "TikTok's Research API: Problems Without Explanations"
+aliases: ["TikTok's Research API: Problems Without Explanations"]
 authors: ["Carlos Entrena-Serrano", "Martin Degeling", "Salvatore Romano", "Raziye Buse Çetin"]
 year: 2025
 doi: 
@@ -14,9 +14,9 @@ pdf_available: false
 discovery_date: 2025-06-15T00:00:00Z
 ---
 
-# TikTok&#x27;s Research API: Problems Without Explanations
+# TikTok's Research API: Problems Without Explanations
 
-> Entrena-Serrano, C., Degeling, M., Romano, S., & Çetin, R. B. (2025). TikTok&#x27;s Research API: Problems Without Explanations. *arXiv [cs.CY]*.
+> Entrena-Serrano, C., Degeling, M., Romano, S., & Çetin, R. B. (2025). TikTok's Research API: Problems Without Explanations. *arXiv [cs.CY]*.
 >
 > [View paper](http://arxiv.org/abs/2506.09746v2)
 

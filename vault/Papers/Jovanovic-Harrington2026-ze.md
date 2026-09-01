@@ -1,6 +1,6 @@
 ---
-title: "Beyond detection: How Serbia&#x27;s SNS party mimics authentic support through coordinated inauthentic behaviour"
-aliases: ["Beyond detection: How Serbia&#x27;s SNS party mimics authentic support through coordinated inauthentic behaviour"]
+title: "Beyond detection: How Serbia's SNS party mimics authentic support through coordinated inauthentic behaviour"
+aliases: ["Beyond detection: How Serbia's SNS party mimics authentic support through coordinated inauthentic behaviour"]
 authors: ["Ana Jovanovic-Harrington", "Alessio Cornia"]
 year: 2026
 doi: 10.1177/02673231261422076
@@ -14,9 +14,9 @@ pdf_available: false
 discovery_date: 2026-03-05T05:07:25.445337Z
 ---
 
-# Beyond detection: How Serbia&#x27;s SNS party mimics authentic support through coordinated inauthentic behaviour
+# Beyond detection: How Serbia's SNS party mimics authentic support through coordinated inauthentic behaviour
 
-> Jovanovic-Harrington, A., & Cornia, A. (2026). Beyond detection: How Serbia&#x27;s SNS party mimics authentic support through coordinated inauthentic behaviour. *European Journal of Communication*. https://doi.org/10.1177/02673231261422076
+> Jovanovic-Harrington, A., & Cornia, A. (2026). Beyond detection: How Serbia's SNS party mimics authentic support through coordinated inauthentic behaviour. *European Journal of Communication*. https://doi.org/10.1177/02673231261422076
 >
 > [View paper](https://doi.org/10.1177/02673231261422076)
 

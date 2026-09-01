@@ -1,6 +1,6 @@
 ---
-title: "Where&#x27;s the Evidence that Respondents Understand Your Survey Questions?"
-aliases: ["Where&#x27;s the Evidence that Respondents Understand Your Survey Questions?"]
+title: "Where's the Evidence that Respondents Understand Your Survey Questions?"
+aliases: ["Where's the Evidence that Respondents Understand Your Survey Questions?"]
 authors: ["Hinck, Musashi", "King, Gary", "Nakamura, Kentaro", "Stewart, Brandon M"]
 year: 2026
 doi: 
@@ -14,9 +14,9 @@ pdf_available: false
 discovery_date: 2026-07-03T05:40:54.467243Z
 ---
 
-# Where&#x27;s the Evidence that Respondents Understand Your Survey Questions?
+# Where's the Evidence that Respondents Understand Your Survey Questions?
 
-> Hinck, M., King, G., Nakamura, K., & Stewart, B. M. (2026). Where&#x27;s the Evidence that Respondents Understand Your Survey Questions?.
+> Hinck, M., King, G., Nakamura, K., & Stewart, B. M. (2026). Where's the Evidence that Respondents Understand Your Survey Questions?.
 >
 > [View paper](https://scholar.google.com/scholar?q=Where%27s%20the%20Evidence%20that%20Respondents%20Understand%20Your%20Survey%20Questions%3F)
 
