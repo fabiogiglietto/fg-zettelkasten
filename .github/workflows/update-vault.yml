@@ -125,7 +125,21 @@ jobs:
       # Summarize leg only: kick research-radio so it builds the podcast from
       # the summary just committed. The update leg ends the chain — no dispatch.
       - name: Trigger research-radio
-        if: github.event.action == 'pipeline-summarize'
+        # Skipped outright where there is no podcast leg. The MINE fork has
+        # none — research-radio never sources the Slack-inbox folder, so a
+        # team paper never gets an episode — and its dispatch token has no
+        # access to that repo, so the step failed and took the Quartz build
+        # and the Pages deploy behind it down with it. It went unnoticed
+        # because `pipeline-summarize` had never been dispatched there: every
+        # earlier run was `pipeline-finalize`, which this `if` already skips.
+        #
+        # A gate rather than `continue-on-error`: soft-failing would still
+        # make a doomed API call and still red the step on every run, which is
+        # silencing the symptom. Unset means enabled, so the fg chain is
+        # unaffected; the fork sets PODCAST_CHAIN_ENABLED=false.
+        if: >-
+          github.event.action == 'pipeline-summarize'
+          && vars.PODCAST_CHAIN_ENABLED != 'false'
         uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.PIPELINE_DISPATCH_TOKEN }}
