@@ -31,6 +31,7 @@ Foundational conceptual and taxonomic work on fake news, misleading information,
 - [[Marwick2026-qd]]
 - [[Mosca2026-yh]]
 - [[Munger2025-cz]]
+- [[Pierri2026-ib]]
 - [[Poliakoff2026-fa]]
 - [[Ramos2026-qo]]
 - [[Rohrbach2026-rc]]

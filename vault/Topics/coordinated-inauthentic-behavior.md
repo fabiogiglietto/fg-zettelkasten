@@ -54,7 +54,6 @@ Detection, monitoring and theorization of coordinated link-sharing and inauthent
 - [[Orlando2025-ul]]
 - [[Pante2025-pq]]
 - [[Philipp2026-tl]]
-- [[Pierri2025-hm]]
 - [[Poliakoff2026-fa]]
 - [[Ramos2026-qo]]
 - [[Rodriguez_Farres2025-sg]]
