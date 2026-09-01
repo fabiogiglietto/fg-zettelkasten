@@ -186,6 +186,33 @@ def _related_keys(state: dict, paper_id: str, topics: list[str]) -> list[str]:
     return out
 
 
+def state_mod_content_hash(abstract: str | None, podcast: bool) -> str:
+    """`state.content_hash`, importable at module level for `mark_processed`."""
+    from . import state as state_mod
+    return state_mod.content_hash(abstract, podcast)
+
+
+def mark_processed(entry: dict, abstract: str | None, podcast: bool) -> None:
+    """Record that `entry`'s note has been rendered at its current content.
+
+    Split out of `cmd_update` so the ordering it encodes is stated once: this
+    must run *after* `write_note`, never before. `content_hash` is the only
+    signal that a paper still needs re-rendering, and the render loop bails
+    for a paper whose summary is missing from disk. Advancing the hash first
+    therefore consumes the signal for a paper that was never re-rendered — the
+    next run classifies it "unchanged" and never looks at it again, freezing
+    the stale note in the vault for good.
+
+    Only a `changed` paper can hit that: the `new` path summarizes on the spot
+    when no summary exists, so its render is never skipped. A metadata
+    backfill produces exactly `changed` papers, and deleting a junk summary so
+    it regenerates is exactly the state that would have been lost.
+    """
+    entry["podcast_linked"] = podcast
+    entry["content_hash"] = state_mod_content_hash(abstract, podcast)
+    entry["last_processed"] = _now()
+
+
 def classify_feed_paper(entry: dict | None, new_hash: str) -> str:
     """How `update` should treat one feed paper: new / changed / tombstoned / unchanged.
 
@@ -838,15 +865,9 @@ def cmd_update(cfg: dict, args) -> int:
             entry["supersedes"] = supersedes_map[paper.bibtex_key]
         state["papers"][paper.id] = entry
 
-    # Changed papers: refresh the state hash (e.g. a podcast episode appeared).
-    for paper in changed_papers:
-        podcast = paper.id in episodes
-        entry = state["papers"][paper.id]
-        entry["podcast_linked"] = podcast
-        entry["content_hash"] = state_mod.content_hash(paper.abstract, podcast)
-        entry["last_processed"] = _now()
-
-    # Re-render the note for every new or changed paper.
+    # Re-render the note for every new or changed paper. A changed paper is
+    # marked processed only once its note is actually written — see
+    # `mark_processed`.
     touched = new_papers + changed_papers
     for paper in touched:
         entry = state["papers"][paper.id]
@@ -870,6 +891,7 @@ def cmd_update(cfg: dict, args) -> int:
             supersedes=entry.get("supersedes"),
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
+        mark_processed(entry, paper.abstract, paper.id in episodes)
 
     # --- Slack digests ----------------------------------------------------
     # Post each queued paper's digest to #toread exactly once. Scope and
@@ -1035,15 +1057,9 @@ def cmd_update(cfg: dict, args) -> int:
         if paper.bibtex_key in supersedes_map:
             state["papers"][paper.id]["supersedes"] = supersedes_map[paper.bibtex_key]
 
-    # Changed own papers: refresh the state hash (e.g. a podcast episode appeared).
-    for paper in own_changed:
-        podcast = paper.id in episodes
-        entry = state["papers"][paper.id]
-        entry["podcast_linked"] = podcast
-        entry["content_hash"] = state_mod.content_hash(paper.abstract, podcast)
-        entry["last_processed"] = _now()
-
-    # Re-render the note for every new or changed own paper (frontmatter kind: own).
+    # Re-render the note for every new or changed own paper (frontmatter
+    # kind: own). As on the feed path, a changed own paper is marked processed
+    # only once its note is written — see `mark_processed`.
     own_touched = own_new + own_changed
     for paper in own_touched:
         entry = state["papers"][paper.id]
@@ -1063,6 +1079,7 @@ def cmd_update(cfg: dict, args) -> int:
             supersedes=entry.get("supersedes"),
         )
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
+        mark_processed(entry, paper.abstract, paper.id in episodes)
 
     # Own papers are deliberately *not* counted toward papers_since_cluster:
     # the capped backfill would otherwise trigger reclusters mid-drain. They
