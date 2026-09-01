@@ -1,0 +1,34 @@
+{
+  "abstract": "This perspective piece examines the research opportunities and obstacles created by Article 40 of the European Union's Digital Services Act (DSA), which established a legal and technical framework enabling vetted researchers to access public and non-public data from very large online platforms (VLOPs) and search engines (VLOSEs). Written by researchers with direct involvement in EU policy discussions on the Article 40 Delegated Act (adopted July 2025), the authors argue that despite the DSA's landmark potential for platform transparency and accountability, significant legal, technical, and organizational barriers remain. They propose three practical recommendations to help the DSA fulfill its transparency and accountability goals.",
+  "key_claims": [
+    "Article 40 of the DSA is a milestone for platform transparency and accountability, giving vetted researchers a legal framework and technical pipeline to request platform data needed to study systemic online risks.",
+    "The goals of researchers, EU citizens, governments, and platforms are often misaligned, and researchers should expect resistance from platforms including delays, bureaucratic hurdles, and legal obstruction.",
+    "There are severe power and resource asymmetries between academic and corporate research in funding, information access, legal capacity, and public reach.",
+    "Practical implementation bottlenecks—slow vetting, mismatched expectations between researchers, regulators, and platforms, and a circular resource problem—threaten effective data access.",
+    "Large language models (LLMs) meet the DSA's criteria as intermediary services capable of inducing systemic risks and represent a regulatory blind spot that should be urgently addressed.",
+    "If Article 40's implementation is obstructed, researchers' ability to scrutinize digital media will be severely limited, undermining public trust and transparency."
+  ],
+  "methods": [
+    "Informed perspective/opinion piece rather than an empirical study.",
+    "Draws on the authors' direct experience in EU policy discussions on the Article 40 Delegated Act.",
+    "Based on an 18-month ERC-supported pilot program bringing together researchers, DG-CONNECT, and national Digital Services Coordinators (DSCs).",
+    "Draws on a roundtable discussion with major platforms and the European Commission.",
+    "Synthesizes prior literature and documented incidents (e.g., the Meta collaboration research analysis, legal cases involving X)."
+  ],
+  "findings": [
+    "The DSA identifies four categories of systemic societal risks: risks to democratic processes, fundamental rights, public health, and dissemination of illegal content.",
+    "Platform representatives expressed varying reluctance to direct data sharing, favoring alternatives such as the 'independence by permission' model where platforms test researcher hypotheses.",
+    "Industry-aligned research tends to produce outcomes favoring platform interests; a cited example found Meta-collaboration research portrayed platforms as more effective at curbing misinformation partly by not disclosing temporary algorithmic changes during the 2020 US election.",
+    "Data access requests can now be submitted through a dedicated EU portal, with first decisions expected in late February 2026.",
+    "A 'circular problem of resources' exists: data access is often needed to win grants, but without funding researchers lack time and legal support to complete complex data-access applications.",
+    "Platforms use their own reach to promote self-serving narratives framing transparency regulation as censorship, reaching tens of millions of people, which academics cannot counterbalance."
+  ],
+  "contributions": [
+    "Provides an insider perspective on the practical challenges of implementing DSA Article 40 from researchers involved in the policy process.",
+    "Articulates a structured typology of obstacles: misaligned incentives, power and resource asymmetries, and implementation bottlenecks.",
+    "Offers three concrete recommendations: streamline access procedures via standardized data-sharing frameworks and dataset categorization; support and foster independent research to address resource asymmetries; and close regulatory blind spots (notably around LLMs).",
+    "Raises the argument that LLMs should fall within the DSA's regulatory scope as systemic-risk-bearing intermediary services."
+  ],
+  "framing": "The paper positions itself within debates on platform governance, transparency regulation, and independent scientific scrutiny of digital media, contrasting the EU's DSA approach with a US trend toward limiting oversight (e.g., cancellation of fact-checking and DEI programs). It engages the science-policy conversation about researcher access to platform data and the tension between academic independence and corporate control over research infrastructure.",
+  "pdf_source": "drive"
+}
