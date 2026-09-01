@@ -62,6 +62,18 @@ class Paper:
         return self.id.split(":", 1)[-1]
 
 
+def _text(value: Optional[str]) -> str:
+    """A feed text field as plain text.
+
+    JSON Feed `title` / `content_text` are plain text, but the publishers have
+    escaped them for HTML at least once (toread ran titles through an HTML
+    escaper until 2026-09; github.io still emits `&amp;`), so an escaped title
+    reached note frontmatter and the site as a literal `&quot;`. Unescaping
+    once recovers it and is a no-op on a clean field.
+    """
+    return html.unescape(value) if value else (value or "")
+
+
 def _extract_journal(item: dict, academic: dict) -> Optional[str]:
     """Journal/venue name: `_academic.venue` (own-pub feed) or the toread feed's
     `content_html` "Published in:" line. Returns None when neither carries it."""
@@ -82,9 +94,9 @@ def _item_to_paper(item: dict) -> Paper:
     slack = item.get("_slack_suggestion", {}) or {}
     return Paper(
         id=item["id"],
-        title=item.get("title", ""),
-        authors=[a.get("name", "") for a in item.get("authors", [])],
-        abstract=item.get("content_text"),
+        title=_text(item.get("title", "")),
+        authors=[_text(a.get("name", "")) for a in item.get("authors", [])],
+        abstract=_text(item.get("content_text")) or None,
         date_published=item.get("date_published"),
         discovery_date=item.get("_discovery_date"),
         url=item.get("url") or item.get("external_url"),

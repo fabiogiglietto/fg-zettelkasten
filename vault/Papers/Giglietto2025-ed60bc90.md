@@ -1,6 +1,6 @@
 ---
-title: "The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era"
-aliases: ["The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era"]
+title: "The State of Social Media Research APIs & Tools in the Digital Service Act Era"
+aliases: ["The State of Social Media Research APIs & Tools in the Digital Service Act Era"]
 authors: ["M Terenzi F Giglietto"]
 year: 2025
 doi: 10.5281/zenodo.16269197
@@ -15,9 +15,9 @@ pdf_available: false
 discovery_date: 
 ---
 
-# The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era
+# The State of Social Media Research APIs & Tools in the Digital Service Act Era
 
-> Giglietto, M. T. F. (2025). The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era. *Zenodo*. https://doi.org/10.5281/zenodo.16269197
+> Giglietto, M. T. F. (2025). The State of Social Media Research APIs & Tools in the Digital Service Act Era. *Zenodo*. https://doi.org/10.5281/zenodo.16269197
 >
 > [View paper](https://doi.org/10.5281/zenodo.16269197)
 

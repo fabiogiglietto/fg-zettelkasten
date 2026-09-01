@@ -55,6 +55,32 @@ def test_tolerates_missing_optional_fields():
     assert p.authors == []
 
 
+def test_title_is_decoded_to_plain_text():
+    """Feed titles arrive HTML-escaped; the note (and the site) need the
+    plain text — see Papers/Park2026-tr, which shipped as `&quot;Sticking…`."""
+    p = _item_to_paper(
+        _item(
+            title=(
+                "&quot;Sticking their heads out above the parapets&quot;: "
+                "Legal Risks &amp; Research"
+            ),
+            authors=[{"name": "O&#x27;Brien, Sean"}],
+            content_text="Chilling effects &amp; coping strategies.",
+        )
+    )
+    assert p.title == (
+        '"Sticking their heads out above the parapets": Legal Risks & Research'
+    )
+    assert p.authors == ["O'Brien, Sean"]
+    assert p.abstract == "Chilling effects & coping strategies."
+
+
+def test_clean_title_is_unchanged():
+    """Decoding is a no-op once the publisher stops escaping."""
+    p = _item_to_paper(_item(title='A "quoted" title & more'))
+    assert p.title == 'A "quoted" title & more'
+
+
 def test_tolerates_null_content_fields():
     """The live feed carries null date_published/content_text for some items."""
     p = _item_to_paper(

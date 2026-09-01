@@ -1,6 +1,6 @@
 ---
-title: "&quot;Sticking their heads out above the parapets&quot;: Lived Experiences of Legal Risks in Research"
-aliases: ["&quot;Sticking their heads out above the parapets&quot;: Lived Experiences of Legal Risks in Research"]
+title: "\"Sticking their heads out above the parapets\": Lived Experiences of Legal Risks in Research"
+aliases: ["\"Sticking their heads out above the parapets\": Lived Experiences of Legal Risks in Research"]
 authors: ["Park, Sunoo", "Thomas, Daniel R"]
 year: 2026
 doi: 
@@ -14,9 +14,9 @@ pdf_available: true
 discovery_date: 2026-08-31T14:32:08.002710Z
 ---
 
-# &quot;Sticking their heads out above the parapets&quot;: Lived Experiences of Legal Risks in Research
+# "Sticking their heads out above the parapets": Lived Experiences of Legal Risks in Research
 
-> Park, S., & Thomas, D. R. (2026). &quot;Sticking their heads out above the parapets&quot;: Lived Experiences of Legal Risks in Research.
+> Park, S., & Thomas, D. R. (2026). "Sticking their heads out above the parapets": Lived Experiences of Legal Risks in Research.
 >
 > [View paper](https://scholar.google.com/scholar?q=%22Sticking%20their%20heads%20out%20above%20the%20parapets%22%3A%20Lived%20Experiences%20of%20Legal%20Risks%20in%20Research)
 

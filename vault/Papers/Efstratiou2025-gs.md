@@ -1,6 +1,6 @@
 ---
-title: "Rabble-rousers in the new king&#x27;s court: Algorithmic effects on account visibility in pre-X twitter"
-aliases: ["Rabble-rousers in the new king&#x27;s court: Algorithmic effects on account visibility in pre-X twitter"]
+title: "Rabble-rousers in the new king's court: Algorithmic effects on account visibility in pre-X twitter"
+aliases: ["Rabble-rousers in the new king's court: Algorithmic effects on account visibility in pre-X twitter"]
 authors: ["Alexandros Efstratiou", "Kayla Duskin", "Kate Starbird", "Emma Spiro"]
 year: 2025
 doi: 
@@ -14,9 +14,9 @@ pdf_available: true
 discovery_date: 2025-12-15T00:00:00Z
 ---
 
-# Rabble-rousers in the new king&#x27;s court: Algorithmic effects on account visibility in pre-X twitter
+# Rabble-rousers in the new king's court: Algorithmic effects on account visibility in pre-X twitter
 
-> Efstratiou, A., Duskin, K., Starbird, K., & Spiro, E. (2025). Rabble-rousers in the new king&#x27;s court: Algorithmic effects on account visibility in pre-X twitter. *arXiv [cs.SI]*.
+> Efstratiou, A., Duskin, K., Starbird, K., & Spiro, E. (2025). Rabble-rousers in the new king's court: Algorithmic effects on account visibility in pre-X twitter. *arXiv [cs.SI]*.
 >
 > [View paper](http://arxiv.org/abs/2512.06129v2)
 

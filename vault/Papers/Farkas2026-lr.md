@@ -1,6 +1,6 @@
 ---
-title: "Defending fact-checking partnerships with platform companies: ‘We can&#x27;t fight alone against disinformation’"
-aliases: ["Defending fact-checking partnerships with platform companies: ‘We can&#x27;t fight alone against disinformation’"]
+title: "Defending fact-checking partnerships with platform companies: ‘We can't fight alone against disinformation’"
+aliases: ["Defending fact-checking partnerships with platform companies: ‘We can't fight alone against disinformation’"]
 authors: ["Johan Farkas", "Mette Bengtsson"]
 year: 2026
 doi: 10.1177/02673231261422085
@@ -14,9 +14,9 @@ pdf_available: true
 discovery_date: 2026-02-20T06:11:27.219105Z
 ---
 
-# Defending fact-checking partnerships with platform companies: ‘We can&#x27;t fight alone against disinformation’
+# Defending fact-checking partnerships with platform companies: ‘We can't fight alone against disinformation’
 
-> Farkas, J., & Bengtsson, M. (2026). Defending fact-checking partnerships with platform companies: ‘We can&#x27;t fight alone against disinformation’. *European Journal of Communication*. https://doi.org/10.1177/02673231261422085
+> Farkas, J., & Bengtsson, M. (2026). Defending fact-checking partnerships with platform companies: ‘We can't fight alone against disinformation’. *European Journal of Communication*. https://doi.org/10.1177/02673231261422085
 >
 > [View paper](https://doi.org/10.1177/02673231261422085)
 
