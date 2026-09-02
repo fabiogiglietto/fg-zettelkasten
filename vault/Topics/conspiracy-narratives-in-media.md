@@ -18,6 +18,7 @@ Studies examining how conspiracy theories and conspiratorial narratives are form
 - [[Gardam2025-er]]
 - [[Grusauskaite2026-po]]
 - [[Hollingshead2026-vx]]
+- [[Kasianenko2026-tn]]
 - [[Marwick2025-ov]]
 - [[Marwick2026-qd]]
 - [[Rohrbach2026-rc]]

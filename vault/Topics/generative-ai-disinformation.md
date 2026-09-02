@@ -21,6 +21,7 @@ Emerging focus on how generative AI is used to produce and scale deceptive conte
 - [[Hackenburg2025-dj]]
 - [[Hackenburg2026-ud]]
 - [[Hameleers2026-mc]]
+- [[Kasianenko2026-tn]]
 - [[Lin2025-xp]]
 - [[Marwick2025-vx]]
 - [[Orlando2025-ul]]
