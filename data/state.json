@@ -3498,8 +3498,7 @@
       "pdf_source": "drive",
       "content_hash": "5bda706e24ef1368f408721a2124fc6eb47196219e5960b62da92db1b95428e0",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-09-01T20:10:26.306679+00:00",
       "supersedes": "Pierri2025-hm"
     },
