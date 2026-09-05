@@ -37,6 +37,7 @@ Analysis of partisan alignment, insularity, affective polarization and cross-par
 - [[Green2025-ap]]
 - [[Grusauskaite2026-po]]
 - [[Hartmann2025-px]]
+- [[Holland_Levin2026-qx]]
 - [[Hollingshead2026-vx]]
 - [[Iannelli2015-e0818c3e]]
 - [[Iris2026-pg]]

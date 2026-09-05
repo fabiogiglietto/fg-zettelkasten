@@ -3516,10 +3516,26 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-09-02T10:05:26.957998+00:00"
+    },
+    "bibtex:Holland_Levin2026-qx": {
+      "note_path": "Papers/Holland_Levin2026-qx.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "conspiracy-narratives-in-media"
+      ],
+      "assign_fp": "396d67d5fa23fa8256b8345cccf2799f2e987046b1d1b3823cccfaa27eb703b9",
+      "doi": "10.1080/10584609.2026.2717428",
+      "title": "From \\#StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube",
+      "pdf_source": "abstract_only",
+      "content_hash": "337d9b3f3f44a783d3d032381525011ce4e5b586e031dbad9eedf95307abda4e",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-09-05T13:45:49.728950+00:00"
     }
   },
   "last_full_cluster": "2026-08-31T11:05:27.750150+00:00",
-  "papers_since_cluster": 3,
+  "papers_since_cluster": 4,
   "register_signals_hash": "f9e80e56216144585933f4ec3c2510214d87c96d6e62efbddf2fdbeedb00b9e3",
   "emergent_fp": "ff1da40ff8829f57a49c6021649d498761802b264996f833ed3cc647a30f4ddf",
   "structure_fps": {
