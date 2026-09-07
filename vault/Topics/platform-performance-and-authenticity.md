@@ -10,9 +10,15 @@ Qualitative and mixed-methods studies examining how users negotiate authenticity
 
 ## Papers
 
+- [[Boyd2026-op]]
 - [[Cabbuag2024-me]]
+- [[Di-Domenico2026-zq]]
+- [[Farci2017-2a88c00e]]
 - [[Graham2026-fb]]
+- [[Marwick2025-ov]]
+- [[Marwick2026-ss]]
 - [[Volpe2026-um]]
+- [[Wang2026-ub]]
 
 ## All papers (Dataview)
 

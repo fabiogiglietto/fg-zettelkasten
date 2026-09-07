@@ -5,7 +5,7 @@ authors: ["Paolo Gerbaudo"]
 year: 2026
 doi: 10.1177/14614448241304106
 bibtex_key: Gerbaudo2026-fo
-topics: [platform-critique-anniversary-essays, computational-network-structure-analysis]
+topics: [computational-network-structure-analysis, sociocybernetics-media-theory]
 citation_count: 52
 open_access: false
 source_url: https://doi.org/10.1177/14614448241304106

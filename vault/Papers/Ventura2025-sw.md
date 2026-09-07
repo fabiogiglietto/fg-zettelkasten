@@ -5,7 +5,7 @@ authors: ["Tiago Ventura", "Rajeshwari Majumdar", "Jonathan Nagler", "Joshua Tuc
 year: 2025
 doi: 10.1086/737172
 bibtex_key: Ventura2025-sw
-topics: [misinformation-exposure-recalibration, political-polarization-partisanship]
+topics: [information-disorder-disinformation-narratives, electoral-campaigns-social-media]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1086/737172

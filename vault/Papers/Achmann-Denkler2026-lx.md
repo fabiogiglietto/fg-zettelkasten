@@ -5,7 +5,7 @@ authors: ["Michael Achmann-Denkler", "Mario Haim", "Christian Wolff"]
 year: 2026
 doi: 
 bibtex_key: Achmann-Denkler2026-lx
-topics: [llms-in-content-analysis, political-polarization-partisanship]
+topics: [electoral-campaigns-social-media, computational-methods-llm-annotation]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2604.19489v1

@@ -5,7 +5,7 @@ authors: ["Salma Bouchafra", "Mathilda Åkerlund"]
 year: 2026
 doi: 10.1177/14614448251408336
 bibtex_key: Bouchafra2026-ts
-topics: [coordinated-inauthentic-behavior, political-polarization-partisanship]
+topics: [electoral-campaigns-social-media, generative-ai-influence-operations]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448251408336

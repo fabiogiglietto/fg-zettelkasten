@@ -5,7 +5,7 @@ authors: ["Yuehong Cassandra Tai", "Yu-Ru Lin", "Bruce A. Desmarais"]
 year: 2026
 doi: 10.1080/10584609.2026.2613661
 bibtex_key: Tai2026-qk
-topics: [political-polarization-partisanship, platform-data-governance]
+topics: [information-disorder-disinformation-narratives, electoral-campaigns-social-media]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2613661

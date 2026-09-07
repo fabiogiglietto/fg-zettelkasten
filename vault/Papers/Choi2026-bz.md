@@ -5,7 +5,7 @@ authors: ["Sukyoung Choi"]
 year: 2026
 doi: 10.1177/10776990251413726
 bibtex_key: Choi2026-bz
-topics: [misinformation-exposure-recalibration, generative-ai-disinformation]
+topics: [climate-and-misinformation-message-interventions]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/10776990251413726

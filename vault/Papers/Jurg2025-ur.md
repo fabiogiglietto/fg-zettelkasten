@@ -5,7 +5,7 @@ authors: ["Daniel Jurg", "Salvatore Romano", "Bernhard Rieder"]
 year: 2025
 doi: 10.31219/osf.io/j3cn5_v1
 bibtex_key: Jurg2025-ur
-topics: [platform-data-governance, coordinated-inauthentic-behavior]
+topics: [platform-governance-data-access, electoral-campaigns-social-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31219/osf.io/j3cn5_v1

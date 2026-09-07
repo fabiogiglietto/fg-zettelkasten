@@ -7,7 +7,7 @@ bibtex_key: Pierri2025-hm
 source_url: http://arxiv.org/abs/2512.14223v1
 discovery_date: 2025-12-15T00:00:00Z
 superseded_by: Pierri2026-ib
-topics: []
+topics: [platform-governance-data-access, information-disorder-disinformation-narratives]
 podcast_url: 
 ---
 

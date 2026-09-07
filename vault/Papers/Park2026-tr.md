@@ -5,7 +5,7 @@ authors: ["Park, Sunoo", "Thomas, Daniel R"]
 year: 2026
 doi: 
 bibtex_key: Park2026-tr
-topics: [platform-data-governance, digital-research-methods-teaching]
+topics: [platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=%22Sticking%20their%20heads%20out%20above%20the%20parapets%22%3A%20Lived%20Experiences%20of%20Legal%20Risks%20in%20Research

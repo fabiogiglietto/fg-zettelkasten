@@ -10,7 +10,6 @@ Papers examining how generative AI is culturally imagined, discursively framed, 
 
 ## Papers
 
-- [[Anicker2024-vp]]
 - [[Dodds2026-df]]
 - [[Galip2026-ix]]
 - [[Hepp2026-oi]]
@@ -18,7 +17,6 @@ Papers examining how generative AI is culturally imagined, discursively framed, 
 - [[Nguyen2026-vm]]
 - [[Richter2026-bt]]
 - [[Stanusch2026-ec]]
-- [[Suk2026-ai]]
 - [[Wang2025-zy]]
 - [[Weinbrand2026-sf]]
 
