@@ -3551,8 +3551,9 @@
       "pdf_source": "drive",
       "content_hash": "e0eff9ae9aa02743e42aaf8c27dde771d0189751b50957d185c201d5eba58332",
       "podcast_linked": true,
-      "slack_posted": true,
-      "last_processed": "2026-09-08T10:01:47.884785+00:00"
+      "slack_posted": false,
+      "last_processed": "2026-09-08T10:01:47.884785+00:00",
+      "slack_pending": true
     },
     "bibtex:noauthor_undated-hb": {
       "note_path": "Papers/noauthor_undated-hb.md",
