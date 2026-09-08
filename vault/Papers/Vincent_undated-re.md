@@ -22,26 +22,26 @@ discovery_date: 2026-04-01T06:08:21.271784Z
 
 ## Summary
 
-This brief reports the second round of a repeated measurement effort tracking the prevalence of misinformation and disinformation on major online platforms operating in Europe. Using an exposure-weighted analysis of posts, the authors find that TikTok again exhibits the highest share of mis/disinformation content, with prevalence rising from roughly 20% in the first measurement to about 25% in the second. Across most platforms, low-credibility accounts continue to enjoy an engagement advantage over high-credibility accounts — a gap that has persisted or widened. The work positions itself within ongoing empirical monitoring of platform information integrity in Europe, likely tied to obligations under the EU Digital Services Act and the Code of Practice on Disinformation.
+This brief presents the second round of a repeated measurement study assessing the prevalence of misinformation and disinformation on major online platforms operating in Europe. Using an exposure-weighted analysis of posts, the authors track how mis/disinformation exposure has evolved since their first measurement. The headline finding is that TikTok continues to exhibit the highest prevalence of any major platform, with exposure-weighted mis/disinformation rising from roughly 20% to about 25%. Across most platforms, low-credibility accounts continue to enjoy an engagement advantage over high-credibility accounts — a gap that has persisted or widened. The work is explicitly framed as empirical monitoring in service of platform accountability, connected to obligations under the EU Digital Services Act and the Code of Practice on Disinformation.
 
 ## Key Contributions
 
-- Provides longitudinal evidence on how mis/disinformation prevalence is evolving across major European platforms via repeated, comparable measurements.
-- Documents clear platform-level differences, identifying TikTok as the worst performer.
-- Quantifies a persistent engagement gap favoring low-credibility sources — directly relevant to regulatory and platform-accountability debates.
+- Provides longitudinal evidence on the evolution of mis/disinformation prevalence across major European platforms.
+- Documents platform-level differences, singling out TikTok as the worst performer.
+- Quantifies the persistent engagement gap favoring low-credibility sources, feeding directly into regulatory and platform-accountability debates.
 
 ## Methods
 
-- Second-round (repeat) measurement study of mis/disinformation prevalence on major platforms in Europe.
-- Exposure-weighted analysis of posts to estimate prevalence, allowing comparison against the first-round baseline.
-- Cross-platform comparison of interaction levels between low-credibility and high-credibility accounts.
+- Second-round (repeat) measurement study of mis/disinformation prevalence on major platforms operating in Europe.
+- Exposure-weighted analysis of posts to estimate prevalence rather than raw content counts.
+- Cross-platform comparison of interaction levels between low-credibility and high-credibility accounts, benchmarked against the first measurement round.
 
 ## Findings
 
-- TikTok shows the highest mis/disinformation prevalence at approximately 25% of exposure-weighted posts.
-- TikTok's prevalence rose by roughly 5 percentage points between the first and second measurement rounds.
+- TikTok shows the highest mis/disinformation prevalence, at roughly 25% of exposure-weighted posts.
+- Prevalence on TikTok rose by about 5 percentage points relative to the first measurement.
 - The interaction advantage of low-credibility over high-credibility accounts persisted or worsened on most platforms.
 
 ## Connections
 
-This measurement-driven, accountability-oriented approach to platform information integrity aligns with other empirical monitoring efforts of mis/disinformation prevalence and platform data access, such as [[Pierri2025-hm]] and [[DeVerna2025-dl]]. Its focus on the engagement advantage of low-credibility sources connects to work on how unreliable content spreads and gains traction on platforms, including [[Bak-Coleman2025-pm]] and [[Allen2025-ot]].
+This measurement-driven accountability work sits alongside other empirical studies of platform information integrity and DSA-era data access, including [[Rieder2025-ju]] and [[Rieder2026-pp]] on platform data and governance, and shares its concern with quantifying low-credibility content exposure with [[DeVerna2025-dl]] and [[Pierri2025-hm]]. Its emphasis on exposure-weighting and cross-platform prevalence complements broader debates on how much misinformation people actually encounter, as in [[Allen2025-ot]] and Budak-style engagement studies represented here by [[Bak-Coleman2025-pm]].

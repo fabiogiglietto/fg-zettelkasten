@@ -268,9 +268,9 @@
         "electoral-campaigns-social-media"
       ],
       "pdf_source": "drive",
-      "content_hash": "c6cf5ff13b6a319a4b88c566834fae6047efaa66c818a27617290d1ded3733a0",
+      "content_hash": "1a4dc24b2e6a2e5cbdc58358f4d208bcad5a643b592145b00e6aa3ceecb65350",
       "podcast_linked": true,
-      "last_processed": "2026-07-08T14:45:44.684676+00:00",
+      "last_processed": "2026-09-08T10:20:38.909926+00:00",
       "assign_fp": "af8d1110b60e582a58d39bd870e6566325f74601f2e973cbdc0a717cdbdeb77c"
     },
     "bibtex:Peters2026-mo": {
@@ -325,9 +325,9 @@
         "platform-governance-data-access"
       ],
       "pdf_source": "abstract_only",
-      "content_hash": "5b3033e1ea2bbc830d4dfb839301e225c2d61c1093d279481d1f4cdb666dfbd5",
+      "content_hash": "ac7ff27c50f348fb62700fde8c0c4c87727e439b9d2efefd9349fde2c7077935",
       "podcast_linked": false,
-      "last_processed": "2026-07-08T14:45:44.684703+00:00",
+      "last_processed": "2026-09-08T10:20:49.804309+00:00",
       "assign_fp": "93e6c1cd0ffb64976e17f1b893e8752bfc68542fcf4f489dd6587c0eee8f585c"
     },
     "bibtex:Karo2026-dn": {
@@ -1147,9 +1147,9 @@
         "computational-methods-llm-annotation"
       ],
       "pdf_source": "abstract_only",
-      "content_hash": "5345c77de9a787fe23d707c745a4bd15359e7e00ba41e29d0687f48f9dcc5ac6",
+      "content_hash": "e7899a39d78be3012945b1e61ae31b5dff18ab1b17dedfd59b716b204c702dc7",
       "podcast_linked": false,
-      "last_processed": "2026-07-08T14:59:27.173695+00:00",
+      "last_processed": "2026-09-08T10:21:04.876553+00:00",
       "assign_fp": "4ba3cc165bcfb7e1b9ca5ded256875853fc33da047877812bf6251b401927088"
     },
     "bibtex:Lin2025-xp": {

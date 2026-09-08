@@ -22,37 +22,35 @@ discovery_date: 2026-04-11T07:41:51.831048Z
 
 ## Summary
 
-This paper measures the actual reach of 49 deceptive online networks that Meta identified as targeting US users on Facebook and Instagram around the 2020 elections. Combining platform-level exposure data with the large-scale FIES survey (~73,000 consenting users), the authors argue for a broader conceptual category of "deceptive online networks" that unifies both politically motivated coordinated inauthentic behavior (CIB) and financially motivated operations (FMOs) under the common feature of identity deception. The central empirical picture is one of concentration and indirect amplification: a handful of networks account for the overwhelming majority of reach, and most exposure flows not from network accounts directly but from reshares by ordinary, unaffiliated users. The paper also delivers a methodological caution—correlations between exposure and downstream outcomes largely vanish once pre-exposure user characteristics are controlled.
+This study offers the first large-scale, platform-wide measurement of actual user exposure to deceptive online networks during the 2020 US elections, drawing on 49 networks that Meta identified and removed from Facebook and Instagram. By combining Meta's platform-level exposure data with individual-level survey and behavioral data from the US 2020 Facebook and Instagram Election Study (FIES), the authors reframe the object of study: rather than restricting analysis to politically motivated foreign influence operations, they introduce the broader category of "deceptive online networks" — coordinated efforts using identity deception, whether their motives are political or financial. Their central findings are that reach was highly concentrated in a handful of networks, that most exposure occurred indirectly through reshares by ordinary unaffiliated users, and that the people exposed were systematically distinctive (older, more conservative, heavier platform users). Crucially, once these pre-exposure characteristics are controlled for, apparent associations between exposure and outcomes like factual discernment or election legitimacy beliefs largely vanish, cautioning against causal readings of observational exposure data.
 
 ## Key Contributions
 
-- Introduces the umbrella concept of **deceptive online networks**, spanning both politically and financially motivated identity-deception operations.
-- First large-scale measurement of **actual exposure** (rather than engagement proxies) to deceptive networks across an entire major platform's user base during a US election.
-- Documents the pivotal role of **non-network reshares** in amplifying deceptive content, shifting focus from network actors to user amplification dynamics.
-- Shows that financially motivated networks producing political content can out-reach politically motivated ones, arguing they deserve equal scrutiny.
+- Introduces the concept of **"deceptive online networks"** to encompass both politically motivated influence operations and financially motivated operations (FMOs) that produce political content.
+- Provides the **first platform-wide measurement of actual exposure** (rather than engagement proxies) to deceptive networks across an entire major platform user base during a US election.
+- Documents the central role of **unaffiliated non-network reshares** in amplifying deceptive content, shifting analytic focus from network actors to user amplification dynamics.
+- Shows that **financially motivated networks can out-reach politically motivated ones**, arguing FMOs deserve equal scholarly and platform scrutiny.
+- Offers a **methodological caution** about causal inference from observational exposure data, showing how user-characteristic confounding produces spurious associations.
 - Releases a de-identified dataset via the Social Media Archive (SOMAR/ICPSR).
-- Offers a methodological warning about causal inference from observational exposure data.
 
 ## Methods
 
-Pre-registered observational study drawing on Meta's platform-level aggregated data for 49 networks (13 CIB, 36 FMO) active 26 June 2020–15 February 2021, distinguishing direct exposure (via network accounts) from indirect exposure (via reshares), and characterizing cascade size, depth, breadth, and structural virality. Content was classified with Meta's Topic and Civic classifiers. Individual-level FIES survey and behavioral data (~73,000 users, five waves) were linked, with **entropy balancing** used to reweight non-exposed participants for pre-exposure covariate balance across nine model specifications, plus pre-registered sensitivity analyses for unobserved confounding and post hoc analysis of feed interventions.
+The pre-registered observational study covers 49 deceptive networks (13 CIB and 36 FMO) targeting US users from June 2020 to February 2021. Platform-level aggregated data from Meta enabled analysis of direct versus indirect exposure, including cascade size, depth, breadth, and structural virality; content was topic-classified using Meta's Topic and Civic classifiers. This was linked to individual-level survey and behavioral data from roughly 73,000 consenting Facebook and Instagram users across five FIES waves. Entropy balancing reweighted non-exposed participants to achieve pre-exposure covariate balance across nine sequential model specifications, supplemented by pre-registered sensitivity analyses for unobserved confounding and a post hoc analysis of FIES feed interventions (no-reshare, chronological, reduced like-minded content).
 
 ## Findings
 
-- Networks reached ~37M unique Facebook users (14.85%) and ~3M Instagram users (1.86%), generating 175M and 70M views respectively.
-- Reach was extremely concentrated: three networks accounted for ~80% of unique Facebook viewers; one network (CIB10) accounted for ~95% of Instagram viewers.
-- CIB networks originated mostly from Russia, the US, and Iran; FMO networks concentrated in the Balkans (16) and South Asia (11).
-- Politics and social issues made up 65% of CIB and 32% of FMO direct Facebook content—substantial political content even from financially motivated actors.
-- Exposure was highly skewed: 1% of Facebook users received 55% of exposures; 1% of Instagram users received 96%.
-- For the top network (Rally Forge/CIB9), 13M of 13.4M viewers were reached **indirectly** via reshares versus only 1.3M directly.
-- Only 5.67% of exposed Facebook users (0.34% on Instagram) reshared content, yet these users drove disproportionate amplification.
-- Network content averaged only 0.3% of exposed users' political content views in the 41 days before the election.
-- After entropy balancing, associations between exposure and factual discernment, election legitimacy, and partisan news clicks largely disappeared and proved vulnerable to unobserved confounding.
-- Feed interventions (no reshares, chronological) reduced exposure but also engagement; effects were underpowered.
+- Networks reached ~37 million unique Facebook users (14.85%) and ~3 million Instagram users (1.86%), generating 175 million Facebook and 70 million Instagram views.
+- Three networks (Rally Forge, FMO27 from Kosovo, and FMO34) accounted for nearly 80% of unique Facebook viewers; a single network drove ~95% of Instagram viewers.
+- Politics and social issues made up 65% of CIB and 32% of FMO direct Facebook content, despite FMOs being financially motivated.
+- For Rally Forge (the highest-reach network), 13 million of 13.4 million viewers were reached **indirectly via reshares**, versus only 1.3 million directly.
+- Only 5.67% of exposed Facebook users (and 0.34% on Instagram) reshared network content, yet these users disproportionately amplified reach; 1% of users accounted for 55% of Facebook exposures.
+- Network content averaged just 0.3% of exposed participants' political content views in the 41 days before the election.
+- After entropy balancing, associations between exposure and outcomes (factual discernment, election legitimacy, partisan news clicks) largely disappeared and proved vulnerable to unobserved confounding.
+- Feed interventions reduced exposure but also reduced overall engagement; effects were underpowered.
 
 ## Connections
 
-This is a flagship FIES-collaboration study and connects closely to other work in that program on platform effects, notably [[Allcott2025-jb]] and [[Gonzalez-Bailon2024-rq]]. Its focus on measuring and conceptualizing coordinated deceptive networks situates it alongside broader coordinated-inauthentic-behavior detection and analysis work such as [[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]], [[Luceri2025-tr]], and [[Minici2024-tf]], while its emphasis on ordinary-user amplification of deceptive content complements studies of resharing and influence dynamics in [[Kim2026-wg]].
+This paper is a flagship output of the FIES Meta–academic collaboration and sits alongside other work from that partnership on platform effects and information exposure, notably [[Allcott2025-jb]] and [[Gonzalez-Bailon2024-rq]]. Its reconceptualization of coordinated identity deception as "deceptive online networks" and its emphasis on amplification by ordinary users connect it to the broader coordinated-inauthentic-behavior literature, including [[Luceri2025-tr]] and [[Starbird2025-jj]]. Its methodological caution about spurious exposure–outcome associations resonates with debates about measuring the real reach and impact of influence operations rather than relying on engagement proxies.
 
 ## Podcast
 
