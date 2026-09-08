@@ -10,7 +10,7 @@ citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2717428
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-05T13:35:15.562479Z
 ---
 
@@ -22,23 +22,28 @@ discovery_date: 2026-09-05T13:35:15.562479Z
 
 ## Summary
 
-This paper investigates how social justice discourse becomes politicized across two major social media platforms, Twitter and YouTube. Using the illustrative trajectory of terms like "#StayWoke" evolving into adversarial framings such as "culture wars," the authors trace how political meaning becomes attached to activist language over time. Their central argument is that politicization operates both *separately*—through platform-specific dynamics—and *synergistically*—through cross-platform interaction. The work is positioned within political communication scholarship on digital discourse and the contested meaning-making surrounding social movements. (Note: only the title and metadata were available, so this digest reflects the paper's stated focus rather than confirmed methods or results.)
+This paper traces the decade-long politicization of the term "woke" — from its origins in Black community discourse as "stay woke" (an anti-racism call to consciousness) into a "culture war" epithet — across Twitter and YouTube between 2012 and 2022. Drawing on identity politics and polarization theory, the authors combine large-scale user-level and content-level computational analyses to argue that partisan opinion leaders and their followers hijacked social justice discourse both *separately* (through distinct platform affordances and user bases) and *synergistically* (through cross-platform coordination). The central finding is that culture war framing came to dominate "woke" discourse across every user group — including liberals and Black opinion leaders — while conservatives built an especially coordinated, asymmetric cross-platform amplification apparatus.
 
 ## Key Contributions
 
-- Advances understanding of how social justice language is politicized in digital environments.
-- Foregrounds cross-platform (synergistic) dynamics rather than treating Twitter and YouTube in isolation.
-- Offers a case-based account tracing the shift from activist framings (#StayWoke) to adversarial ones ("culture wars").
+- Documents the longitudinal politicization of a marginalized-community social justice term (from #StayWoke to anti-woke culture wars) via decade-scale computational analysis.
+- Advances comparative/cross-platform social media research by disentangling the distinct versus combined roles of Twitter and YouTube.
+- Identifies an asymmetric right-wing cross-platform information ecosystem where YouTube "supplies" content and Twitter "demands"/amplifies it.
+- Provides empirical support for theories of identity-politics-driven polarization and the co-optation of marginalized discourse by partisan actors.
 
 ## Methods
 
-Comparative analysis of social justice discourse across Twitter and YouTube. Specific methodological details (data collection, coding, and analytic strategy) are not available from the abstract alone.
+Data were collected from Twitter (API v2) and YouTube (tuber R package) using "woke"-related search terms from January 2012 to December 2022, yielding ~18.4M tweets from ~6M users and 35,445 videos from 17,398 channels, segmented into three temporal periods (pre-2016 election; 2016–pre-George Floyd; May 2020–2022). User-level analysis used Vintage Sparse Principal (VSP) component analysis to partition the retweet network into 74 clusters, plus manual coding of top opinion-leader clusters and the 222 YouTube channels accounting for 90% of views. Content-level analysis applied BERTopic (validated with LDA) to video titles and a 10% tweet sample to derive topic categories. Embedded URLs were extracted and unshortened to trace cross-platform link-sharing, and proportions were compared via Z-tests and Chi-square tests with standardized residuals.
 
 ## Findings
 
-- The paper claims to identify both platform-specific and cross-platform (synergistic) processes of politicization.
-- Detailed empirical findings are not recoverable from the available metadata.
+- Political opinion leaders were more prevalent on YouTube overall (conservative news/commentary drew 65.41% of views), but liberals dominated Twitter while conservatives dominated YouTube.
+- Politicized topics (Culture Wars + Politics) comprised 67.72% of tweets versus only 23.46% of YouTube videos, where lifestyle/entertainment dominated (56.99%).
+- Across all Twitter groups and phases, discourse shifted toward Culture Wars and away from Stay Woke; even Black opinion leaders reached 69.22% culture war engagement by T3.
+- On YouTube, Culture Wars grew across nearly all channel categories, and Politics rose sharply among conservative channels (0% at T1 to 16.95% at T3).
+- Cross-platform sharing was asymmetric: conservatives on Twitter shared YouTube content more than liberals, often to redefine or ridicule "woke."
+- Right-wing outlets (Fox News, Breitbart, NYPost, Daily Mail) appeared among Twitter's top external domains but not YouTube's, indicating coordinated right-wing promotion.
 
 ## Connections
 
-This work speaks to broader research on affective and partisan polarization in online spaces, connecting to studies of politicized discourse such as [[Ventura2025-sw]] and [[Tornberg2025-ir]], and to work on YouTube's role in political meaning-making like [[Rothut2026-or]]. Its emphasis on cross-platform dynamics resonates with coordinated and multi-platform discourse research including [[Giglietto2019-882f1900]] and [[Giglietto2020-6278a4aa]].
+This paper's account of an asymmetric right-wing cross-platform ecosystem where YouTube supplies and Twitter amplifies content connects to work on coordinated link-sharing and cross-platform information flows such as [[Giglietto2019-882f1900]], [[Giglietto2017-4375de2f]], and [[Falkenberg2026-ka]]. Its focus on the co-optation and politicization of identity discourse by partisan actors relates to affective and partisan polarization scholarship including [[Van_Erkel2026-mk]] and to studies of partisan audience alignment such as [[Bakshy2015-rn]].
