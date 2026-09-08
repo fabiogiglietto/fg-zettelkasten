@@ -1410,9 +1410,9 @@
         "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
-      "content_hash": "7bcad0d9156376a419b656869f36bf3160680828f9947e95f258f2be2e92ed2c",
+      "content_hash": "14db5152919a931d32d0a8073404d39bcba6b36ce4605e1d876523ea5a0af5b5",
       "podcast_linked": false,
-      "last_processed": "2026-07-10T14:17:32.324060+00:00",
+      "last_processed": "2026-09-08T06:54:50.097282+00:00",
       "assign_fp": "be7d37aeffe8f6f1f53172c91503ce608e8c5b153fb786834b95a16fd13101f2"
     },
     "bibtex:Fan2025-ut": {
@@ -2196,9 +2196,9 @@
         "misinformation-exposure-recalibration"
       ],
       "pdf_source": "drive",
-      "content_hash": "38635edbd35b0b25f4273b60c97a4ed2f599949c742f4270a29b57bc55866483",
+      "content_hash": "5f1158c90814e179391dbd9f9d4b96936cef440263e30e0c41f3729631849ac8",
       "podcast_linked": false,
-      "last_processed": "2026-05-17T10:31:30.271017+00:00",
+      "last_processed": "2026-09-08T06:55:05.453184+00:00",
       "assign_fp": "03fcb50d1cdd1138b8fdd1c8c24f74572836d6edbe21bd04183176abe14c1fba"
     },
     "bibtex:Bruns2026-yv": {
@@ -3503,10 +3503,10 @@
       "doi": "",
       "title": "\"Sticking their heads out above the parapets\": Lived Experiences of Legal Risks in Research",
       "pdf_source": "drive",
-      "content_hash": "c1f7d0a1a0d6cf41394b3ab05a702c129b6ee13420d1843d3e4a082ceee96e6a",
+      "content_hash": "60e7da3a3ee3959b4f7a53f2511e87fac1f027178b3b8484368995cbff28c587",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-08-31T14:46:59.718331+00:00"
+      "last_processed": "2026-09-08T06:54:33.838530+00:00"
     },
     "bibtex:Pierri2026-ib": {
       "note_path": "Papers/Pierri2026-ib.md",
@@ -3551,13 +3551,25 @@
       "pdf_source": "abstract_only",
       "content_hash": "337d9b3f3f44a783d3d032381525011ce4e5b586e031dbad9eedf95307abda4e",
       "podcast_linked": false,
+      "slack_posted": true,
+      "last_processed": "2026-09-05T13:45:49.728950+00:00"
+    },
+    "bibtex:noauthor_undated-hb": {
+      "note_path": "Papers/noauthor_undated-hb.md",
+      "topics": [],
+      "assign_fp": "c8de952834b0f38dba0f6cfb8ff400701901ab7d5fc902b78474d432654fa664",
+      "doi": "",
+      "title": "Untitled",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
       "slack_posted": false,
       "slack_pending": true,
-      "last_processed": "2026-09-05T13:45:49.728950+00:00"
+      "last_processed": "2026-09-08T06:54:10.917893+00:00"
     }
   },
   "last_full_cluster": "2026-09-07T09:22:30.793502+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "47c4fc260758b3835e649cfb4b04b86312554f3e0534afb88a15402021d30a3a",
   "emergent_fp": "d7e81a42a94734684320759847cf17e2b5f515e7d7795b1cd5709c04f450766c",
   "structure_fps": {
