@@ -1,6 +1,6 @@
 ---
-title: "How propaganda exploits the infrastructure of truth: A case study of \\#IStandWithPutin"
-aliases: ["How propaganda exploits the infrastructure of truth: A case study of \\#IStandWithPutin"]
+title: "How propaganda exploits the infrastructure of truth: A case study of #IStandWithPutin"
+aliases: ["How propaganda exploits the infrastructure of truth: A case study of #IStandWithPutin"]
 authors: ["Timothy Graham"]
 year: 2025
 doi: 10.1080/15295036.2025.2473002
@@ -14,9 +14,9 @@ pdf_available: false
 discovery_date: 2025-01-15T00:00:00Z
 ---
 
-# How propaganda exploits the infrastructure of truth: A case study of \#IStandWithPutin
+# How propaganda exploits the infrastructure of truth: A case study of #IStandWithPutin
 
-> Graham, T. (2025). How propaganda exploits the infrastructure of truth: A case study of \#IStandWithPutin. *Critical Studies in Media Communication*, *42*, 75–82. https://doi.org/10.1080/15295036.2025.2473002
+> Graham, T. (2025). How propaganda exploits the infrastructure of truth: A case study of #IStandWithPutin. *Critical Studies in Media Communication*, *42*, 75–82. https://doi.org/10.1080/15295036.2025.2473002
 >
 > [View paper](https://doi.org/10.1080/15295036.2025.2473002)
 
