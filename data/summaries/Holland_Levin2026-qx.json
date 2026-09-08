@@ -1,0 +1,34 @@
+{
+  "abstract": "This paper traces how the term 'woke,' originating in the Black community as 'stay woke' for anti-racism consciousness, was politicized into a 'culture war' epithet across Twitter and YouTube between 2012 and 2022. Drawing on identity politics and polarization theory, the authors use computational user- and content-level analyses to show how partisan opinion leaders and their followers hijacked social justice discourse both separately (via distinct platform affordances) and synergistically (via cross-platform coordination). Findings reveal that culture war framing came to dominate 'woke' discourse across every user group, with conservatives especially engaged in coordinated cross-platform amplification of right-wing content.",
+  "key_claims": [
+    "Social justice discourse originating in marginalized communities (e.g., 'stay woke') can be hijacked and politicized by partisan opinion leaders over time, becoming culture war fodder.",
+    "Politicization plays out both differently across platforms (via distinct affordances and user bases) and synergistically (via cross-platform coordination).",
+    "The term 'woke' shifted markedly away from its consciousness-raising origins toward culture war and political framing across all user groups, including liberals and Black opinion leaders.",
+    "Conservatives exhibit a coordinated, asymmetric cross-platform information ecosystem, with YouTube serving a content 'supply' role and Twitter a 'demand' role for right-wing content.",
+    "The Black community's declining use of 'stay woke' suggests the term became so politicized that its originators grew reluctant to use it."
+  ],
+  "methods": [
+    "Collected data from Twitter (Twitter API v2) and YouTube (tuber R package) using 'woke'-related search terms from January 2012 to December 2022; final datasets of 18,378,315 tweets from 5,974,144 users and 35,445 videos from 17,398 channels.",
+    "Segmented data into three periods: T1 (2012–2015, pre-2016 election), T2 (2016–May 2020, pre-George Floyd BLM), T3 (May 2020–2022).",
+    "User-level analysis: applied Vintage Sparse Principal (VSP) component analysis to partition the Twitter retweeting network into 74 clusters, then manually coded opinion-leader clusters; identified top 222 YouTube channels accounting for 90% of views via long-tail distribution and manually coded them.",
+    "Content-level analysis: used BERTopic modeling (with LDA as validation) on video titles (n=35,445) and a 10% sample of unique tweets (n=604,968) to identify topic categories, then predicted topics across all unique tweets.",
+    "URL extraction: extracted and unshortened embedded URLs in tweets (N=1,777,556) and YouTube video descriptions (N=88,591), grouping them into Twitter, YouTube, and Other domains to trace cross-platform link-sharing.",
+    "Statistical tests: two-tailed Z-tests comparing proportions across platforms and Chi-square tests with standardized residuals to examine topic distribution shifts by user group over time."
+  ],
+  "findings": [
+    "H1 rejected: political opinion leaders were more prevalent on YouTube (conservative news/commentary drew 65.41% of views) than Twitter overall; however, liberals were significantly more prevalent on Twitter while conservatives dominated YouTube.",
+    "H2 supported: politicized topics (Culture Wars + Politics) made up 67.72% of tweets but only 23.46% of YouTube videos, where lifestyle/entertainment dominated (56.99%).",
+    "Across all Twitter user groups and phases, discourse shifted toward Culture Wars and away from Stay Woke; Black opinion leaders' engagement in culture wars reached 69.22% by T3.",
+    "On YouTube, Culture Wars grew across nearly all channel categories, and Politics rose especially among conservative channels (0% at T1 to 16.95% at T3).",
+    "Cross-platform: YouTube links appeared in 7.06% of Twitter links, while Twitter links appeared in 9.88% of YouTube links; conservatives on Twitter shared YouTube content more than liberals, often to redefine or ridicule 'woke.'",
+    "Facebook was the second-largest URL domain on both platforms; right-wing outlets (Fox News, Breitbart, NYPost, Daily Mail) appeared in Twitter's top 'Other' domains but not YouTube's, indicating coordinated right-wing promotion."
+  ],
+  "contributions": [
+    "Demonstrates the longitudinal politicization of a social justice term (from #StayWoke to anti-woke culture wars) using large-scale computational analysis over a decade.",
+    "Advances cross-platform / comparative social media studies by showing both the distinct and combined roles of Twitter and YouTube in politicizing social identity.",
+    "Documents an asymmetric right-wing cross-platform information ecosystem where YouTube supplies content and Twitter amplifies it.",
+    "Empirically supports theories of identity-politics-driven polarization and the co-optation of marginalized communities' discourse by partisan actors."
+  ],
+  "framing": "The paper situates itself at the intersection of identity politics, political polarization ('culture wars'), and comparative/cross-platform social media studies, drawing on scholarship about affective polarization, opinion leadership, platform affordances, and the co-optation of social justice discourse (e.g., Mason, Cammaerts, Zavattaro & Bearfield). It positions social media as a battleground where marginalized-community framings are hijacked by partisan actors, extending single-platform politicization research to a multi-platform, longitudinal perspective.",
+  "pdf_source": "drive"
+}
