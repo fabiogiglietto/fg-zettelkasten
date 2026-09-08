@@ -71,7 +71,11 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      // parseTags off: the vault carries no frontmatter tags, and inline
+      // `#…` in this corpus is a hashtag under study (#StayWoke,
+      // #IStandWithPutin), not a tag — Quartz was turning each into a tag
+      // link inside the title and minting a /tags/ page for it.
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false, parseTags: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),

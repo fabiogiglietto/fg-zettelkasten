@@ -1,6 +1,6 @@
 ---
-title: "From \\#StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube"
-aliases: ["From \\#StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube"]
+title: "From #StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube"
+aliases: ["From #StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube"]
 authors: ["Sara Holland Levin", "Rui Wang", "Junwan Seo", "Yi Yin Leong", "Emma Bennett", "Dongdong Yang", "Zhuohui Yang", "Matt Chen", "Yini Zhang", "Jiyoun Suk"]
 year: 2026
 doi: 10.1080/10584609.2026.2717428
@@ -14,9 +14,9 @@ pdf_available: true
 discovery_date: 2026-09-05T13:35:15.562479Z
 ---
 
-# From \#StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube
+# From #StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube
 
-> Levin, S. H., Wang, R., Seo, J., Leong, Y. Y., Bennett, E., Yang, D., Yang, Z., Chen, M., Zhang, Y., & Suk, J. (2026). From \#StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube. *Political Communication*, 1–25. https://doi.org/10.1080/10584609.2026.2717428
+> Levin, S. H., Wang, R., Seo, J., Leong, Y. Y., Bennett, E., Yang, D., Yang, Z., Chen, M., Zhang, Y., & Suk, J. (2026). From #StayWoke to “culture wars”: How social justice discourse is separately and synergistically politicized on twitter and YouTube. *Political Communication*, 1–25. https://doi.org/10.1080/10584609.2026.2717428
 >
 > [View paper](https://doi.org/10.1080/10584609.2026.2717428)
 

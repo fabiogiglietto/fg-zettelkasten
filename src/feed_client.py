@@ -62,6 +62,11 @@ class Paper:
         return self.id.split(":", 1)[-1]
 
 
+# BibTeX escapes that Paperpile's export leaves in titles and abstracts
+# (`\#StayWoke`, `15\%`): a backslash before one of LaTeX's special characters.
+_BIBTEX_ESCAPE_RE = re.compile(r"\\([#%&_$])")
+
+
 def _text(value: Optional[str]) -> str:
     """A feed text field as plain text.
 
@@ -70,8 +75,16 @@ def _text(value: Optional[str]) -> str:
     escaper until 2026-09; github.io still emits `&amp;`), so an escaped title
     reached note frontmatter and the site as a literal `&quot;`. Unescaping
     once recovers it and is a no-op on a clean field.
+
+    The toread feed also passes BibTeX's backslash escapes through untouched
+    (Papers/Holland_Levin2026-qx shipped as `From \\#StayWoke …`, and two
+    abstracts carry `15\\%`), so those are decoded too. The bare `#` matters
+    downstream: Quartz cannot put one inside a wikilink alias — see
+    `site_export.build_index`.
     """
-    return html.unescape(value) if value else (value or "")
+    if not value:
+        return value or ""
+    return _BIBTEX_ESCAPE_RE.sub(r"\1", html.unescape(value))
 
 
 def _extract_journal(item: dict, academic: dict) -> Optional[str]:

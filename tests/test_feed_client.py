@@ -144,3 +144,22 @@ def test_get_with_retries_does_not_retry_client_errors(monkeypatch):
     with pytest.raises(requests.HTTPError):
         get_with_retries("https://api.example/feed.json")
     assert len(attempts) == 1
+
+
+def test_bibtex_escapes_are_decoded():
+    """Paperpile's BibTeX export escapes LaTeX specials and toread passes them
+    through — Papers/Holland_Levin2026-qx shipped as `From \\#StayWoke …`."""
+    p = _item_to_paper(
+        _item(
+            title="From \\#StayWoke to “culture wars”",
+            content_text="15\\% and 2\\% of users; R\\&D; a\\_b; \\$5",
+        )
+    )
+    assert p.title == "From #StayWoke to “culture wars”"
+    assert p.abstract == "15% and 2% of users; R&D; a_b; $5"
+
+
+def test_ordinary_backslashes_survive_decoding():
+    """Only the LaTeX specials are unescaped; other backslashes are content."""
+    p = _item_to_paper(_item(title="Paths like C:\\Users and a\\b"))
+    assert p.title == "Paths like C:\\Users and a\\b"

@@ -184,6 +184,11 @@ def topic_paper_counts(state: dict) -> dict[str, int]:
     return counts
 
 
+def _link_text(title: str) -> str:
+    """A title as Markdown link text: brackets would end the link early."""
+    return title.replace("[", "\\[").replace("]", "\\]")
+
+
 def _plural(n: int, word: str) -> str:
     return f"{n} {word}" if n == 1 else f"{n} {word}s"
 
@@ -201,7 +206,10 @@ def build_index(
     """Render `content/index.md`: a homepage listing recent papers, Topics and Structures.
 
     Links use explicit `[[<dir>/<slug>|Name]]` paths because Topic and
-    Structure notes collide on basename.
+    Structure notes collide on basename. Paper links are Markdown links
+    instead: Quartz's wikilink regex rejects a `#` anywhere in the alias
+    (`[[x#heading]]` syntax), so a hashtag title such as Holland_Levin2026-qx's
+    "From #StayWoke to …" would leave the raw `[[…]]` on the page.
     """
     counts = topic_paper_counts(state)
     by_slug = {t["slug"]: t for t in topics}
@@ -233,7 +241,7 @@ def build_index(
             topic_names = [
                 by_slug[s]["name"] for s in meta["topics"] if s in by_slug
             ]
-            line = f"- [[{papers_dir}/{stem}|{meta['title']}]] — {date}"
+            line = f"- [{_link_text(meta['title'])}]({papers_dir}/{stem}) — {date}"
             if topic_names:
                 line += f" · {', '.join(topic_names)}"
             lines.append(line)
