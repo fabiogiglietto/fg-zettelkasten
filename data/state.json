@@ -3566,10 +3566,42 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-09-08T06:54:10.917893+00:00"
+    },
+    "bibtex:Much2026-gu": {
+      "note_path": "Papers/Much2026-gu.md",
+      "topics": [
+        "electoral-campaigns-social-media",
+        "political-polarization-partisan-media"
+      ],
+      "assign_fp": "28cdbfa58d5f591cf3ae053a2bf7ee05db7577bea1bb68353054f499979f9810",
+      "doi": "10.33774/apsa-2026-cdb6x",
+      "title": "Did podcasts help Trump win young men? Gendered media spaces and gender gaps",
+      "pdf_source": "drive",
+      "content_hash": "562f5a832ec76e0eee2bf75ae88cb14662f517b929f2bd5027522725afad42fc",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-09-10T09:23:53.170264+00:00"
+    },
+    "bibtex:Lukito2026-il": {
+      "note_path": "Papers/Lukito2026-il.md",
+      "topics": [
+        "electoral-campaigns-social-media",
+        "political-polarization-partisan-media"
+      ],
+      "assign_fp": "1513c01f4fd8d8e9dc155e4803f56052701e6b3094fdf687e55523b277aa5890",
+      "doi": "10.1177/14614448261470889",
+      "title": "Cross-platformization: How U.S. right-leaning media curate their posts on Twitter and Truth Social",
+      "pdf_source": "abstract_only",
+      "content_hash": "006f8b66c336322eb98691691c7bc35c608539d992ebe668dfbaa9269405453a",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-09-10T09:24:02.543391+00:00"
     }
   },
   "last_full_cluster": "2026-09-07T09:22:30.793502+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 3,
   "register_signals_hash": "47c4fc260758b3835e649cfb4b04b86312554f3e0534afb88a15402021d30a3a",
   "emergent_fp": "d7e81a42a94734684320759847cf17e2b5f515e7d7795b1cd5709c04f450766c",
   "structure_fps": {
