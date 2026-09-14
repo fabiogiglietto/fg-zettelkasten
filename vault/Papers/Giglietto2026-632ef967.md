@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1177/29768624261452529
 bibtex_key: Giglietto2026-632ef967
 kind: own
-topics: [platform-governance-data-access, electoral-campaigns-social-media]
+topics: [platform-engagement-algorithmic-visibility, platform-governance-data-access]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.1177/29768624261452529

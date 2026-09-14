@@ -5,7 +5,7 @@ authors: ["Meysam Alizadeh", "Mohsen Mosleh", "Fabrizio Gilardi", "Atoosa Kasirz
 year: 2026
 doi: 
 bibtex_key: Alizadeh2026-es
-topics: [computational-methods-llm-annotation, llm-augmented-research-methods]
+topics: [llm-augmented-research-methods, computational-methods-llm-annotation]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2606.11447v1

@@ -5,7 +5,7 @@ authors: ["Kobi Hackenburg", "Ben M. Tappin", "Luke Hewitt", "Ed Saunders", "Sid
 year: 2025
 doi: 10.1126/science.aea3884
 bibtex_key: Hackenburg2025-dj
-topics: [generative-ai-influence-operations, computational-methods-llm-annotation]
+topics: [generative-ai-synthetic-media, political-communication-elections]
 citation_count: 24
 open_access: false
 source_url: https://doi.org/10.1126/science.aea3884

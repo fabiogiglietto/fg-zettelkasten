@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1145/3779412
 bibtex_key: Pierri2026-ib
 supersedes: Pierri2025-hm
-topics: [platform-governance-data-access, information-disorder-disinformation-narratives]
+topics: [platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3779412

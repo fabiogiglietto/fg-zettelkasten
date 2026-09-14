@@ -11,21 +11,25 @@ Papers that use empirical, large-scale, or naturalistic data to challenge alarmi
 ## Papers
 
 - [[Allcott2025-jb]]
-- [[Bakshy2015-rn]]
+- [[Bak-Coleman2026-mk]]
 - [[Bergeron-Boutin2026-yh]]
+- [[Brown2026-br]]
 - [[Budak2024-ef]]
+- [[Di-Marco2025-aa]]
+- [[Fletcher2026-lv]]
+- [[Frischlich2025-vn]]
 - [[Goel2025-iq]]
 - [[Gonzalez-Bailon2024-rq]]
-- [[Green2025-ap]]
 - [[Hartmann2025-px]]
 - [[Hourigan2026-oc]]
+- [[Karlsson2026-hd]]
 - [[Lyons2026-ca]]
 - [[Oswald2025-km]]
 - [[Schulz2026-ts]]
-- [[Tonneau2025-bv]]
-- [[Triedman2025-uy]]
+- [[Ventura2025-sw]]
+- [[Vincent_undated-re]]
 - [[Voelkel2026-lc]]
-- [[noauthor_undated-bm]]
+- [[van-der-Linden2026-jt]]
 
 ## All papers (Dataview)
 

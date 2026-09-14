@@ -6,7 +6,7 @@ year: 2017
 doi: 10.1177/2056305116686992
 bibtex_key: Giglietto2017-4375de2f
 kind: own
-topics: [information-disorder-disinformation-narratives, political-polarization-partisan-media]
+topics: [political-communication-elections, conspiracy-narratives-in-media]
 citation_count: 125
 open_access: true
 source_url: https://doi.org/10.1177/2056305116686992

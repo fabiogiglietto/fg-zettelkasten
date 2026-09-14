@@ -1,85 +1,78 @@
 ---
 type: topic
-slug: information-disorder-disinformation-narratives
+slug: information-disorder-fact-checking
 emergent: false
 ---
 
-# Information Disorder & Disinformation Narratives
+# Information Disorder & Fact-Checking Support
 
-Broad study of misinformation, disinformation and 'fake news' as phenomena within the hybrid media system, including narrative monitoring (PROMPT), COVID-19 fact-checking (MINE-FACTS), and conceptual taxonomies of misleading information. Central to the researcher's identity and funding history, and continues via EU-facing narrative-tracking work.
+Research on disinformation narratives, misinformation typologies, and tools/resources to support journalists and fact-checkers, including the EU PROMPT project, MINE-FACTS COVID-19 fact-checking work, and long-standing theorizing of 'fake news' within the hybrid media system.
 
 ## Papers
 
+- [[Adam2026-tz]]
 - [[Bak-Coleman2025-pm]]
-- [[Bak-Coleman2026-mk]]
+- [[Balluff2026-bv]]
+- [[Bollenbacher2026-vz]]
 - [[Bosch2024-hj]]
 - [[Cazzamatta2026-lo]]
+- [[Choi2026-bz]]
 - [[DeVerna2025-dl]]
 - [[Di-Domenico2026-zq]]
 - [[Dierickx2026-tw]]
 - [[Donovan2025-ws]]
-- [[Ducci2022-10cb5d70]]
 - [[Efstratiou2026-ij]]
 - [[Emilio2026-ik]]
 - [[Farkas2026-lr]]
-- [[FitzGerald2025-nv]]
-- [[Fletcher2026-lv]]
 - [[Frischlich2025-vn]]
 - [[Gattermann2025-yx]]
 - [[Ghezzi2023-8bebc91f]]
-- [[Giada2026-fc9a3833]]
-- [[Giglietto2017-4375de2f]]
 - [[Giglietto2019-e9be81c1]]
-- [[Giglietto2026-855a54cb]]
+- [[Giglietto2022-0e951ac5]]
 - [[Goel2025-iq]]
+- [[Graham2025-gp]]
 - [[Hameleers2026-mc]]
-- [[Heiss2026-qv]]
 - [[Holt2026-zq]]
 - [[Hourigan2026-oc]]
 - [[Humprecht2025-ml]]
 - [[Hurcombe2025-cs]]
+- [[Iris2026-pg]]
+- [[Lieu2025-nl]]
 - [[Luhring2025-od]]
 - [[Mahl2026-hc]]
 - [[Marwick2025-vx]]
 - [[Marwick2026-qd]]
 - [[Mosca2026-yh]]
-- [[Mosleh2024-op]]
 - [[Nenno2025-xa]]
 - [[Pierri2025-hm]]
-- [[Pierri2026-ib]]
-- [[Poliakoff2026-fa]]
 - [[Prochaska2025-ef]]
 - [[Ramos2026-qo]]
 - [[Renault2025-uh]]
+- [[Rodarte2026-dk]]
 - [[Rodriguez_Farres2025-sg]]
 - [[Rogers2026-cy]]
 - [[Rohrbach2026-rc]]
 - [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
 - [[Rossini2026-mj]]
-- [[Rothut2026-wt]]
 - [[Sadler2025-vu]]
+- [[Sbaraini-Fontes2026-cw]]
 - [[Scalco2026-bd]]
 - [[Spampatti2026-kx]]
 - [[Starbird2025-jj]]
 - [[Suau_Martinez2026-lv]]
 - [[Tai2026-qk]]
 - [[Tornberg2025-ir]]
+- [[Triedman2025-uy]]
 - [[Van_Erkel2026-mk]]
-- [[Ventura2025-sw]]
-- [[Vincent_undated-re]]
 - [[Wack2026-bt]]
-- [[Waight2025-al]]
 - [[Xue2025-bp]]
 - [[Yoo2026-ev]]
-- [[Zhao2025-ny]]
-- [[van-Eck2026-xg]]
-- [[van-der-Linden2026-jt]]
 
 ## All papers (Dataview)
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "information-disorder-disinformation-narratives")
+WHERE contains(topics, "information-disorder-fact-checking")
 SORT discovery_date DESC
 ```

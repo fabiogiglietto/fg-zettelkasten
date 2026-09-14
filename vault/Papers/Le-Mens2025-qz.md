@@ -5,7 +5,7 @@ authors: ["Gaël Le Mens", "Aina Gallego"]
 year: 2025
 doi: 10.1017/pan.2024.29
 bibtex_key: Le-Mens2025-qz
-topics: [computational-methods-llm-annotation, political-polarization-partisan-media]
+topics: [computational-methods-llm-annotation, political-communication-elections]
 citation_count: 21
 open_access: false
 source_url: https://doi.org/10.1017/pan.2024.29

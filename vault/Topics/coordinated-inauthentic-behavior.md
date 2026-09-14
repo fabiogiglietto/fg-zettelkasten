@@ -6,7 +6,7 @@ emergent: false
 
 # Coordinated Inauthentic Behavior
 
-Detection and analysis of coordinated link-sharing and inauthentic network behaviour across platforms, including the CooRnet/CLSB methodology, the VERA-AI Alert monitoring system, and studies of deceptive information operations. This is the researcher's signature methodological contribution and remains the most active current thread, spanning vera.ai WP4 leadership and multiple 2025-2026 publications.
+Detection, measurement and theorization of coordinated link-sharing and inauthentic network behavior across platforms, spanning the CooRnet/CooRTweet methodology, the VERA-AI Alert monitoring system, and workshop/dataset methods for surfacing coordinated actors. This is the researcher's signature methodological contribution and remains the anchor of his current empirical and tool-development work.
 
 ## Papers
 
@@ -15,7 +15,6 @@ Detection and analysis of coordinated link-sharing and inauthentic network behav
 - [[Bastos2025-ol]]
 - [[Copland2025-em]]
 - [[Di-Marco2025-aa]]
-- [[Efstratiou2025-gs]]
 - [[Efstratiou2026-ij]]
 - [[FitzGerald2025-nv]]
 - [[Gaw2025-ru]]
@@ -25,13 +24,11 @@ Detection and analysis of coordinated link-sharing and inauthentic network behav
 - [[Giglietto2022-0e951ac5]]
 - [[Giglietto2023-fa71a001]]
 - [[Giglietto2026-9b6a992d]]
-- [[Graham2025-gp]]
-- [[Graham2026-fb]]
+- [[Holland_Levin2026-qx]]
 - [[Iannucci2025-eg]]
 - [[Jovanovic-Harrington2026-ze]]
 - [[Kansaon2025-id]]
 - [[Kim2026-br]]
-- [[Kim2026-wg]]
 - [[Kulichkina2026-zk]]
 - [[Kuznetsova2025-nu]]
 - [[Luceri2025-tr]]
@@ -45,10 +42,8 @@ Detection and analysis of coordinated link-sharing and inauthentic network behav
 - [[Poliakoff2026-fa]]
 - [[Rodriguez_Farres2025-sg]]
 - [[Rogers2026-cy]]
-- [[Schroeder2026-im]]
 - [[Simeone2025-vo]]
 - [[Song2025-yh]]
-- [[Tang2026-gu]]
 - [[Thiele2025-ol]]
 - [[Yang2025-iv]]
 - [[Zhao2025-ny]]

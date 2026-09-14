@@ -6,7 +6,7 @@ year: 2023
 doi: 10.31235/osf.io/4cyfu
 bibtex_key: Ghezzi2023-8bebc91f
 kind: own
-topics: [political-polarization-partisan-media, information-disorder-disinformation-narratives]
+topics: [political-communication-elections, information-disorder-fact-checking]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.31235/osf.io/4cyfu

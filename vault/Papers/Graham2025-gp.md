@@ -5,7 +5,7 @@ authors: ["Timothy Graham"]
 year: 2025
 doi: 10.1080/15295036.2025.2473002
 bibtex_key: Graham2025-gp
-topics: [coordinated-inauthentic-behavior, platform-governance-data-access]
+topics: [cross-national-influence-operations, information-disorder-fact-checking]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1080/15295036.2025.2473002

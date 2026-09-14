@@ -5,7 +5,7 @@ authors: ["Anders Olof Larsson"]
 year: 2026
 doi: 10.5210/fm.v31i1.14448
 bibtex_key: Larsson2026-ro
-topics: [electoral-campaigns-social-media, llm-augmented-research-methods]
+topics: [political-communication-elections, computational-methods-llm-annotation]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.5210/fm.v31i1.14448
