@@ -22,34 +22,34 @@ discovery_date: 2026-07-18T05:54:58.327075Z
 
 ## Summary
 
-This report examines the rise of "clean room" data access environments as the dominant model through which major platforms now provide research data, following the closure of open APIs after the Cambridge Analytica scandal. Focusing on the Meta Content Library (MCL) and its two evolving access frameworks — the Virtual Data Enclave (VDE) and the newer Secure Research Environment (SRE) — Bruns and Vodden argue that while clean rooms respond to legitimate privacy, ethical, and legal concerns, their design severely constrains the range of researchers and research methods that can use platform data. The paper frames clean rooms as a governance and power question about who controls authoritative platform data, and concludes that regulators must scrutinise not just whether platforms grant access under laws like the EU Digital Services Act (DSA), but whether that access is genuinely useful.
+This report by Bruns and Vodden examines the rise of "clean room" data access environments as the dominant model through which major platforms now supply research data, following the closure of open APIs after the Cambridge Analytica scandal. Focusing on the Meta Content Library (MCL) and its two access frameworks, the authors argue that while clean rooms address legitimate privacy, ethical, and legal concerns, their design severely constrains which researchers and which methods can actually make use of platform data. They situate their critique within the arc of platform studies — from the permissive API "Wild West," through the "APIcalypse," to today's regulated but restrictive "walled gardens" — and conclude that regulators must scrutinise not only whether platforms grant access under laws like the EU Digital Services Act, but whether that access is genuinely useful for research.
 
 ## Key Contributions
 
-- A concrete, practitioner-informed account of how MCL's VDE and SRE environments actually operate and evolve.
-- A systematic critique of the clean room model's methodological and equity limitations for social media research.
-- Highlights the underexplored downstream effects of DSA Article 40 implementation on real-world research usability.
-- Extends the clean room critique beyond social media by connecting it to news-content databases like ProQuest TDM Studio.
-- Guidance to legislators and regulators to attend not just to access provision but to its practical adequacy.
+- A concrete, practitioner-informed account of how the Meta Content Library's Virtual Data Enclave (VDE) and newer Secure Research Environment (SRE) actually operate and evolve.
+- A systematic critique of the methodological and equity limitations of the clean room model for social media research.
+- Attention to the underexplored downstream effects of DSA Article 40 implementation on real-world research usability.
+- Extension of the clean room critique beyond social media by connecting it to news-content databases like ProQuest's TDM Studio.
+- Practical guidance for legislators and regulators to attend not just to access provision but to its adequacy.
 
 ## Methods
 
-Critical, descriptive analysis grounded in the authors' hands-on experience with clean room infrastructures. The core is a detailed case description of the MCL and its two access chains, with comparative reference to ProQuest's TDM Studio as a non-social-media example of the same philosophy. The analysis is situated within prior scholarship on API closures (the "APIcalypse"), platform data governance, and the DSA.
+The paper offers a critical, descriptive analysis of clean room data access infrastructures grounded in the authors' hands-on experience. It provides a detailed case description of the MCL and its two access frameworks — the VDE hosted via SOMAR/ICPSR and the newer SRE — with comparative reference to ProQuest's TDM Studio as a non-social-media example of the same philosophy. The analysis is situated within prior scholarship on API closures, platform data governance, and the DSA.
 
 ## Findings
 
-- MCL access replaced CrowdTangle (decommissioned August 2024), reducing access precisely during the final phase of the 2024 US presidential election.
-- The original VDE access chain (remote Windows → Linux → Jupyter Notebook querying AWS-hosted data) is cumbersome and especially slow from outside the US.
-- The improved SRE uses an Amazon Workspaces secure browser plugin but mandatorily deletes all accessed data on the first of each month, obstructing longitudinal studies.
+- MCL access replaced CrowdTangle (decommissioned August 2024), reducing data access precisely during the final phase of the 2024 US presidential election.
+- The original VDE access chain (remote Windows machine → Linux machine → Jupyter Notebook querying AWS-hosted data) is cumbersome and especially slow from outside the US.
+- The improved SRE uses an Amazon Workspaces Secure Browser plugin but mandatorily deletes all accessed data from the working directory on the first of each month, obstructing longitudinal studies.
 - Restriction to Jupyter Notebooks with limited packages excludes researchers lacking coding skills and those from media, communication, and political communication disciplines.
-- Clean rooms lack qualitative coding tools (NVivo, MaxQDA), spreadsheets, and open-Web access, preventing use of commercial LLMs and hindering mixed-methods work.
-- Clean rooms exist in isolation, blocking cross-platform dataset combination and limiting comparative analysis to high-level aggregates.
-- The EU has begun proceedings against Meta and TikTok for failing DSA transparency and data-access obligations.
-- Clean rooms structurally privilege quantitative, code-based analysis and well-resourced Global North teams, reinforcing WEIRD/English-language bias.
+- Clean rooms lack qualitative coding tools (e.g., NVivo, MaxQDA), spreadsheets, and open-Web access, preventing use of commercial LLMs and hindering mixed-methods work.
+- Clean rooms exist in isolation, preventing combination of datasets across platforms and limiting cross-platform analysis to high-level aggregate observations.
+- The clean room model embeds a philosophy that distrusts researchers' data handling, privileges quantitative code-based analysis, and widens the resource gap between well-funded Global North teams and researchers in the Majority World.
+- The EU has begun proceedings against Meta and TikTok for failing their DSA transparency and data-access obligations.
 
 ## Connections
 
-This paper is a central node in the platform-data-access-and-governance debate, complementing broader assessments of the DSA and post-API research landscape such as [[Bruns2026-yv]], [[Bruns2025-fz]], [[Rieder2025-ju]], and [[Ohme2026-nv]]. Its critique that clean rooms obstruct commercial LLM use and mixed-methods work speaks directly to computational content-analysis approaches that presume flexible data handling, including [[Balluff2026-if]] and [[Manovich2026-ih]]. Related work on TikTok's own research data access and cross-platform limitations includes [[Waight2026-ts]] and [[Waight2025-al]].
+This paper is a central reference point for the platform-governance-and-data-access strand, complementing other critical accounts of DSA implementation and post-API research infrastructures such as [[Rieder2025-ju]], [[Bruns2025-fz]], and [[Bruns2026-yv]]. Its concern that clean rooms obstruct commercial LLM use and mixed-methods coding connects to the computational-annotation literature — e.g. [[DeVerna2025-dl]] and [[Le-Mens2025-qz]] — where the very tools clean rooms exclude are increasingly central to research practice.
 
 ## Podcast
 

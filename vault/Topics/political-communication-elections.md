@@ -31,6 +31,7 @@ Longitudinal study of social media dynamics around national elections (Italy 201
 - [[Esau2025-tf]]
 - [[Falkenberg2026-ka]]
 - [[Fletcher2026-lv]]
+- [[Gaber2022-bk]]
 - [[Gaisbauer2025-by]]
 - [[Gattermann2025-yx]]
 - [[Gauthier2026-iq]]

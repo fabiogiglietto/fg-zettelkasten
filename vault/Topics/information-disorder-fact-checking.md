@@ -25,6 +25,7 @@ Research on disinformation narratives, misinformation typologies, and tools/reso
 - [[Emilio2026-ik]]
 - [[Farkas2026-lr]]
 - [[Frischlich2025-vn]]
+- [[Gaber2022-bk]]
 - [[Gattermann2025-yx]]
 - [[Ghezzi2023-8bebc91f]]
 - [[Giglietto2019-e9be81c1]]

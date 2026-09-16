@@ -3145,10 +3145,10 @@
       "doi": "10.25358/openscience-15825",
       "title": "The challenges of working with platform data from clean room environments",
       "pdf_source": "drive",
-      "content_hash": "092f65937c52f2a8e8e9372f32143dd1dfdcbceb86cded6e2e57024c45a56ab0",
+      "content_hash": "8e7e17c569e7ba3802f0ebddb5f42c43860449d765d81687859c9d019501c64e",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-08-17T06:17:43.485114+00:00"
+      "last_processed": "2026-09-16T10:23:23.296969+00:00"
     },
     "bibtex:Rossini2026-mj": {
       "note_path": "Papers/Rossini2026-mj.md",
@@ -3574,10 +3574,25 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-09-10T09:24:02.543391+00:00"
+    },
+    "bibtex:Gaber2022-bk": {
+      "note_path": "Papers/Gaber2022-bk.md",
+      "topics": [
+        "information-disorder-fact-checking",
+        "political-communication-elections"
+      ],
+      "assign_fp": "f33f27f8782ce5350c98535d06cdb0993e25ba585e466bdca9fe740281855f4e",
+      "doi": "10.1177/1940161221994100",
+      "title": "“strategic lying”: The case of Brexit and the 2019 U.k. election",
+      "pdf_source": "drive",
+      "content_hash": "493c3c0cc746a484a9614e318935348f94bc3240cd2774feae5597a434843a28",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-09-16T10:23:07.655614+00:00"
     }
   },
   "last_full_cluster": "2026-09-14T10:01:15.446556+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "0bd497771d3db63da491448d109ced435f8bca6bbdeec725cb44ad5a93395ddc",
   "emergent_fp": "d8ffbc7ad99650334b1e7bf5c44f3dce54aff5249c10367b11eb4d9a0a8680a6",
   "structure_fps": {
