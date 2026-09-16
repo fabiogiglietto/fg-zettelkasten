@@ -1,0 +1,33 @@
+{
+  "abstract": "This conceptual paper introduces and theorizes the concept of 'strategic lying' — a deliberate campaigning tactic in which politicians knowingly disseminate false claims to set, prime, and frame the news agenda. Using the 2016 Brexit referendum and the 2019 U.K. general election as case studies (with Trump's U.S. campaigns as supporting reference), the authors argue that strategic lying is not a radical break from political 'spin' but an evolution of it, intensified by professionalized political communication and social media. The paper contends that in a post-truth environment, politicians caught lying are increasingly not punished at the ballot box, posing challenges to liberal democracy.",
+  "key_claims": [
+    "'Strategic lying' is a distinct, deliberate campaigning tactic designed as a priming device to set and control the news agenda, where the veracity of the claim is irrelevant to its purpose.",
+    "Strategic lying is an evolution of political 'spin' rather than a radical departure from it, contra scholars like Garland who frame post-truth as a break.",
+    "The strategic lie works in two stages: the attention-grabbing lie itself, and the rebuttal, which inadvertently amplifies the lie and increases its salience across social and mainstream media.",
+    "Social media 'turbo-charges' strategic lying through network dissemination ('distributed spin'), reduced gatekeeping, targeting, and the ineffectiveness of fact-checking.",
+    "Politicians who lie are increasingly not punished electorally, threatening the liberal-democratic norm of an informed electorate.",
+    "Strategic lying is distinguished by three criteria: repetition of blatant untruths despite knowing they are false, keeping the campaign focus on favorable agenda items, and being attention-grabbing enough to guarantee amplification."
+  ],
+  "methods": [
+    "Conceptual/theoretical paper drawing on cross-disciplinary literature and agenda-setting theory to develop and define the concept of 'strategic lying'.",
+    "Two qualitative case studies: the 2016 U.K. Brexit referendum (Leave campaign) and the 2019 U.K. general election (Conservative Party campaign), with the U.S. Trump campaigns as comparative illustration.",
+    "Analysis of documentary evidence including Dominic Cummings' blog, party campaign materials, fact-checking organization findings (First Draft, Full Fact), news reports, and media monitoring data (e.g., Loughborough University coverage analysis, Deacon et al.).",
+    "Synthesis of behavioral science and communication literature on agenda setting, priming, framing, confirmation bias, cognitive dissonance, and the persistence of misinformation."
+  ],
+  "findings": [
+    "The Leave campaign's £350 million/week NHS claim and the 'Turkey joining the EU' claim functioned as strategic lies to prime sovereignty and immigration concerns; Cummings admitted the £350m figure was designed 'to provoke people into argument' rather than convey accurate information.",
+    "In the 2019 election, the vast majority of campaign lies came from the Conservatives — First Draft found 88 percent of Conservative Facebook ads contained 'suspect information' versus 6.7 percent of Labour's.",
+    "Examples of Conservative strategic lying included a doctored video of Keir Starmer (over a million views), an exaggerated £1.2 trillion Labour spending claim (versus IFS's £98 billion), false claims of 40 new hospitals and 50,000 new nurses, and denial of Northern Ireland border checks.",
+    "The Conservatives set up two deceptive websites — a fake 'Labour Manifesto' page and a 'Factcheck UK' account rebranded from @CCHQPress — prompting a warning from Twitter and Google's removal of eight misleading Conservative ads.",
+    "Rebuttals and fact-checking often backfire: they amplify and legitimize lies ('unintentional amplification', 'inadvertent legitimization'), corrections fade from memory while the lie persists, and audiences reject corrections due to confirmation bias and cognitive dissonance.",
+    "Media monitoring showed Brexit was the most-covered topic in the 2019 campaign, suggesting the strategic lies succeeded in keeping the agenda on Conservative-favorable ground; correlation (not causation) is noted with Leave voters' stated motivations."
+  ],
+  "contributions": [
+    "Introduces and defines the original concept of 'strategic lying' with three distinguishing criteria, adding a new category to the study of political communication.",
+    "Situates strategic lying within the historical evolution of 'spin' rather than treating it as an ad hoc online phenomenon or as 'fake news', distinguishing it from related concepts like 'wicked content' (Jack), the 'dead cat strategy', and 'bullshitting' (Frankfurt).",
+    "Applies intermedia agenda-setting, priming, and framing theory to explain how lies operate strategically across hybrid digital and traditional media.",
+    "Provides documented U.K. case evidence and calls for urgent further research on the prevalence of strategic lying in liberal democracies and its effects on voter behavior."
+  ],
+  "framing": "The paper positions itself within political communication scholarship on spin, propaganda, and the 'post-truth' era, drawing on agenda-setting theory (McCombs & Shaw; Scheufele & Tewksbury) and Chadwick's hybrid media system. It engages debates about disinformation, populism, and the erosion of the informed-electorate norm central to liberal-democratic theory, positioning strategic lying as a continuation rather than a rupture of established public-relations practices.",
+  "pdf_source": "drive"
+}
