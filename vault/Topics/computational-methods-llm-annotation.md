@@ -28,6 +28,7 @@ Development and validation of computational text-analysis pipelines for communic
 - [[Gardam2025-er]]
 - [[Giglietto2022-b30e8b4e]]
 - [[Giglietto2024-cbeb3f70]]
+- [[Gomez-Zara2026-as]]
 - [[Hartmann2025-px]]
 - [[Jayaram2026-wd]]
 - [[Kotz2026-lk]]

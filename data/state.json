@@ -3589,10 +3589,25 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-09-16T10:23:07.655614+00:00"
+    },
+    "bibtex:Gomez-Zara2026-as": {
+      "note_path": "Papers/Gomez-Zara2026-as.md",
+      "topics": [
+        "computational-methods-llm-annotation",
+        "llm-augmented-research-methods"
+      ],
+      "assign_fp": "ce5ec44c9740505c2a7cb5240dd0dc0586524e46c05bbdf4f5849f19b116507f",
+      "doi": "10.1080/21670811.2026.2730327",
+      "title": "Revisiting framing codebooks with AI: Employing large language models as analytical collaborators in deductive content analysis",
+      "pdf_source": "drive",
+      "content_hash": "a4042f5c61d5f7f76b63b6822ddb9497f4332af1989212890f231e49607895ac",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-09-18T06:18:56.988101+00:00"
     }
   },
   "last_full_cluster": "2026-09-14T10:01:15.446556+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "0bd497771d3db63da491448d109ced435f8bca6bbdeec725cb44ad5a93395ddc",
   "emergent_fp": "d8ffbc7ad99650334b1e7bf5c44f3dce54aff5249c10367b11eb4d9a0a8680a6",
   "structure_fps": {
