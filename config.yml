@@ -155,8 +155,32 @@ supersede:
     max_lookups_per_run: 15
     recheck_after_days: 90
 
+classics:
+  # `suggest-classics` reports the works the vault's own papers cite most but the
+  # vault does not hold — the literature that predates the archive. No LLM and no
+  # notes: a chosen work is added through Paperpile so `toread` mints its key.
+  # The OpenAlex contact address falls back to `supersede.openalex.mailto`.
+  enabled: true
+  # Overall cut-off: a candidate must be cited by at least this many notes.
+  min_citing: 5
+  max_candidates: 60
+  # The per-topic view digs deeper, since a thinly indexed topic can only ever
+  # give its foundations a few citations.
+  topic_min_citing: 3
+  per_topic: 5
+  # A note OpenAlex had no reference list for is asked about again after this long.
+  recheck_after_days: 30
+  exclude_types: [dataset]
+  # Cited as tooling rather than as literature — not worth a note.
+  exclude_dois:
+    - "10.1088/1742-5468/2008/10/p10008"   # Blondel et al. 2008, Louvain
+    - "10.1609/icwsm.v14i1.7347"           # Baumgartner et al. 2020, Pushshift
+
 paths:
   topics_file: "data/topics.json"
   state_file: "data/state.json"
+  citations_file: "data/citations.json"
+  # Transient report (.md + .json), regenerated on every run.
+  classics_report: "data/classics_candidates"
   summaries_dir: "data/summaries"
   cache_dir: "data/.cache"

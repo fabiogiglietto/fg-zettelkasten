@@ -24,6 +24,7 @@ python -m src.main update [--recluster]
 python -m src.main export-site         # export vault/ -> quartz/content/ for the website
 python -m src.main dedupe-vault        # report notes that are the same work (--apply to merge)
 python -m src.main check-published     # ask OpenAlex if a preprint note is now published
+python -m src.main suggest-classics    # report the works the vault cites most but lacks (no LLM)
 ```
 
 ## Architecture
@@ -37,7 +38,9 @@ python -m src.main check-published     # ask OpenAlex if a preprint note is now 
 - `src/summarizer.py`      — full PDF -> structured summary (shared artifact)
 - `src/themes.py`          — topic-anchored assignment + emergent sub-themes
 - `src/supersede.py`       — decide when two records are the same work; tombstone merge
-- `src/openalex_client.py` — look up whether a preprint has since been published
+- `src/openalex_client.py` — look up whether a preprint has since been published;
+                             batched reference-list / metadata lookups
+- `src/classics.py`        — rank the outside works the vault's papers cite most
 - `src/note_builder.py`    — render Papers/, Topics/, Structures/ markdown
 - `src/site_export.py`     — export the vault to `quartz/content/` for the website
 - `src/state.py`           — data/state.json persistence
@@ -71,6 +74,14 @@ python -m src.main check-published     # ask OpenAlex if a preprint note is now 
   have no upstream bibtex key, so the note is upgraded *in place* (new DOI,
   `preprint_doi` kept, `published_venue` recorded) rather than replaced — never
   mint bibtex keys locally, `toread` owns that namespace.
+- Classics: `suggest-classics` only *reports* candidates — the works most cited
+  by the vault's own papers that the vault does not hold (overall and per topic;
+  the overall ranking favours well-indexed fields, so read both). It never builds
+  a note: a candidate has no bibtex key, so a chosen work is added through
+  Paperpile and arrives via the feed. Each note's OpenAlex reference list is
+  kept in `data/citations.json` (committed; fetched once, empty results re-asked
+  after `classics.recheck_after_days`); the report itself is transient
+  (`data/classics_candidates.{md,json}`, gitignored).
 - Derived notes (Topics/, Structures/) are regenerated, never appended to.
 - Inputs are fetched live from published URLs, never local sibling working copies.
 - Run as a module: `python -m src.main`. `src/` modules use relative imports.
