@@ -19,6 +19,9 @@ service-account*.json
 data/.cache/
 # Transient report from `dedupe-vault --dry-run`; regenerated on every run.
 data/supersede_candidates.json
+# Transient report from `suggest-classics`; regenerated on every run.
+data/classics_candidates.md
+data/classics_candidates.json
 
 # IDE / OS
 .idea/

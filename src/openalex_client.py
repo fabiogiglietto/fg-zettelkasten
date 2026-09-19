@@ -12,6 +12,9 @@ only the deposit you asked about (verified against real SocArXiv records), and
 `related_works` is topical similarity, not versions. So matching is done by
 title search plus the same author/title agreement the rest of the pipeline uses,
 and every hit is adjudicated before anything is written.
+
+The batched lookups at the bottom serve `suggest-classics` (`classics.py`):
+reference lists by DOI, and work metadata by OpenAlex id.
 """
 from __future__ import annotations
 
@@ -151,6 +154,94 @@ def find_published_version(
         if best is None or score > best[0]:
             best = (score, work)
     return best[1] if best else None
+
+
+# --- batched lookups (suggest-classics) ------------------------------------
+
+# OpenAlex ORs up to 100 values in one filter; a DOI-laden URL gets long well
+# before that, so stay comfortably under both limits.
+_BATCH = 40
+_REFS_SELECT = "id,doi,referenced_works"
+_WORK_SELECT = (
+    "id,doi,title,type,publication_year,primary_location,authorships,"
+    "open_access,cited_by_count"
+)
+# `|` separates OR'd values and `,` separates filters, so a DOI carrying either
+# cannot go into a batched filter.
+_UNBATCHABLE_RE = re.compile(r"[|,]")
+
+
+def short_id(openalex_id: str) -> str:
+    """`https://openalex.org/W123` -> `W123`."""
+    return (openalex_id or "").rsplit("/", 1)[-1]
+
+
+def _get_batch(filter_value: str, select: str, mailto: Optional[str]) -> list[dict]:
+    """One filtered page of works, retried on transient failures. [] on failure."""
+    from urllib.parse import urlencode
+
+    from .feed_client import get_with_retries
+
+    params = {"filter": filter_value, "per-page": 100, "select": select}
+    if mailto:
+        params["mailto"] = mailto
+    try:
+        response = get_with_retries(
+            f"{API}?{urlencode(params)}",
+            headers={"User-Agent": f"fg-zettelkasten (mailto:{mailto or 'unset'})"},
+            timeout=60,
+        )
+        return response.json().get("results") or []
+    except (requests.RequestException, ValueError) as exc:
+        print(f"  openalex: batch failed ({exc})")
+        return []
+
+
+def references_by_doi(
+    dois: list[str], mailto: Optional[str] = None
+) -> dict[str, dict[str, Any]]:
+    """`{doi: {"openalex_id": "W…", "referenced_works": ["W…", …]}}` for `dois`.
+
+    A DOI OpenAlex does not know is simply absent from the result; a failed
+    batch is logged and skipped, so a partial answer is still returned.
+    """
+    wanted = sorted({d.lower() for d in dois if d and not _UNBATCHABLE_RE.search(d)})
+    found: dict[str, dict[str, Any]] = {}
+    for start in range(0, len(wanted), _BATCH):
+        chunk = wanted[start:start + _BATCH]
+        for work in _get_batch("doi:" + "|".join(chunk), _REFS_SELECT, mailto):
+            found[_doi_of(work).lower()] = {
+                "openalex_id": short_id(work.get("id") or ""),
+                "referenced_works": [
+                    short_id(ref) for ref in work.get("referenced_works") or []
+                ],
+            }
+    return found
+
+
+def works_by_id(ids: list[str], mailto: Optional[str] = None) -> dict[str, dict]:
+    """`{short id: work}` for OpenAlex work ids, in batches."""
+    wanted = sorted({short_id(i) for i in ids if i})
+    found: dict[str, dict] = {}
+    for start in range(0, len(wanted), _BATCH):
+        chunk = wanted[start:start + _BATCH]
+        for work in _get_batch("openalex_id:" + "|".join(chunk), _WORK_SELECT, mailto):
+            found[short_id(work.get("id") or "")] = work
+    return found
+
+
+def describe_candidate(work: dict) -> dict[str, Any]:
+    """The fields a classics candidate report needs from a work."""
+    return {
+        "doi": _doi_of(work),
+        "title": work.get("title") or "",
+        "authors": _authors_of(work),
+        "year": work.get("publication_year"),
+        "venue": _venue_of(work),
+        "type": work.get("type") or "",
+        "oa_status": (work.get("open_access") or {}).get("oa_status") or "",
+        "global_citations": int(work.get("cited_by_count") or 0),
+    }
 
 
 def describe(work: dict) -> dict[str, str]:
