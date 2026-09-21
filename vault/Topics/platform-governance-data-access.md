@@ -4,9 +4,9 @@ slug: platform-governance-data-access
 emergent: false
 ---
 
-# Platform Governance & Researcher Data Access
+# Platform Governance & Data Access
 
-Analysis of platform policy shifts (e.g., Meta's political content reduction policy, CrowdTangle's shutdown), Digital Services Act compliance and researcher API/data-access regimes, and the researcher's service as a DSA/ECAT independent expert on systemic risks of VLOPs.
+Research on social media platforms' data-access regimes, moderation and content policies (e.g., Meta's political content reduction, CrowdTangle shutdown, DSA-era research APIs), and the researcher's role as an independent expert to the European Commission on systemic platform risks.
 
 ## Papers
 
@@ -25,11 +25,11 @@ Analysis of platform policy shifts (e.g., Meta's political content reduction pol
 - [[Cullen2026-cb]]
 - [[De2026-ld]]
 - [[Donovan2025-ws]]
-- [[Efstratiou2025-gs]]
+- [[Emilio2026-ik]]
 - [[Entrena-Serrano2025-gw]]
 - [[Farkas2026-lr]]
 - [[Freelon2024-sc]]
-- [[Giada2026-fc9a3833]]
+- [[Giglietto2020-6278a4aa]]
 - [[Giglietto2022-b30e8b4e]]
 - [[Giglietto2025-1765bb4f]]
 - [[Giglietto2025-1e9a0917]]
@@ -38,7 +38,6 @@ Analysis of platform policy shifts (e.g., Meta's political content reduction pol
 - [[Giglietto2026-855a54cb]]
 - [[Goldberg2026-eb]]
 - [[Heiss2026-qv]]
-- [[Helmond2026-ll]]
 - [[Holt2026-zq]]
 - [[Hurcombe2025-cs]]
 - [[Inacio-da-Silva2026-zf]]
@@ -57,16 +56,17 @@ Analysis of platform policy shifts (e.g., Meta's political content reduction pol
 - [[Philipp2026-tl]]
 - [[Pierri2025-hm]]
 - [[Pierri2026-ib]]
-- [[Rauchfleisch2026-fa]]
+- [[Renault2025-uh]]
 - [[Rieder2025-ju]]
+- [[Rieder2026-pp]]
 - [[Schiffrin_undated-gi]]
-- [[Schulte2026-df]]
 - [[Swartz2026-zb]]
+- [[Thiele2025-ol]]
 - [[Tonneau2025-bv]]
 - [[Unknown2025-ed60bc90]]
 - [[Ventura2026-yc]]
-- [[Vincent_undated-re]]
-- [[Weinbrand2026-sf]]
+- [[Votta2025-xz]]
+- [[Waight2026-ts]]
 - [[Yang2026-tq]]
 - [[Zheng2026-bi]]
 - [[de-Vreese2026-zx]]

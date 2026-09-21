@@ -5,7 +5,7 @@ authors: ["Mohsen Mosleh", "Jennifer Nancy Lee Allen", "David Gertler Rand"]
 year: 2024
 doi: 10.31234/osf.io/9csy3_v5
 bibtex_key: Mosleh2024-op
-topics: [platform-engagement-algorithmic-visibility, political-communication-elections]
+topics: [information-disorder-disinformation, platform-affordances-engagement]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31234/osf.io/9csy3_v5

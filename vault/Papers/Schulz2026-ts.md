@@ -5,7 +5,7 @@ authors: ["Will Schulz", "Claire Elizabeth Robertson", "Hallgeir Sjåstad", "Ash
 year: 2026
 doi: 10.31234/osf.io/7z69m_v1
 bibtex_key: Schulz2026-ts
-topics: [misinformation-exposure-recalibration, political-communication-elections]
+topics: [misinformation-exposure-recalibration, political-polarization-partisanship]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31234/osf.io/7z69m_v1

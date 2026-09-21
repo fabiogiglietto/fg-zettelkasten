@@ -5,7 +5,7 @@ authors: ["Giada Marino", "Bruna Paroni", "Fabio Giglietto"]
 year: 2026
 doi: 10.1080/1369118x.2026.2696929
 bibtex_key: Marino2026-he
-topics: [political-communication-elections, platform-engagement-algorithmic-visibility]
+topics: [political-polarization-partisanship, computational-methods-llms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2026.2696929

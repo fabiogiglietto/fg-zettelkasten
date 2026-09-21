@@ -4,31 +4,23 @@ slug: generative-ai-synthetic-media
 emergent: false
 ---
 
-# Generative AI & Synthetic Persuasion
+# Generative AI & Synthetic Media Manipulation
 
-Study of generative-AI-driven visual and textual persuasion techniques deployed in coordinated influence operations (e.g., synthetic imagery in gambling promotion), and broader engagement with generative AI's implications for media and disinformation, reflected also in a new dedicated course.
+Emerging strand examining generative-AI-produced visual and textual persuasion in coordinated campaigns (e.g., gambling promotion, deceptive operations) and the pedagogical/critical treatment of generative AI in the media landscape, reflected in new teaching offerings and recent chapters.
 
 ## Papers
 
+- [[Baym2026-tr]]
 - [[Beacken2026-zb]]
-- [[Bouchafra2026-ts]]
+- [[Choi2026-bz]]
 - [[Dierickx2026-tw]]
 - [[Emilio2026-ik]]
 - [[Galip2026-ix]]
 - [[Giglietto2026-9b6a992d]]
-- [[Goldberg2026-eb]]
 - [[Hackenburg2025-dj]]
-- [[Hackenburg2026-ud]]
-- [[Hameleers2026-mc]]
-- [[Lin2025-xp]]
-- [[Orlando2025-ul]]
-- [[Rauchfleisch2026-fa]]
 - [[Schiffrin_undated-gi]]
-- [[Schroeder2026-im]]
 - [[Tang2026-gu]]
-- [[Tornberg2026-lc]]
 - [[Wack2026-bt]]
-- [[Waight2026-ts]]
 
 ## All papers (Dataview)
 

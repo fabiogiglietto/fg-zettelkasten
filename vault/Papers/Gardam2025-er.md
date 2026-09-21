@@ -5,7 +5,7 @@ authors: ["Caroline Gardam", "Michelle Riedlinger", "Daniel Angus", "Xue Ying (J
 year: 2025
 doi: 10.1016/j.dcm.2025.100946
 bibtex_key: Gardam2025-er
-topics: [conspiracy-narratives-in-media, computational-methods-llm-annotation]
+topics: [conspiracy-narratives-in-media, computational-methods-llms]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1016/j.dcm.2025.100946

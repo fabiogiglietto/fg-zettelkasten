@@ -5,7 +5,7 @@ authors: ["Melina Much", "Kylan Rutherford", "Jason Greenfield", "Joshua A. Tuck
 year: 2026
 doi: 10.33774/apsa-2026-cdb6x
 bibtex_key: Much2026-gu
-topics: [political-communication-elections, platform-engagement-algorithmic-visibility]
+topics: [elections-social-media, political-polarization-partisanship]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.33774/apsa-2026-cdb6x

@@ -5,7 +5,7 @@ authors: ["William Hollingshead", "Anatoliy Gruzd", "Philip Mai"]
 year: 2026
 doi: 10.17645/mac.11409
 bibtex_key: Hollingshead2026-vx
-topics: [platform-engagement-algorithmic-visibility, political-communication-elections]
+topics: [platform-affordances-engagement, conspiracy-narratives-in-media]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.17645/mac.11409

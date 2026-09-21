@@ -5,7 +5,7 @@ authors: ["Ivor Gaber", "Caroline Fisher"]
 year: 2022
 doi: 10.1177/1940161221994100
 bibtex_key: Gaber2022-bk
-topics: [information-disorder-fact-checking, political-communication-elections]
+topics: [information-disorder-disinformation, elections-social-media]
 citation_count: 53
 open_access: false
 source_url: https://doi.org/10.1177/1940161221994100

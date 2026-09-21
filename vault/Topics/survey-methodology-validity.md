@@ -11,10 +11,10 @@ Papers examining the methodological foundations of online survey research, inclu
 ## Papers
 
 - [[DiGiuseppe2025-es]]
-- [[Gilardi2026-hw]]
 - [[Hinck2026-yj]]
 - [[Iannelli2018-ebd918b7]]
 - [[Luhring2025-od]]
+- [[Oswald2025-km]]
 - [[Schemer2026-mh]]
 - [[Stagnaro2025-pz]]
 - [[Ulloa2024-jm]]

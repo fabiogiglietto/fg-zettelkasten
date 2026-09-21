@@ -5,7 +5,7 @@ authors: ["Germain Gauthier", "Roland Hodler", "Philine Widmer", "Ekaterina Zhur
 year: 2026
 doi: 10.1038/s41586-026-10098-2
 bibtex_key: Gauthier2026-iq
-topics: [platform-engagement-algorithmic-visibility, political-communication-elections]
+topics: [platform-affordances-engagement, elections-social-media]
 citation_count: 8
 open_access: false
 source_url: https://doi.org/10.1038/s41586-026-10098-2

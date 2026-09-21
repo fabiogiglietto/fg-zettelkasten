@@ -10,22 +10,24 @@ Reflective anniversary/position essays diagnosing the current state of social me
 
 ## Papers
 
-- [[Bastos2025-ya]]
+- [[Balluff2026-ev]]
 - [[Baym2026-tr]]
+- [[Beacken2026-zb]]
+- [[Bennett2025-xs]]
 - [[Boyd2026-op]]
 - [[Bruns2026-yv]]
 - [[De2026-ld]]
 - [[Dodds2026-df]]
-- [[Gerbaudo2026-fo]]
+- [[Fletcher2026-lv]]
+- [[Heiss2026-qv]]
 - [[Helmond2026-ll]]
 - [[Hepp2026-oi]]
+- [[Lewandowsky2026-ob]]
 - [[Marwick2026-ss]]
 - [[Richter2026-bt]]
-- [[Stanusch2026-ec]]
 - [[Swartz2026-zb]]
-- [[Tonneau2025-bv]]
 - [[Tornberg2026-lc]]
-- [[Vertesi2026-lv]]
+- [[Weinbrand2026-sf]]
 
 ## All papers (Dataview)
 

@@ -1,36 +1,39 @@
 ---
 type: topic
-slug: information-disorder-fact-checking
+slug: information-disorder-disinformation
 emergent: false
 ---
 
-# Information Disorder & Fact-Checking Support
+# Information Disorder & Disinformation
 
-Research on disinformation narratives, misinformation typologies, and tools/resources to support journalists and fact-checkers, including the EU PROMPT project, MINE-FACTS COVID-19 fact-checking work, and long-standing theorizing of 'fake news' within the hybrid media system.
+Study of disinformation narratives, misleading information, fake news, and problematic health/political content circulation, including EU-funded monitoring (PROMPT) and health-misinformation mapping in India, Nigeria and during COVID-19/Ukraine crises.
 
 ## Papers
 
 - [[Adam2026-tz]]
-- [[Bak-Coleman2025-pm]]
 - [[Balluff2026-bv]]
+- [[Bergeron-Boutin2026-yh]]
 - [[Bollenbacher2026-vz]]
 - [[Bosch2024-hj]]
 - [[Cazzamatta2026-lo]]
 - [[Choi2026-bz]]
+- [[Copland2025-em]]
 - [[DeVerna2025-dl]]
 - [[Di-Domenico2026-zq]]
-- [[Dierickx2026-tw]]
 - [[Donovan2025-ws]]
+- [[Ducci2022-10cb5d70]]
 - [[Efstratiou2026-ij]]
-- [[Emilio2026-ik]]
 - [[Farkas2026-lr]]
+- [[FitzGerald2025-nv]]
 - [[Frischlich2025-vn]]
 - [[Gaber2022-bk]]
 - [[Gattermann2025-yx]]
 - [[Ghezzi2023-8bebc91f]]
+- [[Giada2026-fc9a3833]]
 - [[Giglietto2019-e9be81c1]]
 - [[Giglietto2022-0e951ac5]]
 - [[Goel2025-iq]]
+- [[Gonzalez-Bailon2024-rq]]
 - [[Graham2025-gp]]
 - [[Hameleers2026-mc]]
 - [[Holt2026-zq]]
@@ -38,14 +41,17 @@ Research on disinformation narratives, misinformation typologies, and tools/reso
 - [[Humprecht2025-ml]]
 - [[Hurcombe2025-cs]]
 - [[Iris2026-pg]]
-- [[Lieu2025-nl]]
+- [[Kuznetsova2025-nu]]
 - [[Luhring2025-od]]
+- [[Lyons2026-ca]]
 - [[Mahl2026-hc]]
+- [[Marino2023-9137f448]]
 - [[Marwick2025-vx]]
 - [[Marwick2026-qd]]
 - [[Mosca2026-yh]]
+- [[Mosleh2024-op]]
 - [[Nenno2025-xa]]
-- [[Pierri2025-hm]]
+- [[Poliakoff2026-fa]]
 - [[Prochaska2025-ef]]
 - [[Ramos2026-qo]]
 - [[Renault2025-uh]]
@@ -57,16 +63,19 @@ Research on disinformation narratives, misinformation typologies, and tools/reso
 - [[Rossini2026-jn]]
 - [[Rossini2026-mj]]
 - [[Sadler2025-vu]]
-- [[Sbaraini-Fontes2026-cw]]
 - [[Scalco2026-bd]]
-- [[Spampatti2026-kx]]
+- [[Song2025-yh]]
 - [[Starbird2025-jj]]
 - [[Suau_Martinez2026-lv]]
 - [[Tai2026-qk]]
+- [[Tonneau2025-bv]]
 - [[Tornberg2025-ir]]
 - [[Triedman2025-uy]]
 - [[Van_Erkel2026-mk]]
+- [[Ventura2025-sw]]
+- [[Vincent_undated-re]]
 - [[Wack2026-bt]]
+- [[Waight2025-al]]
 - [[Xue2025-bp]]
 - [[Yoo2026-ev]]
 
@@ -74,6 +83,6 @@ Research on disinformation narratives, misinformation typologies, and tools/reso
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "information-disorder-fact-checking")
+WHERE contains(topics, "information-disorder-disinformation")
 SORT discovery_date DESC
 ```
