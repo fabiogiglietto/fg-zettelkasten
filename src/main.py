@@ -1462,6 +1462,109 @@ def cmd_check_published(cfg: dict, args) -> int:
     return 0
 
 
+def cmd_suggest_classics(cfg: dict, args) -> int:
+    """Report the works the vault cites most but does not hold.
+
+    Read-only towards the vault: it refreshes the reference-list cache and writes
+    a candidates report. Chosen works are added upstream through Paperpile, so
+    `toread` mints their bibtex keys — nothing here creates a note.
+    """
+    import json
+
+    from . import classics, openalex_client, supersede, state as state_mod
+
+    c_cfg = cfg.get("classics", {})
+    if not c_cfg.get("enabled", True):
+        print("suggest-classics: disabled in config")
+        return 0
+
+    vault = _abs(cfg["vault"]["path"])
+    papers_path = Path(vault) / cfg["vault"]["papers_dir"]
+    citations_file = _abs(cfg["paths"].get("citations_file", "data/citations.json"))
+    report_base = _abs(cfg["paths"].get("classics_report", "data/classics_candidates"))
+    mailto = (c_cfg.get("mailto")
+              or cfg.get("supersede", {}).get("openalex", {}).get("mailto") or None)
+
+    records = {
+        key: r for key, r in supersede.load_vault_records(papers_path).items()
+        if not r.superseded_by
+    }
+    state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
+    topics_by_key = {
+        key: (state["papers"].get(r.paper_id) or {}).get("topics") or []
+        for key, r in records.items()
+    }
+
+    now = classics.now_utc()
+    cache = classics.load_citations(citations_file)
+    if getattr(args, "refresh", False):
+        cache["works"] = {}
+    stale = classics.stale_keys(
+        records, cache, now, int(c_cfg.get("recheck_after_days", 30))
+    )
+    # Drop notes that have left the vault, so the file tracks it exactly.
+    gone = [k for k in cache["works"] if k not in records]
+    for key in gone:
+        del cache["works"][key]
+    if stale:
+        print(f"suggest-classics: fetching reference lists for {len(stale)} note(s)")
+        fetched = openalex_client.references_by_doi(
+            [records[k].doi for k in stale], mailto=mailto
+        )
+        classics.update_cache(cache, records, stale, fetched, now)
+    if stale or gone:
+        classics.save_citations(cache, citations_file)
+
+    sources = {k for k in records if k in cache["works"]}
+    ranked = classics.rank(cache, sources, topics_by_key)
+    min_citing = int(getattr(args, "min_citing", None) or c_cfg.get("min_citing", 5))
+    # The per-topic view needs works below the overall cut-off: a topic with few
+    # indexed notes can only ever give its foundations a handful of citations.
+    pool_min = min(min_citing, int(c_cfg.get("topic_min_citing", 3)))
+    pool = [c for c in ranked if c["count"] >= pool_min]
+    works = {
+        wid: openalex_client.describe_candidate(work)
+        for wid, work in openalex_client.works_by_id(
+            [c["openalex_ids"][0] for c in pool], mailto=mailto
+        ).items()
+    }
+    report = classics.build_report(
+        pool, works, records, topics_by_key,
+        exclude_types=set(c_cfg.get("exclude_types") or []),
+        exclude_dois=set(c_cfg.get("exclude_dois") or []),
+    )
+    overall = [c for c in report if c["count"] >= min_citing]
+    overall = overall[: int(c_cfg.get("max_candidates", 60))]
+    topic_view = classics.by_topic(report, int(c_cfg.get("per_topic", 5)))
+
+    entries = [cache["works"][k] for k in sources]
+    stats = {
+        "sources": len(sources),
+        "in_openalex": sum(1 for e in entries if e.get("openalex_id")),
+        "with_refs": sum(1 for e in entries if e.get("referenced_works")),
+        "distinct_works": len(ranked),
+    }
+    generated = now.strftime("%Y-%m-%d")
+    Path(report_base + ".md").write_text(
+        classics.render_markdown(overall, topic_view, stats, generated), encoding="utf-8"
+    )
+    Path(report_base + ".json").write_text(
+        json.dumps({"generated": generated, "stats": stats, "overall": overall,
+                    "by_topic": {t: [c["openalex_ids"][0] for c in rows]
+                                 for t, rows in topic_view.items()}},
+                   indent=1, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+    print(f"suggest-classics: {stats['with_refs']}/{stats['sources']} notes have a "
+          f"reference list; {len(overall)} work(s) cited by >= {min_citing} notes")
+    for cand in overall[:15]:
+        book = " [book]" if cand["is_book"] else ""
+        print(f"  {cand['count']:>3}  {classics.cite(cand)}. {cand['title'][:80]}{book}")
+    print(f"suggest-classics: full report -> {Path(report_base + '.md').relative_to(ROOT)}")
+    return 0
+
+
 def cmd_export_site(cfg: dict, args) -> int:
     """Export the vault to quartz/content/ for the public Quartz website."""
     from . import site_export, topics_client, state as state_mod
@@ -1586,6 +1689,19 @@ def build_parser() -> argparse.ArgumentParser:
         "--dry-run", action="store_true", help="report only (the default)"
     )
 
+    p_classics = sub.add_parser(
+        "suggest-classics",
+        help="report the works the vault cites most but does not hold (no LLM)",
+    )
+    p_classics.add_argument(
+        "--min-citing", type=int, default=None,
+        help="overall cut-off: notes that must cite a work (default: config)",
+    )
+    p_classics.add_argument(
+        "--refresh", action="store_true",
+        help="refetch every reference list instead of only the missing ones",
+    )
+
     p_slack = sub.add_parser(
         "slack-test", help="post one paper's digest to the Slack webhook"
     )
@@ -1605,6 +1721,7 @@ def main(argv=None) -> int:
         "recluster": cmd_recluster,
         "dedupe-vault": cmd_dedupe_vault,
         "check-published": cmd_check_published,
+        "suggest-classics": cmd_suggest_classics,
         "fix-links": cmd_fix_links,
         "export-site": cmd_export_site,
         "slack-test": cmd_slack_test,
