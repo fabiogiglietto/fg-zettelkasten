@@ -62,8 +62,10 @@ A paper with a non-retracting notice stays in the index, flagged:
 editorial_notices: [expression_of_concern, correction]   # carried into index.json
 ```
 
-with a `> [!caution] Editorial notices` callout under the H1 listing each
-notice's type, date and DOI.
+with callouts under the H1 listing each notice's type, date and DOI: concerns
+(expression of concern, partial retraction) under `> [!caution] Editorial
+concern`, corrections (correction, erratum, corrigendum, addendum) under
+`> [!note] Corrected`.
 
 ## Wikilink syntax
 

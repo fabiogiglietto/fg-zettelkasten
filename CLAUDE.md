@@ -90,7 +90,8 @@ python -m src.main check-retractions   # ask Crossref for retractions / notices 
   active DOI, run with `--apply` before each `update` in `update-vault.yml`. A
   retraction is applied like `retract` and announced in #toread if the paper was
   posted there; an expression of concern or a correction only *flags* the note
-  (`editorial_notices:` + a `[!caution]` callout, `notices` in state) — it stays
+  (`editorial_notices:`, a `[!caution]` callout for a concern and a `[!note]`
+  one for a correction, `notices` in state) — it stays
   in the registers and in the skill, which must disclose it when citing.
 - Classics: `suggest-classics` only *reports* candidates — the works most cited
   by the vault's own papers that the vault does not hold (overall and per topic;

@@ -511,34 +511,56 @@ def apply_retraction(text: str, notice_doi: str, date: str) -> str:
     return f"{text[:match.end()]}\n\n{banner}{text[match.end():]}"
 
 
-NOTICES_MARKER = "> [!caution] Editorial notices"
-_NOTICES_BLOCK_RE = re.compile(
-    r"^" + re.escape(NOTICES_MARKER) + r"\n(?:>.*\n?)*\n?", re.MULTILINE
+# Two severities, two callouts: a concern (expression of concern, partial
+# retraction) is a warning to the reader; a correction is housekeeping.
+CONCERN_MARKER = "> [!caution] Editorial concern"
+CORRECTION_MARKER = "> [!note] Corrected"
+# The single-callout form #88 wrote; still recognised so re-flagging migrates it.
+_LEGACY_NOTICES_MARKER = "> [!caution] Editorial notices"
+_NOTICE_BLOCK_RE = re.compile(
+    r"^(?:" + "|".join(re.escape(m) for m in (
+        CONCERN_MARKER, CORRECTION_MARKER, _LEGACY_NOTICES_MARKER
+    )) + r")\n(?:>.*\n?)*\n?",
+    re.MULTILINE,
 )
 
 
-def apply_notices(text: str, notices: list[dict[str, str]]) -> str:
-    """Flag a paper note with its editorial notices (expression of concern,
-    correction, ...) without taking it out of the vault.
-
-    `notices` are `retractions.parse_updates` dicts. The callout is rebuilt from
-    the full list each time, so re-running with the same notices is a no-op and
-    a new one simply joins the block. `editorial_notices:` in the frontmatter
-    lists their types for the zettel-paper indexer.
-    """
+def _notice_block(marker: str, notices: list[dict[str, str]]) -> str:
     from .retractions import LABELS
 
-    types = list(dict.fromkeys(n["type"] for n in notices))
-    text = set_frontmatter_field(text, "editorial_notices", types)
-    text = _NOTICES_BLOCK_RE.sub("", text)
-    if not notices:
-        return text
-    lines = [NOTICES_MARKER]
+    lines = [marker]
     for n in notices:
         label = LABELS.get(n["type"], n["type"])
         when = f" ({n['date']})" if n.get("date") else ""
         lines.append(f"> - {label}{when}: [{n['doi']}](https://doi.org/{n['doi']})")
-    block = "\n".join(lines)
+    return "\n".join(lines)
+
+
+def apply_notices(text: str, notices: list[dict[str, str]]) -> str:
+    """Flag a paper note with its editorial notices without taking it out of
+    the vault: concerns under a `[!caution]` callout, corrections under a
+    `[!note]` one.
+
+    `notices` are `retractions.parse_updates` dicts. The callouts are rebuilt
+    from the full list each time, so re-running with the same notices is a
+    no-op, a new one simply joins its block, and an old single-callout note is
+    migrated. `editorial_notices:` in the frontmatter lists their types for the
+    zettel-paper indexer.
+    """
+    from .retractions import CONCERN_TYPES
+
+    types = list(dict.fromkeys(n["type"] for n in notices))
+    text = set_frontmatter_field(text, "editorial_notices", types)
+    text = re.sub(r"\n\n+(?=\n)", "\n", _NOTICE_BLOCK_RE.sub("", text))
+    concerns = [n for n in notices if n["type"] in CONCERN_TYPES]
+    corrections = [n for n in notices if n["type"] not in CONCERN_TYPES]
+    blocks = [b for b in (
+        _notice_block(CONCERN_MARKER, concerns) if concerns else "",
+        _notice_block(CORRECTION_MARKER, corrections) if corrections else "",
+    ) if b]
+    if not blocks:
+        return text
+    block = "\n\n".join(blocks)
     start = _FRONTMATTER_RE.match(text)
     match = _H1_RE.search(text, start.end() if start else 0)
     if not match:

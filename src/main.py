@@ -1433,11 +1433,12 @@ def cmd_check_retractions(cfg: dict, args) -> int:
         if not flags:
             continue
         entry = state["papers"][record.paper_id]
-        # Re-flag a known notice too when its callout has gone missing (a
-        # note re-rendered by an older build, or edited by hand).
+        # Re-flag a known notice too when its callouts are missing or out of
+        # date (a note re-rendered by an older build, edited by hand, or still
+        # in an older callout layout) — i.e. whenever applying would change it.
         note_text = (vault / entry["note_path"]).read_text(encoding="utf-8")
         if (flags != entry.get("notices")
-                or note_builder.NOTICES_MARKER not in note_text):
+                or note_builder.apply_notices(note_text, flags) != note_text):
             flagged.append((record, flags))
 
     for record, hit in retracted:

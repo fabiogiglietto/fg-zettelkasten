@@ -28,6 +28,8 @@ FLAG_TYPES = {
     "expression_of_concern", "partial_retraction",
     "correction", "erratum", "corrigendum", "addendum",
 }
+# The flags that warn the reader (`[!caution]`); the rest are corrections (`[!note]`).
+CONCERN_TYPES = {"expression_of_concern", "partial_retraction"}
 # Human labels for the note callout and reports.
 LABELS = {
     "retraction": "Retraction",
