@@ -11,18 +11,21 @@ Studies examining how conspiracy theories and conspiratorial narratives are form
 ## Papers
 
 - [[Adam2026-tz]]
-- [[Bosch2024-hj]]
+- [[Arminio2025-tw]]
+- [[Balluff2026-ev]]
+- [[Cabbuag2024-me]]
 - [[De_Leon2025-qn]]
 - [[Gardam2025-er]]
 - [[Giglietto2017-4375de2f]]
 - [[Grusauskaite2026-po]]
 - [[Hollingshead2026-vx]]
 - [[Kasianenko2026-tn]]
+- [[Mahl2026-hc]]
 - [[Marwick2025-ov]]
 - [[Marwick2026-qd]]
-- [[Ramos2026-qo]]
 - [[Rohrbach2026-rc]]
 - [[Rothut2026-or]]
+- [[Sadler2025-vu]]
 
 ## All papers (Dataview)
 

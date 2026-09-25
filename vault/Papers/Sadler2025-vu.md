@@ -5,7 +5,7 @@ authors: ["Neil Sadler"]
 year: 2026
 doi: 10.1093/ct/qtaf013
 bibtex_key: Sadler2025-vu
-topics: [information-disorder-disinformation, computational-methods-llms]
+topics: [information-operations-disinformation-narratives, conspiracy-narratives-in-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1093/ct/qtaf013

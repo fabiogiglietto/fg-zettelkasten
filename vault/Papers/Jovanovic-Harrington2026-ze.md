@@ -5,7 +5,7 @@ authors: ["Ana Jovanovic-Harrington", "Alessio Cornia"]
 year: 2026
 doi: 10.1177/02673231261422076
 bibtex_key: Jovanovic-Harrington2026-ze
-topics: [coordinated-inauthentic-behavior, political-polarization-partisanship]
+topics: [coordinated-inauthentic-behavior, information-operations-disinformation-narratives]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1177/02673231261422076

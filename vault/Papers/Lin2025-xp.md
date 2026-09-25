@@ -5,7 +5,7 @@ authors: ["Hause Lin", "Gabriela Czarnek", "Benjamin Lewis", "Joshua P. White", 
 year: 2025
 doi: 10.1038/s41586-025-09771-9
 bibtex_key: Lin2025-xp
-topics: [elections-social-media, computational-methods-llms]
+topics: [election-campaigns-social-media, generative-ai-media-research]
 citation_count: 22
 open_access: false
 source_url: https://doi.org/10.1038/s41586-025-09771-9

@@ -5,7 +5,7 @@ authors: ["Sunoo Park", "Daniel Thomas"]
 year: 2026
 doi: 
 bibtex_key: Park2026-tr
-topics: [digital-methods-research-infrastructure, platform-governance-data-access]
+topics: [platform-data-access-governance]
 citation_count: 0
 open_access: false
 source_url: https://strathprints.strath.ac.uk/view/author/1255500.html>;

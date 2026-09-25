@@ -5,7 +5,7 @@ authors: ["Diego Gómez-Zará", "Hernán Valdivieso", "Jorge Pérez", "Denis Par
 year: 2026
 doi: 10.1080/21670811.2026.2730327
 bibtex_key: Gomez-Zara2026-as
-topics: [computational-methods-llms, llm-augmented-research-methods]
+topics: [llm-assisted-content-analysis, llm-augmented-research-methods]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/21670811.2026.2730327

@@ -6,7 +6,7 @@ year: 2024
 doi: 10.6092/issn.1971-8853/19524
 bibtex_key: Marino2024-2fbc690f
 kind: own
-topics: [computational-methods-llms, elections-social-media]
+topics: [llm-assisted-content-analysis, election-campaigns-social-media]
 citation_count: 12
 open_access: true
 source_url: https://doi.org/10.6092/issn.1971-8853/19524

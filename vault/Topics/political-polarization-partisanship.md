@@ -6,7 +6,7 @@ emergent: false
 
 # Political Polarization & Partisanship
 
-Analysis of partisan community dynamics, affective polarization, hyperpartisan networks and cross-national comparisons of polarized public debate (e.g., Brazil, Latin America, Italy), examining how digital media shape ideological division.
+Long-running inquiry into media insularity, cross-partisan interaction, affective polarization and the amplification dynamics linking social and traditional media, spanning theoretical chapters and empirical Facebook/Instagram studies.
 
 ## Papers
 
@@ -21,36 +21,36 @@ Analysis of partisan community dynamics, affective polarization, hyperpartisan n
 - [[Esau2025-tf]]
 - [[Falkenberg2026-ka]]
 - [[Gaisbauer2025-by]]
+- [[Gattermann2025-yx]]
+- [[Gauthier2026-iq]]
+- [[Gerbaudo2026-fo]]
 - [[Ghezzi2023-8bebc91f]]
-- [[Giglietto2017-4375de2f]]
 - [[Giglietto2019-882f1900]]
 - [[Green2025-ap]]
 - [[Grusauskaite2026-po]]
 - [[Hartmann2025-px]]
 - [[Holland_Levin2026-qx]]
-- [[Jovanovic-Harrington2026-ze]]
 - [[Karlsson2026-hd]]
 - [[Knupfer2025-vt]]
 - [[Kristensen2025-ni]]
 - [[Lai2024-to]]
-- [[Le-Mens2025-qz]]
 - [[Lee2026-je]]
 - [[Lieu2025-nl]]
 - [[Marino2026-he]]
-- [[Mosca2026-yh]]
+- [[Mosleh2024-op]]
 - [[Much2026-gu]]
-- [[Paci2025-ag]]
-- [[Rodarte2026-dk]]
+- [[Oswald2025-km]]
 - [[Rossini2026-jn]]
 - [[Sarmiento2025-as]]
 - [[Schemer2026-mh]]
 - [[Schulz2026-ts]]
+- [[Starbird2025-jj]]
+- [[Suau_Martinez2026-lv]]
 - [[Tai2026-qk]]
-- [[Tornberg2025-ir]]
 - [[Van_Erkel2026-mk]]
 - [[Ventura2026-yc]]
 - [[Yoo2026-ev]]
-- [[Zhao2025-ny]]
+- [[Zhu2026-tn]]
 - [[van-Eck2026-xg]]
 
 ## All papers (Dataview)

@@ -5,7 +5,7 @@ authors: ["Xinyu Wang", "Sai Koneru", "Sarah Rajtmajer"]
 year: 2024
 doi: 
 bibtex_key: Wang2026-ub
-topics: [platform-affordances-engagement, computational-network-structure-analysis]
+topics: [computational-network-structure-analysis, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2406.04005v4

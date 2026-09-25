@@ -4,27 +4,28 @@ slug: coordinated-inauthentic-behavior
 emergent: false
 ---
 
-# Coordinated Inauthentic Behaviour
+# Coordinated Inauthentic Behavior Detection
 
-Detection and monitoring of coordinated link-sharing and inauthentic network activity on social media platforms, spanning the CooRnet/CLSB methodology, the VERA-AI Alert system, and analyses of deceptive information operations. This is the researcher's signature methodological contribution and remains an active line through 2026 papers and tools.
+Development and application of methods (CooRnet, CLSB, the VERA-AI Alert system) to detect coordinated link-sharing and inauthentic networks on Facebook and other platforms; the researcher's signature methodological contribution and the core of his current monitoring work with vera.ai and beyond.
 
 ## Papers
 
 - [[Appel2026-qr]]
 - [[Arceneaux2026-xk]]
 - [[Bastos2025-ol]]
+- [[Copland2025-em]]
 - [[Di-Marco2025-aa]]
+- [[Donovan2025-ws]]
 - [[Efstratiou2026-ij]]
 - [[FitzGerald2025-nv]]
 - [[Gaw2025-ru]]
-- [[Gerard2025-br]]
 - [[Giada2026-fc9a3833]]
 - [[Giglietto2020-9d8acdd7]]
 - [[Giglietto2022-0e951ac5]]
 - [[Giglietto2023-fa71a001]]
 - [[Giglietto2026-9b6a992d]]
 - [[Graham2025-gp]]
-- [[Holland_Levin2026-qx]]
+- [[Graham2026-fb]]
 - [[Iannucci2025-eg]]
 - [[Jovanovic-Harrington2026-ze]]
 - [[Kansaon2025-id]]
@@ -34,7 +35,6 @@ Detection and monitoring of coordinated link-sharing and inauthentic network act
 - [[Luceri2025-tr]]
 - [[Mannocci2025-ig]]
 - [[Mannocci2026-kc]]
-- [[Marino2023-9137f448]]
 - [[Minici2024-tf]]
 - [[Oprea2025-lf]]
 - [[Orlando2025-ul]]
@@ -45,6 +45,7 @@ Detection and monitoring of coordinated link-sharing and inauthentic network act
 - [[Schroeder2026-im]]
 - [[Simeone2025-vo]]
 - [[Song2025-yh]]
+- [[Tang2026-gu]]
 - [[Thiele2025-ol]]
 - [[Yang2025-iv]]
 - [[Zhao2025-ny]]
