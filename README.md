@@ -59,7 +59,8 @@ gh workflow run update-vault.yml -f recluster=true # refresh-topics + update --r
 
 Locally, run only the steps that make no Claude call: the tests,
 `export-site`, `fix-links`, `dedupe-vault` and `check-published` (report mode),
-`suggest-classics` and `retract --no-structures`. Anything else stops with
+`suggest-classics`, `retract --no-structures` and
+`check-retractions` (report mode, or `--apply --no-structures`). Anything else stops with
 `No Anthropic credentials`, which is the intended behaviour.
 
 Do not put `ANTHROPIC_API_KEY` in `.env`. It outranks federation in the SDK's
@@ -75,6 +76,7 @@ python -m src.main update               # daily incremental run
 python -m src.main update --recluster   # incremental + full re-cluster
 python -m src.main export-site          # export the vault to quartz/content/
 python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper retracted
+python -m src.main check-retractions    # report Crossref retractions / notices (--apply writes)
 ```
 
 ## Vault layout

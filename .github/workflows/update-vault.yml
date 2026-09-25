@@ -102,11 +102,21 @@ jobs:
             mint
             python -m src.main summarize
           elif [ "${{ github.event.schedule }}" = "0 4 * * 1" ] || [ "${{ inputs.recluster }}" = "true" ]; then
+            # Retractions first, so the recluster below drops them. No Claude
+            # call here (--no-structures): the recluster rewrites Structures.
+            python -m src.main check-retractions --apply --no-structures \
+              || echo "::warning::check-retractions failed; vault update continues"
             mint
             python -m src.main refresh-topics
             mint
             python -m src.main update --recluster
           else
+            # Crossref retraction scan: a few batched requests. It calls
+            # Claude only to rewrite a Structure a new retraction made stale,
+            # so it gets its own mint. Never allowed to block the update.
+            mint
+            python -m src.main check-retractions --apply \
+              || echo "::warning::check-retractions failed; vault update continues"
             mint
             python -m src.main update
           fi

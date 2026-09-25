@@ -18,8 +18,12 @@ Schema (see the implementation plan):
           "assign_fp": "<sha256>",     # optional: topic-assignment input fingerprint
           "superseded_by": "bibtex:...",  # optional: this note is now a stub
           "retracted": {"notice_doi": "10.xxxx/...", "date": "2026-05-07",
-                        "source": "manual|crossref", "recorded": "..."},
+                        "source": "manual|retraction-watch|publisher",
+                        "recorded": "...", "topics": ["<slug>"]},
                                           # optional: the work was retracted
+                                          # (`topics` = the registers it left)
+          "notices": [{"type": "correction", "doi": "...", "date": "...",
+                       "source": "..."}],  # optional: flags from Crossref
           "supersedes": "Boyd2025-aa",    # optional: replaced that working paper
           "published_doi": "10.xxxx/...", # optional: found by check-published
           "published_venue": "...",       # optional: found by check-published

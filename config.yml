@@ -155,6 +155,20 @@ supersede:
     max_lookups_per_run: 15
     recheck_after_days: 90
 
+retractions:
+  # `check-retractions` asks Crossref (which carries the Retraction Watch data)
+  # whether any live note has been retracted, withdrawn or flagged. A retraction
+  # takes the paper out of the registers and Structures, keeps its note under a
+  # banner, and hides it from the zettel-paper skill; an expression of concern
+  # or a correction only flags the note. Every active DOI is checked each run —
+  # a few batched requests, no key.
+  enabled: true
+  # Crossref polite pool; falls back to supersede.openalex.mailto when unset.
+  mailto: "fabio.giglietto@gmail.com"
+  # Tell #toread when a paper it was sent is retracted (needs slack.enabled and
+  # the SLACK_WEBHOOK_URL secret).
+  slack_notice: true
+
 classics:
   # `suggest-classics` reports the works the vault's own papers cite most but the
   # vault does not hold — the literature that predates the archive. No LLM and no

@@ -8,6 +8,7 @@ Usage:
     python -m src.main recluster
     python -m src.main export-site
     python -m src.main retract <bibtex-key> --notice <doi> --date <YYYY-MM-DD>
+    python -m src.main check-retractions [--apply]
     python -m src.main slack-test <bibtex-key>
 
 See README.md and the implementation plan for architecture detail.
@@ -481,13 +482,18 @@ def _topic_members(slug: str, state: dict, papers_by_key: dict) -> list:
 
 
 def _generate_structure_notes(
-    cfg, register, state, papers_by_key, summaries, claude, force: bool = False
+    cfg, register, state, papers_by_key, summaries, claude, force: bool = False,
+    only: set[str] | None = None,
 ):
     """Render one Structures/<slug>.md hub note per non-empty topic.
 
     With `processing.incremental_recluster` on, a topic whose inputs (name,
     description, membership, member digests, model) are unchanged since the
-    last run keeps its existing note instead of re-billing the LLM call."""
+    last run keeps its existing note instead of re-billing the LLM call.
+
+    `only` restricts the pass to those slugs and leaves every other Structure,
+    its fingerprint and the stale-note pruning alone — a retraction between
+    reclusters must not re-bill topics that merely gained papers since."""
     from . import note_builder, themes, state as state_mod
 
     incremental = cfg.get("processing", {}).get("incremental_recluster", False)
@@ -497,6 +503,8 @@ def _generate_structure_notes(
     written: set[str] = set()
     generated = skipped = 0
     for topic in register:
+        if only is not None and topic["slug"] not in only:
+            continue
         members = _topic_members(topic["slug"], state, papers_by_key)
         if not members:
             continue
@@ -520,6 +528,10 @@ def _generate_structure_notes(
         fps[topic["slug"]] = fp
         written.add(topic["slug"])
         generated += 1
+    if only is not None:
+        print(f"  structure notes: {generated} generated, {skipped} skipped "
+              f"(limited to {', '.join(sorted(only))})")
+        return
     # Fingerprints of topics that vanished (or emptied out) go with their notes.
     for slug in list(fps):
         if slug not in written:
@@ -895,6 +907,10 @@ def cmd_update(cfg: dict, args) -> int:
             kind=entry.get("kind"),
             supersedes=entry.get("supersedes"),
         )
+        if entry.get("notices"):
+            # A re-render must not drop the editorial-notice flag: state says
+            # it is known, so check-retractions would not re-apply it.
+            note = note_builder.apply_notices(note, entry["notices"])
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
         mark_processed(entry, paper.abstract, paper.id in episodes)
 
@@ -1083,6 +1099,8 @@ def cmd_update(cfg: dict, args) -> int:
             podcast_ep, claude, claude.note_model, kind="own",
             supersedes=entry.get("supersedes"),
         )
+        if entry.get("notices"):
+            note = note_builder.apply_notices(note, entry["notices"])
         note_builder.write_note(vault, papers_dir, paper.bibtex_key, note)
         mark_processed(entry, paper.abstract, paper.id in episodes)
 
@@ -1274,69 +1292,199 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     print(f"recluster: {len(register)} topics, {len(emergent)} emergent")
 
 
-def cmd_retract(cfg: dict, args) -> int:
-    """Mark one paper as retracted and take it out of the live vault.
+def _mark_retracted(
+    state: dict, vault: Path, key: str, notice: str, date: str, source: str
+) -> list[str] | None:
+    """Record one retraction in state and on its note; return the topics it left.
 
     The note keeps its summary under a retraction banner (wikilinks and the
-    site URL keep resolving); its state entry gets a `retracted` marker, which
-    `state.is_inactive` makes `update` and `recluster` honour for good. The
-    Topics registers are rewritten (no LLM) and the Structures that cited the
-    paper are regenerated — only those, via their input fingerprints. Safe to
-    re-run: a Structure a failed first run left stale is picked up again.
+    site URL keep resolving); the state entry gets a `retracted` marker, which
+    `state.is_inactive` makes `update` and `recluster` honour for good. Returns
+    None when the paper is not in state. Derived notes are the caller's job —
+    see `_refresh_after_retraction` — so a batch rewrites them once.
     """
-    from . import note_builder, topics_client, state as state_mod
+    from . import note_builder, state as state_mod
 
-    state_file = _abs(cfg["paths"]["state_file"])
-    state = state_mod.load_state(state_file)
-    pid = f"bibtex:{args.bibtex_key}"
-    entry = state["papers"].get(pid)
+    entry = state["papers"].get(f"bibtex:{key}")
     if entry is None:
-        print(f"retract: {args.bibtex_key} is not in state")
-        return 1
-    notice = state_mod.normalize_doi(args.notice) or args.notice
-    affected = list(entry.get("topics") or [])
+        return None
+    notice = state_mod.normalize_doi(notice) or notice
+    # A re-run finds `topics` already empty; the marker remembers what it left,
+    # so a Structures pass a failed first run skipped can still be retried.
+    affected = list(entry.get("topics")
+                    or (entry.get("retracted") or {}).get("topics") or [])
     entry["retracted"] = {
         "notice_doi": notice,
-        "date": args.date,
-        "source": "manual",
+        "date": date,
+        "source": source,
         "recorded": _now(),
+        "topics": affected,
     }
     entry["topics"] = []
-
-    vault = Path(_abs(cfg["vault"]["path"]))
     note = vault / entry["note_path"]
     note.write_text(
-        note_builder.apply_retraction(note.read_text(encoding="utf-8"), notice, args.date),
+        note_builder.apply_retraction(note.read_text(encoding="utf-8"), notice, date),
         encoding="utf-8",
     )
-    state_mod.save_state(state, state_file)
-    print(f"retract: {args.bibtex_key} marked retracted ({notice}); "
-          f"leaves {', '.join(affected) or 'no topics'}")
+    return affected
+
+
+def _refresh_after_retraction(
+    cfg: dict, state: dict, label: str, no_structures: bool, topics: set[str]
+) -> int:
+    """Rewrite the Topics registers (no LLM) and the Structures of `topics`,
+    the ones the retracted paper(s) left — within those, only the stale ones,
+    via their input fingerprints. Every other Structure waits for the recluster
+    (convention: Structures regenerate on recluster). Safe to re-run."""
+    from . import topics_client, state as state_mod
 
     register = topics_client.load_topics(_abs(cfg["paths"]["topics_file"]))
     _regenerate_topic_notes(cfg, register, state)
-    if args.no_structures:
+    if no_structures or not topics:
         return 0
     if not cfg.get("processing", {}).get("incremental_recluster", False):
         # Without fingerprints every Structure would be re-billed.
-        print("retract: structures left to the next recluster "
+        print(f"{label}: structures left to the next recluster "
               "(incremental_recluster is off)")
         return 0
 
     papers, summaries, complete = _processed_papers(
-        cfg, state, _abs(cfg["paths"]["summaries_dir"]), "retract"
+        cfg, state, _abs(cfg["paths"]["summaries_dir"]), label
     )
     if not complete:
         # A partial member list would silently drop own papers from every
         # Structure it touched; the next recluster will pick this up instead.
-        print("retract: structures not regenerated (incomplete paper list)")
+        print(f"{label}: structures not regenerated (incomplete paper list)")
         return 1
     _generate_structure_notes(
         cfg, register, state, {p.bibtex_key: p for p in papers}, summaries,
-        _claude(cfg),
+        _claude(cfg), only=topics,
     )
-    state_mod.save_state(state, state_file)
+    state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
     return 0
+
+
+def cmd_retract(cfg: dict, args) -> int:
+    """Mark one paper as retracted by hand and take it out of the live vault.
+
+    For a retraction Crossref has not indexed yet; `check-retractions` finds
+    the indexed ones on its own.
+    """
+    from . import state as state_mod
+
+    state_file = _abs(cfg["paths"]["state_file"])
+    state = state_mod.load_state(state_file)
+    vault = Path(_abs(cfg["vault"]["path"]))
+    affected = _mark_retracted(
+        state, vault, args.bibtex_key, args.notice, args.date, "manual"
+    )
+    if affected is None:
+        print(f"retract: {args.bibtex_key} is not in state")
+        return 1
+    state_mod.save_state(state, state_file)
+    print(f"retract: {args.bibtex_key} marked retracted ({args.notice}); "
+          f"leaves {', '.join(affected) or 'no topics'}")
+    return _refresh_after_retraction(
+        cfg, state, "retract", args.no_structures, set(affected)
+    )
+
+
+def cmd_check_retractions(cfg: dict, args) -> int:
+    """Ask Crossref whether any live note has been retracted or flagged.
+
+    Every active note with a DOI is checked each run — a few batched requests,
+    no key. A retraction is applied exactly like `retract` (and announced in
+    #toread when the paper was posted there); an expression of concern or a
+    correction only flags the note, which stays in the registers. Reporting
+    is the default; `--apply` writes.
+    """
+    from . import note_builder, retractions, slack_client, supersede, state as state_mod
+
+    r_cfg = cfg.get("retractions", {})
+    if not r_cfg.get("enabled", True):
+        print("check-retractions: disabled in config")
+        return 0
+    mailto = (r_cfg.get("mailto")
+              or cfg.get("supersede", {}).get("openalex", {}).get("mailto") or None)
+    apply = bool(args.apply)
+
+    state_file = _abs(cfg["paths"]["state_file"])
+    state = state_mod.load_state(state_file)
+    vault = Path(_abs(cfg["vault"]["path"]))
+    records = supersede.load_vault_records(vault / cfg["vault"]["papers_dir"])
+    by_doi = {
+        state_mod.normalize_doi(r.doi): r
+        for r in records.values()
+        if r.doi and not r.inactive and r.paper_id in state["papers"]
+    }
+    print(f"check-retractions: asking Crossref about {len(by_doi)} DOI(s)")
+    updates = retractions.fetch_updates(list(by_doi), mailto)
+
+    retracted, flagged = [], []
+    for doi, notices in sorted(updates.items()):
+        record = by_doi.get(doi)
+        if record is None:
+            continue
+        hit = retractions.retraction_of(notices)
+        if hit:
+            retracted.append((record, hit))
+            continue
+        flags = retractions.flags_of(notices)
+        if not flags:
+            continue
+        entry = state["papers"][record.paper_id]
+        # Re-flag a known notice too when its callout has gone missing (a
+        # note re-rendered by an older build, or edited by hand).
+        note_text = (vault / entry["note_path"]).read_text(encoding="utf-8")
+        if (flags != entry.get("notices")
+                or note_builder.NOTICES_MARKER not in note_text):
+            flagged.append((record, flags))
+
+    for record, hit in retracted:
+        print(f"  RETRACTED {record.key}: {hit['doi']} ({hit['date']}, {hit['source']})")
+    for record, flags in flagged:
+        kinds = ", ".join(retractions.LABELS.get(n["type"], n["type"]) for n in flags)
+        print(f"  flagged   {record.key}: {kinds}")
+    if not retracted and not flagged:
+        print("check-retractions: nothing new")
+        return 0
+    if not apply:
+        print("check-retractions: report only — re-run with --apply to write")
+        return 0
+
+    for record, flags in flagged:
+        entry = state["papers"][record.paper_id]
+        note = vault / entry["note_path"]
+        note.write_text(
+            note_builder.apply_notices(note.read_text(encoding="utf-8"), flags),
+            encoding="utf-8",
+        )
+        entry["notices"] = flags
+
+    slack_cfg = cfg.get("slack", {})
+    webhook = os.environ.get("SLACK_WEBHOOK_URL")
+    notify = (bool(slack_cfg.get("enabled")) and bool(webhook)
+              and r_cfg.get("slack_notice", True))
+    base = (slack_cfg.get("note_base_url") or "").rstrip("/")
+    left: set[str] = set()
+    for record, hit in retracted:
+        entry = state["papers"][record.paper_id]
+        left |= set(_mark_retracted(
+            state, vault, record.key, hit["doi"], hit["date"],
+            hit["source"] or "crossref",
+        ) or [])
+        # Only a paper the channel was told about needs un-telling.
+        if notify and entry.get("slack_posted"):
+            slack_client.post_retraction(
+                webhook, record.key, record.title, record.doi, hit["doi"],
+                hit["date"], f"{base}/{record.key}" if base else None,
+            )
+    state_mod.save_state(state, state_file)
+    if not retracted:
+        return 0
+    return _refresh_after_retraction(
+        cfg, state, "check-retractions", args.no_structures, left
+    )
 
 
 def cmd_recluster(cfg: dict, args) -> int:
@@ -1385,7 +1533,7 @@ def cmd_dedupe_vault(cfg: dict, args) -> int:
     seen: set[tuple[str, str]] = set()
     pairs: list[tuple] = []
     for key, record in records.items():
-        if record.superseded_by:
+        if record.inactive:
             continue
         for cand in supersede.find_candidates(record, records, index):
             pair = tuple(sorted((key, cand.key)))
@@ -1492,7 +1640,7 @@ def cmd_check_published(cfg: dict, args) -> int:
     # same handful every time.
     pending = [
         r for r in records.values()
-        if r.rank == supersede.RANK_PREPRINT and not r.superseded_by
+        if r.rank == supersede.RANK_PREPRINT and not r.inactive
         and not (state["papers"].get(r.paper_id) or {}).get("published_doi")
     ]
     pending.sort(
@@ -1577,7 +1725,7 @@ def cmd_suggest_classics(cfg: dict, args) -> int:
 
     records = {
         key: r for key, r in supersede.load_vault_records(papers_path).items()
-        if not r.superseded_by
+        if not r.inactive
     }
     state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
     topics_by_key = {
@@ -1803,6 +1951,22 @@ def build_parser() -> argparse.ArgumentParser:
         help="rewrite the Topics registers only; leave Structures to the next recluster",
     )
 
+    p_retractions = sub.add_parser(
+        "check-retractions",
+        help="ask Crossref whether any note was retracted or flagged",
+    )
+    p_retractions.add_argument(
+        "--apply", action="store_true",
+        help="retract / flag the notes instead of only reporting the findings",
+    )
+    p_retractions.add_argument(
+        "--dry-run", action="store_true", help="report only (the default)"
+    )
+    p_retractions.add_argument(
+        "--no-structures", action="store_true",
+        help="rewrite the Topics registers only; leave Structures to the next recluster",
+    )
+
     p_slack = sub.add_parser(
         "slack-test", help="post one paper's digest to the Slack webhook"
     )
@@ -1819,6 +1983,7 @@ def main(argv=None) -> int:
         "summarize": cmd_summarize,
         "update": cmd_update,
         "retract": cmd_retract,
+        "check-retractions": cmd_check_retractions,
         "refresh-topics": cmd_refresh_topics,
         "recluster": cmd_recluster,
         "dedupe-vault": cmd_dedupe_vault,

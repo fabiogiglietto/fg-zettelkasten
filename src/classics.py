@@ -78,7 +78,7 @@ def stale_keys(
     out = []
     for key, record in records.items():
         doi = normalize_doi(record.doi)
-        if not doi or record.superseded_by:
+        if not doi or record.inactive:
             continue
         cached = cache["works"].get(key)
         if (

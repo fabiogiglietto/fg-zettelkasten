@@ -56,6 +56,15 @@ retraction_notice: 10.1093/pnasnexus/pgag137   # DOI of the retraction notice
 The indexer skips these notes and every link into them; they appear only in
 `index.json` → `do_not_cite`.
 
+A paper with a non-retracting notice stays in the index, flagged:
+
+```yaml
+editorial_notices: [expression_of_concern, correction]   # carried into index.json
+```
+
+with a `> [!caution] Editorial notices` callout under the H1 listing each
+notice's type, date and DOI.
+
 ## Wikilink syntax
 
 `[[Thiele2025-ol]]`, optionally `[[id|alias]]` or `[[id#section]]`. The indexer's

@@ -245,6 +245,12 @@ class Record:
     citation_count: int = 0
     superseded_by: Optional[str] = None
     supersedes: Optional[str] = None
+    retracted: Optional[str] = None
+
+    @property
+    def inactive(self) -> bool:
+        """A tombstone or a retracted work: never a merge, lookup or ranking input."""
+        return bool(self.superseded_by or self.retracted)
 
     @property
     def paper_id(self) -> str:
@@ -348,6 +354,7 @@ def record_from_note(path: Path, summaries_dir: Optional[Path] = None) -> Option
         citation_count=int(fm.get("citation_count") or 0),
         superseded_by=str(fm.get("superseded_by") or "") or None,
         supersedes=str(fm.get("supersedes") or "") or None,
+        retracted=str(fm.get("retracted") or "") or None,
     )
 
 
@@ -528,7 +535,7 @@ def find_candidates(
     out: list[Candidate] = []
     for key in scope:
         other = records[key]
-        if other.superseded_by:
+        if other.inactive:
             continue
         cand = _score_pair(record, other)
         if cand is not None:
