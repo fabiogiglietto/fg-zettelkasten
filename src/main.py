@@ -215,6 +215,20 @@ def mark_processed(entry: dict, abstract: str | None, podcast: bool) -> None:
     entry["last_processed"] = _now()
 
 
+def digest_queued(paper, digest_scope: str) -> bool:
+    """Whether a newly-seen paper is queued for a #toread digest.
+
+    "all" (fg default) queues every new paper; "team" (mine) queues only team
+    Slack submissions — Paperpile-origin papers flow through both kastens and
+    fg-zettelkasten already announces them. A classic (toread's `_classic`:
+    Paperpile's Classics folder) is never queued: foundational works arrive in
+    bulk and would flood the channel, so they get a note and an episode only.
+    """
+    if paper.is_classic:
+        return False
+    return paper.is_team_submission if digest_scope == "team" else True
+
+
 def classify_feed_paper(entry: dict | None, new_hash: str) -> str:
     """How `update` should treat one feed paper: new / changed / tombstoned / unchanged.
 
@@ -868,8 +882,7 @@ def cmd_update(cfg: dict, args) -> int:
             # Paperpile-origin papers flow through both kastens' pipelines
             # and fg-zettelkasten already announces them, so the team kasten
             # posting them too would double-post in #toread.
-            "slack_pending": (paper.is_team_submission
-                              if digest_scope == "team" else True),
+            "slack_pending": digest_queued(paper, digest_scope),
             "last_processed": _now(),
         }
         # A team-mate's Slack submission: tag it `kind: team` and carry the
@@ -944,6 +957,10 @@ def cmd_update(cfg: dict, args) -> int:
             # queued under a wider scope, so flipping the config does not
             # flood #toread.
             if digest_scope == "team" and not paper.is_team_submission:
+                continue
+            # A classic is never announced — also when it was queued before
+            # being moved into the Paperpile Classics folder.
+            if paper.is_classic:
                 continue
             # Hold for the research-radio episode (or the fallback deadline)
             # when an episode wait is configured.

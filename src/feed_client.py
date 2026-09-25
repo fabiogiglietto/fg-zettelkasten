@@ -46,6 +46,7 @@ class Paper:
     submitted_by: Optional[str] = None             # team-mate who suggested it via Slack
     submitted_by_id: Optional[str] = None          # their opaque Slack user-id, for @-mentioning
     slack_permalink: Optional[str] = None          # link to the originating Slack message
+    is_classic: bool = False                       # filed in Paperpile's Classics folder
 
     @property
     def is_team_submission(self) -> bool:
@@ -122,6 +123,9 @@ def _item_to_paper(item: dict) -> Paper:
         submitted_by=slack.get("submitted_by") or None,
         submitted_by_id=slack.get("submitted_by_id") or None,
         slack_permalink=slack.get("permalink") or None,
+        # toread's `_classic` flag (Paperpile Classics folder): a foundational
+        # work added in bulk — an ordinary paper here, minus the #toread digest.
+        is_classic=item.get("_classic") is True,
     )
 
 

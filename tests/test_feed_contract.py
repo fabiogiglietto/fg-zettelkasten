@@ -93,3 +93,14 @@ def test_bad_id_format_raises(monkeypatch):
     feed["items"][0]["id"] = "doi:10.1/xyz"  # join key must be bibtex:<key>
     with pytest.raises(FeedContractError):
         validate_toread_feed(feed)
+
+
+def test_classic_flag_passes(monkeypatch):
+    """toread's `_classic` flag (Paperpile Classics folder) is additive."""
+    monkeypatch.setattr(
+        "src.feed_contract._load_schema",
+        lambda timeout=10: json.loads(Path(VENDORED_SCHEMA).read_text()),
+    )
+    feed = _valid_feed()
+    feed["items"][0]["_classic"] = True
+    validate_toread_feed(feed)  # must not raise
