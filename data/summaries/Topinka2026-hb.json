@@ -1,0 +1,34 @@
+{
+  "abstract": "This article theorizes 'slopaganda' (or 'agitslop')—AI-generated political content that is obviously fake yet affectively resonant—as a distinct phenomenon from deepfakes. Rather than deceiving viewers into mistaking AI content for reality, slopaganda hooks attention through affective 'lures' attuned to the moods and affordances of social media feeds. Drawing on the concept of ambient rhetoric, Topinka argues that AI models, through training, fine-tuning, and alignment, become 'ideological attunement machines' optimized to feel out what resonates within sociotechnical environments, thereby intensifying rather than disrupting existing ideological formations.",
+  "key_claims": [
+    "Slopaganda is best understood not as content that manipulates belief (like traditional propaganda) but as an affective lure that hooks attention—even negative or dismissive attention—within social media feeds.",
+    "Unlike deepfakes, slopaganda is 'obviously fake but affectively real'; its power lies in emotional resonance, not deception.",
+    "AI models are optimized for 'rhetorical attunement': beyond inheriting biases from training data, fine-tuning and reinforcement learning from human feedback (RLHF) train models to sense which responses resonate in their environments.",
+    "Slopaganda is disordered and directionless, contrasting with Bernays' notion of propaganda as bringing 'order out of chaos'; it coordinates affect and ideological orientation without making coherent political claims.",
+    "AI slop folds into and intensifies existing ideological, rhetorical, and technical formations (racism, White nationalism, engagement-driven platforms) rather than disrupting them.",
+    "The problem with AI training and alignment is not only bias but how models and their prompters 'feel out' ambient environments to produce resonant outputs."
+  ],
+  "methods": [
+    "Conceptual and theoretical analysis grounded in cultural studies, rhetoric, and affect theory.",
+    "Close reading of contemporary examples of AI-generated political content ('Trump Gaza' video, the 'Kirkinator' videos, AI Blackface slop, Trump administration slop-posts, an Iranian anti-Trump music video).",
+    "Synthesis of concepts including Rickert's 'ambient rhetoric', Sampson's affective 'lure', Massumi's affect/emotion distinction, Noordenbos and Tuters' 'ambient propaganda', Meyer's 'platform realism', and Burkhardt and Rieder's 'foundation models as platform models'.",
+    "Analysis of the political economy and labor of AI alignment (RLHF, exploited Global South workers, WEIRD-dominated image labeling)."
+  ],
+  "findings": [
+    "The 'Trump Gaza' video circulated through emotional resonance and outrage rather than through persuading anyone of a coherent claim, illustrating slop as affective coagulation rather than belief manipulation.",
+    "AI slop overwhelmingly targets women and racial others (immigrants, Black protestors, Black lawmakers), giving form to reactionary fantasies.",
+    "Image and video generators reproduce hegemonic norms because training/labeling is dominated by WEIRD-country workers (~95%) and caters to existing consumer expectations, as seen with datasets like Shopify product images.",
+    "The 'Kirkinator' videos are ideological (invoking White nationalist imagery like Agartha) yet incoherent, circulating even on left-wing meme accounts because they refuse representational and ideological coherence.",
+    "Ambient attunement to internet slop can frame real-world violence, as with the 'for Agartha' inscription in the Jakarta mosque attack.",
+    "The prompt itself functions as a key site of rhetorical attunement, with foundation models having no intrinsic function until prompted by a rhetor attuned to ambient affects."
+  ],
+  "contributions": [
+    "Reframes slopaganda from a problem of deception/belief manipulation to one of affective attunement and the lure of attention.",
+    "Introduces the framing of AI systems as 'ideological attunement machines' that optimize feeling, relevance, and response within sociotechnical environments.",
+    "Bridges rhetorical theory (ambient rhetoric) with technical AI processes (fine-tuning, RLHF, alignment, prompting), showing their productive resonance.",
+    "Offers an analytical lens for understanding why crude, meaningless, or incoherent AI content nonetheless resonates and coordinates ideology.",
+    "Extends critique of AI beyond bias toward how models and prompters 'feel out' ambient environments."
+  ],
+  "framing": "The article situates itself within cultural studies, rhetoric, and affect theory, drawing especially on Rickert's ambient rhetoric, Massumi's theory of affect, and critical studies of AI, platforms, and propaganda. It positions itself against accounts that treat AI political content primarily as deception or as a bias problem, and within debates about digital reactionary politics, memetic antagonism, and the affective conditions of contemporary political discourse.",
+  "pdf_source": "drive"
+}
