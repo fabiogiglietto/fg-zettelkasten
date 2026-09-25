@@ -1742,15 +1742,18 @@
     },
     "bibtex:Smith2025-kc": {
       "note_path": "Papers/Smith2025-kc.md",
-      "topics": [
-        "computational-network-structure-analysis",
-        "platform-affordances-engagement"
-      ],
+      "topics": [],
       "pdf_source": "drive",
       "content_hash": "80e4839ebd99482c32397ff2e22fba3c8bc9b694edcf3a7a790c87c229feed92",
       "podcast_linked": false,
       "last_processed": "2026-07-10T14:17:32.324143+00:00",
-      "assign_fp": "8348630bf2a2ef6b0472688c8331eac80ac3b82bfef2bffdc9b078acbc80e0ec"
+      "assign_fp": "8348630bf2a2ef6b0472688c8331eac80ac3b82bfef2bffdc9b078acbc80e0ec",
+      "retracted": {
+        "notice_doi": "10.1093/pnasnexus/pgag137",
+        "date": "2026-05-07",
+        "source": "manual",
+        "recorded": "2026-09-25T06:49:09.118084+00:00"
+      }
     },
     "bibtex:Moran2025-qn": {
       "note_path": "Papers/Moran2025-qn.md",

@@ -417,7 +417,8 @@ def write_note(vault_dir: str, subdir: str, filename: str, content: str) -> Path
 # --- superseded notes ------------------------------------------------------
 
 _FRONTMATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
-# The citation blockquote is the run of `> ` lines directly after the H1.
+# The citation blockquote is the run of `> ` lines directly after the H1 —
+# or after a `> [!...]` callout (a retraction banner), which it must skip.
 _CITATION_BLOCK_RE = re.compile(r"^(> .*(?:\n>.*)*)", re.MULTILINE)
 
 # Frontmatter keys a tombstone keeps. It stays a record of what *that* entry
@@ -477,6 +478,39 @@ def build_tombstone_note(
     )
 
 
+# --- retracted notes -------------------------------------------------------
+
+RETRACTION_MARKER = "> [!warning] Retracted"
+_H1_RE = re.compile(r"^# .*$", re.MULTILINE)
+
+
+def apply_retraction(text: str, notice_doi: str, date: str) -> str:
+    """Mark an existing paper note as retracted, keeping its summary.
+
+    The body stays — a retracted paper is still part of the record and inbound
+    [[wikilinks]] should land on an explanation, not a 404 — but a callout under
+    the H1 says so first, and `topics` is emptied so the note leaves the
+    registers. Idempotent: an already-marked note only has its fields refreshed.
+    """
+    text = set_frontmatter_field(text, "retracted", date)
+    text = set_frontmatter_field(text, "retraction_notice", notice_doi)
+    text = set_frontmatter_field(text, "topics", [])
+    if RETRACTION_MARKER in text:
+        return text
+    banner = (
+        f"{RETRACTION_MARKER}\n"
+        f"> This paper was retracted on {date}. Retraction notice: "
+        f"[{notice_doi}](https://doi.org/{notice_doi}). The note below describes "
+        f"the work as originally published; do not rely on or cite its findings "
+        f"as evidence."
+    )
+    match = _H1_RE.search(text, _FRONTMATTER_RE.match(text).end()
+                          if _FRONTMATTER_RE.match(text) else 0)
+    if not match:
+        return f"{banner}\n\n{text}"
+    return f"{text[:match.end()]}\n\n{banner}{text[match.end():]}"
+
+
 def set_frontmatter_field(text: str, key: str, value: Any) -> str:
     """Set one frontmatter key in an existing note, leaving the body untouched.
 
@@ -504,7 +538,11 @@ def replace_citation_block(text: str, block: str) -> str:
     Lets an in-place preprint -> published upgrade refresh the visible citation
     (new DOI, real venue) without regenerating the LLM-written body.
     """
-    match = _CITATION_BLOCK_RE.search(text)
+    match = next(
+        (m for m in _CITATION_BLOCK_RE.finditer(text)
+         if not m.group(0).startswith("> [!")),
+        None,
+    )
     if not match:
         return text
     return text[: match.start()] + block + text[match.end():]
