@@ -285,3 +285,59 @@ def test_check_retractions_reports_without_apply(tmp_path, monkeypatch):
     assert main.cmd_check_retractions(cfg, args) == 0
     assert state_file.read_text() == before
     assert note_builder.RETRACTION_MARKER not in (vault / "Papers" / "Smith2025-kc.md").read_text()
+
+
+def test_check_retractions_restores_a_flag_a_re_render_dropped(tmp_path, monkeypatch):
+    """State knows the notice, but the note lost its callout: re-flag it."""
+    import argparse
+
+    from src import main, state as state_mod
+
+    cfg, vault, state_file = _mini_vault(tmp_path)
+    state = state_mod.load_state(str(state_file))
+    state["papers"]["bibtex:Tai2026-qk"]["notices"] = [CORRECTION]
+    state_mod.save_state(state, str(state_file))
+    monkeypatch.setattr(retractions, "fetch_updates", lambda dois, mailto=None: {
+        "10.1080/10584609.2026.2613661": [CORRECTION],
+    })
+    note = vault / "Papers" / "Tai2026-qk.md"
+    assert note_builder.NOTICES_MARKER not in note.read_text()
+
+    assert main.cmd_check_retractions(
+        cfg, argparse.Namespace(apply=True, no_structures=True)) == 0
+    assert note_builder.NOTICES_MARKER in note.read_text()
+
+
+def test_structures_pass_can_be_limited_to_the_topics_a_retraction_left(
+    tmp_path, monkeypatch
+):
+    """Between reclusters most fingerprints are stale (update adds papers but
+    never rewrites Structures). A retraction must re-bill only its own topics,
+    and must neither prune nor forget the others."""
+    from types import SimpleNamespace
+
+    from src import main
+
+    structures = tmp_path / "vault" / "Structures"
+    structures.mkdir(parents=True)
+    (structures / "b.md").write_text("old b", encoding="utf-8")
+    register = [{"slug": "a", "name": "A", "description": ""},
+                {"slug": "b", "name": "B", "description": ""}]
+    state = {
+        "papers": {"bibtex:P1": {"topics": ["a"]}, "bibtex:P2": {"topics": ["b"]}},
+        "structure_fps": {"a": "stale", "b": "stale"},
+    }
+    papers_by_key = {k: SimpleNamespace(bibtex_key=k) for k in ("P1", "P2")}
+    built = []
+    monkeypatch.setattr(note_builder, "build_structure_note",
+                        lambda topic, *a, **k: built.append(topic["slug"]) or "new")
+    cfg = {"vault": {"path": str(tmp_path / "vault"), "structures_dir": "Structures"},
+           "processing": {"incremental_recluster": True}}
+
+    main._generate_structure_notes(
+        cfg, register, state, papers_by_key, {}, SimpleNamespace(reasoning_model="m"),
+        only={"a"},
+    )
+    assert built == ["a"]
+    assert state["structure_fps"]["b"] == "stale"
+    assert (structures / "b.md").read_text() == "old b"
