@@ -45,6 +45,17 @@ Body sections (markdown `##`): **Summary**, **Key Contributions**, **Methods**,
 prose containing `[[bibtex_key]]` wikilinks to sibling papers — this is the edge
 list. Build citations from `authors` + `year` + `doi`; there is **no .bib file**.
 
+A retracted paper keeps its note but gains two frontmatter fields and a
+`> [!warning] Retracted` callout under the H1; its `topics` is `[]`:
+
+```yaml
+retracted: 2026-05-07
+retraction_notice: 10.1093/pnasnexus/pgag137   # DOI of the retraction notice
+```
+
+The indexer skips these notes and every link into them; they appear only in
+`index.json` → `do_not_cite`.
+
 ## Wikilink syntax
 
 `[[Thiele2025-ol]]`, optionally `[[id|alias]]` or `[[id#section]]`. The indexer's

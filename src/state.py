@@ -17,6 +17,9 @@ Schema (see the implementation plan):
           "last_processed": "2026-05-17T...",
           "assign_fp": "<sha256>",     # optional: topic-assignment input fingerprint
           "superseded_by": "bibtex:...",  # optional: this note is now a stub
+          "retracted": {"notice_doi": "10.xxxx/...", "date": "2026-05-07",
+                        "source": "manual|crossref", "recorded": "..."},
+                                          # optional: the work was retracted
           "supersedes": "Boyd2025-aa",    # optional: replaced that working paper
           "published_doi": "10.xxxx/...", # optional: found by check-published
           "published_venue": "...",       # optional: found by check-published
@@ -54,6 +57,17 @@ import re
 import unicodedata
 from pathlib import Path
 from typing import Any
+
+
+def is_inactive(entry: dict[str, Any] | None) -> bool:
+    """True for a state entry that must never re-enter the live vault.
+
+    Two kinds: a tombstone (`superseded_by`, merged into its published version)
+    and a retracted work (`retracted`). Both stay in state — `update` diffs the
+    feed by id, and both papers are still delivered upstream — but neither may
+    be re-rendered, re-assigned to topics, or offered as related/duplicate.
+    """
+    return bool(entry and (entry.get("superseded_by") or entry.get("retracted")))
 
 
 def load_state(path: str) -> dict[str, Any]:

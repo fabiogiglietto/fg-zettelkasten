@@ -141,6 +141,7 @@ def _split_top_commas(s):
 def build(vault, data_dir):
     papers = {}            # id -> record
     edges = []             # (src, dst)
+    retracted = {}         # id -> {retracted, retraction_notice}; excluded
     summaries_dir = os.path.join(data_dir, "summaries") if data_dir else None
 
     for fn in sorted(os.listdir(os.path.join(vault, "Papers"))):
@@ -150,6 +151,12 @@ def build(vault, data_dir):
         text = _read(os.path.join(vault, "Papers", fn))
         meta, body = parse_frontmatter(text)
         key = meta.get("bibtex_key") or pid
+        if meta.get("retracted"):
+            # A retracted work is never substrate for a draft: keep it out of
+            # the index entirely (listed in index.json only as a do-not-cite).
+            retracted[key] = {"retracted": str(meta.get("retracted")),
+                              "retraction_notice": meta.get("retraction_notice")}
+            continue
         links = [m.strip() for m in WIKILINK.findall(body)]
         summary = _load_summary(summaries_dir, key, pid)
         papers[key] = {
@@ -168,6 +175,11 @@ def build(vault, data_dir):
         }
         for tgt in links:
             edges.append((key, tgt))
+
+    # Links into a retracted note are dropped too, so it cannot resurface as a
+    # neighbour, bridge or crossing of a live paper.
+    edges = [(s, t) for s, t in edges if t not in retracted]
+    build.retracted = retracted
 
     # topics
     topics = {}
@@ -404,6 +416,8 @@ def write_outputs(out_dir, papers, edges, topics, structures, crossings):
                           "citation_label", "first_author_surname",
                           "name_order_uncertain")}
                    for pid, p in papers.items()},
+        # Retracted works: excluded from every table above. Never cite them.
+        "do_not_cite": getattr(build, "retracted", {}),
     }
     with open(os.path.join(out_dir, "index.json"), "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, indent=1)
@@ -439,6 +453,9 @@ def main():
           f"{index['n_structures']} structures")
     print(f"graph:   {index['n_edges']} links ({dangling} dangling) · "
           f"{index['n_crossings']} cross-topic pairs")
+    if index["do_not_cite"]:
+        print(f"excluded: {len(index['do_not_cite'])} retracted paper(s) — "
+              f"{', '.join(sorted(index['do_not_cite']))}")
     warns = getattr(build, "name_warnings", [])
     if warns:
         print(f"name checks: {len(warns)} first-author name(s) flagged for review:")

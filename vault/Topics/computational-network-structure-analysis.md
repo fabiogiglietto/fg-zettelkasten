@@ -23,7 +23,6 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 - [[Kakavand2026-kt]]
 - [[Mannocci2025-ig]]
 - [[Ng2026-og]]
-- [[Smith2025-kc]]
 - [[Wang2026-ub]]
 - [[Zhu2026-tn]]
 

@@ -38,7 +38,6 @@ Investigation of how platform mechanics—reactions, algorithmic governance, jou
 - [[Mosleh2024-op]]
 - [[Nangle2026-yo]]
 - [[Rossi2023-847d5a9f]]
-- [[Smith2025-kc]]
 - [[Tang2026-gu]]
 - [[Volpe2026-um]]
 - [[Wang2026-ub]]

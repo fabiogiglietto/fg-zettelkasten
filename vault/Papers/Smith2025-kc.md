@@ -5,16 +5,21 @@ authors: ["Alyssa H Smith", "Jon Green", "Brooke F. Welles", "David Lazer"]
 year: 2025
 doi: 10.1093/pnasnexus/pgaf106
 bibtex_key: Smith2025-kc
-topics: [computational-network-structure-analysis, platform-affordances-engagement]
+topics: []
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1093/pnasnexus/pgaf106
 podcast_url: 
 pdf_available: true
 discovery_date: 2025-04-15T00:00:00Z
+retracted: 2026-05-07
+retraction_notice: 10.1093/pnasnexus/pgag137
 ---
 
 # Emergent structures of attention on social media are driven by amplification and triad transitivity
+
+> [!warning] Retracted
+> This paper was retracted on 2026-05-07. Retraction notice: [10.1093/pnasnexus/pgag137](https://doi.org/10.1093/pnasnexus/pgag137). The note below describes the work as originally published; do not rely on or cite its findings as evidence.
 
 > Smith, A. H., Green, J., Welles, B. F., & Lazer, D. (2025). Emergent structures of attention on social media are driven by amplification and triad transitivity. *PNAS Nexus*, *4*, gaf106. https://doi.org/10.1093/pnasnexus/pgaf106
 >

@@ -7,6 +7,7 @@ Usage:
     python -m src.main update [--recluster]
     python -m src.main recluster
     python -m src.main export-site
+    python -m src.main retract <bibtex-key> --notice <doi> --date <YYYY-MM-DD>
     python -m src.main slack-test <bibtex-key>
 
 See README.md and the implementation plan for architecture detail.
@@ -221,11 +222,15 @@ def classify_feed_paper(entry: dict | None, new_hash: str) -> str:
     published version here, not withdrawn upstream — so its content hash keeps
     moving as episodes appear and abstracts are edited. It must reach neither
     bucket: `new` would re-summarize it and `changed` would re-render its note,
-    overwriting the stub with a full paper note again.
+    overwriting the stub with a full paper note again. A retracted paper is
+    routed the same way: its note carries a hand-applied retraction banner that
+    a re-render would wipe.
     """
+    from .state import is_inactive
+
     if entry is None:
         return "new"
-    if entry.get("superseded_by"):
+    if is_inactive(entry):
         return "tombstoned"
     if entry.get("content_hash") != new_hash:
         return "changed"
@@ -706,7 +711,7 @@ def cmd_summarize(cfg: dict, args) -> int:
     pending = [
         p for p in papers
         if summarizer.load_summary(summaries_dir, p.bibtex_key) is None
-        and not (state["papers"].get(p.id) or {}).get("superseded_by")
+        and not state_mod.is_inactive(state["papers"].get(p.id))
     ]
     print(f"summarize: {len(pending)} of {len(papers)} paper(s) need a summary")
     for i, paper in enumerate(pending, 1):
@@ -1113,6 +1118,38 @@ def cmd_update(cfg: dict, args) -> int:
     return 0
 
 
+def _processed_papers(
+    cfg: dict, state: dict, summaries_dir: str, label: str
+) -> tuple[list, dict[str, dict], bool]:
+    """Every feed paper already in state, plus its cached summary.
+
+    Returns `(papers, summaries, complete)`. Own publications already in state
+    ride along so they stay in the topic structure; `complete` is False when
+    that feed could not be fetched, i.e. the paper list is missing members.
+    """
+    from . import summarizer
+
+    papers = [
+        p for p in _fetch_feed(cfg)
+        if p.id in state["papers"]
+    ]
+    complete = True
+    own_cfg = cfg.get("own_publications", {})
+    if own_cfg.get("enabled", True):
+        try:
+            own = _fetch_own_publications(cfg)
+            papers += [p for p in own if p.id in state["papers"]]
+        except Exception as exc:  # noqa: BLE001 - never break the caller on a fetch error
+            print(f"{label}: could not fetch own-publications feed ({exc})")
+            complete = False
+    summaries: dict[str, dict] = {}
+    for paper in papers:
+        s = summarizer.load_summary(summaries_dir, paper.bibtex_key)
+        if s is not None:
+            summaries[paper.bibtex_key] = s
+    return papers, summaries, complete
+
+
 def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     """Full re-cluster: rebuild the register, re-assign every processed paper,
     regenerate Topics/ and Structures/. Paper note bodies are not re-summarised
@@ -1139,24 +1176,7 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
 
-    papers = [
-        p for p in _fetch_feed(cfg)
-        if p.id in state["papers"]
-    ]
-    # Own publications already in state are reclustered alongside toread papers,
-    # so the weekly recluster folds them into the topic structure too.
-    own_cfg = cfg.get("own_publications", {})
-    if own_cfg.get("enabled", True):
-        try:
-            own = _fetch_own_publications(cfg)
-            papers += [p for p in own if p.id in state["papers"]]
-        except Exception as exc:  # noqa: BLE001 - never break recluster on a fetch error
-            print(f"recluster: could not fetch own-publications feed ({exc})")
-    summaries: dict[str, dict] = {}
-    for paper in papers:
-        s = summarizer.load_summary(summaries_dir, paper.bibtex_key)
-        if s is not None:
-            summaries[paper.bibtex_key] = s
+    papers, summaries, _ = _processed_papers(cfg, state, summaries_dir, "recluster")
 
     reg_fp = state_mod.register_fingerprint(register)
     unassigned = []
@@ -1166,6 +1186,11 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
         if summary is None:
             continue
         entry = state["papers"][paper.id]
+        if state_mod.is_inactive(entry):
+            # Tombstoned or retracted: out of every register for good. Without
+            # this, recluster re-files a stub under the topics it had before.
+            entry["topics"] = []
+            continue
         fp = state_mod.assign_fingerprint(
             reg_fp, themes.summary_digest(summary), claude.assign_model
         )
@@ -1247,6 +1272,65 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     state["papers_since_cluster"] = 0
     state_mod.save_state(state, _abs(cfg["paths"]["state_file"]))
     print(f"recluster: {len(register)} topics, {len(emergent)} emergent")
+
+
+def cmd_retract(cfg: dict, args) -> int:
+    """Mark one paper as retracted and take it out of the live vault.
+
+    The note keeps its summary under a retraction banner (wikilinks and the
+    site URL keep resolving); its state entry gets a `retracted` marker, which
+    `state.is_inactive` makes `update` and `recluster` honour for good. The
+    Topics registers are rewritten (no LLM) and the Structures that cited the
+    paper are regenerated — only those, via their input fingerprints.
+    """
+    from . import note_builder, topics_client, state as state_mod
+
+    state_file = _abs(cfg["paths"]["state_file"])
+    state = state_mod.load_state(state_file)
+    pid = f"bibtex:{args.bibtex_key}"
+    entry = state["papers"].get(pid)
+    if entry is None:
+        print(f"retract: {args.bibtex_key} is not in state")
+        return 1
+    notice = state_mod.normalize_doi(args.notice) or args.notice
+    affected = list(entry.get("topics") or [])
+    entry["retracted"] = {
+        "notice_doi": notice,
+        "date": args.date,
+        "source": "manual",
+        "recorded": _now(),
+    }
+    entry["topics"] = []
+
+    vault = Path(_abs(cfg["vault"]["path"]))
+    note = vault / entry["note_path"]
+    note.write_text(
+        note_builder.apply_retraction(note.read_text(encoding="utf-8"), notice, args.date),
+        encoding="utf-8",
+    )
+    state_mod.save_state(state, state_file)
+    print(f"retract: {args.bibtex_key} marked retracted ({notice}); "
+          f"leaves {', '.join(affected) or 'no topics'}")
+
+    register = topics_client.load_topics(_abs(cfg["paths"]["topics_file"]))
+    _regenerate_topic_notes(cfg, register, state)
+    if args.no_structures or not affected:
+        return 0
+
+    papers, summaries, complete = _processed_papers(
+        cfg, state, _abs(cfg["paths"]["summaries_dir"]), "retract"
+    )
+    if not complete:
+        # A partial member list would silently drop own papers from every
+        # Structure it touched; the next recluster will pick this up instead.
+        print("retract: structures not regenerated (incomplete paper list)")
+        return 1
+    _generate_structure_notes(
+        cfg, register, state, {p.bibtex_key: p for p in papers}, summaries,
+        _claude(cfg),
+    )
+    state_mod.save_state(state, state_file)
+    return 0
 
 
 def cmd_recluster(cfg: dict, args) -> int:
@@ -1702,6 +1786,17 @@ def build_parser() -> argparse.ArgumentParser:
         help="refetch every reference list instead of only the missing ones",
     )
 
+    p_retract = sub.add_parser(
+        "retract", help="mark a paper as retracted and drop it from the live vault"
+    )
+    p_retract.add_argument("bibtex_key", help="bibtex key of the retracted paper")
+    p_retract.add_argument("--notice", required=True, help="DOI of the retraction notice")
+    p_retract.add_argument("--date", required=True, help="retraction date, YYYY-MM-DD")
+    p_retract.add_argument(
+        "--no-structures", action="store_true",
+        help="rewrite the Topics registers only; leave Structures to the next recluster",
+    )
+
     p_slack = sub.add_parser(
         "slack-test", help="post one paper's digest to the Slack webhook"
     )
@@ -1717,6 +1812,7 @@ def main(argv=None) -> int:
         "bootstrap": cmd_bootstrap,
         "summarize": cmd_summarize,
         "update": cmd_update,
+        "retract": cmd_retract,
         "refresh-topics": cmd_refresh_topics,
         "recluster": cmd_recluster,
         "dedupe-vault": cmd_dedupe_vault,
