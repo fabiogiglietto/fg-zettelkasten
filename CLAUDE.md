@@ -25,6 +25,7 @@ python -m src.main export-site         # export vault/ -> quartz/content/ for th
 python -m src.main dedupe-vault        # report notes that are the same work (--apply to merge)
 python -m src.main check-published     # ask OpenAlex if a preprint note is now published
 python -m src.main suggest-classics    # report the works the vault cites most but lacks (no LLM)
+python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper retracted
 ```
 
 ## Architecture
@@ -74,6 +75,13 @@ python -m src.main suggest-classics    # report the works the vault cites most b
   have no upstream bibtex key, so the note is upgraded *in place* (new DOI,
   `preprint_doi` kept, `published_venue` recorded) rather than replaced — never
   mint bibtex keys locally, `toread` owns that namespace.
+- Retractions: `retract` keeps the note (summary under a `[!warning] Retracted`
+  callout, `retracted:` / `retraction_notice:` in frontmatter, `topics: []`) and
+  sets a `retracted` marker in state. `state.is_inactive` — tombstoned *or*
+  retracted — is the one guard `update` and `recluster` honour, so neither
+  re-renders the note nor re-files it into a register. The zettel-paper skill's
+  indexer drops retracted notes (and links into them); they appear only under
+  `do_not_cite`.
 - Classics: `suggest-classics` only *reports* candidates — the works most cited
   by the vault's own papers that the vault does not hold (overall and per topic;
   the overall ranking favours well-indexed fields, so read both). It never builds

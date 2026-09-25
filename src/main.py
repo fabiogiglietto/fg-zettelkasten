@@ -1182,14 +1182,14 @@ def _recluster(cfg: dict, claude, drive, force: bool = False) -> None:
     unassigned = []
     assigned = skipped = 0
     for paper in papers:
-        summary = summaries.get(paper.bibtex_key)
-        if summary is None:
-            continue
         entry = state["papers"][paper.id]
         if state_mod.is_inactive(entry):
             # Tombstoned or retracted: out of every register for good. Without
             # this, recluster re-files a stub under the topics it had before.
             entry["topics"] = []
+            continue
+        summary = summaries.get(paper.bibtex_key)
+        if summary is None:
             continue
         fp = state_mod.assign_fingerprint(
             reg_fp, themes.summary_digest(summary), claude.assign_model
@@ -1281,7 +1281,8 @@ def cmd_retract(cfg: dict, args) -> int:
     site URL keep resolving); its state entry gets a `retracted` marker, which
     `state.is_inactive` makes `update` and `recluster` honour for good. The
     Topics registers are rewritten (no LLM) and the Structures that cited the
-    paper are regenerated — only those, via their input fingerprints.
+    paper are regenerated — only those, via their input fingerprints. Safe to
+    re-run: a Structure a failed first run left stale is picked up again.
     """
     from . import note_builder, topics_client, state as state_mod
 
@@ -1314,7 +1315,12 @@ def cmd_retract(cfg: dict, args) -> int:
 
     register = topics_client.load_topics(_abs(cfg["paths"]["topics_file"]))
     _regenerate_topic_notes(cfg, register, state)
-    if args.no_structures or not affected:
+    if args.no_structures:
+        return 0
+    if not cfg.get("processing", {}).get("incremental_recluster", False):
+        # Without fingerprints every Structure would be re-billed.
+        print("retract: structures left to the next recluster "
+              "(incremental_recluster is off)")
         return 0
 
     papers, summaries, complete = _processed_papers(
