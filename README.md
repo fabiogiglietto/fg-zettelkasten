@@ -39,9 +39,31 @@ pip install -r requirements.txt
 cp .env.example .env        # then fill in the keys
 ```
 
-`.env` needs `ANTHROPIC_API_KEY`, `GOOGLE_APPLICATION_CREDENTIALS` (path to a
-Google service-account JSON with read access to Paperpile's Drive folder — the
-same account research-radio uses) and `GOOGLE_DRIVE_FOLDER_ID`.
+`.env` needs `GOOGLE_APPLICATION_CREDENTIALS` (path to a Google
+service-account JSON with read access to Paperpile's Drive folder — the same
+account research-radio uses) and `GOOGLE_DRIVE_FOLDER_ID`.
+
+### Claude credentials: CI only
+
+The Anthropic API is reached through **Workload Identity Federation**, not an
+API key: `update-vault.yml` mints a GitHub Actions OIDC token
+(`.github/scripts/mint-oidc-token.sh`) and the SDK exchanges it for a
+short-lived access token. A local machine cannot mint that token, so **every
+command that calls Claude runs in CI** — dispatch it instead of running it
+locally:
+
+```bash
+gh workflow run update-vault.yml                   # update
+gh workflow run update-vault.yml -f recluster=true # refresh-topics + update --recluster
+```
+
+Locally, run only the steps that make no Claude call: the tests,
+`export-site`, `fix-links`, `dedupe-vault` and `check-published` (report mode),
+`suggest-classics` and `retract --no-structures`. Anything else stops with
+`No Anthropic credentials`, which is the intended behaviour.
+
+Do not put `ANTHROPIC_API_KEY` in `.env`. It outranks federation in the SDK's
+credential chain, so a stale key produces a 401 rather than a clear error.
 
 ## Usage
 
@@ -52,6 +74,7 @@ python -m src.main bootstrap --limit 5  # smoke test on the first 5 papers
 python -m src.main update               # daily incremental run
 python -m src.main update --recluster   # incremental + full re-cluster
 python -m src.main export-site          # export the vault to quartz/content/
+python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper retracted
 ```
 
 ## Vault layout
