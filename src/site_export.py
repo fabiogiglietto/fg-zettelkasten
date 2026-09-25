@@ -159,12 +159,14 @@ def _read_paper_meta(text: str) -> dict | None:
     notes, which are redirect stubs: they keep their original discovery date so
     the tombstone stays a faithful record, which would otherwise let a
     just-superseded paper occupy a "Latest papers" slot with an empty page.
+    Retracted notes are left out too: a homepage slot is an endorsement.
     """
     fm = _FRONTMATTER.match(text)
     if not fm:
         return None
     data = yaml.safe_load(fm.group(1)) or {}
-    if not data.get("discovery_date") or data.get("superseded_by"):
+    if (not data.get("discovery_date") or data.get("superseded_by")
+            or data.get("retracted")):
         return None
     aliases = data.get("aliases") or []
     title = aliases[0] if aliases else data.get("title", "")

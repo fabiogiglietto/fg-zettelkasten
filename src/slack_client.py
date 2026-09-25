@@ -244,3 +244,57 @@ def post_paper(
         f"{paper.bibtex_key}: {resp.text[:200]}"
     )
     return False
+
+
+def build_retraction_blocks(
+    bibtex_key: str,
+    title: str,
+    doi: Optional[str],
+    notice_doi: str,
+    date: str,
+    note_url: Optional[str] = None,
+) -> list[dict]:
+    """Block Kit layout for a retraction notice about a paper already posted."""
+    heading = _esc(_truncate(title or bibtex_key, _TEXT_MAX))
+    if doi:
+        heading = f"<https://doi.org/{doi}|{heading}>"
+    when = f" on {date}" if date else ""
+    lines = [
+        f":warning: *Retracted:* {heading}",
+        f"This paper, shared in #toread earlier, was retracted{when}. "
+        f"Retraction notice: <https://doi.org/{notice_doi}|{_esc(notice_doi)}>.",
+    ]
+    if note_url:
+        lines.append(f"<{note_url}|Kasten note> (now flagged; out of the topic registers)")
+    return [{"type": "section", "text": {"type": "mrkdwn", "text": "\n".join(lines)}}]
+
+
+def post_retraction(
+    webhook_url: str,
+    bibtex_key: str,
+    title: str,
+    doi: Optional[str],
+    notice_doi: str,
+    date: str,
+    note_url: Optional[str] = None,
+) -> bool:
+    """Tell #toread that a paper it was sent has been retracted.
+
+    Same contract as `post_paper`: True on 2xx, never raises.
+    """
+    payload = {
+        "text": _truncate(f"Retracted: {title or bibtex_key}", _TEXT_MAX),
+        "blocks": build_retraction_blocks(
+            bibtex_key, title, doi, notice_doi, date, note_url
+        ),
+    }
+    try:
+        resp = requests.post(webhook_url, json=payload, timeout=15)
+    except requests.RequestException as exc:  # noqa: BLE001 - logged, non-fatal
+        print(f"  slack: retraction notice failed for {bibtex_key} ({exc})")
+        return False
+    if resp.status_code // 100 == 2:
+        return True
+    print(f"  slack: webhook returned {resp.status_code} for {bibtex_key} "
+          f"retraction: {resp.text[:200]}")
+    return False

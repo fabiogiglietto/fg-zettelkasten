@@ -172,6 +172,8 @@ def build(vault, data_dir):
             "links_out": links,
             "has_summary": summary is not None,
             "key_claims": (summary or {}).get("key_claims", [])[:5],
+            # expression_of_concern / correction / ...: cite, but say so
+            "editorial_notices": meta.get("editorial_notices") or [],
         }
         for tgt in links:
             edges.append((key, tgt))
@@ -414,7 +416,7 @@ def write_outputs(out_dir, papers, edges, topics, structures, crossings):
                          ("title", "authors", "year", "doi", "topics",
                           "bridge_score", "links_in", "key_claims",
                           "citation_label", "first_author_surname",
-                          "name_order_uncertain")}
+                          "name_order_uncertain", "editorial_notices")}
                    for pid, p in papers.items()},
         # Retracted works: excluded from every table above. Never cite them.
         "do_not_cite": getattr(build, "retracted", {}),

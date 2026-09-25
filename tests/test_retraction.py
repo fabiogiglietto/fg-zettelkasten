@@ -77,3 +77,211 @@ def test_citation_refresh_skips_the_retraction_banner():
     assert note_builder.RETRACTION_MARKER in out
     assert "> NEW CITATION" in out
     assert "Smith, A. H., Green" not in out
+
+
+# --- Crossref notices ------------------------------------------------------
+
+from src import retractions  # noqa: E402
+
+# Real `updated-by` payloads: Smith2025-kc's retraction, and a lung-cancer
+# paper whose expression of concern Crossref lists twice with two dates.
+SMITH_UPDATED_BY = [{
+    "DOI": "10.1093/pnasnexus/pgag137", "type": "retraction", "label": "Retraction",
+    "source": "retraction-watch", "record-id": "71976",
+    "updated": {"date-parts": [[2026, 5, 7]]},
+}]
+EOC_UPDATED_BY = [
+    {"DOI": "10.1016/j.lungcan.2026.109332", "type": "expression_of_concern",
+     "source": "publisher", "updated": {"date-parts": [[2026, 5, 1]]}},
+    {"DOI": "10.1016/j.lungcan.2026.109332", "type": "expression_of_concern",
+     "source": "publisher", "updated": {"date-parts": [[2026, 2, 13]]}},
+    {"DOI": "10.1016/x.new", "type": "new_version", "updated": {"date-parts": [[2026]]}},
+]
+
+
+def test_parse_updates_reads_a_retraction():
+    notices = retractions.parse_updates(SMITH_UPDATED_BY)
+    assert notices == [{"type": "retraction", "doi": NOTICE, "date": DATE,
+                        "source": "retraction-watch"}]
+    assert retractions.retraction_of(notices)["doi"] == NOTICE
+    assert retractions.flags_of(notices) == []
+
+
+def test_parse_updates_dedupes_keeps_earliest_and_drops_non_notices():
+    notices = retractions.parse_updates(EOC_UPDATED_BY)
+    assert len(notices) == 1
+    assert notices[0]["type"] == "expression_of_concern"
+    assert notices[0]["date"] == "2026-02-13"
+    assert retractions.retraction_of(notices) is None
+    assert retractions.flags_of(notices) == notices
+
+
+def test_parse_updates_pads_a_year_only_date():
+    [n] = retractions.parse_updates(
+        [{"DOI": "10.1/c", "type": "correction", "updated": {"date-parts": [[2020]]}}]
+    )
+    assert n["date"] == "2020-01-01"
+
+
+# --- flag callout ----------------------------------------------------------
+
+EOC = {"type": "expression_of_concern", "doi": "10.1/eoc", "date": "2026-02-13",
+       "source": "publisher"}
+CORRECTION = {"type": "correction", "doi": "10.1/cor", "date": "2026-03-01",
+              "source": "publisher"}
+
+
+def test_apply_notices_flags_without_leaving_the_registers():
+    out = note_builder.apply_notices(NOTE, [EOC])
+    fm = out.split("\n---\n", 1)[0]
+    assert "editorial_notices: [expression_of_concern]" in fm
+    assert "topics: [computational-network-structure-analysis" in fm
+    assert "Expression of concern (2026-02-13)" in out
+    assert note_builder.apply_notices(out, [EOC]) == out
+
+
+def test_apply_notices_rebuilds_the_block_when_a_notice_joins():
+    once = note_builder.apply_notices(NOTE, [EOC])
+    twice = note_builder.apply_notices(once, [EOC, CORRECTION])
+    assert twice.count(note_builder.NOTICES_MARKER) == 1
+    assert "Correction (2026-03-01)" in twice
+    assert "editorial_notices: [expression_of_concern, correction]" in twice
+
+
+def test_notices_sit_below_the_retraction_banner():
+    out = note_builder.apply_notices(
+        note_builder.apply_retraction(NOTE, NOTICE, DATE), [CORRECTION]
+    )
+    assert out.index(note_builder.RETRACTION_MARKER) < out.index(note_builder.NOTICES_MARKER)
+    # The citation refresh skips both callouts.
+    refreshed = note_builder.replace_citation_block(out, "> NEW CITATION")
+    assert note_builder.NOTICES_MARKER in refreshed
+    assert "Smith, A. H., Green" not in refreshed
+
+
+# --- the other inactive guards --------------------------------------------
+
+
+def test_a_retracted_note_is_an_inactive_record(tmp_path):
+    from src import supersede
+
+    path = tmp_path / "Smith2025-kc.md"
+    path.write_text(note_builder.apply_retraction(NOTE, NOTICE, DATE), encoding="utf-8")
+    record = supersede.record_from_note(path)
+    assert record.retracted == DATE
+    assert record.inactive
+
+
+def test_a_retracted_note_never_takes_a_latest_papers_slot():
+    from src import site_export
+
+    text = note_builder.apply_retraction(
+        NOTE.replace("topics:", "discovery_date: 2026-09-01T00:00:00Z\ntopics:"),
+        NOTICE, DATE,
+    )
+    assert site_export._read_paper_meta(text) is None
+
+
+def test_retraction_slack_blocks_link_the_notice_and_the_note():
+    from src import slack_client
+
+    [block] = slack_client.build_retraction_blocks(
+        "Smith2025-kc", "Emergent structures of attention", "10.1093/pnasnexus/pgaf106",
+        NOTICE, DATE, "https://example.org/Papers/Smith2025-kc",
+    )
+    text = block["text"]["text"]
+    assert "Retracted" in text and f"https://doi.org/{NOTICE}" in text
+    assert "https://example.org/Papers/Smith2025-kc" in text
+
+
+# --- check-retractions end to end (Crossref stubbed) ------------------------
+
+
+def _mini_vault(tmp_path):
+    import json
+
+    from src import state as state_mod
+
+    vault = tmp_path / "vault"
+    (vault / "Papers").mkdir(parents=True)
+    (vault / "Topics").mkdir()
+    (vault / "Structures").mkdir()
+    notes = {
+        "Smith2025-kc": ("10.1093/pnasnexus/pgaf106", NOTE),
+        "Tai2026-qk": ("10.1080/10584609.2026.2613661", NOTE.replace(
+            "Smith2025-kc", "Tai2026-qk")),
+    }
+    papers = {}
+    for key, (doi, text) in notes.items():
+        text = text.replace("bibtex_key:", f"doi: {doi}\nbibtex_key:")
+        (vault / "Papers" / f"{key}.md").write_text(text, encoding="utf-8")
+        papers[f"bibtex:{key}"] = {
+            "note_path": f"Papers/{key}.md",
+            "topics": ["computational-network-structure-analysis"],
+            "slack_posted": True,
+        }
+    topics = [{"slug": "computational-network-structure-analysis",
+               "name": "Networks", "description": "d"}]
+    (tmp_path / "topics.json").write_text(json.dumps(topics), encoding="utf-8")
+    state_file = tmp_path / "state.json"
+    state_mod.save_state({"papers": papers}, str(state_file))
+    cfg = {
+        "vault": {"path": str(vault), "papers_dir": "Papers",
+                  "topics_dir": "Topics", "structures_dir": "Structures"},
+        "paths": {"state_file": str(state_file), "topics_file": str(tmp_path / "topics.json"),
+                  "summaries_dir": str(tmp_path / "summaries")},
+        "retractions": {"enabled": True, "slack_notice": True},
+        "slack": {"enabled": True, "note_base_url": "https://example.org/Papers"},
+    }
+    return cfg, vault, state_file
+
+
+def test_check_retractions_applies_both_kinds(tmp_path, monkeypatch):
+    import argparse
+
+    from src import main, slack_client, state as state_mod
+
+    cfg, vault, state_file = _mini_vault(tmp_path)
+    monkeypatch.setattr(retractions, "fetch_updates", lambda dois, mailto=None: {
+        "10.1093/pnasnexus/pgaf106": retractions.parse_updates(SMITH_UPDATED_BY),
+        "10.1080/10584609.2026.2613661": [CORRECTION],
+    })
+    posted = []
+    monkeypatch.setattr(slack_client, "post_retraction",
+                        lambda *a, **k: posted.append(a[1]) or True)
+    monkeypatch.setenv("SLACK_WEBHOOK_URL", "https://hooks.example/x")
+
+    args = argparse.Namespace(apply=True, no_structures=True)
+    assert main.cmd_check_retractions(cfg, args) == 0
+
+    state = state_mod.load_state(str(state_file))
+    smith, tai = state["papers"]["bibtex:Smith2025-kc"], state["papers"]["bibtex:Tai2026-qk"]
+    assert smith["retracted"]["notice_doi"] == NOTICE
+    assert smith["retracted"]["source"] == "retraction-watch"
+    assert smith["topics"] == []
+    assert tai["notices"] == [CORRECTION]
+    assert tai["topics"] == ["computational-network-structure-analysis"]
+    assert posted == ["Smith2025-kc"]
+    register = (vault / "Topics" / "computational-network-structure-analysis.md").read_text()
+    assert "[[Tai2026-qk]]" in register and "[[Smith2025-kc]]" not in register
+
+    # A second run finds nothing new: Smith is inactive, Tai's notice is known.
+    posted.clear()
+    assert main.cmd_check_retractions(cfg, args) == 0
+    assert posted == []
+
+
+def test_check_retractions_reports_without_apply(tmp_path, monkeypatch):
+    import argparse
+
+    from src import main, state as state_mod
+
+    cfg, vault, state_file = _mini_vault(tmp_path)
+    before = state_file.read_text()
+    monkeypatch.setattr(retractions, "fetch_updates", lambda dois, mailto=None: {
+        "10.1093/pnasnexus/pgaf106": retractions.parse_updates(SMITH_UPDATED_BY),
+    })
+    args = argparse.Namespace(apply=False, no_structures=True)
+    assert main.cmd_check_retractions(cfg, args) == 0
+    assert state_file.read_text() == before
+    assert note_builder.RETRACTION_MARKER not in (vault / "Papers" / "Smith2025-kc.md").read_text()

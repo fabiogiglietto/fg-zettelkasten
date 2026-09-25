@@ -26,6 +26,7 @@ python -m src.main dedupe-vault        # report notes that are the same work (--
 python -m src.main check-published     # ask OpenAlex if a preprint note is now published
 python -m src.main suggest-classics    # report the works the vault cites most but lacks (no LLM)
 python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper retracted
+python -m src.main check-retractions   # ask Crossref for retractions / notices (--apply to write)
 ```
 
 ## Architecture
@@ -41,6 +42,8 @@ python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper re
 - `src/supersede.py`       — decide when two records are the same work; tombstone merge
 - `src/openalex_client.py` — look up whether a preprint has since been published;
                              batched reference-list / metadata lookups
+- `src/retractions.py`     — batched Crossref `updated-by` lookup: retractions,
+                             expressions of concern, corrections
 - `src/classics.py`        — rank the outside works the vault's papers cite most
 - `src/note_builder.py`    — render Papers/, Topics/, Structures/ markdown
 - `src/site_export.py`     — export the vault to `quartz/content/` for the website
@@ -79,9 +82,16 @@ python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper re
   callout, `retracted:` / `retraction_notice:` in frontmatter, `topics: []`) and
   sets a `retracted` marker in state. `state.is_inactive` — tombstoned *or*
   retracted — is the one guard `update` and `recluster` honour, so neither
-  re-renders the note nor re-files it into a register. The zettel-paper skill's
-  indexer drops retracted notes (and links into them); they appear only under
-  `do_not_cite`.
+  re-renders the note nor re-files it into a register, and classics, dedupe,
+  check-published and the site's "Latest papers" skip it too (`Record.inactive`).
+  The zettel-paper skill's indexer drops retracted notes (and links into them);
+  they appear only under `do_not_cite`. `check-retractions` finds retractions on
+  its own: one batched Crossref query (Retraction Watch data included) over every
+  active DOI, run with `--apply` before each `update` in `update-vault.yml`. A
+  retraction is applied like `retract` and announced in #toread if the paper was
+  posted there; an expression of concern or a correction only *flags* the note
+  (`editorial_notices:` + a `[!caution]` callout, `notices` in state) — it stays
+  in the registers and in the skill, which must disclose it when citing.
 - Classics: `suggest-classics` only *reports* candidates — the works most cited
   by the vault's own papers that the vault does not hold (overall and per topic;
   the overall ranking favours well-indexed fields, so read both). It never builds

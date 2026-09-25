@@ -511,6 +511,47 @@ def apply_retraction(text: str, notice_doi: str, date: str) -> str:
     return f"{text[:match.end()]}\n\n{banner}{text[match.end():]}"
 
 
+NOTICES_MARKER = "> [!caution] Editorial notices"
+_NOTICES_BLOCK_RE = re.compile(
+    r"^" + re.escape(NOTICES_MARKER) + r"\n(?:>.*\n?)*\n?", re.MULTILINE
+)
+
+
+def apply_notices(text: str, notices: list[dict[str, str]]) -> str:
+    """Flag a paper note with its editorial notices (expression of concern,
+    correction, ...) without taking it out of the vault.
+
+    `notices` are `retractions.parse_updates` dicts. The callout is rebuilt from
+    the full list each time, so re-running with the same notices is a no-op and
+    a new one simply joins the block. `editorial_notices:` in the frontmatter
+    lists their types for the zettel-paper indexer.
+    """
+    from .retractions import LABELS
+
+    types = list(dict.fromkeys(n["type"] for n in notices))
+    text = set_frontmatter_field(text, "editorial_notices", types)
+    text = _NOTICES_BLOCK_RE.sub("", text)
+    if not notices:
+        return text
+    lines = [NOTICES_MARKER]
+    for n in notices:
+        label = LABELS.get(n["type"], n["type"])
+        when = f" ({n['date']})" if n.get("date") else ""
+        lines.append(f"> - {label}{when}: [{n['doi']}](https://doi.org/{n['doi']})")
+    block = "\n".join(lines)
+    start = _FRONTMATTER_RE.match(text)
+    match = _H1_RE.search(text, start.end() if start else 0)
+    if not match:
+        return f"{block}\n\n{text}"
+    # After the retraction banner when there is one: that is the headline.
+    at = match.end()
+    banner = text.find(RETRACTION_MARKER, at)
+    if banner != -1:
+        end = text.find("\n\n", banner)
+        at = end if end != -1 else len(text)
+    return f"{text[:at]}\n\n{block}{text[at:]}"
+
+
 def set_frontmatter_field(text: str, key: str, value: Any) -> str:
     """Set one frontmatter key in an existing note, leaving the body untouched.
 
