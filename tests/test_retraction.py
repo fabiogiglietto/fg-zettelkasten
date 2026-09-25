@@ -140,22 +140,53 @@ def test_apply_notices_flags_without_leaving_the_registers():
     assert note_builder.apply_notices(out, [EOC]) == out
 
 
-def test_apply_notices_rebuilds_the_block_when_a_notice_joins():
-    once = note_builder.apply_notices(NOTE, [EOC])
+def test_concerns_get_a_caution_callout_and_corrections_a_note():
+    out = note_builder.apply_notices(NOTE, [EOC, CORRECTION])
+    concern = out.index(note_builder.CONCERN_MARKER)
+    corrected = out.index(note_builder.CORRECTION_MARKER)
+    assert concern < corrected  # the warning reads first
+    assert "Expression of concern (2026-02-13)" in out[concern:corrected]
+    assert "Correction (2026-03-01)" in out[corrected:]
+    only_correction = note_builder.apply_notices(NOTE, [CORRECTION])
+    assert note_builder.CONCERN_MARKER not in only_correction
+    assert "[!caution]" not in only_correction
+
+
+def test_apply_notices_rebuilds_the_blocks_when_a_notice_joins():
+    once = note_builder.apply_notices(NOTE, [CORRECTION])
     twice = note_builder.apply_notices(once, [EOC, CORRECTION])
-    assert twice.count(note_builder.NOTICES_MARKER) == 1
-    assert "Correction (2026-03-01)" in twice
+    assert twice.count(note_builder.CONCERN_MARKER) == 1
+    assert twice.count(note_builder.CORRECTION_MARKER) == 1
     assert "editorial_notices: [expression_of_concern, correction]" in twice
+    assert twice == note_builder.apply_notices(NOTE, [EOC, CORRECTION])
+
+
+LEGACY_CALLOUT = (
+    "> [!caution] Editorial notices\n"
+    "> - Correction (2026-03-01): [10.1/cor](https://doi.org/10.1/cor)"
+)
+
+
+def _legacy_note() -> str:
+    """A note flagged by the first release: one [!caution] block for everything."""
+    h1_end = NOTE.index("\n", NOTE.index("\n# ") + 1)
+    return f"{NOTE[:h1_end]}\n\n{LEGACY_CALLOUT}{NOTE[h1_end:]}"
+
+
+def test_a_single_callout_note_is_migrated_to_the_split_layout():
+    migrated = note_builder.apply_notices(_legacy_note(), [CORRECTION])
+    assert "Editorial notices" not in migrated
+    assert migrated == note_builder.apply_notices(NOTE, [CORRECTION])
 
 
 def test_notices_sit_below_the_retraction_banner():
     out = note_builder.apply_notices(
         note_builder.apply_retraction(NOTE, NOTICE, DATE), [CORRECTION]
     )
-    assert out.index(note_builder.RETRACTION_MARKER) < out.index(note_builder.NOTICES_MARKER)
+    assert out.index(note_builder.RETRACTION_MARKER) < out.index(note_builder.CORRECTION_MARKER)
     # The citation refresh skips both callouts.
     refreshed = note_builder.replace_citation_block(out, "> NEW CITATION")
-    assert note_builder.NOTICES_MARKER in refreshed
+    assert note_builder.CORRECTION_MARKER in refreshed
     assert "Smith, A. H., Green" not in refreshed
 
 
@@ -301,11 +332,11 @@ def test_check_retractions_restores_a_flag_a_re_render_dropped(tmp_path, monkeyp
         "10.1080/10584609.2026.2613661": [CORRECTION],
     })
     note = vault / "Papers" / "Tai2026-qk.md"
-    assert note_builder.NOTICES_MARKER not in note.read_text()
+    assert note_builder.CORRECTION_MARKER not in note.read_text()
 
     assert main.cmd_check_retractions(
         cfg, argparse.Namespace(apply=True, no_structures=True)) == 0
-    assert note_builder.NOTICES_MARKER in note.read_text()
+    assert note_builder.CORRECTION_MARKER in note.read_text()
 
 
 def test_structures_pass_can_be_limited_to_the_topics_a_retraction_left(
@@ -341,3 +372,27 @@ def test_structures_pass_can_be_limited_to_the_topics_a_retraction_left(
     assert built == ["a"]
     assert state["structure_fps"]["b"] == "stale"
     assert (structures / "b.md").read_text() == "old b"
+
+
+def test_check_retractions_migrates_a_single_callout_note(tmp_path, monkeypatch):
+    """State already knows the correction; only the callout layout is stale."""
+    import argparse
+
+    from src import main, state as state_mod
+
+    cfg, vault, state_file = _mini_vault(tmp_path)
+    state = state_mod.load_state(str(state_file))
+    state["papers"]["bibtex:Tai2026-qk"]["notices"] = [CORRECTION]
+    state_mod.save_state(state, str(state_file))
+    note = vault / "Papers" / "Tai2026-qk.md"
+    note.write_text(_legacy_note().replace("Smith2025-kc", "Tai2026-qk").replace(
+        "bibtex_key:", "doi: 10.1080/10584609.2026.2613661\nbibtex_key:"), encoding="utf-8")
+    monkeypatch.setattr(retractions, "fetch_updates", lambda dois, mailto=None: {
+        "10.1080/10584609.2026.2613661": [CORRECTION],
+    })
+
+    assert main.cmd_check_retractions(
+        cfg, argparse.Namespace(apply=True, no_structures=True)) == 0
+    text = note.read_text()
+    assert "Editorial notices" not in text
+    assert note_builder.CORRECTION_MARKER in text
