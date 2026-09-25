@@ -27,6 +27,7 @@ Emerging strand examining how generative AI is used in coordinated persuasion (s
 - [[Schiffrin_undated-gi]]
 - [[Suk2026-ai]]
 - [[Tang2026-gu]]
+- [[Topinka2026-hb]]
 - [[Tornberg2026-lc]]
 - [[Wack2026-bt]]
 

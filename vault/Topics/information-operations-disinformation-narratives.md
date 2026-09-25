@@ -71,6 +71,7 @@ Empirical mapping of deceptive information operations, disinformation campaigns 
 - [[Swartz2026-zb]]
 - [[Tai2026-qk]]
 - [[Thiele2025-ol]]
+- [[Topinka2026-hb]]
 - [[Tornberg2025-ir]]
 - [[Ventura2025-sw]]
 - [[Vincent_undated-re]]

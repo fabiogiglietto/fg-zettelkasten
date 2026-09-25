@@ -12,9 +12,13 @@ source_url: https://doi.org/10.1080/10584609.2026.2613661
 podcast_url: 
 pdf_available: false
 discovery_date: 2026-02-25T06:36:53.218205Z
+editorial_notices: [correction]
 ---
 
 # Elected officials’ online sharing of misinformation: Institutional and ideological checks
+
+> [!caution] Editorial notices
+> - Correction (2026-02-22): [10.1080/10584609.2026.2635255](https://doi.org/10.1080/10584609.2026.2635255)
 
 > Tai, Y. C., Lin, Y., & Desmarais, B. A. (2026). Elected officials’ online sharing of misinformation: Institutional and ideological checks. *Political Communication*, 1–19. https://doi.org/10.1080/10584609.2026.2613661
 >

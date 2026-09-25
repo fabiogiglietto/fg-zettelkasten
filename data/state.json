@@ -588,7 +588,15 @@
       "content_hash": "e24de555a86ee453c096551ab463af0a7a0ddc4959a078d6134e98fccad12907",
       "podcast_linked": false,
       "last_processed": "2026-07-08T14:45:44.684816+00:00",
-      "assign_fp": "1dd260cc9492531fcb65126f681fa6c3c61bae5b5f3cbe53fb29c4850d8552ff"
+      "assign_fp": "1dd260cc9492531fcb65126f681fa6c3c61bae5b5f3cbe53fb29c4850d8552ff",
+      "notices": [
+        {
+          "type": "correction",
+          "doi": "10.1080/10584609.2026.2635255",
+          "date": "2026-02-22",
+          "source": "publisher"
+        }
+      ]
     },
     "bibtex:Scalco2026-bd": {
       "note_path": "Papers/Scalco2026-bd.md",
@@ -713,9 +721,9 @@
         "platform-critique-anniversary-essays"
       ],
       "pdf_source": "drive",
-      "content_hash": "8a43d120348d59e04a6d83fed1af8d9dce0a2bf3ad991a2a27ae935f5752f0d9",
+      "content_hash": "af5492e8277391ba1df1a9b9d95da0ceeacbf53edc677caf034de73f314d0b89",
       "podcast_linked": true,
-      "last_processed": "2026-07-08T14:59:27.173505+00:00",
+      "last_processed": "2026-09-25T13:34:20.901888+00:00",
       "assign_fp": "80e80dbe3e82f73dd892d0745dd5d88d15190814fb32c665f359d2eb4c171acc"
     },
     "bibtex:Dehghan2026-sy": {
@@ -2529,7 +2537,15 @@
       "content_hash": "0f0e33b159e54151370ca073b17ee3b7473fa426f2fd485d9f7ae6776182c257",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750746+00:00",
-      "assign_fp": "cbbf4ea8c5f3c3ee5e2b6eb888a917540eaa83bcad29823cca86551b8e521b97"
+      "assign_fp": "cbbf4ea8c5f3c3ee5e2b6eb888a917540eaa83bcad29823cca86551b8e521b97",
+      "notices": [
+        {
+          "type": "correction",
+          "doi": "10.1080/1369118x.2020.1755558",
+          "date": "2020-04-21",
+          "source": "publisher"
+        }
+      ]
     },
     "bibtex:F2020-6278a4aa": {
       "note_path": "Papers/F2020-6278a4aa.md",
@@ -2593,7 +2609,15 @@
       "content_hash": "c862f17527d664382c3434044d80727137c48aac3e6d0f628d94758534d5acf3",
       "podcast_linked": false,
       "last_processed": "2026-07-08T07:44:29.750776+00:00",
-      "assign_fp": "6f5c0bb295c2a531cdaaee3333c4de60e1928eed8b83739358b0012000be207a"
+      "assign_fp": "6f5c0bb295c2a531cdaaee3333c4de60e1928eed8b83739358b0012000be207a",
+      "notices": [
+        {
+          "type": "correction",
+          "doi": "10.1080/1369118x.2016.1211636",
+          "date": "2016-07-19",
+          "source": "publisher"
+        }
+      ]
     },
     "bibtex:Iannelli2015-e0818c3e": {
       "note_path": "Papers/Iannelli2015-e0818c3e.md",
@@ -3194,10 +3218,10 @@
       "doi": "10.31219/osf.io/ch8gj",
       "title": "News sharing on social media: Mapping the ideology of news media, politicians, and the mass public",
       "pdf_source": "drive",
-      "content_hash": "be8f5e5af7227aff366c3feb50ccd69c850746e4c9f6457f7aa53615ebfd8d55",
+      "content_hash": "2d9bbb93808dcbb0931981a4e4f36f85c6b1fa1433dcbdf81cac86eede750427",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-08-20T17:22:28.007935+00:00"
+      "last_processed": "2026-09-25T13:34:05.876988+00:00"
     },
     "bibtex:Rogers2026-cy": {
       "note_path": "Papers/Rogers2026-cy.md",
@@ -3627,10 +3651,25 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-09-18T06:18:56.988101+00:00"
+    },
+    "bibtex:Topinka2026-hb": {
+      "note_path": "Papers/Topinka2026-hb.md",
+      "topics": [
+        "generative-ai-media-research",
+        "information-operations-disinformation-narratives"
+      ],
+      "assign_fp": "a8fb111bed425c7d47f4ae417e529e15626402ab7943e94079e312c0a692a8b3",
+      "doi": "10.1177/13675494261468632",
+      "title": "Feed them slop: Alignment, attunement, and the affective lure of slopaganda",
+      "pdf_source": "drive",
+      "content_hash": "56fcc14f18051661ec98005053047d59fa008351c502900d18b46f95b9be328a",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-09-25T13:33:45.280595+00:00"
     }
   },
   "last_full_cluster": "2026-09-25T12:18:36.689542+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "9af6b3ba7ef318e0da54ec3afa2d06c2385a6fb29a47e07aba6c8dcffd12ecc4",
   "emergent_fp": "adb9d9899e9148fdddba45a3bccc40a557d4e05c553d755f409ac6309ac68d8b",
   "structure_fps": {
