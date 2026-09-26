@@ -12,9 +12,14 @@ source_url: https://doi.org/10.1126/science.abp9364
 podcast_url: 
 pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445505Z
+editorial_notices: [correction]
 ---
 
 # How do social media feed algorithms affect attitudes and behavior in an election campaign?
+
+> [!note] Corrected
+> - Correction (2024-12-05): [10.1126/science.adu8261](https://doi.org/10.1126/science.adu8261)
+> - Correction (2026-03-19): [10.1126/science.aeh2575](https://doi.org/10.1126/science.aeh2575)
 
 > Guess, A. M., Malhotra, N., Pan, J., Barberá, P., Allcott, H., Brown, T., Crespo-Tenorio, A., Dimmery, D., Freelon, D., Gentzkow, M., González-Bailón, S., Kennedy, E., Kim, Y. M., Lazer, D., Moehler, D., Nyhan, B., Rivera, C. V., Settle, J., Thomas, D. R., Thorson, E., Tromble, R., Wilkins, A., Wojcieszak, M., Xiong, B., de Jonge, C. K., Franco, A., Mason, W., Stroud, N. J., & Tucker, J. A. (2023). How do social media feed algorithms affect attitudes and behavior in an election campaign?. *Science*, *381*, 398–404. https://doi.org/10.1126/science.abp9364
 >

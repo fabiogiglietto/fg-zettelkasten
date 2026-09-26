@@ -3965,7 +3965,21 @@
       "podcast_linked": false,
       "slack_posted": false,
       "slack_pending": false,
-      "last_processed": "2026-09-26T10:21:49.375866+00:00"
+      "last_processed": "2026-09-26T10:21:49.375866+00:00",
+      "notices": [
+        {
+          "type": "correction",
+          "doi": "10.1126/science.adu8261",
+          "date": "2024-12-05",
+          "source": "publisher"
+        },
+        {
+          "type": "correction",
+          "doi": "10.1126/science.aeh2575",
+          "date": "2026-03-19",
+          "source": "publisher"
+        }
+      ]
     },
     "bibtex:Gonzalez-Bailon2023-uy": {
       "note_path": "Papers/Gonzalez-Bailon2023-uy.md",
@@ -3997,7 +4011,15 @@
       "podcast_linked": false,
       "slack_posted": false,
       "slack_pending": false,
-      "last_processed": "2026-09-26T10:22:29.546344+00:00"
+      "last_processed": "2026-09-26T10:22:29.546344+00:00",
+      "notices": [
+        {
+          "type": "correction",
+          "doi": "10.1038/s41586-023-06795-x",
+          "date": "2023-11-01",
+          "source": "publisher"
+        }
+      ]
     },
     "bibtex:Eady2023-xg": {
       "note_path": "Papers/Eady2023-xg.md",
