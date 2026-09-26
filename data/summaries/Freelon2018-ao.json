@@ -1,0 +1,20 @@
+{
+  "abstract": "This paper reflects on the challenges facing computational social science research as major platforms restrict or eliminate access to their Application Programming Interfaces (APIs). It characterizes this shift as a 'post-API age' and considers its implications for how social scientists collect and analyze online data. The work serves as a brief commentary on adapting research methods to an environment of reduced data availability.",
+  "key_claims": [
+    "Social science is entering a 'post-API age' in which platform data access via APIs is becoming increasingly restricted.",
+    "This shift has significant methodological implications for computational and social science research."
+  ],
+  "methods": [
+    "Conceptual and reflective commentary on the state of data access rather than empirical study (based on abstract)."
+  ],
+  "findings": [
+    "The narrowing of API access constrains established approaches to collecting online social data.",
+    "Researchers must reconsider and adapt their data collection strategies in response."
+  ],
+  "contributions": [
+    "Frames and names the 'post-API age' as a condition confronting computational social science.",
+    "Raises awareness of methodological challenges posed by declining platform data access."
+  ],
+  "framing": "The paper is positioned within computational social science and digital methods, addressing the dependence of that field on platform-provided APIs and the consequences of their withdrawal for research practice.",
+  "pdf_source": "abstract_only"
+}

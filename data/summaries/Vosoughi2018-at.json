@@ -1,0 +1,28 @@
+{
+  "abstract": "This study investigates how true and false news stories spread across Twitter over an eleven-year period. Using a large dataset of rumor cascades verified by fact-checking organizations, the authors compare the diffusion dynamics of false versus true information. They find that false news consistently spreads farther, faster, and more broadly than the truth, and explore possible explanations rooted in the novelty and emotional content of false stories.",
+  "key_claims": [
+    "False news spreads more widely and reaches more people than true news on social media.",
+    "False news diffuses faster than the truth across the network.",
+    "The disproportionate spread of false news is driven by human behavior rather than automated bots.",
+    "Novelty and emotional responses help explain why false news spreads more readily."
+  ],
+  "methods": [
+    "Analysis of a dataset of rumor cascades on Twitter spanning 2006 to 2017.",
+    "Examined approximately 126,000 rumors spread by around 3 million people.",
+    "Classified stories as true or false using information from independent fact-checking organizations.",
+    "Compared diffusion metrics (reach, speed, and cascade size) between true and false news."
+  ],
+  "findings": [
+    "False news reached more people than the truth overall.",
+    "The top 1% of false news cascades reached between 1,000 and 100,000 people, while true news rarely reached more than 1,000.",
+    "False news diffused faster and more broadly than true news across categories.",
+    "Human users, not bots, were primarily responsible for the greater spread of false news (as indicated in the study's stated conclusions)."
+  ],
+  "contributions": [
+    "Provides large-scale empirical evidence quantifying the differential spread of true versus false news online.",
+    "Offers a data-driven basis for understanding misinformation dynamics on social media platforms.",
+    "Informs debates on the societal risks of false news to political, economic, and social well-being."
+  ],
+  "framing": "The paper is situated within concerns over misinformation and its potential to influence political, economic, and social well-being, contributing empirical grounding to the study of information diffusion and rumor spread on social networks.",
+  "pdf_source": "abstract_only"
+}

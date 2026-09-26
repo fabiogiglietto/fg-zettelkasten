@@ -1,0 +1,39 @@
+{
+  "abstract": "This paper investigates how adults in Australia encounter and perceive misinformation as part of their everyday online routines, moving beyond the typical topic-driven, quantitative and abstracted approaches of misinformation research. Using a seven-day digital diary study with 55 participants, the authors captured in-situ examples of news and information that participants themselves identified as false, misleading or untrustworthy. They find that perceived misinformation extends across 'everyday' topics (like business and economics) and diverse modalities, and that mainstream and alternative news outlets—not just social media—are seen by participants as prominent propagators of untrustworthy content. The study argues that everyday perceptions of misinformation are shaped by sociocultural and sociotechnical factors, especially a broader crisis of trust in news.",
+  "key_claims": [
+    "Misinformation research is overly topic-driven, focused on narrow sources and formats, and abstracted from individuals' everyday lives.",
+    "People encounter perceived misinformation across a wide range of 'everyday' topics, not just the 'hot button' topics (health, science, politics) typically studied.",
+    "Ordinary users perceive mainstream and alternative news organisations and journalists as significant sources of misleading content, largely through clickbait framing.",
+    "Everyday perceptions of misinformation are shaped by changing news logics and a deepening crisis of trust in digital information sources.",
+    "Text-based claims remain the dominant form of encountered misinformation, cautioning against alarmist over-emphasis on audiovisual/AI-generated misinformation.",
+    "Responses to misinformation should be integrated, contextual and whole-of-society rather than isolated, single-issue or politically-framed."
+  ],
+  "methods": [
+    "Digital diary study conducted via the Indeemo app over two waves (n=30 and n=25) of seven days each in mid-2024.",
+    "Purposive sampling of 55 adult Australian participants, recruited from an affiliated survey, selected to broadly reflect the national population by age, gender, education, cultural/linguistic diversity, region, and self-reported misinformation exposure and media literacy confidence.",
+    "Participants recorded video reflections (days 1 and 7) and daily captured screenshots/photos/recordings of encountered news and information (days 2-6), then narrated their trustworthiness assessments.",
+    "Collected 1,564 information examples and 221,735 words of spoken reflection; a subsample of 322 examples (21%) flagged as false/misleading/untrustworthy using participants' own emergent terms was analysed.",
+    "Deductive thematic analysis (Braun & Clarke) across three dimensions—topic, communication mode, and source—with iteratively developed sub-themes.",
+    "Intercoder reliability check on 10% of the sample (Krippendorff's alpha = 1.0 for topic and source; 0.91 for mode); independent verification analysis of 10% of flagged claims.",
+    "Approach avoided imposing pre-established definitions or taxonomies of misinformation, following Chadwick et al. (2025) and Yan and Schroeder (2025)."
+  ],
+  "findings": [
+    "Topics: business and economics was the most common (18%), followed by celebrity (16%), crime and crisis (16%), health (11%), politics (10%), entertainment/daily life (8%), topic-agnostic distrust (8%), science/environment (7%), and sports (6%).",
+    "Modes: text dominated at 68% (mostly news headlines at 53% and full articles at 29% of text claims), followed by multimodal (18%), video (11%), image (3%), and audio (1%).",
+    "Sources: mainstream and alternative news outlets accounted for 62% of flagged claims (82% domestic, of which 99% mainstream), with News Corp Australia (25%), Seven West Media (17%), and Nine Entertainment Co (15%) prominent; social media individuals/groups were 19% (Facebook 35%, Instagram 26%, Reddit 26%).",
+    "Participants voiced a consistent 'Clickbait Concern,' frustrated by headlines that misrepresented article content, and distrusted outlets perceived as biased or commercially motivated (e.g., Sky News, news.com.au).",
+    "The cost-of-living crisis shaped perceptions, with many business/economics examples seen as exploiting financial anxieties (e.g., misleading 'tax hacks').",
+    "Verification of 10% of flagged claims found only 9% objectively false or misleading, 28% undeterminable, and 25% containing no clear verifiable claim—indicating perceived misinformation exceeds objectively false content.",
+    "Users apply self-protective heuristics such as blanket scepticism, avoidance of unknown sources, and 'reading with a grain of salt.'"
+  ],
+  "contributions": [
+    "Provides an in-situ, everyday-life account of misinformation encounters rather than experimental or one-off survey methods, foregrounding participants' own definitions.",
+    "Demonstrates the 'everydayness' of misinformation across understudied topics (business/economics, celebrity, sports) and multiple modalities.",
+    "Empirically documents public perception of mainstream/legacy news media as propagators of misinformation, complicating narratives that position journalism solely as a corrective.",
+    "Offers a macro-overview dataset (topic, mode, source) with methodological transparency (intercoder reliability, verification analysis) for future misinformation research.",
+    "Advances practical and policy directions: greater news media transparency, everyday-focused media literacy interventions, and whole-of-society coordinated responses.",
+    "Cautions against over-emphasis on audiovisual/AI-generated misinformation given the dominance of text-based claims in everyday encounters."
+  ],
+  "framing": "The study is positioned within misinformation and 'information disorder' scholarship (Wardle & Derakhshan; Jack) but critiques its topic-driven, quantitative, and decontextualised tendencies (Altay et al.). It draws on theories of news trust and the crisis of trust (Flew), changing news logics and commercialisation (Bhalla et al.; Waisbord), audience authentication heuristics (Tandoc et al.), algorithmic and platform power, and everyday media practice (Swart & Broersma; Tully), advancing an audience-centred, sociotechnical understanding of how people live with misinformation.",
+  "pdf_source": "drive"
+}

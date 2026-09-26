@@ -1,0 +1,22 @@
+{
+  "abstract": "This research note investigates potential biases introduced into Facebook's 10-trillion cell URLs dataset, which records URLs shared on the platform along with engagement metrics. Although the dataset is unprecedented in scale, it was modified to protect user privacy through two mechanisms: adding differentially private noise to engagement counts and censoring URLs shared publicly fewer than 100 times. The authors examine how these alterations affect conclusions researchers might draw from the data, with attention to the prevalence of content such as fake news.",
+  "key_claims": [
+    "Privacy-protecting alterations to large-scale platform datasets can introduce systematic bias that affects analytical conclusions.",
+    "The 100-public-share censoring threshold and the addition of differential privacy noise to engagement counts are the two primary sources of concern in Facebook's URLs dataset.",
+    "Despite the dataset's massive scale, its usefulness for certain research questions may be compromised by these privacy-driven modifications."
+  ],
+  "methods": [
+    "Analysis of Facebook's 10-trillion cell URLs dataset containing shared URLs and their engagement metrics.",
+    "Examination of the two data alteration mechanisms: differentially private noise added to engagement counts and a 100-public-share censoring threshold for URL inclusion.",
+    "Estimation of the prevalence of content categories (e.g., fake news) to assess how alterations affect measured outcomes."
+  ],
+  "findings": [
+    "The abstract indicates the study estimates prevalence of certain content types to gauge the impact of data alterations, but specific quantitative findings are not available from the abstract alone."
+  ],
+  "contributions": [
+    "Provides a methodological assessment of how privacy-preserving techniques bias inferences from a major social media research dataset.",
+    "Offers guidance to researchers on interpreting results derived from censored and noise-added platform data."
+  ],
+  "framing": "The paper is situated within the methodological literature on the use of large-scale platform datasets for social science research, engaging debates about the trade-offs between user privacy protections (such as differential privacy and censoring thresholds) and data validity for studying phenomena like misinformation.",
+  "pdf_source": "abstract_only"
+}

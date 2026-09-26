@@ -1,0 +1,25 @@
+{
+  "abstract": "This paper examines political astroturfing—centrally coordinated disinformation campaigns in which paid participants pose as independent, ordinary citizens—and how such campaigns can be detected and characterized. Using a rare case with verified 'ground truth' information, the authors analyze the South Korean National Information Service's (NIS) disinformation operation on Twitter. The study leverages the confirmed identities of the campaign's agents to identify behavioral signatures of coordination that distinguish astroturfing accounts from genuine users.",
+  "key_claims": [
+    "Political astroturfing is a distinct form of disinformation defined by central coordination combined with the pretense of independent, grassroots citizen activity.",
+    "Astroturfing campaigns leave detectable traces of coordination in their online behavior, even when individual accounts attempt to appear authentic.",
+    "Ground truth information about verified agents is essential for reliably evaluating the scope and effectiveness of astroturfing operations.",
+    "Coordinated campaigns can potentially influence electoral outcomes and other political behavior."
+  ],
+  "methods": [
+    "Case study of the South Korean National Information Service (NIS) disinformation campaign on Twitter.",
+    "Use of 'ground truth' data—verified identities of campaign agents and instigators—as a validation benchmark.",
+    "Analysis of Twitter activity data to identify behavioral patterns indicative of central coordination."
+  ],
+  "findings": [
+    "The NIS case provides evidence that coordinated astroturfing accounts exhibit distinguishing behavioral patterns relative to ordinary users.",
+    "Verified agent identities enable assessment of the campaign's scope and coordination structure that would otherwise be inaccessible."
+  ],
+  "contributions": [
+    "Provides an empirically validated study of political astroturfing using a rare verified-ground-truth dataset.",
+    "Advances methods for detecting and characterizing coordinated disinformation campaigns on social media.",
+    "Offers a conceptual framing of astroturfing distinct from other forms of online disinformation."
+  ],
+  "framing": "The paper situates itself within research on disinformation, computational social science, and the study of coordinated inauthentic behavior on social media, addressing the methodological challenge of studying covert influence operations without reliable ground truth.",
+  "pdf_source": "abstract_only"
+}

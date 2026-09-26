@@ -1,0 +1,25 @@
+{
+  "abstract": "This study examines the prevalence and effects of exposure to politically like-minded content on Facebook among US adult users. Using data from the entire population of active adult US Facebook users in 2020 combined with a large-scale field experiment, the authors find that while like-minded sources dominate what users see, reducing this exposure did not measurably change political attitudes or polarization.",
+  "key_claims": [
+    "Content from politically like-minded sources constitutes the majority of what US adult Facebook users see on the platform.",
+    "Despite the prevalence of like-minded content, experimentally reducing exposure to it does not produce measurable effects on political attitudes or polarization.",
+    "The concern that social media 'echo chambers' drive political polarization is not supported by the experimental evidence presented."
+  ],
+  "methods": [
+    "Analysis of platform-scale observational data covering the entire population of active adult Facebook users in the USA during 2020.",
+    "A large-scale field experiment on Facebook that reduced participants' exposure to content from like-minded sources.",
+    "Measurement of downstream political attitudes and polarization outcomes following the experimental intervention."
+  ],
+  "findings": [
+    "Like-minded sources account for the majority of political content users are exposed to on Facebook.",
+    "Reducing exposure to like-minded content in the experiment did not significantly affect political attitudes or polarization.",
+    "The observational prevalence of echo-chamber-like exposure does not translate into a causal polarizing effect."
+  ],
+  "contributions": [
+    "Provides population-scale evidence on the actual prevalence of like-minded content exposure on a major social media platform.",
+    "Combines large-scale observational data with a field experiment to move beyond correlational claims about echo chambers.",
+    "Challenges the widely held assumption that like-minded content exposure on social media causally increases polarization."
+  ],
+  "framing": "The paper engages debates about 'echo chambers,' social media, and political polarization, positioning itself against critics who blame like-minded content exposure for rising polarization. It addresses long-standing methodological limitations—scarce data and the difficulty of large-scale field experiments—that have hindered causal assessment of these claims.",
+  "pdf_source": "abstract_only"
+}

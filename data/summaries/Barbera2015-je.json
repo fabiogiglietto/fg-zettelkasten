@@ -1,0 +1,23 @@
+{
+  "abstract": "This paper proposes a method for estimating the ideological positions of politicians and ordinary citizens using the structure of their networks on Twitter. Building on the assumption that social networks are homophilic—people connect with others who share their views—the author develops a Bayesian Spatial Following model that treats ideology as a latent variable inferred from which political actors a user chooses to follow. The approach allows large-scale ideal point estimation for both elites and the mass public in a common ideological space.",
+  "key_claims": [
+    "The structure of social networks on Twitter carries information about users' ideological positions.",
+    "Under an assumption of network homophily, ideology can be treated as a latent variable recoverable from following behavior.",
+    "Both political elites (politicians) and ordinary citizens can be placed on a common ideological scale using this method."
+  ],
+  "methods": [
+    "Development of a Bayesian Spatial Following model in which ideology is a latent variable.",
+    "Inference of ideal points from the pattern of which political actors each Twitter user follows.",
+    "Application to Twitter network data linking citizens and politicians."
+  ],
+  "findings": [
+    "Following ties on Twitter reflect ideological homophily, enabling recovery of latent ideological positions (as stated in the abstract; specific validation results not available)."
+  ],
+  "contributions": [
+    "Introduces a scalable Bayesian ideal point estimation approach based on social network (following) structure rather than roll-call votes or text.",
+    "Extends ideal point estimation to ordinary citizens, not just legislators, placing elites and the public in a shared ideological space.",
+    "Demonstrates the value of social media data as a source for measuring political ideology."
+  ],
+  "framing": "The paper positions itself within the ideal point estimation literature in political science, which traditionally relies on legislative roll-call votes, and extends it by drawing on social media network data and the sociological principle of homophily to measure ideology at scale.",
+  "pdf_source": "abstract_only"
+}

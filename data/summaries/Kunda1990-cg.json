@@ -1,0 +1,25 @@
+{
+  "abstract": "This paper argues that motivation shapes reasoning by influencing which cognitive processes people use to access, construct, and evaluate their beliefs. It distinguishes between accuracy motivation, which promotes use of the most appropriate strategies, and directional motivation, which promotes use of strategies most likely to yield a desired conclusion. Kunda contends that motivated reasoning operates through cognitive mechanisms rather than by directly imposing preferred conclusions, and that such reasoning remains constrained by the ability to construct plausible justifications.",
+  "key_claims": [
+    "Motivation affects reasoning indirectly, through reliance on a biased subset of cognitive processes rather than by directly determining conclusions.",
+    "Accuracy motivation enhances use of the beliefs and strategies deemed most appropriate for reaching a correct conclusion.",
+    "Directional motivation (the desire to reach a particular conclusion) enhances use of strategies most likely to produce that desired conclusion.",
+    "Motivated reasoning is bounded: people can arrive at desired conclusions only when they can muster evidence and construct a plausible justification for them."
+  ],
+  "methods": [
+    "Theoretical review and synthesis of existing empirical evidence on motivation and reasoning.",
+    "Integration of findings from research on both accuracy-oriented and directional (goal-driven) motivation.",
+    "Conceptual framework grounded in cognitive process accounts of belief access, construction, and evaluation."
+  ],
+  "findings": [
+    "Considerable evidence indicates that people are more likely to reach conclusions they want to reach, subject to reasoning constraints (as summarized from the abstract).",
+    "Both accuracy and directional motives can be understood as operating via the selective deployment of cognitive strategies."
+  ],
+  "contributions": [
+    "Provides a unifying cognitive-process account of how motivation influences reasoning.",
+    "Reconciles evidence for biased reasoning with the observation that beliefs remain constrained by plausibility and available justification.",
+    "Establishes 'motivated reasoning' as a framework distinguishing accuracy-driven from directionally-driven cognition."
+  ],
+  "framing": "The paper is situated within social and cognitive psychology, bridging debates about hot (motivational) versus cold (purely cognitive) determinants of judgment. It positions motivated reasoning as a mechanism whereby motivational goals recruit cognitive processes, thereby integrating motivational and cognitive explanations of biased belief formation.",
+  "pdf_source": "abstract_only"
+}

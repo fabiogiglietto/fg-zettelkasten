@@ -1,0 +1,26 @@
+{
+  "abstract": "This study used a large-scale randomized field experiment during the 2020 US election to test how Facebook's and Instagram's algorithmic feeds shape user attitudes and behavior. Consenting users were assigned to receive a reverse-chronologically-ordered feed instead of the platforms' default algorithmic ranking. Removing algorithmic curation substantially changed both engagement with the platforms and the composition of content users saw, yet produced no detectable changes in downstream political attitudes or behaviors over the study period.",
+  "key_claims": [
+    "Facebook's and Instagram's feed algorithms significantly shape how much time users spend on and how they engage with the platforms.",
+    "Algorithmic feeds alter the mix of content users are exposed to, including political and untrustworthy content.",
+    "Despite these exposure and engagement effects, switching to a chronological feed did not measurably change users' political attitudes or behaviors during the 2020 election campaign."
+  ],
+  "methods": [
+    "Randomized controlled experiment conducted on consenting Facebook and Instagram users during the 2020 US election.",
+    "Experimental manipulation assigning users to a reverse-chronologically-ordered feed in place of the default algorithmic feed.",
+    "Measurement of platform usage (time spent, activity), content exposure (political content, untrustworthy content), and downstream political attitudes and behaviors."
+  ],
+  "findings": [
+    "Moving users out of algorithmic feeds substantially decreased time spent on the platforms and overall platform activity.",
+    "The chronological feed increased the amount of political content users saw on both platforms.",
+    "The chronological feed increased exposure to untrustworthy content on both platforms.",
+    "Changes in exposure and engagement did not translate into measurable shifts in political attitudes or behavior (as indicated by the abstract's framing of null downstream effects)."
+  ],
+  "contributions": [
+    "Provides rare experimental (rather than correlational) evidence on the real-world effects of social media ranking algorithms during a high-stakes election.",
+    "Distinguishes between algorithms' strong effects on engagement and content exposure versus their limited effects on political attitudes and behavior.",
+    "Informs public and policy debates about the societal impact of algorithmic feed curation with causally identified findings."
+  ],
+  "framing": "The paper situates itself within debates about the influence of social media platforms on democratic outcomes, particularly concerns that feed-ranking algorithms drive polarization and misinformation. It positions algorithmic curation as an object of causal experimental study, challenging assumptions about the strength of algorithms' downstream political effects.",
+  "pdf_source": "abstract_only"
+}

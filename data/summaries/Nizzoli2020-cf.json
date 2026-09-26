@@ -1,0 +1,23 @@
+{
+  "abstract": "This paper introduces a network-based computational framework for detecting and analyzing coordinated behavior on social media, motivated by the role such behavior plays in disinformation and influence operations. The authors position their work as an advance over prior approaches that rely on manual investigation or oversimplifying assumptions. They apply the framework to Twitter data from the 2019 UK General Election.",
+  "key_claims": [
+    "Coordinated online behavior is a core mechanism enabling more effective spread of disinformation in information and influence operations.",
+    "Existing computational approaches to detecting coordinated behavior make bold assumptions or oversimplify the problem to remain tractable.",
+    "A network-based framework can uncover and characterize coordinated behaviors more faithfully than prior manual or simplified methods."
+  ],
+  "methods": [
+    "A network-based analytical framework designed to detect and study coordinated behavior on social media.",
+    "Application of the framework to a case study of the 2019 UK General Election on social media (Twitter).",
+    "The approach is described as extending existing detection systems beyond their prior limitations."
+  ],
+  "findings": [
+    "Findings are not fully specified in the available abstract; the study applies the framework to the 2019 UK General Election to surface coordinated behaviors (full results not available from the abstract alone)."
+  ],
+  "contributions": [
+    "A new network-based framework for uncovering and studying coordinated behavior on social media.",
+    "An extension of existing detection systems that avoids the bold assumptions and oversimplifications of prior computational methods.",
+    "An empirical case study grounded in the 2019 UK General Election."
+  ],
+  "framing": "The paper situates itself within research on disinformation, influence operations, and computational social media analysis, contrasting automated network-based detection with earlier manual investigations and simplified computational models of coordinated behavior.",
+  "pdf_source": "abstract_only"
+}

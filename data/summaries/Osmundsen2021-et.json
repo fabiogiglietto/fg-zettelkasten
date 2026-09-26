@@ -1,0 +1,26 @@
+{
+  "abstract": "This article investigates the psychological motivations that drive citizens to share political fake news on social media, specifically Twitter. It tests competing explanations—whether fake news sharers are ignorant and inattentive, driven by disruptive or chaotic motives, or motivated by partisan animosity in a polarized political climate. The authors conclude that partisan polarization is the primary psychological driver behind political fake news sharing.",
+  "key_claims": [
+    "Partisan polarization is the primary psychological motivation behind sharing political fake news on Twitter.",
+    "Explanations based on ignorance, laziness, or cognitive inattention are insufficient to account for fake news sharing.",
+    "The desire to attack partisan opponents in a polarized environment better explains fake news sharing than sinister status-quo-disrupting motives.",
+    "Understanding the spread of fake news requires attention to political and motivational psychology, not just cognitive deficits."
+  ],
+  "methods": [
+    "Empirical test of competing psychological hypotheses (ignorance/laziness, disruptive/chaos-seeking motives, partisan attack motives) against observed behavior.",
+    "Analysis of political fake news sharing behavior on Twitter, linking psychological measures to actual sharing activity.",
+    "Note: specific datasets, sample details, and analytic techniques are not available from the abstract alone."
+  ],
+  "findings": [
+    "Partisan polarization emerged as the strongest predictor of political fake news sharing.",
+    "Motivations to attack partisan opponents outperformed alternative explanations rooted in ignorance or general disruption.",
+    "The evidence points against the view that fake news sharers are primarily cognitively lazy or uninformed."
+  ],
+  "contributions": [
+    "Claims to be the first study to directly test competing psychological motivations behind political fake news sharing.",
+    "Shifts the explanatory focus from cognitive/informational deficits toward partisan and motivational psychology.",
+    "Provides insight relevant to democratic concerns about misinformation in polarized Western societies."
+  ],
+  "framing": "The paper situates itself within political and social psychology research on misinformation and social media, engaging debates about whether fake news spread stems from cognitive shortcomings or motivated partisan reasoning in an era of increasing political polarization.",
+  "pdf_source": "abstract_only"
+}

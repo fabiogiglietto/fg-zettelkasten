@@ -1,0 +1,24 @@
+{
+  "abstract": "This paper examines how major social media platforms, notably Facebook and Twitter, dramatically curtailed researcher access to platform data through their APIs following the Cambridge Analytica controversy. Bruns argues that these restrictions—which he terms the 'APIcalypse'—undermine independent scholarly investigation of harmful online phenomena and weaken the ability of researchers to hold platforms accountable for their design choices and policies. The paper frames these access limitations as a threat to critical, public-interest social media research.",
+  "key_claims": [
+    "Platform providers' post-Cambridge Analytica API restrictions constitute an 'APIcalypse' that severely hampers social media research.",
+    "These restrictions disproportionately damage critical scholarly research rather than protecting user privacy as claimed.",
+    "Reduced data access weakens researchers' capacity to study abuse, hate speech, trolling, and disinformation.",
+    "The restrictions diminish the ability of independent researchers to hold platforms accountable for the effects of their affordances and policies."
+  ],
+  "methods": [
+    "Critical analysis and commentary on platform data-access policies (based on the abstract; full methodology not available)."
+  ],
+  "findings": [
+    "API access to platform data has been severely restricted by Facebook and Twitter in the wake of the Cambridge Analytica controversy.",
+    "These restrictions have a particularly critical negative effect on researchers' ability to investigate online harms.",
+    "Platform accountability is diminished when scholars cannot independently examine platform data."
+  ],
+  "contributions": [
+    "Introduces and popularises the framing of the 'APIcalypse' to describe the tightening of researcher data access.",
+    "Highlights the tension between platforms' stated privacy justifications and the resulting suppression of critical, accountability-oriented scholarship.",
+    "Draws attention to the consequences for research into abuse, hate speech, trolling, and disinformation."
+  ],
+  "framing": "The paper positions itself within critical internet and social media studies, engaging debates about platform power, data access, and researcher independence in the aftermath of the Cambridge Analytica scandal. It foregrounds concerns about platform accountability and the political economy of who is permitted to study social media.",
+  "pdf_source": "abstract_only"
+}

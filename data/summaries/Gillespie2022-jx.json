@@ -1,0 +1,25 @@
+{
+  "abstract": "This paper argues that content moderation debates have been too narrowly focused on removal (deleting content and suspending users), overlooking the increasingly common practice of reducing the visibility of problematic content. Platforms use machine learning classifiers to identify content deemed misleading, risky, or offensive enough that, while not warranting removal, is suppressed in recommendations, search, and feeds. Gillespie examines reduction as a distinct and consequential mode of platform governance.",
+  "key_claims": [
+    "Removal is not the only remedy available to platforms; reducing the visibility of content is a growing and significant form of content moderation.",
+    "Reduction constitutes a distinct governance technique that deserves scholarly attention separate from removal.",
+    "Reducing visibility of borderline content—material judged too misleading, risky, or offensive to promote but not sufficient to remove—is becoming commonplace in platform governance.",
+    "Because reduction operates through recommendation and ranking systems rather than outright deletion, it raises different questions of transparency, accountability, and user awareness."
+  ],
+  "methods": [
+    "Conceptual and analytical essay examining platform governance practices (as indicated by the abstract; full methodology not available).",
+    "Analysis of how platforms deploy machine learning classifiers to categorize content by degrees of harm or offensiveness."
+  ],
+  "findings": [
+    "Platforms increasingly rely on demotion or de-amplification of content as an alternative to removal.",
+    "Machine learning classifiers are used to sort content into categories that determine whether it is removed, reduced, or left untouched.",
+    "Reduction occupies a middle ground for content considered problematic but not clearly violating rules warranting removal."
+  ],
+  "contributions": [
+    "Reframes the content moderation debate to include reduction alongside removal.",
+    "Introduces and foregrounds 'reduction' as an analytical category for studying platform governance.",
+    "Highlights the accountability and visibility implications of moderation practices that operate below the level of overt removal."
+  ],
+  "framing": "The paper positions itself within critical platform governance and content moderation scholarship, challenging the field's dominant focus on removal and suspension by drawing attention to less visible, algorithmically mediated forms of moderation.",
+  "pdf_source": "abstract_only"
+}

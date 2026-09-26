@@ -1,0 +1,37 @@
+{
+  "abstract": "This research note reports a real-world field study testing whether psychological inoculation (prebunking) videos can be deployed and evaluated at scale on Instagram's Story Feed. The authors created a 19-second video warning users about emotionally manipulative content and served it as an ad to 375,597 UK Instagram users aged 18–34, then used Instagram's poll sticker functionality to measure users' ability to identify manipulation. Treated users were 21 percentage points better at recognizing emotional manipulation than controls, an effect that persisted at a five-month follow-up, and they also showed higher click-through rates on a 'learn more' link. The study demonstrates a low-cost, scalable method for both delivering and evaluating inoculation interventions in live social media feeds.",
+  "key_claims": [
+    "Brief psychological inoculation videos can be implemented and scaled cheaply within a live social media scroll feed (Instagram Story Feed), not just in laboratory settings.",
+    "A short (19-second) prebunking ad substantially improves users' ability to correctly identify emotional manipulation in news headlines.",
+    "The inoculation effect on manipulation recognition remains stable roughly five months after exposure.",
+    "Inoculation exposure increases information-seeking behavior, measured by higher click-through rates on a 'learn more' link.",
+    "Instagram's quiz/poll functionality offers a novel, scalable method for evaluating prebunking ad campaigns beyond YouTube's brand-lift approach."
+  ],
+  "methods": [
+    "Quasi-experimental field study on live Instagram, run in partnership with Google Jigsaw and the NGO Reality Team.",
+    "Designed and pilot-tested a 19-second prebunking video ad forewarning against emotional manipulation, using a weakened-dose fake headline ('Yoga linked to terrifying full body cancer').",
+    "Targeted 375,597 UK Instagram users aged 18–34; the ad campaign ran February 5–11, 2025, accruing 889,336 impressions and 472,612 video views.",
+    "Users who watched at least 50% of the video were placed on a 'watchlist' (per-protocol/as-treated design); treatment-to-watchlist conversion was 12.05% (45,285 users).",
+    "Approximated randomization via self-declared birth months, assigning users born in April, July, and October to the control group (birth month is targetable in Instagram's ad manager).",
+    "Outcome measured with a binary Instagram Poll Sticker asking users to identify the manipulation technique in a headline; poll completed 24 hours to 10 days after ad exposure (main sample N=806, ~400 per group).",
+    "Power analysis based on effect sizes from Roozenbeek et al. (2022) targeted ~400 responses per group; two-proportion z-tests / chi-square tests used for analysis.",
+    "Five-month follow-up (July 2025) as a repeated cross-sectional test (Ncontrol=432, Ntreatment=244), with differential attrition noted.",
+    "Click-through rate (clicks/impressions) on a 'learn more' link used as an exploratory measure of information-seeking."
+  ],
+  "findings": [
+    "In the main poll, 59.55% of the treatment group correctly identified emotional manipulation versus 38.21% of controls — a 21.4 percentage point 'lift' (95% CI [14.6, 28.0]), X2(1)=35.87, p<.001, h=0.43.",
+    "At five-month follow-up, 66.39% of treatment users correctly identified manipulation versus 43.98% of controls — a stable 22.21 percentage point lift (95% CI [14.85, 29.96]), X2(1)=31.38, p<.001, h=0.45.",
+    "Baseline recognition of emotional manipulation was poor (38%, near chance of 50%), consistent with younger audiences' susceptibility to misinformation.",
+    "Click-through rate to 'learn more' was about three times higher in the treatment group (0.31%) than control (0.11%), a 0.20 pp difference (95% CI [0.148, 0.255]), X2(1)=84.61, p<.001; this pattern persisted at follow-up.",
+    "The campaign was inexpensive, with a cost-per-thousand impressions (CPM) of $8.25, meaning 100,000 impressions cost roughly $825 — below Meta's average."
+  ],
+  "contributions": [
+    "Provides real-world (rather than lab or simulated-feed) evidence that inoculation ads work within a scroll-based social media feed where attention is limited.",
+    "Introduces and validates a novel, scalable evaluation method using Instagram's poll sticker functionality, extending prior YouTube brand-lift approaches to a different platform.",
+    "Demonstrates long-term (five-month) durability of a single-technique inoculation effect delivered via a very short video.",
+    "Shows inoculation can shift downstream digital behavior (information-seeking via clicks), not only recognition.",
+    "Offers practical, low-cost guidance for policymakers and practitioners on deploying prebunking campaigns at scale."
+  ],
+  "framing": "The paper is situated within the misinformation-intervention literature and specifically inoculation (prebunking) theory, drawing on McGuire's medical analogy of building cognitive 'immunity' through weakened-dose exposure to manipulation techniques. It positions itself against predominantly lab-based inoculation studies and prior YouTube field work (Roozenbeek et al., 2022), arguing for ecological validity by testing inoculation in a live social media feed and treating misleading/manipulative content — not just outright false news — as the target.",
+  "pdf_source": "drive"
+}

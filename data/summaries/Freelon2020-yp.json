@@ -1,0 +1,36 @@
+{
+  "abstract": "This essay is a meta-scientific reflection on the Meta2020 research partnership, in which 17 independent academics collaborated with Meta to run large-scale field experiments and descriptive analyses on Facebook and Instagram during the 2020 US presidential election. Munger argues that while these studies represent the technical pinnacle of social science on social media, they expose deep limitations: the results are precise but decay rapidly and cannot be generalized because the platforms change too fast to replicate. He concludes that empirical social science can only ever react to social media's effects, and that effective governance therefore requires proactive regulation rather than waiting for research consensus.",
+  "key_claims": [
+    "The Meta2020 studies are the most ambitious and methodologically beautiful social science of social media to date, but their scientific usefulness is undermined by their inability to address external validity and generalizability.",
+    "Because Facebook and Instagram change so rapidly, these studies cannot be replicated and are already historical case studies, making it unclear how to rigorously apply their findings to the present or future.",
+    "The project lacked a shared theoretical ontology: even within the collaboration, key concepts like 'echo chamber' were defined inconsistently, so it is unclear what was known beforehand and thus what was actually learned.",
+    "Social scientists (and even Meta itself) did not truly understand what the newsfeed algorithm is, so the interventions manipulated poorly-understood 'platform physics' whose effects were hard to interpret theoretically.",
+    "A methodological tension between strict multiple-comparison corrections and running many outcome tests left the most ambitious social-media study underpowered to detect an effect that could swing a close election.",
+    "Empirical, quantitative social science can only ever be reactive; effective regulation of social media must be proactive, which implies a political rather than purely scientific solution."
+  ],
+  "methods": [
+    "Meta-scientific critical essay reviewing five published papers from the Meta2020 partnership rather than reporting new empirical data.",
+    "Analysis of the partnership's field experiments: a Facebook/Instagram deactivation experiment (Allcott et al. 2024), a chronological-feed manipulation, a removal of reshared content, and a one-third reduction in exposure to like-minded sources (Nyhan et al. 2023).",
+    "Analysis of the descriptive network paper on ideological segregation (Gonzalez-Bailon et al. 2023).",
+    "Close reading of the papers' hedging language on generalizability, their treatment operationalizations, and their differing definitions of 'echo chamber'.",
+    "Application of the author's own concepts of 'temporal validity' and 'poetic validity' as evaluative frameworks.",
+    "A cost comparison of the roughly $25 million project against Meta's $134 billion 2023 revenue (about 0.019%)."
+  ],
+  "findings": [
+    "The papers produce hundreds of statistical estimates and zero-comparisons but devote essentially no space, even in 200-plus-page appendices, to theoretical discussion or the generalizability problem.",
+    "The deactivation experiment's estimated effect on Trump vote (-0.026 units) fell just short of the preregistered significance threshold, meaning the study could not statistically distinguish a potentially election-relevant effect from zero.",
+    "Different papers within the same collaboration define 'echo chamber' incompatibly (as exposure to like-minded sources versus as social curation processes), amounting to 'whether echo chambers cause echo chambers'.",
+    "Consensus-based 'big science' and publication in Science/Nature/PNAS created multi-year delays, with most partnership papers still unpublished as of October 2024.",
+    "Each paper reveals information previously unknown even to Meta, implying the company itself does not adequately understand what its products do.",
+    "The interest alignment of the design (strict corrections yielding null results) coincidentally serves Meta's interest in finding that social media 'causes nothing'."
+  ],
+  "contributions": [
+    "Offers a metascientific evaluation of the flagship academic-industry social media partnership, reframing the core question from 'is it rigorous?' to 'what did we actually learn?'",
+    "Advances the concepts of temporal validity and poetic validity as tools for assessing rapidly-changing digital platform research.",
+    "Articulates the tension between positivist science-reform norms (preregistration, multiple-comparison penalties) and the practical realities of expensive large-scale experiments.",
+    "Reframes the ethics debate from 'acceptable vs. bad' toward whether such research should be legally mandated of platforms.",
+    "Makes the case that platform governance should be proactive and regulatory, grounded in the demonstrated limits of reactive empirical social science."
+  ],
+  "framing": "The essay sits within metascience and the political communication scholarship on social media effects, echo chambers, and algorithmic influence. It positions itself against a purely empirical evaluation of the Meta2020 partnership, drawing on debates over the replication crisis, temporal validity, and the governance implications of academic-industry research collaborations under regimes like the EU Digital Services Act.",
+  "pdf_source": "drive"
+}

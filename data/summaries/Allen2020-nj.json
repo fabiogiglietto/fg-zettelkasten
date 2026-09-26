@@ -1,0 +1,24 @@
+{
+  "abstract": "This paper challenges the widespread claim that fake news is pervasive across the web and social media with dire consequences for democracy. Using a nationally representative, multimode dataset capturing media consumption across mobile, desktop, and television devices and across all content categories, the authors argue that fake news constitutes only a tiny fraction of overall media consumption. They contend that the scale of the fake news problem has been substantially overstated in conventional discourse.",
+  "key_claims": [
+    "The conventional wisdom that fake news is pervasive on the web and social media is empirically overstated.",
+    "When measured against the full scope of Americans' media diet, fake news represents a very small share of total news and information consumption.",
+    "Evaluating fake news requires situating it within the entire information ecosystem rather than examining social media or specific platforms in isolation."
+  ],
+  "methods": [
+    "Analysis of a unique multimode dataset spanning multiple device types (mobile, desktop, and television).",
+    "Use of a nationally representative sample of U.S. media consumption.",
+    "Coverage of all categories of media content to enable ecosystem-scale comparison, rather than focusing solely on social media."
+  ],
+  "findings": [
+    "Fake news makes up only a small fraction of total media consumption when assessed at the scale of the whole information ecosystem.",
+    "Claims of the pervasiveness of fake news are not supported once the full breadth of media consumption is measured (full quantitative findings not available from the abstract)."
+  ],
+  "contributions": [
+    "Provides an ecosystem-scale, multimode measurement of fake news consumption rather than a platform-specific view.",
+    "Offers empirical evidence to recalibrate public and scholarly understanding of the magnitude of the fake news problem.",
+    "Introduces a nationally representative cross-device dataset for studying media consumption comprehensively."
+  ],
+  "framing": "The paper positions itself within debates on misinformation, media effects, and democracy, pushing back against alarmist narratives about fake news by advocating a whole-ecosystem, quantitative measurement approach that contextualizes fake news relative to total media consumption.",
+  "pdf_source": "abstract_only"
+}

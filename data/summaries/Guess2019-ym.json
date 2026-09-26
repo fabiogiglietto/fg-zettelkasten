@@ -1,0 +1,24 @@
+{
+  "abstract": "This paper investigates how widespread the sharing of fake news was on Facebook during the 2016 U.S. presidential election campaign, and which individuals were most likely to share such content. It finds that disseminating fake news was a relatively rare behavior overall, but was notably more common among older Americans. The study thus challenges assumptions about the pervasiveness of fake news sharing while identifying age as a key predictor.",
+  "key_claims": [
+    "Sharing of fake news on Facebook during the 2016 campaign was uncommon among the population studied.",
+    "Age is a significant predictor of fake news sharing, with older Americans considerably more likely to share such content.",
+    "Public and scholarly concern about the prevalence of fake news dissemination may overstate how common the behavior actually was."
+  ],
+  "methods": [
+    "Analysis of Facebook sharing behavior linked to survey respondents during the 2016 U.S. presidential election period.",
+    "Examination of demographic predictors—particularly age—of the propensity to share fake news."
+  ],
+  "findings": [
+    "Only a small proportion of individuals shared fake news articles on Facebook.",
+    "Older Americans shared fake news at substantially higher rates than younger users.",
+    "The overall low prevalence suggests fake news sharing was concentrated among a limited subset of users."
+  ],
+  "contributions": [
+    "Provides empirical evidence on the actual scope of fake news sharing rather than relying on anecdote or assumption.",
+    "Identifies age as a central individual-level correlate of fake news dissemination.",
+    "Informs debates about misinformation on social media by grounding the discussion in behavioral data."
+  ],
+  "framing": "The paper situates itself within research on political misinformation and social media, contributing to debates about the reach and impact of fake news in the 2016 U.S. election by empirically assessing prevalence and demographic predictors of sharing behavior.",
+  "pdf_source": "abstract_only"
+}

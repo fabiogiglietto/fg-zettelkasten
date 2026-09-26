@@ -1,0 +1,26 @@
+{
+  "abstract": "This paper investigates the widely held assumption that COVID-19 vaccine hesitancy in the US was driven primarily by social media misinformation. Using a combination of large-scale lab experiments, crowdsourcing, and machine learning, the authors estimate the causal impact of thousands of vaccine-related Facebook URLs on the vaccination intentions of roughly 233 million US users. They find that unflagged, non-'false' content that encouraged vaccine skepticism had a far larger aggregate effect on reducing vaccine uptake than outright misinformation flagged as false.",
+  "key_claims": [
+    "The popular narrative attributing low COVID-19 vaccine uptake mainly to social media misinformation is incomplete or misleading.",
+    "Unflagged content that fostered vaccine skepticism, though not classified as false, had a substantially greater aggregate impact on vaccination intentions than explicitly flagged misinformation.",
+    "The impact of vaccine-skeptical unflagged content was estimated to be about 46 times greater than that of flagged misinformation."
+  ],
+  "methods": [
+    "A framework combining lab experiments with a total N = 18,725 participants.",
+    "Crowdsourcing to assess vaccine-related content.",
+    "Machine learning to scale estimates across large numbers of URLs.",
+    "Causal estimation of the effect of 13,206 vaccine-related URLs on vaccination intentions.",
+    "Application to a population of approximately 233 million US Facebook users."
+  ],
+  "findings": [
+    "Unflagged vaccine-skeptical content had roughly 46-fold greater impact on vaccination intentions than flagged misinformation.",
+    "The large aggregate effect of unflagged content stems from its far wider reach and exposure compared to flagged false content, despite lower per-exposure persuasive impact."
+  ],
+  "contributions": [
+    "Introduces a scalable framework integrating experiments, crowdsourcing, and machine learning to estimate causal effects of online content at population scale.",
+    "Provides an empirical reframing of the misinformation-and-vaccination debate, emphasizing legal-but-skeptical content over overtly false content.",
+    "Quantifies the relative real-world impact of different categories of vaccine-related social media content."
+  ],
+  "framing": "The paper situates itself within debates on misinformation, social media influence, and public health, challenging the dominant framing that focuses on flagged 'false' content. It advances a more nuanced view in which the reach of misleading-but-not-false content matters more than per-item falsity.",
+  "pdf_source": "abstract_only"
+}

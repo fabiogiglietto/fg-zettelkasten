@@ -1,0 +1,34 @@
+{
+  "abstract": "This article reconceptualizes accusations of 'fake news' not as mere indicators of misinformation but as strategic rhetorical weapons used to delegitimize political opponents. The authors introduce the Strategic Delegitimization and Selective Amplification (SDSA) model, which frames fake news accusations as a form of negative campaigning that ideologically aligned news media selectively amplify. Testing the model on a corpus of Italian newspaper articles from 2020 to 2024, the study maps who accuses whom of fake news and how partisan media condition coverage, finding that populist parties are disproportionately targets (not primarily accusers) and that media selectivity operates chiefly by emphasizing accusations against ideologically distant actors.",
+  "key_claims": [
+    "Fake news accusations function as tools of epistemic delegitimization that challenge opponents' credibility rather than contesting specific factual claims.",
+    "The 'fake news' label is a strategic, discursive resource whose meaning emerges from patterns of attribution and media circulation, not from the veracity of content.",
+    "Contemporary political parallelism persists in Italy despite eroded classic foundations, operating through 'negative epistemic gatekeeping' rather than affirmative amplification of allied voices.",
+    "Populist parties occupy a dual position in fake news disputes but are, in the Italian case, far more often framed as targets (epistemically deviant actors) than as prolific accusers.",
+    "Media selectivity in reporting fake news accusations operates primarily on the target/accused dimension rather than the source/accuser dimension."
+  ],
+  "methods": [
+    "Construction of a novel dataset from the Factiva database, retrieving articles containing 'fake news' and its Italian equivalent 'notizia falsa' alongside references to major Italian parties/leaders, yielding 2778 articles across five newspapers (La Repubblica, Corriere della Sera, il Giornale, il Fatto Quotidiano, il Manifesto).",
+    "Zero-shot classification using GPT-4 to identify political actors and classify them as accusers or accused, with structured JSON output, producing 1082 coded observations.",
+    "Multi-step validation: manual annotation of a stratified 5% random sample by the authors (stratified by newspaper), achieving 75% agreement with LLM outputs; party affiliations assigned manually.",
+    "Statistical analysis using chi-square and proportion tests for role distributions, and negative binomial regression modeling accusation frequency between party pairs as a function of ideological distance.",
+    "Populism classified per The PopuList 3.0 (M5S, FdI, Lega, Forza Italia coded as populist); ideological placements drawn from the Chapel Hill Expert Survey (CHES); analysis covers COVID-19, Russia-Ukraine war, and migration as crisis periods."
+  ],
+  "findings": [
+    "Populist parties account for 50.9% of accusers (not significantly above parity, p=.41), giving no support for the hypothesis that populists make more accusations (H1 not supported).",
+    "Populist parties constitute 69.9% of accused actors (p<.001), strongly supporting the hypothesis that populists are more often targets (H2); FdI and especially Lega are disproportionately accused.",
+    "A statistically significant association exists between party type and rhetorical role (chi-square(1)=18.58, p<.001), driven by the accused role.",
+    "Over 80% of accusation dyads occur across left-right ideological blocs; negative binomial regression finds each one-point increase in ideological distance associated with ~10% more accusations, though not statistically significant (p=.11, limited to 41 party pairs) — suggestive but inconclusive support for H3.",
+    "Newspapers show only weak selectivity toward ideologically proximate accusers (H4 weakly supported) but consistently emphasize accusations targeting ideologically distant actors in four of five outlets (H5 strongly supported).",
+    "Il Giornale is a deviant case: despite a strong right-wing orientation, it shows a symmetrical distribution (41.3% expected accusers, 40.0% expected accused), suggesting it normalizes fake news rhetoric rather than using it as a selective delegitimizing tool."
+  ],
+  "contributions": [
+    "Introduces the Strategic Delegitimization and Selective Amplification (SDSA) model, integrating research on fake news as a strategic label, negative campaigning, and political parallelism into a single relational framework.",
+    "Provides systematic empirical evidence on how fake news discourse functions in a multiparty, high-parallelism system (Italy), based on a novel dataset.",
+    "Clarifies the dual role of populist parties, showing empirically that they are more targets than accusers in the Italian press.",
+    "Reframes contemporary political parallelism as operating through 'negative epistemic gatekeeping' — marking actors as unreliable — rather than affirmative amplification of allies.",
+    "Offers a replicable analytical lens for investigating epistemic delegitimization dynamics across different media systems and cross-national contexts."
+  ],
+  "framing": "The paper positions itself within political communication scholarship on the strategic uses of the 'fake news' label, drawing on Egelhofer and Lecheler's conception of fake news as epistemic delegitimization, the negative campaigning literature, and Hallin and Mancini's theory of political parallelism. It intervenes in debates about populism, misinformation, and media-politics relations, arguing for a shift from content veracity to the relational dynamics of accusation and media amplification in mediatized democracies facing crises of institutional trust.",
+  "pdf_source": "drive"
+}
