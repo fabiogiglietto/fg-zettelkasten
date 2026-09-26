@@ -72,3 +72,14 @@ def test_dedup_index_from_notes_reads_frontmatter(tmp_path):
 
 def test_dedup_index_from_notes_missing_dir():
     assert dedup_index_from_notes("/nonexistent/nowhere") == {}
+
+
+def test_a_reset_paper_is_not_a_duplicate_of_its_own_note():
+    """cmd_update skips only a match on a *different* id — asserted on the
+    source, like the other update-loop guards."""
+    import inspect
+
+    from src import main
+
+    src = inspect.getsource(main.cmd_update)
+    assert "if existing and existing != paper.id:" in src

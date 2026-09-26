@@ -832,7 +832,10 @@ def cmd_update(cfg: dict, args) -> int:
     deduped = []
     for paper in new_papers:
         existing = state_mod.find_duplicate(dup_index, paper.doi, paper.title)
-        if existing:
+        # Its own note is not a duplicate: a paper whose state entry was reset
+        # for a rebuild still has its Papers/<key>.md on disk, and the notes
+        # index would otherwise skip it as a copy of itself forever.
+        if existing and existing != paper.id:
             print(f"  dedup: {paper.bibtex_key} duplicates {existing} "
                   f"— skipping")
             continue
