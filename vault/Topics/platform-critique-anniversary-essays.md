@@ -44,6 +44,7 @@ Reflective anniversary/position essays diagnosing the current state of social me
 - [[Vertesi2026-lv]]
 - [[Wang2026-ub]]
 - [[Weinbrand2026-sf]]
+- [[van-Dijck2018-up]]
 
 ## All papers (Dataview)
 

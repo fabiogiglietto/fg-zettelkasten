@@ -58,6 +58,7 @@ Research on the tools, APIs and regulatory frameworks (Digital Services Act, Met
 - [[Yang2026-tq]]
 - [[Zheng2026-bi]]
 - [[de-Vreese2026-zx]]
+- [[van-Dijck2018-up]]
 
 ## All papers (Dataview)
 
