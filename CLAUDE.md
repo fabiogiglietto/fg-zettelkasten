@@ -93,6 +93,10 @@ python -m src.main check-retractions   # ask Crossref for retractions / notices 
   (`editorial_notices:`, a `[!caution]` callout for a concern and a `[!note]`
   one for a correction, `notices` in state) — it stays
   in the registers and in the skill, which must disclose it when citing.
+- Classic papers: toread flags works filed in Paperpile's top-level **Classics**
+  folder with `"_classic": true` (`Paper.is_classic`). They are ordinary papers
+  (summary, note, topics, podcast, recluster count) except that they are never
+  queued for the `#toread` digest (`digest_queued`), because they arrive in bulk.
 - Classics: `suggest-classics` only *reports* candidates — the works most cited
   by the vault's own papers that the vault does not hold (overall and per topic;
   the overall ranking favours well-indexed fields, so read both). It never builds
