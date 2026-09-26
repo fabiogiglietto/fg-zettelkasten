@@ -97,6 +97,8 @@ python -m src.main check-retractions   # ask Crossref for retractions / notices 
   folder with `"_classic": true` (`Paper.is_classic`). They are ordinary papers
   (summary, note, topics, podcast, recluster count) except that they are never
   queued for the `#toread` digest (`digest_queued`), because they arrive in bulk.
+  Paperpile syncs their PDFs to a separate Drive folder, `CLASSICS_DRIVE_FOLDER_ID`,
+  which must be shared with the CI service account like the To Read folder.
 - Classics: `suggest-classics` only *reports* candidates — the works most cited
   by the vault's own papers that the vault does not hold (overall and per topic;
   the overall ranking favours well-indexed fields, so read both). It never builds

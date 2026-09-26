@@ -8,6 +8,7 @@ project's feed model (which exposes the same `.id`, `.title`, `.authors`,
 
 import io
 import re
+import unicodedata
 from typing import Optional
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
@@ -86,7 +87,10 @@ class DriveClient:
 
     def _normalize_for_search(self, text: str) -> str:
         """Normalize text for fuzzy matching."""
-        # Remove special characters, lowercase, collapse whitespace
+        # Fold accents (González-Bailón vs a "Gonzalez-Bailon" filename), then
+        # remove special characters, lowercase, collapse whitespace
+        text = unicodedata.normalize("NFKD", text)
+        text = "".join(c for c in text if not unicodedata.combining(c))
         text = re.sub(r'[^\w\s]', '', text.lower())
         text = re.sub(r'\s+', ' ', text).strip()
         return text
@@ -212,10 +216,19 @@ class DriveClient:
             if overlap < TITLE_THRESHOLD:
                 continue
 
-            # Tie-breakers: whole-token surname match (>=3 chars to avoid "li"
-            # matching mid-word) and the publication year in the filename.
+            # Whole-token surname match (>=3 chars to avoid "li" matching
+            # mid-word) and the publication year in the filename.
             author_hit = len(author_last) >= 3 and author_last in file_tokens
             year_hit = bool(year) and year in file['name']
+            # Title overlap alone is not identity: a short, generic title ("The
+            # science of fake news", "The politics of 'platforms'") clears 0.6
+            # against an unrelated paper on the same subject. Paperpile names
+            # files `Author et al. - Year - Title`, so the right file carries
+            # the surname or the year; demand one. A paper whose own PDF is
+            # absent then falls back to its abstract instead of borrowing
+            # another paper's full text.
+            if not (author_hit or year_hit):
+                continue
 
             key = (overlap, author_hit, year_hit)
             if key > best_key:

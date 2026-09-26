@@ -136,6 +136,11 @@ def _drive_client(cfg: dict):
     inbox_folder = os.environ.get("SLACK_INBOX_DRIVE_FOLDER_ID")
     if inbox_folder:
         folders.append(inbox_folder)
+    # Paperpile syncs each folder's PDFs to its own Drive folder, so papers in
+    # the Classics folder (toread `_classic`) have their PDFs apart from To Read.
+    classics_folder = os.environ.get("CLASSICS_DRIVE_FOLDER_ID")
+    if classics_folder:
+        folders.append(classics_folder)
     try:
         from .drive_client import DriveClient
 

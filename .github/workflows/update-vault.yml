@@ -76,6 +76,9 @@ jobs:
           # main.py searches it alongside the Paperpile folder. Unset on the
           # fg chain (harmless empty).
           SLACK_INBOX_DRIVE_FOLDER_ID: ${{ secrets.SLACK_INBOX_DRIVE_FOLDER_ID }}
+          # Paperpile's Classics folder PDFs (toread `_classic` papers) live in
+          # their own Drive folder. Unset = not searched (harmless empty).
+          CLASSICS_DRIVE_FOLDER_ID: ${{ secrets.CLASSICS_DRIVE_FOLDER_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           # The OIDC assertion is single use: Anthropic burns its `jti` on the
