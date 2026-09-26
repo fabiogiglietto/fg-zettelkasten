@@ -12,9 +12,13 @@ source_url: https://doi.org/10.1038/s41586-023-06297-w
 podcast_url: 
 pdf_available: false
 discovery_date: 2026-09-26T08:39:39.445495Z
+editorial_notices: [correction]
 ---
 
 # Like-minded sources on Facebook are prevalent but not polarizing
+
+> [!note] Corrected
+> - Correction (2023-11-01): [10.1038/s41586-023-06795-x](https://doi.org/10.1038/s41586-023-06795-x)
 
 > Nyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., Chen, A. Y., Allcott, H., Brown, T., Crespo-Tenorio, A., Dimmery, D., Freelon, D., Gentzkow, M., González-Bailón, S., Guess, A. M., Kennedy, E., Kim, Y. M., Lazer, D., Malhotra, N., Moehler, D., Pan, J., Thomas, D. R., Tromble, R., Rivera, C. V., Wilkins, A., Xiong, B., de Jonge, C. K., Franco, A., Mason, W., Stroud, N. J., & Tucker, J. A. (2023). Like-minded sources on Facebook are prevalent but not polarizing. *Nature*, *620*, 137–144. https://doi.org/10.1038/s41586-023-06297-w
 >
