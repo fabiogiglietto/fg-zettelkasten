@@ -10,6 +10,7 @@ Experimental and review studies testing how framed messages, chatbots, or inocul
 
 ## Papers
 
+- [[Allcott2019-gn]]
 - [[Choi2026-bz]]
 - [[Costello2024-bg]]
 - [[Dubey2026-bl]]

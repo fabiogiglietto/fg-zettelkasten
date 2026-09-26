@@ -18,7 +18,7 @@ editorial_notices: [correction]
 
 # It takes a village to manipulate the media: coordinated link sharing behavior during 2018 and 2019 Italian elections
 
-> [!caution] Editorial notices
+> [!note] Corrected
 > - Correction (2020-04-21): [10.1080/1369118x.2020.1755558](https://doi.org/10.1080/1369118x.2020.1755558)
 
 > Giglietto, F., Righetti, N., Rossi, L., & Marino, G. (2020). It takes a village to manipulate the media: coordinated link sharing behavior during 2018 and 2019 Italian elections. *Information, Communication & Society*. https://doi.org/10.1080/1369118X.2020.1739732

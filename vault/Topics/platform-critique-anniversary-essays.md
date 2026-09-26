@@ -16,6 +16,7 @@ Reflective anniversary/position essays diagnosing the current state of social me
 - [[Bechmann2026-dr]]
 - [[Boyd2026-op]]
 - [[Bruns2026-yv]]
+- [[Chadwick2013-ns]]
 - [[De2026-ld]]
 - [[Dehghan2026-sy]]
 - [[Dodds2026-df]]

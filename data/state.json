@@ -3666,35 +3666,743 @@
       "podcast_linked": true,
       "slack_posted": true,
       "last_processed": "2026-09-25T13:33:45.280595+00:00"
+    },
+    "bibtex:Chadwick2015-ii": {
+      "note_path": "Papers/Chadwick2015-ii.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "20ea85334b12a6a99ad2a3297ae6cc66c52999b200aa8cee435f323101ab5d6f",
+      "doi": "10.4324/9781315716299-2",
+      "title": "Politics in the age of hybrid media",
+      "pdf_source": "abstract_only",
+      "content_hash": "d5abe036e63c3226b2528b25ad3fc3ad24826a59fc7845ee0a7fb4f1bd8053b8",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T08:58:24.452153+00:00"
+    },
+    "bibtex:Iyengar2019-jj": {
+      "note_path": "Papers/Iyengar2019-jj.md",
+      "topics": [
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "961c7f55ca5de71ff3e7679e8d4b8daa43e8b3f64d37a7743c5a81be68b9e309",
+      "doi": "10.1146/annurev-polisci-051117-073034",
+      "title": "The origins and consequences of affective polarization in the United States",
+      "pdf_source": "abstract_only",
+      "content_hash": "40ff23fbfde4e9ee7f09c4d8f85bab58c0b91191995935c1d2be372e2ded9aa5",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T08:58:33.683083+00:00"
+    },
+    "bibtex:Osmundsen2021-et": {
+      "note_path": "Papers/Osmundsen2021-et.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "information-operations-disinformation-narratives"
+      ],
+      "assign_fp": "f8e33316425d1a5cc1bca1c28be1fd28a3b9773bd58329d5a862ac239053847f",
+      "doi": "10.1017/s0003055421000290",
+      "title": "Partisan polarization is the primary psychological motivation behind political fake news sharing on twitter",
+      "pdf_source": "abstract_only",
+      "content_hash": "a9e8a4e71f55b579135dfa54628f6e3f513b1e42a187d6a3b7b8c627774fa197",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T08:58:46.231433+00:00"
+    },
+    "bibtex:Berlinski2023-rj": {
+      "note_path": "Papers/Berlinski2023-rj.md",
+      "topics": [
+        "information-operations-disinformation-narratives",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "000ad1d4d0c76241651f6735cc09896d5fded9fec3d0f0ed48c5d17c6dbb06ce",
+      "doi": "10.1017/xps.2021.18",
+      "title": "The effects of unsubstantiated claims of voter fraud on confidence in elections",
+      "pdf_source": "abstract_only",
+      "content_hash": "ae5a7ad6faf4d7034d43ed8f754f74cb2145ca51a32a18b3eb56481fcaf393bb",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T08:58:55.110328+00:00"
+    },
+    "bibtex:Pennycook2021-jq": {
+      "note_path": "Papers/Pennycook2021-jq.md",
+      "topics": [
+        "information-operations-disinformation-narratives",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "3993e9d35ea4fdb3fd23f5a333243323b115ca79da2ee11ad4d50463ea7a0bff",
+      "doi": "10.31234/osf.io/ar96c",
+      "title": "The psychology of fake news",
+      "pdf_source": "drive",
+      "content_hash": "27ccbcb8840f44f45e97e1cbfceb2747aa8871751157d9ae16684bccde7ab5b2",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T08:59:14.373872+00:00"
+    },
+    "bibtex:Freelon2018-ao": {
+      "note_path": "Papers/Freelon2018-ao.md",
+      "topics": [
+        "platform-data-access-governance"
+      ],
+      "assign_fp": "f405629ead5fb56c17467e5af5006afa9daa0c637550234c49a2e05c6a42d95b",
+      "doi": "10.31235/osf.io/56f4q",
+      "title": "Computational research in the post-API age",
+      "pdf_source": "abstract_only",
+      "content_hash": "2db91c2fb6fe672277779fda262584a8f0eac3fc7fbf3cbfd2695567e5efa11e",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T08:59:26.238479+00:00"
+    },
+    "bibtex:Gillespie2010-as": {
+      "note_path": "Papers/Gillespie2010-as.md",
+      "topics": [
+        "information-operations-disinformation-narratives",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "ea931a4a1a10004174ec1fcfbe1a23327bd8934787c96eeb71824aea2dd2a504",
+      "doi": "10.1002/9781118321607.ch28",
+      "title": "The politics of ‘platforms’",
+      "pdf_source": "drive",
+      "content_hash": "45e88536f4511e2e48ea5818ac5b4bdd833490fb81920d069641c7c86cb4fbea",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T08:59:44.985737+00:00"
+    },
+    "bibtex:Heft2021-ky": {
+      "note_path": "Papers/Heft2021-ky.md",
+      "topics": [
+        "computational-network-structure-analysis",
+        "information-operations-disinformation-narratives"
+      ],
+      "assign_fp": "dc3cb7a6b14dfc4439dd2cb5d7a255ad496bba8794ce402b948c68d28ccd5997",
+      "doi": "10.1177/1940161220963670",
+      "title": "Toward a transnational information ecology on the right? Hyperlink networking among right-wing digital news sites in Europe and the United States",
+      "pdf_source": "abstract_only",
+      "content_hash": "9247b981a1309eefcb7dd3e795f01cc96cb1c8eca62b62a506f2986a9aa459fd",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T08:59:55.888996+00:00"
+    },
+    "bibtex:Bail2018-fk": {
+      "note_path": "Papers/Bail2018-fk.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "social-media-engagement-metrics"
+      ],
+      "assign_fp": "6023106a975a1cda0ac3ea036095a30c71f3eeab4720f08115984bf95da64dd0",
+      "doi": "10.1073/pnas.1804840115",
+      "title": "Exposure to opposing views on social media can increase political polarization",
+      "pdf_source": "abstract_only",
+      "content_hash": "ed2c20205d0d427a1882d568b6e883fd6f8b48a69ba2264fc4f78c0358b480ba",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:00:06.321227+00:00"
+    },
+    "bibtex:Flaxman2016-lm": {
+      "note_path": "Papers/Flaxman2016-lm.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "9093a8be560e0cad0a2f85b148c991616a5f625d987d2a16588686426ca84907",
+      "doi": "10.2139/ssrn.2363701",
+      "title": "Filter bubbles, echo chambers, and online news consumption",
+      "pdf_source": "abstract_only",
+      "content_hash": "aa66a04e01dced230fd0b72f1f0dbde3ebb5d712b908735d1827a94c02a3e8e4",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:00:19.937645+00:00"
+    },
+    "bibtex:Kunda1990-cg": {
+      "note_path": "Papers/Kunda1990-cg.md",
+      "topics": [],
+      "assign_fp": "c606e2341fdc26d91cdec0c4513598f18bf3d751468d9b5ea54405236823376e",
+      "doi": "10.1037/0033-2909.108.3.480",
+      "title": "The case for motivated reasoning",
+      "pdf_source": "abstract_only",
+      "content_hash": "ade859d52cc82ca14c58ea5f5a7d5ba92ef6f5d56e2f5bb2155736be4d1e4421",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:00:30.047836+00:00"
+    },
+    "bibtex:Tsfati2020-uo": {
+      "note_path": "Papers/Tsfati2020-uo.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "information-operations-disinformation-narratives"
+      ],
+      "assign_fp": "708d99ac40bc68773155d72cd9f933a2a1d2c9257b2513f7af1e68ef0f90c407",
+      "doi": "10.1080/23808985.2020.1759443",
+      "title": "Causes and consequences of mainstream media dissemination of fake news: literature review and synthesis",
+      "pdf_source": "abstract_only",
+      "content_hash": "ef6dd61b703e6bf773deaed12baaccac07d4596a7ee16d20fdc2ed09833d62b5",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:00:41.449070+00:00"
+    },
+    "bibtex:Guess2020-rr": {
+      "note_path": "Papers/Guess2020-rr.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "0c4dcad507ffe063269a16c1aecb8fbd9d12bded10a71f66c21d26ffcec3cfc3",
+      "doi": "10.1038/s41562-020-0833-x",
+      "title": "Exposure to untrustworthy websites in the 2016 US election",
+      "pdf_source": "abstract_only",
+      "content_hash": "f487db06d306ae38e57d487e3fc8790f8c88d10388b7b8319feff3b1a7fdd9fe",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:00:51.042129+00:00"
+    },
+    "bibtex:Benkler2018-lw": {
+      "note_path": "Papers/Benkler2018-lw.md",
+      "topics": [
+        "information-operations-disinformation-narratives",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "739c20b5dd9025a38cd7772275777afee2273935d2252f1401ee533ecb3aaf98",
+      "doi": "",
+      "title": "Network propaganda: Manipulation, disinformation, and radicalization in American politics",
+      "pdf_source": "abstract_only",
+      "content_hash": "9e9e4e7019e95bcab7cc7025426334e665ff61c14066b4d3126193a66a51c77f",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:01:04.268357+00:00"
+    },
+    "bibtex:Bennett2018-ys": {
+      "note_path": "Papers/Bennett2018-ys.md",
+      "topics": [
+        "information-operations-disinformation-narratives",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "167c6bb407a3373caab1444332aaf5413d3fbc55bc3ac123b6a0ded25c532e70",
+      "doi": "10.1177/0267323118760317",
+      "title": "The disinformation order: Disruptive communication and the decline of democratic institutions",
+      "pdf_source": "abstract_only",
+      "content_hash": "b3cf87d642bec26cbcad36d557af8bd7f1a3dbd7b7be6f0e769709bb003c5dc6",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:01:15.439412+00:00"
+    },
+    "bibtex:Gillespie2022-jx": {
+      "note_path": "Papers/Gillespie2022-jx.md",
+      "topics": [
+        "political-content-moderation-visibility",
+        "platform-data-access-governance"
+      ],
+      "assign_fp": "5b902ee6669ffe9fec5a965eda0337fdf682c7070bf10b90a8747761c83dd8e5",
+      "doi": "10.1177/20563051221117552",
+      "title": "Do not recommend? Reduction as a form of content moderation",
+      "pdf_source": "abstract_only",
+      "content_hash": "c3107527ebf39af2d3268a929a27bb5fdd23a0257b4790078b19e4252c58cb2d",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:01:28.733370+00:00"
+    },
+    "bibtex:Allen2024-av": {
+      "note_path": "Papers/Allen2024-av.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "health-misinformation-infodemic"
+      ],
+      "assign_fp": "46df2437d1ce4e974dec54e1f92e18488cf00b6890f5dacd1f8b0073f76ccb73",
+      "doi": "10.1126/science.adk3451",
+      "title": "Quantifying the impact of misinformation and vaccine-skeptical content on Facebook",
+      "pdf_source": "abstract_only",
+      "content_hash": "c3a5767e1e5a0884a0cff7c146d535dfbd352c88fd3f7f71b3892aa9dad64e11",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:01:41.516551+00:00"
+    },
+    "bibtex:Guess2023-ai": {
+      "note_path": "Papers/Guess2023-ai.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "e5f140c748c668e58d209daaa23d2214d27951a3a4148a6bb39381934a9bf14e",
+      "doi": "10.1126/science.add8424",
+      "title": "Reshares on social media amplify political news but do not detectably affect beliefs or opinions",
+      "pdf_source": "abstract_only",
+      "content_hash": "477e0372fda4e1c0135149099931564a897ee12f82f00f6cc2c18af9e92a013a",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:01:54.644889+00:00"
+    },
+    "bibtex:Guess2023-ur": {
+      "note_path": "Papers/Guess2023-ur.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "a4d3b9fbd79d8804c15c23f84fa4d704e8574de79255c0c5bf81aea88b0e226a",
+      "doi": "10.1126/science.abp9364",
+      "title": "How do social media feed algorithms affect attitudes and behavior in an election campaign?",
+      "pdf_source": "abstract_only",
+      "content_hash": "24d22d1c9f2f08b8f9381f3ca7ce66188c1fae0ed8be9a2e6ebc92596bfb2c42",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:02:08.133283+00:00"
+    },
+    "bibtex:Gonzalez-Bailon2023-uy": {
+      "note_path": "Papers/Gonzalez-Bailon2023-uy.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "political-content-moderation-visibility"
+      ],
+      "assign_fp": "357a0564836993b28b6736b9ae086335d28907255d2b7d63ce99a374335e79c6",
+      "doi": "10.1126/science.ade7138",
+      "title": "Asymmetric ideological segregation in exposure to political news on Facebook",
+      "pdf_source": "abstract_only",
+      "content_hash": "e5ee8f4a9d231e9f9d22663e662107e1de4c1ccfcd52626cabc253e514a50b01",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:02:20.334418+00:00"
+    },
+    "bibtex:Nyhan2023-gb": {
+      "note_path": "Papers/Nyhan2023-gb.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "8ed8e7ca90a159120ca944726dfb53ad33ff8e855f45d6ee686f474dabeb6f68",
+      "doi": "10.1038/s41586-023-06297-w",
+      "title": "Like-minded sources on Facebook are prevalent but not polarizing",
+      "pdf_source": "abstract_only",
+      "content_hash": "ef027c9f8964bd340b143e142bb7a0488a4a8fee71f3fe92f04c239e3a6121e4",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:02:31.795726+00:00"
+    },
+    "bibtex:Eady2023-xg": {
+      "note_path": "Papers/Eady2023-xg.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "information-operations-disinformation-narratives"
+      ],
+      "assign_fp": "b32855de84771a73c76673a85df59a77171045f2d27bdf060ed64f6fa5d67dd9",
+      "doi": "10.1038/s41467-022-35576-9",
+      "title": "Exposure to the Russian Internet Research Agency foreign influence campaign on Twitter in the 2016 US election and its relationship to attitudes and voting behavior",
+      "pdf_source": "abstract_only",
+      "content_hash": "6935bd230641665b6d6b9ce74dd8db62203ddada505662e897c088347ab89a83",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:02:42.783108+00:00"
+    },
+    "bibtex:Yang2023-cg": {
+      "note_path": "Papers/Yang2023-cg.md",
+      "topics": [
+        "election-campaigns-social-media",
+        "information-operations-disinformation-narratives"
+      ],
+      "assign_fp": "5652e853a25ec2b66ead6e3755723721ab5f9300c35efebd6b8f29640a0beae5",
+      "doi": "10.1093/joc/jqac051",
+      "title": "Visual misinformation on Facebook",
+      "pdf_source": "abstract_only",
+      "content_hash": "b34196d93b0e9d45a50a39bc7a3d16fa9717ef32774d49fec9c832697b7f5d21",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:02:53.508488+00:00"
+    },
+    "bibtex:Allen2020-nj": {
+      "note_path": "Papers/Allen2020-nj.md",
+      "topics": [
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "ff1e6ba7f297fa5fbf9a4beed637698122413edf976d82589032ecc03ba4ab78",
+      "doi": "10.2139/ssrn.3502581",
+      "title": "Evaluating the fake news problem at the scale of the information ecosystem",
+      "pdf_source": "abstract_only",
+      "content_hash": "6f9c1473a4c7d0b6bdccb144da6f2809377d1569643542f517aea636f984afff",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:03:03.418011+00:00"
+    },
+    "bibtex:Vosoughi2018-at": {
+      "note_path": "Papers/Vosoughi2018-at.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "information-operations-disinformation-narratives"
+      ],
+      "assign_fp": "b332be7846643f561d7783651a8b278e3b868ba5207e95589a921434037ba96e",
+      "doi": "10.1126/science.aap9559",
+      "title": "The spread of true and false news online",
+      "pdf_source": "abstract_only",
+      "content_hash": "eddebf661b8ac5f60657b9ee459a336ab479eefa691a2bb12e55b78342d1333e",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:03:14.969276+00:00"
+    },
+    "bibtex:Allen2021-ai": {
+      "note_path": "Papers/Allen2021-ai.md",
+      "topics": [
+        "platform-data-access-governance",
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "e64a72f365a5da5acdc4f6f30b9c678c163e44425870fc4bfe51483aef3ffe79",
+      "doi": "10.37016/mr-2020-74",
+      "title": "Research note: Examining potential bias in large-scale censored data",
+      "pdf_source": "abstract_only",
+      "content_hash": "acd41c405821faeb58108bbdbc57de2f0b5898378240b25141578c1ee22b0239",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:03:27.013552+00:00"
+    },
+    "bibtex:Guess2021-ym": {
+      "note_path": "Papers/Guess2021-ym.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "political-content-moderation-visibility"
+      ],
+      "assign_fp": "5d1889fd3d301afb11cb30f390acdddbe0b418e4f82aa78e04467265d55fe331",
+      "doi": "10.51685/jqd.2021.006",
+      "title": "Cracking open the news feed",
+      "pdf_source": "abstract_only",
+      "content_hash": "8cba2d67145949c15dd77ec6184d684f5f548639173306046c2b44891a2673b9",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:03:37.257852+00:00"
+    },
+    "bibtex:Nizzoli2020-cf": {
+      "note_path": "Papers/Nizzoli2020-cf.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "f7d4e7393343b57b5f2c3edeec2d3268f2a52404862f609cf3e973d9e5a2821c",
+      "doi": "",
+      "title": "Coordinated Behavior on Social Media in 2019 UK General Election",
+      "pdf_source": "abstract_only",
+      "content_hash": "3bce5d5431b18ce302efcebc0e855e3777c409a6cf5416f8af77897ab2a470bb",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:03:46.765432+00:00"
+    },
+    "bibtex:Chadwick2013-ns": {
+      "note_path": "Papers/Chadwick2013-ns.md",
+      "topics": [
+        "generative-ai-imaginaries",
+        "platform-critique-anniversary-essays"
+      ],
+      "assign_fp": "aa06e43fc669ec54708699887f1f2017429eef6acb810ce5ae2689cf1767abdc",
+      "doi": "10.5860/choice.51-6974",
+      "title": "The Hybrid Media System: Politics and Power",
+      "pdf_source": "drive",
+      "content_hash": "99b6f368109de2ac6e82f1911f0a8b1ffd56e03fafcd202344c97fcea33051a0",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:04:03.922717+00:00"
+    },
+    "bibtex:Freelon2020-yp": {
+      "note_path": "Papers/Freelon2020-yp.md",
+      "topics": [
+        "platform-data-access-governance",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "f4304977f0af55bca7ccfa993964bc0601c367ad7684d9fb350fbaf15a1d3c18",
+      "doi": "10.1080/10584609.2020.1723755",
+      "title": "Disinformation as Political Communication",
+      "pdf_source": "drive",
+      "content_hash": "a050b9a3bdb7df0ef092c7de2573b04a6a02fd13cdbc4a7615ef392b35113ab4",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:04:19.745114+00:00"
+    },
+    "bibtex:Humprecht2020-gd": {
+      "note_path": "Papers/Humprecht2020-gd.md",
+      "topics": [
+        "information-operations-disinformation-narratives",
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "5ca90ed553a19f7056fd0d8d17e261add84ba049584ba9cb9810c2a89b8d2435",
+      "doi": "10.1177/1940161219900126",
+      "title": "Resilience to Online Disinformation: A Framework for Cross-National Comparative Research",
+      "pdf_source": "abstract_only",
+      "content_hash": "c63099c67d552d154127cc141448ae941eb89e1dbb9af6f80578a0618d105d1e",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:04:31.450607+00:00"
+    },
+    "bibtex:Hallin2004-kg": {
+      "note_path": "Papers/Hallin2004-kg.md",
+      "topics": [],
+      "assign_fp": "55219d77b7badbb7ff05103cfc34253e8ce285f51d826f40420074f5b9ea84d3",
+      "doi": "",
+      "title": "Comparing Media Systems: Three Models of Media and Politics",
+      "pdf_source": "abstract_only",
+      "content_hash": "2132046cfae3eb05c8e25ec0fcbb69c8ba9775ac36be6eac71bc34e1cecbe940",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:04:38.392164+00:00"
+    },
+    "bibtex:Allcott2017-yz": {
+      "note_path": "Papers/Allcott2017-yz.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "adf21edf1e9d0769c7ea7d7e0714a213fd6a76f08d655dc7c53d13539557959e",
+      "doi": "10.1257/jep.31.2.211",
+      "title": "Social Media and Fake News in the 2016 Election",
+      "pdf_source": "abstract_only",
+      "content_hash": "f0f099b86e9b293d1eaa43e4c9685da9b0fa9647364f9a13ef5956e6bf5e6ca7",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:04:49.866239+00:00"
+    },
+    "bibtex:Barbera2015-fw": {
+      "note_path": "Papers/Barbera2015-fw.md",
+      "topics": [
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "17e8d3be4e3b800f33a71cca1df4a42aab2f734979067131124bde09fc589b9a",
+      "doi": "10.7910/dvn/f9ichh",
+      "title": "Tweeting From Left to Right: Is Online Political Communication More Than an Echo Chamber?",
+      "pdf_source": "abstract_only",
+      "content_hash": "082189c4c03c3f9991bb7d5b9efd0d15b23620ea842095f49582c143399f473a",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:04:59.946175+00:00"
+    },
+    "bibtex:Starbird2019-qv": {
+      "note_path": "Papers/Starbird2019-qv.md",
+      "topics": [
+        "information-operations-disinformation-narratives",
+        "coordinated-inauthentic-behavior"
+      ],
+      "assign_fp": "82dda99d99bffc1c9f8dc0573ed903f16c0bf7738127101fc7b8b0fd3a6b7c10",
+      "doi": "",
+      "title": "Disinformation as Collaborative Work: Surfacing the Participatory Nature of Strategic Information Operations",
+      "pdf_source": "abstract_only",
+      "content_hash": "74d1837028e6ba0505a65c79b308263c5abb317cc3b545e63e25d64911becd8c",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:05:12.452485+00:00"
+    },
+    "bibtex:Bruns2019-nr": {
+      "note_path": "Papers/Bruns2019-nr.md",
+      "topics": [
+        "platform-data-access-governance",
+        "coordinated-inauthentic-behavior"
+      ],
+      "assign_fp": "2c98fdbdfc913d52971b58cb6af0fe75338e6a80f1916ced6ff8fb2691b5ccfc",
+      "doi": "10.4324/9781003206972-2",
+      "title": "After the ‘APIcalypse’: social media platforms and their fight against critical scholarly research",
+      "pdf_source": "abstract_only",
+      "content_hash": "9a14318be21ab313892a1c6c3b770fff272b10d426143fe4924e400015ab7b86",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:05:22.978671+00:00"
+    },
+    "bibtex:Grinberg2019-ua": {
+      "note_path": "Papers/Grinberg2019-ua.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "3acc6297a6aa2ad0d3613ede2e135a7fcacfff016103aa287d79895489137149",
+      "doi": "10.1126/science.aau2706",
+      "title": "Fake news on Twitter during the 2016 U.S. presidential election",
+      "pdf_source": "abstract_only",
+      "content_hash": "205257069147932f8d3a2c171c2ef9895cbab1ade426d2560f90c29de5cd7829",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:05:33.192410+00:00"
+    },
+    "bibtex:Allcott2019-gn": {
+      "note_path": "Papers/Allcott2019-gn.md",
+      "topics": [
+        "climate-and-misinformation-message-interventions"
+      ],
+      "assign_fp": "76c35c338ae7149a3c0d173924bb7bad421b1272321a8bd49af128e1125b1bb8",
+      "doi": "10.1177/2053168019848554",
+      "title": "Trends in the diffusion of misinformation on social media",
+      "pdf_source": "drive",
+      "content_hash": "4f06064405fe8b874636c815f138f8f6601fd0129f61180e1a6f633c09062972",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:05:48.975659+00:00"
+    },
+    "bibtex:Guess2019-ym": {
+      "note_path": "Papers/Guess2019-ym.md",
+      "topics": [
+        "misinformation-exposure-recalibration",
+        "election-campaigns-social-media"
+      ],
+      "assign_fp": "ec4cafdd91334fb9b91f456abec65f9c588e7d8ed9700860689331dc32079d58",
+      "doi": "10.1126/sciadv.aau4586",
+      "title": "Less than you think: Prevalence and predictors of fake news dissemination on Facebook",
+      "pdf_source": "abstract_only",
+      "content_hash": "b9bc4fb408cf34929593d0783773eec9000945205f48bebf2536e76792ec6d5c",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:05:59.000435+00:00"
+    },
+    "bibtex:Lazer2018-mm": {
+      "note_path": "Papers/Lazer2018-mm.md",
+      "topics": [
+        "information-operations-disinformation-narratives",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "64fd5dfe3064a1f3178ab297c3efb12772e3258056a2d1a5a2d7ceb710e0e5e2",
+      "doi": "10.1126/science.aao2998",
+      "title": "The science of fake news",
+      "pdf_source": "drive",
+      "content_hash": "b183174ab16f6f59bc1623162dd91ce9bf093f7dd46fabd55e9e36ba60847ba7",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:06:17.517204+00:00"
+    },
+    "bibtex:Messing2014-jc": {
+      "note_path": "Papers/Messing2014-jc.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "social-media-engagement-metrics"
+      ],
+      "assign_fp": "a406b59278328b3e760ae745e6c0b230a731b4b67e74a37ca947aff959119daf",
+      "doi": "",
+      "title": "Selective Exposure in the Age of Social Media: Endorsements Trump Partisan Source Affiliation When Selecting News Online",
+      "pdf_source": "abstract_only",
+      "content_hash": "b57a1aa4d48661b8ab83639814317b9ca9bbca4f4fb7ac41c09507cc92750f77",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:06:28.363469+00:00"
+    },
+    "bibtex:Barbera2015-je": {
+      "note_path": "Papers/Barbera2015-je.md",
+      "topics": [
+        "political-polarization-partisanship",
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "2c49b79d05ec281915f4b655104d21d7ff7a14521874ffa966e3eb3de5e6f374",
+      "doi": "10.1093/pan/mpu011",
+      "title": "Birds of the Same Feather Tweet Together: Bayesian Ideal Point Estimation Using Twitter Data",
+      "pdf_source": "abstract_only",
+      "content_hash": "80345032278e8ec8e602e313e004b8058228e23b6c5116b9cd56464a4332c8ea",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:06:38.544021+00:00"
+    },
+    "bibtex:Keller2019-nk": {
+      "note_path": "Papers/Keller2019-nk.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "information-operations-disinformation-narratives"
+      ],
+      "assign_fp": "f0fce1e5283152e88e1f52922a2e852bcc62b11ff843821082beb793a69cd1a5",
+      "doi": "10.1080/10584609.2019.1661888",
+      "title": "Political Astroturfing on Twitter: How to Coordinate a Disinformation Campaign",
+      "pdf_source": "abstract_only",
+      "content_hash": "2d5dca33366b5e4de6d04ecbcbc32da5551bdc3e4760e03dfd6931469a1ebf14",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:06:50.450651+00:00"
+    },
+    "bibtex:Del-Vicario2016-uj": {
+      "note_path": "Papers/Del-Vicario2016-uj.md",
+      "topics": [
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "c3089bc061ff2747b39f8f2fdcdc741fd300e56ba1d196969d49373d5d9c1626",
+      "doi": "10.1073/pnas.1517441113",
+      "title": "The spreading of misinformation online",
+      "pdf_source": "drive",
+      "content_hash": "3fe18e139120fed1e82093a9923310198fa815f5e3eb8d3cff4623d9d775ce36",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:07:14.549365+00:00"
+    },
+    "bibtex:Lewandowsky2012-vn": {
+      "note_path": "Papers/Lewandowsky2012-vn.md",
+      "topics": [
+        "health-misinformation-infodemic",
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "3062d2babc17ce6ac36726a11c0d1db39635b7ab27377042cb8428b1baf6b886",
+      "doi": "",
+      "title": "Misinformation and its correction: Continued influence and successful debiasing: Continued influence and successful debiasing",
+      "pdf_source": "abstract_only",
+      "content_hash": "fcf3e0152799cfad8c8b9af0e8d46e0e686809bff9f31a118cfd95c97ece8cd5",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "last_processed": "2026-09-26T09:07:26.659150+00:00"
     }
   },
-  "last_full_cluster": "2026-09-25T12:18:36.689542+00:00",
-  "papers_since_cluster": 1,
+  "last_full_cluster": "2026-09-26T09:18:57.797963+00:00",
+  "papers_since_cluster": 0,
   "register_signals_hash": "9af6b3ba7ef318e0da54ec3afa2d06c2385a6fb29a47e07aba6c8dcffd12ecc4",
-  "emergent_fp": "adb9d9899e9148fdddba45a3bccc40a557d4e05c553d755f409ac6309ac68d8b",
+  "emergent_fp": "cd03b80b0ac4e9cb0d289e48122050406900db4bff7d8295496dc90cb0b462fe",
   "structure_fps": {
-    "coordinated-inauthentic-behavior": "d9d78ec21a70e2623e8acafb5b98b11cf2e4cc984eb3a1397f81cd6f66365008",
-    "ai-red-teaming-and-participatory-evaluation": "ef082db14aa254a16698a9679d562aae4c56b53a878bfbcc6d2a66606b9c2445",
+    "coordinated-inauthentic-behavior": "d50ca0cf326f660fba1ea7f28f819c193829bede0053a91351b6108f173e3a2e",
+    "ai-red-teaming-and-participatory-evaluation": "9d86713894b6c016a4aa2f5e44d159724ce3bd99af7ebe31f98e2dbf00119ee8",
     "online-radicalization-and-extremism-on-platforms": "381559120d2ac80cf3d206c1081988151eebee4b4fa9652e77bcb7498fb28118",
-    "platform-critique-anniversary-essays": "b93fb1f518cd5753da24d99256e301577209f84326d1c760e9773336c07ae165",
-    "public-perceptions-and-labor-impacts-of-ai": "99654ca15123152643b4354f896d4a33e62a2faa2df4f6e54912dd1c2ef00152",
+    "platform-critique-anniversary-essays": "717ac424c2e428eb5c30e8989ac3ece4ee12c36e810c8a883b0a18ea02cf11b1",
+    "public-perceptions-and-labor-impacts-of-ai": "50f1af949974eb7bbc95c73eb6563cd2de4e1921bc6cf226e770a6abaad8181e",
     "llm-augmented-research-methods": "dc4de9f36452b474001b9a02995d2ade2895d3e4aa497483a9b2ca7c017e7ac4",
-    "climate-and-misinformation-message-interventions": "38081bba3521de750958e2ed7472c8fcc2b38f78893c81e0c8c5a49ffc530f17",
+    "climate-and-misinformation-message-interventions": "6bdd01d56d05a311bdeb1d31119b987bb5fb90c0d7bbf25cab35c8997c156f9f",
     "survey-methodology-validity": "c760709716669d53fe53ffb99a777022972d5f1fc1c0641fcd540ee405c69396",
-    "computational-network-structure-analysis": "0f20d9d14f899f8c371a4c98e02556f9de7ad98a4ce50efbfa16b3c10b676cf5",
-    "generative-ai-imaginaries": "0132dca5e1a3c5e0896a90aa91d4052b55cf7af1ef99d3ddeaec9c8e38298c24",
-    "misinformation-exposure-recalibration": "72915ad8cd9bc2453c78d52ee6a00228cfd4e8585a95e72085b5632ab49d6508",
+    "computational-network-structure-analysis": "82ed030ce5d8e68020e4ea13d0a0cba7a035286badb4d07286eb116c096418f4",
+    "generative-ai-imaginaries": "aac085455da0b1bdb20a3d4de9f6ad15812bbf608ac5d3b25c44dc2cf6dd2041",
+    "misinformation-exposure-recalibration": "40dc7ab00cb5615422678f26f7d2df3dcc3d241ef2416a1f3e64abb95203a66f",
     "conspiracy-narratives-in-media": "1f4d6d2b41f6bbcc37edaacd51157b1eee40dd5f86cc1e4cebacef645af9e039",
     "platform-performance-and-authenticity": "983cd3b35d217e3e05bbec430404e272842a50c56962fd1693f2f81b38acb841",
-    "political-polarization-partisanship": "f88819df8f45313258d7364b7988a620e769ae1d156222837710ce5a8b5af5f0",
-    "information-operations-disinformation-narratives": "dc414761eefd73b3200fe5e16a3fdc05e4c76b7aa11e18f38049f9143da93ff6",
-    "platform-data-access-governance": "34d73a7fbdf1cba5d1e170d35c2ba0151443009f4955fd5b3d045732c77f2a09",
-    "political-content-moderation-visibility": "0bbf0b8ed424b0e32b0846886bb852f6aa0ffa475b70349d52ae56cd018d35ae",
-    "election-campaigns-social-media": "5ccc2460f06a0e9fe68e0af2289e4530e40d82718c40fc2d001a19181eb76ebb",
-    "generative-ai-media-research": "7232065c7a88e53311d5c605d865fb617d601aedbbeca857450c1a6e75608d21",
+    "political-polarization-partisanship": "d9f9cff97e673891a398fc83642219afc84487e54a6205d47430c02a2461c701",
+    "information-operations-disinformation-narratives": "530f4f48430ecb746038aaee42fc0b153577f41a8e13eb6ebb3914251ab17bdc",
+    "platform-data-access-governance": "9fbac8ae692aa5d520ea5957524c7eb1d8cc6a3a40066b30e87de2981c312d37",
+    "political-content-moderation-visibility": "b6576d470110b3a1ac6bd453c35746734423cd144c4bd29e00c230c693f540fa",
+    "election-campaigns-social-media": "14bfe5129c5620aafca222c2eb79e81bf025d85597bb89fc4c2362dcac3949da",
+    "generative-ai-media-research": "aaf7bb59fb6c58fc9bc4f6c146c2e0bd55c0b7bc7ab665162607a074fe949109",
     "llm-assisted-content-analysis": "6a46281ae9d06ffc7861154e7ccf9bba3c9f25a84a5aa1f41c3cf2ea8b864cd4",
-    "health-misinformation-infodemic": "e2e1dbf2a933af3ba8293e0a7301f9c597d092c1150062477b5278286048f7ea",
-    "social-media-engagement-metrics": "fb32bf014aabb99ba84ae38b4d1f773171951b7a722b6c10859f163eaaebb09f",
+    "health-misinformation-infodemic": "7e6c6426c3c3eed771278468b4949e4a89b3c3621b776c8dc868b2baa2fffeee",
+    "social-media-engagement-metrics": "1526748e8483b3e91e3ebe26a3eb91811a6086f43eeda7d788203cf08545ec74",
     "social-tv-second-screen": "820a94e26f83fd63d30df76755db3b777963a82597673b5b8046d586bbe8332b",
     "sociocybernetics-social-systems-theory": "3dc2d6b90d622fa1fc18f73f8da124f406fc0162ec452e1f1e3956afbd389258"
   },

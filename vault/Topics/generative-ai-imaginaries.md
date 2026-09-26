@@ -10,6 +10,7 @@ Papers examining how generative AI is culturally imagined, discursively framed, 
 
 ## Papers
 
+- [[Chadwick2013-ns]]
 - [[Dodds2026-df]]
 - [[Galip2026-ix]]
 - [[Hepp2026-oi]]

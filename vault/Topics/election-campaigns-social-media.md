@@ -11,13 +11,16 @@ Comparative analysis of political communication during national election campaig
 ## Papers
 
 - [[Achmann-Denkler2026-lx]]
+- [[Allcott2017-yz]]
 - [[Allcott2025-jb]]
 - [[Appel2026-qr]]
 - [[Arceneaux2026-xk]]
 - [[Balluff2026-bv]]
 - [[Bouchafra2026-ts]]
 - [[Brady2026-ln]]
+- [[Chadwick2015-ii]]
 - [[Eady2025-vm]]
+- [[Freelon2020-yp]]
 - [[Gaber2022-bk]]
 - [[Gaisbauer2025-by]]
 - [[Gaw2025-ru]]
@@ -27,6 +30,11 @@ Comparative analysis of political communication during national election campaig
 - [[Giglietto2023-fa71a001]]
 - [[Giglietto2024-cbeb3f70]]
 - [[Gonzalez-Bailon2024-rq]]
+- [[Grinberg2019-ua]]
+- [[Guess2019-ym]]
+- [[Guess2020-rr]]
+- [[Guess2023-ai]]
+- [[Guess2023-ur]]
 - [[Iannelli2015-e0818c3e]]
 - [[Inacio-da-Silva2026-zf]]
 - [[Iris2026-pg]]
@@ -40,6 +48,7 @@ Comparative analysis of political communication during national election campaig
 - [[Marino2024-2fbc690f]]
 - [[Mosca2026-yh]]
 - [[Much2026-gu]]
+- [[Nizzoli2020-cf]]
 - [[Oprea2025-lf]]
 - [[Philipp2026-tl]]
 - [[Prochaska2025-ef]]
@@ -48,6 +57,7 @@ Comparative analysis of political communication during national election campaig
 - [[Schulte2026-df]]
 - [[Tornberg2025-ir]]
 - [[Votta2025-xz]]
+- [[Yang2023-cg]]
 
 ## All papers (Dataview)
 
