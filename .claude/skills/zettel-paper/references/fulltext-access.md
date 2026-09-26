@@ -20,12 +20,9 @@ full text proactively, in bulk, or "to be safe."
 
 ## The Paperpile folder
 
-- **Folder id:** not stored here — it's a private resource. Obtain it from the
-  `GOOGLE_DRIVE_FOLDER_ID` environment variable, or the project's `.env` (the same
-  source the `toread` pipeline uses; `.env` is gitignored, so the id never lands in
-  this published skill). If neither is set — e.g. a collaborator without the
-  pipeline's `.env`, or a fresh clone in `/tmp` — treat full text as unavailable and
-  fall back to the note summaries.
+- **Folder ids:** the PDFs are split across two folders; search both.
+  - classics: `1lIoUsLp3UXS8V0k1LC5yCPFor5Ql00Ro`
+  - toread: `1gluNDqRQkyqxa_WIASaaoNEItrDlETkn`
 - **Filename format:** `[FirstAuthor] [Year] - [Title].pdf`, or for multiple
   authors `[FirstAuthor] et al. [Year] - [Title].pdf`.
   Examples: `Matias 2025 - How public involvement can improve the science of AI.pdf`,
@@ -46,7 +43,7 @@ scoped to the folder, keyed on the first author's **surname** plus one or two
 vary:
 
 ```
-parentId = '<GOOGLE_DRIVE_FOLDER_ID>'    # from env / .env — see "The Paperpile folder"
+(parentId = '1lIoUsLp3UXS8V0k1LC5yCPFor5Ql00Ro' or parentId = '1gluNDqRQkyqxa_WIASaaoNEItrDlETkn')
   and mimeType = 'application/pdf'
   and title contains '<first-author surname>'
   and title contains '<distinctive title word>'
