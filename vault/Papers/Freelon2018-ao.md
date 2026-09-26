@@ -5,12 +5,12 @@ authors: ["Deen Freelon"]
 year: 2018
 doi: 10.31235/osf.io/56f4q
 bibtex_key: Freelon2018-ao
-topics: [platform-data-access-governance]
+topics: [platform-data-access-governance, llm-augmented-research-methods]
 citation_count: 7
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/56f4q
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445549Z
 ---
 
@@ -22,26 +22,27 @@ discovery_date: 2026-09-26T08:39:39.445549Z
 
 ## Summary
 
-This commentary names and frames the "post-API age": the condition in which the major platforms that once offered relatively open programmatic data access have progressively restricted or eliminated their APIs. Freelon reflects on what this shift means for computational social science, a field whose empirical practice grew dependent on API-based data collection. The piece is diagnostic rather than empirical, arguing that the narrowing of access is not a temporary inconvenience but a structural change requiring researchers to rethink how they gather and analyze online social data.
+This brief, agenda-setting essay by Deen Freelon argues that computational communication research has entered a **"post-API age"**, precipitated by Facebook's April 2018 closure of its Pages API, which eliminated all terms-of-service-compliant methods for independently extracting Facebook content. The central claim is that heavy investment in platform-specific API methods is dangerously fragile: companies can restrict or eliminate access overnight, without recourse, rendering hard-won methodological skills and training obsolete. Drawing on his own experience of a Facebook workshop and Python module made instantly useless, Freelon offers two guiding recommendations for graduate computational methods education — teach web scraping as a more durable and flexible skill, and cultivate literacy in the legal and ethical consequences of violating platform terms of service. The piece reframes data access as inherently tenuous and contingent on corporate power, urging methodological resilience and ethical reflexivity.
 
 ## Key Contributions
 
-- Introduces and popularizes the concept of the "post-API age" as a shorthand for the era of constrained platform data access.
-- Raises field-wide awareness of the methodological fragility created by reliance on platform-controlled APIs.
-- Prompts a reconsideration of data collection strategies in a lower-availability environment.
+- Names and diagnoses the **"post-API age"** as a defining structural challenge for computational communication research.
+- Provides practical guidance for graduate curricula, advocating web scraping instruction alongside API training.
+- Articulates ethical/legal recommendations: prefer authorized methods, distinguish TOS compliance from research ethics, and understand the risks of TOS violation.
+- Calls on scholars to foreground data-access fragility in future publications and conference submissions.
 
 ## Methods
 
-Conceptual and reflective commentary. The work synthesizes observations about the trajectory of platform data access rather than presenting a new empirical study, positioning itself within computational social science and digital methods debates.
+A reflective, argumentative essay rather than an empirical study. Freelon draws on his personal experience with tools rendered obsolete by the API closure, reviews and compares a spectrum of web scraping tools (browser extensions like Web Scraper and Grepsr; standalone software like Teleport Pro; cloud services like Import.io and Webhose.io; and code frameworks like BeautifulSoup and Selenium), and uses illustrative cases such as collecting US Congressional campaign messages via the Twitter API versus scraping candidate websites.
 
 ## Findings
 
-- Restrictions on API access constrain established, reproducible approaches to collecting online social data.
-- The dependence of computational social science on platform-provided APIs is a structural vulnerability.
-- Researchers must adapt — through alternative collection methods and revised expectations — to a world of reduced data availability.
+- Code-based scraping tools (BeautifulSoup, Selenium) offer maximum flexibility at minimum cost but require understanding each page's unique DOM structure, making them harder to learn and site-specific.
+- Major platforms (Facebook, Google) prohibit automated scraping in their TOS and actively detect and block it, though carefully crafted software can circumvent restrictions.
+- Consequences of TOS violation range from blacklisted API credentials and temporary IP bans to, in extreme cases, criminal prosecution under the Computer Fraud and Abuse Act (as in the Aaron Swartz case).
+- The then-pending *Sandvig v. Sessions* lawsuit challenges criminal prosecution of TOS violations, but its unresolved status leaves researchers in legal uncertainty.
+- **TOS compliance is distinct from human subjects compliance**: respecting a company's terms does not equate to protecting users.
 
 ## Connections
 
-This is an early and foundational framing of a problem that the wider literature has since taken up in detail, including empirical assessments of data-access decline and its consequences ([[Freelon2024-sc]], [[Ohme2026-nv]], [[Bruns2019-nr]]) and studies of platform gatekeeping and governance ([[Gillespie2022-jx]], [[Tonneau2025-bv]], Davies2020-yp if applicable). It sits alongside work responding to specific API shutdowns and proposing new collection or donation-based approaches ([[Murtfeldt2025-wu]], [[Bechmann2026-dr]]), establishing the vocabulary those later interventions build on.
-
-Note: only [[Freelon2024-sc]], [[Ohme2026-nv]], [[Bruns2019-nr]], [[Gillespie2022-jx]], [[Tonneau2025-bv]], [[Murtfeldt2025-wu]], and [[Bechmann2026-dr]] are confirmed keys from the provided list; ignore any bracketed target above not in that set.
+This essay is a foundational statement of the platform-data-access problem that later work develops empirically and normatively. It directly anticipates studies documenting the collapse and instability of API access and defending scraping as a research practice, such as [[Tonneau2025-bv]] and [[Freelon2024-sc]], and connects to debates over data-access governance and researcher-platform relations taken up in [[Rieder2025-ju]], [[Bruns2019-nr]], and [[Ohme2026-nv]]. Its call to distinguish TOS compliance from research ethics resonates with ongoing discussions of platform governance and legal risk in [[Helmond2026-ll]] and [[Bechmann2026-dr]].

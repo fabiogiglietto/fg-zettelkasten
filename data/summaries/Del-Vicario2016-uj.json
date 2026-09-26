@@ -1,0 +1,34 @@
+{
+  "abstract": "This paper analyzes how misinformation spreads on Facebook by comparing how users consume and diffuse two distinct types of content: scientific news and conspiracy theories. Using a large dataset of 67 public Facebook pages over five years (2010-2014), the authors find that users cluster into homogeneous, polarized communities ('echo chambers') driven by selective exposure and confirmation bias. They then build a data-driven percolation model of rumor spreading showing that homogeneity and polarization are the main determinants for predicting the size of information cascades.",
+  "key_claims": [
+    "Selective exposure (confirmation bias) is the primary driver of content diffusion online and leads to the formation of homogeneous, polarized clusters or 'echo chambers.'",
+    "Consumers of scientific and conspiracy content exhibit similar consumption patterns but differ in their cascade dynamics.",
+    "Social homogeneity — sharing among users with similar polarization — is the preferential driver of information diffusion, with each echo chamber having its own cascade dynamics.",
+    "Homogeneity and polarization are the main determinants for predicting cascade size, as demonstrated by their percolation model.",
+    "Algorithmic solutions (e.g., trustworthiness scores) are argued not to be the best option for countering misinformation given these dynamics."
+  ],
+  "methods": [
+    "Collection of public Facebook data via the Facebook Graph API across a 5-year span (2010-2014).",
+    "Dataset of 67 public pages: 32 conspiracy-theory pages and 35 science-news pages, plus 2 troll pages used as a benchmark to fit the model.",
+    "Construction and analysis of 'sharing trees' (oriented trees of successive shares), characterizing cascade size, height, and lifetime.",
+    "Definition of user polarization (σ = 2ϱ − 1 based on fraction of likes on conspiracy content) and edge homogeneity (σij = σi·σj) to quantify similarity between sharing users.",
+    "Statistical analysis including power-law fitting of cascade size distributions, PDFs/CCDFs of lifetime and edge homogeneity, and Kolmogorov–Smirnov tests / Q-Q plots comparing sharing paths.",
+    "A data-driven percolation / branching-process model on a small-world (Watts–Strogatz) signed network with n=5,000 nodes, m=1,000 news items, parameterized by sharing threshold δ, fraction of homogeneous links ϕHL, and rewiring probability r; simulations averaged over 100 iterations and validated against troll-page data (1,072 sharing trees)."
+  ],
+  "findings": [
+    "Cascade size and maximum degree are power-law distributed for all three content types; estimated exponents are 2.21 (science), 2.47 (conspiracy), and 2.44 (trolling), with maximum cascade sizes of 952, 2,422, and 3,945 respectively.",
+    "Cascade lifetime PDFs are similar across categories, with peaks around 1-2 h and ~20 h; a large fraction of content diffuses rapidly (~40% within 5 h).",
+    "News assimilation differs by category: science news reaches high diffusion quickly with no positive lifetime-size relation, while conspiracy rumors are assimilated more slowly and show a positive relation between lifetime and cascade size.",
+    "Mean-edge homogeneity is almost always ≥ 0, indicating content circulates primarily within homogeneous echo chambers; near-zero homogeneity is improbable.",
+    "Different content types produce different viral patterns: larger science cascades correspond to high homogeneity (0.5-0.8) while larger conspiracy cascades correspond to lower homogeneity (~0.25), yet homogeneity remains the underlying driver.",
+    "The percolation model reproduces observed cascade dynamics accurately; ϕHL ~ 0.5-0.56 splits the network into two isolated echo chambers, and an inverse Gaussian distribution of first sharers best fits the empirical data (best parameters ϕHL=0.56, r=0.01, δ=0.015)."
+  ],
+  "contributions": [
+    "Provides large-scale quantitative evidence that echo chambers form around distinct narratives (science vs. conspiracy) on Facebook with distinct cascade dynamics.",
+    "Introduces measures of user polarization and edge homogeneity to characterize the social determinants of online content diffusion.",
+    "Develops a data-driven percolation/branching model on signed small-world networks that predicts cascade size from homogeneity and polarization.",
+    "Empirically links confirmation bias and social homogeneity to misinformation spreading, informing debates on countermeasures and questioning purely algorithmic solutions."
+  ],
+  "framing": "The paper is situated within computational social science and network science, addressing digital misinformation (flagged by the World Economic Forum as a major societal threat) through the lens of confirmation bias, selective exposure, echo chambers, and rumor/cascade spreading dynamics on social media.",
+  "pdf_source": "drive"
+}

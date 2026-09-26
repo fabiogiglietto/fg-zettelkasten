@@ -5,7 +5,7 @@ authors: ["Deen Freelon", "Chris Wells"]
 year: 2020
 doi: 10.1080/10584609.2020.1723755
 bibtex_key: Freelon2020-yp
-topics: [platform-data-access-governance, election-campaigns-social-media]
+topics: [information-operations-disinformation-narratives, political-polarization-partisanship]
 citation_count: 448
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2020.1723755
@@ -22,29 +22,28 @@ discovery_date: 2026-09-26T08:39:39.445465Z
 
 ## Summary
 
-This essay is a meta-scientific reflection on the Meta2020 research partnership, in which 17 independent academics collaborated with Meta to run large-scale field experiments and descriptive analyses on Facebook and Instagram during the 2020 US election. Munger argues that these studies represent the technical apex of social science on social media — methodologically ambitious, precisely estimated — yet are fundamentally undermined by problems of external validity and generalizability. Because the platforms change faster than research can be replicated, the studies are effectively already historical case studies. The deeper diagnosis is that empirical, quantitative social science can only ever *react* to social media's effects; effective governance therefore demands proactive regulation rather than a wait for scientific consensus that will never arrive in time.
+This introductory essay to the *Political Communication* special issue "Beyond Fake News: The Politics of Disinformation" situates disinformation as the defining political communication topic of the current era. Freelon and Wells define disinformation by three criteria—deception, potential for harm, and intent to harm—following the European Commission's 2018 High Level Expert Group, distinguishing it sharply from misinformation (which lacks malicious intent) and from the older concept of propaganda. They argue that "fake news" should be retired as an analytical term, both because it has been weaponized by Donald Trump and because its many referents make it ambiguous. Crucially, they insist that digital disinformation must be understood within a wider crisis of public communication: declining institutional trust, affective polarization, and the clickbait-driven political economy of platforms—what Bennett and Livingston call the "disinformation order."
 
 ## Key Contributions
 
-- Reframes the evaluation of the flagship academic-industry partnership from "is it rigorous?" to "what did we actually learn?"
-- Advances the concepts of **temporal validity** and **poetic validity** as tools for assessing rapidly changing platform research.
-- Articulates the tension between positivist science-reform norms (preregistration, multiple-comparison penalties) and the practical realities of costly large-scale experiments.
-- Shifts the ethics debate from "acceptable vs. bad" toward whether such research should be *legally mandated* of platforms.
-- Argues that platform governance should be proactive and regulatory, grounded in the demonstrated limits of reactive empirical social science.
+- A working, criteria-based definition of disinformation (deception + harm + intent) and clarification of its boundaries against misinformation, propaganda, and other "problematic information."
+- An argument for abandoning "fake news" as an analytical concept in favor of more precise terminology.
+- A concise intellectual history linking disinformation research to the older traditions of propaganda study (Institute for Propaganda Analysis; Herman–Chomsky) and misinformation study (cognitive psychology).
+- A content-versus-reception typology for organizing disinformation scholarship.
+- A forward-looking research agenda emphasizing effects, subpopulation and partisan asymmetries, cross-national comparison, and empirical testing of whether the mis/disinformation distinction actually matters.
 
 ## Methods
 
-A critical meta-scientific essay rather than new empirical work. Munger reviews five published Meta2020 papers — the Facebook/Instagram deactivation experiment, a chronological-feed manipulation, a reshare-removal intervention, a reduction in exposure to like-minded sources, and the descriptive network paper on ideological segregation. He conducts close readings of the papers' hedging language on generalizability, their operationalizations of treatments, and their incompatible definitions of "echo chamber," applying his own frameworks of temporal and poetic validity. He also contrasts the ~$25 million project cost against Meta's $134 billion 2023 revenue (roughly 0.019%).
+The essay is conceptual and definitional rather than empirical. It combines a historical literature review of propaganda and misinformation traditions with a bibliometric indicator—Google Scholar title counts—to demonstrate the post-2016 surge in disinformation scholarship. It closes with an editorial synthesis classifying the special issue's seven articles into content studies and reception studies.
 
 ## Findings
 
-- The papers generate hundreds of estimates but devote almost no space — even in 200-plus-page appendices — to theory or the generalizability problem.
-- The deactivation experiment's estimated effect on Trump vote (−0.026) fell just short of the preregistered significance threshold, so it could not statistically distinguish a potentially election-relevant effect from zero.
-- Papers within the *same* collaboration define "echo chamber" incompatibly (exposure to like-minded sources vs. social curation), amounting to asking "whether echo chambers cause echo chambers."
-- Consensus-based "big science" and high-prestige publication created multi-year delays, with most partnership papers unpublished as of October 2024.
-- Each paper reveals information previously unknown even to Meta, implying the company does not adequately understand what its own products do.
-- The design's interest alignment — strict corrections yielding null results — coincidentally serves Meta's interest in concluding social media "causes nothing."
+- US public confidence in the press reporting news fully, accurately, and fairly has declined since the 1970s, bottoming out in 2016 and then sharply polarizing along partisan lines.
+- Over 70% of Google Scholar titles containing "disinformation" published 2010–2019 appeared after 2016, evidencing an abrupt scholarly surge.
+- Native advertising is recognized as paid content by fewer than 10% of consumers; learning its nature reduces perceived producer credibility.
+- Within the issue: junk news reached parity with professional sources in 2016 election Twitter shares; fact-checking can reduce disinformation credibility; ostracized users persist in endorsing attitude-congruent falsehoods; and low system trust increases disinformation belief and can shift German voters toward the AfD.
+- US disinformation shows partisan asymmetry, with conservatives disproportionately targeted and susceptible, and Black Americans specifically targeted by the Russian Internet Research Agency.
 
 ## Connections
 
-This essay is a direct critique of the Meta2020 partnership outputs, most centrally the deactivation experiment analyzed in [[Allcott2025-jb]] and the segregation study by Gonzalez-Bailon et al. [[Gonzalez-Bailon2024-rq]]; it also speaks to the broader partnership studies of algorithmic feed effects surveyed in [[Guess2023-ai]] and [[Guess2023-ur]]. Its governance argument connects to work on platform data-access regimes and the limits of studying opaque systems, including [[Bruns2019-nr]] and [[Freelon2018-ao]], while its call for proactive regulation situates it against the reactive empirical tradition on misinformation exposure represented by [[Grinberg2019-ua]] and [[Guess2019-ym]].
+As a foundational conceptual and definitional statement, this essay anchors the wider disinformation literature and connects directly to Freelon's own later work on partisan and racial targeting [[Freelon2024-sc]] and to Bennett and Livingston's "disinformation order" [[Bennett2018-ys]]. Its account of the disinformation order builds on the political economy of the media system in [[Benkler2018-lw]] and speaks to the affective-polarization and partisan-asymmetry research it foregrounds [[Iyengar2019-jj]], [[Osmundsen2021-et]], while its call for conceptual precision resonates with definitional and diffusion studies such as [[Vosoughi2018-at]] and [[Lazer2018-mm]].

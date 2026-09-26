@@ -5,12 +5,12 @@ authors: ["Lewandowsky, Stephan", "Ecker, Ullrich K H", "Seifert, Colleen M", "S
 year: 2012
 doi: 
 bibtex_key: Lewandowsky2012-vn
-topics: [health-misinformation-infodemic, misinformation-exposure-recalibration]
+topics: [misinformation-exposure-recalibration, climate-and-misinformation-message-interventions]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Misinformation%20and%20its%20correction%3A%20Continued%20influence%20and%20successful%20debiasing%3A%20Continued%20influence%20and%20successful%20debiasing
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445391Z
 ---
 
@@ -22,26 +22,31 @@ discovery_date: 2026-09-26T08:39:39.445391Z
 
 ## Summary
 
-This paper offers an integrative psychological account of why misinformation persists and continues to shape reasoning even after it has been explicitly corrected or retracted — the "continued influence effect." Drawing primarily on the discredited vaccine–autism link as a running case, the authors synthesize research from cognitive and social psychology on memory, belief updating, and reasoning to explain how false beliefs are accepted, retained, and resist correction. Crucially, they argue that misinformation's persistence stems from identifiable cognitive and social mechanisms rather than mere ignorance, and that debiasing is achievable but only through strategies grounded in psychological evidence.
+This foundational review synthesizes cognitive and social psychology to explain why misinformation persists even after clear, credible corrections—a phenomenon called the "continued influence effect." The authors argue against the naive assumption that retraction alone erases false belief: people continue to rely on discredited information in reasoning and decision-making, and corrections can even backfire, entrenching the original misbelief. The paper integrates laboratory findings on truth assessment, fluency, and memory updating with real-world cases (vaccine-autism, Iraq WMD, "birther" and "death panel" myths) and distills theory-grounded, actionable recommendations for practitioners tasked with debunking.
 
 ## Key Contributions
 
-- Provides an integrative framework explaining the cognitive origins and persistence of misinformation.
-- Translates psychological research into practical, evidence-based recommendations for correcting misinformation and debiasing beliefs.
-- Bridges academic psychology with public policy and communication concerns, especially around public health.
-- Establishes the continued influence effect as a central, well-documented phenomenon with real-world consequences.
+- A comprehensive cross-disciplinary synthesis of why misinformation persists at both individual and societal levels.
+- Consolidation of competing theoretical accounts of the continued influence effect (mental models, retrieval failure, fluency/familiarity, reactance).
+- Explicit cataloguing of counterproductive "backfire" effects—familiarity, overkill, and worldview—that practitioners must avoid.
+- Concrete, cognitively grounded recommendations for journalists, health professionals, educators, and science communicators.
+- A bridge between controlled cognitive experiments and real-world public-information and policy contexts.
 
 ## Methods
 
-Interdisciplinary review and synthesis of the psychological and cognitive science literature on misinformation, memory, and belief updating. The authors use real-world case examples — notably the vaccine-autism myth — to illustrate the mechanisms and downstream consequences (e.g., reduced vaccination rates and preventable disease).
+A narrative literature review spanning cognitive psychology, social psychology, political science, and communication research. It centers on the experimental continued influence paradigm (notably the fictitious warehouse-fire narrative, where target misinformation is later retracted), supplements it with real-world case studies (vaccine-autism myth, Iraq WMD claims, corrective Listerine advertising), and integrates findings on fluency/familiarity, source credibility, and social consensus.
 
 ## Findings
 
-- Retracted misinformation continues to shape beliefs and inferences even when people acknowledge and remember the correction.
-- Source credibility, repetition, fluency, and consistency with prior beliefs all influence whether misinformation is accepted and retained.
-- Simply negating or retracting false claims can be ineffective and may even reinforce the myth.
-- Effective corrections provide alternative causal explanations, warn recipients about potential misinformation in advance, and minimize repeated exposure to the false claim itself.
+- Retractions at most halve reliance on misinformation, and sometimes have no effect—even when people remember and believe the correction.
+- Strengthened negations can backfire (e.g., "paint and gas were never on the premises" *increased* reliance on that information).
+- "Myth vs. fact" campaigns can reverse after a short delay (~30 min), with readers later misremembering myths as facts—especially older adults.
+- Only three techniques reliably improve corrections: pre-exposure warnings, repeated retractions, and providing an alternative causal explanation that fills the coherence gap.
+- Providing a plausible alternative narrative is the most effective technique.
+- Worldview-dissonant corrections can produce backfire effects, though evidence is mixed.
+- Media outlet choice predicts misinformation levels, and "false balance" distorts issues like climate consensus.
+- Fluency, repetition, and perceived social consensus increase acceptance of statements as true, even from a single repeated source.
 
 ## Connections
 
-This foundational cognitive-psychological account of correction underpins much subsequent applied work on health misinformation and its remediation; it connects to intervention-oriented studies such as [[Spampatti2026-kx]] and [[Ghezzi2023-8bebc91f]], and to broader empirical work on the limits and effects of corrections in [[Nyhan2023-gb]]. Its concern with why false claims spread and stick also relates to the diffusion dynamics documented in [[Vosoughi2018-at]] and the platform-scale exposure literature represented by [[Guess2020-rr]].
+This review is the theoretical backbone for much subsequent work on inoculation and message design against misinformation, connecting directly to prebunking and psychological-inoculation approaches such as [[van-der-Linden2026-jt]] and [[Spampatti2026-kx]], as well as efforts to counter climate misinformation like [[Kotz2026-lk]]. Its account of correction efficacy and backfire also informs debunking-intervention studies including [[Costello2024-bg]] and the accuracy-prompt tradition exemplified by [[Pennycook2021-jq]], while its societal "echo chamber" framing anticipates empirical work on selective exposure and diffusion such as [[Del-Vicario2016-uj]] and [[Vosoughi2018-at]].

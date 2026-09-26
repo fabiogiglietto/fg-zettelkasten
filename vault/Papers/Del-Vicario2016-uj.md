@@ -5,7 +5,7 @@ authors: ["Michela Del Vicario", "Alessandro Bessi", "Fabiana Zollo", "Fabio Pet
 year: 2016
 doi: 10.1073/pnas.1517441113
 bibtex_key: Del-Vicario2016-uj
-topics: [misinformation-exposure-recalibration]
+topics: [political-polarization-partisanship, misinformation-exposure-recalibration]
 citation_count: 1854
 open_access: false
 source_url: https://doi.org/10.1073/pnas.1517441113
@@ -20,37 +20,30 @@ discovery_date: 2026-09-26T08:39:39.445413Z
 >
 > [View paper](https://doi.org/10.1073/pnas.1517441113)
 
-**Note:** The provided title ("The spreading of misinformation online") and author list do not match the structured summary, which describes a seven-day digital diary study of Australian adults' everyday misinformation perceptions. The note below reflects the *structured summary*, which is the substantive source given.
-
 ## Summary
 
-This paper offers an audience-centred, in-situ account of how ordinary Australians encounter and perceive misinformation in the flow of their everyday online lives. Rejecting the dominant topic-driven, experimental, and abstracted approaches that characterise much misinformation research, the authors used a seven-day digital diary study with 55 participants to capture the news and information people *themselves* flagged as false, misleading, or untrustworthy. The central argument is that perceived misinformation is "everyday" — spread across mundane topics like business and economics, dominated by text rather than flashy AI-generated media, and, strikingly, seen by participants as flowing largely from mainstream and alternative *news outlets* rather than social media alone. These perceptions are framed as products of a broader sociocultural and sociotechnical crisis of trust in news.
+This paper offers large-scale quantitative evidence that misinformation spreads on Facebook primarily through homogeneous, polarized communities — "echo chambers" — formed by selective exposure and confirmation bias. Analyzing five years (2010–2014) of public Facebook data across 67 pages, the authors contrast two distinct narrative types, scientific news and conspiracy theories, and characterize how each is consumed and diffused. They argue that social homogeneity, rather than content quality, is the preferential driver of information cascades, and support this with a data-driven percolation model showing that homogeneity and polarization are the main determinants of cascade size. A notable implication is that purely algorithmic countermeasures (e.g., trustworthiness scores) may be ill-suited to a problem rooted in social psychology.
 
 ## Key Contributions
 
-- Provides an in-situ, everyday-life account of misinformation encounters that foregrounds participants' own emergent definitions rather than researcher-imposed taxonomies.
-- Documents the "everydayness" of perceived misinformation across understudied topics (business/economics, celebrity, sports) and multiple modalities.
-- Empirically shows that the public perceives mainstream/legacy news media as prominent propagators of misinformation, complicating framings of journalism as purely a corrective.
-- Cautions against alarmism over audiovisual/AI-generated misinformation, given that text remains overwhelmingly dominant in everyday encounters.
-- Advances policy directions: greater news media transparency, everyday-focused media literacy, and whole-of-society coordinated responses.
-- Offers a methodologically transparent macro-overview dataset (topic, mode, source) for future work.
+- Large-scale empirical demonstration that echo chambers form around distinct narratives (science vs. conspiracy), each with its own cascade dynamics.
+- Introduction of formal measures of user polarization (σ) and edge homogeneity (σij) to quantify social similarity in diffusion.
+- A data-driven percolation/branching-process model on a signed small-world network that predicts cascade size from homogeneity and polarization.
+- Empirical linkage of confirmation bias and social homogeneity to misinformation spreading, reframing debates on countermeasures.
 
 ## Methods
 
-A two-wave digital diary study (n=30 and n=25) conducted via the Indeemo app over seven days each in mid-2024. Participants were purposively sampled to broadly reflect the Australian population across age, gender, education, cultural/linguistic diversity, region, and self-reported exposure and media literacy confidence. They recorded video reflections on days 1 and 7 and captured screenshots/photos of encountered information on days 2–6, narrating their trustworthiness assessments. This yielded 1,564 information examples and ~221,735 words of spoken reflection; a subsample of 322 flagged examples (21%) was analysed via deductive thematic analysis across topic, mode, and source. Intercoder reliability was high (Krippendorff's α = 1.0 for topic and source; 0.91 for mode), with an independent verification check on 10% of flagged claims.
+The authors collected public Facebook data via the Graph API across 32 conspiracy-theory pages, 35 science-news pages, and 2 troll pages (used as a benchmark for model fitting). They reconstructed "sharing trees" to characterize cascade size, height, and lifetime, and defined user polarization and edge homogeneity to measure similarity between sharing users. Statistical analysis included power-law fitting of cascade-size distributions, PDFs/CCDFs of lifetime and homogeneity, and Kolmogorov–Smirnov tests. A percolation model on a Watts–Strogatz signed network (n=5,000 nodes, m=1,000 news items) was parameterized by sharing threshold, fraction of homogeneous links, and rewiring probability, validated against 1,072 troll-page sharing trees.
 
 ## Findings
 
-- **Topics:** business/economics was most common (18%), followed by celebrity (16%), crime and crisis (16%), health (11%), and politics (10%) — extending well beyond the usual "hot button" topics.
-- **Modes:** text dominated (68%, mostly news headlines), with multimodal (18%), video (11%), image (3%), and audio (1%) trailing far behind.
-- **Sources:** mainstream and alternative *news outlets* accounted for 62% of flagged claims (predominantly domestic mainstream), with News Corp, Seven West Media, and Nine prominent; social media accounted for only 19%.
-- A consistent "Clickbait Concern" ran through responses — frustration at headlines misrepresenting article content and distrust of commercially or ideologically biased outlets.
-- The cost-of-living crisis shaped perceptions, with many economic examples seen as exploiting financial anxieties.
-- Verification showed only 9% of flagged claims were objectively false or misleading, 28% undeterminable, and 25% containing no clear verifiable claim — perceived misinformation greatly exceeds objectively false content.
-- Users deploy self-protective heuristics: blanket scepticism, avoidance of unknown sources, and "reading with a grain of salt."
+- Cascade size and maximum degree are power-law distributed for all content types (exponents ≈ 2.21 science, 2.47 conspiracy, 2.44 trolling), with maximum cascades of 952, 2,422, and 3,945 respectively.
+- Cascade lifetimes are similar across categories, peaking around 1–2 h and ~20 h; roughly 40% of content diffuses within 5 h.
+- Science news reaches high diffusion quickly with no lifetime–size relation, while conspiracy rumors assimilate slowly and show a positive lifetime–size relation.
+- Mean-edge homogeneity is almost always ≥ 0, indicating content circulates primarily within homogeneous echo chambers.
+- Larger science cascades correspond to high homogeneity (0.5–0.8), larger conspiracy cascades to lower homogeneity (~0.25), yet homogeneity remains the underlying driver.
+- The percolation model reproduces observed dynamics; ϕHL ≈ 0.5–0.56 splits the network into two isolated echo chambers (best fit ϕHL=0.56, r=0.01, δ=0.015).
 
 ## Connections
 
-This audience-centred, diary-based approach directly contrasts with large-scale behavioural exposure studies of fake-news consumption such as [[Grinberg2019-ua]], [[Guess2019-ym]], and [[Guess2021-ym], and with the influential virality analysis of [[Vosoughi2018-at]], all of which the paper would critique as topic-driven and abstracted from lived experience. Its central finding that perceived misinformation exceeds objectively false content, and its emphasis on media-literacy heuristics, connect it to [[Lewandowsky2012-vn]] on misinformation correction and to work reassessing the actual prevalence and reach of misinformation such as [[Allen2020-nj]] and [[Budak2024-ef]]. The focus on trust in and exposure via mainstream news echoes [[Tsfati2020-uo]] on the mainstream media's role in amplifying misinformation and [[Fletcher2026-lv]].
-
-*Note: a stray bracket appears in the connections above — the intended link is [[Guess2021-ym]] and [[Fletcher2026-lv]]; these are among the provided keys.*
+This is a foundational echo-chamber study whose confirmation-bias mechanism is challenged and refined by later exposure-measurement work such as [[Bakshy2015-rn]], [[Guess2021-ym]], and [[Gonzalez-Bailon2023-uy]], which question how prevalent algorithmically-driven echo chambers actually are. Its account of cascade dynamics is a direct counterpart to [[Vosoughi2018-at]] on how falsehoods spread, and its polarization framing connects to broader partisan-sorting literature including [[Iyengar2019-jj]] and [[Osmundsen2021-et]].

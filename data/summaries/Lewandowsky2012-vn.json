@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper reviews the cognitive and societal mechanisms behind the persistence of misinformation and explains why corrections and retractions so often fail to eliminate false beliefs—a phenomenon known as the 'continued influence effect.' Drawing on cognitive psychology, the authors examine how people assess truth, why retractions can backfire and even entrench misbelief, and how worldview shapes resistance to correction. They synthesize the evidence into concrete, theory-grounded recommendations for practitioners seeking to debunk misinformation effectively.",
+  "key_claims": [
+    "Misinformation is 'sticky': even clear, credible retractions rarely eliminate reliance on false information, and often only halve it.",
+    "Correcting misinformation can backfire, ironically increasing belief through familiarity, worldview, or overkill mechanisms.",
+    "Reliance on misinformation is often more damaging to decision-making than simple ignorance, because false beliefs are held with strong conviction.",
+    "Personal worldview and ideology are major obstacles to debiasing, sometimes causing corrections to entrench the original misbelief.",
+    "Despite these obstacles, debiasing is possible using specific evidence-based techniques.",
+    "Societal and media structures—especially Internet fractionation into 'echo chambers'—amplify and sustain misinformation."
+  ],
+  "methods": [
+    "Narrative literature review and synthesis spanning cognitive psychology, social psychology, political science, and communication research.",
+    "Discussion of the experimental 'continued influence effect' paradigm (Wilkes & Leatherbarrow, 1988; H. M. Johnson & Seifert, 1994), notably the fictitious warehouse-fire narrative with target misinformation and later retraction.",
+    "Review of real-world case studies including the vaccine-autism myth, Iraq WMD claims, Obama 'birther' and 'death panel' myths, and corrective Listerine advertising.",
+    "Integration of experimental findings on truth assessment, fluency/familiarity effects, source credibility, and social consensus."
+  ],
+  "findings": [
+    "Retractions at most halve references to misinformation, and sometimes have no effect, even when people remember and believe the retraction.",
+    "Strengthened negations can backfire, making people more likely to rely on the misinformation ('paint and gas were never on the premises' increased reliance).",
+    "'Myth vs. fact' campaigns can reverse after a short delay (~30 minutes), with readers later misremembering myths as facts—an effect especially strong among older adults.",
+    "Only three techniques reliably improve corrections: pre-exposure warnings, repeated retractions, and providing an alternative causal explanation that fills the coherence gap.",
+    "Providing an alternative narrative is the most effective technique, but requires plausibility and coverage of the original causal account.",
+    "Worldview-dissonant corrections can produce backfire effects (Nyhan & Reifler, 2010; Hart & Nisbet, 2011), though some studies find retractions equally effective across attitude groups.",
+    "Media outlet choice predicts misinformation levels (e.g., Fox News viewers most misinformed, NPR listeners least), and 'false balance' distorts issues like climate change consensus.",
+    "Fluency, repetition, and perceived social consensus increase acceptance of statements as true, even from a single repeated source."
+  ],
+  "contributions": [
+    "Provides a comprehensive, cross-disciplinary synthesis of why misinformation persists at both individual and societal levels.",
+    "Consolidates multiple theoretical accounts of the continued influence effect (mental models, retrieval failure, fluency/familiarity, reactance).",
+    "Offers actionable, cognitively grounded recommendations for journalists, health professionals, educators, and science communicators on designing effective corrections.",
+    "Highlights and explains counterproductive 'backfire' effects (familiarity, overkill, worldview) that practitioners must avoid.",
+    "Bridges laboratory cognitive findings with real-world public-information and policy contexts."
+  ],
+  "framing": "The paper is framed within cognitive and social psychology's study of belief formation, memory updating, and debiasing, positioning itself against the naive assumption that correction alone suffices to erase false beliefs. It situates individual-level cognition within broader societal and media dynamics, engaging debates in political science and science communication about how democracies handle a misinformed populace.",
+  "pdf_source": "drive"
+}

@@ -1,0 +1,36 @@
+{
+  "abstract": "This research note investigates how privacy-protection measures applied to Facebook's Social Science One URLs dataset (over 10 trillion cells of shared-URL engagement data) bias conclusions drawn from it. The authors focus on the less-scrutinized of two protections — censoring URLs shared publicly fewer than 100 times — and show that this threshold, rather than the differential-privacy noise, substantially distorts descriptive statistics. By comparing prevalence estimates of fake news against an uncensored, representative Nielsen web panel, they find the Facebook dataset overestimates news and fake news consumption by roughly 2X and 4X respectively.",
+  "key_claims": [
+    "The 100-public-share censoring threshold in the Facebook URLs dataset, not the differential-privacy noise, substantially biases even basic descriptive statistics.",
+    "Fake news is overrepresented in the Facebook URLs dataset because it is disproportionately shared publicly, likely due to its novelty and the distribution strategies of fake news producers.",
+    "Content types differ systematically in their likelihood of public sharing, so censoring biases the dataset toward content optimized to be both clicked and publicly shared (news, entertainment) and against content distributed via ads or private links (retail, financial, gaming, social media).",
+    "Big data can still yield biased estimates when censored; researchers using such datasets must ensure they are not comparing consumption across URL types with different public-sharing rates.",
+    "This is a methodological caution rather than a critique of the Social Science One / Facebook data-sharing effort, which remains uniquely large and rich."
+  ],
+  "methods": [
+    "Estimated prevalence of fake news, not-fake (credible) news, and not-news clicks in the Facebook URLs dataset (Jan 2017–Dec 2018) using domain lists from Allen et al. (2020): ~9,000 credible-news domains and 624 fake-news domains.",
+    "Compared against a nationally representative Nielsen desktop web panel, isolating Facebook newsfeed referrals via the 'fbclid' URL parameter to exclude Facebook Messenger and other referral sources.",
+    "Matched a random sample of 1,000 Nielsen URLs (December 2018) against the Facebook URLs dataset to test whether presence/absence reflects the 100-public-share threshold.",
+    "Used the CrowdTangle API to measure public shares (a lower-bound proxy, limited to public pages/groups/profiles) and examined how fake-news share changes as the threshold moves from 0 to 100.",
+    "Included an internal Facebook investigation (Appendix 1) analyzing URL-level fact-checker-labeled false URLs at the share level under different thresholds.",
+    "Extended analysis to non-news categories using the top 2,000 ComScore domains (Appendix 2), and ran robustness checks on deduplication and referral definitions (Appendix 3)."
+  ],
+  "findings": [
+    "In the raw Facebook URLs dataset (Jan 2017–Dec 2018) an average of 12% of monthly clicks went to fake news, 32% to credible news, and 56% to non-news.",
+    "For December 2018, the Facebook dataset showed 10% fake news / 38% credible news / 52% non-news, versus the representative Nielsen estimate of 2.5% / 24% / 74% — a ~4X overestimate of fake news and ~1.7X of credible news.",
+    "84% of fake-news URLs in the Nielsen sample were found in the Facebook dataset, versus 50% of credible-news and 23% of non-news URLs, indicating fake news is far more likely to clear the 100-share threshold.",
+    "Restricting Nielsen URLs to those matched in the Facebook dataset produced 7% / 39% / 55%, closely reproducing the Facebook dataset figures and supporting the threshold-as-cause hypothesis.",
+    "CrowdTangle analysis reproduced similar results (7% fake / 42% credible / 51% non-news above 100 shares), with a large spike in non-news URLs at 0 shares and fake news' share of content rising 45% between 1 and 100 shares.",
+    "Facebook's internal analysis showed false URLs rose from 0.00023% to 0.022% of unique URLs (two orders of magnitude) with the threshold, and 30.3 of 30.5 million false-URL public shares came from just 8,660 URLs above 100 shares.",
+    "Across categories, news (2.2X) and entertainment (1.4X) were overrepresented in the Facebook dataset, while gaming (0.025X), retail (0.13X), financial (0.25X), and social media (0.35X) were underrepresented.",
+    "Robustness checks confirmed results were unchanged after deduplication (93% of URLs clicked once per user) and under a stricter 'facebook.com'-preceded referral definition (2.6% / 24% / 73%)."
+  ],
+  "contributions": [
+    "Empirically documents that data censoring — not just differential-privacy noise — is a major and underappreciated source of bias in large-scale platform datasets.",
+    "Quantifies the magnitude of the bias in the widely used Facebook Social Science One URLs dataset for fake-news and news prevalence estimates.",
+    "Provides converging evidence from three independent sources: external Nielsen matching, CrowdTangle share data, and an internal Facebook investigation.",
+    "Offers concrete guidance for researchers (avoid cross-URL-type or cross-country comparisons with differing public-sharing rates) and design recommendations (eliminate censoring in favor of differential privacy, or censor URL paths but retain domains)."
+  ],
+  "framing": "The note is situated within the emerging field of computational social science and industry–academic data-sharing partnerships (Social Science One), and within the misinformation-prevalence literature (Allen et al., Grinberg et al., Guess et al.). It contributes to methodological debates on differential privacy and data censoring by arguing that scale alone does not guarantee unbiased inference.",
+  "pdf_source": "drive"
+}

@@ -1,0 +1,35 @@
+{
+  "abstract": "This article synthesizes existing literature to argue that mainstream news media, despite their intent to correct and debunk falsehoods, play a paradoxical and significant role in disseminating fake news. The authors note that direct exposure to fake news websites is limited to a small fraction of the population, yet large segments of the public know about and believe notable fake news stories — implying that most people encounter such stories through mainstream media coverage. The paper addresses three questions: what role mainstream media play in disseminating fake news, why they cover it, and how audiences process such coverage.",
+  "key_claims": [
+    "Mainstream news media are a significant amplifier and disseminator of fake news, likely reaching more people than fake news websites or social media do directly, even though their intent is usually to correct disinformation.",
+    "Direct exposure to and sharing of fake news on social media is heavily concentrated among a small segment of the population (roughly 1% to 10%), so social media are not the primary driver of fake news reaching the general public.",
+    "Mainstream media cover fake news for at least four reasons: journalists' truth-seeking role perceptions, the high news value of fake news stories, the social psychology of news decisions (social validation and predispositions), and the existing infrastructure for monitoring online content.",
+    "Covering fake news can be counterproductive because journalists must repeat false information to correct it, and repetition increases perceived truthfulness via mere-exposure and truth effects.",
+    "A likely consequence of coverage is that significant portions of the audience internalize false information or become uncertain about the truth, with doubt (rather than outright rejection) being a common outcome."
+  ],
+  "methods": [
+    "Narrative literature review and synthesis rather than original empirical data collection.",
+    "Integration of findings from multiple fields: political communication, journalism studies, and social/cognitive psychology (especially research on misinformation correction).",
+    "Draws on prior survey data (e.g., YouGov/Frankovic on Pizzagate, BuzzFeed studies), traffic and network analyses (Grinberg et al., Guess et al., Fletcher et al., Nelson & Taneja), and content analyses (Al-Rawi, Vargo et al.).",
+    "Illustrative LexisNexis searches of 12 U.S. mainstream outlets for terms like 'fake news' and 'Pizzagate.'",
+    "Uses Allcott and Gentzkow's dataset of 156 election-related fake news articles to illustrate how such stories satisfy news values.",
+    "Applies meta-analytic findings on misinformation correction (e.g., Walter & Tukachinsky's 32-study meta-analysis) to theorize audience effects."
+  ],
+  "findings": [
+    "Survey evidence shows large public belief in fake news: over a third of Americans thought Pizzagate was probably or definitely true; 75% of recalled fake headlines were rated somewhat/very accurate; similar patterns found in Brazil and Israel.",
+    "Exposure to fake news is highly concentrated: 80% of fake news on Twitter was consumed by 1% of users; ~60% of fake news site visits came from the 10% most conservative online diets; average real news sites had 40x more monthly visitors than fake news sites.",
+    "Sharing fake news is rare (only 8.5% of matched Facebook users shared it; 0.1% of Twitter users were responsible for 80% of sharing), and fact-checks rarely reach fake news consumers due to selective diffusion.",
+    "Fake news stories are highly newsworthy, satisfying criteria such as negativity, elite people, surprise, entertainment value, and celebrity, and appear designed by their creators to maximize spread and match national news agendas.",
+    "Partisan media are more heavily influenced by fake news than mainstream media, partly because fake news fits their ideological tendencies.",
+    "Misinformation shows 'continued influence' resisting correction; the modal audience response to reported fake news was uncertainty (around 29% in U.S. and 22% in Israel were sure a story was false), suggesting doubt as an undesirable byproduct.",
+    "Correction effectiveness is undermined by repetition, lexical complexity, richness of the false mental model, congruence with prior attitudes, and low media trust."
+  ],
+  "contributions": [
+    "Turns scholarly attention to the underexamined paradoxical role of mainstream news media in spreading, not just correcting, disinformation.",
+    "Provides an integrated theoretical framework explaining why mainstream media cover fake news, drawing together role perceptions, news values, news psychology, and news infrastructure.",
+    "Bridges disinformation research with cognitive/social psychology of misinformation correction to theorize audience effects of coverage.",
+    "Identifies a research agenda: systematic content analysis of fake news coverage, newsroom ethnographies on why journalists cover fake news, and experimental/linkage studies on audience processing including partisan media audiences and measures of media trust and attitude certainty."
+  ],
+  "framing": "The paper positions itself within political communication and journalism studies, engaging debates about the 'post-truth' era, the disinformation order, and the sociology of news (news values, boundary work, role perceptions). It further connects these to cognitive and social psychology research on misinformation correction, motivated reasoning, and the truth effect, and is part of the 'Knowledge Resistance' research project.",
+  "pdf_source": "drive"
+}

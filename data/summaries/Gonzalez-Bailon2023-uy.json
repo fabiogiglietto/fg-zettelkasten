@@ -1,0 +1,41 @@
+{
+  "abstract": "This paper analyzes ideological segregation in exposure to political news on Facebook during the 2020 US election, drawing on aggregated data from roughly 208 million US adult active users. Using a 'funnel of engagement' framework, the authors compare the political news users could potentially see (inventory), what they actually saw after algorithmic curation (feed), and what they engaged with. They find that ideological segregation is high and increases along this funnel, that segregation is asymmetric with a distinctly homogeneous conservative corner of the news ecosystem, and that most misinformation identified by Meta's fact-checking program sits within that conservative corner.",
+  "key_claims": [
+    "News consumption on Facebook is far more ideologically segregated than prior web-browsing-based research on internet news consumption suggested.",
+    "Ideological segregation increases as one moves down the funnel of engagement from potential exposure to actual exposure to engagement, indicating that both algorithmic and social amplification contribute to segregation.",
+    "There is a strong asymmetry between conservative and liberal audiences: a substantial corner of the news ecosystem is consumed almost exclusively by conservatives, with no equivalent homogeneous corner on the liberal side.",
+    "Most misinformation (URLs rated false by Meta's Third-Party Fact-Checking Program) and untrustworthy domains circulate within the homogeneously conservative portion of the ecosystem.",
+    "Segregation is substantially higher when measured at the URL (news-story) level than at the domain level, revealing within-domain curation that domain-level analysis masks.",
+    "Content posted by Pages and Groups drives far more segregation and audience polarization than content posted by friends."
+  ],
+  "methods": [
+    "Analysis of aggregated (not individual-level) exposure and engagement data for ~208 million US-based adult active Facebook users whose ideology could be predicted, covering the period 1 September 2020 to 1 February 2021.",
+    "Tracking of political news URLs and domains through a 'funnel of engagement': potential audience (inventory), exposed audience (feed after algorithmic curation), and engaged audience (clicks, reactions, likes, reshares, comments).",
+    "Use of Facebook's internal civic/news classifiers to identify political news and an internal ideology classifier to categorize users (score <=0.35 liberal, >=0.65 conservative).",
+    "Computation of a segregation index (adapted from residential segregation research, following Gentzkow and Shapiro) and favorability scores (ranging from -1 fully liberal to +1 fully conservative) for domains and URLs.",
+    "Construction and community-detection analysis of coexposure networks (nodes are domains or URLs, edges weighted by shared unique viewers) using the Pons-Latapy walktrap method and network backbone extraction.",
+    "Classification of misinformation via Meta's Third-Party Fact-Checking Program (URLs rated false; domains labeled untrustworthy if two or more URLs were rated false).",
+    "Comparison of on-platform segregation with off-platform web-browsing behavior for a subset of consented users; robustness checks by content type (COVID), political interest level, posting source, and alternative ideology operationalizations.",
+    "Data restricted for privacy to URLs shared more than 100 times; covering ~35,000 unique domains and ~640,000 unique URLs. Preanalysis plan registered on OSF."
+  ],
+  "findings": [
+    "The domain-level segregation index for exposed audiences fluctuated around 0.35, far above the 0.02-0.10 range found in prior web-browsing studies.",
+    "The URL-level segregation index was higher still, roughly 0.45 to 0.50, consistent with ideological curation of content within domains.",
+    "Segregation rose along the funnel: exposed-audience scores exceeded potential-audience scores, and engaged-audience scores exceeded exposed-audience scores (the potential-vs-engaged gap most visible at the domain level).",
+    "Overall favorability distributions were skewed to the right, with more domains and URLs favored by very conservative audiences than by very liberal ones.",
+    "For untrustworthy domains, 71-76% had conservative-leaning audiences across potential, exposed, and engaged stages; for false URLs, 97% had conservative-leaning audiences at each stage.",
+    "Misinformation shared by Pages and Groups had audiences almost entirely concentrated on the right; Pages produced the most conservative audiences.",
+    "Segregation on Facebook was about three times as high as a within-person web-tracking benchmark for the same consented users.",
+    "Coexposure network community detection recovered clear liberal and conservative clusters based on behavior alone, with the conservative cluster departing further from cross-cutting exposure and exposed to a higher share of unreliable URLs.",
+    "High-political-interest users were roughly twice as segregated as low-interest users. Top viewed domains included cnn.com, dailywire.com, foxnews.com, nytimes.com, and nbcnews.com; the single most-viewed story (a false claim about Pennsylvania military ballots) came from pjmedia.com, a domain ranked only 51st by views."
+  ],
+  "contributions": [
+    "Provides one of the first large-scale, platform-internal maps of what users could see, did see, and engaged with, overcoming reliance on external web-browsing data.",
+    "Introduces URL-level (news-story) measurement of segregation, showing that domain-level aggregation substantially understates ideological segregation.",
+    "Documents the distinct role of Pages and Groups (versus friends) as curation and dissemination mechanisms that amplify segregation, extending beyond friend-posted content examined in prior work (Bakshy et al. 2015).",
+    "Empirically demonstrates the asymmetric conservative concentration of both homogeneous audiences and misinformation on Facebook.",
+    "Establishes a reproducible industry-academic collaboration model (US 2020 Facebook and Instagram Election Study) with a registered preanalysis plan and archived data, offering a blueprint for platform data access under regimes like the EU Digital Services Act."
+  ],
+  "framing": "The paper positions itself within the debate on filter bubbles, echo chambers, and selective exposure in online political information, engaging critically with prior web-browsing studies that found relatively diverse news diets and with earlier Facebook research (Bakshy et al. 2015). It draws on literatures on asymmetric political polarization and network propaganda to argue that platform affordances and individual choices jointly produce ideologically segregated, right-skewed news ecosystems.",
+  "pdf_source": "drive"
+}

@@ -10,7 +10,7 @@ citation_count: 6595
 open_access: false
 source_url: https://doi.org/10.1037/0033-2909.108.3.480
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445533Z
 ---
 
@@ -22,26 +22,31 @@ discovery_date: 2026-09-26T08:39:39.445533Z
 
 ## Summary
 
-Kunda advances a unifying account of how motivation shapes human reasoning, arguing that motives do not simply stamp preferred conclusions onto belief but rather operate *through* cognitive mechanisms. Motivation, on this view, influences which cognitive processes people recruit when they access, construct, and evaluate their beliefs. The paper distinguishes two broad classes of motive — accuracy motivation, which pushes people toward the most appropriate reasoning strategies, and directional motivation, which pushes them toward strategies likely to yield a desired conclusion. Crucially, motivated reasoning is bounded: people can only reach the conclusions they want when they can assemble evidence and construct a plausible justification for them. The paper thereby bridges longstanding debates about "hot" (motivational) versus "cold" (purely cognitive) determinants of judgment.
+Kunda's paper is an integrative theoretical review that reframes how motivation influences reasoning. Rather than positing that wishes directly override facts, she argues that motivation operates *through* cognition: goals shape which beliefs, memories, and inferential strategies people access and apply. She draws a central distinction between **accuracy goals**, which prompt deeper and more careful processing, and **directional goals**, which steer people toward preferred conclusions. Crucially, directional bias is bounded — people maintain an "illusion of objectivity" and can only reach desired conclusions when they can construct a justification that a dispassionate observer would find plausible. Synthesizing a wide swath of social-psychological research, Kunda contends that a single mechanism, biased memory search and belief construction, can account for the full range of motivated-reasoning phenomena.
 
 ## Key Contributions
 
-- Provides a unifying cognitive-process account of how motivation influences reasoning.
-- Reconciles evidence for biased reasoning with the observation that beliefs remain constrained by plausibility and the availability of justification.
-- Establishes "motivated reasoning" as a framework distinguishing accuracy-driven from directionally-driven cognition.
-- Integrates motivational and cognitive explanations of biased belief formation into a single mechanism.
+- Offers a unifying **mechanistic account** — biased accessing and construction of beliefs and rules — that ties together previously disparate findings on motivated reasoning.
+- Rehabilitates the motivational view against 1970s cognitive critiques by specifying processes that make "hot" and "cold" cognition distinguishable yet jointly operative.
+- Sharpens the theoretical distinction between **accuracy goals** and **directional goals** and their differing mechanisms.
+- Introduces the emphasis on **justification construction** and the **illusion of objectivity**, explaining why motivated bias is bounded by available evidence and reasoning.
+- Extends biased-memory-search ideas beyond self-serving attribution to a broad range of goals and reasoning tasks, reconciling involvement/persuasion findings with evidence of bias.
 
 ## Methods
 
-A theoretical review and synthesis rather than a new empirical study. Kunda integrates existing empirical evidence on both accuracy-oriented and directional (goal-driven) motivation, and organizes it within a conceptual framework grounded in cognitive-process accounts of belief access, construction, and evaluation.
+This is a **conceptual synthesis and integrative literature review** rather than a report of new empirical data. Kunda organizes prior research into two categories — reasoning driven by accuracy goals and reasoning driven by directional goals — and reviews studies across dissonance theory, self-perception, attribution, outcome dependency, likelihood estimation, statistical heuristic use, evaluation of scientific evidence, and persuasion. Throughout, she asks whether findings can be reinterpreted in purely cognitive (nonmotivational) terms, giving evidential weight to random-assignment studies that rule out prior-belief explanations, and distinguishing indirect evidence (inferred from judgment outcomes) from more direct evidence such as response latencies, content of recalled memories, and cognitive complexity of written descriptions.
 
 ## Findings
 
-- Considerable evidence indicates people are more likely to reach conclusions they *want* to reach — but only within the limits of what they can plausibly justify.
-- Both accuracy and directional motives can be understood as operating via the selective deployment of cognitive strategies, rather than by directly imposing conclusions.
-- Accuracy motivation enhances reliance on the beliefs and strategies deemed most appropriate for reaching a correct conclusion.
-- Directional motivation enhances reliance on strategies most likely to produce the desired conclusion.
+- Accuracy motivation (e.g., accountability, importance manipulations) reduces biases such as primacy effects, stereotyping, anchoring, and the fundamental attribution error, yielding more complex, accurate judgments.
+- Accuracy manipulations reduce bias only when delivered *before* encoding, indicating effects on initial processing rather than self-presentation.
+- Accuracy goals do not always help: some biases resist them, and greater complexity can worsen judgment (e.g., the dilution effect); when paired with directional goals, deeper processing may even *enhance* bias by aiding justification.
+- Directional goals bias self-characterizations of traits, attitudes, and past behavior, but changes remain constrained by prior self-knowledge.
+- Direct evidence shows biased memory search: people are faster to generate and endorse desired self-relevant memories and traits.
+- Outcome dependency biases liking and evaluations of others — but bias fails when information is too impoverished to justify the desired impression.
+- Goals can bias the *selection* of statistical heuristics, such as base rates and the law of large numbers.
+- People judge threatening scientific evidence more critically, deeming disconfirming studies more flawed, yet remain responsive to genuine methodological strengths — showing bias constrained by plausibility.
 
 ## Connections
 
-No other papers have been registered under this note's topics, so there are no sibling notes to link at present. Intellectually, this paper sits at the foundation of subsequent work on confirmation bias, identity-protective cognition, and belief formation — connections that can be added as related notes enter the vault.
+This is a foundational statement bridging motivational and cognitive traditions in social psychology; no other papers in the provided set share its topics, so there are no direct wikilinks to draw here. Its emphasis on justification-bounded, mechanism-level bias anticipates later work on rationalization, confirmation bias, and identity-protective cognition.

@@ -1,0 +1,37 @@
+{
+  "abstract": "This paper provides individual-level analysis of exposure to 'fake news' from untrustworthy websites during the final weeks of the 2016 U.S. presidential campaign, combining survey responses with passively collected web traffic data from a national YouGov Pulse panel. It finds that while Trump supporters and people with strongly conservative information diets differentially consumed factually dubious pro-attitudinal content, these sites made up only a small fraction (~6%) of the average American's news diet and consumption was heavily concentrated in a small subset of the public. The authors conclude that widespread speculation about the prevalence of fake news exposure has been overstated, though effects on turnout and vote choice cannot be precisely estimated.",
+  "key_claims": [
+    "Consumption of untrustworthy websites reflects selective exposure: people differentially consume false information reinforcing their political views, with Trump supporters most likely to visit these sites.",
+    "Fewer than half of Americans visited an untrustworthy website, and such sites constituted only about 6% of the average online news diet, so exposure is much lower and more concentrated than public alarm suggests.",
+    "Exposure is heavily concentrated among a small subgroup—62% of untrustworthy-site visits came from the 20% of Americans with the most conservative information diets—making echo chambers 'deep but narrow.'",
+    "Facebook played a central role in directing users to untrustworthy websites relative to other platforms like Google or Twitter.",
+    "Fact-checks almost never reached the audiences exposed to the false claims they targeted.",
+    "Consumption of untrustworthy websites does not crowd out hard news consumption (they are complements, not substitutes), and effects on turnout and vote choice are too imprecise to confirm—only very large effects can be ruled out."
+  ],
+  "methods": [
+    "Combined an online public opinion survey (n=3,251; analysis focused on 2,525 with laptop/desktop traffic data, and 2,170 Clinton/Trump supporters) with passively collected, time-stamped URL-level web traffic data from YouGov's Pulse panel, October 7–November 14, 2016.",
+    "Defined untrustworthy websites using the Grinberg et al. classification of 'black' (382), 'orange' (47), and 'red' (61) domains—described as the most comprehensive list assembled to date—with robustness checks using Allcott & Gentzkow domains and fact-checked-false articles.",
+    "Measured both binary exposure and share of news diet from untrustworthy sites, using hard-news sites (per Bakshy et al. topic classification, excluding Amazon, Twitter, YouTube) plus untrustworthy sites as the denominator.",
+    "Constructed an information-diet slant measure from average slant of visited sites (Bakshy et al. Facebook-sharing-based scores) and divided respondents into deciles.",
+    "Estimated Facebook's referral role by grouping users into Facebook-usage terciles and by examining the last three URLs visited within 30 seconds before an untrustworthy-site visit.",
+    "Used OLS regression models with survey weights (with probit robustness checks), a difference-in-differences comparison to 2015 traffic data for crowd-out analysis, validated turnout via TargetSmart voter-file matching, Cognitive Reflection Test scores, and equivalence tests for null effects."
+  ],
+  "findings": [
+    "44.3% of Americans visited an untrustworthy website during the study period; these sites made up 5.9% of the hard-news diet (conservative sites 4.6%, liberal sites 0.6%).",
+    "56.7% of Trump supporters visited an untrustworthy conservative site versus 27.7% of Clinton supporters; untrustworthy conservative sites were 11.0% of Trump supporters' news diet versus 0.8% for Clinton supporters.",
+    "In the most conservative decile, 84.0% visited an untrustworthy conservative site and such content made up ~20.9% of their news diet (averaging 91 articles); 62% of all untrustworthy traffic came from the top two conservative deciles.",
+    "Users spent more time on untrustworthy articles (64.2s) than on hard news (42.1s) or other sites (24.2s); Trump supporters with high CRT scores consumed less untrustworthy content, suggesting engagement and belief among consumers.",
+    "Facebook appeared among the three prior URLs in 15.1% of untrustworthy-site visits versus 5.9% for hard news, unlike Google (3.3% vs 6.2%) or Twitter; heavy Facebook users had far higher untrustworthy exposure.",
+    "Only 18.6% of the 44.3% who visited untrustworthy sites also saw any fact-check, and only 3 of 111 respondents who read a matchable false article read its corresponding fact-check.",
+    "Hard news consumption was positively associated with untrustworthy consumption (no crowd-out); associations with Trump support and turnout were statistically imprecise, ruling out only effects of ~10 points (Trump support) or ~9 points (turnout)."
+  ],
+  "contributions": [
+    "Provides the first comprehensive individual-level, behavioral (non-recall, non-forced-exposure) analysis linking real-world web traffic, candidate preference, and validated turnout for untrustworthy-website consumption in 2016.",
+    "Quantifies the actual prevalence and concentration of fake news exposure, correcting overstated claims based on post-election self-reports or aggregate data.",
+    "Offers strong independent behavioral evidence of Facebook's role as a distribution vector for untrustworthy content.",
+    "Documents the 'fact-checking mismatch'—that corrective content rarely reaches those exposed to the misinformation it addresses.",
+    "Empirically tests and finds no support for claims that fake news displaced hard news or, within precision limits, altered the election outcome."
+  ],
+  "framing": "The paper situates itself within debates over selective exposure, 'echo chambers,' and 'filter bubbles' in political communication, engaging theories of congenial information consumption and the misinformation/fact-checking literature. It positions itself as a corrective to prominent correlational and self-report-based claims (e.g., Gunther et al.) that fake news swayed the 2016 election, drawing on findings about minimal persuasion effects in campaigns.",
+  "pdf_source": "drive"
+}

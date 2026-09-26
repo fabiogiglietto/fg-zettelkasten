@@ -1,0 +1,40 @@
+{
+  "abstract": "This paper empirically investigates whether online news technologies (social media, web search, and aggregators) increase or decrease ideological segregation in news consumption. Using anonymized web-browsing histories of 50,000 US-located active news readers, the authors measure ideological segregation across consumption channels and article types. They find nuanced and modest effects: social media and search are associated with both higher segregation and greater exposure to opposing viewpoints, while the bulk of consumption remains direct visits to mainstream outlets, tempering both the hopes and fears surrounding these technologies.",
+  "key_claims": [
+    "Social networks and search engines are associated with an increase in the mean ideological distance between individuals (higher segregation).",
+    "Counterintuitively, those same channels are also associated with increased individual exposure to content from one's less-preferred political side.",
+    "The vast majority of online news consumption is direct visits to home pages of favorite, typically mainstream, news outlets, which limits the overall impact of recent technological changes.",
+    "Nearly all users effectively exist in 'echo chambers' in that they read ideologically similar publications and rarely read opposing partisan content, but this concentration is driven primarily by direct browsing rather than social/search.",
+    "The overall magnitude of both positive and negative effects of these technologies on ideological segregation is relatively modest.",
+    "Evidence supports both sides of the filter bubble/echo chamber debate simultaneously."
+  ],
+  "methods": [
+    "Analysis of web-browsing records from the Bing Toolbar (opt-in, anonymized) covering 1.2 million US-located users over March–May 2013, with a median of 991 page views per user and 2.3 billion total page views.",
+    "Restriction to 50,383 'active news consumers' (4 percent of the total) who read at least ten substantive news articles and at least two opinion pieces in the three-month window.",
+    "Machine-learning text classifiers to (1) separate 'front-section' hard news (1.9M of 4.1M articles) from apolitical content, and (2) separate descriptive news from opinion pieces (200,000 opinion articles, 11 percent).",
+    "An audience-based measure of outlet slant ('conservative share') estimating the fraction of each outlet's readership that voted Republican, inferred via IP-based county-level location and county vote shares, applied to the top 100 news domains.",
+    "A short-URL versus long-URL referrer heuristic to classify each article view into one of four discovery channels: direct, aggregator (Google News), social (Facebook, Twitter, webmail), and search.",
+    "Hierarchical / random-effects Bayesian models (fit via marginal maximum likelihood using R's lme4 lmer function) with normal and multivariate-normal priors on latent user polarity to estimate segregation across eight subjectivity-by-channel categories while handling data sparsity.",
+    "Definition of segregation as the expected squared distance between two randomly selected users' polarity scores (reducing to 2·variance of the population polarity distribution)."
+  ],
+  "findings": [
+    "Overall segregation is estimated at 0.11, comparable to the ideological distance between NBC News and Daily Kos — a moderate level.",
+    "Most individuals are relatively centrist, with two-thirds having polarity scores between 0.41 and 0.54.",
+    "Segregation is higher for social media (0.12 descriptive, 0.17 opinion) and search (0.12 descriptive, 0.20 opinion) than for direct browsing (0.11 descriptive, 0.13 opinion); aggregators show the lowest segregation (0.07 descriptive, 0.13 opinion).",
+    "Opinion pieces show substantially higher segregation than descriptive news across all channels.",
+    "Direct browsing dominates consumption: 79 percent of descriptive news and 67 percent of opinion; opinion is only 6 percent of hard-news consumption, and directly accessed descriptive reporting is about 75–76 percent of traffic.",
+    "Only about 1 in 300 outbound clicks from Facebook lead to substantive news articles, with video/photo-sharing sites the dominant destinations.",
+    "Within-user dispersion is low (σd = 0.06); 78 percent of users get the majority of their news from a single publication and 94 percent from at most two sources.",
+    "For nearly all users, less than 20 percent (and under 5 percent for non-centrist users) of partisan articles come from the opposing side; even extreme right-leaning readers have only about 3 percent opposing exposure, their high within-user variation coming from reading varied centrist and right-leaning outlets.",
+    "The audience-based conservative-share measure correlates strongly with external benchmarks (0.81 with Pew survey data, 0.82 with Gentzkow-Shapiro, 0.77 with Bakshy et al. Facebook data)."
+  ],
+  "contributions": [
+    "Provides large-scale, behavioral (rather than self-reported or experimental) evidence on the filter bubble and echo chamber debate using actual browsing histories.",
+    "Introduces a channel-classification heuristic (short vs. long URL referrers) and a hierarchical Bayesian estimation framework to measure segregation across discovery channels despite data sparsity.",
+    "Develops and validates an audience-based, IP-location-derived measure of outlet ideological slant covering 100 news domains.",
+    "Reconciles the debate empirically by showing social/search channels simultaneously increase mean ideological distance and increase exposure to opposing views, while demonstrating the aggregate effects are modest because direct mainstream consumption dominates.",
+    "Helps explain prior findings (e.g., Gentzkow and Shapiro) that online and offline segregation are comparable, despite theoretical predictions of large online divergence."
+  ],
+  "framing": "The paper positions itself within the political communication and media economics debate over how internet technologies affect ideological segregation, engaging both the 'echo chamber'/'filter bubble' pessimists (Sunstein, Pariser) and the diversity-of-exposure optimists (Benkler). It builds on and extends the empirical measurement tradition of media slant and audience-based segregation studies (Groseclose and Milyo; Gentzkow and Shapiro).",
+  "pdf_source": "drive"
+}

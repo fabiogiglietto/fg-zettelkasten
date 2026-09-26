@@ -10,18 +10,21 @@ Reflective anniversary/position essays diagnosing the current state of social me
 
 ## Papers
 
+- [[Allcott2019-gn]]
 - [[Bak-Coleman2026-mk]]
 - [[Bastos2025-ya]]
 - [[Baym2026-tr]]
 - [[Bechmann2026-dr]]
 - [[Boyd2026-op]]
+- [[Bruns2019-nr]]
 - [[Bruns2026-yv]]
-- [[Chadwick2013-ns]]
 - [[De2026-ld]]
 - [[Dehghan2026-sy]]
 - [[Dodds2026-df]]
 - [[Fletcher2026-lv]]
 - [[Gerbaudo2026-fo]]
+- [[Gillespie2010-as]]
+- [[Gillespie2022-jx]]
 - [[Heiss2026-qv]]
 - [[Helmond2026-ll]]
 - [[Hepp2026-oi]]

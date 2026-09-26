@@ -1,0 +1,37 @@
+{
+  "abstract": "This study investigates the individual-level psychological motivations behind sharing political fake news on Twitter. Linking survey data with detailed psychological measures from over 2,300 American Twitter users to their behavioral news-sharing data and sentiment analyses of more than 500,000 news headlines, the authors test three competing accounts: ignorance, disruption, and partisan polarization. They find little support for ignorance-based explanations, mixed support for disruption, and strong support for partisan polarization—particularly out-party hatred—as the primary driver, concluding that fake news sharing follows the same partisan logic as sharing real news.",
+  "key_claims": [
+    "Fake news sharing is not primarily explained by ignorance (poor cognitive reflection, low political knowledge, or low digital literacy).",
+    "Partisan polarization, especially animus toward political opponents (negative/out-party affect), is the strongest psychological motivation behind political fake news sharing.",
+    "Fake news functions as the extreme end of a one-dimensional partisan news continuum, sharing being driven by the same goal-oriented motivations that drive real partisan news sharing.",
+    "There is a partisan asymmetry: Republicans are more likely than Democrats to share fake news, plausibly due to differences in the supply of politically useful (out-party-derogating) content rather than psychological differences.",
+    "Both accuracy-oriented and goal-oriented motivations are involved: people prioritize the political usefulness of information but prefer useful content that is true when available."
+  ],
+  "methods": [
+    "Commissioned a YouGov online survey (Dec 2018–Jan 2019) of U.S. Twitter users, yielding a final linked sample of N=2,337 after high, non-random attrition.",
+    "Linked confidential survey responses to scraped public Twitter data (2,709,052 tweets/retweets, ~70% posted after the 2016 election).",
+    "Operationalized fake news sharing at the publisher level by cross-referencing tweeted URLs against a list of 608 fake news sources (with 42 partisan-coded domains) and real news against 260 AllSides-rated publishers.",
+    "Built two headline datasets: 75,560 headlines of stories shared by participants, and ~500,000 front-page headlines scraped via Archive.org from the most-shared news sites.",
+    "Conducted sentiment analysis using the sentimentR package and custom dictionaries of prominent Republican/Democratic elites to measure headline negativity toward each party.",
+    "Measured predictors via survey batteries: CRT-2 cognitive reflection, age, factual political knowledge (ANES), digital media literacy (ignorance); trolling scale and political cynicism (disruption); partisanship (7-point ANES) and in-party/out-party affect scales (polarization).",
+    "Used logistic regression (average marginal effects) as the main model, with robustness checks including Grinberg et al.'s fine-grained fake news categories, Pennycook & Rand trustworthiness ratings, Quasi-Poisson count models, and correlation heatmaps."
+  ],
+  "findings": [
+    "News sharing is a small part of activity: only ~3% of tweets contained news links, and ~4% of news links came from fake news sources, with sharing highly concentrated (1% of panelists shared ~75% of fake news links; only 11% shared any fake news).",
+    "Older users shared more of all news types, but direct ignorance measures did not predict fake news sharing—cognitive reflection was unrelated, and higher political knowledge and digital literacy actually predicted more fake news sharing.",
+    "Apolitical trolling predicted less news sharing overall, while political cynicism predicted more sharing of both fake and real news, giving mixed support to disruption.",
+    "Partisanship and especially negative out-party affect strongly predicted fake news sharing; out-party hatred coefficients were roughly twice as large as in-party love coefficients.",
+    "Sharing of ideologically biased real news correlated strongly with sharing fake news of the same slant; partisans never shared politically incongruent fake news.",
+    "Sentiment analysis showed pro-Democratic sources portrayed Republicans negatively and vice versa; only pro-Republican fake news consistently portrayed Democrats more negatively than Republicans, matching the asymmetry in Republican fake news sharing.",
+    "The motivations underlying fake news and real news sharing were psychologically nearly identical."
+  ],
+  "contributions": [
+    "Provides one of the first behavioral tests linking rich individual-level psychological profiles to actual Twitter news-sharing behavior for a large sample.",
+    "Adjudicates among three competing psychological theories (ignorance, disruption, polarization) of fake news sharing using both individual-difference and content-based analyses.",
+    "Offers the first test distinguishing whether in-party love versus out-party hatred drives fake news sharing, finding out-party animus dominant.",
+    "Introduces a large-scale sentiment analysis of shared and front-page headlines to demonstrate a partisan news-source continuum and asymmetry in content supply.",
+    "Draws implications for interventions, suggesting fact-checking alone is unlikely to work because sharing is motivated by usefulness in attacking opponents rather than by accuracy concerns."
+  ],
+  "framing": "The paper is situated within political psychology and political communication research on affective/partisan polarization, motivated reasoning, and misinformation, drawing on the dual-motivation framework of accuracy-oriented versus goal-oriented (directional) cognition and the rumor-transmission literature. It positions fake news sharing as continuous with ordinary partisan behavior rather than as a distinct phenomenon driven by ignorance or trolling.",
+  "pdf_source": "drive"
+}

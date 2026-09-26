@@ -1,0 +1,35 @@
+{
+  "abstract": "This paper analyzes a large-scale dataset ('Condor') of URL-level Facebook engagement data—covering millions of web links shared publicly on the platform—to describe how different categories of U.S. Facebook users see and share various types of news, including low-credibility (misinformation) sources, credible sources, clickbait, and political news. Using curated lists (NewsGuard ratings, Allcott et al. domain lists) and supervised classifiers, the authors quantify both shares and views of news content across age and ideological groups. They find that fake news is shared more by older and conservative users and that patterns suggest a preference for ideologically congenial misinformation, while credible news vastly outnumbers low-credibility news overall.",
+  "key_claims": [
+    "Consumption of and exposure to low-credibility news on Facebook is relatively rare compared to credible news, though it still achieves nontrivial circulation.",
+    "Both viewing and sharing of low-credibility news show a preference for ideologically congenial (congruent) misinformation, concentrated especially among the most conservative users.",
+    "Older Americans share more links to low-credibility news domains and share disproportionately more political news, while the youngest users share relatively more clickbait.",
+    "'Fake news' is more than the simple intersection of clickbait headlines and political topics; low-credibility content is more likely to be both clickbait and political than credible content.",
+    "Large-scale platform data reveal subtle tail-end behavioral patterns that would be obscured by sampling variability in conventionally sized datasets."
+  ],
+  "methods": [
+    "Analysis of the Social Science One 'Condor' dataset of URLs shared publicly on Facebook more than 100 times worldwide (Jan 2017–July 2019), aggregated at the URL-year-month-age-gender-political-page-affinity level with differential-privacy Gaussian noise added.",
+    "Focus on 466,591 URLs first posted in 2018 by U.S. users, filtered to domains rated by NewsGuard (score >=60 = credible, below = low-quality).",
+    "Construction of three binary URL-level measures: credible vs. low-credibility (NewsGuard); political vs. non-political (supervised random forest classifier trained on 8,552 human-labeled headlines/blurbs, ~90% accuracy, F1=0.90); and clickbait vs. non-clickbait (pre-trained SVM with radial basis function kernel from Chakraborty et al. 2016).",
+    "Correction for classifier misclassification bias using the Hopkins and King (2010) method plus bootstrap resampling (100 samples per URL) to produce corrected proportion estimates and 95% confidence intervals.",
+    "Ideological slant estimated via Eady et al. (2020) media partisanship scores for credible sources and manual coder classifications (Aslett et al. 2020) for low-quality sources; user ideology inferred from Facebook's five-point political page-affinity score (-2 to 2).",
+    "Note: an updated version corrects for Facebook's inadvertent filtering that had excluded users without political page-affinity scores; revised analyses did not change identified patterns though estimates shifted slightly."
+  ],
+  "findings": [
+    "Approximately 84% of news URL shares and 89% of views came from credible news domains; roughly 15% of shares and 15% of exposures were from low-quality domains (about one in eight views of at least moderately popular news articles).",
+    "27% of news URLs shared by very conservative users were from low-quality publishers versus only 9% for very liberal users; for views, 19% (very conservative) versus 7% (very liberal).",
+    "20% of news URLs shared by users 65+ were from low-quality domains versus 11% for the second-lowest age bracket (24-35); the age gradient is strongest within the two most conservative ideological groups.",
+    "Older Americans do not view much more low-credibility news in absolute counts, but it makes up a higher proportion of their news (18% for oldest vs 8% for second-youngest), suggesting sharing differences are not simply driven by feed exposure.",
+    "Low-quality domains were more likely to be clickbait and political: 53.4% of low-quality URLs were political vs 31.3% of credible; 12.3% of low-quality domains were both political and clickbait vs 6.3% of credible.",
+    "No support that older users share more clickbait (26% for age 25-34 vs 24% for 65+), but strong support that older users share more political news (22% for age 25-34 vs 56% for 65+).",
+    "Of ~280 billion URL views by U.S. users in 2018, over 124 billion (44.5%) were from news domains; of ~2.1 billion shares, over 1 billion (48.2%) were from news domains."
+  ],
+  "contributions": [
+    "First analysis of newly available large-scale, differentially-private Facebook engagement data measuring both views (exposure) and shares of news, distinguishing viewing from sharing behavior.",
+    "Provides fine-grained descriptive evidence disaggregating news into credible/low-credibility, political, and clickbait categories across age and ideological groups.",
+    "Demonstrates a methodological 'proof of concept' for combining platform-scale URL data with supervised machine classifiers and bias-correction techniques.",
+    "Offers a descriptive empirical foundation for future research and policy debates about misinformation spread and consumption on social media."
+  ],
+  "framing": "The paper positions itself within computational social science and misinformation research, responding to the debate on 'fake news' following the 2016 U.S. election and populist victories. It emphasizes building a solid descriptive foundation—rather than causal or individual-level inference—about how people encounter, view, and share online content, and engages theoretical explanations including identity-affirming sharing, ideological congruence, digital literacy, and age-related differences.",
+  "pdf_source": "drive"
+}

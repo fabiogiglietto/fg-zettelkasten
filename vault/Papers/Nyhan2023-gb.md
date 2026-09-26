@@ -10,15 +10,11 @@ citation_count: 254
 open_access: false
 source_url: https://doi.org/10.1038/s41586-023-06297-w
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445495Z
-editorial_notices: [correction]
 ---
 
 # Like-minded sources on Facebook are prevalent but not polarizing
-
-> [!note] Corrected
-> - Correction (2023-11-01): [10.1038/s41586-023-06795-x](https://doi.org/10.1038/s41586-023-06795-x)
 
 > Nyhan, B., Settle, J., Thorson, E., Wojcieszak, M., Barberá, P., Chen, A. Y., Allcott, H., Brown, T., Crespo-Tenorio, A., Dimmery, D., Freelon, D., Gentzkow, M., González-Bailón, S., Guess, A. M., Kennedy, E., Kim, Y. M., Lazer, D., Malhotra, N., Moehler, D., Pan, J., Thomas, D. R., Tromble, R., Rivera, C. V., Wilkins, A., Xiong, B., de Jonge, C. K., Franco, A., Mason, W., Stroud, N. J., & Tucker, J. A. (2023). Like-minded sources on Facebook are prevalent but not polarizing. *Nature*, *620*, 137–144. https://doi.org/10.1038/s41586-023-06297-w
 >
@@ -26,26 +22,31 @@ editorial_notices: [correction]
 
 ## Summary
 
-This paper investigates one of the central worries about social media: that platforms trap users in "echo chambers" of politically agreeable content that in turn drive polarization. Drawing on platform-scale observational data covering the entire population of active adult US Facebook users in 2020, paired with a large-scale field experiment, the authors establish two things at once. First, that content from politically like-minded sources genuinely dominates what users encounter. Second — and against the prevailing narrative — that experimentally cutting exposure to this content produced no measurable change in political attitudes or polarization. The prevalence of the echo chamber, in other words, does not entail its causal power.
+This paper combines population-scale behavioral measurement with a large preregistered field experiment to test the popular claim that social media echo chambers drive political polarization. Using exposure data for the full population of active US adult Facebook users during the 2020 election, the authors document that a majority of content viewed comes from politically like-minded sources — though political and news content is only a small fraction of overall exposure, and extreme echo chambers are relatively uncommon. In a three-month field experiment with 23,377 consenting users, an algorithmic intervention that reduced like-minded exposure by about a third measurably reshaped feeds but produced no detectable change in any of eight preregistered attitudinal outcomes. The tightly bounded null results challenge narratives that blame like-minded exposure for polarization, suggesting instead that what users see may reflect their existing identities more than it shapes their expressed views.
 
 ## Key Contributions
 
-- Provides population-scale evidence on the actual prevalence of like-minded content exposure on a major platform, rather than relying on convenience samples.
-- Combines large-scale observational description with a randomized field experiment, moving beyond the correlational claims that have dominated the echo-chamber literature.
-- Directly challenges the widely held assumption that exposure to like-minded content causally increases political polarization.
+- First systematic, non-self-report behavioral measurement of like-minded content exposure across the entire US adult Facebook population, overcoming longstanding platform data-access limits.
+- Rare large-scale causal evidence from a real-world field experiment on an operating platform, rather than survey self-reports or brief simulations.
+- Shows that algorithmic interventions can reshape feed composition without automatically increasing cross-cutting exposure or shifting attitudes.
+- Precisely estimated null results with tight equivalence bounds, methodologically distinguishing genuine nulls from underpowered failures.
+- Provides a model of industry–academic collaboration with preregistration and academic control over analysis and publication.
 
 ## Methods
 
-- **Observational component:** Analysis of platform-scale data covering the full population of active adult US Facebook users during 2020, used to characterize how much of users' political content comes from like-minded sources.
-- **Experimental component:** A large-scale field experiment on Facebook that reduced participants' exposure to like-minded content.
-- **Outcomes:** Downstream political attitudes and polarization were measured following the intervention to assess causal effects.
+- **Descriptive component:** classified sources seen by ~231 million monthly active US adult users (Q3–Q4 2020) as like-minded, cross-cutting, or neither, using an internal Facebook ideology classifier (liberal ≤0.4, conservative ≥0.6).
+- **Experimental component:** a preregistered five-wave field experiment (24 Sept–23 Dec 2020) with 23,377 consenting users, block-randomized at equal probability. The treatment downranked *all* content — from friends, Pages, and groups — predicted to match the participant's political leaning, using the strongest demotion that would not empty feeds.
+- Combined on-platform behavioral exposure/engagement data with survey outcomes; analysis via OLS with HC2 standard errors, lasso-selected covariates, survey weights, FDR adjustment, and equivalence-bounds tests. Fieldwork by NORC as part of the 2020 Facebook and Instagram Election Study; academics retained final analytic and publication control.
 
 ## Findings
 
-- Like-minded sources account for the majority of the political content users see on Facebook.
-- Experimentally reducing exposure to like-minded content did not significantly shift political attitudes or polarization.
-- The high observational prevalence of echo-chamber-like exposure does not translate into a demonstrable causal polarizing effect.
+- The median user received 50.4% of content from like-minded sources versus 14.7% cross-cutting; civic and news content were small shares of total exposure (medians 6.9% and 6.7%).
+- Extreme echo chambers were uncommon: 20.6% of users got >75% of exposures from like-minded sources, while 23.1% got <25%.
+- The treatment cut like-minded exposure from 53.7% to 36.2% (−0.77 s.d.), but this did *not* symmetrically raise cross-cutting content — most of the gain went to content that was neither (25.6% to 35.9%).
+- The intervention incidentally reduced exposure to uncivil content, slurs, and misinformation repeat offenders.
+- Total engagement with like-minded content fell, but the conditional engagement *rate* rose — users interacted more with the reduced congenial content they still saw.
+- No measurable effects on eight preregistered attitudinal outcomes; seven of eight estimates fell within ±0.03 s.d., with effects of ±0.12 s.d. or larger confidently ruled out, and no significant heterogeneity across 272 subgroup tests.
 
 ## Connections
 
-This paper is part of the large collaborative Facebook/Instagram 2020 election research program and speaks directly to work on algorithmic curation and cross-cutting exposure such as [[Gonzalez-Bailon2023-uy]], [[Guess2023-ai]], [[Guess2023-ur]], and the earlier [[Bakshy2015-rn]] and [[Barbera2015-fw]] studies of ideological sorting on social platforms. Its null result on polarization contrasts with the mechanism proposed in [[Bail2018-fk]] and complicates broader narratives about filter bubbles found in [[Flaxman2016-lm]] and [[Del-Vicario2016-uj]], while sitting alongside affective-polarization framing from [[Iyengar2019-jj]].
+This is part of the 2020 Facebook and Instagram Election Study cluster and directly extends the algorithmic-feed intervention work in [[Guess2023-ai]] and [[Guess2023-ur]], as well as the broader description of Facebook exposure and ideological segregation in [[Gonzalez-Bailon2023-uy]] and the earlier [[Bakshy2015-rn]]. Its null findings on attitudes speak to the same tradition as [[Bail2018-fk]] (which found exposure to opposing views did not reduce polarization) and to selective-exposure and filter-bubble debates traced in [[Flaxman2016-lm]] and [[Barbera2015-fw]]; the finding that reduced like-minded exposure also cut misinformation exposure links it to [[Gonzalez-Bailon2024-rq]] and work on affective polarization such as [[Iyengar2019-jj]].

@@ -1,0 +1,35 @@
+{
+  "abstract": "This paper challenges the pessimistic view that the internet inevitably exacerbates media fragmentation and partisan selective exposure. The authors argue that social media's defining feature—social endorsements (e.g., aggregated recommendations, 'likes,' 'most emailed' rankings)—changes news consumption by shifting the selection decision from choosing a source to choosing a story recommended by a politically heterogeneous social network. Across two experiments, they show that stronger social endorsements increase the probability that people select news content and that the mere presence of endorsements reduces partisan selective exposure to levels indistinguishable from chance.",
+  "key_claims": [
+    "Social media fundamentally alter the context of news consumption by shifting selection from picking a habitual source to picking individual stories recommended by socially diverse contacts.",
+    "Social endorsement cues act as more powerful decision heuristics than partisan source cues because they convey more decision-relevant information about a story's social value and utility.",
+    "The presence of social endorsements negates (or strongly dilutes) the effect of partisan source cues on news selection.",
+    "Because online social networks are more politically heterogeneous than people assume, socialized news consumption should increase exposure to cross-cutting, counterattitudinal information.",
+    "No prior social science study had directly compared the relative influence of social cues versus source cues, and the finding that source cues are disregarded in the presence of social cues has broader implications for theories of evaluation and persuasion."
+  ],
+  "methods": [
+    "Two randomized experiments using custom-built web applications designed to mimic social media / news aggregator interfaces, replicating and extending Iyengar and Hahn (2009).",
+    "Study 1: N = 739 recruited via Amazon Mechanical Turk (a nationally more diverse sample than college pools); participants browsed articles across four categories (World News, Business, Sports, Entertainment) pulled in real time from RSS feeds, selecting one per category.",
+    "Study 1 used a three-condition between-subjects design: partisan-label-only, social-endorsement-only, and combined partisan-plus-social conditions; source labels included partisan brands (Fox for right, MSNBC for left) and non-partisan sources (USA Today, Reuters); endorsements were manipulated as 'low' (0–1,000 recommends) versus 'high' (>10,000 recommends).",
+    "Study 2: within-subjects design with N = 141 undergraduates at a West Coast university; a richer interactive interface with 80 stories harvested daily from NYT, WSJ, Fox, and CNN (labeled MSNBC), a 15-minute countdown timer, and required interest ratings; social cues drawn from real-world Facebook 'like' counts and 'most emailed' rankings.",
+    "Analysis: mixed multinomial (conditional) logit models based on McFadden (1974) for the unordered choice in Study 1, and mixed logistic regression with random participant intercepts in Study 2, alongside t-tests and chi-square comparisons of selection rates against chance; estimation via the R 'mlogit' package.",
+    "A manipulation check with 75 participants confirmed that source ideology was perceived as intended (MSNBC and NYT rated left; WSJ and Fox rated right)."
+  ],
+  "findings": [
+    "In the partisan-label-only condition, evidence of political selectivity appeared: Republicans selected Fox News at a significantly higher rate than Democrats (M=0.38 vs 0.21), and Democrats selected MSNBC more than Republicans (M=0.30 vs 0.20), supporting H1.",
+    "When social endorsements were present, selection rates for Republicans and Democrats became nearly identical, reducing partisan selectivity to levels indistinguishable from chance (supporting H3 and H4).",
+    "Partisans were more than twice as likely as chance to select strongly endorsed articles from ideologically dissonant sources, showing endorsements draw people toward counterattitudinal content.",
+    "The effect of strong social endorsements was robust and not diluted by the presence of partisan cues; effects were, if anything, slightly stronger when both cue types were present.",
+    "Republicans were more likely than Democrats to use the high social cue when selecting articles, suggesting selection processes differ by partisanship (possibly linked to conformity tendencies).",
+    "Study 2 replicated the endorsement effect in a realistic browsing environment: participants selected endorsed stories more than non-endorsed ones (M=0.141 vs 0.129), while showing scant evidence of partisan source selectivity."
+  ],
+  "contributions": [
+    "Provides experimental evidence that recasts the internet's role in polarization, showing social media can reduce rather than amplify partisan selective exposure.",
+    "Extends models of news selectivity (building on Sears & Freedman's information-utility framework) by conceptualizing social endorsements as heuristic cues that trigger the bandwagon heuristic and signal social utility.",
+    "Delivers what the authors describe as the first direct social-science comparison of the relative effects of social cues versus source cues on selection.",
+    "Offers implications for agenda-setting theory, suggesting a diffusion of agenda-setting power from newsrooms to social networks reminiscent of a two-step flow of communication.",
+    "Raises design and policy concerns about filtering algorithms and 'filter bubbles' that could offset the diversifying potential of social endorsements."
+  ],
+  "framing": "The paper positions itself within the political communication literature on partisan polarization and selective exposure, engaging directly with pessimistic accounts of internet-driven media fragmentation (Sunstein, Prior, Iyengar & Hahn) and drawing on bounded-rationality and heuristic-processing theory (Simon, Gigerenzer, Kahneman) to argue that social endorsements function as utility-signaling decision heuristics.",
+  "pdf_source": "drive"
+}

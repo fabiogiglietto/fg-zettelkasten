@@ -1,0 +1,39 @@
+{
+  "abstract": "This paper studies political astroturfing—centrally coordinated disinformation campaigns whose participants pose as ordinary independent citizens—using the 2012 South Korean presidential election as a rare case with ground-truth data. Court proceedings against the National Intelligence Service (NIS) revealed a list of 1,008 Twitter accounts controlled by NIS agents to support conservative candidate Geun-hye Park. The authors show that traces of coordination (rather than individual bot-like characteristics) best distinguish these accounts, develop a detection method exploiting these patterns to identify additional suspect accounts, and find that despite substantial resources the campaign had limited measurable impact on Twitter discourse.",
+  "key_claims": [
+    "Political astroturfing is a form of disinformation because it deceives audiences about the identity and independence of participants, even when the content spread is factually truthful.",
+    "The dominant research focus on automated accounts (social bots) is conceptually mismatched with astroturfing: not all bots are astroturfers and not all astroturfers are bots, since campaigns are often run partially by humans ('cyborgs').",
+    "Coordination patterns among managed accounts are a stronger and harder-to-hide signal of a disinformation campaign than individual 'bot-like' behavior, because campaigns are by definition exercises in coordinated messaging.",
+    "Principal-agent problems inherent to any coordinated campaign (agent shirking, satisficing, direct supervision) leave near-universal detectable behavioral traces and also limit campaign effectiveness.",
+    "Even a well-resourced, professionalized, human-staffed campaign like the NIS operation had only a modest impact on Twitter, suggesting successful disinformation may be harder than commonly assumed and dependent on a larger complicit media ecosystem."
+  ],
+  "methods": [
+    "Case study of the South Korean NIS disinformation campaign during the 2012 presidential election, using a list of 1,008 account names (716 unique accounts) published in court proceedings as independent ground truth.",
+    "Analysis of Twitter data from the Social Media and Democracy (SMAD) research group archive at UW-Madison: a 10% Gardenhose stream, June 1–December 31, 2012, using 75 million Korean-language ('ko') tweets; 702 of the known NIS accounts appear in the data posting ~195,000 tweets.",
+    "Application of principal-agent theory to derive expectations about offline and online behavioral patterns of coordinated campaigns versus organic grassroots movements.",
+    "Construction and analysis of three message-coordination networks: retweet networks (accounts retweeting each other), co-tweet networks (same non-retweet message within one minute), and co-retweet networks (same retweet within a short window).",
+    "Analysis of temporal activity patterns (hour of day, weekday, day across the period) and Twitter User IDs to infer account creation timing.",
+    "A relational detection strategy: iterative threshold-based identification via retweet networks (50% NIS-retweet threshold), plus identification from the largest components of co-tweet and co-retweet networks, followed by manual inspection.",
+    "Validation using current account status (active/inactive/suspended/deactivated), activity patterns, and content analysis (keyword frequencies with Kendall's rank correlation, most-retweeted accounts, and temporal keyword trends) against random-user, political-keyword, and opinion-leader baselines.",
+    "Impact assessment using Twitter influence metrics: followers, @-mentions received, and retweets received, comparing NIS, suspect, regular, and opinion-leader accounts."
+  ],
+  "findings": [
+    "NIS accounts tweeted predominantly during regular office hours and weekdays, dropped sharply in activity on weekends, and ceased activity abruptly after the campaign was exposed on December 11, 2012—patterns opposite to those of regular users.",
+    "Message coordination was pervasive: 48% of NIS tweets were retweets (often of fellow NIS accounts); ~45,000 identical non-retweet tweets were co-tweeted by different accounts, over half in the same second; and only 17% of retweets were unique, with co-retweeting used by almost every NIS agent (725 accounts).",
+    "Network structures reflected the division of labor among specific agents, with cohesive clusters and separate components corresponding to individual agents, and much of the campaign's traffic circulated within its own network.",
+    "The detection method identified 834 unique additional suspect accounts (via ~204 from retweet, plus co-tweet and co-retweet networks), which shared NIS temporal patterns, similar account-creation times/IDs, and content.",
+    "Suspect accounts showed strong validation signals: less than 10% remained active versus 40% of a random sample, with 96.5% of known NIS accounts and up to 96% of retweet-based suspects deactivated or suspended.",
+    "Content analysis showed NIS and suspect accounts were significantly more political, focused heavily on hardline North Korea keywords (strongly correlated with each other at τ≈0.61–0.66), negatively correlated with regular users and opinion leaders, and predominantly retweeted right-wing pundits while ignoring popular liberal accounts.",
+    "Despite mutually inflated follower counts (~1,800 each, above the regular-user mean of 431), NIS accounts received fewer @-mentions than ordinary users and, though retweeted more on average, garnered a negligible share of all retweets—about 40% of which came from within the campaign itself.",
+    "The campaign showed no evidence of boosting sympathetic accounts or shifting the broader agenda, indicating limited overall impact on Twitter discourse."
+  ],
+  "contributions": [
+    "Provides an in-depth empirical characterization of one of the earliest confirmed cases of coordinated online political disinformation using offline ground-truth data linking specific accounts to instigators.",
+    "Introduces a theoretically grounded, relational detection method for astroturfing based on coordination patterns (retweet, co-tweet, co-retweet networks) that is transferable because principal-agent problems make coordination traces hard to hide.",
+    "Reframes the study of disinformation away from bot detection toward group-level coordination, and broadens the concept of disinformation to include deception about the coordinated origin of otherwise-truthful content.",
+    "Empirically measures the influence of an astroturfing campaign using multiple influence metrics rather than anecdotes, showing limited impact even under best-case conditions.",
+    "Highlights a policy/data-access problem: platform deletion of implicated accounts hampers ex post research on disinformation."
+  ],
+  "framing": "The paper positions itself within the scholarship on political disinformation, computational propaganda, and social bot detection, drawing on Wardle and Derakhshan's 'information disorder' typology and studies of the Russian and Chinese state campaigns. It distinctively grounds disinformation detection in social-science theory by applying the principal-agent framework from economics and political science to explain and detect coordinated campaigns.",
+  "pdf_source": "drive"
+}

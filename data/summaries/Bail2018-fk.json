@@ -1,0 +1,33 @@
+{
+  "abstract": "This paper reports a field experiment testing whether exposing social media users to opposing political views reduces or increases political polarization. Democrats and Republicans who use Twitter at least three times per week were paid to follow a bot that retweeted messages from elected officials, opinion leaders, media, and nonprofits of the opposing ideology for one month. Rather than fostering moderation, exposure to opposing views produced backfire effects: Republicans became substantially more conservative, while Democrats showed a slight (non-significant) shift toward more liberal attitudes.",
+  "key_claims": [
+    "Exposure to opposing political views on social media can increase rather than decrease political polarization.",
+    "Backfire effects from cross-partisan exposure are asymmetric, occurring significantly among Republicans but not among Democrats.",
+    "The optimistic assumption that intergroup contact via social media reduces polarization is not supported in this online elite-exposure context.",
+    "Attempts to bridge partisan divides by exposing people to opposing views online may be ineffective or counterproductive, especially interventions initiated by liberals."
+  ],
+  "methods": [
+    "A preregistered field experiment run separately for Democrats and Republicans who visit Twitter at least three times weekly, recruited through a professional survey firm (1,652 pretreatment respondents: 901 Democrats, 751 Republicans).",
+    "Block randomization stratified by attachment to political party, interest in current events, and frequency of Twitter use, using an 'ostensibly unrelated' survey design.",
+    "Treatment respondents were paid $11 to follow a Twitter bot that retweeted 24 messages per day for one month from opposing-ideology accounts.",
+    "Bots retweeted messages sampled from 4,176 political accounts identified via network sampling and scored on a liberal/conservative dimension using correspondence analysis of following patterns (based on 563 elected officials/candidates and accounts they follow).",
+    "Political ideology measured with a 10-item, seven-point policy attitude scale (alpha = .91) administered pre- and posttreatment.",
+    "Treatment compliance monitored through weekly incentivized surveys (up to $18) asking about tweet content and identification of a daily animal picture; three compliance tiers defined (minimally, partially, fully compliant).",
+    "Analysis used multivariate models predicting posttreatment ideology controlling for pretreatment score plus 12 covariates, reporting Intent-to-Treat (ITT) and Complier Average Causal Effects (CACE)."
+  ],
+  "findings": [
+    "Treated Republicans became significantly more conservative posttreatment; ITT = 0.12 (p = 0.008) on the seven-point scale, rising with compliance level.",
+    "Fully compliant Republicans shifted 0.60 points more conservative (CACE, p < 0.01), corresponding to increases in conservatism between roughly 0.11 and 0.59 standard deviations.",
+    "Treated Democrats exhibited slightly more liberal attitudes that increased with compliance, but none of these effects were statistically significant.",
+    "Compliance was moderate: 64.9% of Democrats and 57.2% of Republicans accepted the bot invitation; ~62% answered all weekly content questions and 50.2% identified the daily animal picture.",
+    "Supplementary analyses argue the results are not driven by Hawthorne effects, partisan learning, message-extremity variation, or age-based social media differences."
+  ],
+  "contributions": [
+    "Provides experimental, real-world evidence of asymmetric partisan backfire effects from prolonged cross-partisan exposure on social media.",
+    "Advances computational social science methodology by combining survey research, bot technology, and digital trace data with techniques for measuring treatment compliance and verifying survey responses behaviorally.",
+    "Introduces a bot-based intervention that disrupts selective exposure in a naturalistic setting rather than a one-shot survey experiment.",
+    "Offers practical caution for efforts to reduce online political polarization, indicating exposure-based interventions may backfire."
+  ],
+  "framing": "The study positions itself within interdisciplinary debates on political polarization, echo chambers, and selective exposure, testing intergroup contact theory against theories of motivated reasoning and backfire effects. It also engages literatures on asymmetric polarization (conservatives valuing certainty/tradition) and situates itself within the emerging field of computational social science.",
+  "pdf_source": "drive"
+}

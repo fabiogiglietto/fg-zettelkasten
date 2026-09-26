@@ -1,0 +1,38 @@
+{
+  "abstract": "This study measures exposure to and sharing of fake news sources on Twitter by U.S. registered voters during the 2016 presidential election season. Using a panel of Twitter accounts linked to voter registration records, the authors find that engagement with fake news was extremely concentrated among a small fraction of users who were disproportionately conservative, older, and highly politically engaged. Despite public alarm, the vast majority of political news exposure for people across the political spectrum still came from mainstream media outlets.",
+  "key_claims": [
+    "Engagement with fake news sources during the 2016 election was extremely concentrated: 1% of individuals accounted for 80% of fake news exposures, and 0.1% accounted for nearly 80% of fake news shares.",
+    "Individuals most likely to engage with fake news were conservative-leaning, older, and highly engaged with political news.",
+    "For people across the entire political spectrum, most political news exposure still came from mainstream media outlets, contradicting strong echo-chamber and fake-news-dominance narratives.",
+    "Fake news sources formed a distinct, densely connected cluster (mostly on the extreme right) sharing overlapping audiences, but this cluster was a niche interest even for avid consumers.",
+    "Congruency (belief alignment) rather than veracity was the dominant factor in political news sharing decisions, suggesting fake news was not inherently more viral than real news."
+  ],
+  "methods": [
+    "Constructed a panel of 16,442 Twitter accounts active during the 2016 election season (1 August to 6 December 2016) by linking U.S. voter registration records to Twitter accounts.",
+    "Validated panel representativeness against a Pew Research Center representative sample of U.S. voters on Twitter (age, gender, race, political affiliation).",
+    "Defined fake news at the publisher level (following Lazer et al.), classifying 171 'black', 64 'red', and 65 'orange' sources based on fact-checker lists and manual annotation of Snopes-flagged sites.",
+    "Estimated each panel member's news feed ('exposures') by sampling tweets from accounts they followed, restricting analysis to political tweets containing external URLs.",
+    "Assigned individuals to five political affinity subgroups (extreme left, left, center, right, extreme right) plus an apolitical group based on feed similarity to registered Democrats/Republicans.",
+    "Used binomial and logistic regression models fit separately by political affinity group to identify predictors of exposure and sharing; constructed a coexposure network using a statistically significant edge technique (Dianati) and ensemble clustering; ran a simulation capping political URLs at 20 per day."
+  ],
+  "findings": [
+    "5.0% of aggregate exposures to political URLs and 6.7% of shared political URLs came from fake news sources, increasing during the final campaign weeks.",
+    "The top seven fake news sources (all red and orange) accounted for more than 50% of fake news exposures; content was concentrated among few websites and few panel members.",
+    "The median panel member (excluding outliers) had about 204 potential fake news exposures in the last campaign month (roughly ~10 actually seen), with fake news comprising only 1.18% of political exposures.",
+    "People with 5%+ fake news exposures made up 2.5% of the left but 16.3% of the right; 21% of the extreme right shared fake news versus under 5% on the left or center.",
+    "A 10-fold increase in political exposures was associated with a doubling of the proportion of fake news exposures (superlinear selective exposure); age was positively associated with fake news engagement across all groups.",
+    "Congruent sources were shared at higher rates than incongruent ones, with no significant difference in sharing rates between fake and nonfake congruent sources.",
+    "'Supersharers' and 'superconsumers' of fake news dwarfed typical users (median supersharer tweeted 71 times/day vs 0.1 for typical members) and were likely partially automated 'cyborg' accounts.",
+    "The coexposure network revealed four groups; mainstream Group 1 (18.4% of sites) produced 72-86% of exposures, while conservative Group 2 (68.8% fake news sources) generated the majority of non-mainstream exposure only for the extreme right.",
+    "A simulation capping political URLs at 20 per day would cut fake news content by 32% while affecting only 1% of non-supersharers' content."
+  ],
+  "contributions": [
+    "Provides one of the first direct measurements of ordinary citizens' exposure to and sharing of fake news on social media, linked to real voter identities rather than relying on aggregate platform data or surveys.",
+    "Documents the extreme concentration of fake news engagement among tiny subpopulations, reframing the scale of the problem.",
+    "Identifies demographic and behavioral predictors (conservatism, age, political engagement) of fake news engagement using individual-level regression modeling.",
+    "Maps the positioning of fake news sources within the broader media ecosystem via a coexposure network, showing they form an insulated right-leaning cluster.",
+    "Proposes concrete, targeted platform interventions (demoting frequent posters, capping posts, fact-checker partnerships) supported by simulation evidence."
+  ],
+  "framing": "The paper situates itself within political science and computational social science debates about misinformation, echo chambers, and the health of democratic discourse, extending prior survey and browsing-data studies (Allcott & Gentzkow; Guess et al.) to directly observed social media behavior. It engages the assumption that a well-functioning democracy depends on a factually informed citizenry, testing alarmist claims about fake news dominance against measured exposure among registered voters on Twitter.",
+  "pdf_source": "drive"
+}

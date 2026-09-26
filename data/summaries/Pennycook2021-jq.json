@@ -1,0 +1,34 @@
+{
+  "abstract": "This review synthesizes psychological research on why people believe and share false or misleading news online. Contrary to the popular narrative that partisanship and politically motivated reasoning are the primary drivers of susceptibility to fake news, the authors argue that poor truth discernment is better explained by a lack of careful reasoning, insufficient relevant knowledge, and reliance on heuristics such as familiarity. They further document a substantial disconnect between what people believe and what they share, largely attributable to inattention rather than deliberate misinformation sharing, and review interventions—especially accuracy nudges and crowdsourced veracity ratings—that can mitigate the problem.",
+  "key_claims": [
+    "Political motivation and partisanship are not the primary cause of failing to discern true from false news; people are actually somewhat better at truth discernment for politically concordant than discordant news, even though they believe concordant news more overall.",
+    "It is essential to distinguish 'truth discernment' (belief in true news minus belief in false news, akin to signal-detection sensitivity/d') from 'overall belief' (bias); factors that change overall belief need not affect discernment.",
+    "Poor truth discernment is linked to a lack of reflective, analytic reasoning and to insufficient or inaccurate prior knowledge, supporting a 'classical reasoning' account over a 'motivated System 2 reasoning' account.",
+    "There is a large dissociation between accuracy judgments and sharing intentions, driven mostly by inattention rather than by confusion or purposeful sharing of misinformation.",
+    "Scalable interventions that shift attention toward accuracy, along with crowdsourced layperson ratings, can improve the quality of information people believe and share."
+  ],
+  "methods": [
+    "Narrative synthesis and literature review of cognitive, social, and political psychology research on online misinformation.",
+    "Reanalysis and pooling of data from 14 studies in which US participants rated the accuracy of real true/false, Democrat- and Republican-consistent news headlines, comparing high vs. low Cognitive Reflection Test scorers and politically concordant vs. discordant headlines (Figure 1).",
+    "Reference to survey experiments comparing accuracy-rating conditions with sharing-intention conditions (e.g., Pennycook et al. 2021), and to a large-scale Twitter field experiment sending accuracy-prompt messages to users who had shared misinformation links (Figure 2).",
+    "Reference to crowdsourcing studies comparing layperson trust/accuracy ratings of news publishers and headlines against professional fact-checker and journalist (NewsGuard) ratings (Figure 3).",
+    "Framing draws on signal detection theory and dual-process (System 1/System 2) models of reasoning, using instruments such as the Cognitive Reflection Test and Berlin Numeracy Test."
+  ],
+  "findings": [
+    "The effect of a headline's actual veracity on belief is typically much larger than the effect of political concordance—'politics does not trump truth.'",
+    "More reflective individuals (higher Cognitive Reflection Test scores) show better truth discernment regardless of political concordance; in the pooled 14-study data the reasoning-based difference in discernment was roughly twice the partisanship-based difference.",
+    "Experimentally increasing deliberation reduces belief in false (but not true) news without increasing polarization; overconfidence and reliance on emotion increase susceptibility to false news.",
+    "Familiarity (illusory truth effect), source/elite credibility cues, social feedback (e.g., 'likes'), and emotionally evocative content act as heuristics that increase belief in false claims.",
+    "Sharing intentions are largely insensitive to veracity; in one study sharing intentions for false headlines were 91% higher than accuracy assessments, and prompting accuracy before sharing reduced false-news sharing by 51%, implicating inattention.",
+    "Automated detection and professional fact-checking face limits (subjectivity, non-stationarity, non-scalability, implied-truth effects), whereas accuracy prompts, digital literacy tips, inoculation/prebunking, and crowdsourced ratings show promise; layperson crowd ratings correlate highly with professional fact-checkers (e.g., r≈0.90 for publisher trust, r≈0.79–0.74 across studies)."
+  ],
+  "contributions": [
+    "Reframes the psychology of fake news away from a politically-motivated-reasoning narrative toward an inattention-and-reasoning account.",
+    "Clarifies the conceptual distinction between truth discernment and overall belief and its implications for interpreting partisan effects.",
+    "Identifies the belief–sharing dissociation and adjudicates among confusion-based, preference-based, and inattention-based explanations, favoring inattention.",
+    "Consolidates evidence on the effectiveness and limitations of anti-misinformation interventions, highlighting scalable accuracy nudges and crowdsourced veracity ratings.",
+    "Positions online misinformation as an ecologically valid testing ground uniting lab experiments, large-scale social media data, and field experiments, and lays out outstanding research questions."
+  ],
+  "framing": "The paper situates itself within cognitive science and dual-process theories of reasoning, in explicit dialogue with (and critique of) political-psychology accounts of identity-protective and politically motivated cognition. It uses a signal-detection framework and judgment-and-decision-making heuristics literature to reinterpret misinformation susceptibility, bridging cognitive, social, and political psychology with applied questions about social media platform design and intervention.",
+  "pdf_source": "drive"
+}

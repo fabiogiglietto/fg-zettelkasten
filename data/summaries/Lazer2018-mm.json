@@ -1,0 +1,33 @@
+{
+  "abstract": "This Policy Forum article argues that the rise of politically oriented fake news reflects the erosion of long-standing institutional safeguards against misinformation in the internet age. The authors define fake news as fabricated information that mimics news media content in form but not in organizational process or intent, and review social and computer science research on why people believe it and how it spreads. They identify major gaps in scientific knowledge about its prevalence and impact, evaluate potential interventions, and call for interdisciplinary research and collaboration between platforms and academics to redesign the 21st-century information ecosystem.",
+  "key_claims": [
+    "Fake news is best defined by the intent and processes of its publishers—fabricated content mimicking news form but lacking editorial norms—rather than by the accuracy of individual stories.",
+    "The internet lowered barriers to entry and undermined the business models and trust that once sustained journalistic norms of objectivity, creating conditions in which fake news can reach mass audiences.",
+    "Increasing geographic, attitudinal, and affective political polarization has produced homogeneous social networks that make people more receptive to ideologically compatible falsehoods.",
+    "There is surprisingly little rigorous scientific evidence about the prevalence of fake news and almost none about its medium-to-long-term effects on political behavior.",
+    "Both individual-level interventions (fact checking, media literacy education) and structural interventions (platform algorithm changes, regulation) have uncertain or mixed evidence of effectiveness.",
+    "Internet platforms have an ethical and social responsibility to share unique data and collaborate with independent researchers to build a science of fake news."
+  ],
+  "methods": [
+    "Interdisciplinary synthesis and review of existing social science and computer science literature on misinformation, disinformation, and fake news.",
+    "Analysis of cited empirical studies, including estimates of fake-news exposure before the 2016 U.S. election, studies of false-information diffusion on Twitter, and bot-prevalence estimates.",
+    "Conceptual definition of fake news and related information disorders, and a taxonomy of potential interventions.",
+    "Assessment of platform practices, regulatory options, and legal frameworks (e.g., the 1996 Communications Decency Act, the European 'right to be forgotten')."
+  ],
+  "findings": [
+    "One study estimated the average American encountered between one and three known fake-news stories in the month before the 2016 election, likely a conservative estimate.",
+    "False information on Twitter is retweeted by more people and spreads faster than true information, especially on political topics.",
+    "Estimates suggest between 9 and 15% of active Twitter accounts are bots, and Facebook estimated as many as 60 million bots on its platform; bots substantially amplified political content in the 2016 U.S. campaign and were later used in the 2017 French election.",
+    "General trust in mass media fell to historic lows in 2016, with a large partisan gap (51% of Democrats versus 14% of Republicans expressing trust).",
+    "The scientific support for fact checking is at best mixed; cognitive tendencies (selective exposure, confirmation bias, desirability bias, familiarity/fluency effects) can make corrections ineffective or even counterproductive.",
+    "Evidence on repeating misinformation during correction is contradictory, and there is no comprehensive data-collection system to track the evolving fake-news ecosystem."
+  ],
+  "contributions": [
+    "Provides a scientific definition of fake news distinguishing it from misinformation and disinformation and grounding it in publisher intent and process.",
+    "Situates the fake-news problem within a historical account of the rise and decline of journalistic norms and within trends of political polarization.",
+    "Organizes potential interventions into two categories—empowering individuals and structural/platform changes—and critically assesses the evidence and risks of each.",
+    "Issues an agenda-setting call for interdisciplinary research and platform-academic collaboration, and articulates the fundamental question of how to build an information culture that values truth."
+  ],
+  "framing": "The article positions itself at the intersection of communication studies, political science, psychology, and computer science, framing fake news as both a social-institutional problem (the erosion of journalistic gatekeeping and rising polarization) and a technical one (platform algorithms and bots). It advances a normative call for a multidisciplinary 'science of fake news' and for redesigning the digital information ecosystem.",
+  "pdf_source": "drive"
+}

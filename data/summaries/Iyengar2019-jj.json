@@ -1,0 +1,33 @@
+{
+  "abstract": "This review article synthesizes research on affective polarization in the United States—the growing tendency of Democrats and Republicans to dislike, distrust, and avoid members of the opposing party. The authors argue that affective polarization is rooted in partisanship functioning as a powerful social identity that divides the world into a liked in-group and disliked out-group, and that it is distinct from ideological (issue-based) polarization. They trace measurement approaches, causes, consequences that extend well beyond politics into economic and social life, and strategies to mitigate partisan animus, closing with an agenda for future research.",
+  "key_claims": [
+    "Affective polarization—mutual animosity between Democrats and Republicans—has increased substantially in the mass public in recent decades, driven mainly by rising out-party hostility rather than increased in-party affection.",
+    "Affective polarization is an outgrowth of partisanship as a social identity and is theoretically and empirically distinct from ideological/issue-based polarization; extreme issue positions are not a necessary condition for it.",
+    "Partisan animus spills over into nonpolitical domains, shaping social relationships, marriage and dating, hiring, consumer and economic behavior, and even professional and medical decisions.",
+    "Several contemporary factors intensify partisan animus, including partisan sorting, alignment of partisan identity with race and religion, partisan media, political campaigns, and media coverage of polarization.",
+    "Interventions that correct misperceptions about party composition or make superordinate identities (e.g., American identity) salient can reduce affective polarization, though effects may be fragile and hard to generalize outside controlled settings."
+  ],
+  "methods": [
+    "Narrative review and synthesis of a broad interdisciplinary literature spanning political science and social psychology.",
+    "Discussion of three measurement approaches: survey self-reports (notably the ANES feeling thermometer, trait ratings, social distance/marriage items), implicit measures (partisan Implicit Association Test), and behavioral measures (trust and dictator economic games, scholarship-selection and hiring experiments).",
+    "Review of longitudinal survey/time-series data (ANES from ~1978 to 2016, Pew data), experimental and audit studies, natural and field experiments, online dating website data, voter files, and consumer/tax-receipt behavioral data drawn from cited studies."
+  ],
+  "findings": [
+    "ANES feeling thermometer data show affective polarization rose from 22.64 degrees in 1978 to 40.87 degrees in 2016, driven by declining out-party warmth, though it decreased slightly between 2012 and 2016.",
+    "Opposition to a child marrying across party lines rose from about 4-5% in 1960 to roughly one-third of Democrats and one-half of Republicans by 2010.",
+    "Implicit partisan bias is widespread (about 70% show in-party favoritism) and larger than implicit racial bias (D-score difference of 0.50 for party versus 0.18 for race).",
+    "In a scholarship experiment, roughly 80% of partisans chose the co-partisan applicant even when the out-party candidate had higher qualifications, while racial bias was minimal.",
+    "Economic games and field studies show co-partisans receive financial bonuses and favorable treatment; partisan matching increased dating message exchange by 9.5%, and about 80.5% of married couples share party identification.",
+    "Sorting accounts for only about 5% of the variance in affective polarization, and animus increased comparably among ideologically consistent and inconsistent partisans, indicating affect is largely distinct from ideology.",
+    "Correcting misperceptions about party composition (people overestimate stereotypical group prevalence by ~342%) and priming common American identity both reduce out-party animus."
+  ],
+  "contributions": [
+    "Provides an integrative framework grounding affective polarization in social identity theory and distinguishing it from ideological polarization.",
+    "Systematically catalogs measurement techniques and their respective strengths and limitations (survey, implicit, and behavioral).",
+    "Assembles evidence on the nonpolitical spillover of partisan animus into social, economic, and professional life as a distinctive and consequential feature.",
+    "Reviews and evaluates candidate causes and mitigation strategies, clarifying which claims (e.g., echo chambers, residential sorting) remain empirically contested.",
+    "Sets out a detailed future research agenda, including mechanisms, the in-group-love versus out-group-hate distinction, the causal role of sorting, links to elite/mass ideological polarization, and connections to comparative politics."
+  ],
+  "framing": "The paper positions itself within American politics and political behavior scholarship, reframing polarization through the lens of social identity theory from social psychology. It deliberately sets affective polarization apart from the long-standing debate over ideological/issue-based polarization (Fiorina versus Abramowitz), arguing that partisan identity and affect—not policy disagreement—are the crux of contemporary partisan division.",
+  "pdf_source": "drive"
+}

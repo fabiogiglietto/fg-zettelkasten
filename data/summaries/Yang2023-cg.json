@@ -1,0 +1,40 @@
+{
+  "abstract": "This paper presents the first large-scale study of image-based political misinformation on Facebook, analyzing 13,723,654 posts from 14,532 pages and 11,454 public groups collected from August through October 2020. Using perceptual hashing and computer vision, the authors estimate that roughly 20-23% of sampled political images contained misinformation, with right-leaning images being 5-8 times more likely to be misleading than left-leaning ones. They find little evidence that misleading images generate higher engagement, and argue that prior link-based misinformation research has substantially underestimated the problem by ignoring image posts.",
+  "key_claims": [
+    "Image-based misinformation is widespread on Facebook, with more than 20% of U.S. political image posts containing misinformation, contradicting prior claims that platform misinformation is minimal or declining.",
+    "Prior conclusions that misinformation is small or declining may be an artifact of methodology that operationalizes misinformation solely as links to noncredible domains, ignoring image posts, which are the most common post type (~40% of political posts).",
+    "There is enormous partisan asymmetry: right-leaning images are 5-8 times more likely to be misleading than left-leaning images.",
+    "Contrary to some prior findings, misleading images do not generate significantly higher engagement than nonmisleading images once partisanship and audience size are controlled.",
+    "Image posts may be the single highest-volume source of political misinformation on Facebook, as image posts (13.7M) outnumbered link posts (9.4M) over the study period.",
+    "New computer-assisted methods can scale to millions of images and help address longstanding calls for systematic study of visual political communication."
+  ],
+  "methods": [
+    "Collection of 13,723,654 image posts from 14,532 pages and 11,454 public groups (Aug 1-Oct 31, 2020) via CrowdTangle and licensed data vendors, constructed as a near platform-complete megalist of top U.S. political pages/groups; no scraping.",
+    "Use of AWS Rekognition facial recognition to identify political figures and build a top-100 U.S. political figures list, yielding a sub-corpus of 572,857 posts containing political figures.",
+    "Perceptual image hashing (pHash) to detect duplicate/reposted images and identify most widely shared images.",
+    "Manual coding of four samples: an Overall Sample (1,000 random political images), a Public Figures Sample (1,000 images), and the top 300 most-reposted images each from groups and pages; misinformation defined by contemporaneous expert consensus, informed by reviewing 255 Snopes/FactCheck.org articles.",
+    "Intercoder reliability testing (Krippendorff's alpha 0.78 for misinformation; 0.73 for partisanship) and reverse image search to check prior fact-checks.",
+    "Power-law fitting (Clauset et al. method in R) to estimate coverage/missingness, difference-of-means tests, LOWESS regression, and negative binomial regression models controlling for partisanship and page followers/group members.",
+    "A literature review of 135 misinformation articles across seven communication journals (2017-2021) to document the field's neglect of images."
+  ],
+  "findings": [
+    "In the Overall Sample, 226 of 1,000 images contained misinformation (20.1%-25.1% at 95% CI); in the Public Figures Sample, 196 of 1,000 (17.5%-21.6%).",
+    "Partisan asymmetry: 39% of right-leaning versus 5% of left-leaning images contained misinformation in the Overall Sample; 26-34% versus 3-9% in the Public Figures Sample.",
+    "Among top-reposted images, ~30% (groups) and ~26% (pages) of U.S. political images were misleading, again heavily concentrated on the right.",
+    "Four common types of misleading images: altered images, memes with misleading text, unaltered images with false captions/labels, and screenshots of misleading social media posts (often tweets).",
+    "Four recurring misinformation themes: depicting Joe Biden as senile, attacking Hunter Biden, suggesting Democrats endorsed violence, and promoting the QAnon conspiracy.",
+    "No significant relationship between misinformation and engagement: difference-of-means tests yielded near-zero T-statistics (p=.88, .92) and negative binomial regressions showed no engagement boost once controls applied.",
+    "The corpus captures at least 94% of page interactions and 95% of group interactions, given the power-law concentration of engagement.",
+    "Only 9 of 135 reviewed communication journal articles focused on images."
+  ],
+  "contributions": [
+    "Provides the first valid, platform-scale estimates of the prevalence of U.S. politics-focused visual misinformation on Facebook (and on any social media platform).",
+    "Demonstrates a scalable computational methodology (perceptual hashing plus computer vision) for studying visual political communication across millions of images.",
+    "Challenges the prevailing claim that social media misinformation is minimal or declining by showing that image posts are a large, previously ignored vector.",
+    "Documents the strongly asymmetric partisan character of visual misinformation and provides evidence weakening the assumed link between misinformation and engagement.",
+    "Advances misinformation measurement by classifying content at the post level rather than by publisher domain, reducing measurement error.",
+    "Informs policy debate about social media regulation and moderation efficacy, and flags image-based identity attacks against women and racial minorities as an urgent future research priority."
+  ],
+  "framing": "The paper positions itself within social media misinformation studies and the long-neglected subfield of visual political communication, arguing that the field's textual bias (measuring misinformation via links to noncredible domains) has produced incomplete estimates. It draws on traditions from Graber, Jamieson, and Bucy/Joo on the persuasive power of political imagery while leveraging emerging computational visual analysis methods.",
+  "pdf_source": "drive"
+}

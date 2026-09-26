@@ -1,0 +1,37 @@
+{
+  "abstract": "This paper proposes a network-based framework for detecting and characterizing coordinated behavior on social media that moves beyond binary coordinated/uncoordinated classifications toward estimating the full spectrum of coordination. The authors apply their method to a dataset of 11M tweets from 1.2M users collected during the 2019 UK General Election, uncovering distinct coordinated communities and their varying patterns of coordination. They demonstrate that coordination and automation are orthogonal concepts, and that the most strongly coordinated communities were small activist and antagonist groups rather than mainstream party supporters.",
+  "key_claims": [
+    "Coordination is a complex, non-binary concept that should be measured along a continuum rather than dichotomized via fixed similarity thresholds.",
+    "Each coordinated community has its own characteristic degree of coordination, so applying a single arbitrary threshold to a whole network erases relevant patterns.",
+    "Coordination and automation (e.g., social bots) are orthogonal, largely uncorrelated concepts, so bot detection alone is insufficient for studying coordinated inauthentic behavior.",
+    "Some coordination exists in every online community, but not all coordinated groups are equally interesting or suspicious.",
+    "In the 2019 UK GE, conservatives were overall more coordinated (and more automated/suspended) than labourists, but the most strongly coordinated groups were small activist and political-antagonist communities."
+  ],
+  "methods": [
+    "Six-step network-based framework: select starting users, select a similarity measure, build a user-similarity network, filter it, perform coordination-aware community detection, and study the communities.",
+    "Collected a Twitter dataset via Streaming API (12 Nov - 12 Dec 2019) using a curated hashtag list (neutral, Labour, Conservative leaning) plus tweets and interactions from official party/leader accounts; final dataset 11,264,820 tweets from 1,179,659 users, released publicly.",
+    "Focused on 'superspreaders' (top 1% of users by retweets, 10,782 users), modeling each with a TF-IDF weighted vector of retweeted tweet IDs and computing cosine similarity between users.",
+    "Applied the Serrano et al. (2009) multiscale backbone method to retain statistically significant edges instead of a fixed-threshold filter, yielding a filtered network of 276,775 edges.",
+    "Inferred political leaning via a label propagation algorithm using the 13 seed hashtags to assign hashtag polarity scores, aggregated per user by term-frequency weighting.",
+    "Used the Louvain community detection algorithm within an iterative 'coordination-aware' procedure (Algorithm 1) that raises an edge-weight threshold step by step, re-running community detection initialized from prior results to trace evolving communities.",
+    "Characterized communities with network measures (size, density, clustering coefficient, assortativity) as a function of coordination (percentile rank of edge weights), TF-IDF hashtag clouds, word shift graphs for narrative analysis, and Botometer scores plus Twitter suspensions for automation."
+  ],
+  "findings": [
+    "Detected seven coordinated communities: CON (conservatives), LAB (labourists), TVT (tactical voting / Lib Dem / anti-Brexit neutrals), SNP (Scottish National Party), B60 (Backto60 pension activists), ASE (anti-Labour antisemitism-focused conservatives), and LCH (anti-loan-charge activists).",
+    "Network structure closely mirrored the UK political landscape: a sharply separated conservative cluster and intertwined Labour/neutral clusters, reflecting Brexit polarization and tactical voting.",
+    "Large communities (LAB, CON) contained both many weakly-coordinated users and a smaller strongly-coordinated core, while small activist groups (B60, LCH, ASE) were almost entirely strongly coordinated.",
+    "Community-specific characteristic coordination values were estimated (e.g., LCH ~0.9, ASE ~0.55, B60 ~0.8) using elbow method and network measures.",
+    "Network measures revealed divergent patterns: SNP showed negative density-coordination correlation (uncoordinated among top members), B60 showed a density spike and strong assortativity (a cohesive clique), while ASE and LAB were moderately disassortative (hub-and-spoke star structures).",
+    "Word shift graphs showed strongly-coordinated users embrace much more specific narratives (50s women's pension rights for B60, anti-loan-charge for LCH) than less-coordinated members.",
+    "Automation (Botometer) was essentially uncorrelated with coordination; LCH had somewhat higher automation, conservative clusters (CON, ASE) had more suspensions, and B60 showed decreasing suspensions suggesting authentic grassroots coordination."
+  ],
+  "contributions": [
+    "A nuanced, non-binary, network-based framework for detecting and quantifying the full extent of coordination, generalizing and extending prior approaches (notably Pacheco et al.).",
+    "Two key methodological innovations: multiscale backbone filtering (avoiding fixed thresholds) and an iterative coordination-aware community detection process.",
+    "Empirical demonstration that coordination and automation are orthogonal, cautioning against relying on bot detection to study coordinated inauthentic behavior.",
+    "Identification and interpretation of concrete coordinated communities in the 2019 UK General Election, including small activist groups often overlooked.",
+    "A publicly shared large-scale Twitter dataset for the 2019 UK General Election (11M tweets, 1.2M users)."
+  ],
+  "framing": "The paper situates itself within the study of information/influence operations (IOs) and coordinated inauthentic behavior (CIB) on social media, engaging with computational social science literature on coordination detection, astroturfing, and bot detection. It positions coordination as a complex, non-binary phenomenon (analogous to automation and inauthenticity) and argues, alongside recent work like Vargas et al., that coordination does not imply inauthenticity.",
+  "pdf_source": "drive"
+}

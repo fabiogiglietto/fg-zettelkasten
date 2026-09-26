@@ -10,7 +10,7 @@ citation_count: 1139
 open_access: false
 source_url: https://doi.org/10.1126/sciadv.aau4586
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445434Z
 ---
 
@@ -22,25 +22,31 @@ discovery_date: 2026-09-26T08:39:39.445434Z
 
 ## Summary
 
-This paper offers an empirical corrective to widespread alarm about the reach of "fake news" on social media. Using Facebook sharing behavior linked to survey respondents during the 2016 U.S. presidential campaign, the authors show that sharing fake news articles was in fact a relatively rare behavior across the population. The most striking pattern is demographic: older Americans were substantially more likely to share fake news than younger users, with age emerging as the dominant individual-level predictor. The paper thus reframes debates about misinformation, arguing that public and scholarly concern may overstate how common dissemination actually was while pinpointing where the behavior is concentrated.
+This paper offers one of the first behavioral portraits of who actually shared fake news on Facebook during the 2016 U.S. presidential campaign, moving beyond self-report to observed platform activity. By linking a three-wave YouGov panel survey to respondents' consented Facebook profile data, the authors document that sharing articles from fake news domains was a rare behavior — over 90% of respondents shared none. Where sharing did occur, it was concentrated among conservatives and, most robustly, among older Americans: users over 65 shared far more than any other group, an effect that survives controls for ideology, partisanship, education, and overall posting volume. The paper argues that age deserves to be treated not as a nuisance control but as a central explanatory factor for misinformation dissemination.
 
 ## Key Contributions
 
-- Grounds claims about fake news prevalence in behavioral data rather than anecdote or assumption.
-- Identifies age as a central individual-level correlate of fake news sharing.
-- Reframes misinformation debates by demonstrating that sharing was concentrated among a limited subset of users.
+- Provides an individual-level, trace-based (rather than self-reported) account of who actually shares fake news, overcoming self-report bias.
+- Offers a corrective to alarmist post-2016 narratives by showing fake news sharing was empirically rare.
+- Identifies the over-65 cohort as a robust, politically-independent predictor of misinformation sharing.
+- Demonstrates a reusable methodological template for linking survey data to platform behavioral traces.
+- Opens research agendas connecting digital literacy, cognitive aging, and news-feed exposure to misinformation spread.
 
 ## Methods
 
-- Analysis of individual Facebook sharing behavior linked to survey respondents during the 2016 U.S. presidential election period.
-- Examination of demographic predictors—especially age—of the propensity to share fake news content.
+The authors fielded a three-wave online panel survey (wave 1 N=3500) via YouGov with sample-matching weights, then linked respondents to their private Facebook profile data (timeline posts, external links, page likes) obtained through a consented web app — successfully matching 1191 respondents (~44% of Facebook users in the sample). Shared external links were cross-referenced against journalist- and academic-curated fake news domain lists, principally Craig Silverman's BuzzFeed-based list (reduced to 21 mostly pro-Trump domains after filtering hard-news domains), with the Allcott and Gentzkow list and others as robustness checks. Individual-level share counts were modeled with Poisson/quasi-Poisson regression (negative binomial and OLS as robustness), including sociodemographic and political predictors, supported by extensive supplementary robustness testing.
 
 ## Findings
 
-- Only a small proportion of individuals shared fake news articles on Facebook.
-- Older Americans shared fake news at substantially higher rates than younger users.
-- The low overall prevalence indicates dissemination was concentrated among a narrow segment of the user base.
+- 91.5% of respondents shared zero fake news articles; only 8.5% shared at least one.
+- Low sharing is not attributable to inactivity — 61.3% shared 100–1000 links overall.
+- Republicans shared more than Democrats (18.1% vs. 3.5% sharing at least one); independents shared about as much as Republicans.
+- Very conservative respondents shared the most (~1.0 articles on average).
+- Users over 65 shared nearly seven times as many fake news articles as the youngest group (18–29), and ~2.3 times the next-oldest group, in multivariate models.
+- The over-65 age effect is significant (P<0.01) and robust across alternative measures and controls.
+- People who share the most links overall are not the ones sharing fake news, undermining a "shares anything" explanation.
+- Applied to hard news, the same model yields varied predictors that do not include age.
 
 ## Connections
 
-This work is part of a broader empirical literature that tempers claims about the scale and impact of online misinformation by measuring actual exposure and behavior, closely aligned with [[Grinberg2019-ua]] on the concentration of fake news consumption on Twitter and [[Guess2020-rr]], [[Guess2021-ym]], and [[Guess2023-ur]] on the limited reach of untrustworthy sources. It complements aggregate assessments of misinformation prevalence such as [[Allen2020-nj]] and [[Budak2024-ef]], and connects to work on sharing dynamics like [[Vosoughi2018-at]] and interventions targeting the older, high-sharing users it identifies, as in [[Mosleh2024-op]].
+This is a foundational empirical study in the misinformation literature and connects closely to work on the prevalence and reach of fake news exposure such as [[Guess2020-rr]], [[Grinberg2019-ua]], and [[Allcott2017-yz]], as well as to research on why people share false content, including [[Pennycook2021-jq]], [[Osmundsen2021-et]], and [[Vosoughi2018-at]]. Its focus on the modest real-world footprint of fake news echoes broader efforts to right-size alarmist narratives, as in [[Allen2020-nj]] and [[Guess2021-ym]], and its account of individual-level sharing determinants relates to platform-exposure studies like [[Gonzalez-Bailon2024-rq]] and Bakshy-style feed research; among recent work, it links to studies of misinformation sharing and recalibration such as [[DeVerna2025-dl]] and [[Lyons2026-ca]].

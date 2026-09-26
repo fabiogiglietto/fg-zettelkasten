@@ -1,0 +1,35 @@
+{
+  "abstract": "This study examines who shared fake news on Facebook during the 2016 U.S. presidential campaign by linking an original panel survey with respondents' actual Facebook profile-sharing data. The authors find that sharing articles from fake news domains was a rare behavior overall, but that conservatives and, most robustly, older Americans (especially those over 65) were disproportionately likely to share such content. The age effect persists after controlling for ideology, partisanship, education, and overall posting activity, making it the paper's most notable finding.",
+  "key_claims": [
+    "Sharing of articles from fake news domains was a relatively rare activity among Facebook users during the 2016 campaign.",
+    "Conservatives, particularly the most conservative respondents, were more likely to share fake news, consistent with the largely pro-Trump orientation of 2016 fake news content.",
+    "Age is a strong and independent predictor of fake news sharing: users over 65 shared far more fake news articles than younger users, even after controlling for ideology and partisanship.",
+    "No other demographic characteristic (sex, race, education, income) has a consistent robust effect on fake news sharing.",
+    "People who share the most links overall are not the ones sharing fake news, undermining a 'shares anything' explanation."
+  ],
+  "methods": [
+    "Designed and fielded a three-wave online panel survey via YouGov during the 2016 campaign (wave 1 N=3500), with sample-matching weights applied.",
+    "Linked survey respondents to their private Facebook profile data (timeline posts, external links, page likes) obtained via a Facebook web app after respondent consent; profile data successfully linked for 1191 respondents (~44% of Facebook users in the sample).",
+    "Cross-referenced domains of shared external links against journalist- and academic-curated fake news lists — primarily Craig Silverman's BuzzFeed-based list (reduced to 21 mostly pro-Trump domains after removing hard-news domains via the Bakshy et al. supervised classifier) and, as robustness, the Allcott and Gentzkow list plus three supplementary lists.",
+    "Aggregated shares to the individual level as count outcomes and modeled determinants using Poisson/quasi-Poisson regression (with negative binomial and OLS as robustness checks), including sociodemographic and political predictors (age, race, gender, income, education, ideology, party ID, and total link-sharing volume).",
+    "Conducted extensive robustness tests reported in Supplementary Materials (tables S1–S14), including alternate fake news measures, added predictors like political knowledge, and comparison of hard news sharing."
+  ],
+  "findings": [
+    "Over 90% of respondents (91.5%) shared zero articles from fake news domains; 8.5% shared at least one using the main measure.",
+    "Sharing was concentrated: only 3.4% shared 10 or fewer total links, while 61.3% shared 100–1000 links, so low fake news sharing is not due to general inactivity.",
+    "Republicans shared more fake news than Democrats (18.1% of Republicans vs. 3.5% of Democrats shared at least one), and independents shared about as many as Republicans.",
+    "Very conservative respondents shared the most (~1.0 articles on average); conservative respondents shared ~0.75.",
+    "Users over 65 shared an average of ~0.75 fake news articles — more than twice the next-oldest group — and in multivariate models shared nearly seven times as many as the youngest group (18–29) and about 2.3 times as many as the next-oldest group.",
+    "The age effect is statistically significant and robust across measures (over-65 coefficient significant at P<0.01 in the main model) and remains when controlling for ideology, party, education, and posting volume.",
+    "Applying the same modeling approach to hard news sharing yields more varied predictors that do not include age (table S14)."
+  ],
+  "contributions": [
+    "Provides one of the first individual-level behavioral (rather than self-reported) portraits of who actually shares fake news, using linked survey and Facebook trace data that overcome self-report biases.",
+    "Documents empirically that fake news sharing was rare, offering important corrective context to alarmist post-election narratives.",
+    "Identifies age — especially the over-65 cohort — as a robust and previously underappreciated predictor of misinformation sharing, independent of political predispositions.",
+    "Demonstrates a methodological template for linking survey responses to platform behavioral data and validates it with sample-comparison and robustness analyses.",
+    "Opens research agendas connecting digital media literacy, cognitive aging, and news-feed exposure to misinformation spread."
+  ],
+  "framing": "The paper positions itself within the emerging interdisciplinary literature on the prevalence, believability, and spread of fake news after 2016, and challenges the political-science convention of treating demographics as mere controls by arguing that age should be a central explanatory factor. It bridges political behavior with insights from media studies (digital literacy) and cognitive/social psychology (memory decline and illusions of truth).",
+  "pdf_source": "drive"
+}

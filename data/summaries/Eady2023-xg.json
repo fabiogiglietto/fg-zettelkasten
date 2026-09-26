@@ -1,0 +1,39 @@
+{
+  "abstract": "This paper investigates whether exposure to the Russian Internet Research Agency's foreign influence campaign on Twitter during the 2016 US presidential election was related to Americans' political attitudes, polarization, and voting behavior. Linking a three-wave longitudinal survey of 1,496 US Twitter users to their actual Twitter timelines, the authors quantify both the scale and concentration of exposure to Russian disinformation accounts and estimate its relationship to individual-level outcomes. They find that exposure was highly concentrated among a small group of strongly Republican users, was dwarfed by exposure to domestic news media and politicians, and showed no meaningful relationship to changes in attitudes, polarization, or vote choice.",
+  "key_claims": [
+    "Exposure to posts from Russian foreign influence accounts was heavily concentrated, with only 1% of users accounting for 70% of all exposures.",
+    "Exposure was concentrated among users who strongly identified as Republicans—those already predisposed toward Donald Trump and least in need of persuasion.",
+    "Exposure to the Russian campaign was overshadowed, by at least an order of magnitude, by exposure to domestic news media and US political candidates.",
+    "There is no evidence of a meaningful relationship between exposure to the Russian influence campaign and changes in issue positions, political polarization, or voting behavior.",
+    "Together these findings suggest strong limits on the capacity of foreign social media influence campaigns to alter individual-level attitudes and behavior."
+  ],
+  "methods": [
+    "Three-wave longitudinal survey of 1,496 US respondents conducted by YouGov during the 2016 campaign (first wave April 2016, last wave late October 2016, plus post-election vote validation), approximately representative of the US voting-age public.",
+    "Linked survey respondents to their Twitter accounts and collected all posts (~1.2 billion tweets) from accounts they followed in the eight months before election day to reconstruct their potential timeline exposures.",
+    "Used Twitter's released data on state-sponsored foreign influence accounts (Russia, China, Iran, Venezuela) to identify posts from these campaigns in respondents' timelines.",
+    "Analyzed concentration of exposure via empirical cumulative distributions; benchmarked Russian exposure against domestic news media and politician content in the final month.",
+    "Fit OLS regression models predicting (log exposures+1) exposure from party ID and socio-demographic controls (including a squared party-ID term to test for U-shaped effects).",
+    "Used panel/within-subject fixed-effects style regressions relating within-respondent changes in issue positions, perceived candidate polarization, and vote choice to exposure (measured as log-count, binary exposure, and account-following).",
+    "Applied equivalence testing (Two One-Sided Tests, TOST) to bound the magnitude of null relationships, and simulated counterfactual changes in vote choice under observed versus no exposure.",
+    "Produced a back-of-the-envelope aggregate estimate of US exposure using survey exposure rates combined with Pew and US Census data."
+  ],
+  "findings": [
+    "70% of respondents (n=1,042) were exposed to at least one foreign influence post; Russian accounts represented 86% of foreign-influence exposures identified.",
+    "Exposure was mostly incidental via retweets from ordinary followed accounts (retweets grew to 75–80% of exposure pathways by election day) rather than direct following.",
+    "1% of respondents accounted for 70% of Russian exposures and 10% accounted for 98%; 1% of Russian accounts produced 89% of content seen—far more concentrated than domestic news (1% = 24%) or politicians (1% = 37%).",
+    "In the final month, respondents averaged ~4 Russian posts per day versus ~106 from national news media and ~35 from politicians (25x and 9x more); median weekly Russian exposure was zero.",
+    "Strong Republicans were exposed to roughly nine times as many Russian posts as Democrats or Independents; the party-exposure relationship was monotonic and not U-shaped (no comparable concentration among strong Democrats).",
+    "No statistically significant or substantively meaningful relationship was found between exposure and changes in eight issue positions, ideology, or perceived polarization; estimated magnitudes were near zero (~0.05–0.06 SD) and bounded below 0.2 SD by equivalence tests.",
+    "Relationships between exposure and three voting outcomes were near zero, not significant, and signed negative (inconsistent with benefiting Trump); simulated median change in Trump vote was about -0.18 to -0.4 percentage points, with 95% of simulations below the 0.77-point Wisconsin margin.",
+    "A back-of-the-envelope estimate suggests roughly 32 million Americans were potentially exposed to Internet Research Agency content over the eight months before the election."
+  ],
+  "contributions": [
+    "Provides the first analysis linking longitudinal survey data collected during the 2016 campaign to respondents' actual Twitter timelines to measure real exposure to the foreign influence campaign as it occurred.",
+    "Quantifies the relative scale and concentration of exposure, offering a benchmark against domestic political content that prior studies lacked.",
+    "Directly estimates the relationship between exposure and changes in attitudes, polarization, and voting behavior, addressing a gap left by earlier structural/content-focused work and by the post-hoc, one-month 2017 data used in prior research (Bail et al.).",
+    "Applies equivalence testing to substantiate null findings, moving beyond mere absence of statistical significance.",
+    "Offers a corrective to the popular view that foreign social media influence campaigns can readily manipulate ordinary voters, while noting caveats about second-order and cross-platform effects."
+  ],
+  "framing": "The paper sits at the intersection of political science research on minimal campaign persuasion effects and the emerging literature on social media, disinformation, and foreign election interference. It positions itself against both alarmist accounts of Russian interference and prior data-limited studies, using survey-linked behavioral data to adjudicate whether foreign influence campaigns succeed or, like traditional campaigns, exert at most minimal effects.",
+  "pdf_source": "drive"
+}

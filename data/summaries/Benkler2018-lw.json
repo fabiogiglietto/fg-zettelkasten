@@ -1,0 +1,38 @@
+{
+  "abstract": "This book investigates the sources of disinformation, manipulation, and epistemic dysfunction in American political communication, centering on the 2016 U.S. presidential election and the first year of the Trump presidency. Drawing on large-scale analysis of roughly four million political stories linked, tweeted, and shared over a three-year period, the authors argue that the crisis stems from an asymmetric, radicalized right-wing media ecosystem rather than from technology, Russia, or Facebook alone. They introduce the concept of a 'propaganda feedback loop' to explain how the right-wing media sphere became insulated from truth-correcting journalistic norms and susceptible to disinformation.",
+  "key_claims": [
+    "The current 'epistemic crisis' in American politics is fundamentally asymmetric and partisan in shape, not symmetric polarization; the right-wing media ecosystem is the primary culprit in spreading confusion and distrust.",
+    "The right-wing media ecosystem is categorically different from the rest of the media environment—highly skewed to the far right and insulated from center-right through left-wing media, making it far more susceptible to disinformation, lies, and half-truths.",
+    "The crisis is more institutional than technological, more about U.S. media ecosystem dynamics than Russia, and more driven by asymmetric political polarization than by commercial advertising or social media algorithms.",
+    "Technology (social media, Facebook algorithm, bots, microtargeting) does not determine outcomes on its own; it acts through and depends on pre-existing institutional, cultural, and political conditions, which is why the same technologies produce different effects across countries.",
+    "The term 'radicalization' (not 'polarization') best describes the transformation of roughly a third of the American media system, exemplified by the takeover of the Republican Party (the party of Reagan and the Bushes) by the party of Trump, Breitbart, and Robert Mercer.",
+    "Fox News, over the course of 2017, effectively became the propaganda arm of the White House, and even ostensibly journalistic right-wing outlets fail to act as a truth-telling brake on radical sites.",
+    "Commonly blamed 'usual suspects'—fake news entrepreneurs, Russian interference, the Facebook algorithm, Cambridge Analytica, and alt-right trolls—were secondary drivers, not the primary cause of disinformation."
+  ],
+  "methods": [
+    "Large-scale computational analysis of approximately four million political stories using hyperlink analysis, Twitter sharing data, and Facebook sharing data over a three-year period (April 2015 to March 2018).",
+    "Use of the Media Cloud platform (developed over a decade by the authors with the Berkman Klein Center and MIT Center for Civic Media) to collect, parse, and analyze digital media.",
+    "Network analysis and visualization using Gephi (open-source software) to map the architecture of the media ecosystem.",
+    "Case studies of the emergence of broad frames and specific narratives (e.g., immigration/Islamophobia, Fox News coverage, the propaganda pipeline).",
+    "Integration of TV Archive data from the Internet Archive and tools from the GDELT Project.",
+    "Synthesis with existing reports, academic literature, polling data (e.g., YouGov, Gallup), and the work of other researchers, with robustness checks and multiple specifications applied to the network findings."
+  ],
+  "findings": [
+    "Influence within the right-wing media ecosystem is highly skewed to the far right and highly insulated from other network segments; no comparable asymmetry exists on the left.",
+    "The most visible left-leaning sites are tightly integrated with mainstream outlets (New York Times, Washington Post) that adhere to journalistic norms, which serve as a check on extreme stories—a corrective function absent on the right.",
+    "Mainstream media coverage of the 2016 election was dominated by horserace framing and negativity, and largely adopted the agenda and framing of the right-wing media and Trump campaign; Clinton's coverage was dominated by scandals (emails, foundation) while Trump's covered his issues (immigration, jobs, trade).",
+    "Facebook appears to be a more polluted information environment than Twitter or the open web, with Facebook-prominent sites more prone to false and hyperpartisan content on both sides.",
+    "Radical sites (Breitbart, Infowars, Truthfeed, Zero Hedge, Gateway Pundit) drove radicalization and did not depend on decentralized alt-right networks; white supremacist and alt-right sites were relatively isolated from the broader Islamophobic immigration framing.",
+    "Vicious disinformation campaigns were mounted by leading right-wing sites even against core Republican figures (e.g., Jeb Bush smeared with 'close Nazi ties'; Bush-appointed law enforcement officials attacked), justifying the term 'radicalization.'",
+    "The asymmetric media architecture predates Trump; the dynamic traces back at least to Rush Limbaugh's talk radio model launched in 1988, with Trump operating as 'catalyst in chief' within an already-radicalized system."
+  ],
+  "contributions": [
+    "Introduces and develops the concept of 'network propaganda' and the 'propaganda feedback loop' as analytical frameworks for understanding how media ecosystem architecture shapes susceptibility to manipulation.",
+    "Provides empirical, data-driven evidence for the asymmetric (rather than symmetric) nature of American media polarization, challenging both 'the internet polarizes' narratives and false-equivalence framings.",
+    "Offers precise, revived definitions of propaganda, disinformation, misinformation, bullshit, and disorientation, drawing on the intellectual history of propaganda studies (Lippmann, Lasswell, Bernays, Ellul, Herman & Chomsky, Jowett & O'Donnell).",
+    "Supplies a transferable method and framework—a political economy view of technology—for empirically studying any country's political media ecosystem in local institutional context rather than through context-free technological explanations.",
+    "Reframes numerous seemingly disparate political events (Roy Moore's nomination, calls to purge the FBI, Fox–White House alignment) as elements of a single conflict between Trumpism and Reaganism over control of the Republican Party."
+  ],
+  "framing": "The book positions itself within the study of political communication, media ecosystems, and propaganda studies, adopting a 'political economy view of technology' that emphasizes how institutions, culture, and politics shape technological adoption rather than technology determining outcomes. It engages critically with technological-determinist accounts (echo chambers, filter bubbles, Russian interference, algorithmic manipulation) and with democratic theory's search for neutral, nonpartisan explanations, arguing instead that the crisis has an inescapably partisan and institutional shape.",
+  "pdf_source": "drive"
+}

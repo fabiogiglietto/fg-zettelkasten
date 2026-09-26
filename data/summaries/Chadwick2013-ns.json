@@ -1,0 +1,37 @@
+{
+  "abstract": "This work-in-progress paper theorizes and empirically illustrates 'the hybrid media system,' a concept for understanding how old and new media interact in contemporary political communication. Chadwick argues that political actors, media organizations, and publics are bound together by evolving power relations based on adaptation and interdependence, and that scholars must map empirically where old/new media distinctions matter and where they do not. Focusing on news, the paper develops an ontology of hybridity, introduces the 'political information cycle' concept, and uses WikiLeaks as an extended case of power and interdependence in news construction. It draws primarily on evidence from Britain and the United States.",
+  "key_claims": [
+    "Contemporary political communication is best understood as a hybrid media system built on interactions among old and new media, their technologies, genres, norms, behaviors, and organizations.",
+    "Actors in this system are linked by complex, evolving power relations grounded in adaptation and interdependence rather than the dominance of either old or new media.",
+    "Scholars should abandon dichotomous, essentialist thinking (old vs. new media) in favor of a holistic ontology of hybridity that empirically maps where such distinctions matter.",
+    "The traditional 'news cycle,' assumed to be tightly controlled by a small elite, is being displaced by a more fluid, multi-actor 'political information cycle.'",
+    "WikiLeaks exemplifies hybridity: it is simultaneously a news producer, technology platform, activist network, and lobby group, and its impact depends on interdependent relations with professional journalism."
+  ],
+  "methods": [
+    "Interdisciplinary theory-building, synthesizing conceptions of hybridity from comparative politics (hybrid regimes), governance and regulation studies, organizational sociology, cultural and postcolonial studies, and science and technology studies (actor-network theory).",
+    "Distinguishes analytically between 'diluted' and 'particulate' hybridity as modes of recombination.",
+    "Detailed narrative case studies with real-time observation, notably close five-day logging of press, broadcast, and online material during the 2010 UK 'bullygate' scandal and the first live televised UK prime ministerial debates.",
+    "Case study of WikiLeaks drawing on insider accounts (Domscheit-Berg; Leigh and Harding), journalist testimony (Bill Keller/New York Times), and secondary reporting, plus reference to a content analysis of newspaper coverage (Benkler, 2011).",
+    "Comparative evidence drawn from Britain and the United States."
+  ],
+  "findings": [
+    "In the 'bullygate' case, non-elite actors, bloggers, and Twitter activists helped discredit newspaper revelations through cross-platform, real-time contestation, demonstrating the political information cycle in action.",
+    "During the televised leaders' debates, a satirical '#nickcleggsfault' hashtag campaign became a globally trending topic and helped collapse a Daily Telegraph 'scoop,' showing online activists contesting press coverage.",
+    "Political information cycles involve more numerous and diverse actors, complex temporalities (fragments can lie dormant then re-erupt), and cross-platform iteration that loosens but does not eliminate elite control.",
+    "News-making is best conceptualized as 'assemblages' (drawing on DeLanda) of loosely coupled, interdependent actors who plug and unplug from the process, often in real time.",
+    "WikiLeaks built a sophisticated sociotechnical infrastructure (encryption, Tor, distributed servers, redundancy) for anonymous leaking, yet remained chaotic, financially precarious, and reliant on the personal resources of key figures like Assange.",
+    "WikiLeaks evolved from a pure 'submission platform' toward acting like a professional news producer (e.g., the edited Collateral Murder film) and ultimately toward collaboration with elite newspapers (Guardian, NYT, Der Spiegel, Le Monde, El País).",
+    "Professional news organizations provided decisive resources—legal expertise, legitimacy, government-bargaining experience, and verification—while WikiLeaks provided the publishing infrastructure and network resistance to legal threats, illustrating mutual interdependence.",
+    "Accounts differ on power relations: NYT's Keller framed WikiLeaks as merely 'a source,' whereas the Guardian treated it as a collaborative partner; the reality was interdependent compromise.",
+    "The Anonymous 'Operation Payback'/'Avenge Assange' hacktivist campaigns after cablegate functioned as a mobilized show of network support within the hybrid media system."
+  ],
+  "contributions": [
+    "Introduces and develops the concept of the 'hybrid media system' as a framework for political communication research.",
+    "Advances the 'political information cycle' as a reconceptualization of the traditional news cycle.",
+    "Applies an 'ontology of hybridity' and the notion of 'news-making assemblages' to media and politics, importing concepts such as particulate hybridity and relations of exteriority.",
+    "Provides a detailed hybridity-based analysis of WikiLeaks as a media actor and its interdependence with legacy news organizations.",
+    "Argues methodologically for combining rich narrative case studies with quantitative approaches to trace who does the decisive 'work' in fluid news environments."
+  ],
+  "framing": "The paper positions itself within political communication and media studies, arguing against dichotomous old-versus-new-media framings and drawing on an interdisciplinary 'ontology of hybridity' spanning comparative politics, governance studies, cultural and postcolonial theory, and actor-network theory. It contributes to debates about power, elite control, and citizen participation in the construction of political news.",
+  "pdf_source": "drive"
+}

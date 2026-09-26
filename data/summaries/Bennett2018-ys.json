@@ -1,0 +1,39 @@
+{
+  "abstract": "Bennett and Livingston examine the rise of strategic disinformation circulating through social media and websites that mimic journalism formats in democratic nations. They argue that the spread of disinformation is not a collection of isolated 'fake news' incidents but a systemic phenomenon rooted in declining trust in democratic institutions, which they term an emerging 'disinformation order.' The article connects this order to radical right movements and foreign (especially Russian) efforts to destabilize centre parties, elections and the mainstream press, using cases such as Brexit and Trump's election. It calls for political communication scholarship to move beyond established concepts and the framework of populism to address these deeper disruptions.",
+  "key_claims": [
+    "Contemporary disinformation is systematic and strategic, and should be distinguished from the narrower and misleading term 'fake news' which frames the problem as isolated incidents.",
+    "The spread of disinformation is fundamentally rooted in a legitimacy crisis and declining citizen trust in democratic institutions, not merely in new media technology.",
+    "Disinformation is particularly concentrated on the authoritarian/radical right, whose values conflict with liberal democratic norms.",
+    "A distinction should be drawn between 'alt-right' media that produce and distribute disinformation (e.g. Breitbart) and conservative partisan journalism.",
+    "The framework of 'populism' dominant in communication research is inadequate because it reduces the problem to anti-elite anger and misses deeper agendas of racism, nationalism, anti-globalism and attacks on democratic values.",
+    "National information systems are open to both domestic and foreign (notably Russian) strategic disinformation, alongside for-profit fake news produced in the attention economy.",
+    "Political communication theory needs to be revised because its assumptions about coherent, functional flows between institutions, media and publics no longer hold."
+  ],
+  "methods": [
+    "Conceptual and theoretical essay rather than an empirical study, developing a framework for understanding disinformation.",
+    "Case-study illustration and narrative analysis (e.g. the Ami Horowitz/Fox News Sweden episode, the 'birther' movement, the 'Lisa' story in Germany).",
+    "Introduction of an analytic model: the disinformation-amplification-reverberation (DAR) cycle describing how disinformation cycles between alt-right and mainstream media.",
+    "Synthesis of secondary evidence including Eurobarometer and OECD trust data, European Social Survey and election trend analyses, and Facebook's internal 'Information Operations' report.",
+    "Provisional operational definition of disinformation, adapting Facebook's (Weedon et al., 2017) distinction between intentional disinformation and inadvertent misinformation.",
+    "Comparative reference to multiple national contexts (US, UK, Germany, Sweden, Netherlands, Norway, France, Italy, Hungary, Poland, etc.)."
+  ],
+  "findings": [
+    "Average trust in national parliaments and governments across the EU has fallen to around 30%, down roughly a dozen points since the 2008 financial crisis, with over half of European OECD members below 2007 levels.",
+    "Legacy media 'amplifier effect' spreads absurd stories that earlier gatekeeping would have suppressed, and this effect can even be strengthened by fact-checking efforts.",
+    "Radical right party vote share has grown disproportionately relative to the left and relative to actual population distributions of radical identifiers.",
+    "Documented foreign disinformation operations include Russia's Internet Research Agency ('troll factory'), Fancy Bear hacking, and China's paid commenters (wumao dang) producing an estimated 448 million posts per year.",
+    "During the 2016 US election, the top 20 fake news stories on Facebook drew more engagement (8.7 million) than the top real news stories (7.3 million), with fake engagement rising in the final months.",
+    "Disinformation is often integrated into networks of funders, think tanks, movements and parties (e.g. Mercer-backed Breitbart, Koch-backed Daily Caller), making it far from marginal in some nations.",
+    "Legal and institutional responses are emerging, such as Germany's Netzwerkdurchsetzungsgesetz and the NATO-affiliated Finnish centre for countering hybrid threats."
+  ],
+  "contributions": [
+    "Proposes 'disinformation order' as a conceptual frame that shifts attention from isolated falsehoods to systemic institutional and communicative breakdown.",
+    "Offers the disinformation-amplification-reverberation (DAR) cycle as an analytical tool.",
+    "Clarifies terminology by distinguishing disinformation from misinformation and 'fake news', and alt-right disinformation media from partisan conservative journalism.",
+    "Critiques the 'populism' literature and identifies its conceptual and methodological limitations for studying democratic disruption.",
+    "Sets out a research agenda linking disinformation to declining institutional trust, foreign information warfare (trolls, hackers, bots), and normative assessment of democratic disruption.",
+    "Calls for rethinking core political communication concepts and assumptions about unified, functional democratic public spheres."
+  ],
+  "framing": "The article positions itself within political communication and press/politics scholarship, arguing that dominant concepts (framing, agenda-setting, indexing, gatekeeping, effects) and the notion of coherent democratic public spheres are outdated. It draws on democratic theory of institutional decline and legitimacy crisis (Mair's 'hollowing' of parties, Crouch's 'post-democracy', Zakaria's 'illiberal democracy', Chadwick's hybrid media system) to reframe disinformation as a symptom of eroding democratic institutions rather than a purely media-technological problem.",
+  "pdf_source": "drive"
+}

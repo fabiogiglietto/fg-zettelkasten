@@ -1,0 +1,33 @@
+{
+  "abstract": "This paper proposes a theoretical framework for cross-national comparative research on societal resilience to online disinformation, arguing that structural conditions of a country's political, media, and economic environment make some countries more resilient than others. The authors translate seven macro-level dimensions into measurable indicators and empirically test them across eighteen Western democracies using existing comparative datasets. A cluster analysis yields three country groups differing in resilience: a high-resilience group (Northern/Western Europe and Canada), a low-resilience polarized group (Southern Europe), and the United States as a distinct, especially vulnerable case.",
+  "key_claims": [
+    "Some countries are systematically more resilient to online disinformation than others due to structural macro-level conditions rather than only individual-level factors.",
+    "Resilience is a collective, structural characteristic that reflects both lower exposure to disinformation and citizens being less inclined to believe or spread it.",
+    "Seven macro-level conditions weaken resilience: societal polarization, populist communication, low trust in news, weak public service media, fragmented/less overlapping audiences, large advertising market size, and high social media use.",
+    "The United States is a unique, highly vulnerable case whose disinformation dynamics cannot be easily generalized to other Western democracies.",
+    "Findings on disinformation drawn largely from the U.S. and U.K. context should not be assumed to apply universally across Western countries."
+  ],
+  "methods": [
+    "Literature-based development of a theoretical framework of seven macro-level dimensions across political, media, and economic environments, with an eighth 'outcome' dimension (exposure to disinformation).",
+    "Operationalization of dimensions into quantifiable indicators drawn from secondary datasets: Digital News Report (2018, 2019), the Varieties of Democracy (V-Dem) Project, Timbro Authoritarian Populism Index, Global Populism Database, Brüggemann et al.'s public service broadcasting strength index, and World Bank data.",
+    "Sample of eighteen Western democracies selected following Hallin and Mancini's (2004) media systems typology.",
+    "Merging of measures into seven z-standardized indices with internal consistency checks (Cronbach's alpha ranging roughly .71 to .96), with some indices inverted so higher values indicate higher resilience.",
+    "Principal components factor analysis with varimax rotation; two-stage cluster analysis (hierarchical Ward's algorithm with squared Euclidean distance, then chosen three-cluster solution); OLS regression predicting reported exposure to disinformation."
+  ],
+  "findings": [
+    "Substantial cross-national variation exists: Northern/Western European countries (e.g., Finland, Denmark, Netherlands) score high on most resilience indices, while Spain, Italy, Greece, and the United States score low.",
+    "Factor analysis produced two factors explaining 69% of variance: factor 1 (social media use, media trust, polarization, populism, PSB) explaining 49.7%, and factor 2 (market size, media fragmentation, PSB) explaining 19.1%; PSB loaded on both.",
+    "The cluster analysis yielded three groups: Cluster 1 (media-supportive/consensual, high resilience) of Western European democracies plus Canada; Cluster 2 (polarized, low resilience) of Greece, Italy, Portugal, Spain; Cluster 3 comprising only the United States.",
+    "The OLS regression model explained 83% of the variance in reported exposure to disinformation; media trust, social media use, and market size were significant predictors, while polarization and shared media ran opposite to the predicted direction.",
+    "Using an alternative V-Dem expert-coded outcome measure, the model explained about 40% of variance with populism and social media use as significant predictors, and polarization and shared media pointing in expected directions."
+  ],
+  "contributions": [
+    "Provides a systematic, macro-level theoretical framework and conceptual map for cross-national comparative study of online disinformation.",
+    "Translates abstract structural dimensions into concrete, measurable indicators using existing comparative datasets, enabling country ranking and typology building.",
+    "Introduces and empirically applies the concept of country-level 'resilience' to disinformation, reframing disinformation as also a matter of structural defense, not just threat.",
+    "Offers an empirical classification of eighteen Western democracies into resilience clusters that can guide case selection in future comparative research.",
+    "Highlights the exceptional and non-generalizable nature of the U.S. case, cautioning against extrapolating U.S.-centric findings."
+  ],
+  "framing": "The paper positions itself within comparative political communication research, extending Hallin and Mancini's media systems typology and Benkler et al.'s structural account of media resilience to the study of 'information pollution.' It responds to the predominantly U.S.- and individual-level focus of disinformation scholarship by advocating a cross-national, macro-structural perspective grounded in the concept of social resilience.",
+  "pdf_source": "drive"
+}

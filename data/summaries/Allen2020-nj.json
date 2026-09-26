@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper measures the prevalence of 'fake news' relative to all media consumption using a nationally representative multimode dataset covering television, desktop, and mobile consumption in the United States from 2016 to 2018. Contrary to widespread claims that online fake news is a pervasive crisis, the authors find that news of any kind is a small fraction of Americans' media diet, that television dominates news consumption, and that fake news constitutes only about 0.15% of the daily media diet. They argue that concerns about misinformation and threats to democracy should extend beyond overt online fakery to include ordinary news bias and the general avoidance of news.",
+  "key_claims": [
+    "News consumption of any kind is a small share of Americans' overall media diet, at most 14.2%.",
+    "To the extent Americans consume news, television dominates online sources by roughly five to one.",
+    "Fake news comprises only about 0.15% (roughly one-tenth of 1%) of Americans' daily media diet and about 1% of news consumption.",
+    "The origins of public misinformedness and polarization more likely lie in ordinary news content or news avoidance than in deliberate fakery.",
+    "The academic research literature disproportionately focuses on online and social media fake news, which is inconsistent in scale and proportion with actual consumption patterns."
+  ],
+  "methods": [
+    "Assembled a unique multimode dataset integrating TV, desktop, and mobile consumption across demographic buckets, with content categorized by mode of consumption rather than production.",
+    "Used Nielsen's nationally representative TV panel (N~100,000) plus a local-market subset (N~50,000) to measure TV news, defined as time on ~400 Nielsen-classified 'news' programs including hard news, magazine news, morning shows, entertainment news, and late-night comedy.",
+    "Used Comscore's nationally representative desktop and mobile panel to measure online media consumption, defining online news as time on 800+ hard-news websites (adapted from Athey et al.) and fake news as time on 98 sites identified by researchers, fact checkers, and journalists.",
+    "Used Nielsen's desktop-only web panel (90,000 declining to 60,000) with referral URLs to impute passive news exposure on top social media (Facebook, YouTube, Twitter, Reddit) and search engines (Google, Bing, Yahoo); for YouTube sampled 360,000 videos classified as 'news and politics'.",
+    "Analyzed a ~15,000-person subset appearing in both the Nielsen web and TV panels to relate desktop and TV news consumption.",
+    "Defined news and fake news broadly (including hyperpartisan 'red'/'orange' and fraudulent 'black' categories) and tested robustness with stricter definitions."
+  ],
+  "findings": [
+    "Americans consume over 7.5 hours (460 minutes) of media per day, roughly 400 minutes (86%) of which is not news-related.",
+    "Online news, even including passive exposure via social media, search, and portals, accounts for only 4.2% of total online consumption; TV news accounts for about 23% of TV consumption.",
+    "The TV-to-online news ratio is more than 5:1 (54 vs 9.7 minutes), ranging from about 2:1 for 18-24 year olds to over 7:1 for those 55+.",
+    "44% of the overlap panel is exposed to no online news at all, and nearly three-quarters spend less than 30 seconds/day reading news online; a majority likely spend less than a minute per day.",
+    "No age group spent more than about a minute per day on fake news or more than 1% of overall news consumption on it; older, conservative-leaning users consume more, consistent with prior work.",
+    "Only about 1.97% of desktop panelists consumed more fake than mainstream news, dropping to 0.7% among those consuming at least a minute of fake news daily, and lower still under stricter definitions.",
+    "Local news is the dominant TV news category for most age groups; late-night comedy is a limited presence (under 5% overall).",
+    "Google Scholar shows 2210 English 'fake news' titled publications since 2017 versus 73 before, far outstripping attention to TV news despite TV news's dominance in consumption."
+  ],
+  "contributions": [
+    "Provides one of the first estimates of fake news prevalence at the scale of the entire information ecosystem across TV, desktop, and mobile modes.",
+    "Integrates three otherwise siloed data sources to address representativeness and comprehensiveness gaps in prior misinformation research.",
+    "Reframes the misinformation debate by placing fake news in the denominator of total media consumption, showing its negligible relative share.",
+    "Highlights a mismatch between the volume/focus of academic attention and the empirical scale of the phenomenon, urging attention to ordinary news bias and news avoidance."
+  ],
+  "framing": "The paper situates itself within the post-2016 interdisciplinary literature on online misinformation, fake news, and threats to democracy (e.g., Allcott & Gentzkow, Grinberg et al., Guess et al.). It positions itself as a corrective that shifts the analytical unit from social-media-centric prevalence to whole-ecosystem media consumption, invoking classic media theory such as agenda-setting to argue that misinformation concerns should be broadened beyond engineered online falsehoods.",
+  "pdf_source": "drive"
+}

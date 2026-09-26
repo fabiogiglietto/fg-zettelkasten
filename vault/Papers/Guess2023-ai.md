@@ -5,12 +5,12 @@ authors: ["Andrew M. Guess", "Neil Malhotra", "Jennifer Pan", "Pablo Barberá", 
 year: 2023
 doi: 10.1126/science.add8424
 bibtex_key: Guess2023-ai
-topics: [misinformation-exposure-recalibration, election-campaigns-social-media]
+topics: [misinformation-exposure-recalibration, political-polarization-partisanship]
 citation_count: 144
 open_access: false
 source_url: https://doi.org/10.1126/science.add8424
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445510Z
 ---
 
@@ -22,29 +22,30 @@ discovery_date: 2026-09-26T08:39:39.445510Z
 
 ## Summary
 
-This paper reports a large-scale randomized field experiment run on Facebook during the 2020 US election to isolate the causal effect of one platform design feature — reshares — on political outcomes. Consenting US users were randomly assigned to feeds stripped of all reshared content for roughly three months. The intervention worked as intended on the exposure side: removing reshares sharply cut how much political news (including content from untrustworthy sources) users saw and how much they engaged with it. Yet despite this substantial reduction in exposure and engagement, the authors found no detectable change in downstream political beliefs or opinions. The central argument is thus a dissociation: reshares are a powerful amplifier of political content, but amplification does not straightforwardly translate into attitudinal or persuasive effects.
+This paper reports one of the large-scale randomized experiments conducted through the 2020 US Facebook and Instagram Election Study (FIES), testing what happens when reshared content is stripped from users' Facebook feeds for roughly three months during the presidential election. The intervention worked mechanically as intended—it sharply cut exposure to reshared posts, political news, and untrustworthy-source content, and reduced time on platform and engagement. Yet despite substantially reshaping the information environment, suppressing reshares produced no detectable change in affective or issue polarization or in nearly any political attitude or offline behavior, with only mixed, uncertain evidence for reduced news knowledge. The core argument is that a widely proposed platform reform can meaningfully alter what people see without measurably altering what they think.
 
 ## Key Contributions
 
-- Provides causal, field-experimental evidence for the role of reshares in amplifying political news exposure on a major platform.
-- Documents a clear dissociation between changes in content exposure/engagement and changes in political attitudes.
-- Adds rigorous large-scale experimental evidence to debates about social media's influence on political outcomes during a high-stakes election.
+- Rigorous, large-scale *causal* (not correlational) evidence on how a specific platform feature—resharing—shapes political outcomes during a real election.
+- Demonstrates that removing reshares changes content exposure and on-platform behavior but has limited detectable downstream attitudinal impact.
+- Quantifies the composition of reshared content, showing it amplifies both mainstream political news and untrustworthy sources, while most reshared content does not go viral.
+- Provides precise null/near-null estimates powered to rule out even moderately sized effects.
+- Offers a model of preregistered, transparent industry–academic collaboration with archived design, data, and code.
 
 ## Methods
 
-- Randomized controlled experiment on Facebook during the 2020 US election.
-- Consenting US-based users randomly assigned to a treatment feed containing no reshared content.
-- Intervention sustained over a three-month window.
-- Outcomes measured via platform behavioral data (political news exposure, exposure to untrustworthy sources, clicks, reactions, partisan news clicks) combined with survey-based measures of beliefs and opinions.
+A preregistered randomized controlled experiment embedded in the 2020 FIES, with recruitment invitations shown to ~14.6 million users and 193,880 consenting. Participants were assigned to a control condition (unchanged feed) or a "No Reshares" condition (feeds excluding reshared content from friends, Groups, and Pages) from 24 September to 23 December 2020. Analytic samples were N=23,402 (survey) and N=3,781 (web-tracking). Outcomes were drawn from five surveys, platform behavioral logs, and web-visit tracking; content was classified for political relevance, news, untrustworthy sources, incivility, slurs, and ideological alignment. The primary estimand was a population average treatment effect (PATE) weighted by ideology, friend count, pages followed, and activity, with unweighted SATE also reported, estimated via covariate-adjusted OLS with HC2 robust errors and sharpened FDR correction for multiple comparisons.
 
 ## Findings
 
-- Removing reshares substantially decreased exposure to political news.
-- Exposure to content from untrustworthy sources declined under the no-reshare condition.
-- Overall clicks and reactions dropped when reshares were removed.
-- Partisan news clicks were reduced.
-- No detectable effect on political beliefs or opinions emerged despite the reduced exposure and engagement.
+- Reshared content fell from 28% of views (control) to 5.8%; political news dropped from 6.2% to 2.5% and untrustworthy-source content from 2.6% to 1.8%.
+- Uncivil and moderate/mixed-source content rose slightly; both like-minded and cross-cutting content fell modestly; slur exposure was unchanged.
+- Treatment reduced daily time on Facebook, click rate (8.3% → 7.5%), and reaction rate, but did not change users' own reshares, likes, or comments; friend content fell ~10 points while Groups (+8) and Pages (+2) rose.
+- No significant effects on affective or issue polarization (FDR-adjusted p>0.8), media trust, institutional confidence, election legitimacy, factual accuracy perceptions, or support for political violence.
+- News knowledge fell in-sample (SATE −0.069 SD) but the PATE (−0.053 SD) fell short of significance after FDR adjustment; election knowledge was unaffected.
+- The one robust behavioral effect: reduced clicks on partisan news (PATE −0.109 SD); off-platform political news visits were unaffected.
+- A 62% drop in mainstream news exposure emerged as a plausible driver of the suggestive knowledge effect.
 
 ## Connections
 
-This is part of the coordinated 2020 US election Facebook/Instagram experiment series and speaks directly to the recurring finding that large exposure changes rarely move political attitudes; it complements companion algorithmic-feed experiments such as [[Guess2023-ur]] and [[Nyhan2023-gb]], and the exposure-diet work in [[Gonzalez-Bailon2024-rq]] and [[Eady2023-xg]]. Its emphasis on limited attitudinal impact despite amplified reach connects to broader debates over the small real-world footprint of misinformation and persuasion online, as in [[Budak2024-ef]], [[Allen2024-av]], and [[Guess2020-rr]]. The focus on resharing as an amplification mechanism also relates to viral-spread and untrustworthy-source dynamics studied in [[Vosoughi2018-at]] and [[Grinberg2019-ua]].
+This is part of the same 2020 FIES collaboration as [[Guess2023-ur]] and [[Nyhan2023-gb]], and its null attitudinal findings echo the deactivation-experiment tradition of [[Allcott2019-gn]] and [[Bail2018-fk]], reinforcing a recurring pattern in which large exposure changes do not translate into measurable belief or polarization shifts. Its analysis of virality and the amplification of untrustworthy content speaks to work on how resharing spreads news and misinformation, including [[Vosoughi2018-at]], [[Gonzalez-Bailon2023-uy]], and [[DeVerna2025-dl]]. The affective polarization outcomes connect to [[Iyengar2019-jj]], while the characterization of misinformation's limited reach and impact relates to [[Allen2020-nj]] and [[Grinberg2019-ua]].

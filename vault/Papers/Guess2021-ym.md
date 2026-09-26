@@ -5,12 +5,12 @@ authors: ["Andy Guess", "Kevin Aslett", "Joshua Tucker", "Richard Bonneau", "Jon
 year: 2021
 doi: 10.51685/jqd.2021.006
 bibtex_key: Guess2021-ym
-topics: [misinformation-exposure-recalibration, political-content-moderation-visibility]
+topics: [misinformation-exposure-recalibration, platform-data-access-governance]
 citation_count: 41
 open_access: false
 source_url: https://doi.org/10.51685/jqd.2021.006
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445475Z
 ---
 
@@ -22,27 +22,29 @@ discovery_date: 2026-09-26T08:39:39.445475Z
 
 ## Summary
 
-This paper leverages a newly released large-scale Facebook engagement dataset—covering millions of shared web links—to characterize how different categories of news circulate on the platform among U.S. users. The authors distinguish among four article types: low-credibility publishers, credible news sources, clickbait purveyors, and political news. Combining curated source lists with supervised machine-learning classifiers, they describe how each category is viewed and shared across different demographic and behavioral segments of the user base. The central argument is that these news categories exhibit distinguishable, category-specific circulation patterns, and that platform engagement data of this scale offers an empirical vantage point on news exposure previously unavailable to researchers.
+This paper offers a large-scale descriptive portrait of how U.S. Facebook users encounter and share news, drawing on the Social Science One "Condor" dataset of URL-level engagement data covering millions of publicly shared links. Uniquely, the dataset lets the authors distinguish *views* (exposure) from *shares*, and combine platform-scale counts with supervised classifiers to categorize content as credible vs. low-credibility, political vs. non-political, and clickbait vs. non-clickbait. The central argument is descriptive rather than causal: low-credibility news is comparatively rare relative to credible news, but its circulation is far from trivial and is markedly concentrated among older and very conservative users, with clear signs of a preference for ideologically congenial misinformation. The paper also functions as a methodological proof of concept for working with differentially-private, aggregated platform data.
 
 ## Key Contributions
 
-- First-of-its-kind analysis of the newly released, large-scale Facebook link engagement dataset.
-- A classification framework combining curated source lists with supervised classifiers to sort articles by credibility, clickbait status, and political content.
-- Empirical description of how news exposure and sharing vary across categories of U.S. users on a major platform.
+- First analysis of newly released, differentially-private Facebook engagement data that measures both exposure (views) and sharing of news, allowing the two behaviors to be separated.
+- Fine-grained descriptive disaggregation of news into credible/low-credibility, political, and clickbait categories across age and ideological groups.
+- A methodological template combining platform-scale URL data with supervised classifiers and misclassification bias correction (Hopkins–King plus bootstrap).
+- An empirical descriptive foundation for subsequent research and policy debate on misinformation exposure and consumption.
 
 ## Methods
 
-- Analysis of newly available Facebook engagement data spanning millions of shared web links.
-- Categorization of articles into low-credibility, credible, clickbait, and political news types.
-- Hybrid classification: curated source lists paired with supervised machine-learning classifiers.
-- Segmentation of viewing and sharing behavior across categories of U.S. users.
+The authors analyze 466,591 URLs first posted in 2018 by U.S. users from the Condor dataset (URLs shared publicly more than 100 times, aggregated by URL-year-month-age-gender-political-page-affinity with Gaussian differential-privacy noise). They construct three binary URL-level measures: credibility (NewsGuard, threshold 60), political vs. non-political (a random forest trained on ~8,552 labeled headlines, ~90% accuracy, F1=0.90), and clickbait (a pre-trained SVM). Classifier misclassification is corrected via the Hopkins–King method with 100-sample bootstrap resampling to produce corrected proportions and confidence intervals. Ideological slant of sources comes from media partisanship scores and manual coding; user ideology comes from Facebook's five-point political page-affinity measure. An updated version corrects for inadvertent Facebook filtering of users lacking page-affinity scores, which shifted estimates slightly without changing the patterns.
 
 ## Findings
 
-- Different categories of news circulate on Facebook in distinguishable, category-specific patterns.
-- Viewing and sharing behaviors vary systematically across user segments (the abstract is truncated, so specific quantitative results are not fully available).
-- Reported patterns are stated to corroborate recent research on online news exposure and sharing.
+- Roughly 84% of news shares and 89% of views came from credible domains; about 15% of shares and views were from low-quality domains — roughly one in eight views of at least moderately popular news.
+- 27% of news URLs shared by very conservative users were low-quality vs. 9% for very liberal users; for views, 19% vs. 7% — evidence of ideologically congenial misinformation.
+- 20% of URLs shared by users 65+ were low-quality vs. 11% for the 24–35 bracket; the age gradient is steepest within the two most conservative groups.
+- Older users don't view much more low-credibility news in absolute counts, but it forms a larger *share* of their news (18% vs. 8% for the second-youngest), suggesting sharing differences aren't merely a function of feed exposure.
+- Low-quality content is disproportionately political and clickbait: 53.4% of low-quality URLs were political vs. 31.3% of credible; 12.3% were both political and clickbait vs. 6.3% of credible.
+- No support that older users share more clickbait (26% for 25–34 vs. 24% for 65+), but strong support that they share more political news (22% vs. 56%).
+- Of ~280 billion U.S. URL views in 2018, over 44% were news domains; of ~2.1 billion shares, over 48% were news.
 
 ## Connections
 
-This paper sits squarely within the line of large-scale platform-data studies of news exposure and sharing on Facebook, sharing methods and framing with [[Gonzalez-Bailon2023-uy]] and [[Guess2023-ai]] on how algorithmic feeds shape exposure, and with [[Bakshy2015-rn]] and [[Guess2023-ur]] on selective consumption and ideological segregation. Its focus on low-credibility and clickbait circulation connects to work quantifying misinformation reach and prevalence such as [[Allen2020-nj]], [[Grinberg2019-ua]], and [[Budak2024-ef]].
+This paper sits alongside foundational descriptive work on the prevalence and skewed distribution of fake news exposure, connecting to [[Guess2020-rr]], [[Guess2019-ym]], and [[Grinberg2019-ua]] on the concentration of misinformation among older and conservative users, and to [[Allen2020-nj]] on how small misinformation is relative to the overall news diet. Its emphasis on ideologically congenial sharing links to [[Osmundsen2021-et]] and [[Vosoughi2018-at]], while its reliance on privacy-preserving platform data speaks to ongoing debates on platform-data-access-governance represented here by [[Gonzalez-Bailon2024-rq]] and [[Freelon2018-ao]]. Its exposure-versus-behavior framing also resonates with recalibration work in [[Budak2024-ef]] and [[Allen2024-av]].

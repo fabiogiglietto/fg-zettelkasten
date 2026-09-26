@@ -1,0 +1,39 @@
+{
+  "abstract": "This study analyzes the differential diffusion of verified true and false news stories on Twitter from 2006 to 2017, using ~126,000 rumor cascades tweeted by ~3 million people over 4.5 million times. Veracity was determined using six independent fact-checking organizations that agreed on classifications 95-98% of the time. The authors find that falsehood spread significantly farther, faster, deeper, and more broadly than the truth across all information categories, with the effect most pronounced for political news. They attribute this pattern to human behavior—driven partly by the greater novelty of false news—rather than to automated bots.",
+  "key_claims": [
+    "False news diffused significantly farther, faster, deeper, and more broadly than true news across all categories of information.",
+    "The effect was most pronounced for false political news relative to news about terrorism, natural disasters, science, urban legends, or finance.",
+    "Humans, not bots, are primarily responsible for the greater spread of false news, since bots accelerated true and false news at roughly equal rates.",
+    "False news was more novel than true news, and novelty is a plausible driver of people's greater propensity to share it.",
+    "Network structure and individual user characteristics favor the truth, yet falsity spreads more, so the differential is driven by human sharing choices rather than these factors."
+  ],
+  "methods": [
+    "Assembled a comprehensive data set of all fact-checked rumor cascades on Twitter from 2006 to 2017 (~126,000 cascades, ~3 million people, >4.5 million tweets).",
+    "Classified rumors as true, false, or mixed using verdicts parsed from six independent fact-checking organizations (snopes, politifact, factcheck.org, truthorfiction, hoax-slayer, urbanlegends.about.com), with 95-98% cross-organization agreement.",
+    "Collected English-language reply tweets linking to those sites, reconstructed original tweets and retweet cascades, and used optical character recognition to extract text from images.",
+    "Quantified diffusion via four metrics: depth (retweet hops), size (users involved), maximum breadth, and structural virality (Goel et al. measure).",
+    "Used Kolmogorov-Smirnov tests to compare distributions and a logistic regression model of retweet likelihood controlling for account age, activity, followers, followees, and verified status.",
+    "Measured novelty with a Latent Dirichlet Allocation topic model (200 topics, trained on 10 million tweets), comparing rumor tweets against tweets users saw in the prior 60 days using information uniqueness, Kullback-Leibler divergence, and Bhattacharyya distance.",
+    "Analyzed emotional content of replies using the NRC lexicon (~140,000 words, ~32,000 hashtags) mapped to Plutchik's eight basic emotions.",
+    "Ran robustness checks: cluster-robust standard errors at the rumor level, an independently annotated validation set (13,240 cascades labeled by three students, Fleiss' kappa 0.88), and two bot-detection algorithms with varying sensitivity thresholds."
+  ],
+  "findings": [
+    "The top 0.01% of false cascades reached depths greater than 19 hops, about eight hops deeper than the truth, which rarely exceeded depth 10.",
+    "The truth rarely diffused to more than 1000 people, whereas the top 1% of false-news cascades reached between 1000 and 100,000 people.",
+    "Truth took about six times as long as falsehood to reach 1500 people and roughly 20 times as long to reach a cascade depth of 10.",
+    "Politics was the largest category (~45,000 cascades); false political news traveled deeper, broader, faster, and was more viral than any other false-news category.",
+    "Users who spread false news had significantly fewer followers, followed fewer people, were less active, less often verified, and had been on Twitter for less time.",
+    "Falsehoods were 70% more likely to be retweeted than the truth even after controlling for user and network characteristics.",
+    "False rumors were significantly more novel across all three novelty metrics; false rumors elicited replies expressing greater surprise and disgust, while true rumors elicited greater sadness, anticipation, joy, and trust.",
+    "Removing and re-adding bot traffic did not change the main conclusions, indicating bots affected true and false spread roughly equally."
+  ],
+  "contributions": [
+    "Provides the first large-scale, comprehensive empirical analysis of how verified true versus false news differ in their diffusion on Twitter, moving beyond prior single-rumor or ad hoc studies.",
+    "Introduces a veracity-based framework distinguishing news, rumors, and cascades, and deliberately avoids the politicized term 'fake news' in favor of verifiable 'true' and 'false' categories.",
+    "Empirically overturns the conventional assumption that bots or network/user characteristics drive the spread of false news, redirecting attention to human sharing behavior.",
+    "Offers novelty and emotional response as candidate behavioral explanations for the differential spread of falsity.",
+    "Suggests policy implications favoring behavioral interventions (labeling, incentives) rather than an exclusive focus on curtailing bots, and releases code and data for validation."
+  ],
+  "framing": "The paper situates itself within social science theories of decision-making, cooperation, communication, and markets that treat truth as central to human endeavor, alongside information theory and Bayesian decision theory regarding novelty. It positions itself against a fragmented literature of small, single-event rumor studies, calling for large-scale systematic analysis of misinformation diffusion and its behavioral origins.",
+  "pdf_source": "drive"
+}

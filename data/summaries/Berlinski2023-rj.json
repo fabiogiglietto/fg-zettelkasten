@@ -1,0 +1,36 @@
+{
+  "abstract": "This study uses a survey experiment to test whether exposure to unsubstantiated elite claims of voter fraud erodes public confidence in elections. Fielding the experiment among a nationally representative U.S. sample after the 2018 midterm elections, the authors show real tweets from prominent Republicans alleging voter fraud and find that such exposure significantly reduces confidence in electoral integrity, especially among Republicans and Trump approvers. Critically, fact-check tweets from mainstream sources fail to measurably mitigate this damage, though exposure does not reduce support for democracy itself.",
+  "key_claims": [
+    "Exposure to unsubstantiated elite claims of voter fraud reduces citizens' confidence in electoral integrity.",
+    "These corrosive effects are concentrated among those for whom the claims are politically congenial—Republicans and individuals who approve of Donald Trump.",
+    "Corrective fact-checks from mainstream sources do not measurably reduce the damage that fraud allegations inflict on election confidence.",
+    "Unsubstantiated fraud claims do not measurably reduce support for democracy as a system of government, only confidence in elections specifically.",
+    "Even minimal exposure (as few as eight tweets) can substantially diminish faith in the electoral system among susceptible partisans."
+  ],
+  "methods": [
+    "Online survey experiment fielded by YouGov among 4,283 U.S. respondents in December 2018/January 2019, after the 2018 midterm elections.",
+    "Random assignment to four conditions: placebo (non-political tweets), low dose (four voter-fraud tweets), high dose (eight voter-fraud tweets), and low dose plus fact-check (four fraud tweets plus four fact-check tweets).",
+    "Treatment stimuli were actual tweets from prominent Republicans (e.g., Rick Scott, Lindsey Graham, Marco Rubio, Trump) alleging fraud, and real corrections from the Associated Press, PBS NewsHour, and NYT Politics.",
+    "Outcome measured via seven survey items on election confidence combined into a standardized composite using exploratory and confirmatory factor analysis; a separate five-item battery measured support for democracy.",
+    "Analysis via OLS regression with robust standard errors, including main-effect models and models interacting treatment with partisanship and Trump approval as congeniality moderators.",
+    "Preregistered design with documented deviations (e.g., analyzing Democrats and independents separately, using Trump approval as an exploratory moderator, separating election confidence from democracy support outcomes)."
+  ],
+  "findings": [
+    "The low-dose condition reduced composite election confidence by 0.147 SD and the high-dose condition by 0.168 SD relative to placebo (both p < 0.005).",
+    "No measurable difference was found between low and high doses, so a higher dosage did not produce a reliably stronger effect (H3a not supported).",
+    "The low-dose-plus-fact-check condition still significantly reduced confidence relative to placebo (−0.092 SD, p < 0.05); fact-checks did not measurably offset the harm.",
+    "High-dose effects varied significantly by party and by Trump approval, reducing confidence significantly only among Republicans (~0.27 SD) and Trump approvers (~0.34 SD).",
+    "Fact-check effects did not vary by party or Trump approval; negative effects persisted among Republicans and Trump supporters even with corrections present.",
+    "Treatments had overwhelmingly null effects on broader attitudes toward democracy and support for democratic governance.",
+    "Beliefs that ballots are secure from tampering were unaffected—consistent with that specific claim not being questioned in the stimuli."
+  ],
+  "contributions": [
+    "Provides direct experimental evidence (rather than mixed panel evidence) that unfounded elite fraud claims causally reduce confidence in elections.",
+    "Advances beyond prior work (e.g., Albertson and Guiler) by testing claims from actual political leaders in their original tweet format, enhancing external validity.",
+    "Demonstrates that mainstream fact-checking may be insufficient to counter congenial misinformation, informing real-world platform and journalistic responses.",
+    "Distinguishes empirically between erosion of election confidence and erosion of support for democracy as a regime type.",
+    "Contributes to literatures on misinformation persistence (belief echoes), elite cues, motivated reasoning, and the fragility of electoral legitimacy in advanced democracies."
+  ],
+  "framing": "The paper situates itself within literatures on elite cues, misinformation and fact-checking, motivated reasoning, and electoral legitimacy, positioned against prior work that questioned whether leaders can easily shift attitudes toward foundational institutions. Motivated by Trump's 2020 fraud claims and the January 6 insurrection, it frames unsubstantiated fraud allegations as a distinct threat to the perceived legitimacy of democratic processes.",
+  "pdf_source": "drive"
+}

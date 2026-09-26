@@ -1,0 +1,34 @@
+{
+  "abstract": "This introductory essay to the Political Communication special issue 'Beyond Fake News: The Politics of Disinformation' situates the study of disinformation within a broader crisis of public communication and a longer-developing 'disinformation order.' The authors define disinformation as false, inaccurate, or misleading information designed and promoted with intent to cause public harm or for profit, distinguishing it from misinformation (lacking malicious intent) and other forms of 'problematic information.' They trace the very short history of disinformation research, contrast it with the older traditions of propaganda and misinformation study, preview the issue's seven articles, and propose directions for future work.",
+  "key_claims": [
+    "Disinformation and its conceptual siblings (fake news, misinformation, media manipulation, coordinated inauthentic behavior, propaganda) constitute the defining political communication topic of the current era.",
+    "Disinformation is best defined by three criteria—deception, potential for harm, and intent to harm—following the European Commission's 2018 High Level Expert Group definition.",
+    "The term 'fake news' should be abandoned as an analytical concept because Donald Trump and his followers have stripped it of value and because its many referents (including satire) make it ambiguous.",
+    "Contemporary digital disinformation must be understood within a wider context of declining public trust in the press and institutions, affective polarization, and the political economy of platformized, clickbait-driven media.",
+    "Disinformation research is a nascent field with scattered theoretical approaches that only surged after 2016.",
+    "Disinformation should be studied as a distinct species of 'problematic information,' separable from misinformation and propaganda, though whether the distinctions matter empirically remains an open question."
+  ],
+  "methods": [
+    "Conceptual and definitional analysis of disinformation and related terms.",
+    "Historical literature review tracing propaganda research (from the Institute for Propaganda Analysis, 1937-1942, through Cold War and Herman-Chomsky propaganda-model traditions) and misinformation research (originating in cognitive psychology).",
+    "Bibliometric indicator using Google Scholar title counts to demonstrate the post-2016 surge in disinformation scholarship (238 results 2000-2009; 257 for 2010-2016; 609 for 2017-2019, with over 70% of 2010-2019 titles appearing after 2016).",
+    "Editorial synthesis and classification of the seven special-issue articles into content studies and reception studies."
+  ],
+  "findings": [
+    "Public confidence that news media report the news fully, accurately, and fairly has declined steadily in the US since the 1970s, hitting a low in 2016 and then sharply polarizing.",
+    "Over 70% of Google Scholar results with 'disinformation' in the title published between 2010 and 2019 appeared after 2016, evidencing a rapid surge in scholarly interest.",
+    "Native advertising is recognized as paid content by fewer than 10% of consumers, and learning its true nature reduces perceived credibility of the news producer.",
+    "In the special issue, junk news reached parity with professional news sources in Twitter shares during the 2016 election (Bradshaw et al.), while professional news gained ground during the 2018 State of the Union.",
+    "Reception studies found fact-checking can reduce disinformation credibility (Powell et al.), that ostracized users persist in endorsing attitude-congruent falsehoods (Garrett et al.), and that low trust in political/media systems increases disinformation belief and can shift voters from the CDU/CSU toward the far-right AfD (Zimmermann & Kohring).",
+    "Existing research shows partisan asymmetry in the US, with conservatives disproportionately targeted by and susceptible to disinformation, and Black Americans especially targeted by the Russian Internet Research Agency."
+  ],
+  "contributions": [
+    "Provides a working, criteria-based definition of disinformation and clarifies its boundaries relative to misinformation, propaganda, and other 'problematic information.'",
+    "Argues for retiring 'fake news' as an analytical term and advancing more precise conceptualization.",
+    "Offers a concise intellectual history of disinformation, propaganda, and misinformation research within communication and adjacent fields.",
+    "Introduces a content-versus-reception typology for organizing disinformation scholarship.",
+    "Sets a forward-looking research agenda: disinformation effects, subpopulation and partisan asymmetries, cross-national comparison, and empirical testing of whether mis/disinformation distinctions matter."
+  ],
+  "framing": "The essay positions itself within political communication scholarship on the 'crisis of public communication' and Bennett and Livingston's 'disinformation order,' drawing on political economy of media, affective polarization research, and the political-psychology tradition of motivated reasoning. It frames disinformation as a normative threat to democratic practice that requires precise conceptual distinction from propaganda and misinformation.",
+  "pdf_source": "drive"
+}

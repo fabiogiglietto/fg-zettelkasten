@@ -5,7 +5,7 @@ authors: ["Hunt Allcott", "Matthew Gentzkow", "Chuan Yu"]
 year: 2019
 doi: 10.1177/2053168019848554
 bibtex_key: Allcott2019-gn
-topics: [climate-and-misinformation-message-interventions]
+topics: [misinformation-exposure-recalibration, platform-critique-anniversary-essays]
 citation_count: 459
 open_access: false
 source_url: https://doi.org/10.1177/2053168019848554
@@ -22,28 +22,29 @@ discovery_date: 2026-09-26T08:39:39.445437Z
 
 ## Summary
 
-Despite the metadata title, the structured summary describes a real-world field study testing whether psychological inoculation ("prebunking") videos can be deployed *and* evaluated at scale on Instagram's Story Feed. Working in partnership with Google Jigsaw and the NGO Reality Team, the authors created a 19-second video warning users about emotionally manipulative content and served it as an ad to 375,597 UK Instagram users aged 18–34. Using Instagram's poll sticker to measure outcomes, they found treated users were roughly 21 percentage points better at recognizing emotional manipulation than controls — an effect that held stable at a five-month follow-up. The study argues for ecological validity, moving inoculation research out of the lab and into a live, attention-scarce scroll feed, and treating manipulative (not merely outright false) content as the target.
+This paper offers an early empirical tracking of how misinformation diffusion on social media changed in the immediate aftermath of the 2016 US election, when Facebook and other platforms began rolling out content-moderation interventions. Using BuzzSumo data on 569 fake news websites and 9,540 verified false-story URLs from January 2015 to July 2018, Allcott, Gentzkow, and Yu measure Facebook engagements and Twitter shares over time. Their central finding is a divergence: interactions with false content rose on both platforms through late 2016, then fell sharply on Facebook while continuing to climb on Twitter — the Facebook-to-Twitter engagement ratio for fake news declined by roughly 60%. Because this divergence appears for fake news but not for comparison content categories, the authors read it as suggestive (though not causally established) evidence that Facebook-specific factors, plausibly its post-election interventions, slowed the relative spread of misinformation.
 
 ## Key Contributions
 
-- Real-world evidence that brief inoculation ads work inside a scroll-based social media feed, not just in lab or simulated-feed settings.
-- A novel, scalable evaluation method using Instagram's poll sticker functionality, extending prior YouTube brand-lift approaches to a new platform.
-- Demonstrates long-term (five-month) durability of a single-technique inoculation delivered via a very short video.
-- Shows inoculation can shift downstream digital behavior (information-seeking via clicks), not only recognition accuracy.
-- Provides practical, low-cost guidance for practitioners deploying prebunking campaigns at scale.
+- One of the first longitudinal, cross-platform measures of how the scale of social media misinformation evolved around the 2016 election.
+- A comparative Facebook-vs-Twitter ratio design that helps net out sample-selection and demand-side confounds affecting both platforms similarly.
+- A documented, replicable combined dataset of fake news sites and verified false-story URLs.
+- Suggestive evidence relevant to evaluating platform content-moderation interventions.
 
 ## Methods
 
-Quasi-experimental field study on live Instagram. The 19-second prebunking video used a weakened-dose fake headline ("Yoga linked to terrifying full body cancer") to forewarn against emotional manipulation. The campaign ran February 5–11, 2025, generating 889,336 impressions and 472,612 video views; users who watched ≥50% were placed on a "watchlist" (per-protocol/as-treated design, 12.05% conversion). Randomization was approximated via self-declared birth months (April, July, October assigned to control, since birth month is targetable in Instagram's ad manager). The primary outcome was a binary poll sticker asking users to identify the manipulation technique in a headline (main sample N=806, ~400 per group), completed 24 hours to 10 days after exposure. A five-month follow-up (July 2025) served as a repeated cross-sectional test, and click-through rate on a "learn more" link was an exploratory information-seeking measure. Analysis used two-proportion z-tests and chi-square tests, with differential attrition noted.
+The authors assembled a list of 672 fake news sites (569 usable in BuzzSumo) by combining five prior lists and studies, and built three comparison groups from Alexa rankings: major news sites, small news sites, and business/culture sites. Monthly Facebook engagements (shares + comments + reactions) and Twitter shares were gathered via BuzzSumo and averaged by quarter. A URL-level sample of 9,540 verified false stories was constructed by scraping Snopes "false"/"mostly false" claims, extracting keywords, matching in BuzzSumo, and manually screening. Extensive robustness checks varied list-inclusion thresholds, excluded outlier sites, used alternative comparison groups, and substituted Facebook shares for total engagements.
 
 ## Findings
 
-- Treatment group correctly identified emotional manipulation 59.55% of the time vs. 38.21% for controls — a 21.4 pp lift (95% CI [14.6, 28.0]), p<.001.
-- At five-month follow-up, the lift persisted at 22.21 pp (66.39% vs. 43.98%), p<.001.
-- Baseline recognition was poor (38%, near chance), consistent with younger audiences' susceptibility to misinformation.
-- Click-through rate to "learn more" was ~3× higher in treatment (0.31%) than control (0.11%), a 0.20 pp difference, p<.001, persisting at follow-up.
-- The campaign was inexpensive (CPM of $8.25, ~$825 per 100,000 impressions), below Meta's average.
+- Fake news interactions rose on both platforms from early 2015 through just after the 2016 election.
+- Post-election, Facebook engagements with fake news fell more than 50%, while Twitter shares kept rising.
+- The Facebook-to-Twitter ratio for fake news fell from about 45:1 (stable through late 2016) to roughly 15:1 by mid-2018 — about a 60% decline.
+- Comparison categories stayed relatively stable across both platforms, showing no comparable divergence.
+- Facebook fake news engagements peaked near 160 million/month in late 2016 and fell to about 60 million/month by the sample's end (vs. 200–250 million for major news).
+- On Twitter, fake news shares stayed in the 3–5 million/month range post-2016 (vs. ~20 million for major news).
+- The URL-level analysis of false stories showed a similar post-2016 halving of the Facebook-to-Twitter ratio.
 
 ## Connections
 
-This paper sits squarely in the inoculation/prebunking strand of misinformation-intervention research and connects most directly to work on scaling prebunking and manipulation-technique inoculation, such as [[van-der-Linden2026-jt]] and [[Costello2024-bg]]. Its concern with durable, real-world message interventions relates it to other intervention studies in the same topic set, including [[Spampatti2026-kx]] and [[Voelkel2026-lc]], though the specific platform-native evaluation method here is a distinctive contribution.
+This paper is a foundational empirical benchmark in the misinformation-measurement literature and is directly extended by [[Allcott2025-jb]], as well as by later work quantifying the prevalence and reach of low-quality news such as [[Budak2024-ef]], [[Allen2024-av]], and [[Gonzalez-Bailon2024-rq]]. Its focus on how misinformation exposure shifts over time and across platforms speaks to the recalibration debate about the true scale of the problem, alongside [[Guess2020-rr]], [[Grinberg2019-ua]], and [[Vosoughi2018-at]]. The comparative-platform design and reliance on curated fake news lists connect it to methodological discussions in [[Lazer2018-mm]] and [[Bruns2019-nr]].

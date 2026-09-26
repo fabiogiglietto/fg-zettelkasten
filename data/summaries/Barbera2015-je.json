@@ -1,0 +1,37 @@
+{
+  "abstract": "This paper introduces a Bayesian Spatial Following model that estimates the ideological positions (ideal points) of both political elites and ordinary citizens from the structure of who follows whom on Twitter. Building on the assumption that social networks are homophilic, the method treats a user's decision to follow political accounts as a costly signal about their latent ideology, inferring positions on a continuous scale with standard errors. Barberá validates the estimates for legislators, parties, and mass-public users across the United States and five European countries, showing strong correspondence with roll-call, expert-survey, campaign-contribution, and voter-registration benchmarks. He then applies the estimates to the 2012 US presidential campaign, finding evidence of ideological 'echo chambers' and high mass-level polarization.",
+  "key_claims": [
+    "The structure of Twitter 'following' networks encodes valid information about the ideological positions of both political actors and ordinary users.",
+    "Following decisions function as costly signals (via cognitive dissonance and attention/opportunity costs) analogous to roll-call votes or campaign contributions, allowing them to be scaled onto a latent ideological dimension.",
+    "The method can estimate ideal points for far more actors, at any point in time, and across multiple polities than existing approaches, without strong bridging assumptions or reliance on self-selected populations.",
+    "The non-representativeness of Twitter users is not a fatal limitation because politically engaged users act as 'experts' rating elites, making them a useful information source for ideology estimation.",
+    "Online political discussion during the 2012 US campaign is heavily clustered along ideological lines, supporting the echo-chamber theory, with polarization especially intense among conservative users."
+  ],
+  "methods": [
+    "Bayesian spatial 'following' model in which the probability that user i follows political account j is a logit function of squared Euclidean distance in a latent ideological dimension, plus account popularity (alpha_j) and user political-interest (beta_i) parameters.",
+    "Hierarchical multilevel setup with common population priors for each parameter set; identification handled via fixing means/variances and setting starting values (left = -1, right = +1) to resolve additive aliasing, scaling invariance, and reflection invariance.",
+    "Two-stage MCMC estimation: a No-U-Turn (Hamiltonian Monte Carlo) sampler in Stan on a random subsample of 10,000 users to estimate elite (j) parameters, then a random-walk Metropolis-Hastings sampler in R (parallelizable via local independence) to estimate individual (i) parameters.",
+    "Data collected via the Twitter REST and Streaming APIs (using the streamR package): follower lists for 118-318 target political accounts per country, filtered to active in-country users following at least three political accounts.",
+    "Final analytic samples ranged from ~49,000 (Germany) to ~301,537 (US) users across the US, UK, Spain, Germany, Italy, and the Netherlands.",
+    "Validation against external benchmarks: DW-NOMINATE and IRT roll-call scores, the 2010 Chapel Hill Expert Survey, Lax & Phillips state opinion estimates, Bonica campaign-contribution ideal points, and Ohio voter-registration records (2707 and 2462 matched users).",
+    "Application analysis of ~65 million tweets mentioning 'Obama' or 'Romney' (Aug 15 to Election Day 2012), focusing on ~15 million tweets by the sampled users, using distributions of tweet volume and retweet heatmaps to measure polarization."
+  ],
+  "findings": [
+    "Twitter-based ideal points for US Congress members correlate strongly with DW-NOMINATE scores (rho = 0.941 in the House, 0.954 in the Senate; within-party rho = 0.546 Republicans, 0.610 Democrats).",
+    "Non-partisan political actors (e.g., Rush Limbaugh, Glenn Beck on the right; Michael Moore, Rachel Maddow, HRC on the left) are placed with high face validity.",
+    "European party estimates broadly reproduce Chapel Hill Expert Survey left-right orderings, though accuracy varies (weakest in the UK; extreme parties often pulled toward center), likely because the single latent dimension captures the dominant axis of variation in multidimensional policy spaces.",
+    "Mass-public ideal points reproduce known elite/mass polarization patterns: bimodal distributions, elites more polarized than voters, and self-identified conservatives, moderates, and liberals order correctly.",
+    "State median Twitter ideal points correlate more strongly with survey-based liberal opinion (rho = 0.876) than with Obama's 2012 vote share (rho = 0.785), suggesting the dimension reflects ideology rather than mere partisanship.",
+    "At the individual level, 90% of matched users right of the median donated to Republicans and 98% left of the median donated to Democrats (rho = 0.80 with contribution-based ideal points); Ohio registration history aligns with estimated ideology.",
+    "In the 2012 campaign, tweet volume was highly bimodal (modes near -1 and +1); conservatives were more active (avg 118 vs 82 tweets); 85% of retweets occurred between users of similar ideology, confirming an echo-chamber structure, with polarization strongest among conservatives while liberals engaged somewhat more across the spectrum."
+  ],
+  "contributions": [
+    "Introduces a novel, scalable Bayesian ideal-point estimation method usable for hundreds of thousands of individuals, elites and citizens alike, on a common continuous scale with standard errors.",
+    "Provides ideology estimates that require no roll-call, survey, or contribution data and can be produced at any time and across many countries, overcoming static-measurement, bridging, and self-selection limitations of prior methods.",
+    "Demonstrates cross-national applicability by estimating and validating positions in six countries with varying party-system complexity.",
+    "Contributes to the social-media-and-politics literature by supplying a fine-grained, low-cost covariate for studying political behavior and by re-examining the echo-chamber/polarization debate with a much larger, more precise sample than prior work.",
+    "Offers replication data and open-source tooling (Stan code, streamR package), and outlines extensions to dynamic ideal points and cross-country bridging."
+  ],
+  "framing": "The paper situates itself within the political-methodology tradition of spatial voting and ideal-point estimation (Poole & Rosenthal; Clinton, Jackman & Rivers; Jessee; Bonica), drawing on item-response theory and latent-space network models. It also engages the sociology of homophily (McPherson et al.) and the selective-exposure/echo-chamber literature (Sunstein; Iyengar & Hahn; Conover et al.), positioning Twitter following networks as a new, information-rich data source for measuring ideology.",
+  "pdf_source": "drive"
+}

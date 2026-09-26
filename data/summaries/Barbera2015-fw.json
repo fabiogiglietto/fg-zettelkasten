@@ -1,0 +1,36 @@
+{
+  "abstract": "The authors analyze whether online political communication on Twitter functions as an ideological 'echo chamber' or a broader 'national conversation.' Using a novel network-based method, they estimate the ideological positions of 3.8 million Twitter users and examine nearly 150 million tweets across 12 political and nonpolitical topics from 2012–2014. They find that polarization in information sharing is highly topic- and time-dependent: political issues resemble echo chambers while many nonpolitical events cross ideological lines, and liberals engage in more cross-ideological sharing than conservatives.",
+  "key_claims": [
+    "The degree of online ideological segregation is not fixed but varies substantially by topic and over time; political issues produce echo-chamber-like patterns while nonpolitical events produce cross-cutting 'national conversation' patterns.",
+    "Previous research may have overestimated the extent of mass political polarization in social-media usage, partly due to reliance on self-selected partisan samples or exclusion of social-media platforms.",
+    "There is an ideological asymmetry: liberals are significantly more likely than conservatives to engage in cross-ideological dissemination (retweeting) for both political and nonpolitical topics.",
+    "Network structure (who follows whom) can serve as a valid, scalable basis for inferring individual ideological positions without relying on text analysis or self-report."
+  ],
+  "methods": [
+    "Estimated ideological positions of 3.8 million U.S. Twitter users based on their follower connections to political accounts, drawing on latent space models and spatial following models.",
+    "Used correspondence analysis (Greenacre, 1993) as a computationally tractable approximation to Bayesian/MCMC latent space estimation for millions of nodes, based on singular value decomposition of a standardized connection matrix.",
+    "Built the latent space from users following at least 10 of an initial list of political accounts (president, vice president, parties, members of Congress with >5,000 followers), then expanded with accounts popular among liberals/conservatives and projected all users onto the same scale (standardized to mean 0, SD 1).",
+    "Collected ~150 million tweets via the Twitter Streaming API using topic-specific keyword lists for 12 events (2012 election, government shutdown, minimum wage, budget, marriage equality, State of the Union, Boston Marathon bombing, Newtown shooting, Syria, Super Bowl, Oscars, Winter Olympics), applying activity, location, and spam filters to exclude bots and ghost accounts.",
+    "Analyzed retweeting behavior using three polarization metrics: percentage of retweets among ideologically similar users, ideological homogeneity of detected retweet-network communities (via force-directed layout visualization), and average ideological extremity of retweeted content.",
+    "Used Poisson regression models to estimate expected cross-ideological retweeting rates adjusted for each group's propensity to retweet and be retweeted, testing for liberal-conservative asymmetry.",
+    "Validated ideology estimates against statewide survey/sociodemographic ideology (Lax & Phillips, 2012), congressional roll-call-based ideal points (Clinton et al., 2004), and matched voter-registration records in five states."
+  ],
+  "findings": [
+    "Political topics (2012 election, government shutdown, State of the Union) showed strong ideological homophily in retweeting; e.g., 38% of 2012-election retweets occurred among extreme conservatives and 28% among extreme liberals, though each group was only 16% of the sample.",
+    "Nonpolitical topics (Boston Marathon bombing, 2014 Super Bowl, Winter Olympics) crossed ideological boundaries, showing low homophily and heterogeneous retweet clusters rather than segregated ones.",
+    "The Newtown shooting showed a dynamic shift from national conversation to echo chamber as discussion moved from the tragedy toward gun-control policy; Syria showed the opposite pattern (rising then falling polarization).",
+    "Highly polarized topics (minimum wage, government shutdown) had the most-shared content coming from ideologically extreme authors, whereas Super Bowl and Boston Marathon content was more likely to be retweeted from moderate sources.",
+    "For all political topics, liberals were significantly more likely than conservatives to retweet across ideological lines; per within-group retweet, there were ~0.20–0.30 conservative-retweeting-liberal cases and ~0.25–0.50 liberal-retweeting-conservative cases.",
+    "Cross-ideological retweeting was higher for nonpolitical than political topics, and the liberal-conservative asymmetry was smaller for nonpolitical topics (not statistically significant for the Winter Olympics).",
+    "Validation showed strong correlations: r = .87 with statewide survey ideology, r = .95 with roll-call ideology for members of Congress, and 78% correct party-registration classification using a 0.5 threshold."
+  ],
+  "contributions": [
+    "Introduced a scalable, text-free method (correspondence analysis approximation of latent space models) to estimate ideology for millions of social-media users from network follow structure.",
+    "Provided large-scale behavioral evidence that online ideological segregation is topic- and time-contingent rather than uniform, challenging blanket 'echo chamber' characterizations.",
+    "Documented a robust ideological asymmetry in cross-ideological information dissemination favoring liberals, linking it to psychological theories of ideological difference.",
+    "Demonstrated the value of unobtrusive 'big data' from naturally occurring social contexts for studying polarization, with openly shared data and materials.",
+    "Analyzed a broad, mixed set of 12 political and nonpolitical events, avoiding the self-selected partisan samples that limited prior work."
+  ],
+  "framing": "The paper sits at the intersection of political psychology, political communication, and computational social science, engaging debates over selective exposure, echo chambers, and mass polarization. It positions network-based behavioral 'big data' as an alternative to survey self-report and lab experiments, and it tests competing psychological accounts of whether ideological homophily is symmetric across the political spectrum or asymmetric (as predicted by theories of conservatives' heightened epistemic, existential, and relational motives).",
+  "pdf_source": "drive"
+}

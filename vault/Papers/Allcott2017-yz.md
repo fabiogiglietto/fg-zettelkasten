@@ -10,7 +10,7 @@ citation_count: 4534
 open_access: false
 source_url: https://doi.org/10.1257/jep.31.2.211
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445456Z
 ---
 
@@ -22,27 +22,30 @@ discovery_date: 2026-09-26T08:39:39.445456Z
 
 ## Summary
 
-This paper offers one of the earliest systematic empirical accounts of the "fake news" phenomenon surrounding the 2016 US presidential election, defined as false stories circulated largely through social media. Approaching the topic through the lens of media economics, the authors argue that fake news should be understood as the product of identifiable incentives to produce and share false content, and that its scale and believability can be measured rather than merely speculated about. Combining web browsing data, fact-checking archives, and an original survey, they characterize how often fabricated stories were seen and believed by American voters, concluding that while fake news circulated widely on social media, social media itself was an important but not dominant source of election news.
+This foundational paper by Allcott and Gentzkow provides both a theoretical framework and the first systematic empirical estimates of the scale and impact of "fake news"—intentionally and verifiably false news articles—circulating during the 2016 US presidential election. The authors define fake news as a distinct phenomenon, model it as an equilibrium outcome of media markets, and assemble original data (web browsing statistics, a fact-check database, and a post-election survey) to gauge exposure. Against alarmist post-election commentary that fake news elected Trump, they argue that while fake news was widely shared and heavily tilted toward Trump, the average American adult saw and remembered only about one fake news story—implying fake news would have needed implausibly high per-article persuasiveness to be pivotal.
 
 ## Key Contributions
 
-- Provides new empirical data on the consumption of fake news in the run-up to the 2016 election.
-- Introduces an economic framework for reasoning about the incentives to produce and spread false stories.
-- Integrates multiple data sources—browsing data, fact-checking archives, and a purpose-built survey—to triangulate the reach and potential influence of fake news.
+- Introduces a working definition of fake news and an economic framework distinguishing it from adjacent phenomena (rumors, conspiracy theories, satire, slant, unintentional errors).
+- Provides the first systematic empirical estimates of the scale of fake news circulation and voter exposure around the 2016 election.
+- Develops a placebo-headline survey methodology to correct for false recall in measuring self-reported media exposure.
+- Documents the demographic and partisan correlates of who believes fake news, and quantifies ideologically aligned inference and its moderators (including social-network segregation).
+- Offers a disciplined, non-partisan framing of the question of whether fake news was pivotal.
 
 ## Methods
 
-- Analysis of web browsing data to measure patterns of news consumption.
-- Cataloging of fake news stories using fact-checking website archives.
-- An original online survey measuring self-reported exposure to and belief in specific news stories.
-- Economic analysis of the market for fake news, treating its production and diffusion as responses to incentives.
+The paper combines a supply-and-demand model of media markets (where fake news producers are firms making no investment in accuracy, chasing short-run clicks rather than reputation) with three empirical strands: (1) a database of 156 fact-checked false election stories from Snopes, PolitiFact, and BuzzFeed, with Facebook share counts via BuzzSumo; (2) Alexa web-traffic analysis comparing referral sources for 690 top news sites versus 65 fake news sites; and (3) an online post-election survey of 1,208 US adults, reweighted for representativeness, in which respondents rated 15 randomly assigned headlines across five categories including invented placebo headlines. Three benchmarking approaches (shares-to-visits ratios, browsing impressions, and placebo-corrected survey recall) triangulate an estimate of average fake news exposure.
 
 ## Findings
 
-- About 14 percent of Americans named social media as their most important source of election news.
-- Social media was an important but not dominant source of election news overall.
-- The scale of pre-election fake news consumption can be quantified empirically, grounding subsequent debates in measurable data rather than conjecture.
+- The database held 115 pro-Trump fake stories shared ~30 million times on Facebook versus 41 pro-Clinton stories shared ~7.6 million times—roughly three times more pro-Trump content.
+- Social media accounted for only ~10% of traffic to top news sites but ~41.8% of traffic to fake news sites; just 14% of adults named social media their most important election news source.
+- Convergent estimates put average exposure low: ~3 fake reads per adult (upper bound), 0.64 impressions per adult across 65 sites, and ~1.14 remembered articles per adult after placebo correction.
+- Placebo (never-circulated) fake headlines were recalled (~14% seen) and believed (~8%) at nearly the same rate as real fake headlines (~15% seen, ~8% believed), revealing substantial false recall.
+- Republicans were more credulous of both true and false headlines; education, age, and heavier media consumption predicted more accurate discernment.
+- Partisans were ~15–17 percentage points more likely to believe ideologically aligned headlines, an effect amplified by segregated social networks and heavier media use.
+- A back-of-the-envelope calculation benchmarking one fake article against a TV ad's ~0.02 pp effect implies fake news shifted vote shares by only hundredths of a percentage point—far below Trump's pivotal-state margins.
 
 ## Connections
 
-As a foundational empirical statement on fake news exposure, this paper anchors much of the later literature that refines and revises its estimates of how much misinformation people actually see and consume, including [[Allen2020-nj]], [[Grinberg2019-ua]], [[Guess2019-ym]], and [[Guess2020-rr]]. Its emphasis on the outsized diffusion of falsehoods over social channels connects directly to [[Vosoughi2018-at]] and to work on echo chambers and selective exposure such as [[Del-Vicario2016-uj]] and [[Flaxman2016-lm]], while its concern with belief in false stories links to [[Lewandowsky2012-vn]] on misinformation correction.
+This paper is a cornerstone of the empirical exposure-measurement literature, with later work by the same author extending the analysis of trends in fake news engagement in [[Allcott2019-gn]] and misinformation intervention design in [[Allcott2025-jb]]. Its low-exposure, low-impact finding directly anticipates and complements the "small niche" audience results of [[Grinberg2019-ua]], [[Guess2019-ym]], [[Guess2020-rr]], and [[Nyhan2023-gb]], while its treatment of ideologically aligned belief and partisan credulity connects to [[Pennycook2021-jq]] and [[Osmundsen2021-et]]; its market-and-echo-chamber framing sits alongside diffusion and segregation studies such as [[Vosoughi2018-at]], [[Del-Vicario2016-uj]], and [[Guess2021-ym]], and the definitional agenda-setting piece [[Lazer2018-mm]].

@@ -1,0 +1,38 @@
+{
+  "abstract": "This essay by Tarleton Gillespie argues that public and scholarly debate about social media content moderation has fixated too heavily on removal—deleting content and banning users—while overlooking 'reduction,' the increasingly common practice of demoting the visibility or reach of problematic content without removing it. Platforms use machine learning classifiers to identify content deemed misleading, risky, or offensive enough to warrant demotion in algorithmic rankings, recommendations, and search results, but not removal. Gillespie documents how major platforms implement these techniques, examines how they justify them, and offers a typology of reduction. He argues that reduction should be understood as a core form of content moderation and platform governance, with troubling implications for transparency, accountability, and social equity.",
+  "key_claims": [
+    "Reduction—demoting the visibility or reach of problematic content—should be included within a broadened definition of 'content moderation,' not treated as adjacent to it.",
+    "Content moderation and algorithmic recommendation, usually treated as separate platform functions handled by different teams, are better understood together as forms of governance by different means.",
+    "Reduction is now widely used across major platforms for nearly all traditional Trust & Safety concerns, yet remains largely absent from public debate, policymaking, and scholarship because platforms deliberately keep it in the shadow of removal.",
+    "Reduction avoids none of the legal and societal problems of removal (arbiter power, bias, inequitable impact, free-speech implications) and in fact concentrates even more curatorial power in private, profit-oriented intermediaries by obscuring it.",
+    "Reduction is essentially invisible to existing transparency and accountability mechanisms, leaving users unable to detect or contest it, and it may be practically impossible to measure since there is no 'normal' reach to compare against.",
+    "Reduction is a corrective mechanism that presumes and reifies the underlying logic (expansion/virality as 'natural') of the system it is designed to correct, rather than questioning that logic.",
+    "Reduction techniques risk further marginalizing already disadvantaged communities unless premised on a different theory of participation, equity, and accountable oversight."
+  ],
+  "methods": [
+    "Analysis of company policies, corporate communications (blog posts, transparency documents), and technical literature from both academia and industry.",
+    "Close reading of platform announcements and justifications, including YouTube's 2019 'borderline content' post and 'Four Rs' framework, Facebook/Instagram policies, and statements from Twitter, LinkedIn, TikTok, Tumblr, and Reddit.",
+    "Informal background conversations with a dozen or more Trust & Safety and adjacent employees across five major social media platforms, treated as background rather than formal interviews to avoid NDA constraints.",
+    "Cross-verification: details learned in confidence were confirmed against published company policies and statements before inclusion.",
+    "A reflexive methodological discussion of access, NDAs, IRB, 'insider' positionality, and the ethical difficulty of studying secretive, powerful technology firms ('studying up')."
+  ],
+  "findings": [
+    "YouTube announced borderline-content reduction in January 2019 (framed as improving 'recommendation quality' rather than as Trust & Safety) and later claimed a 70% average drop in watch time of such content from non-subscribed recommendations, a claim that is nearly impossible to independently verify.",
+    "Facebook and Instagram announced reduction policies in May 2018, using similar language ('reduce its spread in News Feed using ranking'); Facebook later published detailed recommendation and content distribution ('demotion') guidelines covering borderline content, harmful misinformation, and low-quality junk.",
+    "Twitter, LinkedIn, TikTok, Tumblr (hashtag/search blocking), and Reddit ('quarantine') all use family-resemblance reduction strategies, though most are less transparent than removal policies; Reddit has been comparatively explicit.",
+    "Platforms justify not-removing via: responding to user preferences; Zuckerberg's 'natural engagement pattern' theory that engagement rises near any line drawn (naturalizing responsibility away); and a consent-based lower standard of responsibility for recommended vs. self-chosen content.",
+    "Unstated reasons for reduction over removal include lower political risk (avoiding 'censorship' accusations), continued financial benefit from users seeking such content, and flexibility to police fast-evolving or hard-to-articulate harms while evading accountability.",
+    "Reduction is technically implemented by inserting negative signals into recommender systems, at either the inventory/candidate-generation stage or the ranking stage, yielding a typology: do not recommend at all, do not recommend as much, and do not recommend to some users.",
+    "Facebook appears to reuse existing removal classifiers (demoting borderline scores), while YouTube built a separate classifier trained by human raters given more time and research, using the same evaluator guidelines Google uses for search-quality rating."
+  ],
+  "contributions": [
+    "Names and defines 'reduction' as a distinct and under-theorized category of content moderation, deliberately choosing that term over 'borderline content,' 'shadowbanning,' or 'suppression.'",
+    "Offers a concrete typology of reduction techniques (recommend not at all / not as much / not to some) grounded in how recommender systems (inventory vs. ranking) actually work.",
+    "Documents and compares reduction policies and justifications across eight major platforms, surfacing practices platforms have publicly obscured.",
+    "Reframes content moderation and algorithmic recommendation as a single governance problem rather than separate functions, reorienting critical attention.",
+    "Identifies the deep problem that reduction is invisible to transparency/accountability regimes and may be inherently unmeasurable, with implications for regulation and law.",
+    "Provides a reflexive methodological account of the difficulties of qualitative 'studying up' in secretive Silicon Valley firms under NDA regimes."
+  ],
+  "framing": "The paper positions itself within platform governance and content moderation scholarship (building on Gillespie's own 'Custodians of the Internet' and work by Caplan, Ananny, Cotter, Roberts, and others), extending debates about algorithmic power, transparency, and shadowbanning. It draws on a critical media-studies and science-and-technology-studies lens, ultimately grounding its argument in longstanding concerns about private intermediaries' power over public speech and the way universalized 'fairness' can reproduce social inequity.",
+  "pdf_source": "drive"
+}

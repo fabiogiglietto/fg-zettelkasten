@@ -16,7 +16,6 @@ Cross-national studies (India, Nigeria, Italy) mapping coordinated circulation o
 - [[Ducci2022-10cb5d70]]
 - [[Ghezzi2023-8bebc91f]]
 - [[Giglietto2022-0e951ac5]]
-- [[Lewandowsky2012-vn]]
 - [[Lyons2026-ca]]
 - [[Marino2023-9137f448]]
 - [[Scalco2026-bd]]

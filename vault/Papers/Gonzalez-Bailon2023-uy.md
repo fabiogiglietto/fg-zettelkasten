@@ -10,7 +10,7 @@ citation_count: 256
 open_access: false
 source_url: https://doi.org/10.1126/science.ade7138
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445500Z
 ---
 
@@ -22,24 +22,31 @@ discovery_date: 2026-09-26T08:39:39.445500Z
 
 ## Summary
 
-This paper investigates whether Facebook contributes to ideological segregation in political news consumption during the 2020 US election. Drawing on aggregated data from 208 million US Facebook users, the authors decompose the news-exposure process into three sequential stages: the full inventory of political news that could have appeared in users' feeds, the news actually surfaced after algorithmic curation, and the news users ultimately engaged with. Their central finding is that ideological segregation is already present in the available inventory and intensifies at each successive stage, with a pronounced asymmetry between conservative and liberal audiences. The study thereby locates the sources of segregation across content availability, algorithmic ranking, and user choice, rather than attributing it to any single mechanism.
+This paper offers one of the first large-scale, platform-internal maps of ideological segregation in political news exposure, using aggregated data on roughly 208 million US adult Facebook users during the 2020 election cycle. Adopting a "funnel of engagement" framework, the authors trace political news through three stages — what users *could* see (inventory), what they *actually* saw after algorithmic curation (feed), and what they *engaged* with — to disentangle the contributions of algorithms and social behavior. They find that news consumption on Facebook is far more ideologically segregated than prior web-browsing research implied, that segregation grows along the funnel, and that the segregation is asymmetric: there is a distinctly homogeneous conservative corner of the ecosystem, with no liberal equivalent, and most fact-checked misinformation lives inside it.
 
 ## Key Contributions
 
-- Large-scale empirical evidence (208M users) on ideological segregation across distinct stages of the news-exposure pipeline on a major platform.
-- A decomposition that distinguishes the contributions of content availability, algorithmic curation, and user engagement to observed segregation.
-- Documentation of asymmetries between conservative and liberal audiences, feeding directly into debates over echo chambers and platform responsibility.
+- First large-scale platform-internal account distinguishing potential exposure, actual exposure, and engagement, moving beyond reliance on external web-browsing panels.
+- Introduces URL- (news-story-) level measurement of segregation, revealing within-domain curation that domain-level aggregation masks.
+- Documents the outsized role of Pages and Groups (versus friends) as curation and amplification mechanisms driving segregation.
+- Empirically establishes the asymmetric conservative concentration of both homogeneous audiences and misinformation.
+- Provides a reproducible industry–academic collaboration model with a registered preanalysis plan, offering a blueprint for platform data access under regimes like the EU DSA.
 
 ## Methods
 
-The authors analyze aggregated behavioral data covering 208 million US Facebook users during the 2020 election. They measure ideological segregation at three points in the exposure process — the total potential inventory of political news, the news shown after algorithmic curation, and the news actively engaged with — allowing them to isolate how much segregation is attributable to what is available versus how it is ranked versus how users behave.
+The analysis rests on aggregated (not individual-level) exposure and engagement data for ~208 million US adult active users from 1 September 2020 to 1 February 2021, restricted for privacy to URLs shared more than 100 times (~35,000 domains, ~640,000 URLs). Facebook's internal civic/news classifiers identified political news and an internal ideology classifier categorized users (≤0.35 liberal, ≥0.65 conservative). The authors compute a segregation index adapted from residential-segregation research (following Gentzkow and Shapiro) and favorability scores (−1 fully liberal to +1 fully conservative) at both domain and URL levels. They build coexposure networks (edges weighted by shared unique viewers) and apply Pons–Latapy walktrap community detection with backbone extraction. Misinformation is classified via Meta's Third-Party Fact-Checking Program. Robustness checks compare on-platform segregation to off-platform web browsing for consented users and vary content type, political interest, posting source, and ideology operationalization.
 
 ## Findings
 
-- Ideological segregation exists already in the potential news inventory and grows progressively toward actual exposure and engagement.
-- Conservative and liberal users encounter and interact with political news in asymmetric ways.
-- Both algorithmic curation and user engagement amplify segregation beyond the baseline present in the available inventory.
+- Domain-level segregation for exposed audiences hovered around 0.35, far above the 0.02–0.10 range in prior web-browsing studies; URL-level segregation was higher still, roughly 0.45–0.50.
+- Segregation rose along the funnel: exposed exceeded potential, and engaged exceeded exposed — implicating both algorithmic and social amplification.
+- Favorability distributions were right-skewed, with more content favored by very conservative than by very liberal audiences.
+- 71–76% of untrustworthy domains and 97% of false URLs had conservative-leaning audiences across all funnel stages.
+- Misinformation shared by Pages and Groups had audiences almost entirely on the right; Pages produced the most conservative audiences.
+- Facebook segregation was roughly three times a within-person web-tracking benchmark for the same consented users.
+- Community detection recovered clear liberal and conservative clusters from behavior alone, with the conservative cluster more isolated and exposed to more unreliable content.
+- High-political-interest users were about twice as segregated as low-interest users; the single most-viewed story was a false claim about Pennsylvania military ballots from a low-ranked domain (pjmedia.com).
 
 ## Connections
 
-This paper belongs to the same Facebook 2020 election research program as [[Guess2021-ym]] and [[Nyhan2023-gb]], and it extends the algorithmic-exposure lineage established by [[Bakshy2015-rn]] and [[Messing2014-jc]] on selective exposure and cross-cutting content. Its findings on asymmetry and echo chambers speak to broader debates about ideological sorting and affective polarization examined in [[Iyengar2019-jj]], [[Bail2018-fk]], and [[Barbera2015-fw]], as well as to the filter-bubble question raised by [[Flaxman2016-lm]]; more recent large-scale analyses of platform-driven segregation such as [[Eady2025-vm]] are also natural companions.
+This paper is a direct sequel to and critical revision of the friend-network filter-bubble study [[Bakshy2015-rn]], extending the analysis from friend-posted content to Pages and Groups and to URL-level curation. It sits alongside the companion Facebook and Instagram Election Study experiments on feed algorithms and reshares [[Guess2023-ai]], [[Guess2023-ur]], [[Nyhan2023-gb]], and its finding that misinformation concentrates on the right resonates with work on the asymmetric structure of partisan political behavior [[Osmundsen2021-et]] and affective polarization [[Iyengar2019-jj]]. Its coexposure-network mapping also connects to network-based studies of online audience clustering [[Del-Vicario2016-uj]], [[Barbera2015-fw]].

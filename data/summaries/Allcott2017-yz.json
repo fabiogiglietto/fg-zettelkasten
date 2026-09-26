@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper provides theoretical and empirical background to frame the debate over whether 'fake news'—intentionally and verifiably false news articles—circulated on social media influenced the 2016 US presidential election. The authors sketch an economic model of media markets to explain why fake news arises in equilibrium, and present new data from web browsing statistics, a 1,200-person post-election survey, and a database of 156 fact-checked false election stories. They find that fake news was widely shared and heavily tilted toward Trump, but estimate that the average American adult saw and remembered only about one fake news story, suggesting fake news would have needed to be implausibly persuasive to have been pivotal.",
+  "key_claims": [
+    "Fake news can be understood as a market phenomenon that arises in equilibrium because false signals are cheaper to produce than accurate ones, consumers cannot costlessly verify accuracy, and consumers derive psychological utility from partisan-confirming content.",
+    "Fake news was both widely shared and disproportionately favored Donald Trump over Hillary Clinton.",
+    "Social media is an important but not dominant source of political news; television remains far more important, and trust in social-media information is comparatively low.",
+    "Average voter exposure to fake news was modest—on the order of one or perhaps several remembered articles per adult—implying fake news was likely too limited to be decisive absent implausibly high per-article persuasiveness.",
+    "Belief in fake news is patterned: education, age, and total media consumption predict more accurate discernment, while partisans are about 15 percent more likely to believe ideologically aligned headlines, an effect amplified by ideologically segregated social networks."
+  ],
+  "methods": [
+    "A theoretical model of media supply and demand (adapted from Gentzkow, Shapiro, and Stone 2016) in which firms sell signals about a true state of the world to consumers with heterogeneous priors, conceptualizing fake news producers as firms that make no investment in accuracy and pursue short-run clicks rather than reputation.",
+    "A database of 156 fact-checked false election-related news articles compiled from Snopes, PolitiFact, and BuzzFeed, with Facebook share counts gathered via BuzzSumo as of early December 2016.",
+    "Web traffic analysis using Alexa data comparing referral sources (social media, search, direct) for 690 top US news sites versus 65 fake news sites, plus impression counts for the month around the election.",
+    "An online post-election survey of 1,208 US adults (SurveyMonkey Audience Panel, week of November 28, 2016), reweighted on ten characteristics for national representativeness, showing respondents 15 randomly assigned headlines across five categories (Big Fake, Small Fake, Big True, Small True, and invented Placebo headlines).",
+    "Regression analyses predicting correct identification of true/false headlines from demographics, and modeling ideologically aligned belief using interactions between party affiliation and headline slant.",
+    "Three benchmarking approaches to estimate fake news exposure: shares-to-visits ratios from prior literature, browsing impression data, and survey recall differenced against placebo headlines to correct for false recall."
+  ],
+  "findings": [
+    "The database contained 115 pro-Trump fake stories shared ~30 million times on Facebook and 41 pro-Clinton fake stories shared ~7.6 million times—roughly three times more pro-Trump articles.",
+    "Social media accounted for only ~10 percent of traffic to top news sites but ~41.8 percent of traffic to fake news sites; only 14 percent of surveyed adults named social media their most important election news source (behind cable, network, website, and local TV).",
+    "Upper-bound estimates suggest 38 million shares translated to roughly 760 million reads (~3 per adult); 65 fake news sites received 159 million impressions in the election month (0.64 per adult); and survey-based recall corrected for placebos implied the average adult saw and remembered about 1.14 fake articles.",
+    "Placebo (never-circulated) fake headlines were recalled and believed at roughly the same rate (~14 percent seen, ~8 percent believed) as real fake headlines (~15 percent seen, ~8 percent believed), indicating substantial false recall.",
+    "Republicans were more credulous of both true and false articles rather than generally worse at inference; education, age, and media consumption predicted more accurate beliefs.",
+    "Democrats and Republicans were 17.2 and 14.7 percentage points, respectively, more likely to believe ideologically aligned headlines; heavier media consumption and more ideologically segregated social networks amplified aligned belief, while undecided voters showed weaker aligned belief.",
+    "A back-of-the-envelope calculation—benchmarking one fake article against the ~0.02 percentage-point effect of one TV campaign ad—implies fake news shifted vote shares by only hundredths of a percentage point, far below Trump's margins in pivotal states."
+  ],
+  "contributions": [
+    "Introduces a working definition of fake news and an economic framework distinguishing it from related phenomena (rumors, conspiracy theories, satire, slant, unintentional errors).",
+    "Provides the first systematic empirical estimates of the scale of fake news circulation and voter exposure surrounding the 2016 election.",
+    "Develops a placebo-headline survey methodology to correct for false recall in measuring media exposure.",
+    "Documents correlates of who believes fake news and quantifies ideologically aligned inference and its moderators, including social-network segregation.",
+    "Offers a disciplined, non-partisan assessment framing (without claiming to settle) whether fake news was pivotal, and discusses welfare implications and platform interventions."
+  ],
+  "framing": "The paper situates fake news within the economics of media markets and the long history of technology-driven concerns about the press (partisan newspapers, radio/TV, echo chambers), positioning itself against alarmist post-election commentary that fake news elected Trump. It draws on and contributes to interdisciplinary literatures in economics, political science, and psychology on media persuasion, political misperceptions, rumor propagation, and ideological segregation in news consumption.",
+  "pdf_source": "drive"
+}

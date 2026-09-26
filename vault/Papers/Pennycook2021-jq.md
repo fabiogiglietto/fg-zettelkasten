@@ -5,7 +5,7 @@ authors: ["Gordon Pennycook", "David Gertler Rand"]
 year: 2021
 doi: 10.31234/osf.io/ar96c
 bibtex_key: Pennycook2021-jq
-topics: [information-operations-disinformation-narratives, political-polarization-partisanship]
+topics: [misinformation-exposure-recalibration, climate-and-misinformation-message-interventions]
 citation_count: 9
 open_access: false
 source_url: https://doi.org/10.31234/osf.io/ar96c
@@ -22,31 +22,29 @@ discovery_date: 2026-09-26T08:39:39.445552Z
 
 ## Summary
 
-This paper reframes the phrase "fake news" not as a neutral descriptor of false content but as a **strategic rhetorical weapon** used to delegitimize political opponents. Pennycook and Rand (via an Italian case study) propose the **Strategic Delegitimization and Selective Amplification (SDSA) model**, which treats each fake news accusation as a triadic interaction between an accuser, a target, and a media outlet that selectively amplifies the accusation according to its editorial leanings. Drawing on a corpus of 2,778 Italian newspaper articles (2020–2024), the study maps who accuses whom and finds a counterintuitive pattern: populist parties are disproportionately the *targets* of fake news accusations rather than the main accusers, and partisan media condition coverage chiefly by emphasizing accusations against ideologically distant actors — a mode the authors call "negative epistemic gatekeeping."
+This review by Pennycook and Rand synthesizes psychological research on why people believe and share false news online, and mounts a sustained challenge to the dominant narrative that partisanship and politically motivated reasoning are the chief culprits. Drawing on cognitive science and dual-process theory, the authors argue that poor truth discernment stems primarily from a failure to engage careful, reflective reasoning, from insufficient or inaccurate prior knowledge, and from reliance on heuristics such as familiarity. They further document a striking gap between what people believe and what they share, attributing it largely to inattention rather than confusion or deliberate misinformation-spreading. The paper closes by consolidating evidence on scalable interventions—accuracy nudges and crowdsourced veracity ratings in particular.
 
 ## Key Contributions
 
-- Introduces the **SDSA model**, integrating three literatures — "fake news" as a strategic label, negative campaigning, and political parallelism — into a single replicable framework.
-- Advances the study of negative campaigning by folding **media selectivity** into the analysis of epistemic delegitimization.
-- Provides large-scale empirical evidence on fake news discourse in a **multiparty, high-parallelism system** (Italy).
-- Clarifies the **dual role of populist parties** as both accusers and (especially) targets.
-- Reconceptualizes contemporary political parallelism as operating through **negative epistemic gatekeeping** rather than affirmative amplification of allies.
+- Reframes fake-news susceptibility from a politically-motivated-reasoning account toward an inattention-and-reasoning ("classical reasoning") account.
+- Clarifies the conceptual distinction between **truth discernment** (belief in true minus false news, akin to signal-detection d′) and **overall belief** (bias), showing why factors that move belief need not affect discernment.
+- Identifies the belief–sharing dissociation and adjudicates among confusion-based, preference-based, and inattention-based explanations, favoring inattention.
+- Consolidates evidence on the effectiveness and limits of anti-misinformation interventions, especially scalable accuracy prompts and crowdsourced ratings.
+- Positions online misinformation as an ecologically valid domain uniting lab experiments, large-scale social media data, and field experiments.
 
 ## Methods
 
-The authors built a novel corpus of 2,778 articles from five Italian newspapers spanning the ideological spectrum (La Repubblica, Corriere della Sera, il Giornale, il Fatto Quotidiano, il Manifesto), retrieved from Factiva by searching "fake news" / "notizia falsa" alongside party or leader references. GPT-4 with zero-shot prompting classified actors in text windows as accuser or accused, outputting structured JSON; party affiliations were assigned manually. LLM coding was validated against a stratified 5% manual sample (75% agreement), yielding 1,082 coded observations. Parties were classified as populist/non-populist via The PopuList and placed ideologically using Chapel Hill Expert Survey left–right scores. Analysis used chi-square and proportion tests, negative binomial regression on accusation counts between party pairs, and descriptive party-level share analyses across outlets.
+A narrative synthesis of cognitive, social, and political psychology research, framed through signal detection theory and System 1/System 2 dual-process models (using instruments such as the Cognitive Reflection Test and Berlin Numeracy Test). The authors pool and reanalyze data from 14 US studies rating true/false, Democrat- and Republican-consistent headlines, comparing high vs. low reflective reasoners and concordant vs. discordant content. They also draw on survey experiments contrasting accuracy-rating and sharing-intention conditions, a large-scale Twitter field experiment sending accuracy prompts, and crowdsourcing studies benchmarking layperson ratings against professional fact-checkers (NewsGuard).
 
 ## Findings
 
-- Populist parties made 50.9% of accusations — not above parity (p=.41), so they are **not** disproportionately accusers.
-- Populist parties were ~70% of accused actors (p<.001); Lega and FdI were especially likely targets. A significant party-type × role association (χ²(1)=18.58, p<.001) was driven by the accused role.
-- Over 80% of accusation dyads crossed opposing ideological blocs; each additional point of left–right distance was associated with ~10% more accusations, but the effect was not significant (p=.11).
-- Newspapers amplified proximate-party *accusers* only weakly (H4).
-- Newspapers strongly emphasized accusations against ideologically *distant* parties in four of five outlets (La Repubblica 84.4%, il Manifesto 77.8%, il Fatto Quotidiano 59.4%, Corriere della Sera 56.2%).
-- Il Giornale was a deviant case with a symmetrical distribution, suggesting it **normalizes** fake news rhetoric rather than deploying it selectively.
+- A headline's actual veracity affects belief far more than political concordance—"politics does not trump truth"—and people are somewhat *better* at discernment for concordant news even while believing it more overall.
+- More reflective individuals show better truth discernment regardless of concordance; in the pooled data the reasoning-based difference in discernment was roughly twice the partisanship-based difference.
+- Experimentally increasing deliberation reduces belief in false (but not true) news without increasing polarization; overconfidence and reliance on emotion increase susceptibility.
+- Familiarity (illusory truth), source/elite cues, social feedback, and emotional content act as heuristics that inflate belief in false claims.
+- Sharing intentions are largely insensitive to veracity; in one study, false-headline sharing intentions were 91% higher than accuracy assessments, and an accuracy prompt cut false sharing by 51%—implicating inattention.
+- Automated detection and professional fact-checking face limits (subjectivity, non-scalability, implied-truth effects), while accuracy prompts, literacy tips, prebunking, and crowdsourced ratings show promise; layperson crowds correlate highly with professionals (r ≈ 0.90 for publisher trust).
 
 ## Connections
 
-This work sits at the intersection of the strategic-label view of "fake news" and the study of partisan media systems and affective polarization. It resonates with research on how "fake news" accusations serve elite and partisan delegitimization goals — see Egelhofer2021-lm is not in the register, so more directly it connects to work on partisan asymmetries in misinformation attention such as [[Osmundsen2021-et]] and to broader disinformation-narrative scholarship like [[Farkas2026-lr]] and [[Hameleers2026-mc]]. Its focus on media-politics parallelism and elite polarization also links it to [[Iyengar2019-jj]] on affective polarization.
-
-*(Note: the title and named authors here appear mismatched with the summarized Italian-newspaper study; the connections above are drawn from the described content, and any apparent author discrepancy in the source should be verified.)*
+This review is a foundational statement of the inattention-and-reasoning paradigm that many later intervention studies build on, particularly work on accuracy nudges and crowdsourced veracity assessment such as [[Mosleh2024-op]] and the debunking-focused [[Costello2024-bg]]. Its critique of motivated-reasoning accounts speaks directly to partisanship-centered analyses of misinformation sharing like [[Osmundsen2021-et]], while its emphasis on prebunking/inoculation connects to the psychological-resistance line pursued in [[van-der-Linden2026-jt]]. The finding that fake news occupies a small share of media diets is complemented by exposure-scale work including [[Allen2020-nj]], [[Grinberg2019-ua]], and [[Guess2019-ym]], and its treatment of viral spread relates to [[Vosoughi2018-at]].

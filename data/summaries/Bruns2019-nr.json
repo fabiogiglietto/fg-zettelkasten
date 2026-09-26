@@ -1,0 +1,35 @@
+{
+  "abstract": "This article examines how, following the 2018 Cambridge Analytica scandal, major social media platforms — chiefly Facebook and Twitter — severely restricted researcher access to their APIs, an event the author dubs the 'APIcalypse.' Bruns argues that these restrictions, along with alternative access schemes like Facebook's partnership with Social Science One, function less as genuine privacy safeguards than as means to frustrate critical, independent, public-interest scholarship that might hold platforms accountable for abuse, hate speech, and disinformation. Drawing on platform public statements and scholarly responses, the article critiques these developments and outlines four possible pathways for affected researchers.",
+  "key_claims": [
+    "Post-Cambridge Analytica API restrictions have crippled scholarly social media research, particularly on abuse, hate speech, trolling, and disinformation.",
+    "Platforms instrumentalised the Cambridge Analytica scandal to actively frustrate independent, critical, public-interest scrutiny rather than simply to protect user privacy.",
+    "Facebook deflected attention from its own commodification of user data by scapegoating the researcher/developer Aleksandr Kogan as the source of the scandal.",
+    "Alternative data-access frameworks such as Social Science One and the Facebook Ad Library are insufficient replacements for functional APIs and are designed to generate positive PR while limiting research to topics 'orthogonal' to platform interests.",
+    "The Social Science One model gives its co-chairs an intransparent, unaccountable veto power based on proprietary 'private knowledge' from their privileged relationship with Facebook.",
+    "Platforms like Facebook may be characterised as 'Big Social,' behaving like the tobacco, pharmaceutical, and fossil fuel industries in using FUD (fear, uncertainty, doubt) campaigns to discredit critics."
+  ],
+  "methods": [
+    "Critical review of Facebook's and other platforms' public statements published through their own corporate sites and reported in mainstream media.",
+    "Analysis of scholarly responses, open letters, and public interventions by researchers, foundations, NGOs, and former platform insiders.",
+    "Close reading and critique of the unpublished 'King-Persily paper' outlining the Social Science One model and its calls for proposals.",
+    "Documentary tracing of the shutdown or degradation of specific research tools and services (e.g., TwapperKeeper, Netvizz, Texifter, TCAT).",
+    "Adopts an explicit 'data activist' analytical stance."
+  ],
+  "findings": [
+    "Facebook advanced and expanded API shutdowns (Instagram, Events, Groups, Pages APIs) with little warning, disabling key research tools such as Netvizz.",
+    "Twitter introduced new developer registration requirements and terms restricting research on sensitive topics (e.g., political beliefs, race, religion), and let the scholarly-focused Texifter service lapse.",
+    "Facebook obfuscated its HTML to block non-API scraping tools such as ProPublica's political-ad plugin, showing efforts to evade scrutiny beyond APIs.",
+    "Platform 'data grants' and lotteries fund only a tiny fraction of applicants (e.g., 6 of 1,300; 2 of 230+), making them 'data lotteries' rather than genuine access.",
+    "A New York Times investigation revealed Facebook hired the opposition-research firm Definers to discredit critics, including invoking George Soros, demonstrating bad-faith conduct.",
+    "Four researcher pathways emerge: walk away, lobby for change, accommodate and acquiesce, or break the rules (e.g., through web scraping) — none currently offering a sustainable long-term strategy."
+  ],
+  "contributions": [
+    "Coins and develops the concept of the 'APIcalypse' to frame the post-Cambridge Analytica collapse of research data access.",
+    "Provides a structured critique of Social Science One's corporate data-philanthropy model and its limits on scholarly independence.",
+    "Situates platform behaviour within a lineage of corporate FUD campaigns from tobacco, pharma, and fossil fuel industries, proposing the notion of 'Big Social.'",
+    "Offers a typology of four strategic responses available to social media researchers under restricted data access.",
+    "Issues a call to action ('ceterum censeo') urging scholars to demand transparent research-specific data access and to keep pressure on policymakers and platforms."
+  ],
+  "framing": "The article positions itself within critical digital/internet studies and the political economy of platforms, adopting an explicitly 'data activist' research agenda. It frames platform data restrictions as a matter of public interest and academic freedom, connecting them to broader debates about disinformation, democratic disruption, and corporate accountability.",
+  "pdf_source": "drive"
+}

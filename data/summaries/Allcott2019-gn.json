@@ -1,0 +1,33 @@
+{
+  "abstract": "This paper measures how the diffusion of misinformation on social media evolved from January 2015 to July 2018, in the wake of platform interventions following the 2016 US election. Using data from BuzzSumo on 569 fake news websites and 9540 individual false-story URLs, the authors track Facebook engagements and Twitter shares over time. They find that interactions with false content rose on both platforms through late 2016, but afterward fell sharply on Facebook while continuing to rise on Twitter — with the ratio of Facebook engagements to Twitter shares for fake news declining by roughly 60%.",
+  "key_claims": [
+    "The relative magnitude of the misinformation problem on Facebook has declined since its peak around the 2016 election.",
+    "The divergence between Facebook and Twitter trends for fake news (but not for other content categories) suggests that some Facebook-specific factor slowed the relative diffusion of misinformation.",
+    "Despite the relative decline, the absolute volume of interaction with misinformation remains high, and Facebook continues to play an outsized role in its diffusion.",
+    "Changes to the Facebook platform implemented after 2016 are a plausible (though untested) cause of the observed relative decline."
+  ],
+  "methods": [
+    "Assembled a list of fake news sites by combining five prior lists/studies (Grinberg et al. 2019, PolitiFact/Gillin, BuzzFeed/Silverman, Guess et al. 2018, FactCheck/Schaedel), yielding 672 unique sites, of which 569 had usable BuzzSumo data.",
+    "Constructed three comparison groups from Alexa rankings: 38 major news sites (top 100 News), 78 small news sites (ranked 401-500 News), and 54 business and culture sites (top 50 in Arts, Business, Health, Recreation, Sports).",
+    "Gathered monthly Facebook engagements (shares + comments + reactions) and Twitter shares for all articles from January 2015 to July 2018 via the BuzzSumo commercial content database, averaged by quarter.",
+    "Built a URL-level sample of specific false stories by scraping Snopes 'false'/'mostly false' claims (with archive.is links), extracting keywords, matching in BuzzSumo, and manually screening down to 9540 verified false-story URLs.",
+    "Ran multiple robustness checks: restricting to sites flagged by 2+ or 3+ lists, excluding sites from any single list, filtering by active-operation dates, removing top-5 outlier sites, using Grinberg et al.'s likelihood tiers, an alternative political-site comparison group, and using Facebook shares instead of total engagements."
+  ],
+  "findings": [
+    "Fake news interactions rose steadily on both Facebook and Twitter from early 2015 to just after the 2016 election.",
+    "After the election, Facebook engagements with fake news fell by more than 50%, while Twitter shares continued to increase.",
+    "The Facebook-to-Twitter ratio for fake news was stable at about 45:1 through late 2016, then fell to roughly 15:1 by mid-2018 (about a 60% decline).",
+    "Comparison categories (major news, small news, business/culture) remained relatively stable and followed similar trends on both platforms, with no comparable divergence.",
+    "Facebook engagements with fake news peaked at roughly 160 million per month at the end of 2016 and fell to roughly 60 million per month by the end of the sample; major news sites typically garner 200-250 million.",
+    "On Twitter, fake news shares stayed in the 3-5 million per month range after 2016, versus about 20 million for major news sites.",
+    "The URL-level analysis of 9540 false stories showed a similar post-2016 halving of the Facebook-to-Twitter ratio; the median ratio of Facebook engagements to Facebook shares was around 6."
+  ],
+  "contributions": [
+    "Provides one of the first longitudinal, cross-platform empirical measures of how the scale of social media misinformation evolved before and after the 2016 election.",
+    "Introduces a comparative Facebook-vs-Twitter ratio design that helps net out sample-selection and demand-side confounds that would affect both platforms similarly.",
+    "Assembles and documents a large combined dataset of fake news sites and verified false-story URLs, with published replication files.",
+    "Offers suggestive evidence relevant to evaluating platform content-moderation interventions, corroborated by contemporaneous work (Resnick et al. 2018)."
+  ],
+  "framing": "The paper positions itself within the emerging political science and economics literature on fake news, media exposure, and platform content moderation (e.g., Allcott & Gentzkow 2017; Lazer et al. 2018; Grinberg et al. 2019). It responds directly to calls for ongoing, data-driven auditing of how misinformation on major platforms evolves, while carefully framing its results as suggestive rather than causal given data and selection caveats.",
+  "pdf_source": "drive"
+}

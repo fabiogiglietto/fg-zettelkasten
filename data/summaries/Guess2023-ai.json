@@ -1,0 +1,36 @@
+{
+  "abstract": "This study uses a large-scale randomized controlled experiment during the 2020 US presidential election to test how removing reshared content from Facebook feeds affects users' political attitudes, knowledge, and behavior. Consenting US-based users were randomly assigned to a 'No Reshares' condition (feeds stripped of reshared posts) or a control condition for roughly three months. Removing reshares substantially changed the mix and volume of content users saw—cutting political news, untrustworthy-source content, and engagement—but did not produce detectable effects on political polarization or nearly any measure of political attitudes, with only mixed evidence for reduced news knowledge.",
+  "key_claims": [
+    "Reshares are a core amplification mechanism on Facebook that substantially shape the content users encounter, especially political news and content from untrustworthy sources.",
+    "Removing reshared content decreases exposure to political news, untrustworthy-source content, and overall engagement (clicks and reactions), and reduces clicks on partisan news.",
+    "Despite altering the content environment, suppressing reshares does not detectably affect political polarization (affective or issue) or almost any individual-level political attitude or offline behavior.",
+    "There is suggestive but uncertain evidence that removing reshares reduces news knowledge within the sample, though this may not generalize to the full user population.",
+    "Reshares can act as a 'double-edged sword,' promoting exposure to both reliable news and lower-quality/untrustworthy content, yet with limited downstream attitudinal impact."
+  ],
+  "methods": [
+    "Randomized controlled experiment embedded in the 2020 US Facebook and Instagram Election Study (FIES), with participants recruited via feed survey invitations seen by ~14.6 million users; N=193,880 consented.",
+    "Two experimental conditions analyzed: a control group with unchanged feeds and a 'No Reshares' treatment group whose feeds excluded reshared content from friends, Groups, and Pages, active 24 September–23 December 2020.",
+    "Analytic samples of N=23,402 for survey data and N=3,781 for passive web-tracking data (participants completing the first two surveys plus at least one of three later waves).",
+    "Preregistered design, measures, and analysis (OSF); primary estimand is the population average treatment effect (PATE) weighted by predicted ideology, friend count, political pages followed, and activity, with unweighted sample average treatment effect (SATE) also reported.",
+    "Outcomes measured via five surveys, Facebook platform behavioral data, and web-visit tracking; content classified for political relevance, news, untrustworthy sources, incivility, slurs, and like-minded/cross-cutting/moderate ideological alignment.",
+    "Covariate-adjusted OLS regression with HC2 robust standard errors; multiple-comparison correction via sharpened false discovery rate (FDR) adjustment; assessment of attrition and treatment effect heterogeneity."
+  ],
+  "findings": [
+    "Reshared content fell from 28% of views in control to 5.8% in the No Reshares group; political content dropped from 13.5% to 10.8%, political news from 6.2% to 2.5%, and untrustworthy-source content from 2.6% to 1.8%.",
+    "Uncivil content rose slightly (3.2% to 3.4%) and moderate/mixed-source content rose ~16%, while both like-minded and cross-cutting content decreased modestly; slur exposure was unaffected.",
+    "Treatment reduced daily time on Facebook, click rate (8.3% to 7.5%), and reaction rate, but did not change users' own reshares, likes, or comments; content from friends fell ~10 points while Groups (+8) and Pages (+2) rose.",
+    "No significant effects on affective or issue polarization (FDR-adjusted p>0.8), nor on trust in media, institutional confidence, election legitimacy beliefs, factual accuracy perceptions, or support for political violence, after multiple-comparison correction.",
+    "News knowledge fell significantly in the sample (SATE −0.069 SD, p<0.01) but the PATE (−0.053 SD) fell short of significance after FDR adjustment (p=0.16); election knowledge showed no distinguishable effect.",
+    "The one robust behavioral effect was a decrease in clicks on partisan news content (PATE −0.109 SD, p<0.01); off-platform political news visits were unaffected.",
+    "Exploratory analyses found a 62% decrease in mainstream news exposure in the treatment group as a possible contributor to knowledge effects, while ruling out several other mechanisms."
+  ],
+  "contributions": [
+    "Provides rigorous, large-scale experimental (rather than correlational) evidence on the causal effects of a specific platform feature—resharing—during a real election.",
+    "Demonstrates that a widely proposed platform intervention (removing reshares) meaningfully changes content exposure and on-platform behavior but has limited detectable impact on political attitudes and offline behaviors.",
+    "Quantifies the composition of reshared content and its role in amplifying political news and untrustworthy sources, clarifying that most reshared content does not go viral.",
+    "Offers precise null and near-null estimates with power to rule out even moderately sized effects, informing debates on social media's political influence.",
+    "Contributes preregistered design, transparent PATE/SATE reporting, and archived data/code as a model for industry-academic collaborative research."
+  ],
+  "framing": "The paper situates itself in research on social media's role in political polarization, misinformation, and incidental learning, engaging debates over whether virality-enabling features amplify harmful political effects. It builds on prior experimental work (e.g., Facebook deactivation studies) and policy proposals to limit resharing, testing whether a hypothesized amplification mechanism translates into measurable attitudinal change.",
+  "pdf_source": "drive"
+}

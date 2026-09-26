@@ -11,7 +11,6 @@ Analysis of engagement signals — Facebook reactions, virality, affective commu
 ## Papers
 
 - [[Anwar2024-34dba628]]
-- [[Bail2018-fk]]
 - [[Di-Domenico2026-zq]]
 - [[Ducci2022-10cb5d70]]
 - [[Farci2017-2a88c00e]]

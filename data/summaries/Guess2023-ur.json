@@ -1,0 +1,34 @@
+{
+  "abstract": "This study used large-scale randomized controlled experiments during the 2020 US presidential election to test how Facebook's and Instagram's machine-learning feed-ranking algorithms affect users' political attitudes and behaviors. Consenting users were randomly assigned to a reverse-chronological feed instead of the default algorithmic feed for roughly three months (September–December 2020). While the chronological feed substantially altered users' on-platform experience—reducing time spent, engagement, and changing the mix of content seen—it produced no detectable changes in downstream political outcomes such as polarization, political knowledge, or offline participation.",
+  "key_claims": [
+    "Social media feed-ranking algorithms strongly shape users' on-platform experiences, including time spent, engagement, and the type and source of content they see.",
+    "Despite these large experiential effects, replacing algorithmic ranking with reverse-chronological ordering did not measurably change affective polarization, issue polarization, political knowledge, or offline political participation over a three-month election period.",
+    "Algorithmic feeds may not be the direct root cause of individual-level political polarization or knowledge deficits, tempering popular 'filter bubble' and folk theories about algorithmic harms.",
+    "Isolating the causal role of algorithmic ranking (as opposed to the broader 'bundle' of social media features) reveals that its measurable political effects on individuals are limited."
+  ],
+  "methods": [
+    "Two randomized controlled experiments embedded within Facebook (n = 23,391) and Instagram (n = 21,373), with consenting US adult users recruited via in-feed survey invitations in August 2020.",
+    "Treatment group received a reverse-chronological feed from 24 September to 23 December 2020; control group retained the default algorithmic feed (affecting an estimated ~80% of on-platform material; ads unaffected).",
+    "Five survey waves combined with on-platform behavioral logs and passive off-platform web-tracking data (fieldwork conducted with NORC at the University of Chicago).",
+    "Preregistered design and analysis (OSF) with primary estimand the population average treatment effect (PATE), weighted by predicted ideology, friend count, political pages followed, and days active; unweighted sample average treatment effects (SATE) also reported.",
+    "Content classified along dimensions including political content, political news, ideological cross-cutting vs. like-minded vs. moderate/mixed sources, untrustworthy sources, incivility, and slur words; heterogeneity and subgroup analyses conducted.",
+    "Study conducted as a collaboration between Meta and external academics, with Meta funding data-collection costs but no prepublication approval rights and academic lead authors holding final control."
+  ],
+  "findings": [
+    "The chronological feed sharply reduced time spent: average daily time above US monthly active users fell from +73% to +37% on Facebook and +107% to +84% on Instagram; users also substituted toward TikTok, YouTube, Reddit, and Instagram.",
+    "On-platform engagement dropped: Facebook likes fell from 6.7% to 3.1% of exposures; comparable declines occurred for Instagram likes and comments.",
+    "Content mix shifted: chronological feeds increased political content and political news, increased untrustworthy-source content (Facebook 2.6%→4.4%; Instagram 1.3%→1.6%), and decreased uncivil content on Facebook (3.2%→1.8%) and slur-word content.",
+    "On Facebook, chronological feeds reduced both like-minded (53.7%→48.1%) and cross-cutting (20.7%→18.7%) sources while increasing moderate/mixed-audience sources (22.6%→30.9%); friend-sourced content dropped ~24 percentage points.",
+    "No significant treatment effects on affective or issue polarization, election knowledge, news knowledge, self-reported participation, or self-reported turnout on either platform.",
+    "On-platform political engagement declined significantly (Facebook −0.117 SD; Instagram −0.090 SD), consistent with an overall drop in engagement.",
+    "Among secondary outcomes, the only significant effect was that Facebook chronological-feed users clicked more on partisan political news (0.107 SD), attributed to increased exposure to frequently posted partisan news links."
+  ],
+  "contributions": [
+    "Provides rare, large-scale experimental evidence isolating the causal effect of proprietary feed-ranking algorithms (rather than the whole social media 'bundle') on political attitudes and behavior.",
+    "Demonstrates a striking disconnect between large algorithm-induced changes in user experience and negligible changes in downstream political outcomes, informing debates over algorithmic regulation.",
+    "Establishes a well-defined counterfactual (reverse-chronological ranking) matching policy proposals, offering a methodological template for evaluating machine-learning feed systems.",
+    "Contributes deidentified data and code via the Social Media Archive (SOMAR) for replication and IRB-approved research."
+  ],
+  "framing": "The paper positions itself within research on social media, algorithms, and democracy, engaging directly with 'filter bubble,' echo-chamber, and polarization theories and public/regulatory concerns about opaque feed-ranking systems. It responds to prior work that treated social media as an undifferentiated bundle by isolating personalized algorithmic ranking as a distinct causal factor, and situates findings within political communication and computational social science debates about the drivers of polarization.",
+  "pdf_source": "drive"
+}

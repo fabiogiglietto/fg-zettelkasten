@@ -1,0 +1,36 @@
+{
+  "abstract": "Using data from the entire population of active adult US Facebook users in 2020, this study measures how much content people see from politically like-minded sources and tests whether reducing such exposure lessens polarization. The authors find that a majority of content viewed comes from like-minded sources, though political news is only a small fraction of it, and extreme echo chambers are relatively uncommon. In a preregistered three-month field experiment with 23,377 consenting users during the 2020 US presidential election, reducing exposure to like-minded sources by about a third changed the composition of feeds but produced no measurable effects on eight preregistered attitudinal outcomes. The precisely estimated null results challenge popular narratives blaming social media echo chambers for political polarization.",
+  "key_claims": [
+    "Content from politically like-minded sources constitutes the majority of what active adult US Facebook users see, but political and news content make up only a small fraction of overall exposures.",
+    "Extreme echo chamber patterns of exposure are relatively infrequent; only a minority of users receive very high proportions of content from like-minded sources.",
+    "Algorithmic changes can substantially alter feed composition, reducing exposure to like-minded sources and, incidentally, to uncivil content and misinformation.",
+    "Reducing exposure to like-minded sources during the 2020 election had no measurable effect on political attitudes such as affective polarization, ideological extremity, or belief in false claims.",
+    "Information seen on social media may reflect users' existing identities more than it shapes their expressed views, so reducing like-minded exposure is not a simple remedy for polarization."
+  ],
+  "methods": [
+    "Descriptive analysis of platform exposure data for the full population of US adult Facebook users (231 million monthly active users in Q3-Q4 2020), classifying sources as like-minded, cross-cutting, or neither using an internal Facebook ideology classifier (scores 0-1; sources labeled liberal at <=0.4, conservative at >=0.6).",
+    "A preregistered multi-wave field experiment (registered at OSF, https://osf.io/3sjy2) among 23,377 consenting US adult Facebook users, run 24 September to 23 December 2020, with block randomization to treatment and control at equal probability.",
+    "Treatment downranked all content (not just news/political) from friends, Pages, and groups predicted to share the participant's political leaning, using the strongest demotion that a pre-test showed would not empty feeds.",
+    "Combined on-platform behavioral data (exposure and engagement) with a five-wave survey (two pre-treatment, three post-treatment) measuring political attitudes; covariates measured in waves 1-2, outcomes in waves 4-5.",
+    "Analysis via OLS with robust (HC2) standard errors, lasso-selected covariates, survey weights to estimate population average treatment effects, false-discovery-rate adjustment for multiple comparisons, and equivalence-bounds tests; fieldwork conducted by NORC as part of the US 2020 Facebook and Instagram Election Study.",
+    "Academic lead authors retained final control over analysis and manuscript; Meta could not block publication and academics received no financial compensation."
+  ],
+  "findings": [
+    "The median Facebook user received 50.4% of content from like-minded sources versus 14.7% from cross-cutting sources; medians were 55% (civic) and 47% (news) for like-minded exposure.",
+    "Civic and news content were small shares of overall exposure (medians of 6.9% and 6.7%); only 20.6% of users got over 75% of exposures from like-minded sources, while 23.1% got less than 25%.",
+    "The treatment reduced like-minded exposure from 53.7% (control) to 36.2% (treatment), a 0.77 s.d. decrease; average treated users saw 92 of 255 daily views from like-minded sources versus 143 of 267 in control.",
+    "Reduced like-minded exposure did not produce a symmetrical rise in cross-cutting content (20.7% to 27.9%, 0.43 s.d.); the larger increase was in content that was neither like-minded nor cross-cutting (25.6% to 35.9%, 0.68 s.d.).",
+    "The intervention reduced exposure to uncivil content (-0.15 s.d.), content with slur words (-0.04 s.d.), and content from misinformation repeat offenders (-0.10 s.d.).",
+    "Total engagement with like-minded content fell, but the engagement rate (probability of engaging conditional on exposure) rose for like-minded content, indicating users interacted more with the reduced congenial content they did see.",
+    "No measurable effects appeared on eight preregistered attitudinal outcomes; seven of eight point estimates were within +/-0.03 s.d., with effects of +/-0.12 s.d. or more confidently ruled out and no significant heterogeneous effects across 272 preregistered subgroup tests."
+  ],
+  "contributions": [
+    "Provides the first systematic, behavioral (non-self-report) measurement of like-minded content exposure across the entire US adult Facebook population, addressing the lack of platform data access for researchers.",
+    "Delivers rare large-scale causal evidence, via a real-world field experiment on an operating platform, on whether reducing like-minded exposure affects polarization.",
+    "Demonstrates that algorithmic interventions reshape feed composition but do not automatically increase cross-cutting exposure or shift attitudes, informing debates over platform remedies for polarization.",
+    "Offers precisely estimated null results with tight equivalence bounds, contributing methodologically to distinguishing genuine null effects from underpowered studies.",
+    "Establishes a model of industry-academic collaboration with preregistration and academic control rights over analysis and publication."
+  ],
+  "framing": "The paper situates itself in debates over online echo chambers, filter bubbles, and affective polarization in political science and communication research, engaging arguments (e.g., Sunstein, Pariser) that congenial social media content deepens political divides. It positions itself against prior work limited to Twitter, survey self-reports, or brief simulated experiments by combining population-scale behavioral data with a large real-world field experiment, and connects to broader literatures on selective exposure, homophily, and the generally small and ephemeral effects of political persuasion.",
+  "pdf_source": "drive"
+}

@@ -10,7 +10,7 @@ citation_count: 246
 open_access: false
 source_url: https://doi.org/10.1080/23808985.2020.1759443
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445530Z
 ---
 
@@ -22,25 +22,28 @@ discovery_date: 2026-09-26T08:39:39.445530Z
 
 ## Summary
 
-This paper reviews and synthesizes the scholarly literature on how mainstream (legacy) media disseminate fake news, foregrounding an apparent paradox: fake news websites reach only small segments of the population, yet large proportions of the public are aware of and believe prominent fake news stories. The authors argue this gap implies that mainstream media coverage of fake news is likely a key vector through which such stories reach and influence the wider public — an indirect amplification pathway that has received comparatively little scholarly attention. The work reframes the study of fake news dissemination away from a narrow focus on the reach of fake news sources and toward the role of legacy news media as amplifiers, situating itself within political communication and media studies scholarship on misinformation.
+This article synthesizes literature across political communication, journalism studies, and cognitive psychology to advance a counterintuitive argument: mainstream news media are a major disseminator of fake news, likely reaching more people than fake news websites or social media do directly — even though their coverage is usually intended to correct and debunk. The authors resolve an apparent puzzle: direct exposure to fake news is limited to a small, ideologically extreme slice of the public, yet large majorities *know about* and often *believe* prominent false stories. Their explanation is that most people encounter fake news secondhand, through mainstream coverage. The paper works through three questions — what role mainstream media play in disseminating fake news, why they cover it, and how audiences process that coverage.
 
 ## Key Contributions
 
-- Draws attention to the underexamined role of mainstream media in amplifying fake news.
-- Reframes fake news dissemination research to consider indirect pathways beyond direct exposure to fake news websites.
-- Offers a synthesis intended to guide future research on the causes and consequences of mainstream coverage of fake news.
-- Articulates a concrete empirical puzzle (limited website reach vs. broad public awareness) that motivates a new research agenda.
+- Redirects attention to the underexamined, paradoxical role of mainstream media in spreading (not merely correcting) disinformation.
+- Offers an integrated framework for *why* journalists cover fake news: truth-seeking role perceptions, high news value, the social psychology of news decisions, and existing content-monitoring infrastructure.
+- Bridges disinformation research with the cognitive/social psychology of misinformation correction to theorize the audience effects of coverage.
+- Sets a research agenda: content analysis of fake news coverage, newsroom ethnographies, and experimental/linkage studies on audience processing (including partisan audiences, media trust, and attitude certainty).
 
 ## Methods
 
-Literature review and synthesis of existing research on fake news reach, public awareness, belief, and mainstream media coverage. The authors assemble empirical evidence from audience/traffic data and survey data to establish the mismatch that anchors their argument.
+Narrative literature review and synthesis rather than original data collection. The authors integrate survey evidence (e.g., YouGov/Frankovic on Pizzagate, BuzzFeed studies), traffic and network analyses of exposure and sharing, and content analyses. They use illustrative LexisNexis searches across 12 U.S. outlets for terms like "fake news" and "Pizzagate," draw on Allcott and Gentzkow's dataset of 156 election-related fake articles to show how such stories satisfy news values, and apply meta-analytic findings on misinformation correction to theorize audience effects.
 
 ## Findings
 
-- Empirical data show fake news websites attract limited audiences.
-- Survey and related data show widespread public awareness of and belief in prominent fake news stories.
-- The mismatch between limited website reach and broad public awareness points to mainstream media as a probable channel of dissemination.
+- Public belief in fake news is high: over a third of Americans thought Pizzagate was probably/definitely true; 75% of recalled fake headlines were rated somewhat/very accurate; similar patterns appear in Brazil and Israel.
+- Direct exposure is highly concentrated: 80% of fake news on Twitter reached 1% of users; ~60% of fake news site visits came from the 10% most conservative online diets; real news sites had ~40x more monthly visitors than fake news sites.
+- Sharing is rare and skewed (0.1% of Twitter users produced 80% of sharing), and fact-checks rarely reach fake news consumers due to selective diffusion.
+- Fake news is highly newsworthy — negativity, elite actors, surprise, entertainment, celebrity — and appears designed to maximize spread and align with national agendas.
+- Partisan media are more heavily influenced by fake news than mainstream media, partly due to ideological fit.
+- Correction is undermined by repetition (mere-exposure and truth effects), lexical complexity, congruence with prior attitudes, and low media trust; the modal audience response to reported fake news is *uncertainty* rather than rejection.
 
 ## Connections
 
-This synthesis complements measurement-focused work documenting the limited direct reach and skewed consumption of fake news, notably Grinberg2019-ua, Guess2019-ym, Allcott2017-yz, and Allen2020-nj, whose small-audience findings supply the empirical basis for the paradox this paper foregrounds. Its emphasis on amplification and diffusion pathways relates to Vosoughi2018-at on how false stories spread, and to broader accounts of hybrid and mainstream–fringe media ecosystems such as Benkler2018-lw and Starbird2019-qv. The reframing toward mainstream media as an inadvertent conduit also connects to work on cross-platform and cross-media dissemination like Bastos2025-ol and Cazzamatta2026-lo.
+This review is foundational for the recalibration of how we think about misinformation *exposure*, complementing empirical work showing that direct fake-news consumption is concentrated and limited — themes central to [[Guess2020-rr]], [[Grinberg2019-ua]], [[Guess2019-ym]], and [[Allen2020-nj]]. Its focus on the amplification role of mainstream coverage speaks to broader debates over the "disinformation order" and networked propaganda in [[Benkler2018-lw]] and [[Bennett2018-ys]], while its treatment of repetition, the truth effect, and correction resistance connects directly to [[Pennycook2021-jq]], [[Lewandowsky2012-vn]], [[Nyhan2023-gb]], and [[Vosoughi2018-at]].

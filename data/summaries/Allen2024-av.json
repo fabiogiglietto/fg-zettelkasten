@@ -1,0 +1,38 @@
+{
+  "abstract": "This paper investigates whether COVID-19 vaccine misinformation on Facebook had the exposure and persuasive impact required to meaningfully depress US vaccination rates. Combining large-scale survey experiments, crowdsourcing, and machine learning, the authors estimate the causal effect of over 13,000 vaccine-related URLs on the vaccination intentions of roughly 233 million US Facebook users. They find that although fact-check-flagged misinformation was more persuasive per view, its limited reach meant that unflagged but vaccine-skeptical content — much of it from mainstream outlets — had an estimated 46-fold greater overall impact on vaccine hesitancy.",
+  "key_claims": [
+    "Impact on behavior requires two conditions jointly: exposure (people must see content) and persuasive influence (content must change behavior when seen).",
+    "Exposure to fact-checked vaccine misinformation can causally reduce vaccination intentions, but its overall societal impact was small because few people saw it.",
+    "Unflagged 'vaccine-skeptical' content that is factually accurate but misleading — often from credible mainstream outlets — had a far larger aggregate impact on vaccine hesitancy than flagged misinformation.",
+    "The degree to which a story implies vaccines are harmful to health, rather than its veracity, best predicts negative persuasive influence.",
+    "Veracity-focused interventions (fact-check labels, domain downranking) target only a small fraction of the content that plausibly caused public health harm."
+  ],
+  "methods": [
+    "Two randomized online survey experiments on the Lucid platform (study 1: N = 8,603; study 2: N = 10,122; total N = 18,725) measuring the causal effect of 130 vaccine-related headlines/posts on a pre-post COVID-19 vaccination intentions index.",
+    "Study 1 used 40 fact-checker-debunked misinformation items; study 2 used 90 highly shared, quality- and topic-balanced Facebook articles including both true and false content.",
+    "Crowd raters labeled the 130 headlines on five dimensions (surprising, plausible, partisan lean, familiar, and harmful-vs-helpful to health); random-effects meta-regressions related these features to treatment effects.",
+    "Facebook's Social Science One URL Shares dataset used to measure actual views for 13,206 vaccine-related URLs shared publicly >100 times during January–March 2021, the initial US vaccine rollout.",
+    "A crowd-machine pipeline: 177 CloudResearch/MTurk raters predicted persuasive effects to build a 'crowdsourced aggregate score,' which a COVID-Twitter-BERT machine learning model was trained to predict for all 13,206 URLs; predicted scores were passed through the meta-regression to estimate per-URL treatment effects.",
+    "Estimated impact computed as the product of per-URL predicted treatment effect and view count, normalized per US Facebook user, with parametric bootstrap confidence intervals and robustness checks."
+  ],
+  "findings": [
+    "A single exposure to vaccine misinformation reduced vaccination intentions by 1.5 percentage points on average (P = 0.00004), with effects varying by item (bottom decile ~3 pp reduction; top decile ~0).",
+    "Only the 'harmful-to-health' dimension consistently predicted negative persuasive effect; a 1-point increase corresponded to about −0.69 pp; veracity was non-significant once harm-to-health was controlled.",
+    "Flagged misinformation URLs received only 8.7 million views — 0.3% of the 2.7 billion vaccine-related URL views; low-credibility domains accounted for 5.1% of views.",
+    "A single unflagged Chicago Tribune article ('A healthy doctor died two weeks after getting a COVID vaccine') was seen by ~54.9 million people (>20% of US Facebook users), and its story cluster received over six times the views of all flagged misinformation combined.",
+    "The crowdsourced aggregate score predicted observed treatment effects well (sampling-error-adjusted correlation 0.75, P = 0.0001, pseudo-R² = 0.34); the BERT model achieved 97% AUC and 91% accuracy on a hesitancy-inducing binary task.",
+    "The median flagged URL had a predicted effect of −1.36 pp versus −0.30 pp for the median unflagged URL, but weighting by views reversed the overall picture.",
+    "Vaccine-skeptical (unflagged, hesitancy-inducing) content lowered vaccination intentions by an estimated −2.28 pp per US Facebook user versus −0.05 pp for flagged misinformation — a 46-fold difference; 98% of views of hesitancy-inducing content were unflagged.",
+    "Low-credibility domains accounted for only 9.3% of the total estimated decrease; mainstream outlets (e.g., New York Post, Fox News, local news) drove the largest overall negative impact.",
+    "Aggregate impact translates to roughly 2.3 pp lower intentions per user, corresponding to an estimated ~3 million fewer vaccinated Americans (assuming behavior effects are 60% of intention effects)."
+  ],
+  "contributions": [
+    "Introduces a scalable framework that decomposes societal impact into exposure × persuasive influence and operationalizes it with experiments, crowdsourcing, and NLP.",
+    "Provides one of the first causal-scale estimates of misinformation's real-world impact rather than relying on correlational or proxy measures.",
+    "Demonstrates a crowd-plus-machine-learning pipeline that generalizes experimental treatment effects to thousands of real-world URLs using minimal platform data.",
+    "Reframes the misinformation debate to emphasize factually accurate but misleading 'gray-area' content, especially from mainstream sources.",
+    "Offers policy-relevant tools for continuously identifying high-impact harmful content that veracity-based moderation misses, applicable to other outcomes and platforms."
+  ],
+  "framing": "The paper situates itself within misinformation and computational social science research, challenging the prevailing 'infodemic' assumption that viral falsehoods drove vaccine refusal. It positions itself against a large correlational literature and prior lab studies by explicitly separating veracity from persuasive impact and by measuring exposure and behavioral intentions at ecosystem scale, extending the bottom-up, integrative approach to studying platform effects on society.",
+  "pdf_source": "drive"
+}

@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper investigates whether right-wing alternative online news sites (RNS) form interconnected national and transnational news ecologies through hyperlinking across six Western democracies (Austria, Germany, United States, United Kingdom, Denmark, Sweden). Drawing on hyperlink data harvested from 65 RNS over three months in 2018, the authors examine both direct links between RNS and the shared external reference points these sites link to. They find that RNS do build interlinked right-wing news ecologies domestically and across borders, that U.S. sites act as a central hub, and—counterintuitively—that legacy 'mainstream' media are the most important transnationally shared reference points, suggesting these sites seek to connect to the broader information environment rather than forming an insulated sphere.",
+  "key_claims": [
+    "Right-wing alternative news sites establish interlinked alternative news ecologies by connecting to likeminded RNS both within and across national borders, which can be read as a political/movement strategy of alliance-building among ideological outsiders.",
+    "The scope and relevance of transnational linking varies substantially by country, with RNS from countries with less-established right-wing news infrastructures being more likely to link transnationally.",
+    "The United States is an outlier: it hosts the largest and most domestically integrated RNS network, and its sites function as hubs attracting transnational links from European RNS while barely linking outward.",
+    "Legacy/mainstream news media serve as the primary transnationally shared reference points for RNS, challenging assumptions that these sites form insulated echo chambers.",
+    "Hyperlinking should be understood as an intentional, strategic communicative act combining a professional journalistic logic (citational/credibility links) and a political/movement logic (force multiplication, identity building, opponent dismissal); RNS exhibit a hybrid of both."
+  ],
+  "methods": [
+    "Hyperlink network analysis of article content from 65 right-wing news sites across six countries (Austria, Denmark, Germany, Sweden, UK, US), selected via criteria of institutionalization as news media, self-positioning as 'alternative' correctives, right-wing ideological stance, and national (non-transnational) scope.",
+    "Article content collected via the Media Cloud database for July 1–October 1, 2018 (102,379 articles); hyperlinks extracted using the R package 'rvest' (~12.5 million links, cleaned to 725,450 substantive links after removing structural/navigational/commercial/social links).",
+    "Operationalized transnationality two ways: (1) horizontal cross-border links between RNS, assessed relationally and via the External-Internal (E-I) index (Krackhardt and Stern); (2) a Transnational Reference Score (TRS) combining the number of RNS featuring a domain and the number of country collections in which it appears, scored 0 to 1.",
+    "Manual content analysis to classify linked actors by type, scope, and country (intercoder reliability Krippendorff's alpha 0.79 for country, 0.67 for actor type, three coders, n=50).",
+    "Network analysis and visualization in R using igraph, sna, network, and ggplot2 packages (Fruchterman–Reingold layout).",
+    "Country selection designed as a strong test case: three geographically/culturally close pairs (Germany-Austria, US-UK, Denmark-Sweden), two sharing a common language, varying in the maturity of right-wing news infrastructure and acceptance of far-right positions."
+  ],
+  "findings": [
+    "Of 725,450 total links, 23,806 were connections between sampled RNS, of which only 830 crossed borders—most RNS-to-RNS linking is domestic.",
+    "U.S. sites are by far the most active linkers to other RNS (average outdegree 647.3, n=33), followed by German (149.3), Danish (71.7), and Swedish (66.9) sites; Austrian (18.1) and UK (2.7) sites are much less engaged.",
+    "U.S. RNS form the densest, most homogeneously domestically interconnected cluster and are the only cluster addressed by RNS from all other countries, acting as the network's main integrating hub.",
+    "Country linking patterns differ sharply: U.S., Swedish, and German RNS predominantly link domestically; Danish RNS link almost exclusively transnationally (95%); UK sites link only externally; Austria is more balanced with slight internal tendency.",
+    "Transnational links follow proximity: Austrian links go mainly to German sites and vice versa, Danish links to Swedish and U.S. sites; Danish and Swedish transnational links predominantly point to U.S. sites.",
+    "Among transnationally shared reference points (top 100 by TRS), legacy/mainstream media dominate (nytimes.com, theguardian.com, reuters.com, dailymail.co.uk ranked highest); Donald Trump's Twitter ranked 8th; only four sampled RNS (all U.S., e.g., Breitbart) appear.",
+    "Across the 288 domains above a TRS cutoff of 0.1 (~173,260 connections), about 75% link to media/journalists, ~16% to economic actors, and under 5% each to political and societal actors."
+  ],
+  "contributions": [
+    "Provides empirical, cross-national mapping of transnational hyperlink networks among right-wing alternative news sites in six Western democracies, extending research beyond single-country studies.",
+    "Introduces the Transnational Reference Score (TRS) as a measure combining a domain's prevalence among RNS and its spread across country collections to identify transnationally shared reference points.",
+    "Qualifies fears of insulated right-wing counter-publics/echo chambers by showing RNS link heavily to mainstream legacy media, indicating outreach to the broader information environment.",
+    "Demonstrates the central hub role of the U.S. right-wing news ecology in transatlantic information flows, framing the U.S. as a possible developmental future for European ecologies.",
+    "Advances a hybrid conceptualization of RNS hyperlinking that blends professional journalistic and political/movement logics, and links country-level context conditions to observed linking behavior."
+  ],
+  "framing": "The paper positions itself within scholarship on transnationalization of the political right, digital counter-publics, alternative/hyper-partisan media, and hyperlink network analysis, drawing on theories that treat hyperlinks as strategic communicative acts reflecting social and cultural structures. It engages debates about polarization, echo chambers, and the emergence of alternative news infrastructures, testing whether right-wing news forms an insulated sphere or connects to the broader (transnational) information environment.",
+  "pdf_source": "drive"
+}

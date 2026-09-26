@@ -10,7 +10,7 @@ citation_count: 2350
 open_access: false
 source_url: https://doi.org/10.1146/annurev-polisci-051117-073034
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-09-26T08:39:39.445562Z
 ---
 
@@ -22,24 +22,30 @@ discovery_date: 2026-09-26T08:39:39.445562Z
 
 ## Summary
 
-This review article consolidates research on **affective polarization** in the United States — the growing tendency of Democrats and Republicans to dislike, distrust, and avoid one another as social groups, rather than simply disagreeing over policy. The authors distinguish this identity-based, emotional form of division from traditional issue-based or ideological polarization, and argue that partisan animosity has become a defining feature of contemporary American mass politics. Drawing on social identity theory, the paper frames partisanship as a group membership that activates in-group favoritism and out-group hostility, and it synthesizes what is known about the origins, measurement, and downstream consequences of interparty hostility.
+This review article synthesizes an interdisciplinary literature on **affective polarization** in the United States — the growing tendency of Democrats and Republicans to dislike, distrust, and avoid members of the opposing party. Drawing on social identity theory, the authors argue that partisanship functions as a powerful social identity that sorts the world into a liked in-group and a disliked out-group. Crucially, they contend that affective polarization is theoretically and empirically **distinct from ideological (issue-based) polarization**: extreme policy positions are not a necessary condition for partisan animosity. The paper traces measurement approaches, causes, and consequences that spill well beyond politics into economic and social life, before evaluating mitigation strategies and laying out a future research agenda.
 
 ## Key Contributions
 
-- Consolidates and frames **affective polarization** as a distinct object of study within political science, separable from ideological/issue polarization.
-- Provides an integrative account of the origins and consequences of interparty animosity in the mass public.
-- Positions **social identity** as the central explanatory mechanism for contemporary partisan hostility.
+- Provides an integrative framework grounding affective polarization in **social identity theory** and separating it from ideological polarization (reframing the Fiorina–Abramowitz debate).
+- Systematically catalogs three measurement traditions — survey self-reports, implicit measures, and behavioral measures — with their respective strengths and limitations.
+- Assembles evidence on the **nonpolitical spillover** of partisan animus into social relationships, marriage, hiring, and economic behavior.
+- Clarifies which candidate causes (echo chambers, residential sorting) remain empirically contested.
+- Sets a detailed research agenda, including in-group-love versus out-group-hate, the causal role of sorting, and comparative extensions.
 
 ## Methods
 
-A literature review and synthesis of existing empirical research on partisan affect. The paper interprets accumulated findings through the lens of **social identity theory**, tracing origins and consequences across prior studies rather than presenting new data. (Specific datasets are not detailed in the abstract.)
+A narrative synthesis of political science and social psychology research. The authors review **three measurement approaches**: (1) survey self-reports (ANES feeling thermometers, trait ratings, social distance/marriage items), (2) implicit measures (partisan Implicit Association Test), and (3) behavioral measures (trust and dictator economic games, scholarship-selection and hiring experiments). Evidence is drawn from longitudinal survey time-series (ANES ~1978–2016, Pew), audit and field experiments, online dating data, voter files, and consumer behavioral data.
 
 ## Findings
 
-- Partisans express strong dislike and distrust toward out-party members.
-- Negative stereotypes — hypocritical, selfish, closed-minded — are routinely ascribed to the opposing party.
-- Partisan animosity extends beyond politics into social life, manifesting as social distance and reluctance to interact or socialize across party lines.
+- ANES feeling thermometer polarization rose from **22.64° in 1978 to 40.87° in 2016**, driven mainly by declining out-party warmth (with a slight dip 2012–2016).
+- Opposition to a child marrying across party lines rose from ~4–5% in 1960 to roughly a third of Democrats and half of Republicans by 2010.
+- Implicit partisan bias is widespread (~70% show in-party favoritism) and **larger than implicit racial bias** (D-score 0.50 vs. 0.18).
+- In a scholarship experiment, ~80% of partisans chose the co-partisan even when the out-party applicant was more qualified.
+- Partisan matching increased dating message exchange by 9.5%; ~80.5% of married couples share a party identification.
+- **Sorting explains only ~5%** of the variance in affective polarization, and animus rose comparably among ideologically consistent and inconsistent partisans.
+- Correcting misperceptions about party composition (people overestimate stereotypical group prevalence by ~342%) and priming a common American identity both reduce out-party animus.
 
 ## Connections
 
-This review is a foundational conceptual anchor for the broader study of partisanship, and its social-identity account of partisan hostility connects to work on how online information environments shape partisan behavior — for example the disproportionate sharing of out-group hostility in [[Osmundsen2021-et]], the role of partisan animosity in misinformation belief and sharing in [[Pennycook2021-jq]] and [[Mosleh2024-op]], and studies of partisan sorting and cross-cutting exposure in [[Bail2018-fk]], [[Bakshy2015-rn]], and [[Barbera2015-fw]].
+This paper is a foundational statement on affective polarization and the identity-based (rather than issue-based) account of partisan division; its skepticism about echo chambers as a driver connects directly to work on selective exposure and cross-cutting information such as [[Bail2018-fk]], [[Bakshy2015-rn]], [[Barbera2015-fw]], [[Guess2023-ai]], and [[Nyhan2023-gb]]. Its treatment of partisan media and elite messaging as intensifiers of animus links to [[Benkler2018-lw]] and [[Osmundsen2021-et]], while its call to extend the framework comparatively speaks to cross-national work like [[Humprecht2020-gd]].

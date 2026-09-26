@@ -5,7 +5,7 @@ authors: ["Andrew T. Chadwick"]
 year: 2014
 doi: 10.5860/choice.51-6974
 bibtex_key: Chadwick2013-ns
-topics: [generative-ai-imaginaries, platform-critique-anniversary-essays]
+topics: []
 citation_count: 842
 open_access: true
 source_url: https://doi.org/10.5860/choice.51-6974
@@ -22,31 +22,32 @@ discovery_date: 2026-09-26T08:39:39.445468Z
 
 ## Summary
 
-This editorial introduction to a *Digital Journalism* special issue reframes AI hype as a systemic structuring force rather than mere discourse or a transient bubble. Drawing on Susan Leigh Star's ethnography-of-infrastructure framework and the communities-of-practice tradition, the authors argue that hype — exaggerated promises, anticipatory narratives, and inflated expectations — shapes decisions, redistributes resources, legitimizes actors, and configures sociotechnical futures *before* those futures materialize. The central move is to treat hype as embedded infrastructure that becomes normalized within newsroom practice, and to shift the analytic question from whether hype is justified toward how it mobilizes resources and refactors journalistic labor. Rather than debunking, the paper advocates "breakdown and repair" — making hype visible through infrastructural inversion as a first step toward imagining alternative futures.
+This work-in-progress paper theorizes the **hybrid media system**, a framework for understanding how older and newer media forms interact in contemporary political communication. Chadwick argues against dichotomous, essentialist "old versus new media" thinking, proposing instead an *ontology of hybridity* in which political actors, media organizations, and publics are bound together through evolving power relations grounded in adaptation and interdependence rather than the dominance of either media type. Focusing on news, the paper introduces the concept of the **political information cycle** and uses WikiLeaks as an extended case study of power and interdependence in news construction, drawing primarily on evidence from Britain and the United States.
 
 ## Key Contributions
 
-- Advances a **systemic conceptualization of AI hype as embedded infrastructure** and a structuring force, integrating it into journalism studies alongside STS and communication.
-- Offers an explicit working definition of AI hype as strategically produced, circulated exaggerated promises that function structurally.
-- Curates and synthesizes an empirically diverse special issue spanning the US, Netherlands, Brazil, China, Germany, Chile, and Africa.
-- Proposes a research and practice agenda: diversifying who counts as an "expert" source, deepening reflexivity, and expanding critical scholarship on environmental costs, hidden labor, and public-values tradeoffs.
-- Reframes the field's task from **debunking** hype toward **breakdown and repair**.
+- Introduces and develops the **hybrid media system** as a framework for political communication research.
+- Advances the **political information cycle** as a reconceptualization of the traditional, elite-controlled news cycle.
+- Applies an *ontology of hybridity* and the notion of **news-making assemblages**, importing concepts such as particulate hybridity and relations of exteriority.
+- Provides a detailed hybridity-based analysis of WikiLeaks as a media actor interdependent with legacy news organizations.
+- Argues methodologically for combining rich narrative case studies with quantitative approaches to trace who does the decisive "work" in fluid news environments.
 
 ## Methods
 
-A conceptual and theoretical framing essay that synthesizes the special issue's contributing articles (ethnographies of the AP's local news AI initiative, media unions, Chinese and German journalists, cross-national comparisons, and coverage of recycling-sorting automation). It applies Star's ethnography of infrastructure and infrastructural inversion to treat hype as embedded infrastructure, and Lave & Wenger's community-of-practice framework to analyze how norms are socialized among journalists. Historical hype cycles (Hyperloop, the metaverse) serve as illustrative cases.
+The paper is primarily interdisciplinary theory-building, synthesizing conceptions of hybridity from comparative politics (hybrid regimes), governance and regulation studies, organizational sociology, cultural and postcolonial studies, and science and technology studies (actor-network theory). It distinguishes analytically between **diluted** and **particulate** hybridity as modes of recombination. Empirically, it rests on detailed narrative case studies with real-time observation, including a close five-day logging of press, broadcast, and online material during the 2010 UK "bullygate" scandal and the first live televised UK prime ministerial debates. The WikiLeaks case draws on insider accounts, journalist testimony, secondary reporting, and reference to a content analysis of newspaper coverage.
 
 ## Findings
 
-- Actors strategically leverage hype for utilitarian ends — e.g., AP participants reframing automation as "AI projects" to secure funding.
-- Media unions won contracts against GenAI displacement, but vague hype rhetoric left protections patchy and excluded "invisible" laborers.
-- Journalists sustain hype less through favorable reporting than through **failure to cover AI critically** and reliance on narrow, tech-company-centric sourcing.
-- As "automation" became "AI" in recycling-sorting coverage, sources shifted from local officials to tech executives, erasing other actors.
-- Metaverse coverage was overwhelmingly corporate/investment-oriented, with only ~11% of 500+ articles using critical framing.
-- Coverage frames AI through "open-ended technological inevitability" and through geopolitical/national narratives (a "loyal-facilitator" role in China; "European values" framing in Germany).
-- GenAI failures create an "epistemic opportunity" for journalists to assert superiority, even as hype supplies the rebuttal that AI will "inevitably get better."
-- Journalists occupy a contradictory **double role** as both hype makers and hype watchers.
+- In the **"bullygate"** case, non-elite actors, bloggers, and Twitter activists helped discredit newspaper revelations through cross-platform, real-time contestation.
+- During the televised leaders' debates, a satirical `#nickcleggsfault` hashtag became globally trending and helped collapse a *Daily Telegraph* "scoop," showing online activists contesting press coverage.
+- Political information cycles involve more numerous and diverse actors, complex temporalities (fragments can lie dormant then re-erupt), and cross-platform iteration that loosens but does not eliminate elite control.
+- News-making is best conceptualized as **assemblages** of loosely coupled, interdependent actors who plug and unplug from the process, often in real time.
+- WikiLeaks built a sophisticated sociotechnical infrastructure (encryption, Tor, distributed servers, redundancy) yet remained chaotic, financially precarious, and reliant on the personal resources of key figures.
+- WikiLeaks evolved from a pure submission platform toward acting like a professional news producer (e.g., the edited *Collateral Murder* film) and ultimately toward collaboration with elite newspapers.
+- Professional news organizations supplied legal expertise, legitimacy, government-bargaining experience, and verification, while WikiLeaks provided publishing infrastructure and network resistance—illustrating **mutual interdependence**.
+- Accounts differ on power relations: the *NYT* framed WikiLeaks as merely "a source," whereas the *Guardian* treated it as a collaborative partner; the reality was interdependent compromise.
+- The Anonymous "Operation Payback"/"Avenge Assange" hacktivist campaigns after cablegate functioned as a mobilized show of network support within the hybrid media system.
 
 ## Connections
 
-This essay's treatment of AI hype as anticipatory infrastructure resonates directly with the register's work on generative-AI imaginaries, including [[Hepp2026-oi]] and [[Bruns2026-yv]] on how AI futures are discursively constructed, and with [[Bechmann2026-dr]] on institutional adoption dynamics. Its infrastructural-inversion argument — surfacing hidden labor and environmental costs — links to platform-critique scholarship such as [[Helmond2026-ll]] and [[Swartz2026-zb]], while its concern with narrative framing and sourcing conventions connects to [[Baym2026-tr]] and [[Manovich2026-ih]].
+No other papers have been provided under shared topics, so there are no internal wikilinks to make here. Intellectually, the paper sits at the intersection of political communication, media studies, and actor-network theory, and would connect naturally to future notes on digital activism, platform-press relations, and elite control over news agendas.

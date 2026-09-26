@@ -1,0 +1,38 @@
+{
+  "abstract": "This book chapter argues that contemporary political communication in Western democracies is best understood as a 'hybrid media system' built on interactions between older and newer media logics rather than the simple displacement of one by the other. Using the ontology of hybridity, the authors develop a framework centered on power, systems, and media logics, and apply it across three domains: news and journalism, election campaigning, and engagement/mobilization. They review a growing body of empirical research to show how older media are 'renewed' as they integrate newer media logics, concluding that today's polycentric environment is, on balance, more inclusive than the twentieth-century broadcast/newspaper duopoly, though participation does not equal power.",
+  "key_claims": [
+    "Political communication is undergoing a chaotic transition in which older and newer media interact, adapt, and coevolve rather than one displacing the other.",
+    "The hybrid media system is built on interactions among older and newer media logics — defined as bundles of technologies, genres, norms, behaviors, and organizational forms — in the connected fields of media and politics.",
+    "Power in this system is relational and must be studied empirically through interactions among social actors and media technologies, not assumed from structural snapshots.",
+    "Temporal power — the mastery of timing and real-time intervention — is a crucial but under-researched dimension of power in political communication.",
+    "The old singular 'media logic' concept must be pluralized into 'hybrid media logics' to fit a more polycentric, post-broadcast environment.",
+    "Participation does not equate to power: disruptive power is unequally distributed and elites can and do adapt to hybrid environments, so hybridity does not automatically produce more inclusive democracy.",
+    "On balance, current arrangements are more expansive, inclusive, and democratic than at any point in the preceding sixty years, but only partly so."
+  ],
+  "methods": [
+    "Conceptual and theoretical synthesis drawing on hybridity as a cross-disciplinary organizing principle (hybrid regimes, hybrid cultures/genres, hybrid organizations, actor-network theory).",
+    "Application of assemblage theory (Deleuze and Guattari) and reworked concepts of power (Castells, Dahl), systems (Easton, McNair), and media logic (Altheide and Snow, Dahlgren).",
+    "Advocacy of a mixed-methods repertoire: conceptual work, historical and documentary analysis, real-time 'live' online research, and insider ethnography.",
+    "Literature review and synthesis of emerging empirical studies applying the hybrid media system approach across multiple countries (Germany, Norway, US, UK, Spain, Portugal, Italy, Sweden).",
+    "Illustrative case analysis of episodes such as Obama's 2008 campaign, the Jeremiah Wright/Sarah Palin coverage, the Snowden/Guardian webchat, and the Kony2012 campaign."
+  ],
+  "findings": [
+    "Obama's 2008 campaign succeeded by integrating online, broadcast, and physical-space activism (e.g., raising $500m of $750m online yet spending only 4% of ad budget online), demonstrating the continuing power of older media.",
+    "Studies of Twitter around televised debates (Jungherr on 2009 Germany; Freelon and Karpf, Lin et al. on 2012 US) show Twitter follows a hybrid logic that both meshes with and deviates from broadcast events, and that celebrities can act as 'bridging elites.'",
+    "Skogerbø and Krumsvik found Norwegian journalists rarely use candidates' social media as sources, and larger parties still generate news via traditional media events.",
+    "News production is being reshaped by blurring roles (Agarwal and Barthel's post-digital norms of transparency and risk-taking; Ananny and Crawford's 'liminal press'), new organizational forms (Huffington Post), and 'political information cycles' rather than traditional news cycles.",
+    "Klinger and Svensson and Nielsen and Schrøder find that mass media logic still prevails and television remains the dominant news source even among heavy social media users.",
+    "Hybrid mobilization movements (38 Degrees, Avaaz, MoveOn, GetUp!) strategically switch between older and newer media logics and time campaigns to mainstream media prominence.",
+    "Dual screening (using devices to comment on live TV via social media, e.g., #bbcqt) increases around media events, involves 'lay tutelage' and real-time frame contestation, and predicts online political participation (Gil de Zúñiga et al.).",
+    "Powers' NGO study shows hybridity can amplify messages but also cause loss of control over meaning, as seen when Kony2012 spread far beyond its intended audience."
+  ],
+  "contributions": [
+    "Consolidates and extends the hybrid media system framework (Chadwick 2013) as an analytic lens applicable across journalism, campaigning, and mobilization.",
+    "Reconceptualizes 'media logic' as plural 'hybrid media logics' suited to a polycentric media environment.",
+    "Introduces and applies the concept of 'political information cycles' (versus news cycles) and foregrounds temporal power as an object of study.",
+    "Provides a synthesizing survey demonstrating the empirical uptake of the approach across diverse national contexts.",
+    "Moves the field beyond utopian/dystopian and displacement/absorption dichotomies toward a 'not only, but also' analysis of coevolution."
+  ],
+  "framing": "The chapter positions itself against classic accounts of a mass-media public sphere (C. Wright Mills and Habermas) and within debates on digital media and democratic power, drawing on media logic theory (Altheide and Snow, Dahlgren), network power (Castells), assemblage/actor-network theory (Deleuze and Guattari, Latour), and connective action (Bennett and Segerberg). It frames the hybrid media system as a corrective to both technological-newness bias and deterministic optimism or pessimism about digital media.",
+  "pdf_source": "drive"
+}

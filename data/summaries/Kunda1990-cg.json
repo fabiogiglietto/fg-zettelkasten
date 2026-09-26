@@ -1,0 +1,39 @@
+{
+  "abstract": "This theoretical paper argues that motivation shapes reasoning not by directly overriding facts but through reliance on a biased set of cognitive processes—the strategies people use to access, construct, and evaluate beliefs. Kunda distinguishes two kinds of motivational goals: accuracy goals, which lead to more careful and complex processing, and directional goals, which lead people toward preferred conclusions while remaining constrained by the need to construct plausible justifications. Reviewing a broad body of research, she contends that a mechanism of biased memory search and belief construction can account for both accuracy-driven and direction-driven motivated reasoning.",
+  "key_claims": [
+    "Motivation affects reasoning by influencing which beliefs and inferential strategies people access and apply to a given problem.",
+    "Accuracy goals lead people to use the strategies they consider most appropriate, generally producing deeper, more careful, and more complex processing.",
+    "Directional goals lead people to use the strategies most likely to yield a desired conclusion, but people do not simply believe whatever they wish.",
+    "Directional bias is constrained by people's ability to construct a justification that would persuade a dispassionate observer; they maintain an 'illusion of objectivity.'",
+    "A single mechanism—biased memory search and belief construction—can account for the diverse phenomena of motivated reasoning, including biased self-characterizations, judgments of others, beliefs about events, choice of statistical rules, and evaluation of scientific evidence.",
+    "Accuracy goals do not always reduce bias and, when paired with directional goals, deeper processing may actually facilitate the construction of justifications and thereby enhance bias.",
+    "The long-standing hot-versus-cold cognition debate can be advanced by specifying the cognitive mechanisms through which motivation operates."
+  ],
+  "methods": [
+    "Conceptual synthesis and integrative literature review rather than new empirical data collection.",
+    "Organizes prior research into two categories: reasoning driven by accuracy goals and reasoning driven by directional goals.",
+    "Reviews studies across multiple subfields—dissonance research, self-perception, attribution, outcome dependency, likelihood estimation, statistical heuristic use, evaluation of scientific evidence, and persuasion/involvement research.",
+    "Evaluates whether findings can be reinterpreted in purely cognitive (nonmotivational) terms, giving weight to studies with random assignment that rule out prior-belief explanations.",
+    "Distinguishes indirect evidence (inferred from judgment outcomes) from more direct evidence (e.g., response latencies, content of recalled memories, cognitive complexity of written descriptions)."
+  ],
+  "findings": [
+    "Accuracy motivation (e.g., expecting to justify judgments, importance manipulations) reduces biases such as primacy effects, stereotyping, anchoring, and the fundamental attribution error, and yields more cognitively complex and accurate judgments (e.g., Kruglanski & Freund; Tetlock; Tetlock & Kim).",
+    "Accuracy manipulations reduce bias only when delivered before information encoding, indicating effects on initial processing rather than self-presentation.",
+    "Accuracy goals do not always improve reasoning; some biases resist accuracy manipulations, and greater complexity can worsen judgment (e.g., the dilution effect in Tetlock & Boettger).",
+    "Directional goals bias self-characterizations of traits, attitudes, and past behavior, but changes are constrained by prior self-knowledge (e.g., dissonance attitude change, Kunda & Sanitioso, Sanitioso et al., Markus & Kunda).",
+    "Direct evidence of biased memory search: people faster to generate and endorse desired self-relevant memories and traits.",
+    "Outcome dependency biases liking and trait/ability evaluations of others (Darley & Berscheid; Berscheid et al.; Neuberg & Fiske; Klein & Kunda), but bias fails when information is too impoverished to justify the desired impression (Omoto & Borgida).",
+    "Directional goals bias beliefs about events, causal theories, and perceived likelihood of desirable outcomes.",
+    "Goals can bias selection of statistical heuristics such as base rates (Ginossar & Trope) and aggregation/law of large numbers (Sanitioso & Kunda).",
+    "People evaluate scientific evidence more critically when its conclusions are threatening, judging disconfirming studies as more methodologically flawed (Lord, Ross & Lepper; Pyszczynski et al.; Kunda; Sherman & Kunda), yet remain responsive to genuine strengths, showing bias constrained by plausibility."
+  ],
+  "contributions": [
+    "Provides an integrative mechanistic account—biased accessing and construction of beliefs and rules—that unifies previously disparate motivated-reasoning findings.",
+    "Rehabilitates the motivational view against 1970s cognitive critiques by specifying processes that make hot and cold cognition distinguishable and jointly operative.",
+    "Sharpens the theoretical distinction between accuracy goals and directional goals and their different mechanisms.",
+    "Introduces the emphasis on 'justification construction' and the 'illusion of objectivity,' explaining why motivated bias is bounded by available evidence and reasoning.",
+    "Extends biased-memory-search ideas beyond self-serving attribution to a wide range of goals and reasoning tasks, and reconciles involvement/persuasion findings with evidence of bias."
+  ],
+  "framing": "The paper situates itself within the social-psychological debate over whether goals and motives genuinely influence cognition (the 'hot vs. cold cognition' controversy), building on dissonance theory, attribution research, and Kruglanski's and Pyszczynski & Greenberg's models of goal-driven hypothesis testing. It reframes motivation's influence as operating through ordinary cognitive processes of memory search and belief construction, bridging motivational and cognitive traditions.",
+  "pdf_source": "drive"
+}
