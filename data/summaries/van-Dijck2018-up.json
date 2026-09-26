@@ -1,0 +1,35 @@
+{
+  "abstract": "The Platform Society examines how online platforms have penetrated the core of Western societies, reshaping economic transactions, social practices, and public institutions rather than merely disrupting them. The authors argue against framing platforms as a 'revolution' or purely economic/technological phenomenon, instead offering the concept of a 'platform society' where public values are contested between private corporate interests and collective goods. Through analysis of four sectors—news, urban transport, healthcare, and education—the book investigates how platform mechanisms embed particular (largely US-based) values that clash with public values in North American and Western European contexts.",
+  "key_claims": [
+    "Platforms do not merely reflect the social but produce the social structures we live in, and are best understood as an integral part of society rather than a separate technological or economic realm.",
+    "The rise of the platform society constitutes a contested struggle between private gain/corporate interest and public benefit/common good, a debate that is overdue because platforms grew influential before public value discussions could begin.",
+    "Platforms are neither neutral nor value-free; they carry specific norms and ideological values inscribed in their architectures that may clash with values embedded in existing societal structures, particularly European ones.",
+    "The Western platform ecosystem is dominated by a handful of US 'Big Five' corporations (Alphabet-Google, Apple, Facebook, Amazon, Microsoft) whose infrastructural services form a privatized, opaque, and centralized core, counterbalanced globally only by a state-linked Chinese ecosystem.",
+    "Governments—especially supranational, national, and local ones—bear special responsibility for anchoring public values in the platform society and should be proactive rather than merely arbiters of markets, though responsibility is shared with market and civil society actors."
+  ],
+  "methods": [
+    "Multidisciplinary theoretical synthesis drawing on science and technology studies, political economy, business/management studies, media studies, and legal studies.",
+    "A 'mechanisms approach' analyzing three driving forces of the platform ecosystem: datafication, commodification, and selection.",
+    "A three-level analytical framework: micro-level (single platform anatomy), meso-level (platform ecosystem), and macro-level (geopolitics of platform societies).",
+    "Deconstruction of platform 'anatomy' into technical, economic, and sociolegal elements (data, algorithms, interfaces, ownership, business models, terms of service).",
+    "Sector-based comparative case studies across four domains (news, urban transport, healthcare/health research, education) using specific platform examples such as Airbnb, Uber, Lyft, Coursera, AltSchool, 23andMe, PatientsLikeMe, and Parkinson mPower.",
+    "Distinction between infrastructural platforms and sectoral platforms, and between 'connectors' and 'complementors' as functional roles rather than fixed categories."
+  ],
+  "findings": [
+    "Platforms deliberately blur the distinction between infrastructure and sectors, and between market/state, consumer/citizen, private/public, adopting a hybrid status to bypass regulation and professional norms (e.g., Airbnb refusing 'hotel' status, Uber rejecting 'taxi business', Facebook long refusing 'media organization').",
+    "The Amsterdam Airbnb case illustrates how platform adoption triggers clashes over public values including fairness, level playing fields, safety enforcement, taxation, affordable housing, and economic inequality.",
+    "Infrastructural and sectoral platforms are increasingly integrated technologically and economically (e.g., Google's stake in Uber, Amazon buying Whole Foods), enabling the Big Five to accumulate cross-sectoral power via sector-agnostic data streams.",
+    "The platform ecosystem is riddled with paradoxes: it appears egalitarian but is hierarchical; appears to serve public value but is almost entirely corporate; appears neutral but is ideologically loaded; appears local but is global in impact.",
+    "Promotional rhetoric framing platforms as efficient 'bottom-up' alternatives to 'top-down big government' masks a neoliberal ideology that pushes private interests under the guise of public value.",
+    "Because Western online infrastructure is now completely privatized, governments, NGOs, and public institutions struggle to operate as autonomous actors and often depend on Google or Facebook for login, search visibility, and reach."
+  ],
+  "contributions": [
+    "Introduces and theorizes the concept of the 'platform society' to emphasize the inextricable relationship between online platforms and societal structures.",
+    "Provides a functional taxonomy of platform roles (infrastructural/sectoral, connectors/complementors) that could aid legislators in updating antitrust, competition, and regulatory frameworks.",
+    "Offers an analytical 'instrumentarium' (mechanisms of datafication, commodification, selection) for understanding and shaping platformization across sectors.",
+    "Bridges economic, technological, and public-value perspectives to reframe platforms as performative constructors of value regimes rather than neutral enablers.",
+    "Advances a normative agenda centered on anchoring public values (fairness, equality, solidarity, accountability, transparency, democratic control) in platform governance, with particular attention to the European context."
+  ],
+  "framing": "The book positions itself against the celebratory 'platform revolution' and 'sharing economy' discourse of management/business scholars, drawing instead on media studies, political economy, science and technology studies, and economic sociology's notion of performativity. It frames platformization as a contest over public values and the common good, situating it within debates about neoliberal marketization of public sectors and the geopolitics of US-dominated versus China-based platform ecosystems.",
+  "pdf_source": "drive"
+}
