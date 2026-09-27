@@ -21,6 +21,7 @@ Comparative analysis of political communication during national election campaig
 - [[Bouchafra2026-ts]]
 - [[Brady2026-ln]]
 - [[Chadwick2015-ii]]
+- [[Darius2026-xl]]
 - [[Eady2023-xg]]
 - [[Eady2025-vm]]
 - [[Gaber2022-bk]]

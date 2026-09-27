@@ -44,6 +44,7 @@ Studies of how platform policies (e.g. Meta's political content reduction) and a
 - [[Tonneau2025-bv]]
 - [[Ventura2026-yc]]
 - [[Votta2025-xz]]
+- [[Wan2026-ai]]
 - [[de-Vreese2026-zx]]
 
 ## All papers (Dataview)
