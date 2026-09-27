@@ -1,0 +1,23 @@
+{
+  "abstract": "This paper addresses the problem of quantifying the influence of Coordinated Inauthentic Behavior (CIB) on information diffusion, rather than merely detecting it. The authors introduce two complementary frameworks for the post-hoc evaluation of coordinated accounts, one formulated on information cascades and another related to retweet networks. They develop both optimal and heuristic strategies for assessing how much coordinated accounts shape diffusion outcomes.",
+  "key_claims": [
+    "Existing CIB research overemphasizes detection while neglecting the quantification of coordinated behavior's actual influence on information diffusion.",
+    "The impact of coordinated inauthentic behavior once detected can be systematically evaluated using post-hoc analytical frameworks.",
+    "Both optimal and heuristic strategies are viable for assessing the influence of coordinated accounts in diffusion structures."
+  ],
+  "methods": [
+    "Formulation of the CIB influence evaluation problem on information cascades.",
+    "A second complementary framework related to retweet networks (details not fully available in the abstract).",
+    "Development of optimal strategies alongside heuristic approaches for evaluating coordinated account influence."
+  ],
+  "findings": [
+    "Specific empirical findings are not available from the provided abstract fragment, which cuts off before describing results."
+  ],
+  "contributions": [
+    "Introduces two complementary frameworks for the post-hoc evaluation of coordinated accounts in information diffusion.",
+    "Shifts focus in CIB research from detection toward influence quantification.",
+    "Provides both optimal and heuristic strategies applicable to information cascades and retweet networks."
+  ],
+  "framing": "The work is positioned within the study of coordinated inauthentic behavior and information diffusion on social media platforms, arguing that the field has concentrated on detection at the expense of understanding CIB's downstream impact on how information spreads.",
+  "pdf_source": "abstract_only"
+}
