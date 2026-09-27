@@ -14,6 +14,7 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 - [[Balluff2026-ev]]
 - [[Bruns2025-fz]]
 - [[Di-Marco2025-aa]]
+- [[Di_Marco2026-xu]]
 - [[Efstratiou2025-gs]]
 - [[Fan2025-ut]]
 - [[Fan2026-af]]

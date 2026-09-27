@@ -23,6 +23,7 @@ Emerging strand examining how generative AI is used in coordinated persuasion (s
 - [[Mattis2026-gu]]
 - [[Nguyen2026-vm]]
 - [[Orlando2025-ul]]
+- [[Perez-Curiel2026-ld]]
 - [[Sbaraini-Fontes2026-cw]]
 - [[Schiffrin_undated-gi]]
 - [[Suk2026-ai]]

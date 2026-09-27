@@ -4444,10 +4444,42 @@
       "slack_posted": false,
       "slack_pending": true,
       "last_processed": "2026-09-27T11:15:56.881565+00:00"
+    },
+    "bibtex:Di_Marco2026-xu": {
+      "note_path": "Papers/Di_Marco2026-xu.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "2f7e26151c313d7916ed23aea9fc192026ff388deb2d4e96f358397833c57219",
+      "doi": "",
+      "title": "Optimal and heuristic strategies for evaluating the influence of coordinated behavior in information cascades and retweet networks",
+      "pdf_source": "abstract_only",
+      "content_hash": "bab17e03aef88c782e53234fe7ebbb099f575a3a692ec4dcb930fd7e0748b0ba",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-09-27T15:49:16.781217+00:00"
+    },
+    "bibtex:Perez-Curiel2026-ld": {
+      "note_path": "Papers/Perez-Curiel2026-ld.md",
+      "topics": [
+        "generative-ai-media-research",
+        "online-radicalization-and-extremism-on-platforms"
+      ],
+      "assign_fp": "935ed927b55e2d1bd490561982539a7ff2e54b160183fec277ac97abc4a3442c",
+      "doi": "10.1016/j.ssaho.2026.103611",
+      "title": "When populism meets artificial intelligence: AI-generated multimedia content and far-right digital campaigning on Instagram and X in the 2024 European elections",
+      "pdf_source": "abstract_only",
+      "content_hash": "3ef3d2c94867c5a075d8851458211b5d52b1cd58def4194d198a01e0da2aa4b4",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "last_processed": "2026-09-27T15:49:26.063956+00:00"
     }
   },
   "last_full_cluster": "2026-09-26T10:42:08.336850+00:00",
-  "papers_since_cluster": 3,
+  "papers_since_cluster": 5,
   "register_signals_hash": "9af6b3ba7ef318e0da54ec3afa2d06c2385a6fb29a47e07aba6c8dcffd12ecc4",
   "emergent_fp": "61f414984a825b25d6097432c8b3093b6007d7ba22c1df73af749b044a4473cc",
   "structure_fps": {

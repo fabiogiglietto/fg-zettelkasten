@@ -15,6 +15,7 @@ Development and application of methods (CooRnet, CLSB, the VERA-AI Alert system)
 - [[Bastos2025-ol]]
 - [[Copland2025-em]]
 - [[Di-Marco2025-aa]]
+- [[Di_Marco2026-xu]]
 - [[Donovan2025-ws]]
 - [[Efstratiou2026-ij]]
 - [[FitzGerald2025-nv]]

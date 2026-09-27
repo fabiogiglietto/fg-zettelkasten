@@ -20,6 +20,7 @@ Empirical and review studies of how extremist actors (far-right, jihadist) explo
 - [[Karo2026-dn]]
 - [[Marwick2025-vx]]
 - [[Nangle2026-yo]]
+- [[Perez-Curiel2026-ld]]
 - [[Rieder2026-pp]]
 - [[Rothut2026-or]]
 - [[Rothut2026-wt]]
