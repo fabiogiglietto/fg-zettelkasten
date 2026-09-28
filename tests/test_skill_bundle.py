@@ -6,7 +6,7 @@ import pytest
 import yaml
 
 from scripts.build_skill_bundle import (
-    FULLTEXT_DOC, ROOT, SOURCE, build, render_folders, set_folders,
+    FULLTEXT_DOC, ROOT, SOURCE, SOURCE_REPO, build, render_folders, set_folders,
 )
 
 FG = {
@@ -76,8 +76,13 @@ MINE_FOLDERS = [
 
 def test_source_folder_block_matches_config():
     """The committed skill source carries this repo's folders, so the fg
-    bundle stays verbatim and Claude Code's in-repo copy lists them too."""
+    bundle stays verbatim and Claude Code's in-repo copy lists them too.
+
+    Only here: a fork keeps the upstream source (its in-repo copy reads the
+    fork's config.yml instead) and bundles its own list."""
     cfg = yaml.safe_load((ROOT / "config.yml").read_text())["skill"]
+    if cfg.get("repo") != SOURCE_REPO:
+        pytest.skip("fork config: the source carries upstream's folders")
     text = (SOURCE / FULLTEXT_DOC).read_text()
     assert set_folders(text, cfg["fulltext_folders"]) == text
 
