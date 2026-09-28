@@ -46,9 +46,33 @@ WIKILINK = re.compile(r"\[\[([^\]|#]+)")  # [[id]], [[id|alias]], [[id#section]]
 # --------------------------------------------------------------------------- #
 # clone / locate
 # --------------------------------------------------------------------------- #
+def repo_name(repo_url):
+    """`https://github.com/o/fg-zettelkasten.git` -> `fg-zettelkasten`."""
+    name = repo_url.rstrip("/").rsplit("/", 1)[-1].rsplit(":", 1)[-1]
+    return name[:-4] if name.endswith(".git") else name
+
+
+def default_repo():
+    """The kasten this copy of the skill belongs to.
+
+    Inside a checkout (`<repo>/.claude/skills/<skill>/scripts/`, where Claude
+    Code auto-discovers it) that is the checkout's own origin, so a fork's copy
+    drafts from the fork. A standalone install (Claude.ai / Cowork upload, or
+    ~/.claude/skills) falls back to DEFAULT_REPO, which the bundle build sets.
+    """
+    here = os.path.dirname(os.path.abspath(__file__))
+    root = os.path.abspath(os.path.join(here, *[os.pardir] * 4))
+    if os.path.isdir(os.path.join(root, "vault", "Papers")):
+        r = subprocess.run(["git", "-C", root, "remote", "get-url", "origin"],
+                           capture_output=True, text=True)
+        if r.returncode == 0 and r.stdout.strip():
+            return r.stdout.strip()
+    return DEFAULT_REPO
+
+
 def clone_or_update(repo_url, clone_dir):
     """Fresh shallow clone each run (pull if it already exists)."""
-    dest = os.path.join(clone_dir, "fg-zettelkasten")
+    dest = os.path.join(clone_dir, repo_name(repo_url))
     if os.path.isdir(os.path.join(dest, ".git")):
         subprocess.run(["git", "-C", dest, "pull", "--ff-only", "--depth", "1"],
                        check=False, capture_output=True)
@@ -430,17 +454,19 @@ def write_outputs(out_dir, papers, edges, topics, structures, crossings):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--repo-url", default=DEFAULT_REPO)
+    ap.add_argument("--repo-url", default=None,
+                    help="default: this checkout's origin, else DEFAULT_REPO")
     ap.add_argument("--clone-dir", default="/tmp")
     ap.add_argument("--vault-path", help="repo root or vault dir of an existing clone")
     ap.add_argument("--skip-clone", action="store_true")
     ap.add_argument("--out-dir", default="kasten_index")
     args = ap.parse_args()
 
+    repo_url = args.repo_url or default_repo()
     if args.skip_clone or args.vault_path:
-        root = args.vault_path or os.path.join(args.clone_dir, "fg-zettelkasten")
+        root = args.vault_path or os.path.join(args.clone_dir, repo_name(repo_url))
     else:
-        root = clone_or_update(args.repo_url, args.clone_dir)
+        root = clone_or_update(repo_url, args.clone_dir)
 
     vault = find_vault(root)
     repo_root = os.path.dirname(vault) if os.path.basename(vault) == "vault" else vault

@@ -1842,8 +1842,10 @@ def cmd_export_site(cfg: dict, args) -> int:
     state = state_mod.load_state(_abs(cfg["paths"]["state_file"]))
 
     site_title = cfg.get("vault", {}).get("site_title", "fg-zettelkasten")
+    skill = cfg.get("skill") or {}
     stats = site_export.export_site(vault_dir, content_dir, subdirs, topics,
-                                    state, site_title=site_title)
+                                    state, site_title=site_title,
+                                    skill=skill if skill.get("homepage") else None)
     print(
         f"export-site: {stats['notes']} note(s) -> "
         f"{content_dir.relative_to(ROOT)} "

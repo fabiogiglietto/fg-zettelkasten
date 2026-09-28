@@ -34,3 +34,46 @@ def test_latest_paper_with_hashtag_title_is_a_markdown_link():
 def test_latest_paper_title_brackets_are_escaped():
     out = _index("Trust [and distrust] online")
     assert "- [Trust \\[and distrust\\] online](Papers/Holland_Levin2026-qx)" in out
+
+
+_SKILL = {
+    "name": "mine-zettel-paper",
+    "repo": "fabiogiglietto/mine-zettelkasten",
+    "bundle": "zettel-paper-skill.zip",
+    "homepage": True,
+}
+
+
+def _index_with(skill):
+    return build_index(
+        topics=[{"slug": "polarization", "name": "Polarization"}],
+        state={"papers": {}},
+        structure_slugs=set(),
+        topics_dir="Topics",
+        structures_dir="Structures",
+        recent_papers=[],
+        papers_dir="Papers",
+        site_title="mine-zettelkasten",
+        skill=skill,
+    )
+
+
+def test_no_skill_section_by_default():
+    out = _index_with(None)
+    assert "Write with Claude" not in out
+    assert out.endswith("\n") and not out.endswith("\n\n")
+
+
+def test_skill_section_names_the_configured_skill_and_download():
+    out = _index_with(_SKILL)
+    assert "[Write with Claude](#write-with-claude)" in out
+    assert "## Write with Claude" in out
+    assert "**`mine-zettel-paper`**" in out
+    assert "*from mine-zettelkasten*" in out
+    assert (
+        "[zettel-paper-skill.zip](https://github.com/fabiogiglietto/"
+        "mine-zettelkasten/raw/main/zettel-paper-skill.zip)"
+    ) in out
+    for env in ("Claude.ai", "Team and Enterprise", "Claude Code"):
+        assert env in out
+    assert out.index("## Structures") < out.index("## Write with Claude")
