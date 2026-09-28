@@ -9,6 +9,8 @@ bundle is rendered from the `skill:` block of config.yml:
 - "Fabio Giglietto's" in front of the repo name becomes `skill.owner`
 - every other `fg-zettelkasten` becomes the repo name (e.g. the indexer's
   DEFAULT_REPO and clone directory)
+- the Drive folders of the full-text path (`references/fulltext-access.md`,
+  between the `fulltext-folders` markers) become `skill.fulltext_folders`
 
 With this repo's own values every rewrite is the identity, so the bundle holds
 the source verbatim. Entries carry a fixed timestamp and a sorted order, so an
@@ -38,6 +40,39 @@ _NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 _DESCRIPTION_MAX = 1024
 _TEXT_SUFFIXES = {".md", ".py", ".txt", ".json", ".csv", ".yml", ".yaml"}
 _ZIP_DATE = (1980, 1, 1, 0, 0, 0)
+
+FULLTEXT_DOC = "references/fulltext-access.md"
+_FOLDERS_BLOCK = re.compile(
+    r"(<!-- fulltext-folders:start -->\n).*?(\n<!-- fulltext-folders:end -->)",
+    re.DOTALL,
+)
+_FILENAMES = {
+    "paperpile": "Paperpile (`Author [et al.] Year - Title.pdf`)",
+    "bibkey": "Slack inbox (`bibtex_key - Author [et al.] Year - Title.pdf`)",
+}
+
+
+def render_folders(folders: list[dict]) -> str:
+    """The folder table the full-text path searches, from `skill.fulltext_folders`."""
+    if not folders:
+        return ("No Drive folders are configured for this kasten, so there is no "
+                "full-text path: say so and stay on the summaries.")
+    lines = ["| folder | id | filenames |", "|---|---|---|"]
+    for f in folders:
+        kind = f.get("filenames", "paperpile")
+        if kind not in _FILENAMES:
+            raise ValueError(f"fulltext folder {f.get('label')!r}: filenames "
+                             f"must be one of {sorted(_FILENAMES)}")
+        lines.append(f"| {f['label']} | `{f['id']}` | {_FILENAMES[kind]} |")
+    return "\n".join(lines)
+
+
+def set_folders(text: str, folders: list[dict]) -> str:
+    """Replace the generated folder block in fulltext-access.md."""
+    if not _FOLDERS_BLOCK.search(text):
+        raise ValueError(f"{FULLTEXT_DOC}: fulltext-folders markers missing")
+    return _FOLDERS_BLOCK.sub(
+        lambda m: m.group(1) + render_folders(folders) + m.group(2), text)
 
 
 def rewrite(text: str, name: str, repo: str, owner: str) -> str:
@@ -76,7 +111,10 @@ def build(skill_cfg: dict, source: Path = SOURCE, root: Path = ROOT) -> Path:
             continue
         data = path.read_bytes()
         if path.suffix in _TEXT_SUFFIXES:
-            data = rewrite(data.decode("utf-8"), name, repo, owner).encode("utf-8")
+            text = rewrite(data.decode("utf-8"), name, repo, owner)
+            if rel.as_posix() == FULLTEXT_DOC and "fulltext_folders" in skill_cfg:
+                text = set_folders(text, skill_cfg["fulltext_folders"] or [])
+            data = text.encode("utf-8")
         files[f"{name}/{rel.as_posix()}"] = data
 
     description = _description(files[f"{name}/SKILL.md"].decode("utf-8"))

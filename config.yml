@@ -101,6 +101,19 @@ skill:
   owner: "Fabio Giglietto's"            # whose kasten, in the skill description
   bundle: "zettel-paper-skill.zip"      # committed at the repo root
   homepage: true
+  # Drive folders holding the papers' PDFs, for the skill's optional full-text
+  # path (Claude's Google Drive connector; references/fulltext-access.md).
+  # A reader needs each folder shared with their Google account. `filenames`:
+  # paperpile (`Author Year - Title.pdf`) or bibkey (Slack inbox: the bibtex key
+  # first). An empty list disables the path. Folder ids grant nothing on their
+  # own, but keep the folders private: many PDFs are publisher copies.
+  fulltext_folders:
+    - label: "Paperpile To Read"
+      id: "1gluNDqRQkyqxa_WIASaaoNEItrDlETkn"
+      filenames: paperpile
+    - label: "Paperpile Classics"
+      id: "1lIoUsLp3UXS8V0k1LC5yCPFor5Ql00Ro"
+      filenames: paperpile
 
 slack:
   # Post a curated digest of each newly-added paper to Slack #toread.

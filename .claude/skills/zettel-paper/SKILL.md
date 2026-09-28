@@ -110,8 +110,8 @@ Then draft section by section. For each section:
 
 Summaries are the default substrate. When the user asks to ground a section in the
 primary source — a precise figure, a verbatim quote, a method detail the summary
-doesn't carry — pull that paper's **full text** from the Paperpile Google Drive
-folder and draft from the text. This is opt-in, per named paper; see
+doesn't carry — pull that paper's **full text** from the kasten's Google Drive
+folders and draft from the text. This is opt-in, per named paper; see
 `references/fulltext-access.md` for the MCP query and disambiguation recipe.
 
 ## Step 4 — integrity rules (non-negotiable)
@@ -180,5 +180,5 @@ hand them the CSVs and offer R/igraph code rather than redoing it ad hoc.
 - `references/paper-skeletons.md` — outline templates pinned to where each section
   should source its notes. Read at Step 3.
 - `references/fulltext-access.md` — how to pull a paper's full-text PDF from the
-  Paperpile Google Drive folder via the MCP connector, on explicit user request.
+  kasten's Google Drive folders via the MCP connector, on explicit user request.
   Read when the user wants a draft grounded in the primary source, not the summary.
