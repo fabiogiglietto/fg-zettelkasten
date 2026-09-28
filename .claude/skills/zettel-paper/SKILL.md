@@ -4,7 +4,7 @@ description: >-
   Draft new academic papers, literature reviews, conceptual syntheses, and
   research-agenda pieces FROM Fabio Giglietto's fg-zettelkasten
   (github.com/fabiogiglietto/fg-zettelkasten) — a topic-anchored Zettelkasten of
-  ~230 paper notes, 16 topic registers, and 16 pre-written argument "Structures."
+  paper notes, topic registers, and pre-written argument "Structures."
   Use this skill WHENEVER the user wants to write, draft, outline, or assemble a
   paper, literature review, synthesis, framing piece, or argument from their
   zettelkasten, their notes, their "kasten," the toread feed, or "from my notes"
@@ -24,13 +24,13 @@ into prose. The box removes the blank page; the human stays the author.
 
 This kasten is unusually well-suited to that because it separates three jobs:
 
-- **Papers** (`vault/Papers/*.md`, ~230) — one atomic literature note per source,
+- **Papers** (`vault/Papers/*.md`) — one atomic literature note per source,
   each carrying a real citation (`authors`, `year`, `doi`, `bibtex_key`) and a
   `## Connections` section of `[[bibtex_key]]` wikilinks. These are the citable
   bricks.
-- **Topics** (`vault/Topics/*.md`, 16) — *Schlagwortregister*: keyword registers
+- **Topics** (`vault/Topics/*.md`) — *Schlagwortregister*: keyword registers
   listing every paper under a theme. Entry points, not arguments.
-- **Structures** (`vault/Structures/*.md`, 16) — pre-written argument threads that
+- **Structures** (`vault/Structures/*.md`) — pre-written argument threads that
   already weave papers into a narrative with sub-threads and inline `[[links]]`.
   These are *Folgezettel*: the spine of a paper, waiting to be expanded.
 
@@ -52,7 +52,7 @@ Pure standard library — no installs needed. It writes `kasten_index/`:
 | `index.json` | one bundled object — **read this first** to plan; has every paper's title/authors/year/doi/topics/key_claims + graph metrics, plus `citation_label`/`first_author_surname`/`name_order_uncertain` for correct author–year citing |
 | `papers.csv` | node table (→ igraph vertices) |
 | `edges.csv` | `[[link]]` graph with a `cross_topic` flag (→ igraph edges) |
-| `topics.csv` | the 16 registers + paper counts + descriptions |
+| `topics.csv` | the topic registers + paper counts + descriptions |
 | `structures.csv` | the pre-written threads (`slug`, `topic`, `path`) |
 | `bridges.csv` | papers ranked by `bridge_score` — **fuel for mode 2** |
 | `crossings.csv` | linked paper *pairs that share no topic* — the literal "surprising connection" list |

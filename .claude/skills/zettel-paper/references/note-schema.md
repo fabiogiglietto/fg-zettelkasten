@@ -9,9 +9,9 @@ join papers on the `bibtex_key` id.
 ```
 fg-zettelkasten/
 ├── vault/
-│   ├── Papers/      <bibtex_key>.md      (~230 literature notes)
-│   ├── Topics/      <slug>.md            (16 keyword registers)
-│   └── Structures/  <slug>.md            (16 argument threads)
+│   ├── Papers/      <bibtex_key>.md      (one literature note per paper)
+│   ├── Topics/      <slug>.md            (keyword registers)
+│   └── Structures/  <slug>.md            (argument threads)
 ├── data/
 │   ├── summaries/   <bibtex_key>.json    (structured per-paper summary)
 │   ├── topics.json  (list of topic objects)

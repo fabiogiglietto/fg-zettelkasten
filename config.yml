@@ -90,6 +90,18 @@ vault:
   # Title of the published Quartz site homepage (the team fork overrides it).
   site_title: "fg-zettelkasten"
 
+# The zettel-paper Claude skill (.claude/skills/zettel-paper/). The source is
+# written for this repo; scripts/build_skill_bundle.py rewrites it from these
+# values into the upload bundle, so a fork ships a skill that drafts from the
+# fork's own kasten and can be installed next to this one. The homepage gets a
+# section describing the skill and how to install it.
+skill:
+  name: "zettel-paper"                  # Agent Skill name: lowercase + hyphens
+  repo: "fabiogiglietto/fg-zettelkasten" # GitHub owner/repo the skill clones
+  owner: "Fabio Giglietto's"            # whose kasten, in the skill description
+  bundle: "zettel-paper-skill.zip"      # committed at the repo root
+  homepage: true
+
 slack:
   # Post a curated digest of each newly-added paper to Slack #toread.
   # The incoming-webhook URL is read from the SLACK_WEBHOOK_URL env var (secret);

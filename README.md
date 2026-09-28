@@ -126,10 +126,14 @@ repo's `.claude/skills/`, so add the skill once:
 - **Team / Enterprise:** an admin provisions it org-wide via
   *Organization settings → Skills*, and every member gets it.
 
-The bundle is a snapshot of `.claude/skills/zettel-paper/`; a CI workflow
-(`.github/workflows/skill-bundle.yml`) rebuilds and commits it automatically
-whenever the skill changes on `main`, so it never goes stale. (To rebuild by hand:
-`cd .claude/skills && zip -r ../../zettel-paper-skill.zip zettel-paper`.) Invoke it
+The bundle is built from `.claude/skills/zettel-paper/` by
+`scripts/build_skill_bundle.py`, which retargets it from the `skill:` block of
+`config.yml` (name, repo, bundle file) so a fork ships a skill that drafts from
+its own kasten. A CI workflow (`.github/workflows/skill-bundle.yml`) rebuilds and
+commits it whenever the skill, that config block or the script changes on `main`,
+so it never goes stale. (To rebuild by hand: `python -m scripts.build_skill_bundle`.)
+The website homepage describes the skill and how to install it
+(`skill.homepage`). Invoke it
 the same way ("draft a review on X from the kasten"). The full-text Google Drive
 path stays maintainer-only; collaborators draft from the public summaries.
 
