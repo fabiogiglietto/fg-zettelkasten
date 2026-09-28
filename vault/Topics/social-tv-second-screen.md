@@ -4,9 +4,9 @@ slug: social-tv-second-screen
 emergent: false
 ---
 
-# Social TV & Second-Screen Audiences
+# Social TV & Second Screen
 
-Earlier but recurring research line on Twitter-based audience participation around televised political talk shows and media events, establishing methods later extended to broader platform studies.
+Earlier but recurring strand examining audience engagement with television via social media (Twitter second-screen behavior, social TV participation, streaming platform adoption), representing a historically significant but currently dormant research theme.
 
 ## Papers
 

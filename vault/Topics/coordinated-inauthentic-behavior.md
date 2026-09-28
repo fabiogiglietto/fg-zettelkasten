@@ -4,22 +4,27 @@ slug: coordinated-inauthentic-behavior
 emergent: false
 ---
 
-# Coordinated Inauthentic Behavior Detection
+# Coordinated Inauthentic Behavior
 
-Development and application of methods (CooRnet, CLSB, the VERA-AI Alert system) to detect coordinated link-sharing and inauthentic networks on Facebook and other platforms; the researcher's signature methodological contribution and the core of his current monitoring work with vera.ai and beyond.
+Detection and analysis of coordinated link-sharing, inauthentic networks, and deceptive information operations on social platforms, including the CooRnet/CLSB methodology and the VERA-AI Alert monitoring system. This is the researcher's longest-running and most active line of work, spanning election, health, and geopolitical case studies (Italy, Germany, Nigeria, India, Ukraine, Brazil).
 
 ## Papers
 
 - [[Appel2026-qr]]
 - [[Arceneaux2026-xk]]
 - [[Bastos2025-ol]]
+- [[Bollenbacher2026-vz]]
+- [[Bosch2024-hj]]
+- [[Bouchafra2026-ts]]
 - [[Copland2025-em]]
+- [[Di-Domenico2026-zq]]
 - [[Di-Marco2025-aa]]
 - [[Di_Marco2026-xu]]
-- [[Donovan2025-ws]]
+- [[Eady2023-xg]]
 - [[Efstratiou2026-ij]]
 - [[FitzGerald2025-nv]]
 - [[Gaw2025-ru]]
+- [[Gerard2025-br]]
 - [[Giada2026-fc9a3833]]
 - [[Giglietto2020-9d8acdd7]]
 - [[Giglietto2022-0e951ac5]]
@@ -27,16 +32,22 @@ Development and application of methods (CooRnet, CLSB, the VERA-AI Alert system)
 - [[Giglietto2026-9b6a992d]]
 - [[Graham2025-gp]]
 - [[Graham2026-fb]]
+- [[Holland_Levin2026-qx]]
 - [[Iannucci2025-eg]]
 - [[Jovanovic-Harrington2026-ze]]
+- [[Jurg2025-ur]]
 - [[Kansaon2025-id]]
+- [[Karlsson2026-hd]]
 - [[Keller2019-nk]]
 - [[Kim2026-br]]
+- [[Kim2026-wg]]
+- [[Knupfer2025-vt]]
 - [[Kulichkina2026-zk]]
 - [[Kuznetsova2025-nu]]
 - [[Luceri2025-tr]]
 - [[Mannocci2025-ig]]
 - [[Mannocci2026-kc]]
+- [[Marino2023-9137f448]]
 - [[Minici2024-tf]]
 - [[Nizzoli2020-cf]]
 - [[Oprea2025-lf]]
@@ -49,8 +60,9 @@ Development and application of methods (CooRnet, CLSB, the VERA-AI Alert system)
 - [[Simeone2025-vo]]
 - [[Song2025-yh]]
 - [[Starbird2019-qv]]
-- [[Tang2026-gu]]
+- [[Starbird2025-jj]]
 - [[Thiele2025-ol]]
+- [[Waight2025-al]]
 - [[Yang2025-iv]]
 - [[Zhao2025-ny]]
 - [[noauthor_undated-bm]]

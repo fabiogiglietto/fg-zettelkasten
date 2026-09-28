@@ -5,7 +5,7 @@ authors: ["W Lance Bennett", "Steven Livingston"]
 year: 2018
 doi: 10.1177/0267323118760317
 bibtex_key: Bennett2018-ys
-topics: [information-operations-disinformation-narratives, political-polarization-partisanship]
+topics: [information-disorder-fake-news, political-polarization-partisanship]
 citation_count: 1089
 open_access: false
 source_url: https://doi.org/10.1177/0267323118760317

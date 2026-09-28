@@ -5,7 +5,7 @@ authors: ["Franziska B. Keller", "David Schoch", "Sebastian Stier", "JungHwan Ya
 year: 2020
 doi: 10.1080/10584609.2019.1661888
 bibtex_key: Keller2019-nk
-topics: [coordinated-inauthentic-behavior, information-operations-disinformation-narratives]
+topics: [coordinated-inauthentic-behavior, information-disorder-fake-news]
 citation_count: 283
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2019.1661888

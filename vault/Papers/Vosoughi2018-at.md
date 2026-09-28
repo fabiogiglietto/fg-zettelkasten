@@ -5,7 +5,7 @@ authors: ["Soroush Vosoughi", "Deb Roy", "Sinan Aral"]
 year: 2018
 doi: 10.1126/science.aap9559
 bibtex_key: Vosoughi2018-at
-topics: [misinformation-exposure-recalibration, information-operations-disinformation-narratives]
+topics: [information-disorder-fake-news, misinformation-exposure-recalibration]
 citation_count: 6665
 open_access: false
 source_url: https://doi.org/10.1126/science.aap9559

@@ -5,7 +5,7 @@ authors: ["Robert Topinka"]
 year: 2026
 doi: 10.1177/13675494261468632
 bibtex_key: Topinka2026-hb
-topics: [generative-ai-media-research, information-operations-disinformation-narratives]
+topics: [generative-ai-disinformation, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/13675494261468632

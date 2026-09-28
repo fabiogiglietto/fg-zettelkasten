@@ -5,7 +5,7 @@ authors: ["Tarleton Gillespie"]
 year: 2013
 doi: 10.1002/9781118321607.ch28
 bibtex_key: Gillespie2010-as
-topics: [platform-critique-anniversary-essays, political-content-moderation-visibility]
+topics: [platform-governance-data-access, platform-critique-anniversary-essays]
 citation_count: 17
 open_access: false
 source_url: https://doi.org/10.1002/9781118321607.ch28

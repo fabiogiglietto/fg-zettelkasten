@@ -5,7 +5,7 @@ authors: ["Germain Gauthier", "Roland Hodler", "Philine Widmer", "Ekaterina Zhur
 year: 2026
 doi: 10.1038/s41586-026-10098-2
 bibtex_key: Gauthier2026-iq
-topics: [political-content-moderation-visibility, political-polarization-partisanship]
+topics: [political-polarization-partisanship, platform-governance-data-access]
 citation_count: 8
 open_access: false
 source_url: https://doi.org/10.1038/s41586-026-10098-2

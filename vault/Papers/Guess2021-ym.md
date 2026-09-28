@@ -5,7 +5,7 @@ authors: ["Andy Guess", "Kevin Aslett", "Joshua Tucker", "Richard Bonneau", "Jon
 year: 2021
 doi: 10.51685/jqd.2021.006
 bibtex_key: Guess2021-ym
-topics: [misinformation-exposure-recalibration, platform-data-access-governance]
+topics: [misinformation-exposure-recalibration, information-disorder-fake-news]
 citation_count: 41
 open_access: false
 source_url: https://doi.org/10.51685/jqd.2021.006

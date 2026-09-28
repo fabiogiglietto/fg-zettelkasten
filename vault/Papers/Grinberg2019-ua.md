@@ -5,7 +5,7 @@ authors: ["Nir Grinberg", "Kenneth Joseph", "Lisa Friedland", "Briony Swire-Thom
 year: 2019
 doi: 10.1126/science.aau2706
 bibtex_key: Grinberg2019-ua
-topics: [misinformation-exposure-recalibration, election-campaigns-social-media]
+topics: [misinformation-exposure-recalibration, information-disorder-fake-news]
 citation_count: 1287
 open_access: false
 source_url: https://doi.org/10.1126/science.aau2706
