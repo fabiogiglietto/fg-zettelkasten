@@ -60,23 +60,24 @@ def _index_with(skill):
 
 def test_no_skill_section_by_default():
     out = _index_with(None)
-    assert "Write with Claude" not in out
+    assert "Write with an AI agent" not in out
     assert out.endswith("\n") and not out.endswith("\n\n")
 
 
 def test_skill_section_names_the_configured_skill_and_download():
     out = _index_with(_SKILL)
-    assert "[Write with Claude](#write-with-claude)" in out
-    assert "## Write with Claude" in out
+    assert "[Write with an AI agent](#write-with-an-ai-agent)" in out
+    assert "## Write with an AI agent" in out
     assert "**`mine-zettel-paper`**" in out
     assert "*from mine-zettelkasten*" in out
     assert (
         "[zettel-paper-skill.zip](https://github.com/fabiogiglietto/"
         "mine-zettelkasten/raw/main/zettel-paper-skill.zip)"
     ) in out
-    for env in ("Claude.ai", "Team and Enterprise", "Claude Code"):
+    for env in ("Claude.ai", "Team and Enterprise", "Claude Code",
+                "OpenAI Codex CLI", "Other agents"):
         assert env in out
-    assert out.index("## Structures") < out.index("## Write with Claude")
+    assert out.index("## Structures") < out.index("## Write with an AI agent")
 
 
 def test_skill_section_says_it_cannot_read_full_text():
