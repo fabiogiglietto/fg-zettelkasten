@@ -1,14 +1,17 @@
 # Full-text access via Google Drive
 
-The notes and `data/summaries/<id>.json` are the user's *prior reading* —
-deliberately condensed. The **full text** of most papers lives as a PDF in the
-user's Paperpile **Google Drive** folder (the same folder the `toread` pipeline
+The notes and `data/summaries/<id>.json` are the kasten's *prior reading* —
+deliberately condensed. The **full text** of most papers lives as a PDF in one
+of the kasten's **Google Drive** folders (the same folders the pipeline
 extracts from). This file is how the skill reaches the primary source when a
 draft needs more than the summary carries.
 
 Access is through the **claude.ai Google Drive MCP connector**
-(`mcp__claude_ai_Google_Drive__*`), which reads the user's own Drive. There is
-**no** local script, credential, or pip install for this path.
+(`mcp__claude_ai_Google_Drive__*`), which reads the Drive of whoever is signed
+in to it. There is **no** local script, credential, or pip install for this
+path, and it only exists where that connector does (Claude.ai, Desktop,
+Cowork, Claude Code with the connector). Elsewhere, say so and stay on the
+summaries.
 
 ## When to use it
 
@@ -18,40 +21,56 @@ reports," "I need an exact quote/figure/method detail from X." It is never a
 default step: note summaries remain the substrate for every draft. Don't fetch
 full text proactively, in bulk, or "to be safe."
 
-## The Paperpile folder
+## The Drive folders
 
-- **Folder ids:** the PDFs are split across two folders; search both.
-  - classics: `1lIoUsLp3UXS8V0k1LC5yCPFor5Ql00Ro`
-  - toread: `1gluNDqRQkyqxa_WIASaaoNEItrDlETkn`
-- **Filename format:** `[FirstAuthor] [Year] - [Title].pdf`, or for multiple
+The PDFs are split across the folders below; search all of them. The list is
+generated from `skill.fulltext_folders` in the kasten's `config.yml`. **If you
+are running from inside a checkout of the kasten** (e.g. Claude Code opened on
+the repo), that file's list is the authoritative one — read it and use its ids
+instead of the ones below.
+
+<!-- fulltext-folders:start -->
+| folder | id | filenames |
+|---|---|---|
+| Paperpile To Read | `1gluNDqRQkyqxa_WIASaaoNEItrDlETkn` | Paperpile (`Author [et al.] Year - Title.pdf`) |
+| Paperpile Classics | `1lIoUsLp3UXS8V0k1LC5yCPFor5Ql00Ro` | Paperpile (`Author [et al.] Year - Title.pdf`) |
+<!-- fulltext-folders:end -->
+
+- **Paperpile filenames:** `[FirstAuthor] [Year] - [Title].pdf`, or for multiple
   authors `[FirstAuthor] et al. [Year] - [Title].pdf`.
   Examples: `Matias 2025 - How public involvement can improve the science of AI.pdf`,
   `Pierri et al. 2025 - Research opportunities and challenges.pdf`.
-- **Prerequisite:** the folder must be shared with the Google account the
-  claude.ai Drive connector is signed in to. If a folder-scoped search returns
-  *nothing* (or `get_file_metadata` on the folder id says "not found"), that's an
-  **access** problem — the folder isn't shared with the connected account, or the id
-  isn't set — not a sign the paper is missing. Say so rather than concluding the PDF
-  doesn't exist.
+- **Slack-inbox filenames** (papers a team member suggested in Slack): the
+  bibtex key comes first, `[bibtex_key] - [FirstAuthor] [Year] - [Title].pdf`,
+  e.g. `Smith2026-sl3k - Smith et al. 2026 - A study of X.pdf`. Match these on the
+  key, which is exact.
+- **Prerequisite:** each folder must be shared with the Google account the
+  claude.ai Drive connector is signed in to (a team member: ask the kasten's
+  owner). If a folder-scoped search returns *nothing* (or `get_file_metadata`
+  on the folder id says "not found"), that's an **access** problem — the folder
+  isn't shared with the connected account — not a sign the paper is missing.
+  Say so rather than concluding the PDF doesn't exist.
 
 ## Find the PDF
 
-You already have the note's `title`, `authors`, and `year` (in `index.json` and
-the note frontmatter). Build a `mcp__claude_ai_Google_Drive__search_files` query
-scoped to the folder, keyed on the first author's **surname** plus one or two
-**distinctive title words** — not the whole title, since filenames truncate and
-vary:
+You already have the note's `bibtex_key`, `title`, `authors`, and `year` (in
+`index.json` and the note frontmatter). Build one
+`mcp__claude_ai_Google_Drive__search_files` query scoped to the folders. Match
+either the bibtex key (Slack-inbox files) or the first author's **surname** plus
+one or two **distinctive title words** (Paperpile files) — not the whole title,
+since filenames truncate and vary:
 
 ```
-(parentId = '1lIoUsLp3UXS8V0k1LC5yCPFor5Ql00Ro' or parentId = '1gluNDqRQkyqxa_WIASaaoNEItrDlETkn')
+(parentId = '<folder id>' or parentId = '<folder id>' or …)
   and mimeType = 'application/pdf'
-  and title contains '<first-author surname>'
-  and title contains '<distinctive title word>'
+  and (title contains '<bibtex_key>'
+       or (title contains '<first-author surname>'
+           and title contains '<distinctive title word>'))
 ```
 
 If the title search misses (unusual punctuation, abbreviated title), retry with
 a different title word, or fall back to `fullText contains '<distinctive phrase>'`
-within the same folder.
+within the same folders.
 
 ## Disambiguate (don't read the wrong PDF)
 

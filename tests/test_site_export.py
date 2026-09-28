@@ -84,3 +84,11 @@ def test_skill_section_says_it_cannot_read_full_text():
     out = _index_with(_SKILL)
     assert "**from the notes, not the papers**" in out
     assert "cannot read them" in out
+
+
+def test_full_text_line_only_with_drive_folders():
+    assert "Google Drive connector" not in _index_with(_SKILL)
+    out = _index_with({**_SKILL, "fulltext_folders": [{"label": "a", "id": "b"}]})
+    assert "Google Drive connector" in out
+    assert out.index("**from the notes, not the papers**") < out.index(
+        "Google Drive connector") < out.index("### Install")

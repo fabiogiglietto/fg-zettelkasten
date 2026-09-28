@@ -3,7 +3,11 @@ import zipfile
 
 import pytest
 
-from scripts.build_skill_bundle import SOURCE, build
+import yaml
+
+from scripts.build_skill_bundle import (
+    FULLTEXT_DOC, ROOT, SOURCE, build, render_folders, set_folders,
+)
 
 FG = {
     "name": "zettel-paper",
@@ -61,3 +65,38 @@ def test_fork_config_retargets_the_skill(tmp_path):
 def test_invalid_skill_name_is_rejected(tmp_path):
     with pytest.raises(ValueError):
         build({**MINE, "name": "MINE Zettel"}, root=tmp_path)
+
+
+MINE_FOLDERS = [
+    {"label": "Paperpile To Read", "id": "TOREAD", "filenames": "paperpile"},
+    {"label": "Paperpile Classics", "id": "CLASSICS", "filenames": "paperpile"},
+    {"label": "Slack inbox", "id": "INBOX", "filenames": "bibkey"},
+]
+
+
+def test_source_folder_block_matches_config():
+    """The committed skill source carries this repo's folders, so the fg
+    bundle stays verbatim and Claude Code's in-repo copy lists them too."""
+    cfg = yaml.safe_load((ROOT / "config.yml").read_text())["skill"]
+    text = (SOURCE / FULLTEXT_DOC).read_text()
+    assert set_folders(text, cfg["fulltext_folders"]) == text
+
+
+def test_fork_bundle_lists_its_own_folders(tmp_path):
+    files = _read(build({**MINE, "fulltext_folders": MINE_FOLDERS}, root=tmp_path))
+    doc = files[f"mine-zettel-paper/{FULLTEXT_DOC}"].decode()
+    for folder_id in ("TOREAD", "CLASSICS", "INBOX"):
+        assert f"`{folder_id}`" in doc
+    assert "| Slack inbox | `INBOX` | Slack inbox (`bibtex_key - " in doc
+
+
+def test_no_folders_disables_full_text(tmp_path):
+    files = _read(build({**MINE, "fulltext_folders": []}, root=tmp_path))
+    doc = files[f"mine-zettel-paper/{FULLTEXT_DOC}"].decode()
+    assert "no full-text path" in doc
+    assert "| folder | id |" not in doc
+
+
+def test_unknown_filename_kind_is_rejected():
+    with pytest.raises(ValueError):
+        render_folders([{"label": "x", "id": "y", "filenames": "zotero"}])

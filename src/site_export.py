@@ -206,7 +206,19 @@ def skill_section(skill: dict, site_title: str) -> list[str]:
     repo = skill.get("repo", "fabiogiglietto/fg-zettelkasten")
     bundle = skill.get("bundle", "zettel-paper-skill.zip")
     repo_url = f"https://github.com/{repo}"
-    return [
+    fulltext = (
+        [
+            "Members with access to the kasten's Google Drive folders can go "
+            "further: in Claude, with the Google Drive connector signed in to "
+            "an account the folders are shared with, ask for the full text of a "
+            "named paper (\"check the exact figure in …\") and the skill reads "
+            "the PDF. Other agents have no such connector and stay on the notes.",
+            "",
+        ]
+        if skill.get("fulltext_folders")
+        else []
+    )
+    lines = [
         "## Write with an AI agent",
         "",
         f"**`{name}`** is an [Agent Skill](https://agentskills.io) — the open "
@@ -223,6 +235,7 @@ def skill_section(skill: dict, site_title: str) -> list[str]:
         "of the literature, and check quotations, figures and fine-grained claims "
         "against the original paper before citing it.",
         "",
+    ] + fulltext + [
         "Ask in plain language; the skill starts on intent. For example:",
         "",
         "- *Draft a literature review on coordinated inauthentic behavior from the kasten.*",
@@ -250,6 +263,7 @@ def skill_section(skill: dict, site_title: str) -> list[str]:
         "but check their drafts with the same care.",
         "",
     ]
+    return lines
 
 
 def build_index(

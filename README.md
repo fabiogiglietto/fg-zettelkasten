@@ -104,10 +104,12 @@ Just ask in plain language; the skill triggers on intent, e.g.:
 - "Turn the platform-governance Structure into a framing piece."
 
 It works from the **public** notes and summaries, so collaborators can run it on
-a fresh clone. An optional full-text path (reading the source PDF from the
-maintainer's Paperpile Google Drive, via the Claude Drive connector) is
-maintainer-only and degrades silently to the published summaries when the folder
-isn't configured or accessible.
+a fresh clone. An optional full-text path reads a named paper's PDF from the
+kasten's Google Drive folders (`skill.fulltext_folders` in `config.yml`: the
+Paperpile To Read and Classics folders, plus the Slack inbox on a team fork),
+via the Claude Google Drive connector. It works for anyone the folders are
+shared with, and degrades to the published summaries when a folder isn't
+accessible or the agent has no Drive connector.
 
 ### Using it on Claude.ai or in Claude Cowork
 
@@ -135,7 +137,8 @@ so it never goes stale. (To rebuild by hand: `python -m scripts.build_skill_bund
 The website homepage describes the skill and how to install it
 (`skill.homepage`). Invoke it
 the same way ("draft a review on X from the kasten"). The full-text Google Drive
-path stays maintainer-only; collaborators draft from the public summaries.
+path needs the folders shared with the reader's Google account; without that,
+the skill drafts from the public summaries.
 
 ## Website
 
