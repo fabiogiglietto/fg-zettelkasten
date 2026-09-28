@@ -217,6 +217,12 @@ def skill_section(skill: dict, site_title: str) -> list[str]:
         f"their DOIs. It clones the public [{repo}]({repo_url}) repository on every "
         "run, so it always works from the latest notes.",
         "",
+        "It works **from the notes, not the papers**: each paper's summary, key "
+        "claims, topics and links as published here. The full texts are not "
+        "public, so by default the skill cannot read them. Treat a draft as a map "
+        "of the literature, and check quotations, figures and fine-grained claims "
+        "against the original paper before citing it.",
+        "",
         "Ask in plain language; the skill starts on intent. For example:",
         "",
         "- *Draft a literature review on coordinated inauthentic behavior from the kasten.*",

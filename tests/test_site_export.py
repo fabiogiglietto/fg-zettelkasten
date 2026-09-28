@@ -77,3 +77,9 @@ def test_skill_section_names_the_configured_skill_and_download():
     for env in ("Claude.ai", "Team and Enterprise", "Claude Code"):
         assert env in out
     assert out.index("## Structures") < out.index("## Write with Claude")
+
+
+def test_skill_section_says_it_cannot_read_full_text():
+    out = _index_with(_SKILL)
+    assert "**from the notes, not the papers**" in out
+    assert "cannot read them" in out
