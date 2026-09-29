@@ -4448,8 +4448,7 @@
       "pdf_source": "abstract_only",
       "content_hash": "ad3a2d446ff9b0b23e5b72704ee9aa5959a67717dccab220eb5472b4d8e744f7",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-09-27T11:15:56.881565+00:00"
     },
     "bibtex:Di_Marco2026-xu": {
