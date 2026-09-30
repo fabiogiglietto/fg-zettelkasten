@@ -4463,8 +4463,7 @@
       "pdf_source": "abstract_only",
       "content_hash": "bab17e03aef88c782e53234fe7ebbb099f575a3a692ec4dcb930fd7e0748b0ba",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-09-27T15:49:16.781217+00:00"
     },
     "bibtex:Perez-Curiel2026-ld": {
@@ -4479,8 +4478,7 @@
       "pdf_source": "abstract_only",
       "content_hash": "3ef3d2c94867c5a075d8851458211b5d52b1cd58def4194d198a01e0da2aa4b4",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-09-27T15:49:26.063956+00:00"
     }
   },
