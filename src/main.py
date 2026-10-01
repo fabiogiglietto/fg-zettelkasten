@@ -2069,7 +2069,8 @@ def cmd_social_post(cfg: dict, args) -> int:
     # posting loop below waits on the note going live and on Threads.
     blurbs: dict[str, dict] = {}
     for paper, entry in queue:
-        if entry.get("social_blurb"):
+        # A paper picked by hand (--key) is always described afresh.
+        if entry.get("social_blurb") and key is None:
             blurbs[paper.id] = entry["social_blurb"]
             continue
         summary = summarizer.load_summary(summaries_dir, paper.bibtex_key)
@@ -2080,7 +2081,7 @@ def cmd_social_post(cfg: dict, args) -> int:
             paper, summary, claude, getattr(claude, "assign_model", ""),
             supersedes=bool(entry.get("supersedes")),
             # Sized to this paper: a long title leaves the blurb little room.
-            short_limit=social_client.short_budget(
+            rooms=social_client.short_rooms(
                 targets, social_client.apa_plain(paper),
                 _note_url(cfg, paper.bibtex_key) or "", hashtag, limits,
             ),
@@ -2119,7 +2120,9 @@ def cmd_social_post(cfg: dict, args) -> int:
                     )
             text = "\n\n".join(preview)
             print(text)
-            if notify_ops(text):
+            # Remember the preview only for a queued paper: one picked by
+            # hand with --key is not waiting to be posted.
+            if notify_ops(text) and entry.get("social_pending"):
                 entry["social_previewed"] = True
                 entry["social_blurb"] = blurb
                 state_mod.save_state(state, state_file)

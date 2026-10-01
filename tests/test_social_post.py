@@ -311,3 +311,10 @@ def test_an_expiring_token_is_announced_once_a_day(harness, monkeypatch):
     h.run()
     assert len(h.ops) == 1
     assert "threads" in h.ops[0] and soon in h.ops[0]
+
+
+def test_a_hand_picked_dry_run_leaves_no_trace_on_an_unqueued_paper(harness):
+    h = harness([_paper("A")], {"bibtex:A": {"last_processed": _ago(40)}}, dry_run=True)
+    main.cmd_social_post(h.cfg, Namespace(dry_run=False, key="A"))
+    assert len(h.ops) == 1 and h.posts == []
+    assert h.papers["bibtex:A"] == {"last_processed": h.papers["bibtex:A"]["last_processed"]}

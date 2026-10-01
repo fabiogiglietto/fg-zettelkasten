@@ -125,8 +125,47 @@ def test_model_text_cannot_smuggle_links_or_extra_hashtags():
     assert post.count("#") == 1
 
 
+def test_each_platform_gets_the_longest_sentence_that_fits_it_whole():
+    """The case that came out clipped in the first live preview: a long title
+    leaves Threads ~85 characters and Mastodon ~155, and one sentence written
+    for the tighter of the two was cut mid-word on both."""
+    citation = ("Author, A., " * 22) + "(2026). A title. https://doi.org/10.1126/science.aap9559"
+    blurb = {
+        "short": [
+            "Populist parties out-engage the mainstream online.",            # 50
+            "Radical populist parties drew far more engagement than centrists.",  # 66
+            "Radical populist parties drew far more audience engagement than "
+            "centrist parties on every platform, most of all on TikTok.",    # 122
+        ],
+        "long": "l",
+    }
+    threads_room = sc.blurb_room(citation, NOTE, "#toread", 500, sc.threads_len)
+    mastodon_room = sc.blurb_room(citation, NOTE, "#toread", 500, sc.mastodon_len)
+    assert 66 <= threads_room < 122 <= mastodon_room
+
+    (threads,) = sc.platform_texts("threads", blurb, citation, NOTE, "#toread")
+    (mastodon,) = sc.platform_texts("mastodon", blurb, citation, NOTE, "#toread")
+    assert threads.split("\n\n")[0] == blurb["short"][1]
+    assert mastodon.split("\n\n")[0] == blurb["short"][2]
+    assert "…" not in threads and "…" not in mastodon
+    assert sc.threads_len(threads) <= 500 and sc.mastodon_len(mastodon) <= 500
+
+
+def test_a_sentence_is_only_trimmed_when_none_fits():
+    assert sc.pick_short(["a" * 50, "b" * 90], 100) == "b" * 90
+    assert sc.pick_short(["a" * 50, "b" * 90], 60) == "a" * 50
+    assert sc.pick_short(["a" * 70, "b" * 90], 60) == "a" * 70   # compose trims
+    assert sc.pick_short("a plain string", 5) == "a plain string"  # old ledger shape
+    assert sc.pick_short([], 60) == ""
+
+
+def test_room_is_the_first_post_when_the_citation_moves_to_a_reply():
+    assert sc.blurb_room("x" * 480, NOTE, "#toread", 500, sc.threads_len) \
+        == 500 - sc.threads_len(f"\n\nNote: {NOTE}\n#toread")
+
+
 def test_linkedin_gets_the_long_blurb_and_the_others_the_short_one():
-    blurb = {"short": "Short one.", "long": "A longer one. With two sentences."}
+    blurb = {"short": ["Short one."], "long": "A longer one. With two sentences."}
     assert sc.platform_texts("linkedin", blurb, CITATION, NOTE, "#toread")[0] \
         .startswith("A longer one.")
     assert sc.platform_texts("mastodon", blurb, CITATION, NOTE, "#toread")[0] \
@@ -157,41 +196,47 @@ class FakeClaude:
 
 
 def test_blurb_comes_from_the_model_and_is_sanitised():
-    claude = FakeClaude({"short": "Finds X. #wow", "long": "Finds X.\nIt matters."})
+    claude = FakeClaude({"short": ["Finds X. #wow", " ", "Finds X and Y."],
+                         "long": "Finds X.\nIt matters."})
     blurb = sc.social_blurb(PAPER, SUMMARY, claude, "haiku")
-    assert blurb == {"short": "Finds X. wow", "long": "Finds X. It matters."}
+    assert blurb == {"short": ["Finds X. wow", "Finds X and Y."],
+                     "long": "Finds X. It matters."}
+    # A bare string (the model ignoring the array) is still usable.
+    claude = FakeClaude({"short": "Finds X.", "long": "l"})
+    assert sc.social_blurb(PAPER, SUMMARY, claude, "haiku")["short"] == ["Finds X."]
     assert claude.prompts[0]["model"] == "haiku"
     assert "Falsehood diffused farther" in claude.prompts[0]["prompt"]
 
 
 def test_blurb_falls_back_to_the_abstract():
     expected = {
-        "short": "False news spreads faster than true news.",
+        "short": ["False news spreads faster than true news."],
         "long": SUMMARY["abstract"],
     }
     assert sc.social_blurb(PAPER, SUMMARY, None, "") == expected
     assert sc.social_blurb(PAPER, SUMMARY, FakeClaude(RuntimeError("401")), "m") == expected
-    assert sc.social_blurb(PAPER, SUMMARY, FakeClaude({"short": "", "long": ""}), "m") == expected
+    assert sc.social_blurb(PAPER, SUMMARY, FakeClaude({"short": [], "long": ""}), "m") == expected
 
 
-def test_the_short_blurb_is_sized_for_the_tightest_single_post():
+def test_a_sentence_is_requested_for_each_platforms_room():
     names = ["mastodon", "threads", "linkedin"]
     # A short citation leaves more room than the blurb ever takes.
-    assert sc.short_budget(names, CITATION, NOTE, "#toread") == sc.SHORT_BLURB
-    # A long one: Threads (URLs counted in full) is the tighter of the two.
+    assert sc.short_rooms(names, CITATION, NOTE, "#toread") == [sc.MIN_BLURB, sc.SHORT_BLURB]
+    # A long one: Threads (URLs counted in full) is tighter than Mastodon.
     citation = ("Author, A., " * 22) + "(2026). A title. https://doi.org/10.1126/science.aap9559"
     frame = f"\n\n{citation}\n\nNote: {NOTE}\n#toread"
-    assert sc.short_budget(names, citation, NOTE, "#toread") == 500 - sc.threads_len(frame)
-    assert sc.short_budget(["mastodon"], citation, NOTE, "#toread") == 500 - sc.mastodon_len(frame)
-    # Too long for one post: the citation goes to a reply, so no constraint.
-    assert sc.short_budget(["threads"], "x" * 480, NOTE, "#toread") == sc.SHORT_BLURB
+    assert sc.short_rooms(names, citation, NOTE, "#toread") == [
+        sc.MIN_BLURB, 500 - sc.threads_len(frame), 500 - sc.mastodon_len(frame),
+    ]
+    # Too long for one post: the citation goes to a reply, the blurb has room.
+    assert sc.short_rooms(["threads"], "x" * 480, NOTE, "#toread") == [sc.MIN_BLURB, sc.SHORT_BLURB]
 
 
-def test_the_model_is_told_the_limit_and_held_to_it():
-    claude = FakeClaude({"short": "word " * 40, "long": "l"})
-    blurb = sc.social_blurb(PAPER, SUMMARY, claude, "haiku", short_limit=90)
-    assert 'Character limit for "short": 90' in claude.prompts[0]["prompt"]
-    assert len(blurb["short"]) <= 90
+def test_the_model_is_asked_for_a_little_less_than_the_room():
+    claude = FakeClaude({"short": ["a", "b"], "long": "l"})
+    sc.social_blurb(PAPER, SUMMARY, claude, "haiku", rooms=[60, 150])
+    assert 'Character limits for "short", one sentence each: 54, 135' \
+        in claude.prompts[0]["prompt"]
 
 
 def test_a_superseding_paper_is_introduced_as_now_published():
