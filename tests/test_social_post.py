@@ -183,16 +183,43 @@ def test_a_new_paper_is_posted_to_every_platform_with_a_token(harness):
     assert [(name, key) for name, key, _ in h.posts] == [
         ("mastodon", "A"), ("threads", "A"),      # linkedin has no token
     ]
-    text = h.posts[0][2][0]
-    assert text.startswith("About A.")
-    assert "Lovelace, A. (2026). Paper A. https://doi.org/10.1/A" in text
-    assert "Note: https://example.org/Papers/A" in text
-    assert text.endswith("#toread")
+    assert h.posts[0][2] == [
+        "Lovelace, A. (2026). Paper A. https://doi.org/10.1/A\n\n"
+        "Note: https://example.org/Papers/A\n#toread"
+    ]
 
     entry = h.papers["bibtex:A"]
     assert entry["social"]["mastodon"]["url"] == "https://mastodon.example/A"
     assert entry["social"]["threads"]["url"] == "https://threads.example/A"
     assert "social_pending" not in entry and "social_blurb" not in entry
+
+
+def test_only_linkedin_opens_with_a_description(harness):
+    h = harness([_paper("A")], {"bibtex:A": _entry()},
+                tokens=("MASTODON_ACCESS_TOKEN", "LINKEDIN_ACCESS_TOKEN"))
+    h.run()
+    texts = {name: parts[0] for name, _, parts in h.posts}
+    assert texts["linkedin"].startswith("About A. More.\n\nLovelace, A. (2026).")
+    assert texts["mastodon"].startswith("Lovelace, A. (2026).")
+
+
+def test_no_description_is_written_when_no_platform_shows_one(harness, monkeypatch):
+    h = harness([_paper("A")], {"bibtex:A": _entry()})    # mastodon + threads
+    monkeypatch.setattr(sc, "social_description",
+                        lambda *a, **k: pytest.fail("no platform uses it"))
+    h.run()
+    assert len(h.posts) == 2
+    assert "social_blurb" not in h.papers["bibtex:A"]
+
+
+def test_a_paper_without_a_summary_is_still_announced(harness):
+    h = harness([_paper("A")], {"bibtex:A": _entry()},
+                tokens=("LINKEDIN_ACCESS_TOKEN",))
+    for f in (h.state_file.parent / "summaries").iterdir():
+        f.unlink()
+    h.run()
+    (post,) = h.posts
+    assert post[2][0].startswith("Lovelace, A. (2026).")
 
 
 def test_a_second_run_posts_nothing(harness):

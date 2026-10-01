@@ -2050,12 +2050,6 @@ def cmd_social_post(cfg: dict, args) -> int:
         print("social-post: nothing to announce")
         return 0
 
-    try:
-        claude = _claude(cfg)
-    except Exception as exc:  # noqa: BLE001 - the blurb has a non-LLM fallback
-        claude = None
-        print(f"social-post: Claude unavailable ({exc}) — using summary abstracts")
-
     hashtag = "#" + str(scfg.get("hashtag") or "toread").lstrip("#")
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
     mastodon_cfg = (scfg.get("platforms") or {}).get("mastodon") or {}
@@ -2064,40 +2058,52 @@ def cmd_social_post(cfg: dict, args) -> int:
     if "mastodon" in targets:
         limits["mastodon"] = social_client.mastodon_limit(instance)
 
-    # Write every blurb before posting anything: the federated Claude
+    # Only a platform with room for it (LinkedIn) opens with a description;
+    # without one in the targets there is nothing for Claude to write.
+    describe = any(social_client.PLATFORMS[name].describe for name in targets)
+    claude = None
+    if describe:
+        try:
+            claude = _claude(cfg)
+        except Exception as exc:  # noqa: BLE001 - there is a non-LLM fallback
+            print(f"social-post: Claude unavailable ({exc}) — "
+                  f"using summary abstracts")
+
+    # Write every description before posting anything: the federated Claude
     # credential is minted once for this process and is short-lived, while the
     # posting loop below waits on the note going live and on Threads.
-    blurbs: dict[str, dict] = {}
+    descriptions: dict[str, str] = {}
     for paper, entry in queue:
+        if not describe:
+            continue
+        cached = entry.get("social_blurb")
+        if isinstance(cached, dict):      # ledger shape before 2026-10-01
+            cached = cached.get("long")
         # A paper picked by hand (--key) is always described afresh.
-        if entry.get("social_blurb") and key is None:
-            blurbs[paper.id] = entry["social_blurb"]
+        if cached and key is None:
+            descriptions[paper.id] = cached
             continue
         summary = summarizer.load_summary(summaries_dir, paper.bibtex_key)
         if summary is None:
-            print(f"  social: no summary for {paper.bibtex_key}, skipping")
+            print(f"  social: no summary for {paper.bibtex_key} — "
+                  f"posting without a description")
             continue
-        blurbs[paper.id] = social_client.social_blurb(
+        descriptions[paper.id] = social_client.social_description(
             paper, summary, claude, getattr(claude, "assign_model", ""),
             supersedes=bool(entry.get("supersedes")),
-            # Sized to this paper: a long title leaves the blurb little room.
-            rooms=social_client.short_rooms(
-                targets, social_client.apa_plain(paper),
-                _note_url(cfg, paper.bibtex_key) or "", hashtag, limits,
-            ),
         )
         if not dry_run:
             # Kept on the entry so a retry, or a platform that comes online
             # later, announces the paper in the same words.
-            entry["social_blurb"] = blurbs[paper.id]
+            entry["social_blurb"] = descriptions[paper.id]
     if not dry_run:
         state_mod.save_state(state, state_file)
 
     blocked: set[str] = set()   # platforms whose token was rejected this run
     for paper, entry in queue:
-        blurb = blurbs.get(paper.id)
+        blurb = descriptions.get(paper.id, "")
         note_url = _note_url(cfg, paper.bibtex_key)
-        if not blurb or not note_url:
+        if not note_url:
             continue
         if not social_client.note_is_live(note_url):
             print(f"  social: {note_url} is not live yet — "
@@ -2124,7 +2130,8 @@ def cmd_social_post(cfg: dict, args) -> int:
             # hand with --key is not waiting to be posted.
             if notify_ops(text) and entry.get("social_pending"):
                 entry["social_previewed"] = True
-                entry["social_blurb"] = blurb
+                if blurb:
+                    entry["social_blurb"] = blurb
                 state_mod.save_state(state, state_file)
             continue
 
