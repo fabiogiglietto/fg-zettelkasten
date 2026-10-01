@@ -153,7 +153,7 @@ social:
   # Compose the posts and send them to the ops Slack channel (and the job log)
   # without publishing anything. Flip to false once the previews read right;
   # papers previewed in the last `max_age_days` are then posted for real.
-  dry_run: true
+  dry_run: false
   hashtag: "#toread"
   # At most this many papers per run, oldest first, so a bulk import drips out.
   max_per_run: 3
