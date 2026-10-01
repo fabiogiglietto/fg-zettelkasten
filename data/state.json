@@ -4466,10 +4466,10 @@
       "doi": "",
       "title": "Optimal and heuristic strategies for evaluating the influence of coordinated behavior in information cascades and retweet networks",
       "pdf_source": "abstract_only",
-      "content_hash": "bab17e03aef88c782e53234fe7ebbb099f575a3a692ec4dcb930fd7e0748b0ba",
-      "podcast_linked": false,
+      "content_hash": "aa03044fec142e2d46101d37bfc487dfc9b2849382e195c800c9afb6e91cee61",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-09-27T15:49:16.781217+00:00"
+      "last_processed": "2026-10-01T14:15:18.388489+00:00"
     },
     "bibtex:Perez-Curiel2026-ld": {
       "note_path": "Papers/Perez-Curiel2026-ld.md",

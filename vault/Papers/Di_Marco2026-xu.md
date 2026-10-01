@@ -9,7 +9,7 @@ topics: [coordinated-inauthentic-behavior, computational-network-structure-analy
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2609.24398v1
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Di_Marco2026-xu.mp3
 pdf_available: false
 discovery_date: 2026-09-27T15:41:52.990035Z
 ---
@@ -22,23 +22,27 @@ discovery_date: 2026-09-27T15:41:52.990035Z
 
 ## Summary
 
-This paper reframes the study of Coordinated Inauthentic Behavior (CIB) around a question that is usually left aside: once coordinated accounts have been detected, *how much do they actually shape the way information spreads?* The authors argue that the field has become preoccupied with detection while neglecting the downstream quantification of influence. To address this gap they propose two complementary post-hoc evaluation frameworks — one built on information cascades and one on retweet networks — and develop both optimal and heuristic strategies for measuring the contribution of coordinated accounts to diffusion outcomes.
+This paper tackles a question that it argues has been underexplored in research on Coordinated Inauthentic Behavior (CIB): not whether coordinated accounts *can be detected*, but how much they actually *shape* information diffusion once identified. The authors contend that the field has concentrated heavily on detection at the expense of quantifying downstream impact. To address this, they propose two complementary post-hoc evaluation frameworks — one built on information cascades, the other on retweet networks — and develop both optimal and heuristic strategies for measuring the influence of coordinated accounts within these diffusion structures.
 
 ## Key Contributions
 
-- Introduces two complementary frameworks for the *post-hoc* evaluation of coordinated accounts in information diffusion: one on information cascades and one on retweet networks.
-- Shifts the CIB research agenda from detection toward influence quantification.
-- Provides both optimal and heuristic algorithmic strategies applicable to each framework, trading exactness against scalability.
+- Introduces two complementary frameworks for the **post-hoc evaluation** of coordinated accounts' influence on information diffusion.
+- Explicitly reframes CIB research away from detection and toward **influence quantification**.
+- Provides both **optimal and heuristic strategies**, making the approach applicable across information cascades and retweet networks.
 
 ## Methods
 
-The authors formalize the CIB influence-evaluation problem in two settings. The first casts the problem over information cascades; the second draws on retweet-network structure (with fuller details beyond the available abstract fragment). For each formulation they derive an optimal strategy for assessing how coordinated accounts affect diffusion, and complement it with heuristic approaches intended to remain tractable on larger structures.
+The authors formalize the CIB influence-evaluation problem over information cascades, and introduce a second, complementary formulation grounded in retweet networks. For each setting they derive optimal strategies for assessing how much coordinated accounts contribute to diffusion outcomes, and pair these with heuristic alternatives — presumably to retain tractability where exact optimization is costly. The work is primarily methodological/algorithmic in character rather than empirical.
 
 ## Findings
 
-- The paper's central empirical results are not recoverable from the provided abstract fragment, which cuts off before the results are described.
-- The methodological claim advanced is that CIB influence *can* be systematically evaluated after detection, and that both optimal and heuristic strategies are viable for doing so.
+- Both optimal and heuristic strategies are presented as viable for assessing coordinated-account influence in diffusion structures.
+- Specific empirical results are not available from the provided summary, which cuts off before describing experimental outcomes.
 
 ## Connections
 
-This work sits within the broader coordinated-behavior literature that has been dominated by detection methods — for instance the coordination-detection and network-structure approaches in [[Nizzoli2020-cf]], [[Luceri2025-tr]], [[Minici2024-tf]], and the Giglietto line of work on coordinated link/network sharing ([[Giglietto2020-9d8acdd7]], [[Giglietto2022-0e951ac5]], [[Giglietto2023-fa71a001]]) — but distinguishes itself by pivoting to influence quantification rather than identification. Its focus on retweet networks and cascade structure connects it to computational analyses of diffusion structure such as [[Di-Marco2025-aa]] and the amplification-and-cascade framing in [[Keller2019-nk]] and [[Starbird2019-qv]].
+This paper sits at the intersection of CIB detection and network-structure analysis, extending a largely detection-focused literature toward measuring downstream diffusion impact; it connects naturally to detection work that this paper positions itself against, such as [[Nizzoli2020-cf]] and [[Luceri2025-tr]]. Its focus on retweet networks and cascade structure links it to structural coordination studies like [[Minici2024-tf]], [[Giglietto2020-9d8acdd7]], and [[Keller2019-nk]], while sharing an author lineage and thematic concern with [[Di-Marco2025-aa]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Di_Marco2026-xu.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)
