@@ -1,0 +1,37 @@
+{
+  "abstract": "This article investigates how digital platform infrastructures reorganize institutional policy language into networked environments of suspicion, using the World Economic Forum's 'Great Reset' initiative as its central case. Drawing on a corpus of 3.7 million tweets (2015-2022), co-hashtag network analysis, and cross-platform triangulation across TikTok, YouTube, and counter-media, Tuters argues that conspiratorial alignment forms not through coherent narratives or shared belief but through patterned circulation—repeated adjacency, symbolic compression, and modular reuse. The paper develops three analytic concepts (conspiricization, modular conspiracism, and the Memeplex) and extends Hofstadter's 'paranoid style' into what it terms the 'high-tech paranoid style,' in which patterned platform visibility is read as intentional elite coordination.",
+  "key_claims": [
+    "Contemporary conspiracism is best understood as an infrastructural phenomenon shaped by platform circulation rather than as a matter of belief, misinformation, or coherent narrative.",
+    "Conspiratorial alignment precedes narrative coherence: platform grammars organize symbolic proximity at scale before fully articulated stories stabilize.",
+    "The Great Reset case is distinctive because conspiratorial meaning emerges from the recoding of elite institutions' own self-descriptive language, not from fringe subcultural origins (unlike QAnon).",
+    "Institutional transparency and foresight-oriented communication can generate mistrust rather than trust under conditions of platform-mediated visibility.",
+    "Infrastructural repetition and patterned adjacency come to be interpreted as evidence of intentional coordination—a 'high-tech paranoid style' that converts correlation into causation.",
+    "The 'globalist' figure functions as a vernacular misrecognition of the platform grammars organizing digital political life, personifying abstract systemic forces as intentional agents."
+  ],
+  "methods": [
+    "Co-hashtag network analysis of a 3.7-million-tweet corpus containing #TheGreatReset, #Agenda2030, or #DigitalID, collected 2015-2022 via the Twitter Academic API v2 before its 2023 shutdown.",
+    "Network layouts generated with ForceAtlas2 in Gephi, read as interpretive spatializations following Venturini et al. (2021); low-frequency tags removed only for legibility.",
+    "A 'world-in-a-word' methodological heuristic treating focal hashtags/phrases as entry points into the issue-worlds they condense (after Marres and Rogers).",
+    "Temporal comparison of pre-pandemic (2018) and post-pandemic (2022) networks to trace reconfiguration of issue spaces over time.",
+    "Cross-platform triangulation: analysis of 1,614 anti-WEF TikTok posts, 9,165 YouTube comments under a Russell Brand video, and issue-network metadata scraped from the Wide Awake Media site (August 2025) via adapted hyperlink analysis.",
+    "Qualitative close reading of the slogan 'You'll own nothing and be happy,' infographics, and vernacular counter-mapping diagrams."
+  ],
+  "findings": [
+    "The slogan 'You'll own nothing and you'll be happy'—derived from Ida Auken's 2016 WEF article—was decontextualized and recoded into a portable antagonistic object spanning protest placards, bestselling books, influencer content, and electoral rhetoric.",
+    "YouTube comment threads show 'repetition-with-variation': users produce alignment by iteratively remixing the slogan rather than elaborating shared explanations (Figure 1).",
+    "The 2022 #TheGreatReset and #DigitalID co-hashtag networks reveal dense convergence around #Agenda2030, #WEF, #BuildBackBetter, #CBDC, and #NWO, linking surveillance, finance, and biometric control into a modular narrative of dispossession.",
+    "Comparison shows that in 2018 the #DigitalID space was organized mainly around fintech/blockchain discourse with control themes marginal, while by 2022 fintech clusters became peripheral residues as control-oriented frames became central.",
+    "The 2018 Agenda 2030 network already contained a small peripheral conspiracist enclave (#NWO, #Agenda21, #depopulation, #BillGates) that later moved to the center during the pandemic—conspiracy drew on pre-existing symbolic material rather than pure misinterpretation.",
+    "Alignment consolidated before coherent narratives stabilized, confirming the claim that patterned adjacency precedes storytelling.",
+    "Vernacular artifacts such as hashtag-chaining tweets, Wide Awake Media's 'Control Apparatus' diagrams, and Corbett's infographic translate co-occurrence into legible visual heuristics of coordinated elite design."
+  ],
+  "contributions": [
+    "Introduces three analytic concepts: conspiricization (the reframing of institutional outputs as evidence of hidden control), modular conspiracism (recombination of fragments into flexible, travelling templates of distrust), and the Memeplex (the overarching media ecology binding grievances through repetition and adjacency).",
+    "Proposes the 'high-tech paranoid style' as an update to Hofstadter's paranoid style, adapted to platform-mediated scale, opacity, and abstraction.",
+    "Advances a platform-native analytic framework and the 'world-in-a-word' heuristic for empirically tracing conspiratorial alignment through co-hashtag networks.",
+    "Reframes conspiracy as an ongoing process (paralleling terms like platformization and datafication) rather than a bounded object of belief, treating 'conspiricization' as an analytical operator.",
+    "Links conspiracism to a broader crisis of institutional legibility, arguing democratic mediation requires reckoning with platform grammars rather than merely correcting false beliefs."
+  ],
+  "framing": "The paper positions itself within media theory, science and technology studies, and political communication scholarship on platform grammars and infrastructural mediation (Vismann, Akrich, Marres and Rogers, Latour, Bennett and Segerberg). It explicitly extends Hofstadter's (1965) account of the paranoid style and Jameson's (1984) 'high-tech paranoia' and cognitive mapping under late capitalism, while complementing—rather than displacing—recent belief- and narrative-centered accounts of conspiracism.",
+  "pdf_source": "drive"
+}

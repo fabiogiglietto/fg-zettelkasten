@@ -1,0 +1,25 @@
+{
+  "abstract": "This study investigates how political efficacy shapes the way individuals select political information within algorithmically curated feeds. Combining survey data with the actual usage histories of 186 Dutch users of Google Discover (a fully algorithmic feed), the authors examine both within-person changes over time and between-person differences in information-selection behavior. The analysis focuses on three outcomes: the proportion of political information selected, exposure diversity, and (per the abstract's truncation) related dimensions of political information engagement.",
+  "key_claims": [
+    "Political efficacy helps explain individual-level differences in how people select political information from algorithmic feeds.",
+    "Information-selection behavior on algorithmic feeds varies both within individuals over time and between individuals.",
+    "Between-person differences in political information selection are conditioned by users' political efficacy."
+  ],
+  "methods": [
+    "Combined survey data with behavioral trace data from users' actual usage histories.",
+    "Used Google Discover, a fully algorithmically curated feed, as the study context.",
+    "Sample of 186 Dutch individuals.",
+    "Analyzed both within-person change over time and between-person variation.",
+    "Examined at least three aspects of information-selection behavior: proportion of political information selected and exposure diversity (abstract truncated)."
+  ],
+  "findings": [
+    "Findings are not fully recoverable from the truncated abstract; the study reports on how political efficacy conditions between-person differences and how selection behavior changes within persons over time (specific results not stated in available text)."
+  ],
+  "contributions": [
+    "Links the psychological construct of political efficacy to observed information-selection behavior in algorithmic feeds.",
+    "Combines self-report survey measures with real behavioral usage histories from a fully algorithmic feed.",
+    "Distinguishes within-person temporal dynamics from between-person differences in political information selection."
+  ],
+  "framing": "The paper is positioned within research on algorithmic news/feed curation and political communication, bringing the concept of political efficacy to bear on debates about selective exposure and information diversity in algorithmically mediated environments.",
+  "pdf_source": "abstract_only"
+}
