@@ -218,13 +218,16 @@ def test_a_platform_needs_both_the_config_switch_and_its_token():
     assert sc.active_platforms(CFG, {"LINKEDIN_ACCESS_TOKEN": "t"}) == []
 
 
-def test_linkedin_also_needs_its_author():
-    cfg = {"social": {"platforms": {"linkedin": {"enabled": True}}}}
-    assert sc.active_platforms(cfg, {"LINKEDIN_ACCESS_TOKEN": "t"}) == []
-    assert sc.active_platforms(
-        cfg, {"LINKEDIN_ACCESS_TOKEN": "t", "LINKEDIN_PERSON_URN": "abc"}
-    ) == ["linkedin"]
-    assert sc.linkedin_urn("abc") == "urn:li:person:abc"
+def test_linkedin_author_is_resolved_from_the_token_when_not_given(calls):
+    calls.queue += [
+        FakeResponse(payload={"sub": "abc"}),
+        FakeResponse(201, {}, {"x-restli-id": "urn:li:share:9"}),
+    ]
+    sc.post_linkedin(["the text"], token="tok", note_url=NOTE, title="T")
+    userinfo, share = calls
+    assert userinfo["url"] == sc.LINKEDIN_USERINFO
+    assert userinfo["headers"] == {"Authorization": "Bearer tok"}
+    assert share["json"]["author"] == "urn:li:person:abc"
     assert sc.linkedin_urn("urn:li:person:abc") == "urn:li:person:abc"
 
 

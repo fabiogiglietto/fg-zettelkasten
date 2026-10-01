@@ -99,7 +99,7 @@ it is enabled there **and** its token is set as a repo secret:
 |---|---|---|
 | Mastodon | `MASTODON_ACCESS_TOKEN` (scope `write:statuses`) | does not expire |
 | Threads | `THREADS_ACCESS_TOKEN` (`threads_basic`, `threads_content_publish`, `threads_manage_replies`) | 60 days |
-| LinkedIn | `LINKEDIN_ACCESS_TOKEN` (`w_member_social`), `LINKEDIN_PERSON_URN` | 60 days |
+| LinkedIn | `LINKEDIN_ACCESS_TOKEN` (`openid profile w_member_social`; the author is read from the token, or from an optional `LINKEDIN_PERSON_URN`) | 60 days |
 
 Set the repo variables `THREADS_TOKEN_EXPIRES` / `LINKEDIN_TOKEN_EXPIRES`
 (ISO dates) when minting those tokens: the ops Slack channel is warned a week

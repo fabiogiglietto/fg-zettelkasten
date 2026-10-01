@@ -37,6 +37,7 @@ LONG_BLURB = 600
 MASTODON_URL_LEN = 23       # Mastodon counts every URL as 23 characters
 THREADS_API = "https://graph.threads.net/v1.0"
 LINKEDIN_UGC = "https://api.linkedin.com/v2/ugcPosts"
+LINKEDIN_USERINFO = "https://api.linkedin.com/v2/userinfo"
 
 
 class SocialError(Exception):
@@ -373,15 +374,29 @@ def linkedin_urn(value: str) -> str:
     return value if value.startswith("urn:li:") else f"urn:li:person:{value}"
 
 
-def post_linkedin(texts: list[str], *, token: str, author: str, note_url: str,
-                  title: str, **_) -> str:
+def linkedin_author(token: str) -> str:
+    """The member URN the token belongs to, from the OpenID userinfo endpoint.
+
+    Saves a second secret: the token (scopes `openid profile`) already says
+    whose it is, and a share must name that same member as its author.
+    """
+    resp = _request(
+        "GET", LINKEDIN_USERINFO, "linkedin",
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    return linkedin_urn(resp.json()["sub"])
+
+
+def post_linkedin(texts: list[str], *, token: str, note_url: str, title: str,
+                  author: str = "", **_) -> str:
     """Publish one LinkedIn share with the note as its article card.
 
     LinkedIn's 3000-character limit always fits a whole post, so a two-part
-    text is simply joined.
+    text is simply joined. `author` (LINKEDIN_PERSON_URN) is optional — left
+    empty, it is resolved from the token.
     """
     body = {
-        "author": linkedin_urn(author),
+        "author": linkedin_urn(author) if author else linkedin_author(token),
         "lifecycleState": "PUBLISHED",
         "specificContent": {
             "com.linkedin.ugc.ShareContent": {
@@ -454,11 +469,7 @@ def active_platforms(cfg: dict, env=None) -> list[str]:
     block but holds no secrets can never post.
     """
     env = os.environ if env is None else env
-    names = [n for n in enabled_platforms(cfg) if env.get(PLATFORMS[n].token_env)]
-    # A LinkedIn share must name its author; a token alone is not enough.
-    if "linkedin" in names and not env.get("LINKEDIN_PERSON_URN"):
-        names.remove("linkedin")
-    return names
+    return [n for n in enabled_platforms(cfg) if env.get(PLATFORMS[n].token_env)]
 
 
 def platform_texts(name: str, blurb: dict, citation: str, note_url: str,

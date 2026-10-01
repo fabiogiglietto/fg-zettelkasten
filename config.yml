@@ -161,10 +161,11 @@ social:
   # A platform posts only when it is enabled here AND its access token is in
   # the environment (repo secret) — so a fork that inherits this block but
   # holds no secrets never posts. Secrets: MASTODON_ACCESS_TOKEN (scope
-  # write:statuses), THREADS_ACCESS_TOKEN, LINKEDIN_ACCESS_TOKEN +
-  # LINKEDIN_PERSON_URN (scope w_member_social). The Threads and LinkedIn
-  # tokens live ~60 days: THREADS_TOKEN_EXPIRES / LINKEDIN_TOKEN_EXPIRES
-  # (repo variables, ISO dates) trigger an ops-channel warning a week ahead.
+  # write:statuses), THREADS_ACCESS_TOKEN, LINKEDIN_ACCESS_TOKEN (scopes
+  # openid profile w_member_social; the author is read from the token, or
+  # from an optional LINKEDIN_PERSON_URN). The Threads and LinkedIn tokens
+  # live ~60 days: THREADS_TOKEN_EXPIRES / LINKEDIN_TOKEN_EXPIRES (repo
+  # variables, ISO dates) trigger an ops-channel warning a week ahead.
   platforms:
     mastodon:
       enabled: true
