@@ -27,6 +27,7 @@ python -m src.main check-published     # ask OpenAlex if a preprint note is now 
 python -m src.main suggest-classics    # report the works the vault cites most but lacks (no LLM)
 python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper retracted
 python -m src.main check-retractions   # ask Crossref for retractions / notices (--apply to write)
+python -m src.main social-post [--dry-run] [--key KEY]  # announce new notes on Mastodon / Threads / LinkedIn
 ```
 
 ## Architecture
@@ -47,6 +48,9 @@ python -m src.main check-retractions   # ask Crossref for retractions / notices 
 - `src/classics.py`        — rank the outside works the vault's papers cite most
 - `src/note_builder.py`    — render Papers/, Topics/, Structures/ markdown
 - `src/site_export.py`     — export the vault to `quartz/content/` for the website
+- `src/slack_client.py`    — the #toread digest of each new paper; ops-channel messages
+- `src/social_client.py`   — compose + publish the Mastodon / Threads / LinkedIn
+                             announcement of a new note (blurb is the only LLM part)
 - `src/state.py`           — data/state.json persistence
 
 ## Conventions
@@ -58,6 +62,13 @@ python -m src.main check-retractions   # ask Crossref for retractions / notices 
   full text is transient (`data/.cache/`, gitignored) — never commit it.
 - Topic register notes are deterministic templating; structure/hub notes are
   LLM-written and regenerate only on bootstrap/recluster.
+- Social posts (`social-post`, `social` config block): run after the Pages
+  deploy, never inside `update` — the post links to the note, which must be
+  live. Queue and ledger live on the state entry (`social_pending`, `social`);
+  an entry without `social_pending` is backlog and is never announced. A
+  platform needs its config switch *and* its token secret, so the team fork
+  (no secrets) stays silent. The command always exits 0: an expired token is
+  an ops-channel alert, not a failed run. Never read, print or commit a token.
 - Own publications (Fabio's own papers, from github.io's `own-publications.json`)
   are a second source in `update`: notes tagged `kind: own`, never posted to the
   `#toread` Slack digest, gated by the `own_publications` config block. A note

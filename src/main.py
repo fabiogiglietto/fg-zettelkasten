@@ -10,6 +10,7 @@ Usage:
     python -m src.main retract <bibtex-key> --notice <doi> --date <YYYY-MM-DD>
     python -m src.main check-retractions [--apply]
     python -m src.main slack-test <bibtex-key>
+    python -m src.main social-post [--dry-run] [--key <bibtex-key>]
 
 See README.md and the implementation plan for architecture detail.
 """
@@ -232,6 +233,18 @@ def digest_queued(paper, digest_scope: str) -> bool:
     if paper.is_classic:
         return False
     return paper.is_team_submission if digest_scope == "team" else True
+
+
+def social_queued(paper) -> bool:
+    """Whether a newly-seen paper is queued for a social-media announcement.
+
+    Every new reading-list paper is, except a classic — same reasoning as the
+    #toread digest: foundational works arrive in bulk. Own publications never
+    reach this: they are processed by a separate path that sets no flag.
+    Whether anything is actually posted is decided later, by `social-post`
+    (config switch, per-platform tokens, the note being live).
+    """
+    return not paper.is_classic
 
 
 def classify_feed_paper(entry: dict | None, new_hash: str) -> str:
@@ -891,6 +904,10 @@ def cmd_update(cfg: dict, args) -> int:
             # and fg-zettelkasten already announces them, so the team kasten
             # posting them too would double-post in #toread.
             "slack_pending": digest_queued(paper, digest_scope),
+            # Queued for the social-media announcement (`social-post`, run
+            # after the Pages deploy). Entries without this key predate the
+            # feature and are never announced.
+            "social_pending": social_queued(paper),
             "last_processed": _now(),
         }
         # A team-mate's Slack submission: tag it `kind: team` and carry the
@@ -1891,6 +1908,277 @@ def cmd_slack_test(cfg: dict, args) -> int:
     return 0 if ok else 1
 
 
+def _entry_age_days(entry: dict) -> float:
+    """Days since the entry was last processed (0 when never recorded)."""
+    ts = entry.get("last_processed")
+    if not ts:
+        return 0.0
+    age = datetime.now(timezone.utc) - datetime.fromisoformat(ts)
+    return age.total_seconds() / 86400
+
+
+def social_queue(
+    papers: list, state: dict, max_age_days: float, limit: int,
+    key: str | None = None, dry_run: bool = False,
+) -> list:
+    """The `(paper, entry)` pairs `social-post` should announce this run.
+
+    Split out of `cmd_social_post` so the eligibility rules are testable as
+    themselves. A paper is announced when its entry carries `social_pending`
+    (set by `update` when the paper was first seen — anything older is backlog
+    and stays silent), it is still a live note, and it is recent: a paper that
+    has waited longer than `max_age_days` (a token expired and nobody
+    re-minted it) is dropped rather than announced late. Oldest first, capped
+    at `limit` so a bulk import drips out instead of flooding the timelines.
+
+    `key` selects one paper explicitly and bypasses the pending/age rules —
+    the manual re-post path, like `slack-test`. A dry run skips papers whose
+    preview was already delivered, so each is previewed once.
+    """
+    from .state import is_inactive
+
+    queue = []
+    for paper in papers:
+        entry = state["papers"].get(paper.id)
+        if entry is None or is_inactive(entry) or paper.is_classic:
+            continue
+        if key is not None:
+            if paper.bibtex_key == key:
+                queue.append((paper, entry))
+            continue
+        if not entry.get("social_pending"):
+            continue
+        if _entry_age_days(entry) > max_age_days:
+            if not dry_run:
+                entry.pop("social_pending", None)
+                entry.pop("social_blurb", None)
+                print(f"  social: {paper.bibtex_key} waited over "
+                      f"{max_age_days:g} days — dropped from the queue")
+            continue
+        if dry_run and entry.get("social_previewed"):
+            continue
+        queue.append((paper, entry))
+    queue.sort(key=lambda pe: pe[1].get("last_processed") or "")
+    return queue[:limit]
+
+
+def cmd_social_post(cfg: dict, args) -> int:
+    """Announce newly-added notes on Mastodon, Threads and LinkedIn.
+
+    Runs after the Pages deploy, as its own process: a post links to the note,
+    so the note must be live first, and a failure here must never touch the
+    vault build. Always exits 0 — a rejected token is reported to the ops
+    channel, not turned into a failed run (which would page the auto-fixer for
+    something only a human can re-mint).
+    """
+    from . import slack_client, social_client, summarizer, state as state_mod
+
+    scfg = cfg.get("social") or {}
+    if not scfg.get("enabled"):
+        print("social-post: disabled in config")
+        return 0
+    dry_run = bool(getattr(args, "dry_run", False) or scfg.get("dry_run"))
+    key = getattr(args, "key", None)
+
+    # A real run posts to the platforms whose token is present. A dry run
+    # previews every platform switched on in config, so the posts can be
+    # judged before all the tokens exist — but the config-driven dry run still
+    # wants at least one token, so a fork that inherits this config and holds
+    # no secrets stays silent. An explicit --dry-run always previews.
+    active = social_client.active_platforms(cfg)
+    if getattr(args, "dry_run", False) or (dry_run and active):
+        targets = social_client.enabled_platforms(cfg)
+    else:
+        targets = [] if dry_run else active
+    if not targets:
+        print("social-post: no platform is enabled with a token — nothing to do")
+        return 0
+
+    state_file = _abs(cfg["paths"]["state_file"])
+    state = state_mod.load_state(state_file)
+
+    ops_token = os.environ.get("SLACK_BOT_TOKEN")
+    ops_channel = os.environ.get("OPS_SLACK_CHANNEL")
+
+    def notify_ops(text: str) -> bool:
+        if not (ops_token and ops_channel):
+            return False
+        return slack_client.post_ops(ops_token, ops_channel, text)
+
+    def alert_once_a_day(alert_key: str, text: str) -> None:
+        """One ops alert per subject per day — the job runs many times a day
+        and an expired token would otherwise be reported on every one."""
+        today = _now()[:10]
+        alerts = state.setdefault("social_alerts", {})
+        if alerts.get(alert_key) == today:
+            return
+        print(f"  social: {text}")
+        if notify_ops(f":warning: {text}"):
+            alerts[alert_key] = today
+            state_mod.save_state(state, state_file)
+
+    # Tokens that expire (Threads, LinkedIn: ~60 days) carry their expiry date
+    # in a repo variable; warn a week ahead so re-minting is not a surprise.
+    if not dry_run:
+        for name in targets:
+            expires = os.environ.get(social_client.PLATFORMS[name].expires_env or "")
+            if not expires:
+                continue
+            try:
+                left = (datetime.fromisoformat(expires[:10]).date()
+                        - datetime.now(timezone.utc).date()).days
+            except ValueError:
+                continue
+            if left <= 7:
+                alert_once_a_day(
+                    f"{name}-expiry",
+                    f"The {name} access token for social posts expires in "
+                    f"{max(left, 0)} day(s) ({expires[:10]}) — re-mint it and "
+                    f"update the {social_client.PLATFORMS[name].token_env} secret.",
+                )
+
+    queue = social_queue(
+        _fetch_feed(cfg), state,
+        max_age_days=scfg.get("max_age_days", 14),
+        limit=scfg.get("max_per_run", 3),
+        key=key, dry_run=dry_run,
+    )
+    if not queue:
+        if not dry_run:
+            # Persist any queue entries that just aged out.
+            state_mod.save_state(state, state_file)
+        print("social-post: nothing to announce")
+        return 0
+
+    try:
+        claude = _claude(cfg)
+    except Exception as exc:  # noqa: BLE001 - the blurb has a non-LLM fallback
+        claude = None
+        print(f"social-post: Claude unavailable ({exc}) — using summary abstracts")
+
+    hashtag = "#" + str(scfg.get("hashtag") or "toread").lstrip("#")
+    summaries_dir = _abs(cfg["paths"]["summaries_dir"])
+    mastodon_cfg = (scfg.get("platforms") or {}).get("mastodon") or {}
+    instance = mastodon_cfg.get("instance") or "https://mastodon.social"
+    limits = {}
+    if "mastodon" in targets:
+        limits["mastodon"] = social_client.mastodon_limit(instance)
+
+    # Write every blurb before posting anything: the federated Claude
+    # credential is minted once for this process and is short-lived, while the
+    # posting loop below waits on the note going live and on Threads.
+    blurbs: dict[str, dict] = {}
+    for paper, entry in queue:
+        if entry.get("social_blurb"):
+            blurbs[paper.id] = entry["social_blurb"]
+            continue
+        summary = summarizer.load_summary(summaries_dir, paper.bibtex_key)
+        if summary is None:
+            print(f"  social: no summary for {paper.bibtex_key}, skipping")
+            continue
+        blurbs[paper.id] = social_client.social_blurb(
+            paper, summary, claude, getattr(claude, "assign_model", ""),
+            supersedes=bool(entry.get("supersedes")),
+            # Sized to this paper: a long title leaves the blurb little room.
+            short_limit=social_client.short_budget(
+                targets, social_client.apa_plain(paper),
+                _note_url(cfg, paper.bibtex_key) or "", hashtag, limits,
+            ),
+        )
+        if not dry_run:
+            # Kept on the entry so a retry, or a platform that comes online
+            # later, announces the paper in the same words.
+            entry["social_blurb"] = blurbs[paper.id]
+    if not dry_run:
+        state_mod.save_state(state, state_file)
+
+    blocked: set[str] = set()   # platforms whose token was rejected this run
+    for paper, entry in queue:
+        blurb = blurbs.get(paper.id)
+        note_url = _note_url(cfg, paper.bibtex_key)
+        if not blurb or not note_url:
+            continue
+        if not social_client.note_is_live(note_url):
+            print(f"  social: {note_url} is not live yet — "
+                  f"{paper.bibtex_key} waits for the next run")
+            continue
+        citation = social_client.apa_plain(paper)
+        posted = dict(entry.get("social") or {})
+
+        if dry_run:
+            preview = [f"*Social post preview — {paper.bibtex_key}* (dry run, nothing published)"]
+            for name in targets:
+                texts = social_client.platform_texts(
+                    name, blurb, citation, note_url, hashtag, limits.get(name)
+                )
+                measure = social_client.PLATFORMS[name].measure
+                for i, text in enumerate(texts):
+                    part = f" {i + 1}/{len(texts)}" if len(texts) > 1 else ""
+                    preview.append(
+                        f"*{name}{part}* ({measure(text)} chars)\n```{text}```"
+                    )
+            text = "\n\n".join(preview)
+            print(text)
+            if notify_ops(text):
+                entry["social_previewed"] = True
+                entry["social_blurb"] = blurb
+                state_mod.save_state(state, state_file)
+            continue
+
+        for name in targets:
+            if name in posted or name in blocked:
+                continue
+            platform = social_client.PLATFORMS[name]
+            texts = social_client.platform_texts(
+                name, blurb, citation, note_url, hashtag, limits.get(name)
+            )
+            try:
+                url = platform.post(
+                    texts,
+                    token=os.environ[platform.token_env],
+                    instance=instance,
+                    key=paper.bibtex_key,
+                    note_url=note_url,
+                    title=paper.title,
+                    author=os.environ.get("LINKEDIN_PERSON_URN", ""),
+                    user_id=os.environ.get("THREADS_USER_ID") or "me",
+                )
+                record = {"url": url, "at": _now()}
+            except social_client.SocialAuthError as exc:
+                blocked.add(name)
+                alert_once_a_day(
+                    f"{name}-auth",
+                    f"Social posts: {name} rejected its access token ({exc}). "
+                    f"Re-mint it and update the {platform.token_env} secret; "
+                    f"pending papers are posted on the next run after that.",
+                )
+                continue
+            except social_client.SocialError as exc:
+                print(f"  social: {name} failed for {paper.bibtex_key} ({exc})")
+                if not exc.first_url:
+                    continue
+                # The first post of a thread is out; record it so the retry
+                # does not publish it a second time.
+                record = {"url": exc.first_url, "at": _now(), "incomplete": True}
+            except Exception as exc:  # noqa: BLE001 - never break the run
+                print(f"  social: unexpected {name} error for "
+                      f"{paper.bibtex_key} ({exc})")
+                continue
+            posted[name] = record
+            entry["social"] = posted
+            # Persist immediately: a crash later in the run must not lead to
+            # this post being published again on the next one.
+            state_mod.save_state(state, state_file)
+            print(f"  social: posted {paper.bibtex_key} to {name}: {record['url']}")
+
+        if all(name in posted for name in targets):
+            for flag in ("social_pending", "social_blurb", "social_previewed"):
+                entry.pop(flag, None)
+            state_mod.save_state(state, state_file)
+
+    return 0
+
+
 # --- CLI ------------------------------------------------------------------
 
 
@@ -1999,6 +2287,19 @@ def build_parser() -> argparse.ArgumentParser:
         "slack-test", help="post one paper's digest to the Slack webhook"
     )
     p_slack.add_argument("bibtex_key", help="bibtex key of a paper already processed")
+
+    p_social = sub.add_parser(
+        "social-post",
+        help="announce newly-added notes on Mastodon, Threads and LinkedIn",
+    )
+    p_social.add_argument(
+        "--dry-run", action="store_true",
+        help="compose and print the posts without publishing anything",
+    )
+    p_social.add_argument(
+        "--key", default=None,
+        help="announce this one paper, whether or not it is queued",
+    )
     return parser
 
 
@@ -2020,6 +2321,7 @@ def main(argv=None) -> int:
         "fix-links": cmd_fix_links,
         "export-site": cmd_export_site,
         "slack-test": cmd_slack_test,
+        "social-post": cmd_social_post,
     }
     return commands[args.command](cfg, args) or 0
 

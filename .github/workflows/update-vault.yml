@@ -15,6 +15,10 @@ on:
         description: "Force a full recluster"
         type: boolean
         default: false
+      social_key:
+        description: "Announce this one paper on social media (bibtex key), queued or not"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -195,8 +199,62 @@ jobs:
         run: sleep 90
 
       - name: Retry Pages deploy (transient failure)
+        id: deploy_retry
         if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v5
+
+      # Announce newly-added notes on Mastodon / Threads / LinkedIn. After the
+      # deploy on purpose: each post links to the note and the platforms cache
+      # the link preview, so the page has to be live first (the command also
+      # checks it answers 200). Not on the summarize leg — it writes no notes.
+      # A platform with no token secret is skipped; with `social.dry_run` on,
+      # nothing is published and the composed posts go to the ops channel.
+      - name: Post to social media
+        if: >-
+          github.event.action != 'pipeline-summarize'
+          && (steps.deploy.outcome == 'success' || steps.deploy_retry.outcome == 'success')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ runner.temp }}/anthropic-oidc-jwt
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+          THREADS_TOKEN_EXPIRES: ${{ vars.THREADS_TOKEN_EXPIRES }}
+          LINKEDIN_TOKEN_EXPIRES: ${{ vars.LINKEDIN_TOKEN_EXPIRES }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          OPS_SLACK_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
+          SOCIAL_KEY: ${{ inputs.social_key }}
+        run: |
+          # Fresh JWT for this process (see the Run step: the assertion is
+          # single use). A mint failure only costs the Claude-written blurb —
+          # the command falls back to the summary's abstract.
+          bash .github/scripts/mint-oidc-token.sh \
+            || echo "::warning::OIDC mint failed; social blurbs fall back to abstracts"
+          python -m src.main social-post ${SOCIAL_KEY:+--key "$SOCIAL_KEY"}
+
+      # The posting ledger (state.json: which platforms each paper went to)
+      # must be committed, or the next run would announce the same papers.
+      - name: Commit social-post state
+        if: >-
+          github.event.action != 'pipeline-summarize'
+          && (steps.deploy.outcome == 'success' || steps.deploy_retry.outcome == 'success')
+        run: |
+          git add data/state.json
+          git diff --staged --quiet || git commit -m "🤖 Social posts $(date -u +%Y-%m-%dT%H:%MZ)"
+          # This push is what keeps a published post from being published
+          # again, so it must not be lost to a build leftover in the tree
+          # (--autostash) or to main moving under it (retry).
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            sleep 10
+          done
+          echo "::error::could not push the social-post ledger; the next run may repeat today's posts"
+          exit 1
 
       # Pipeline observability — alert on any failed run. Prefers the incoming
       # webhook (SLACK_WEBHOOK_URL, already used for digests), falls back to a

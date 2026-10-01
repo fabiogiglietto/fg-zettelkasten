@@ -138,6 +138,42 @@ slack:
   # The team fork sets 0 (its papers never get an episode — post immediately).
   episode_wait_days: 2
 
+social:
+  # Announce each newly-added paper note on social media: a brief description
+  # (Claude, assign_model), the APA-7 citation, the link to the note and the
+  # hashtag. Posted by `python -m src.main social-post`, which update-vault
+  # runs *after* the Pages deploy — the platforms cache link previews, so the
+  # note must be live first.
+  # Same scope as the #toread digest: new reading-list papers only — never a
+  # classic, an own publication, a retracted paper or a superseded stub, and
+  # never a note that predates this feature.
+  enabled: true
+  # Compose the posts and send them to the ops Slack channel (and the job log)
+  # without publishing anything. Flip to false once the previews read right;
+  # papers previewed in the last `max_age_days` are then posted for real.
+  dry_run: true
+  hashtag: "#toread"
+  # At most this many papers per run, oldest first, so a bulk import drips out.
+  max_per_run: 3
+  # A paper still unannounced after this many days (a token expired and was
+  # not re-minted) is dropped rather than announced late.
+  max_age_days: 14
+  # A platform posts only when it is enabled here AND its access token is in
+  # the environment (repo secret) — so a fork that inherits this block but
+  # holds no secrets never posts. Secrets: MASTODON_ACCESS_TOKEN (scope
+  # write:statuses), THREADS_ACCESS_TOKEN, LINKEDIN_ACCESS_TOKEN +
+  # LINKEDIN_PERSON_URN (scope w_member_social). The Threads and LinkedIn
+  # tokens live ~60 days: THREADS_TOKEN_EXPIRES / LINKEDIN_TOKEN_EXPIRES
+  # (repo variables, ISO dates) trigger an ops-channel warning a week ahead.
+  platforms:
+    mastodon:
+      enabled: true
+      instance: "https://aoir.social"
+    threads:
+      enabled: true
+    linkedin:
+      enabled: true
+
 own_publications:
   # Fabio's own papers, processed by `update` as a second source alongside the
   # toread feed. They get vault notes (kind: own) but no Slack digest.

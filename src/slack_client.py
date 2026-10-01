@@ -298,3 +298,29 @@ def post_retraction(
     print(f"  slack: webhook returned {resp.status_code} for {bibtex_key} "
           f"retraction: {resp.text[:200]}")
     return False
+
+
+def post_ops(token: str, channel: str, text: str) -> bool:
+    """Post a plain message to the ops channel with the bot token.
+
+    Used for things only the maintainer needs to see (social-post previews,
+    an expired social token) — the incoming webhook is bound to #toread and
+    cannot be redirected. Same contract as `post_paper`: never raises.
+    `chat.postMessage` answers HTTP 200 with `{"ok": false}` for a channel the
+    bot is not in, so the body is what decides success.
+    """
+    try:
+        resp = requests.post(
+            "https://slack.com/api/chat.postMessage",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"channel": channel, "text": text[:_SECTION_MAX],
+                  "unfurl_links": False},
+            timeout=15,
+        )
+        ok = bool(resp.json().get("ok"))
+    except (requests.RequestException, ValueError) as exc:
+        print(f"  slack: ops message failed ({exc})")
+        return False
+    if not ok:
+        print(f"  slack: ops message rejected: {resp.text[:200]}")
+    return ok
