@@ -23,6 +23,7 @@ Studies examining how conspiracy theories and conspiratorial narratives are form
 - [[Rohrbach2026-rc]]
 - [[Rothut2026-or]]
 - [[Sadler2025-vu]]
+- [[Tuters2026-vo]]
 
 ## All papers (Dataview)
 

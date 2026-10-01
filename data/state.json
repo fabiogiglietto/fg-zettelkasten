@@ -4451,10 +4451,10 @@
       "doi": "10.1093/jcmc/zmag022",
       "title": "How does political efficacy condition clicks on politics? Understanding information-selection behavior in algorithmic feeds over time",
       "pdf_source": "abstract_only",
-      "content_hash": "regen-from-drive-pdf-2026-09-29",
+      "content_hash": "ad3a2d446ff9b0b23e5b72704ee9aa5959a67717dccab220eb5472b4d8e744f7",
       "podcast_linked": false,
       "slack_posted": true,
-      "last_processed": "2026-09-27T11:15:56.881565+00:00"
+      "last_processed": "2026-10-01T17:13:22.248815+00:00"
     },
     "bibtex:Di_Marco2026-xu": {
       "note_path": "Papers/Di_Marco2026-xu.md",
@@ -4485,10 +4485,26 @@
       "podcast_linked": false,
       "slack_posted": true,
       "last_processed": "2026-09-27T15:49:26.063956+00:00"
+    },
+    "bibtex:Tuters2026-vo": {
+      "note_path": "Papers/Tuters2026-vo.md",
+      "topics": [
+        "conspiracy-narratives-in-media",
+        "coordinated-inauthentic-behavior"
+      ],
+      "assign_fp": "9f1d2393d92a5c1e3ab87b99c3244f5d7071916d5f1ba5dfa28455d1c62ec3d0",
+      "doi": "10.1177/14614448261446931",
+      "title": "The Memeplex: Platform grammars and conspiratorial alignment around the Great Reset",
+      "pdf_source": "drive",
+      "content_hash": "82d3d2160b8a61f539d0221a66cdfad2bd2734adf7ce10f504656598f435aa33",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-01T17:13:11.260406+00:00"
     }
   },
   "last_full_cluster": "2026-09-28T11:16:42.220477+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "abceb099733a10f50ad95930e84b28eb27cf66178c2d85762b8bc3f4ad4f1f51",
   "emergent_fp": "9d925de95fcb3f35c564f14b157e06421f77e4acd313f9ea55c6240ad75c9351",
   "structure_fps": {
