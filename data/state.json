@@ -4434,7 +4434,12 @@
       "content_hash": "e772a28bf13b8aca9fbb237d944af41800875a94cf5fba4b53e261d4a933a1be",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-09-27T11:15:44.829944+00:00"
+      "last_processed": "2026-09-27T11:15:44.829944+00:00",
+      "social_previewed": true,
+      "social_blurb": {
+        "short": "Radical populist parties gained disproportionately large audience engagement on social…",
+        "long": "Analysis of 283,000 posts from 401 EU parties across five platforms shows that populist radical right and far-left parties received far greater audience engagement than mainstream centrist parties, with advantages exceeding what their posting activity alone explains. TikTok proved most asymmetric, with radical populist parties receiving dozens of times more likes than centrists. The findings suggest that emotional appeals, anti-elitist rhetoric, and Eurosceptic positions resonate more strongly with social media users, indicating that newer platforms may amplify challenger and populist actors."
+      }
     },
     "bibtex:Wan2026-ai": {
       "note_path": "Papers/Wan2026-ai.md",
