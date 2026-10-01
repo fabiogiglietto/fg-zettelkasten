@@ -159,6 +159,35 @@ def compose(
     return [head, _fit_citation(citation, limit, measure)]
 
 
+def blurb_room(citation: str, note_url: str, hashtag: str, limit: int,
+               measure: Callable[[str], int] = plain_len) -> int:
+    """How many characters `compose` has for the blurb on one platform.
+
+    The room next to the citation in a single post — or, when that is under
+    `MIN_BLURB` and the citation moves to a reply, the room in the first post.
+    """
+    tail = f"Note: {note_url}\n{hashtag}"
+    room = limit - measure(f"\n\n{citation}\n\n{tail}")
+    return room if room >= MIN_BLURB else limit - measure(f"\n\n{tail}")
+
+
+def pick_short(variants, room: int) -> str:
+    """The longest short blurb that fits `room` whole.
+
+    The model writes one sentence per length it was asked for and is not a
+    reliable character counter, so the choice is made here, on the real
+    lengths. When nothing fits, the shortest is returned and `compose` trims
+    it — the last resort, since a clipped sentence reads badly.
+    """
+    if isinstance(variants, str):
+        variants = [variants]
+    variants = [v for v in variants if v]
+    if not variants:
+        return ""
+    fitting = [v for v in variants if len(v) <= room]
+    return max(fitting, key=len) if fitting else min(variants, key=len)
+
+
 # --- blurb (LLM) -------------------------------------------------------------
 
 
@@ -176,10 +205,16 @@ the whole text. State only what the summary supports — never add a finding, a 
 number or a claim that is not in it.
 
 Return ONLY a JSON object, no prose or markdown fences:
-  "short": one complete sentence, within the character limit the request gives.
-           The limit is hard: write a shorter sentence rather than one that
-           would have to be cut.
+  "short": an array with one complete sentence for each character limit the
+           request gives, in the same order. They are alternatives, not parts:
+           each must stand on its own. Every limit is hard — count the
+           characters, and write a plainer, shorter sentence rather than one
+           that runs over. Never end a sentence with an ellipsis.
   "long" : two or three sentences, at most {LONG_BLURB} characters."""
+
+# The model is asked for a little less than the real room: it overshoots a
+# character limit more often than it undershoots one.
+_LIMIT_MARGIN = 0.9
 
 
 def fallback_blurb(summary: dict) -> dict:
@@ -187,39 +222,39 @@ def fallback_blurb(summary: dict) -> dict:
     abstract = re.sub(r"\s+", " ", str(summary.get("abstract") or "")).strip()
     first = re.split(r"(?<=[.!?])\s+", abstract, maxsplit=1)[0]
     return {
-        "short": _trim(first, SHORT_BLURB),
+        "short": [_trim(first, SHORT_BLURB)],
         "long": _trim(abstract, LONG_BLURB),
     }
 
 
-def short_budget(names: list[str], citation: str, note_url: str, hashtag: str,
-                 limits: Optional[dict] = None) -> int:
-    """How long the short blurb may be for this paper.
+def short_rooms(names: list[str], citation: str, note_url: str, hashtag: str,
+                limits: Optional[dict] = None) -> list[int]:
+    """The blurb lengths worth asking the model for, for this paper.
 
     A long title leaves little room next to its citation, and the room differs
     per platform (Mastodon counts a URL as 23 characters, Threads counts it in
-    full). The blurb is written once, so it is sized for the tightest platform
-    that still fits a single post; a platform that has to move the citation to
-    a reply has the whole first post for the blurb and does not constrain it.
+    full) — so each short-blurb platform gets a sentence written for its own
+    room, capped at `SHORT_BLURB`. `MIN_BLURB` is always included: a compact
+    sentence that fits wherever a single post is possible at all.
     """
     limits = limits or {}
-    frame = f"\n\n{citation}\n\nNote: {note_url}\n{hashtag}"
-    rooms = []
+    rooms = {MIN_BLURB}
     for name in names:
         platform = PLATFORMS[name]
         if platform.blurb != "short":
             continue
-        room = (limits.get(name) or platform.limit) - platform.measure(frame)
-        if room >= MIN_BLURB:
-            rooms.append(room)
-    return min([SHORT_BLURB, *rooms])
+        room = blurb_room(citation, note_url, hashtag,
+                          limits.get(name) or platform.limit, platform.measure)
+        rooms.add(max(MIN_BLURB, min(SHORT_BLURB, room)))
+    return sorted(rooms)
 
 
 def social_blurb(
     paper, summary: dict, claude, model: str, supersedes: bool = False,
-    short_limit: int = SHORT_BLURB,
+    rooms: Optional[list[int]] = None,
 ) -> dict:
-    """`{"short", "long"}` descriptions of one paper, written from its summary.
+    """Descriptions of one paper, written from its summary:
+    `{"short": [one sentence per room in `rooms`], "long": str}`.
 
     Falls back to the summary's own abstract when the model is unavailable or
     returns something unusable — a post must never be held up by the one
@@ -229,9 +264,11 @@ def social_blurb(
     if claude is None:
         return fallback
 
+    asked = [int(room * _LIMIT_MARGIN) for room in rooms or [SHORT_BLURB]]
     lines = [
         f"Title: {paper.title}",
-        f'Character limit for "short": {short_limit}',
+        'Character limits for "short", one sentence each: '
+        + ", ".join(str(n) for n in asked),
     ]
     if supersedes:
         lines.append(
@@ -260,10 +297,13 @@ def social_blurb(
     except Exception as exc:  # noqa: BLE001 - the fallback is always usable
         print(f"  social: blurb call failed for {paper.bibtex_key} ({exc})")
         return fallback
-    short = _clean_blurb(reply.get("short"))
+    short = reply.get("short")
+    if isinstance(short, str):
+        short = [short]
+    short = [s for s in (_clean_blurb(v) for v in short or []) if s]
     long_ = _clean_blurb(reply.get("long"))
     return {
-        "short": _trim(short, short_limit) if short else fallback["short"],
+        "short": short or fallback["short"],
         "long": _trim(long_, LONG_BLURB) if long_ else fallback["long"],
     }
 
@@ -476,10 +516,13 @@ def platform_texts(name: str, blurb: dict, citation: str, note_url: str,
                    hashtag: str, limit: Optional[int] = None) -> list[str]:
     """The post text(s) for one platform, from the shared blurb and citation."""
     platform = PLATFORMS[name]
-    return compose(
-        blurb[platform.blurb], citation, note_url, hashtag,
-        limit or platform.limit, platform.measure,
-    )
+    limit = limit or platform.limit
+    text = blurb[platform.blurb]
+    if platform.blurb == "short":
+        text = pick_short(
+            text, blurb_room(citation, note_url, hashtag, limit, platform.measure)
+        )
+    return compose(text, citation, note_url, hashtag, limit, platform.measure)
 
 
 def note_is_live(url: str, tries: int = 3, wait: float = 20.0) -> bool:
