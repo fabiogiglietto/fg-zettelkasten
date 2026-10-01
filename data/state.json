@@ -4500,7 +4500,18 @@
       "podcast_linked": true,
       "slack_posted": true,
       "social_pending": true,
-      "last_processed": "2026-10-01T17:13:11.260406+00:00"
+      "last_processed": "2026-10-01T17:13:11.260406+00:00",
+      "social_blurb": "The study traces how digital platform infrastructures reorganize institutional language into conspiratorial meaning through pattern and repetition rather than narrative coherence. Analyzing 3.7 million tweets and cross-platform networks, it shows how the World Economic Forum's \"Great Reset\" slogan was decontextualized into a portable antagonistic object, with users producing alignment through modular remixing of fragments across platforms.",
+      "social": {
+        "mastodon": {
+          "url": "https://aoir.social/@fabiogiglietto/117366774716691309",
+          "at": "2026-10-01T17:14:18.512323+00:00"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7511473635686207489/",
+          "at": "2026-10-01T17:14:31.598604+00:00"
+        }
+      }
     }
   },
   "last_full_cluster": "2026-09-28T11:16:42.220477+00:00",
