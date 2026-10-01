@@ -50,7 +50,8 @@ python -m src.main social-post [--dry-run] [--key KEY]  # announce new notes on 
 - `src/site_export.py`     — export the vault to `quartz/content/` for the website
 - `src/slack_client.py`    — the #toread digest of each new paper; ops-channel messages
 - `src/social_client.py`   — compose + publish the Mastodon / Threads / LinkedIn
-                             announcement of a new note (blurb is the only LLM part)
+                             announcement of a new note (the LinkedIn description
+                             is the only LLM part)
 - `src/state.py`           — data/state.json persistence
 
 ## Conventions

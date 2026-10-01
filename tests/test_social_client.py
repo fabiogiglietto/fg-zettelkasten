@@ -72,107 +72,69 @@ def test_threads_weighs_emoji_by_their_bytes():
     assert sc.threads_len("🎧") == 4
 
 
-def test_a_post_that_fits_is_a_single_post_with_every_part():
-    (post,) = sc.compose(BLURB, CITATION, NOTE, "#toread", 500, sc.threads_len)
-    assert sc.threads_len(post) <= 500
-    assert post.startswith(BLURB)
-    assert CITATION in post
-    assert f"Note: {NOTE}" in post
-    assert post.endswith("#toread")
+def test_a_post_without_description_is_citation_note_and_hashtag():
+    (post,) = sc.compose("", CITATION, NOTE, "#toread", 500, sc.threads_len)
+    assert post == f"{CITATION}\n\nNote: {NOTE}\n#toread"
 
 
-def test_the_blurb_gives_way_to_the_citation_at_a_word_boundary():
-    long_blurb = " ".join(["polarization"] * 40)
-    (post,) = sc.compose(long_blurb, CITATION, NOTE, "#toread", 500, sc.threads_len)
-    assert sc.threads_len(post) <= 500
-    assert CITATION in post                      # never shortened
-    blurb = post.split("\n\n")[0]
-    assert blurb.endswith("…")
-    assert blurb[:-1].split()[-1] == "polarization"   # no word cut in half
+def test_mastodon_and_threads_never_carry_a_description():
+    """Decided after two live previews: next to a full citation, 500
+    characters leave a sentence too little room and it kept arriving clipped."""
+    for name in ("mastodon", "threads"):
+        (post,) = sc.platform_texts(name, BLURB, CITATION, NOTE, "#toread")
+        assert post.startswith(CITATION)
+        assert BLURB not in post
+    (post,) = sc.platform_texts("linkedin", BLURB, CITATION, NOTE, "#toread")
+    assert post == f"{BLURB}\n\n{CITATION}\n\nNote: {NOTE}\n#toread"
 
 
-def test_a_long_citation_moves_to_a_reply():
-    citation = ("Author, A., " * 30) + "(2026). A title. https://doi.org/10.1/x"
-    head, reply = sc.compose(BLURB, citation, NOTE, "#toread", 500, sc.threads_len)
-    assert head.startswith(BLURB) and NOTE in head and head.endswith("#toread")
-    assert reply == citation
-    assert sc.threads_len(head) <= 500 and sc.threads_len(reply) <= 500
+def test_a_description_is_only_ever_whole_sentences():
+    text = "First finding here. Second finding follows. Third one is long."
+    assert sc.whole_sentences(text, 200) == text
+    assert sc.whole_sentences(text, 45) == "First finding here. Second finding follows."
+    assert sc.whole_sentences(text, 30) == "First finding here."
+    assert sc.whole_sentences(text, 10) == ""        # never a clipped sentence
+
+    room = len(CITATION) + len(NOTE) + 60
+    (post,) = sc.compose(text, CITATION, NOTE, "#toread", room)
+    assert post.startswith("First finding here.\n\n")
+    assert "…" not in post
+
+
+def test_a_citation_too_long_for_one_post_sends_the_link_in_a_reply():
+    citation = ("Author, A., " * 38) + "(2026). A title. https://doi.org/10.1/x"
+    head, reply = sc.compose("", citation, NOTE, "#toread", 500, sc.threads_len)
+    assert head == citation
+    assert reply == f"Note: {NOTE}\n#toread"
+    assert sc.threads_len(head) <= 500
 
 
 def test_a_citation_longer_than_a_post_keeps_its_doi():
     citation = ("Author, A., " * 60) + "(2026). A title. https://doi.org/10.1/x"
-    _, reply = sc.compose(BLURB, citation, NOTE, "#toread", 500, sc.threads_len)
-    assert sc.threads_len(reply) <= 500
-    assert reply.endswith("… https://doi.org/10.1/x")
+    head, _ = sc.compose("", citation, NOTE, "#toread", 500, sc.threads_len)
+    assert sc.threads_len(head) <= 500
+    assert head.endswith("… https://doi.org/10.1/x")
 
 
 def test_mastodon_budget_uses_its_own_url_arithmetic():
-    """The same content can need a reply on Threads and fit on Mastodon,
+    """The same citation can need a reply on Threads and fit on Mastodon,
     where the two long URLs only cost 23 characters each."""
-    citation = ("Author, A., " * 26) + "(2026). A title. https://doi.org/10.1126/science.aap9559"
-    assert len(sc.compose(BLURB, citation, NOTE, "#toread", 500, sc.threads_len)) == 2
-    (post,) = sc.compose(BLURB, citation, NOTE, "#toread", 500, sc.mastodon_len)
+    citation = ("Author, A., " * 31) + "(2026). A title. https://doi.org/10.1126/science.aap9559"
+    assert len(sc.compose("", citation, NOTE, "#toread", 500, sc.threads_len)) == 2
+    (post,) = sc.compose("", citation, NOTE, "#toread", 500, sc.mastodon_len)
     assert sc.mastodon_len(post) <= 500
 
 
 def test_model_text_cannot_smuggle_links_or_extra_hashtags():
     (post,) = sc.compose(
-        "Great #misinformation study\nsee https://evil.example/x now",
+        "Great #misinformation study\nsee https://evil.example/x now.",
         CITATION, NOTE, "#toread", 3000,
     )
-    blurb = post.split("\n\n")[0]
-    assert blurb == "Great misinformation study see now"
+    assert post.split("\n\n")[0] == "Great misinformation study see now."
     assert post.count("#") == 1
 
 
-def test_each_platform_gets_the_longest_sentence_that_fits_it_whole():
-    """The case that came out clipped in the first live preview: a long title
-    leaves Threads ~85 characters and Mastodon ~155, and one sentence written
-    for the tighter of the two was cut mid-word on both."""
-    citation = ("Author, A., " * 22) + "(2026). A title. https://doi.org/10.1126/science.aap9559"
-    blurb = {
-        "short": [
-            "Populist parties out-engage the mainstream online.",            # 50
-            "Radical populist parties drew far more engagement than centrists.",  # 66
-            "Radical populist parties drew far more audience engagement than "
-            "centrist parties on every platform, most of all on TikTok.",    # 122
-        ],
-        "long": "l",
-    }
-    threads_room = sc.blurb_room(citation, NOTE, "#toread", 500, sc.threads_len)
-    mastodon_room = sc.blurb_room(citation, NOTE, "#toread", 500, sc.mastodon_len)
-    assert 66 <= threads_room < 122 <= mastodon_room
-
-    (threads,) = sc.platform_texts("threads", blurb, citation, NOTE, "#toread")
-    (mastodon,) = sc.platform_texts("mastodon", blurb, citation, NOTE, "#toread")
-    assert threads.split("\n\n")[0] == blurb["short"][1]
-    assert mastodon.split("\n\n")[0] == blurb["short"][2]
-    assert "…" not in threads and "…" not in mastodon
-    assert sc.threads_len(threads) <= 500 and sc.mastodon_len(mastodon) <= 500
-
-
-def test_a_sentence_is_only_trimmed_when_none_fits():
-    assert sc.pick_short(["a" * 50, "b" * 90], 100) == "b" * 90
-    assert sc.pick_short(["a" * 50, "b" * 90], 60) == "a" * 50
-    assert sc.pick_short(["a" * 70, "b" * 90], 60) == "a" * 70   # compose trims
-    assert sc.pick_short("a plain string", 5) == "a plain string"  # old ledger shape
-    assert sc.pick_short([], 60) == ""
-
-
-def test_room_is_the_first_post_when_the_citation_moves_to_a_reply():
-    assert sc.blurb_room("x" * 480, NOTE, "#toread", 500, sc.threads_len) \
-        == 500 - sc.threads_len(f"\n\nNote: {NOTE}\n#toread")
-
-
-def test_linkedin_gets_the_long_blurb_and_the_others_the_short_one():
-    blurb = {"short": ["Short one."], "long": "A longer one. With two sentences."}
-    assert sc.platform_texts("linkedin", blurb, CITATION, NOTE, "#toread")[0] \
-        .startswith("A longer one.")
-    assert sc.platform_texts("mastodon", blurb, CITATION, NOTE, "#toread")[0] \
-        .startswith("Short one.")
-
-
-# --- blurb -------------------------------------------------------------------
+# --- description -----------------------------------------------------------
 
 
 SUMMARY = {
@@ -188,60 +150,41 @@ class FakeClaude:
     def __init__(self, reply):
         self.reply, self.prompts = reply, []
 
-    def complete_json(self, **kwargs):
+    def complete(self, **kwargs):
         self.prompts.append(kwargs)
         if isinstance(self.reply, Exception):
             raise self.reply
         return self.reply
 
 
-def test_blurb_comes_from_the_model_and_is_sanitised():
-    claude = FakeClaude({"short": ["Finds X. #wow", " ", "Finds X and Y."],
-                         "long": "Finds X.\nIt matters."})
-    blurb = sc.social_blurb(PAPER, SUMMARY, claude, "haiku")
-    assert blurb == {"short": ["Finds X. wow", "Finds X and Y."],
-                     "long": "Finds X. It matters."}
-    # A bare string (the model ignoring the array) is still usable.
-    claude = FakeClaude({"short": "Finds X.", "long": "l"})
-    assert sc.social_blurb(PAPER, SUMMARY, claude, "haiku")["short"] == ["Finds X."]
+def test_description_comes_from_the_model_and_is_sanitised():
+    claude = FakeClaude('"Finds X. #wow\nIt matters."')
+    assert sc.social_description(PAPER, SUMMARY, claude, "haiku") \
+        == "Finds X. wow It matters."
     assert claude.prompts[0]["model"] == "haiku"
     assert "Falsehood diffused farther" in claude.prompts[0]["prompt"]
 
 
-def test_blurb_falls_back_to_the_abstract():
-    expected = {
-        "short": ["False news spreads faster than true news."],
-        "long": SUMMARY["abstract"],
-    }
-    assert sc.social_blurb(PAPER, SUMMARY, None, "") == expected
-    assert sc.social_blurb(PAPER, SUMMARY, FakeClaude(RuntimeError("401")), "m") == expected
-    assert sc.social_blurb(PAPER, SUMMARY, FakeClaude({"short": [], "long": ""}), "m") == expected
+def test_an_overlong_description_loses_its_last_sentence_not_half_of_it():
+    """The second live preview: the model ran past the cap and the LinkedIn
+    description ended in "…resonates…"."""
+    sentence = "This sentence is exactly as long as it needs to be for the test. "
+    claude = FakeClaude(sentence * 20)
+    text = sc.social_description(PAPER, SUMMARY, claude, "haiku")
+    assert len(text) <= sc.DESCRIPTION_MAX
+    assert text.endswith("for the test.") and "…" not in text
 
 
-def test_a_sentence_is_requested_for_each_platforms_room():
-    names = ["mastodon", "threads", "linkedin"]
-    # A short citation leaves more room than the blurb ever takes.
-    assert sc.short_rooms(names, CITATION, NOTE, "#toread") == [sc.MIN_BLURB, sc.SHORT_BLURB]
-    # A long one: Threads (URLs counted in full) is tighter than Mastodon.
-    citation = ("Author, A., " * 22) + "(2026). A title. https://doi.org/10.1126/science.aap9559"
-    frame = f"\n\n{citation}\n\nNote: {NOTE}\n#toread"
-    assert sc.short_rooms(names, citation, NOTE, "#toread") == [
-        sc.MIN_BLURB, 500 - sc.threads_len(frame), 500 - sc.mastodon_len(frame),
-    ]
-    # Too long for one post: the citation goes to a reply, the blurb has room.
-    assert sc.short_rooms(["threads"], "x" * 480, NOTE, "#toread") == [sc.MIN_BLURB, sc.SHORT_BLURB]
-
-
-def test_the_model_is_asked_for_a_little_less_than_the_room():
-    claude = FakeClaude({"short": ["a", "b"], "long": "l"})
-    sc.social_blurb(PAPER, SUMMARY, claude, "haiku", rooms=[60, 150])
-    assert 'Character limits for "short", one sentence each: 54, 135' \
-        in claude.prompts[0]["prompt"]
+def test_description_falls_back_to_the_abstract():
+    assert sc.social_description(PAPER, SUMMARY, None, "") == SUMMARY["abstract"]
+    assert sc.social_description(PAPER, SUMMARY, FakeClaude(RuntimeError("401")), "m") \
+        == SUMMARY["abstract"]
+    assert sc.social_description(PAPER, SUMMARY, FakeClaude("  "), "m") == SUMMARY["abstract"]
 
 
 def test_a_superseding_paper_is_introduced_as_now_published():
-    claude = FakeClaude({"short": "s", "long": "l"})
-    sc.social_blurb(PAPER, SUMMARY, claude, "haiku", supersedes=True)
+    claude = FakeClaude("s.")
+    sc.social_description(PAPER, SUMMARY, claude, "haiku", supersedes=True)
     assert "now published" in claude.prompts[0]["prompt"]
 
 

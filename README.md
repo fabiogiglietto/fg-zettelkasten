@@ -83,8 +83,9 @@ python -m src.main social-post --dry-run # compose the social posts for queued p
 ### Social posts
 
 Each newly-added reading-list note is announced on Mastodon, Threads and
-LinkedIn: a brief description (Claude), the APA-7 citation, the link to the
-note and `#toread`. `update` queues a new paper (`social_pending` in
+LinkedIn: the APA-7 citation, the link to the note and `#toread`. The LinkedIn
+post opens with a brief description (Claude); Mastodon and Threads have no
+room for one next to a full citation. `update` queues a new paper (`social_pending` in
 `data/state.json`); `social-post` runs in `update-vault.yml` *after* the Pages
 deploy — the platforms cache link previews, so the note must be live first —
 and records where each paper went (`social: {mastodon: {url, at}, …}`), so a
