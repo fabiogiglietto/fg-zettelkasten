@@ -77,7 +77,39 @@ python -m src.main update --recluster   # incremental + full re-cluster
 python -m src.main export-site          # export the vault to quartz/content/
 python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper retracted
 python -m src.main check-retractions    # report Crossref retractions / notices (--apply writes)
+python -m src.main social-post --dry-run # compose the social posts for queued papers, publish nothing
 ```
+
+### Social posts
+
+Each newly-added reading-list note is announced on Mastodon, Threads and
+LinkedIn: a brief description (Claude), the APA-7 citation, the link to the
+note and `#toread`. `update` queues a new paper (`social_pending` in
+`data/state.json`); `social-post` runs in `update-vault.yml` *after* the Pages
+deploy — the platforms cache link previews, so the note must be live first —
+and records where each paper went (`social: {mastodon: {url, at}, …}`), so a
+paper is posted once per platform. Same scope as the Slack digest: no
+classics, own publications, retracted papers or superseded stubs, and nothing
+that predates the feature.
+
+Configured by the `social` block in `config.yml`. A platform posts only when
+it is enabled there **and** its token is set as a repo secret:
+
+| Platform | Secrets | Token lifetime |
+|---|---|---|
+| Mastodon | `MASTODON_ACCESS_TOKEN` (scope `write:statuses`) | does not expire |
+| Threads | `THREADS_ACCESS_TOKEN` (`threads_basic`, `threads_content_publish`, `threads_manage_replies`) | 60 days |
+| LinkedIn | `LINKEDIN_ACCESS_TOKEN` (`openid profile w_member_social`; the author is read from the token, or from an optional `LINKEDIN_PERSON_URN`) | 60 days |
+
+Set the repo variables `THREADS_TOKEN_EXPIRES` / `LINKEDIN_TOKEN_EXPIRES`
+(ISO dates) when minting those tokens: the ops Slack channel is warned a week
+before either runs out, and again if a platform rejects its token. A rejected
+token never fails the run; the paper stays queued for that platform (for
+`max_age_days`) and is posted once the secret is replaced.
+
+With `social.dry_run: true` nothing is published: the composed posts go to the
+job log and the ops channel, once per paper. To post a single paper by hand,
+run the workflow with the `social_key` input set to its bibtex key.
 
 ## Vault layout
 
