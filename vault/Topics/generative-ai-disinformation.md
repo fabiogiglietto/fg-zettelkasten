@@ -12,6 +12,7 @@ Emerging work on how generative AI is used in coordinated influence operations (
 
 - [[Baym2026-tr]]
 - [[Beacken2026-zb]]
+- [[Crichton2026-kn]]
 - [[Dierickx2026-tw]]
 - [[Emilio2026-ik]]
 - [[Galip2026-ix]]

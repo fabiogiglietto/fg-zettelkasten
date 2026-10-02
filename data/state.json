@@ -4512,10 +4512,26 @@
           "at": "2026-10-01T17:14:31.598604+00:00"
         }
       }
+    },
+    "bibtex:Crichton2026-kn": {
+      "note_path": "Papers/Crichton2026-kn.md",
+      "topics": [
+        "generative-ai-disinformation",
+        "online-radicalization-and-extremism-on-platforms"
+      ],
+      "assign_fp": "62fe952312e7729ba1d63fb04a5f2b998a1c680c0c5e69ba4afc34e704b55880",
+      "doi": "10.1177/29768624261449726",
+      "title": "Re-generating hate",
+      "pdf_source": "drive",
+      "content_hash": "56bb6bac3c067b2af78bf342574e4ef2f6276682d20b0e4d46451e7ff392cb5b",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-02T06:56:20.060201+00:00"
     }
   },
   "last_full_cluster": "2026-09-28T11:16:42.220477+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "abceb099733a10f50ad95930e84b28eb27cf66178c2d85762b8bc3f4ad4f1f51",
   "emergent_fp": "9d925de95fcb3f35c564f14b157e06421f77e4acd313f9ea55c6240ad75c9351",
   "structure_fps": {
