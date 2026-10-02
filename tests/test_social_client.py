@@ -258,6 +258,39 @@ def test_threads_creates_then_publishes_and_pins_the_note_card(calls):
     assert "link_attachment" not in reply["data"]
 
 
+INVALID_LINK = {"error": {"message": "Fatal", "type": "OAuthException",
+                          "code": -1, "error_subcode": 4279047,
+                          "error_user_title": "Invalid Link Attachment"}}
+
+
+@pytest.mark.parametrize("rejected_at", ["create", "publish"])
+def test_threads_posts_without_the_card_when_the_note_link_is_rejected(calls, rejected_at):
+    """Every brand-new note hit this on 2026-10-01/02: Threads could not
+    validate the minutes-old page as a link attachment, so the post waited a
+    day for the next run."""
+    if rejected_at == "publish":
+        calls.queue.append(FakeResponse(payload={"id": "c0"}))
+    calls.queue += [
+        FakeResponse(400, INVALID_LINK),
+        FakeResponse(payload={"id": "c1"}),
+        FakeResponse(payload={"id": "m1"}),
+        FakeResponse(payload={"permalink": "https://www.threads.com/@fg/post/x"}),
+    ]
+    url = sc.post_threads(["the text"], token="tok", note_url=NOTE, publish_wait=0)
+    assert url == "https://www.threads.com/@fg/post/x"
+    creates = [c for c in calls if c["url"].endswith("/me/threads")]
+    assert creates[0]["data"]["link_attachment"] == NOTE
+    assert "link_attachment" not in creates[-1]["data"]
+    assert creates[-1]["data"]["text"] == "the text"
+
+
+def test_another_threads_error_is_not_retried(calls):
+    calls.queue.append(FakeResponse(400, {"error": {"code": -1, "error_subcode": 123}}))
+    with pytest.raises(sc.SocialError) as err:
+        sc.post_threads(["x"], token="t", note_url=NOTE, publish_wait=0)
+    assert err.value.subcode == 123 and len(calls) == 1
+
+
 def test_linkedin_shares_the_note_as_an_article(calls):
     calls.queue.append(FakeResponse(201, {}, {"x-restli-id": "urn:li:share:9"}))
     url = sc.post_linkedin(["the text"], token="tok", author="abc",
