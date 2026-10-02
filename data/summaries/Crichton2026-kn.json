@@ -1,0 +1,32 @@
+{
+  "abstract": "This short article examines how generative AI has become embedded in far-right propaganda ecosystems, using the 2023 Dublin riots and 2024 Southport unrest as entry points. Through a media experiment, the authors construct a 're-generative' pipeline that converts extremist images collected from Telegram and X into text prompts and then regenerates new images using commercial AI models. They find that these AI systems do not neutralize hateful content but instead sanitize its most explicit markers while preserving, displacing, or rearticulating the underlying ideological bias. The authors argue this affinity between far-right visual culture and generative AI is a structural feature of the models' design, not an accidental byproduct.",
+  "key_claims": [
+    "The synergy between radical right-wing ideologies and generative AI is not an unintended consequence but a structural feature rooted in biases embedded in training data and algorithmic architectures.",
+    "Generative AI systems sanitize the most explicit markers of hateful content while preserving, displacing, or rearticulating the underlying ideological bias.",
+    "The true peril of AI-generated far-right media lies not in deception (the traditional 'deepfake' concern) but in its potency as a vehicle for ideological transmission.",
+    "AI 'sanitation' can reconfigure contentious content into subtler ambient cues that still carry meaning for in-group audiences.",
+    "Commercial image models carry inherent aesthetic biases (e.g., a 1950s Americana aesthetic) that are independent of the input prompts."
+  ],
+  "methods": [
+    "A 'media experiment' constructing a re-generative AI pipeline that loops extremist images through commercial models.",
+    "Data collection combining manual curation of far-right Telegram channels and X accounts with an automated pipeline; Telegram extraction used Bellingcat's Cisticola framework (built on Telethon), and Twitter scraping used the Digital Methods Initiative's Zeeschuimer tool.",
+    "A corpus of 256 images (236 from Telegram, 20 from Twitter) drawn from far-right parties, leaders, influencers, and a generative AI Telegram bot.",
+    "Image-to-text conversion using Replicate/Methexis Inc's Img2prompt model (chosen for zero-shot capability, low cost, open-source status), implemented in a Jupyter Notebook.",
+    "Text-to-image regeneration using Stability AI's SDXL model (chosen as successor to Stable Diffusion, the model presumed to generate most originals).",
+    "Curated qualitative selection of resulting image pairs, presented in a comparison table based on a shared 1950s Americana aesthetic."
+  ],
+  "findings": [
+    "The image-captioning model (Img2prompt) tends toward blandness and does not report race or ethnicity, and failed to recognize anti-Semitic imagery.",
+    "The regeneration model (SDXL) produced sanitized outputs infused with a 1950s Americana aesthetic that appears independent of the textual prompts, indicating model-level bias.",
+    "Contentious content was not removed but reconfigured into subtler ambient cues (e.g., a middle finger morphed into a V for victory sign) that retain meaning for those aware of the context.",
+    "Sanitization of explicit markers does not eliminate problematic ideological visions; it displaces or softens them while keeping them legible to sympathetic audiences."
+  ],
+  "contributions": [
+    "Demonstrates empirically, via a reproducible AI pipeline, how commercial generative models transform and launder far-right visual propaganda.",
+    "Reframes concern about AI-generated extremist imagery away from deepfake-style deception toward ideological transmission and amplification.",
+    "Introduces the concept of a 're-generative loop' as an analytical and methodological device for studying model bias.",
+    "Links the aesthetic logics of commercial AI models to far-right political imaginaries, arguing bias is a design feature rather than a flaw."
+  ],
+  "framing": "The paper positions itself within media studies, platform studies, and research on information disorders and the far right, drawing on science and technology studies critiques of 'unintended consequences' (Parvin and Pollock) and recent work on synthetic imaginaries and ambient amplification (Pilipets and Geboers). It frames generative AI bias not as accidental error but as a structural, ideologically consequential property of commercial systems.",
+  "pdf_source": "drive"
+}
