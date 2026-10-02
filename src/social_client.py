@@ -1,11 +1,11 @@
-"""Announce a newly-added paper note on Mastodon, Threads and LinkedIn.
+"""Announce a newly-added paper note on Mastodon, Threads, LinkedIn and Bluesky.
 
 Each post carries the paper's APA-7 citation, the link to its note on the
 published site and a hashtag. Where there is room — LinkedIn — it opens with
 a brief description, the only LLM-written part (`social_description`, a cheap
-classification-tier call). Mastodon and Threads get none: next to a full
-citation their 500 characters leave a sentence too little room, and a model
-cannot be held to a character count, so it kept arriving clipped.
+classification-tier call). Mastodon, Threads and Bluesky get none: next to a
+full citation their 300-500 characters leave a sentence too little room, and
+a model cannot be held to a character count, so it kept arriving clipped.
 
 Access tokens are secrets, read from the environment by the caller; a platform
 with no token is simply inactive. Nothing here raises past `SocialError`: a
@@ -17,6 +17,7 @@ import os
 import re
 import time
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from typing import Callable, Optional
 
 import requests
@@ -39,6 +40,12 @@ THREADS_API = "https://graph.threads.net/v1.0"
 # us, but Threads' own fetch of a minutes-old GitHub Pages URL fails.
 THREADS_INVALID_LINK = 4279047
 LINKEDIN_UGC = "https://api.linkedin.com/v2/ugcPosts"
+BLUESKY_SERVICE = "https://bsky.social"
+BLUESKY_LIMIT = 300
+# Bluesky lets a link show any text, so a URL is displayed without its scheme
+# and, when the post would not fit otherwise, cut to this many characters —
+# the only way a citation, with its DOI, and the note link fit in 300.
+BLUESKY_LINK_LEN = 32
 LINKEDIN_USERINFO = "https://api.linkedin.com/v2/userinfo"
 
 
@@ -76,6 +83,10 @@ def plain_len(text: str) -> int:
     return len(text)
 
 
+def plain_text(text: str) -> str:
+    return text
+
+
 def mastodon_len(text: str) -> int:
     """Length as Mastodon counts it: every URL is 23 characters."""
     urls = _URL_RE.findall(text)
@@ -85,6 +96,67 @@ def mastodon_len(text: str) -> int:
 def threads_len(text: str) -> int:
     """Length as Threads counts it: emoji weigh their UTF-8 byte length."""
     return sum(len(ch.encode("utf-8")) if ord(ch) > 0xFFFF else 1 for ch in text)
+
+
+def bluesky_link_text(url: str, short: bool = True) -> str:
+    """How a URL is shown in a Bluesky post: no scheme and, in the short form,
+    at most `BLUESKY_LINK_LEN` characters. The link itself stays whole."""
+    shown = re.sub(r"^https?://", "", url)
+    if not short or len(shown) <= BLUESKY_LINK_LEN:
+        return shown
+    return shown[: BLUESKY_LINK_LEN - 1] + "…"
+
+
+def _bluesky_short(text: str) -> bool:
+    """Whether a post needs its links in the short form to fit."""
+    full = _URL_RE.sub(lambda m: bluesky_link_text(m.group(0), short=False), text)
+    return len(full) > BLUESKY_LIMIT
+
+
+def bluesky_display(text: str) -> str:
+    """A post's text as Bluesky shows it: links without their scheme, in full
+    when the post has the room and in the short form when it does not."""
+    short = _bluesky_short(text)
+    return _URL_RE.sub(lambda m: bluesky_link_text(m.group(0), short), text)
+
+
+def bluesky_len(text: str) -> int:
+    """Length as Bluesky counts it — of the shortest form the post can take,
+    which is what decides whether it fits."""
+    return len(_URL_RE.sub(lambda m: bluesky_link_text(m.group(0)), text))
+
+
+def bluesky_richtext(text: str) -> tuple[str, list[dict]]:
+    """The displayed text of a post and its facets (links and hashtags).
+
+    Bluesky does not auto-link: a URL or hashtag is clickable only through a
+    facet naming its byte range (UTF-8, end exclusive) in the text.
+    """
+    shown, facets, last = "", [], 0
+    short = _bluesky_short(text)
+
+    def span(start_text: str, piece: str) -> dict:
+        start = len(start_text.encode("utf-8"))
+        return {"byteStart": start, "byteEnd": start + len(piece.encode("utf-8"))}
+
+    for match in _URL_RE.finditer(text):
+        shown += text[last:match.start()]
+        piece = bluesky_link_text(match.group(0), short)
+        facets.append({
+            "index": span(shown, piece),
+            "features": [{"$type": "app.bsky.richtext.facet#link",
+                          "uri": match.group(0)}],
+        })
+        shown += piece
+        last = match.end()
+    shown += text[last:]
+    for match in _HASHTAG_RE.finditer(shown):
+        facets.append({
+            "index": span(shown[:match.start()], match.group(0)),
+            "features": [{"$type": "app.bsky.richtext.facet#tag",
+                          "tag": match.group(0)[1:]}],
+        })
+    return shown, sorted(facets, key=lambda f: f["index"]["byteStart"])
 
 
 def _trim(text: str, budget: int) -> str:
@@ -122,21 +194,23 @@ def _clean_description(text) -> str:
     return re.sub(r"\s+", " ", text).strip().strip('"')
 
 
-def _fit_citation(citation: str, limit: int, measure: Callable[[str], int]) -> str:
-    """The citation, shortened only when it alone exceeds a post.
+def _chunks(text: str, limit: int, measure: Callable[[str], int]) -> list[str]:
+    """`text` split at word boundaries into parts that each fit one post.
 
-    The DOI link is what makes a citation actionable, so the cut is taken from
-    the text in front of it.
+    A part that is continued ends in "…" and its continuation starts with one,
+    so nothing is lost and the break is visible. A URL is a single word here
+    and is never broken.
     """
-    if measure(citation) <= limit:
-        return citation
-    match = re.search(r"\s(https?://\S+)$", citation)
-    if not match:
-        return _trim(citation, limit)
-    doi = match.group(1)
-    head = citation[: match.start()]
-    budget = limit - measure(f" {doi}")
-    return f"{_trim(head, budget)} {doi}"
+    parts, current = [], ""
+    for word in text.split():
+        candidate = f"{current} {word}".strip()
+        if not current or measure(f"{candidate}…") <= limit:
+            current = candidate
+            continue
+        parts.append(f"{current}…")
+        current = f"…{word}"
+    parts.append(current)
+    return parts
 
 
 def compose(
@@ -156,15 +230,20 @@ def compose(
         Note: <note_url>
         #toread
 
-    The citation is never shortened to make room. A description is kept only
-    as whole sentences, and dropped when not even its first one fits. If the
-    citation, note link and hashtag do not fit one post together, the note
-    link and hashtag follow in a reply.
+    The citation is never shortened. A description is kept only as whole
+    sentences, and dropped when not even its first one fits. If the citation,
+    note link and hashtag do not fit one post together, the note link and
+    hashtag follow in a reply; a citation longer than a post (common in
+    Bluesky's 300 characters) continues there too.
     """
     tail = f"Note: {note_url}\n{hashtag}"
     body = f"{citation}\n\n{tail}"
     if measure(body) > limit:
-        return [_fit_citation(citation, limit, measure), tail]
+        parts = _chunks(citation, limit, measure)
+        closing = f"{parts[-1]}\n\n{tail}"
+        if len(parts) > 1 and measure(closing) <= limit:
+            return [*parts[:-1], closing]
+        return [*parts, tail]
     description = whole_sentences(
         _clean_description(description), limit - measure(f"\n\n{body}")
     )
@@ -415,6 +494,54 @@ def post_linkedin(texts: list[str], *, token: str, note_url: str, title: str,
     return f"https://www.linkedin.com/feed/update/{urn}/"
 
 
+def post_bluesky(texts: list[str], *, token: str, handle: str, note_url: str,
+                 title: str, site: str = "", service: str = BLUESKY_SERVICE,
+                 **_) -> str:
+    """Publish on Bluesky with an app password; return the first post's URL.
+
+    The first post carries the note as its link card; any further text goes
+    out as replies in the same thread.
+    """
+    if not handle:
+        raise SocialError("bluesky needs social.platforms.bluesky.handle in config")
+    service = service.rstrip("/")
+    session = _request(
+        "POST", f"{service}/xrpc/com.atproto.server.createSession", "bluesky",
+        json={"identifier": handle, "password": token},
+    ).json()
+    first_url = root = parent = None
+    for text in texts:
+        shown, facets = bluesky_richtext(text)
+        record = {
+            "$type": "app.bsky.feed.post",
+            "text": shown,
+            "createdAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "langs": ["en"],
+            "facets": facets,
+        }
+        if root is None:
+            record["embed"] = {
+                "$type": "app.bsky.embed.external",
+                "external": {"uri": note_url, "title": title[:300],
+                             "description": site},
+            }
+        else:
+            record["reply"] = {"root": root, "parent": parent}
+        ref = _request(
+            "POST", f"{service}/xrpc/com.atproto.repo.createRecord", "bluesky",
+            first_url,
+            headers={"Authorization": f"Bearer {session['accessJwt']}"},
+            json={"repo": session["did"], "collection": "app.bsky.feed.post",
+                  "record": record},
+        ).json()
+        parent = {"uri": ref["uri"], "cid": ref["cid"]}
+        root = root or parent
+        first_url = first_url or (
+            f"https://bsky.app/profile/{handle}/post/{ref['uri'].rsplit('/', 1)[-1]}"
+        )
+    return first_url
+
+
 # --- platform registry -------------------------------------------------------
 
 
@@ -427,6 +554,8 @@ class Platform:
     describe: bool                  # room for the LLM-written description?
     post: Callable[..., str]
     expires_env: Optional[str] = None   # ISO date the token expires, if it does
+    # The text as the platform shows it, where that differs from what is sent.
+    display: Callable[[str], str] = plain_text
 
 
 PLATFORMS: dict[str, Platform] = {
@@ -441,6 +570,11 @@ PLATFORMS: dict[str, Platform] = {
     "linkedin": Platform(
         "linkedin", "LINKEDIN_ACCESS_TOKEN", 3000, plain_len, True,
         post_linkedin, "LINKEDIN_TOKEN_EXPIRES",
+    ),
+    # An app password, not an OAuth token: it does not expire.
+    "bluesky": Platform(
+        "bluesky", "BLUESKY_APP_PASSWORD", BLUESKY_LIMIT, bluesky_len, False,
+        post_bluesky, display=bluesky_display,
     ),
 }
 

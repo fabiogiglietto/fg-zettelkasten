@@ -19,6 +19,10 @@ on:
         description: "Announce this one paper on social media (bibtex key), queued or not"
         type: string
         default: ""
+      social_dry_run:
+        description: "Social posts: only preview them in the ops channel, publish nothing"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -203,7 +207,7 @@ jobs:
         if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v5
 
-      # Announce newly-added notes on Mastodon / Threads / LinkedIn. After the
+      # Announce newly-added notes on Mastodon / Threads / LinkedIn / Bluesky. After the
       # deploy on purpose: each post links to the note and the platforms cache
       # the link preview, so the page has to be live first (the command also
       # checks it answers 200). Not on the summarize leg — it writes no notes.
@@ -224,18 +228,22 @@ jobs:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
           THREADS_TOKEN_EXPIRES: ${{ vars.THREADS_TOKEN_EXPIRES }}
           LINKEDIN_TOKEN_EXPIRES: ${{ vars.LINKEDIN_TOKEN_EXPIRES }}
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           OPS_SLACK_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
           SOCIAL_KEY: ${{ inputs.social_key }}
+          SOCIAL_DRY_RUN: ${{ inputs.social_dry_run }}
         run: |
           # Fresh JWT for this process (see the Run step: the assertion is
           # single use). A mint failure only costs the Claude-written blurb —
           # the command falls back to the summary's abstract.
           bash .github/scripts/mint-oidc-token.sh \
             || echo "::warning::OIDC mint failed; social blurbs fall back to abstracts"
-          python -m src.main social-post ${SOCIAL_KEY:+--key "$SOCIAL_KEY"}
+          dry_run=""
+          if [ "$SOCIAL_DRY_RUN" = "true" ]; then dry_run="--dry-run"; fi
+          python -m src.main social-post $dry_run ${SOCIAL_KEY:+--key "$SOCIAL_KEY"}
 
       # The posting ledger (state.json: which platforms each paper went to)
       # must be committed, or the next run would announce the same papers.

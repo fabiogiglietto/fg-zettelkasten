@@ -82,10 +82,12 @@ python -m src.main social-post --dry-run # compose the social posts for queued p
 
 ### Social posts
 
-Each newly-added reading-list note is announced on Mastodon, Threads and
-LinkedIn: the APA-7 citation, the link to the note and `#toread`. The LinkedIn
-post opens with a brief description (Claude); Mastodon and Threads have no
-room for one next to a full citation. `update` queues a new paper (`social_pending` in
+Each newly-added reading-list note is announced on Mastodon, Threads,
+LinkedIn and Bluesky: the APA-7 citation, the link to the note and `#toread`.
+The LinkedIn post opens with a brief description (Claude); the others have no
+room for one next to a full citation. On Bluesky (300 characters) links are
+shown in short form and a citation that does not fit one post continues in a
+reply. `update` queues a new paper (`social_pending` in
 `data/state.json`); `social-post` runs in `update-vault.yml` *after* the Pages
 deploy — the platforms cache link previews, so the note must be live first —
 and records where each paper went (`social: {mastodon: {url, at}, …}`), so a
@@ -100,6 +102,7 @@ it is enabled there **and** its token is set as a repo secret:
 |---|---|---|
 | Mastodon | `MASTODON_ACCESS_TOKEN` (scope `write:statuses`) | does not expire |
 | Threads | `THREADS_ACCESS_TOKEN` (`threads_basic`, `threads_content_publish`, `threads_manage_replies`) | 60 days |
+| Bluesky | `BLUESKY_APP_PASSWORD` (an app password; the handle is in `config.yml`) | does not expire |
 | LinkedIn | `LINKEDIN_ACCESS_TOKEN` (`openid profile w_member_social`; the author is read from the token, or from an optional `LINKEDIN_PERSON_URN`) | 60 days |
 
 Set the repo variables `THREADS_TOKEN_EXPIRES` / `LINKEDIN_TOKEN_EXPIRES`
@@ -110,7 +113,9 @@ token never fails the run; the paper stays queued for that platform (for
 
 With `social.dry_run: true` nothing is published: the composed posts go to the
 job log and the ops channel, once per paper. To post a single paper by hand,
-run the workflow with the `social_key` input set to its bibtex key.
+run the workflow with the `social_key` input set to its bibtex key; add
+`social_dry_run=true` to only preview it (every platform enabled in config,
+token or not).
 
 ## Vault layout
 

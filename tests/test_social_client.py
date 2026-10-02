@@ -109,11 +109,76 @@ def test_a_citation_too_long_for_one_post_sends_the_link_in_a_reply():
     assert sc.threads_len(head) <= 500
 
 
-def test_a_citation_longer_than_a_post_keeps_its_doi():
+def test_a_citation_longer_than_a_post_continues_in_the_reply():
+    """Never cut: the rest of the citation, DOI included, opens the reply."""
     citation = ("Author, A., " * 60) + "(2026). A title. https://doi.org/10.1/x"
-    head, _ = sc.compose("", citation, NOTE, "#toread", 500, sc.threads_len)
-    assert sc.threads_len(head) <= 500
-    assert head.endswith("… https://doi.org/10.1/x")
+    head, reply = sc.compose("", citation, NOTE, "#toread", 500, sc.threads_len)
+    assert sc.threads_len(head) <= 500 and sc.threads_len(reply) <= 500
+    assert head.endswith("…") and reply.startswith("…")
+    assert reply.endswith(f"https://doi.org/10.1/x\n\nNote: {NOTE}\n#toread")
+    # Nothing is lost at the break.
+    rejoined = head[:-1] + " " + reply[1:].split("\n\n")[0]
+    assert rejoined == citation
+
+
+# --- Bluesky ---------------------------------------------------------------
+
+
+LONG_CITATION = (
+    "Darius, P., Drews, W., Neumeier, A., & Riedl, J. (2026). Radical populist "
+    "parties receive greater audience support on social media: a cross-platform "
+    "monitoring of digital campaigning for the 2024 European Parliament election. "
+    "Humanities and Social Sciences Communications, 1–14. "
+    "https://doi.org/10.1057/s41599-026-08773-w"
+)
+
+
+def test_bluesky_shows_links_short_and_counts_them_that_way():
+    assert sc.bluesky_link_text("https://doi.org/10.1126/science.aap9559") \
+        == "doi.org/10.1126/science.aap9559"
+    shown = sc.bluesky_link_text(NOTE)
+    assert shown == "fabiogiglietto.github.io/fg-zet…" and len(shown) == 32
+    # What decides whether a post fits is its shortest form...
+    text = f"Note: {NOTE}"
+    assert sc.bluesky_len(text) == len("Note: ") + 32
+    # ...but a post with room to spare shows its links in full,
+    assert sc.bluesky_display(text) == f"Note: {NOTE.removeprefix('https://')}"
+    # and only one that would not fit otherwise shortens them.
+    crowded = f"{'word ' * 50}{NOTE}"
+    assert sc.bluesky_display(crowded) == f"{'word ' * 50}{shown}"
+    assert len(sc.bluesky_display(crowded)) <= 300 < len(crowded) - len("https://")
+
+
+def test_a_short_citation_is_one_bluesky_post():
+    (post,) = sc.platform_texts("bluesky", "ignored", CITATION, NOTE, "#toread")
+    assert post == f"{CITATION}\n\nNote: {NOTE}\n#toread"   # no description
+    assert sc.bluesky_len(post) <= 300
+
+
+def test_a_long_citation_runs_on_into_the_bluesky_reply_whole():
+    head, reply = sc.platform_texts("bluesky", "", LONG_CITATION, NOTE, "#toread")
+    assert sc.bluesky_len(head) <= 300 and sc.bluesky_len(reply) <= 300
+    assert head.endswith("…") and reply.startswith("…")
+    assert "https://doi.org/10.1057/s41599-026-08773-w" in reply
+    assert reply.endswith(f"Note: {NOTE}\n#toread")
+    assert (head[:-1] + " " + reply[1:].split("\n\n")[0]) == LONG_CITATION
+
+
+def test_bluesky_facets_point_at_the_right_bytes():
+    """Offsets are UTF-8 bytes, end exclusive — and the en dash before the
+    link is three of them."""
+    text = f"Pages 1–14. https://doi.org/10.1/x\n\nNote: {NOTE}\n#toread"
+    note = NOTE.removeprefix("https://")
+    shown, facets = sc.bluesky_richtext(text)
+    assert shown == f"Pages 1–14. doi.org/10.1/x\n\nNote: {note}\n#toread"
+    raw = shown.encode("utf-8")
+    spans = [raw[f["index"]["byteStart"]:f["index"]["byteEnd"]].decode() for f in facets]
+    assert spans == ["doi.org/10.1/x", note, "#toread"]
+    assert [f["features"][0] for f in facets] == [
+        {"$type": "app.bsky.richtext.facet#link", "uri": "https://doi.org/10.1/x"},
+        {"$type": "app.bsky.richtext.facet#link", "uri": NOTE},
+        {"$type": "app.bsky.richtext.facet#tag", "tag": "toread"},
+    ]
 
 
 def test_mastodon_budget_uses_its_own_url_arithmetic():
@@ -289,6 +354,45 @@ def test_another_threads_error_is_not_retried(calls):
     with pytest.raises(sc.SocialError) as err:
         sc.post_threads(["x"], token="t", note_url=NOTE, publish_wait=0)
     assert err.value.subcode == 123 and len(calls) == 1
+
+
+def test_bluesky_logs_in_then_posts_a_thread_with_the_note_card(calls):
+    calls.queue += [
+        FakeResponse(payload={"accessJwt": "jwt", "did": "did:plc:abc"}),
+        FakeResponse(payload={"uri": "at://did:plc:abc/app.bsky.feed.post/3k1", "cid": "c1"}),
+        FakeResponse(payload={"uri": "at://did:plc:abc/app.bsky.feed.post/3k2", "cid": "c2"}),
+    ]
+    url = sc.post_bluesky(
+        ["first https://doi.org/10.1/x", "second #toread"], token="app-pw",
+        handle="fg.bsky.social", note_url=NOTE, title="The title", site="fg-zettelkasten",
+    )
+    assert url == "https://bsky.app/profile/fg.bsky.social/post/3k1"
+    login, first, second = calls
+    assert login["url"] == "https://bsky.social/xrpc/com.atproto.server.createSession"
+    assert login["json"] == {"identifier": "fg.bsky.social", "password": "app-pw"}
+    assert first["url"] == "https://bsky.social/xrpc/com.atproto.repo.createRecord"
+    assert first["headers"] == {"Authorization": "Bearer jwt"}
+    assert first["json"]["repo"] == "did:plc:abc"
+    assert first["json"]["collection"] == "app.bsky.feed.post"
+    record = first["json"]["record"]
+    assert record["text"] == "first doi.org/10.1/x"
+    assert record["createdAt"].endswith("Z")
+    assert record["embed"]["external"] == {
+        "uri": NOTE, "title": "The title", "description": "fg-zettelkasten"}
+    assert "reply" not in record
+    reply = second["json"]["record"]
+    ref = {"uri": "at://did:plc:abc/app.bsky.feed.post/3k1", "cid": "c1"}
+    assert reply["reply"] == {"root": ref, "parent": ref}
+    assert "embed" not in reply
+    assert reply["facets"][0]["features"][0]["tag"] == "toread"
+
+
+def test_a_wrong_bluesky_app_password_is_an_auth_error(calls):
+    calls.queue.append(FakeResponse(401, {"error": "AuthenticationRequired",
+                                          "message": "Invalid identifier or password"}))
+    with pytest.raises(sc.SocialAuthError):
+        sc.post_bluesky(["x"], token="bad", handle="fg.bsky.social",
+                        note_url=NOTE, title="T")
 
 
 def test_linkedin_shares_the_note_as_an_article(calls):
