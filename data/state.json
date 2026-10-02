@@ -4528,9 +4528,7 @@
       "content_hash": "56bb6bac3c067b2af78bf342574e4ef2f6276682d20b0e4d46451e7ff392cb5b",
       "podcast_linked": true,
       "slack_posted": true,
-      "social_pending": true,
       "last_processed": "2026-10-02T06:56:20.060201+00:00",
-      "social_blurb": "The study demonstrates how commercial generative AI models transform far-right propaganda rather than neutralizing it, using an experimental pipeline that converts extremist images into text prompts and regenerates them. While the models sanitize explicit hateful markers, they preserve underlying ideological bias through subtler visual cues and aesthetic choices that remain legible to sympathetic audiences. The authors argue this affinity between generative AI systems and extremist visual culture reflects structural design features rather than accidental flaws, reframing concerns about AI-generated extremism from deepfake deception toward ideological transmission and amplification.",
       "social": {
         "mastodon": {
           "url": "https://aoir.social/@fabiogiglietto/117370013231072927",
@@ -4539,6 +4537,14 @@
         "linkedin": {
           "url": "https://www.linkedin.com/feed/update/urn:li:share:7511680888590610432/",
           "at": "2026-10-02T06:58:04.633700+00:00"
+        },
+        "threads": {
+          "url": "https://www.threads.com/@fabiogiglietto/post/Dd_USW3lt15",
+          "at": "2026-10-02T10:54:45.943861+00:00"
+        },
+        "bluesky": {
+          "url": "https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mwv7i6l3bt2h",
+          "at": "2026-10-02T10:54:46.194631+00:00"
         }
       }
     }
