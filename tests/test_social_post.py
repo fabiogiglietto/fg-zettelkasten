@@ -126,6 +126,7 @@ class Harness:
 
         for var in ("MASTODON_ACCESS_TOKEN", "THREADS_ACCESS_TOKEN",
                     "LINKEDIN_ACCESS_TOKEN", "LINKEDIN_PERSON_URN",
+                    "BLUESKY_APP_PASSWORD",
                     "THREADS_TOKEN_EXPIRES", "LINKEDIN_TOKEN_EXPIRES"):
             monkeypatch.delenv(var, raising=False)
         for var in tokens:
@@ -318,6 +319,22 @@ def test_a_config_dry_run_stays_silent_without_any_token(harness):
     # ... while an explicit --dry-run always previews.
     main.cmd_social_post(h.cfg, Namespace(dry_run=True, key=None))
     assert len(h.ops) == 1
+
+
+def test_a_platform_switched_on_later_joins_for_papers_still_queued(harness):
+    """Bluesky was added a day after go-live: a paper still waiting on another
+    platform is announced there too; one already settled is not back-posted."""
+    papers = [_paper("Done"), _paper("Waiting")]
+    h = harness(papers, {
+        "bibtex:Done": {"last_processed": _ago(1),
+                        "social": {"mastodon": {"url": "u", "at": "t"}}},
+        "bibtex:Waiting": _entry(social={"mastodon": {"url": "u", "at": "t"}}),
+    }, tokens=("MASTODON_ACCESS_TOKEN", "BLUESKY_APP_PASSWORD"))
+    h.cfg["social"]["platforms"]["bluesky"] = {"enabled": True,
+                                               "handle": "fg.bsky.social"}
+    h.run()
+    assert [(n, k) for n, k, _ in h.posts] == [("bluesky", "Waiting")]
+    assert "social_pending" not in h.papers["bibtex:Waiting"]
 
 
 def test_disabled_in_config_does_nothing(harness):

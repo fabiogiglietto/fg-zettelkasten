@@ -1963,7 +1963,7 @@ def social_queue(
 
 
 def cmd_social_post(cfg: dict, args) -> int:
-    """Announce newly-added notes on Mastodon, Threads and LinkedIn.
+    """Announce newly-added notes on Mastodon, Threads, LinkedIn and Bluesky.
 
     Runs after the Pages deploy, as its own process: a post links to the note,
     so the note must be live first, and a failure here must never touch the
@@ -2054,6 +2054,7 @@ def cmd_social_post(cfg: dict, args) -> int:
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
     mastodon_cfg = (scfg.get("platforms") or {}).get("mastodon") or {}
     instance = mastodon_cfg.get("instance") or "https://mastodon.social"
+    bluesky_cfg = (scfg.get("platforms") or {}).get("bluesky") or {}
     limits = {}
     if "mastodon" in targets:
         limits["mastodon"] = social_client.mastodon_limit(instance)
@@ -2118,11 +2119,12 @@ def cmd_social_post(cfg: dict, args) -> int:
                 texts = social_client.platform_texts(
                     name, blurb, citation, note_url, hashtag, limits.get(name)
                 )
-                measure = social_client.PLATFORMS[name].measure
+                platform = social_client.PLATFORMS[name]
                 for i, text in enumerate(texts):
                     part = f" {i + 1}/{len(texts)}" if len(texts) > 1 else ""
                     preview.append(
-                        f"*{name}{part}* ({measure(text)} chars)\n```{text}```"
+                        f"*{name}{part}* ({platform.measure(text)} chars)\n"
+                        f"```{platform.display(text)}```"
                     )
             text = "\n\n".join(preview)
             print(text)
@@ -2152,6 +2154,10 @@ def cmd_social_post(cfg: dict, args) -> int:
                     title=paper.title,
                     author=os.environ.get("LINKEDIN_PERSON_URN", ""),
                     user_id=os.environ.get("THREADS_USER_ID") or "me",
+                    handle=bluesky_cfg.get("handle") or "",
+                    service=bluesky_cfg.get("service")
+                    or social_client.BLUESKY_SERVICE,
+                    site=cfg.get("vault", {}).get("site_title") or "",
                 )
                 record = {"url": url, "at": _now()}
             except social_client.SocialAuthError as exc:
@@ -2300,7 +2306,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_social = sub.add_parser(
         "social-post",
-        help="announce newly-added notes on Mastodon, Threads and LinkedIn",
+        help="announce newly-added notes on Mastodon, Threads, LinkedIn and Bluesky",
     )
     p_social.add_argument(
         "--dry-run", action="store_true",

@@ -27,7 +27,7 @@ python -m src.main check-published     # ask OpenAlex if a preprint note is now 
 python -m src.main suggest-classics    # report the works the vault cites most but lacks (no LLM)
 python -m src.main retract KEY --notice DOI --date YYYY-MM-DD  # mark a paper retracted
 python -m src.main check-retractions   # ask Crossref for retractions / notices (--apply to write)
-python -m src.main social-post [--dry-run] [--key KEY]  # announce new notes on Mastodon / Threads / LinkedIn
+python -m src.main social-post [--dry-run] [--key KEY]  # announce new notes on Mastodon / Threads / LinkedIn / Bluesky
 ```
 
 ## Architecture
@@ -49,7 +49,7 @@ python -m src.main social-post [--dry-run] [--key KEY]  # announce new notes on 
 - `src/note_builder.py`    — render Papers/, Topics/, Structures/ markdown
 - `src/site_export.py`     — export the vault to `quartz/content/` for the website
 - `src/slack_client.py`    — the #toread digest of each new paper; ops-channel messages
-- `src/social_client.py`   — compose + publish the Mastodon / Threads / LinkedIn
+- `src/social_client.py`   — compose + publish the Mastodon / Threads / LinkedIn / Bluesky
                              announcement of a new note (the LinkedIn description
                              is the only LLM part)
 - `src/state.py`           — data/state.json persistence
