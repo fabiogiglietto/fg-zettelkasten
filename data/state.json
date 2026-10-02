@@ -4499,9 +4499,7 @@
       "content_hash": "82d3d2160b8a61f539d0221a66cdfad2bd2734adf7ce10f504656598f435aa33",
       "podcast_linked": true,
       "slack_posted": true,
-      "social_pending": true,
       "last_processed": "2026-10-01T17:13:11.260406+00:00",
-      "social_blurb": "The study traces how digital platform infrastructures reorganize institutional language into conspiratorial meaning through pattern and repetition rather than narrative coherence. Analyzing 3.7 million tweets and cross-platform networks, it shows how the World Economic Forum's \"Great Reset\" slogan was decontextualized into a portable antagonistic object, with users producing alignment through modular remixing of fragments across platforms.",
       "social": {
         "mastodon": {
           "url": "https://aoir.social/@fabiogiglietto/117366774716691309",
@@ -4510,6 +4508,10 @@
         "linkedin": {
           "url": "https://www.linkedin.com/feed/update/urn:li:share:7511473635686207489/",
           "at": "2026-10-01T17:14:31.598604+00:00"
+        },
+        "threads": {
+          "url": "https://www.threads.com/@fabiogiglietto/post/Dd-5LURFWeU",
+          "at": "2026-10-02T06:57:53.508376+00:00"
         }
       }
     },
@@ -4527,7 +4529,18 @@
       "podcast_linked": true,
       "slack_posted": true,
       "social_pending": true,
-      "last_processed": "2026-10-02T06:56:20.060201+00:00"
+      "last_processed": "2026-10-02T06:56:20.060201+00:00",
+      "social_blurb": "The study demonstrates how commercial generative AI models transform far-right propaganda rather than neutralizing it, using an experimental pipeline that converts extremist images into text prompts and regenerates them. While the models sanitize explicit hateful markers, they preserve underlying ideological bias through subtler visual cues and aesthetic choices that remain legible to sympathetic audiences. The authors argue this affinity between generative AI systems and extremist visual culture reflects structural design features rather than accidental flaws, reframing concerns about AI-generated extremism from deepfake deception toward ideological transmission and amplification.",
+      "social": {
+        "mastodon": {
+          "url": "https://aoir.social/@fabiogiglietto/117370013231072927",
+          "at": "2026-10-02T06:57:54.268626+00:00"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7511680888590610432/",
+          "at": "2026-10-02T06:58:04.633700+00:00"
+        }
+      }
     }
   },
   "last_full_cluster": "2026-09-28T11:16:42.220477+00:00",
