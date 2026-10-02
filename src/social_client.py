@@ -34,6 +34,10 @@ DESCRIPTION_MAX = 700
 
 MASTODON_URL_LEN = 23       # Mastodon counts every URL as 23 characters
 THREADS_API = "https://graph.threads.net/v1.0"
+# "Invalid Link Attachment": Threads could not validate the URL given as
+# `link_attachment`. Seen on every brand-new note — the page answers 200 to
+# us, but Threads' own fetch of a minutes-old GitHub Pages URL fails.
+THREADS_INVALID_LINK = 4279047
 LINKEDIN_UGC = "https://api.linkedin.com/v2/ugcPosts"
 LINKEDIN_USERINFO = "https://api.linkedin.com/v2/userinfo"
 
@@ -43,9 +47,11 @@ class SocialError(Exception):
     of a two-post thread went out before the failure — the caller must then
     treat the paper as announced, or the retry would duplicate that post."""
 
-    def __init__(self, message: str, first_url: Optional[str] = None):
+    def __init__(self, message: str, first_url: Optional[str] = None,
+                 subcode: Optional[int] = None):
         super().__init__(message)
         self.first_url = first_url
+        self.subcode = subcode      # the platform's own error code, if any
 
 
 class SocialAuthError(SocialError):
@@ -250,10 +256,13 @@ def _check(resp, platform: str, first_url: Optional[str] = None) -> None:
         error = resp.json().get("error")
     except (ValueError, AttributeError):
         error = None
-    if isinstance(error, dict) and error.get("code") == 190:
-        auth = True
+    subcode = None
+    if isinstance(error, dict):
+        auth = auth or error.get("code") == 190
+        subcode = error.get("error_subcode")
     cls = SocialAuthError if auth else SocialError
-    raise cls(f"{platform} returned {resp.status_code}: {detail}", first_url)
+    raise cls(f"{platform} returned {resp.status_code}: {detail}", first_url,
+              subcode)
 
 
 def _request(method: str, url: str, platform: str,
@@ -304,6 +313,19 @@ def post_threads(texts: list[str], *, token: str, note_url: str,
                  user_id: str = "me", publish_wait: float = 5.0, **_) -> str:
     """Publish on Threads: each post is a container that is then published."""
     first_url = reply_to = None
+
+    def publish(data: dict) -> str:
+        container = _request(
+            "POST", f"{THREADS_API}/{user_id}/threads", "threads", first_url,
+            data=data,
+        ).json()["id"]
+        # A container is not publishable the instant it is created.
+        time.sleep(publish_wait)
+        return _request(
+            "POST", f"{THREADS_API}/{user_id}/threads_publish", "threads",
+            first_url, data={"creation_id": container, "access_token": token},
+        ).json()["id"]
+
     for text in texts:
         data = {"media_type": "TEXT", "text": text, "access_token": token}
         if reply_to:
@@ -312,16 +334,19 @@ def post_threads(texts: list[str], *, token: str, note_url: str,
             # Pin the link card to the note; otherwise Threads previews the
             # first URL in the text, which may be the DOI.
             data["link_attachment"] = note_url
-        container = _request(
-            "POST", f"{THREADS_API}/{user_id}/threads", "threads", first_url,
-            data=data,
-        ).json()["id"]
-        # A container is not publishable the instant it is created.
-        time.sleep(publish_wait)
-        media_id = _request(
-            "POST", f"{THREADS_API}/{user_id}/threads_publish", "threads",
-            first_url, data={"creation_id": container, "access_token": token},
-        ).json()["id"]
+        try:
+            media_id = publish(data)
+        except SocialError as exc:
+            if exc.subcode != THREADS_INVALID_LINK or "link_attachment" not in data:
+                raise
+            # Threads cannot validate a brand-new note's URL yet. Post without
+            # the pinned card rather than a day late: the text still carries
+            # the note link.
+            print("  social: threads rejected the note link card — "
+                  "posting without it")
+            media_id = publish(
+                {k: v for k, v in data.items() if k != "link_attachment"}
+            )
         if first_url is None:
             first_url = f"threads:{media_id}"
             try:
