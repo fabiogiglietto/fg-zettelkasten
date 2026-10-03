@@ -1,11 +1,20 @@
 """Announce a newly-added paper note on Mastodon, Threads, LinkedIn and Bluesky.
 
-Each post carries the paper's APA-7 citation, the link to its note on the
-published site and a hashtag. Where there is room — LinkedIn — it opens with
-a brief description, the only LLM-written part (`social_description`, a cheap
-classification-tier call). Mastodon, Threads and Bluesky get none: next to a
-full citation their 300-500 characters leave a sentence too little room, and
-a model cannot be held to a character count, so it kept arriving clipped.
+Each post opens with the column's masthead — the hashtag and a line saying the
+post is AI-generated — so the series is recognisable in a feed and is not
+taken for hand-written. Then the paper's APA-7 citation and the link to its
+note on the published site. Where there is room —
+LinkedIn — a brief description precedes the citation, the only LLM-written
+part of the post (`social_description`, a cheap classification-tier call).
+Mastodon, Threads and Bluesky get none: next to a full citation their 300-500
+characters leave a sentence too little room, and a model cannot be held to a
+character count, so it kept arriving clipped.
+
+Every post shows the note as its link card. Threads, LinkedIn and Bluesky are
+handed the card; Mastodon builds one from the first link in the text, so there
+the note link goes above the citation and its DOI. On Bluesky the card *is*
+the note link: repeating it in 300 characters would push most citations into
+a reply.
 
 Access tokens are secrets, read from the environment by the caller; a platform
 with no token is simply inactive. Nothing here raises past `SocialError`: a
@@ -46,6 +55,12 @@ BLUESKY_LIMIT = 300
 # and, when the post would not fit otherwise, cut to this many characters —
 # the only way a citation, with its DOI, and the note link fit in 300.
 BLUESKY_LINK_LEN = 32
+BLUESKY_BLOB_MAX = 1_000_000    # largest image a link card may carry
+NOTE_LABEL = "Note"
+_OG_IMAGE_RE = re.compile(
+    r"""<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']""",
+    re.IGNORECASE,
+)
 LINKEDIN_USERINFO = "https://api.linkedin.com/v2/userinfo"
 
 
@@ -194,22 +209,24 @@ def _clean_description(text) -> str:
     return re.sub(r"\s+", " ", text).strip().strip('"')
 
 
-def _chunks(text: str, limit: int, measure: Callable[[str], int]) -> list[str]:
+def _chunks(text: str, limit: int, measure: Callable[[str], int],
+            lead: str = "") -> list[str]:
     """`text` split at word boundaries into parts that each fit one post.
 
     A part that is continued ends in "…" and its continuation starts with one,
     so nothing is lost and the break is visible. A URL is a single word here
-    and is never broken.
+    and is never broken. `lead` opens the first part and counts against it.
     """
     parts, current = [], ""
     for word in text.split():
         candidate = f"{current} {word}".strip()
-        if not current or measure(f"{candidate}…") <= limit:
+        opening = "" if parts else lead
+        if not current or measure(f"{opening}{candidate}…") <= limit:
             current = candidate
             continue
-        parts.append(f"{current}…")
+        parts.append(f"{opening}{current}…")
         current = f"…{word}"
-    parts.append(current)
+    parts.append(f"{'' if parts else lead}{current}")
     return parts
 
 
@@ -217,37 +234,54 @@ def compose(
     description: str,
     citation: str,
     note_url: str,
-    hashtag: str,
+    header: str,
     limit: int,
     measure: Callable[[str], int] = plain_len,
+    note_label: str = NOTE_LABEL,
+    note_link: str = "last",
 ) -> list[str]:
     """The post text(s) for one paper on one platform:
+
+        #toread <masthead>     (`header`: the column's first line, always)
 
         <description>          (only where the platform has room for one)
 
         <APA-7 citation>
 
-        Note: <note_url>
-        #toread
+        <note_label>: <note_url>
+
+    `note_link` places the link to the note: "last" as above; "first", between
+    the header and the rest — for a platform that builds its link card from
+    the first link in the text, which would otherwise be the citation's DOI;
+    "card", not in the text at all — for a platform whose posts always carry
+    the note as an attached card and have no characters to spare.
 
     The citation is never shortened. A description is kept only as whole
-    sentences, and dropped when not even its first one fits. If the citation,
-    note link and hashtag do not fit one post together, the note link and
-    hashtag follow in a reply; a citation longer than a post (common in
-    Bluesky's 300 characters) continues there too.
+    sentences, and dropped when not even its first one fits. If the header,
+    citation and note link do not fit one post together, the note link
+    follows in a reply; a citation longer than a post (common in Bluesky's
+    300 characters) continues there too. The header always opens the first
+    post.
     """
-    tail = f"Note: {note_url}\n{hashtag}"
-    body = f"{citation}\n\n{tail}"
-    if measure(body) > limit:
-        parts = _chunks(citation, limit, measure)
-        closing = f"{parts[-1]}\n\n{tail}"
+    lead = f"{header}\n\n" if header else ""
+    link = f"{note_label}: {note_url}"
+    tail = f"\n\n{link}" if note_link == "last" else ""
+    if note_link == "first":
+        lead = f"{lead}{link}\n\n"
+    if measure(f"{lead}{citation}{tail}") > limit:
+        parts = _chunks(citation, limit, measure, lead)
+        if not tail:
+            return parts
+        closing = f"{parts[-1]}{tail}"
         if len(parts) > 1 and measure(closing) <= limit:
             return [*parts[:-1], closing]
-        return [*parts, tail]
+        return [*parts, link]
     description = whole_sentences(
-        _clean_description(description), limit - measure(f"\n\n{body}")
+        _clean_description(description),
+        limit - measure(f"{lead}\n\n{citation}{tail}"),
     )
-    return [f"{description}\n\n{body}" if description else body]
+    body = f"{description}\n\n{citation}" if description else citation
+    return [f"{lead}{body}{tail}"]
 
 
 # --- description (LLM) -------------------------------------------------------
@@ -494,13 +528,37 @@ def post_linkedin(texts: list[str], *, token: str, note_url: str, title: str,
     return f"https://www.linkedin.com/feed/update/{urn}/"
 
 
+def _bluesky_thumb(service: str, jwt: str, image_url: str) -> Optional[dict]:
+    """The note's social image, uploaded as the blob a link card shows.
+
+    Bluesky does not fetch a card's picture itself: the client uploads it.
+    None when anything goes wrong — a card without a picture is still a post.
+    """
+    try:
+        image = _request("GET", image_url, "bluesky")
+        if not image.content or len(image.content) > BLUESKY_BLOB_MAX:
+            return None
+        return _request(
+            "POST", f"{service}/xrpc/com.atproto.repo.uploadBlob", "bluesky",
+            headers={
+                "Authorization": f"Bearer {jwt}",
+                "Content-Type": image.headers.get("Content-Type") or "image/webp",
+            },
+            data=image.content,
+        ).json()["blob"]
+    except (SocialError, KeyError, ValueError, TypeError):
+        print("  social: bluesky link card goes out without its image")
+        return None
+
+
 def post_bluesky(texts: list[str], *, token: str, handle: str, note_url: str,
-                 title: str, site: str = "", service: str = BLUESKY_SERVICE,
-                 **_) -> str:
+                 title: str, site: str = "", image: str = "",
+                 service: str = BLUESKY_SERVICE, **_) -> str:
     """Publish on Bluesky with an app password; return the first post's URL.
 
-    The first post carries the note as its link card; any further text goes
-    out as replies in the same thread.
+    The first post carries the note as its link card — with `image` (the
+    note's social image) as its picture and `site` as the line under the
+    title; any further text goes out as replies in the same thread.
     """
     if not handle:
         raise SocialError("bluesky needs social.platforms.bluesky.handle in config")
@@ -509,6 +567,10 @@ def post_bluesky(texts: list[str], *, token: str, handle: str, note_url: str,
         "POST", f"{service}/xrpc/com.atproto.server.createSession", "bluesky",
         json={"identifier": handle, "password": token},
     ).json()
+    card = {"uri": note_url, "title": title[:300], "description": site}
+    thumb = _bluesky_thumb(service, session["accessJwt"], image) if image else None
+    if thumb:
+        card["thumb"] = thumb
     first_url = root = parent = None
     for text in texts:
         shown, facets = bluesky_richtext(text)
@@ -520,11 +582,8 @@ def post_bluesky(texts: list[str], *, token: str, handle: str, note_url: str,
             "facets": facets,
         }
         if root is None:
-            record["embed"] = {
-                "$type": "app.bsky.embed.external",
-                "external": {"uri": note_url, "title": title[:300],
-                             "description": site},
-            }
+            record["embed"] = {"$type": "app.bsky.embed.external",
+                               "external": card}
         else:
             record["reply"] = {"root": root, "parent": parent}
         ref = _request(
@@ -556,12 +615,16 @@ class Platform:
     expires_env: Optional[str] = None   # ISO date the token expires, if it does
     # The text as the platform shows it, where that differs from what is sent.
     display: Callable[[str], str] = plain_text
+    # Where the link to the note goes (see `compose`). "first" where the link
+    # card is built from the first link in the text, which must then not be
+    # the citation's DOI; "card" where the attached card is the only link.
+    note_link: str = "last"
 
 
 PLATFORMS: dict[str, Platform] = {
     "mastodon": Platform(
         "mastodon", "MASTODON_ACCESS_TOKEN", 500, mastodon_len, False,
-        post_mastodon,
+        post_mastodon, note_link="first",
     ),
     "threads": Platform(
         "threads", "THREADS_ACCESS_TOKEN", 500, threads_len, False,
@@ -574,7 +637,7 @@ PLATFORMS: dict[str, Platform] = {
     # An app password, not an OAuth token: it does not expire.
     "bluesky": Platform(
         "bluesky", "BLUESKY_APP_PASSWORD", BLUESKY_LIMIT, bluesky_len, False,
-        post_bluesky, display=bluesky_display,
+        post_bluesky, display=bluesky_display, note_link="card",
     ),
 }
 
@@ -599,13 +662,33 @@ def active_platforms(cfg: dict, env=None) -> list[str]:
 
 
 def platform_texts(name: str, description: str, citation: str, note_url: str,
-                   hashtag: str, limit: Optional[int] = None) -> list[str]:
+                   header: str, limit: Optional[int] = None,
+                   note_label: str = NOTE_LABEL) -> list[str]:
     """The post text(s) for one platform."""
     platform = PLATFORMS[name]
     return compose(
-        description if platform.describe else "", citation, note_url, hashtag,
-        limit or platform.limit, platform.measure,
+        description if platform.describe else "", citation, note_url, header,
+        limit or platform.limit, platform.measure, note_label,
+        platform.note_link,
     )
+
+
+def post_header(hashtag: str, masthead: str = "") -> str:
+    """The column's first line: the hashtag, then the masthead."""
+    hashtag = "#" + str(hashtag or "toread").lstrip("#")
+    return f"{hashtag} {str(masthead or '').strip()}".strip()
+
+
+def note_image(url: str) -> str:
+    """The note page's social image (`og:image`), or "" when it has none.
+
+    For the platform that cannot fetch a card's picture itself (Bluesky).
+    """
+    try:
+        match = _OG_IMAGE_RE.search(requests.get(url, timeout=15).text)
+    except requests.RequestException:
+        return ""
+    return match.group(1) if match else ""
 
 
 def note_is_live(url: str, tries: int = 3, wait: float = 20.0) -> bool:

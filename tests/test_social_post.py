@@ -113,6 +113,7 @@ class Harness:
             "slack": {"note_base_url": "https://example.org/Papers"},
             "social": {
                 "enabled": True, "dry_run": dry_run, "hashtag": "#toread",
+                "masthead": "AI-generated post", "note_label": "Read the note",
                 "max_per_run": 3, "max_age_days": 14,
                 "platforms": {"mastodon": {"enabled": True,
                                            "instance": "https://m.example"},
@@ -121,6 +122,7 @@ class Harness:
             },
         }
         self.posts: list[tuple[str, str, list[str]]] = []
+        self.sent: dict[str, dict] = {}      # what each poster was handed
         self.fail: dict[str, Exception] = {}
         self.ops: list[str] = []
 
@@ -139,6 +141,7 @@ class Harness:
                 if name in self.fail:
                     raise self.fail[name]
                 self.posts.append((name, key, texts))
+                self.sent[name] = _
                 return f"https://{name}.example/{key}"
             return post
 
@@ -148,6 +151,7 @@ class Harness:
         })
         monkeypatch.setattr(sc, "mastodon_limit", lambda instance: 500)
         monkeypatch.setattr(sc, "note_is_live", lambda url: True)
+        monkeypatch.setattr(sc, "note_image", lambda url: f"{url}-og-image.webp")
         monkeypatch.setattr(main, "_fetch_feed", lambda cfg: papers)
         monkeypatch.setattr(main, "_claude", self._no_claude)
         from src import slack_client
@@ -184,9 +188,15 @@ def test_a_new_paper_is_posted_to_every_platform_with_a_token(harness):
     assert [(name, key) for name, key, _ in h.posts] == [
         ("mastodon", "A"), ("threads", "A"),      # linkedin has no token
     ]
-    assert h.posts[0][2] == [
+    assert h.posts[0][2] == [             # mastodon: the note link first
+        "#toread AI-generated post\n\n"
+        "Read the note: https://example.org/Papers/A\n\n"
+        "Lovelace, A. (2026). Paper A. https://doi.org/10.1/A"
+    ]
+    assert h.posts[1][2] == [
+        "#toread AI-generated post\n\n"
         "Lovelace, A. (2026). Paper A. https://doi.org/10.1/A\n\n"
-        "Note: https://example.org/Papers/A\n#toread"
+        "Read the note: https://example.org/Papers/A"
     ]
 
     entry = h.papers["bibtex:A"]
@@ -200,8 +210,9 @@ def test_only_linkedin_opens_with_a_description(harness):
                 tokens=("MASTODON_ACCESS_TOKEN", "LINKEDIN_ACCESS_TOKEN"))
     h.run()
     texts = {name: parts[0] for name, _, parts in h.posts}
-    assert texts["linkedin"].startswith("About A. More.\n\nLovelace, A. (2026).")
-    assert texts["mastodon"].startswith("Lovelace, A. (2026).")
+    assert texts["linkedin"].startswith(
+        "#toread AI-generated post\n\nAbout A. More.\n\nLovelace, A. (2026).")
+    assert "About A." not in texts["mastodon"]
 
 
 def test_no_description_is_written_when_no_platform_shows_one(harness, monkeypatch):
@@ -220,7 +231,7 @@ def test_a_paper_without_a_summary_is_still_announced(harness):
         f.unlink()
     h.run()
     (post,) = h.posts
-    assert post[2][0].startswith("Lovelace, A. (2026).")
+    assert post[2][0].startswith("#toread AI-generated post\n\nLovelace, A. (2026).")
 
 
 def test_a_second_run_posts_nothing(harness):
@@ -297,7 +308,8 @@ def test_a_dry_run_publishes_nothing_and_previews_once(harness):
     (preview,) = h.ops
     # Every platform switched on in config is previewed, token or not.
     assert all(name in preview for name in ("mastodon", "threads", "linkedin"))
-    assert "Note: https://example.org/Papers/A" in preview
+    assert "#toread AI-generated post" in preview
+    assert "Read the note: https://example.org/Papers/A" in preview
     entry = h.papers["bibtex:A"]
     assert entry["social_pending"] is True and entry["social_previewed"] is True
 
@@ -334,6 +346,8 @@ def test_a_platform_switched_on_later_joins_for_papers_still_queued(harness):
                                                "handle": "fg.bsky.social"}
     h.run()
     assert [(n, k) for n, k, _ in h.posts] == [("bluesky", "Waiting")]
+    # Its link card carries the note's own image.
+    assert h.sent["bluesky"]["image"] == "https://example.org/Papers/Waiting-og-image.webp"
     assert "social_pending" not in h.papers["bibtex:Waiting"]
 
 

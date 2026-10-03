@@ -65,7 +65,11 @@ python -m src.main social-post [--dry-run] [--key KEY]  # announce new notes on 
   LLM-written and regenerate only on bootstrap/recluster.
 - Social posts (`social-post`, `social` config block): run after the Pages
   deploy, never inside `update` — the post links to the note, which must be
-  live. Queue and ledger live on the state entry (`social_pending`, `social`);
+  live. Every post opens with the column's masthead (`social.hashtag` +
+  `social.masthead`: `#toread`, then the AI-generated disclosure) and shows the
+  note as its link card — which is why the note link precedes the DOI on
+  Mastodon and is card-only on Bluesky. Queue and ledger live on the state
+  entry (`social_pending`, `social`);
   an entry without `social_pending` is backlog and is never announced. A
   platform needs its config switch *and* its token secret, so the team fork
   (no secrets) stays silent. The command always exits 0: an expired token is
