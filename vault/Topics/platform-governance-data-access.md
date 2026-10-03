@@ -69,6 +69,7 @@ Research and expert advisory work on platform policy, regulatory compliance, and
 - [[Richter2026-bt]]
 - [[Rieder2025-ju]]
 - [[Rieder2026-pp]]
+- [[Rogers2026-zz]]
 - [[Schiffrin_undated-gi]]
 - [[Schulte2026-df]]
 - [[Swartz2026-zb]]

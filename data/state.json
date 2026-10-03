@@ -4547,10 +4547,26 @@
           "at": "2026-10-02T10:54:46.194631+00:00"
         }
       }
+    },
+    "bibtex:Rogers2026-zz": {
+      "note_path": "Papers/Rogers2026-zz.md",
+      "topics": [
+        "platform-governance-data-access",
+        "information-disorder-fake-news"
+      ],
+      "assign_fp": "1b71bb9b301c1f39c067fa7fbe20ab388fcfe0db8ae8e2ba32c807ad02f541a4",
+      "doi": "10.4324/9781003693192-4",
+      "title": "The performance of borderline content on Facebook",
+      "pdf_source": "drive",
+      "content_hash": "3a425517ad46314af03041beef17ff5667d7ac3cb83d197b738b713b441a653d",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-03T17:04:20.778574+00:00"
     }
   },
   "last_full_cluster": "2026-09-28T11:16:42.220477+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 3,
   "register_signals_hash": "abceb099733a10f50ad95930e84b28eb27cf66178c2d85762b8bc3f4ad4f1f51",
   "emergent_fp": "9d925de95fcb3f35c564f14b157e06421f77e4acd313f9ea55c6240ad75c9351",
   "structure_fps": {
