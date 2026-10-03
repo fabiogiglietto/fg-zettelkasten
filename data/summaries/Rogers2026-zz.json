@@ -1,0 +1,38 @@
+{
+  "abstract": "This chapter examines how 'borderline' content—material that approaches but does not cross Facebook's community standards—has performed on the platform around the 2016, 2020, and 2024 U.S. presidential elections. Combining a historical analysis of Facebook's shrinking data-access regimes with an empirical replication of Craig Silverman's 2016 'fake news' study, the authors trace both the evolution of Meta's content moderation terminology and the changing fortunes of problematic content. They find that while problematic content's performance first worsened and then declined (with mainstream sources increasingly outperforming fringe ones by 2024), the borderline content that does perform well remains almost exclusively from right-wing commentators—an outcome partly obscured by Meta's shift from engagement to reach metrics and its restriction of research data.",
+  "key_claims": [
+    "Meta has progressively redefined problematic content from 'fake news' (2016) to 'false news' (2017) to 'misinformation' (2019) to 'borderline' (2023+), each step shrinking the problem and depoliticizing moderation by removing hyperpartisan sources from consideration and adopting 'content-agnostic' approaches.",
+    "Content once deemed worthy of removal as 'false news' is now retained online by default unless flagged by fact checkers or downranked via user 'personalized ranking,' a reversal completed when Meta ended U.S. fact checking in 2025 in favor of Community Notes.",
+    "Over 2016-2024 the performance of problematic/borderline content first worsened then trended toward mainstream outperforming the fringe, consistent with Facebook's stated moderation goals.",
+    "The borderline content that does perform well is almost exclusively from right-wing commentators, including conspiracy-theory promoters, challenging Meta's depoliticization narrative.",
+    "Meta's successive restrictions of data access (APIs, Graph Search, Social Science One, CrowdTangle, Meta Content Library) have been justified via privacy arguments but also serve to steer and curtail independent scholarly scrutiny.",
+    "Meta favors the 'reach' metric over 'engagement' because engagement data tends to reveal right-wing commentators as top performers, while reach shows more mainstream (and spam-like) content."
+  ],
+  "methods": [
+    "Historical and documentary analysis of Facebook/Meta's data-access regimes, comparing the Open Graph API v1 (2009-2014), the Pages API v2 (-2018), Graph Search, Social Science One, CrowdTangle (2018-2024), and the Meta Content Library (2024+).",
+    "Review of Meta's content moderation policy documents and touchstones: the 2017 White Paper, the 2020/COVID-era misinformation focus, the 2023 'personalized ranking' change, and the 2024-2025 reframing of misinformation as undefinable.",
+    "Empirical replication and refinement of Craig Silverman's 2016 BuzzFeed News 'fake news' study for the 2024 U.S. election, using BuzzSumo as the data source (trending Facebook URLs supplemented with engagement data).",
+    "Construction of candidate- and issue-based keyword lists drawn from Democratic and Republican party platforms and New York Times headlines (covering Biden, Harris, and Trump), queried in BuzzSumo and ranked by total Facebook engagement (reactions + shares + comments).",
+    "Domain-level labeling of URLs using Media Bias/Fact Check (MBFC) ratings, with custom categories of 'borderline/non-borderline' and 'biased/least-biased,' plus analysis of YouTube-originated content and a search of over 12,000 unlabeled URLs for 'pink slime'/imposter sources using Bengani's list and the GATE domain analysis service.",
+    "Case-study examination of top-performing borderline YouTube channels (Guns & Gadgets, The Dr. Phil Podcast, Jonathan Cahn Official) and the fact checks that followed their videos."
+  ],
+  "findings": [
+    "In 2024, borderline content accounted for only a small fraction of total engagement (approximately 330,723 of 47 million engagements with election-related URLs), far less traction than in 2016 or 2020.",
+    "Mainstream domains (e.g., CNN, Fox News, BBC, New York Times) consistently received higher engagement than borderline domains across all three candidates' queries, with BBC and NYT dominating September-October 2024.",
+    "Borderline content attracted attention only in short bursts driven by extreme-right sources such as infowars.com and zerohedge.com; these spikes did not coincide with major campaign events like debates or the Trump assassination attempts.",
+    "Engagement with borderline content came disproportionately from right-wing domains, while mainstream engagement was more balanced; biased content received significantly less engagement than less-biased content, a gap that widened in the final six months, suggesting moderation effects.",
+    "Center-left outlets received notably higher engagement than right-leaning counterparts just prior to the election, a second challenge to the depoliticization narrative.",
+    "No imposter/'pink slime' sources were found among over 12,000 unlabeled URLs, which were mostly regional affiliate news sites, echoing the 2020 finding of their absence.",
+    "The best-performing borderline content in 2024 was largely on YouTube—about 20 of the top 100 engaged-with YouTube videos came from borderline channels (~200,000 engagements vs. ~900,000 for mainstream outlets)—and all directly or indirectly supported Donald Trump.",
+    "Meta's advertising revenue remained robust (over $39 billion in the quarter ending June 2024) despite its efforts to reduce political content."
+  ],
+  "contributions": [
+    "Provides a longitudinal comparison of problematic/borderline content performance across three U.S. election cycles (2016, 2020, 2024) using a consistent replicable methodology.",
+    "Documents and critiques the evolution of Meta's moderation terminology and its strategic shift toward 'content-agnostic,' depoliticized moderation and personalized ranking.",
+    "Offers a 'post-API' / post-CrowdTangle methodological pathway for studying Facebook via off-platform tools (BuzzSumo) and third-party labeling services (MBFC, GATE) after data access was curtailed.",
+    "Empirically demonstrates the persistence of right-leaning borderline content despite overall decline, exposing tensions in Meta's depoliticization claims.",
+    "Analyzes the politics of metric choice—reach vs. engagement—and transparency reporting as instruments that obscure the performance of right-wing commentators."
+  ],
+  "framing": "The chapter is situated within platform governance and content moderation studies, as well as 'post-API' critical internet/digital methods scholarship concerned with the 'APIcalypse' and Meta's steering of academic research. It extends data-journalism and misinformation research (Silverman; Benkler et al.; Roose) by linking the definitional politics of 'fake news'/'borderline' content to debates about depoliticization, free speech, and 'independence by permission' in industry-academic partnerships.",
+  "pdf_source": "drive"
+}
