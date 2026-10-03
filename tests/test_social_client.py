@@ -17,16 +17,19 @@ PAPER = _item_to_paper({
                   "pages": "1146--1151"},
 })
 CITATION = sc.apa_plain(PAPER)
+HEADER = "#toread 📚 From my reading list · 🤖 AI-generated post"
 BLURB = ("False news spreads farther, faster and more broadly than the truth "
          "on Twitter, and people rather than bots drive the difference.")
 
 
 class FakeResponse:
-    def __init__(self, status=200, payload=None, headers=None, text=""):
+    def __init__(self, status=200, payload=None, headers=None, text="",
+                 content=b""):
         self.status_code = status
         self._payload = payload
         self.headers = headers or {}
         self.text = text or str(payload)
+        self.content = content
 
     def json(self):
         if self._payload is None:
@@ -72,9 +75,41 @@ def test_threads_weighs_emoji_by_their_bytes():
     assert sc.threads_len("🎧") == 4
 
 
-def test_a_post_without_description_is_citation_note_and_hashtag():
-    (post,) = sc.compose("", CITATION, NOTE, "#toread", 500, sc.threads_len)
-    assert post == f"{CITATION}\n\nNote: {NOTE}\n#toread"
+def test_a_post_is_the_masthead_the_citation_and_the_note_link():
+    """The column's marks: every post opens with the hashtag and the line
+    saying it is AI-generated."""
+    (post,) = sc.compose("", CITATION, NOTE, HEADER, 500, sc.threads_len)
+    assert post == f"{HEADER}\n\n{CITATION}\n\nNote: {NOTE}"
+    assert post.count("#") == 1
+
+
+def test_the_header_is_the_hashtag_then_the_masthead():
+    assert sc.post_header("#toread", "📚 From my reading list · 🤖 AI-generated post") == HEADER
+    assert sc.post_header("toread", " AI-generated post ") == "#toread AI-generated post"
+    assert sc.post_header("#toread") == "#toread"       # no masthead configured
+    assert sc.post_header(None, None) == "#toread"
+
+
+def test_mastodon_puts_the_note_link_before_the_doi():
+    """Mastodon builds its link card from the first link in the text. With the
+    DOI first, both posts of the first week went out with no card at all."""
+    (post,) = sc.platform_texts("mastodon", "", CITATION, NOTE, HEADER)
+    assert post == f"{HEADER}\n\nNote: {NOTE}\n\n{CITATION}"
+    assert sc._URL_RE.search(post).group(0) == NOTE
+    # The platforms that are handed the card keep the citation first.
+    for name in ("threads", "linkedin"):
+        (post,) = sc.platform_texts(name, "", CITATION, NOTE, "#toread")
+        assert post == f"#toread\n\n{CITATION}\n\nNote: {NOTE}"
+
+
+def test_mastodon_keeps_header_and_note_link_in_the_first_post_of_a_thread():
+    citation = ("Author, A., " * 60) + "(2026). A title. https://doi.org/10.1/x"
+    head, reply = sc.platform_texts("mastodon", "", citation, NOTE, HEADER)
+    assert head.startswith(f"{HEADER}\n\nNote: {NOTE}\n\nAuthor, A.,")
+    assert sc.mastodon_len(head) <= 500 and sc.mastodon_len(reply) <= 500
+    assert head.endswith("…") and reply.startswith("…")
+    assert reply.endswith("https://doi.org/10.1/x")
+    assert "#" not in reply and NOTE not in reply
 
 
 def test_mastodon_and_threads_never_carry_a_description():
@@ -82,10 +117,10 @@ def test_mastodon_and_threads_never_carry_a_description():
     characters leave a sentence too little room and it kept arriving clipped."""
     for name in ("mastodon", "threads"):
         (post,) = sc.platform_texts(name, BLURB, CITATION, NOTE, "#toread")
-        assert post.startswith(CITATION)
+        assert CITATION in post
         assert BLURB not in post
     (post,) = sc.platform_texts("linkedin", BLURB, CITATION, NOTE, "#toread")
-    assert post == f"{BLURB}\n\n{CITATION}\n\nNote: {NOTE}\n#toread"
+    assert post == f"#toread\n\n{BLURB}\n\n{CITATION}\n\nNote: {NOTE}"
 
 
 def test_a_description_is_only_ever_whole_sentences():
@@ -97,15 +132,15 @@ def test_a_description_is_only_ever_whole_sentences():
 
     room = len(CITATION) + len(NOTE) + 60
     (post,) = sc.compose(text, CITATION, NOTE, "#toread", room)
-    assert post.startswith("First finding here.\n\n")
+    assert post.startswith("#toread\n\nFirst finding here.\n\n")
     assert "…" not in post
 
 
 def test_a_citation_too_long_for_one_post_sends_the_link_in_a_reply():
-    citation = ("Author, A., " * 38) + "(2026). A title. https://doi.org/10.1/x"
+    citation = ("Author, A., " * 37) + "(2026). A title. https://doi.org/10.1/x"
     head, reply = sc.compose("", citation, NOTE, "#toread", 500, sc.threads_len)
-    assert head == citation
-    assert reply == f"Note: {NOTE}\n#toread"
+    assert head == f"#toread\n\n{citation}"
+    assert reply == f"Note: {NOTE}"
     assert sc.threads_len(head) <= 500
 
 
@@ -115,9 +150,10 @@ def test_a_citation_longer_than_a_post_continues_in_the_reply():
     head, reply = sc.compose("", citation, NOTE, "#toread", 500, sc.threads_len)
     assert sc.threads_len(head) <= 500 and sc.threads_len(reply) <= 500
     assert head.endswith("…") and reply.startswith("…")
-    assert reply.endswith(f"https://doi.org/10.1/x\n\nNote: {NOTE}\n#toread")
-    # Nothing is lost at the break.
-    rejoined = head[:-1] + " " + reply[1:].split("\n\n")[0]
+    assert reply.endswith(f"https://doi.org/10.1/x\n\nNote: {NOTE}")
+    # The header opens the first post only; nothing is lost at the break.
+    assert head.startswith("#toread\n\n") and "#" not in reply
+    rejoined = head.removeprefix("#toread\n\n")[:-1] + " " + reply[1:].split("\n\n")[0]
     assert rejoined == citation
 
 
@@ -150,8 +186,10 @@ def test_bluesky_shows_links_short_and_counts_them_that_way():
 
 
 def test_a_short_citation_is_one_bluesky_post():
-    (post,) = sc.platform_texts("bluesky", "ignored", CITATION, NOTE, "#toread")
-    assert post == f"{CITATION}\n\nNote: {NOTE}\n#toread"   # no description
+    """No description, and no note link in the text: the attached card is the
+    link, and 300 characters have none to spare for saying it twice."""
+    (post,) = sc.platform_texts("bluesky", "ignored", CITATION, NOTE, HEADER)
+    assert post == f"{HEADER}\n\n{CITATION}"
     assert sc.bluesky_len(post) <= 300
 
 
@@ -160,8 +198,8 @@ def test_a_long_citation_runs_on_into_the_bluesky_reply_whole():
     assert sc.bluesky_len(head) <= 300 and sc.bluesky_len(reply) <= 300
     assert head.endswith("…") and reply.startswith("…")
     assert "https://doi.org/10.1057/s41599-026-08773-w" in reply
-    assert reply.endswith(f"Note: {NOTE}\n#toread")
-    assert (head[:-1] + " " + reply[1:].split("\n\n")[0]) == LONG_CITATION
+    assert head.startswith("#toread\n\n") and NOTE not in reply
+    assert head.removeprefix("#toread\n\n")[:-1] + " " + reply[1:] == LONG_CITATION
 
 
 def test_bluesky_facets_point_at_the_right_bytes():
@@ -195,7 +233,7 @@ def test_model_text_cannot_smuggle_links_or_extra_hashtags():
         "Great #misinformation study\nsee https://evil.example/x now.",
         CITATION, NOTE, "#toread", 3000,
     )
-    assert post.split("\n\n")[0] == "Great misinformation study see now."
+    assert post.split("\n\n")[1] == "Great misinformation study see now."
     assert post.count("#") == 1
 
 
@@ -385,6 +423,62 @@ def test_bluesky_logs_in_then_posts_a_thread_with_the_note_card(calls):
     assert reply["reply"] == {"root": ref, "parent": ref}
     assert "embed" not in reply
     assert reply["facets"][0]["features"][0]["tag"] == "toread"
+
+
+def test_bluesky_uploads_the_note_image_for_its_link_card(calls):
+    """Bluesky does not fetch a card's picture: without the upload the card
+    is a bare title."""
+    blob = {"$type": "blob", "ref": {"$link": "bafy"}, "mimeType": "image/webp",
+            "size": 3}
+    calls.queue += [
+        FakeResponse(payload={"accessJwt": "jwt", "did": "did:plc:abc"}),
+        FakeResponse(headers={"Content-Type": "image/webp"}, content=b"img"),
+        FakeResponse(payload={"blob": blob}),
+        FakeResponse(payload={"uri": "at://did:plc:abc/app.bsky.feed.post/3k1", "cid": "c1"}),
+    ]
+    sc.post_bluesky(
+        ["#toread first"], token="app-pw", handle="fg.bsky.social",
+        note_url=NOTE, title="The title", site="fg-zettelkasten",
+        image=f"{NOTE}-og-image.webp",
+    )
+    _, fetch, upload, post = calls
+    assert (fetch["method"], fetch["url"]) == ("GET", f"{NOTE}-og-image.webp")
+    assert upload["url"] == "https://bsky.social/xrpc/com.atproto.repo.uploadBlob"
+    assert upload["headers"] == {"Authorization": "Bearer jwt",
+                                 "Content-Type": "image/webp"}
+    assert upload["data"] == b"img"
+    assert post["json"]["record"]["embed"]["external"] == {
+        "uri": NOTE, "title": "The title",
+        "description": "fg-zettelkasten", "thumb": blob}
+
+
+@pytest.mark.parametrize("image", [
+    FakeResponse(404, {"error": "NotFound"}),
+    FakeResponse(content=b"x" * (sc.BLUESKY_BLOB_MAX + 1)),
+])
+def test_bluesky_still_posts_when_the_card_image_is_unusable(calls, image):
+    calls.queue += [
+        FakeResponse(payload={"accessJwt": "jwt", "did": "did:plc:abc"}),
+        image,
+        FakeResponse(payload={"uri": "at://did:plc:abc/app.bsky.feed.post/3k1", "cid": "c1"}),
+    ]
+    url = sc.post_bluesky(
+        ["#toread first"], token="app-pw", handle="fg.bsky.social",
+        note_url=NOTE, title="The title", image=f"{NOTE}-og-image.webp",
+    )
+    assert url.endswith("/post/3k1")
+    assert "thumb" not in calls[-1]["json"]["record"]["embed"]["external"]
+
+
+def test_the_note_image_is_read_from_the_page(monkeypatch):
+    page = ('<meta property="og:title" content="T"/>'
+            f'<meta property="og:image" content="{NOTE}-og-image.webp"/>')
+    monkeypatch.setattr(sc.requests, "get",
+                        lambda url, timeout=None: FakeResponse(text=page))
+    assert sc.note_image(NOTE) == f"{NOTE}-og-image.webp"
+    monkeypatch.setattr(sc.requests, "get",
+                        lambda url, timeout=None: FakeResponse(text="<html/>"))
+    assert sc.note_image(NOTE) == ""
 
 
 def test_a_wrong_bluesky_app_password_is_an_auth_error(calls):

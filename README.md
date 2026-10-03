@@ -83,11 +83,17 @@ python -m src.main social-post --dry-run # compose the social posts for queued p
 ### Social posts
 
 Each newly-added reading-list note is announced on Mastodon, Threads,
-LinkedIn and Bluesky: the APA-7 citation, the link to the note and `#toread`.
-The LinkedIn post opens with a brief description (Claude); the others have no
-room for one next to a full citation. On Bluesky (300 characters) links are
-shown in short form and a citation that does not fit one post continues in a
-reply. `update` queues a new paper (`social_pending` in
+LinkedIn and Bluesky as an instalment of a recognisable column: a masthead
+line that starts with `#toread` and says the post is AI-generated
+(`social.masthead`), the APA-7 citation, and the link to the note. The
+LinkedIn post adds a brief description (Claude) above the citation; the
+others have no room for one next to a full citation. Every post shows the note as its link card, with the
+note's social image: Threads, LinkedIn and Bluesky are handed the card (the
+image is uploaded to Bluesky, which does not fetch it), while Mastodon builds
+it from the first link in the text — so there the note link comes before the
+citation and its DOI. On Bluesky (300 characters) the card is the only link
+to the note, links are shown in short form and a citation that does not fit
+one post continues in a reply. `update` queues a new paper (`social_pending` in
 `data/state.json`); `social-post` runs in `update-vault.yml` *after* the Pages
 deploy — the platforms cache link previews, so the note must be live first —
 and records where each paper went (`social: {mastodon: {url, at}, …}`), so a

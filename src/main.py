@@ -2050,7 +2050,9 @@ def cmd_social_post(cfg: dict, args) -> int:
         print("social-post: nothing to announce")
         return 0
 
-    hashtag = "#" + str(scfg.get("hashtag") or "toread").lstrip("#")
+    header = social_client.post_header(scfg.get("hashtag"), scfg.get("masthead"))
+    note_label = str(scfg.get("note_label") or social_client.NOTE_LABEL)
+    site_title = cfg.get("vault", {}).get("site_title") or ""
     summaries_dir = _abs(cfg["paths"]["summaries_dir"])
     mastodon_cfg = (scfg.get("platforms") or {}).get("mastodon") or {}
     instance = mastodon_cfg.get("instance") or "https://mastodon.social"
@@ -2112,12 +2114,16 @@ def cmd_social_post(cfg: dict, args) -> int:
             continue
         citation = social_client.apa_plain(paper)
         posted = dict(entry.get("social") or {})
+        card_image = ""
+        if not dry_run and "bluesky" in targets and "bluesky" not in posted:
+            card_image = social_client.note_image(note_url)
 
         if dry_run:
             preview = [f"*Social post preview — {paper.bibtex_key}* (dry run, nothing published)"]
             for name in targets:
                 texts = social_client.platform_texts(
-                    name, blurb, citation, note_url, hashtag, limits.get(name)
+                    name, blurb, citation, note_url, header, limits.get(name),
+                    note_label,
                 )
                 platform = social_client.PLATFORMS[name]
                 for i, text in enumerate(texts):
@@ -2142,7 +2148,8 @@ def cmd_social_post(cfg: dict, args) -> int:
                 continue
             platform = social_client.PLATFORMS[name]
             texts = social_client.platform_texts(
-                name, blurb, citation, note_url, hashtag, limits.get(name)
+                name, blurb, citation, note_url, header, limits.get(name),
+                note_label,
             )
             try:
                 url = platform.post(
@@ -2157,7 +2164,10 @@ def cmd_social_post(cfg: dict, args) -> int:
                     handle=bluesky_cfg.get("handle") or "",
                     service=bluesky_cfg.get("service")
                     or social_client.BLUESKY_SERVICE,
-                    site=cfg.get("vault", {}).get("site_title") or "",
+                    site=site_title,
+                    # The picture of Bluesky's link card, which it cannot
+                    # fetch for itself.
+                    image=card_image,
                 )
                 record = {"url": url, "at": _now()}
             except social_client.SocialAuthError as exc:

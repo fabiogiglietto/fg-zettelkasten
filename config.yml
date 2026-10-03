@@ -139,11 +139,15 @@ slack:
   episode_wait_days: 2
 
 social:
-  # Announce each newly-added paper note on social media: the APA-7 citation,
-  # the link to the note and the hashtag — on LinkedIn preceded by a brief
-  # description (Claude, assign_model). Mastodon, Threads and Bluesky get no
-  # description: next to a full citation their 300-500 characters leave it too
-  # little room. Posted by `python -m src.main social-post`, which update-vault
+  # Announce each newly-added paper note on social media: the masthead line,
+  # the APA-7 citation and the link to the note — on LinkedIn with a brief
+  # description (Claude, assign_model) above the citation. Mastodon, Threads
+  # and Bluesky get no description: next to a full citation their 300-500
+  # characters leave it too little room. Every post shows the note as its link
+  # card. On Mastodon the note link therefore precedes the citation (its card
+  # is built from the first link in the text); on Bluesky the card is the only
+  # link to the note (300 characters cannot afford it twice).
+  # Posted by `python -m src.main social-post`, which update-vault
   # runs *after* the Pages deploy — the platforms cache link previews, so the
   # note must be live first.
   # Same scope as the #toread digest: new reading-list papers only — never a
@@ -154,7 +158,14 @@ social:
   # without publishing anything. Flip to false once the previews read right;
   # papers previewed in the last `max_age_days` are then posted for real.
   dry_run: false
+  # The column's marks. Every post (the first one of a thread) opens with the
+  # hashtag followed by the masthead, so the series is recognisable in a feed
+  # and nobody takes it for hand-written; the link to the note is labelled
+  # with `note_label`. The masthead counts against the character limit: on
+  # Bluesky (300) a longer one sends more citations into a reply.
   hashtag: "#toread"
+  masthead: "📚 From my reading list · 🤖 AI-generated post"
+  note_label: "Note"
   # At most this many papers per run, oldest first, so a bulk import drips out.
   max_per_run: 3
   # A paper still unannounced after this many days (a token expired and was
