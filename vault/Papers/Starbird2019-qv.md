@@ -5,7 +5,7 @@ authors: ["Starbird, Kate", "Arif, Ahmer", "Wilson, Tom"]
 year: 2019
 doi: 
 bibtex_key: Starbird2019-qv
-topics: [coordinated-inauthentic-behavior, information-disorder-fake-news]
+topics: [coordinated-inauthentic-behavior, information-disorder]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Disinformation%20as%20Collaborative%20Work%3A%20Surfacing%20the%20Participatory%20Nature%20of%20Strategic%20Information%20Operations

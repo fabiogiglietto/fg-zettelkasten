@@ -5,7 +5,7 @@ authors: ["Jennifer Allen", "Baird Howland", "Markus M. Mobius", "David M. Roths
 year: 2020
 doi: 10.2139/ssrn.3502581
 bibtex_key: Allen2020-nj
-topics: [misinformation-exposure-recalibration, information-disorder-fake-news]
+topics: [misinformation-exposure-recalibration, information-disorder]
 citation_count: 6
 open_access: false
 source_url: https://doi.org/10.2139/ssrn.3502581

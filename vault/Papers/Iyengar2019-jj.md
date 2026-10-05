@@ -5,7 +5,7 @@ authors: ["Shanto Iyengar", "Yphtach Lelkes", "Matthew Levendusky", "Neil Malhot
 year: 2019
 doi: 10.1146/annurev-polisci-051117-073034
 bibtex_key: Iyengar2019-jj
-topics: [political-polarization-partisanship, information-disorder-fake-news]
+topics: [political-polarization-and-partisanship]
 citation_count: 2350
 open_access: false
 source_url: https://doi.org/10.1146/annurev-polisci-051117-073034

@@ -5,7 +5,7 @@ authors: ["Gordon Pennycook", "David Gertler Rand"]
 year: 2021
 doi: 10.31234/osf.io/ar96c
 bibtex_key: Pennycook2021-jq
-topics: [misinformation-exposure-recalibration, information-disorder-fake-news]
+topics: [misinformation-exposure-recalibration, climate-and-misinformation-message-interventions]
 citation_count: 9
 open_access: false
 source_url: https://doi.org/10.31234/osf.io/ar96c

@@ -5,7 +5,7 @@ authors: ["Richard Rogers", "Kamila Koronska"]
 year: 2026
 doi: 10.4324/9781003693192-4
 bibtex_key: Rogers2026-zz
-topics: [platform-governance-data-access, information-disorder-fake-news]
+topics: [platform-governance-and-data-access, misinformation-exposure-recalibration]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.4324/9781003693192-4

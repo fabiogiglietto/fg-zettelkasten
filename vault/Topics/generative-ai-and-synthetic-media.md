@@ -1,36 +1,40 @@
 ---
 type: topic
-slug: generative-ai-disinformation
+slug: generative-ai-and-synthetic-media
 emergent: false
 ---
 
-# Generative AI & Disinformation
+# Generative AI & Synthetic Media in Disinformation
 
-Emerging work on how generative AI is used in coordinated influence operations (e.g., AI-generated gambling promotion imagery) and how it reshapes disinformation tactics, paired with new teaching on generative AI and media aimed at training the next generation of researchers.
+Emerging focus on how generative AI tools are used to produce persuasive or deceptive content (e.g., gambling promotion, deepfakes) and to counter disinformation, reflecting current teaching (IA Generativa e Media) and 2025-2026 publications on synthetic visual persuasion and LLM-based countermeasures.
 
 ## Papers
 
-- [[Baym2026-tr]]
 - [[Beacken2026-zb]]
+- [[Choi2026-bz]]
 - [[Crichton2026-kn]]
 - [[Dierickx2026-tw]]
 - [[Emilio2026-ik]]
 - [[Galip2026-ix]]
-- [[Giada2026-fc9a3833]]
 - [[Giglietto2026-9b6a992d]]
+- [[Gilardi2026-hw]]
+- [[Hackenburg2025-dj]]
 - [[Hackenburg2026-ud]]
 - [[Hameleers2026-mc]]
 - [[Hollingshead2026-vx]]
+- [[Kasianenko2026-tn]]
 - [[Kotz2026-lk]]
 - [[Lin2025-xp]]
 - [[Luceri2025-tr]]
+- [[Manovich2026-ih]]
 - [[Mattis2026-gu]]
-- [[Nangle2026-yo]]
 - [[Nguyen2026-vm]]
 - [[Orlando2025-ul]]
 - [[Perez-Curiel2026-ld]]
+- [[Rauchfleisch2026-fa]]
 - [[Schiffrin_undated-gi]]
 - [[Schroeder2026-im]]
+- [[Suk2026-ai]]
 - [[Tang2026-gu]]
 - [[Topinka2026-hb]]
 - [[Tornberg2026-lc]]
@@ -42,6 +46,6 @@ Emerging work on how generative AI is used in coordinated influence operations (
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "generative-ai-disinformation")
+WHERE contains(topics, "generative-ai-and-synthetic-media")
 SORT discovery_date DESC
 ```

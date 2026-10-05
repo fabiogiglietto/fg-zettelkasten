@@ -5,7 +5,7 @@ authors: ["Messing, Solomon", "Westwood, Sean J"]
 year: 2014
 doi: 
 bibtex_key: Messing2014-jc
-topics: [political-polarization-partisanship, misinformation-exposure-recalibration]
+topics: [political-polarization-and-partisanship]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Selective%20Exposure%20in%20the%20Age%20of%20Social%20Media%3A%20Endorsements%20Trump%20Partisan%20Source%20Affiliation%20When%20Selecting%20News%20Online

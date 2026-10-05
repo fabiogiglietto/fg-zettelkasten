@@ -5,7 +5,7 @@ authors: ["Deen Freelon", "Chris Wells"]
 year: 2020
 doi: 10.1080/10584609.2020.1723755
 bibtex_key: Freelon2020-yp
-topics: [information-disorder-fake-news, political-polarization-partisanship]
+topics: [information-disorder, political-polarization-and-partisanship]
 citation_count: 448
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2020.1723755

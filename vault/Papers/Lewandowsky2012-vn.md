@@ -5,7 +5,7 @@ authors: ["Lewandowsky, Stephan", "Ecker, Ullrich K H", "Seifert, Colleen M", "S
 year: 2012
 doi: 
 bibtex_key: Lewandowsky2012-vn
-topics: [information-disorder-fake-news, misinformation-exposure-recalibration]
+topics: [information-disorder, climate-and-misinformation-message-interventions]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Misinformation%20and%20its%20correction%3A%20Continued%20influence%20and%20successful%20debiasing%3A%20Continued%20influence%20and%20successful%20debiasing

@@ -5,7 +5,7 @@ authors: ["Andrew M. Guess", "Neil Malhotra", "Jennifer Pan", "Pablo Barberá", 
 year: 2023
 doi: 10.1126/science.abp9364
 bibtex_key: Guess2023-ur
-topics: [misinformation-exposure-recalibration, political-polarization-partisanship]
+topics: [political-polarization-and-partisanship, misinformation-exposure-recalibration]
 citation_count: 325
 open_access: false
 source_url: https://doi.org/10.1126/science.abp9364

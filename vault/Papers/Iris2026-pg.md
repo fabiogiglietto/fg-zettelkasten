@@ -5,7 +5,7 @@ authors: ["Íris Damião", "João Franco", "Mariana Silva", "Paulo Almeida", "Pe
 year: 2026
 doi: 
 bibtex_key: Iris2026-pg
-topics: [italian-electoral-communication, political-polarization-partisanship]
+topics: [political-polarization-and-partisanship, information-disorder]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2601.05826v1

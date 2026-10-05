@@ -5,7 +5,7 @@ authors: ["Andrew Chadwick", "James Dennis", "Amy P. Smith"]
 year: 2015
 doi: 10.4324/9781315716299-2
 bibtex_key: Chadwick2015-ii
-topics: [information-disorder-fake-news, political-polarization-partisanship]
+topics: [political-polarization-and-partisanship, information-disorder]
 citation_count: 33
 open_access: false
 source_url: https://doi.org/10.4324/9781315716299-2

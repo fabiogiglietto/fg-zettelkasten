@@ -5,7 +5,7 @@ authors: ["Philipp Darius", "Wiebke Drews", "Andreas Neumeier", "Jasmin Riedl"]
 year: 2026
 doi: 10.1057/s41599-026-08773-w
 bibtex_key: Darius2026-xl
-topics: [italian-electoral-communication, political-polarization-partisanship]
+topics: [political-polarization-and-partisanship, italian-electoral-communication]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1057/s41599-026-08773-w

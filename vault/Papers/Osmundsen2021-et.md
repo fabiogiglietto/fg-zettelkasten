@@ -5,7 +5,7 @@ authors: ["MATHIAS OSMUNDSEN", "ALEXANDER BOR", "PETER BJERREGAARD VAHLSTRUP", "
 year: 2021
 doi: 10.1017/s0003055421000290
 bibtex_key: Osmundsen2021-et
-topics: [political-polarization-partisanship, information-disorder-fake-news]
+topics: [political-polarization-and-partisanship, information-disorder]
 citation_count: 374
 open_access: false
 source_url: https://doi.org/10.1017/s0003055421000290

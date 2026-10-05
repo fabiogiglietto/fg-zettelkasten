@@ -5,7 +5,7 @@ authors: ["Michela Del Vicario", "Alessandro Bessi", "Fabiana Zollo", "Fabio Pet
 year: 2016
 doi: 10.1073/pnas.1517441113
 bibtex_key: Del-Vicario2016-uj
-topics: [information-disorder-fake-news, political-polarization-partisanship]
+topics: [information-disorder, political-polarization-and-partisanship]
 citation_count: 1854
 open_access: false
 source_url: https://doi.org/10.1073/pnas.1517441113

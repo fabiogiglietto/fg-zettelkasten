@@ -5,7 +5,7 @@ authors: ["Gregory Eady", "Tom Paskhalis", "Jan Zilinsky", "Richard Bonneau", "J
 year: 2023
 doi: 10.1038/s41467-022-35576-9
 bibtex_key: Eady2023-xg
-topics: [misinformation-exposure-recalibration, coordinated-inauthentic-behavior]
+topics: [misinformation-exposure-recalibration, information-disorder]
 citation_count: 104
 open_access: false
 source_url: https://doi.org/10.1038/s41467-022-35576-9

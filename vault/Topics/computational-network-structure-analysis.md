@@ -11,14 +11,9 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 ## Papers
 
 - [[Askanius2026-de]]
-- [[Bailard2024-pj]]
-- [[Balluff2026-ev]]
-- [[Brown2026-br]]
 - [[Bruns2025-fz]]
 - [[Dehghan2026-sy]]
-- [[Di-Marco2025-aa]]
-- [[Di_Marco2026-xu]]
-- [[Efstratiou2025-gs]]
+- [[Fan2026-af]]
 - [[Ferrara2026-io]]
 - [[Gerard2025-br]]
 - [[Gerbaudo2026-fo]]
@@ -26,6 +21,7 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 - [[Heft2021-ky]]
 - [[Iannucci2025-eg]]
 - [[Kakavand2026-kt]]
+- [[Lai2024-to]]
 - [[Mannocci2025-ig]]
 - [[Minici2024-tf]]
 - [[Ng2026-og]]

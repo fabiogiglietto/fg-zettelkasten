@@ -5,7 +5,7 @@ authors: ["Kobi Hackenburg", "Ben M. Tappin", "Luke Hewitt", "Ed Saunders", "Sid
 year: 2025
 doi: 10.1126/science.aea3884
 bibtex_key: Hackenburg2025-dj
-topics: [llm-computational-methods, misinformation-exposure-recalibration]
+topics: [generative-ai-and-synthetic-media, llms-in-computational-content-analysis]
 citation_count: 24
 open_access: false
 source_url: https://doi.org/10.1126/science.aea3884

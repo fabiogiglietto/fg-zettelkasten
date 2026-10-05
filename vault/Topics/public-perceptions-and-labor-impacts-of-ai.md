@@ -10,6 +10,7 @@ Survey- and discourse-based studies of how publics and workers perceive, use, an
 
 ## Papers
 
+- [[Baym2026-tr]]
 - [[DiGiuseppe2026-pu]]
 - [[Fattorini2026-bo]]
 - [[Gilardi2026-hw]]
@@ -17,7 +18,6 @@ Survey- and discourse-based studies of how publics and workers perceive, use, an
 - [[Gottfried2026-ww]]
 - [[Hackenburg2026-ud]]
 - [[Mattis2026-gu]]
-- [[Rauchfleisch2026-fa]]
 - [[Sbaraini-Fontes2026-cw]]
 - [[Suk2026-ai]]
 - [[Unknown2025-qj]]

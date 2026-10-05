@@ -5,7 +5,7 @@ authors: ["Aytalina Kulichkina", "Paul Balluff", "Nicola Righetti", "Annie Waldh
 year: 2026
 doi: 10.1140/epjds/s13688-026-00637-2
 bibtex_key: Kulichkina2026-zk
-topics: [coordinated-inauthentic-behavior, online-radicalization-and-extremism-on-platforms]
+topics: [coordinated-inauthentic-behavior]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1140/epjds/s13688-026-00637-2

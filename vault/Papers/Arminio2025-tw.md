@@ -5,7 +5,7 @@ authors: ["Luigi Arminio", "Matteo Magnani", "Matias Piqueras", "Luca Rossi", "A
 year: 2025
 doi: 10.31235/osf.io/bf459
 bibtex_key: Arminio2025-tw
-topics: [llm-computational-methods, social-media-research-methods]
+topics: [llm-augmented-research-methods, research-methods-and-ethics-in-css]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/bf459

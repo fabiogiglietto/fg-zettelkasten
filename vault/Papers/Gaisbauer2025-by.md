@@ -5,7 +5,7 @@ authors: ["Felix Gaisbauer", "Armin Pournaki", "Jakob Ohme"]
 year: 2025
 doi: 
 bibtex_key: Gaisbauer2025-by
-topics: [italian-electoral-communication, political-polarization-partisanship]
+topics: [political-polarization-and-partisanship, research-methods-and-ethics-in-css]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2505.08359v1
