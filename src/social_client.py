@@ -1,7 +1,7 @@
 """Announce a newly-added paper note on Mastodon, Threads, LinkedIn and Bluesky.
 
 Each post opens with the column's masthead — the hashtag and a line saying the
-post is AI-generated — so the series is recognisable in a feed and is not
+post is auto-posted — so the series is recognisable in a feed and is not
 taken for hand-written. Then the paper's APA-7 citation and the link to its
 note on the published site. Where there is room —
 LinkedIn — a brief description precedes the citation, the only LLM-written

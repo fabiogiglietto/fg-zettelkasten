@@ -66,7 +66,7 @@ python -m src.main social-post [--dry-run] [--key KEY]  # announce new notes on 
 - Social posts (`social-post`, `social` config block): run after the Pages
   deploy, never inside `update` — the post links to the note, which must be
   live. Every post opens with the column's masthead (`social.hashtag` +
-  `social.masthead`: `#toread`, then the AI-generated disclosure) and shows the
+  `social.masthead`: `#toread`, then the auto-posted disclosure) and shows the
   note as its link card — which is why the note link precedes the DOI on
   Mastodon and is card-only on Bluesky. Queue and ledger live on the state
   entry (`social_pending`, `social`);

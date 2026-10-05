@@ -160,11 +160,12 @@ social:
   dry_run: false
   # The column's marks. Every post (the first one of a thread) opens with the
   # hashtag followed by the masthead, so the series is recognisable in a feed
-  # and nobody takes it for hand-written; the link to the note is labelled
-  # with `note_label`. The masthead counts against the character limit: on
-  # Bluesky (300) a longer one sends more citations into a reply.
+  # and is seen to be posted by the pipeline, not by hand (the post text is
+  # templated, except LinkedIn's description); the link to the note is
+  # labelled with `note_label`. The masthead counts against the character
+  # limit: on Bluesky (300) a longer one sends more citations into a reply.
   hashtag: "#toread"
-  masthead: "📚 From my reading list · 🤖 AI-generated post"
+  masthead: "📚 From my reading list · 🤖 Auto-posted"
   note_label: "Note"
   # At most this many papers per run, oldest first, so a bulk import drips out.
   max_per_run: 3
