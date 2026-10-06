@@ -17,7 +17,7 @@ PAPER = _item_to_paper({
                   "pages": "1146--1151"},
 })
 CITATION = sc.apa_plain(PAPER)
-HEADER = "#toread 📚 From my reading list · 🤖 AI-generated post"
+HEADER = "#toread 📚 From my reading list · 🤖 Auto-posted"
 BLURB = ("False news spreads farther, faster and more broadly than the truth "
          "on Twitter, and people rather than bots drive the difference.")
 
@@ -77,14 +77,14 @@ def test_threads_weighs_emoji_by_their_bytes():
 
 def test_a_post_is_the_masthead_the_citation_and_the_note_link():
     """The column's marks: every post opens with the hashtag and the line
-    saying it is AI-generated."""
+    saying it is auto-posted."""
     (post,) = sc.compose("", CITATION, NOTE, HEADER, 500, sc.threads_len)
     assert post == f"{HEADER}\n\n{CITATION}\n\nNote: {NOTE}"
     assert post.count("#") == 1
 
 
 def test_the_header_is_the_hashtag_then_the_masthead():
-    assert sc.post_header("#toread", "📚 From my reading list · 🤖 AI-generated post") == HEADER
+    assert sc.post_header("#toread", "📚 From my reading list · 🤖 Auto-posted") == HEADER
     assert sc.post_header("toread", " AI-generated post ") == "#toread AI-generated post"
     assert sc.post_header("#toread") == "#toread"       # no masthead configured
     assert sc.post_header(None, None) == "#toread"

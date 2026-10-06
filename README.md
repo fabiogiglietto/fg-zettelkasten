@@ -84,7 +84,7 @@ python -m src.main social-post --dry-run # compose the social posts for queued p
 
 Each newly-added reading-list note is announced on Mastodon, Threads,
 LinkedIn and Bluesky as an instalment of a recognisable column: a masthead
-line that starts with `#toread` and says the post is AI-generated
+line that starts with `#toread` and says the post is auto-posted
 (`social.masthead`), the APA-7 citation, and the link to the note. The
 LinkedIn post adds a brief description (Claude) above the citation; the
 others have no room for one next to a full citation. Every post shows the note as its link card, with the
