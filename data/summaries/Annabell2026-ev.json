@@ -1,0 +1,37 @@
+{
+  "abstract": "This article examines how the concept of 'data' is understood and contested within the European Union's Digital Services Act (DSA), specifically its Article 40 provision granting vetted researchers access to platform data to study systemic risks. Although 'data' is never formally defined in the DSA or its Delegated Act, the author shows that its meaning 'floats' across regulatory and commercial discourses. Through discourse analysis of legal texts, public feedback submissions, and platform data catalogs, the paper argues that platform companies strategically narrow the definition of data to aggregated, quantified, predefined datasets, in tension with the plural understandings of data across academic disciplines.",
+  "key_claims": [
+    "The meaning of 'data' is a 'floating signifier' (drawing on Laclau) that is articulated differently across regulatory and commercial discourses, generating consequential ambiguity.",
+    "Although the DSA and Delegated Act do not define 'data,' this taken-for-granted treatment enables platform companies to narrow the definitional scope and exert power over researcher access.",
+    "Platform companies interpret and operationalize data narrowly as aggregated, anonymized, quantified, and predefined datasets, which conflicts with the multiplicity of understandings of data in academic research, especially qualitative traditions in the humanities and social sciences.",
+    "There is an unresolved tension between data as an economic asset/resource extracted by platforms under datafication and data as relational evidence used by researchers to understand phenomena.",
+    "Data catalogs, while intended to reduce information asymmetry, reinforce platforms' role as gatekeepers by categorically asserting what counts as data and shaping researchers' horizon of expectation.",
+    "The conceptualization of data is overlooked in current scholarly discussions of the DSA data access provision, yet it has significant governance implications."
+  ],
+  "methods": [
+    "Discourse analysis grounded in Fairclough's critical discourse analysis, treating discourse as occasioned and dialectically connected with social practice.",
+    "Analysis of regulatory texts: relevant articles and recitals in the DSA (notably Article 40, Recitals 96, 97, 98) and the draft and final Delegated Act (notably Recital 11/7, Article 6, Article 8, Article 12), plus guidance from the Irish Digital Services Coordinator.",
+    "Analysis of 10 public feedback submissions (representing 15 of 25 designated VLOPs/VLOPSEs) during the October–December 2024 feedback period on the draft Delegated Act, including coding of issues raised by article and recital (presented in Table 1 and Appendix 1).",
+    "Analysis of publicly available DSA data catalogs published by VLOPSEs beginning November 2025, examining format, terminology, data types, and categories (synthesized in Table 2).",
+    "Application of discourse theory, particularly Laclau's concept of the floating signifier, contrasted with the boundary object concept (Star and Griesemer)."
+  ],
+  "findings": [
+    "The term 'data' appears in neither the 24 definitions of DSA Article 3 nor the 8 definitions of Article 2 of the Delegated Act; only personal data (via GDPR) is cross-referenced.",
+    "Recitals tied to Article 40 (e.g., Recital 97) gesture toward narrow, numerical/aggregated interactional data, while the Delegated Act (Recital 11) provides a broader non-exhaustive list including profile data, engagement histories, A/B test results, content moderation changelogs, and internal documentation.",
+    "The Delegated Act's introduction of 'data assets' and mandated data catalogs reflects and reinforces a view of data as owned, value-generating platform resources repurposed from advertising, content creation, or developer uses.",
+    "Booking.com and Amazon most explicitly argued that data should mean only quantitative raw datasets and that the Delegated Act's broader examples illegitimately deviated from Article 40's intent; X objected to raw data access citing misinterpretation risk.",
+    "Meta pushed for data limited to existing datasets, insisting providers should not be required to create new data (e.g., new loggers or pipelines), distinguishing 'existence' from 'accuracy' and expressing concern about researcher competence.",
+    "Platforms contested both the definition of data and the scope, with pushback concentrated on the data inventory burden, access to only the request summary, and evidence requirements for researcher independence and data protection.",
+    "Data catalogs reveal varied operationalizations: some platforms (e.g., Meta, Google) rely on linking to existing datasets and APIs; others (e.g., TikTok, Amazon, Temu) provide tables/lists of categories and fields privileging quantified metrics; Zalando offered the widest range including A/B testing and moderation documentation, while Shein's vague 'data on…' framing may inadvertently open wider interpretive possibilities.",
+    "Overall, platform operationalization aligns with computational/data science conventions, risking marginalization of qualitative social science and humanities understandings of data."
+  ],
+  "contributions": [
+    "Introduces the conceptualization of 'data' itself—rather than data quality, access conditions, or transparency—as an under-examined site of contestation in DSA Article 40 scholarship.",
+    "Applies Laclau's 'floating signifier' as an analytical lens to platform data governance, showing how data accrues divergent meanings across regulatory and commercial discourses.",
+    "Provides an empirical mapping (Tables 1 and 2, Appendix 1) of how VLOPSEs articulate data through feedback submissions and published data catalogs during the early implementation of the Delegated Act.",
+    "Links definitional ambiguity to governance consequences, including the risk that commercial/data-science framings become the default and exclude qualitative paradigms.",
+    "Builds on and extends work by Griffin, Selling et al., Botero Arcila et al., Peters and Weller, and Leerssen on DSA data access by foregrounding the semantics of 'data.'"
+  ],
+  "framing": "The paper situates itself within platform governance and critical data studies, treating data access not merely as a technical or procedural matter but as a governance issue shaped by the political economy of Big Tech. It draws on post-foundational discourse theory (Laclau, Fairclough) and debates over the disciplinary multiplicity of 'data' (Borgman, Drucker, Leonelli, Markham) to intervene in emerging legal and communication scholarship on the EU Digital Services Act.",
+  "pdf_source": "drive"
+}
