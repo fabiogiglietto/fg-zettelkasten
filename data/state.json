@@ -4568,10 +4568,26 @@
           "at": "2026-10-03T17:05:30.501920+00:00"
         }
       }
+    },
+    "bibtex:Annabell2026-ev": {
+      "note_path": "Papers/Annabell2026-ev.md",
+      "topics": [
+        "platform-governance-and-data-access",
+        "research-methods-and-ethics-in-css"
+      ],
+      "assign_fp": "793782d0e38332a61a8635e0d859f799d96e3fd0106b4fd46de0f8d61afa30bc",
+      "doi": "10.1177/29777984261486601",
+      "title": "Regulating a floating signifier: Interpretations of “data” in the digital services act researcher access provision",
+      "pdf_source": "drive",
+      "content_hash": "d6d5590c524c9d904ac9537fdd5259a5b7c8bbf72370c60f031989fd60dcc10c",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-06T06:52:18.715383+00:00"
     }
   },
   "last_full_cluster": "2026-10-05T11:36:19.676376+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "a60ff2b9fbec3010662b76c2aa0305d5b11149027635891d55f65f7eb20da819",
   "emergent_fp": "6719b6017de574703fd2dcc574d53466b55e73cfb749ecb3331d31aff25807e1",
   "structure_fps": {

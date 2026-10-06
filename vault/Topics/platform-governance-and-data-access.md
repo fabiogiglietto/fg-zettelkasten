@@ -11,6 +11,7 @@ Research on social media platforms' data-access regimes, API changes, and regula
 ## Papers
 
 - [[Ahuja2025-ku]]
+- [[Annabell2026-ev]]
 - [[Bak-Coleman2025-pm]]
 - [[Bak-Coleman2026-mk]]
 - [[Bastos2025-ya]]

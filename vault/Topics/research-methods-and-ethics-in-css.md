@@ -12,6 +12,7 @@ Foundational and ongoing methodological contributions on using social media data
 
 - [[Alizadeh2026-es]]
 - [[Allen2021-ai]]
+- [[Annabell2026-ev]]
 - [[Anwar2024-34dba628]]
 - [[Arminio2025-tw]]
 - [[Bail2018-fk]]
