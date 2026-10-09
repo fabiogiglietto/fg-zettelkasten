@@ -1416,9 +1416,9 @@
         "research-methods-and-ethics-in-css"
       ],
       "pdf_source": "drive",
-      "content_hash": "14db5152919a931d32d0a8073404d39bcba6b36ce4605e1d876523ea5a0af5b5",
+      "content_hash": "ead76a3051d5775c95e562d2fd160bcdd3745640bfbf912a679620f5e95bf89f",
       "podcast_linked": false,
-      "last_processed": "2026-09-08T06:54:50.097282+00:00",
+      "last_processed": "2026-10-09T15:35:42.827916+00:00",
       "assign_fp": "6f4a28132f2ab28ce937860883a95b239fa50b9859021a679b451e40405874a6"
     },
     "bibtex:Fan2025-ut": {
@@ -4601,10 +4601,26 @@
           "at": "2026-10-06T06:53:56.821588+00:00"
         }
       }
+    },
+    "bibtex:Tornberg2026-im": {
+      "note_path": "Papers/Tornberg2026-im.md",
+      "topics": [
+        "platform-critique-anniversary-essays",
+        "generative-ai-and-synthetic-media"
+      ],
+      "assign_fp": "c6db8fd615a35db533fc9b9df4576927c8a20a614bf0fdfd36db5e56c1f47c62",
+      "doi": "10.1177/29768640261487931",
+      "title": "From the platform society to the AI society",
+      "pdf_source": "drive",
+      "content_hash": "72f90af4685ed90053c64809b3a44c31a88f719dc28f3c4205ad2eba95b33428",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-09T15:35:24.562022+00:00"
     }
   },
   "last_full_cluster": "2026-10-05T11:36:19.676376+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "a60ff2b9fbec3010662b76c2aa0305d5b11149027635891d55f65f7eb20da819",
   "emergent_fp": "6719b6017de574703fd2dcc574d53466b55e73cfb749ecb3331d31aff25807e1",
   "structure_fps": {

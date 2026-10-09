@@ -37,6 +37,7 @@ Emerging focus on how generative AI tools are used to produce persuasive or dece
 - [[Suk2026-ai]]
 - [[Tang2026-gu]]
 - [[Topinka2026-hb]]
+- [[Tornberg2026-im]]
 - [[Tornberg2026-lc]]
 - [[Triedman2025-uy]]
 - [[Wack2026-bt]]

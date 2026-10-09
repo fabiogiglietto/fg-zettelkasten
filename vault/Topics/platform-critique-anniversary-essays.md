@@ -26,6 +26,7 @@ Reflective anniversary/position essays diagnosing the current state of social me
 - [[Marwick2026-ss]]
 - [[Stanusch2026-ec]]
 - [[Swartz2026-zb]]
+- [[Tornberg2026-im]]
 - [[Tornberg2026-lc]]
 - [[Vertesi2026-lv]]
 - [[Wang2026-ub]]

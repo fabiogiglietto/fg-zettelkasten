@@ -1,0 +1,36 @@
+{
+  "abstract": "The article theorizes a tendential transition from the 'platform society' that defined the 2010s to an emerging 'AI society' shaped by generative AI and large language models (LLMs) since ChatGPT's 2022 release. It argues this transition is rooted in, yet partially ruptures with, the platform society whose infrastructures, data, and political economies it reorganizes. The authors trace the shift across three domains—economic, epistemic, and political—and reassess which concepts from critical platform and data studies should be carried forward or reconsidered for critical AI studies.",
+  "key_claims": [
+    "Generative AI marks a qualitative rupture in how digital systems mediate social life, but grows out of the platform society rather than arising ex nihilo; the transition is tendential—uneven, contested, and generative of new conflicts.",
+    "Economically, platform-era monopoly mechanisms based on network effects are giving way to 'cognitive lock-in,' enabling rent extraction through dependence on personalized systems and transforming cognition itself into a site of rent extraction.",
+    "Epistemically, the predictive logic of platforms is being displaced by a generative one, in which theory becomes infrastructural, research proceeds as a rented service, and populations are simulated rather than sampled.",
+    "Politically, struggles over visibility are shifting toward 'alignment politics'—contests over what models can say, do, reason about, or refuse.",
+    "What unites all three shifts is the enclosure of cognition itself: where platform capitalism enclosed social interaction, AI capitalism encloses the infrastructures of thought and knowledge.",
+    "The problem is not generative AI as a technology but generative AI as currently shaped by rentier logics, speculative capital, and geopolitical rivalry."
+  ],
+  "methods": [
+    "Conceptual and theoretical analysis that synthesizes critical platform studies, critical data studies, and emerging critical AI scholarship.",
+    "A comparative framing across three domains (economic, epistemic, political), summarized in a stylized comparison table contrasting the platform society and the AI society.",
+    "Development of new conceptual vocabulary and proposed methodological approaches (e.g., alignment audits, 'talkthrough' method adapted from the platform 'walkthrough') rather than original empirical data collection; the authors state no new data were created.",
+    "Illustrative examples drawn from secondary cases: OpenAI's deprecation of ChatGPT-4o, ChatGPT shopping prompts, Lu et al.'s study of language-dependent outputs, and Tufekci's interrogation of Grok's 'white genocide' system-prompt episode."
+  ],
+  "findings": [
+    "Network effects no longer structure AI monopoly; value flows from a dyadic user–system relationship, producing cognitive lock-in via accumulated collaboration history (shared documents, memories, habits, reasoning styles).",
+    "Generative AI is being developed by already-dominant corporations with massive capital expenditure and state entanglement, embedded in a Braudelian political economy of bottleneck control rather than free-market competition.",
+    "Generative AI produces an 'end of the end of theory': conceptual labor returns but becomes infrastructuralized within models trained on the scholarly canon, blurring observation and interpretation.",
+    "A shift from 'data-as-a-service' to 'research-as-a-service' (RaaS) deepens researchers' dependence on opaque, proprietary, non-deterministic commercial systems, constraining epistemic autonomy and replicability.",
+    "A move from 'data doubles' to 'synthetic social science,' where LLMs generate synthetic survey responses, simulated agents, and AI twins—risking speculative fictions presented as knowledge and reproducing historical biases.",
+    "Alignment operates through four mechanisms: training-data composition, reinforcement learning/fine-tuning, system-prompts and orchestration layers, and content policies/guardrails—each with distinct political stakes.",
+    "Commercial incentives toward cognitive lock-in foster 'dark patterns' such as sycophancy and affective dependence, the expressive pathology of the AI era paralleling attention addiction under platforms.",
+    "Regulatory asymmetry: the EU's DSA mandates researcher data access for platforms, but the AI Act offers no equivalent framework for LLM scrutiny."
+  ],
+  "contributions": [
+    "Theorizes generative AI as emerging from yet partially rupturing the platform society, identifying three linked transformations: from network-based to relational monopoly, from predictive to generative knowing, and from data politics to alignment politics.",
+    "Introduces and defines a critical vocabulary for the AI society: cognitive lock-in, research-as-a-service (RaaS), synthetic social science, infrastructuralization of theory, alignment politics, AI as media infrastructure, and epistemic empire.",
+    "Proposes a methodological program for critical AI studies—alignment audits, the 'talkthrough' method, infrastructural/organizational research, and reflexive documentation standards under RaaS.",
+    "Reassesses which concepts from critical platform/data studies should be carried forward (platformization, surveillance capitalism, data colonialism) and which need revision for generative systems.",
+    "Outlines public-interest governance principles (transparency, pluralism, redress) reimagined for generative AI, including proposals for researcher-access architecture, user-selectable alignment profiles, and redress infrastructure."
+  ],
+  "framing": "The paper positions itself within critical platform studies, critical data studies, and the rapidly expanding critical AI scholarship (drawing on Zuboff, Crawford, Srnicek, Couldry & Mejias, Foucault, and Science and Technology Studies). It frames the analysis as extending the critical program that studied platform power to the distinctive affordances of generative AI, insisting on holding political economy, epistemology, and politics together to refuse the industry's self-presentation of AI as helpful, harmless, and democratizing.",
+  "pdf_source": "drive"
+}
