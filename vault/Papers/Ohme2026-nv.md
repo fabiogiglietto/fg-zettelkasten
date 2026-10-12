@@ -5,7 +5,7 @@ authors: ["Jakob Ohme", "LK Seiling"]
 year: 2026
 doi: 10.1080/10584609.2026.2664157
 bibtex_key: Ohme2026-nv
-topics: [platform-governance-and-data-access]
+topics: [platform-governance-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2664157

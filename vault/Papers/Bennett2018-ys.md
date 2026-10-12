@@ -5,7 +5,7 @@ authors: ["W Lance Bennett", "Steven Livingston"]
 year: 2018
 doi: 10.1177/0267323118760317
 bibtex_key: Bennett2018-ys
-topics: [information-disorder, platform-governance-and-data-access]
+topics: [information-disorder-disinformation, political-communication-elections]
 citation_count: 1089
 open_access: false
 source_url: https://doi.org/10.1177/0267323118760317

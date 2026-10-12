@@ -5,7 +5,7 @@ authors: ["Brendan Nyhan", "Jaime Settle", "Emily Thorson", "Magdalena Wojciesza
 year: 2023
 doi: 10.1038/s41586-023-06297-w
 bibtex_key: Nyhan2023-gb
-topics: [political-polarization-and-partisanship, misinformation-exposure-recalibration]
+topics: [misinformation-exposure-recalibration, political-polarization-partisanship]
 citation_count: 254
 open_access: false
 source_url: https://doi.org/10.1038/s41586-023-06297-w

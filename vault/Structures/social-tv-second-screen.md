@@ -1,0 +1,19 @@
+---
+type: structure
+slug: social-tv-second-screen
+topic: "Social TV & Second-Screen Audiences"
+---
+
+# Social TV & Second-Screen Audiences
+
+## Social TV & Second-Screen Audiences
+
+This topic represents an earlier phase of the researcher's work, before the move into broader social media analytics, and is anchored here by a single but substantial study: [[Iannelli2015-e0818c3e]]'s analysis of Twitter activity around Italian political talk shows during the 2013 general election campaign. Though the strand is no longer actively pursued, it is foundational — the empirical and conceptual groundwork laid here (large-scale hashtag-based tweet collection tied to broadcast schedules, content analysis of participation types, attention to the interplay between TV and social platforms) anticipates methodological habits that recur in the researcher's later, more purely "social media" work.
+
+**Hybridity as the organizing frame.** The central theoretical move in [[Iannelli2015-e0818c3e]] is to resist treating Twitter as an independent or autonomous political arena and instead to insist on the *hybridity* of the media system: Twitter conversation during talk shows is shown to track the broadcast agenda, peak around televised events, and remain structurally subordinate to "TV logic" rather than challenging or reshaping it. This hybrid-media-systems framing (drawing on Chadwick, Blumler & Coleman, Castells) positions second-screen activity not as a new democratic space in its own right but as an extension — often a narrow and constrained one — of existing broadcast political communication.
+
+**Participation 'in' versus 'through' the media.** A key analytic distinction the paper develops is between participation *in* the media (genuinely shaping agendas, introducing new issues, angles, or sources) and participation *through* the media (commenting on, reacting to, or requesting interaction around content set by others). Empirically, the latter dominates overwhelmingly — nearly 80% of coded tweets were opinions/comments, while substantive agenda-shaping contributions were residual (2.4%). This finding is significant for the broader topic because it establishes early skepticism about the democratizing potential of second-screen engagement, a skepticism that stands somewhat apart from more celebratory strands of social-TV scholarship elsewhere in the literature.
+
+**Narrow and elite-skewed access.** The paper also documents how limited the base of active, visible participation actually was: under 200,000 unique users out of roughly four million Italian Twitter users at the time, with broadcasters and politicians largely failing to engage, display, or respond to audience tweets (only 3 of 11 shows even displayed curated tweets on air). This empirical sobering of the "networked audience" narrative is a recurring motif in the researcher's trajectory — an early instance of using large-scale social data to complicate, rather than celebrate, assumptions about participatory media.
+
+**Why this strand matters historically.** Though filed as a single paper, [[Iannelli2015-e0818c3e]] functions as a structural anchor for the researcher's intellectual history: it combines large N tweet corpora, hashtag-based event tracking, and manual content coding of participation types — a hybrid quantitative/qualitative methodology that prefigures later, more scaled approaches to social media analytics. The move away from this topic area reflects less a repudiation of its findings than a natural evolution: the questions about audience participation, platform logics, and the gap between volume and substantive engagement raised here persist, but are pursued in later work through different platforms, methods, and theoretical vocabularies no longer tied specifically to the "second screen" paradigm.

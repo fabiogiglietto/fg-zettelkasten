@@ -5,7 +5,7 @@ authors: ["Hallin, Daniel C", "Mancini, Paolo"]
 year: 2004
 doi: 
 bibtex_key: Hallin2004-kg
-topics: []
+topics: [political-communication-elections, political-polarization-partisanship]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Comparing%20Media%20Systems%3A%20Three%20Models%20of%20Media%20and%20Politics

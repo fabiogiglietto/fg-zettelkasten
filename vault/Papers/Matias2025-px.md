@@ -5,7 +5,7 @@ authors: ["J. Nathan Matias", "Megan Price"]
 year: 2025
 doi: 10.1073/pnas.2421111122
 bibtex_key: Matias2025-px
-topics: [ai-red-teaming-and-participatory-evaluation, research-methods-and-ethics-in-css]
+topics: [ai-red-teaming-and-participatory-evaluation, computational-text-analysis-llms]
 citation_count: 8
 open_access: false
 source_url: https://doi.org/10.1073/pnas.2421111122

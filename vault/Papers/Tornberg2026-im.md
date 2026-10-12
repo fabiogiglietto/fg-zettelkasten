@@ -5,7 +5,7 @@ authors: ["Petter Törnberg", "Justus Uitermark"]
 year: 2026
 doi: 10.1177/29768640261487931
 bibtex_key: Tornberg2026-im
-topics: [platform-critique-anniversary-essays, generative-ai-and-synthetic-media]
+topics: [generative-ai-synthetic-media, platform-critique-anniversary-essays]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/29768640261487931

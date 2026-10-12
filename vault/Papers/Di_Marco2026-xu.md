@@ -5,7 +5,7 @@ authors: ["Niccolò Di Marco", "Matteo Cinelli", "Shinichi Nakano", "Andrea Fros
 year: 2026
 doi: 
 bibtex_key: Di_Marco2026-xu
-topics: [coordinated-inauthentic-behavior]
+topics: [coordinated-inauthentic-behavior, information-disorder-disinformation]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2609.24398v1

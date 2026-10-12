@@ -5,7 +5,7 @@ authors: ["Pablo Barberá", "John Jost", "Jonathan Nagler", "Joshua Tucker", "Ri
 year: 2015
 doi: 10.7910/dvn/f9ichh
 bibtex_key: Barbera2015-fw
-topics: [political-polarization-and-partisanship, research-methods-and-ethics-in-css]
+topics: [political-polarization-partisanship, political-communication-elections]
 citation_count: 1
 open_access: true
 source_url: https://doi.org/10.7910/dvn/f9ichh

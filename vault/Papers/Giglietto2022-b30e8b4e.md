@@ -6,7 +6,7 @@ year: 2022
 doi: 10.31235/osf.io/2p7ws
 bibtex_key: Giglietto2022-b30e8b4e
 kind: own
-topics: [platform-governance-and-data-access, research-methods-and-ethics-in-css]
+topics: [platform-governance-data-access, digital-research-methods]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.31235/osf.io/2p7ws

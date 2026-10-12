@@ -5,7 +5,7 @@ authors: ["Axel Bruns", "Laura Vodden"]
 year: 2026
 doi: 10.25358/openscience-15825
 bibtex_key: Bruns2026-pn
-topics: [platform-governance-and-data-access, research-methods-and-ethics-in-css]
+topics: [platform-governance-data-access, digital-research-methods]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.25358/openscience-15825
