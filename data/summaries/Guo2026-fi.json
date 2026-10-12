@@ -1,0 +1,38 @@
+{
+  "abstract": "This conceptual review examines how political science and communication scholars demarcate the 'non-political' from the political, treating the label as a boundary object that reveals scholars' implicit assumptions about the nature of politics. Through a boundary analysis of 140 empirical studies, the authors identify two dominant conceptual treatments—categorical and contextual—and trace the intellectual, theoretical, methodological, and rhetorical forces that shape how this boundary is drawn. Adopting a relational rather than substantialist ontology of politics, they argue that the nonpolitical and (de)politicization should be recognized as a meaningful analytical lens that indirectly illuminates what the political is.",
+  "key_claims": [
+    "Politics should be understood relationally rather than substantially: the political is constituted through its relations to domains conventionally understood as nonpolitical, not through intrinsic features.",
+    "The growing scholarly interest in the nonpolitical has not been matched by conceptual clarity, leaving boundaries vaguely described as 'blurred.'",
+    "Scholars' use of the 'non-political' label falls into two broad conceptual treatments: categorical (an inherent, exclusive feature) and contextual (a temporary, transformative state).",
+    "The way the boundary is drawn is shaped by intellectual traditions, theoretical orientations (post-positivist vs. interpretive/critical), methodological standards, and rhetorical norms in academic knowledge production.",
+    "(De)politicization should be reclaimed as a meta-theoretical, power-laden relational lens rather than treated merely as an outcome.",
+    "The nonpolitical is theoretically rich—often intertwined with the political—and should not be treated as an empty residual category.",
+    "Studying the 'non-political' offers an indirect yet heuristically productive route to the question of what politics is—'the politics of the non-political.'"
+  ],
+  "methods": [
+    "Genealogical review of the nature of politics across political theory (Plato, Aristotle, Augustine, Hegel, modern liberalism, Schmitt, Wolin, feminist theory, new social movements, Foucault).",
+    "Boundary analysis grounded in a relational ontology, treating 'non-political' as a boundary object (Star) at the crossroads of academic groups.",
+    "Systematic search of the Web of Science database using keywords: non-political/nonpolitical, apolitical, and non-news (when news is assumed to equal politics).",
+    "Scope limited to 448 English-language SSCI articles in political science and communication journals (2004–2024), screened for empirical evidence, exclusion of pure-journalism 'non-news' cases, and journals with more than five sample articles.",
+    "Final analytical sample of 140 articles, with Political Behavior (15) and Political Communication (11) most represented.",
+    "Inductive coding of how scholars define boundaries of the nonpolitical, the relational modes linking it to the political, and the stated motivations and implications of such studies."
+  ],
+  "findings": [
+    "About two-thirds of articles adopt a categorical treatment, reducing differences into a binary, either-or operationalization of political vs. non-political.",
+    "Within the categorical treatment, some studies use a residual approach ('non-political' as what remains after politics), while others give it substantive meaning (the private, the mundane/entertainment, the politically neutral, or the nonpartisan).",
+    "Categorical studies employ relational modes of spillover/invasion (including a 'backward spillover effect' from nonpolitical to political) and comparison (treating the two as separate but comparable domains).",
+    "A contextual treatment frames the non-political as a temporary, hybrid, transformative state, foregrounding relational modes of (de)politicization and embeddedness (e.g., 'third spaces' and intertextuality where political meaning is embedded in nonpolitical settings).",
+    "Some studies pursue pragmatic reconciliation through hedging language ('ostensibly,' 'seemingly') or spectrum/gradational and computational measures of 'politicalness' (e.g., Mukerjee et al.; Ylä-Anttila et al.).",
+    "Categorical distinctions dominate quantitative work while contextual fluidity dominates critical/interpretive work; the choice reflects differing paradigmatic, methodological, and rhetorical demands rather than deliberate ontological commitments.",
+    "Politicization in the reviewed literature is largely treated as an outcome rather than as a process with specifiable mechanisms, scope conditions, and attention to power relations."
+  ],
+  "contributions": [
+    "Identifies aspects of the nonpolitical world that interact (or could interact) with politics, opening new directions for extending political communication research.",
+    "Provides a typology of two conceptual treatments and four relational modes (spillover, comparison, politicization, embeddedness) for mapping a fragmented literature.",
+    "Offers guidance for future conceptual and operational approaches—advocating clearer definitions, gradational rather than binary measures, and incorporation of public perceptions.",
+    "Reclaims (de)politicization as a meta-theoretical, relational, and power-sensitive lens and calls for processual accounts of boundary-crossing.",
+    "Encourages researcher self-reflexivity about how and why the political/nonpolitical boundary is constructed in academic knowledge production."
+  ],
+  "framing": "The paper positions itself within a relational ontology of politics (Emirbayer; Selg and Ventsel; Esposito) against a substantialist view of politics as a self-contained, state-centered sphere. It engages political communication's concern with 'what politics stands for' (Delli Carpini; Lane and Coles) and draws on boundary-work and boundary-object theory (Abbott; Star; Bourdieu's symbolic power) to treat the demarcation of the (non-)political as a site of relational power struggle.",
+  "pdf_source": "drive"
+}
