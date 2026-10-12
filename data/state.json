@@ -4662,10 +4662,42 @@
           "at": "2026-10-09T15:39:04.682368+00:00"
         }
       }
+    },
+    "bibtex:Guo2026-fi": {
+      "note_path": "Papers/Guo2026-fi.md",
+      "topics": [
+        "political-communication-elections",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "c329d2de28a8d94dcb2c0a0ded01af8b5ff70f5ec5b98e23193553f2bf33f877",
+      "doi": "10.1080/10584609.2026.2745844",
+      "title": "The politics of the “non-political”: A conceptual review",
+      "pdf_source": "drive",
+      "content_hash": "a8de84990c162fd65fe49415844cae1c29ca791607ff883cad9c9b8eb24db95f",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-12T19:42:20.380044+00:00"
+    },
+    "bibtex:Divon2026-wx": {
+      "note_path": "Papers/Divon2026-wx.md",
+      "topics": [
+        "platform-engagement-algorithmic-curation",
+        "political-communication-elections"
+      ],
+      "assign_fp": "ab2520c2ce7f9a42a2e732fcf8e9214c23364fd290f30e32d196c863f37ca9c3",
+      "doi": "10.1177/13548565261449632",
+      "title": "(In)Visible politics: Influencers as brokers of the state on TikTok and Douyin",
+      "pdf_source": "drive",
+      "content_hash": "987c9aa444500f4ccc94c7cc6d4921e848150f2bf20fe8aaaf22ee6e0b05c303",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-12T19:42:38.423308+00:00"
     }
   },
   "last_full_cluster": "2026-10-12T12:05:30.982288+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 2,
   "register_signals_hash": "4f8e29a99bc2957dd69b13f015c8d6389f3d5ece8491e7c3b8dcc80b165d1e2e",
   "emergent_fp": "4131ce608e33081c2bd3abc38f90d3e1ef0c12b21fe49ec5d86a4b726b2a810a",
   "structure_fps": {

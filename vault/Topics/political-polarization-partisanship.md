@@ -34,6 +34,7 @@ Theoretical and empirical examination of polarization, insularity and partisan n
 - [[Green2025-ap]]
 - [[Grusauskaite2026-po]]
 - [[Guess2023-ai]]
+- [[Guo2026-fi]]
 - [[Hallin2004-kg]]
 - [[Hartmann2025-px]]
 - [[Heft2021-ky]]
