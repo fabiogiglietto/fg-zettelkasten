@@ -3514,10 +3514,10 @@
       "doi": "10.31234/osf.io/7z69m_v1",
       "title": "Online Discourse is Falsely Polarized by Self-Selection",
       "pdf_source": "abstract_only",
-      "content_hash": "58a6475e33dcfdaa65468ed6ce97814a90aad24c39c5ab342695f7ede60d1a72",
-      "podcast_linked": false,
+      "content_hash": "da7518ae65daacc7226f9636277c3aa9309de10e6dfc09936b3ee2e7d8168084",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-08-25T06:33:15.413504+00:00"
+      "last_processed": "2026-10-12T16:48:29.797667+00:00"
     },
     "bibtex:De_Leon2025-qn": {
       "note_path": "Papers/De_Leon2025-qn.md",
@@ -3633,10 +3633,10 @@
       "doi": "10.1177/14614448261470889",
       "title": "Cross-platformization: How U.S. right-leaning media curate their posts on Twitter and Truth Social",
       "pdf_source": "abstract_only",
-      "content_hash": "006f8b66c336322eb98691691c7bc35c608539d992ebe668dfbaa9269405453a",
-      "podcast_linked": false,
+      "content_hash": "4a32567c03516e1c4ae3b239dd688422e433d0e727d33866ce2141e48b762b6a",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-09-10T09:24:02.543391+00:00"
+      "last_processed": "2026-10-12T16:48:17.319572+00:00"
     },
     "bibtex:Gaber2022-bk": {
       "note_path": "Papers/Gaber2022-bk.md",
@@ -4467,10 +4467,10 @@
       "doi": "10.1093/jcmc/zmag022",
       "title": "How does political efficacy condition clicks on politics? Understanding information-selection behavior in algorithmic feeds over time",
       "pdf_source": "abstract_only",
-      "content_hash": "ad3a2d446ff9b0b23e5b72704ee9aa5959a67717dccab220eb5472b4d8e744f7",
-      "podcast_linked": false,
+      "content_hash": "fcdc3bee69669c65ff1f17b2b4c9a85759db7313cbfc94549bd491921922fc6a",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-10-01T17:13:22.248815+00:00"
+      "last_processed": "2026-10-12T16:48:07.415334+00:00"
     },
     "bibtex:Di_Marco2026-xu": {
       "note_path": "Papers/Di_Marco2026-xu.md",

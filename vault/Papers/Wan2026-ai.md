@@ -9,7 +9,7 @@ topics: [platform-engagement-algorithmic-curation, political-communication-elect
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1093/jcmc/zmag022
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Wan2026-ai.mp3
 pdf_available: false
 discovery_date: 2026-09-27T11:03:29.004881Z
 ---
@@ -22,29 +22,31 @@ discovery_date: 2026-09-27T11:03:29.004881Z
 
 ## Summary
 
-This paper examines how political efficacy — an individual's sense that they can understand and influence politics — shapes the way people select political information within algorithmically curated feeds. Moving beyond the common framing that algorithms alone determine exposure, the authors argue that user-side psychological dispositions meaningfully condition information-selection behavior even when the feed is fully algorithmic. Using a combination of survey data and actual behavioral usage histories from 186 Dutch users of Google Discover, they distinguish *within-person* change over time from *between-person* differences, focusing on outcomes such as the proportion of political content selected and the diversity of exposure.
+This paper examines how **political efficacy** — a person's sense that they can understand and influence politics — shapes the way individuals select political information from algorithmically curated feeds. Using Google Discover as a fully algorithmic context, the authors combine survey measures with actual behavioral usage histories from 186 Dutch users. The central argument is that individual-level psychological dispositions help explain variation in political information selection that algorithmic curation alone does not account for, and that this selection behavior must be understood as having both a within-person temporal dimension (how an individual's behavior shifts over time) and a between-person dimension (how people differ from one another). The study positions itself within ongoing debates about selective exposure and information diversity in algorithmically mediated environments, bringing a user-agency construct into a literature often dominated by platform-centric accounts.
 
 ## Key Contributions
 
-- Links the psychological construct of political efficacy to observed, real-world information-selection behavior in algorithmic feeds.
-- Combines self-report survey measures with genuine behavioral trace data from a fully algorithmic feed (Google Discover), rather than relying on self-reported or simulated exposure.
-- Analytically separates within-person temporal dynamics from between-person variation in political information selection.
-- Brings a user-agency perspective to debates typically centered on algorithmic curation and selective exposure.
+- Links the psychological construct of political efficacy to *observed* information-selection behavior in algorithmic feeds, rather than to self-reported intentions.
+- Combines self-report survey data with real behavioral trace data (usage histories) from a fully algorithmic feed.
+- Analytically distinguishes within-person temporal dynamics from between-person differences in political information selection.
 
 ## Methods
 
-- Pairs survey data on political efficacy with logged usage histories from Google Discover.
-- Sample of 186 Dutch individuals.
-- Models both within-person change over time and between-person differences.
-- Examines at least three facets of information selection: proportion of political content selected and exposure diversity (the full set is truncated in the available abstract).
+- Mixed-data design pairing **survey responses** with **behavioral trace data** from participants' actual Google Discover usage histories.
+- Sample of **186 Dutch users** of a fully algorithmically curated feed.
+- Modeled both within-person change over time and between-person variation.
+- Outcomes include at least the proportion of political information selected and exposure diversity (the available abstract is truncated, so additional outcomes and specific effect estimates are not recoverable).
 
 ## Findings
 
-- Political efficacy helps explain individual-level differences in how people select political information from algorithmic feeds.
+- Political efficacy helps explain between-person differences in how people select political information from algorithmic feeds.
 - Information-selection behavior varies both within individuals over time and between individuals.
-- Between-person differences in political information selection are conditioned by users' political efficacy.
-- Specific effect sizes and directions are not recoverable from the truncated abstract.
+- Specific effect magnitudes and directions are not stated in the available (truncated) text.
 
 ## Connections
 
-This work sits in the broader research program scrutinizing whether algorithmic feeds drive exposure or whether user choices dominate, connecting to the large-scale platform studies of [[Guess2023-ai]], [[Guess2023-ur]], [[Gonzalez-Bailon2023-uy]], [[Nyhan2023-gb]], and [[Bakshy2015-rn]], all of which weigh algorithmic versus individual contributions to political exposure. Its emphasis on user-side selective exposure and information diversity resonates with the filter-bubble and echo-chamber debates in [[Flaxman2016-lm]] and [[Del-Vicario2016-uj]], while its reliance on behavioral trace data aligns it methodologically with [[Ulloa2024-jm]].
+This work sits at the intersection of algorithmic curation and political communication, speaking to foundational selective-exposure and feed-exposure studies such as Bakshy2015-rn, Messing2014-jc, and Barbera2015-fw, and to work on how exposure is distributed across algorithmic platforms like [[Gonzalez-Bailon2024-rq]]. Its focus on individual agency and user dispositions within algorithmic feeds connects it to [[Gagrcin2024-dl]], while its use of real behavioral traces combined with survey data aligns methodologically with [[Bakshy2015-rn]] and broader discussions of digital-trace political behavior. It also complements [[de-Vreese2026-zx]] within the same election-focused research stream.
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Wan2026-ai.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)

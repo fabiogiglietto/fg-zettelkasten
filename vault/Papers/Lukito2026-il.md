@@ -9,7 +9,7 @@ topics: [political-communication-elections, platform-engagement-algorithmic-cura
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448261470889
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lukito2026-il.mp3
 pdf_available: false
 discovery_date: 2026-09-10T09:18:45.993559Z
 ---
@@ -22,23 +22,30 @@ discovery_date: 2026-09-10T09:18:45.993559Z
 
 ## Summary
 
-This paper introduces the concept of **cross-platformization** to describe how right-leaning media outlets adapt their content distribution across different social media platforms. Focusing on seven U.S. right-leaning media organizations during the 2022 midterm election, the authors examine how these outlets curate posts differently on Twitter (a mainstream platform) versus Truth Social (an alt-tech platform). The central argument is that partisan media do not simply broadcast identical content everywhere; instead, they engage in platform-specific curation, tailoring both the volume and packaging of stories to each platform's distinct audience and environment.
+This paper examines how seven U.S. right-leaning media organizations distribute and curate their content across two platforms — mainstream Twitter and alt-tech Truth Social — during the 2022 midterm elections. Introducing the concept of **cross-platformization**, the authors argue that partisan outlets do not simply mirror their output across platforms but instead engage in platform-specific curation, tailoring content volume and story packaging to each environment. Using a mixed-methods design, they find that only a small share of an outlet's total stories appears on both platforms, underscoring that these media treat Twitter and Truth Social as distinct distribution contexts rather than interchangeable channels.
 
 ## Key Contributions
 
-- Introduces and applies the concept of **cross-platformization** to partisan media's social media practices.
-- Provides empirical insight into how right-leaning outlets curate content differently across mainstream and alternative platforms.
-- Offers a mixed-methods framework for studying multi-platform media distribution during a major U.S. election.
+- Introduces and operationalizes the concept of **cross-platformization** to describe how partisan media coordinate (or differentiate) content across multiple platforms.
+- Provides empirical evidence of how right-leaning outlets navigate the divide between mainstream and alternative/alt-tech platforms.
+- Offers a reusable mixed-methods framework for studying multi-platform media distribution during elections.
 
 ## Methods
 
-The authors collected social media posts and content from seven right-leaning media organizations on both Twitter and Truth Social during the 2022 U.S. midterm election period. They employed a mixed-methods design combining computational and qualitative analysis, structured around two analytic dimensions: **content volume** and **story packaging**.
+- Collected social media posts and content from seven right-leaning media organizations active on both Twitter and Truth Social.
+- Scoped to the 2022 U.S. midterm election period as a case study.
+- Combined computational analysis with qualitative analysis.
+- Focused analysis on two dimensions: **content volume** and **story packaging**.
 
 ## Findings
 
-- Outlets shared only a small proportion of their total stories across both Twitter and Truth Social, indicating selective, platform-tailored curation rather than uniform distribution.
-- Content curation and story packaging varied meaningfully between the two platforms, reflecting strategic adaptation to each platform's audience and environment.
+- Outlets shared only a small portion of their total stories across both Twitter and Truth Social, indicating selective rather than wholesale cross-posting.
+- Content curation and story packaging differed between the two platforms, reflecting strategic adaptation to each platform's audience and environment.
 
 ## Connections
 
-This work sits within research on partisan media, platformization, and the alternative media ecosystem, particularly the rise of alt-tech platforms like Truth Social. It connects to broader studies of politically motivated content curation and coordinated media behavior such as [[Prochaska2025-ef]] and [[Starbird2025-jj]], and speaks to the wider literature on partisan media and polarization represented by [[Arceneaux2026-xk]] and [[Lukito2026-nb]].
+This work sits within the broader study of the alternative/partisan media ecosystem and platform-specific distribution strategies, connecting to research on cross-platform coordination and news sharing such as [[Lukito2026-nb]] and [[Prochaska2025-ef]]. Its focus on alt-tech and right-leaning media curation relates to platform-level studies of political content environments like [[Larsson2026-ro]] and work on partisan content dynamics such as [[Brown2026-br]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lukito2026-il.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)

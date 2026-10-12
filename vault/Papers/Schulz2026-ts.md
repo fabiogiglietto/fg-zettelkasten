@@ -9,7 +9,7 @@ topics: [political-polarization-partisanship, platform-engagement-algorithmic-cu
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.31234/osf.io/7z69m_v1
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schulz2026-ts.mp3
 pdf_available: false
 discovery_date: 2026-08-25T06:24:33.066623Z
 ---
@@ -22,26 +22,29 @@ discovery_date: 2026-08-25T06:24:33.066623Z
 
 ## Summary
 
-This paper argues that online political discourse *appears* more polarized than public opinion actually is — a phenomenon the authors call "false polarization" — and traces its origin to self-selection into posting. Using more than a decade of linked social media behavior, controlled experiments, and a 40-country survey, the authors show that people with stronger or more extreme ideological attitudes are disproportionately likely to post about political issues. The visible discourse is therefore a skewed sample of the underlying population, producing a systematic distortion that makes online conversation seem more divided than it really is. The distinction is important: the polarization is an artifact of who chooses to speak, not necessarily of what people believe.
+This paper examines **false polarization** on social media—the mistaken perception that public opinion is more divided than it actually is—and locates its cause in users' self-selection into political posting. Combining over a decade of linked behavioral data, controlled experiments, and a 40-country survey, the authors argue that people with more extreme ideological views are disproportionately likely to post about politics. The visible discourse is therefore a skewed, non-representative sample of the underlying population, systematically exaggerating the appearance of division. The contribution is less about discovering a new phenomenon than about rigorously quantifying its magnitude and mechanism across multiple data sources and national contexts.
 
 ## Key Contributions
 
-- Provides comprehensive, multi-method evidence quantifying the magnitude and scope of false polarization on social media.
-- Identifies selective posting (self-selection) as a specific mechanism generating apparent rather than actual polarization.
-- Links large-scale behavioral data on over 1.7 million posts to individual-level ideological attitudes.
-- Establishes cross-national generalizability through a 40-country survey.
+- Comprehensive, multi-method evidence quantifying the magnitude and scope of false polarization online.
+- Links large-scale behavioral data (over 1.7 million posts) to individual-level ideological attitudes.
+- Isolates **selective posting** as a specific generative mechanism, distinguishing apparent from actual polarization.
+- Establishes cross-national generalizability through a 40-country survey (combined N = 49,222).
 
 ## Methods
 
-The evidence draws on three complementary strands: (1) an observational analysis of over a decade of social media behavior linked to individual ideological attitudes, spanning more than 1.7 million posts; (2) a series of controlled experiments; and (3) a large global survey covering 40 countries. The combined sample totals N = 49,222, allowing triangulation across observational, experimental, and cross-national designs.
+The authors triangulate across three designs: (1) observational analysis of more than a decade of social media behavior linked to individual ideological attitudes, spanning over 1.7 million posts; (2) a series of controlled experiments testing the posting-selection mechanism; and (3) a global survey covering 40 countries. The convergence of observational, experimental, and survey evidence is central to the paper's claim that the pattern is robust and not an artifact of any single data source.
 
 ## Findings
 
-- Individuals with stronger ideological attitudes are more inclined to post political content, skewing the visible discourse.
-- The observed polarization in online discourse exceeds the actual polarization of opinions in the underlying population.
-- These patterns hold consistently across observational data, experiments, and the cross-national survey.
-- The distortion is broad in scope, not confined to particular platforms, issues, or countries.
+- Individuals with stronger or more extreme ideological attitudes are more inclined to post political content, producing a skewed visible discourse.
+- The polarization observed in online discourse exceeds the actual polarization of opinions in the underlying population.
+- The pattern holds consistently across observational data, experiments, and the cross-national survey.
 
 ## Connections
 
-This work connects to research on the gap between perceived and actual polarization and the misperception of public opinion, complementing studies of affective and perceived polarization such as [[Voelkel2026-lc]] and [[Bergeron-Boutin2026-yh]]. Its emphasis on how a self-selected minority of active posters shapes visible discourse relates to accounts of who produces and amplifies political content online, including [[Green2025-ap]] and [[Falkenberg2026-ka]]. The self-selection mechanism also speaks to broader questions of algorithmic and behavioral filtering of exposure examined in [[Bakshy2015-rn]].
+This paper contributes a self-selection mechanism to the broader debate over whether social media genuinely polarizes publics or merely distorts perceptions of them, connecting to large-scale platform-effect studies such as [[Guess2023-ai]], [[Guess2023-ur]], [[Nyhan2023-gb]], and [[Allcott2025-jb]], and to the exposure-and-curation literature represented by [[Bakshy2015-rn]] and [[Barbera2015-fw]]. Its emphasis on misperceived rather than actual division complements work on affective polarization and partisan identity like [[Iyengar2019-jj]] and [[Osmundsen2021-et]], and speaks to the echo-chamber and selective-exposure claims examined in [[Bail2018-fk]] and [[Flaxman2016-lm]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schulz2026-ts.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)
