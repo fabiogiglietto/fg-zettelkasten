@@ -3529,10 +3529,10 @@
       "doi": "10.31235/osf.io/grne7_v1",
       "title": "The political weaponization of online content: From direct to networked exposure",
       "pdf_source": "abstract_only",
-      "content_hash": "933aac6d512de154f8c9ff5a27f53db17eafb42232d2358eaa2d46e4ab982d6b",
-      "podcast_linked": false,
+      "content_hash": "9a7c614ac93a2b587e9ffae6af40cc2164b70a0a01aa6f3a0d611a67a8a9cb67",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-08-27T16:48:29.081382+00:00"
+      "last_processed": "2026-10-13T14:54:32.234567+00:00"
     },
     "bibtex:Park2026-tr": {
       "note_path": "Papers/Park2026-tr.md",
