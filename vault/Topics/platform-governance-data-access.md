@@ -51,6 +51,7 @@ Research and advocacy concerning social media platforms' APIs, data-sharing poli
 - [[Lukito2026-nb]]
 - [[Mahl2026-hc]]
 - [[McNally2025-dn]]
+- [[Miller2026-cp]]
 - [[Moran2025-qn]]
 - [[Munger2025-cz]]
 - [[Murtfeldt2025-wu]]

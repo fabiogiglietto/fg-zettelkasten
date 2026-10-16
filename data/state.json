@@ -4728,10 +4728,26 @@
           "at": "2026-10-12T19:44:53.321691+00:00"
         }
       }
+    },
+    "bibtex:Miller2026-cp": {
+      "note_path": "Papers/Miller2026-cp.md",
+      "topics": [
+        "platform-governance-data-access",
+        "information-disorder-disinformation"
+      ],
+      "assign_fp": "2950e5054234d8de1d32dec5191da9b406957bf34817277dcc78f8b80dddc765",
+      "doi": "",
+      "title": "Community-driven API and AI writer design for openly scaling Community Notes",
+      "pdf_source": "drive",
+      "content_hash": "943bda8897f1597a0554fe594c9587f10c3c0b51ce569765e00d6810fd029977",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-16T14:44:10.496588+00:00"
     }
   },
   "last_full_cluster": "2026-10-12T12:05:30.982288+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 3,
   "register_signals_hash": "4f8e29a99bc2957dd69b13f015c8d6389f3d5ece8491e7c3b8dcc80b165d1e2e",
   "emergent_fp": "4131ce608e33081c2bd3abc38f90d3e1ef0c12b21fe49ec5d86a4b726b2a810a",
   "structure_fps": {
