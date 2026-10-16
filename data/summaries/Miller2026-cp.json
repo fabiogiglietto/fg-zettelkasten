@@ -1,0 +1,34 @@
+{
+  "abstract": "This paper describes the design and operation of X's Community Notes AI Note Writer API and the Community Writer (CW), an open-source AI client for proposing fact-checking notes on X. The API provides an open, decentralized interface allowing the public to operate AI note writers, while preserving the founding principle that human contributors—not the platform or AI—decide via ratings which notes show broadly. The authors present analysis of system design, the CW pipeline, and the interaction between AI- and human-generated notes across topics, based primarily on a June 2-29, 2026 measurement window.",
+  "key_claims": [
+    "AI note writing is additive to human note writing, extending Community Notes coverage rather than replacing human contributors.",
+    "The AI API changes how notes can be written but not how they are shown; human raters retain ultimate authority over which notes display broadly.",
+    "The Community Writer is the largest API client, producing a disproportionate share of helpful notes while consuming fewer contributor ratings.",
+    "An open, demand-driven API design (feeds derived from user note requests and posts) ensures AI note writing responds to actual user demand on X.",
+    "Economizing contributor attention (a finite resource) is a central design constraint, achieved through models that predict which posts and notes merit effort."
+  ],
+  "methods": [
+    "System description of a five-function AI API within the broader X API, including an earn-in process (URL validity, harassment classifier, and ClaimOpinion checks on the 50 most recent notes) and a non-linear quota system tied to writer hit rate.",
+    "A hierarchical feed structure (Small, Large, XL, XXL plus Retry/Revise queues) assigning posts based on explicit note requests, implicit engagement signals, and requester helpfulness scores.",
+    "The open-source Community Writer pipeline combining a Notable Post Model (MLP over engagement, author, and context features including all-mpnet-base-v2 embeddings), two writing models (Grok 4.20 and a post-trained CN Grok), four rejectors (Helpfulness, Recent Context, Screenshot, Revision), and a logistic-regression Deletion Model.",
+    "The ClaimOpinion evaluator fine-tunes DistilRoBERTa-base to predict rating tags and note status outcomes.",
+    "Empirical evaluation over a frozen system across June 2-29, 2026, measuring CRH rates, note views, ratings consumed, latency/lead time, and topic coverage, with comparisons against other AI clients, 'top writers,' and human writers; AUC analysis for the NPM and Deletion Model; z-tests and Wilson confidence intervals."
+  ],
+  "findings": [
+    "AI writers helped increase daily CRH note volume by 86.0% since the API launched in September 2025.",
+    "The Community Writer generated 41% of proposed notes but 52% of Currently Rated Helpful notes and 55% of CRH note views, while consuming only 22% of contributor ratings.",
+    "The CW submitted the first non-deleted note on 60% of posts (and the first AI note on 95%) relative to other writers, demonstrating a speed advantage.",
+    "AI and human writing are complementary: among posts with CRH notes, 42% had only AI notes and 30% had only human notes; 41% of CRH-note posts had no AI CRH note.",
+    "The Notable Post Model is most accurate on larger, sparser feeds (passing only 17.1% of XXL posts) while retaining most human-CRH posts; rejectors yielded 7.9-10.5% CRH rates per feed.",
+    "The CW offered a 29% chance that a rating leads to a CRH note versus 17% for top human writers; human writers average a 10.4% CRH and 9.0% CRNH rate.",
+    "Of 65 client accounts that began earn-in, 32 earned writing ability and 19 remained active; 54% of NMR notes received fewer than 10 ratings (below the effective CRH threshold)."
+  ],
+  "contributions": [
+    "Documentation of an open, public AI Note Writer API—including admissions/earn-in, quota allocation, and feed hierarchy—enabling decentralized operation of AI note writers on X.",
+    "Release of the Community Writer as open-source software under Apache 2.0, with full prompts, feature extraction, and training code for its models.",
+    "Mechanisms (NPM, rejectors, Deletion Model) that economize finite contributor rating attention while scaling note production.",
+    "An evaluation framework introducing latency/lead-time, quality, and quantity measurements across topics, differentiating top human contributors and other API clients—moving beyond prior offline or single-client evaluations."
+  ],
+  "framing": "The paper situates itself within research on crowdsourced and AI-assisted fact-checking and content moderation, building on prior work establishing Community Notes' accuracy and effect on misinformation spread, and on bridging/consensus algorithms. It positions itself as the first account of an open API that drives platform-wide added context at scale, contrasting with prior work focused on offline evaluations or single AI clients, and foregrounds a human-authority, community-driven design philosophy.",
+  "pdf_source": "drive"
+}
