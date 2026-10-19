@@ -6,7 +6,7 @@ emergent: false
 
 # Coordinated Inauthentic Behavior
 
-Detection, monitoring and theorization of coordinated link-sharing and inauthentic networks on social media platforms, including the CooRnet/CLSB methodology, the VERA-AI Alert system, and studies of deceptive information operations. This is the researcher's signature and most consistently active line of work, spanning from the 2018 Italian election through 2026 Facebook monitoring systems.
+Detection and analysis of coordinated link-sharing networks and inauthentic actor behavior on social platforms, from the CooRnet/CooRTweet methodology to the VERA-AI Alert monitoring system; the researcher's core, continuously active methodological line.
 
 ## Papers
 
@@ -14,6 +14,7 @@ Detection, monitoring and theorization of coordinated link-sharing and inauthent
 - [[Arceneaux2026-xk]]
 - [[Bastos2025-ol]]
 - [[Copland2025-em]]
+- [[Di-Domenico2026-zq]]
 - [[Di-Marco2025-aa]]
 - [[Di_Marco2026-xu]]
 - [[Efstratiou2026-ij]]
@@ -26,10 +27,10 @@ Detection, monitoring and theorization of coordinated link-sharing and inauthent
 - [[Giglietto2023-fa71a001]]
 - [[Giglietto2026-9b6a992d]]
 - [[Graham2025-gp]]
+- [[Graham2026-fb]]
 - [[Holland_Levin2026-qx]]
 - [[Iannucci2025-eg]]
 - [[Jovanovic-Harrington2026-ze]]
-- [[Jurg2025-ur]]
 - [[Kansaon2025-id]]
 - [[Keller2019-nk]]
 - [[Kim2026-br]]

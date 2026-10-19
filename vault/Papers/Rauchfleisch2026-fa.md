@@ -5,7 +5,7 @@ authors: ["Adrian Rauchfleisch", "Andreas Jungherr"]
 year: 2026
 doi: 
 bibtex_key: Rauchfleisch2026-fa
-topics: [computational-text-analysis-llms, platform-governance-data-access]
+topics: [generative-ai-synthetic-media, public-perceptions-and-labor-impacts-of-ai]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2608.11794v1

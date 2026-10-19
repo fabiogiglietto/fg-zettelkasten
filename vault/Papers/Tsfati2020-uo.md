@@ -5,7 +5,7 @@ authors: ["Yariv Tsfati", "H. G. Boomgaarden", "J. Strömbäck", "R. Vliegenthar
 year: 2020
 doi: 10.1080/23808985.2020.1759443
 bibtex_key: Tsfati2020-uo
-topics: [information-disorder-disinformation, political-communication-elections]
+topics: [information-disorder-theory, misinformation-exposure-recalibration]
 citation_count: 246
 open_access: false
 source_url: https://doi.org/10.1080/23808985.2020.1759443

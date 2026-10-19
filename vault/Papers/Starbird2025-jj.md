@@ -5,7 +5,7 @@ authors: ["Kate Starbird", "Stephen Prochaska", "Ben Yamron"]
 year: 2025
 doi: 10.1145/3757522
 bibtex_key: Starbird2025-jj
-topics: [information-disorder-disinformation, political-communication-elections]
+topics: [disinformation-narrative-monitoring, election-campaigns-social-media]
 citation_count: 4
 open_access: false
 source_url: https://doi.org/10.1145/3757522

@@ -5,7 +5,7 @@ authors: ["Young Mie Kim", "Ross Dahlke", "Hyebin Song", "Richard Heinrich"]
 year: 2026
 doi: 10.1073/pnas.2519944123
 bibtex_key: Kim2026-wg
-topics: [political-communication-elections, information-disorder-disinformation]
+topics: [election-campaigns-social-media, misinformation-exposure-recalibration]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.1073/pnas.2519944123

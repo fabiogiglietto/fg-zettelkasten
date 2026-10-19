@@ -5,7 +5,7 @@ authors: ["Hunt Allcott", "Matthew Gentzkow", "Chuan Yu"]
 year: 2019
 doi: 10.1177/2053168019848554
 bibtex_key: Allcott2019-gn
-topics: [information-disorder-disinformation, misinformation-exposure-recalibration]
+topics: [misinformation-exposure-recalibration, facebook-engagement-visibility]
 citation_count: 459
 open_access: false
 source_url: https://doi.org/10.1177/2053168019848554

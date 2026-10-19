@@ -5,7 +5,7 @@ authors: ["Rachel Elizabeth Moran", "Joseph Schafer", "Mert Bayar", "Kate Starbi
 year: 2025
 doi: 10.1145/3706598.3713662
 bibtex_key: Moran2025-qn
-topics: [platform-governance-data-access, platform-critique-anniversary-essays]
+topics: [platform-governance-data-access]
 citation_count: 13
 open_access: false
 source_url: https://doi.org/10.1145/3706598.3713662

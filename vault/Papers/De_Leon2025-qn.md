@@ -5,7 +5,7 @@ authors: ["Ernesto de León", "Jakob Bæk Kristensen", "Mykola Makhortykh", "Eva
 year: 2025
 doi: 10.31235/osf.io/grne7_v1
 bibtex_key: De_Leon2025-qn
-topics: [conspiracy-narratives-in-media, information-disorder-disinformation]
+topics: [conspiracy-narratives-in-media, online-radicalization-and-extremism-on-platforms]
 citation_count: 1
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/grne7_v1

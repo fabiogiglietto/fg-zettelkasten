@@ -5,7 +5,7 @@ authors: ["Pablo Barberá"]
 year: 2015
 doi: 10.1093/pan/mpu011
 bibtex_key: Barbera2015-je
-topics: [political-communication-elections, political-polarization-partisanship]
+topics: [political-polarization-partisan-media, election-campaigns-social-media]
 citation_count: 634
 open_access: false
 source_url: https://doi.org/10.1093/pan/mpu011

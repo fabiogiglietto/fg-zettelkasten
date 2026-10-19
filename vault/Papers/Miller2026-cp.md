@@ -5,7 +5,7 @@ authors: ["Brad Miller", "Jay Baxter", "Jiansong Chao", "Keith Coleman", "Sophie
 year: 2026
 doi: 
 bibtex_key: Miller2026-cp
-topics: [platform-governance-data-access, information-disorder-disinformation]
+topics: [platform-governance-data-access, llms-in-content-analysis]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2609.40067v1

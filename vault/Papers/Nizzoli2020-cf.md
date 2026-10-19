@@ -5,7 +5,7 @@ authors: ["Leonardo Nizzoli", "Serena Tardelli", "Marco Avvenuti", "Stefano Cres
 year: 2020
 doi: 
 bibtex_key: Nizzoli2020-cf
-topics: [coordinated-inauthentic-behavior, political-communication-elections]
+topics: [coordinated-inauthentic-behavior, election-campaigns-social-media]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2008.08370v2

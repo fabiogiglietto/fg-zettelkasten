@@ -6,7 +6,7 @@ year: 2022
 doi: 10.31235/osf.io/6umqs
 bibtex_key: Giglietto2022-0e951ac5
 kind: own
-topics: [coordinated-inauthentic-behavior, health-misinformation]
+topics: [coordinated-inauthentic-behavior, health-misinformation-networks]
 citation_count: 8
 open_access: true
 source_url: https://doi.org/10.31235/osf.io/6umqs

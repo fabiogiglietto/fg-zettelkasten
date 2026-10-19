@@ -4,9 +4,9 @@ slug: generative-ai-synthetic-media
 emergent: false
 ---
 
-# Generative AI & Synthetic Media
+# Generative AI and Synthetic Media
 
-Examination of how generative AI is used to produce and evolve deceptive visual and textual content (e.g. AI-generated gambling promotion imagery, sanitized extremist visuals) and reflection on the shift toward an 'AI society'. Reflects a rapidly growing current strand tied to new teaching (IA Generativa e Media) and 2025-2026 publications.
+Study of generative AI's role in disinformation and persuasion (e.g. AI-generated gambling promotion, synthetic visual persuasion) and in reshaping platform/AI ecosystems, paired with the researcher's teaching on generative AI and media.
 
 ## Papers
 
@@ -19,24 +19,24 @@ Examination of how generative AI is used to produce and evolve deceptive visual 
 - [[Galip2026-ix]]
 - [[Giglietto2026-9b6a992d]]
 - [[Gilardi2026-hw]]
+- [[Hackenburg2025-dj]]
+- [[Hackenburg2026-ud]]
 - [[Hameleers2026-mc]]
-- [[Helmond2026-ll]]
-- [[Hollingshead2026-vx]]
 - [[Lin2025-xp]]
 - [[Manovich2026-ih]]
 - [[Mattis2026-gu]]
-- [[Nguyen2026-vm]]
 - [[Orlando2025-ul]]
 - [[Perez-Curiel2026-ld]]
+- [[Rauchfleisch2026-fa]]
 - [[Schiffrin_undated-gi]]
 - [[Schroeder2026-im]]
-- [[Suk2026-ai]]
 - [[Tang2026-gu]]
 - [[Topinka2026-hb]]
 - [[Tornberg2026-im]]
 - [[Tornberg2026-lc]]
 - [[Triedman2025-uy]]
 - [[Wack2026-bt]]
+- [[Waight2026-ts]]
 
 ## All papers (Dataview)
 

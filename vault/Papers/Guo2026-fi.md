@@ -5,7 +5,7 @@ authors: ["Yufan Guo", "Yibin Fan"]
 year: 2026
 doi: 10.1080/10584609.2026.2745844
 bibtex_key: Guo2026-fi
-topics: [political-communication-elections, political-polarization-partisanship]
+topics: [information-disorder-theory, political-polarization-partisan-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2026.2745844
