@@ -1,0 +1,26 @@
+{
+  "abstract": "This paper argues that AI-generated reviews of academic articles now surpass high-quality reviews written by well-compensated human experts across every measure the authors constructed. The human reviews used for comparison were themselves judged to be of unusually high quality by journal editors and authors. The authors then consider how this finding should inform journal policy, weighing concerning downsides against potential benefits for publication speed, quality, and the experience of participants in the peer review process.",
+  "key_claims": [
+    "AI-generated article reviews are now better than human expert reviews by every measure the authors could construct.",
+    "The human benchmark comprised reviews from well-compensated experts that editors and authors judged to be of unusually high quality.",
+    "This capability has significant implications for journal policy, including both risks and opportunities.",
+    "AI reviews could increase publication speed and quality while reducing adversarial interactions."
+  ],
+  "methods": [
+    "Comparison of AI-generated reviews against human expert reviews using multiple constructed measures of review quality.",
+    "Use of a benchmark set of human reviews pre-judged by editors and authors to be of high quality.",
+    "Policy analysis discussing downsides and benefits for journals, editors, reviewers, authors, and readers (details not available from the abstract)."
+  ],
+  "findings": [
+    "AI reviews outperformed high-quality human expert reviews on every evaluation measure used.",
+    "The result holds even against a demanding human benchmark of unusually well-regarded reviews.",
+    "There are concerning downsides alongside potential paths to improve the publication process (specifics not detailed in the abstract)."
+  ],
+  "contributions": [
+    "Provides evidence that AI review quality has reached or exceeded that of strong human expert reviews.",
+    "Offers a framework for journals to think through policy choices regarding AI in peer review.",
+    "Identifies potential benefits of AI reviews, including faster publication, higher quality, and less adversarial interactions."
+  ],
+  "framing": "The paper positions itself within debates on the future of academic peer review and the role of AI in scholarly evaluation, bridging empirical assessment of AI capabilities with practical journal policy design.",
+  "pdf_source": "abstract_only"
+}
