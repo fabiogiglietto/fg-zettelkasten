@@ -3197,10 +3197,10 @@
       "doi": "10.1080/17457289.2026.2701896",
       "title": "Disrupting democracy: how informational pathways and misinformation shape trust in election results",
       "pdf_source": "drive",
-      "content_hash": "87d162e03049c55cd20717b6d00532ecfce77a3d1d7d9240dbdfcb89b09c3af6",
+      "content_hash": "cf3cb7015f2a13b45a27e0e1bbf7b9c11cb18583512b02f9b3f8ba1e898aa9c5",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-07-18T11:02:24.901467+00:00"
+      "last_processed": "2026-10-23T17:42:25.092213+00:00"
     },
     "bibtex:Eady2025-vm": {
       "note_path": "Papers/Eady2025-vm.md",
@@ -3638,10 +3638,10 @@
       "doi": "10.1080/21670811.2026.2730327",
       "title": "Revisiting framing codebooks with AI: Employing large language models as analytical collaborators in deductive content analysis",
       "pdf_source": "drive",
-      "content_hash": "a4042f5c61d5f7f76b63b6822ddb9497f4332af1989212890f231e49607895ac",
+      "content_hash": "c5bb500e19f0ea51caffc3f46388c81a28c3e634332b649c1d538a2fa6b79f1e",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-09-18T06:18:56.988101+00:00"
+      "last_processed": "2026-10-23T17:42:09.639402+00:00"
     },
     "bibtex:Topinka2026-hb": {
       "note_path": "Papers/Topinka2026-hb.md",
@@ -4735,10 +4735,26 @@
           "at": "2026-10-16T14:45:48.889962+00:00"
         }
       }
+    },
+    "bibtex:King2026-av": {
+      "note_path": "Papers/King2026-av.md",
+      "topics": [
+        "llm-augmented-research-methods"
+      ],
+      "assign_fp": "67176c605479d4b38766db2d7e48de9e5a3f8d2a2cdc205fa265ba8500c1f6fc",
+      "doi": "",
+      "title": "AI article reviews dominate human peer reviews at their best: Evidence and policy choices",
+      "pdf_source": "abstract_only",
+      "content_hash": "a150280eab699cde87140370ebf8dea91916c7794e2779970486247066e15920",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "social_pending": true,
+      "last_processed": "2026-10-23T17:41:50.374069+00:00"
     }
   },
   "last_full_cluster": "2026-10-19T10:05:14.562453+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "0cd70ff2e9c1f0db479df2dad0eac7a340f33cb2e48d33715fdc06dc9a080cb0",
   "emergent_fp": "17b382c9e10bdc3f1c840e8ddfb30d56dbb2c2a1d7523386076ca4a5d6fa4106",
   "structure_fps": {

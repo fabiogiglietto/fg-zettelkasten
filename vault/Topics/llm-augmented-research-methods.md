@@ -19,6 +19,7 @@ Methodological papers deploying LLMs or fine-tuned models to augment scholarly t
 - [[Fan2026-af]]
 - [[Gomez-Zara2026-as]]
 - [[Jayaram2026-wd]]
+- [[King2026-av]]
 - [[Matias2025-px]]
 - [[Meher2025-qb]]
 - [[Ober2026-vd]]
