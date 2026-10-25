@@ -14,6 +14,7 @@ Empirical study of how reactions, algorithmic governance, and dataset methodolog
 - [[Allen2021-ai]]
 - [[Anwar2024-34dba628]]
 - [[Bakshy2015-rn]]
+- [[Bucher2017-qh]]
 - [[Ducci2022-10cb5d70]]
 - [[Efstratiou2025-gs]]
 - [[Gagrcin2024-dl]]

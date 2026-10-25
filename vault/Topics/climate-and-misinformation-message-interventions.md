@@ -13,6 +13,7 @@ Experimental and review studies testing how framed messages, chatbots, or inocul
 - [[Costello2024-bg]]
 - [[Dubey2026-bl]]
 - [[Kotz2026-lk]]
+- [[Kuznetsova2026-hw]]
 - [[Lieu2025-nl]]
 - [[Spampatti2026-kx]]
 - [[Szabo2026-rd]]

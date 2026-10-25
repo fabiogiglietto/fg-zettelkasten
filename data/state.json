@@ -4768,10 +4768,77 @@
           "at": "2026-10-23T17:44:21.758704+00:00"
         }
       }
+    },
+    "bibtex:Bucher2017-qh": {
+      "note_path": "Papers/Bucher2017-qh.md",
+      "topics": [
+        "facebook-engagement-visibility",
+        "platform-performance-and-authenticity"
+      ],
+      "assign_fp": "4cd2f454ef57f6e05228b6bfbd0b231fef40f8c74ed9587fd5cad85cf0d3caf5",
+      "doi": "10.1080/1369118x.2016.1154086",
+      "title": "The algorithmic imaginary: exploring the ordinary affects of Facebook algorithms",
+      "pdf_source": "drive",
+      "content_hash": "94ac07989100ee438ea5d1ccbd5aaee9d458f3ec27a3aecf9c3e2d4764a3eb73",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "social_pending": false,
+      "last_processed": "2026-10-25T12:07:11.216531+00:00"
+    },
+    "bibtex:Cotter2019-js": {
+      "note_path": "Papers/Cotter2019-js.md",
+      "topics": [
+        "platform-performance-and-authenticity",
+        "public-perceptions-and-labor-impacts-of-ai"
+      ],
+      "assign_fp": "20cf3fb62216c5df34dddafc3c951b3739066ed68ae40c3b830a6cf0227fbe28",
+      "doi": "10.1177/1461444818815684",
+      "title": "Playing the visibility game: How digital influencers and algorithms negotiate influence on Instagram",
+      "pdf_source": "drive",
+      "content_hash": "7633cf5b8644cb357963860019535a94c71a883c3d911f6e86190ee404e4ed13",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "social_pending": false,
+      "last_processed": "2026-10-25T12:07:33.368638+00:00"
+    },
+    "bibtex:Petre2019-zh": {
+      "note_path": "Papers/Petre2019-zh.md",
+      "topics": [
+        "platform-governance-data-access",
+        "platform-performance-and-authenticity"
+      ],
+      "assign_fp": "75801fffb37d45bfbe79a99f8b30ae93973099b44268c49d27322381928b0717",
+      "doi": "10.1177/2056305119879995",
+      "title": "“gaming the system”: Platform paternalism and the politics of algorithmic visibility",
+      "pdf_source": "drive",
+      "content_hash": "d732e070f4cf45656f12c42f2bd6e4006dfd826401d14e8fa460ae0b10cac8a6",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "social_pending": false,
+      "last_processed": "2026-10-25T12:07:51.872072+00:00"
+    },
+    "bibtex:Kuznetsova2026-hw": {
+      "note_path": "Papers/Kuznetsova2026-hw.md",
+      "topics": [
+        "platform-governance-data-access",
+        "climate-and-misinformation-message-interventions"
+      ],
+      "assign_fp": "4c2c53acbe45422d2634bc2c7388524bf4aeaea0d5a8789470e53a4734d5c990",
+      "doi": "10.1177/29768624261499168",
+      "title": "All talk, no rules: Content moderation practices and discursive strategies in platform governance of climate misinformation",
+      "pdf_source": "drive",
+      "content_hash": "94bd57a4f7e614cb7dac327002b77b9de707d0cac7f982f6a14fab9a2c950672",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-25T12:08:10.715033+00:00"
     }
   },
   "last_full_cluster": "2026-10-19T10:05:14.562453+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 5,
   "register_signals_hash": "0cd70ff2e9c1f0db479df2dad0eac7a340f33cb2e48d33715fdc06dc9a080cb0",
   "emergent_fp": "17b382c9e10bdc3f1c840e8ddfb30d56dbb2c2a1d7523386076ca4a5d6fa4106",
   "structure_fps": {

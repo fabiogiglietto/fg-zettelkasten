@@ -10,6 +10,7 @@ Survey- and discourse-based studies of how publics and workers perceive, use, an
 
 ## Papers
 
+- [[Cotter2019-js]]
 - [[DiGiuseppe2026-pu]]
 - [[Fattorini2026-bo]]
 - [[Gilardi2026-hw]]
