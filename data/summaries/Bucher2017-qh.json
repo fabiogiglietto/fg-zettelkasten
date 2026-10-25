@@ -1,0 +1,35 @@
+{
+  "abstract": "This article investigates how ordinary Facebook users become aware of, experience, and make sense of algorithms in everyday life, despite their hidden and invisible nature. Drawing on tweets and email interviews with 25 users, Bucher develops the concept of the 'algorithmic imaginary' — the ways people think about what algorithms are, should be, and how they function. She argues that these imaginings are affectively charged and play a generative role in shaping both user behavior and the Facebook algorithm itself, making the study of how algorithms make people feel crucial to understanding their social power.",
+  "key_claims": [
+    "People can perceive and experience algorithms without accessing their underlying code, encountering them instead through moods, affects, and sensations they generate.",
+    "The 'algorithmic imaginary' — users' ways of imagining what algorithms are and do — is not a false belief or illusion but a productive force that shapes behavior and expectations.",
+    "Algorithms become noticeable primarily in moments of perceived breakdown, surprise, or when they violate normative expectations of how they should behave.",
+    "The relationship between people and algorithms is recursive: algorithms do things to people, but people also do things to algorithms, especially within machine-learning feedback loops.",
+    "Studying the affective dimensions of algorithms — how they make people feel — is essential to understanding their social power, not merely critiquing their technical workings."
+  ],
+  "methods": [
+    "Qualitative study combining analysis of public tweets with email interviews of 25 ordinary Facebook users (from 47 contacted).",
+    "Twitter searches conducted regularly over a nine-month period (October 2014–June 2015) using keyword combinations such as 'Facebook algorithm', 'algorithm AND weird', 'algorithm AND creepy'.",
+    "Manual scrolling and screenshotting of personal (rather than marketing) tweets, followed by email interviews with 3–4 questions on context, perceived algorithm workings, and effects on platform use.",
+    "Coding of responses for triggering situations, mental models, effects on use, tactics/strategies, and voiced concerns; participants pseudonymized with age/country/occupation disclosed.",
+    "Theoretical framing drawn from affect theory (Gregg & Seigworth, Deleuze & Guattari), Lauren Berlant's notion of 'the situation' (Cruel Optimism), and Kathleen Stewart's Ordinary Affects, with a phenomenological orientation (Merleau-Ponty)."
+  ],
+  "findings": [
+    "Algorithmic profiling can make users feel misidentified or uncomfortable even when inferences are accurate (e.g., Kayla profiled as 'pregnant, single, broke'; Shannon receiving age-stereotyped ads).",
+    "Users experience uncanny 'whoa moments' when ads reflect their immediate offline behavior (e.g., Jessa's air mattress ad, Nespresso ads).",
+    "'Faulty prediction' breakdowns generate frustration and anger when the algorithm fails to reflect users' current identities or desires (e.g., Lena feeling 'out of sync' with her feed).",
+    "Many users treat Facebook as a 'popularity game,' developing optimization tactics — timing posts, word choice, multiple photos, avoiding certain images — to be algorithmically recognized (Michael, Kate, Nora).",
+    "Algorithmic features produce 'cruel connections' and emotionally jarring reminders, such as the 'Year in Review' surfacing a user's deceased daughter, highlighting the perceived inhumanity of algorithmic processing.",
+    "The algorithm is experienced as reshaping friendships, both hiding and resurfacing people ('who are these people who suddenly show up?'), producing feelings of lost control.",
+    "Users engage in strategic reactions ranging from optimization to data obfuscation and 'confusing' the algorithm (e.g., Jessa liking contradictory things, Lena manipulating content), which in turn feed back into and reshape the system."
+  ],
+  "contributions": [
+    "Introduces and theorizes the concept of the 'algorithmic imaginary' as a framework for understanding lived, affective encounters with algorithms.",
+    "Shifts the research agenda from 'algorithm awareness' (whether users know algorithms exist) to how users experience and make sense of algorithmic encounters in everyday life.",
+    "Demonstrates a methodological approach for accessing personal algorithm experiences through social media traces (tweets) combined with interviews — 'getting behind the tweets' rather than opening the black box of code.",
+    "Advances an affect-theoretical and phenomenological approach to critical algorithm studies, foregrounding feeling and sensation.",
+    "Reframes algorithmic power as recursive and co-constituted, countering the view that individuals cannot experience algorithmic effects (contra Cheney-Lippold)."
+  ],
+  "framing": "The paper positions itself within critical algorithm studies and software studies in media and communication (Beer, Gillespie, Kitchin & Dodge), extending beyond prior HCI work on 'algorithm awareness' (Eslami et al.; Rader & Gray). It brings affect theory and phenomenology to bear on everyday human-algorithm relations, treating algorithms as objects of lived experience and social power rather than purely technical systems.",
+  "pdf_source": "drive"
+}
