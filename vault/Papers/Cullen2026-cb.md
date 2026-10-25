@@ -10,7 +10,7 @@ citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20539517261461463
 podcast_url: 
-pdf_available: false
+pdf_available: true
 discovery_date: 2026-07-14T08:57:34.744599Z
 ---
 
@@ -22,26 +22,29 @@ discovery_date: 2026-07-14T08:57:34.744599Z
 
 ## Summary
 
-This paper examines how academic researchers accessed, interpreted, and evaluated data through Meta's CrowdTangle (CT) API before its shutdown, arguing that research APIs are not neutral conduits but active mediators of knowledge production. Drawing on interviews with 20 academic CT users, the authors develop a "Seeing like an API" framework — a deliberate riff on Scott's "seeing like a state" lineage in STS and critical platform studies — to show how the API's technical design, governance rules, and surrounding knowledge networks jointly determined what researchers could observe, question, and conclude about platform activity. The central claim is that platform-mediated data access is a fundamentally political matter, structured by power asymmetries that favor the platform over the research community.
+This paper examines how academic researchers accessed and interpreted data through Meta's now-discontinued CrowdTangle (CT) API, developing a "Seeing like an API" framework to theorize platform-mediated knowledge production. Drawing on interviews with 20 academic CT users, the authors argue that platform-controlled APIs operate as epistemic infrastructures that shape not merely what data are available but what questions become askable, what methods are feasible, and whose expertise is legitimized. Researchers exercise genuine but reactive agency: their adaptive strategies simultaneously contest and entrench the platform's epistemic terms. The study situates its findings within policy debates on third-party data governance, notably the EU's Digital Services Act, and offers a real-time historical snapshot of a vanishing research infrastructure.
 
 ## Key Contributions
 
-- Introduces the **"Seeing like an API"** framework for theorizing platform-mediated research access.
-- Empirically documents the constraints faced by, and adaptive workarounds developed among, academic users of a now-sunset research tool (CrowdTangle).
-- Advances scholarly understanding of the politics of data access in platform research, extending STS traditions to the infrastructure of research APIs.
+- Introduces the **"Seeing like an API"** framework, synthesizing top-down (Scott's *Seeing Like a State*) and distributed/emergent (Vertesi; Singh and Jackson) accounts of infrastructural visibility.
+- Shifts analytic focus from cataloguing API limitations to documenting the situated adaptations that data absences provoke, and their epistemic consequences.
+- Provides an empirical, real-time account of researcher responses during CT's deprecation.
+- Offers concrete design recommendations for data governance bodies (knowledge-sharing networks, transparent visibility decisions, verification support, equitable access criteria).
+- Argues for methodological pluralism and multiple access points enabling triangulation.
 
 ## Methods
 
-- Qualitative interview study with 20 academic users of the CrowdTangle API.
-- Development and application of the "Seeing like an API" conceptual framework.
-- Analysis of the interplay among three dimensions: technical design, governance rules, and platform-mediated knowledge networks.
+Semi-structured interviews with 20 academic researchers (each with at least one peer-reviewed CT publication) across eight countries, disciplines, and career stages, supplemented by background interviews with former CT staff (n=3) and non-academic power users (n=4). Interviews were conducted remotely between July and October 2021 and analyzed using a constructivist grounded theory approach, with iterative open and focused coding, a data matrix for cross-checking themes and negative cases, and sampling to saturation. The framework was developed through engagement with infrastructure studies literature.
 
 ## Findings
 
-- CrowdTangle's design and governance shaped the very scope of questions researchers could ask and the conclusions they could draw.
-- Participants developed adaptive practices to work around the API's limitations.
-- Knowledge about the API circulated through informal networks, which in turn influenced how researchers interpreted and assessed the data they obtained.
+- CT was frequently the only tool for large-scale access to organic public Facebook/Instagram content, yet participants described it as showing only "the tip of the iceberg."
+- Key limitations: exclusion of comment data, follower-count thresholds (criticized as U.S.-centric), restrictions on downloading media, and opaque content removal.
+- Engagement metrics stripped of discursive context could not disambiguate user intent, constraining interpretive claims.
+- Three recurring strategies emerged: **optimizing** (Slack channels, webinars, feature requests—a "common brain trust"), **extending** (scraping, manual collection, integrating other APIs), and **verifying** (triangulation that exposed bugs and discrepancies).
+- Access and informal knowledge networks were unevenly distributed, privileging elite institutions and those proximate to the CT team; scraping workarounds were fragile, risked bans, and were sometimes rejected by reviewers as ToS violations.
+- CT's shutdown was framed as destabilizing for research design, funding, teaching, and field-wide replicability.
 
 ## Connections
 
-This paper's critical, qualitative account of CrowdTangle as a mediating infrastructure complements empirical and infrastructural analyses of the same tool and its successors, notably [[Rieder2025-ju]] and [[Rieder2026-pp]] on the political economy of platform data access, and [[Bruns2026-yv]] on the fallout of CrowdTangle's shutdown for research. Its framing of platform-controlled data access as a governance and power problem also connects to broader work on data-access regimes and their limits, such as [[Murtfeldt2025-wu]] and Davies2026-... — link only [[Ohme2026-nv]] and [[de-Vreese2026-zx]] insofar as they address researcher access under platform-imposed conditions.
+This paper is a cornerstone contribution to the "post-API"/"APIcalypse" literature on data access politics, extending the foundational diagnoses in [[Freelon2018-ao]] and the platform-governance frameworks of [[Gillespie2010-as]], [[Gillespie2022-jx]], and [[van-Dijck2018-up]]. Its concern with uneven, platform-controlled access and researcher workarounds connects closely to empirical and critical accounts of CrowdTangle and its successors such as [[Rieder2025-ju]], [[Rieder2026-pp]], and [[Petre2019-zh]], while its focus on equitable, DSA-mediated third-party access aligns it with ongoing data-governance debates in works like [[Murtfeldt2025-wu]] and [[Bruns2019-nr]].
