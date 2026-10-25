@@ -1,0 +1,34 @@
+{
+  "abstract": "This study examines how academic researchers accessed, interpreted, and assessed data from Meta's now-discontinued CrowdTangle (CT) API. Drawing on interviews with 20 academic users (plus supplementary interviews with former CT staff and power users), the authors introduce the 'Seeing like an API' framework to show how a platform's technical design, governance rules, and knowledge networks shape what researchers can see, ask, and conclude. They document three recurring adaptive strategies—optimizing, extending, and verifying API data—and argue these simultaneously sustain and entrench the platform's epistemic constraints, drawing implications for emerging third-party data governance models such as the EU's Digital Services Act.",
+  "key_claims": [
+    "Platform-controlled APIs function as epistemic infrastructures that shape not only what data are accessible but also what research becomes legible, what methods are possible, and whose expertise is recognized.",
+    "Researchers exercise real but reactive agency: their workarounds simultaneously contest and entrench the platform's epistemic terms, opening momentary windows beyond the API's view while reaffirming that view as the center of methodological creativity.",
+    "Differential access to CT reinforced institutional and geographic hierarchies, privileging well-resourced scholars and elite institutions while pushing less-resourced and Global South researchers toward fragile scraping methods.",
+    "Adaptive strategies sustain inquiry under imperfect conditions but also normalize the very infrastructural constraints that necessitate them, with consequences for replicability and data quality.",
+    "Future data governance (e.g., DSA-mandated access, third-party data trusts) must address tensions between comprehensiveness and privacy, open access and platform retaliation, and standardization and flexibility."
+  ],
+  "methods": [
+    "Semi-structured interviews with 20 academic researchers who had used the CT API (required at least one peer-reviewed publication using CT), across eight countries and multiple disciplines and career stages.",
+    "Supplementary interviews with former CT team members (n=3) and non-academic early adopters/power users (n=4) used for background, not formal analysis.",
+    "Interviews conducted remotely via Zoom by the first author between July and October 2021, prior to CT's August 2024 shutdown; transcribed with Descript and analyzed in ATLAS.ti.",
+    "Constructivist grounded theory approach with iterative open coding and focused coding; data matrix used to cross-check themes and identify negative cases; sampling to saturation.",
+    "Conceptual development of the 'Seeing like an API' framework through engagement with infrastructure studies literature (Scott's Seeing Like a State, Vertesi's Seeing like a Rover, Singh and Jackson's Seeing Like an Infrastructure)."
+  ],
+  "findings": [
+    "CT was often the only tool for large-scale access to organic content from public Facebook pages, groups, and Instagram profiles, yet participants described it as showing only 'the tip of the iceberg.'",
+    "Key limitations included the exclusion of comment data, follower-count thresholds (criticized as U.S.-centric and excluding locally influential small accounts), restrictions on downloading media content, and opaque content removal.",
+    "Engagement metrics (likes, shares, reactions) stripped of discursive context could not disambiguate user intent, constraining interpretive claims.",
+    "Researchers used three strategies: optimizing (community Slack channels, webinars, feature requests—a 'common brain trust'), extending (web scraping, manual collection, integrating other APIs), and verifying (triangulating CT outputs against scraped or manual data, which exposed bugs and discrepancies).",
+    "Informal knowledge networks and API access were unevenly distributed, favoring elite institutions and those with proximity to the CT team, while scraping-based workarounds were fragile, risked account bans, and were sometimes rejected by peer reviewers as violating terms of service.",
+    "Rumored/actual CT shutdown was framed as destabilizing for research design, funding commitments, teaching, and training, and as potentially fragmenting the field toward less standardized, less replicable bespoke scraping efforts."
+  ],
+  "contributions": [
+    "Introduces the 'Seeing like an API' framework, synthesizing top-down (Scott) and distributed/emergent (Vertesi; Singh and Jackson) accounts of visibility to characterize platform-imposed but researcher-maintained optics.",
+    "Shifts analytic focus from diagnosing API limitations to documenting the situated practices and methodological adaptations that absences provoke, and their epistemic consequences.",
+    "Provides an empirical, real-time account of researcher responses during CT's deprecation, serving as a historical snapshot of a vanishing infrastructure.",
+    "Offers concrete design recommendations for data governance bodies: universal knowledge-sharing networks, transparent data visibility decisions, support for verification and validation, and equitable/consistent access criteria.",
+    "Argues for methodological pluralism and multiple access points enabling triangulation across APIs, data donations, and third-party intermediaries."
+  ],
+  "framing": "The paper is situated within critical internet and infrastructure studies, platform governance, and debates on the 'post-API'/'APIcalypse' environment and data access politics. It extends standpoint-epistemology-inflected 'seeing like' frameworks to API-mediated knowledge production and positions its findings within policy debates on independent, third-party-regulated data access such as the EU's Digital Services Act.",
+  "pdf_source": "drive"
+}
