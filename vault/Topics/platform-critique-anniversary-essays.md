@@ -10,27 +10,27 @@ Reflective anniversary/position essays diagnosing the current state of social me
 
 ## Papers
 
-- [[Bak-Coleman2026-mk]]
-- [[Bastos2025-ya]]
 - [[Baym2026-tr]]
-- [[Beacken2026-zb]]
 - [[Bennett2025-xs]]
 - [[Boyd2026-op]]
-- [[Bruns2019-nr]]
 - [[Bruns2026-yv]]
-- [[Chadwick2013-ns]]
 - [[De2026-ld]]
 - [[Dodds2026-df]]
 - [[Gerbaudo2026-fo]]
 - [[Gillespie2010-as]]
+- [[Gillespie2022-jx]]
 - [[Helmond2026-ll]]
 - [[Hepp2026-oi]]
 - [[Kristensen2025-ni]]
 - [[Marwick2026-ss]]
+- [[Petre2019-zh]]
 - [[Stanusch2026-ec]]
 - [[Swartz2026-zb]]
+- [[Topinka2026-hb]]
+- [[Tornberg2026-im]]
 - [[Tornberg2026-lc]]
 - [[Vertesi2026-lv]]
+- [[Weinbrand2026-sf]]
 - [[van-Dijck2018-up]]
 
 ## All papers (Dataview)

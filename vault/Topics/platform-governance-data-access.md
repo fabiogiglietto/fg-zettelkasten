@@ -4,9 +4,9 @@ slug: platform-governance-data-access
 emergent: false
 ---
 
-# Platform Governance and Researcher Data Access
+# Platform Governance & Researcher Data Access
 
-Analysis of platform policies, API/data-access regimes, and regulatory frameworks (DSA, Meta's political content reduction policy, CrowdTangle shutdown) shaping what researchers and citizens can see and study on social media.
+Analysis of platform policy, API/data-access regimes and regulatory oversight — including DSA researcher-access provisions, Meta's political content reduction and CrowdTangle shutdown, and the researcher's role as EC/JRC expert on systemic risk assessment of VLOPs.
 
 ## Papers
 
@@ -15,8 +15,6 @@ Analysis of platform policies, API/data-access regimes, and regulatory framework
 - [[Annabell2026-ev]]
 - [[Bak-Coleman2025-pm]]
 - [[Bak-Coleman2026-mk]]
-- [[Balluff2026-bv]]
-- [[Balluff2026-ev]]
 - [[Bastos2025-ya]]
 - [[Bechmann2026-dr]]
 - [[Bouchaud2026-lr]]
@@ -36,7 +34,7 @@ Analysis of platform policies, API/data-access regimes, and regulatory framework
 - [[Freelon2018-ao]]
 - [[Freelon2024-sc]]
 - [[Gagrcin2024-dl]]
-- [[Giada2026-fc9a3833]]
+- [[Gauthier2026-iq]]
 - [[Giglietto2020-6278a4aa]]
 - [[Giglietto2022-b30e8b4e]]
 - [[Giglietto2025-1765bb4f]]
@@ -47,14 +45,15 @@ Analysis of platform policies, API/data-access regimes, and regulatory framework
 - [[Gillespie2010-as]]
 - [[Gillespie2022-jx]]
 - [[Goldberg2026-eb]]
+- [[Gonzalez-Bailon2023-uy]]
 - [[Graham2025-gp]]
 - [[Heiss2026-qv]]
+- [[Helmond2026-ll]]
 - [[Holt2026-zq]]
 - [[Hurcombe2025-cs]]
 - [[Inacio-da-Silva2026-zf]]
 - [[Jurg2025-ur]]
 - [[Karo2026-dn]]
-- [[Kasianenko2026-tn]]
 - [[Kuznetsova2026-hw]]
 - [[Lewandowsky2026-ob]]
 - [[Lukito2026-nb]]
@@ -65,7 +64,6 @@ Analysis of platform policies, API/data-access regimes, and regulatory framework
 - [[Munger2025-cz]]
 - [[Murtfeldt2025-wu]]
 - [[Ohme2026-nv]]
-- [[Oswald2025-km]]
 - [[Park2026-tr]]
 - [[Peters2026-mo]]
 - [[Petre2019-zh]]
@@ -76,15 +74,11 @@ Analysis of platform policies, API/data-access regimes, and regulatory framework
 - [[Rieder2026-pp]]
 - [[Rogers2026-zz]]
 - [[Schiffrin_undated-gi]]
-- [[Schulte2026-df]]
 - [[Swartz2026-zb]]
 - [[Tonneau2025-bv]]
-- [[Tornberg2026-im]]
 - [[Unknown2025-ed60bc90]]
 - [[Ventura2026-yc]]
 - [[Votta2025-xz]]
-- [[Wang2026-ub]]
-- [[Weinbrand2026-sf]]
 - [[Yang2026-tq]]
 - [[Zheng2026-bi]]
 - [[de-Vreese2026-zx]]

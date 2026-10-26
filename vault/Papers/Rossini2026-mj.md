@@ -5,7 +5,7 @@ authors: ["Patrícia Rossini", "Camila Mont’Alverne", "Antonis Kalogeropoulos"
 year: 2026
 doi: 10.1080/17457289.2026.2701896
 bibtex_key: Rossini2026-mj
-topics: [election-campaigns-social-media, disinformation-narrative-monitoring]
+topics: [information-disorder-disinformation-narratives, political-polarization-partisan-dynamics]
 citation_count: 1
 open_access: true
 source_url: https://doi.org/10.1080/17457289.2026.2701896

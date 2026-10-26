@@ -5,7 +5,7 @@ authors: ["Ludwig Schulte", "Dino Pasic", "Catalina Goanta", "Adriana Iamnitchi"
 year: 2026
 doi: 10.1145/3795513.3807440
 bibtex_key: Schulte2026-df
-topics: [election-campaigns-social-media, platform-governance-data-access]
+topics: [social-media-research-methods-infrastructure, italian-political-communication-elections]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3795513.3807440

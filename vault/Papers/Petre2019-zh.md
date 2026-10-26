@@ -5,7 +5,7 @@ authors: ["Caitlin Petre", "Brooke Erin Duffy", "Emily Hund"]
 year: 2019
 doi: 10.1177/2056305119879995
 bibtex_key: Petre2019-zh
-topics: [platform-governance-data-access, platform-performance-and-authenticity]
+topics: [platform-governance-data-access, platform-critique-anniversary-essays]
 citation_count: 149
 open_access: false
 source_url: https://doi.org/10.1177/2056305119879995

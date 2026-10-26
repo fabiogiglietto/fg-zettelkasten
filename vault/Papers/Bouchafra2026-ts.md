@@ -5,7 +5,7 @@ authors: ["Salma Bouchafra", "Mathilda Åkerlund"]
 year: 2026
 doi: 10.1177/14614448251408336
 bibtex_key: Bouchafra2026-ts
-topics: [election-campaigns-social-media, conspiracy-narratives-in-media]
+topics: [information-disorder-disinformation-narratives, political-polarization-partisan-dynamics]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448251408336

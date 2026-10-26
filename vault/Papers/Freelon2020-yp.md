@@ -5,7 +5,7 @@ authors: ["Deen Freelon", "Chris Wells"]
 year: 2020
 doi: 10.1080/10584609.2020.1723755
 bibtex_key: Freelon2020-yp
-topics: [information-disorder-theory, disinformation-narrative-monitoring]
+topics: [information-disorder-disinformation-narratives, political-polarization-partisan-dynamics]
 citation_count: 448
 open_access: false
 source_url: https://doi.org/10.1080/10584609.2020.1723755

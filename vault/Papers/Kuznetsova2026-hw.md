@@ -5,7 +5,7 @@ authors: ["Vasilisa Kuznetsova"]
 year: 2026
 doi: 10.1177/29768624261499168
 bibtex_key: Kuznetsova2026-hw
-topics: [platform-governance-data-access, climate-and-misinformation-message-interventions]
+topics: [platform-governance-data-access, conspiracy-narratives-in-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/29768624261499168

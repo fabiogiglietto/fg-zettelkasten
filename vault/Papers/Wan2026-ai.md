@@ -5,7 +5,7 @@ authors: ["Jin Wan", "Theo Araujo", "Natali Helberger", "Claes de Vreese"]
 year: 2026
 doi: 10.1093/jcmc/zmag022
 bibtex_key: Wan2026-ai
-topics: [facebook-engagement-visibility, political-polarization-partisan-media]
+topics: [political-polarization-partisan-dynamics]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1093/jcmc/zmag022

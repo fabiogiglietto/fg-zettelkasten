@@ -5,7 +5,7 @@ authors: ["Michela Del Vicario", "Alessandro Bessi", "Fabiana Zollo", "Fabio Pet
 year: 2016
 doi: 10.1073/pnas.1517441113
 bibtex_key: Del-Vicario2016-uj
-topics: [political-polarization-partisan-media, misinformation-exposure-recalibration]
+topics: [information-disorder-disinformation-narratives, political-polarization-partisan-dynamics]
 citation_count: 1854
 open_access: false
 source_url: https://doi.org/10.1073/pnas.1517441113

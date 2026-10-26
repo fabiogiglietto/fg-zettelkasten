@@ -5,7 +5,7 @@ authors: ["Petter Törnberg", "Juliana Chueri"]
 year: 2026
 doi: 10.1177/19401612241311886
 bibtex_key: Tornberg2025-ir
-topics: [election-campaigns-social-media, political-polarization-partisan-media]
+topics: [information-disorder-disinformation-narratives, political-polarization-partisan-dynamics]
 citation_count: 24
 open_access: false
 source_url: https://doi.org/10.1177/19401612241311886

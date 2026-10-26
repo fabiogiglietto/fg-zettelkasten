@@ -5,7 +5,7 @@ authors: ["Giandomenico Di Domenico", "Federico Mangió", "Denitsa Dineva"]
 year: 2026
 doi: 10.1002/mar.70106
 bibtex_key: Di-Domenico2026-zq
-topics: [coordinated-inauthentic-behavior, political-polarization-partisan-media]
+topics: [information-disorder-disinformation-narratives, political-polarization-partisan-dynamics]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1002/mar.70106

@@ -5,7 +5,7 @@ authors: ["Bente Kalsnes", "Anders Olof Larsson"]
 year: 2026
 doi: 10.1080/1369118x.2025.2595670
 bibtex_key: Kalsnes2025-zb
-topics: [election-campaigns-social-media, facebook-engagement-visibility]
+topics: [italian-political-communication-elections, political-polarization-partisan-dynamics]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2025.2595670

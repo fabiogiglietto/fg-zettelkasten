@@ -5,7 +5,7 @@ authors: ["Raffael Heiss", "Isabelle Freiling"]
 year: 2026
 doi: 10.1057/s41599-026-06690-6
 bibtex_key: Heiss2026-qv
-topics: [platform-governance-data-access, information-disorder-theory]
+topics: [platform-governance-data-access, social-media-research-methods-infrastructure]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.1057/s41599-026-06690-6
