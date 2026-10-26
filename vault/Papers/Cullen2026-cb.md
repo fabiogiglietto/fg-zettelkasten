@@ -9,7 +9,7 @@ topics: [platform-governance-data-access, social-media-research-methods-infrastr
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20539517261461463
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Cullen2026-cb.mp3
 pdf_available: true
 discovery_date: 2026-07-14T08:57:34.744599Z
 ---
@@ -22,29 +22,33 @@ discovery_date: 2026-07-14T08:57:34.744599Z
 
 ## Summary
 
-This paper examines how academic researchers accessed and interpreted data through Meta's now-discontinued CrowdTangle (CT) API, developing a "Seeing like an API" framework to theorize platform-mediated knowledge production. Drawing on interviews with 20 academic CT users, the authors argue that platform-controlled APIs operate as epistemic infrastructures that shape not merely what data are available but what questions become askable, what methods are feasible, and whose expertise is legitimized. Researchers exercise genuine but reactive agency: their adaptive strategies simultaneously contest and entrench the platform's epistemic terms. The study situates its findings within policy debates on third-party data governance, notably the EU's Digital Services Act, and offers a real-time historical snapshot of a vanishing research infrastructure.
+This paper examines how academic researchers accessed, interpreted, and assessed data from Meta's now-discontinued CrowdTangle (CT) API, drawing on interviews with 20 academic users plus supplementary interviews with former CT staff and power users. The authors introduce the **"Seeing like an API"** framework to argue that platform-controlled APIs function as *epistemic infrastructures*: their technical design, governance rules, and knowledge networks shape not only what data researchers can access, but what questions become legible, what methods are possible, and whose expertise is recognized. The central argument is that researchers exercise real but reactive agency—their workarounds simultaneously contest and entrench the platform's epistemic terms. The paper lands its analysis in contemporary policy debates over third-party data governance, notably the EU's Digital Services Act.
 
 ## Key Contributions
 
 - Introduces the **"Seeing like an API"** framework, synthesizing top-down (Scott's *Seeing Like a State*) and distributed/emergent (Vertesi; Singh and Jackson) accounts of infrastructural visibility.
-- Shifts analytic focus from cataloguing API limitations to documenting the situated adaptations that data absences provoke, and their epistemic consequences.
-- Provides an empirical, real-time account of researcher responses during CT's deprecation.
-- Offers concrete design recommendations for data governance bodies (knowledge-sharing networks, transparent visibility decisions, verification support, equitable access criteria).
-- Argues for methodological pluralism and multiple access points enabling triangulation.
+- Shifts analytic focus from merely diagnosing API limitations to documenting the situated methodological adaptations that data absences provoke, and their epistemic consequences.
+- Provides a real-time empirical snapshot of researcher responses during CT's deprecation—a record of a vanishing research infrastructure.
+- Offers concrete governance recommendations: universal knowledge-sharing networks, transparent data-visibility decisions, support for verification/validation, and equitable, consistent access criteria.
+- Argues for methodological pluralism and multiple access points enabling triangulation across APIs, data donations, and third-party intermediaries.
 
 ## Methods
 
-Semi-structured interviews with 20 academic researchers (each with at least one peer-reviewed CT publication) across eight countries, disciplines, and career stages, supplemented by background interviews with former CT staff (n=3) and non-academic power users (n=4). Interviews were conducted remotely between July and October 2021 and analyzed using a constructivist grounded theory approach, with iterative open and focused coding, a data matrix for cross-checking themes and negative cases, and sampling to saturation. The framework was developed through engagement with infrastructure studies literature.
+Semi-structured interviews with 20 academic researchers (each required at least one peer-reviewed CT-based publication) across eight countries, multiple disciplines, and career stages. Supplementary background interviews were conducted with three former CT team members and four non-academic early adopters/power users. Interviews were conducted remotely via Zoom between July and October 2021—before CT's August 2024 shutdown—transcribed with Descript and analyzed in ATLAS.ti. The authors used a constructivist grounded theory approach with iterative open and focused coding, a data matrix to cross-check themes and surface negative cases, and sampling to saturation. The conceptual framework was developed through engagement with infrastructure studies literature.
 
 ## Findings
 
-- CT was frequently the only tool for large-scale access to organic public Facebook/Instagram content, yet participants described it as showing only "the tip of the iceberg."
-- Key limitations: exclusion of comment data, follower-count thresholds (criticized as U.S.-centric), restrictions on downloading media, and opaque content removal.
-- Engagement metrics stripped of discursive context could not disambiguate user intent, constraining interpretive claims.
-- Three recurring strategies emerged: **optimizing** (Slack channels, webinars, feature requests—a "common brain trust"), **extending** (scraping, manual collection, integrating other APIs), and **verifying** (triangulation that exposed bugs and discrepancies).
-- Access and informal knowledge networks were unevenly distributed, privileging elite institutions and those proximate to the CT team; scraping workarounds were fragile, risked bans, and were sometimes rejected by reviewers as ToS violations.
-- CT's shutdown was framed as destabilizing for research design, funding, teaching, and field-wide replicability.
+- CT was frequently the *only* tool for large-scale access to organic content from public Facebook pages, groups, and Instagram profiles, yet participants described it as showing only "the tip of the iceberg."
+- Key limitations: exclusion of comment data, follower-count thresholds (criticized as U.S.-centric and excluding locally influential small accounts), restrictions on downloading media, and opaque content removal.
+- Engagement metrics (likes, shares, reactions) stripped of discursive context could not disambiguate user intent, constraining interpretive claims.
+- Three recurring adaptive strategies emerged: **optimizing** (community Slack channels, webinars, feature requests—a "common brain trust"), **extending** (web scraping, manual collection, integrating other APIs), and **verifying** (triangulating CT outputs against scraped/manual data, exposing bugs and discrepancies).
+- Informal knowledge networks and API access were unevenly distributed, favoring elite institutions and those with proximity to the CT team; scraping workarounds were fragile, risked account bans, and were sometimes rejected by reviewers as terms-of-service violations.
+- The rumored and actual shutdown was framed as destabilizing for research design, funding, teaching, and training, risking a fragmentation of the field toward bespoke, less replicable scraping.
 
 ## Connections
 
-This paper is a cornerstone contribution to the "post-API"/"APIcalypse" literature on data access politics, extending the foundational diagnoses in [[Freelon2018-ao]] and the platform-governance frameworks of [[Gillespie2010-as]], [[Gillespie2022-jx]], and [[van-Dijck2018-up]]. Its concern with uneven, platform-controlled access and researcher workarounds connects closely to empirical and critical accounts of CrowdTangle and its successors such as [[Rieder2025-ju]], [[Rieder2026-pp]], and [[Petre2019-zh]], while its focus on equitable, DSA-mediated third-party access aligns it with ongoing data-governance debates in works like [[Murtfeldt2025-wu]] and [[Bruns2019-nr]].
+This paper is a cornerstone of post-API / "APIcalypse" debates on platform-mediated research access, connecting closely to work on platform data access politics such as [[Freelon2018-ao]], [[Rieder2025-ju]], and [[Rogers2026-zz]]. Its concerns about scraping fragility, unequal access, and governance mechanisms like the DSA resonate with studies of alternative access infrastructures and data donation (e.g., [[Ohme2026-nv]], [[Pierri2026-ib]]) and critical platform-governance scholarship including [[Gillespie2010-as]], [[van-Dijck2018-up]], and [[Petre2019-zh]]. The "Seeing like an API" framing also speaks directly to CrowdTangle-focused empirical and methodological work such as [[Bruns2019-nr]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Cullen2026-cb.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)
