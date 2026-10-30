@@ -15,6 +15,7 @@ The MINE programme's longitudinal mapping of Italian news media and platform dyn
 - [[Balluff2026-bv]]
 - [[Darius2026-xl]]
 - [[Ducci2022-10cb5d70]]
+- [[Giglietto2012-32b6b551]]
 - [[Giglietto2019-882f1900]]
 - [[Giglietto2020-6278a4aa]]
 - [[Giglietto2020-9d8acdd7]]

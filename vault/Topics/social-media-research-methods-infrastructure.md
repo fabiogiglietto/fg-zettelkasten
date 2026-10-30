@@ -34,6 +34,7 @@ Development and critique of tools and data sources for computational social scie
 - [[Gagrcin2024-dl]]
 - [[Gaisbauer2025-by]]
 - [[Gardam2025-er]]
+- [[Giglietto2012-32b6b551]]
 - [[Giglietto2019-e9be81c1]]
 - [[Giglietto2022-b30e8b4e]]
 - [[Giglietto2025-ed60bc90]]

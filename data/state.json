@@ -4848,6 +4848,21 @@
           "at": "2026-10-25T12:09:36.820853+00:00"
         }
       }
+    },
+    "bibtex:Giglietto2012-32b6b551": {
+      "note_path": "Papers/Giglietto2012-32b6b551.md",
+      "topics": [
+        "italian-political-communication-elections",
+        "social-media-research-methods-infrastructure"
+      ],
+      "assign_fp": "f12303bf31380b4389d0700a570113fee51df117eeaf24c0fc796a642a7ae6de",
+      "kind": "own",
+      "doi": "10.2139/ssrn.1982736",
+      "title": "If Likes Were Votes: An Empirical Study on the 2011 Italian Administrative Elections",
+      "pdf_source": "drive",
+      "content_hash": "10bdf9b4a99888e578888393894580275f4f5208a2e9082e93a6600f107e09c4",
+      "podcast_linked": false,
+      "last_processed": "2026-10-30T12:15:38.583258+00:00"
     }
   },
   "last_full_cluster": "2026-10-26T10:15:18.785943+00:00",

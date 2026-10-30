@@ -1,0 +1,34 @@
+{
+  "abstract": "This paper tests whether Facebook popularity metrics can forecast electoral results, using the 2011 Italian administrative elections as a case study. The author collected the number of Likes on the Facebook pages of 229 candidates running for mayor in Italy's 29 provincial capitals and built two forecasting models — one predicting candidate vote shares and one predicting the winning candidate. Results were mixed: there was no significant correlation between share of Facebook popularity and share of votes, but the most popular candidate on Facebook won in 39% of cases and came second in another 43%. The study contributes a new cultural and political context to the ongoing debate on social media election prediction.",
+  "key_claims": [
+    "Facebook Like share is not a reliable predictor of a candidate's actual vote share, with error margins far exceeding what is acceptable for opinion and exit polls.",
+    "Despite poor vote-share prediction, Facebook popularity shows traces of a relationship with candidate viability: the most popular candidate on Facebook won or came second in 82% of contests (39% won, 43% second).",
+    "Prediction accuracy improves when more candidates in a municipality have Facebook pages and when the number of electors is larger.",
+    "Different political areas and their supporters behave differently online — extreme parties tend to be overestimated due to more polarized, participatory online supporters, while the Italian center-right was notably underestimated by Facebook.",
+    "The contradictory findings in the existing literature on social media election forecasting are confirmed rather than resolved by this study."
+  ],
+  "methods": [
+    "Sampled 229 mayoral candidates across the 29 Italian provincial capitals; identified 104 candidate Facebook pages via the Facebook internal search engine (about 44.5% of candidates had pages).",
+    "Collected Like counts from 25 April to 15 May 2011 by periodically querying the Facebook Graph API; at 11:05 on 14 May the monitored pages had a total of 179,003 Likes.",
+    "Defined a Candidate Prediction Gap (CPG) as the difference between a candidate's vote share and Like share, and a Municipality Prediction Gap (ABS[MPG]) as the absolute average of candidate CPGs.",
+    "Created an index of prediction precision (scored 0 to 10) rewarding correct prediction of the first- and second-place candidates based on Facebook popularity.",
+    "Categorized candidates into seven political areas (extreme right to extreme left) and computed a Party Prediction Gap (PPG) and ABS[PPG]; grouped municipalities by percentage of candidates on Facebook and by number of electors/voters.",
+    "Adapted the methodology from Olson and Bunnett (2010) for computing prediction gaps."
+  ],
+  "findings": [
+    "No significant correlation between candidate Facebook popularity share and vote share.",
+    "Average CPG was 15.77% in absolute terms (ranging 0 to 84.18%) and -6.21% signed; average ABS[MPG] was 18.99% (range 5.09% to 51.99%).",
+    "Average ABS[MPG] decreased as the proportion of candidates on Facebook increased (29.43% for 0-33%, 19.12% for 34-66%, 11.88% for over 67%).",
+    "Prediction error was lower in large cities than smaller ones (ABS[MPG] 9.52% for electorates over 200,000 versus around 21% for smaller ones).",
+    "All PPG values were negative, meaning predicted shares typically exceeded actual vote shares; extreme political forces showed larger margins; the center-right was significantly underestimated (ABS[PPG] minus PPG = +26.45).",
+    "Average prediction precision index score was 4.71 out of 10; the most popular Facebook candidate won 39% of races and came second in 43%."
+  ],
+  "contributions": [
+    "Provides a new case study from a cultural and political context (Italian administrative elections) not previously examined in social media election-forecasting research.",
+    "Proposes two forecasting models — a vote-share prediction model and a winner-prediction index — that, despite limited success, offer a foundation for improved models.",
+    "Introduces refined metrics (CPG, MPG, PPG and a prediction precision index) for evaluating Facebook-based election predictions.",
+    "Documents systematic partisan bias in social media prediction (overestimation of extreme parties, underestimation of the center-right), suggesting avenues for corrective adjustments analogous to poll weighting."
+  ],
+  "framing": "The paper situates itself within the emerging 'big social data' literature on forecasting elections from social media (Twitter and Facebook), engaging directly with contradictory prior work by Tumasjan et al., Gayo-Avello et al., Williams and Gulati, and others. It frames online political conversations as digital traces that make previously ephemeral discourse analyzable, and positions Facebook Likes as a candidate proxy for electoral support within debates on the predictive validity of social media metrics.",
+  "pdf_source": "drive"
+}
