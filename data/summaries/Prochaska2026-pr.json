@@ -1,0 +1,39 @@
+{
+  "abstract": "This paper analyzes 568 distinct election rumors from the 2020 and 2022 U.S. elections to show that online election rumors, though they appear random and overwhelming, actually recur through a stable set of narrative tropes. The authors develop a three-tiered hierarchical framework (Meta-category, Meso-trope, Micro-trope) for organizing these tropes and identify a 'grammar' of election rumors in which most rumors combine an Actor, an Object, and an Action, with optional Scene & Setting and Suggested Remedies components. The framework and grammar are offered as an information architecture for researchers and communicators to rapidly identify, analyze, and anticipate emerging election rumors.",
+  "key_claims": [
+    "Election rumors are not random but are built from recurring narrative tropes that reappear across election cycles (2020, 2022, 2024, 2026 primaries).",
+    "Election rumors follow a discernible 'grammar': most contain a core of Actor, Object, and Action, with Scene & Setting and Suggested Remedies as optional but frequent elaborating elements.",
+    "Tropes function as narrative building blocks that let audiences situate novel events within familiar meta-narratives of election fraud and conspiracy.",
+    "Coding actions as Actor-Action and Object-Action combinations (rather than a standalone action category) better preserves the recognizable narrative units of rumors and reflects how social media discourse often leaves actors or objects implied.",
+    "The framework has predictive and practical utility for detecting emerging rumors, guiding election-official communication and prebunking, and can potentially generalize to rumoring in other domains."
+  ],
+  "methods": [
+    "Mixed-methods, multi-step approach combining qualitative coding with computational tools.",
+    "Dataset drawn from two prior corpora of Twitter election discourse collected via Twitter streaming API: a 2020 presidential corpus (Kennedy et al., ~32.4M tweets organized into 455 rumors) and a 2022 midterm corpus (Schafer & Duskin et al., ~1.8M tweets mapped to 135 rumors); 34.2M tweets total.",
+    "590 rumors initially identified, reduced to 568 after excluding 23 out-of-scope or ambiguous rumors.",
+    "Coding conducted at the rumor level (collections of tweets) rather than individual tweets.",
+    "LLM-assisted rumor summaries generated with ChatGPT 4.1 mini using a two-step hierarchical summarization of up to 1,000 tweets per rumor (500 most-retweeted plus 500 random), prompted to surface actors, claims, and alleged actions; supplemented by word clouds and samples of tweets.",
+    "Iterative, inductive open coding by a team of expert coders to develop the three-tier scheme; calibration on a shared set of 50 rumors toward coder consistency.",
+    "Each rumor coded by two of three coders, with disagreements arbitrated by a third coder and difficult cases resolved by group consensus.",
+    "Quantitative analysis of code frequencies and micro-trope co-occurrence using Jaccard similarity (threshold .1) and Louvain community-detection clustering to visualize co-occurrence networks."
+  ],
+  "findings": [
+    "A three-layer nested framework emerged: six meta-categories (Actor, Actor-Action, Object, Object-Action, Scene & Setting, Suggested Remedies), with nested meso-tropes (e.g., villains, heroes, victims; foreign interference; voter intimidation; manipulated machines) and more granular micro-tropes (e.g., election officials as villains, white vans, hacked machines, swing states).",
+    "Actors appeared in over 96% of rumors (100% of proper-grammar rumors), supporting actors as a core component.",
+    "Scene & Setting appeared in ~74.8% of rumors and Suggested Remedies in ~70.8%, indicating rumors are frequently action-oriented and contextually elaborated rather than purely descriptive.",
+    "Approximately 69.9% of rumors (397) conformed to the proposed Actor-Object-Action 'proper grammar'; ~30.1% (171) were missing a core element.",
+    "The most commonly missing element among improper-grammar rumors was the Objects-Combined group (99 rumors, 57.9% of improper cases), typically because objects were peripheral or implied rather than central.",
+    "Micro-trope co-occurrence networks revealed distinct but fuzzy clusters corresponding to sub-narratives: a central cluster (Democrats as villains, urban centers, swing states, Republicans as victims, calls for audits/recounts/litigation) plus clusters on media/big tech distrust, voting-machine manipulation, offsite counting, voter intimidation, mail-in voting fraud, and suspicious ballot-injection signals.",
+    "The central co-occurrence cluster contains tropes drawn from every meta-category, reinforcing the interpretation of tropes as combinable building blocks and showing trope categories rarely appear in isolation.",
+    "Suggested Remedies function as the 'moral' of the rumor narrative and reveal political-strategic goals (e.g., focus on swing states, voter ID laws, abolishing machines/mail-in voting)."
+  ],
+  "contributions": [
+    "A hierarchical three-tier (Meta/Meso/Micro) framework for cataloguing and organizing election-rumor tropes according to their narrative function.",
+    "The identification of a 'grammar' of election rumors specifying how Actor, Object, and Action combine (with optional Scene & Setting and Suggested Remedies) to form rumors.",
+    "An enumerated coding scheme (codebook) and empirical co-occurrence network analysis that can serve as a reusable information architecture for studying historical, current, and future election rumors.",
+    "Practical tools and guidance for researchers, communicators, and election officials to detect, diagnose, prebunk, and anticipate emerging rumors, with suggestions for human-in-the-loop detection and gamified communication.",
+    "A methodological demonstration of combining LLM-assisted rumor summarization with qualitative coding at scale, along with candid discussion of its limitations (especially for visual content)."
+  ],
+  "framing": "The paper positions itself within research on online rumoring, misinformation/disinformation, and election integrity, drawing on narrative and trope theory from media, film, and folklore studies (Propp, Thompson, Eco, Booker, de Certeau, Tangherlini). It extends computational and qualitative work on narratives, actants, and propaganda by offering a more granular, actor-object-action-centered account of how familiar tropes are recombined to tell novel-seeming but structurally recurrent election rumors.",
+  "pdf_source": "drive"
+}
