@@ -417,9 +417,9 @@
         "llms-in-content-analysis"
       ],
       "pdf_source": "drive",
-      "content_hash": "b70388abba2e077008ae548c50c21d1904ee9971c2f0682da8d9b18658914d9e",
+      "content_hash": "a08750959c8fa4b78ab7a50632abdbf2213dc6d7a133ce2b89614731e093e6a3",
       "podcast_linked": true,
-      "last_processed": "2026-07-08T14:45:44.684744+00:00",
+      "last_processed": "2026-10-31T12:04:57.993541+00:00",
       "assign_fp": "3d0ef545545d31512ceffc94ecc3a2b3d1507d18b6a3fb5250290a9292121bff"
     },
     "bibtex:Dodds2026-df": {
@@ -4863,10 +4863,26 @@
       "content_hash": "10bdf9b4a99888e578888393894580275f4f5208a2e9082e93a6600f107e09c4",
       "podcast_linked": false,
       "last_processed": "2026-10-30T12:15:38.583258+00:00"
+    },
+    "bibtex:Prochaska2026-pr": {
+      "note_path": "Papers/Prochaska2026-pr.md",
+      "topics": [
+        "information-disorder-disinformation-narratives",
+        "conspiracy-narratives-in-media"
+      ],
+      "assign_fp": "405f3c96dde872e51efe5905557bdd0ea30630a50f50dbbd3ba8c2449cab5beb",
+      "doi": "",
+      "title": "New election, same old story: How tropes form a grammar of election rumors",
+      "pdf_source": "drive",
+      "content_hash": "b5edbde296fd474f2d3b03cef11b171f8fa1eaf205417b6cfdef70b94896d394",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-10-31T12:04:38.445898+00:00"
     }
   },
   "last_full_cluster": "2026-10-26T10:15:18.785943+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "df20770b066ba26c774cf46c59999cecf5f5684eb30a2b1d43b9f967414a501d",
   "emergent_fp": "b91b9ee19f5ad36fda5bf393b3cab3a7670dda614a7793094a45b47bf34171d5",
   "structure_fps": {

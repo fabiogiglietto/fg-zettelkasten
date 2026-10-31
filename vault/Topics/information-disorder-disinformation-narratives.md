@@ -68,6 +68,7 @@ Study of fake news, misinformation taxonomies, and cross-national disinformation
 - [[Osmundsen2021-et]]
 - [[Poliakoff2026-fa]]
 - [[Prochaska2025-ef]]
+- [[Prochaska2026-pr]]
 - [[Ramos2026-qo]]
 - [[Renault2025-uh]]
 - [[Rodarte2026-dk]]

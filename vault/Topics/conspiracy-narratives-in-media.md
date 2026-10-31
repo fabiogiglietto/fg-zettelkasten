@@ -23,6 +23,7 @@ Studies examining how conspiracy theories and conspiratorial narratives are form
 - [[Marwick2026-qd]]
 - [[Nangle2026-yo]]
 - [[Prochaska2025-ef]]
+- [[Prochaska2026-pr]]
 - [[Rohrbach2026-rc]]
 - [[Rothut2026-or]]
 - [[Sadler2025-vu]]
