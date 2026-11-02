@@ -4910,8 +4910,25 @@
       "content_hash": "c6b2cac46ce14422a6bf6f52533ab958b2588d9dcd413a84257f66cee0898542",
       "podcast_linked": true,
       "slack_posted": true,
-      "social_pending": true,
-      "last_processed": "2026-11-02T00:13:35.506643+00:00"
+      "last_processed": "2026-11-02T00:13:35.506643+00:00",
+      "social": {
+        "mastodon": {
+          "url": "https://aoir.social/@fabiogiglietto/117543958751854891",
+          "at": "2026-11-02T00:14:32.247630+00:00"
+        },
+        "threads": {
+          "url": "https://www.threads.com/@fabiogiglietto/post/DfN_r8DidfK",
+          "at": "2026-11-02T00:14:45.501225+00:00"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7522813418509340672/",
+          "at": "2026-11-02T00:14:46.656153+00:00"
+        },
+        "bluesky": {
+          "url": "https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzc26dz6kf2w",
+          "at": "2026-11-02T00:14:47.799720+00:00"
+        }
+      }
     }
   },
   "last_full_cluster": "2026-10-26T10:15:18.785943+00:00",
