@@ -4896,10 +4896,26 @@
           "at": "2026-10-31T12:06:45.487839+00:00"
         }
       }
+    },
+    "bibtex:Farjam2026-zg": {
+      "note_path": "Papers/Farjam2026-zg.md",
+      "topics": [
+        "llms-in-content-analysis",
+        "llm-augmented-research-methods"
+      ],
+      "assign_fp": "bd673a4a4b795ef546da30053a21f6c51a2071f77150fa089516bfd2786e10d0",
+      "doi": "10.1177/08944393251349541",
+      "title": "A practical guide and case study on how to instruct LLMs for automated coding during content analysis",
+      "pdf_source": "drive",
+      "content_hash": "c6b2cac46ce14422a6bf6f52533ab958b2588d9dcd413a84257f66cee0898542",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-02T00:13:35.506643+00:00"
     }
   },
   "last_full_cluster": "2026-10-26T10:15:18.785943+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "df20770b066ba26c774cf46c59999cecf5f5684eb30a2b1d43b9f967414a501d",
   "emergent_fp": "b91b9ee19f5ad36fda5bf393b3cab3a7670dda614a7793094a45b47bf34171d5",
   "structure_fps": {

@@ -23,6 +23,7 @@ Methodological work validating large language models and embeddings for politica
 - [[Dierickx2026-tw]]
 - [[Elfes2026-jb]]
 - [[Fan2025-ut]]
+- [[Farjam2026-zg]]
 - [[Giglietto2024-cbeb3f70]]
 - [[Gilardi2026-hw]]
 - [[Goldberg2026-eb]]
