@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper offers a practical, replicable guide for using Large Language Models (LLMs) to augment or replace human coders in content analysis, demonstrated through a case study that replicates and extends Feldman et al.'s (2015) study of U.S. newspaper climate change coverage. The authors build an agentic workflow running locally on consumer-grade hardware with the open-weight Llama 3.1 model, validate its coding against human experts, scale the analysis tenfold, and extend it to a German-language corpus. They show that LLMs can achieve acceptable reliability for most concepts while offering cost-effective multilingual coding, improved scalability, and greater transparency through chain-of-thought reasoning.",
+  "key_claims": [
+    "LLMs can replicate human coding decisions in content analysis at acceptable reliability levels (Krippendorff's alpha >0.7 for most concepts) using consumer-grade local hardware.",
+    "A structured agentic workflow with human oversight—comprising Instructor, Classifier, and Judge agents plus a Human Intermediary—improves coding accuracy, consistency, and transparency.",
+    "LLMs overcome limitations of small-sample content analysis by enabling large-scale, per-impact and per-action coding rather than coarse binary article-level codes.",
+    "LLMs apply the same coding instructions across languages without translation, enabling comparable multilingual (English and German) analysis with consistent reliability.",
+    "Running LLMs locally preserves data privacy and avoids copyright and legal issues inherent in transferring proprietary data to corporate providers.",
+    "More abstract or vague constructs, such as 'efficacy,' remain difficult to code reliably even after iterative prompt refinement."
+  ],
+  "methods": [
+    "Replication and extension of Feldman et al. (2015), who coded 642 of 3274 U.S. newspaper articles (2006–2011) on climate change framing (impacts, frames, timing, location, actions, efficacy).",
+    "Deployment of an agentic LLM workflow using Llama 3.1–70b with 6-bit quantization on local high-end consumer hardware (two Apple M3 Max processors), chosen for strong multilingual performance.",
+    "An agentic pipeline with four roles: Human Intermediary (prompt refinement/validation), Instructor agent (meta-prompting to generate LLM-friendly prompts), Classifier agent (per-document coding with memory reset and chain-of-thought), and an optional Judge agent (resolving conflicts between multiple Classifier runs by weighing reasoning).",
+    "Prompt engineering techniques: meta-prompting, task decomposition into subtasks, chain-of-thought reasoning requiring direct text quotes, explicit anti-hallucination reminders, and pooling/adjudicating multiple runs.",
+    "Machine-learning-style validation: 80% training set (513 articles) for iterative prompt refinement and a held-out 20% validation set (129 articles), assessing inter-coder reliability via Krippendorff's alpha.",
+    "Scaling to the full U.S. corpus of 3274 articles and extension to a comparable German corpus of 4863 articles from four ideologically diverse dailies (taz, Süddeutsche Zeitung, FAZ, Die Welt), with 200 articles coded by two German experts for comparison. Articles collected from Factiva using identical inclusion criteria."
+  ],
+  "findings": [
+    "With a single Classifier, reliabilities ranged roughly 0.60–0.74; adding the Judge agent (two Classifier runs plus adjudication) raised most alphas above 0.7 (e.g., Frame improved to 0.74 US / 0.80 German; Timing to 0.81).",
+    "The Judge agent generally improved alignment between LLM and human codes but increased sensitivity, with the LLM identifying coded variables more frequently than human coders—though this did not qualitatively change substantive results.",
+    "Multilingual performance was comparable across English and German when the same instructions were applied without translation.",
+    "The 'efficacy' construct was an exception, remaining below the 0.7 reliability threshold in both languages even after three refinement cycles, likely due to its conceptual vagueness.",
+    "Reliability gains plateaued after about two iterations of the prompt-refinement loop.",
+    "The full analysis required roughly two weeks of continuous computation, illustrating the trade-off between subtask decomposition, repeated runs, and processing time."
+  ],
+  "contributions": [
+    "A concrete, replicable step-by-step framework and practical guide for integrating LLMs into content analysis workflows.",
+    "Introduction of a chain-of-thought-based Judge agent that adjudicates conflicting codings by weighing reasoning quality rather than merely counting votes (distinguishing it from simple ensemble voting).",
+    "Demonstration that locally deployed, open-weight LLMs on consumer-grade hardware can meet typical university researchers' computational, legal, and privacy constraints.",
+    "Empirical evidence for cost-effective, translation-free multilingual coding and for richer per-impact/per-action coding that surpasses binary human-coded schemes.",
+    "Practical recommendations for prompt engineering, validation (train/validation splits to avoid overfitting), handling multilingual and proprietary data, and future improvements via retrieval-augmented, self-verifying pipelines."
+  ],
+  "framing": "The paper positions itself within computational communication and media studies, specifically the methodological debate over automating content analysis. It builds on literature contrasting supervised BERT-style classifiers (which require large annotated datasets) with the zero/few-shot in-context learning abilities of LLMs, engaging ongoing discussions about LLM reliability, bias, transparency, and the appropriate role of human-in-the-loop oversight.",
+  "pdf_source": "drive"
+}
