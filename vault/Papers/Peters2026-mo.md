@@ -5,7 +5,7 @@ authors: ["Yannik Peters", "Katrin Weller"]
 year: 2026
 doi: 10.1177/29768624261438624
 bibtex_key: Peters2026-mo
-topics: [platform-governance-data-access, social-media-research-methods-infrastructure]
+topics: [platform-data-access-governance, computational-text-methods-llm]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/29768624261438624

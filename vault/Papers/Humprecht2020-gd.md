@@ -5,7 +5,7 @@ authors: ["Edda Humprecht", "Frank Esser", "Peter Van Aelst"]
 year: 2020
 doi: 10.1177/1940161219900126
 bibtex_key: Humprecht2020-gd
-topics: [information-disorder-disinformation-narratives, political-polarization-partisan-dynamics]
+topics: [comparative-electoral-campaigns, disinformation-narrative-monitoring]
 citation_count: 375
 open_access: false
 source_url: https://doi.org/10.1177/1940161219900126

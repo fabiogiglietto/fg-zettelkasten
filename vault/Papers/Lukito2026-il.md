@@ -5,7 +5,7 @@ authors: ["Josephine Lukito", "Yini Zhang", "Bin Chen", "Stephen Prochaska", "Me
 year: 2026
 doi: 10.1177/14614448261470889
 bibtex_key: Lukito2026-il
-topics: [italian-political-communication-elections, platform-performance-and-authenticity]
+topics: [comparative-electoral-campaigns, partisan-media-polarization]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/14614448261470889

@@ -6,7 +6,7 @@ year: 2020
 doi: 10.3270/96423
 bibtex_key: Giglietto2020-6278a4aa
 kind: own
-topics: [platform-governance-data-access, italian-political-communication-elections]
+topics: [partisan-media-polarization, platform-data-access-governance]
 citation_count: 2
 open_access: true
 source_url: https://doi.org/10.3270/96423

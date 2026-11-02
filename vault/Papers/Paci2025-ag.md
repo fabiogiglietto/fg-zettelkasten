@@ -5,7 +5,7 @@ authors: ["Walter Paci", "Alessandro Panunzi", "Sandro Pezzelle"]
 year: 2025
 doi: 
 bibtex_key: Paci2025-ag
-topics: [llms-in-content-analysis, italian-political-communication-elections]
+topics: [computational-text-methods-llm, partisan-media-polarization]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2506.06775v1

@@ -10,7 +10,6 @@ Papers examining the methodological foundations of online survey research, inclu
 
 ## Papers
 
-- [[Allcott2025-jb]]
 - [[DiGiuseppe2025-es]]
 - [[Fattorini2026-bo]]
 - [[Hinck2026-yj]]

@@ -5,7 +5,7 @@ authors: ["David M. J. Lazer", "Matthew A. Baum", "Yochai Benkler", "Adam J. Ber
 year: 2018
 doi: 10.1126/science.aao2998
 bibtex_key: Lazer2018-mm
-topics: [information-disorder-disinformation-narratives, misinformation-exposure-recalibration]
+topics: [misinformation-exposure-recalibration, disinformation-narrative-monitoring]
 citation_count: 3293
 open_access: false
 source_url: https://doi.org/10.1126/science.aao2998
