@@ -1,0 +1,21 @@
+{
+  "abstract": "This paper examines the statistical detectability of coordinated activity on social media, a core task in defending against information operations. It critiques standard coordination-detection methods that project account-entity interactions into similarity networks and identify dense subgraphs or behavioural clusters, noting that these approaches tend to surface groups of co-activated accounts or partition all users into clusters regardless of whether genuine coordination exists. The work raises the question of when coordination can be statistically distinguished from ordinary or incidental co-activity.",
+  "key_claims": [
+    "Prevailing coordination-detection methods identify co-activated accounts or forcibly cluster all users, which does not establish that true coordination is present.",
+    "There is a need to assess whether detected coordination is statistically distinguishable from noise or incidental similarity.",
+    "The detectability of coordination has statistical limits that should be characterised rather than assumed."
+  ],
+  "methods": [
+    "Analysis of coordination-detection pipelines that project account-entity interactions into account similarity networks based on temporal proximity, action counts, or behavioural similarity.",
+    "Examination of dense-subgraph detection and behavioural clustering as the basis for identifying coordinated groups."
+  ],
+  "findings": [
+    "Abstract truncated; specific findings are not available in the provided text beyond the identification of limitations in current co-activation and clustering-based methods."
+  ],
+  "contributions": [
+    "Frames coordination detection as a question of statistical detectability rather than mere co-activity identification.",
+    "Critiques the assumptions underlying similarity-network and clustering approaches to coordination detection."
+  ],
+  "framing": "The paper situates itself within the study of information operations and computational social science, engaging with network-science approaches to coordinated inauthentic behaviour detection and questioning their statistical foundations.",
+  "pdf_source": "abstract_only"
+}
