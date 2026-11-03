@@ -4900,10 +4900,27 @@
           "at": "2026-11-02T00:14:47.799720+00:00"
         }
       }
+    },
+    "bibtex:noauthor_undated-yy": {
+      "note_path": "Papers/noauthor_undated-yy.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "1a190f243448a03f39bde1e70b14638b75a0de3204deb2b8881f7389e4a99b96",
+      "doi": "",
+      "title": "Statistical detectability of coordination",
+      "pdf_source": "abstract_only",
+      "content_hash": "87ac422f191360f0aeb2c653debe33d36723ca69f76a50c9f102b33af2e907d9",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": true,
+      "social_pending": true,
+      "last_processed": "2026-11-03T18:44:26.817901+00:00"
     }
   },
   "last_full_cluster": "2026-11-02T12:25:23.903546+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "bb49aee145a47359467b0d9b42e98eaf538c2eed33352abc81d6c7014d9687f9",
   "emergent_fp": "1905557825dcce38040040bb3e8da0ecf6022c38e11e4b5277b0190406572a73",
   "structure_fps": {
