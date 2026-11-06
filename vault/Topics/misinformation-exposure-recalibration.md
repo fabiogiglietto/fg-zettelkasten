@@ -43,6 +43,7 @@ Papers that use empirical, large-scale, or naturalistic data to challenge alarmi
 - [[Guess2023-ur]]
 - [[Hameleers2026-mc]]
 - [[Hartmann2025-px]]
+- [[Hegarty2026-qr]]
 - [[Holt2026-zq]]
 - [[Hourigan2026-oc]]
 - [[Karlsson2026-hd]]

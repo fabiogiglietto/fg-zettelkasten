@@ -27,6 +27,7 @@ Reflective anniversary/position essays diagnosing the current state of social me
 - [[Gillespie2010-as]]
 - [[Gillespie2022-jx]]
 - [[Goldberg2026-eb]]
+- [[Hegarty2026-qr]]
 - [[Heiss2026-qv]]
 - [[Helmond2026-ll]]
 - [[Hepp2026-oi]]

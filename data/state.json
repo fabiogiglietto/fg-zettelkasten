@@ -4913,8 +4913,7 @@
       "pdf_source": "abstract_only",
       "content_hash": "87ac422f191360f0aeb2c653debe33d36723ca69f76a50c9f102b33af2e907d9",
       "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
+      "slack_posted": true,
       "last_processed": "2026-11-03T18:44:26.817901+00:00",
       "social": {
         "mastodon": {
@@ -4934,10 +4933,26 @@
           "at": "2026-11-03T18:46:43.768083+00:00"
         }
       }
+    },
+    "bibtex:Hegarty2026-qr": {
+      "note_path": "Papers/Hegarty2026-qr.md",
+      "topics": [
+        "platform-critique-anniversary-essays",
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "2751544be1ca72aec9a260e2e19bd6237df4bd3968d1aeafd3ab031f315a2e89",
+      "doi": "10.1080/24701475.2026.2760136",
+      "title": "“When did the internet become this awful?”: the idea of decline in internet histories",
+      "pdf_source": "drive",
+      "content_hash": "ba81c366e7db96de72696fb45ddac474e79d6aad71817c879ee4c5e6afb84949",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-06T08:53:34.597942+00:00"
     }
   },
   "last_full_cluster": "2026-11-02T12:25:23.903546+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "bb49aee145a47359467b0d9b42e98eaf538c2eed33352abc81d6c7014d9687f9",
   "emergent_fp": "1905557825dcce38040040bb3e8da0ecf6022c38e11e4b5277b0190406572a73",
   "structure_fps": {
