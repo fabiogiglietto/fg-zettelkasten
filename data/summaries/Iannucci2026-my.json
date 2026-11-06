@@ -1,0 +1,36 @@
+{
+  "abstract": "The paper reframes the detection of coordinated inauthentic behaviour on social media as a two-level statistical hypothesis-testing problem, turning pairwise account tests into p-values that form a score matrix in which a coordinating group appears as a planted submatrix. By connecting coordination detection to the well-studied planted-submatrix problem, the authors derive information-theoretic and computational detectability boundaries as functions of group size, population size, and signal strength. They estimate signal across 7 modalities over 26 labelled information-operation datasets under 4 null models, and show that the choice of null model strongly shapes which operations are detectable and that density of a recovered cluster is not evidence of coordination.",
+  "key_claims": [
+    "Coordination detection should be formulated as hypothesis testing against explicit null models, so that a detected group counts as evidence of coordination only if expected patterns and chance co-activity cannot explain its signal.",
+    "Pairwise p-value scores for account pairs turn coordination detection into a planted-submatrix detection problem, which admits known statistical and computational detectability limits (impossible, hard, easy regimes).",
+    "The choice of null model is decisive: different null models attribute different portions of observed synchrony to chance, changing the estimated signal and the predicted regime for most modalities.",
+    "Combining M independent modalities of equal signal lowers every detection threshold by a factor of 1/sqrt(M), giving a theoretical basis for empirical observations that multi-modality improves detection.",
+    "Density alone is uninformative: permutation tests return significantly dense sets in nearly all layers even when the operation is not recovered, so anomalous-cluster discovery is a poor proxy for recovering an information operation.",
+    "Detectability boundaries determine whether an operation of a given size and signal can be recovered at all and how much confidence a flagged group warrants."
+  ],
+  "methods": [
+    "Modeling account activity across 7 modalities (hashtag use, URL sharing, mentions, replies to posts, replies to accounts, reposts of posts, reposts of accounts), defining co-action layers as graphs where edges connect accounts acting on the same item.",
+    "A window-free temporal statistic based on mean inter-action intervals between co-acting pairs, with item-level Monte Carlo p-values (B=100 replicates) combined across shared items via Fisher's method.",
+    "Four null models that randomise timestamps while preserving different structure: uniform-modality, uniform-account, account-activity (preserves hourly/day-of-week profile), and item-virality (preserves item adoption curves).",
+    "Transforming p-values into centred scores Y = -log(p) - 1 (mean 0, variance 1 under the null), modeling coordinated pairs as Beta(lambda,1) p-values, and framing the group as a symmetric planted submatrix.",
+    "Analytical derivation of scan (exhaustive), information-theoretic (second-moment method), sum, and spectral detection boundaries for shifted-exponential entries, plus a reduction transferring the planted-clique computational lower bound (Brennan et al. 2019) to the symmetric case.",
+    "Empirical signal estimation on 26 labelled information operations (Seckin et al. 2025) and comparison of predicted regimes with recovery by two greedy heuristics (size-agnostic peeling, fixed-size swap) and a spectral method, evaluated with F1, hypergeometric 'beats chance' tests, and density permutation tests."
+  ],
+  "findings": [
+    "Predicted regimes depend strongly on null model: the easy regime covers 36% (item-virality), 54% (account-activity), 81% (uniform-account), and 84% (uniform-modality) of layers.",
+    "A trade-off exists between calibration and discrimination: null models attributing more timing patterns to chance are better calibrated for control accounts but absorb coordination signal, while simpler null models separate coordinated pairs more strongly but leave organic synchrony (positive control means).",
+    "The spectral method, given the labelled group size, exceeds all 20 methods evaluated by Iannucci et al. (2026) on the same operations; the highest median F1 (0.62) was for reposts of a post under the uniform-account null model, versus 0.39 for synchronised hashtags and 0.34 for time-aware (RT).",
+    "Combining modalities (pooled Fisher layer and summed layer) moves most operations into the easy regime and makes the predicted regime less null-model-dependent, but the gain is less than 1/sqrt(M) because pairs are tested in ~1.34 layers on average and different modalities engage different subsets of an operation.",
+    "Permutation tests detect dense sets in nearly all layers regardless of regime, and recovered sets are often denser than the actual operation yet contain mostly control accounts (e.g., spectral set median precision as low as 0.04-0.22 on pooled layers), confirming density is not evidence of recovery.",
+    "The finding that simplest null models recover operations best suggests a sampling artefact in benchmark datasets: operation accounts are not hiding within the timing patterns of organic accounts, possibly reflecting platform detection bias or data-collection design."
+  ],
+  "contributions": [
+    "Derivation of information-theoretic and computational detectability boundaries for coordinated campaigns via a symmetric planted-submatrix formulation with shifted-exponential entries, including a reduction transferring the planted-clique lower bound.",
+    "A new statistically grounded, window-free coordination-detection methodology that achieves higher agreement with labelled ground truth than previously reported methods.",
+    "Systematic evaluation of four null models across 26 information operations, making explicit (and testable) assumptions usually left implicit in the literature and showing how and why predicted regimes depend on the null model.",
+    "A theoretical proof that multi-modal aggregation lowers detection thresholds by 1/sqrt(M), grounding prior empirical observations.",
+    "Demonstration that structural density and significant permutation tests are insufficient proxies for coordination recovery, and identification of a likely sampling bias in existing benchmark datasets, motivating new, more realistic benchmarks."
+  ],
+  "framing": "The paper situates itself at the intersection of coordinated inauthentic behaviour / information-operations detection and the statistics of planted-submatrix (and planted-clique) detection, critiquing the prevailing graph-clustering and community-detection pipelines that always return groups and overfit (e.g., modularity on random graphs). It argues for a principled hypothesis-testing foundation with explicit null models to establish when coordination is detectable at all, rather than merely whether a dense cluster exists.",
+  "pdf_source": "drive"
+}
