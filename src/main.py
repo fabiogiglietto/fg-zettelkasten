@@ -247,6 +247,27 @@ def social_queued(paper) -> bool:
     return not paper.is_classic
 
 
+def drop_unresolved_rekeys(
+    new_papers: list, rekeys: set[str], supersedes_map: dict[str, str]
+) -> list:
+    """Drop re-keyed papers that supersede resolution did not merge.
+
+    A paper let past the exact-match dedup because it re-keys a placeholder
+    note must either supersede that note or fall back to the old skip. Kept as
+    an ordinary new paper it would get a second note and a second #toread /
+    social announcement — and a hedged or deferred verdict is enough for that.
+    It is retried next run (no state entry is written).
+    """
+    kept = []
+    for paper in new_papers:
+        if paper.bibtex_key in rekeys and paper.bibtex_key not in supersedes_map:
+            print(f"  dedup: {paper.bibtex_key} re-key not merged "
+                  f"— skipping until it is")
+            continue
+        kept.append(paper)
+    return kept
+
+
 def classify_feed_paper(entry: dict | None, new_hash: str) -> str:
     """How `update` should treat one feed paper: new / changed / tombstoned / unchanged.
 
@@ -278,13 +299,23 @@ def _resolve_supersedes(
     vault: str,
     papers_dir: str,
     summaries_dir: str,
-) -> tuple[list, dict[str, str], dict[str, str], list[tuple[str, str]]]:
+) -> tuple[
+    list, dict[str, str], dict[str, str], list[tuple[str, str]], dict[str, str]
+]:
     """Merge each new paper that is the same work as a note already in the vault.
 
-    Returns `(remaining_papers, supersedes_map, inherit_podcast, merged)`:
-    papers still to be processed normally, a `{winner_key: loser_key}` map for
-    the note frontmatter, `{winner_key: podcast_url}` for episodes inherited
-    from a superseded note, and the `(loser, winner)` pairs actually applied.
+    Returns `(remaining_papers, supersedes_map, inherit_podcast, merged,
+    inherit_announcement)`: papers still to be processed normally, a
+    `{winner_key: loser_key}` map for the note frontmatter, `{winner_key:
+    podcast_url}` for episodes inherited from a superseded note, the `(loser,
+    winner)` pairs actually applied, and `{winner_key: loser_paper_id}` for
+    winners that must not be announced again.
+
+    A winner inherits the loser's announcement when it is *not* more published
+    than the loser and the loser was already posted: that is upstream re-keying
+    the same record (a `noauthor_undated-xx` key replaced once Paperpile's
+    metadata is fixed), not a version of record, and re-announcing it would
+    post the same paper twice on #toread and every social platform.
 
     Runs *before* summarization deliberately: a paper about to become a
     tombstone must not cost a full-PDF summary first. The consequence is that
@@ -297,7 +328,7 @@ def _resolve_supersedes(
 
     sup_cfg = cfg.get("supersede", {})
     if not new_papers or not sup_cfg.get("enabled", True):
-        return new_papers, {}, {}, []
+        return new_papers, {}, {}, [], {}
 
     papers_path = Path(vault) / papers_dir
     records = supersede.load_vault_records(papers_path, Path(summaries_dir))
@@ -310,6 +341,7 @@ def _resolve_supersedes(
     supersedes_map: dict[str, str] = {}
     inherit_podcast: dict[str, str] = {}
     merged: list[tuple[str, str]] = []
+    inherit_announcement: dict[str, str] = {}
 
     for paper in new_papers:
         incoming = supersede.record_from_paper(paper)
@@ -352,6 +384,10 @@ def _resolve_supersedes(
             podcast_url = supersede.podcast_url_of(papers_path, loser.key)
             if podcast_url:
                 inherit_podcast[winner.key] = podcast_url
+            # Read before tombstoning — tombstone_state sets `slack_posted`.
+            loser_entry = state["papers"].get(loser.paper_id) or {}
+            if winner.rank <= loser.rank and loser_entry.get("slack_posted"):
+                inherit_announcement[winner.key] = loser.paper_id
             supersede.write_tombstone(papers_path, loser.key, winner)
             supersede.tombstone_state(
                 state, loser.paper_id, winner.paper_id,
@@ -387,7 +423,7 @@ def _resolve_supersedes(
             print(f"  supersede: {loser.key} filed under existing {winner.key} "
                   f"({verdict.source}: {verdict.reason})")
 
-    return kept, supersedes_map, inherit_podcast, merged
+    return kept, supersedes_map, inherit_podcast, merged, inherit_announcement
 
 
 def _prune_stale_notes(notes_dir: Path, keep: set[str]) -> list[str]:
@@ -843,12 +879,25 @@ def cmd_update(cfg: dict, args) -> int:
     for k, v in state_mod.dedup_index_from_notes(Path(vault) / papers_dir).items():
         dup_index.setdefault(k, v)
     deduped = []
+    rekeys: set[str] = set()
     for paper in new_papers:
         existing = state_mod.find_duplicate(dup_index, paper.doi, paper.title)
         # Its own note is not a duplicate: a paper whose state entry was reset
         # for a rebuild still has its Papers/<key>.md on disk, and the notes
         # index would otherwise skip it as a copy of itself forever.
         if existing and existing != paper.id:
+            # A placeholder key re-minted once upstream fixed the metadata
+            # (`noauthor_undated-yy` -> `Iannucci2026-my`) is the same record,
+            # not a stray duplicate: hand it to supersede resolution so the
+            # placeholder note becomes a stub and the real key gets the note.
+            from . import supersede
+            if (supersede.is_junk_key(existing)
+                    and not supersede.is_junk_key(paper.bibtex_key)):
+                print(f"  dedup: {paper.bibtex_key} re-keys {existing} "
+                      f"— resolving as supersede")
+                rekeys.add(paper.bibtex_key)
+                deduped.append(paper)
+                continue
             print(f"  dedup: {paper.bibtex_key} duplicates {existing} "
                   f"— skipping")
             continue
@@ -859,9 +908,11 @@ def cmd_update(cfg: dict, args) -> int:
     # paper already in the vault (or, less often, a preprint of one). Exact-match
     # dedup above cannot see either case — the DOI and the title both move
     # between the preprint and the version of record.
-    new_papers, supersedes_map, inherit_podcast, merged = _resolve_supersedes(
+    (new_papers, supersedes_map, inherit_podcast, merged,
+     inherit_announcement) = _resolve_supersedes(
         cfg, state, new_papers, claude, vault, papers_dir, summaries_dir
     )
+    new_papers = drop_unresolved_rekeys(new_papers, rekeys, supersedes_map)
     print(f"update: {len(new_papers)} new, {len(changed_papers)} changed")
 
     summaries: dict[str, dict] = {}
@@ -918,6 +969,15 @@ def cmd_update(cfg: dict, args) -> int:
         # This paper replaced a working-paper note, now a stub pointing here.
         if paper.bibtex_key in supersedes_map:
             entry["supersedes"] = supersedes_map[paper.bibtex_key]
+        # Same record under a new upstream key: already announced, so carry
+        # the ledger over instead of queueing a second #toread / social post.
+        if paper.bibtex_key in inherit_announcement:
+            prior = state["papers"].get(inherit_announcement[paper.bibtex_key]) or {}
+            entry["slack_posted"] = True
+            entry.pop("slack_pending", None)
+            entry.pop("social_pending", None)
+            if prior.get("social"):
+                entry["social"] = dict(prior["social"])
         state["papers"][paper.id] = entry
 
     # Re-render the note for every new or changed paper. A changed paper is
@@ -1070,7 +1130,8 @@ def cmd_update(cfg: dict, args) -> int:
         # pairs of notes for one paper ended up in the vault: the same work
         # re-ingested under a second key after upstream author parsing changed.
         # They go through the same resolution as the toread feed.
-        own_new, own_supersedes, own_inherit, own_merged = _resolve_supersedes(
+        (own_new, own_supersedes, own_inherit, own_merged,
+         _own_announced) = _resolve_supersedes(
             cfg, state, own_new, claude, vault, papers_dir, summaries_dir
         )
         supersedes_map.update(own_supersedes)

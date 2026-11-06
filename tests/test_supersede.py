@@ -803,7 +803,7 @@ def test_update_merges_an_arriving_published_version(tmp_path):
     state = {"papers": {CIB.paper_id: {"topics": ["t"], "note_path": "x"}}}
     claude = StubClaude({"same_work": True, "confidence": "high", "reason": "same study"})
 
-    kept, supersedes_map, inherit_podcast, merged = _resolve_supersedes(
+    kept, supersedes_map, inherit_podcast, merged, announced = _resolve_supersedes(
         _cfg(tmp_path), state, [_paper(APPEL)], claude,
         str(tmp_path), "Papers", str(tmp_path / "summaries"),
     )
@@ -813,10 +813,44 @@ def test_update_merges_an_arriving_published_version(tmp_path):
     assert merged == [(CIB.key, APPEL.key)]
     # The episode on the note being replaced is carried over.
     assert inherit_podcast == {APPEL.key: "https://example.org/ep.mp3"}
+    assert announced == {}          # a version of record is announced afresh
     assert state["papers"][CIB.paper_id]["superseded_by"] == APPEL.paper_id
     assert state["papers"][CIB.paper_id]["topics"] == []
     stub = supersede.read_frontmatter((papers / f"{CIB.key}.md").read_text())
     assert stub["superseded_by"] == APPEL.key
+
+
+def test_update_rekeyed_record_inherits_the_announcement(tmp_path):
+    """Upstream re-keys a junk `noauthor_undated-xx` record: same work, same
+    publication status. The new key wins on metadata quality but must not be
+    announced again on #toread or social media."""
+    from src.main import _resolve_supersedes
+
+    old = Record(key="noauthor_undated-yy", title="Statistical detectability of coordination",
+                 authors=["Letizia Iannucci", "Antonis Matakos", "Mikko Kivelä"],
+                 url="http://arxiv.org/abs/2610.37970v1", year="2026",
+                 abstract=BAKC_A.abstract, discovery_date="2026-11-03T18:30:29Z")
+    new = Record(key="Iannucci2026-my", title=old.title, authors=old.authors,
+                 url=old.url, year="2026", abstract=old.abstract,
+                 discovery_date="2026-11-06T10:00:00Z")
+    papers = tmp_path / "Papers"
+    papers.mkdir()
+    _write_note(papers, old)
+    _write_summary(tmp_path / "summaries", old)
+    ledger = {"mastodon": {"url": "https://example.org/m", "at": "2026-11-03"}}
+    state = {"papers": {old.paper_id: {"topics": ["t"], "slack_posted": True,
+                                       "social": ledger}}}
+    claude = StubClaude({"same_work": True, "confidence": "high", "reason": "same"})
+
+    kept, supersedes_map, _, merged, announced = _resolve_supersedes(
+        _cfg(tmp_path), state, [_paper(new)], claude,
+        str(tmp_path), "Papers", str(tmp_path / "summaries"),
+    )
+
+    assert [p.bibtex_key for p in kept] == [new.key]
+    assert supersedes_map == {new.key: old.key}
+    assert announced == {new.key: old.paper_id}
+    assert state["papers"][old.paper_id]["social"] == ledger   # ledger kept
 
 
 def test_update_tombstones_a_late_arriving_preprint(tmp_path):
@@ -834,7 +868,7 @@ def test_update_tombstones_a_late_arriving_preprint(tmp_path):
     state = {"papers": {APPEL.paper_id: {"topics": ["t"]}}}
     claude = StubClaude({"same_work": True, "confidence": "high", "reason": "same"})
 
-    kept, supersedes_map, _, merged = _resolve_supersedes(
+    kept, supersedes_map, _, merged, _ = _resolve_supersedes(
         _cfg(tmp_path), state, [_paper(late)], claude,
         str(tmp_path), "Papers", str(tmp_path / "summaries"),
     )
@@ -860,7 +894,7 @@ def test_update_keeps_an_unrelated_paper(tmp_path):
     state = {"papers": {}}
     claude = StubClaude({"same_work": False, "confidence": "high", "reason": "distinct"})
 
-    kept, supersedes_map, _, merged = _resolve_supersedes(
+    kept, supersedes_map, _, merged, _ = _resolve_supersedes(
         _cfg(tmp_path), state, [_paper(BAKC_B)], claude,
         str(tmp_path), "Papers", str(tmp_path / "summaries"),
     )
@@ -880,7 +914,7 @@ def test_update_respects_the_adjudication_budget(tmp_path):
     cfg["supersede"]["max_adjudications_per_run"] = 0
     claude = StubClaude({"same_work": True, "confidence": "high", "reason": "same"})
 
-    kept, _, _, merged = _resolve_supersedes(
+    kept, _, _, merged, _ = _resolve_supersedes(
         cfg, {"papers": {}}, [_paper(APPEL)], claude,
         str(tmp_path), "Papers", str(tmp_path / "summaries"),
     )
@@ -894,11 +928,11 @@ def test_update_can_be_disabled(tmp_path):
     cfg = _cfg(tmp_path)
     cfg["supersede"]["enabled"] = False
     papers = [_paper(APPEL)]
-    kept, sm, ip, merged = _resolve_supersedes(
+    kept, sm, ip, merged, ia = _resolve_supersedes(
         cfg, {"papers": {}}, papers, StubClaude({}),
         str(tmp_path), "Papers", str(tmp_path / "summaries"),
     )
-    assert kept == papers and (sm, ip, merged) == ({}, {}, [])
+    assert kept == papers and (sm, ip, merged, ia) == ({}, {}, [], {})
 
 
 def test_openalex_network_failure_is_not_fatal(monkeypatch):
@@ -911,3 +945,24 @@ def test_openalex_network_failure_is_not_fatal(monkeypatch):
 
     monkeypatch.setattr(openalex_client.requests, "get", boom)
     assert openalex_client.search_by_title("some long enough title here") == []
+
+
+def test_is_junk_key():
+    assert supersede.is_junk_key("noauthor_undated-yy")
+    assert supersede.is_junk_key("bibtex:noauthor_undated-yy")
+    assert supersede.is_junk_key("Unknown2025-ed60bc90")
+    assert not supersede.is_junk_key("Iannucci2026-my")
+    assert not supersede.is_junk_key("bibtex:Appel2026-qr")
+
+
+def test_unmerged_rekey_is_dropped_not_processed_as_new():
+    """A hedged/deferred verdict on a placeholder re-key must not yield a new
+    paper (second note + second announcement); a merged one survives."""
+    from src.main import drop_unresolved_rekeys
+
+    a, b, c = _paper(APPEL), _paper(BAKC_A), _paper(BAKC_B)
+    kept = drop_unresolved_rekeys(
+        [a, b, c], rekeys={APPEL.key, BAKC_A.key},
+        supersedes_map={APPEL.key: CIB.key},
+    )
+    assert [p.bibtex_key for p in kept] == [APPEL.key, BAKC_B.key]
