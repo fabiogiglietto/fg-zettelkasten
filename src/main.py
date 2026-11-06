@@ -247,6 +247,27 @@ def social_queued(paper) -> bool:
     return not paper.is_classic
 
 
+def drop_unresolved_rekeys(
+    new_papers: list, rekeys: set[str], supersedes_map: dict[str, str]
+) -> list:
+    """Drop re-keyed papers that supersede resolution did not merge.
+
+    A paper let past the exact-match dedup because it re-keys a placeholder
+    note must either supersede that note or fall back to the old skip. Kept as
+    an ordinary new paper it would get a second note and a second #toread /
+    social announcement — and a hedged or deferred verdict is enough for that.
+    It is retried next run (no state entry is written).
+    """
+    kept = []
+    for paper in new_papers:
+        if paper.bibtex_key in rekeys and paper.bibtex_key not in supersedes_map:
+            print(f"  dedup: {paper.bibtex_key} re-key not merged "
+                  f"— skipping until it is")
+            continue
+        kept.append(paper)
+    return kept
+
+
 def classify_feed_paper(entry: dict | None, new_hash: str) -> str:
     """How `update` should treat one feed paper: new / changed / tombstoned / unchanged.
 
@@ -858,6 +879,7 @@ def cmd_update(cfg: dict, args) -> int:
     for k, v in state_mod.dedup_index_from_notes(Path(vault) / papers_dir).items():
         dup_index.setdefault(k, v)
     deduped = []
+    rekeys: set[str] = set()
     for paper in new_papers:
         existing = state_mod.find_duplicate(dup_index, paper.doi, paper.title)
         # Its own note is not a duplicate: a paper whose state entry was reset
@@ -873,6 +895,7 @@ def cmd_update(cfg: dict, args) -> int:
                     and not supersede.is_junk_key(paper.bibtex_key)):
                 print(f"  dedup: {paper.bibtex_key} re-keys {existing} "
                       f"— resolving as supersede")
+                rekeys.add(paper.bibtex_key)
                 deduped.append(paper)
                 continue
             print(f"  dedup: {paper.bibtex_key} duplicates {existing} "
@@ -889,6 +912,7 @@ def cmd_update(cfg: dict, args) -> int:
      inherit_announcement) = _resolve_supersedes(
         cfg, state, new_papers, claude, vault, papers_dir, summaries_dir
     )
+    new_papers = drop_unresolved_rekeys(new_papers, rekeys, supersedes_map)
     print(f"update: {len(new_papers)} new, {len(changed_papers)} changed")
 
     summaries: dict[str, dict] = {}

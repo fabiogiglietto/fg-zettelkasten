@@ -953,3 +953,16 @@ def test_is_junk_key():
     assert supersede.is_junk_key("Unknown2025-ed60bc90")
     assert not supersede.is_junk_key("Iannucci2026-my")
     assert not supersede.is_junk_key("bibtex:Appel2026-qr")
+
+
+def test_unmerged_rekey_is_dropped_not_processed_as_new():
+    """A hedged/deferred verdict on a placeholder re-key must not yield a new
+    paper (second note + second announcement); a merged one survives."""
+    from src.main import drop_unresolved_rekeys
+
+    a, b, c = _paper(APPEL), _paper(BAKC_A), _paper(BAKC_B)
+    kept = drop_unresolved_rekeys(
+        [a, b, c], rekeys={APPEL.key, BAKC_A.key},
+        supersedes_map={APPEL.key: CIB.key},
+    )
+    assert [p.bibtex_key for p in kept] == [APPEL.key, BAKC_B.key]
