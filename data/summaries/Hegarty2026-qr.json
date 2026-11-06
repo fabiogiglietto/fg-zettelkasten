@@ -1,0 +1,36 @@
+{
+  "abstract": "This article introduces the concept of 'internet decline narratives' (IDNs) — the increasingly dominant idea, captured in terms like 'techlash,' 'enshittification,' and 'slop,' that the internet has gotten worse over time. Hegarty argues that IDNs have become a central mode through which the recent history of the internet is narrated, performing historical functions (periodising, assigning blame, imagining counterfactuals, identifying lost ideals) as well as political, affective, and commercial work. While acknowledging IDNs often voice legitimate concerns and can spur alternatives, the article contends they sit uncomfortably with the field of internet histories' commitments to plural, non-centric, user-centred accounts. It calls for studying IDNs as situated cultural forms rather than simply endorsing or rejecting them.",
+  "key_claims": [
+    "Internet decline narratives (IDNs) have become a central organising principle for how the recent history of the internet is narrated in both public and academic discourse.",
+    "IDNs are distinct from critique more generally because they bind harms into a negative historical trajectory, periodise a threshold at which decline set in, and attribute blame—usually to Big Tech.",
+    "IDNs perform political work (supplying a shared vocabulary for diffuse dissatisfactions), affective work (conferring seniority on those who remember the 'old' internet), and commercial work (declinism as a marketable frame for bestsellers).",
+    "By centring a handful of powerful US-based corporations and their founders, IDNs risk reproducing the same 'corporational determinism' as the celebratory narratives they reject and writing users out of internet history.",
+    "By treating 'the old, good internet' as a lost ideal, IDNs implicitly valorise a more exclusive, homogeneous internet, which conflicts with efforts to pluralise internet histories beyond Anglophone and Western paradigms.",
+    "IDNs are partial and situated rather than universal; the question 'for whom is the internet in decline?' exposes their geographic, social, and temporal specificity.",
+    "Taking IDNs seriously matters because they shape how the internet's past is presented publicly and circumscribe which internet futures still seem imaginable."
+  ],
+  "methods": [
+    "Conceptual and historiographical analysis that names and defines 'internet decline narratives' as an object of study.",
+    "Close reading and synthesis of popular discourse, journalism, and bestselling non-fiction (e.g., Doctorow's enshittification concept, Zuboff's surveillance capitalism).",
+    "Illustrative use of user comments drawn from four threads on the subreddit r/nosurf as examples of vernacular decline talk.",
+    "Engagement with internet histories scholarship published in the journal Internet Histories and allied fields to position IDNs against the field's methodological commitments.",
+    "Reference to historical survey and statistical data on internet access inequalities (e.g., Australian Bureau of Statistics 1999, GVU Center 2001, Statistics Canada 2001, Our World in Data) to challenge 'golden age' assumptions."
+  ],
+  "findings": [
+    "Decline talk about media is longstanding (print, cinema, comics, TV), and internet-specific decline narratives date at least to early-1990s Usenet complaints about commercial 'newbies.'",
+    "IDNs took hold as a dominant form around 2018 after the Facebook–Cambridge Analytica scandal, building on earlier disillusionment from the dot-com crash and the 2013 Snowden revelations, and intensifying with Twitter/X's transformation and the generative AI boom.",
+    "Four defining features of IDNs: a temporal-evaluative frame binding harms to decline, an expansive scope treating the whole structure as rotten, specification of a decline threshold, and attribution of blame to Big Tech and/or failed regulation.",
+    "IDNs tend to cast users as passive victims—behaviourally manipulated or addicted—leaving little room for user agency, resistance tactics (ad blockers, account sharing), or grassroots alternative infrastructures.",
+    "The 'old, good internet' of the 1990s–2000s was used by a smaller, wealthier, more male and more educated population, so any pre-mass-access golden age describes the experience of an advantaged minority.",
+    "Drawing on Payal Arora, the article notes IDN pessimism is largely a Western affliction that overlooks stories of creation, entrepreneurship, and resilience in the Global South, and risks 'pessimism paralysis.'"
+  ],
+  "contributions": [
+    "Coins and theorises the term 'internet decline narratives' (IDNs) as an analytical category for a widespread but under-examined discourse.",
+    "Identifies four characteristic features and three types of work (political, affective, commercial) that IDNs perform.",
+    "Introduces the notion of 'Manichaean internet history'—histories framed as a cosmic struggle between villainous corporations and helpless masses.",
+    "Articulates how IDNs challenge the internet histories field's commitments to plurality, non-centric accounts, and user-centred approaches.",
+    "Sets a research agenda for studying decline discourses as situated cultural objects that shape policy (e.g., social media bans) and imaginable internet futures."
+  ],
+  "framing": "The article positions itself within the field of internet histories, engaging its programmatic commitments—articulated in the journal Internet Histories—to non-centric, plural, user-centred accounts that move 'beyond Anglophone paradigms' and resist Whiggish, inventor- and corporation-centred teleologies. It also draws on critical media and platform scholarship (surveillance capitalism, data colonialism, corporational determinism) and media panic/decline literature to treat declinism itself as a historiographical and cultural phenomenon worthy of study.",
+  "pdf_source": "drive"
+}
