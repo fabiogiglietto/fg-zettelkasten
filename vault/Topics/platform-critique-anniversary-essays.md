@@ -35,6 +35,7 @@ Reflective anniversary/position essays diagnosing the current state of social me
 - [[Karo2026-dn]]
 - [[Kristensen2025-ni]]
 - [[Lewandowsky2026-ob]]
+- [[Li2026-zv]]
 - [[Mahl2026-hc]]
 - [[Marwick2026-ss]]
 - [[Munger2025-cz]]

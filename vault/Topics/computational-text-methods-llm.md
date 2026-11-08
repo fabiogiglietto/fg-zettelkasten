@@ -13,6 +13,7 @@ Methodological work on integrating large language models into political discours
 - [[Achmann-Denkler2026-lx]]
 - [[Alizadeh2026-es]]
 - [[Allen2025-ot]]
+- [[Altoe2026-wu]]
 - [[Anwar2024-34dba628]]
 - [[Arminio2025-tw]]
 - [[Arora2025-tx]]

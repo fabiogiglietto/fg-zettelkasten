@@ -10,6 +10,7 @@ Monitoring and characterizing disinformation narratives circulating across Europ
 
 ## Papers
 
+- [[Altoe2026-wu]]
 - [[Benkler2018-lw]]
 - [[Bennett2018-ys]]
 - [[Bosch2024-hj]]

@@ -4966,10 +4966,42 @@
           "at": "2026-11-06T09:05:49.024146+00:00"
         }
       }
+    },
+    "bibtex:Li2026-zv": {
+      "note_path": "Papers/Li2026-zv.md",
+      "topics": [
+        "generative-ai-imaginaries",
+        "platform-critique-anniversary-essays"
+      ],
+      "assign_fp": "fbd5fe0745ec4b860d799a733a8a407c55fcff793ae87f9b56b70f3140f09048",
+      "doi": "",
+      "title": "Defective, amplified, contested: Folk conceptualizations of AI slop",
+      "pdf_source": "drive",
+      "content_hash": "76ad2cf12248d4e86f167edf441e3551063d17aea2027bb81f88bab04d02674d",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-08T08:29:03.297013+00:00"
+    },
+    "bibtex:Altoe2026-wu": {
+      "note_path": "Papers/Altoe2026-wu.md",
+      "topics": [
+        "disinformation-narrative-monitoring",
+        "computational-text-methods-llm"
+      ],
+      "assign_fp": "0973c2620ca75dbac8de2a341ad41d55b0435f504cbc0cc6030f3b6e3f202fbf",
+      "doi": "10.1145/3799682.3840688",
+      "title": "Predicting narrative virality on social media streams for pre-peak misinformation triage",
+      "pdf_source": "drive",
+      "content_hash": "0646a48e9d382b65c43f9134d71c622a3d784da0388ba5b6b0a8dac109c4f2c6",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-08T08:29:24.889395+00:00"
     }
   },
   "last_full_cluster": "2026-11-02T12:25:23.903546+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 4,
   "register_signals_hash": "bb49aee145a47359467b0d9b42e98eaf538c2eed33352abc81d6c7014d9687f9",
   "emergent_fp": "1905557825dcce38040040bb3e8da0ecf6022c38e11e4b5277b0190406572a73",
   "structure_fps": {
