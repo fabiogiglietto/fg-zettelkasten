@@ -1,0 +1,34 @@
+{
+  "abstract": "This paper investigates how everyday social media users—rather than politicians, technologists, or scholars—experience and conceptualize 'AI slop,' the low-effort, mass-produced, derivative AI-generated content saturating social feeds. Through inductive thematic analysis of 516 Reddit posts and comments across six slop-related subreddits (January 2023–October 2025), the authors identify four themes: constitutional defects, algorithmic overreach, user resistance, and entertainment outcomes. They synthesize these into a user-driven definition and a facet-theoretical operational framework intended to guide future research into slop as a fuzzy, contested category.",
+  "key_claims": [
+    "Everyday users—the audience most exposed to AI slop—offer grounded conceptualizations that have been largely overlooked in favor of expert and political perspectives.",
+    "AI slop is best understood not as a fixed aesthetic category but as a fuzzy set of relational, affective artifacts defined by the gap between what algorithmic systems produce at scale and what audiences expect, contest, and occasionally embrace.",
+    "Users frame slop coherently as defective, invasive content, but their value-laden reactions are mixed and contested—ranging from resistance and loss to enjoyment and defense of 'quality' AI content.",
+    "Platforms are significant facilitators of slop through monetization programs and engagement-based algorithms, shifting the burden of content curation onto users whose resistance tactics are often futile.",
+    "Slop introduces an 'uncanny of provenance'—disorientation arising not just from how content looks but from the irresolvability of who (or what) made it—that existing frameworks and platform labeling practices are ill-equipped to handle."
+  ],
+  "methods": [
+    "Inductive, descriptive qualitative study using Braun and Clarke's six-step thematic analysis workflow.",
+    "Data collected from Reddit via the Python Reddit API Wrapper across six subreddits (r/AIfreakout, r/aifails, r/TikTokCringe, r/youtube, r/instagram, r/FacebookAIslop).",
+    "Two-channel collection strategy: Reddit's search endpoint with CloudSearch weekly time segmentation, plus automated scanning of each subreddit's new feed; matches validated with a case-insensitive regular expression for 'AI slop' and variants.",
+    "Corpus of N=516 posts and comments spanning January 1, 2023 (post-ChatGPT) to October 7, 2025 (post-Sora 2), deduplicated by subreddit and post/comment ID.",
+    "Dual textual-visual engagement (reviewing linked media to contextualize commentary) with coding focused only on textually articulated perceptions; first author coded, second author reviewed for face validity, consistency, and mutual exclusivity of themes.",
+    "Reflexive, socially-constructionist interpretive stance informed by the first author's insider positionality within AI content communities."
+  ],
+  "findings": [
+    "Constitutional defects (n=305) was the dominant theme, comprising visual degradation, moral transgression, narrative inconsistency, factual distortion, and provenance deficiencies—where content is rejected simply for being AI-generated rather than human-made.",
+    "Algorithmic overreach (n=110) captured frustration directed at platforms through content saturation ('tsunami' of recycled content), platform decay/enshittification, prioritization of automation over user autonomy, and suspicious bot-driven engagement amplification.",
+    "User resistance (n=103) involved responsibility assignment (blaming creators, advertisers, and tech leaders like Zuckerberg), agency reclamation tactics (reporting, filtering, quitting, petitions), and societal risk articulation (job loss, environmental harm, harm to vulnerable groups).",
+    "Entertainment outcomes (n=80) revealed that slop is also genuinely enjoyed—as amusement, guilty pleasure, or 'high-quality slop'—and triggers eudaimonic technostalgia for a pre-AI internet, complicating purely negative framings.",
+    "Users' algorithmic resistance tactics (e.g., 'not interested' buttons, erasing viewing history) were frequently perceived as ineffective, with slop persisting in feeds regardless."
+  ],
+  "contributions": [
+    "A user-driven conceptual definition: AI slop is audience-contested, AI-generated content characterized by constitutional defects and enabled by platform logics.",
+    "A facet-theoretical operationalization via a 'mapping sentence' with four facets—contestation (A), AI-generated content (B), constitutional defects (C), and platform logics (D)—to scaffold structured, theory-driven future research.",
+    "The novel concept of the 'uncanny of provenance,' extending the uncanny valley to encompass ambiguity about origin and authorship, not just appearance.",
+    "A critique of current platform binary AI-labeling practices (TikTok, YouTube, Meta, C2PA) as misaligned with the nuanced signals users actually use, and of moderation gaps exploited via hashtag evasion and aesthetic 'masquerading.'",
+    "Application of Ritzer's 'McDonaldization' to frame slop as 'fast food' content engineered for volume, speed, and low-cost replicability driven by creator-monetization incentives."
+  ],
+  "framing": "The paper positions itself within science and technology studies, platform governance, and media/communication scholarship on generative AI, drawing on social constructionism, uses-and-gratifications theory, facet theory, and critiques of platform decay/enshittification and McDonaldization. It intervenes in an emerging scholarly conversation that has largely characterized slop conceptually or from expert viewpoints, foregrounding instead 'folk' understandings of non-expert users as a grounded basis for defining and studying a fuzzy, contested category of content.",
+  "pdf_source": "drive"
+}
