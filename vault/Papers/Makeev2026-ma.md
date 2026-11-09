@@ -5,7 +5,7 @@ authors: ["Makeev, M", "Alley, J", "Bastos, M"]
 year: 2026
 doi: 
 bibtex_key: Makeev2026-ma
-topics: [disinformation-narrative-monitoring]
+topics: []
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=Selling%20war%20at%20home%20and%20abroad%3A%20The%20dual%20objective%20of%20state%20media%20propaganda%20in%20the%20Russo-Ukrainian%20war

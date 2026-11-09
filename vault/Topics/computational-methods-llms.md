@@ -1,12 +1,12 @@
 ---
 type: topic
-slug: computational-text-methods-llm
+slug: computational-methods-llms
 emergent: false
 ---
 
-# Computational Text Methods & LLMs
+# Computational Methods & LLMs for Content Analysis
 
-Methodological work on integrating large language models into political discourse and content-analysis pipelines, including validation challenges, embedding-model comparisons for clustering news, and human-machine annotation workflows for complex social phenomena.
+Development and validation of computational text-analysis workflows, including large language models 'in the loop' for political discourse coding, embedding model benchmarking, and AI-assisted annotation and peer-review pipelines.
 
 ## Papers
 
@@ -14,20 +14,23 @@ Methodological work on integrating large language models into political discours
 - [[Alizadeh2026-es]]
 - [[Allen2025-ot]]
 - [[Altoe2026-wu]]
+- [[Annabell2026-ev]]
 - [[Anwar2024-34dba628]]
 - [[Arminio2025-tw]]
 - [[Arora2025-tx]]
 - [[Bailard2024-pj]]
 - [[Balluff2026-if]]
+- [[Bastos2025-ol]]
 - [[Bollenbacher2026-vz]]
 - [[Bouchaud2026-lr]]
+- [[Brady2026-ln]]
 - [[Brown2025-jk]]
+- [[Bruns2025-fz]]
 - [[Bruns2026-pn]]
 - [[Costello2024-bg]]
+- [[Cullen2026-cb]]
 - [[DeVerna2025-dl]]
-- [[DiGiuseppe2026-pu]]
 - [[Dierickx2026-tw]]
-- [[Dubey2026-bl]]
 - [[Elfes2026-jb]]
 - [[Fan2025-ut]]
 - [[Fan2026-af]]
@@ -37,24 +40,30 @@ Methodological work on integrating large language models into political discours
 - [[Gilardi2026-hw]]
 - [[Gomez-Zara2026-as]]
 - [[Hackenburg2025-dj]]
+- [[Hackenburg2026-ud]]
+- [[Iannelli2018-ebd918b7]]
+- [[Jayaram2026-wd]]
 - [[Kasianenko2026-tn]]
+- [[Kim2026-br]]
+- [[King2026-av]]
 - [[Kotz2026-lk]]
 - [[Lai2024-to]]
 - [[Larsson2026-ro]]
 - [[Le-Mens2025-qz]]
 - [[Lee2026-je]]
-- [[Lin2025-xp]]
 - [[Marino2024-2fbc690f]]
-- [[Matias2025-px]]
-- [[Mattis2026-gu]]
+- [[Marino2026-he]]
 - [[Meher2025-qb]]
 - [[Miller2026-cp]]
+- [[Murtfeldt2025-wu]]
 - [[Nguyen2026-vm]]
 - [[Ober2026-vd]]
 - [[Paci2025-ag]]
+- [[Pante2025-pq]]
 - [[Peters2026-mo]]
 - [[Rieder2025-ju]]
 - [[Sarmiento2025-as]]
+- [[Scalco2026-bd]]
 - [[Szabo2026-rd]]
 - [[Tan2024-vl]]
 - [[Triedman2025-uy]]
@@ -66,6 +75,6 @@ Methodological work on integrating large language models into political discours
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "computational-text-methods-llm")
+WHERE contains(topics, "computational-methods-llms")
 SORT discovery_date DESC
 ```

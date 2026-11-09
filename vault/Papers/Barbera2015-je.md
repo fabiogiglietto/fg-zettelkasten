@@ -5,7 +5,7 @@ authors: ["Pablo Barberá"]
 year: 2015
 doi: 10.1093/pan/mpu011
 bibtex_key: Barbera2015-je
-topics: [partisan-media-polarization, comparative-electoral-campaigns]
+topics: [political-polarization-partisanship, computational-network-structure-analysis]
 citation_count: 634
 open_access: false
 source_url: https://doi.org/10.1093/pan/mpu011

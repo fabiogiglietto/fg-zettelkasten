@@ -5,7 +5,7 @@ authors: ["Tiago Ventura", "Rajeshwari Majumdar", "Jonathan Nagler", "Joshua Aar
 year: 2025
 doi: 10.2139/ssrn.4457400
 bibtex_key: Ventura2025-sw
-topics: [misinformation-exposure-recalibration, comparative-electoral-campaigns]
+topics: [information-disorder, misinformation-exposure-recalibration]
 citation_count: 2
 open_access: false
 source_url: https://doi.org/10.2139/ssrn.4457400

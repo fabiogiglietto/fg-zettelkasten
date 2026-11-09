@@ -6,7 +6,7 @@ year: 2026
 doi: 10.1177/29768624261452529
 bibtex_key: Giglietto2026-632ef967
 kind: own
-topics: [partisan-media-polarization, platform-data-access-governance]
+topics: [platform-governance-data-access, italian-elections-news-ecosystem]
 citation_count: 0
 open_access: true
 source_url: https://doi.org/10.1177/29768624261452529

@@ -5,7 +5,7 @@ authors: ["Leonardo Nizzoli", "Serena Tardelli", "Marco Avvenuti", "Stefano Cres
 year: 2020
 doi: 
 bibtex_key: Nizzoli2020-cf
-topics: [coordinated-inauthentic-behavior, comparative-electoral-campaigns]
+topics: [coordinated-inauthentic-behavior, political-polarization-partisanship]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2008.08370v2

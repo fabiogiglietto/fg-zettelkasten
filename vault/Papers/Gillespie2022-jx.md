@@ -5,7 +5,7 @@ authors: ["Tarleton Gillespie"]
 year: 2022
 doi: 10.1177/20563051221117552
 bibtex_key: Gillespie2022-jx
-topics: [platform-data-access-governance, platform-critique-anniversary-essays]
+topics: [platform-governance-data-access]
 citation_count: 162
 open_access: false
 source_url: https://doi.org/10.1177/20563051221117552

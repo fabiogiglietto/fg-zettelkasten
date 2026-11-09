@@ -5,7 +5,7 @@ authors: ["Filipe Altoe", "Sérgio Miguel Gonçalves Pinto", "H. Sofia Pinto"]
 year: 2026
 doi: 10.1145/3799682.3840688
 bibtex_key: Altoe2026-wu
-topics: [disinformation-narrative-monitoring, computational-text-methods-llm]
+topics: [information-disorder, computational-methods-llms]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3799682.3840688

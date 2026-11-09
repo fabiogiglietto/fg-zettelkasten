@@ -5,7 +5,7 @@ authors: ["Marcus Bösch", "Tom Divon"]
 year: 2024
 doi: 10.1177/14614448241251804
 bibtex_key: Bosch2024-hj
-topics: [disinformation-narrative-monitoring, generative-ai-synthetic-media]
+topics: [information-disorder, coordinated-inauthentic-behavior]
 citation_count: 32
 open_access: false
 source_url: https://doi.org/10.1177/14614448241251804

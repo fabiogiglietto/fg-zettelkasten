@@ -5,7 +5,7 @@ authors: ["King, Gary", "Worthington, Steven"]
 year: 2026
 doi: 
 bibtex_key: King2026-av
-topics: [llm-augmented-research-methods]
+topics: [llm-augmented-research-methods, computational-methods-llms]
 citation_count: 0
 open_access: false
 source_url: https://scholar.google.com/scholar?q=AI%20article%20reviews%20dominate%20human%20peer%20reviews%20at%20their%20best%3A%20Evidence%20and%20policy%20choices

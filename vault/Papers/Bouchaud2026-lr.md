@@ -5,7 +5,7 @@ authors: ["Paul Bouchaud", "Pedro Ramaciotti"]
 year: 2026
 doi: 
 bibtex_key: Bouchaud2026-lr
-topics: [platform-data-access-governance, computational-text-methods-llm]
+topics: [platform-governance-data-access, computational-methods-llms]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2602.02624v2

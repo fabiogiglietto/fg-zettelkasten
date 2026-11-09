@@ -5,7 +5,7 @@ authors: ["Katjana Gattermann", "Elske van den Hoogen", "Claes de Vreese"]
 year: 2026
 doi: 10.1080/13501763.2025.2489088
 bibtex_key: Gattermann2025-yx
-topics: [comparative-electoral-campaigns, public-perceptions-and-labor-impacts-of-ai]
+topics: [political-polarization-partisanship, information-disorder]
 citation_count: 3
 open_access: false
 source_url: https://doi.org/10.1080/13501763.2025.2489088
