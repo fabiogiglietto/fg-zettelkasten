@@ -4925,10 +4925,7 @@
     },
     "bibtex:noauthor_undated-yy": {
       "note_path": "Papers/noauthor_undated-yy.md",
-      "topics": [
-        "coordinated-inauthentic-behavior",
-        "computational-network-structure-analysis"
-      ],
+      "topics": [],
       "assign_fp": "1a190f243448a03f39bde1e70b14638b75a0de3204deb2b8881f7389e4a99b96",
       "doi": "",
       "title": "Statistical detectability of coordination",
@@ -4936,7 +4933,7 @@
       "content_hash": "6c87f83f73bd46d2354c363b1c2c6391338bec9fb95c8bf6a5806da941585387",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-11-06T14:52:59.087969+00:00",
+      "last_processed": "2026-11-12T08:58:22.178091+00:00",
       "social": {
         "mastodon": {
           "url": "https://aoir.social/@fabiogiglietto/117553993261857701",
@@ -4954,7 +4951,8 @@
           "url": "https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzgirks2jf2b",
           "at": "2026-11-03T18:46:43.768083+00:00"
         }
-      }
+      },
+      "superseded_by": "bibtex:Iannucci2026-my"
     },
     "bibtex:Hegarty2026-qr": {
       "note_path": "Papers/Hegarty2026-qr.md",
@@ -5054,10 +5052,44 @@
           "at": "2026-11-08T08:31:12.387733+00:00"
         }
       }
+    },
+    "bibtex:Iannucci2026-my": {
+      "note_path": "Papers/Iannucci2026-my.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "9dfe0252c83dc28fa971593a08d51b7674870194d4b976ea078c7fc30a3ad2f3",
+      "doi": "",
+      "title": "Statistical Detectability of Coordination",
+      "pdf_source": "drive",
+      "content_hash": "6c87f83f73bd46d2354c363b1c2c6391338bec9fb95c8bf6a5806da941585387",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-11-12T08:58:42.801649+00:00",
+      "supersedes": "noauthor_undated-yy",
+      "social": {
+        "mastodon": {
+          "url": "https://aoir.social/@fabiogiglietto/117553993261857701",
+          "at": "2026-11-03T18:46:26.755096+00:00"
+        },
+        "threads": {
+          "url": "https://www.threads.com/@fabiogiglietto/post/DfSjuscmlvX",
+          "at": "2026-11-03T18:46:41.150050+00:00"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7523455632449155072/",
+          "at": "2026-11-03T18:46:42.402708+00:00"
+        },
+        "bluesky": {
+          "url": "https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzgirks2jf2b",
+          "at": "2026-11-03T18:46:43.768083+00:00"
+        }
+      }
     }
   },
   "last_full_cluster": "2026-11-09T12:58:14.950110+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "ec46e37908bf35d9e354e155dba039de8ae5c4820f0657ca53d972c3da57bfc8",
   "emergent_fp": "f3692330439b49f7bf01b686f3f59cbc3b4c649b66706f4c7a8c3dcc82793379",
   "structure_fps": {
@@ -5088,6 +5120,13 @@
       "same_work": true,
       "confidence": "high",
       "reason": "Identical title and author list, with one being the arXiv preprint (2025) and the other the CACM published version (2026) of the same commentary on the DSA.",
+      "source": "claude",
+      "model": "claude-sonnet-5"
+    },
+    "bibtex:Iannucci2026-my|bibtex:noauthor_undated-yy": {
+      "same_work": true,
+      "confidence": "high",
+      "reason": "Identical title, authors, year, and arXiv URL (abs/2610.37970v1) indicate these are the same preprint with differing abstract summaries.",
       "source": "claude",
       "model": "claude-sonnet-5"
     }

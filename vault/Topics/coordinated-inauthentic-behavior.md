@@ -35,6 +35,7 @@ Detection, monitoring, and theorization of coordinated link-sharing and inauthen
 - [[Graham2026-fb]]
 - [[Holland_Levin2026-qx]]
 - [[Iannucci2025-eg]]
+- [[Iannucci2026-my]]
 - [[Inacio-da-Silva2026-zf]]
 - [[Jovanovic-Harrington2026-ze]]
 - [[Kansaon2025-id]]
@@ -65,7 +66,6 @@ Detection, monitoring, and theorization of coordinated link-sharing and inauthen
 - [[Yang2025-iv]]
 - [[Zhao2025-ny]]
 - [[noauthor_undated-bm]]
-- [[noauthor_undated-yy]]
 
 ## All papers (Dataview)
 

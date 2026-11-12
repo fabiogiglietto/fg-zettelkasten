@@ -29,6 +29,7 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 - [[Groebner2026-pc]]
 - [[Heft2021-ky]]
 - [[Iannucci2025-eg]]
+- [[Iannucci2026-my]]
 - [[Jurg2025-ur]]
 - [[Kakavand2026-kt]]
 - [[Luceri2025-tr]]
@@ -40,7 +41,6 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 - [[Wang2026-ub]]
 - [[Yang2025-iv]]
 - [[Zhu2026-tn]]
-- [[noauthor_undated-yy]]
 
 ## All papers (Dataview)
 
