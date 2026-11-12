@@ -404,6 +404,16 @@ _JUNK_KEY_RE = re.compile(
 )
 
 
+def is_junk_key(key: str) -> bool:
+    """Whether a bibtex key is a placeholder minted from missing metadata.
+
+    toread emits `noauthor_undated-xx` (and Paperpile `Unknown2025-...`) when an
+    entry has no author/date; once the metadata is fixed upstream the same
+    record reappears under a real key. Accepts a bare key or a `bibtex:` id.
+    """
+    return bool(_JUNK_KEY_RE.match(key.removeprefix("bibtex:")))
+
+
 def metadata_quality(record: Record) -> int:
     """How trustworthy this record's *identity* metadata looks.
 
@@ -416,7 +426,7 @@ def metadata_quality(record: Record) -> int:
     score = 0
     if record.tokens:
         score += 4
-    if not _JUNK_KEY_RE.match(record.key):
+    if not is_junk_key(record.key):
         score += 2
     if record.year:
         score += 1
