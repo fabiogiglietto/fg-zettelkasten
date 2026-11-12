@@ -5086,10 +5086,26 @@
           "at": "2026-11-03T18:46:43.768083+00:00"
         }
       }
+    },
+    "bibtex:Larsson2026-nl": {
+      "note_path": "Papers/Larsson2026-nl.md",
+      "topics": [
+        "italian-elections-news-ecosystem",
+        "political-polarization-partisanship"
+      ],
+      "assign_fp": "5a58904eac1cb7992cdafa8dec82cf991be119502f15c9a6f0fa2366d01084c8",
+      "doi": "10.1177/20563051261501463",
+      "title": "“I share your sentiment”—A longitudinal study of Facebook post sentiment and sharing",
+      "pdf_source": "drive",
+      "content_hash": "8a3c602ab5753b346e3ceffaca2d7ad66c790328c2dbf1c90a76d77df013007d",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-12T22:44:40.555519+00:00"
     }
   },
   "last_full_cluster": "2026-11-09T12:58:14.950110+00:00",
-  "papers_since_cluster": 1,
+  "papers_since_cluster": 2,
   "register_signals_hash": "ec46e37908bf35d9e354e155dba039de8ae5c4820f0657ca53d972c3da57bfc8",
   "emergent_fp": "f3692330439b49f7bf01b686f3f59cbc3b4c649b66706f4c7a8c3dcc82793379",
   "structure_fps": {

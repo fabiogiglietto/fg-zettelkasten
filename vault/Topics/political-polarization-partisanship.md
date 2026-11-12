@@ -65,6 +65,7 @@ Analysis of partisan community dynamics, affective and insular engagement, hyper
 - [[Knupfer2025-vt]]
 - [[Kristensen2025-ni]]
 - [[Lai2024-to]]
+- [[Larsson2026-nl]]
 - [[Larsson2026-ro]]
 - [[Le-Mens2025-qz]]
 - [[Lee2026-je]]

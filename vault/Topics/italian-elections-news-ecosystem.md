@@ -25,6 +25,7 @@ The MINE programme's core empirical research line mapping Italian news media cov
 - [[Iannelli2015-e0818c3e]]
 - [[Iris2026-pg]]
 - [[Kalsnes2025-zb]]
+- [[Larsson2026-nl]]
 - [[Lukito2026-il]]
 - [[Lukito2026-nb]]
 - [[Marino2023-9137f448]]
