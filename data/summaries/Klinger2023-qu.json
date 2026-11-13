@@ -1,0 +1,36 @@
+{
+  "abstract": "This paper examines how extremist political ideas travel from fringe movements into mainstream party politics via aligned intermediary networks that obscure their origins. Using a dynamic network analysis and time-series analysis of a German anti-immigration campaign ('Migrationspakt Stoppen') opposing the 2018 UN Global Compact for Migration, the authors trace how content originating with the small extremist Identitarian Movement spread through networks of low-level AfD party activists, 'superspreader' accounts, and far-right media sites before the Alternative for Germany (AfD) party leadership adopted it as an official campaign. The study shows that these intermediary networks 'launder' extremist content, allowing a radical-right party to take up and claim ownership of ideas it was officially pledged not to endorse, ultimately pushing extremist framing into mainstream media and public discourse.",
+  "key_claims": [
+    "Radical-right parties can adopt ideas from extremist factions without formal coordination because aligned intermediary networks bridge movement and party actors who cannot openly endorse one another.",
+    "Intermediary networks act as 'source-laundering' mechanisms that disconnect content from its extremist origins and lend it political legitimacy.",
+    "The AfD's 'Migrationspakt Stoppen' campaign was a near-identical copy of the Identitarian Movement's campaign in framing, slogans, imagery (e.g., the ticking clock), and tropes (e.g., 'replacement migration'), despite no public reference to the movement.",
+    "Campaign networks grew non-linearly through staged 'handoffs' rather than steady concentric growth, with no single actor serving as the core mobilizer.",
+    "Such networked content flows make conventional standards for regulating harmful speech and demonstrating coordination difficult to apply, posing a novel threat to liberal democracy."
+  ],
+  "methods": [
+    "Set up a multi-platform monitoring system of the German far-right media ecology tracking content from 11 July to 15 December 2018.",
+    "Dynamic network analysis (using Python, Gephi, and the ForceAtlas2 layout algorithm) of retweet networks, with nodes sized by indegree centrality and colored by actor type.",
+    "Time-series analysis of tweet and retweet volumes across actor categories using the campaign terms 'Migrationspakt' and 'Migrationspakt Stoppen' / 'stoppen'.",
+    "Collected data from YouTube (via R 'tuber' package: 1,606 videos from 681 channels), Twitter (via Crimson Hexagon: 506,079 tweets including 69,361 original tweets and 410,276 retweets from 43,579 accounts, ~60% of relevant traffic), far-right news/information sites (Media Cloud collections RNIS-DEU and RNIS-AUT, 21 sites), mainstream German media (Spiegel, Bild, FAZ, Tagesspiegel, Welt, Zeit), and the AfD party website and 'AfD Kompakt'.",
+    "Manual and semi-automated coding of accounts into actor types: mass media, far-right news sites, Identitarian actors, low-level AfD (224 accounts), high-level AfD (4 accounts), and top-100 superspreaders.",
+    "Bot detection on all accounts using Botometer with a 0.75 threshold (finding only 5.9% automated accounts producing 3.4% of tweets)."
+  ],
+  "findings": [
+    "Prior to the Identitarian campaign launch on 16 September 2018 there was only sporadic activity around the Global Compact for Migration.",
+    "After Identitarian leader Martin Sellner's launch video, the @migrationspakt account became the most-retweeted in the network within one day, and intermediary network activity spiked immediately.",
+    "Superspreaders constituted only 0.27% of network nodes but accounted for about 21% of all interactions, both amplifying and bridging separate networks.",
+    "Far-right news sites (RNIS) played a dual role: initial intermediaries bridging extremists and the party (visible more in original tweets than retweets), and later amplifiers of the party campaign.",
+    "The AfD launched a mirror-image official campaign in early October and a formal parliamentary petition on 1 November that gained over 100,000 signatures; the party then falsely claimed to be the sole originator of the GCM opposition.",
+    "Intermediary network activity escalated further after official AfD uptake; the overall network reached 23% of its final size during the October AfD launch and nearly doubled after the November petition.",
+    "Mainstream media covered the issue after the parliamentary petition but largely without the 'stoppen' campaign frame, focusing instead on the renewed CDU-CSU conflict over immigration; the most-retweeted post in the dataset came from Die Welt."
+  ],
+  "contributions": [
+    "Introduces an empirical framework for tracing how extremist ideas move into mainstream politics through aligned intermediary networks, extending Klein's concept of 'information laundering' to movement-party dynamics.",
+    "Demonstrates a method combining multi-platform data collection with dynamic network and time-series analysis to detect network 'handoffs' without evidence of formal coordination.",
+    "Advances theoretical understanding of networked framing, networked agenda-setting, network monitoring, network alignment, and the role of superspreaders in hybrid media systems.",
+    "Provides a generalizable case relevant to other movement-party interactions (e.g., Trump/MAGA/QAnon in the US, Le Pen and the Gilets Jaunes in France, AfD and PEGIDA).",
+    "Highlights regulatory and democratic challenges posed by dispersed, networked spread of extremist content."
+  ],
+  "framing": "The paper positions itself within political communication and social movement studies on the radical and extreme right, drawing on theories of hybrid media systems, networked framing and agenda-setting, movement-party interaction, and information laundering. It frames networked content flows as a distinctive contemporary threat to liberal democratic values, invoking debates about how democracies erode and about distinguishing dangerous communication from protected speech.",
+  "pdf_source": "drive"
+}
