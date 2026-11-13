@@ -21,6 +21,7 @@ Empirical and review studies of how extremist actors (far-right, jihadist) explo
 - [[Jovanovic-Harrington2026-ze]]
 - [[Kakavand2026-kt]]
 - [[Karo2026-dn]]
+- [[Klinger2023-qu]]
 - [[Kulichkina2026-zk]]
 - [[Kuznetsova2025-nu]]
 - [[Marwick2025-vx]]

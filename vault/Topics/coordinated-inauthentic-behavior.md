@@ -42,6 +42,7 @@ Detection, monitoring, and theorization of coordinated link-sharing and inauthen
 - [[Keller2019-nk]]
 - [[Kim2026-br]]
 - [[Kim2026-wg]]
+- [[Klinger2023-qu]]
 - [[Knupfer2025-vt]]
 - [[Kulichkina2026-zk]]
 - [[Kuznetsova2025-nu]]

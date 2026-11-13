@@ -5119,10 +5119,41 @@
           "at": "2026-11-12T22:46:31.233394+00:00"
         }
       }
+    },
+    "bibtex:Klinger2023-qu": {
+      "note_path": "Papers/Klinger2023-qu.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "online-radicalization-and-extremism-on-platforms"
+      ],
+      "assign_fp": "955320ef81b63c8f99c927ffe70949f8d6404277aee7967346fb5b178029a6a9",
+      "doi": "10.1080/1369118x.2022.2050415",
+      "title": "From the fringes into mainstream politics: intermediary networks and movement-party coordination of a global anti-immigration campaign in Germany",
+      "pdf_source": "drive",
+      "content_hash": "df4b60bd646746a04323cda91f49191bc08b1a9dde4b45f827043903d49c0ce7",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "social_pending": false,
+      "last_processed": "2026-11-13T10:46:23.709888+00:00"
+    },
+    "bibtex:Hartley2006-oi": {
+      "note_path": "Papers/Hartley2006-oi.md",
+      "topics": [],
+      "assign_fp": "17d823eb61220c95ed5fa47d8a212e0ed58999a29bd76ffa50dee4c11070c550",
+      "doi": "10.1177/1367549406066077",
+      "title": "The public sphere on the beach",
+      "pdf_source": "drive",
+      "content_hash": "6786fb6422afacc739d53f492ac3417acedab600891f182ed9d25bc754a35660",
+      "podcast_linked": false,
+      "slack_posted": false,
+      "slack_pending": false,
+      "social_pending": false,
+      "last_processed": "2026-11-13T10:46:38.613384+00:00"
     }
   },
   "last_full_cluster": "2026-11-09T12:58:14.950110+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 4,
   "register_signals_hash": "ec46e37908bf35d9e354e155dba039de8ae5c4820f0657ca53d972c3da57bfc8",
   "emergent_fp": "f3692330439b49f7bf01b686f3f59cbc3b4c649b66706f4c7a8c3dcc82793379",
   "structure_fps": {
