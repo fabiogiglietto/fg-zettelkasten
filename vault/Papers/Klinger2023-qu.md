@@ -5,7 +5,7 @@ authors: ["Ulrike Klinger", "W. Lance Bennett", "Curd Benjamin Knüpfer", "Franz
 year: 2023
 doi: 10.1080/1369118x.2022.2050415
 bibtex_key: Klinger2023-qu
-topics: [coordinated-inauthentic-behavior, online-radicalization-and-extremism-on-platforms]
+topics: [cross-national-coordinated-networks, online-radicalization-and-extremism-on-platforms]
 citation_count: 40
 open_access: false
 source_url: https://doi.org/10.1080/1369118x.2022.2050415

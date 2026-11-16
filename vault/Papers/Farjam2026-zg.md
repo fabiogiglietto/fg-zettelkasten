@@ -5,7 +5,7 @@ authors: ["Mike Farjam", "Hendrik Meyer", "Meike Lohkamp"]
 year: 2026
 doi: 10.1177/08944393251349541
 bibtex_key: Farjam2026-zg
-topics: [llm-augmented-research-methods, computational-methods-llms]
+topics: [llms-computational-content-analysis, llm-augmented-research-methods]
 citation_count: 15
 open_access: false
 source_url: https://doi.org/10.1177/08944393251349541

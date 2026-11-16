@@ -11,8 +11,7 @@ Methodological papers deploying LLMs or fine-tuned models to augment scholarly t
 ## Papers
 
 - [[Alizadeh2026-es]]
-- [[Balluff2026-if]]
-- [[Brown2025-jk]]
+- [[Costello2024-bg]]
 - [[DiGiuseppe2025-es]]
 - [[Farjam2026-zg]]
 - [[Gomez-Zara2026-as]]
@@ -22,7 +21,6 @@ Methodological papers deploying LLMs or fine-tuned models to augment scholarly t
 - [[Meher2025-qb]]
 - [[Ober2026-vd]]
 - [[Tan2024-vl]]
-- [[Yang2026-tq]]
 
 ## All papers (Dataview)
 

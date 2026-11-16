@@ -5,7 +5,7 @@ authors: ["Kieran Hegarty"]
 year: 2026
 doi: 10.1080/24701475.2026.2760136
 bibtex_key: Hegarty2026-qr
-topics: [platform-critique-anniversary-essays, misinformation-exposure-recalibration]
+topics: [platform-critique-anniversary-essays, conceptual-fragmentation-reviews]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1080/24701475.2026.2760136

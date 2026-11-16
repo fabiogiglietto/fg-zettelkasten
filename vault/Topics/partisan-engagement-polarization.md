@@ -1,108 +1,85 @@
 ---
 type: topic
-slug: political-polarization-partisanship
+slug: partisan-engagement-polarization
 emergent: false
 ---
 
-# Political Polarization & Partisanship on Social Media
+# Partisan Engagement & News Polarization
 
-Analysis of partisan community dynamics, affective and insular engagement, hyperpartisan networks, and the interplay of social and traditional media in amplifying political extremes.
+Analysis of partisan community dynamics, affective engagement, insularity, and algorithmic shaping of news visibility on Facebook/Instagram, linking audience engagement metrics to political polarization research.
 
 ## Papers
 
 - [[Anwar2024-34dba628]]
-- [[Arora2025-tx]]
 - [[Bail2018-fk]]
 - [[Bakshy2015-rn]]
 - [[Barbera2015-fw]]
 - [[Barbera2015-je]]
 - [[Benkler2018-lw]]
-- [[Bennett2018-ys]]
-- [[Bennett2025-xs]]
-- [[Berlinski2023-rj]]
-- [[Bouchafra2026-ts]]
+- [[Bergeron-Boutin2026-yh]]
 - [[Bouchaud2026-np]]
+- [[Boyd2026-op]]
 - [[Brady2026-ln]]
-- [[Chadwick2013-ns]]
+- [[Cabbuag2024-me]]
 - [[Chadwick2015-ii]]
-- [[Darius2026-xl]]
 - [[Dehghan2026-sy]]
 - [[Del-Vicario2016-uj]]
 - [[Di-Domenico2026-zq]]
-- [[DiGiuseppe2026-pu]]
 - [[Divon2026-wx]]
+- [[Ducci2022-10cb5d70]]
 - [[Eady2025-vm]]
+- [[Efstratiou2025-gs]]
 - [[Elfes2026-jb]]
 - [[Esau2025-tf]]
 - [[Falkenberg2026-ka]]
 - [[Flaxman2016-lm]]
-- [[Freelon2020-yp]]
-- [[Gaber2022-bk]]
 - [[Gaisbauer2025-by]]
-- [[Gattermann2025-yx]]
 - [[Gauthier2026-iq]]
+- [[Gerbaudo2026-fo]]
 - [[Ghezzi2023-8bebc91f]]
 - [[Giglietto2012-32b6b551]]
-- [[Giglietto2017-4375de2f]]
 - [[Giglietto2019-882f1900]]
-- [[Giglietto2020-6278a4aa]]
+- [[Giglietto2026-632ef967]]
+- [[Gillespie2022-jx]]
 - [[Gonzalez-Bailon2023-uy]]
 - [[Green2025-ap]]
 - [[Grusauskaite2026-po]]
-- [[Guess2019-ym]]
-- [[Guess2023-ai]]
+- [[Guess2021-ym]]
 - [[Guess2023-ur]]
 - [[Hartmann2025-px]]
-- [[Heft2021-ky]]
 - [[Holland_Levin2026-qx]]
-- [[Humprecht2020-gd]]
 - [[Iannelli2015-e0818c3e]]
-- [[Iris2026-pg]]
 - [[Iyengar2019-jj]]
 - [[Kalsnes2025-zb]]
 - [[Karlsson2026-hd]]
-- [[Kim2026-wg]]
 - [[Knupfer2025-vt]]
 - [[Kristensen2025-ni]]
-- [[Lai2024-to]]
 - [[Larsson2026-nl]]
-- [[Larsson2026-ro]]
-- [[Le-Mens2025-qz]]
 - [[Lee2026-je]]
-- [[Lieu2025-nl]]
-- [[Lin2025-xp]]
+- [[Lukito2026-il]]
 - [[Marino2026-he]]
+- [[McNally2025-dn]]
 - [[Messing2014-jc]]
 - [[Mosleh2024-op]]
 - [[Much2026-gu]]
 - [[Nangle2026-yo]]
-- [[Nizzoli2020-cf]]
 - [[Nyhan2023-gb]]
 - [[Osmundsen2021-et]]
 - [[Prochaska2025-ef]]
-- [[Renault2025-uh]]
-- [[Rodarte2026-dk]]
-- [[Rossini2026-jn]]
-- [[Rossini2026-mj]]
 - [[Sarmiento2025-as]]
 - [[Schemer2026-mh]]
-- [[Schulz2026-ts]]
-- [[Starbird2025-jj]]
-- [[Tai2026-qk]]
-- [[Topinka2026-hb]]
-- [[Tornberg2025-ir]]
 - [[Van_Erkel2026-mk]]
 - [[Ventura2026-yc]]
 - [[Votta2025-xz]]
 - [[Wan2026-ai]]
+- [[Wedel2026-ix]]
 - [[Yoo2026-ev]]
-- [[Zhao2025-ny]]
 - [[van-Eck2026-xg]]
 
 ## All papers (Dataview)
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "political-polarization-partisanship")
+WHERE contains(topics, "partisan-engagement-polarization")
 SORT discovery_date DESC
 ```

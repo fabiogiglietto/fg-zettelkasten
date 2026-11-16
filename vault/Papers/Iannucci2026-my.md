@@ -6,7 +6,7 @@ year: 2026
 doi: 
 bibtex_key: Iannucci2026-my
 supersedes: noauthor_undated-yy
-topics: [coordinated-inauthentic-behavior, computational-network-structure-analysis]
+topics: [coordinated-inauthentic-behavior, social-media-research-methods-tools]
 citation_count: 0
 open_access: true
 source_url: http://arxiv.org/abs/2610.37970v1

@@ -4,13 +4,14 @@ slug: platform-governance-data-access
 emergent: false
 ---
 
-# Platform Governance & Research Data Access
+# Platform Governance, APIs & Data Access
 
-Research and advocacy on social media platforms' data-access regimes, API ecosystems, and compliance with regulation such as the Digital Services Act, including critiques of content-moderation and political-content-reduction policies after the CrowdTangle shutdown.
+Research on social media platform policy changes, data-access regimes for researchers (CrowdTangle shutdown, Meta Content Library, DSA Article 40), and their effects on visibility and research methodology — reflecting the researcher's JRC/ECAT expert role and recent Meta policy studies.
 
 ## Papers
 
 - [[Ahuja2025-ku]]
+- [[Allcott2019-gn]]
 - [[Allen2021-ai]]
 - [[Allen2025-ot]]
 - [[Annabell2026-ev]]
@@ -24,6 +25,7 @@ Research and advocacy on social media platforms' data-access regimes, API ecosys
 - [[Bruns2026-pn]]
 - [[Bruns2026-yv]]
 - [[Cazzamatta2026-lo]]
+- [[Chadwick2013-ns]]
 - [[Crosset2026-mq]]
 - [[Cullen2026-cb]]
 - [[De2026-ld]]
@@ -45,16 +47,20 @@ Research and advocacy on social media platforms' data-access regimes, API ecosys
 - [[Gillespie2010-as]]
 - [[Gillespie2022-jx]]
 - [[Goldberg2026-eb]]
+- [[Gonzalez-Bailon2023-uy]]
+- [[Graham2025-gp]]
+- [[Guess2023-ai]]
+- [[Guess2023-ur]]
 - [[Heiss2026-qv]]
 - [[Holt2026-zq]]
 - [[Hurcombe2025-cs]]
 - [[Inacio-da-Silva2026-zf]]
 - [[Jurg2025-ur]]
 - [[Karo2026-dn]]
+- [[Kasianenko2026-tn]]
 - [[Kuznetsova2026-hw]]
 - [[Lewandowsky2026-ob]]
 - [[Lukito2026-nb]]
-- [[Mahl2026-hc]]
 - [[McNally2025-dn]]
 - [[Miller2026-cp]]
 - [[Moran2025-qn]]
@@ -66,18 +72,20 @@ Research and advocacy on social media platforms' data-access regimes, API ecosys
 - [[Petre2019-zh]]
 - [[Philipp2026-tl]]
 - [[Pierri2026-ib]]
+- [[Rauchfleisch2026-fa]]
+- [[Richter2026-bt]]
 - [[Rieder2025-ju]]
 - [[Rieder2026-pp]]
 - [[Rogers2026-zz]]
+- [[Sbaraini-Fontes2026-cw]]
 - [[Schiffrin_undated-gi]]
 - [[Schulte2026-df]]
 - [[Swartz2026-zb]]
-- [[Thiele2025-ol]]
 - [[Tonneau2025-bv]]
 - [[Unknown2025-ed60bc90]]
-- [[Ventura2026-yc]]
-- [[Vertesi2026-lv]]
+- [[Vincent_undated-re]]
 - [[Votta2025-xz]]
+- [[Wang2026-ub]]
 - [[Yang2026-tq]]
 - [[Zheng2026-bi]]
 - [[de-Vreese2026-zx]]

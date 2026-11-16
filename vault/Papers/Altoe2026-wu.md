@@ -5,7 +5,7 @@ authors: ["Filipe Altoe", "Sérgio Miguel Gonçalves Pinto", "H. Sofia Pinto"]
 year: 2026
 doi: 10.1145/3799682.3840688
 bibtex_key: Altoe2026-wu
-topics: [information-disorder, computational-methods-llms]
+topics: [information-disorder-disinformation, llms-computational-content-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3799682.3840688

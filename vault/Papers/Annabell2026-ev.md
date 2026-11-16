@@ -5,7 +5,7 @@ authors: ["Taylor Annabell"]
 year: 2026
 doi: 10.1177/29777984261486601
 bibtex_key: Annabell2026-ev
-topics: [platform-governance-data-access, computational-methods-llms]
+topics: [platform-governance-data-access, conceptual-fragmentation-reviews]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/29777984261486601

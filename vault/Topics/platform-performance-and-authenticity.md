@@ -15,11 +15,12 @@ Qualitative and mixed-methods studies examining how users negotiate authenticity
 - [[Cotter2019-js]]
 - [[Divon2026-wx]]
 - [[Farci2017-2a88c00e]]
+- [[Gerbaudo2026-fo]]
 - [[Graham2026-fb]]
-- [[Marwick2025-ov]]
-- [[Petre2019-zh]]
+- [[Lukito2026-il]]
+- [[Tuters2026-vo]]
 - [[Volpe2026-um]]
-- [[Wang2026-ub]]
+- [[Wedel2026-ix]]
 
 ## All papers (Dataview)
 
