@@ -16,6 +16,7 @@ Long-running empirical research programme (MINE) mapping Italian news media and 
 - [[Eady2025-vm]]
 - [[Gaber2022-bk]]
 - [[Giglietto2012-32b6b551]]
+- [[Giglietto2015-320951c4]]
 - [[Giglietto2019-882f1900]]
 - [[Giglietto2020-6278a4aa]]
 - [[Giglietto2020-9d8acdd7]]

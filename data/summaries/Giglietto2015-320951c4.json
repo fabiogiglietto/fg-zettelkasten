@@ -1,0 +1,34 @@
+{
+  "abstract": "This study compares Twitter audience participation across two Italian TV shows from the 2012–2013 season — the talent show The X Factor and the political talk show Servizio Pubblico — using a full-season, cross-genre approach. Analyzing nearly 1.4 million tweets, the authors identify peaks of online engagement, link them to specific TV scenes, and conduct a content analysis of over 12,000 tweets produced during those peaks. They find that suspense and surprise drive engagement differently across genres and that viewers express opinions more cautiously and indirectly when the topic is politics rather than entertainment.",
+  "key_claims": [
+    "Full-season, cross-genre analysis of social TV reduces biases introduced by focusing on single episodes or media events and reveals both genre-dependent and genre-independent audience behaviors.",
+    "Suspense and surprise are the key narrative/structural drivers that catalyze online audience engagement, but they operate differently in talent shows versus political talk shows.",
+    "Twitter engagement around political talk shows follows a mediatized (spectacularized/infotainment) logic rather than a strictly political one.",
+    "Willingness to speak up and express opinions directly on Twitter varies by topic sensitivity: political discussions prompt more indirect, joking, or information-bolstered opinion expression.",
+    "Television exerts a strong framing effect over the structure, topics, and volume of Twitter conversation, synchronizing online engagement with producer strategies and show format."
+  ],
+  "methods": [
+    "Collected 1,383,414 tweets via the Twitter Firehose (DiscoverText GNIP Powertrack importer) from August 30, 2012 to June 30, 2013, using official hashtags #xf6 (The X Factor, 9 episodes, 772,018 tweets) and #serviziopubblico (Servizio Pubblico, 28 episodes, 611,396 tweets).",
+    "Segmented data by episode air time and generated per-minute time series of tweets, replies, retweets, and original tweets.",
+    "Applied Marcus et al.'s (2011) peak-detection algorithm to the stream of original tweets, identifying 16 seasonal peaks for The X Factor and 39 for Servizio Pubblico.",
+    "Conducted scene analysis of the 55 peaks using a codebook including summaries, position within show routine, and Luhmann's media selector criteria (surprise, suspense); intercoder agreement Krippendorff's alpha = 0.68.",
+    "Sampled, per show, the two peaks with highest and lowest shares of original tweets (8 peaks total, >12,000 tweets) and content-analyzed them with an adapted AEIO-style codebook (information, opinion, opinion-as-joke, emotion, attention seeking, interaction); intercoder agreement alpha = 0.71, with chi-square tests of significance."
+  ],
+  "findings": [
+    "The X Factor audience was far more active per minute (337.78 tweets/min per episode) than Servizio Pubblico (99.61 tweets/min), and produced more original tweets (62% vs. 55% over the season; 70% vs. 63% within peaks) and fewer retweets (25% vs. 33% within peaks).",
+    "The X Factor relied on both surprise (50% of peaks) and suspense (56.2%), while Servizio Pubblico relied mainly on surprise (48.7%) with very little suspense (5.1%).",
+    "Original tweets were relatively more frequent during scenes featuring a peer-like figure (a studio audience member speaking, or a contestant performing).",
+    "Opinion tweets were the most frequent category for both shows (64% political, 58% entertainment); emotional tweets were far more common in The X Factor (33% vs. 3%).",
+    "Political tweets were more often framed as jokes (25% vs. 11%) and more often combined opinion with information (10% vs. 4%).",
+    "For political discussion, the opinion-plus-information combination was significantly more frequent in peaks with low shares of original tweets (13% vs. 7%), suggesting a strategy of bolstering credibility or avoiding direct, risky opinion; no such significant difference appeared for entertainment.",
+    "Explicit requests for change (interaction) accounted for only about 10–11% of coded tweets and were not higher for politics than entertainment."
+  ],
+  "contributions": [
+    "Demonstrates a methodological strategy combining peak-detection algorithms with hybrid scene/tweet analysis to study large, skewed social TV datasets without conventional sampling.",
+    "Provides a rare full-season, cross-genre comparison that reveals a strong TV framing effect on Twitter conversation, nuancing prior single-event studies that emphasized user agency and divergence.",
+    "Introduces Luhmann's surprise/suspense selectors as analytical tools for understanding what catalyzes online audience engagement.",
+    "Advances understanding of 'willingness to speak up' in social TV, showing how opinion expression strategies (jokes, retweets, information-bolstering) shift with topic sensitivity, linking to spiral-of-silence and couch-participation concepts."
+  ],
+  "framing": "The paper positions itself within audience and reception studies and the social TV / second screen literature, engaging debates about participation, public opinion, and the prosumer in the network/hybrid media society. It draws theoretically on Luhmann's mass-media selectors, uses-and-gratifications theory, Carpentier's conception of participation, and literature on infotainment/politainment in spectacularized Italian political communication.",
+  "pdf_source": "drive"
+}

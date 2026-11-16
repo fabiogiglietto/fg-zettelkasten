@@ -3361,7 +3361,9 @@
       "pdf_source": "abstract_only",
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
-      "last_processed": "2026-08-07T07:23:45.388764+00:00"
+      "last_processed": "2026-11-16T15:02:46.209351+00:00",
+      "superseded_by": "bibtex:Giglietto2020-d568b728",
+      "slack_posted": true
     },
     "bibtex:Galip2026-ix": {
       "note_path": "Papers/Galip2026-ix.md",
@@ -5175,6 +5177,34 @@
       "slack_pending": false,
       "social_pending": false,
       "last_processed": "2026-11-13T10:46:38.613384+00:00"
+    },
+    "bibtex:Giglietto2020-d568b728": {
+      "note_path": "Papers/Giglietto2020-d568b728.md",
+      "topics": [],
+      "assign_fp": "9b1a14a67ba251e5b44b38c260c0cfcfe750957f770541e8830927482db6c477",
+      "kind": "own",
+      "doi": "10.1080/1369118x.2020.1755558",
+      "title": "Correction",
+      "pdf_source": "abstract_only",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-11-16T15:03:33.135037+00:00",
+      "supersedes": "Unknown2020-d568b728"
+    },
+    "bibtex:Giglietto2015-320951c4": {
+      "note_path": "Papers/Giglietto2015-320951c4.md",
+      "topics": [
+        "italian-political-communication",
+        "partisan-engagement-polarization"
+      ],
+      "assign_fp": "030b1622742be38caeddbba07061260f80ad52e03b48251eff76ebdd0e7b713f",
+      "kind": "own",
+      "doi": "10.2139/ssrn.2611083",
+      "title": "Understanding Engagement and Willingness to Speak Up in Social-Television: A Full-Season, Cross-Genre Analysis of TV Audience Participation on Twitter",
+      "pdf_source": "drive",
+      "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "podcast_linked": false,
+      "last_processed": "2026-11-16T15:03:51.969064+00:00"
     }
   },
   "last_full_cluster": "2026-11-16T13:00:21.720472+00:00",
@@ -5219,6 +5249,13 @@
       "reason": "Identical title, authors, year, and arXiv URL (abs/2610.37970v1) indicate these are the same preprint with differing abstract summaries.",
       "source": "claude",
       "model": "claude-sonnet-5"
+    },
+    "bibtex:Giglietto2020-d568b728|bibtex:Unknown2020-d568b728": {
+      "same_work": true,
+      "confidence": "high",
+      "reason": "same DOI deposit (10.1080/1369118x.2020.1755558)",
+      "source": "doi",
+      "model": ""
     }
   }
 }

@@ -38,6 +38,7 @@ Analysis of partisan community dynamics, affective engagement, insularity, and a
 - [[Gerbaudo2026-fo]]
 - [[Ghezzi2023-8bebc91f]]
 - [[Giglietto2012-32b6b551]]
+- [[Giglietto2015-320951c4]]
 - [[Giglietto2019-882f1900]]
 - [[Giglietto2026-632ef967]]
 - [[Gillespie2022-jx]]
