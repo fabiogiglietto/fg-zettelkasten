@@ -20,6 +20,7 @@ Papers examining how generative AI is culturally imagined, discursively framed, 
 - [[Mattis2026-gu]]
 - [[Nguyen2026-vm]]
 - [[Richter2026-bt]]
+- [[So2026-up]]
 - [[Stanusch2026-ec]]
 - [[Suk2026-ai]]
 - [[Topinka2026-hb]]

@@ -57,6 +57,7 @@ Papers that use empirical, large-scale, or naturalistic data to challenge alarmi
 - [[Rossi2023-847d5a9f]]
 - [[Scalco2026-bd]]
 - [[Schulz2026-ts]]
+- [[So2026-up]]
 - [[Suau_Martinez2026-lv]]
 - [[Triedman2025-uy]]
 - [[Tsfati2020-uo]]

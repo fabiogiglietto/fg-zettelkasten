@@ -5205,10 +5205,26 @@
       "content_hash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
       "podcast_linked": false,
       "last_processed": "2026-11-16T15:03:51.969064+00:00"
+    },
+    "bibtex:So2026-up": {
+      "note_path": "Papers/So2026-up.md",
+      "topics": [
+        "generative-ai-imaginaries",
+        "misinformation-exposure-recalibration"
+      ],
+      "assign_fp": "745fa495ed14222d986657695ae112031507a46d53f25ea0425a01b39ffd9202",
+      "doi": "10.1177/20539517261506941",
+      "title": "The social and cultural life of artificial intelligence (AI) slop: A research framework",
+      "pdf_source": "drive",
+      "content_hash": "c0685a8feb0e4f4c364a4468dfc290bfbd2c4ad3818cdebe94afb97766e84e5b",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-17T18:12:10.082177+00:00"
     }
   },
   "last_full_cluster": "2026-11-16T13:00:21.720472+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 1,
   "register_signals_hash": "c2c9dfc2f346a3d4297c7f4466a83787d6b658ea983412265f22a1d26f316bd8",
   "emergent_fp": "c3194d0b6e79b0b885dd8a0fbd36b6c9cefe7f691fbfbaa539e3f7009c5176f1",
   "structure_fps": {
