@@ -1,0 +1,35 @@
+{
+  "abstract": "This paper proposes SLOP (distinct from the vernacular 'AI slop') as an analytical category naming a condition rather than a class of objects: information ecosystems in which AI-generated content has reached sufficient scale and surface competence that the signals once used to evaluate quality and credibility no longer reliably function. The authors argue that dominant institutional responses—detection tools treating synthetic content as 'pollution' to be filtered—are inadequate because the value and harm of any artifact emerge from social context (who produces it, who engages with it, and with what motivations) rather than innate properties. They characterize SLOP along three dimensions—production, reception, and effects—and translate this into a falsifiable research agenda spanning ethnographies of production, computational and interview-based reception studies, and analysis of institutional effects and governance.",
+  "key_claims": [
+    "The 'pollution' framing of AI-generated content is insufficient because it assumes content can be cleanly filtered out, when what has actually broken down is the relation between how content is made and what its form signals about quality.",
+    "What has become scarce is not content but reliable evaluative signals—the means by which human judgment once distinguished competence from its imitation.",
+    "SLOP should be understood relationally as a shared social condition, not as a set of intrinsic object properties; a fan's AI tribute video and an industrial content farm belong to the same condition but occupy different positions within it.",
+    "Generative AI decouples the surface signals of expertise and effort from the cognitive labor that once produced them, making credibility cheap to manufacture across nearly every medium.",
+    "SLOP differs from misinformation because AI-generated content need not be false nor intended to deceive; undisclosed AI use is typically concealment, not deception in Bok's sense.",
+    "SLOP extends the spam condition by collapsing the cost of creation (not just distribution), while undermining spam's categorical clarity since the same content is wanted by some and rejected by others.",
+    "The governance problem is misdiagnosed: institutions search for better rules when what they have lost is the evaluative capacity the rules were standing in for."
+  ],
+  "methods": [
+    "Conceptual and theoretical framework-building rather than original empirical study (the manuscript reports no original data).",
+    "Critical review and synthesis of three existing framings: AI-content detection (zero-shot methods, watermarking, population-level estimation), spam scholarship, and misinformation/disinformation studies.",
+    "Theoretical grounding drawn from platform studies (Gillespie, Srnicek, Seaver), cultural sociology (Bourdieu's field theory, Lamont's sociology of evaluation and 'heterarchy'), book/print history (Johns, Wellmon), and Bok's philosophy of deception and concealment.",
+    "Proposal of a three-part, falsifiable research agenda: (1) ethnographic interviews and participant observation with content-farm producers in Kenya, India, Vietnam, and the Philippines; (2) computational and interview-based reception studies, including analysis of LinkedIn's 'mark as AI slop' button and other in-the-wild judgment signals; (3) study of peer-review gatekeeping via interviews with editors/reviewers plus archival records (desk-rejection rates, time-to-decision, policy changes)."
+  ],
+  "findings": [
+    "Reviewed detection tools perform poorly: Liang et al. (2023) found over 60% average false-positive rates on non-native English writers; Perkins et al. (2024) found under 40% mean accuracy, dropping to 22% on lightly edited text.",
+    "Detection is structurally positioned to lose an 'arms race' because distributional signatures become harder to identify as models improve (Sadasivan et al.).",
+    "AI-generated content is already prevalent and unevenly distributed: ~20% of YouTube videos, over 80% of LinkedIn long-form posts, 9% of new US online newspaper articles, ~25% of certain TikTok hashtag search results versus under 5% on Instagram, and 6.5–16.9% of reviews at major AI conferences contain LLM text.",
+    "Production is often profit-motivated and automated (DiResta and Goldstein's 120 Facebook pages; over 80% of synthetic TikTok content from automated accounts) yet is underwritten by low-wage human labor in content mills, subsidized by platform bonus programs.",
+    "Institutional governance responses largely fail: only about half of AI content on TikTok carried appropriate labels; Amazon KDP's three-books-per-day cap and disclosure requirement are imperfect proxies that cannot validate the distinction they demand.",
+    "Users sometimes cannot distinguish synthetic content and even prefer it: AI-synthesized faces were rated more trustworthy than real ones (Nightingale and Farid, 2022); accusations of AI authorship do not predict actual AI-distinguishing prose features (Miklian and Katsos)."
+  ],
+  "contributions": [
+    "Introduces SLOP as a distinct analytical category that names a relational social condition rather than a class of objects, separating it from the vernacular dismissal 'slop.'",
+    "Demonstrates systematically what detection, spam, and misinformation frameworks each capture and what each misses regarding AI-generated content.",
+    "Articulates a three-dimensional framework (production, reception, effects/governance) that treats synthetic content's consequences as variable by position and context.",
+    "Reframes the governance challenge as a loss of evaluative capacity rather than a failure to write good rules, arguing institutions must invest in judgment itself.",
+    "Offers a concrete, falsifiable research agenda designed to run without platform cooperation, specifying clear ways each prediction could fail and require framework revision."
+  ],
+  "framing": "The paper positions itself within platform studies and the sociology of culture (notably Bourdieu's field theory and Lamont's sociology of valuation), while engaging computer-science detection research, spam scholarship, and misinformation studies. It frames the AI-content moment as a recurrence of historical crises over information overload and epistemic authority (echoing Johns and Wellmon), arguing for a relational, context-sensitive approach to how credibility and expertise are recognized and rebuilt.",
+  "pdf_source": "drive"
+}
