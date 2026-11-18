@@ -33,6 +33,7 @@ Development of open-source tools, datasets, and methodological reflections (CooR
 - [[Iannucci2026-my]]
 - [[Le-Mens2025-qz]]
 - [[Luceri2025-tr]]
+- [[Malhotra2026-vl]]
 - [[Murtfeldt2025-wu]]
 - [[Oswald2025-km]]
 - [[Park2026-tr]]

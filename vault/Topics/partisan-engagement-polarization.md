@@ -58,6 +58,7 @@ Analysis of partisan community dynamics, affective engagement, insularity, and a
 - [[Larsson2026-nl]]
 - [[Lee2026-je]]
 - [[Lukito2026-il]]
+- [[Malhotra2026-vl]]
 - [[Marino2026-he]]
 - [[McNally2025-dn]]
 - [[Messing2014-jc]]
