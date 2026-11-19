@@ -5249,11 +5249,10 @@
       "doi": "10.1086/744929",
       "title": "Political unfriending on Facebook: Evidence from over 180 million users",
       "pdf_source": "drive",
-      "content_hash": "a9fc53aacabf15ac29a56f151aed25f07bb18d15a99d3aaf5a54014a06bbbc6f",
-      "podcast_linked": false,
-      "slack_posted": false,
-      "slack_pending": true,
-      "last_processed": "2026-11-18T16:58:23.465665+00:00",
+      "content_hash": "b5ffd47faeeb4abde7dc9b4f4d120124fb4a1fb82d7c196c3a8327cd0372de48",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "last_processed": "2026-11-19T16:21:25.316965+00:00",
       "social": {
         "mastodon": {
           "url": "https://aoir.social/@fabiogiglietto/117638507705557140",

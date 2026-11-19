@@ -9,7 +9,7 @@ topics: [partisan-engagement-polarization, social-media-research-methods-tools]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1086/744929
-podcast_url: 
+podcast_url: https://github.com/fabiogiglietto/research-radio/releases/download/audio/Malhotra2026-vl.mp3
 pdf_available: true
 discovery_date: 2026-11-18T16:46:47.812884Z
 ---
@@ -22,30 +22,34 @@ discovery_date: 2026-11-18T16:46:47.812884Z
 
 ## Summary
 
-This paper provides the first large-scale behavioral evidence on political "unfriending" on Facebook, using aggregate day-level data from over 180 million adult U.S. users combined with a linked six-wave panel survey of roughly 72,000 respondents during the 2020 U.S. election and its aftermath. The central argument is that while severing online ties is rare overall, users disproportionately cut *cross-cutting* (politically dissimilar) friendships rather than aligned ones — and that this behavior is dynamic, spiking around contentious political events and concentrated among strong partisans and politically engaged users. The authors reframe political homophily as a *process* of tie dissolution rather than a static network property, and they validate that survey self-reports of unfriending meaningfully track actual on-platform behavior.
+This paper provides large-scale behavioral evidence on *political unfriending* — the severing of online social ties for political reasons — during the 2020 U.S. election and its contentious aftermath. Drawing on aggregate day-level data from over 180 million adult U.S. Facebook users and a linked six-wave panel survey of roughly 72,000 users, the authors examine whether users disproportionately drop politically cross-cutting (opposite-ideology) friends relative to aligned ones. They find that although unfriending is rare overall, users are 25–50% more likely to sever cross-cutting ties, that this behavior spikes around charged political events, and that it concentrates among strong partisans and the politically engaged. The study reframes political homophily as a *dynamic process* of tie dissolution rather than a static property of networks, and validates that survey self-reports of unfriending genuinely track on-platform behavior.
 
 ## Key Contributions
 
-- First large-scale behavioral distinction between severing of aligned versus cross-cutting online ties, drawing on 180M+ users.
+- First large-scale behavioral evidence distinguishing severing of aligned vs. cross-cutting online ties, using over 180 million users.
 - Shifts the study of political homophily from static network composition toward the dynamic process of tie dissolution.
-- Maps fine-grained temporal fluctuations of unfriending across a contentious election period, benchmarked against New Year's "network cleaning" spikes.
-- Methodological validation that survey self-reports of unfriending correlate with real on-platform behavior, countering concerns about expressive responding.
-- Documents heterogeneity in unfriending by ideological strength and civic engagement.
+- Maps fine-grained temporal fluctuations of unfriending across the election period, benchmarked against New Year's "network cleaning" spikes.
+- Methodological validation that survey self-reports of political unfriending correlate with actual behavior, addressing concerns about expressive responding.
+- Documents heterogeneity across ideological strength and civic engagement, adding nuance to prior survey-based findings.
 
 ## Methods
 
-The authors analyzed aggregate day-level behavioral data from 183,883,696 monthly active U.S. adults (each with at least one liberal and one conservative friend) spanning June 2020 to February 2021. A linked, post-stratified six-wave panel survey of 71,930 consenting users matched self-reports to on-platform logs. User and friend ideology were estimated via an internal classifier (liberal ≤0.4, conservative ≥0.6; strong ideologues <0.2 or >0.8), supplemented by survey party ID and ideology. Tie severing was measured as the proportion of pre-study cross-cutting vs. aligned friends unfriended, normalized by network size, with risk ratios comparing the two. Analyses included temporal plots of daily unfriending, heterogeneity across ideological strength and civic-engagement quintiles, logistic regressions with demographic controls, and validation of self-reports over a 90-day window. The study was part of the preregistered U.S. 2020 Facebook and Instagram Election Study (FIES), with academics holding final publication control.
+The analysis combines two data sources from the preregistered U.S. 2020 Facebook and Instagram Election Study (FIES). The behavioral component uses aggregate day-level data from 183,883,696 monthly active U.S. users who had at least one liberal and one conservative friend, spanning June 2020 to February 2021. The survey component links a six-wave panel of 71,930 consenting users to their on-platform behavior, with post-stratification weights. User and friend ideology were estimated with an internal Facebook classifier (0 = left to 1 = right; strong ideologues scoring <0.2 or >0.8), supplemented by self-reported party ID and ideology. Tie severing was measured as the proportion of pre-study cross-cutting vs. aligned friends unfriended, normalized by network size, with risk ratios comparing the two. Temporal, heterogeneity (by ideology strength and civic-engagement quintiles), and logistic regression analyses followed, plus validation of self-reports against 90-day behavioral logs and robustness checks combining unfriending with unfollowing and blocking. Academic lead authors held final control rights; Meta lacked pre-publication approval.
 
 ## Findings
 
-- Liberals severed 2.66% of conservative vs. 2.14% of liberal ties (~24% higher cross-cutting); conservatives severed 2.80% of liberal vs. 2.09% of conservative ties (~34% higher).
-- Pre-study networks were more aligned than cross-cutting, especially for conservatives (60.5% conservative friends), but still politically diverse.
-- Unfriending spiked around Election Day, January 6th, and Inauguration Day; conservatives quadrupled unfriending of liberals on Election Day and also cut co-partisans more, while liberals showed more modest spikes and moderates were largely unaffected.
-- Strong conservatives showed the most extreme cross-cutting unfriending (risk ratio 1.52); heterogeneity by ideological strength was clearer among Republicans than Democrats.
-- Civic engagement strongly predicted cross-cutting unfriending (liberal rates rose from 1.5% in the lowest quintile to 3.2% in the highest) and was a stronger predictor than ideological strength.
-- Self-reports showed meaningful concordance: 62% reporting unfriending had done so; 84% reporting none had not; reported *cross-cutting* unfriending was less accurate (54%).
-- Motivations included offensive content (65.3%), January 6th (49.8%), harassment (46.8%), political disagreement (44.2%), and over-posting politics (37.5%).
+- Liberals severed 2.66% of conservative friendships vs. 2.14% of liberal ones (~24% higher); conservatives severed 2.80% of liberal vs. 2.09% of conservative friendships (~34% higher).
+- Pre-study networks were more aligned than cross-cutting, especially for conservatives (60.5% conservative friends), yet retained substantial diversity.
+- Unfriending spiked sharply around Election Day, January 6th, and Inauguration Day; conservatives quadrupled their unfriending of liberals on Election Day, while liberals and moderates showed more modest or negligible changes.
+- Strong conservatives showed the most extreme cross-cutting unfriending (risk ratio 1.52) and were least likely to drop co-partisans; the ideological-strength pattern was clearer among Republicans than Democrats.
+- Higher on-platform civic engagement strongly predicted cross-cutting unfriending (liberal cross-cutting severing rose from 1.5% to 3.2% across engagement quintiles) and was a stronger predictor than ideological strength.
+- Self-reports showed meaningful concordance with behavior (62% of reported unfrienders actually did so; 84% reporting no cross-cutting unfriending had indeed not), though reported cross-cutting unfriending was less accurate (54%).
+- Common reported motivations for cross-cutting severing: offensive content (65.3%), January 6th events (49.8%), abuse/harassment (46.8%), political disagreement (44.2%), and excessive political posting (37.5%).
 
 ## Connections
 
-This paper sits within the broader affective-polarization and echo-chamber literature, and it is a companion output of the 2020 Facebook and Instagram Election Study, directly related to [[Bergeron-Boutin2026-yh]] (sharing a lead author) and to other FIES platform-experiment work such as [[Guess2023-ur]], [[Gonzalez-Bailon2023-uy]], and [[Nyhan2023-gb]]. Its treatment of partisan network composition and selective exposure extends earlier Facebook network studies like [[Bakshy2015-rn]] and [[Messing2014-jc]], while its focus on affective polarization and partisan identity connects to [[Iyengar2019-jj]], [[Bail2018-fk]], and [[Osmundsen2021-et]].
+As part of the FIES research program, this paper is closely tied to other large-scale Meta-collaboration studies of platform behavior and political exposure, including [[Guess2023-ur]], [[Gonzalez-Bailon2023-uy]], [[Nyhan2023-gb]], and the earlier [[Bakshy2015-rn]] and [[Messing2014-jc]] on cross-cutting exposure and network composition. Its concern with self-report validity and expressive responding connects it to work on survey-behavior discrepancies such as [[Mosleh2024-op]], while its framing around affective polarization and partisan network dynamics links to [[Iyengar2019-jj]], [[Osmundsen2021-et]], and [[Bail2018-fk]]; its reframing of homophily as a dynamic dissolution process extends the echo-chamber debate associated with [[Barbera2015-fw]] and [[Flaxman2016-lm]].
+
+## Podcast
+
+A [research-radio](https://fabiogiglietto.github.io/research-radio/) episode discusses this paper: 🎧 [MP3](https://github.com/fabiogiglietto/research-radio/releases/download/audio/Malhotra2026-vl.mp3) · [Spotify](https://open.spotify.com/show/5V99ieB2ljNvcwPZ53EoPX)
