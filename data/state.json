@@ -5272,6 +5272,21 @@
           "at": "2026-11-18T17:00:07.699966+00:00"
         }
       }
+    },
+    "bibtex:Giglietto2019-0bd8b768": {
+      "note_path": "Papers/Giglietto2019-0bd8b768.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "italian-political-communication"
+      ],
+      "assign_fp": "7e423f3f856b1f8dffd214edb453a10d825619bfbe0df5ddbb6a4b78e147f6a5",
+      "kind": "own",
+      "doi": "10.31235/osf.io/3jteh",
+      "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
+      "pdf_source": "abstract_only",
+      "content_hash": "ec505bb0bdae46f92237a3697eefed57c095169b72c61cb0cf5af60745249c97",
+      "podcast_linked": false,
+      "last_processed": "2026-11-19T15:20:21.700735+00:00"
     }
   },
   "last_full_cluster": "2026-11-16T13:00:21.720472+00:00",

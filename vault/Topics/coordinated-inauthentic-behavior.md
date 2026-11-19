@@ -20,6 +20,7 @@ Detection and analysis of coordinated link-sharing and inauthentic network activ
 - [[FitzGerald2025-nv]]
 - [[Gaw2025-ru]]
 - [[Giada2026-fc9a3833]]
+- [[Giglietto2019-0bd8b768]]
 - [[Giglietto2020-9d8acdd7]]
 - [[Giglietto2022-0e951ac5]]
 - [[Giglietto2023-fa71a001]]

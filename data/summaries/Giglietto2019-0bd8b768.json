@@ -1,0 +1,35 @@
+{
+  "abstract": "This paper investigates 'coordinated inauthentic behavior' on Facebook during two Italian electoral periods: the 2018 general election and the 2019 European election. The authors propose an operationalizable definition of coordinated inauthentic behavior, grounded in prior literature on coordination and authenticity, since Facebook itself had only loosely defined the term. Using the CrowdTangle API combined with datasets of Italian political news stories, they develop a method to detect networks of Facebook pages, groups, and verified profiles that rapidly shared the same political news—behavior they term 'coordinated link sharing'. They find that such coordinated networks amplified engagement, often promoted anti-immigration and far-right content, and frequently shared news from outlets already blacklisted by fact-checkers.",
+  "key_claims": [
+    "The public and institutional response to 2016 disinformation evolved through stages analogous to grief—from denial, to concern over 'fake news', to focus on actor behavior—culminating in the concept of 'coordinated inauthentic behavior'.",
+    "Facebook's concept of 'coordinated inauthentic behavior' is useful for future study but was only briefly and vaguely defined, so a literature-grounded and operationalizable definition is needed.",
+    "Coordinated link sharing—multiple entities sharing the same political news within a very short time window—can be systematically detected and constitutes a measurable form of coordinated behavior.",
+    "Some coordinating entities present themselves as non-political (e.g., entertainment venues) while sharing political content, which the authors characterize as 'inauthentic' because it reaches audiences unguarded against influence.",
+    "News shared by coordinated networks tended to amplify anti-immigration and far-right propaganda and often came from fact-checker-blacklisted outlets."
+  ],
+  "methods": [
+    "Conceptual analysis synthesizing prior scholarship on coordination and authenticity to develop a definition of coordinated inauthentic behavior.",
+    "Data collection using the CrowdTangle API to access Facebook data on pages, groups, and verified public profiles.",
+    "Two datasets of Italian political news stories published in the run-up to the 2018 Italian general election and the 2019 European election.",
+    "A detection method identifying 'entities' that shared the same political news stories within a very short time period, grouped into coordinated networks.",
+    "Qualitative examination of the social media profiles of coordinated entities to assess their self-presentation (political vs. non-political).",
+    "Comparative engagement analysis contrasting news shared by coordinated networks against other news in the dataset, plus cross-referencing shared outlets with fact-checker blacklists."
+  ],
+  "findings": [
+    "In 2018, 10 coordinated networks were identified, comprising 28 entities.",
+    "In 2019, 50 coordinated networks were identified, comprising 143 entities.",
+    "Coordinating entities were mixed: some were overtly political while others presented as entertainment venues despite sharing political content.",
+    "News shared by coordinated networks received higher Facebook engagement than other news in the dataset.",
+    "Much of the shared news boosted anti-immigration and far-right propaganda.",
+    "Several news outlets shared by these networks had already been blacklisted by fact-checkers."
+  ],
+  "contributions": [
+    "Provides a literature-grounded, operationalizable definition of 'coordinated inauthentic behavior' usable in empirical research.",
+    "Introduces the concept and detection method of 'coordinated link sharing' on Facebook.",
+    "Demonstrates a novel combination of the CrowdTangle API with curated political news datasets for empirical disinformation research.",
+    "Offers empirical evidence of coordinated inauthentic link sharing in the Italian political context across two elections.",
+    "Links coordinated sharing behavior to higher engagement, far-right/anti-immigration propaganda, and blacklisted sources."
+  ],
+  "framing": "The paper situates itself within scholarship on political communication, social media disinformation, and the post-2016 reckoning over platform manipulation, bridging Facebook's operational concept of 'coordinated inauthentic behavior' with academic literature on coordination and authenticity to make it empirically tractable.",
+  "pdf_source": "abstract_only"
+}
