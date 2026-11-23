@@ -1,21 +1,17 @@
 ---
 type: topic
-slug: information-disorder-disinformation
+slug: information-disorder
 emergent: false
 ---
 
-# Information Disorder & Disinformation Narratives
+# Information Disorder & Disinformation
 
-Study of the circulation, propagation trajectories, and framing of mis/disinformation narratives (e.g. war in Ukraine, LGBTQI+ rights, elections) across the hybrid media system, underpinning the PROMPT project and the researcher's long-standing 'fake news' taxonomy work.
+Study of mis/disinformation narratives, fact-checking support tools, and deceptive information operations, including EU-funded monitoring of disinformation in politically sensitive domains (Ukraine war, elections, health).
 
 ## Papers
 
-- [[Adam2026-tz]]
-- [[Allcott2017-yz]]
 - [[Allen2020-nj]]
 - [[Altoe2026-wu]]
-- [[Arceneaux2026-xk]]
-- [[Arora2025-tx]]
 - [[Balluff2026-bv]]
 - [[Benkler2018-lw]]
 - [[Bennett2018-ys]]
@@ -23,16 +19,17 @@ Study of the circulation, propagation trajectories, and framing of mis/disinform
 - [[Bollenbacher2026-vz]]
 - [[Bosch2024-hj]]
 - [[Bouchafra2026-ts]]
+- [[Budak2024-ef]]
 - [[Cazzamatta2026-lo]]
-- [[Chadwick2013-ns]]
-- [[Chadwick2015-ii]]
+- [[Choi2026-bz]]
 - [[Copland2025-em]]
+- [[Crosset2026-mq]]
 - [[DeVerna2025-dl]]
 - [[Del-Vicario2016-uj]]
 - [[Di-Domenico2026-zq]]
+- [[Dierickx2026-tw]]
 - [[Donovan2025-ws]]
-- [[Ducci2022-10cb5d70]]
-- [[Efstratiou2026-ij]]
+- [[Emilio2026-ik]]
 - [[Farkas2026-lr]]
 - [[FitzGerald2025-nv]]
 - [[Freelon2020-yp]]
@@ -40,55 +37,46 @@ Study of the circulation, propagation trajectories, and framing of mis/disinform
 - [[Gaber2022-bk]]
 - [[Gattermann2025-yx]]
 - [[Ghezzi2023-8bebc91f]]
-- [[Giglietto2017-4375de2f]]
+- [[Giada2026-fc9a3833]]
 - [[Giglietto2019-e9be81c1]]
-- [[Giglietto2022-0e951ac5]]
-- [[Goel2025-iq]]
+- [[Gillespie2022-jx]]
 - [[Gonzalez-Bailon2024-rq]]
 - [[Graham2025-gp]]
-- [[Grinberg2019-ua]]
-- [[Guess2020-rr]]
-- [[Guo2026-fi]]
 - [[Hameleers2026-mc]]
-- [[Holland_Levin2026-qx]]
+- [[Holt2026-zq]]
 - [[Hourigan2026-oc]]
 - [[Humprecht2020-gd]]
 - [[Humprecht2025-ml]]
 - [[Hurcombe2025-cs]]
 - [[Iris2026-pg]]
-- [[Karlsson2026-hd]]
 - [[Keller2019-nk]]
 - [[Kim2026-wg]]
-- [[Knupfer2025-vt]]
+- [[Kuznetsova2025-nu]]
 - [[Kuznetsova2026-hw]]
-- [[Lai2024-to]]
 - [[Lazer2018-mm]]
 - [[Lewandowsky2012-vn]]
-- [[Lewandowsky2026-ob]]
+- [[Li2026-wq]]
+- [[Luhring2025-od]]
 - [[Mahl2026-hc]]
 - [[Makeev2026-ma]]
-- [[Marino2023-9137f448]]
-- [[Marwick2025-ov]]
 - [[Marwick2025-vx]]
 - [[Marwick2026-qd]]
+- [[Miller2026-cp]]
 - [[Mosca2026-yh]]
-- [[Much2026-gu]]
 - [[Nenno2025-xa]]
-- [[Osmundsen2021-et]]
+- [[Pennycook2021-jq]]
+- [[Poliakoff2026-fa]]
 - [[Prochaska2025-ef]]
 - [[Prochaska2026-pr]]
 - [[Ramos2026-qo]]
 - [[Renault2025-uh]]
-- [[Rodarte2026-dk]]
 - [[Rodriguez_Farres2025-sg]]
 - [[Rogers2026-cy]]
 - [[Rohrbach2026-rc]]
-- [[Rossi2023-847d5a9f]]
 - [[Rossini2026-jn]]
 - [[Rossini2026-mj]]
 - [[Sadler2025-vu]]
 - [[Scalco2026-bd]]
-- [[Song2025-yh]]
 - [[Starbird2019-qv]]
 - [[Starbird2025-jj]]
 - [[Suau_Martinez2026-lv]]
@@ -96,21 +84,21 @@ Study of the circulation, propagation trajectories, and framing of mis/disinform
 - [[Thiele2025-ol]]
 - [[Tornberg2025-ir]]
 - [[Tsfati2020-uo]]
+- [[Unknown2023-9137f448]]
 - [[Van_Erkel2026-mk]]
+- [[Ventura2025-sw]]
+- [[Vincent_undated-re]]
 - [[Vosoughi2018-at]]
 - [[Wack2026-bt]]
 - [[Waight2025-al]]
-- [[Waight2026-ts]]
 - [[Xue2025-bp]]
+- [[Yang2023-cg]]
 - [[Yoo2026-ev]]
-- [[Zhao2025-ny]]
-- [[Zhu2026-tn]]
-- [[de-Vreese2026-zx]]
 
 ## All papers (Dataview)
 
 ```dataview
 LIST FROM "Papers"
-WHERE contains(topics, "information-disorder-disinformation")
+WHERE contains(topics, "information-disorder")
 SORT discovery_date DESC
 ```

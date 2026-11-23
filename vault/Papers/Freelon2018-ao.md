@@ -5,7 +5,7 @@ authors: ["Deen Freelon"]
 year: 2018
 doi: 10.31235/osf.io/56f4q
 bibtex_key: Freelon2018-ao
-topics: [platform-governance-data-access, social-media-research-methods-tools]
+topics: [research-methods-data-access, computational-methods-llms]
 citation_count: 7
 open_access: false
 source_url: https://doi.org/10.31235/osf.io/56f4q

@@ -6,7 +6,7 @@ emergent: false
 
 # Coordinated Inauthentic Behavior
 
-Detection and analysis of coordinated link-sharing and inauthentic network activity across social platforms, from the CooRnet/CLSB methodology to the ongoing VERA-AI Alert monitoring system. This is the researcher's signature methodological line, central to both his EU-funded work (vera.ai WP4) and his most recent 2026 publications.
+Detection methods, tools (CooRnet, VERA-AI Alert) and empirical studies of coordinated link-sharing and inauthentic network activity across platforms and elections; the core methodological signature of the researcher's work.
 
 ## Papers
 
@@ -19,12 +19,14 @@ Detection and analysis of coordinated link-sharing and inauthentic network activ
 - [[Efstratiou2026-ij]]
 - [[FitzGerald2025-nv]]
 - [[Gaw2025-ru]]
+- [[Gerard2025-br]]
 - [[Giada2026-fc9a3833]]
 - [[Giglietto2019-0bd8b768]]
 - [[Giglietto2020-9d8acdd7]]
 - [[Giglietto2022-0e951ac5]]
 - [[Giglietto2023-fa71a001]]
 - [[Giglietto2026-9b6a992d]]
+- [[Graham2025-gp]]
 - [[Iannucci2025-eg]]
 - [[Iannucci2026-my]]
 - [[Jovanovic-Harrington2026-ze]]
@@ -32,11 +34,13 @@ Detection and analysis of coordinated link-sharing and inauthentic network activ
 - [[Kansaon2025-id]]
 - [[Keller2019-nk]]
 - [[Kim2026-br]]
+- [[Klinger2023-qu]]
 - [[Kulichkina2026-zk]]
 - [[Kuznetsova2025-nu]]
 - [[Luceri2025-tr]]
 - [[Mannocci2025-ig]]
 - [[Mannocci2026-kc]]
+- [[Marino2023-9137f448]]
 - [[Minici2024-tf]]
 - [[Nizzoli2020-cf]]
 - [[Oprea2025-lf]]
@@ -49,7 +53,6 @@ Detection and analysis of coordinated link-sharing and inauthentic network activ
 - [[Simeone2025-vo]]
 - [[Song2025-yh]]
 - [[Starbird2019-qv]]
-- [[Tang2026-gu]]
 - [[Thiele2025-ol]]
 - [[Yang2025-iv]]
 - [[Zhao2025-ny]]

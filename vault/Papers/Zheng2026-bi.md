@@ -5,7 +5,7 @@ authors: ["Kevin Zheng", "Reagan Keeney", "Ryan McGrady", "Vikramaditya Jaisingh
 year: 2026
 doi: 10.17645/mac.12085
 bibtex_key: Zheng2026-bi
-topics: [social-media-research-methods-tools, platform-governance-data-access]
+topics: [research-methods-data-access, computational-network-structure-analysis]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.17645/mac.12085

@@ -5,7 +5,7 @@ authors: ["Andrew M. Guess", "Neil Malhotra", "Jennifer Pan", "Pablo Barberá", 
 year: 2023
 doi: 10.1126/science.add8424
 bibtex_key: Guess2023-ai
-topics: [misinformation-exposure-recalibration, platform-governance-data-access]
+topics: [misinformation-exposure-recalibration, news-sharing-social-media]
 citation_count: 144
 open_access: false
 source_url: https://doi.org/10.1126/science.add8424

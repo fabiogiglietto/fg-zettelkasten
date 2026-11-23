@@ -2,94 +2,110 @@
   {
     "slug": "coordinated-inauthentic-behavior",
     "name": "Coordinated Inauthentic Behavior",
-    "description": "Detection and analysis of coordinated link-sharing and inauthentic network activity across social platforms, from the CooRnet/CLSB methodology to the ongoing VERA-AI Alert monitoring system. This is the researcher's signature methodological line, central to both his EU-funded work (vera.ai WP4) and his most recent 2026 publications.",
+    "description": "Detection methods, tools (CooRnet, VERA-AI Alert) and empirical studies of coordinated link-sharing and inauthentic network activity across platforms and elections; the core methodological signature of the researcher's work.",
     "source_signals": [
-      "_data/publications.yml",
       "_data/projects.yml",
+      "_data/publications.yml",
       "scripts/data/bio-seed.md"
     ],
     "is_emergent": false
   },
   {
-    "slug": "information-disorder-disinformation",
-    "name": "Information Disorder & Disinformation Narratives",
-    "description": "Study of the circulation, propagation trajectories, and framing of mis/disinformation narratives (e.g. war in Ukraine, LGBTQI+ rights, elections) across the hybrid media system, underpinning the PROMPT project and the researcher's long-standing 'fake news' taxonomy work.",
+    "slug": "information-disorder",
+    "name": "Information Disorder & Disinformation",
+    "description": "Study of mis/disinformation narratives, fact-checking support tools, and deceptive information operations, including EU-funded monitoring of disinformation in politically sensitive domains (Ukraine war, elections, health).",
     "source_signals": [
       "_data/projects.yml",
       "_data/publications.yml",
+      "_data/news.yml",
+      "scripts/config.js"
+    ],
+    "is_emergent": false
+  },
+  {
+    "slug": "platform-governance-regulation",
+    "name": "Platform Governance & Regulation",
+    "description": "Research on platform policy effects (e.g. Meta's political content reduction), API access and researcher data rights under the Digital Services Act, and engagement with EU regulatory bodies like the JRC/ECAT.",
+    "source_signals": [
+      "_data/publications.yml",
+      "scripts/data/bio-seed.md"
+    ],
+    "is_emergent": false
+  },
+  {
+    "slug": "political-communication-elections",
+    "name": "Political Communication & Elections",
+    "description": "Analysis of political news coverage, partisan attention, and social media dynamics around specific national elections (Italy, Germany, Brazil), a long-running empirical anchor of the MINE programme.",
+    "source_signals": [
+      "_data/projects.yml",
+      "_data/publications.yml"
+    ],
+    "is_emergent": false
+  },
+  {
+    "slug": "news-sharing-social-media",
+    "name": "News Sharing & Engagement on Social Media",
+    "description": "Studies of how news circulates and is engaged with on Facebook/Instagram, including insularity, cross-partisan exposure, algorithmic governance of visibility, and methodological issues in measuring link sharing.",
+    "source_signals": [
+      "_data/publications.yml"
+    ],
+    "is_emergent": false
+  },
+  {
+    "slug": "computational-methods-llms",
+    "name": "Computational Methods & LLMs in Content Analysis",
+    "description": "Development and validation of computational text analysis pipelines, including embedding models and LLM-assisted annotation/classification for studying political discourse and disagreement in complex social phenomena.",
+    "source_signals": [
+      "_data/publications.yml",
+      "_data/teaching.yml"
+    ],
+    "is_emergent": false
+  },
+  {
+    "slug": "political-polarization",
+    "name": "Political Polarization & Partisanship",
+    "description": "Investigation of affective and discursive polarization dynamics, partisan community engagement, and the interplay between social and traditional media in amplifying political extremes.",
+    "source_signals": [
+      "_data/publications.yml"
+    ],
+    "is_emergent": false
+  },
+  {
+    "slug": "health-misinformation",
+    "name": "Health Misinformation & Online Gatekeeping",
+    "description": "Mapping of coordinated networks spreading problematic health content (COVID-19, vaccines) across regions including Italy, India and Nigeria, and the role of online gatekeepers like Google News.",
+    "source_signals": [
+      "_data/projects.yml",
+      "_data/publications.yml"
+    ],
+    "is_emergent": false
+  },
+  {
+    "slug": "generative-ai-media",
+    "name": "Generative AI & Media Manipulation",
+    "description": "Emerging research on generative AI's role in synthetic persuasive content, visual manipulation in coordinated campaigns, and AI's broader effects on scholarly and media evaluation processes.",
+    "source_signals": [
+      "_data/publications.yml",
+      "_data/teaching.yml",
       "_data/news.yml"
     ],
     "is_emergent": false
   },
   {
-    "slug": "platform-governance-data-access",
-    "name": "Platform Governance, APIs & Data Access",
-    "description": "Research on social media platform policy changes, data-access regimes for researchers (CrowdTangle shutdown, Meta Content Library, DSA Article 40), and their effects on visibility and research methodology — reflecting the researcher's JRC/ECAT expert role and recent Meta policy studies.",
-    "source_signals": [
-      "_data/publications.yml",
-      "scripts/data/bio-seed.md"
-    ],
-    "is_emergent": false
-  },
-  {
-    "slug": "llms-computational-content-analysis",
-    "name": "LLMs & Computational Content Analysis",
-    "description": "Development and validation of large language model pipelines (LLMs-in-the-loop, Judge agents, embedding models) for text classification, annotation, and coding reliability in communication research — a fast-growing current methodological focus with multiple 2024-2026 outputs.",
-    "source_signals": [
-      "_data/publications.yml",
-      "_data/news.yml",
-      "_data/teaching.yml"
-    ],
-    "is_emergent": false
-  },
-  {
-    "slug": "italian-political-communication",
-    "name": "Italian Political Communication & Elections",
-    "description": "Long-running empirical research programme (MINE) mapping Italian news media and social media dynamics around national elections (2018, 2019 European, 2022), political parallelism, and parliamentarians' platform visibility.",
-    "source_signals": [
-      "_data/projects.yml",
-      "_data/publications.yml",
-      "scripts/data/bio-seed.md"
-    ],
-    "is_emergent": false
-  },
-  {
-    "slug": "cross-national-coordinated-networks",
-    "name": "Cross-National Coordinated Networks & Elections",
-    "description": "Comparative studies of coordinated behaviour and problematic information campaigns in international electoral and health contexts, including Germany, Brazil, Nigeria, and India, often conducted with international partner teams.",
-    "source_signals": [
-      "_data/projects.yml",
-      "_data/publications.yml"
-    ],
-    "is_emergent": false
-  },
-  {
-    "slug": "generative-ai-manipulation",
-    "name": "Generative AI & Synthetic Manipulation",
-    "description": "Emerging work on how generative AI is used in coordinated persuasion campaigns (e.g. synthetic imagery in gambling promotion) and on countering disinformation in the era of generative AI, reflecting a growing current research direction tied to the IA Generativa e Media course.",
-    "source_signals": [
-      "_data/publications.yml",
-      "_data/teaching.yml"
-    ],
-    "is_emergent": false
-  },
-  {
-    "slug": "partisan-engagement-polarization",
-    "name": "Partisan Engagement & News Polarization",
-    "description": "Analysis of partisan community dynamics, affective engagement, insularity, and algorithmic shaping of news visibility on Facebook/Instagram, linking audience engagement metrics to political polarization research.",
+    "slug": "research-methods-data-access",
+    "name": "Research Methods & Platform Data Access",
+    "description": "Methodological reflection on social media research infrastructure, API/data access tools, dataset limitations (e.g. Meta URL Shares Dataset thresholds), and survey recruitment via platform advertising.",
     "source_signals": [
       "_data/publications.yml"
     ],
     "is_emergent": false
   },
   {
-    "slug": "social-media-research-methods-tools",
-    "name": "Social Media Research Methods & Tools",
-    "description": "Development of open-source tools, datasets, and methodological reflections (CooRnet, CooRTweet, Facebook Ads recruitment, comment-link analysis) supporting reproducible computational social science research on digital platforms.",
+    "slug": "social-tv-second-screen",
+    "name": "Social TV & Second Screen",
+    "description": "Earlier but foundational research line on Twitter/TV audience engagement, second-screen participation, and networked publics during broadcast events, reflecting the historical arc of the researcher's agenda.",
     "source_signals": [
-      "_data/publications.yml",
-      "scripts/data/bio-seed.md",
-      "_data/teaching.yml"
+      "_data/publications.yml"
     ],
     "is_emergent": false
   },

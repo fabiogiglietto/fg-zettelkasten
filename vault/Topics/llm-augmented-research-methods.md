@@ -11,13 +11,13 @@ Methodological papers deploying LLMs or fine-tuned models to augment scholarly t
 ## Papers
 
 - [[Alizadeh2026-es]]
-- [[Costello2024-bg]]
+- [[Brown2025-jk]]
 - [[DiGiuseppe2025-es]]
 - [[Farjam2026-zg]]
 - [[Gomez-Zara2026-as]]
 - [[Jayaram2026-wd]]
 - [[King2026-av]]
-- [[Matias2025-px]]
+- [[Marino2024-2fbc690f]]
 - [[Meher2025-qb]]
 - [[Ober2026-vd]]
 - [[Tan2024-vl]]

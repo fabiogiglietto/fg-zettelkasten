@@ -5,7 +5,7 @@ authors: ["Tom Divon", "Yingdan Lu"]
 year: 2026
 doi: 10.1177/13548565261449632
 bibtex_key: Divon2026-wx
-topics: [platform-performance-and-authenticity, partisan-engagement-polarization]
+topics: [platform-performance-and-authenticity, political-communication-elections]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/13548565261449632

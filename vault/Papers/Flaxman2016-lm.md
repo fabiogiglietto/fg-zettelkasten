@@ -5,7 +5,7 @@ authors: ["Seth Flaxman", "Sharad Goel", "Justin M. Rao"]
 year: 2016
 doi: 10.2139/ssrn.2363701
 bibtex_key: Flaxman2016-lm
-topics: [partisan-engagement-polarization, misinformation-exposure-recalibration]
+topics: [news-sharing-social-media, political-communication-elections]
 citation_count: 27
 open_access: false
 source_url: https://doi.org/10.2139/ssrn.2363701

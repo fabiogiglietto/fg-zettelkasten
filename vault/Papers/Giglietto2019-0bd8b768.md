@@ -6,7 +6,7 @@ year: 2019
 doi: 10.31235/osf.io/3jteh
 bibtex_key: Giglietto2019-0bd8b768
 kind: own
-topics: [coordinated-inauthentic-behavior, italian-political-communication]
+topics: [coordinated-inauthentic-behavior, political-communication-elections]
 citation_count: 30
 open_access: true
 source_url: https://doi.org/10.31235/osf.io/3jteh

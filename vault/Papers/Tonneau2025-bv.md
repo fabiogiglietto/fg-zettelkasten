@@ -5,7 +5,7 @@ authors: ["Manuel Tonneau", "Diyi Liu", "Ryan McGrady", "Kevin Zheng", "Ralph Sc
 year: 2026
 doi: 10.1145/3805689.3806484
 bibtex_key: Tonneau2025-bv
-topics: [platform-governance-data-access, public-perceptions-and-labor-impacts-of-ai]
+topics: [platform-governance-regulation, research-methods-data-access]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1145/3805689.3806484

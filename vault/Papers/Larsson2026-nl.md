@@ -5,7 +5,7 @@ authors: ["Anders Olof Larsson"]
 year: 2026
 doi: 10.1177/20563051261501463
 bibtex_key: Larsson2026-nl
-topics: [italian-political-communication, partisan-engagement-polarization]
+topics: [political-communication-elections, news-sharing-social-media]
 citation_count: 0
 open_access: false
 source_url: https://doi.org/10.1177/20563051261501463

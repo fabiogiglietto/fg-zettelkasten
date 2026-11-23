@@ -10,13 +10,9 @@ Systematic or integrative literature reviews that map a rapidly growing but conc
 
 ## Papers
 
-- [[Annabell2026-ev]]
-- [[Anwar2024-34dba628]]
-- [[Bak-Coleman2026-mk]]
 - [[Bennett2025-xs]]
 - [[Bravo2026-ue]]
 - [[Falkenberg2026-ka]]
-- [[Freelon2020-yp]]
 - [[Frischlich2025-vn]]
 - [[Gagrcin2024-dl]]
 - [[Guo2026-fi]]
@@ -24,11 +20,10 @@ Systematic or integrative literature reviews that map a rapidly growing but conc
 - [[Hegarty2026-qr]]
 - [[Humprecht2025-ml]]
 - [[Mahl2026-hc]]
-- [[Mannocci2026-kc]]
-- [[Munger2025-cz]]
 - [[Rothut2026-wt]]
-- [[Sadler2025-vu]]
 - [[Spampatti2026-kx]]
+- [[Wang2025-zy]]
+- [[Yang2026-tq]]
 - [[van-Eck2026-xg]]
 
 ## All papers (Dataview)
