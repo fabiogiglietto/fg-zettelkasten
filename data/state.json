@@ -5355,5 +5355,9 @@
       "source": "doi",
       "model": ""
     }
+  },
+  "social_alerts": {
+    "threads-expiry": "2026-11-23",
+    "linkedin-expiry": "2026-11-23"
   }
 }
