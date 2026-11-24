@@ -35,6 +35,7 @@ Analysis of political news coverage, partisan attention, and social media dynami
 - [[Eady2023-xg]]
 - [[Eady2025-vm]]
 - [[Esau2025-tf]]
+- [[Fenis2027-sv]]
 - [[Flaxman2016-lm]]
 - [[Fletcher2026-lv]]
 - [[Freelon2020-yp]]

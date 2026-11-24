@@ -4777,10 +4777,10 @@
       "doi": "",
       "title": "AI article reviews dominate human peer reviews at their best: Evidence and policy choices",
       "pdf_source": "abstract_only",
-      "content_hash": "a150280eab699cde87140370ebf8dea91916c7794e2779970486247066e15920",
-      "podcast_linked": false,
+      "content_hash": "656f4987597c2b614f5492f588307c274b4e1fd04cf3d44c9ac5ef3f8a6e8383",
+      "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-10-23T17:41:50.374069+00:00",
+      "last_processed": "2026-11-24T16:57:32.122058+00:00",
       "social": {
         "mastodon": {
           "url": "https://aoir.social/@fabiogiglietto/117491461431338415",
@@ -5367,10 +5367,26 @@
           "at": "2026-11-24T00:21:52.606440+00:00"
         }
       }
+    },
+    "bibtex:Fenis2027-sv": {
+      "note_path": "Papers/Fenis2027-sv.md",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "political-communication-elections"
+      ],
+      "assign_fp": "3d7476400ae317bbc5317f0184ce5fe9e1c99865947a05cacc5b2e2a5f4563a2",
+      "doi": "10.1111/aspp.70113",
+      "title": "From polls to persistence: Examining coordinated political discourse outside the Philippine election period on Facebook",
+      "pdf_source": "drive",
+      "content_hash": "198978fb0ad6ddaa1af2e50b06a758ee801f85ddd78b6398284414b51a03e38f",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-24T16:57:19.587231+00:00"
     }
   },
   "last_full_cluster": "2026-11-23T14:31:46.423756+00:00",
-  "papers_since_cluster": 2,
+  "papers_since_cluster": 3,
   "register_signals_hash": "60f83a0a9e56d1e13388c41f7afea578e5c2636991d3cc7e2ccb0f4f58f54eed",
   "emergent_fp": "bae0f38070ea8b53c0a89095833fda1809cae2a8183ff2eb2ed0028c5f14a436",
   "structure_fps": {
