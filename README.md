@@ -117,6 +117,13 @@ before either runs out, and again if a platform rejects its token. A rejected
 token never fails the run; the paper stays queued for that platform (for
 `max_age_days`) and is posted once the secret is replaced.
 
+The Threads token renews itself: `refresh-social-tokens.yml` exchanges it for
+a fresh 60-day one twice a month and updates both the secret and
+`THREADS_TOKEN_EXPIRES`. That needs the secret `SECRETS_ADMIN_TOKEN`, a
+fine-grained PAT on this repo with *Secrets* and *Variables* read/write;
+without it the workflow does nothing. LinkedIn offers no such exchange, so
+that token is re-minted by hand every 60 days.
+
 With `social.dry_run: true` nothing is published: the composed posts go to the
 job log and the ops channel, once per paper. To post a single paper by hand,
 run the workflow with the `social_key` input set to its bibtex key; add

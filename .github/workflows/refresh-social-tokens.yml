@@ -1,0 +1,76 @@
+name: Refresh social tokens
+
+# The Threads long-lived token lasts 60 days but can be exchanged for a fresh
+# 60-day one at any time while it is still valid (and at least a day old), so
+# this keeps it alive without anyone re-minting it by hand. LinkedIn has no
+# such exchange for an ordinary app: that token is still re-minted manually,
+# on the week-ahead warning `social-post` sends to the ops channel.
+#
+# Needs the secret SECRETS_ADMIN_TOKEN: a fine-grained PAT on this repo with
+# "Secrets" and "Variables" read/write (the default GITHUB_TOKEN can write
+# neither). Without it the job does nothing and the manual routine applies.
+
+on:
+  schedule:
+    - cron: "0 3 1,15 * *"   # twice a month: a failed run leaves room for more tries
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: refresh-social-tokens
+  cancel-in-progress: false
+
+jobs:
+  threads:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refresh the Threads token
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_ADMIN_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "$GH_TOKEN" ] || [ -z "$THREADS_ACCESS_TOKEN" ]; then
+            echo "::notice::SECRETS_ADMIN_TOKEN or THREADS_ACCESS_TOKEN not set — nothing to refresh"
+            exit 0
+          fi
+          # The token goes in on stdin (-K -), not on the command line.
+          resp=$(printf 'data-urlencode = "access_token=%s"\n' "$THREADS_ACCESS_TOKEN" \
+            | curl -sS -G -K - --data-urlencode "grant_type=th_refresh_token" \
+                https://graph.threads.net/refresh_access_token)
+          new=$(jq -r '.access_token // empty' <<<"$resp")
+          if [ -z "$new" ]; then
+            # An error body carries no token; say why Threads refused.
+            echo "::error::Threads did not refresh the token: $(jq -c '.error // .' <<<"$resp")"
+            exit 1
+          fi
+          echo "::add-mask::$new"
+          ttl=$(jq -r '.expires_in // 0' <<<"$resp")
+          if [ "$ttl" -le 0 ]; then
+            echo "::error::Threads returned a token with no lifetime"
+            exit 1
+          fi
+          expires=$(date -u -d "+${ttl} seconds" +%F)
+          # Secret first: a stale expiry date only warns early, whereas a new
+          # date over the old token would hide that it is about to run out.
+          printf '%s' "$new" | gh secret set THREADS_ACCESS_TOKEN
+          gh variable set THREADS_TOKEN_EXPIRES --body "$expires"
+          echo "Threads token refreshed; it now expires on $expires"
+
+      - name: Notify Slack on failure
+        if: failure()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_ALERT_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
+          ALERT_TEXT: ":rotating_light: ${{ github.repository }} / ${{ github.workflow }} failed — the Threads token was not refreshed; re-mint it by hand if this repeats: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        run: |
+          if [ -z "$SLACK_BOT_TOKEN" ] || [ -z "$SLACK_ALERT_CHANNEL" ]; then
+            echo "No Slack credentials configured — skipping failure alert"; exit 0
+          fi
+          resp=$(jq -n --arg ch "$SLACK_ALERT_CHANNEL" --arg text "$ALERT_TEXT" '{channel: $ch, text: $text}' \
+            | curl -s -X POST -H "Authorization: Bearer $SLACK_BOT_TOKEN" -H 'Content-Type: application/json' \
+                -d @- https://slack.com/api/chat.postMessage)
+          [ "$(jq -r '.ok' <<<"$resp")" = "true" ] \
+            || echo "::error::Slack rejected the failure alert: $resp"
