@@ -1,0 +1,32 @@
+{
+  "abstract": "This article argues for a methodological return to URL (link) analysis as a tool for cross-platform controversy mapping, challenging the assumption that link studies became obsolete with the rise of platformization. Using the decade-long debate over the construction of a shipping canal through the Vistula Spit in Poland, the author analyzes 21,756 Facebook posts and 133,814 tweets to show that URLs still function as reliable controversy indicators, but in platform-specific ways. The study connects early digital methods with contemporary platformization research and CSCW work on socio-technical systems, treating links as traceable artifacts through which platform affordances become visible.",
+  "key_claims": [
+    "URLs remain valuable analytical objects for studying cross-platform controversies despite being largely abandoned after platformization shifted research toward hashtags, keywords, and platform-native metrics.",
+    "Links are not neutral carriers of information but socio-technical artifacts (non-human actors/mediators in Actor-Network Theory terms) whose meaning and function depend on the design and affordances of the platform in which they are used.",
+    "On Twitter, links foreground political sentiment, alignment, and polarization, while on Facebook they foreground protest mobilization and local/community organization.",
+    "These platform differences can be explained by platform affordances, which structure not only the circulation of content but also its meaning within controversies.",
+    "Link-based traces allow controversies to be studied across platforms without relying exclusively on discursive or semantic analysis, bridging early digital methods with CSCW research on socio-technical systems and platform affordances."
+  ],
+  "methods": [
+    "Mixed-methods controversy mapping focused on a single digital object: URLs published in posts about the Vistula Spit Canal controversy on Facebook and Twitter.",
+    "Data collection across 2016–2023: Twitter data retrieved via university Twitter API access through the 4CAT tool; Facebook data retrieved via CrowdTangle, using identical phrase-search keywords on both platforms.",
+    "A nested two-query design: a 'core collection' using bare object-phrase names of the controversy and an 'extended collection' pairing those phrases with discourse terms, slogans, and hashtags from both supporters and opponents.",
+    "Dataset of 21,756 Facebook posts and 133,814 tweets; quantitative analysis of frequency and distribution of digital objects (likes, shares, retweets, mentions, hashtags, URLs).",
+    "Network analysis in Gephi connecting accounts that shared the same URLs, spatialized with the ForceAtlas2 layout and clustered using modularity-based community detection (Blondel et al. 2008), followed by manual coding into seven link categories (news, local news, economic news, conservative sites, far-right sites, suspicious websites, informational sites) using external ratings such as Media Bias/Fact Check."
+  ],
+  "findings": [
+    "Linking was a prominent practice on both platforms but played different roles: on Twitter external linking was common (48.7% core, 61.8% extended) and highly self-referential (up to ~52% of links in the extended collection pointed back to Twitter), traveling with retweets and mentions in an economy of amplification.",
+    "On Facebook over 90% of posts contained links (93% core, 94% extended) irrespective of collection, a near-universal default even though Facebook's 2018 feed change deprioritized external-publisher content; link posts drew more comments than link-free posts, consistent with the controversy generating the interaction the ranking favored.",
+    "Twitter link clusters in the extended collection were dense and polarized, concentrating around conservative, far-right, and suspicious (including Russian-affiliated) sites set against a news cluster, bridged mainly by self-referential platform-internal links—suggesting links serve as markers of alignment rather than evidence.",
+    "Facebook link clusters were more dispersed and oriented outward, linking to local news, environmental and pro-environmental groups, grassroots protest accounts, and far-right sites, with links functioning evidentially and as mobilizing resources for collective action.",
+    "The same mainstream news resources were mobilized by different political camps across platforms (e.g., state broadcaster TVP circulated within Twitter's conservative/nationalist segment, while mainstream portals were shared by center-left accounts on Facebook)."
+  ],
+  "contributions": [
+    "Demonstrates that URLs can serve as platform-specific indicators of how participants engage with a controversy (polarization on Twitter versus mobilization on Facebook).",
+    "Shows these differences are explained by platform affordances, which shape the meaning and function of links, not just their circulation.",
+    "Argues for a methodological return to link analysis as a tool for cross-platform controversy mapping, bringing digital methods into dialogue with CSCW research on socio-technical systems and online collaboration.",
+    "Reframes links as active mediators rather than residual artifacts, and offers link-tracing as a practical, trace-based method for detecting contested issues, influential sources, and the spread of potentially misleading content across platforms."
+  ],
+  "framing": "The paper situates itself at the intersection of controversy mapping (an empirical application of Actor-Network Theory), internet/web studies of platformization and link economies (Helmond, Gerlitz, Rogers), and CSCW research on socio-technical systems and platform affordances. It positions links as non-human actors and traceable artifacts, arguing against treating platforms as neutral channels and reviving early digital-methods link analysis for the contemporary platformized web.",
+  "pdf_source": "drive"
+}
