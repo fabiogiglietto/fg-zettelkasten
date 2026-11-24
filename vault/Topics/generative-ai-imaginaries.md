@@ -18,6 +18,7 @@ Papers examining how generative AI is culturally imagined, discursively framed, 
 - [[Manovich2026-ih]]
 - [[Nguyen2026-vm]]
 - [[Richter2026-bt]]
+- [[Simon2012-pe]]
 - [[So2026-up]]
 - [[Stanusch2026-ec]]
 - [[Suk2026-ai]]

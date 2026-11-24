@@ -25,6 +25,7 @@ Papers developing or applying computational/graph-based methods to detect, map, 
 - [[Heft2021-ky]]
 - [[Iannucci2025-eg]]
 - [[Kakavand2026-kt]]
+- [[Lompe2026-vm]]
 - [[Luceri2025-tr]]
 - [[Mannocci2025-ig]]
 - [[Mannocci2026-kc]]

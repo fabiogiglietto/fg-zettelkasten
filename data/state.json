@@ -3222,10 +3222,10 @@
       "doi": "10.1080/17457289.2026.2701896",
       "title": "Disrupting democracy: how informational pathways and misinformation shape trust in election results",
       "pdf_source": "drive",
-      "content_hash": "cf3cb7015f2a13b45a27e0e1bbf7b9c11cb18583512b02f9b3f8ba1e898aa9c5",
+      "content_hash": "87d162e03049c55cd20717b6d00532ecfce77a3d1d7d9240dbdfcb89b09c3af6",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-10-23T17:42:25.092213+00:00"
+      "last_processed": "2026-11-24T00:18:18.084036+00:00"
     },
     "bibtex:Eady2025-vm": {
       "note_path": "Papers/Eady2025-vm.md",
@@ -3667,10 +3667,10 @@
       "doi": "10.1080/21670811.2026.2730327",
       "title": "Revisiting framing codebooks with AI: Employing large language models as analytical collaborators in deductive content analysis",
       "pdf_source": "drive",
-      "content_hash": "c5bb500e19f0ea51caffc3f46388c81a28c3e634332b649c1d538a2fa6b79f1e",
+      "content_hash": "a4042f5c61d5f7f76b63b6822ddb9497f4332af1989212890f231e49607895ac",
       "podcast_linked": true,
       "slack_posted": true,
-      "last_processed": "2026-10-23T17:42:09.639402+00:00"
+      "last_processed": "2026-11-24T00:18:03.159055+00:00"
     },
     "bibtex:Topinka2026-hb": {
       "note_path": "Papers/Topinka2026-hb.md",
@@ -5301,10 +5301,42 @@
       "content_hash": "ec505bb0bdae46f92237a3697eefed57c095169b72c61cb0cf5af60745249c97",
       "podcast_linked": false,
       "last_processed": "2026-11-19T15:20:21.700735+00:00"
+    },
+    "bibtex:Simon2012-pe": {
+      "note_path": "Papers/Simon2012-pe.md",
+      "topics": [
+        "public-perceptions-and-labor-impacts-of-ai",
+        "generative-ai-imaginaries"
+      ],
+      "assign_fp": "4ef8f6c5f8c63901a86cfb2063aa9e642d2e6988d9ea74957433fb34e9f911e4",
+      "doi": "",
+      "title": "Generative AI and News Report 2026: From standalone tools to information infrastructure",
+      "pdf_source": "drive",
+      "content_hash": "759b0fd4ec35520da251502502ce85ea3ad01151ac53a797bffa8486a55354f8",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-24T00:17:25.108915+00:00"
+    },
+    "bibtex:Lompe2026-vm": {
+      "note_path": "Papers/Lompe2026-vm.md",
+      "topics": [
+        "news-sharing-social-media",
+        "computational-network-structure-analysis"
+      ],
+      "assign_fp": "553f3498ee79d97e2c429df1fd0768dbc7a320467e1ed8c47fca817056851d8b",
+      "doi": "10.1007/s10606-026-09557-1",
+      "title": "The link has died; Long live the link! Cross-platform controversy mapping with the use of URLs",
+      "pdf_source": "drive",
+      "content_hash": "2263ef543979ca0b8e473c16f25d30f7e339472a3abb79e49c62dc8cbf0c7e4d",
+      "podcast_linked": true,
+      "slack_posted": true,
+      "social_pending": true,
+      "last_processed": "2026-11-24T00:17:44.461229+00:00"
     }
   },
   "last_full_cluster": "2026-11-23T14:31:46.423756+00:00",
-  "papers_since_cluster": 0,
+  "papers_since_cluster": 2,
   "register_signals_hash": "60f83a0a9e56d1e13388c41f7afea578e5c2636991d3cc7e2ccb0f4f58f54eed",
   "emergent_fp": "bae0f38070ea8b53c0a89095833fda1809cae2a8183ff2eb2ed0028c5f14a436",
   "structure_fps": {
