@@ -1,0 +1,39 @@
+{
+  "abstract": "This paper investigates how coordinated political behavior on Facebook persists in the Philippines outside formal election periods, focusing on the first two years of the Marcos Jr. administration (June 2022–May 2024). Using social network analysis and qualitative content analysis of cross-posted content, the authors examine how coordinated actors exploit Facebook's affordances to sustain partisan narratives and personality-driven politics between electoral cycles. They argue that coordinated behavior functions as a socio-cultural assemblage that mobilizes platform affordances, coordinated actors, and crafted narratives to manufacture polarization and maintain the country's dynastic and clientelistic political culture in digitally persistent form.",
+  "key_claims": [
+    "Coordinated political communication on Facebook in the Philippines persists beyond election periods as an ongoing, structural, and cumulative infrastructural process rather than a sporadic or episodic campaign tactic.",
+    "Facebook does not autonomously produce polarization; rather, polarization emerges relationally through the interaction of platform affordances, coordinated actors, algorithmic systems, and partisan political culture within a socio-cultural assemblage.",
+    "Coordinated actors use scalability and connectivity not to achieve virality but to manufacture an illusion of continuous presence and consensus, signaling to political patrons that campaign infrastructure remains active and ready for future mobilization.",
+    "Platform affordances translate traditional Philippine patron-client and dynastic relations into networked, algorithmically amplified forms of permanent, personality-driven polarization.",
+    "Cross-posting serves as an observable indicator of sustained coordinated activity and manufactured engagement."
+  ],
+  "methods": [
+    "Case study of the Philippines as part of a larger project on influence operations in Southeast Asia.",
+    "Used Google Trends to identify three macro-level discourses that garnered attention from June 2022 to May 2024 (political elite contest, Philippine foreign policy, and the 2022 national elections), which informed keyword strings.",
+    "Social network analysis (SNA) of Facebook posts, searching for publicly available pages sharing content via personality-centered keywords (e.g., 'uniteam [bongbong marcos]', 'human rights [sara duterte]', 'martial law [bongbong marcos]').",
+    "Coordination identified not via fixed cross-post thresholds but through combined behavioral metrics, content duplication (identical links, text, media), temporal synchronization (statistically improbable tight time windows), and structural network ties indicating centralized orchestration.",
+    "Qualitative content analysis by a three-person coding team examining post types, elements (captions, descriptions), engagement metrics (reactions, comments, shares, types of cross-posting accounts), and the affordances manifested.",
+    "Analysis focused on Facebook pages rather than groups due to public availability and privacy/access constraints.",
+    "Theoretical framework combining affordance theory (six affordances from Kakavand 2023) with Deleuze and Guattari's assemblage theory and Hopkins's integration of assemblage and affordance theory."
+  ],
+  "findings": [
+    "SNA identified 14 communities (clusters of interconnected pages and public profiles) comprising 1387 total posts containing 356 unique messages.",
+    "Posts appeared with an average delay of only 61.71 seconds between accounts—far faster than organic behavior—indicating orchestrated amplification, with coordinated pages ranging from two to 30.",
+    "Despite high coordination, engagement remained low; scalability was weaponized to project structural presence and an illusion of consensus rather than to trigger virality.",
+    "Connectivity hardened factional partisanship: distinct opposition-aligned clusters (around Robredo and Pangilinan, sustained via the Angat Buhay Foundation) and fluid pro-administration coalitions linking multiple dynastic figures.",
+    "Persistence turned Facebook into an uncensored digital archive—posts from as early as 2021 remained accessible—while re-contextualization occurred mostly within narrow windows (typically within 5 days of original publication) rather than through resharing legacy posts.",
+    "Replicability was operationalized through standardized duplication (identical captions, hashtags, formatting) across pages, and nearly half of high-centrality pages were deleted, made unavailable, or renamed/rebranded between 2022 and 2023 to evade scrutiny while preserving follower bases.",
+    "Searchability was exploited through recognizable hashtags (#PBBM, #BBM, #UniTeam) and charged labels ('dilawan', 'oligarkiya', 'komunista'), including 'oppositional searchability' where critics appropriated pro-administration tags.",
+    "Identifiability varied by actor type: government/state media displayed high institutional identifiability, while non-institutional/advocacy pages minimized it using generic avatars and journalistic/grassroots-mimicking names (e.g., 'Surigao City Airport News Update', 'The Good News PH', 'CAVITE CONNECT') to cultivate 'mimicked legitimacy'.",
+    "The interplay of persistence and replicability can produce an illusory truth effect, increasing perceived credibility of repeated claims despite questionable accuracy."
+  ],
+  "contributions": [
+    "Extends the literature on influence operations in Philippine elections to the under-studied non-election period, showing coordinated behavior as a permanent structural feature.",
+    "Integrates affordance theory with a socio-cultural assemblage framework to theorize platforms as relational actors rather than deterministic or neutral forces.",
+    "Operationalizes cross-posting as an empirical marker of sustained coordinated activity and manufactured engagement.",
+    "Challenges technological-determinist readings of platform power by situating polarization within relational dynamics among actors, affordances, and political culture.",
+    "Links digital coordination mechanisms to the perpetuation of Philippine dynastic, clientelistic, and personality-driven politics across electoral cycles."
+  ],
+  "framing": "The paper positions itself within scholarship on social media influence operations and political polarization in the Philippines, drawing on affordance theory (Boyd, Treem & Leonardi, Kakavand) and Deleuzian assemblage theory (Deleuze & Guattari, DeLanda, Hopkins). It engages debates about platform power and technological determinism by advancing a relational, assemblage-based account of how everyday digital infrastructure sustains personality-driven factional politics.",
+  "pdf_source": "drive"
+}
