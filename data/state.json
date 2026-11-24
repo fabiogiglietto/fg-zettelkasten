@@ -5315,8 +5315,25 @@
       "content_hash": "759b0fd4ec35520da251502502ce85ea3ad01151ac53a797bffa8486a55354f8",
       "podcast_linked": true,
       "slack_posted": true,
-      "social_pending": true,
-      "last_processed": "2026-11-24T00:17:25.108915+00:00"
+      "last_processed": "2026-11-24T00:17:25.108915+00:00",
+      "social": {
+        "mastodon": {
+          "url": "https://aoir.social/@fabiogiglietto/117668555744169656",
+          "at": "2026-11-24T00:21:11.467476+00:00"
+        },
+        "threads": {
+          "url": "https://www.threads.com/@fabiogiglietto/post/DgGp9QpHesr",
+          "at": "2026-11-24T00:21:34.495959+00:00"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7530787666402009089/",
+          "at": "2026-11-24T00:21:36.035697+00:00"
+        },
+        "bluesky": {
+          "url": "https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2zessgjun2v",
+          "at": "2026-11-24T00:21:37.070133+00:00"
+        }
+      }
     },
     "bibtex:Lompe2026-vm": {
       "note_path": "Papers/Lompe2026-vm.md",
@@ -5331,8 +5348,25 @@
       "content_hash": "2263ef543979ca0b8e473c16f25d30f7e339472a3abb79e49c62dc8cbf0c7e4d",
       "podcast_linked": true,
       "slack_posted": true,
-      "social_pending": true,
-      "last_processed": "2026-11-24T00:17:44.461229+00:00"
+      "last_processed": "2026-11-24T00:17:44.461229+00:00",
+      "social": {
+        "mastodon": {
+          "url": "https://aoir.social/@fabiogiglietto/117668557446937556",
+          "at": "2026-11-24T00:21:37.446509+00:00"
+        },
+        "threads": {
+          "url": "https://www.threads.com/@fabiogiglietto/post/DgGp_DfHX19",
+          "at": "2026-11-24T00:21:50.120609+00:00"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7530787731665219584/",
+          "at": "2026-11-24T00:21:51.604367+00:00"
+        },
+        "bluesky": {
+          "url": "https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2zetb7x222a",
+          "at": "2026-11-24T00:21:52.606440+00:00"
+        }
+      }
     }
   },
   "last_full_cluster": "2026-11-23T14:31:46.423756+00:00",
@@ -5389,7 +5423,7 @@
     }
   },
   "social_alerts": {
-    "threads-expiry": "2026-11-23",
-    "linkedin-expiry": "2026-11-23"
+    "threads-expiry": "2026-11-24",
+    "linkedin-expiry": "2026-11-24"
   }
 }
