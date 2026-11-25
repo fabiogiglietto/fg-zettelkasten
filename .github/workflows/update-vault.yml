@@ -46,7 +46,15 @@ jobs:
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
+      # Check out the branch tip, not the SHA the run was triggered at. A
+      # re-run reuses the original SHA, so re-running a run that had already
+      # pushed its vault commit and then failed later (2026-11-24: the Quartz
+      # build) redid the same papers from the stale tree and died rebasing
+      # onto its own earlier commit. From the tip, the papers are already
+      # processed and the re-run goes straight on to the build.
       - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref }}
 
       - uses: actions/setup-python@v7
         with:
@@ -182,7 +190,17 @@ jobs:
         working-directory: quartz
         run: |
           npm ci
-          npx quartz build
+          # CustomOgImages downloads its fonts from Google Fonts during the
+          # build, and one failed fetch aborts the whole build (2026-09-25,
+          # 2026-11-24) — after the vault commit is already pushed, so the
+          # site stays one update behind. Fonts that did arrive are cached
+          # in .quartz-cache, so a retry only fetches what is missing.
+          for attempt in 1 2 3; do
+            if npx quartz build; then exit 0; fi
+            echo "::warning::Quartz build failed (attempt $attempt of 3)"
+            if [ "$attempt" -lt 3 ]; then sleep 30; fi
+          done
+          exit 1
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
