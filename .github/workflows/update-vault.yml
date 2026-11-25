@@ -207,10 +207,19 @@ jobs:
         with:
           path: quartz/public
 
-      # Pages deploys fail transiently on the service side ("Deployment
+      # deploy-pages looks the artifact up by name the instant the upload step
+      # returns, and the listing lags the upload: from 2026-11-23 about one
+      # first deploy in three failed 0.5 s after a successful upload with
+      # "No artifacts named github-pages were found" (both repos), and passed
+      # on the retry. A short pause lets the listing catch up. How long the
+      # lag really is, is not known — the retries below remain the backstop.
+      - name: Let the Pages artifact become listable
+        run: sleep 15
+
+      # Pages deploys also fail transiently on the service side ("Deployment
       # failed, try again later") — e.g. 2026-07-03, three sites, all
-      # recovered on plain retry. One automatic retry absorbs that, so the
-      # failure alert below only fires when the deploy fails twice in a row.
+      # recovered on plain retry. Two automatic retries absorb that, so the
+      # failure alert below only fires when the deploy fails three times.
       - name: Deploy to GitHub Pages
         id: deploy
         continue-on-error: true
@@ -223,6 +232,16 @@ jobs:
       - name: Retry Pages deploy (transient failure)
         id: deploy_retry
         if: steps.deploy.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait before second deploy retry
+        if: steps.deploy_retry.outcome == 'failure'
+        run: sleep 180
+
+      - name: Second retry of Pages deploy
+        id: deploy_retry2
+        if: steps.deploy_retry.outcome == 'failure'
         uses: actions/deploy-pages@v5
 
       # Announce newly-added notes on Mastodon / Threads / LinkedIn / Bluesky. After the
@@ -234,7 +253,7 @@ jobs:
       - name: Post to social media
         if: >-
           github.event.action != 'pipeline-summarize'
-          && (steps.deploy.outcome == 'success' || steps.deploy_retry.outcome == 'success')
+          && (steps.deploy.outcome == 'success' || steps.deploy_retry.outcome == 'success' || steps.deploy_retry2.outcome == 'success')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
@@ -268,7 +287,7 @@ jobs:
       - name: Commit social-post state
         if: >-
           github.event.action != 'pipeline-summarize'
-          && (steps.deploy.outcome == 'success' || steps.deploy_retry.outcome == 'success')
+          && (steps.deploy.outcome == 'success' || steps.deploy_retry.outcome == 'success' || steps.deploy_retry2.outcome == 'success')
         run: |
           git add data/state.json
           git diff --staged --quiet || git commit -m "🤖 Social posts $(date -u +%Y-%m-%dT%H:%MZ)"
