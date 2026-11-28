@@ -7,7 +7,7 @@ doi: 10.31235/osf.io/8dqag_v2
 bibtex_key: Giglietto2025-1765bb4f
 kind: own
 topics: [platform-governance-regulation, political-communication-elections]
-citation_count: 2
+citation_count: 3
 open_access: true
 source_url: https://doi.org/10.31235/osf.io/8dqag_v2
 podcast_url: 
@@ -23,31 +23,30 @@ discovery_date:
 
 ## Summary
 
-This working paper provides the first independent empirical audit of how Meta's 2021–2025 political content reduction policy affected the Facebook visibility of Italian elected officials and other political actors. Analyzing 2.5 million posts from 901 accounts via the Meta Content Library API, the author uses a discovery-validation design with structural breakpoint detection to show that the policy took effect in Italy roughly ten months before Meta's publicly announced July 2022 global rollout, cut re-elected MPs' average per-post reach by 72% at trough, and only partially reverted after Meta's January 2025 reversal. Crucially, extremist accounts offset per-post declines by dramatically increasing posting volume, ending the policy period with *more* aggregate weekly reach than mainstream politicians. The paper frames these results as evidence of significant transparency deficits in Meta's DSA compliance while nevertheless defending the DSA-enabled infrastructure as a genuine research advance worth building on collaboratively.
+This working paper provides the first independent empirical measurement of how Meta's 2021–2025 political content reduction policy affected the Facebook visibility of Italian parliamentarians, prominent politicians, and extremist accounts. Drawing on over 2.5 million posts collected via the DSA-enabled Meta Content Library, Giglietto uses a discovery-validation design with structural breakpoint detection to show that the policy materially suppressed the reach of elected officials — a 72% peak-to-trough decline for re-elected MPs — and that its effects in Italy emerged roughly ten months before Meta's announced global rollout. Meta's January 2025 reversal produced only a partial rebound. The paper reframes algorithmic visibility as democratic infrastructure and argues both that Meta's policy communication suffered a serious transparency deficit and that DSA-mandated research infrastructure nonetheless represents meaningful progress toward collaborative platform governance research.
 
 ## Key Contributions
 
-- First independent quantification of Meta's political content reduction policy on parliamentarians in a European democracy.
-- A reusable discovery-validation breakpoint-detection methodology for auditing platform policy changes with opaque implementation timelines.
-- Empirical documentation of asymmetric policy effects, including a volume-compensation mechanism through which extremist actors circumvented the intended suppression.
-- Concrete evidence of gaps between Meta's DSA transparency reports and observable ranking effects on democratic communication.
-- A fully documented, reproducible R pipeline and public producer lists enabling cross-country replication via the Meta Content Library.
-- A normative articulation of collaborative platform governance research, drawing on the Knight-Georgetown Institute's "Better Access" framework.
+- First independent empirical quantification of Meta's political content reduction policy on elected officials in a European democracy.
+- A discovery-validation breakpoint-detection methodology designed for platform policy changes with opaque or ambiguous implementation timelines.
+- Documentation of asymmetric effects across mainstream and extremist actors, including a volume-compensation mechanism that can undermine the policy's intended goals.
+- Evidence of specific gaps between Meta's DSA transparency reporting and the observable impact of its ranking changes on democratic communication.
+- A fully documented, reproducible R analytical pipeline and public producer lists to enable cross-country and cross-platform replication.
+- A normative argument for collaborative rather than purely adversarial platform governance research.
 
 ## Methods
 
-The study collects 2,529,933 Facebook posts (Jan 2021–Nov 2025) from 901 accounts through the Meta Content Library API inside Meta's Secure Research Environment, partitioned into four mutually exclusive actor groups: re-elected MPs (discovery sample), newly elected MPs, prominent non-parliamentary politicians, and extremist/alternative-media accounts (validation samples). Weekly aggregated views (with group-specific power-law imputation for the 100-view censoring threshold) are analyzed using both Bai–Perron and PELT breakpoint detection, with 30-day consensus clustering across algorithms. Detected phase boundaries structure Kruskal–Wallis tests with Bonferroni-corrected Dunn's post-hoc comparisons, and a robustness check contrasts per-post reach against total weekly reach to capture posting-frequency compensation.
+The study collected 2,529,933 Facebook posts from 901 accounts (Jan 2021–Nov 2025) through the Meta Content Library API within Meta's Secure Research Environment. Accounts were divided into four mutually exclusive groups: re-elected MPs (discovery sample) plus newly elected MPs, prominent non-parliamentary politicians, and extremist/alternative-media accounts (validation samples). "Views" was the primary outcome, with group-specific power-law imputation for posts censored at the 100-view threshold and accompanying sensitivity analyses. Structural breakpoints were detected on weekly aggregated engagement metrics using both Bai–Perron and PELT algorithms, with 30-day consensus clustering to cross-validate break locations. The resulting four policy phases were compared using Kruskal–Wallis tests with Dunn's post-hoc pairwise comparisons (Bonferroni corrected), and a robustness check contrasted per-post average reach against total weekly reach to control for posting frequency.
 
 ## Findings
 
-- Three cross-validated breakpoints: implementation (Sept 19, 2021), post-election adjustment (Jan 1, 2023), and reversal (March 9, 2025).
-- The implementation breakpoint precedes Meta's announced global rollout by ~303 days; the reversal follows Meta's January 2025 announcement by ~61 days.
-- Re-elected MPs: mean weekly views per post fell from 53,368 to a trough of 14,869 (–72%) and only recovered to 34,918 (~65% of baseline) after the reversal.
-- Peak-to-trough declines: 72.1% (re-elected MPs), 51.2% (new MPs), 57.3% (prominent politicians), 24.3% (extremists).
-- The expected DOWN→DOWN→UP pattern held for all three mainstream groups but not for extremists, whose per-post reach continued declining after the reversal.
-- In *total weekly reach*, extremists grew 13.7% from Phase 0 to Phase 2 and overtook mainstream politicians, driven by a 61.5–140.5% increase in posting frequency.
-- Meta did not disclose this policy in its DSA compliance reports, a substantive transparency gap.
+- Three cross-validated breakpoints emerged: T1 (19 Sept 2021, implementation), T2 (1 Jan 2023, post-election adjustment), and T3 (9 March 2025, reversal).
+- Re-elected MPs' mean weekly views per post fell from 53,368 to 26,079 (–51%) at T1, then to 14,869 at T2, before partially recovering to 34,918 after T3 — about 65% of pre-policy levels.
+- Peak-to-trough declines were 72.1% (re-elected MPs), 51.2% (new MPs), 57.3% (prominent politicians), and only 24.3% (extremists).
+- The expected DOWN→DOWN→UP pattern held for all three mainstream groups, but extremists showed DOWN→DOWN→DOWN in per-post reach with no significant recovery.
+- Measured as *total* weekly reach, extremists grew continuously (+13.7% from Phase 0 to Phase 2), surpassing mainstream politicians in aggregate visibility by increasing posting frequency 61.5–140.5%.
+- The implementation breakpoint preceded Meta's announced global rollout by ~303 days; the reversal breakpoint followed Meta's January 2025 announcement by ~61 days.
 
 ## Connections
 
-This paper extends the author's ongoing program on platform ranking effects and Italian political communication ([[Giglietto2026-632ef967]], [[Giglietto2025-1e9a0917]], [[Giglietto2025-ed60bc90]], [[Giglietto2026-855a54cb]], [[Giglietto2023-fa71a001]], [[Giglietto2022-b30e8b4e]], [[Giglietto2020-9d8acdd7]], [[Giglietto2019-882f1900]]) and speaks directly to broader debates on DSA-era transparency, data access, and platform-mediated research infrastructures ([[Rieder2026-pp]], [[Rieder2025-ju]], [[Bruns2026-yv]], [[Bechmann2026-dr]], [[Bouchaud2026-lr]], [[Bouchaud2026-np]]). Its finding that visibility suppression benefits high-volume extremist actors relative to mainstream politicians resonates with work on algorithmic amplification and electoral communication such as [[Gonzalez-Bailon2024-rq]], [[Bouchafra2026-ts]], and [[Larsson2026-ro]].
+This paper sits within the author's own ongoing program on platform algorithms, elections, and data access, extending methods and concerns found in [[Giglietto2024-cbeb3f70]], [[Giglietto2023-fa71a001]], [[Giglietto2026-632ef967]], and [[Giglietto2025-ed60bc90]]. Its concern with DSA-enabled transparency infrastructure and the limits of platform self-reporting connects it to broader debates on platform governance and data access in [[Rieder2025-ju]], [[Rieder2026-pp]], and [[Votta2025-xz]]. Its framing of algorithmic reach as democratic infrastructure and its explicit engagement with the US-centric 2020 US Election study link it to work on algorithmic curation and exposure such as [[Gonzalez-Bailon2024-rq]] and [[Bakshy2015-rn]].

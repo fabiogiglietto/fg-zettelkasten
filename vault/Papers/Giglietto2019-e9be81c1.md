@@ -7,7 +7,7 @@ doi: 10.1177/0011392119837536
 bibtex_key: Giglietto2019-e9be81c1
 kind: own
 topics: [information-disorder, news-sharing-social-media]
-citation_count: 182
+citation_count: 185
 open_access: true
 source_url: https://doi.org/10.1177/0011392119837536
 podcast_url: 
@@ -23,30 +23,30 @@ discovery_date:
 
 ## Summary
 
-Giglietto and colleagues offer a theoretical critique of the dominant creator-centric framing of "fake news," arguing that it cannot capture how false information actually moves through Chadwick's hybrid media system. Drawing on second-order cybernetics, Bateson's information theory, and Luhmann's systems theory, they propose refocusing analysis on *propagators* — the chain of actors who each judge and re-share content — rather than on the original injector's intent. A three-level (micro/meso/macro) framework and a 2x2 typology of injector/propagator truth judgments allow them to reconceptualise circulation as heterogeneous cascades in which satire, mistake, and deception can flow together. They also reject the term "fake news" itself as a rhetorical weapon that positions its user as truth-claimer.
+This conceptual paper challenges the dominant, creator-centric approach to defining and studying "fake news." Giglietto and colleagues argue that focusing on the intent behind the *generative act* of producing false content cannot account for how false information actually circulates in Chadwick's hybrid news system. Drawing on second-order cybernetics (von Foerster, Bateson) and Luhmann's systems theory, they shift analytical attention from creators/injectors to *propagators* and the chains of judgment and decision that drive circulation. They develop a three-level model—micro (individual truthfulness judgments), meso (a 2×2 matrix of injector/propagator judgment combinations), and macro (emergent global cascades)—illustrated with three real-world episodes. Their core constructivist claim is that information is observer-dependent, so each propagator's judgment and sharing choice reshapes the cycle, and societal consensus on truth is unlikely.
 
 ## Key Contributions
 
-- Shifts the analytical center of gravity from content creators/injectors to propagators and propagation dynamics.
-- Introduces second-order cybernetics into misinformation studies, treating information as observer-dependent ("a difference that makes a difference").
-- Develops a 2x2 propagation typology based on the truth judgments of injector and propagator, yielding four cases: pure disinformation, misinformation-via-disinformation, disinformation-via-misinformation, and pure misinformation.
-- Articulates a micro/meso/macro model linking individual truthfulness judgments, dyadic propagation, and emergent global cascades.
-- Distinguishes lowercase true/false (actors' judgments) from capitalized True/False (researcher assessment), staking out a constructivist-but-not-relativist position.
-- Provides a normative critique of the label "fake news" as inherently divisive.
+- Reframes misinformation research by foregrounding **propagators** rather than creators as central analytical objects.
+- Imports a **second-order cybernetic** perspective into communication studies of false information.
+- Proposes a **2×2 typology of propagation** (based on injector and propagator truth judgments) able to accommodate hard-to-classify cases like satire and "bullshit."
+- Articulates a **multi-level (micro/meso/macro) model** linking individual judgment, dyadic propagation, and emergent cascades.
+- Distinguishes lowercase *true/false* (actor judgments) from capitalized *True/False* (researcher assessment), clarifying a constructivist-but-not-relativist stance.
+- Offers a theoretical critique of the term "fake news" itself as rhetorically loaded, positioning its user as a truth-claimer.
 
 ## Methods
 
-Conceptual/theoretical paper. The authors review classical and recent literature on disinformation, misinformation, rumor, propaganda, conspiracy, satire, and "bullshit"; synthesise it with von Foerster's second-order cybernetics, Bateson, Chadwick's hybrid media system, and Luhmann; and illustrate the resulting framework with three cases: the Veerender Jubbal doctored image after the 2015 Paris attacks, Chris Lamb's satirical Huffington Post piece on Trump and the Statue of Liberty, and the 2016 misidentified KKK "march" photo in Mebane, NC.
+A conceptual and theoretical paper rather than an empirical study. The authors conduct a literature review spanning disinformation, misinformation, rumor, propaganda, conspiracy theories, satire, parody, and "bullshit," then synthesize it with second-order cybernetics, Bateson's information theory, Chadwick's hybrid media system, and Luhmann's systems theory. They construct the three-level framework and the 2×2 matrix, and illustrate it through three episodes: the photoshopped Veerender Jubbal image after the 2015 Paris attacks; Chris Lamb's satirical Huffington Post piece on Trump and the Statue of Liberty; and the 2016 misidentified KKK "march" photo in Mebane, NC.
 
 ## Findings
 
-- Existing definitions overweight the "generative act" and neglect what happens once content enters circulation.
-- Propagators judge truth using cues from source (authority, proximity), content (confirmation bias, congruence, relevance), and context (overload, limited attention, "tweet first, verify later").
-- Authority and proximity increasingly collapse into one another on social media, degrading expertise-based evaluation.
-- Original intent does not determine downstream fate: satire, honest error, and deliberate deception can all be re-propagated as true by mainstream actors.
-- Real cascades are composite — no single typology (disinformation vs. misinformation) captures them.
-- Societal consensus on truth is unlikely; coexisting opposing beliefs are the normal state of the hybrid news system.
+- Most existing definitions treat the generative act of creating false content as decisive, neglecting downstream propagation dynamics.
+- The matrix yields four propagation typologies: pure disinformation, misinformation propagated through disinformation, disinformation propagated through misinformation, and pure misinformation.
+- At the micro level, actors judge truthfulness via **source** (authority, proximity), **content** (confirmation bias, congruence, relevance), and **context** (information overload, limited attention, "tweet first, verify later").
+- Authority and proximity increasingly overlap on social media, weakening expertise-based source evaluation.
+- Original intent does not determine downstream circulation: satirical, mistaken, and deceptive items can all be propagated as true by mainstream actors.
+- Global cascades are emergent phenomena observable as autonomous, even though composed of heterogeneous individual propagations.
 
 ## Connections
 
-This paper is a foundational conceptual anchor for propagation-oriented and typology-critical work on information disorder, and it prefigures later empirical studies of cascades and sharing behaviour such as [[DeVerna2025-dl]], [[Mosleh2024-op]], and [[Budak2024-ef]]. Its critique of the "fake news" label as rhetorically loaded resonates strongly with [[Farkas2026-lr]], while its observer-dependent, systems-theoretic framing connects to sociocybernetic and audience-centred work like [[Grusauskaite2026-po]] and [[Marwick2025-ov]]. The insistence that intent alone cannot classify circulating content also anticipates concerns in [[Starbird2025-jj]] and [[Marwick2025-vx]] about participatory and emergent disinformation dynamics.
+This paper's propagation-centric reframing complements empirical work on how false content actually spreads through networks, such as [[Vosoughi2018-at]] on the differential diffusion of true and false news and [[Del-Vicario2016-uj]] on cascade dynamics. Its reliance on Chadwick's hybrid media system situates it alongside [[Chadwick2013-ns]], while its critique of the "fake news" label as rhetorically loaded connects to broader conceptual debates over misinformation typologies in [[Freelon2020-yp]] and [[Starbird2019-qv]]. The emphasis on individual sharing judgments also speaks to [[Pennycook2021-jq]] and [[Allen2020-nj]] on how ordinary users evaluate and propagate news.

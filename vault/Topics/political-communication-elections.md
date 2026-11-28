@@ -72,6 +72,7 @@ Analysis of political news coverage, partisan attention, and social media dynami
 - [[Kim2026-wg]]
 - [[Knupfer2025-vt]]
 - [[Lai2024-to]]
+- [[Larsson2026-ga]]
 - [[Larsson2026-nl]]
 - [[Larsson2026-ro]]
 - [[Le-Mens2025-qz]]

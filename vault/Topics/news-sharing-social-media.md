@@ -35,6 +35,7 @@ Studies of how news circulates and is engaged with on Facebook/Instagram, includ
 - [[Holland_Levin2026-qx]]
 - [[Holt2026-zq]]
 - [[Kalsnes2025-zb]]
+- [[Larsson2026-ga]]
 - [[Larsson2026-nl]]
 - [[Lompe2026-vm]]
 - [[Lukito2026-il]]
